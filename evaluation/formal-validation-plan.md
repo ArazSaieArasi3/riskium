@@ -6,11 +6,11 @@ The [coverage contract](coverage-contract.md) is the current design baseline. It
 
 Coverage is defined from the model and declared claims, not from an arbitrary test count. The starting inventory includes every typed class, generalization, typed relation, endpoint obligation, interpretation constraint, current requirement and selected competency question. Cross-domain combinations and inference boundaries extend that inventory.
 
-The current catalog has 674 planned coverage obligations: 295 for HermiT-related work, 359 for SHACL-related work and 20 for combined requirement/query tasks. An obligation may require several positive, negative, boundary and regression fixtures. These are not 674 implemented tests and none is reported as executed by a reasoner or SHACL engine.
+The current catalog has 674 baseline coverage obligations: 295 for HermiT-related work, 359 for SHACL-related work and 20 for combined requirement/query tasks. An obligation may require several positive, negative, boundary and regression fixtures. These are not 674 implemented tests. The later [HermiT report](hermit/report.md) records the executed subset of its 295 obligations; SHACL and combined requirement/query execution remain separate work.
 
 ## HermiT
 
-First produce a reviewed OWL mapping and exact import closure. Test ontology consistency, satisfiability of all 77 typed classes, all 66 declared generalizations and the supported semantics of 127 typed relations. Declare intended and forbidden inferences, with countermodels for non-entailment where appropriate.
+Use the reviewed OWL mapping and exact import closure. The HermiT report tests ontology consistency, satisfiability of all 77 typed classes, all 66 declared generalizations and the supported semantics of 127 typed relations, with additional inference and boundary probes. It declares intended and forbidden inferences; the remaining constraints are recorded separately rather than counted as passes.
 
 Resolve identity, overlap, disjointness, relator dependence, role participation and generalization-set assumptions before asserting their expected outcomes. Do not treat an abstract conceptual class as automatically unsatisfiable in OWL. Do not encode immutable database payloads or temporal authorization as OWL capabilities without a justified mapping.
 

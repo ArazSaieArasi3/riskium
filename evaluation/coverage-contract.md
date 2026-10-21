@@ -1,6 +1,6 @@
 # Validation coverage contract
 
-This contract defines what the formal evaluation must cover and how its results will be accepted. It is a reviewed design for future tests. HermiT and SHACL have not been run on this Riskium snapshot.
+This contract defines what the formal evaluation must cover and how its results will be accepted. It is the planning baseline. The subsequent [HermiT execution report](hermit/report.md) records the actual scoped run against this baseline; SHACL remains unexecuted.
 
 The [machine-readable contract](coverage-contract.json) assigns a planned route to all 25 interpretation constraints. The [row review](coverage-review.json) binds each baseline obligation to its exact source element, source-file digest and expected fixture behavior. Neither file is an execution report from a formal engine.
 
@@ -16,7 +16,7 @@ The [machine-readable contract](coverage-contract.json) assigns a planned route 
 | Constraint routing | 50 | One OWL-related and one SHACL-related disposition for each of 25 constraints |
 | Requirement acceptance | 12 | The current acceptance criterion and prohibited behavior |
 | Competency questions | 8 | The expected answer contract, rejection and required population |
-| **Baseline total** | **674** | **Allocated obligations, not implemented or passed formal tests** |
+| **Baseline total** | **674** | **Allocated obligations at contract review; execution status is reported separately** |
 
 An obligation can require several fixtures. Conversely, an endpoint with multiplicity `0..*` has no invalid non-negative count: neither a below-minimum nor an above-maximum count test applies. That exclusion needs a reason; it is not a successful negative test.
 
@@ -40,7 +40,7 @@ Several constraints combine graph structure with meaning or application behavior
 - Mandate identity needs grounding, scope and validity; equal participants alone are not a key.
 - Workflow permission and unknown transitions need application-level behavior tests.
 
-Planned routes are not implemented encodings. Where the scalar vocabulary, external identity policy or task profile is unresolved, implementation remains blocked until the decision is recorded. An engine-specific limitation does not remove the underlying constraint from coverage.
+Planning routes alone are not implemented encodings. The later OWL mapping and HermiT receipt identify which routes became executable. Where the scalar vocabulary, external identity policy or task profile is unresolved, implementation remains blocked until the decision is recorded. An engine-specific limitation does not remove the underlying constraint from coverage.
 
 ## What every execution must record
 
@@ -48,7 +48,7 @@ Each executed case must identify its obligations, source commit and digests, for
 
 `PASS` is reserved for a reviewed implemented oracle whose observed result matches the expectation. `FAIL`, `ERROR`, `TIMEOUT`, `BLOCKED` and `NOT_RUN` remain separate outcomes. `NOT_APPLICABLE` requires a reason, a reviewer and replacement evidence when the claim remains in scope. None of these states may be counted as a pass.
 
-Report source allocation, encoding, fixture, execution, requirement, query and independent adequacy coverage separately. The current allocation review is complete for the declared baseline. Formal implementation and execution coverage are both zero.
+Report source allocation, encoding, fixture, execution, requirement, query and independent adequacy coverage separately. The allocation review is complete for the declared baseline. The HermiT execution report gives the current reasoner fraction and individually identifies the remaining obligations; SHACL, requirement/CQ execution and independent adequacy retain their separate statuses.
 
 ## Reproduce the design review
 
@@ -59,4 +59,4 @@ python3 -m unittest discover -s tests -v
 
 The first command verifies that the stored review matches the current sources and contract. After an intentional source or contract revision, review the changes before regenerating with `--write`. Regeneration produces planning evidence, never a formal pass.
 
-The review checker has twelve regression tests, including lost obligations, reversed endpoint direction, stale source binding, missing constraint routes, changed requirement expectations, excluded-boundary promotion and false pass claims. Together with the nine structural regression tests, these provide bounded engineering checks. Native OntoUML validation, formal execution and independent adequacy remain separate work.
+The review checker has twelve focused regressions, including lost obligations, reversed endpoint direction, stale source binding, missing constraint routes, changed requirement expectations, excluded-boundary promotion and false pass claims. Other suites exercise native export, OWL mapping and HermiT fixture construction. Their engineering results, executed reasoning and independent adequacy are distinct evidence categories.

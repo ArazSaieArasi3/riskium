@@ -14,6 +14,7 @@ The model supports the interpretation and traceability of risk information. It d
 | View the model | [Selected view](diagrams/selected-view.svg) and [complete view](diagrams/complete-view.svg) |
 | Review the requirements | [Ontology requirements](requirements/ontology-requirements.md) |
 | Assess the evidence and remaining work | [Evaluation](evaluation/README.md) and [roadmap](docs/roadmap.md) |
+| Inspect the HermiT reasoning evidence | [Human-readable report](evaluation/hermit/report.md), [JSON receipt](evaluation/hermit/report.json) and [exact premise](evaluation/hermit/premise.rdf) |
 | Reproduce the local checks | [Reproducibility](docs/reproducibility.md) |
 | Browse the prepared Wiki content | [Wiki source](docs/wiki/Home.md) |
 
@@ -21,7 +22,7 @@ The model supports the interpretation and traceability of risk information. It d
 
 The imported conceptual design is version **0.3.1**. Its complete catalog contains 80 concepts, including 77 typed core concepts and three optional phenomenon boundaries. One imported foundational anchor is recorded separately. The model records 134 associations or bridges, 66 generalizations and 25 interpretation constraints.
 
-The source JSON is a structured conceptual design. A [native OntoUML exchange representation](ontology/native/riskium.ontouml.json) preserves that source and records explicit generalization-set decisions. Its [review](evaluation/native-model-review.md) reports official schema conformance, SDK interoperability, source fidelity and the remaining semantic limits. A [bounded OWL 2 mapping](ontology/derived/riskium.owl.ttl) now covers the typed core; its [review](evaluation/owl-mapping-review.md) explains the local anchor proxy, open-world restrictions and deferred constraints. HermiT and SHACL suites remain planned, not executed. These engineering checks do not establish independent semantic validity.
+The source JSON is a structured conceptual design. A [native OntoUML exchange representation](ontology/native/riskium.ontouml.json) preserves that source and records explicit generalization-set decisions. Its [review](evaluation/native-model-review.md) reports official schema conformance, SDK interoperability, source fidelity and the remaining semantic limits. A [bounded OWL 2 mapping](ontology/derived/riskium.owl.ttl) covers the typed core; its [review](evaluation/owl-mapping-review.md) explains the local anchor proxy, open-world restrictions and deferred constraints. A [HermiT suite](evaluation/hermit/report.md) has been executed on this mapping with explicit coverage and remaining obligations. SHACL profiles remain planned, not executed. These engineering checks do not establish independent semantic validity.
 
 The [generated reference](docs/site/index.html) is prepared for local browsing; a public Pages deployment and native Wiki publication have not yet been verified. No stable scholarly release or DOI is claimed.
 
