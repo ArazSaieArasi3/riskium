@@ -6,7 +6,7 @@ The remaining work is organized by outcome. Migration established a public conce
 | --- | --- |
 | [Define the formal validation coverage contract](https://github.com/ArazSaieArasi3/riskium/issues/1) | Coverage design complete; [contract](../evaluation/coverage-contract.md) and [row review](../evaluation/coverage-review.json) recorded |
 | [Validate the native conceptual model and resolve semantic candidates](https://github.com/ArazSaieArasi3/riskium/issues/2) | Exchange representation and bounded design review complete; [results and limits](../evaluation/native-model-review.md) |
-| [Implement and review the OWL mapping](https://github.com/ArazSaieArasi3/riskium/issues/3) | Open |
+| [Implement and review the OWL mapping](https://github.com/ArazSaieArasi3/riskium/issues/3) | Bounded typed-core export and [review](../evaluation/owl-mapping-review.md) complete; HermiT and SHACL remain open |
 | [Implement the HermiT consistency and inference suite](https://github.com/ArazSaieArasi3/riskium/issues/4) | Open |
 | [Implement SHACL validation profiles and fixtures](https://github.com/ArazSaieArasi3/riskium/issues/5) | Open |
 | [Complete requirement and competency-question traceability](https://github.com/ArazSaieArasi3/riskium/issues/6) | Open |
@@ -23,7 +23,7 @@ The remaining work is organized by outcome. Migration established a public conce
 
 ## Recommended sequence
 
-The coverage-design and native-exchange review stages are complete within their documented scope. Complete the reviewed OWL mapping next, before executing HermiT. Develop SHACL admission profiles with explicit-data fixtures, and reconcile requirements and query evidence alongside both suites. Reference-corpus work and independent semantic review remain separate outcomes.
+The coverage-design, native-exchange and bounded OWL-mapping review stages are complete within their documented scope. Execute the HermiT suite next on the reviewed export with a fixed import closure. Develop SHACL admission profiles with explicit-data fixtures, and reconcile requirements and query evidence alongside both suites. Reference-corpus work and independent semantic review remain separate outcomes.
 
 The curated Wiki can be initialized from its prepared source now. The generated reference can be deployed separately; an ontology explorer depends on a justified formal export. Public rendering must be verified after publication.
 

@@ -1,0 +1,28 @@
+{
+  "status": "MAPPING_GENERATED_AND_STRUCTURALLY_CHECKED_NOT_REASONED",
+  "model_version": "0.3.1",
+  "namespace": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#",
+  "inputs_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/native/riskium.ontouml.json": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+    "evaluation/native-review-decisions.json": "38a09df7b9914be79001f94556267d624510957eae16c2e53a8da93afe219211"
+  },
+  "coverage": {
+    "typed_classes": 77,
+    "local_anchor_proxy": 1,
+    "generalizations": 66,
+    "typed_object_properties": 127,
+    "cardinality_restrictions": 88,
+    "reviewed_generalization_sets": 10,
+    "disjoint_sets": 3,
+    "optional_boundaries_as_classes": 0
+  },
+  "limitations": [
+    "No external owl:imports: external object anchor is a local proxy.",
+    "No covering axiom, unique-name assumption, key, global equivalence or implicit sibling disjointness.",
+    "Qualified cardinalities constrain OWL interpretations under an open world; missing values can be anonymous and excessive named values can be equal.",
+    "Temporal, version-join, provenance, calculation and application-admission rules require separately reviewed encodings.",
+    "Syntax, reasoning, satisfiability, instance validity and semantic adequacy are distinct checks."
+  ],
+  "output_sha256": "40c55e2209fcbb109e41af3cb75526085c8fdb1a7b7e36f8201c8d2d696fa4ad"
+}

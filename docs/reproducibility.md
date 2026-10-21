@@ -1,15 +1,25 @@
 # Reproduce the current checks
 
-Use Python 3.12 or a compatible Python 3 installation. The current validation and reference build use the standard library.
+Use Python 3.12 or a compatible Python 3 installation. The conceptual-model, coverage and reference builders use the standard library. The OWL syntax and mapping regression tests require the pinned RDFLib package.
 
 From the repository root:
 
 ```sh
 python3 tools/validate_model.py
 python3 tools/review_coverage.py
-python3 -m unittest discover -s tests -v
 python3 tools/build_reference.py
 ```
+
+To reproduce the OWL export and the complete regression suite in an isolated environment:
+
+```sh
+python3 -m venv .venv-owl
+.venv-owl/bin/pip install -r tools/requirements-owl.txt
+python3 tools/build_owl.py --check
+.venv-owl/bin/python -m unittest discover -s tests -v
+```
+
+The [OWL review](../evaluation/owl-mapping-review.md) describes the mapping and its limits. Parsing the RDF and checking source allocation do not execute HermiT or SHACL.
 
 To browse the generated reference locally:
 
@@ -23,4 +33,4 @@ The coverage review verifies source allocation, planned constraint routes and ex
 
 The optional [native-exchange checks](../evaluation/native-model-review.md) use a pinned schema, Python validation environment and official SDK versions. Their dependency installation and reproduction commands are documented separately; the standard-library checks above remain available without those dependencies.
 
-The formal HermiT and SHACL suites are not implemented in this snapshot. Their dependency versions and clean-environment reproduction commands will be recorded when the formal encodings and fixtures exist.
+The HermiT and SHACL suites are not implemented in this snapshot. Their dependency versions and clean-environment reproduction commands will be recorded when the formal tests and fixtures exist.
