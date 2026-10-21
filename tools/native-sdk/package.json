@@ -1,0 +1,9 @@
+{
+  "name": "riskium-native-checks",
+  "private": true,
+  "description": "Optional pinned SDKs for exchange interoperability and legacy diagnostics.",
+  "dependencies": {
+    "ontouml-js-current": "npm:ontouml-js@1.0.0",
+    "ontouml-js-legacy": "npm:ontouml-js@0.4.1"
+  }
+}

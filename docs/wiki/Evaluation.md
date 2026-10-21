@@ -1,6 +1,6 @@
 # Evaluation and limitations
 
-Current migration and structural checks establish a bounded set of inventory and reference properties. They do not establish independent semantic validity, a native OntoUML result, a complete OWL ontology or a deployed application.
+Current engineering evidence includes migration, structural, coverage-design and native-exchange checks. The [native review](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/native-model-review.md) records official schema conformance and SDK interoperability. These do not establish independent semantic validity, complete language-rule verification, a complete OWL ontology or a deployed application.
 
 HermiT will test the reviewed OWL mapping. SHACL will test explicit-data profiles. Their obligations are enumerated in the repository and marked not implemented. A requirement, a proposed test and an observed result remain different records.
 

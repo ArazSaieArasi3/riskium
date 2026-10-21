@@ -24,4 +24,4 @@ Heterogeneous real-world referents are optional boundaries. A vulnerability mode
 
 ## Current limits
 
-Native OntoUML profile checks, generalization-set decisions, the complete OWL mapping and independent semantic review remain open. The structured design and finite checks must not be described as completing those tasks.
+The native exchange now has official schema and SDK interoperability checks, preserved source fields and explicit generalization-set decisions. See the [native review](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/native-model-review.md) for its scope and legacy-tool limitations. Complete semantic verification, the OWL mapping and independent semantic review remain separate work.

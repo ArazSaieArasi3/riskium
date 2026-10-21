@@ -1,0 +1,21 @@
+{
+  "scope": "OntoUML exchange-schema conformance and source fidelity; not full semantic, editor, HermiT or SHACL validation.",
+  "status": "passed",
+  "schema_id": "https://w3id.org/ontouml/schema/v1.0.2",
+  "schema_sha256": "094324d8e6ac4505ef5ae983a45bb9b56a8b3b6960151c57736756a037344d38",
+  "source_model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "native_file_sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+  "schema_errors": [],
+  "fidelity_errors": [],
+  "element_counts": {
+    "BinaryRelation": 127,
+    "Class": 78,
+    "Generalization": 66,
+    "GeneralizationSet": 10,
+    "Note": 35,
+    "Package": 15,
+    "Property": 254
+  },
+  "formal_constraints_executable": 0,
+  "native_editor_import_executed": false
+}

@@ -1,6 +1,8 @@
 # Evaluation status
 
-This snapshot has migration-integrity and structural checks. They verify the exported inventory, references, endpoint cardinality syntax, inheritance structure and publication boundary. They do not establish domain adequacy, native OntoUML conformance or a complete formal ontology.
+This snapshot has migration-integrity, structural, coverage-design and native-exchange checks. They verify the exported inventory, references, endpoint cardinality syntax, inheritance structure, publication boundary, official exchange-schema conformance and SDK interoperability. They do not establish domain adequacy, complete OntoUML semantic conformance or a complete formal ontology.
+
+The [native model review](native-model-review.md) records the source-preserving exchange representation, ten design dispositions, explicit generalization-set policy and legacy verifier limitations.
 
 The [migration receipt](migration-integrity.json) states what was preserved and edited. The current [coverage plan](coverage-plan.json) and [test obligations](../requirements/test-obligations.csv) identify planned formal work. Every obligation is marked not implemented.
 

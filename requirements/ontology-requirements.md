@@ -1,6 +1,6 @@
 # Ontology requirements specification
 
-Documentation revision 0.4.1; conceptual design 0.3.1; English public export, 21 October 2026.
+Documentation revision 0.4.2; conceptual design 0.3.1; English public export, 21 October 2026.
 
 Riskium organizes risk knowledge for interpretation, continuity, provenance and analysis. Intended readers include risk analysts, domain experts, ontology researchers and technical integrators. The scope concerns knowledge and recorded statements, rather than prescribing a complete management process.
 
@@ -143,4 +143,4 @@ Reject: Inheriting a result from a different version or treating counts as seman
 
 Machine-readable [requirements](requirements.json), [scope obligations](scope-requirements.json), [competency questions](competency-questions.json) and [test obligations](test-obligations.csv) retain distinct identities and statuses. Requirement-to-constraint links are current design links, not proof of fulfillment.
 
-The [engineering policy](engineering-policy.md) defines the method. The [formal-validation plan](../evaluation/formal-validation-plan.md) defines the coverage contract. Native OntoUML validation, complete OWL mapping, HermiT/SHACL execution and independent semantic adequacy review remain open.
+The [engineering policy](engineering-policy.md) defines the method. The [formal-validation plan](../evaluation/formal-validation-plan.md) defines the coverage contract. The native OntoUML exchange now has schema, SDK and source-fidelity checks with explicit generalization-set decisions. Complete semantic verification, OWL mapping, HermiT/SHACL execution and independent semantic adequacy review remain open.

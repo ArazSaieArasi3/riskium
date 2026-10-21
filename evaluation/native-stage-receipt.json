@@ -1,0 +1,75 @@
+{
+  "stage": "Native OntoUML exchange and bounded design review",
+  "source_base_commit": "f86820d48436259b6786e3127104e81d8773a3a5",
+  "recorded_at_utc": "2026-10-21T17:17:51.236678+00:00",
+  "source_model_changed": false,
+  "checks": [
+    {
+      "command": "python3 tools/build_native.py --check",
+      "exit_code": 0,
+      "result": "Generated exchange matches current source and reviewed generator."
+    },
+    {
+      "command": "python3 tools/validate_native.py --schema /tmp/riskium-ontouml-schema.json --write",
+      "exit_code": 0,
+      "result": "Official schema and source-fidelity checks passed with date/date-time/URI checks enabled."
+    },
+    {
+      "command": "node tools/check_native_roundtrip.cjs <ontouml-js-1.0.0> --write",
+      "exit_code": 0,
+      "result": "585 elements and checked invariants survived direct SDK roundtrip."
+    },
+    {
+      "command": "node tools/check_native_sdk.cjs <ontouml-js-0.4.1> --write",
+      "exit_code": 0,
+      "result": "68 legacy-only missing-isExtensional errors retained; command success is not model conformance."
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "result": "32 engineering regression tests passed: 9 structural, 12 coverage-design and 11 native-fidelity checks."
+    }
+  ],
+  "schema_mutation_probes": [
+    {
+      "mutation": "invalid creation date",
+      "detected": true
+    },
+    {
+      "mutation": "missing project root",
+      "detected": true
+    },
+    {
+      "mutation": "invalid landing-page URI",
+      "detected": true
+    }
+  ],
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "jsonschema": "4.25.1",
+    "node": "v24.19.0"
+  },
+  "artifact_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/native/riskium.ontouml.json": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+    "tools/build_native.py": "9fc76f243bc5b560f00e9444467d1e99c1183042018926dc4942f2f616727d88",
+    "tools/validate_native.py": "484ff53033921c521f29c86ec24fadac2c0595454e8b3d0095ac4c99c4cab2eb",
+    "tools/check_native_roundtrip.cjs": "1a23ffb51294804c3d66b169b863e330139aec25a09e0b4e5ba0fa4e2b4d3608",
+    "tools/check_native_sdk.cjs": "166af24fbce28dc3a827b48043b075a02438132f0e76bc2c311749875e407ccd",
+    "tests/test_native_exchange.py": "245e6fee094b7a9f50dc0bf2e1c8ce3775f29af03a96e964139b89702a5f7708",
+    "evaluation/native-review-decisions.json": "38a09df7b9914be79001f94556267d624510957eae16c2e53a8da93afe219211",
+    "evaluation/native-exchange-checks.json": "aad639e138e61b5150a715637bb4c60a077edbfb7101b105c689b0ae35d57e0c",
+    "evaluation/native-roundtrip-checks.json": "1310510354b662e296ca1943e773036f2b26ed322dad948e6012a81f2152676e",
+    "evaluation/native-sdk-checks.json": "d61f2e0eca778539c25f2e926df35399f676aace772d37fd8d6e9f6c038c46b1",
+    "tools/requirements-native.txt": "d47c90478088025991b1f5ad8e105831f62b8543f42570bd4de185dd0e305558",
+    "tools/native-sdk/package-lock.json": "df3ddef7218e05acb50b0df754eee11db9ceb5dabd2a63b717d7014387b11a25"
+  },
+  "formal_engines_executed": [],
+  "limitations": [
+    "No GUI editor import or full semantic-language certification was executed.",
+    "The native profile explicitly adds ten generalization-set declarations; no formal logical-equivalence claim is made.",
+    "Current SDK nullable/default metadata normalization is reported and its output is not substituted for the canonical export.",
+    "Legacy SDK findings and unimplemented relation/property/set verification functions are retained as tool limitations.",
+    "Independent adequacy and instance-level formal checks remain open."
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "source_model_version": "0.3.1",
+  "source_model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "review_scope": "Bounded design disposition analysis, not independent expert validation or a complete formal proof.",
+  "source_model_changed": false,
+  "generalization_sets": [
+    {
+      "id": "GS-RKM-C014",
+      "parent": "RKM-C014",
+      "generalizations": [
+        "G-01",
+        "G-02",
+        "G-03",
+        "G-04",
+        "G-05",
+        "G-06",
+        "G-07",
+        "G-08",
+        "G-09",
+        "G-10",
+        "G-11",
+        "G-12",
+        "G-13",
+        "G-14",
+        "G-15",
+        "G-16",
+        "G-17",
+        "G-18",
+        "GX-046",
+        "GX-047",
+        "GX-048",
+        "GX-049",
+        "GX-050",
+        "GX-053",
+        "GX-054",
+        "GX-055",
+        "GX-056",
+        "GX-057",
+        "GX-058",
+        "GX-059",
+        "GX-060",
+        "GX-061",
+        "GX-062",
+        "GX-063",
+        "GX-064",
+        "G2-052",
+        "G2-054",
+        "G3-001"
+      ],
+      "isDisjoint": false,
+      "isComplete": false,
+      "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+      "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+      "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent."
+    },
+    {
+      "id": "GS-RKM-C015",
+      "parent": "RKM-C015",
+      "generalizations": [
+        "G-19",
+        "GX-051"
+      ],
+      "isDisjoint": false,
+      "isComplete": false,
+      "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+      "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+      "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent."
+    },
+    {
+      "id": "GS-RKM-C047",
+      "parent": "RKM-C047",
+      "generalizations": [
+        "G-20",
+        "G-21",
+        "G-22",
+        "G-23"
+      ],
+      "isDisjoint": false,
+      "isComplete": false,
+      "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+      "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+      "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent."
+    },
+    {
+      "id": "GS-RKM-C048",
+      "parent": "RKM-C048",
+      "generalizations": [
+        "G-24",
+        "G-28"
+      ],
+      "isDisjoint": false,
+      "isComplete": false,
+      "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+      "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+      "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent."
+    },
+    {
+      "id": "GS-RKM-C053",
+      "parent": "RKM-C053",
+      "generalizations": [
+        "G-25",
+        "G-27"
+      ],
+      "isDisjoint": true,
+      "isComplete": false,
+      "rationale": "The current person and organization role specializations inherit distinct human/social-entity identity; other bearer kinds are not ruled out.",
+      "example": "A human and an organization are separate role bearers.",
+      "counterexample": "The same individual cannot be both the human bearer and the organization bearer under these definitions."
+    },
+    {
+      "id": "GS-RKM-C049",
+      "parent": "RKM-C049",
+      "generalizations": [
+        "G-26",
+        "G-30"
+      ],
+      "isDisjoint": false,
+      "isComplete": false,
+      "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+      "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+      "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent."
+    },
+    {
+      "id": "GS-RKM-C054",
+      "parent": "RKM-C054",
+      "generalizations": [
+        "G-29",
+        "G-31"
+      ],
+      "isDisjoint": true,
+      "isComplete": false,
+      "rationale": "The current person and organization role specializations inherit distinct human/social-entity identity; other bearer kinds are not ruled out.",
+      "example": "A human and an organization are separate role bearers.",
+      "counterexample": "The same individual cannot be both the human bearer and the organization bearer under these definitions."
+    },
+    {
+      "id": "GS-RKM-C019",
+      "parent": "RKM-C019",
+      "generalizations": [
+        "G2-050",
+        "G2-055",
+        "G2-056",
+        "G2-057",
+        "G2-060",
+        "G2-061",
+        "G2-062",
+        "G2-063",
+        "G2-064",
+        "G2-065"
+      ],
+      "isDisjoint": false,
+      "isComplete": false,
+      "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+      "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+      "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent."
+    },
+    {
+      "id": "GS-RKM-C017",
+      "parent": "RKM-C017",
+      "generalizations": [
+        "G2-053",
+        "G2-058",
+        "G2-059"
+      ],
+      "isDisjoint": false,
+      "isComplete": false,
+      "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+      "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+      "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent."
+    },
+    {
+      "id": "GS-AgentKinds",
+      "parent": "RKM-C047",
+      "generalizations": [
+        "G-20",
+        "G-21"
+      ],
+      "isDisjoint": true,
+      "isComplete": false,
+      "rationale": "Person is defined as a human individual; Organization is an organized social entity. The current model does not close Agent to these two kinds.",
+      "example": "A person and an employing organization are different agents.",
+      "counterexample": "An organization must not be merged with a human representative; an unmodeled agent kind is not excluded by a covering axiom."
+    }
+  ],
+  "dispositions": [
+    {
+      "topic": "Case and documentary identity",
+      "source_ids": [
+        "RKM-X01",
+        "RKM-C022",
+        "RKM-C003",
+        "RKM-C037"
+      ],
+      "disposition": "Retain the case kind and separate document, scenario and result identities. Labels and scores supply no equality rule.",
+      "example": "Two entries and two scenarios may concern the same case.",
+      "counterexample": "Do not merge cases merely because labels or scores match.",
+      "remaining_evidence": "OWL non-entailment and query evidence remain pending."
+    },
+    {
+      "topic": "Abstract content and abstract classifiers",
+      "source_ids": [
+        "RKM-C016"
+      ],
+      "disposition": "Retain the abstract stereotype for non-spatiotemporal information content, independently of isAbstract=false.",
+      "example": "InformationContent may classify concrete informational meanings under the current design.",
+      "counterexample": "Do not replace the abstract stereotype with a UML abstract-class flag.",
+      "remaining_evidence": "Content equivalence still requires an explicit interpretation policy."
+    },
+    {
+      "topic": "Responsibility roles and dependence",
+      "source_ids": [
+        "RKM-C053",
+        "RKM-C054",
+        "RKM-C055",
+        "RKM-C056",
+        "RKM-C057",
+        "RKM-C058",
+        "R-56",
+        "R-57"
+      ],
+      "disposition": "Retain role and roleMixin classifications; their mediation targets inherit through the role hierarchy. Responsible and authorizing classifications may overlap across mandates.",
+      "example": "One human may be responsible in one mandate and authorizing in another.",
+      "counterexample": "Do not impose global disjointness between the responsible and authorizing role classes.",
+      "remaining_evidence": "Each actual mandate still requires distinct mediated participants; instance-level checks belong to the formal profiles."
+    },
+    {
+      "topic": "Mandate identity and grounding",
+      "source_ids": [
+        "RKM-C051",
+        "RKM-C052",
+        "C-06",
+        "C-22"
+      ],
+      "disposition": "Retain recorded assignment information without inferring a real relator; use grounding, scope and validity in mandate identity, not the actor pair alone.",
+      "example": "The same actors may participate in separate renewed mandates.",
+      "counterexample": "Do not fabricate a second actor to satisfy participant distinctness or merge renewed mandates by actor equality.",
+      "remaining_evidence": "Identity resolution and participant distinctness require explicit fixtures in later formal/application checks."
+    },
+    {
+      "topic": "Evidence role and evidential adequacy",
+      "source_ids": [
+        "RKM-C065",
+        "RKM-C066",
+        "RX-021",
+        "C-12"
+      ],
+      "disposition": "Retain EvidenceItem as a contextual role of InformationArtifact; the mandatory incoming pointsToEvidence relation records the evidential-use context.",
+      "example": "The same artifact is evidence for one claim without becoming evidence for every claim.",
+      "counterexample": "A source link must not become an endorsement or proof of its target.",
+      "remaining_evidence": "The ordinary use relation does not provide a complete formal theory of evidential truthmaking; adequacy is reviewed independently."
+    },
+    {
+      "topic": "Vulnerability and external bearer",
+      "source_ids": [
+        "RKM-C011",
+        "EXT-OBJECT",
+        "RK3-004",
+        "C-15"
+      ],
+      "disposition": "Retain intrinsic-mode typing and exactly one bearer at the source end of bearsVulnerability. Keep the external object category as a modeling anchor, not a claim of resolved OWL import.",
+      "example": "An asserted vulnerability inheres in one externally identified substantial object.",
+      "counterexample": "A description alone must not create an actual vulnerability, and zero or two bearers must not satisfy managed admission.",
+      "remaining_evidence": "The exact foundational OWL anchor/import is selected during mapping."
+    },
+    {
+      "topic": "Broad documentary relation endpoints",
+      "source_ids": [
+        "RX-006",
+        "RX-007",
+        "RX-014",
+        "RX-015",
+        "RX-016",
+        "RX-013",
+        "C-25"
+      ],
+      "disposition": "Preserve broad artifact/version endpoints; specialized reference coherence is a separate interpretation constraint.",
+      "example": "usesMethodVersion points to an ArtifactVersion whose versionOf is a method specification.",
+      "counterexample": "Do not narrow every ArtifactVersion globally to one document subtype or replace a version with its artifact.",
+      "remaining_evidence": "Qualified OWL restrictions and explicit graph joins require reviewed encodings."
+    },
+    {
+      "topic": "Optional heterogeneous boundaries",
+      "source_ids": [
+        "RKM-C007",
+        "RKM-C010",
+        "RKM-C045",
+        "C-14"
+      ],
+      "disposition": "Retain all three catalog notions and all seven bridges as notes outside the native typed classes/relations.",
+      "example": "A RiskSourceReference can exist without an asserted actual source.",
+      "counterexample": "Do not promote a heterogeneous catalog notion to a typed core class merely for export completeness.",
+      "remaining_evidence": "External ontology ownership and import decisions remain separate future work."
+    },
+    {
+      "topic": "Actual events and scenario content",
+      "source_ids": [
+        "RKM-C004",
+        "RKM-C009",
+        "G2-051",
+        "R-25",
+        "RK2-005",
+        "C-02"
+      ],
+      "disposition": "Retain Trigger as a specialization of actual RiskOccurrence; hypothetical trigger descriptions remain informational content.",
+      "example": "An evidenced actual trigger is an occurrence; a hypothetical scenario is not an occurrence assertion.",
+      "counterexample": "Do not infer an actual event from a scenario specification or from a mayBeRealizedBy vocabulary label.",
+      "remaining_evidence": "Causal temporal constraints and realization entailments need formal fixtures."
+    },
+    {
+      "topic": "Generalization-set policy",
+      "source_ids": [
+        "G-01",
+        "G-02",
+        "G-03",
+        "G-04",
+        "G-05",
+        "G-06",
+        "G-07",
+        "G-08",
+        "G-09",
+        "G-10",
+        "G-11",
+        "G-12",
+        "G-13",
+        "G-14",
+        "G-15",
+        "G-16",
+        "G-17",
+        "G-18",
+        "G-19",
+        "G-20",
+        "G-21",
+        "G-22",
+        "G-23",
+        "G-24",
+        "G-25",
+        "G-26",
+        "G-27",
+        "G-28",
+        "G-29",
+        "G-30",
+        "G-31",
+        "GX-046",
+        "GX-047",
+        "GX-048",
+        "GX-049",
+        "GX-050",
+        "GX-051",
+        "GX-053",
+        "GX-054",
+        "GX-055",
+        "GX-056",
+        "GX-057",
+        "GX-058",
+        "GX-059",
+        "GX-060",
+        "GX-061",
+        "GX-062",
+        "GX-063",
+        "GX-064",
+        "G2-050",
+        "G2-051",
+        "G2-052",
+        "G2-053",
+        "G2-054",
+        "G2-055",
+        "G2-056",
+        "G2-057",
+        "G2-058",
+        "G2-059",
+        "G2-060",
+        "G2-061",
+        "G2-062",
+        "G2-063",
+        "G2-064",
+        "G2-065",
+        "G3-001"
+      ],
+      "disposition": "Declare ten reviewed groups. All are incomplete; only person/organization identity-based subsets are declared disjoint. Other groups impose neither blanket disjointness nor covering.",
+      "example": "A person can play different roles, while a human representative and an organization remain distinct agents.",
+      "counterexample": "Do not treat an absent child classification as a contradiction or infer that all sibling pairs can overlap.",
+      "remaining_evidence": "The false disjoint flag means no blanket exclusion is asserted; it does not assert that every pair overlaps."
+    }
+  ]
+}

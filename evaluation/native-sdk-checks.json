@@ -1,0 +1,504 @@
+{
+  "engine": "ontouml-js",
+  "version": "0.4.1",
+  "node": "v24.19.0",
+  "source_native_sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+  "input_method": "Reconstructed SDK objects from schema-1.0.2 typed classes, relations, generalizations and sets; not direct schema-1.0.2 import.",
+  "runtime_adjustment": "networkInterfaces returns an empty object for generated-ID initialization; all model IDs are explicit; verifier rules unchanged.",
+  "status": "FINDINGS_RETAINED",
+  "class_count": 78,
+  "generalization_count": 66,
+  "findings_by_code": {
+    "class_missing_is_extensional": 68
+  },
+  "findings": [
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C001",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C001 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C002",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C002 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C003",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C003 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C005",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C005 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C006",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C006 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C011",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C011 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C014",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C014 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C015",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C015 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C017",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C017 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C018",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C018 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C019",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C019 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C020",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C020 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C021",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C021 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C022",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C022 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C023",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C023 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C024",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C024 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C025",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C025 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C026",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C026 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C027",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C027 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C028",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C028 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C029",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C029 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C030",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C030 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C032",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C032 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C033",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C033 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C034",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C034 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C035",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C035 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C036",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C036 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C037",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C037 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C038",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C038 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C039",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C039 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C040",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C040 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C041",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C041 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C042",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C042 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C043",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C043 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C046",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C046 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C047",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C047 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C048",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C048 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C049",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C049 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C050",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C050 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C051",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C051 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C052",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C052 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C053",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C053 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C054",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C054 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C055",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C055 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C056",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C056 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C057",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C057 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C058",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C058 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C059",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C059 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C060",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C060 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C061",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C061 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C062",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C062 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C063",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C063 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C065",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C065 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C066",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C066 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C068",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C068 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C069",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C069 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C070",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C070 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C071",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C071 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C072",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C072 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C073",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C073 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-C074",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-C074 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-X01",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-X01 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-X02",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-X02 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-X03",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-X03 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-X04",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-X04 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-X05",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-X05 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "RKM-X06",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class RKM-X06 must be assigned"
+    },
+    {
+      "code": "class_missing_is_extensional",
+      "severity": "error",
+      "source": "EXT-OBJECT",
+      "title": "The meta-property 'isExtensional' is not assigned",
+      "description": "The meta-property 'isExtensional' of «collective» class EXT-OBJECT must be assigned"
+    }
+  ],
+  "verifier_file_sha256": {
+    "class_verification.js": "a251b96678f3ec0a3215bb3162dae25544dea27074bb0e2717afcc53aed760df",
+    "generalization_verification.js": "ed4c218602d58f1d4581dc5439ffbc6835c504a08a85130eb10e24a034f1d4a1",
+    "relation_verification.js": "65d7b4e81afe61d89983dafafdb85ab1effb137781cc4a3bc8813714ce8639c0",
+    "property_verification.js": "d02ab3f69353182bd95acd88ea7104b8ae5e4a5fd59162d7e7f0862f6debc917",
+    "generalization_set_verification.js": "c5e659f0e0518be22ada35b7bc7d192221ccfb5e2a6950f5ebcc34bf4678cbf0"
+  },
+  "limitations": [
+    "Relation, property and generalization-set verification functions in this SDK version contain no implemented rules.",
+    "Legacy-only isExtensional was left unknown. Missing-field findings are compatibility findings, not silently resolved domain decisions.",
+    "No GUI import, full semantic certification, HermiT or SHACL execution is established."
+  ]
+}

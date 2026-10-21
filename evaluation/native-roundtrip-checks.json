@@ -1,0 +1,25 @@
+{
+  "engine": "ontouml-js",
+  "version": "1.0.0",
+  "node": "v24.19.0",
+  "source_native_sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+  "status": "passed",
+  "errors": [],
+  "checked_elements": 585,
+  "method": "Direct official SDK parse, serialize and invariant comparison.",
+  "field_normalizations": {
+    "created": 585,
+    "customProperties": 91,
+    "isDerived": 459,
+    "isPowertype": 78,
+    "isOrdered": 254,
+    "isReadOnly": 254,
+    "isAbstract": 127
+  },
+  "normalization_disposition": "SDK normalizes date representation, empty metadata and nullable defaults. The normalized output is not adopted as the canonical export; known source fields and declared set policy must remain equal.",
+  "runtime_adjustment": "networkInterfaces returns an empty object for generated-ID seeding; verification/serialization rules are unchanged.",
+  "limitations": [
+    "Not a GUI/editor import test or complete semantic verification.",
+    "HermiT and SHACL remain unexecuted."
+  ]
+}
