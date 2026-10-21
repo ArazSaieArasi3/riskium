@@ -1871,6 +1871,9 @@ risk:RX-032 a owl:ObjectProperty ;
 
 risk:RKM-C062 rdfs:subClassOf [ a owl:Restriction ; owl:onProperty risk:RX-032 ; owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass risk:RKM-C064 ] .
 
+risk:R-35 rdfs:subPropertyOf risk:RX-001 . # C-23
+risk:R-33 rdfs:subPropertyOf risk:RX-006 . # C-24
+
 [] a owl:AllDisjointClasses ; owl:members ( risk:RKM-C048 risk:RKM-C049 ) .
 [] a owl:AllDisjointClasses ; owl:members ( risk:RKM-C055 risk:RKM-C056 ) .
 [] a owl:AllDisjointClasses ; owl:members ( risk:RKM-C057 risk:RKM-C058 ) .

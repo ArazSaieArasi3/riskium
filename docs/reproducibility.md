@@ -33,4 +33,12 @@ The coverage review verifies source allocation, planned constraint routes and ex
 
 The optional [native-exchange checks](../evaluation/native-model-review.md) use a pinned schema, Python validation environment and official SDK versions. Their dependency installation and reproduction commands are documented separately; the standard-library checks above remain available without those dependencies.
 
-The HermiT and SHACL suites are not implemented in this snapshot. Their dependency versions and clean-environment reproduction commands will be recorded when the formal tests and fixtures exist.
+The [HermiT execution report](../evaluation/hermit/report.md) and exact [premise](../evaluation/hermit/premise.rdf) record the scoped reasoner run. To rerun the mapped ontology and regenerate the JSON and Markdown evidence:
+
+```sh
+python3 -m venv .venv-hermit
+.venv-hermit/bin/pip install -r tools/requirements-hermit.txt
+.venv-hermit/bin/python tools/run_hermit.py
+```
+
+The installed Owlready2 package supplies the pinned HermiT jar; the jar itself is not copied into this repository. The script verifies its version and records its SHA-256 digest. Its baseline percentage uses the 295 predeclared HermiT-related obligations; supplemental inference and mutation cases have their own counts. SHACL profiles and explicit-data fixtures remain open in issue #5.

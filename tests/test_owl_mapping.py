@@ -27,7 +27,8 @@ class OwlMappingRegression(unittest.TestCase):
         self.assertEqual(self.receipt, json.loads(build_owl.RECEIPT.read_text()))
         self.assertEqual({"typed_classes": 77, "local_anchor_proxy": 1,
                           "generalizations": 66, "typed_object_properties": 127,
-                          "cardinality_restrictions": 88, "reviewed_generalization_sets": 10,
+                          "cardinality_restrictions": 88, "reviewed_property_inclusions": 2,
+                          "reviewed_generalization_sets": 10,
                           "disjoint_sets": 3, "optional_boundaries_as_classes": 0},
                          self.receipt["coverage"])
         self.assertEqual(len(set(self.graph.subjects(RDF.type, OWL.Class))), 78)
@@ -68,6 +69,11 @@ class OwlMappingRegression(unittest.TestCase):
         for c in self.model["concepts"]:
             if c["scope_layer"] == "OPTIONAL_PHENOMENON_BOUNDARY":
                 self.assertNotIn((self.risk[c["id"]], RDF.type, OWL.Class), self.graph)
+
+    def test_only_source_backed_property_inclusions(self):
+        expected = {(self.risk["R-35"], RDFS.subPropertyOf, self.risk["RX-001"]),
+                    (self.risk["R-33"], RDFS.subPropertyOf, self.risk["RX-006"])}
+        self.assertEqual(set(self.graph.triples((None, RDFS.subPropertyOf, None))), expected)
 
     def test_native_end_mutation_is_rejected(self):
         native = json.loads(build_owl.NATIVE.read_text())

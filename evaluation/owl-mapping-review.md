@@ -13,6 +13,7 @@ The logical ontology IRI is `https://github.com/ArazSaieArasi3/riskium/ontologie
 | 77 typed local classes, one external anchor | 78 named classes, source ID and OntoUML stereotype annotations | The anchor is a local proxy. `isAbstract` and stereotypes are annotations, not OWL abstract-class semantics. Three optional boundary notions and seven bridges are excluded. |
 | 66 directed generalizations | `rdfs:subClassOf` | No equivalence or exhaustive specialization is inferred. |
 | 127 typed binary associations | Unique ID-based object properties with declared domain and range; predicate text is a label | Domain/range infer types from assertions. Reading direction is source to target, independent of diagram navigability. No mediation or characterization axiom is invented from the stereotype alone. |
+| Two source-backed relation inclusions | `R-35 analyzedInContext` is a subproperty of `RX-001 hasContext` (C-23); `R-33 revisionOf` is a subproperty of `RX-006 versionOf` (C-24) | Both directions and endpoint signatures are checked; the reverse inclusions and global property equivalences are not asserted. |
 | Multiplicities on ordered relation ends | Qualified class restrictions for each nontrivial end; target end on source class, source end through inverse property on target class | Applies to admitted instances of typed classes in the managed profile. An OWL reasoner may satisfy a missing required value with an anonymous individual or equate two named values to satisfy an upper bound. Explicit-data completeness and distinctness require SHACL or other separately reviewed evidence. |
 | Ten reviewed generalization sets | Three declared disjoint sets become `owl:AllDisjointClasses`; seven remain without blanket disjointness | All ten are incomplete. No `unionOf` covering or global sibling disjointness is added. Non-disjoint does not assert actual overlap. |
 | Identity and dependence rationale | Source annotations and explicit class/relation restrictions only | No `owl:hasKey`, unique-name assumption, global class equivalence, relator existence rule or automated identity merge. |
@@ -47,8 +48,8 @@ The table accounts for every one of the 25 interpretation constraints. “Partia
 | C-20 | Risk Item contextual synonym retained in requirements, no OWL equivalence | Context-sensitive terminology needs human review. |
 | C-21 | Score/result properties retain local bounds, no universal derivedFrom minimum | Conditional reported-versus-computed dependency and arithmetic need data rules. |
 | C-22 | No keys based solely on mediated participant pairs | Mandate identity and duplicate adjudication depend on assignment, scope and validity. |
-| C-23 | Both context relations are exported independently | Same-pair `analyzedInContext` implication to `hasContext` is reserved for a reviewed rule/axiom; no unsupported global subproperty claim is made here. |
-| C-24 | Revision relations and local end bounds | Join coherence, irreflexivity, acyclicity and ordering need reviewed data rules; no OWL acyclicity claim. |
+| C-23 | The source-backed `analyzedInContext` to `hasContext` subproperty axiom is encoded | Reverse implication is absent; same-pair implication needs a reasoner test. |
+| C-24 | The source-backed `revisionOf` to `versionOf` subproperty axiom is encoded | Target coherence follows only for this relationship; irreflexivity, acyclicity and ordering still need reviewed data rules. |
 | C-25 | Version-target properties and ranges | Coherence between a version and its corresponding artifact kind is a version join, requiring separate validation. |
 
 ## Review and remaining gates
