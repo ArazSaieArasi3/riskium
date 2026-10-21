@@ -4,7 +4,7 @@ The remaining work is organized by outcome. Migration established a public conce
 
 | Work item | State |
 | --- | --- |
-| [Define the formal validation coverage contract](https://github.com/ArazSaieArasi3/riskium/issues/1) | Open |
+| [Define the formal validation coverage contract](https://github.com/ArazSaieArasi3/riskium/issues/1) | Coverage design complete; [contract](../evaluation/coverage-contract.md) and [row review](../evaluation/coverage-review.json) recorded |
 | [Validate the native conceptual model and resolve semantic candidates](https://github.com/ArazSaieArasi3/riskium/issues/2) | Open |
 | [Implement and review the OWL mapping](https://github.com/ArazSaieArasi3/riskium/issues/3) | Open |
 | [Implement the HermiT consistency and inference suite](https://github.com/ArazSaieArasi3/riskium/issues/4) | Open |
@@ -23,7 +23,7 @@ The remaining work is organized by outcome. Migration established a public conce
 
 ## Recommended sequence
 
-Review the formal coverage contract and native conceptual model first. Complete the OWL mapping before executing HermiT. Develop SHACL admission profiles with explicit-data fixtures, and reconcile requirements and query evidence alongside both suites.
+The coverage-design stage is complete. Review and validate the native conceptual model next, then complete the OWL mapping before executing HermiT. Develop SHACL admission profiles with explicit-data fixtures, and reconcile requirements and query evidence alongside both suites. Reference-corpus work can proceed alongside semantic review.
 
 The curated Wiki can be initialized from its prepared source now. The generated reference can be deployed separately; an ontology explorer depends on a justified formal export. Public rendering must be verified after publication.
 

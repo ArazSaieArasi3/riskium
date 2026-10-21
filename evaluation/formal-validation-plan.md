@@ -1,5 +1,7 @@
 # Formal validation plan
 
+The [coverage contract](coverage-contract.md) is the current design baseline. Its JSON register owns constraint routes and execution acceptance; the generated row review owns source allocation. The following sections explain the intended formal work.
+
 ## What comprehensive coverage means
 
 Coverage is defined from the model and declared claims, not from an arbitrary test count. The starting inventory includes every typed class, generalization, typed relation, endpoint obligation, interpretation constraint, current requirement and selected competency question. Cross-domain combinations and inference boundaries extend that inventory.

@@ -1,0 +1,39 @@
+{
+  "stage": "Formal validation coverage design",
+  "source_base_commit": "5dcd74b838d9986a480df2d2460c6bd4b7f65afd",
+  "recorded_at_utc": "2026-10-21T16:55:24.621868+00:00",
+  "source_model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "checks": [
+    {
+      "command": "python3 tools/review_coverage.py --write",
+      "exit_code": 0,
+      "observed": "674 baseline rows allocated to exact source elements; 25 constraint routes; 10 supplementary families."
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "observed": "21 regression tests passed: 12 coverage-design checks and 9 structural checks."
+    },
+    {
+      "command": "python3 tools/validate_model.py",
+      "exit_code": 0,
+      "observed": "Bounded structural checks passed."
+    }
+  ],
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "artifact_sha256": {
+    "tools/review_coverage.py": "c706a53399fb154473214178ac33da5dae19b18b83f407dddcc451415481a734",
+    "tests/test_coverage_review.py": "447df7acdd90c8a5410c9a43787d3468529222b3bece3a3a76a6cd39cb6c7fcb",
+    "tools/validate_model.py": "8022bbf6feb81bf50021ed8a39e49fb9636683375bbae4687b1d9c6ec387b6e0",
+    "tests/test_validation.py": "accaa85ac3b49a2dabf65eb171240231c5ad250c83dc03ccfa94507b2157bce3",
+    "evaluation/coverage-contract.json": "65bf3818543ccbadd2bd94ac9fb8fc42586dbb3e71eedced1797224afbd2f080",
+    "evaluation/coverage-review.json": "4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5",
+    "requirements/test-obligations.csv": "82166127021675729734967ba29d5a10c62d9cf45edf3419ecec478a7b94cd79"
+  },
+  "formal_engines_executed": [],
+  "limitations": [
+    "This is coverage-design and engineering evidence, not HermiT, SHACL, native OntoUML or independent domain validation.",
+    "Encoding routes are planned; native-model decisions, OWL mapping, scalar profiles and executable fixtures remain open.",
+    "The 674-row baseline is not a claim of exhaustive or executed test coverage."
+  ]
+}
