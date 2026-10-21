@@ -1,0 +1,39 @@
+{
+  "status": "planned; formal suites not implemented",
+  "source_model_version": "0.3.1",
+  "obligations": 674,
+  "counts_by_engine": {
+    "HermiT": 295,
+    "SHACL": 359,
+    "Combined": 20
+  },
+  "coverage_denominators": {
+    "typed_classes": 77,
+    "declared_generalizations": 66,
+    "typed_associations": 127,
+    "managed_endpoint_obligations": 254,
+    "catalog_concepts": 80,
+    "interpretation_constraints": 25,
+    "requirements": 12,
+    "competency_questions": 8
+  },
+  "additional_required_families": [
+    "ontology consistency and import closure",
+    "intended and unintended entailments",
+    "identity and overlap/disjointness decisions",
+    "generalization-set completeness",
+    "relator dependence and participant distinctness",
+    "version identity and immutable issued content",
+    "temporal interval boundaries and missing time",
+    "reported versus computed score",
+    "unit, scale and dimension compatibility",
+    "source-qualified policy meanings",
+    "unknown, conflicting and incomplete data",
+    "malformed datatype and lexical values",
+    "blank nodes, cycles and duplicate identifiers",
+    "cross-domain combinations",
+    "countermodels and regression mutations",
+    "deterministic clean-environment rerun"
+  ],
+  "rule": "No aggregate green score may hide an unencoded constraint or an unexecuted test. These rows are obligations to implement, not executed test cases."
+}

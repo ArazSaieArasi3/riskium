@@ -1,0 +1,161 @@
+[
+  {
+    "id": "RKRS-01",
+    "title": "Content scope",
+    "priority": "MUST",
+    "requirement": "Represent risk content, context and evidence without prescribing a management process.",
+    "acceptance_criterion": "Map information without inferring process compliance.",
+    "negative_acceptance_criterion": "Inferring a complete process or certification from stored content.",
+    "constraint_ids": [
+      "C-01",
+      "C-02"
+    ],
+    "status": "Design requirement; formal and independent adequacy assessment pending"
+  },
+  {
+    "id": "RKRS-02",
+    "title": "Case continuity",
+    "priority": "MUST",
+    "requirement": "Keep a case distinct from register entries, scenarios, scores and occurrences.",
+    "acceptance_criterion": "Two entries and two scenarios can concern one case without identity collapse.",
+    "negative_acceptance_criterion": "Merging cases solely because labels or scores match.",
+    "constraint_ids": [
+      "C-01",
+      "C-20"
+    ],
+    "status": "Design requirement; formal and independent adequacy assessment pending"
+  },
+  {
+    "id": "RKRS-03",
+    "title": "Document identity and history",
+    "priority": "MUST",
+    "requirement": "Separate artifact, issued version and expressed content; preserve issued payloads.",
+    "acceptance_criterion": "Retrieve a superseded issued version without overwriting it.",
+    "negative_acceptance_criterion": "Historical retrieval silently reads current mutable values.",
+    "constraint_ids": [
+      "C-03",
+      "C-24",
+      "C-25"
+    ],
+    "status": "Design requirement; formal and independent adequacy assessment pending"
+  },
+  {
+    "id": "RKRS-04",
+    "title": "Assessment context",
+    "priority": "MUST",
+    "requirement": "Retain method, scale, dimension, basis, context and time with results.",
+    "acceptance_criterion": "Equal scores on incompatible versions remain distinguishable.",
+    "negative_acceptance_criterion": "Treating missing context as zero or equal values as comparability.",
+    "constraint_ids": [
+      "C-04",
+      "C-13",
+      "C-18"
+    ],
+    "status": "Design requirement; formal and independent adequacy assessment pending"
+  },
+  {
+    "id": "RKRS-05",
+    "title": "Reported and computed scores",
+    "priority": "MUST",
+    "requirement": "Distinguish supplied scores from calculations with justified pinned inputs.",
+    "acceptance_criterion": "Retain an unverified reported score; reject a claimed computation with missing required inputs.",
+    "negative_acceptance_criterion": "Presenting supplied arithmetic as a verified calculation.",
+    "constraint_ids": [
+      "C-21"
+    ],
+    "status": "Design requirement; formal and independent adequacy assessment pending"
+  },
+  {
+    "id": "RKRS-06",
+    "title": "Source-qualified assertions",
+    "priority": "MUST",
+    "requirement": "Preserve source content, locator, interpretation origin, corrections and conflicting assertions.",
+    "acceptance_criterion": "A proposed mapping preserves its source assertion and does not create an occurrence.",
+    "negative_acceptance_criterion": "Overwriting evidence or treating a correction as independent corroboration.",
+    "constraint_ids": [
+      "C-02",
+      "C-12",
+      "C-17"
+    ],
+    "status": "Design requirement; formal and independent adequacy assessment pending"
+  },
+  {
+    "id": "RKRS-07",
+    "title": "Evidence-qualified responsibility",
+    "priority": "MUST",
+    "requirement": "Keep assignment information separate from an asserted mandate; ground actual relators with distinct participants.",
+    "acceptance_criterion": "Retain an assignment record without fabricating an actor or actual mandate.",
+    "negative_acceptance_criterion": "Inferring Risk Owner or a second actor from documentation alone.",
+    "constraint_ids": [
+      "C-06",
+      "C-07",
+      "C-22"
+    ],
+    "status": "Design requirement; formal and independent adequacy assessment pending"
+  },
+  {
+    "id": "RKRS-08",
+    "title": "Time and workflow",
+    "priority": "MUST",
+    "requirement": "Separate recorded, reference and validity time and scheme-qualified workflow interpretation.",
+    "acceptance_criterion": "A closed entry does not establish cessation; an absent rule stays unknown.",
+    "negative_acceptance_criterion": "Inferring treatment effectiveness or cessation from a state label.",
+    "constraint_ids": [
+      "C-05",
+      "C-19"
+    ],
+    "status": "Design requirement; formal and independent adequacy assessment pending"
+  },
+  {
+    "id": "RKRS-09",
+    "title": "External boundaries and modes",
+    "priority": "MUST",
+    "requirement": "Keep heterogeneous referents optional; vulnerability requires one justified object bearer.",
+    "acceptance_criterion": "The typed projection excludes untyped boundary notions and preserves bearer dependence.",
+    "negative_acceptance_criterion": "Treating a description as an actual vulnerability or an untyped boundary as a typed core class.",
+    "constraint_ids": [
+      "C-14",
+      "C-15"
+    ],
+    "status": "Design requirement; formal and independent adequacy assessment pending"
+  },
+  {
+    "id": "RKRS-10",
+    "title": "Policies and thresholds",
+    "priority": "MUST",
+    "requirement": "Preserve source-qualified appetite/tolerance meanings and a compatible indicator or scale anchor.",
+    "acceptance_criterion": "A scale-only threshold can be represented without inventing an indicator.",
+    "negative_acceptance_criterion": "Collapsing different source meanings or inventing required evidence.",
+    "constraint_ids": [
+      "C-08",
+      "C-10",
+      "C-11"
+    ],
+    "status": "Design requirement; formal and independent adequacy assessment pending"
+  },
+  {
+    "id": "RKRS-11",
+    "title": "Projection and admission",
+    "priority": "MUST",
+    "requirement": "Account for model elements and distinguish raw, managed and task-ready data.",
+    "acceptance_criterion": "An incomplete record remains available without a false readiness declaration.",
+    "negative_acceptance_criterion": "Confusing data completeness, mapping allocation and semantic adequacy.",
+    "constraint_ids": [
+      "C-16",
+      "C-23",
+      "C-24",
+      "C-25"
+    ],
+    "status": "Design requirement; formal and independent adequacy assessment pending"
+  },
+  {
+    "id": "RKRS-12",
+    "title": "Quality evidence and reuse",
+    "priority": "SHOULD",
+    "requirement": "Bind claims to the exact model, evidence population, method and limits.",
+    "acceptance_criterion": "Every published result identifies its input version and scope.",
+    "negative_acceptance_criterion": "Inheriting a result from a different version or treating counts as semantic validity.",
+    "constraint_ids": [],
+    "status": "Design requirement; formal and independent adequacy assessment pending"
+  }
+]

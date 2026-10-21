@@ -1,0 +1,74 @@
+[
+  {
+    "id": "RKM-SCOPE-01",
+    "title": "Risk knowledge scope",
+    "requirement": "The ontology shall represent risk-related content and context without prescribing the risk-management process.",
+    "acceptance_criterion": "Given a process description, only relevant information content is mapped; process-compliance claims are absent.",
+    "negative_acceptance_criterion": "A RACI design or complete process lifecycle is inferred as mandatory ontology scope.",
+    "status": "Design obligation; public-export execution pending",
+    "source": "Current conceptual scope decision"
+  },
+  {
+    "id": "RKM-SCOPE-02",
+    "title": "Case continuity",
+    "requirement": "A RiskCase shall remain distinct from records, pattern specifications, scores and actual occurrences.",
+    "acceptance_criterion": "A reassessment links to the same case while preserving separate result identity.",
+    "negative_acceptance_criterion": "Equal text or scores automatically merge cases or create occurrences.",
+    "status": "Design obligation; public-export execution pending",
+    "source": "Current conceptual scope decision"
+  },
+  {
+    "id": "RKM-SCOPE-03",
+    "title": "Source-qualified policy statements",
+    "requirement": "Appetite and tolerance shall be stored as versioned statements with source meaning and context.",
+    "acceptance_criterion": "Permissible-deviation and willingness-to-bear statements remain distinguishable.",
+    "negative_acceptance_criterion": "Equal labels create equivalentClass or exactMatch assertions.",
+    "status": "Design obligation; public-export execution pending",
+    "source": "Current conceptual scope decision"
+  },
+  {
+    "id": "RKM-SCOPE-04",
+    "title": "Boundary-aware standards review",
+    "requirement": "The review shall record edition, inspected portions, semantic difference and access limitations.",
+    "acceptance_criterion": "The report identifies accessible clauses and leaves uninspected scope unassessed.",
+    "negative_acceptance_criterion": "Absence of inspected conflict is reported as full compliance.",
+    "status": "Design obligation; public-export execution pending",
+    "source": "Current conceptual scope decision"
+  },
+  {
+    "id": "RKM-SCOPE-05",
+    "title": "Complete inventory disposition",
+    "requirement": "Every inherited concept, association and generalization shall have a retained, revised or removed disposition.",
+    "acceptance_criterion": "All prior IDs reconcile to the current registers or a reasoned removal ledger.",
+    "negative_acceptance_criterion": "A prior item disappears silently or an unresolved stereotype is fabricated.",
+    "status": "Design obligation; public-export execution pending",
+    "source": "Current conceptual scope decision"
+  },
+  {
+    "id": "RKM-SCOPE-06",
+    "title": "Temporal statement interpretation",
+    "requirement": "Issued information, reference time and administrative state shall remain distinguishable.",
+    "acceptance_criterion": "Closure alone cannot satisfy a test for cessation or treatment effectiveness.",
+    "negative_acceptance_criterion": "A closed entry is interpreted as a ceased risk.",
+    "status": "Design obligation; public-export execution pending",
+    "source": "Current conceptual scope decision"
+  },
+  {
+    "id": "RKM-SCOPE-07",
+    "title": "Threshold interpretation",
+    "requirement": "Thresholds shall declare an indicator or scale anchor and compatible interpretation.",
+    "acceptance_criterion": "Indicator-based and scale-only boundaries can be represented without inventing an indicator.",
+    "negative_acceptance_criterion": "A scale-only threshold is rejected solely because a nonexistent indicator was not fabricated.",
+    "status": "Design obligation; public-export execution pending",
+    "source": "Current conceptual scope decision"
+  },
+  {
+    "id": "RKM-SCOPE-08",
+    "title": "Evidence-qualified responsibility",
+    "requirement": "Recorded assignment information shall be preserved even when a real responsibility relation cannot be grounded.",
+    "acceptance_criterion": "A self-assignment source can be recorded without inventing a second actor.",
+    "negative_acceptance_criterion": "A technical relation creates authority, accountability or a second actor without evidence.",
+    "status": "Design obligation; public-export execution pending",
+    "source": "Current conceptual scope decision"
+  }
+]

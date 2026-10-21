@@ -1,0 +1,66 @@
+[
+  {
+    "id": "RQ-CQ01",
+    "question": "Which entries document the same case?",
+    "expected_result": "Two distinct entries can refer to one case.",
+    "rejection": "Entries become the case or are grouped by equal labels.",
+    "status": "Planned for execution on the public model; no inherited pass",
+    "population": "Synthetic design task"
+  },
+  {
+    "id": "RQ-CQ02",
+    "question": "Which scenarios concern a case?",
+    "expected_result": "Distinct scenario specifications link to the case.",
+    "rejection": "Scenario identity is collapsed into case identity.",
+    "status": "Planned for execution on the public model; no inherited pass",
+    "population": "Synthetic design task"
+  },
+  {
+    "id": "RQ-CQ03",
+    "question": "Can equal scores use different scale versions?",
+    "expected_result": "Both values and their different pinned scales remain retrievable.",
+    "rejection": "Numeric equality alone authorizes comparison.",
+    "status": "Planned for execution on the public model; no inherited pass",
+    "population": "Synthetic design task"
+  },
+  {
+    "id": "RQ-CQ04",
+    "question": "Can assignment information exist without an actual mandate?",
+    "expected_result": "The assignment is retained without an asserted real mandate.",
+    "rejection": "A relator or second actor is invented.",
+    "status": "Planned for execution on the public model; no inherited pass",
+    "population": "Synthetic design task"
+  },
+  {
+    "id": "RQ-CQ05",
+    "question": "Does entry closure establish risk cessation?",
+    "expected_result": "Closure and cessation evidence are independent.",
+    "rejection": "Closure automatically establishes cessation.",
+    "status": "Planned for execution on the public model; no inherited pass",
+    "population": "Synthetic design task"
+  },
+  {
+    "id": "RQ-CQ06",
+    "question": "Can an assertion be traced to its source?",
+    "expected_result": "Its source identity, locator and interpretation origin are recoverable.",
+    "rejection": "Missing or misjoined provenance is presented as source support.",
+    "status": "Planned for execution on the public model; no inherited pass",
+    "population": "Evidence-preservation task; independent data preparation required"
+  },
+  {
+    "id": "RQ-CQ07",
+    "question": "Does correction lineage remain distinguishable?",
+    "expected_result": "A correction is linked to its corrected statement.",
+    "rejection": "The correction is counted as independent corroboration.",
+    "status": "Planned for execution on the public model; no inherited pass",
+    "population": "Evidence-preservation task; independent data preparation required"
+  },
+  {
+    "id": "RQ-CQ08",
+    "question": "Can unsupported case identity remain unasserted?",
+    "expected_result": "A candidate scenario can remain incomplete without a fabricated case.",
+    "rejection": "An identity is invented to satisfy a managed-record constraint.",
+    "status": "Planned for execution on the public model; no inherited pass",
+    "population": "Evidence-preservation task; independent data preparation required"
+  }
+]

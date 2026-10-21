@@ -1,0 +1,38 @@
+{
+  "source_design_version": "0.3.1",
+  "source_model_sha256": "503e6753496be60fb9aaa5592633506823f769070cd8bc9dbba853929473b230",
+  "checks": [
+    {
+      "check": "concepts identifiers preserved",
+      "passed": true
+    },
+    {
+      "check": "concepts protected semantics preserved",
+      "passed": true
+    },
+    {
+      "check": "associations identifiers preserved",
+      "passed": true
+    },
+    {
+      "check": "associations protected semantics preserved",
+      "passed": true
+    },
+    {
+      "check": "generalizations identifiers preserved",
+      "passed": true
+    },
+    {
+      "check": "generalizations protected semantics preserved",
+      "passed": true
+    },
+    {
+      "check": "Domain ownership and all constraint identities preserved; one attribution anonymized",
+      "passed": true
+    }
+  ],
+  "english_rationale_fields_translated": 64,
+  "identity_attribution_edit": "Context-qualified terminology retained without identifying business attribution.",
+  "excluded_material": "Historical acquisition crosswalks and delivery/execution metadata remain outside this public export.",
+  "scope": "Migration integrity only; not native OntoUML validation, OWL reasoning, SHACL execution or independent semantic review."
+}

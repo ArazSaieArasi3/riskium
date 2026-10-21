@@ -1,0 +1,29 @@
+{
+  "model_version": "0.3.1",
+  "authority": "../ontology/riskium-model.json",
+  "views": [
+    {
+      "path": "selected-view.svg",
+      "role": "Selected conceptual view centered on RiskCase; does not cover every model element.",
+      "displayed_inventory": {
+        "concepts": 28,
+        "associations": 31,
+        "generalizations": 10
+      }
+    },
+    {
+      "path": "complete-view.svg",
+      "role": "Complete conceptual overview; zoom is required at full inventory size.",
+      "displayed_inventory": {
+        "catalog_concepts": 80,
+        "imported_anchor": 1,
+        "displayed_boxes": 81,
+        "associations": 134,
+        "generalizations": 66
+      }
+    }
+  ],
+  "notation_status": "Conceptual renderings; native OntoUML editor conformance remains pending.",
+  "source_binding": "Class and relation identity is governed by the model; these views are not a separate semantic source.",
+  "visual_review": "Rendered locally and inspected during migration; dense complete view requires zoom and is not asserted to be a publication-readable single-page figure."
+}

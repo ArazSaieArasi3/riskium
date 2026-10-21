@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "model_version": "0.3.1",
+  "checks": "Bounded structural validation and nine current regression tests",
+  "tests": 9,
+  "limitations": "Not native OntoUML validation, HermiT reasoning, SHACL execution or independent semantic review."
+}
