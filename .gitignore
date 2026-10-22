@@ -6,3 +6,5 @@ node_modules/
 .venv-owl/
 .venv-hermit/
 .venv-shacl/
+# Full admission snapshots are published losslessly as report.json.gz.
+evaluation/shacl/admission/report.json

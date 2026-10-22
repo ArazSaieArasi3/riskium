@@ -1,25 +1,25 @@
 # SHACL module execution coverage
 
-This is the current source-bound execution ledger for conceptual model 0.3.1. It combines the [conditional profile batch](report.md) and [ordered endpoint batch](endpoints/report.md). The [JSON ledger](coverage-status.json) pins their exact digests and each obligation's case references. Both receipts use the same conceptual source and 359-row coverage contract; no historical pass from another model is imported.
+This is the current source-bound execution ledger for conceptual model 0.3.1. It combines the [conditional profile batch](report.md) [ordered endpoint batch](endpoints/report.md) and [catalog metadata admission batch](admission/report.md). The [JSON ledger](coverage-status.json) pins their exact digests and each obligation's case references. All receipts use the same conceptual source and 359-row coverage contract; no historical pass from another model is imported.
 
 | Measure | Result |
 | --- | ---: |
 | Baseline obligations | 359 |
-| PASS within declared module scope | 257 |
+| PASS within declared module scope | 337 |
 | PARTIAL | 1 |
-| NOT_RUN | 101 |
-| PASS coverage | 71.59% |
-| Exercised including partial | 71.87% |
+| NOT_RUN | 21 |
+| PASS coverage | 93.87% |
+| Exercised including partial | 94.15% |
 
 | Family | PASS | PARTIAL | NOT_RUN |
 | --- | ---: | ---: | ---: |
-| Admission and class profile | 0 | 0 | 80 |
+| Admission and class profile | 80 | 0 | 0 |
 | Constraint encoding disposition | 3 | 1 | 21 |
 | Managed-profile endpoint cardinality | 254 | 0 | 0 |
 
-The endpoint batch executes all 254 ordered ends with isolated cardinality controls and paired-end integration for all 127 typed relations. The earlier conditional profiles retain three scoped passes and C-08's partial result. Their fixture populations differ; this ledger reports obligation coverage, not full-profile acceptance of arbitrary records. The 80 catalog-admission rows and 21 other constraint rows are NOT_RUN. Global integration across relations and conditional profiles still needs separate fixtures.
+The endpoint batch executes all 254 ordered ends with isolated cardinality controls and paired-end integration for all 127 typed relations. The earlier conditional profiles retain three scoped passes and C-08's partial result. Their fixture populations differ; this ledger reports obligation coverage, not full-profile acceptance of arbitrary records. All 80 catalog-admission rows now have scoped metadata or boundary-exclusion evidence. The 21 other constraint rows remain NOT_RUN. Global integration across relations and conditional profiles still needs separate fixtures.
 
-The next batch implements catalog admission, then remaining constraint routes and full managed-profile integration. Unit/scale compatibility needs an approved schema. Requirement/CQ outcomes, independent semantic judgments and real-world case adequacy are governed by the [semantic assurance plan](../semantic-assurance-plan.md).
+The next batch implements remaining constraint routes and full managed-profile integration. Catalog admission supports metadata inspection only, not risk-assessment readiness. Unit/scale compatibility needs an approved schema. Requirement/CQ outcomes, independent semantic judgments and real-world case adequacy are governed by the [semantic assurance plan](../semantic-assurance-plan.md).
 
 Reproduce after running the respective suites:
 
@@ -285,86 +285,86 @@ python3 tools/summarize_shacl.py
 | `SHACL-0521` | `RK3-003:target` | PASS | [endpoint receipt](endpoints/report.md) |
 | `SHACL-0523` | `RK3-004:source` | PASS | [endpoint receipt](endpoints/report.md) |
 | `SHACL-0524` | `RK3-004:target` | PASS | [endpoint receipt](endpoints/report.md) |
-| `SHACL-0525` | `RKM-C001` | NOT_RUN | — |
-| `SHACL-0526` | `RKM-C002` | NOT_RUN | — |
-| `SHACL-0527` | `RKM-C003` | NOT_RUN | — |
-| `SHACL-0528` | `RKM-C004` | NOT_RUN | — |
-| `SHACL-0529` | `RKM-C005` | NOT_RUN | — |
-| `SHACL-0530` | `RKM-C006` | NOT_RUN | — |
-| `SHACL-0531` | `RKM-C007` | NOT_RUN | — |
-| `SHACL-0532` | `RKM-C008` | NOT_RUN | — |
-| `SHACL-0533` | `RKM-C009` | NOT_RUN | — |
-| `SHACL-0534` | `RKM-C010` | NOT_RUN | — |
-| `SHACL-0535` | `RKM-C011` | NOT_RUN | — |
-| `SHACL-0536` | `RKM-C012` | NOT_RUN | — |
-| `SHACL-0537` | `RKM-C013` | NOT_RUN | — |
-| `SHACL-0538` | `RKM-C014` | NOT_RUN | — |
-| `SHACL-0539` | `RKM-C015` | NOT_RUN | — |
-| `SHACL-0540` | `RKM-C016` | NOT_RUN | — |
-| `SHACL-0541` | `RKM-C017` | NOT_RUN | — |
-| `SHACL-0542` | `RKM-C018` | NOT_RUN | — |
-| `SHACL-0543` | `RKM-C019` | NOT_RUN | — |
-| `SHACL-0544` | `RKM-C020` | NOT_RUN | — |
-| `SHACL-0545` | `RKM-C021` | NOT_RUN | — |
-| `SHACL-0546` | `RKM-C022` | NOT_RUN | — |
-| `SHACL-0547` | `RKM-C023` | NOT_RUN | — |
-| `SHACL-0548` | `RKM-C024` | NOT_RUN | — |
-| `SHACL-0549` | `RKM-C025` | NOT_RUN | — |
-| `SHACL-0550` | `RKM-C026` | NOT_RUN | — |
-| `SHACL-0551` | `RKM-C027` | NOT_RUN | — |
-| `SHACL-0552` | `RKM-C028` | NOT_RUN | — |
-| `SHACL-0553` | `RKM-C029` | NOT_RUN | — |
-| `SHACL-0554` | `RKM-C030` | NOT_RUN | — |
-| `SHACL-0555` | `RKM-C031` | NOT_RUN | — |
-| `SHACL-0556` | `RKM-C032` | NOT_RUN | — |
-| `SHACL-0557` | `RKM-C033` | NOT_RUN | — |
-| `SHACL-0558` | `RKM-C034` | NOT_RUN | — |
-| `SHACL-0559` | `RKM-C035` | NOT_RUN | — |
-| `SHACL-0560` | `RKM-C036` | NOT_RUN | — |
-| `SHACL-0561` | `RKM-C037` | NOT_RUN | — |
-| `SHACL-0562` | `RKM-C038` | NOT_RUN | — |
-| `SHACL-0563` | `RKM-C039` | NOT_RUN | — |
-| `SHACL-0564` | `RKM-C040` | NOT_RUN | — |
-| `SHACL-0565` | `RKM-C041` | NOT_RUN | — |
-| `SHACL-0566` | `RKM-C042` | NOT_RUN | — |
-| `SHACL-0567` | `RKM-C043` | NOT_RUN | — |
-| `SHACL-0568` | `RKM-C044` | NOT_RUN | — |
-| `SHACL-0569` | `RKM-C045` | NOT_RUN | — |
-| `SHACL-0570` | `RKM-C046` | NOT_RUN | — |
-| `SHACL-0571` | `RKM-C047` | NOT_RUN | — |
-| `SHACL-0572` | `RKM-C048` | NOT_RUN | — |
-| `SHACL-0573` | `RKM-C049` | NOT_RUN | — |
-| `SHACL-0574` | `RKM-C050` | NOT_RUN | — |
-| `SHACL-0575` | `RKM-C051` | NOT_RUN | — |
-| `SHACL-0576` | `RKM-C052` | NOT_RUN | — |
-| `SHACL-0577` | `RKM-C053` | NOT_RUN | — |
-| `SHACL-0578` | `RKM-C054` | NOT_RUN | — |
-| `SHACL-0579` | `RKM-C055` | NOT_RUN | — |
-| `SHACL-0580` | `RKM-C056` | NOT_RUN | — |
-| `SHACL-0581` | `RKM-C057` | NOT_RUN | — |
-| `SHACL-0582` | `RKM-C058` | NOT_RUN | — |
-| `SHACL-0583` | `RKM-C059` | NOT_RUN | — |
-| `SHACL-0584` | `RKM-C060` | NOT_RUN | — |
-| `SHACL-0585` | `RKM-C061` | NOT_RUN | — |
-| `SHACL-0586` | `RKM-C062` | NOT_RUN | — |
-| `SHACL-0587` | `RKM-C063` | NOT_RUN | — |
-| `SHACL-0588` | `RKM-C064` | NOT_RUN | — |
-| `SHACL-0589` | `RKM-C065` | NOT_RUN | — |
-| `SHACL-0590` | `RKM-C066` | NOT_RUN | — |
-| `SHACL-0591` | `RKM-C067` | NOT_RUN | — |
-| `SHACL-0592` | `RKM-C068` | NOT_RUN | — |
-| `SHACL-0593` | `RKM-C069` | NOT_RUN | — |
-| `SHACL-0594` | `RKM-C070` | NOT_RUN | — |
-| `SHACL-0595` | `RKM-C071` | NOT_RUN | — |
-| `SHACL-0596` | `RKM-C072` | NOT_RUN | — |
-| `SHACL-0597` | `RKM-C073` | NOT_RUN | — |
-| `SHACL-0598` | `RKM-C074` | NOT_RUN | — |
-| `SHACL-0599` | `RKM-X01` | NOT_RUN | — |
-| `SHACL-0600` | `RKM-X02` | NOT_RUN | — |
-| `SHACL-0601` | `RKM-X03` | NOT_RUN | — |
-| `SHACL-0602` | `RKM-X04` | NOT_RUN | — |
-| `SHACL-0603` | `RKM-X05` | NOT_RUN | — |
-| `SHACL-0604` | `RKM-X06` | NOT_RUN | — |
+| `SHACL-0525` | `RKM-C001` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0526` | `RKM-C002` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0527` | `RKM-C003` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0528` | `RKM-C004` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0529` | `RKM-C005` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0530` | `RKM-C006` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0531` | `RKM-C007` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0532` | `RKM-C008` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0533` | `RKM-C009` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0534` | `RKM-C010` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0535` | `RKM-C011` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0536` | `RKM-C012` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0537` | `RKM-C013` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0538` | `RKM-C014` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0539` | `RKM-C015` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0540` | `RKM-C016` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0541` | `RKM-C017` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0542` | `RKM-C018` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0543` | `RKM-C019` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0544` | `RKM-C020` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0545` | `RKM-C021` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0546` | `RKM-C022` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0547` | `RKM-C023` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0548` | `RKM-C024` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0549` | `RKM-C025` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0550` | `RKM-C026` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0551` | `RKM-C027` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0552` | `RKM-C028` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0553` | `RKM-C029` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0554` | `RKM-C030` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0555` | `RKM-C031` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0556` | `RKM-C032` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0557` | `RKM-C033` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0558` | `RKM-C034` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0559` | `RKM-C035` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0560` | `RKM-C036` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0561` | `RKM-C037` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0562` | `RKM-C038` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0563` | `RKM-C039` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0564` | `RKM-C040` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0565` | `RKM-C041` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0566` | `RKM-C042` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0567` | `RKM-C043` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0568` | `RKM-C044` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0569` | `RKM-C045` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0570` | `RKM-C046` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0571` | `RKM-C047` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0572` | `RKM-C048` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0573` | `RKM-C049` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0574` | `RKM-C050` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0575` | `RKM-C051` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0576` | `RKM-C052` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0577` | `RKM-C053` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0578` | `RKM-C054` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0579` | `RKM-C055` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0580` | `RKM-C056` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0581` | `RKM-C057` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0582` | `RKM-C058` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0583` | `RKM-C059` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0584` | `RKM-C060` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0585` | `RKM-C061` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0586` | `RKM-C062` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0587` | `RKM-C063` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0588` | `RKM-C064` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0589` | `RKM-C065` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0590` | `RKM-C066` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0591` | `RKM-C067` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0592` | `RKM-C068` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0593` | `RKM-C069` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0594` | `RKM-C070` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0595` | `RKM-C071` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0596` | `RKM-C072` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0597` | `RKM-C073` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0598` | `RKM-C074` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0599` | `RKM-X01` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0600` | `RKM-X02` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0601` | `RKM-X03` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0602` | `RKM-X04` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0603` | `RKM-X05` | PASS | [admission receipt](admission/report.md) |
+| `SHACL-0604` | `RKM-X06` | PASS | [admission receipt](admission/report.md) |
 | `SHACL-0606` | `C-01` | NOT_RUN | — |
 | `SHACL-0608` | `C-02` | NOT_RUN | — |
 | `SHACL-0610` | `C-03` | NOT_RUN | — |

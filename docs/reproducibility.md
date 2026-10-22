@@ -66,7 +66,18 @@ The [endpoint receipt](../evaluation/shacl/endpoints/report.md) tests all 254 ca
 ```sh
 .venv-shacl/bin/python tools/build_endpoint_shapes.py
 .venv-shacl/bin/python tools/run_endpoint_shacl.py
+.venv-shacl/bin/python tools/build_admission_shapes.py
+.venv-shacl/bin/python tools/run_admission_shacl.py
+.venv-shacl/bin/python tools/package_admission_receipt.py
 python3 tools/summarize_shacl.py
 ```
 
 The endpoint JSON stores content-addressed canonical N-Triples snapshots. Reconstruct each validation data graph from its normalized snapshot plus the shared source taxonomy; the exact effective shapes and result graphs are retained. Unit tests replace targetClass with an explicit targetNode to isolate one endpoint, while all 127 paired-end tests retain original targetClass populations. Supplementary hasValue sentinels expose path reversals even for 0..*; they are not domain axioms. Non-applicable below-zero or above-unbounded negative fixtures retain reasons. This module does not yet certify full managed-record admission.
+
+## Catalog metadata admission module
+
+Module 0.3.0 executes the 80 catalog rows under an explicit [application record policy](../evaluation/shacl/admission/profile-review.md), with 77 typed class profiles and three boundary exclusions. The sole supported task is CatalogInspection; risk assessment remains outside this module. The input model and the 359-row coverage contract are unchanged. Run the catalog builder, runner and lossless packager before merging the three receipts with `tools/summarize_shacl.py` as shown above.
+
+The full `report.json.gz` archive preserves raw/effective data, shapes, external record/class requests and result graphs byte for byte; `report-index.json` keeps all obligations and compact case outcomes readable. The index pins compressed/uncompressed hashes and verifies a lossless round trip. Regenerated uncompressed `report.json` is ignored by git. Its N-Triples snapshots preserve blank labels within the receipt rather than canonicalizing each graph independently. Use `run_admission_shacl.reconstruct_pair(report, case)` to parse data and shapes with one shared blank-node context. Caller-added blank-record focus selectors are retained in effective data. No arbitrary instance input may supply schema/import axioms or reserved vocabulary identity aliases.
+
+A relocated environment may retain packages while its interpreter symlink is missing. Recreate it with `python3 -m venv .venv-shacl`, then install/verify the pinned requirements before running. Configuration/identity rejections are exercised by regressions and are not successful SHACL engine runs. Historical frozen receipts retain their source commits; current regression results and input hashes are recorded separately.

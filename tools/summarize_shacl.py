@@ -1,5 +1,6 @@
 """Reconcile source-bound SHACL module receipts against the fixed 359-row baseline."""
 import hashlib
+import gzip
 import json
 from collections import Counter
 from pathlib import Path
@@ -12,12 +13,13 @@ def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def main():
-    paths=[OUT/"report.json",OUT/"endpoints/report.json",OUT/"admission/report.json"]
+    paths=[OUT/"report.json",OUT/"endpoints/report.json",OUT/"admission/report.json.gz"]
     baseline_path=ROOT/"evaluation/coverage-review.json"
     model_path=ROOT/"ontology/riskium-model.json"
     baseline=[r for r in json.loads(baseline_path.read_text())["obligation_reviews"] if r["engine"]=="SHACL"]
     if len(baseline)!=359:raise SystemExit("SHACL denominator changed")
-    reports=[json.loads(p.read_text()) for p in paths]
+    reports=[json.loads(gzip.decompress(p.read_bytes()).decode()) if p.suffix==".gz"
+             else json.loads(p.read_text()) for p in paths]
     evidence=[];merged={}
     for path,report in zip(paths,reports):
         if report["inputs"]["ontology/riskium-model.json"]!=digest(model_path) or report["inputs"]["evaluation/coverage-review.json"]!=digest(baseline_path):
