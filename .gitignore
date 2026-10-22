@@ -5,3 +5,4 @@ node_modules/
 .venv-native/
 .venv-owl/
 .venv-hermit/
+.venv-shacl/

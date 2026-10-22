@@ -21,6 +21,8 @@ The [execution report](report.md) is the authoritative outcome register. Its den
 
 The newly exercised C-06, C-08 and C-25 still need **explicit-data** counterparts in #5: resolve actor identity and named mediation participants; check named threshold anchors plus dual-anchor compatibility; check named `versionOf` targets and agreement with any direct artifact references. Their HermiT PASS rows do not discharge those separate tasks.
 
+**Subsequent evidence:** the first [SHACL report](../shacl/report.md) now exercises explicit-data C-06/C-09/C-25 within a declared profile and the structural portion of C-08. C-08 compatibility remains PARTIAL/BLOCKED. C-09 therefore has alternative explicit-data evidence, while its HermiT row stays NOT_RUN. The [profile review](../shacl/profile-review.md) defines publication focus and identity policy; independent grounding and interpretation are still pending.
+
 ## Next executable batch
 
-Start #5 with a versioned SHACL profile definition and the explicit-data fixtures for C-06, C-08, C-09 and C-25. For each fixture, record the data graph, shapes graph, focus population, inference policy and the exact violated shape. Keep positive, negative and boundary results separate from this HermiT receipt. Then implement the remaining rows above in small profile batches and reconcile requirement/CQ evidence in #6. Independent semantic adequacy remains #7.
+Continue #5 with the 254 ordered endpoint obligations, then catalog admission and the remaining rows above. For each fixture, record the data graph, shapes graph, focus population, inference policy and the exact violated shape. Keep positive, negative and boundary results separate from this HermiT receipt and reconcile requirement/CQ evidence in #6. Independent semantic adequacy remains #7.

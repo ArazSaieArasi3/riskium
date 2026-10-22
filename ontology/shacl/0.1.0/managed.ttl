@@ -1,0 +1,188 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#> .
+@prefix s: <https://github.com/ArazSaieArasi3/riskium/shapes/0.1.0#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+s:C06Distinct a sh:NodeShape ;
+    sh:class risk:RKM-C052 ;
+    sh:sparql s:C06DistinctQuery ;
+    sh:targetClass risk:RKM-C052 .
+
+s:C06Relator a sh:NodeShape ;
+    sh:class risk:RKM-C052 ;
+    sh:property s:C06Authority,
+        s:C06Bearer ;
+    sh:targetClass risk:RKM-C052 ;
+    sh:targetSubjectsOf risk:R-56,
+        risk:R-57 .
+
+s:C08Anchor a sh:NodeShape ;
+    sh:class risk:RKM-C070 ;
+    sh:or ( s:C08IndicatorAlternative s:C08ScaleAlternative ) ;
+    sh:property s:C08Indicator,
+        s:C08Scale ;
+    sh:targetClass risk:RKM-C070 ;
+    sh:targetSubjectsOf risk:RK2-020,
+        risk:RX-025 .
+
+s:C25Context a sh:NodeShape ;
+    sh:class risk:RKM-C032 ;
+    sh:property s:C25ContextLink ;
+    sh:targetSubjectsOf risk:RX-014 .
+
+s:C25ContextAgreement a sh:NodeShape ;
+    sh:sparql s:C25ContextAgreementQuery ;
+    sh:targetSubjectsOf risk:RX-014 .
+
+s:C25Criteria a sh:NodeShape ;
+    sh:class risk:RKM-X04 ;
+    sh:property s:C25CriteriaLink ;
+    sh:targetSubjectsOf risk:RX-013 .
+
+s:C25Method a sh:NodeShape ;
+    sh:class risk:RKM-C032 ;
+    sh:property s:C25MethodLink ;
+    sh:targetSubjectsOf risk:RX-015 .
+
+s:C25MethodAgreement a sh:NodeShape ;
+    sh:sparql s:C25MethodAgreementQuery ;
+    sh:targetSubjectsOf risk:RX-015 .
+
+s:C25Scale a sh:NodeShape ;
+    sh:class risk:RKM-C034 ;
+    sh:property s:C25ScaleLink ;
+    sh:targetSubjectsOf risk:RX-016 .
+
+s:C25ScaleAgreement a sh:NodeShape ;
+    sh:sparql s:C25ScaleAgreementQuery ;
+    sh:targetSubjectsOf risk:RX-016 .
+
+s:C06Authority a sh:PropertyShape ;
+    sh:class risk:RKM-C054 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-57 .
+
+s:C06Bearer a sh:PropertyShape ;
+    sh:class risk:RKM-C053 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-56 .
+
+s:C06DistinctQuery a sh:SPARQLConstraint ;
+    sh:message "Mediation requires resolved distinct actors with explicit difference evidence." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT $this WHERE {
+        $this risk:R-56 ?bearer ; risk:R-57 ?authority .
+        FILTER (?bearer = ?authority || NOT EXISTS { ?bearer owl:differentFrom ?authority })
+    }""" .
+
+s:C08Indicator a sh:PropertyShape ;
+    sh:class risk:RKM-C069 ;
+    sh:maxCount 1 ;
+    sh:path risk:RX-025 .
+
+s:C08IndicatorAlternative a sh:NodeShape ;
+    sh:property s:C08IndicatorAlternativeLink .
+
+s:C08IndicatorAlternativeLink a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:RX-025 .
+
+s:C08Scale a sh:PropertyShape ;
+    sh:class risk:RKM-C036 ;
+    sh:maxCount 1 ;
+    sh:path risk:RK2-020 .
+
+s:C08ScaleAlternative a sh:NodeShape ;
+    sh:property s:C08ScaleAlternativeLink .
+
+s:C08ScaleAlternativeLink a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:RK2-020 .
+
+s:C25ContextAgreementQuery a sh:SPARQLConstraint ;
+    sh:message "Direct artifact reference and selected versionOf target must agree after identity normalization." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT $this WHERE {
+                $this risk:RX-014 ?version ; risk:R-45 ?direct .
+                ?version risk:RX-006 ?artifact . FILTER (?artifact != ?direct)
+            }""" .
+
+s:C25ContextLink a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:node s:C25ContextVersion ;
+    sh:path risk:RX-014 .
+
+s:C25ContextVersion a sh:NodeShape ;
+    sh:property s:C25ContextVersionOf .
+
+s:C25ContextVersionOf a sh:PropertyShape ;
+    sh:class risk:RKM-C002 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-006 .
+
+s:C25CriteriaLink a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:node s:C25CriteriaVersion ;
+    sh:path risk:RX-013 .
+
+s:C25CriteriaVersion a sh:NodeShape ;
+    sh:property s:C25CriteriaVersionOf .
+
+s:C25CriteriaVersionOf a sh:PropertyShape ;
+    sh:class risk:RKM-C072 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-006 .
+
+s:C25MethodAgreementQuery a sh:SPARQLConstraint ;
+    sh:message "Direct artifact reference and selected versionOf target must agree after identity normalization." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT $this WHERE {
+                $this risk:RX-015 ?version ; risk:R-46 ?direct .
+                ?version risk:RX-006 ?artifact . FILTER (?artifact != ?direct)
+            }""" .
+
+s:C25MethodLink a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:node s:C25MethodVersion ;
+    sh:path risk:RX-015 .
+
+s:C25MethodVersion a sh:NodeShape ;
+    sh:property s:C25MethodVersionOf .
+
+s:C25MethodVersionOf a sh:PropertyShape ;
+    sh:class risk:RKM-C035 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-006 .
+
+s:C25ScaleAgreementQuery a sh:SPARQLConstraint ;
+    sh:message "Direct artifact reference and selected versionOf target must agree after identity normalization." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT $this WHERE {
+                $this risk:RX-016 ?version ; risk:R-14 ?direct .
+                ?version risk:RX-006 ?artifact . FILTER (?artifact != ?direct)
+            }""" .
+
+s:C25ScaleLink a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:node s:C25ScaleVersion ;
+    sh:path risk:RX-016 .
+
+s:C25ScaleVersion a sh:NodeShape ;
+    sh:property s:C25ScaleVersionOf .
+
+s:C25ScaleVersionOf a sh:PropertyShape ;
+    sh:class risk:RKM-C036 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-006 .
+

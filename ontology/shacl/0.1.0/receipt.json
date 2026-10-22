@@ -1,0 +1,17 @@
+{
+  "profile_version": "0.1.0",
+  "source_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "constraints": [
+    "C-06",
+    "C-08",
+    "C-09",
+    "C-25"
+  ],
+  "profiles_sha256": {
+    "managed": "2ad18744c67adcc3d5dc46915093d4a6ba27314633a0a9070124cc01c31e4460",
+    "published": "e9dee13320bce5aba20670cbd62a86cf7f29721998a8a7e9ed373515677dc75a",
+    "raw": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "task-ready": "e9dee13320bce5aba20670cbd62a86cf7f29721998a8a7e9ed373515677dc75a"
+  },
+  "status": "SCOPED_PROFILE_GENERATED_NOT_DOMAIN_VALIDATED"
+}

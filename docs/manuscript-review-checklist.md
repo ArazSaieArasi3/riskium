@@ -10,6 +10,7 @@ For each scientific claim, record its manuscript location, wording, evidence art
 - Link an executed-result claim to a current readable receipt. Planned obligations and intended fixtures are not executed tests.
 - Describe what a pass establishes. Exchange compatibility and graph conformance do not establish domain adequacy.
 - Preserve failed, unsupported, blocked and unexecuted checks when they affect the article's claims.
+- Describe the scoped HermiT and SHACL profiles separately, including C-08 compatibility blocking and the external publication/identity policies. Neither suite's percentage is overall semantic correctness; cite the semantic-assurance plan and independent-review status when stating adequacy claims.
 
 ## Numbers
 

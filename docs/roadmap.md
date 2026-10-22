@@ -8,9 +8,9 @@ The remaining work is organized by outcome. Migration established a public conce
 | [Validate the native conceptual model and resolve semantic candidates](https://github.com/ArazSaieArasi3/riskium/issues/2) | Exchange representation and bounded design review complete; [results and limits](../evaluation/native-model-review.md) |
 | [Implement and review the OWL mapping](https://github.com/ArazSaieArasi3/riskium/issues/3) | Bounded typed-core export and [review](../evaluation/owl-mapping-review.md) complete; HermiT and SHACL remain open |
 | [Implement the HermiT consistency and inference suite](https://github.com/ArazSaieArasi3/riskium/issues/4) | Scoped suite executed and [reasoning report](../evaluation/hermit/report.md) recorded; 14 constraint obligations await justified formal or alternative disposition |
-| [Implement SHACL validation profiles and fixtures](https://github.com/ArazSaieArasi3/riskium/issues/5) | Open |
+| [Implement SHACL validation profiles and fixtures](https://github.com/ArazSaieArasi3/riskium/issues/5) | First [four-constraint batch](../evaluation/shacl/report.md) executed; 3 scoped PASS, C-08 PARTIAL, 355/359 obligations NOT_RUN |
 | [Complete requirement and competency-question traceability](https://github.com/ArazSaieArasi3/riskium/issues/6) | Open |
-| [Conduct independent semantic and case-interpretation review](https://github.com/ArazSaieArasi3/riskium/issues/7) | Open |
+| [Conduct independent semantic and case-interpretation review](https://github.com/ArazSaieArasi3/riskium/issues/7) | [Review inventory](../evaluation/semantic-review-register.json) prepared; independent adjudications pending; overall semantic correctness unestimated |
 | [Complete the public reference corpus and standards interpretation](https://github.com/ArazSaieArasi3/riskium/issues/8) | Open |
 | [Publish and verify the curated Wiki](https://github.com/ArazSaieArasi3/riskium/issues/9) | Open |
 | [Publish the versioned reference and ontology explorer](https://github.com/ArazSaieArasi3/riskium/issues/10) | Open |
@@ -23,7 +23,7 @@ The remaining work is organized by outcome. Migration established a public conce
 
 ## Recommended sequence
 
-The coverage-design, native-exchange and bounded OWL-mapping stages are complete within their documented limits. The scoped HermiT execution is recorded; issue #4 retains 14 unexecuted constraint routes for explicit disposition, including the publication-specific C-09. Assign explicit-data requirements to SHACL in #5, transaction rules to application checks and interpretation claims to independent review with evidence. Develop SHACL admission profiles with explicit-data fixtures in #5, then reconcile requirements and query evidence across the formal suites. Reference-corpus work and independent semantic review remain separate outcomes. An executed subset must not be reported as universal validation.
+The coverage-design, native-exchange and bounded OWL-mapping stages are complete within their documented limits. HermiT retains 14 engine-specific NOT_RUN rows; C-09 now has alternative evidence in the first scoped SHACL batch. Continue #5 with all 254 ordered endpoint obligations, then the 80 catalog-admission rows and remaining constraint routes. Resolve C-08 compatibility through an approved unit/scale schema. Reconcile requirement and query evidence in #6, independent semantic review in #7 and reference interpretation in #8. The [semantic assurance plan](../evaluation/semantic-assurance-plan.md) defines the evidence and limits; an executed subset must not be reported as universal validation.
 
 The curated Wiki can be initialized from its prepared source now. The generated reference can be deployed separately; an ontology explorer depends on a justified formal export. Public rendering must be verified after publication.
 

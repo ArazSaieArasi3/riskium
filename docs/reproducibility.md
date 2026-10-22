@@ -42,3 +42,19 @@ python3 -m venv .venv-hermit
 ```
 
 The installed Owlready2 package supplies the pinned HermiT jar; the jar itself is not copied into this repository. The script verifies its version and records its SHA-256 digest. Its baseline percentage uses the 295 predeclared HermiT-related obligations; supplemental inference and mutation cases have their own counts. SHACL profiles and explicit-data fixtures remain open in issue #5.
+
+## Scoped SHACL profiles
+
+The first [SHACL report](../evaluation/shacl/report.md) retains every raw graph, effective data graph, shapes graph, publication focus list and exact source-shape/component oracle in JSON. Use a separate pinned environment:
+
+```sh
+python3 -m venv .venv-shacl
+.venv-shacl/bin/pip install -r tools/requirements-shacl.txt
+.venv-shacl/bin/python tools/build_shacl.py
+.venv-shacl/bin/python tools/run_shacl.py
+.venv-shacl/bin/python -m unittest discover -s tests -v
+```
+
+The source signatures and profile SHA-256 digests are checked. Graphs use inference `none`; only source subclass triples and the documented identity normalization are supplied explicitly. No imports or OWL existential fillers are materialized. The task-ready dual-anchor C-08 case is BLOCKED, not a pass. Regenerated Turtle bytes can vary in blank-node/list serialization; the exact per-case snapshots in JSON pin the executed graphs.
+
+`python3 tools/build_semantic_register.py` creates an **unadjudicated planning inventory** for independent semantic review. Do not rerun it over completed reviewer annotations without a migration/reconciliation step: it never imports engineering passes or independent ratings. The [assurance plan](../evaluation/semantic-assurance-plan.md) distinguishes this review from engine testing.

@@ -1,6 +1,6 @@
 # Validation coverage contract
 
-This contract defines what the formal evaluation must cover and how its results will be accepted. It is the planning baseline. The subsequent [HermiT execution report](hermit/report.md) records the actual scoped run against this baseline; SHACL remains unexecuted.
+This contract defines what the formal evaluation must cover and how its results will be accepted. It is the planning baseline. The subsequent [HermiT execution report](hermit/report.md) and first [scoped SHACL report](shacl/report.md) record actual runs against this baseline; their outstanding rows remain visible.
 
 The [machine-readable contract](coverage-contract.json) assigns a planned route to all 25 interpretation constraints. The [row review](coverage-review.json) binds each baseline obligation to its exact source element, source-file digest and expected fixture behavior. Neither file is an execution report from a formal engine.
 
@@ -48,7 +48,7 @@ Each executed case must identify its obligations, source commit and digests, for
 
 `PASS` is reserved for a reviewed implemented oracle whose observed result matches the expectation. `FAIL`, `ERROR`, `TIMEOUT`, `BLOCKED` and `NOT_RUN` remain separate outcomes. `NOT_APPLICABLE` requires a reason, a reviewer and replacement evidence when the claim remains in scope. None of these states may be counted as a pass.
 
-Report source allocation, encoding, fixture, execution, requirement, query and independent adequacy coverage separately. The allocation review is complete for the declared baseline. The HermiT execution report gives the current reasoner fraction and individually identifies the remaining obligations; SHACL, requirement/CQ execution and independent adequacy retain their separate statuses.
+Report source allocation, encoding, fixture, execution, requirement, query and independent adequacy coverage separately. The allocation review is complete for the declared baseline. HermiT and SHACL execution reports give their separate fractions and remaining obligations; requirement/CQ execution and independent adequacy retain their separate statuses.
 
 ## Reproduce the design review
 
