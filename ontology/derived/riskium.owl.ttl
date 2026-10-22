@@ -1874,6 +1874,13 @@ risk:RKM-C062 rdfs:subClassOf [ a owl:Restriction ; owl:onProperty risk:RX-032 ;
 risk:R-35 rdfs:subPropertyOf risk:RX-001 . # C-23
 risk:R-33 rdfs:subPropertyOf risk:RX-006 . # C-24
 
+risk:R-56 owl:propertyDisjointWith risk:R-57 . # C-06
+risk:RKM-C070 rdfs:subClassOf [ a owl:Class ; owl:unionOf ( [ a owl:Restriction ; owl:onProperty risk:RX-025 ; owl:someValuesFrom risk:RKM-C069 ] [ a owl:Restriction ; owl:onProperty risk:RK2-020 ; owl:someValuesFrom risk:RKM-C036 ] ) ] . # C-08
+risk:RKM-C032 rdfs:subClassOf [ a owl:Restriction ; owl:onProperty risk:RX-014 ; owl:allValuesFrom [ a owl:Restriction ; owl:onProperty risk:RX-006 ; owl:someValuesFrom risk:RKM-C002 ] ] . # C-25
+risk:RKM-C032 rdfs:subClassOf [ a owl:Restriction ; owl:onProperty risk:RX-015 ; owl:allValuesFrom [ a owl:Restriction ; owl:onProperty risk:RX-006 ; owl:someValuesFrom risk:RKM-C035 ] ] . # C-25
+risk:RKM-C034 rdfs:subClassOf [ a owl:Restriction ; owl:onProperty risk:RX-016 ; owl:allValuesFrom [ a owl:Restriction ; owl:onProperty risk:RX-006 ; owl:someValuesFrom risk:RKM-C036 ] ] . # C-25
+risk:RKM-X04 rdfs:subClassOf [ a owl:Restriction ; owl:onProperty risk:RX-013 ; owl:allValuesFrom [ a owl:Restriction ; owl:onProperty risk:RX-006 ; owl:someValuesFrom risk:RKM-C072 ] ] . # C-25
+
 [] a owl:AllDisjointClasses ; owl:members ( risk:RKM-C048 risk:RKM-C049 ) .
 [] a owl:AllDisjointClasses ; owl:members ( risk:RKM-C055 risk:RKM-C056 ) .
 [] a owl:AllDisjointClasses ; owl:members ( risk:RKM-C057 risk:RKM-C058 ) .

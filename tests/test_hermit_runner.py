@@ -46,6 +46,14 @@ class HermitFixtureRegression(unittest.TestCase):
         self.assertIn((h.RISK["R-35"], RDFS.subPropertyOf, h.RISK["RX-001"]), self.full)
         self.assertNotIn((h.RISK["RX-001"], RDFS.subPropertyOf, h.RISK["R-35"]), self.full)
 
+    def test_conditional_constraint_probes_preserve_publication_boundary(self):
+        specs = h.scenario_specs(self.full, self.model)
+        covered = {s["constraint"] for s in specs if "constraint" in s and s.get("covers_obligation", True)}
+        self.assertTrue({"C-06", "C-08", "C-25"} <= covered)
+        publication = [s for s in specs if s.get("constraint") == "C-09"]
+        self.assertEqual(len(publication), 2)
+        self.assertTrue(all(s["covers_obligation"] is False for s in publication))
+
 
 if __name__ == "__main__":
     unittest.main()

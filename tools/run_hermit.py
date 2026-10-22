@@ -148,6 +148,114 @@ def build_specs(full, model, reviewed):
 
 def scenario_specs(full, model):
     specs = []
+    def with_ontology():
+        fixture = Graph()
+        for triple in full:
+            fixture.add(triple)
+        return fixture
+
+    # C-06: property disjointness tests a shared pair without assuming that
+    # different names denote different people. A separate consistent fixture
+    # establishes that legitimate binary mediation remains possible.
+    relator, bearer, authority = (RISK["probe-c06-relator"], RISK["probe-c06-bearer"],
+                                  RISK["probe-c06-authority"])
+    grounded = with_ontology()
+    individuals(grounded, relator, bearer, authority)
+    grounded.add((relator, RDF.type, RISK["RKM-C052"]))
+    grounded.add((relator, RISK["R-56"], bearer))
+    grounded.add((relator, RISK["R-57"], authority))
+    grounded.add((bearer, OWL.differentFrom, authority))
+    specs.append(dict(id="H-C06-DISTINCT-PARTICIPANTS", kind="consistency", family="Constraint probe",
+                      constraint="C-06", expected=True, premise=grounded,
+                      meaning="Distinct mediated actors allow a grounded relator"))
+    collapsed = with_ontology()
+    individuals(collapsed, relator, bearer)
+    collapsed.add((relator, RISK["R-56"], bearer))
+    collapsed.add((relator, RISK["R-57"], bearer))
+    specs.append(dict(id="H-C06-SAME-PARTICIPANT", kind="consistency", family="Constraint probe",
+                      constraint="C-06", expected=False, premise=collapsed,
+                      meaning="Same relator/actor pair cannot serve both mediation roles"))
+
+    # C-08: a class-level disjunction does not require named graph fillers and
+    # does not fabricate the other anchor for a scale-only threshold.
+    threshold, scale, indicator = (RISK["probe-c08-threshold"], RISK["probe-c08-scale"],
+                                   RISK["probe-c08-indicator"])
+    scale_only = with_ontology()
+    individuals(scale_only, threshold, scale)
+    scale_only.add((threshold, RDF.type, RISK["RKM-C070"]))
+    scale_only.add((threshold, RISK["RK2-020"], scale))
+    specs.append(dict(id="H-C08-SCALE-ONLY", kind="consistency", family="Constraint probe",
+                      constraint="C-08", expected=True, premise=scale_only,
+                      meaning="Scale-only threshold satisfies the OWL anchor alternative"))
+    no_named_anchor = with_ontology()
+    individuals(no_named_anchor, threshold)
+    no_named_anchor.add((threshold, RDF.type, RISK["RKM-C070"]))
+    specs.append(dict(id="H-C08-ANONYMOUS-ANCHOR", kind="consistency", family="Constraint probe",
+                      constraint="C-08", expected=True, premise=no_named_anchor,
+                      meaning="Open-world OWL permits an unnamed anchor; SHACL must test explicit data"))
+    both = with_ontology()
+    individuals(both, threshold, scale, indicator)
+    both.add((threshold, RDF.type, RISK["RKM-C070"]))
+    both.add((threshold, RISK["RK2-020"], scale))
+    both.add((threshold, RISK["RX-025"], indicator))
+    specs.append(dict(id="H-C08-DUAL-ANCHOR", kind="consistency", family="Constraint probe",
+                      constraint="C-08", expected=True, premise=both,
+                      meaning="Two anchors remain possible; compatibility needs a data rule"))
+    conclusion = Graph()
+    declarations(conclusion, ["RKM-C069"])
+    individuals(conclusion, threshold)
+    conclusion.add((threshold, RISK["RX-025"], indicator))
+    declarations(conclusion, properties=["RX-025"])
+    individuals(conclusion, indicator)
+    specs.append(dict(id="H-C08-NO-FABRICATED-INDICATOR", kind="entailment",
+                      family="Constraint probe", constraint="C-08", expected=False,
+                      premise=scale_only, conclusion=conclusion,
+                      meaning="Scale-only data does not entail a named indicator"))
+
+    # C-09 is conditional on publication, which has no formal focus class yet.
+    # These probes delimit the OWL behavior, but do not discharge the obligation.
+    description = RISK["probe-c09-description"]
+    unpublished = with_ontology()
+    individuals(unpublished, description)
+    unpublished.add((description, RDF.type, RISK["RKM-C024"]))
+    specs.append(dict(id="H-C09-NO-PUBLICATION-FLAG", kind="consistency",
+                      family="Publication boundary", constraint="C-09", covers_obligation=False,
+                      expected=True, premise=unpublished,
+                      meaning="An unqualified description may lack a named aboutness target"))
+    multi = with_ontology()
+    case, pattern = RISK["probe-c09-case"], RISK["probe-c09-pattern"]
+    individuals(multi, description, case, pattern)
+    multi.add((description, RISK["RK2-007"], case))
+    multi.add((description, RISK["RK2-008"], pattern))
+    multi.add((case, OWL.differentFrom, pattern))
+    specs.append(dict(id="H-C09-MULTIPLE-TARGETS", kind="consistency",
+                      family="Publication boundary", constraint="C-09", covers_obligation=False,
+                      expected=True, premise=multi,
+                      meaning="Case and pattern targets can remain distinct"))
+
+    # C-25: each selected version entails an existential versionOf target of
+    # the appropriate artifact type, without assuming a named target or an
+    # unreviewed disjointness of artifact kinds.
+    for prop, artifact in (("RX-014", "RKM-C002"), ("RX-015", "RKM-C035"),
+                           ("RX-016", "RKM-C036"), ("RX-013", "RKM-C072")):
+        source = next(r["source"] for r in model["associations"] if r["id"] == prop)
+        subject, version = RISK["probe-c25-" + prop + "-source"], RISK["probe-c25-" + prop + "-version"]
+        fixture = with_ontology()
+        individuals(fixture, subject, version)
+        fixture.add((subject, RDF.type, RISK[source]))
+        fixture.add((subject, RISK[prop], version))
+        conclusion = Graph()
+        declarations(conclusion, [artifact], ["RX-006"])
+        individuals(conclusion, version)
+        restriction = BNode("expected-" + prop)
+        conclusion.add((version, RDF.type, restriction))
+        conclusion.add((restriction, RDF.type, OWL.Restriction))
+        conclusion.add((restriction, OWL.onProperty, RISK["RX-006"]))
+        conclusion.add((restriction, OWL.someValuesFrom, RISK[artifact]))
+        specs.append(dict(id="H-C25-VERSION-TARGET-" + prop, kind="entailment",
+                          family="Constraint probe", constraint="C-25", expected=True,
+                          premise=fixture, conclusion=conclusion,
+                          meaning="Selected version entails versionOf some " + artifact))
     # The wrong range must not be entailed: a control for declared relation conclusions.
     bad = Graph()
     declarations(bad, ["RKM-C001"], ["R-01"])
@@ -421,7 +529,7 @@ def main():
                             "case_id": row["id"]})
         else:
             cid = obligation["source_element"]
-            probes = [r for r in rows if r.get("constraint") == cid]
+            probes = [r for r in rows if r.get("constraint") == cid and r.get("covers_obligation", True)]
             if probes:
                 tracked.append({"id": obligation["obligation_id"], "family": obligation["family"],
                                 "source_element": cid, "outcome": "PASS" if all(p["status"] == "PASS" for p in probes) else "FAIL",
@@ -438,7 +546,8 @@ def main():
     counts["PASS"] += 0
     report = {
         "title": "Riskium HermiT execution receipt", "model_version": model["version"],
-        "source_commit": os.environ.get("RISKIUM_SOURCE_COMMIT", "507acd8dfa8874c9f0065bad3c4dc3dfbe74d0ab"),
+        "source_commit": os.environ.get("RISKIUM_SOURCE_COMMIT") or subprocess.run(
+            ["git", "rev-parse", "HEAD"], cwd=ROOT, check=True, capture_output=True, text=True).stdout.strip(),
         "engine": {"name": "HermiT", "version": version["stdout"].splitlines()[0],
                    "jar_sha256": sha(jar), "package": "owlready2==" + importlib.metadata.version("owlready2"),
                    "java": subprocess.run(["java", "-version"], capture_output=True, text=True).stderr.splitlines()[0]},
@@ -495,6 +604,13 @@ Baseline ontology consistency: **{by_obligation['H-BASE-CONSISTENCY']['status']}
 {table}
 The 127 relation results confirm entailment of mapped axioms, including 88 nontrivial qualified restrictions across 254 ordered ends. They do **not** establish closed-world completeness or distinctness of named fillers. The 25 constraint obligations are listed individually below, including those whose full meaning is not encoded in OWL. Treating a reasoner-inapplicable portion as a pass would inflate coverage.
 
+### Reviewed conditional scope
+
+- **C-06:** disjoint mediation properties prohibit the same relator/actor pair from filling both roles. An explicit pair of different actors remains consistent; a missing named actor can still be supplied anonymously. Grounding and identity resolution belong to an admission profile.
+- **C-08:** a threshold has an indicator or scale anchor in every OWL interpretation. A scale-only threshold stays possible, and no named indicator is fabricated. A missing explicit anchor or incompatible dual anchors require SHACL and interpretation checks.
+- **C-09:** a description without named aboutness and one with distinct case/pattern targets are both consistent. These supplementary cases do not mark its obligation complete: the source rule applies to **published** descriptions and the current OWL mapping has no approved publication focus class.
+- **C-25:** for each of four `uses…Version` relations, a selected version entails `versionOf some` artifact of the corresponding type. This need not identify a named artifact, reject every wrong-kind claim, or verify agreement with a direct artifact link absent reviewed disjointness and data joins.
+
 Supplemental semantic controls go beyond rechecking asserted axioms. They infer general types from specific instances, infer endpoint types from actual property assertions, challenge reverse inheritance, and test every maximum-one relation end with one filler and then two explicitly different fillers. These tests are **additional cases**, not extra baseline obligations. Their results are:
 
 | Supplemental family | Passed / total |
@@ -510,7 +626,7 @@ Supplemental semantic controls go beyond rechecking asserted axioms. They infer 
 | --- | --- | --- | --- |
 """
     for r in rows:
-        if r["family"] in ("Negative control", "Boundary mutation", "Constraint probe"):
+        if r["family"] in ("Negative control", "Boundary mutation", "Constraint probe", "Publication boundary"):
             md += f"| `{r['id']}` | {'true' if r['expected'] else 'false'} | `{r['observed_outcome']}`; {r['status']} | {r['meaning']} |\n"
     md += "\n### Constraint obligation register\n\n| Obligation | Constraint | Outcome | Evidence or remaining reason |\n| --- | --- | --- | --- |\n"
     for x in tracked:

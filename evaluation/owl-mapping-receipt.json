@@ -14,6 +14,9 @@
     "typed_object_properties": 127,
     "cardinality_restrictions": 88,
     "reviewed_property_inclusions": 2,
+    "reviewed_property_disjointness": 1,
+    "conditional_anchor_unions": 1,
+    "qualified_version_target_rules": 4,
     "reviewed_generalization_sets": 10,
     "disjoint_sets": 3,
     "optional_boundaries_as_classes": 0
@@ -25,5 +28,5 @@
     "Temporal, version-join, provenance, calculation and application-admission rules require separately reviewed encodings.",
     "Syntax, reasoning, satisfiability, instance validity and semantic adequacy are distinct checks."
   ],
-  "output_sha256": "fdc19d96eb7536251384d05b088f9e3577050118b0633fb7b927bd25523f0064"
+  "output_sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58"
 }

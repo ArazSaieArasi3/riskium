@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from rdflib import Graph, Literal, Namespace, RDF, RDFS, OWL, XSD
+from rdflib import Graph, Literal, Namespace, RDF, RDFS, OWL, XSD, URIRef
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
@@ -28,10 +28,13 @@ class OwlMappingRegression(unittest.TestCase):
         self.assertEqual({"typed_classes": 77, "local_anchor_proxy": 1,
                           "generalizations": 66, "typed_object_properties": 127,
                           "cardinality_restrictions": 88, "reviewed_property_inclusions": 2,
+                          "reviewed_property_disjointness": 1,
+                          "conditional_anchor_unions": 1,
+                          "qualified_version_target_rules": 4,
                           "reviewed_generalization_sets": 10,
                           "disjoint_sets": 3, "optional_boundaries_as_classes": 0},
                          self.receipt["coverage"])
-        self.assertEqual(len(set(self.graph.subjects(RDF.type, OWL.Class))), 78)
+        self.assertEqual(len({x for x in self.graph.subjects(RDF.type, OWL.Class) if isinstance(x, URIRef)}), 78)
         self.assertEqual(len(set(self.graph.subjects(RDF.type, OWL.ObjectProperty))), 127)
         for p, digest in self.receipt["inputs_sha256"].items():
             self.assertEqual(digest, build_owl.digest(ROOT / p))
@@ -64,7 +67,7 @@ class OwlMappingRegression(unittest.TestCase):
     def test_only_reviewed_disjointness_without_covering_or_import(self):
         sets = list(self.graph.subjects(RDF.type, OWL.AllDisjointClasses))
         self.assertEqual(len(sets), 3)
-        self.assertEqual(list(self.graph.triples((None, OWL.unionOf, None))), [])
+        self.assertEqual(len(list(self.graph.triples((None, OWL.unionOf, None)))), 1)
         self.assertEqual(list(self.graph.triples((None, OWL.imports, None))), [])
         for c in self.model["concepts"]:
             if c["scope_layer"] == "OPTIONAL_PHENOMENON_BOUNDARY":
@@ -74,6 +77,24 @@ class OwlMappingRegression(unittest.TestCase):
         expected = {(self.risk["R-35"], RDFS.subPropertyOf, self.risk["RX-001"]),
                     (self.risk["R-33"], RDFS.subPropertyOf, self.risk["RX-006"])}
         self.assertEqual(set(self.graph.triples((None, RDFS.subPropertyOf, None))), expected)
+
+    def test_constraint_axioms_have_reviewed_scope(self):
+        self.assertIn((self.risk["R-56"], OWL.propertyDisjointWith, self.risk["R-57"]), self.graph)
+        union = list(self.graph.subjects(OWL.unionOf, None))
+        self.assertEqual(len(union), 1)
+        self.assertIn((self.risk["RKM-C070"], RDFS.subClassOf, union[0]), self.graph)
+        # Publication is a separate profile: no unconditional RiskDescription aboutness union.
+        self.assertFalse(any(self.graph.value(x, OWL.unionOf) is not None
+                             for x in self.graph.objects(self.risk["RKM-C024"], RDFS.subClassOf)))
+        for prop, artifact in build_owl.VERSION_TARGETS:
+            source = next(r["source"] for r in self.model["associations"] if r["id"] == prop)
+            matches = [x for x in self.graph.objects(self.risk[source], RDFS.subClassOf)
+                       if (x, OWL.onProperty, self.risk[prop]) in self.graph and
+                       self.graph.value(x, OWL.allValuesFrom) is not None]
+            self.assertEqual(len(matches), 1, prop)
+            inner = self.graph.value(matches[0], OWL.allValuesFrom)
+            self.assertIn((inner, OWL.onProperty, self.risk["RX-006"]), self.graph)
+            self.assertIn((inner, OWL.someValuesFrom, self.risk[artifact]), self.graph)
 
     def test_native_end_mutation_is_rejected(self):
         native = json.loads(build_owl.NATIVE.read_text())
