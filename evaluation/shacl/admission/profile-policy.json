@@ -16,7 +16,7 @@
     "managed-catalog": "Nonempty external focus and expected-class request; named record identity and the specified metadata envelope",
     "task-catalog-inspection": "Managed metadata plus explicit CatalogInspection task; means metadata inspection only, never risk assessment or calculation readiness"
   },
-  "identity": "Normalize asserted named sameAs aliases; reject sameAs/differentFrom conflicts before validation. Do not merge by equal labels. Blank record/candidate identities fail managed SHACL but are preserved raw.",
+  "identity": "Normalize asserted named instance sameAs aliases; reject sameAs/differentFrom conflicts before validation. Reject identity assertions involving reserved model/application/RDF vocabulary IRIs so class names cannot be rewritten as instance aliases. Do not merge by equal labels. Blank record/candidate identities fail managed SHACL but are preserved raw.",
   "taxonomy": "Append only 66 source subclass triples. No domain/range, OWL existential, external import, or unique-name inference.",
   "boundaries": "Three optional catalog notions are retained raw, excluded from core class-specific profiles and rejected as managed declared classes.",
   "scope_limits": [

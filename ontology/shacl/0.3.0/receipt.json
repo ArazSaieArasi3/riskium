@@ -2,7 +2,7 @@
   "profile_version": "0.3.0",
   "source_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
   "contract_sha256": "4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5",
-  "policy_sha256": "66e0e5d30b1c0c0d3014e7bcdd3eda73f9923811cf164ac1511d799384b87be0",
+  "policy_sha256": "3d93811af38f13372d68fb330e65fddbda4db7879959fe82c51fe4635e1c3665",
   "core_classes": [
     "RKM-C001",
     "RKM-C002",

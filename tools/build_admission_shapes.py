@@ -96,6 +96,11 @@ def compile_request(module, raw, requests, profile, catalog):
     if profile != "raw":
         if any(str(p).startswith(str(AP) + "focus-") for _, p, _ in raw):
             raise ValueError("Managed input cannot supply reserved external-focus selectors")
+        reserved = tuple(map(str, (RISK, A, AP, DC, RDF, RDFS, OWL, SH, XSD)))
+        for predicate in (OWL.sameAs, OWL.differentFrom):
+            for left, right in raw.subject_objects(predicate):
+                if str(left).startswith(reserved) or str(right).startswith(reserved):
+                    raise ValueError("Instance identity assertions cannot rewrite reserved vocabulary IRIs")
         for predicate in (RDFS.subClassOf, RDFS.subPropertyOf, RDFS.domain, RDFS.range,
                           OWL.equivalentClass, OWL.equivalentProperty, OWL.imports):
             if any(raw.triples((None, predicate, None))):

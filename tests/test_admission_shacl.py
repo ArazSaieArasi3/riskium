@@ -57,6 +57,13 @@ class AdmissionRegression(unittest.TestCase):
             b.compile_request(self.module, data, [(record, "RKM-C001")], "managed-catalog", self.catalog)
         _, raw, mapping = b.compile_request(self.module, data, [(record, "RKM-C001")], "raw", self.catalog)
         self.assertTrue(isomorphic(raw, data)); self.assertEqual(mapping, {})
+        data, record, candidate = h.fixture_record("RKM-C001")
+        data.set((candidate, RDF.type, b.RISK["RKM-C002"]))
+        data.add((b.RISK["RKM-C002"], OWL.sameAs, b.RISK["RKM-C001"]))
+        with self.assertRaisesRegex(ValueError, "reserved vocabulary"):
+            b.compile_request(self.module, data, [(record, "RKM-C001")], "managed-catalog", self.catalog)
+        _, raw, _ = b.compile_request(self.module, data, [(record, "RKM-C001")], "raw", self.catalog)
+        self.assertTrue(isomorphic(raw, data))
 
     def test_identity_conflicts_are_not_engine_passes_and_raw_is_unmodified(self):
         data, record, candidate = h.fixture_record("RKM-C001")

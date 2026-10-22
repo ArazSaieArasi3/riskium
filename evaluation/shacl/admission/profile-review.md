@@ -36,7 +36,7 @@ Blank record resources cannot be SHACL `targetNode` values under the pinned meta
 
 Managed profiles normalize only asserted named `owl:sameAs` closures and symmetrize `owl:differentFrom`, using the existing normalization policy. SameAs/differentFrom conflicts reject before SHACL. Equal labels are never identity evidence. Blank candidates and records remain visible and fail the managed IRI rule; they are retained raw. Independent real-world identity and provenance adequacy remain #7/#8.
 
-Managed instance input cannot supply RDFS schema, OWL equivalence or import axioms. Append only the 66 subclass statements from the pinned source model. SHACL inference is `none`; no imported ontologies, domain/range type completion, anonymous OWL fillers or unique-name assumption supplies missing evidence. The three optional boundaries remain absent from typed core classes and their class-specific shapes.
+Managed instance input cannot supply RDFS schema, OWL equivalence or import axioms. Identity assertions involving reserved model, application or RDF vocabulary IRIs also reject before normalization, so instance alias handling cannot rewrite a declared class or property. Append only the 66 subclass statements from the pinned source model. SHACL inference is `none`; no imported ontologies, domain/range type completion, anonymous OWL fillers or unique-name assumption supplies missing evidence. The three optional boundaries remain absent from typed core classes and their class-specific shapes.
 
 ## Fixtures, exact oracles and receipts
 
