@@ -18,7 +18,7 @@ The remaining work is organized by outcome. Migration established a public conce
 | [Reconcile the separate relational implementation with the reviewed model](https://github.com/ArazSaieArasi3/riskium/issues/12) | Open |
 | [Prepare and review the independent literature case study](https://github.com/ArazSaieArasi3/riskium/issues/13) | Open |
 | [Complete the final manuscript review and reconcile claims, tests and numbers](https://github.com/ArazSaieArasi3/riskium/issues/14) | Open; [review checklist](manuscript-review-checklist.md) |
-| [Prepare the first reviewed Riskium release](https://github.com/ArazSaieArasi3/riskium/issues/15) | Open; [development prerelease profile and blocking gates](first-release-profile.md) recorded |
+| [Prepare the first reviewed Riskium release](https://github.com/ArazSaieArasi3/riskium/issues/15) | Rights/citation decision implemented; clean candidate engine rehearsal complete; final freeze, manifest/readback and tag/release publication open; [release profile](first-release-profile.md) |
 | [Maintain future extensions and interoperability boundaries](https://github.com/ArazSaieArasi3/riskium/issues/16) | Open |
 
 ## Recommended sequence

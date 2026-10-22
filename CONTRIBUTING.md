@@ -9,3 +9,5 @@ Change a definition in the model before updating its summaries. Regenerate deriv
 Include only material intended and authorized for public distribution. Do not copy private records, restricted source documents, full development archives or unreviewed dependencies. File selection and content review happen before a public push, including pushes to a draft branch.
 
 Run the documented checks. Report their actual scope; never describe a structural check as independent semantic validation or a planned reasoner test as executed.
+
+Submit only contributions you are authorized to license under the applicable [artifact scope](RIGHTS.md): CC BY 4.0 for original scientific content and MIT for original software. Contributors retain their rights; no copyright assignment is required. Preserve third-party notices and identify any exception explicitly before inclusion.

@@ -18,7 +18,8 @@ nav=[('Repository guide','README.md'),('Model source','ontology/riskium-model.js
      ('Selected view','diagrams/selected-view.svg'),('Requirements','requirements/ontology-requirements.md'),
      ('Evaluation','evaluation/README.md'),('HermiT report','evaluation/hermit/report.md'),
      ('SHACL ledger','evaluation/shacl/coverage-status.md'),('C-14 review','evaluation/c14-boundary-review.md'),
-     ('Release gates','docs/first-release-profile.md')]
+     ('Release gates','docs/first-release-profile.md'),('Authors and citation','AUTHORS.md'),
+     ('License scopes','RIGHTS.md')]
 body=['<h1>Riskium reference</h1>',
       '<p>Conceptual design '+e(m['version'])+'. This generated view refers to the structured design; a native exchange has schema and SDK checks documented in the evaluation record. A bounded typed-core OWL mapping and scoped HermiT run are recorded; complete semantic verification remains open.</p>',
       '<nav>'+' · '.join('<a href="'+e(repo+path)+'">'+e(label)+'</a>' for label,path in nav)+'</nav>',
@@ -37,7 +38,7 @@ names={c['id']:c['display_title'] for c in m['concepts']+m['imported_types']}
 for g in m['generalizations']:body.append('<li class="entry">'+e(names[g['specific']])+' is a '+e(names[g['general']])+'.</li>')
 body.append('</ul><h2>Interpretation constraints</h2>')
 for c in m['constraints']:body.append('<article class="entry"><h3>'+e(c['title'])+'</h3><p>'+e(c['statement'])+'</p><p class="meta">'+e(c['id'])+'</p></article>')
-body.append('<footer>Generated from the version-controlled Riskium design. The source model owns definitions; this reference is a derived view.</footer>')
+body.append('<footer>Generated from the version-controlled Riskium design. The source model owns definitions; this reference is a derived view. Scientific content: <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Original project software: MIT. Copyright 2026 Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi, for their respective original contributions. See <a href="'+repo+'RIGHTS.md">scope and exclusions</a> and <a href="'+repo+'CITATION.cff">citation metadata</a>.</footer>')
 doc='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Riskium reference</title><style>body{font:16px/1.65 system-ui,sans-serif;color:#203141;max-width:1160px;margin:40px auto;padding:0 24px}h1{font-size:36px}h2{margin-top:42px}a{color:#17658a}nav{margin:22px 0}article{border-bottom:1px solid #dce3e8;padding:8px 0}.meta,footer{color:#536778;font-size:13px}table{border-collapse:collapse;font-size:14px}td,th{border:1px solid #dce3e8;padding:10px;text-align:left;vertical-align:top}th{background:#edf3f6}.scroll{overflow:auto}input{font:inherit;padding:8px}footer{margin-top:40px}</style></head><body>'+''.join(body)+'<script>document.getElementById("filter").addEventListener("input",function(){const q=this.value.toLowerCase();document.querySelectorAll(".entry").forEach(function(el){el.hidden=!el.textContent.toLowerCase().includes(q);});});</script></body></html>'
 p=ROOT/'docs/site/index.html';p.parent.mkdir(parents=True,exist_ok=True);p.write_text(doc+'\n')
 entry=ROOT/'docs/index.html'

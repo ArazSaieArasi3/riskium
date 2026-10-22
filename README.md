@@ -15,7 +15,7 @@ The model supports the interpretation and traceability of risk information. It d
 | Review the requirements | [Ontology requirements](requirements/ontology-requirements.md) |
 | Assess the evidence and remaining work | [Evaluation](evaluation/README.md) and [roadmap](docs/roadmap.md) |
 | Read candidate release claims | [Claim inventory and unresolved routes](evaluation/release-claims.md) |
-| Track the first release | [Release profile and gates](docs/first-release-profile.md), [candidate notes and rights decisions](docs/release-candidate-notes.md), and [checklist](docs/release-checklist.md) |
+| Track the first release | [Release profile and gates](docs/first-release-profile.md), [candidate notes](docs/release-candidate-notes.md), [prerelease specification](docs/prerelease-v0.3.1-rc.1.md), and [checklist](docs/release-checklist.md) |
 | Inspect the HermiT reasoning evidence | [Human-readable report](evaluation/hermit/report.md), [JSON receipt](evaluation/hermit/report.json) and [exact premise](evaluation/hermit/premise.rdf) |
 | Inspect explicit-data validation | [Current SHACL coverage](evaluation/shacl/coverage-status.md), [endpoint report](evaluation/shacl/endpoints/report.md), [conditional-profile report](evaluation/shacl/report.md), [catalog admission](evaluation/shacl/admission/report.md), [context/revision coherence](evaluation/shacl/coherence/report.md) and [vocabulary/evidence qualification](evaluation/shacl/qualification/report.md) |
 | Review the optional phenomenon boundary | [C-14 reconciliation](evaluation/c14-boundary-review.md) |
@@ -34,4 +34,6 @@ The [generated reference](https://arazsaiearasi3.github.io/riskium/site/) is pub
 
 ## Reuse and contribution
 
-Read the [reading guide](READING-GUIDE.md), [contribution rules](CONTRIBUTING.md) and [rights status](RIGHTS.md). Public documentation is maintained in English. Definitions have one owner in the model; explanations and generated views refer to that source.
+Original scientific artifacts use **CC BY 4.0**; original software in `tools/` and `tests/` uses **MIT**. Read the exact [license scopes](RIGHTS.md), [third-party exclusions](NOTICE.md), [authors and affiliations](AUTHORS.md) and [citation metadata](CITATION.cff). The three authors retain rights in their respective original contributions. No DOI or published-article status is asserted.
+
+Read the [reading guide](READING-GUIDE.md) and [contribution rules](CONTRIBUTING.md). Public documentation is maintained in English. Definitions have one owner in the model; explanations and generated views refer to that source.

@@ -10,13 +10,20 @@
   "derived_model": "ontology/derived/typed-core.json",
   "generated_reference": "docs/site/index.html",
   "native_ontouml": "ontology/native/riskium.ontouml.json",
-  "owl_formalization": "pending",
-  "hermit_suite": "planned",
-  "shacl_suite": "planned",
+  "owl_formalization": "bounded typed-core mapping executed",
+  "hermit_suite": "693 executed cases PASS; 281/295 baseline covered; 14 NOT_RUN",
+  "shacl_suite": "341 scoped PASS; 1 PARTIAL; 17 NOT_RUN of 359",
   "stable_release": "not established",
   "native_evidence": "evaluation/native-model-review.md",
   "native_validation_scope": "exchange schema, SDK interoperability and source fidelity; not complete semantic verification",
   "native_review_policy": "tools/build_native.py:generalization_sets",
   "coverage_contract": "evaluation/coverage-contract.json",
-  "manuscript_final_review": "https://github.com/ArazSaieArasi3/riskium/issues/14"
+  "manuscript_final_review": "https://github.com/ArazSaieArasi3/riskium/issues/14",
+  "license_scopes": {
+    "scientific": "CC-BY-4.0",
+    "software": "MIT"
+  },
+  "citation": "CITATION.cff",
+  "authors": "AUTHORS.md",
+  "release_candidate": "v0.3.1-rc.1 proposed; not published"
 }

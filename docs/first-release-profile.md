@@ -6,10 +6,10 @@ Target a **reviewed development prerelease of conceptual design 0.3.1**, provisi
 
 | Gate | Current evidence | Action before the first release |
 | --- | --- | --- |
-| Rights and citation | [RIGHTS.md](../RIGHTS.md) explicitly says no repository-wide license, DOI or final citation metadata. The [candidate notes](release-candidate-notes.md) identify the exact artifact groups and metadata to decide. | Rights holder selects the actual license scope, resolves third-party items and verifies author/title/version/date in citation metadata. Publish no assumed license or placeholder DOI. **Blocking.** |
+| Rights and citation | Project owner approved CC BY 4.0 for original scientific artifacts and MIT for software; [RIGHTS.md](../RIGHTS.md), [NOTICE.md](../NOTICE.md), [AUTHORS.md](../AUTHORS.md) and [CITATION.cff](../CITATION.cff) record scopes, exclusions and manuscript-matched authors/affiliations. | Decision implemented on 22 October 2026. Preserve the artifact scopes and exclusions in the frozen package and public pages. No DOI or unpublished article metadata is invented. **Decision gate met.** |
 | Evidence and claims | The [candidate claim inventory](../evaluation/release-claims.md) lists HermiT's 281/295, SHACL's 341 scoped PASS, one PARTIAL and 17 NOT_RUN of 359, and every open formal route. [C-14 review](../evaluation/c14-boundary-review.md) reuses prior evidence without adding engine coverage. | Review the final wording and limits at the exact release commit; preserve C-08 and all unrun routes. Do not label module coverage overall semantic validity. **Blocking until freeze review.** |
 | Generated reference and links | The [public reference](https://arazsaiearasi3.github.io/riskium/site/) was first deployed from commit `6ca90cc` via `main` `/docs`; the Pages run succeeded and the entry redirected to the rendered reference with nine repository links and scoped coverage notices. The [native Wiki](https://github.com/ArazSaieArasi3/riskium/wiki) contains six pages and `_Sidebar.md`; its head `55d80eb` was cloned and all seven files matched the curated source from `0021111` byte for byte on 22 October 2026. | Public reference and Wiki publication/readback gate met for the development prerelease. A separately justified ontology explorer and broader mobile/download review remain in #10; they are not claimed as delivered in this package. |
-| Freeze and reproduction | Model and 359-row SHACL contract are pinned; individual module receipts exist. A 79-test preflight passed at `12bcb05`, and `tools/build_release_manifest.py` can inventory an exact Git commit. | On the proposed release commit, run required clean checks, verify receipts and public file inventory, produce SHA-256 manifest and release notes, then read back public files and tag. The preflight is not the final clean rerun. **Blocking.** |
+| Freeze and reproduction | Model and 359-row SHACL contract are pinned; individual module receipts exist. A full clean rehearsal at `313c967` reproduced 79 regressions, 693 HermiT cases and all five SHACL modules in fresh pinned environments; results matched the historical receipts. `tools/build_release_manifest.py` inventories an exact Git commit. | On the proposed release commit, run required clean checks, verify receipts and public file inventory, produce SHA-256 manifest and release notes, then read back public files and tag. The preflight is not the final clean rerun. **Blocking.** |
 
 ## Explicit prerelease limits
 
@@ -17,7 +17,7 @@ The first package can report executed formal modules and a bounded typed-core ma
 
 ## Convergent sequence
 
-1. Complete the rights/citation decision and claim-based evidence summary, with exact unresolved obligations.
+1. Preserve the approved rights/citation decision and claim-based evidence summary, with exact unresolved obligations.
 2. Preserve the verified Wiki and Pages routes in the package inventory; review public links at the frozen release commit.
 3. Freeze a source commit, rerun required checks in a clean environment, record inventory/checksums and issue release notes.
 4. Publish the prerelease tag only after the blocking gates pass, then read it back. Update #15 with the exact evidence and limitations.
