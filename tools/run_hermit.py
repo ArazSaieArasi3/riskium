@@ -16,6 +16,7 @@ import time
 from pathlib import Path
 
 from rdflib import BNode, Graph, Literal, Namespace, RDF, RDFS, OWL, XSD
+from rdflib.collection import Collection
 from rdflib.compare import isomorphic
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -178,6 +179,32 @@ def scenario_specs(full, model):
 
     # C-08: a class-level disjunction does not require named graph fillers and
     # does not fabricate the other anchor for a scale-only threshold.
+    anchor_axiom = Graph()
+    declarations(anchor_axiom, ["RKM-C070", "RKM-C069", "RKM-C036"],
+                 ["RX-025", "RK2-020"])
+    union, first, second, members = (BNode("threshold-anchor-union"),
+                                      BNode("indicator-anchor"), BNode("scale-anchor"),
+                                      BNode("anchor-members"))
+    anchor_axiom.add((RISK["RKM-C070"], RDFS.subClassOf, union))
+    anchor_axiom.add((union, RDF.type, OWL.Class))
+    anchor_axiom.add((union, OWL.unionOf, members))
+    Collection(anchor_axiom, members, [first, second])
+    for restriction, prop, target in ((first, "RX-025", "RKM-C069"),
+                                      (second, "RK2-020", "RKM-C036")):
+        anchor_axiom.add((restriction, RDF.type, OWL.Restriction))
+        anchor_axiom.add((restriction, OWL.onProperty, RISK[prop]))
+        anchor_axiom.add((restriction, OWL.someValuesFrom, RISK[target]))
+    specs.append(dict(id="H-C08-ANCHOR-UNION", kind="entailment", family="Constraint probe",
+                      constraint="C-08", expected=True, conclusion=anchor_axiom,
+                      meaning="Threshold entails the reviewed indicator-or-scale existential"))
+    missing_union = with_ontology()
+    for candidate in list(missing_union.objects(RISK["RKM-C070"], RDFS.subClassOf)):
+        if missing_union.value(candidate, OWL.unionOf):
+            missing_union.remove((RISK["RKM-C070"], RDFS.subClassOf, candidate))
+    specs.append(dict(id="H-C08-REMOVED-UNION", kind="entailment", family="Boundary mutation",
+                      constraint="C-08", expected=False, premise=missing_union,
+                      conclusion=anchor_axiom,
+                      meaning="Removing the anchor axiom destroys its entailment"))
     threshold, scale, indicator = (RISK["probe-c08-threshold"], RISK["probe-c08-scale"],
                                    RISK["probe-c08-indicator"])
     scale_only = with_ontology()
