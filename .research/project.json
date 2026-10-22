@@ -4,7 +4,7 @@
   "repository": "https://github.com/ArazSaieArasi3/riskium",
   "language": "English",
   "model_version": "0.3.1",
-  "state": "conceptual design under review",
+  "state": "development prerelease published; independent scientific acceptance open",
   "semantic_authority": "ontology/riskium-model.json",
   "curated_documentation": "docs/",
   "derived_model": "ontology/derived/typed-core.json",
@@ -25,5 +25,10 @@
   },
   "citation": "CITATION.cff",
   "authors": "AUTHORS.md",
-  "release_candidate": "v0.3.1-rc.1 proposed; not published"
+  "release_candidate": "v0.3.1-rc.1 published",
+  "development_prerelease": {
+    "tag": "v0.3.1-rc.1",
+    "source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+    "url": "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.1"
+  }
 }

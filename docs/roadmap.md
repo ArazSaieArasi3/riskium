@@ -1,6 +1,6 @@
 # Roadmap
 
-The remaining work is organized by outcome. Migration established a public conceptual-design snapshot. The curated Wiki and generated reference are now published; scientific validation and a stable release remain separate.
+The remaining work is organized by outcome. Migration established a public conceptual-design snapshot. The curated Wiki and generated reference are now published; the first development prerelease is published; scientific validation and a stable release remain separate.
 
 | Work item | State |
 | --- | --- |
@@ -18,14 +18,14 @@ The remaining work is organized by outcome. Migration established a public conce
 | [Reconcile the separate relational implementation with the reviewed model](https://github.com/ArazSaieArasi3/riskium/issues/12) | Open |
 | [Prepare and review the independent literature case study](https://github.com/ArazSaieArasi3/riskium/issues/13) | Open |
 | [Complete the final manuscript review and reconcile claims, tests and numbers](https://github.com/ArazSaieArasi3/riskium/issues/14) | Open; [review checklist](manuscript-review-checklist.md) |
-| [Prepare the first reviewed Riskium release](https://github.com/ArazSaieArasi3/riskium/issues/15) | Rights/citation decision implemented; clean candidate engine rehearsal complete; final freeze, manifest/readback and tag/release publication open; [release profile](first-release-profile.md) |
+| [Prepare the first reviewed Riskium release](https://github.com/ArazSaieArasi3/riskium/issues/15) | Complete for the bounded development profile: [v0.3.1-rc.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.1) published, tag and four asset digests verified; [release profile](first-release-profile.md) |
 | [Maintain future extensions and interoperability boundaries](https://github.com/ArazSaieArasi3/riskium/issues/16) | Open |
 
 ## Recommended sequence
 
 The coverage-design, native-exchange and bounded OWL-mapping stages are complete within their documented limits. HermiT retains 14 engine-specific NOT_RUN rows; C-09 has alternative evidence in the first scoped SHACL batch. All 254 ordered endpoint obligations now have isolated and paired-end evidence. All 80 catalog admission rows now have scoped metadata or boundary-exclusion evidence. CatalogInspection is the sole supported metadata task; risk-assessment readiness remains unclaimed. C-23/C-24 now have [explicit graph coherence evidence](../evaluation/shacl/coherence/report.md), with static/history limits retained. C-11/C-12 now have [scoped application qualification evidence](../evaluation/shacl/qualification/report.md), while identity adjudication and evidence adequacy remain open. Continue #5 with the 17 remaining NOT_RUN constraint routes and full multi-relation/conditional-profile integration. Resolve C-08 compatibility through an approved unit/scale schema. Reconcile requirement and query evidence in #6, independent semantic review in #7 and reference interpretation in #8. The [semantic assurance plan](../evaluation/semantic-assurance-plan.md) defines the evidence and limits; an executed subset must not be reported as universal validation.
 
-The curated [Wiki](https://github.com/ArazSaieArasi3/riskium/wiki) and [generated reference](https://arazsaiearasi3.github.io/riskium/site/) are live and read back. The reference reads matching HermiT/SHACL receipts; an ontology explorer still depends on a justified formal export. The [first release profile](first-release-profile.md) groups remaining work into a bounded development prerelease with rights, evidence and freeze gates.
+The curated [Wiki](https://github.com/ArazSaieArasi3/riskium/wiki) and [generated reference](https://arazsaiearasi3.github.io/riskium/site/) are live and read back. The reference reads matching HermiT/SHACL receipts; an ontology explorer still depends on a justified formal export. The [first release profile](first-release-profile.md) records the completed development-prerelease gates. Next reconcile requirement/CQ acceptance in #6 and align the manuscript in #14 with the exact released evidence; stable scientific acceptance remains a separate milestone.
 
 Database, literature case study and manuscript work remain distinct. Future extensions are not current capabilities. The first release selects an explicit maturity and evidence profile using the release checklist.
 

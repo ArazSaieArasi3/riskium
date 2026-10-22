@@ -1,6 +1,6 @@
 # Riskium v0.3.1-rc.1: development prerelease specification
 
-This document specifies the first development prerelease of conceptual design **0.3.1**. Its publication status is determined by the [GitHub Releases page](https://github.com/ArazSaieArasi3/riskium/releases), not by the presence of this file. It is not a stable scientific release or independent semantic certification.
+The first development prerelease of conceptual design **0.3.1** was [published on 22 October 2026](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.1) at `cfb85905ab37549c7090f00a41ca62cdd3364ab5`. It is not a stable scientific release or independent semantic certification.
 
 ## Package
 
@@ -16,11 +16,11 @@ Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi, in manuscript order. [AUTHO
 | --- | --- |
 | Conceptual inventory | 80 catalog concepts, including 77 typed core concepts and three optional boundaries; one imported anchor is separately recorded |
 | Bounded OWL mapping | 77 typed classes and 127 object properties; not a complete representation of every interpretation constraint |
-| HermiT | 693 cases passed in the complete candidate rehearsal; 281/295 baseline obligations covered, 14 NOT_RUN |
+| HermiT | 693 cases passed in the final freeze; 281/295 baseline obligations covered, 14 NOT_RUN |
 | SHACL | Five scoped modules; 341 PASS, 1 PARTIAL and 17 NOT_RUN out of 359 obligations |
-| Regressions | 79 engineering tests passed in the clean candidate rehearsal |
+| Regressions | 79 engineering tests passed in the clean final freeze |
 
-The final freeze checks and any engine reruns must be recorded outside the tagged source, with hashes for their exact evidence. Historical receipts retain their actual source commits and are not relabeled as final runs. See [claim inventory](../evaluation/release-claims.md), [release gates](first-release-profile.md) and issue #15 for exact provenance.
+All 21 final-freeze commands passed. Fresh engine reports, graphs and logs are attached to the release outside the tagged source, with exact hashes in its verification assets. Historical receipts retain their actual source commits and are not relabeled as final runs. See [claim inventory](../evaluation/release-claims.md), [release gates](first-release-profile.md) and issue #15 for exact provenance.
 
 C-08 unit/scale compatibility remains partial. The 14 HermiT and 17 SHACL unrun routes, full conditional/multi-relation integration, independent semantic review, requirement/CQ acceptance, standards interpretation, literature case acceptance, relational implementation and final manuscript review remain open. This package does not establish risk-assessment readiness, complete managed-record admission, an ontology explorer, a working database, regulatory compliance or an overall semantic-correctness percentage.
 
