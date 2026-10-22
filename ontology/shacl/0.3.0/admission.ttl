@@ -1,0 +1,987 @@
+@prefix ad: <https://github.com/ArazSaieArasi3/riskium/shapes/0.3.0#> .
+@prefix ap: <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ad:For-RKM-C001 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C001,
+        ad:ExpectedClass-RKM-C001 .
+
+ad:For-RKM-C002 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C002,
+        ad:ExpectedClass-RKM-C002 .
+
+ad:For-RKM-C003 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C003,
+        ad:ExpectedClass-RKM-C003 .
+
+ad:For-RKM-C004 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C004,
+        ad:ExpectedClass-RKM-C004 .
+
+ad:For-RKM-C005 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C005,
+        ad:ExpectedClass-RKM-C005 .
+
+ad:For-RKM-C006 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C006,
+        ad:ExpectedClass-RKM-C006 .
+
+ad:For-RKM-C008 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C008,
+        ad:ExpectedClass-RKM-C008 .
+
+ad:For-RKM-C009 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C009,
+        ad:ExpectedClass-RKM-C009 .
+
+ad:For-RKM-C011 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C011,
+        ad:ExpectedClass-RKM-C011 .
+
+ad:For-RKM-C012 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C012,
+        ad:ExpectedClass-RKM-C012 .
+
+ad:For-RKM-C013 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C013,
+        ad:ExpectedClass-RKM-C013 .
+
+ad:For-RKM-C014 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C014,
+        ad:ExpectedClass-RKM-C014 .
+
+ad:For-RKM-C015 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C015,
+        ad:ExpectedClass-RKM-C015 .
+
+ad:For-RKM-C016 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C016,
+        ad:ExpectedClass-RKM-C016 .
+
+ad:For-RKM-C017 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C017,
+        ad:ExpectedClass-RKM-C017 .
+
+ad:For-RKM-C018 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C018,
+        ad:ExpectedClass-RKM-C018 .
+
+ad:For-RKM-C019 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C019,
+        ad:ExpectedClass-RKM-C019 .
+
+ad:For-RKM-C020 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C020,
+        ad:ExpectedClass-RKM-C020 .
+
+ad:For-RKM-C021 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C021,
+        ad:ExpectedClass-RKM-C021 .
+
+ad:For-RKM-C022 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C022,
+        ad:ExpectedClass-RKM-C022 .
+
+ad:For-RKM-C023 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C023,
+        ad:ExpectedClass-RKM-C023 .
+
+ad:For-RKM-C024 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C024,
+        ad:ExpectedClass-RKM-C024 .
+
+ad:For-RKM-C025 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C025,
+        ad:ExpectedClass-RKM-C025 .
+
+ad:For-RKM-C026 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C026,
+        ad:ExpectedClass-RKM-C026 .
+
+ad:For-RKM-C027 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C027,
+        ad:ExpectedClass-RKM-C027 .
+
+ad:For-RKM-C028 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C028,
+        ad:ExpectedClass-RKM-C028 .
+
+ad:For-RKM-C029 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C029,
+        ad:ExpectedClass-RKM-C029 .
+
+ad:For-RKM-C030 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C030,
+        ad:ExpectedClass-RKM-C030 .
+
+ad:For-RKM-C031 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C031,
+        ad:ExpectedClass-RKM-C031 .
+
+ad:For-RKM-C032 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C032,
+        ad:ExpectedClass-RKM-C032 .
+
+ad:For-RKM-C033 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C033,
+        ad:ExpectedClass-RKM-C033 .
+
+ad:For-RKM-C034 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C034,
+        ad:ExpectedClass-RKM-C034 .
+
+ad:For-RKM-C035 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C035,
+        ad:ExpectedClass-RKM-C035 .
+
+ad:For-RKM-C036 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C036,
+        ad:ExpectedClass-RKM-C036 .
+
+ad:For-RKM-C037 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C037,
+        ad:ExpectedClass-RKM-C037 .
+
+ad:For-RKM-C038 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C038,
+        ad:ExpectedClass-RKM-C038 .
+
+ad:For-RKM-C039 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C039,
+        ad:ExpectedClass-RKM-C039 .
+
+ad:For-RKM-C040 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C040,
+        ad:ExpectedClass-RKM-C040 .
+
+ad:For-RKM-C041 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C041,
+        ad:ExpectedClass-RKM-C041 .
+
+ad:For-RKM-C042 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C042,
+        ad:ExpectedClass-RKM-C042 .
+
+ad:For-RKM-C043 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C043,
+        ad:ExpectedClass-RKM-C043 .
+
+ad:For-RKM-C044 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C044,
+        ad:ExpectedClass-RKM-C044 .
+
+ad:For-RKM-C046 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C046,
+        ad:ExpectedClass-RKM-C046 .
+
+ad:For-RKM-C047 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C047,
+        ad:ExpectedClass-RKM-C047 .
+
+ad:For-RKM-C048 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C048,
+        ad:ExpectedClass-RKM-C048 .
+
+ad:For-RKM-C049 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C049,
+        ad:ExpectedClass-RKM-C049 .
+
+ad:For-RKM-C050 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C050,
+        ad:ExpectedClass-RKM-C050 .
+
+ad:For-RKM-C051 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C051,
+        ad:ExpectedClass-RKM-C051 .
+
+ad:For-RKM-C052 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C052,
+        ad:ExpectedClass-RKM-C052 .
+
+ad:For-RKM-C053 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C053,
+        ad:ExpectedClass-RKM-C053 .
+
+ad:For-RKM-C054 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C054,
+        ad:ExpectedClass-RKM-C054 .
+
+ad:For-RKM-C055 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C055,
+        ad:ExpectedClass-RKM-C055 .
+
+ad:For-RKM-C056 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C056,
+        ad:ExpectedClass-RKM-C056 .
+
+ad:For-RKM-C057 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C057,
+        ad:ExpectedClass-RKM-C057 .
+
+ad:For-RKM-C058 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C058,
+        ad:ExpectedClass-RKM-C058 .
+
+ad:For-RKM-C059 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C059,
+        ad:ExpectedClass-RKM-C059 .
+
+ad:For-RKM-C060 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C060,
+        ad:ExpectedClass-RKM-C060 .
+
+ad:For-RKM-C061 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C061,
+        ad:ExpectedClass-RKM-C061 .
+
+ad:For-RKM-C062 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C062,
+        ad:ExpectedClass-RKM-C062 .
+
+ad:For-RKM-C063 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C063,
+        ad:ExpectedClass-RKM-C063 .
+
+ad:For-RKM-C064 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C064,
+        ad:ExpectedClass-RKM-C064 .
+
+ad:For-RKM-C065 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C065,
+        ad:ExpectedClass-RKM-C065 .
+
+ad:For-RKM-C066 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C066,
+        ad:ExpectedClass-RKM-C066 .
+
+ad:For-RKM-C067 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C067,
+        ad:ExpectedClass-RKM-C067 .
+
+ad:For-RKM-C068 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C068,
+        ad:ExpectedClass-RKM-C068 .
+
+ad:For-RKM-C069 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C069,
+        ad:ExpectedClass-RKM-C069 .
+
+ad:For-RKM-C070 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C070,
+        ad:ExpectedClass-RKM-C070 .
+
+ad:For-RKM-C071 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C071,
+        ad:ExpectedClass-RKM-C071 .
+
+ad:For-RKM-C072 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C072,
+        ad:ExpectedClass-RKM-C072 .
+
+ad:For-RKM-C073 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C073,
+        ad:ExpectedClass-RKM-C073 .
+
+ad:For-RKM-C074 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-C074,
+        ad:ExpectedClass-RKM-C074 .
+
+ad:For-RKM-X01 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-X01,
+        ad:ExpectedClass-RKM-X01 .
+
+ad:For-RKM-X02 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-X02,
+        ad:ExpectedClass-RKM-X02 .
+
+ad:For-RKM-X03 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-X03,
+        ad:ExpectedClass-RKM-X03 .
+
+ad:For-RKM-X04 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-X04,
+        ad:ExpectedClass-RKM-X04 .
+
+ad:For-RKM-X05 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-X05,
+        ad:ExpectedClass-RKM-X05 .
+
+ad:For-RKM-X06 a sh:NodeShape ;
+    sh:property ad:CandidateType-RKM-X06,
+        ad:ExpectedClass-RKM-X06 .
+
+ad:Record a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:property ad:Candidate,
+        ad:DeclaredClass,
+        ad:RequestedTask,
+        ad:Source,
+        ad:Subject,
+        ad:Title .
+
+ad:Task a sh:NodeShape ;
+    sh:property ad:RequiredTask .
+
+ad:Candidate a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C001 a sh:PropertyShape ;
+    sh:class risk:RKM-C001 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C002 a sh:PropertyShape ;
+    sh:class risk:RKM-C002 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C003 a sh:PropertyShape ;
+    sh:class risk:RKM-C003 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C004 a sh:PropertyShape ;
+    sh:class risk:RKM-C004 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C005 a sh:PropertyShape ;
+    sh:class risk:RKM-C005 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C006 a sh:PropertyShape ;
+    sh:class risk:RKM-C006 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C008 a sh:PropertyShape ;
+    sh:class risk:RKM-C008 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C009 a sh:PropertyShape ;
+    sh:class risk:RKM-C009 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C011 a sh:PropertyShape ;
+    sh:class risk:RKM-C011 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C012 a sh:PropertyShape ;
+    sh:class risk:RKM-C012 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C013 a sh:PropertyShape ;
+    sh:class risk:RKM-C013 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C014 a sh:PropertyShape ;
+    sh:class risk:RKM-C014 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C015 a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C016 a sh:PropertyShape ;
+    sh:class risk:RKM-C016 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C017 a sh:PropertyShape ;
+    sh:class risk:RKM-C017 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C018 a sh:PropertyShape ;
+    sh:class risk:RKM-C018 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C019 a sh:PropertyShape ;
+    sh:class risk:RKM-C019 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C020 a sh:PropertyShape ;
+    sh:class risk:RKM-C020 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C021 a sh:PropertyShape ;
+    sh:class risk:RKM-C021 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C022 a sh:PropertyShape ;
+    sh:class risk:RKM-C022 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C023 a sh:PropertyShape ;
+    sh:class risk:RKM-C023 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C024 a sh:PropertyShape ;
+    sh:class risk:RKM-C024 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C025 a sh:PropertyShape ;
+    sh:class risk:RKM-C025 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C026 a sh:PropertyShape ;
+    sh:class risk:RKM-C026 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C027 a sh:PropertyShape ;
+    sh:class risk:RKM-C027 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C028 a sh:PropertyShape ;
+    sh:class risk:RKM-C028 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C029 a sh:PropertyShape ;
+    sh:class risk:RKM-C029 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C030 a sh:PropertyShape ;
+    sh:class risk:RKM-C030 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C031 a sh:PropertyShape ;
+    sh:class risk:RKM-C031 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C032 a sh:PropertyShape ;
+    sh:class risk:RKM-C032 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C033 a sh:PropertyShape ;
+    sh:class risk:RKM-C033 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C034 a sh:PropertyShape ;
+    sh:class risk:RKM-C034 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C035 a sh:PropertyShape ;
+    sh:class risk:RKM-C035 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C036 a sh:PropertyShape ;
+    sh:class risk:RKM-C036 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C037 a sh:PropertyShape ;
+    sh:class risk:RKM-C037 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C038 a sh:PropertyShape ;
+    sh:class risk:RKM-C038 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C039 a sh:PropertyShape ;
+    sh:class risk:RKM-C039 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C040 a sh:PropertyShape ;
+    sh:class risk:RKM-C040 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C041 a sh:PropertyShape ;
+    sh:class risk:RKM-C041 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C042 a sh:PropertyShape ;
+    sh:class risk:RKM-C042 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C043 a sh:PropertyShape ;
+    sh:class risk:RKM-C043 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C044 a sh:PropertyShape ;
+    sh:class risk:RKM-C044 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C046 a sh:PropertyShape ;
+    sh:class risk:RKM-C046 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C047 a sh:PropertyShape ;
+    sh:class risk:RKM-C047 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C048 a sh:PropertyShape ;
+    sh:class risk:RKM-C048 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C049 a sh:PropertyShape ;
+    sh:class risk:RKM-C049 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C050 a sh:PropertyShape ;
+    sh:class risk:RKM-C050 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C051 a sh:PropertyShape ;
+    sh:class risk:RKM-C051 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C052 a sh:PropertyShape ;
+    sh:class risk:RKM-C052 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C053 a sh:PropertyShape ;
+    sh:class risk:RKM-C053 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C054 a sh:PropertyShape ;
+    sh:class risk:RKM-C054 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C055 a sh:PropertyShape ;
+    sh:class risk:RKM-C055 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C056 a sh:PropertyShape ;
+    sh:class risk:RKM-C056 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C057 a sh:PropertyShape ;
+    sh:class risk:RKM-C057 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C058 a sh:PropertyShape ;
+    sh:class risk:RKM-C058 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C059 a sh:PropertyShape ;
+    sh:class risk:RKM-C059 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C060 a sh:PropertyShape ;
+    sh:class risk:RKM-C060 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C061 a sh:PropertyShape ;
+    sh:class risk:RKM-C061 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C062 a sh:PropertyShape ;
+    sh:class risk:RKM-C062 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C063 a sh:PropertyShape ;
+    sh:class risk:RKM-C063 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C064 a sh:PropertyShape ;
+    sh:class risk:RKM-C064 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C065 a sh:PropertyShape ;
+    sh:class risk:RKM-C065 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C066 a sh:PropertyShape ;
+    sh:class risk:RKM-C066 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C067 a sh:PropertyShape ;
+    sh:class risk:RKM-C067 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C068 a sh:PropertyShape ;
+    sh:class risk:RKM-C068 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C069 a sh:PropertyShape ;
+    sh:class risk:RKM-C069 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C070 a sh:PropertyShape ;
+    sh:class risk:RKM-C070 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C071 a sh:PropertyShape ;
+    sh:class risk:RKM-C071 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C072 a sh:PropertyShape ;
+    sh:class risk:RKM-C072 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C073 a sh:PropertyShape ;
+    sh:class risk:RKM-C073 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-C074 a sh:PropertyShape ;
+    sh:class risk:RKM-C074 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-X01 a sh:PropertyShape ;
+    sh:class risk:RKM-X01 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-X02 a sh:PropertyShape ;
+    sh:class risk:RKM-X02 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-X03 a sh:PropertyShape ;
+    sh:class risk:RKM-X03 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-X04 a sh:PropertyShape ;
+    sh:class risk:RKM-X04 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-X05 a sh:PropertyShape ;
+    sh:class risk:RKM-X05 ;
+    sh:path ap:candidate .
+
+ad:CandidateType-RKM-X06 a sh:PropertyShape ;
+    sh:class risk:RKM-X06 ;
+    sh:path ap:candidate .
+
+ad:DeclaredClass a sh:PropertyShape ;
+    sh:in ( risk:RKM-C001 risk:RKM-C002 risk:RKM-C003 risk:RKM-C004 risk:RKM-C005 risk:RKM-C006 risk:RKM-C008 risk:RKM-C009 risk:RKM-C011 risk:RKM-C012 risk:RKM-C013 risk:RKM-C014 risk:RKM-C015 risk:RKM-C016 risk:RKM-C017 risk:RKM-C018 risk:RKM-C019 risk:RKM-C020 risk:RKM-C021 risk:RKM-C022 risk:RKM-C023 risk:RKM-C024 risk:RKM-C025 risk:RKM-C026 risk:RKM-C027 risk:RKM-C028 risk:RKM-C029 risk:RKM-C030 risk:RKM-C031 risk:RKM-C032 risk:RKM-C033 risk:RKM-C034 risk:RKM-C035 risk:RKM-C036 risk:RKM-C037 risk:RKM-C038 risk:RKM-C039 risk:RKM-C040 risk:RKM-C041 risk:RKM-C042 risk:RKM-C043 risk:RKM-C044 risk:RKM-C046 risk:RKM-C047 risk:RKM-C048 risk:RKM-C049 risk:RKM-C050 risk:RKM-C051 risk:RKM-C052 risk:RKM-C053 risk:RKM-C054 risk:RKM-C055 risk:RKM-C056 risk:RKM-C057 risk:RKM-C058 risk:RKM-C059 risk:RKM-C060 risk:RKM-C061 risk:RKM-C062 risk:RKM-C063 risk:RKM-C064 risk:RKM-C065 risk:RKM-C066 risk:RKM-C067 risk:RKM-C068 risk:RKM-C069 risk:RKM-C070 risk:RKM-C071 risk:RKM-C072 risk:RKM-C073 risk:RKM-C074 risk:RKM-X01 risk:RKM-X02 risk:RKM-X03 risk:RKM-X04 risk:RKM-X05 risk:RKM-X06 ) ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C001 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C001 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C002 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C002 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C003 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C003 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C004 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C004 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C005 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C005 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C006 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C006 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C008 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C008 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C009 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C009 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C011 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C011 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C012 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C012 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C013 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C013 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C014 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C014 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C015 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C015 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C016 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C016 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C017 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C017 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C018 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C018 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C019 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C019 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C020 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C020 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C021 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C021 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C022 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C022 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C023 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C023 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C024 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C024 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C025 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C025 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C026 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C026 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C027 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C027 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C028 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C028 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C029 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C029 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C030 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C030 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C031 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C031 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C032 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C032 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C033 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C033 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C034 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C034 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C035 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C035 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C036 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C036 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C037 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C037 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C038 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C038 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C039 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C039 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C040 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C040 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C041 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C041 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C042 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C042 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C043 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C043 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C044 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C044 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C046 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C046 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C047 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C047 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C048 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C048 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C049 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C049 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C050 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C050 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C051 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C051 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C052 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C052 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C053 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C053 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C054 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C054 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C055 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C055 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C056 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C056 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C057 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C057 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C058 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C058 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C059 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C059 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C060 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C060 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C061 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C061 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C062 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C062 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C063 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C063 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C064 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C064 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C065 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C065 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C066 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C066 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C067 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C067 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C068 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C068 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C069 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C069 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C070 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C070 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C071 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C071 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C072 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C072 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C073 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C073 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-C074 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-C074 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-X01 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-X01 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-X02 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-X02 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-X03 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-X03 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-X04 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-X04 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-X05 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-X05 ;
+    sh:path ap:declaredClass .
+
+ad:ExpectedClass-RKM-X06 a sh:PropertyShape ;
+    sh:hasValue risk:RKM-X06 ;
+    sh:path ap:declaredClass .
+
+ad:LanguageTitle sh:datatype rdf:langString .
+
+ad:RequestedTask a sh:PropertyShape ;
+    sh:in ( ap:CatalogInspection ) ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ap:requestedTask .
+
+ad:RequiredTask a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path ap:requestedTask .
+
+ad:Source a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path dct:source .
+
+ad:StringTitle sh:datatype xsd:string .
+
+ad:Subject a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path dct:subject .
+
+ad:Title a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:or ( ad:StringTitle ad:LanguageTitle ) ;
+    sh:path dct:title ;
+    sh:pattern "\\S" .
+

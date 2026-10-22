@@ -1,0 +1,33 @@
+{
+  "version": "0.3.0",
+  "decision_type": "AUTHOR_IMPLEMENTATION_POLICY_NOT_INDEPENDENT_DOMAIN_REVIEW",
+  "source_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "contract_sha256": "4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5",
+  "record_fields": {
+    "candidate": "Exactly one named IRI, explicitly typed as the externally requested class or a source subclass",
+    "declaredClass": "Exactly one of the 77 core class IRIs, matching the external request",
+    "title": "At least one nonblank xsd:string or language-tagged literal",
+    "subject": "At least one IRI identifying the record subject/context; no truth inference",
+    "source": "At least one source IRI; presence alone does not establish truth or endorsement",
+    "requestedTask": "Optional on managed records, required on catalog-inspection task records; only CatalogInspection is supported"
+  },
+  "profiles": {
+    "raw": "No metadata constraints and no identity normalization; staging is not acceptance",
+    "managed-catalog": "Nonempty external focus and expected-class request; named record identity and the specified metadata envelope",
+    "task-catalog-inspection": "Managed metadata plus explicit CatalogInspection task; means metadata inspection only, never risk assessment or calculation readiness"
+  },
+  "identity": "Normalize asserted named sameAs aliases; reject sameAs/differentFrom conflicts before validation. Do not merge by equal labels. Blank record/candidate identities fail managed SHACL but are preserved raw.",
+  "taxonomy": "Append only 66 source subclass triples. No domain/range, OWL existential, external import, or unique-name inference.",
+  "boundaries": "Three optional catalog notions are retained raw, excluded from core class-specific profiles and rejected as managed declared classes.",
+  "scope_limits": [
+    "Metadata belongs to the information record, not to the represented agent/object/event as an ontological requirement.",
+    "No universal subject/provenance/field rule is added to the conceptual ontology or OWL.",
+    "Task-specific risk inputs, scalar/scale/unit compatibility and full integration remain parent #5.",
+    "A source is an explicit locator, not proof of source accessibility, authority or scientific truth.",
+    "Scope is caller-declared; omitted records outside the explicit request are not claimed validated.",
+    "Each baseline row PASS applies only to managed catalog metadata or boundary exclusion under this policy."
+  ],
+  "schema_guard": "Managed instance input must not supply RDFS schema, OWL equivalence or imports; source taxonomy is appended from the pinned model. Raw retains such input without admission.",
+  "focus_specialization": "Effective shapes retain only reachable requested profiles; the generic allowed-class list is restricted to externally requested core classes, while each record retains its exact expected-class hasValue rule. Class selection never comes from untrusted data.",
+  "blank_focus": "Blank record focus uses private caller-added targetSubjectsOf selector predicates, because blank-node targetNode is excluded by the pinned meta-schema. Input-supplied focus selectors reject before SHACL; effective data snapshots retain caller additions."
+}

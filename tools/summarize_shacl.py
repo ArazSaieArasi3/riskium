@@ -12,7 +12,7 @@ def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def main():
-    paths=[OUT/"report.json",OUT/"endpoints/report.json"]
+    paths=[OUT/"report.json",OUT/"endpoints/report.json",OUT/"admission/report.json"]
     baseline_path=ROOT/"evaluation/coverage-review.json"
     model_path=ROOT/"ontology/riskium-model.json"
     baseline=[r for r in json.loads(baseline_path.read_text())["obligation_reviews"] if r["engine"]=="SHACL"]
@@ -44,13 +44,13 @@ def main():
         exercised_including_partial_percent=round((counts["PASS"]+counts["PARTIAL"])/359*100,2),
         families={k:dict(Counter(r["outcome"] for r in rows if r["family"]==k)) for k in sorted({r["family"] for r in rows})},
         limitations=["Conditional profiles and cardinality module are executed separately; 127 relation pairs have endpoint integration tests.",
-            "Full multi-relation managed-record integration and catalog admission remain pending.",
+            "Catalog metadata admission is scoped to CatalogInspection, not risk assessment; full conditional/multi-relation integration remains pending.",
             "C-08 unit/scale compatibility remains PARTIAL/BLOCKED.",
             "Coverage percentages do not measure overall semantic correctness."],obligations=rows)
     (OUT/"coverage-status.json").write_text(json.dumps(result,indent=2)+"\n")
     md=f"""# SHACL module execution coverage
 
-This is the current source-bound execution ledger for conceptual model 0.3.1. It combines the [conditional profile batch](report.md) and [ordered endpoint batch](endpoints/report.md). The [JSON ledger](coverage-status.json) pins their exact digests and each obligation's case references. Both receipts use the same conceptual source and 359-row coverage contract; no historical pass from another model is imported.
+This is the current source-bound execution ledger for conceptual model 0.3.1. It combines the [conditional profile batch](report.md) [ordered endpoint batch](endpoints/report.md) and [catalog metadata admission batch](admission/report.md). The [JSON ledger](coverage-status.json) pins their exact digests and each obligation's case references. All receipts use the same conceptual source and 359-row coverage contract; no historical pass from another model is imported.
 
 | Measure | Result |
 | --- | ---: |
@@ -66,9 +66,9 @@ This is the current source-bound execution ledger for conceptual model 0.3.1. It
 """
     for name,values in result["families"].items():md+=f"| {name} | {values.get('PASS',0)} | {values.get('PARTIAL',0)} | {values.get('NOT_RUN',0)} |\n"
     md+="""
-The endpoint batch executes all 254 ordered ends with isolated cardinality controls and paired-end integration for all 127 typed relations. The earlier conditional profiles retain three scoped passes and C-08's partial result. Their fixture populations differ; this ledger reports obligation coverage, not full-profile acceptance of arbitrary records. The 80 catalog-admission rows and 21 other constraint rows are NOT_RUN. Global integration across relations and conditional profiles still needs separate fixtures.
+The endpoint batch executes all 254 ordered ends with isolated cardinality controls and paired-end integration for all 127 typed relations. The earlier conditional profiles retain three scoped passes and C-08's partial result. Their fixture populations differ; this ledger reports obligation coverage, not full-profile acceptance of arbitrary records. All 80 catalog-admission rows now have scoped metadata or boundary-exclusion evidence. The 21 other constraint rows remain NOT_RUN. Global integration across relations and conditional profiles still needs separate fixtures.
 
-The next batch implements catalog admission, then remaining constraint routes and full managed-profile integration. Unit/scale compatibility needs an approved schema. Requirement/CQ outcomes, independent semantic judgments and real-world case adequacy are governed by the [semantic assurance plan](../semantic-assurance-plan.md).
+The next batch implements remaining constraint routes and full managed-profile integration. Catalog admission supports metadata inspection only, not risk-assessment readiness. Unit/scale compatibility needs an approved schema. Requirement/CQ outcomes, independent semantic judgments and real-world case adequacy are governed by the [semantic assurance plan](../semantic-assurance-plan.md).
 
 Reproduce after running the respective suites:
 
@@ -82,7 +82,7 @@ python3 tools/summarize_shacl.py
 | --- | --- | --- | --- |
 """
     for r in rows:
-        link="[endpoint receipt](endpoints/report.md)" if r["evidence"] and "/endpoints/" in r["evidence"] else "[conditional receipt](report.md)" if r["evidence"] else "—"
+        link="[admission receipt](admission/report.md)" if r["evidence"] and "/admission/" in r["evidence"] else "[endpoint receipt](endpoints/report.md)" if r["evidence"] and "/endpoints/" in r["evidence"] else "[conditional receipt](report.md)" if r["evidence"] else "—"
         md+=f"| `{r['id']}` | `{r['source_element']}` | {r['outcome']} | {link} |\n"
     (OUT/"coverage-status.md").write_text(md)
     print(json.dumps({k:result[k] for k in ("outcomes","pass_percent","exercised_including_partial_percent")}))
