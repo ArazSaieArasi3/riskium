@@ -14,6 +14,7 @@ The model supports the interpretation and traceability of risk information. It d
 | View the model | [Selected view](diagrams/selected-view.svg) and [complete view](diagrams/complete-view.svg) |
 | Review the requirements | [Ontology requirements](requirements/ontology-requirements.md) |
 | Assess the evidence and remaining work | [Evaluation](evaluation/README.md) and [roadmap](docs/roadmap.md) |
+| Read candidate release claims | [Claim inventory and unresolved routes](evaluation/release-claims.md) |
 | Track the first release | [Release profile and gates](docs/first-release-profile.md) and [checklist](docs/release-checklist.md) |
 | Inspect the HermiT reasoning evidence | [Human-readable report](evaluation/hermit/report.md), [JSON receipt](evaluation/hermit/report.json) and [exact premise](evaluation/hermit/premise.rdf) |
 | Inspect explicit-data validation | [Current SHACL coverage](evaluation/shacl/coverage-status.md), [endpoint report](evaluation/shacl/endpoints/report.md), [conditional-profile report](evaluation/shacl/report.md), [catalog admission](evaluation/shacl/admission/report.md), [context/revision coherence](evaluation/shacl/coherence/report.md) and [vocabulary/evidence qualification](evaluation/shacl/qualification/report.md) |

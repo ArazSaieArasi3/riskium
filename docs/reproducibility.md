@@ -98,3 +98,5 @@ Module 0.5.0 checks C-11/C-12 under a separately declared [application metadata 
 ## C-14 release boundary review
 
 Run `.venv-shacl/bin/python tools/review_c14_boundary.py` to reconcile the three optional catalog boundaries, their documentary representations and seven excluded bridges against the native, typed and OWL outputs. The [review](../evaluation/c14-boundary-review.md) pins all input digests and checks 12 cases from the earlier admission receipt. This is a structural readback of prior evidence, not a new SHACL or HermiT run.
+
+Run `python3 tools/build_release_claims.py` to regenerate the [candidate release claim inventory](../evaluation/release-claims.md). It checks the source, contract, OWL and C-14 input digests before listing all remaining HermiT/SHACL constraint rows. The inventory prepares the prerelease claims; a release still needs the clean freeze and publication gates.
