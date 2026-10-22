@@ -23,22 +23,27 @@
       "path": "evaluation/shacl/coherence/report.json",
       "sha256": "c87b965eb75b463caeb916293192ecbec0aac9956191f23a451b162e0592cee1",
       "source_commit": "7330a0b4382a95c1e27c46c9452e2bb1eea28f50"
+    },
+    {
+      "path": "evaluation/shacl/qualification/report.json.gz",
+      "sha256": "377e27b5b13b48697e3ce1c94b112640f7b84628a47b87870c0a05a90745bd07",
+      "source_commit": "3e34a5d446b788b71a97126246f0914e42b1efbc"
     }
   ],
   "outcomes": {
-    "PASS": 339,
-    "NOT_RUN": 19,
+    "PASS": 341,
+    "NOT_RUN": 17,
     "PARTIAL": 1
   },
-  "pass_percent": 94.43,
-  "exercised_including_partial_percent": 94.71,
+  "pass_percent": 94.99,
+  "exercised_including_partial_percent": 95.26,
   "families": {
     "Admission and class profile": {
       "PASS": 80
     },
     "Constraint encoding disposition": {
-      "NOT_RUN": 19,
-      "PASS": 5,
+      "NOT_RUN": 17,
+      "PASS": 7,
       "PARTIAL": 1
     },
     "Managed-profile endpoint cardinality": {
@@ -7712,17 +7717,66 @@
       "id": "SHACL-0626",
       "source_element": "C-11",
       "family": "Constraint encoding disposition",
-      "outcome": "NOT_RUN",
-      "evidence": null,
-      "case_ids": []
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/qualification/report.json.gz",
+      "case_ids": [
+        "VOC-RKM-C006",
+        "VOC-RKM-C017",
+        "VOC-RKM-C019",
+        "VOC-RKM-C027",
+        "VOC-RKM-C028",
+        "VOC-RKM-C029",
+        "VOC-RKM-C038",
+        "VOC-RKM-C039",
+        "VOC-RKM-C040",
+        "VOC-RKM-C042",
+        "VOC-RKM-C046",
+        "VOC-RKM-C059",
+        "VOC-RKM-C060",
+        "VOC-RKM-C061",
+        "VOC-RAW-INCOMPLETE",
+        "VOC-MISSING-SCHEME",
+        "VOC-MISSING-EDITION",
+        "VOC-MISSING-CODE",
+        "VOC-MISSING-LABEL",
+        "VOC-BLANK-CODE",
+        "VOC-SCHEME-MISMATCH",
+        "VOC-DELETED-AGREEMENT",
+        "VOC-DUPLICATE-KEY",
+        "VOC-DELETED-UNIQUENESS",
+        "VOC-OTHER-SCHEME",
+        "VOC-OTHER-EDITION",
+        "VOC-ASSERTED-ALIAS",
+        "VOC-WRONG-CANDIDATE",
+        "VOC-INTEGRATED"
+      ]
     },
     {
       "id": "SHACL-0628",
       "source_element": "C-12",
       "family": "Constraint encoding disposition",
-      "outcome": "NOT_RUN",
-      "evidence": null,
-      "case_ids": []
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/qualification/report.json.gz",
+      "case_ids": [
+        "EVIDENCE-SUPPORT",
+        "EVIDENCE-CHALLENGE",
+        "EVIDENCE-CONTEXT",
+        "EVIDENCE-RAW",
+        "EVIDENCE-MISSING-ROLE",
+        "EVIDENCE-MISSING-SOURCE",
+        "EVIDENCE-MISSING-ITEM",
+        "EVIDENCE-MISSING-TARGET",
+        "EVIDENCE-UNKNOWN-ROLE",
+        "EVIDENCE-LITERAL-SOURCE",
+        "EVIDENCE-MISSING-ITEM-PAIR",
+        "EVIDENCE-DELETED-ITEM-RULE",
+        "EVIDENCE-SUPPORT-WITHOUT-PAIR",
+        "EVIDENCE-DELETED-ROLE-RULE",
+        "EVIDENCE-CHALLENGE-WITH-SUPPORT-PAIR",
+        "EVIDENCE-OTHER-ITEM",
+        "EVIDENCE-OTHER-TARGET",
+        "EVIDENCE-INTEGRATED"
+      ]
     },
     {
       "id": "SHACL-0630",

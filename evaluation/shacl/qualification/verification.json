@@ -1,0 +1,43 @@
+{
+  "source_commit": "3e34a5d446b788b71a97126246f0914e42b1efbc",
+  "report_sha256": "377e27b5b13b48697e3ce1c94b112640f7b84628a47b87870c0a05a90745bd07",
+  "cases": 47,
+  "engine_executions": 47,
+  "all_input_digests_match": true,
+  "all_graph_snapshot_digests_match": true,
+  "snapshot_replays": [
+    {
+      "id": "VOC-DUPLICATE-KEY",
+      "matched": true
+    },
+    {
+      "id": "VOC-OTHER-SCHEME",
+      "matched": true
+    },
+    {
+      "id": "VOC-SCHEME-MISMATCH",
+      "matched": true
+    },
+    {
+      "id": "EVIDENCE-CHALLENGE-WITH-SUPPORT-PAIR",
+      "matched": true
+    },
+    {
+      "id": "EVIDENCE-MISSING-ITEM-PAIR",
+      "matched": true
+    },
+    {
+      "id": "EVIDENCE-INTEGRATED",
+      "matched": true
+    }
+  ],
+  "outcomes": {
+    "SHACL-0626": "PASS",
+    "SHACL-0628": "PASS"
+  },
+  "limitations": [
+    "Application identity key does not prove domain identity or scheme governance.",
+    "Role-qualified provenance does not establish truth, adequacy, endorsement or real-world interpretation.",
+    "Selected endpoint/catalog integration does not establish complete managed-profile admission."
+  ]
+}

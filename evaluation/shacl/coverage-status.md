@@ -1,23 +1,23 @@
 # SHACL module execution coverage
 
-This is the current source-bound execution ledger for conceptual model 0.3.1. It combines the [conditional profile batch](report.md), [ordered endpoint batch](endpoints/report.md), [catalog metadata admission batch](admission/report.md) and [context/revision coherence batch](coherence/report.md). The [JSON ledger](coverage-status.json) pins their exact digests and each obligation's case references. All receipts use the same conceptual source and 359-row coverage contract; no historical pass from another model is imported.
+This is the current source-bound execution ledger for conceptual model 0.3.1. It combines the [conditional profile batch](report.md), [ordered endpoint batch](endpoints/report.md), [catalog metadata admission batch](admission/report.md), [context/revision coherence batch](coherence/report.md) and [vocabulary/evidence qualification batch](qualification/report.md). The [JSON ledger](coverage-status.json) pins their exact digests and each obligation's case references. All receipts use the same conceptual source and 359-row coverage contract; no historical pass from another model is imported.
 
 | Measure | Result |
 | --- | ---: |
 | Baseline obligations | 359 |
-| PASS within declared module scope | 339 |
+| PASS within declared module scope | 341 |
 | PARTIAL | 1 |
-| NOT_RUN | 19 |
-| PASS coverage | 94.43% |
-| Exercised including partial | 94.71% |
+| NOT_RUN | 17 |
+| PASS coverage | 94.99% |
+| Exercised including partial | 95.26% |
 
 | Family | PASS | PARTIAL | NOT_RUN |
 | --- | ---: | ---: | ---: |
 | Admission and class profile | 80 | 0 | 0 |
-| Constraint encoding disposition | 5 | 1 | 19 |
+| Constraint encoding disposition | 7 | 1 | 17 |
 | Managed-profile endpoint cardinality | 254 | 0 | 0 |
 
-The endpoint batch executes all 254 ordered ends with isolated cardinality controls and paired-end integration for all 127 typed relations. The earlier conditional profiles retain three scoped passes and C-08's partial result. Their fixture populations differ; this ledger reports obligation coverage, not full-profile acceptance of arbitrary records. All 80 catalog-admission rows now have scoped metadata or boundary-exclusion evidence. The C-23/C-24 coherence rows now have explicit-data evidence; 19 other constraint rows remain NOT_RUN. Global integration across relations and conditional profiles still needs separate fixtures.
+The endpoint batch executes all 254 ordered ends with isolated cardinality controls and paired-end integration for all 127 typed relations. The earlier conditional profiles retain three scoped passes and C-08's partial result. Their fixture populations differ; this ledger reports obligation coverage, not full-profile acceptance of arbitrary records. All 80 catalog-admission rows now have scoped metadata or boundary-exclusion evidence. The C-23/C-24 coherence and C-11/C-12 qualification rows now have scoped explicit-data evidence; 17 other constraint rows remain NOT_RUN. Global integration across relations and conditional profiles still needs separate fixtures.
 
 The next batch implements remaining constraint routes and full managed-profile integration. Catalog admission supports metadata inspection only, not risk-assessment readiness. Unit/scale compatibility needs an approved schema. Requirement/CQ outcomes, independent semantic judgments and real-world case adequacy are governed by the [semantic assurance plan](../semantic-assurance-plan.md).
 
@@ -375,8 +375,8 @@ python3 tools/summarize_shacl.py
 | `SHACL-0620` | `C-08` | PARTIAL | [conditional receipt](report.md) |
 | `SHACL-0622` | `C-09` | PASS | [conditional receipt](report.md) |
 | `SHACL-0624` | `C-10` | NOT_RUN | — |
-| `SHACL-0626` | `C-11` | NOT_RUN | — |
-| `SHACL-0628` | `C-12` | NOT_RUN | — |
+| `SHACL-0626` | `C-11` | PASS | [qualification receipt](qualification/report.md) |
+| `SHACL-0628` | `C-12` | PASS | [qualification receipt](qualification/report.md) |
 | `SHACL-0630` | `C-13` | NOT_RUN | — |
 | `SHACL-0632` | `C-14` | NOT_RUN | — |
 | `SHACL-0634` | `C-15` | NOT_RUN | — |
