@@ -1,0 +1,40 @@
+{
+  "counts": {
+    "catalog_concepts": 80,
+    "owl_named_classes": 78,
+    "owl_object_properties": 127,
+    "owl_triples": 2087
+  },
+  "documentation_note": "Post-release documentation projection of immutable semantic inputs; not an additional semantic validation run.",
+  "guide_sources_sha256": {
+    "AUTHORS.md": "c20830d719b9b1d1b13d85cac69253274a974edb79b3a2c56148fd900d038447",
+    "docs/modeling-decisions.md": "c5b760e9b2f5620e8cd2662026b89e98e00843dcc26e0dc1b401256f39cb76a0",
+    "docs/overview.md": "def7d12867cc66f190b08ae499e809f3598723f25844847207f2e3753d16b856",
+    "docs/portal-limitations.md": "33f22cc65b98e204b6379b80251a263e48050b4bb645cdf94299f8bcfeca77bb",
+    "docs/reproducibility.md": "c605881e093130f46da2b6fd852cff0ab3cb6ea74624b3204109436a1941af61",
+    "evaluation/README.md": "ed1a02b6cb7287b1eb2ca50116467707b9694235ba35e3fa984ebc68ff08ee29",
+    "evaluation/owl-mapping-review.md": "f51ad6dee980c27a503ac0245fc98394c90eaf929b04489e4a08aaee77049acb",
+    "requirements/ontology-requirements.md": "422c9953c689f431a7e782fb7ed40f212cc6c4e4bd3ff6b50b1605faf331ddf5"
+  },
+  "model_version": "0.3.1",
+  "release": "v0.3.1-rc.1",
+  "schema_version": 1,
+  "semantic_inputs_sha256": {
+    "CITATION.cff": "32d61999936e92161f1f36a80843f8c4de43658cfddf1e6c9419d8097b8357db",
+    "LICENSE": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+    "LICENSES/CC-BY-4.0.txt": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+    "LICENSES/MIT.txt": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+    "NOTICE.md": "92a19f4d4025128c5d3d534d0df1888c768148aa5fe0f25442a7049eb828a46f",
+    "RIGHTS.md": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+    "diagrams/complete-view.svg": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+    "diagrams/selected-view.svg": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+    "evaluation/hermit/report.json": "414d57f9bb6c91c7b1c08430367669f67b6d57fbe96766cd3d30e233902cdd58",
+    "evaluation/shacl/coverage-status.json": "376c30a35caf40b0fc75710241fa2e87024a6d47b576e34f2cd42b0f04eb4632",
+    "ontology/derived/riskium.owl.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+    "ontology/derived/typed-core.json": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+    "ontology/native/riskium.ontouml.json": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59"
+  },
+  "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+  "template": "OntoSPK-style documentation portal with WIDOCO 1.4.25; bounded asserted hypertext explorer"
+}

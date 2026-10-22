@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: >-
+  Please cite Riskium using this metadata and identify the exact commit or
+  release used. CC-BY-4.0 covers scientific artifacts; MIT covers software,
+  as specified in RIGHTS.md. This citation describes the repository artifact,
+  not a published article. No DOI has been assigned.
+type: dataset
+title: "Riskium: An Ontology for Modeling Enterprise Risk Knowledge"
+authors:
+  - family-names: "Saie Arasi"
+    given-names: "Araz"
+    affiliation: "Department of Computer Engineering, Ra.C., Islamic Azad University, Rasht, Iran"
+    email: "arasi@iaurasht.ac.ir"
+  - family-names: "Haghighi"
+    given-names: "Hassan"
+    affiliation: "Department of Software and Information Systems, Faculty of Computer Science and Engineering, Shahid Beheshti University, Tehran, Iran"
+    email: "H_haghighi@sbu.ac.ir"
+  - family-names: "Azgomi"
+    given-names: "Hossein"
+    affiliation: "Department of Computer Engineering, Ra.C., Islamic Azad University, Rasht, Iran"
+    email: "azgomi@iaurasht.ac.ir"
+version: "0.3.1"
+repository-code: "https://github.com/ArazSaieArasi3/riskium"
+url: "https://arazsaiearasi3.github.io/riskium/site/"
+license:
+  - CC-BY-4.0
+  - MIT
+abstract: >-
+  A conceptual ontology for modeling enterprise risk knowledge, with a
+  source-preserving native exchange, bounded OWL mapping, scoped evaluation
+  receipts and generated documentation. Version 0.3.1 is the conceptual
+  design version; see the release notes for publication maturity and limits.
+keywords:
+  - risk ontology
+  - enterprise risk knowledge
+  - OntoUML
+  - ontology engineering

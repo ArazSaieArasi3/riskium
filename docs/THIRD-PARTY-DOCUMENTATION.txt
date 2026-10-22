@@ -1,0 +1,19 @@
+Riskium documentation template notices
+
+WIDOCO 1.4.25: https://github.com/dgarijo/Widoco/tree/v1.4.25
+Copyright 2016 Daniel Garijo, Information Sciences Institute, USC.
+Licensed under Apache License 2.0; the upstream license is included in
+WIDOCO-Apache-2.0.txt. The jar is downloaded separately and is not bundled.
+The generated WIDOCO page retains its acknowledgments to Daniel Garijo
+and Silvio Peroni (LODE). Four generated CSS resources are bundled.
+
+Riskium modifies the generated HTML to use static Markdown and a static
+table of contents, explicit release/source metadata, local navigation,
+responsive CSS, and downloads verified against the original RDF graph.
+Remote badges and runtime scripts are removed. These modifications are
+recorded in tools/publication/run_widoco.py and the tool receipt.
+
+The reading structure and restrained documentation style follow the
+user-selected OntoSPK portal. OntoSPK ontology content and its WebVOWL
+bundle are not included. Riskium's portal and local filter are original
+project code; see the root RIGHTS.md for software and content scopes.

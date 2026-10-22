@@ -13,7 +13,7 @@ The remaining work is organized by outcome. Migration established a public conce
 | [Conduct independent semantic and case-interpretation review](https://github.com/ArazSaieArasi3/riskium/issues/7) | [Review inventory](../evaluation/semantic-review-register.json) prepared; independent adjudications pending; overall semantic correctness unestimated |
 | [Complete the public reference corpus and standards interpretation](https://github.com/ArazSaieArasi3/riskium/issues/8) | Open |
 | [Publish and verify the curated Wiki](https://github.com/ArazSaieArasi3/riskium/issues/9) | Six pages and sidebar published, rendered and source-matched; complete |
-| [Publish the versioned reference and ontology explorer](https://github.com/ArazSaieArasi3/riskium/issues/10) | [Public reference](https://arazsaiearasi3.github.io/riskium/site/) deployed; explorer and broader interface checks open |
+| [Publish the versioned reference and ontology explorer](https://github.com/ArazSaieArasi3/riskium/issues/10) | OntoSPK-style portal, WIDOCO, exact-source hypertext explorer and verified downloads implemented; deployed browser readback pending |
 | [Build the claim-based evaluation and quality report](https://github.com/ArazSaieArasi3/riskium/issues/11) | Open |
 | [Reconcile the separate relational implementation with the reviewed model](https://github.com/ArazSaieArasi3/riskium/issues/12) | Open |
 | [Prepare and review the independent literature case study](https://github.com/ArazSaieArasi3/riskium/issues/13) | Open |

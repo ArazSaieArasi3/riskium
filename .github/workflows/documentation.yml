@@ -1,0 +1,33 @@
+name: Documentation integrity
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'tools/build_reference.py'
+      - 'tools/publication/**'
+      - 'requirements/ontology-requirements.md'
+      - 'evaluation/README.md'
+      - 'evaluation/owl-mapping-review.md'
+      - 'evaluation/documentation-audit.json'
+      - 'AUTHORS.md'
+      - '.github/workflows/documentation.yml'
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  documentation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/publication/requirements.txt
+      - run: python tools/build_reference.py --check
+      - run: python tools/publication/audit_portal.py --write
+      - run: git diff --exit-code -- docs evaluation/documentation-audit.json

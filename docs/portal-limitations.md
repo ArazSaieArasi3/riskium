@@ -1,0 +1,13 @@
+# Scope and limitations
+
+This documentation uses the same reading structure selected for OntoSPK: an overview, a curated guide, a conceptual reference, a WIDOCO OWL reference, evaluation, an explorer and downloads. The Riskium portal was generated after the first prerelease. Its semantic inputs are fixed to `cfb85905ab37549c7090f00a41ca62cdd3364ab5`, the source of `v0.3.1-rc.1`; the new website is not part of the historical release archive. The publication manifest records the separate hashes of semantic inputs and explanatory sources.
+
+The complete conceptual catalog contains 80 concepts, including three optional boundaries, and 134 associations or bridges. The bounded OWL export has 77 local named classes, one local external-anchor proxy and 127 object properties. It excludes the optional boundaries and seven bridges. The anchor does not bundle an external ontology or establish its import closure. The ontology IRIs are identifiers; no dereferenceable vocabulary service is claimed.
+
+The explorer follows asserted named parents, children, domains and ranges in the frozen OWL graph. Its hypertext neighborhoods and local text filter work without an external visualization service. They do not materialize inferences or validate uploaded data. All term links remain available without JavaScript. The WIDOCO page is static and retains its generator credits. No page uploads a model, loads third-party runtime assets, sends analytics or stores browsing data.
+
+HermiT records 693 executed passing cases, covering 281 of 295 baseline obligations; 14 routes remain NOT_RUN. The SHACL module ledger records 341 scoped PASS, one PARTIAL and 17 NOT_RUN of 359. These are distinct populations with explicit scopes. C-08 compatibility, full conditional and multi-relation integration, independent semantic judgment and query acceptance remain open. A generated reference, graph-isomorphic serialization or successful deployment does not establish semantic correctness.
+
+The scientific artifacts use CC BY 4.0 and original software uses MIT, under the [rights declaration](../RIGHTS.md). Bundled WIDOCO template resources retain their upstream terms and notices. Copyright remains with the three authors for their respective original contributions; affiliations are recorded in [Authors](../AUTHORS.md). No DOI, published-article status, production readiness or stable scientific acceptance is asserted.
+
+For the next scientific milestone, complete requirement and competency-question evidence in [issue #6](https://github.com/ArazSaieArasi3/riskium/issues/6), then reconcile the manuscript with the exact released evidence in [issue #14](https://github.com/ArazSaieArasi3/riskium/issues/14). The [roadmap](roadmap.md) tracks the remaining independent work.

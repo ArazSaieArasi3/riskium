@@ -10,3 +10,7 @@ The licenses in [RIGHTS.md](RIGHTS.md) cover original Riskium contributions only
 - The full license texts in `LICENSES/` are standard texts, not original Riskium prose. They were obtained from the SPDX license-list-data distribution; canonical terms are linked in `LICENSE`.
 
 Any future imported material must identify its source, exact license and attribution or exclusion before inclusion. Separately published manuscript versions retain their own applicable rights and publisher terms.
+
+## Documentation template resources
+
+The post-release documentation includes WIDOCO 1.4.25 output and four CSS resources, with upstream credits retained. Its Apache 2.0 license is preserved in `LICENSES/WIDOCO-Apache-2.0.txt` and `docs/WIDOCO-Apache-2.0.txt`; `docs/THIRD-PARTY-DOCUMENTATION.txt` records source and modifications. WIDOCO is installed separately; its jar and third-party runtime scripts are not bundled. These resources are excluded from the original-project license grant.

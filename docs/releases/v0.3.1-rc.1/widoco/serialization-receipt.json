@@ -1,0 +1,13 @@
+{
+  "files_sha256": {
+    "ontology.jsonld": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+    "ontology.nt": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+    "ontology.owl": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+    "ontology.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58"
+  },
+  "graph_isomorphic_to_source": true,
+  "rdf_triples": 2087,
+  "source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+  "source_path": "ontology/derived/riskium.owl.ttl",
+  "source_sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58"
+}

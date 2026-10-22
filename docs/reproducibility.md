@@ -1,13 +1,17 @@
 # Reproduce the current checks
 
-Use Python 3.12 or a compatible Python 3 installation. The conceptual-model, coverage and reference builders use the standard library. The OWL syntax and mapping regression tests require the pinned RDFLib package.
+Use Python 3.12 or a compatible Python 3 installation. The conceptual-model and coverage builders use the standard library. The documentation portal uses pinned RDFLib, Markdown and Beautiful Soup packages. The OWL syntax and mapping regression tests require the pinned RDFLib package.
 
 From the repository root:
 
 ```sh
 python3 tools/validate_model.py
 python3 tools/review_coverage.py
-python3 tools/build_reference.py
+python3 -m venv .venv-docs
+.venv-docs/bin/pip install -r tools/publication/requirements.txt
+.venv-docs/bin/python tools/build_reference.py
+.venv-docs/bin/python tools/build_reference.py --check
+.venv-docs/bin/python tools/publication/audit_portal.py
 ```
 
 To reproduce the OWL export and the complete regression suite in an isolated environment:
@@ -29,7 +33,16 @@ python3 -m http.server 8000
 
 Open `http://localhost:8000/docs/site/`. The generated reference links to the model and conceptual views. Local browsing does not establish a live Pages deployment.
 
-The builder also creates `docs/index.html` as the entry route for Pages deployment from `main` `/docs`. The reference navigation uses repository URLs because the model and receipts live outside the Pages document root. The [public reference](https://arazsaiearasi3.github.io/riskium/site/) was first deployed and read back on 22 October 2026; rebuilds still require checking the deployed commit and rendered URL.
+The builder generates a portal under `docs/releases/v0.3.1-rc.1/`, with fixed semantic inputs from `cfb85905ab37549c7090f00a41ca62cdd3364ab5`. `docs/index.html` opens that version's overview; the existing `/site/` route opens its conceptual reference. Curated guide sources and their hashes are recorded separately in `publication-manifest.json`. The new website was produced after the release and does not change its archive or tag.
+
+The WIDOCO reference is checked in separately. Rebuild it with the pinned 1.4.25 JDK-17 jar whose SHA-256 is `be57a270fffb91e55810fa308717e704a44e2e7c027a3d68125a49da6c8b4e2b`:
+
+```sh
+.venv-docs/bin/python tools/publication/run_widoco.py --jar /path/to/widoco-1.4.25-jar-with-dependencies_JDK-17.jar
+.venv-docs/bin/python tools/publication/audit_portal.py
+```
+
+See `tools/publication/README.md` for the upstream download, post-processing and verification boundaries. The original Turtle is copied byte for byte; RDF/XML, JSON-LD and N-Triples are checked for graph isomorphism. These are serialization checks. The local explorer reads asserted OWL neighborhoods, with no inference or upload service. The [public documentation](https://arazsaiearasi3.github.io/riskium/) must be read back after each deployment before reporting publication success.
 
 The coverage review verifies source allocation, planned constraint routes and expected fixture contracts. It detects a stale or missing stored review; regeneration with `python3 tools/review_coverage.py --write` is appropriate only after reviewing an intentional contract change.
 
