@@ -58,6 +58,11 @@ def build(out):
     def page(path, title, body, filtering=False):
         target = version/path; base = target.parent
         soup = BeautifulSoup(body, 'html.parser')
+        if str(path) == 'downloads/index.html':
+            for anchor in soup.find_all('a', href=True):
+                url = urlsplit(anchor['href'])
+                if url.path and not url.scheme and not url.path.endswith('.html'):
+                    anchor['download'] = Path(url.path).name
         toc = []
         for i, heading in enumerate(soup.find_all('h2'), 1):
             if not heading.get('id'): heading['id'] = 'section-'+str(i)

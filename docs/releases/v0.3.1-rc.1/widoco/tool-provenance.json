@@ -1,7 +1,7 @@
 {
   "configuration_sha256": "113f0347a17335e49d887d225cffc4a04f3717803e96be875f69de2be99d7228",
   "files_sha256": {
-    "index-en.html": "90d5e21f3edfd5bfbd25299b731f6f64390bad2a6005a732f9df70b709c48e94",
+    "index-en.html": "5b4f5e865a9cb6ce9d2c3a6ba250ca0182c3062624b6887e2f3c5bcaf6803c8d",
     "ontology.jsonld": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
     "ontology.nt": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
     "ontology.owl": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
@@ -15,7 +15,7 @@
   },
   "jar_download": "https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar",
   "jar_sha256": "be57a270fffb91e55810fa308717e704a44e2e7c027a3d68125a49da6c8b4e2b",
-  "postprocessor_sha256": "8570ee64a091892723226ad2a605a1666ca72fdb335e3128a74bfd0a9eccc3e5",
+  "postprocessor_sha256": "16d078ba77f14255a3de619a8c9c634042857d52e5675941dcb79add692af30d",
   "runtime_network": "No scripts, remote active assets, uploads or analytics in the published WIDOCO page. External hyperlinks load only when followed.",
   "source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
   "source_sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",

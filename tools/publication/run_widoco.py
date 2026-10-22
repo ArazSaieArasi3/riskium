@@ -53,6 +53,8 @@ def finish(raw, out):
     if duplicate:duplicate['id']='annotationproperties-headline'
     toc=soup.select_one('#toc');toc.clear();toc.append(BeautifulSoup('<h2>Table of contents</h2><ul>'+''.join('<li><a href="#'+h['id']+'">'+h.get_text().split(' back to')[0]+'</a></li>' for h in soup.select('h2.list[id],h3.list[id]'))+'</ul>','html.parser'))
     css=soup.new_tag('style');css.string='body{overflow-wrap:anywhere}nav{margin:1rem 0;line-height:1.8}.riskium-note{border-left:4px solid #135a7a;background:#f2f6f8;padding:1rem;color:#172b3a}.entity{scroll-margin-top:1rem}a:focus-visible{outline:3px solid #b45a13;outline-offset:3px}img{max-width:100%}pre{white-space:pre-wrap}@media(max-width:760px){body{padding:1rem!important;margin:0!important;min-width:0!important}.container{width:100%!important;padding:0!important}.status{display:none}.entity{padding:.65rem!important}h1{font-size:1.8rem}dl{margin-left:0}}';soup.head.append(css)
+    for anchor in soup.select('a[href^="ontology."]'):
+        anchor['download']=anchor['href']
     # Preserve upstream generator credits, mark our post-processing.
     footer=soup.new_tag('p');footer.append(BeautifulSoup('WIDOCO 1.4.25 output modified by Riskium: static table of contents and Markdown, explicit release metadata, local navigation and exact-graph downloads. No remote scripts, badge images or upload service. <a href="../../../THIRD-PARTY-DOCUMENTATION.txt">Template notices</a>.','html.parser'));soup.select_one('#acknowledgments').append(footer)
     (out/'index-en.html').write_text(str(soup)+'\n')
