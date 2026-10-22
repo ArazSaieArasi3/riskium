@@ -1,0 +1,85 @@
+@prefix co: <https://github.com/ArazSaieArasi3/riskium/shapes/0.4.0#> .
+@prefix risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+co:C23Case a sh:NodeShape ;
+    sh:class risk:RKM-X01 ;
+    sh:property co:C23AnalyzedType,
+        co:C23ContextType ;
+    sh:sparql co:C23Inclusion ;
+    sh:targetClass risk:RKM-X01 ;
+    sh:targetSubjectsOf risk:R-35,
+        risk:RX-001 .
+
+co:C24Acyclic a sh:NodeShape ;
+    sh:sparql co:C24Cycle ;
+    sh:targetClass risk:RKM-C023 ;
+    sh:targetObjectsOf risk:R-34 ;
+    sh:targetSubjectsOf risk:R-33,
+        risk:R-34 .
+
+co:C24Lineage a sh:NodeShape ;
+    sh:sparql co:C24SameEntry ;
+    sh:targetClass risk:RKM-C023 ;
+    sh:targetObjectsOf risk:R-34 ;
+    sh:targetSubjectsOf risk:R-33,
+        risk:R-34 .
+
+co:C24Revision a sh:NodeShape ;
+    sh:class risk:RKM-C023 ;
+    sh:property co:C24Entry,
+        co:C24Previous,
+        co:C24VersionEntry ;
+    sh:targetClass risk:RKM-C023 ;
+    sh:targetObjectsOf risk:R-34 ;
+    sh:targetSubjectsOf risk:R-33,
+        risk:R-34 .
+
+co:C23AnalyzedType a sh:PropertyShape ;
+    sh:class risk:RKM-C002 ;
+    sh:path risk:R-35 .
+
+co:C23ContextType a sh:PropertyShape ;
+    sh:class risk:RKM-C002 ;
+    sh:path risk:RX-001 .
+
+co:C23Inclusion a sh:SPARQLConstraint ;
+    sh:message "Each explicit analysis-context pair requires its matching general-context pair." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+SELECT $this WHERE {
+        $this risk:R-35 ?context . FILTER NOT EXISTS { $this risk:RX-001 ?context }
+    }""" .
+
+co:C24Cycle a sh:SPARQLConstraint ;
+    sh:message "previousRevision must be irreflexive and acyclic at every recorded path length." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+SELECT $this WHERE { $this risk:R-34+ $this }
+    """ .
+
+co:C24Entry a sh:PropertyShape ;
+    sh:class risk:RKM-C022 ;
+    sh:equals risk:RX-006 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-33 .
+
+co:C24Previous a sh:PropertyShape ;
+    sh:class risk:RKM-C023 ;
+    sh:maxCount 1 ;
+    sh:path risk:R-34 .
+
+co:C24SameEntry a sh:SPARQLConstraint ;
+    sh:message "A predecessor must explicitly identify the same entry." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+SELECT $this WHERE {
+        $this risk:R-34 ?previous ; risk:R-33 ?entry .
+        FILTER NOT EXISTS { ?previous risk:R-33 ?entry }
+    }""" .
+
+co:C24VersionEntry a sh:PropertyShape ;
+    sh:class risk:RKM-C022 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-006 .
+

@@ -1,0 +1,45 @@
+{
+  "version": "0.4.0",
+  "source_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "contract_sha256": "4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5",
+  "obligations": [
+    {
+      "id": "SHACL-0650",
+      "source_element": "C-23",
+      "source_element_sha256": "2210f9c4aedeb4dd984c7dc122c0b5df56a46731141924638eac5806afa15aa7"
+    },
+    {
+      "id": "SHACL-0652",
+      "source_element": "C-24",
+      "source_element_sha256": "cd6a9cde18a70da3955c516fd44e9fc1f0880f51179d6529374d7fd870a44581"
+    }
+  ],
+  "relation_signatures": {
+    "R-35": [
+      "RKM-X01",
+      "RKM-C002"
+    ],
+    "RX-001": [
+      "RKM-X01",
+      "RKM-C002"
+    ],
+    "R-33": [
+      "RKM-C023",
+      "RKM-C022"
+    ],
+    "R-34": [
+      "RKM-C023",
+      "RKM-C023"
+    ],
+    "RX-006": [
+      "RKM-C015",
+      "RKM-C014"
+    ]
+  },
+  "profiles": [
+    "raw",
+    "managed"
+  ],
+  "limits": "C-23/C-24 static graph conformance; not historical immutability or full managed-record admission",
+  "shapes_sha256": "b8b7ba9e02623626418323941fa31ff1412de56bd7c07f55d8de64eb8d41bc93"
+}
