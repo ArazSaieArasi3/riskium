@@ -1,6 +1,6 @@
 # Roadmap
 
-The remaining work is organized by outcome. Migration established a public conceptual-design snapshot; it did not complete scientific validation, a native Wiki, Pages deployment or a stable release.
+The remaining work is organized by outcome. Migration established a public conceptual-design snapshot. The curated Wiki and generated reference are now published; scientific validation and a stable release remain separate.
 
 | Work item | State |
 | --- | --- |
@@ -12,8 +12,8 @@ The remaining work is organized by outcome. Migration established a public conce
 | [Complete requirement and competency-question traceability](https://github.com/ArazSaieArasi3/riskium/issues/6) | Open |
 | [Conduct independent semantic and case-interpretation review](https://github.com/ArazSaieArasi3/riskium/issues/7) | [Review inventory](../evaluation/semantic-review-register.json) prepared; independent adjudications pending; overall semantic correctness unestimated |
 | [Complete the public reference corpus and standards interpretation](https://github.com/ArazSaieArasi3/riskium/issues/8) | Open |
-| [Publish and verify the curated Wiki](https://github.com/ArazSaieArasi3/riskium/issues/9) | Open |
-| [Publish the versioned reference and ontology explorer](https://github.com/ArazSaieArasi3/riskium/issues/10) | Open |
+| [Publish and verify the curated Wiki](https://github.com/ArazSaieArasi3/riskium/issues/9) | Six pages and sidebar published, rendered and source-matched; complete |
+| [Publish the versioned reference and ontology explorer](https://github.com/ArazSaieArasi3/riskium/issues/10) | [Public reference](https://arazsaiearasi3.github.io/riskium/site/) deployed; explorer and broader interface checks open |
 | [Build the claim-based evaluation and quality report](https://github.com/ArazSaieArasi3/riskium/issues/11) | Open |
 | [Reconcile the separate relational implementation with the reviewed model](https://github.com/ArazSaieArasi3/riskium/issues/12) | Open |
 | [Prepare and review the independent literature case study](https://github.com/ArazSaieArasi3/riskium/issues/13) | Open |
@@ -25,7 +25,7 @@ The remaining work is organized by outcome. Migration established a public conce
 
 The coverage-design, native-exchange and bounded OWL-mapping stages are complete within their documented limits. HermiT retains 14 engine-specific NOT_RUN rows; C-09 has alternative evidence in the first scoped SHACL batch. All 254 ordered endpoint obligations now have isolated and paired-end evidence. All 80 catalog admission rows now have scoped metadata or boundary-exclusion evidence. CatalogInspection is the sole supported metadata task; risk-assessment readiness remains unclaimed. C-23/C-24 now have [explicit graph coherence evidence](../evaluation/shacl/coherence/report.md), with static/history limits retained. C-11/C-12 now have [scoped application qualification evidence](../evaluation/shacl/qualification/report.md), while identity adjudication and evidence adequacy remain open. Continue #5 with the 17 remaining NOT_RUN constraint routes and full multi-relation/conditional-profile integration. Resolve C-08 compatibility through an approved unit/scale schema. Reconcile requirement and query evidence in #6, independent semantic review in #7 and reference interpretation in #8. The [semantic assurance plan](../evaluation/semantic-assurance-plan.md) defines the evidence and limits; an executed subset must not be reported as universal validation.
 
-The curated Wiki can be initialized from its prepared source now. The generated reference now reads matching HermiT/SHACL receipts and can be deployed separately; an ontology explorer depends on a justified formal export. Public rendering must be verified after publication. The [first release profile](first-release-profile.md) groups remaining work into a bounded development prerelease with rights, evidence, publication and freeze gates.
+The curated [Wiki](https://github.com/ArazSaieArasi3/riskium/wiki) and [generated reference](https://arazsaiearasi3.github.io/riskium/site/) are live and read back. The reference reads matching HermiT/SHACL receipts; an ontology explorer still depends on a justified formal export. The [first release profile](first-release-profile.md) groups remaining work into a bounded development prerelease with rights, evidence and freeze gates.
 
 Database, literature case study and manuscript work remain distinct. Future extensions are not current capabilities. The first release selects an explicit maturity and evidence profile using the release checklist.
 

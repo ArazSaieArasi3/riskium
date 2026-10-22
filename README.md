@@ -21,7 +21,8 @@ The model supports the interpretation and traceability of risk information. It d
 | Review the optional phenomenon boundary | [C-14 reconciliation](evaluation/c14-boundary-review.md) |
 | Understand semantic assurance | [Measures and limits](evaluation/semantic-assurance-plan.md) and [independent-review inventory](evaluation/semantic-review-register.json) |
 | Reproduce the local checks | [Reproducibility](docs/reproducibility.md) |
-| Browse the prepared Wiki content | [Wiki source](docs/wiki/Home.md) |
+| Read the published Wiki | [Wiki Home](https://github.com/ArazSaieArasi3/riskium/wiki) and [version-controlled source](docs/wiki/Home.md) |
+| Browse the public reference | [Riskium reference](https://arazsaiearasi3.github.io/riskium/site/) |
 
 ## Current state
 
@@ -29,7 +30,7 @@ The imported conceptual design is version **0.3.1**. Its complete catalog contai
 
 The source JSON is a structured conceptual design. A [native OntoUML exchange representation](ontology/native/riskium.ontouml.json) preserves that source and records explicit generalization-set decisions. Its [review](evaluation/native-model-review.md) reports official schema conformance, SDK interoperability, source fidelity and the remaining semantic limits. A [bounded OWL 2 mapping](ontology/derived/riskium.owl.ttl) covers the typed core; its [review](evaluation/owl-mapping-review.md) explains the local anchor proxy, open-world restrictions and deferred constraints. A [HermiT suite](evaluation/hermit/report.md), [conditional SHACL batch](evaluation/shacl/report.md), all 254 [ordered endpoint checks](evaluation/shacl/endpoints/report.md), all 80 [catalog metadata admission obligations](evaluation/shacl/admission/report.md), [C-23/C-24 coherence checks](evaluation/shacl/coherence/report.md) and [C-11/C-12 qualification checks](evaluation/shacl/qualification/report.md) have executed; the [current SHACL ledger](evaluation/shacl/coverage-status.md) preserves their separate scopes. These engineering checks do not establish independent semantic validity or an overall semantic-correctness percentage.
 
-The [generated reference](docs/site/index.html) is prepared for local browsing; a public Pages deployment and native Wiki publication have not yet been verified. No stable scholarly release or DOI is claimed.
+The [generated reference](https://arazsaiearasi3.github.io/riskium/site/) is published through Pages from `main` `/docs`, and the [native Wiki](https://github.com/ArazSaieArasi3/riskium/wiki) contains the six curated pages and sidebar. The public reference and Wiki were read back on 22 October 2026; publication does not establish semantic validation. No stable scholarly release or DOI is claimed.
 
 ## Reuse and contribution
 
