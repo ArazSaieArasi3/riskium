@@ -1,0 +1,325 @@
+{
+  "date": "2026-10-22",
+  "documentation_commit": "f5f7571f3fffb6bad2e9d01a99246be7fb52a63d",
+  "files": [
+    {
+      "bytes": 2315785,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/assets/complete-model.svg",
+      "sha256": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+      "status": 200
+    },
+    {
+      "bytes": 1086,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/assets/filter.js",
+      "sha256": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+      "status": 200
+    },
+    {
+      "bytes": 3830,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/assets/portal.css",
+      "sha256": "8769420abcb7cb9470dbae07e6d2bd78679dcc6f0d138dd09bd16188d9b6aaaf",
+      "status": 200
+    },
+    {
+      "bytes": 736456,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/assets/selected-model.svg",
+      "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+      "status": 200
+    },
+    {
+      "bytes": 17023,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/downloads/CC-BY-4.0.txt",
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "status": 200
+    },
+    {
+      "bytes": 1590,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/downloads/CITATION.cff",
+      "sha256": "32d61999936e92161f1f36a80843f8c4de43658cfddf1e6c9419d8097b8357db",
+      "status": 200
+    },
+    {
+      "bytes": 1191,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/downloads/LICENSE",
+      "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+      "status": 200
+    },
+    {
+      "bytes": 1155,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/downloads/MIT.txt",
+      "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+      "status": 200
+    },
+    {
+      "bytes": 1886,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/downloads/NOTICE.md",
+      "sha256": "92a19f4d4025128c5d3d534d0df1888c768148aa5fe0f25442a7049eb828a46f",
+      "status": 200
+    },
+    {
+      "bytes": 2834,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/downloads/RIGHTS.md",
+      "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+      "status": 200
+    },
+    {
+      "bytes": 713,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/downloads/SHA256SUMS.txt",
+      "sha256": "9bdf3f0c2ac212ae33552405dfa7edd6b343ac9f569c15d12c216d61020bae16",
+      "status": 200
+    },
+    {
+      "bytes": 4899,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/downloads/index.html",
+      "sha256": "cece5cedb13b6029b1a03dcc040a50e9db3eeac5ead595f42da22ccb93babcf0",
+      "status": 200
+    },
+    {
+      "bytes": 328986,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/downloads/riskium-model.json",
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+      "status": 200
+    },
+    {
+      "bytes": 434181,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/downloads/riskium.ontouml.json",
+      "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+      "status": 200
+    },
+    {
+      "bytes": 315732,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/downloads/typed-core.json",
+      "sha256": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+      "status": 200
+    },
+    {
+      "bytes": 59421,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/explore/graph.json",
+      "sha256": "378989de1e45a53894dddccd50773c1251efe6b06634048ea5045b32466c4e80",
+      "status": 200
+    },
+    {
+      "bytes": 168282,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/explore/index.html",
+      "sha256": "eb828b23b6026e7dcb76bc755e71f72066b54fdcff63416cc1b1391ffd32d73e",
+      "status": 200
+    },
+    {
+      "bytes": 4355,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/guide/Citation.html",
+      "sha256": "284eaa30dbfb7953b665359fc8c27be38c058e28d950d5b2d37074bb08adb884",
+      "status": 200
+    },
+    {
+      "bytes": 5205,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/guide/Decisions.html",
+      "sha256": "610314111cb60afceb825003e36ce2738814c219234a1c5656ec5b13ce50bc0a",
+      "status": 200
+    },
+    {
+      "bytes": 10266,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/guide/Evaluation.html",
+      "sha256": "7bff24f3cecf7bd682558a72a90e8cfd1dedc84cd173cf2e404b733e464a2c01",
+      "status": 200
+    },
+    {
+      "bytes": 14906,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/guide/Formalization.html",
+      "sha256": "7a2f28b8cc06d3b3337dccc5e3dbf8f158b57bc63750a50102530a7945ae7db5",
+      "status": 200
+    },
+    {
+      "bytes": 5457,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/guide/Limitations.html",
+      "sha256": "f76a74e080ca7e1d6e7fc1e89bc44270304021e664d46a5fa0f7de91cedaa319",
+      "status": 200
+    },
+    {
+      "bytes": 4442,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/guide/Overview.html",
+      "sha256": "3fd7daeecbfb3a99ca6f5b6f1932b11e09709f73aa0009e2b15bf9c52d2cc0c5",
+      "status": 200
+    },
+    {
+      "bytes": 15468,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/guide/Reproduce.html",
+      "sha256": "2b5c26304bbe7f42240804ebf97ed73995a684e78eba872b323f8de95fa65245",
+      "status": 200
+    },
+    {
+      "bytes": 11576,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/guide/Requirements.html",
+      "sha256": "22fdc9a801e86aa4f5e3871c1ba24b6cfd82fc0e17335a9cac9ef711552b2cc5",
+      "status": 200
+    },
+    {
+      "bytes": 5138,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/index.html",
+      "sha256": "f50380f51d22de015cecd729523980d3c19f2d63abafe38f42d149b57a5107ac",
+      "status": 200
+    },
+    {
+      "bytes": 2782,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/publication-manifest.json",
+      "sha256": "e364640545794d7ff59995d2630f5ec28d4875a1235a1ffb06727b8161947c68",
+      "status": 200
+    },
+    {
+      "bytes": 93296,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/reference/native/index.html",
+      "sha256": "71ac1bcd2d2aba8aa86a6ed1f4442914154fc766264ea02052fd44e7fc83966c",
+      "status": 200
+    },
+    {
+      "bytes": 289278,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/widoco/index-en.html",
+      "sha256": "5b4f5e865a9cb6ce9d2c3a6ba250ca0182c3062624b6887e2f3c5bcaf6803c8d",
+      "status": 200
+    },
+    {
+      "bytes": 325242,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/widoco/ontology.jsonld",
+      "sha256": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+      "status": 200
+    },
+    {
+      "bytes": 382810,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/widoco/ontology.nt",
+      "sha256": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+      "status": 200
+    },
+    {
+      "bytes": 317036,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/widoco/ontology.owl",
+      "sha256": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+      "status": 200
+    },
+    {
+      "bytes": 82492,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/widoco/ontology.ttl",
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+      "status": 200
+    },
+    {
+      "bytes": 785,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/widoco/provenance/provenance-en.html",
+      "sha256": "dda12e87fceab815516f560415acc2b32c7ac3443257f48f669e140af9e4da30",
+      "status": 200
+    },
+    {
+      "bytes": 1846,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/widoco/resources/extra.css",
+      "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+      "status": 200
+    },
+    {
+      "bytes": 4419,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/widoco/resources/owl.css",
+      "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+      "status": 200
+    },
+    {
+      "bytes": 2496,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/widoco/resources/primer.css",
+      "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+      "status": 200
+    },
+    {
+      "bytes": 2687,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/widoco/resources/rec.css",
+      "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+      "status": 200
+    },
+    {
+      "bytes": 645,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/widoco/serialization-receipt.json",
+      "sha256": "641813c62cf1bd72630db02269068cd1e998faf387a0c9c4edfbd5df4556820f",
+      "status": 200
+    },
+    {
+      "bytes": 1788,
+      "matches_source": true,
+      "path": "releases/v0.3.1-rc.1/widoco/tool-provenance.json",
+      "sha256": "80fe09df88eb2adb751b225b20e093c36b7be4c5fbd5f23073b630810efd53b8",
+      "status": 200
+    },
+    {
+      "bytes": 349,
+      "matches_source": true,
+      "path": "index.html",
+      "sha256": "ba600ebd4cd8c51a2dd5d1cf8394b26ab6b1a2374e2843a9e586eca1346faabe",
+      "status": 200
+    },
+    {
+      "bytes": 411,
+      "matches_source": true,
+      "path": "site/index.html",
+      "sha256": "824588aca097550b73a9c8384ae4a8cc95868889fdb64ceba916f5213783eb7d",
+      "status": 200
+    },
+    {
+      "bytes": 2170,
+      "matches_source": true,
+      "path": "interface-review.html",
+      "sha256": "07678c2a845b93c9f02dac6bdcf957654d6f292a3b40cca7461ece69049c9b06",
+      "status": 200
+    },
+    {
+      "bytes": 1089,
+      "matches_source": true,
+      "path": "THIRD-PARTY-DOCUMENTATION.txt",
+      "sha256": "757ad3a1219a88aa2341cc83f0dc1d0d8884b72ce684e2d6e8714dff073b9ca8",
+      "status": 200
+    },
+    {
+      "bytes": 11385,
+      "matches_source": true,
+      "path": "WIDOCO-Apache-2.0.txt",
+      "sha256": "f6bde110648aedc2ddf28bb2ddd7d110ffd02cfd36f64e55f7de7938b3d02287",
+      "status": 200
+    }
+  ],
+  "files_checked": 45,
+  "method": "HTTPS GET and byte comparison against deployed documentation commit",
+  "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+  "status": "PASS"
+}

@@ -1,0 +1,110 @@
+{
+  "browser": "Chrome through the connected browser UI",
+  "date": "2026-10-22",
+  "desktop": {
+    "document_scroll_width": 1348,
+    "skip_link_focus_target": "content",
+    "viewport_client_width": 1348
+  },
+  "documentation_commit": "f5f7571f3fffb6bad2e9d01a99246be7fb52a63d",
+  "download_controls": {
+    "filename_attribute": "riskium-model.json",
+    "http_verification": "http-readback.json: all 45 public artifacts returned 200 and matched local bytes",
+    "observed": true
+  },
+  "explorer_filter": {
+    "query": "RKM-X01",
+    "total": 205,
+    "visible": 23
+  },
+  "filtered_hash_navigation": {
+    "entries_restored": 205,
+    "jump_target": "RKM-C047",
+    "label": "Agent",
+    "target_hidden": false
+  },
+  "keyboard": {
+    "observed": "PASS",
+    "sequence": "Search field Tab -> Explore OWL neighborhood Enter; WIDOCO term link opened the matching Agent declaration"
+  },
+  "limitations": [
+    "Responsive checks used actual 390/760-pixel iframe viewports in desktop Chrome; they are not a physical-device or complete accessibility audit.",
+    "The cloud browser did not return a completed download artifact within its timeout; file availability and bytes were verified independently by HTTPS GET.",
+    "Browser extension metadata errors were observed; they did not identify a site-script failure. No zero-console-error claim is made.",
+    "Source inspection confirms local assets, no upload form and no external runtime requests; external source hyperlinks are intentional reader navigation."
+  ],
+  "mobile_explorer_filter": {
+    "frame_width": 390,
+    "query": "RKM-X01",
+    "total": 205,
+    "visible": 23
+  },
+  "native_filter": {
+    "query": "Risk Case",
+    "total": 305,
+    "visible": 29
+  },
+  "overview_url": "https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/index.html",
+  "responsive": [
+    {
+      "client_width_after_vertical_scrollbar": 375,
+      "frame_width": 390,
+      "horizontal_page_overflow": false,
+      "page": "Overview",
+      "scroll_width": 375
+    },
+    {
+      "client_width_after_vertical_scrollbar": 745,
+      "frame_width": 760,
+      "horizontal_page_overflow": false,
+      "page": "Overview",
+      "scroll_width": 745
+    },
+    {
+      "client_width_after_vertical_scrollbar": 375,
+      "frame_width": 390,
+      "horizontal_page_overflow": false,
+      "page": "Conceptual reference",
+      "scroll_width": 375
+    },
+    {
+      "client_width_after_vertical_scrollbar": 745,
+      "frame_width": 760,
+      "horizontal_page_overflow": false,
+      "page": "Conceptual reference",
+      "scroll_width": 745
+    },
+    {
+      "client_width_after_vertical_scrollbar": 375,
+      "frame_width": 390,
+      "horizontal_page_overflow": false,
+      "page": "OWL reference",
+      "scroll_width": 375
+    },
+    {
+      "client_width_after_vertical_scrollbar": 745,
+      "frame_width": 760,
+      "horizontal_page_overflow": false,
+      "page": "OWL reference",
+      "scroll_width": 745
+    },
+    {
+      "client_width_after_vertical_scrollbar": 375,
+      "frame_width": 390,
+      "horizontal_page_overflow": false,
+      "page": "Explorer",
+      "scroll_width": 375
+    },
+    {
+      "client_width_after_vertical_scrollbar": 745,
+      "frame_width": 760,
+      "horizontal_page_overflow": false,
+      "page": "Explorer",
+      "scroll_width": 745
+    }
+  ],
+  "screenshot": "portal-desktop.jpg",
+  "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+  "status": "PASS_WITH_STATED_LIMITS",
+  "widoco_term_url": "https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/widoco/index-en.html#RKM-C047"
+}
