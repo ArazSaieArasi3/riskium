@@ -1,6 +1,6 @@
 # Riskium HermiT reasoning report
 
-This report is the execution receipt for the reviewed typed-core OWL mapping of conceptual model **0.3.1**, based on commit `d5d32cad96f47d008f9120333eb3ff68e61c4880`. The exact [premise RDF/XML](premise.rdf) and [machine-readable result](report.json) are retained beside this report. HermiT 1.3.8.1099 was supplied by owlready2==0.51 (jar SHA-256 `97e53f519720a0a2e328556e03b806aa239347c85e57637a935e6433ed2ad3a8`), running on openjdk version "17.0.20" 2026-07-21. The import closure is empty; the separately annotated external Object anchor is a local proxy.
+This report is the execution receipt for the reviewed typed-core OWL mapping of conceptual model **0.3.1**, based on commit `ee21a71cc02bab8368852e55cbed354bce0cfaa8`. The exact [premise RDF/XML](premise.rdf) and [machine-readable result](report.json) are retained beside this report. HermiT 1.3.8.1099 was supplied by owlready2==0.51 (jar SHA-256 `97e53f519720a0a2e328556e03b806aa239347c85e57637a935e6433ed2ad3a8`), running on openjdk version "17.0.20" 2026-07-21. The import closure is empty; the separately annotated external Object anchor is a local proxy.
 
 ## How the reasoning was run
 
@@ -14,31 +14,39 @@ python3 -m venv .venv-hermit
 .venv-hermit/bin/python tools/run_hermit.py
 ```
 
-The source Turtle SHA-256 is `fdc19d96eb7536251384d05b088f9e3577050118b0633fb7b927bd25523f0064`; the exact RDF/XML premise SHA-256 is `d507966fe2528537c750024cb0fc11a2517794324d5275aaba95e0948241117a`. The contract SHA-256 is `4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5`. The generated RDF/XML is semantically checked against the Turtle before execution; byte-for-byte serialized RDF/XML can vary with blank-node identifiers on a fresh regeneration, so the committed premise and its digest identify this run.
+The source Turtle SHA-256 is `9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58`; the exact RDF/XML premise SHA-256 is `426835015580a262a9d914b5262058ad9b67f51560e5c59678ee6288d84678af`. The contract SHA-256 is `4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5`. The generated RDF/XML is semantically checked against the Turtle before execution; byte-for-byte serialized RDF/XML can vary with blank-node identifiers on a fresh regeneration, so the committed premise and its digest identify this run.
 
 ## Results and coverage
 
-Baseline ontology consistency: **PASS**. Unsatisfiable-class inventory (none other than `owl:Nothing` expected): **PASS**. Across the **295 predeclared HermiT-related obligations**, **278 passed, 0 failed, and 17 remain without a sound HermiT oracle**. Execution coverage is **94.24% (278/295)**. Source allocation is **295/295 (100%)**; this differs from execution coverage. All **679 executed cases** passed in this run. These fractions are not percentages of ontological correctness.
+Baseline ontology consistency: **PASS**. Unsatisfiable-class inventory (none other than `owl:Nothing` expected): **PASS**. Across the **295 predeclared HermiT-related obligations**, **281 passed, 0 failed, and 14 remain without a sound HermiT oracle**. Execution coverage is **95.25% (281/295)**. Source allocation is **295/295 (100%)**; this differs from execution coverage. All **693 executed cases** passed in this run. These fractions are not percentages of ontological correctness.
 
 | Family | Passed / total | Interpretation |
 | --- | ---: | --- |
 | Class satisfiability | 77 / 77 | Named classes can have an instance in some model. |
 | Declared subclass entailment | 66 / 66 | Mapped specialization axioms are entailed. |
 | Relation mapping | 127 / 127 | Declared domain/range and nontrivial cardinality axioms are entailed. |
-| Constraint encoding disposition | 8 / 25 | Only a bounded, separately listed subset has a HermiT oracle. |
+| Constraint encoding disposition | 11 / 25 | Only a bounded, separately listed subset has a HermiT oracle. |
 
 The 127 relation results confirm entailment of mapped axioms, including 88 nontrivial qualified restrictions across 254 ordered ends. They do **not** establish closed-world completeness or distinctness of named fillers. The 25 constraint obligations are listed individually below, including those whose full meaning is not encoded in OWL. Treating a reasoner-inapplicable portion as a pass would inflate coverage.
+
+### Reviewed conditional scope
+
+- **C-06:** disjoint mediation properties prohibit the same relator/actor pair from filling both roles. An explicit pair of different actors remains consistent; a missing named actor can still be supplied anonymously. Grounding and identity resolution belong to an admission profile.
+- **C-08:** a threshold has an indicator or scale anchor in every OWL interpretation. A scale-only threshold stays possible, and no named indicator is fabricated. A missing explicit anchor or incompatible dual anchors require SHACL and interpretation checks.
+- **C-09:** a description without named aboutness and one with distinct case/pattern targets are both consistent. These supplementary cases do not mark its obligation complete: the source rule applies to **published** descriptions and the current OWL mapping has no approved publication focus class.
+- **C-25:** for each of four `uses…Version` relations, a selected version entails `versionOf some` artifact of the corresponding type. This need not identify a named artifact, reject every wrong-kind claim, or verify agreement with a direct artifact link absent reviewed disjointness and data joins.
 
 Supplemental semantic controls go beyond rechecking asserted axioms. They infer general types from specific instances, infer endpoint types from actual property assertions, challenge reverse inheritance, and test every maximum-one relation end with one filler and then two explicitly different fillers. These tests are **additional cases**, not extra baseline obligations. Their results are:
 
 | Supplemental family | Passed / total |
 | --- | ---: |
-| Boundary mutation | 3 / 3 |
+| Boundary mutation | 4 / 4 |
 | Cardinality boundary | 130 / 130 |
 | Inferred relation typing | 127 / 127 |
 | Inferred subclass membership | 66 / 66 |
 | Negative control | 2 / 2 |
 | Open-world boundary | 3 / 3 |
+| Publication boundary | 2 / 2 |
 | Reverse hierarchy control | 66 / 66 |
 
 
@@ -46,6 +54,20 @@ Supplemental semantic controls go beyond rechecking asserted axioms. They infer 
 
 | Case | Expected | Observed | Purpose |
 | --- | --- | --- | --- |
+| `H-C06-DISTINCT-PARTICIPANTS` | true | `http://www.w3.org/2002/07/owl#Thing is satisfiable.`; PASS | Distinct mediated actors allow a grounded relator |
+| `H-C06-SAME-PARTICIPANT` | false | `INCONSISTENT`; PASS | Same relator/actor pair cannot serve both mediation roles |
+| `H-C08-ANCHOR-UNION` | true | `true`; PASS | Threshold entails the reviewed indicator-or-scale existential |
+| `H-C08-REMOVED-UNION` | false | `false`; PASS | Removing the anchor axiom destroys its entailment |
+| `H-C08-SCALE-ONLY` | true | `http://www.w3.org/2002/07/owl#Thing is satisfiable.`; PASS | Scale-only threshold satisfies the OWL anchor alternative |
+| `H-C08-ANONYMOUS-ANCHOR` | true | `http://www.w3.org/2002/07/owl#Thing is satisfiable.`; PASS | Open-world OWL permits an unnamed anchor; SHACL must test explicit data |
+| `H-C08-DUAL-ANCHOR` | true | `http://www.w3.org/2002/07/owl#Thing is satisfiable.`; PASS | Two anchors remain possible; compatibility needs a data rule |
+| `H-C08-NO-FABRICATED-INDICATOR` | false | `false`; PASS | Scale-only data does not entail a named indicator |
+| `H-C09-NO-PUBLICATION-FLAG` | true | `http://www.w3.org/2002/07/owl#Thing is satisfiable.`; PASS | An unqualified description may lack a named aboutness target |
+| `H-C09-MULTIPLE-TARGETS` | true | `http://www.w3.org/2002/07/owl#Thing is satisfiable.`; PASS | Case and pattern targets can remain distinct |
+| `H-C25-VERSION-TARGET-RX-014` | true | `true`; PASS | Selected version entails versionOf some RKM-C002 |
+| `H-C25-VERSION-TARGET-RX-015` | true | `true`; PASS | Selected version entails versionOf some RKM-C035 |
+| `H-C25-VERSION-TARGET-RX-016` | true | `true`; PASS | Selected version entails versionOf some RKM-C036 |
+| `H-C25-VERSION-TARGET-RX-013` | true | `true`; PASS | Selected version entails versionOf some RKM-C072 |
 | `H-CONTROL-WRONG-RANGE` | false | `false`; PASS | Unjustified R-01 range |
 | `H-CONTROL-REVERSE-G01` | false | `false`; PASS | Reversed subclass entailment |
 | `H-DISJOINT-GS-RKM-C053` | false | `INCONSISTENT`; PASS | Shared individual in disjoint siblings |
@@ -71,9 +93,9 @@ Supplemental semantic controls go beyond rechecking asserted axioms. They infer 
 | `HERMIT-0609` | C-03 | NOT_RUN | Current OWL route: Not applicable to change prevention: monotonic axioms do not enforce immutability across transactions. Remaining route: Partial: check version links and required snapshot references within one graph. Application history test: change an issued payload, reject overwrite and create a new version with lineage. |
 | `HERMIT-0611` | C-04 | NOT_RUN | Current OWL route: Partial: map result types and reference links without reducing risk to a number. Remaining route: Partial: task-ready shapes require task-specific pinned method, scale, dimension, basis and time. Review measurement interpretation and qualitative likelihood; scalar fields still need an approved schema. |
 | `HERMIT-0613` | C-05 | NOT_RUN | Current OWL route: Partial: test that administrative state does not entail cessation or effectiveness. Remaining route: Partial: check distinct temporal fields and interval ordering after the datatype schema is approved. Application and semantic review define time zones, unknown endpoints and cessation evidence. |
-| `HERMIT-0615` | C-06 | NOT_RUN | Current OWL route: Partial: reviewed mediation axioms can require distinct participants; missing named witnesses are not an OWL inconsistency. Remaining route: Planned: SHACL-SPARQL checks resolved participant distinctness using an explicit identity-normalization policy. Resolve alias/sameAs identity before counting actors; do not manufacture authority or a second actor. |
+| `HERMIT-0615` | C-06 | PASS | H-C06-DISTINCT-PARTICIPANTS, H-C06-SAME-PARTICIPANT |
 | `HERMIT-0617` | C-07 | PASS | H-C07-NO-AUTHORITY |
-| `HERMIT-0619` | C-08 | NOT_RUN | Current OWL route: Partial: an anchor disjunction may be encoded after review; missing explicit data remains an open-world issue. Remaining route: Planned: Core sh:or for indicator or scale, plus SPARQL compatibility checks after unit/scale schema review. Review qualitative scale semantics and any governed conversion. |
+| `HERMIT-0619` | C-08 | PASS | H-C08-ANCHOR-UNION, H-C08-REMOVED-UNION, H-C08-SCALE-ONLY, H-C08-ANONYMOUS-ANCHOR, H-C08-DUAL-ANCHOR, H-C08-NO-FABRICATED-INDICATOR |
 | `HERMIT-0621` | C-09 | NOT_RUN | Current OWL route: Partial: an existential aboutness disjunction may be mapped, but publication completeness is a graph policy. Remaining route: Planned: Core alternativePath over describesCase, describesPattern and expressesScenario with minCount 1. Select the published-description profile and document multiple-target interpretation. |
 | `HERMIT-0623` | C-10 | NOT_RUN | Current OWL route: Partial: preserve separate statement resources without asserting a global equivalence of tolerance meanings. Remaining route: Partial: require source framework/version and context once provenance properties are approved. Review source-specific meanings and inspected source portions. |
 | `HERMIT-0625` | C-11 | NOT_RUN | Current OWL route: Partial: vocabulary individuals are not generated as OWL classes or equality axioms from labels. Remaining route: Planned: scheme membership, resource identity and label-data validation using an approved vocabulary profile. Review scheme identifiers and legitimate cross-scheme mappings. |
@@ -90,7 +112,7 @@ Supplemental semantic controls go beyond rechecking asserted axioms. They infer 
 | `HERMIT-0647` | C-22 | PASS | H-C22-NO-PARTICIPANT-PAIR-KEY |
 | `HERMIT-0649` | C-23 | PASS | H-C23-NO-REVERSE-CONTEXT, H-C23-ANALYZED-IMPLIES-CONTEXT |
 | `HERMIT-0651` | C-24 | PASS | H-C-24-IDENTITY-COUNTERMODEL, H-C24-REVISION-IMPLIES-VERSION |
-| `HERMIT-0653` | C-25 | NOT_RUN | Current OWL route: Partial: reviewed qualified version target restrictions may be encoded; arbitrary artifact/version joins remain explicit-data checks. Remaining route: Planned: SPARQL checks context/method/scale/criteria versionOf target type and agreement with artifact references. Pin which artifact-level references exist and which are optional before admitting data. |
+| `HERMIT-0653` | C-25 | PASS | H-C25-VERSION-TARGET-RX-014, H-C25-VERSION-TARGET-RX-015, H-C25-VERSION-TARGET-RX-016, H-C25-VERSION-TARGET-RX-013 |
 
 ### Full 295-row baseline register
 
@@ -371,9 +393,9 @@ Supplemental semantic controls go beyond rechecking asserted axioms. They infer 
 | `HERMIT-0609` | Constraint encoding disposition | `C-03` | NOT_RUN | `—` |
 | `HERMIT-0611` | Constraint encoding disposition | `C-04` | NOT_RUN | `—` |
 | `HERMIT-0613` | Constraint encoding disposition | `C-05` | NOT_RUN | `—` |
-| `HERMIT-0615` | Constraint encoding disposition | `C-06` | NOT_RUN | `—` |
+| `HERMIT-0615` | Constraint encoding disposition | `C-06` | PASS | `H-C06-DISTINCT-PARTICIPANTS, H-C06-SAME-PARTICIPANT` |
 | `HERMIT-0617` | Constraint encoding disposition | `C-07` | PASS | `H-C07-NO-AUTHORITY` |
-| `HERMIT-0619` | Constraint encoding disposition | `C-08` | NOT_RUN | `—` |
+| `HERMIT-0619` | Constraint encoding disposition | `C-08` | PASS | `H-C08-ANCHOR-UNION, H-C08-REMOVED-UNION, H-C08-SCALE-ONLY, H-C08-ANONYMOUS-ANCHOR, H-C08-DUAL-ANCHOR, H-C08-NO-FABRICATED-INDICATOR` |
 | `HERMIT-0621` | Constraint encoding disposition | `C-09` | NOT_RUN | `—` |
 | `HERMIT-0623` | Constraint encoding disposition | `C-10` | NOT_RUN | `—` |
 | `HERMIT-0625` | Constraint encoding disposition | `C-11` | NOT_RUN | `—` |
@@ -390,7 +412,7 @@ Supplemental semantic controls go beyond rechecking asserted axioms. They infer 
 | `HERMIT-0647` | Constraint encoding disposition | `C-22` | PASS | `H-C22-NO-PARTICIPANT-PAIR-KEY` |
 | `HERMIT-0649` | Constraint encoding disposition | `C-23` | PASS | `H-C23-NO-REVERSE-CONTEXT, H-C23-ANALYZED-IMPLIES-CONTEXT` |
 | `HERMIT-0651` | Constraint encoding disposition | `C-24` | PASS | `H-C-24-IDENTITY-COUNTERMODEL, H-C24-REVISION-IMPLIES-VERSION` |
-| `HERMIT-0653` | Constraint encoding disposition | `C-25` | NOT_RUN | `—` |
+| `HERMIT-0653` | Constraint encoding disposition | `C-25` | PASS | `H-C25-VERSION-TARGET-RX-014, H-C25-VERSION-TARGET-RX-015, H-C25-VERSION-TARGET-RX-016, H-C25-VERSION-TARGET-RX-013` |
 
 ## Quality limits and next work
 
