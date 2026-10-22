@@ -1,0 +1,81 @@
+{
+  "source_commit": "7330a0b4382a95c1e27c46c9452e2bb1eea28f50",
+  "report_sha256": "c87b965eb75b463caeb916293192ecbec0aac9956191f23a451b162e0592cee1",
+  "engine_validations": 48,
+  "obligations": 2,
+  "all_input_digests_match": true,
+  "all_graph_snapshot_digests_match": true,
+  "unchanged_artifacts": [
+    "ontology/riskium-model.json",
+    "ontology/derived/riskium.owl.ttl",
+    "evaluation/coverage-review.json"
+  ],
+  "snapshot_replays": [
+    {
+      "id": "C23-MISSING-GENERAL",
+      "matched": true
+    },
+    {
+      "id": "C24-CYCLE-17",
+      "matched": true
+    },
+    {
+      "id": "C24-BRANCH",
+      "matched": true
+    },
+    {
+      "id": "C24-BLANK-NODES",
+      "matched": true
+    },
+    {
+      "id": "C24-INTEGRATED-CROSS-ENTRY",
+      "matched": true
+    }
+  ],
+  "regressions": {
+    "tests": 72,
+    "outcome": "PASS",
+    "elapsed_seconds": 75.905,
+    "execution_head_before_publication": "248d7550d5bc90374008f00c9a6293987f67a548",
+    "tested_code_published_as": "7330a0b4382a95c1e27c46c9452e2bb1eea28f50"
+  },
+  "commands": [
+    {
+      "command": [
+        "/workspace/scratch/0a3b85d8541f/riskium/.venv-shacl/bin/python",
+        "tools/validate_model.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/workspace/scratch/0a3b85d8541f/riskium/.venv-shacl/bin/python",
+        "tools/review_coverage.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/workspace/scratch/0a3b85d8541f/riskium/.venv-shacl/bin/python",
+        "tools/build_owl.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "ledger_outcomes": {
+    "PASS": 339,
+    "NOT_RUN": 19,
+    "PARTIAL": 1
+  },
+  "semantic_correctness": "UNESTIMATED",
+  "history_immutability": "NOT_ESTABLISHED_BY_STATIC_GRAPH_CHECKS"
+}

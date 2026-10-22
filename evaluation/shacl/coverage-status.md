@@ -1,23 +1,23 @@
 # SHACL module execution coverage
 
-This is the current source-bound execution ledger for conceptual model 0.3.1. It combines the [conditional profile batch](report.md) [ordered endpoint batch](endpoints/report.md) and [catalog metadata admission batch](admission/report.md). The [JSON ledger](coverage-status.json) pins their exact digests and each obligation's case references. All receipts use the same conceptual source and 359-row coverage contract; no historical pass from another model is imported.
+This is the current source-bound execution ledger for conceptual model 0.3.1. It combines the [conditional profile batch](report.md), [ordered endpoint batch](endpoints/report.md), [catalog metadata admission batch](admission/report.md) and [context/revision coherence batch](coherence/report.md). The [JSON ledger](coverage-status.json) pins their exact digests and each obligation's case references. All receipts use the same conceptual source and 359-row coverage contract; no historical pass from another model is imported.
 
 | Measure | Result |
 | --- | ---: |
 | Baseline obligations | 359 |
-| PASS within declared module scope | 337 |
+| PASS within declared module scope | 339 |
 | PARTIAL | 1 |
-| NOT_RUN | 21 |
-| PASS coverage | 93.87% |
-| Exercised including partial | 94.15% |
+| NOT_RUN | 19 |
+| PASS coverage | 94.43% |
+| Exercised including partial | 94.71% |
 
 | Family | PASS | PARTIAL | NOT_RUN |
 | --- | ---: | ---: | ---: |
 | Admission and class profile | 80 | 0 | 0 |
-| Constraint encoding disposition | 3 | 1 | 21 |
+| Constraint encoding disposition | 5 | 1 | 19 |
 | Managed-profile endpoint cardinality | 254 | 0 | 0 |
 
-The endpoint batch executes all 254 ordered ends with isolated cardinality controls and paired-end integration for all 127 typed relations. The earlier conditional profiles retain three scoped passes and C-08's partial result. Their fixture populations differ; this ledger reports obligation coverage, not full-profile acceptance of arbitrary records. All 80 catalog-admission rows now have scoped metadata or boundary-exclusion evidence. The 21 other constraint rows remain NOT_RUN. Global integration across relations and conditional profiles still needs separate fixtures.
+The endpoint batch executes all 254 ordered ends with isolated cardinality controls and paired-end integration for all 127 typed relations. The earlier conditional profiles retain three scoped passes and C-08's partial result. Their fixture populations differ; this ledger reports obligation coverage, not full-profile acceptance of arbitrary records. All 80 catalog-admission rows now have scoped metadata or boundary-exclusion evidence. The C-23/C-24 coherence rows now have explicit-data evidence; 19 other constraint rows remain NOT_RUN. Global integration across relations and conditional profiles still needs separate fixtures.
 
 The next batch implements remaining constraint routes and full managed-profile integration. Catalog admission supports metadata inspection only, not risk-assessment readiness. Unit/scale compatibility needs an approved schema. Requirement/CQ outcomes, independent semantic judgments and real-world case adequacy are governed by the [semantic assurance plan](../semantic-assurance-plan.md).
 
@@ -387,6 +387,6 @@ python3 tools/summarize_shacl.py
 | `SHACL-0644` | `C-20` | NOT_RUN | — |
 | `SHACL-0646` | `C-21` | NOT_RUN | — |
 | `SHACL-0648` | `C-22` | NOT_RUN | — |
-| `SHACL-0650` | `C-23` | NOT_RUN | — |
-| `SHACL-0652` | `C-24` | NOT_RUN | — |
+| `SHACL-0650` | `C-23` | PASS | [coherence receipt](coherence/report.md) |
+| `SHACL-0652` | `C-24` | PASS | [coherence receipt](coherence/report.md) |
 | `SHACL-0654` | `C-25` | PASS | [conditional receipt](report.md) |

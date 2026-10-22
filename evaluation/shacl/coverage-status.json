@@ -18,22 +18,27 @@
       "path": "evaluation/shacl/admission/report.json.gz",
       "sha256": "15c8cd89a6ca3fc543394f7ca53642954965c230dc671d9eb893c802719eb3b2",
       "source_commit": "de6194955c598c509b38acd1312e2012b7d4cd06"
+    },
+    {
+      "path": "evaluation/shacl/coherence/report.json",
+      "sha256": "c87b965eb75b463caeb916293192ecbec0aac9956191f23a451b162e0592cee1",
+      "source_commit": "7330a0b4382a95c1e27c46c9452e2bb1eea28f50"
     }
   ],
   "outcomes": {
-    "PASS": 337,
-    "NOT_RUN": 21,
+    "PASS": 339,
+    "NOT_RUN": 19,
     "PARTIAL": 1
   },
-  "pass_percent": 93.87,
-  "exercised_including_partial_percent": 94.15,
+  "pass_percent": 94.43,
+  "exercised_including_partial_percent": 94.71,
   "families": {
     "Admission and class profile": {
       "PASS": 80
     },
     "Constraint encoding disposition": {
-      "NOT_RUN": 21,
-      "PASS": 3,
+      "NOT_RUN": 19,
+      "PASS": 5,
       "PARTIAL": 1
     },
     "Managed-profile endpoint cardinality": {
@@ -7803,17 +7808,67 @@
       "id": "SHACL-0650",
       "source_element": "C-23",
       "family": "Constraint encoding disposition",
-      "outcome": "NOT_RUN",
-      "evidence": null,
-      "case_ids": []
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/coherence/report.json",
+      "case_ids": [
+        "C23-MATCH",
+        "C23-GENERAL-ONLY",
+        "C23-UNSPECIFIED",
+        "C23-MISSING-GENERAL",
+        "C23-DIFFERENT-GENERAL",
+        "C23-MULTIPLE",
+        "C23-MISSING-ONE",
+        "C23-UNTYPED-SUBJECT",
+        "C23-WRONG-CONTEXT-TYPE",
+        "C23-CONTEXT-ALIASES",
+        "C23-LABELS-NOT-IDENTITY",
+        "C23-RAW-INCOMPLETE",
+        "C23-DELETED-RULE",
+        "C23-REVERSED-RULE",
+        "C23-INTEGRATED-VALID",
+        "C23-INTEGRATED-MISSING"
+      ]
     },
     {
       "id": "SHACL-0652",
       "source_element": "C-24",
       "family": "Constraint encoding disposition",
-      "outcome": "NOT_RUN",
-      "evidence": null,
-      "case_ids": []
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/coherence/report.json",
+      "case_ids": [
+        "C24-CHAIN-1",
+        "C24-CHAIN-2",
+        "C24-CHAIN-3",
+        "C24-CHAIN-6",
+        "C24-CHAIN-12",
+        "C24-BRANCH",
+        "C24-SKIPPED-PREDECESSOR",
+        "C24-BLANK-NODES",
+        "C24-MISSING-REVISION-OF",
+        "C24-MISSING-VERSION-OF",
+        "C24-DIFFERENT-ENTRY-TARGETS",
+        "C24-DELETED-EQUALITY",
+        "C24-WRONG-ENTRY-TYPE",
+        "C24-UNTYPED-REVISION",
+        "C24-MULTIPLE-ENTRY-TARGETS",
+        "C24-CYCLE-1",
+        "C24-CYCLE-2",
+        "C24-CYCLE-3",
+        "C24-CYCLE-8",
+        "C24-CYCLE-17",
+        "C24-DELETED-CYCLE",
+        "C24-WEAKENED-CYCLE",
+        "C24-CROSS-ENTRY",
+        "C24-DELETED-LINEAGE",
+        "C24-TWO-PREDECESSORS",
+        "C24-RELAXED-PREDECESSORS",
+        "C24-ENTRY-ALIASES",
+        "C24-ALIASED-SELF-LOOP",
+        "C24-LABELS-NOT-IDENTITY",
+        "C24-RAW-CONFLICT",
+        "C24-INTEGRATED-VALID",
+        "C24-INTEGRATED-CROSS-ENTRY"
+      ]
     },
     {
       "id": "SHACL-0654",

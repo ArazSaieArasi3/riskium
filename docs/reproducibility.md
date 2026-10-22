@@ -69,6 +69,8 @@ The [endpoint receipt](../evaluation/shacl/endpoints/report.md) tests all 254 ca
 .venv-shacl/bin/python tools/build_admission_shapes.py
 .venv-shacl/bin/python tools/run_admission_shacl.py
 .venv-shacl/bin/python tools/package_admission_receipt.py
+.venv-shacl/bin/python tools/build_coherence_shapes.py
+.venv-shacl/bin/python tools/run_coherence_shacl.py
 python3 tools/summarize_shacl.py
 ```
 
@@ -81,3 +83,7 @@ Module 0.3.0 executes the 80 catalog rows under an explicit [application record 
 The full `report.json.gz` archive preserves raw/effective data, shapes, external record/class requests and result graphs byte for byte; `report-index.json` keeps all obligations and compact case outcomes readable. The index pins compressed/uncompressed hashes and verifies a lossless round trip. Regenerated uncompressed `report.json` is ignored by git. Its N-Triples snapshots preserve blank labels within the receipt rather than canonicalizing each graph independently. Use `run_admission_shacl.reconstruct_pair(report, case)` to parse data and shapes with one shared blank-node context. Caller-added blank-record focus selectors are retained in effective data. No arbitrary instance input may supply schema/import axioms or reserved vocabulary identity aliases.
 
 A relocated environment may retain packages while its interpreter symlink is missing. Recreate it with `python3 -m venv .venv-shacl`, then install/verify the pinned requirements before running. Configuration/identity rejections are exercised by regressions and are not successful SHACL engine runs. Historical frozen receipts retain their source commits; current regression results and input hashes are recorded separately.
+
+## Context and revision coherence module
+
+Module 0.4.0 adds C-23 and C-24 graph conformance under inference none, without context materialization or implicit entry equality. Its [profile](../evaluation/shacl/coherence/profile-review.md) specifies target populations and static/history limits. Run its builder/runner before merging the four SHACL receipts. The JSON stores full input/shapes/results and exact source-shape/component/focus oracles; replay via `run_admission_shacl.reconstruct_pair()`. Cycle and lineage rules have distinct source shapes. No C-03 history test or complete cross-profile acceptance is implied.
