@@ -1,0 +1,77 @@
+{
+  "constraint": "C-14",
+  "review_type": "STRUCTURAL_RECONCILIATION_OF_EXISTING_EVIDENCE",
+  "source_version": "0.3.1",
+  "inputs_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/native/riskium.ontouml.json": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+    "ontology/derived/typed-core.json": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+    "ontology/derived/riskium.owl.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+    "evaluation/shacl/admission/report.json.gz": "15c8cd89a6ca3fc543394f7ca53642954965c230dc671d9eb893c802719eb3b2",
+    "evaluation/coverage-review.json": "4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5"
+  },
+  "boundary_reference_pairs": [
+    {
+      "boundary": "RKM-C007",
+      "reference": "RKM-X06",
+      "prior_admission_cases": [
+        "RKM-C007-RAW-BOUNDARY",
+        "RKM-C007-CORE-EXCLUSION",
+        "RKM-C007-PROMOTION-ATTEMPT",
+        "RKM-X06-MANAGED"
+      ],
+      "optional_bridges": [
+        "RK3-002",
+        "RX-005"
+      ]
+    },
+    {
+      "boundary": "RKM-C010",
+      "reference": "RKM-C025",
+      "prior_admission_cases": [
+        "RKM-C010-RAW-BOUNDARY",
+        "RKM-C010-CORE-EXCLUSION",
+        "RKM-C010-PROMOTION-ATTEMPT",
+        "RKM-C025-MANAGED"
+      ],
+      "optional_bridges": [
+        "RK2-006",
+        "RX-010"
+      ]
+    },
+    {
+      "boundary": "RKM-C045",
+      "reference": "RKM-X05",
+      "prior_admission_cases": [
+        "RKM-C045-RAW-BOUNDARY",
+        "RKM-C045-CORE-EXCLUSION",
+        "RKM-C045-PROMOTION-ATTEMPT",
+        "RKM-X05-MANAGED"
+      ],
+      "optional_bridges": [
+        "R-66",
+        "R-67",
+        "RX-020"
+      ]
+    }
+  ],
+  "excluded_bridges": [
+    "R-66",
+    "R-67",
+    "RK2-006",
+    "RK3-002",
+    "RX-005",
+    "RX-010",
+    "RX-020"
+  ],
+  "prior_admission_cases_checked": 12,
+  "new_shacl_executions": 0,
+  "shacl_0632_status": "NOT_RUN_IN_FIXED_LEDGER",
+  "hermit_0631_status": "NOT_RUN_IN_FIXED_LEDGER",
+  "finding": "The three broad catalog notions and seven bridges remain outside formal exports; the three documentary representations remain typed, admitted core classes.",
+  "limits": [
+    "Structural exclusion and catalog admission do not prove real-world source, outcome or control existence.",
+    "External bridge/import, reference resolution and independent semantic acceptance require separate review.",
+    "This review reuses prior admission cases; it adds no engine run or PASS to either fixed denominator."
+  ]
+}

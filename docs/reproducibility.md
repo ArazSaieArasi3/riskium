@@ -94,3 +94,7 @@ Module 0.4.0 adds C-23 and C-24 graph conformance under inference none, without 
 ## Vocabulary and evidence qualification module
 
 Module 0.5.0 checks C-11/C-12 under a separately declared [application metadata policy](../evaluation/shacl/qualification/profile-review.md). The lossless `report.json.gz` stores all 47 engine executions, graph snapshots, exact oracles, source/input digests and versions; `verification.json` checks hashes and six saved graph replays. Run its builder, runner and verifier before the coverage summarizer. The vocabulary key is operational within the supplied graph; evidence roles and locators are not claim-truth judgments. Neither the HermiT denominator nor full managed-profile acceptance changes.
+
+## C-14 release boundary review
+
+Run `.venv-shacl/bin/python tools/review_c14_boundary.py` to reconcile the three optional catalog boundaries, their documentary representations and seven excluded bridges against the native, typed and OWL outputs. The [review](../evaluation/c14-boundary-review.md) pins all input digests and checks 12 cases from the earlier admission receipt. This is a structural readback of prior evidence, not a new SHACL or HermiT run.

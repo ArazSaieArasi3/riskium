@@ -1,10 +1,19 @@
 """Generate an English static reference from the current Riskium model."""
 from pathlib import Path
-import json,html
+import hashlib,json,html
 ROOT=Path(__file__).resolve().parents[1]
-m=json.loads((ROOT/'ontology/riskium-model.json').read_text())
+model_path=ROOT/'ontology/riskium-model.json'
+m=json.loads(model_path.read_text())
+coverage=json.loads((ROOT/'evaluation/shacl/coverage-status.json').read_text())
+if coverage['source_sha256']!=hashlib.sha256(model_path.read_bytes()).hexdigest() or coverage['baseline']!=359:
+    raise SystemExit('SHACL coverage ledger does not match model or fixed denominator')
+outcomes=coverage['outcomes']
+hermit=json.loads((ROOT/'evaluation/hermit/report.json').read_text())
+if hermit['model_version']!=m['version'] or hermit['inputs']['owl_turtle_sha256']!=hashlib.sha256((ROOT/'ontology/derived/riskium.owl.ttl').read_bytes()).hexdigest():
+    raise SystemExit('HermiT receipt does not match model version or OWL export')
+reasoned=hermit['coverage']
 e=lambda value:html.escape(str(value),quote=True)
-body=['<h1>Riskium reference</h1>','<p>Conceptual design '+e(m['version'])+'. This generated view refers to the structured design; a native exchange has schema and SDK checks documented in the evaluation record. A bounded typed-core OWL mapping and scoped HermiT run are recorded; complete semantic verification remains open.</p>','<nav><a href="../../README.md">Repository guide</a> · <a href="../../ontology/riskium-model.json">Model source</a> · <a href="../../diagrams/selected-view.svg">Selected view</a> · <a href="../../requirements/ontology-requirements.md">Requirements</a> · <a href="../../evaluation/README.md">Evaluation</a> · <a href="../../evaluation/hermit/report.md">HermiT report</a></nav>','<p>80 catalog concepts include 77 typed core concepts and three optional boundaries. One imported anchor is recorded separately. HermiT passed 693 executed cases covering 281 of 295 declared reasoner obligations; 14 constraint routes and SHACL execution remain open.</p>','<label>Filter reference <input id="filter" type="search" placeholder="Concept, relation or constraint"></label>']
+body=['<h1>Riskium reference</h1>','<p>Conceptual design '+e(m['version'])+'. This generated view refers to the structured design; a native exchange has schema and SDK checks documented in the evaluation record. A bounded typed-core OWL mapping and scoped HermiT run are recorded; complete semantic verification remains open.</p>','<nav><a href="../../README.md">Repository guide</a> · <a href="../../ontology/riskium-model.json">Model source</a> · <a href="../../diagrams/selected-view.svg">Selected view</a> · <a href="../../requirements/ontology-requirements.md">Requirements</a> · <a href="../../evaluation/README.md">Evaluation</a> · <a href="../../evaluation/hermit/report.md">HermiT report</a> · <a href="../../evaluation/shacl/coverage-status.md">SHACL ledger</a> · <a href="../../evaluation/c14-boundary-review.md">C-14 review</a> · <a href="../first-release-profile.md">Release gates</a></nav>','<p>80 catalog concepts include 77 typed core concepts and three optional boundaries. One imported anchor is recorded separately. HermiT passed '+e(sum(x['status']=='PASS' for x in hermit['cases']))+' executed cases covering '+e(reasoned['outcomes']['PASS'])+' of '+e(reasoned['baseline_obligations'])+' reasoner obligations; '+e(reasoned['outcomes']['NOT_RUN'])+' constraint routes remain unexecuted by HermiT. SHACL module coverage: '+e(outcomes.get('PASS',0))+' scoped PASS, '+e(outcomes.get('PARTIAL',0))+' PARTIAL and '+e(outcomes.get('NOT_RUN',0))+' NOT_RUN of '+e(coverage['baseline'])+' obligations. These figures are not complete semantic validation.</p>','<label>Filter reference <input id="filter" type="search" placeholder="Concept, relation or constraint"></label>']
 body.append('<h2>Domains</h2><ul>')
 for d in m['domains']:body.append('<li><b>'+e(d['title'])+'</b>: '+e(d['definition'])+'</li>')
 body.append('</ul><h2>Concepts</h2>')
