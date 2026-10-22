@@ -1,0 +1,5388 @@
+{
+  "status": "MODULE_EXECUTION_COVERAGE_NOT_FULL_PROFILE_OR_SEMANTIC_VALIDITY",
+  "baseline": 359,
+  "source_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "contract_sha256": "4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5",
+  "evidence": [
+    {
+      "path": "evaluation/shacl/report.json",
+      "sha256": "3c3603ecfb0e7445e94022577534697b4791b8b7aa2fe04a794614080374abf0",
+      "source_commit": "9668e2bc2a3454ad14aae641b914c64d43cb993b"
+    },
+    {
+      "path": "evaluation/shacl/endpoints/report.json",
+      "sha256": "385fbb3913318475c4d65c0be3b8b47e50c1805a1cd3dc6655ca8e3262a26f5b",
+      "source_commit": "f8aede601232c3afd1068eaa93e336b89eb30ad5"
+    }
+  ],
+  "outcomes": {
+    "PASS": 257,
+    "NOT_RUN": 101,
+    "PARTIAL": 1
+  },
+  "pass_percent": 71.59,
+  "exercised_including_partial_percent": 71.87,
+  "families": {
+    "Admission and class profile": {
+      "NOT_RUN": 80
+    },
+    "Constraint encoding disposition": {
+      "NOT_RUN": 21,
+      "PASS": 3,
+      "PARTIAL": 1
+    },
+    "Managed-profile endpoint cardinality": {
+      "PASS": 254
+    }
+  },
+  "limitations": [
+    "Conditional profiles and cardinality module are executed separately; 127 relation pairs have endpoint integration tests.",
+    "Full multi-relation managed-record integration and catalog admission remain pending.",
+    "C-08 unit/scale compatibility remains PARTIAL/BLOCKED.",
+    "Coverage percentages do not measure overall semantic correctness."
+  ],
+  "obligations": [
+    {
+      "id": "SHACL-0145",
+      "source_element": "R-01:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-01:source-VALID-0",
+        "EP-R-01:source-VALID-1",
+        "EP-R-01:source-VALID-5",
+        "EP-R-01:source-PATH-WITNESS",
+        "EP-R-01:source-REVERSED-PATH",
+        "PAIR-R-01-VALID",
+        "PAIR-R-01-MISSING",
+        "PAIR-R-01-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0146",
+      "source_element": "R-01:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-01:target-VALID-1",
+        "EP-R-01:target-BELOW-MIN",
+        "EP-R-01:target-RELAXED-MIN",
+        "EP-R-01:target-ABOVE-MAX",
+        "EP-R-01:target-RELAXED-MAX",
+        "EP-R-01:target-PATH-WITNESS",
+        "EP-R-01:target-REVERSED-PATH",
+        "EP-R-01:target-ALIASED-VALUES",
+        "EP-R-01:target-ONE-BLANK",
+        "EP-R-01:target-TWO-BLANKS",
+        "PAIR-R-01-VALID",
+        "PAIR-R-01-MISSING",
+        "PAIR-R-01-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0148",
+      "source_element": "R-02:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-02:source-VALID-1",
+        "EP-R-02:source-BELOW-MIN",
+        "EP-R-02:source-RELAXED-MIN",
+        "EP-R-02:source-ABOVE-MAX",
+        "EP-R-02:source-RELAXED-MAX",
+        "EP-R-02:source-PATH-WITNESS",
+        "EP-R-02:source-REVERSED-PATH",
+        "EP-R-02:source-ALIASED-VALUES",
+        "EP-R-02:source-ONE-BLANK",
+        "EP-R-02:source-TWO-BLANKS",
+        "PAIR-R-02-VALID",
+        "PAIR-R-02-MISSING",
+        "PAIR-R-02-EXCESS-source"
+      ]
+    },
+    {
+      "id": "SHACL-0149",
+      "source_element": "R-02:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-02:target-VALID-0",
+        "EP-R-02:target-VALID-1",
+        "EP-R-02:target-VALID-5",
+        "EP-R-02:target-PATH-WITNESS",
+        "EP-R-02:target-REVERSED-PATH",
+        "PAIR-R-02-VALID",
+        "PAIR-R-02-MISSING",
+        "PAIR-R-02-EXCESS-source"
+      ]
+    },
+    {
+      "id": "SHACL-0151",
+      "source_element": "R-03:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-03:source-VALID-0",
+        "EP-R-03:source-VALID-1",
+        "EP-R-03:source-VALID-5",
+        "EP-R-03:source-PATH-WITNESS",
+        "EP-R-03:source-REVERSED-PATH",
+        "PAIR-R-03-VALID",
+        "PAIR-R-03-MISSING",
+        "PAIR-R-03-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0152",
+      "source_element": "R-03:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-03:target-VALID-1",
+        "EP-R-03:target-BELOW-MIN",
+        "EP-R-03:target-RELAXED-MIN",
+        "EP-R-03:target-ABOVE-MAX",
+        "EP-R-03:target-RELAXED-MAX",
+        "EP-R-03:target-PATH-WITNESS",
+        "EP-R-03:target-REVERSED-PATH",
+        "EP-R-03:target-ALIASED-VALUES",
+        "EP-R-03:target-ONE-BLANK",
+        "EP-R-03:target-TWO-BLANKS",
+        "PAIR-R-03-VALID",
+        "PAIR-R-03-MISSING",
+        "PAIR-R-03-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0154",
+      "source_element": "R-04:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-04:source-VALID-0",
+        "EP-R-04:source-VALID-1",
+        "EP-R-04:source-VALID-5",
+        "EP-R-04:source-PATH-WITNESS",
+        "EP-R-04:source-REVERSED-PATH",
+        "PAIR-R-04-VALID",
+        "PAIR-R-04-MISSING",
+        "PAIR-R-04-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0155",
+      "source_element": "R-04:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-04:target-VALID-1",
+        "EP-R-04:target-BELOW-MIN",
+        "EP-R-04:target-RELAXED-MIN",
+        "EP-R-04:target-ABOVE-MAX",
+        "EP-R-04:target-RELAXED-MAX",
+        "EP-R-04:target-PATH-WITNESS",
+        "EP-R-04:target-REVERSED-PATH",
+        "EP-R-04:target-ALIASED-VALUES",
+        "EP-R-04:target-ONE-BLANK",
+        "EP-R-04:target-TWO-BLANKS",
+        "PAIR-R-04-VALID",
+        "PAIR-R-04-MISSING",
+        "PAIR-R-04-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0157",
+      "source_element": "R-05:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-05:source-VALID-0",
+        "EP-R-05:source-VALID-1",
+        "EP-R-05:source-VALID-5",
+        "EP-R-05:source-PATH-WITNESS",
+        "EP-R-05:source-REVERSED-PATH",
+        "PAIR-R-05-VALID",
+        "PAIR-R-05-MISSING",
+        "PAIR-R-05-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0158",
+      "source_element": "R-05:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-05:target-VALID-1",
+        "EP-R-05:target-BELOW-MIN",
+        "EP-R-05:target-RELAXED-MIN",
+        "EP-R-05:target-ABOVE-MAX",
+        "EP-R-05:target-RELAXED-MAX",
+        "EP-R-05:target-PATH-WITNESS",
+        "EP-R-05:target-REVERSED-PATH",
+        "EP-R-05:target-ALIASED-VALUES",
+        "EP-R-05:target-ONE-BLANK",
+        "EP-R-05:target-TWO-BLANKS",
+        "PAIR-R-05-VALID",
+        "PAIR-R-05-MISSING",
+        "PAIR-R-05-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0160",
+      "source_element": "R-06:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-06:source-VALID-0",
+        "EP-R-06:source-VALID-1",
+        "EP-R-06:source-VALID-5",
+        "EP-R-06:source-PATH-WITNESS",
+        "EP-R-06:source-REVERSED-PATH",
+        "PAIR-R-06-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0161",
+      "source_element": "R-06:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-06:target-VALID-0",
+        "EP-R-06:target-VALID-1",
+        "EP-R-06:target-VALID-5",
+        "EP-R-06:target-PATH-WITNESS",
+        "EP-R-06:target-REVERSED-PATH",
+        "PAIR-R-06-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0163",
+      "source_element": "R-07:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-07:source-VALID-0",
+        "EP-R-07:source-VALID-1",
+        "EP-R-07:source-VALID-5",
+        "EP-R-07:source-PATH-WITNESS",
+        "EP-R-07:source-REVERSED-PATH",
+        "PAIR-R-07-VALID",
+        "PAIR-R-07-MISSING",
+        "PAIR-R-07-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0164",
+      "source_element": "R-07:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-07:target-VALID-1",
+        "EP-R-07:target-BELOW-MIN",
+        "EP-R-07:target-RELAXED-MIN",
+        "EP-R-07:target-ABOVE-MAX",
+        "EP-R-07:target-RELAXED-MAX",
+        "EP-R-07:target-PATH-WITNESS",
+        "EP-R-07:target-REVERSED-PATH",
+        "EP-R-07:target-ALIASED-VALUES",
+        "EP-R-07:target-ONE-BLANK",
+        "EP-R-07:target-TWO-BLANKS",
+        "PAIR-R-07-VALID",
+        "PAIR-R-07-MISSING",
+        "PAIR-R-07-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0166",
+      "source_element": "R-08:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-08:source-VALID-0",
+        "EP-R-08:source-VALID-1",
+        "EP-R-08:source-VALID-5",
+        "EP-R-08:source-PATH-WITNESS",
+        "EP-R-08:source-REVERSED-PATH",
+        "PAIR-R-08-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0167",
+      "source_element": "R-08:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-08:target-VALID-0",
+        "EP-R-08:target-VALID-1",
+        "EP-R-08:target-VALID-5",
+        "EP-R-08:target-PATH-WITNESS",
+        "EP-R-08:target-REVERSED-PATH",
+        "PAIR-R-08-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0169",
+      "source_element": "R-09:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-09:source-VALID-0",
+        "EP-R-09:source-VALID-1",
+        "EP-R-09:source-VALID-5",
+        "EP-R-09:source-PATH-WITNESS",
+        "EP-R-09:source-REVERSED-PATH",
+        "PAIR-R-09-VALID",
+        "PAIR-R-09-MISSING",
+        "PAIR-R-09-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0170",
+      "source_element": "R-09:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-09:target-VALID-1",
+        "EP-R-09:target-BELOW-MIN",
+        "EP-R-09:target-RELAXED-MIN",
+        "EP-R-09:target-ABOVE-MAX",
+        "EP-R-09:target-RELAXED-MAX",
+        "EP-R-09:target-PATH-WITNESS",
+        "EP-R-09:target-REVERSED-PATH",
+        "EP-R-09:target-ALIASED-VALUES",
+        "EP-R-09:target-ONE-BLANK",
+        "EP-R-09:target-TWO-BLANKS",
+        "PAIR-R-09-VALID",
+        "PAIR-R-09-MISSING",
+        "PAIR-R-09-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0172",
+      "source_element": "R-10:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-10:source-VALID-0",
+        "EP-R-10:source-VALID-1",
+        "EP-R-10:source-VALID-5",
+        "EP-R-10:source-PATH-WITNESS",
+        "EP-R-10:source-REVERSED-PATH",
+        "PAIR-R-10-VALID",
+        "PAIR-R-10-MISSING",
+        "PAIR-R-10-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0173",
+      "source_element": "R-10:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-10:target-VALID-1",
+        "EP-R-10:target-BELOW-MIN",
+        "EP-R-10:target-RELAXED-MIN",
+        "EP-R-10:target-ABOVE-MAX",
+        "EP-R-10:target-RELAXED-MAX",
+        "EP-R-10:target-PATH-WITNESS",
+        "EP-R-10:target-REVERSED-PATH",
+        "EP-R-10:target-ALIASED-VALUES",
+        "EP-R-10:target-ONE-BLANK",
+        "EP-R-10:target-TWO-BLANKS",
+        "PAIR-R-10-VALID",
+        "PAIR-R-10-MISSING",
+        "PAIR-R-10-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0175",
+      "source_element": "R-11:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-11:source-VALID-0",
+        "EP-R-11:source-VALID-1",
+        "EP-R-11:source-VALID-5",
+        "EP-R-11:source-PATH-WITNESS",
+        "EP-R-11:source-REVERSED-PATH",
+        "PAIR-R-11-VALID",
+        "PAIR-R-11-MISSING",
+        "PAIR-R-11-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0176",
+      "source_element": "R-11:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-11:target-VALID-1",
+        "EP-R-11:target-BELOW-MIN",
+        "EP-R-11:target-RELAXED-MIN",
+        "EP-R-11:target-ABOVE-MAX",
+        "EP-R-11:target-RELAXED-MAX",
+        "EP-R-11:target-PATH-WITNESS",
+        "EP-R-11:target-REVERSED-PATH",
+        "EP-R-11:target-ALIASED-VALUES",
+        "EP-R-11:target-ONE-BLANK",
+        "EP-R-11:target-TWO-BLANKS",
+        "PAIR-R-11-VALID",
+        "PAIR-R-11-MISSING",
+        "PAIR-R-11-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0178",
+      "source_element": "R-12:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-12:source-VALID-0",
+        "EP-R-12:source-VALID-1",
+        "EP-R-12:source-VALID-5",
+        "EP-R-12:source-PATH-WITNESS",
+        "EP-R-12:source-REVERSED-PATH",
+        "PAIR-R-12-VALID",
+        "PAIR-R-12-MISSING",
+        "PAIR-R-12-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0179",
+      "source_element": "R-12:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-12:target-VALID-1",
+        "EP-R-12:target-BELOW-MIN",
+        "EP-R-12:target-RELAXED-MIN",
+        "EP-R-12:target-ABOVE-MAX",
+        "EP-R-12:target-RELAXED-MAX",
+        "EP-R-12:target-PATH-WITNESS",
+        "EP-R-12:target-REVERSED-PATH",
+        "EP-R-12:target-ALIASED-VALUES",
+        "EP-R-12:target-ONE-BLANK",
+        "EP-R-12:target-TWO-BLANKS",
+        "PAIR-R-12-VALID",
+        "PAIR-R-12-MISSING",
+        "PAIR-R-12-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0181",
+      "source_element": "R-13:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-13:source-VALID-1",
+        "EP-R-13:source-BELOW-MIN",
+        "EP-R-13:source-RELAXED-MIN",
+        "EP-R-13:source-ABOVE-MAX",
+        "EP-R-13:source-RELAXED-MAX",
+        "EP-R-13:source-PATH-WITNESS",
+        "EP-R-13:source-REVERSED-PATH",
+        "EP-R-13:source-ALIASED-VALUES",
+        "EP-R-13:source-ONE-BLANK",
+        "EP-R-13:source-TWO-BLANKS",
+        "PAIR-R-13-VALID",
+        "PAIR-R-13-MISSING",
+        "PAIR-R-13-EXCESS-source"
+      ]
+    },
+    {
+      "id": "SHACL-0182",
+      "source_element": "R-13:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-13:target-VALID-0",
+        "EP-R-13:target-VALID-1",
+        "EP-R-13:target-VALID-5",
+        "EP-R-13:target-PATH-WITNESS",
+        "EP-R-13:target-REVERSED-PATH",
+        "PAIR-R-13-VALID",
+        "PAIR-R-13-MISSING",
+        "PAIR-R-13-EXCESS-source"
+      ]
+    },
+    {
+      "id": "SHACL-0184",
+      "source_element": "R-14:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-14:source-VALID-0",
+        "EP-R-14:source-VALID-1",
+        "EP-R-14:source-VALID-5",
+        "EP-R-14:source-PATH-WITNESS",
+        "EP-R-14:source-REVERSED-PATH",
+        "PAIR-R-14-VALID",
+        "PAIR-R-14-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0185",
+      "source_element": "R-14:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-14:target-VALID-0",
+        "EP-R-14:target-VALID-1",
+        "EP-R-14:target-ABOVE-MAX",
+        "EP-R-14:target-RELAXED-MAX",
+        "EP-R-14:target-PATH-WITNESS",
+        "EP-R-14:target-REVERSED-PATH",
+        "EP-R-14:target-ALIASED-VALUES",
+        "EP-R-14:target-ONE-BLANK",
+        "EP-R-14:target-TWO-BLANKS",
+        "PAIR-R-14-VALID",
+        "PAIR-R-14-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0187",
+      "source_element": "R-15:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-15:source-VALID-0",
+        "EP-R-15:source-VALID-1",
+        "EP-R-15:source-VALID-5",
+        "EP-R-15:source-PATH-WITNESS",
+        "EP-R-15:source-REVERSED-PATH",
+        "PAIR-R-15-VALID",
+        "PAIR-R-15-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0188",
+      "source_element": "R-15:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-15:target-VALID-0",
+        "EP-R-15:target-VALID-1",
+        "EP-R-15:target-ABOVE-MAX",
+        "EP-R-15:target-RELAXED-MAX",
+        "EP-R-15:target-PATH-WITNESS",
+        "EP-R-15:target-REVERSED-PATH",
+        "EP-R-15:target-ALIASED-VALUES",
+        "EP-R-15:target-ONE-BLANK",
+        "EP-R-15:target-TWO-BLANKS",
+        "PAIR-R-15-VALID",
+        "PAIR-R-15-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0190",
+      "source_element": "R-16:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-16:source-VALID-0",
+        "EP-R-16:source-VALID-1",
+        "EP-R-16:source-VALID-5",
+        "EP-R-16:source-PATH-WITNESS",
+        "EP-R-16:source-REVERSED-PATH",
+        "PAIR-R-16-VALID",
+        "PAIR-R-16-MISSING",
+        "PAIR-R-16-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0191",
+      "source_element": "R-16:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-16:target-VALID-1",
+        "EP-R-16:target-BELOW-MIN",
+        "EP-R-16:target-RELAXED-MIN",
+        "EP-R-16:target-ABOVE-MAX",
+        "EP-R-16:target-RELAXED-MAX",
+        "EP-R-16:target-PATH-WITNESS",
+        "EP-R-16:target-REVERSED-PATH",
+        "EP-R-16:target-ALIASED-VALUES",
+        "EP-R-16:target-ONE-BLANK",
+        "EP-R-16:target-TWO-BLANKS",
+        "PAIR-R-16-VALID",
+        "PAIR-R-16-MISSING",
+        "PAIR-R-16-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0193",
+      "source_element": "R-17:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-17:source-VALID-1",
+        "EP-R-17:source-BELOW-MIN",
+        "EP-R-17:source-RELAXED-MIN",
+        "EP-R-17:source-ABOVE-MAX",
+        "EP-R-17:source-RELAXED-MAX",
+        "EP-R-17:source-PATH-WITNESS",
+        "EP-R-17:source-REVERSED-PATH",
+        "EP-R-17:source-ALIASED-VALUES",
+        "EP-R-17:source-ONE-BLANK",
+        "EP-R-17:source-TWO-BLANKS",
+        "PAIR-R-17-VALID",
+        "PAIR-R-17-MISSING",
+        "PAIR-R-17-EXCESS-source"
+      ]
+    },
+    {
+      "id": "SHACL-0194",
+      "source_element": "R-17:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-17:target-VALID-0",
+        "EP-R-17:target-VALID-1",
+        "EP-R-17:target-VALID-5",
+        "EP-R-17:target-PATH-WITNESS",
+        "EP-R-17:target-REVERSED-PATH",
+        "PAIR-R-17-VALID",
+        "PAIR-R-17-MISSING",
+        "PAIR-R-17-EXCESS-source"
+      ]
+    },
+    {
+      "id": "SHACL-0196",
+      "source_element": "R-18:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-18:source-VALID-0",
+        "EP-R-18:source-VALID-1",
+        "EP-R-18:source-VALID-5",
+        "EP-R-18:source-PATH-WITNESS",
+        "EP-R-18:source-REVERSED-PATH",
+        "PAIR-R-18-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0197",
+      "source_element": "R-18:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-18:target-VALID-0",
+        "EP-R-18:target-VALID-1",
+        "EP-R-18:target-VALID-5",
+        "EP-R-18:target-PATH-WITNESS",
+        "EP-R-18:target-REVERSED-PATH",
+        "PAIR-R-18-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0199",
+      "source_element": "R-19:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-19:source-VALID-0",
+        "EP-R-19:source-VALID-1",
+        "EP-R-19:source-VALID-5",
+        "EP-R-19:source-PATH-WITNESS",
+        "EP-R-19:source-REVERSED-PATH",
+        "PAIR-R-19-VALID",
+        "PAIR-R-19-MISSING",
+        "PAIR-R-19-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0200",
+      "source_element": "R-19:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-19:target-VALID-1",
+        "EP-R-19:target-BELOW-MIN",
+        "EP-R-19:target-RELAXED-MIN",
+        "EP-R-19:target-ABOVE-MAX",
+        "EP-R-19:target-RELAXED-MAX",
+        "EP-R-19:target-PATH-WITNESS",
+        "EP-R-19:target-REVERSED-PATH",
+        "EP-R-19:target-ALIASED-VALUES",
+        "EP-R-19:target-ONE-BLANK",
+        "EP-R-19:target-TWO-BLANKS",
+        "PAIR-R-19-VALID",
+        "PAIR-R-19-MISSING",
+        "PAIR-R-19-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0202",
+      "source_element": "R-20:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-20:source-VALID-0",
+        "EP-R-20:source-VALID-1",
+        "EP-R-20:source-VALID-5",
+        "EP-R-20:source-PATH-WITNESS",
+        "EP-R-20:source-REVERSED-PATH",
+        "PAIR-R-20-VALID",
+        "PAIR-R-20-MISSING",
+        "PAIR-R-20-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0203",
+      "source_element": "R-20:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-20:target-VALID-1",
+        "EP-R-20:target-BELOW-MIN",
+        "EP-R-20:target-RELAXED-MIN",
+        "EP-R-20:target-ABOVE-MAX",
+        "EP-R-20:target-RELAXED-MAX",
+        "EP-R-20:target-PATH-WITNESS",
+        "EP-R-20:target-REVERSED-PATH",
+        "EP-R-20:target-ALIASED-VALUES",
+        "EP-R-20:target-ONE-BLANK",
+        "EP-R-20:target-TWO-BLANKS",
+        "PAIR-R-20-VALID",
+        "PAIR-R-20-MISSING",
+        "PAIR-R-20-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0205",
+      "source_element": "R-21:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-21:source-VALID-0",
+        "EP-R-21:source-VALID-1",
+        "EP-R-21:source-VALID-5",
+        "EP-R-21:source-PATH-WITNESS",
+        "EP-R-21:source-REVERSED-PATH",
+        "PAIR-R-21-VALID",
+        "PAIR-R-21-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0206",
+      "source_element": "R-21:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-21:target-VALID-1",
+        "EP-R-21:target-VALID-2",
+        "EP-R-21:target-VALID-5",
+        "EP-R-21:target-BELOW-MIN",
+        "EP-R-21:target-RELAXED-MIN",
+        "EP-R-21:target-PATH-WITNESS",
+        "EP-R-21:target-REVERSED-PATH",
+        "PAIR-R-21-VALID",
+        "PAIR-R-21-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0208",
+      "source_element": "R-22:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-22:source-VALID-0",
+        "EP-R-22:source-VALID-1",
+        "EP-R-22:source-VALID-5",
+        "EP-R-22:source-PATH-WITNESS",
+        "EP-R-22:source-REVERSED-PATH",
+        "PAIR-R-22-VALID",
+        "PAIR-R-22-MISSING",
+        "PAIR-R-22-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0209",
+      "source_element": "R-22:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-22:target-VALID-1",
+        "EP-R-22:target-BELOW-MIN",
+        "EP-R-22:target-RELAXED-MIN",
+        "EP-R-22:target-ABOVE-MAX",
+        "EP-R-22:target-RELAXED-MAX",
+        "EP-R-22:target-PATH-WITNESS",
+        "EP-R-22:target-REVERSED-PATH",
+        "EP-R-22:target-ALIASED-VALUES",
+        "EP-R-22:target-ONE-BLANK",
+        "EP-R-22:target-TWO-BLANKS",
+        "PAIR-R-22-VALID",
+        "PAIR-R-22-MISSING",
+        "PAIR-R-22-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0211",
+      "source_element": "R-23:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-23:source-VALID-1",
+        "EP-R-23:source-BELOW-MIN",
+        "EP-R-23:source-RELAXED-MIN",
+        "EP-R-23:source-ABOVE-MAX",
+        "EP-R-23:source-RELAXED-MAX",
+        "EP-R-23:source-PATH-WITNESS",
+        "EP-R-23:source-REVERSED-PATH",
+        "EP-R-23:source-ALIASED-VALUES",
+        "EP-R-23:source-ONE-BLANK",
+        "EP-R-23:source-TWO-BLANKS",
+        "PAIR-R-23-VALID",
+        "PAIR-R-23-MISSING",
+        "PAIR-R-23-EXCESS-source"
+      ]
+    },
+    {
+      "id": "SHACL-0212",
+      "source_element": "R-23:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-23:target-VALID-0",
+        "EP-R-23:target-VALID-1",
+        "EP-R-23:target-VALID-5",
+        "EP-R-23:target-PATH-WITNESS",
+        "EP-R-23:target-REVERSED-PATH",
+        "PAIR-R-23-VALID",
+        "PAIR-R-23-MISSING",
+        "PAIR-R-23-EXCESS-source"
+      ]
+    },
+    {
+      "id": "SHACL-0214",
+      "source_element": "R-24:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-24:source-VALID-0",
+        "EP-R-24:source-VALID-1",
+        "EP-R-24:source-VALID-5",
+        "EP-R-24:source-PATH-WITNESS",
+        "EP-R-24:source-REVERSED-PATH",
+        "PAIR-R-24-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0215",
+      "source_element": "R-24:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-24:target-VALID-0",
+        "EP-R-24:target-VALID-1",
+        "EP-R-24:target-VALID-5",
+        "EP-R-24:target-PATH-WITNESS",
+        "EP-R-24:target-REVERSED-PATH",
+        "PAIR-R-24-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0217",
+      "source_element": "R-25:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-25:source-VALID-0",
+        "EP-R-25:source-VALID-1",
+        "EP-R-25:source-VALID-5",
+        "EP-R-25:source-PATH-WITNESS",
+        "EP-R-25:source-REVERSED-PATH",
+        "PAIR-R-25-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0218",
+      "source_element": "R-25:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-25:target-VALID-0",
+        "EP-R-25:target-VALID-1",
+        "EP-R-25:target-VALID-5",
+        "EP-R-25:target-PATH-WITNESS",
+        "EP-R-25:target-REVERSED-PATH",
+        "PAIR-R-25-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0220",
+      "source_element": "R-26:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-26:source-VALID-0",
+        "EP-R-26:source-VALID-1",
+        "EP-R-26:source-VALID-5",
+        "EP-R-26:source-PATH-WITNESS",
+        "EP-R-26:source-REVERSED-PATH",
+        "PAIR-R-26-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0221",
+      "source_element": "R-26:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-26:target-VALID-0",
+        "EP-R-26:target-VALID-1",
+        "EP-R-26:target-VALID-5",
+        "EP-R-26:target-PATH-WITNESS",
+        "EP-R-26:target-REVERSED-PATH",
+        "PAIR-R-26-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0223",
+      "source_element": "R-27:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-27:source-VALID-0",
+        "EP-R-27:source-VALID-1",
+        "EP-R-27:source-VALID-5",
+        "EP-R-27:source-PATH-WITNESS",
+        "EP-R-27:source-REVERSED-PATH",
+        "PAIR-R-27-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0224",
+      "source_element": "R-27:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-27:target-VALID-0",
+        "EP-R-27:target-VALID-1",
+        "EP-R-27:target-VALID-5",
+        "EP-R-27:target-PATH-WITNESS",
+        "EP-R-27:target-REVERSED-PATH",
+        "PAIR-R-27-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0226",
+      "source_element": "R-28:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-28:source-VALID-1",
+        "EP-R-28:source-VALID-2",
+        "EP-R-28:source-VALID-5",
+        "EP-R-28:source-BELOW-MIN",
+        "EP-R-28:source-RELAXED-MIN",
+        "EP-R-28:source-PATH-WITNESS",
+        "EP-R-28:source-REVERSED-PATH",
+        "PAIR-R-28-VALID",
+        "PAIR-R-28-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0227",
+      "source_element": "R-28:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-28:target-VALID-0",
+        "EP-R-28:target-VALID-1",
+        "EP-R-28:target-VALID-5",
+        "EP-R-28:target-PATH-WITNESS",
+        "EP-R-28:target-REVERSED-PATH",
+        "PAIR-R-28-VALID",
+        "PAIR-R-28-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0229",
+      "source_element": "R-29:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-29:source-VALID-1",
+        "EP-R-29:source-VALID-2",
+        "EP-R-29:source-VALID-5",
+        "EP-R-29:source-BELOW-MIN",
+        "EP-R-29:source-RELAXED-MIN",
+        "EP-R-29:source-PATH-WITNESS",
+        "EP-R-29:source-REVERSED-PATH",
+        "PAIR-R-29-VALID",
+        "PAIR-R-29-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0230",
+      "source_element": "R-29:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-29:target-VALID-0",
+        "EP-R-29:target-VALID-1",
+        "EP-R-29:target-VALID-5",
+        "EP-R-29:target-PATH-WITNESS",
+        "EP-R-29:target-REVERSED-PATH",
+        "PAIR-R-29-VALID",
+        "PAIR-R-29-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0232",
+      "source_element": "R-30:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-30:source-VALID-1",
+        "EP-R-30:source-VALID-2",
+        "EP-R-30:source-VALID-5",
+        "EP-R-30:source-BELOW-MIN",
+        "EP-R-30:source-RELAXED-MIN",
+        "EP-R-30:source-PATH-WITNESS",
+        "EP-R-30:source-REVERSED-PATH",
+        "PAIR-R-30-VALID",
+        "PAIR-R-30-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0233",
+      "source_element": "R-30:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-30:target-VALID-0",
+        "EP-R-30:target-VALID-1",
+        "EP-R-30:target-VALID-5",
+        "EP-R-30:target-PATH-WITNESS",
+        "EP-R-30:target-REVERSED-PATH",
+        "PAIR-R-30-VALID",
+        "PAIR-R-30-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0235",
+      "source_element": "R-31:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-31:source-VALID-0",
+        "EP-R-31:source-VALID-1",
+        "EP-R-31:source-VALID-5",
+        "EP-R-31:source-PATH-WITNESS",
+        "EP-R-31:source-REVERSED-PATH",
+        "PAIR-R-31-VALID",
+        "PAIR-R-31-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0236",
+      "source_element": "R-31:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-31:target-VALID-0",
+        "EP-R-31:target-VALID-1",
+        "EP-R-31:target-ABOVE-MAX",
+        "EP-R-31:target-RELAXED-MAX",
+        "EP-R-31:target-PATH-WITNESS",
+        "EP-R-31:target-REVERSED-PATH",
+        "EP-R-31:target-ALIASED-VALUES",
+        "EP-R-31:target-ONE-BLANK",
+        "EP-R-31:target-TWO-BLANKS",
+        "PAIR-R-31-VALID",
+        "PAIR-R-31-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0238",
+      "source_element": "R-32:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-32:source-VALID-0",
+        "EP-R-32:source-VALID-1",
+        "EP-R-32:source-VALID-5",
+        "EP-R-32:source-PATH-WITNESS",
+        "EP-R-32:source-REVERSED-PATH",
+        "PAIR-R-32-VALID",
+        "PAIR-R-32-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0239",
+      "source_element": "R-32:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-32:target-VALID-0",
+        "EP-R-32:target-VALID-1",
+        "EP-R-32:target-ABOVE-MAX",
+        "EP-R-32:target-RELAXED-MAX",
+        "EP-R-32:target-PATH-WITNESS",
+        "EP-R-32:target-REVERSED-PATH",
+        "EP-R-32:target-ALIASED-VALUES",
+        "EP-R-32:target-ONE-BLANK",
+        "EP-R-32:target-TWO-BLANKS",
+        "PAIR-R-32-VALID",
+        "PAIR-R-32-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0241",
+      "source_element": "R-33:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-33:source-VALID-0",
+        "EP-R-33:source-VALID-1",
+        "EP-R-33:source-VALID-5",
+        "EP-R-33:source-PATH-WITNESS",
+        "EP-R-33:source-REVERSED-PATH",
+        "PAIR-R-33-VALID",
+        "PAIR-R-33-MISSING",
+        "PAIR-R-33-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0242",
+      "source_element": "R-33:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-33:target-VALID-1",
+        "EP-R-33:target-BELOW-MIN",
+        "EP-R-33:target-RELAXED-MIN",
+        "EP-R-33:target-ABOVE-MAX",
+        "EP-R-33:target-RELAXED-MAX",
+        "EP-R-33:target-PATH-WITNESS",
+        "EP-R-33:target-REVERSED-PATH",
+        "EP-R-33:target-ALIASED-VALUES",
+        "EP-R-33:target-ONE-BLANK",
+        "EP-R-33:target-TWO-BLANKS",
+        "PAIR-R-33-VALID",
+        "PAIR-R-33-MISSING",
+        "PAIR-R-33-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0244",
+      "source_element": "R-34:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-34:source-VALID-0",
+        "EP-R-34:source-VALID-1",
+        "EP-R-34:source-VALID-5",
+        "EP-R-34:source-PATH-WITNESS",
+        "EP-R-34:source-REVERSED-PATH",
+        "PAIR-R-34-VALID",
+        "PAIR-R-34-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0245",
+      "source_element": "R-34:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-34:target-VALID-0",
+        "EP-R-34:target-VALID-1",
+        "EP-R-34:target-ABOVE-MAX",
+        "EP-R-34:target-RELAXED-MAX",
+        "EP-R-34:target-PATH-WITNESS",
+        "EP-R-34:target-REVERSED-PATH",
+        "EP-R-34:target-ALIASED-VALUES",
+        "EP-R-34:target-ONE-BLANK",
+        "EP-R-34:target-TWO-BLANKS",
+        "PAIR-R-34-VALID",
+        "PAIR-R-34-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0247",
+      "source_element": "R-35:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-35:source-VALID-0",
+        "EP-R-35:source-VALID-1",
+        "EP-R-35:source-VALID-5",
+        "EP-R-35:source-PATH-WITNESS",
+        "EP-R-35:source-REVERSED-PATH",
+        "PAIR-R-35-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0248",
+      "source_element": "R-35:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-35:target-VALID-0",
+        "EP-R-35:target-VALID-1",
+        "EP-R-35:target-VALID-5",
+        "EP-R-35:target-PATH-WITNESS",
+        "EP-R-35:target-REVERSED-PATH",
+        "PAIR-R-35-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0250",
+      "source_element": "R-36:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-36:source-VALID-0",
+        "EP-R-36:source-VALID-1",
+        "EP-R-36:source-VALID-5",
+        "EP-R-36:source-PATH-WITNESS",
+        "EP-R-36:source-REVERSED-PATH",
+        "PAIR-R-36-VALID",
+        "PAIR-R-36-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0251",
+      "source_element": "R-36:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-36:target-VALID-1",
+        "EP-R-36:target-VALID-2",
+        "EP-R-36:target-VALID-5",
+        "EP-R-36:target-BELOW-MIN",
+        "EP-R-36:target-RELAXED-MIN",
+        "EP-R-36:target-PATH-WITNESS",
+        "EP-R-36:target-REVERSED-PATH",
+        "PAIR-R-36-VALID",
+        "PAIR-R-36-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0253",
+      "source_element": "R-37:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-37:source-VALID-0",
+        "EP-R-37:source-VALID-1",
+        "EP-R-37:source-VALID-5",
+        "EP-R-37:source-PATH-WITNESS",
+        "EP-R-37:source-REVERSED-PATH",
+        "PAIR-R-37-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0254",
+      "source_element": "R-37:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-37:target-VALID-0",
+        "EP-R-37:target-VALID-1",
+        "EP-R-37:target-VALID-5",
+        "EP-R-37:target-PATH-WITNESS",
+        "EP-R-37:target-REVERSED-PATH",
+        "PAIR-R-37-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0256",
+      "source_element": "R-38:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-38:source-VALID-1",
+        "EP-R-38:source-BELOW-MIN",
+        "EP-R-38:source-RELAXED-MIN",
+        "EP-R-38:source-ABOVE-MAX",
+        "EP-R-38:source-RELAXED-MAX",
+        "EP-R-38:source-PATH-WITNESS",
+        "EP-R-38:source-REVERSED-PATH",
+        "EP-R-38:source-ALIASED-VALUES",
+        "EP-R-38:source-ONE-BLANK",
+        "EP-R-38:source-TWO-BLANKS",
+        "PAIR-R-38-VALID",
+        "PAIR-R-38-MISSING",
+        "PAIR-R-38-EXCESS-source"
+      ]
+    },
+    {
+      "id": "SHACL-0257",
+      "source_element": "R-38:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-38:target-VALID-0",
+        "EP-R-38:target-VALID-1",
+        "EP-R-38:target-VALID-5",
+        "EP-R-38:target-PATH-WITNESS",
+        "EP-R-38:target-REVERSED-PATH",
+        "PAIR-R-38-VALID",
+        "PAIR-R-38-MISSING",
+        "PAIR-R-38-EXCESS-source"
+      ]
+    },
+    {
+      "id": "SHACL-0259",
+      "source_element": "R-39:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-39:source-VALID-0",
+        "EP-R-39:source-VALID-1",
+        "EP-R-39:source-VALID-5",
+        "EP-R-39:source-PATH-WITNESS",
+        "EP-R-39:source-REVERSED-PATH",
+        "PAIR-R-39-VALID",
+        "PAIR-R-39-MISSING",
+        "PAIR-R-39-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0260",
+      "source_element": "R-39:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-39:target-VALID-1",
+        "EP-R-39:target-BELOW-MIN",
+        "EP-R-39:target-RELAXED-MIN",
+        "EP-R-39:target-ABOVE-MAX",
+        "EP-R-39:target-RELAXED-MAX",
+        "EP-R-39:target-PATH-WITNESS",
+        "EP-R-39:target-REVERSED-PATH",
+        "EP-R-39:target-ALIASED-VALUES",
+        "EP-R-39:target-ONE-BLANK",
+        "EP-R-39:target-TWO-BLANKS",
+        "PAIR-R-39-VALID",
+        "PAIR-R-39-MISSING",
+        "PAIR-R-39-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0262",
+      "source_element": "R-40:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-40:source-VALID-0",
+        "EP-R-40:source-VALID-1",
+        "EP-R-40:source-VALID-5",
+        "EP-R-40:source-PATH-WITNESS",
+        "EP-R-40:source-REVERSED-PATH",
+        "PAIR-R-40-VALID",
+        "PAIR-R-40-MISSING",
+        "PAIR-R-40-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0263",
+      "source_element": "R-40:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-40:target-VALID-1",
+        "EP-R-40:target-BELOW-MIN",
+        "EP-R-40:target-RELAXED-MIN",
+        "EP-R-40:target-ABOVE-MAX",
+        "EP-R-40:target-RELAXED-MAX",
+        "EP-R-40:target-PATH-WITNESS",
+        "EP-R-40:target-REVERSED-PATH",
+        "EP-R-40:target-ALIASED-VALUES",
+        "EP-R-40:target-ONE-BLANK",
+        "EP-R-40:target-TWO-BLANKS",
+        "PAIR-R-40-VALID",
+        "PAIR-R-40-MISSING",
+        "PAIR-R-40-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0265",
+      "source_element": "R-41:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-41:source-VALID-0",
+        "EP-R-41:source-VALID-1",
+        "EP-R-41:source-VALID-5",
+        "EP-R-41:source-PATH-WITNESS",
+        "EP-R-41:source-REVERSED-PATH",
+        "PAIR-R-41-VALID",
+        "PAIR-R-41-MISSING",
+        "PAIR-R-41-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0266",
+      "source_element": "R-41:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-41:target-VALID-1",
+        "EP-R-41:target-BELOW-MIN",
+        "EP-R-41:target-RELAXED-MIN",
+        "EP-R-41:target-ABOVE-MAX",
+        "EP-R-41:target-RELAXED-MAX",
+        "EP-R-41:target-PATH-WITNESS",
+        "EP-R-41:target-REVERSED-PATH",
+        "EP-R-41:target-ALIASED-VALUES",
+        "EP-R-41:target-ONE-BLANK",
+        "EP-R-41:target-TWO-BLANKS",
+        "PAIR-R-41-VALID",
+        "PAIR-R-41-MISSING",
+        "PAIR-R-41-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0268",
+      "source_element": "R-42:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-42:source-VALID-0",
+        "EP-R-42:source-VALID-1",
+        "EP-R-42:source-VALID-5",
+        "EP-R-42:source-PATH-WITNESS",
+        "EP-R-42:source-REVERSED-PATH",
+        "PAIR-R-42-VALID",
+        "PAIR-R-42-MISSING",
+        "PAIR-R-42-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0269",
+      "source_element": "R-42:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-42:target-VALID-1",
+        "EP-R-42:target-BELOW-MIN",
+        "EP-R-42:target-RELAXED-MIN",
+        "EP-R-42:target-ABOVE-MAX",
+        "EP-R-42:target-RELAXED-MAX",
+        "EP-R-42:target-PATH-WITNESS",
+        "EP-R-42:target-REVERSED-PATH",
+        "EP-R-42:target-ALIASED-VALUES",
+        "EP-R-42:target-ONE-BLANK",
+        "EP-R-42:target-TWO-BLANKS",
+        "PAIR-R-42-VALID",
+        "PAIR-R-42-MISSING",
+        "PAIR-R-42-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0271",
+      "source_element": "R-43:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-43:source-VALID-0",
+        "EP-R-43:source-VALID-1",
+        "EP-R-43:source-VALID-5",
+        "EP-R-43:source-PATH-WITNESS",
+        "EP-R-43:source-REVERSED-PATH",
+        "PAIR-R-43-VALID",
+        "PAIR-R-43-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0272",
+      "source_element": "R-43:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-43:target-VALID-0",
+        "EP-R-43:target-VALID-1",
+        "EP-R-43:target-ABOVE-MAX",
+        "EP-R-43:target-RELAXED-MAX",
+        "EP-R-43:target-PATH-WITNESS",
+        "EP-R-43:target-REVERSED-PATH",
+        "EP-R-43:target-ALIASED-VALUES",
+        "EP-R-43:target-ONE-BLANK",
+        "EP-R-43:target-TWO-BLANKS",
+        "PAIR-R-43-VALID",
+        "PAIR-R-43-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0274",
+      "source_element": "R-44:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-44:source-VALID-1",
+        "EP-R-44:source-VALID-2",
+        "EP-R-44:source-VALID-5",
+        "EP-R-44:source-BELOW-MIN",
+        "EP-R-44:source-RELAXED-MIN",
+        "EP-R-44:source-PATH-WITNESS",
+        "EP-R-44:source-REVERSED-PATH",
+        "PAIR-R-44-VALID",
+        "PAIR-R-44-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0275",
+      "source_element": "R-44:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-44:target-VALID-0",
+        "EP-R-44:target-VALID-1",
+        "EP-R-44:target-VALID-5",
+        "EP-R-44:target-PATH-WITNESS",
+        "EP-R-44:target-REVERSED-PATH",
+        "PAIR-R-44-VALID",
+        "PAIR-R-44-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0277",
+      "source_element": "R-45:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-45:source-VALID-0",
+        "EP-R-45:source-VALID-1",
+        "EP-R-45:source-VALID-5",
+        "EP-R-45:source-PATH-WITNESS",
+        "EP-R-45:source-REVERSED-PATH",
+        "PAIR-R-45-VALID",
+        "PAIR-R-45-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0278",
+      "source_element": "R-45:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-45:target-VALID-0",
+        "EP-R-45:target-VALID-1",
+        "EP-R-45:target-ABOVE-MAX",
+        "EP-R-45:target-RELAXED-MAX",
+        "EP-R-45:target-PATH-WITNESS",
+        "EP-R-45:target-REVERSED-PATH",
+        "EP-R-45:target-ALIASED-VALUES",
+        "EP-R-45:target-ONE-BLANK",
+        "EP-R-45:target-TWO-BLANKS",
+        "PAIR-R-45-VALID",
+        "PAIR-R-45-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0280",
+      "source_element": "R-46:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-46:source-VALID-0",
+        "EP-R-46:source-VALID-1",
+        "EP-R-46:source-VALID-5",
+        "EP-R-46:source-PATH-WITNESS",
+        "EP-R-46:source-REVERSED-PATH",
+        "PAIR-R-46-VALID",
+        "PAIR-R-46-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0281",
+      "source_element": "R-46:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-46:target-VALID-0",
+        "EP-R-46:target-VALID-1",
+        "EP-R-46:target-ABOVE-MAX",
+        "EP-R-46:target-RELAXED-MAX",
+        "EP-R-46:target-PATH-WITNESS",
+        "EP-R-46:target-REVERSED-PATH",
+        "EP-R-46:target-ALIASED-VALUES",
+        "EP-R-46:target-ONE-BLANK",
+        "EP-R-46:target-TWO-BLANKS",
+        "PAIR-R-46-VALID",
+        "PAIR-R-46-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0283",
+      "source_element": "R-47:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-47:source-VALID-0",
+        "EP-R-47:source-VALID-1",
+        "EP-R-47:source-VALID-5",
+        "EP-R-47:source-PATH-WITNESS",
+        "EP-R-47:source-REVERSED-PATH",
+        "PAIR-R-47-VALID",
+        "PAIR-R-47-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0284",
+      "source_element": "R-47:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-47:target-VALID-0",
+        "EP-R-47:target-VALID-1",
+        "EP-R-47:target-ABOVE-MAX",
+        "EP-R-47:target-RELAXED-MAX",
+        "EP-R-47:target-PATH-WITNESS",
+        "EP-R-47:target-REVERSED-PATH",
+        "EP-R-47:target-ALIASED-VALUES",
+        "EP-R-47:target-ONE-BLANK",
+        "EP-R-47:target-TWO-BLANKS",
+        "PAIR-R-47-VALID",
+        "PAIR-R-47-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0286",
+      "source_element": "R-48:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-48:source-VALID-0",
+        "EP-R-48:source-VALID-1",
+        "EP-R-48:source-VALID-5",
+        "EP-R-48:source-PATH-WITNESS",
+        "EP-R-48:source-REVERSED-PATH",
+        "PAIR-R-48-VALID",
+        "PAIR-R-48-MISSING",
+        "PAIR-R-48-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0287",
+      "source_element": "R-48:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-48:target-VALID-1",
+        "EP-R-48:target-BELOW-MIN",
+        "EP-R-48:target-RELAXED-MIN",
+        "EP-R-48:target-ABOVE-MAX",
+        "EP-R-48:target-RELAXED-MAX",
+        "EP-R-48:target-PATH-WITNESS",
+        "EP-R-48:target-REVERSED-PATH",
+        "EP-R-48:target-ALIASED-VALUES",
+        "EP-R-48:target-ONE-BLANK",
+        "EP-R-48:target-TWO-BLANKS",
+        "PAIR-R-48-VALID",
+        "PAIR-R-48-MISSING",
+        "PAIR-R-48-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0289",
+      "source_element": "R-49:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-49:source-VALID-0",
+        "EP-R-49:source-VALID-1",
+        "EP-R-49:source-VALID-5",
+        "EP-R-49:source-PATH-WITNESS",
+        "EP-R-49:source-REVERSED-PATH",
+        "PAIR-R-49-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0290",
+      "source_element": "R-49:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-49:target-VALID-0",
+        "EP-R-49:target-VALID-1",
+        "EP-R-49:target-VALID-5",
+        "EP-R-49:target-PATH-WITNESS",
+        "EP-R-49:target-REVERSED-PATH",
+        "PAIR-R-49-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0292",
+      "source_element": "R-50:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-50:source-VALID-0",
+        "EP-R-50:source-VALID-1",
+        "EP-R-50:source-VALID-5",
+        "EP-R-50:source-PATH-WITNESS",
+        "EP-R-50:source-REVERSED-PATH",
+        "PAIR-R-50-VALID",
+        "PAIR-R-50-MISSING",
+        "PAIR-R-50-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0293",
+      "source_element": "R-50:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-50:target-VALID-1",
+        "EP-R-50:target-BELOW-MIN",
+        "EP-R-50:target-RELAXED-MIN",
+        "EP-R-50:target-ABOVE-MAX",
+        "EP-R-50:target-RELAXED-MAX",
+        "EP-R-50:target-PATH-WITNESS",
+        "EP-R-50:target-REVERSED-PATH",
+        "EP-R-50:target-ALIASED-VALUES",
+        "EP-R-50:target-ONE-BLANK",
+        "EP-R-50:target-TWO-BLANKS",
+        "PAIR-R-50-VALID",
+        "PAIR-R-50-MISSING",
+        "PAIR-R-50-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0295",
+      "source_element": "R-51:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-51:source-VALID-0",
+        "EP-R-51:source-VALID-1",
+        "EP-R-51:source-VALID-5",
+        "EP-R-51:source-PATH-WITNESS",
+        "EP-R-51:source-REVERSED-PATH",
+        "PAIR-R-51-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0296",
+      "source_element": "R-51:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-51:target-VALID-0",
+        "EP-R-51:target-VALID-1",
+        "EP-R-51:target-VALID-5",
+        "EP-R-51:target-PATH-WITNESS",
+        "EP-R-51:target-REVERSED-PATH",
+        "PAIR-R-51-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0298",
+      "source_element": "R-52:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-52:source-VALID-1",
+        "EP-R-52:source-VALID-2",
+        "EP-R-52:source-VALID-5",
+        "EP-R-52:source-BELOW-MIN",
+        "EP-R-52:source-RELAXED-MIN",
+        "EP-R-52:source-PATH-WITNESS",
+        "EP-R-52:source-REVERSED-PATH",
+        "PAIR-R-52-VALID",
+        "PAIR-R-52-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0299",
+      "source_element": "R-52:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-52:target-VALID-0",
+        "EP-R-52:target-VALID-1",
+        "EP-R-52:target-VALID-5",
+        "EP-R-52:target-PATH-WITNESS",
+        "EP-R-52:target-REVERSED-PATH",
+        "PAIR-R-52-VALID",
+        "PAIR-R-52-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0301",
+      "source_element": "R-53:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-53:source-VALID-0",
+        "EP-R-53:source-VALID-1",
+        "EP-R-53:source-VALID-5",
+        "EP-R-53:source-PATH-WITNESS",
+        "EP-R-53:source-REVERSED-PATH",
+        "PAIR-R-53-VALID",
+        "PAIR-R-53-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0302",
+      "source_element": "R-53:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-53:target-VALID-0",
+        "EP-R-53:target-VALID-1",
+        "EP-R-53:target-ABOVE-MAX",
+        "EP-R-53:target-RELAXED-MAX",
+        "EP-R-53:target-PATH-WITNESS",
+        "EP-R-53:target-REVERSED-PATH",
+        "EP-R-53:target-ALIASED-VALUES",
+        "EP-R-53:target-ONE-BLANK",
+        "EP-R-53:target-TWO-BLANKS",
+        "PAIR-R-53-VALID",
+        "PAIR-R-53-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0304",
+      "source_element": "R-54:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-54:source-VALID-0",
+        "EP-R-54:source-VALID-1",
+        "EP-R-54:source-VALID-5",
+        "EP-R-54:source-PATH-WITNESS",
+        "EP-R-54:source-REVERSED-PATH",
+        "PAIR-R-54-VALID",
+        "PAIR-R-54-MISSING",
+        "PAIR-R-54-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0305",
+      "source_element": "R-54:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-54:target-VALID-1",
+        "EP-R-54:target-BELOW-MIN",
+        "EP-R-54:target-RELAXED-MIN",
+        "EP-R-54:target-ABOVE-MAX",
+        "EP-R-54:target-RELAXED-MAX",
+        "EP-R-54:target-PATH-WITNESS",
+        "EP-R-54:target-REVERSED-PATH",
+        "EP-R-54:target-ALIASED-VALUES",
+        "EP-R-54:target-ONE-BLANK",
+        "EP-R-54:target-TWO-BLANKS",
+        "PAIR-R-54-VALID",
+        "PAIR-R-54-MISSING",
+        "PAIR-R-54-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0307",
+      "source_element": "R-55:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-55:source-VALID-0",
+        "EP-R-55:source-VALID-1",
+        "EP-R-55:source-VALID-5",
+        "EP-R-55:source-PATH-WITNESS",
+        "EP-R-55:source-REVERSED-PATH",
+        "PAIR-R-55-VALID",
+        "PAIR-R-55-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0308",
+      "source_element": "R-55:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-55:target-VALID-0",
+        "EP-R-55:target-VALID-1",
+        "EP-R-55:target-ABOVE-MAX",
+        "EP-R-55:target-RELAXED-MAX",
+        "EP-R-55:target-PATH-WITNESS",
+        "EP-R-55:target-REVERSED-PATH",
+        "EP-R-55:target-ALIASED-VALUES",
+        "EP-R-55:target-ONE-BLANK",
+        "EP-R-55:target-TWO-BLANKS",
+        "PAIR-R-55-VALID",
+        "PAIR-R-55-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0310",
+      "source_element": "R-56:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-56:source-VALID-1",
+        "EP-R-56:source-VALID-2",
+        "EP-R-56:source-VALID-5",
+        "EP-R-56:source-BELOW-MIN",
+        "EP-R-56:source-RELAXED-MIN",
+        "EP-R-56:source-PATH-WITNESS",
+        "EP-R-56:source-REVERSED-PATH",
+        "PAIR-R-56-VALID",
+        "PAIR-R-56-MISSING",
+        "PAIR-R-56-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0311",
+      "source_element": "R-56:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-56:target-VALID-1",
+        "EP-R-56:target-BELOW-MIN",
+        "EP-R-56:target-RELAXED-MIN",
+        "EP-R-56:target-ABOVE-MAX",
+        "EP-R-56:target-RELAXED-MAX",
+        "EP-R-56:target-PATH-WITNESS",
+        "EP-R-56:target-REVERSED-PATH",
+        "EP-R-56:target-ALIASED-VALUES",
+        "EP-R-56:target-ONE-BLANK",
+        "EP-R-56:target-TWO-BLANKS",
+        "PAIR-R-56-VALID",
+        "PAIR-R-56-MISSING",
+        "PAIR-R-56-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0313",
+      "source_element": "R-57:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-57:source-VALID-1",
+        "EP-R-57:source-VALID-2",
+        "EP-R-57:source-VALID-5",
+        "EP-R-57:source-BELOW-MIN",
+        "EP-R-57:source-RELAXED-MIN",
+        "EP-R-57:source-PATH-WITNESS",
+        "EP-R-57:source-REVERSED-PATH",
+        "PAIR-R-57-VALID",
+        "PAIR-R-57-MISSING",
+        "PAIR-R-57-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0314",
+      "source_element": "R-57:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-57:target-VALID-1",
+        "EP-R-57:target-BELOW-MIN",
+        "EP-R-57:target-RELAXED-MIN",
+        "EP-R-57:target-ABOVE-MAX",
+        "EP-R-57:target-RELAXED-MAX",
+        "EP-R-57:target-PATH-WITNESS",
+        "EP-R-57:target-REVERSED-PATH",
+        "EP-R-57:target-ALIASED-VALUES",
+        "EP-R-57:target-ONE-BLANK",
+        "EP-R-57:target-TWO-BLANKS",
+        "PAIR-R-57-VALID",
+        "PAIR-R-57-MISSING",
+        "PAIR-R-57-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0316",
+      "source_element": "R-58:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-58:source-VALID-0",
+        "EP-R-58:source-VALID-1",
+        "EP-R-58:source-VALID-5",
+        "EP-R-58:source-PATH-WITNESS",
+        "EP-R-58:source-REVERSED-PATH",
+        "PAIR-R-58-VALID",
+        "PAIR-R-58-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0317",
+      "source_element": "R-58:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-58:target-VALID-1",
+        "EP-R-58:target-VALID-2",
+        "EP-R-58:target-VALID-5",
+        "EP-R-58:target-BELOW-MIN",
+        "EP-R-58:target-RELAXED-MIN",
+        "EP-R-58:target-PATH-WITNESS",
+        "EP-R-58:target-REVERSED-PATH",
+        "PAIR-R-58-VALID",
+        "PAIR-R-58-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0319",
+      "source_element": "R-59:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-59:source-VALID-0",
+        "EP-R-59:source-VALID-1",
+        "EP-R-59:source-VALID-5",
+        "EP-R-59:source-PATH-WITNESS",
+        "EP-R-59:source-REVERSED-PATH",
+        "PAIR-R-59-VALID",
+        "PAIR-R-59-MISSING",
+        "PAIR-R-59-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0320",
+      "source_element": "R-59:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-59:target-VALID-1",
+        "EP-R-59:target-BELOW-MIN",
+        "EP-R-59:target-RELAXED-MIN",
+        "EP-R-59:target-ABOVE-MAX",
+        "EP-R-59:target-RELAXED-MAX",
+        "EP-R-59:target-PATH-WITNESS",
+        "EP-R-59:target-REVERSED-PATH",
+        "EP-R-59:target-ALIASED-VALUES",
+        "EP-R-59:target-ONE-BLANK",
+        "EP-R-59:target-TWO-BLANKS",
+        "PAIR-R-59-VALID",
+        "PAIR-R-59-MISSING",
+        "PAIR-R-59-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0322",
+      "source_element": "R-60:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-60:source-VALID-1",
+        "EP-R-60:source-VALID-2",
+        "EP-R-60:source-VALID-5",
+        "EP-R-60:source-BELOW-MIN",
+        "EP-R-60:source-RELAXED-MIN",
+        "EP-R-60:source-PATH-WITNESS",
+        "EP-R-60:source-REVERSED-PATH",
+        "PAIR-R-60-VALID",
+        "PAIR-R-60-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0323",
+      "source_element": "R-60:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-60:target-VALID-0",
+        "EP-R-60:target-VALID-1",
+        "EP-R-60:target-VALID-5",
+        "EP-R-60:target-PATH-WITNESS",
+        "EP-R-60:target-REVERSED-PATH",
+        "PAIR-R-60-VALID",
+        "PAIR-R-60-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0325",
+      "source_element": "R-61:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-61:source-VALID-1",
+        "EP-R-61:source-VALID-2",
+        "EP-R-61:source-VALID-5",
+        "EP-R-61:source-BELOW-MIN",
+        "EP-R-61:source-RELAXED-MIN",
+        "EP-R-61:source-PATH-WITNESS",
+        "EP-R-61:source-REVERSED-PATH",
+        "PAIR-R-61-VALID",
+        "PAIR-R-61-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0326",
+      "source_element": "R-61:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-61:target-VALID-0",
+        "EP-R-61:target-VALID-1",
+        "EP-R-61:target-VALID-5",
+        "EP-R-61:target-PATH-WITNESS",
+        "EP-R-61:target-REVERSED-PATH",
+        "PAIR-R-61-VALID",
+        "PAIR-R-61-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0328",
+      "source_element": "R-62:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-62:source-VALID-0",
+        "EP-R-62:source-VALID-1",
+        "EP-R-62:source-VALID-5",
+        "EP-R-62:source-PATH-WITNESS",
+        "EP-R-62:source-REVERSED-PATH",
+        "PAIR-R-62-VALID",
+        "PAIR-R-62-MISSING",
+        "PAIR-R-62-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0329",
+      "source_element": "R-62:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-62:target-VALID-1",
+        "EP-R-62:target-BELOW-MIN",
+        "EP-R-62:target-RELAXED-MIN",
+        "EP-R-62:target-ABOVE-MAX",
+        "EP-R-62:target-RELAXED-MAX",
+        "EP-R-62:target-PATH-WITNESS",
+        "EP-R-62:target-REVERSED-PATH",
+        "EP-R-62:target-ALIASED-VALUES",
+        "EP-R-62:target-ONE-BLANK",
+        "EP-R-62:target-TWO-BLANKS",
+        "PAIR-R-62-VALID",
+        "PAIR-R-62-MISSING",
+        "PAIR-R-62-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0331",
+      "source_element": "R-63:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-63:source-VALID-0",
+        "EP-R-63:source-VALID-1",
+        "EP-R-63:source-VALID-5",
+        "EP-R-63:source-PATH-WITNESS",
+        "EP-R-63:source-REVERSED-PATH",
+        "PAIR-R-63-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0332",
+      "source_element": "R-63:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-63:target-VALID-0",
+        "EP-R-63:target-VALID-1",
+        "EP-R-63:target-VALID-5",
+        "EP-R-63:target-PATH-WITNESS",
+        "EP-R-63:target-REVERSED-PATH",
+        "PAIR-R-63-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0334",
+      "source_element": "R-64:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-64:source-VALID-0",
+        "EP-R-64:source-VALID-1",
+        "EP-R-64:source-VALID-5",
+        "EP-R-64:source-PATH-WITNESS",
+        "EP-R-64:source-REVERSED-PATH",
+        "PAIR-R-64-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0335",
+      "source_element": "R-64:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-64:target-VALID-0",
+        "EP-R-64:target-VALID-1",
+        "EP-R-64:target-VALID-5",
+        "EP-R-64:target-PATH-WITNESS",
+        "EP-R-64:target-REVERSED-PATH",
+        "PAIR-R-64-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0337",
+      "source_element": "R-65:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-65:source-VALID-0",
+        "EP-R-65:source-VALID-1",
+        "EP-R-65:source-VALID-5",
+        "EP-R-65:source-PATH-WITNESS",
+        "EP-R-65:source-REVERSED-PATH",
+        "PAIR-R-65-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0338",
+      "source_element": "R-65:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-65:target-VALID-0",
+        "EP-R-65:target-VALID-1",
+        "EP-R-65:target-VALID-5",
+        "EP-R-65:target-PATH-WITNESS",
+        "EP-R-65:target-REVERSED-PATH",
+        "PAIR-R-65-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0340",
+      "source_element": "R-68:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-68:source-VALID-0",
+        "EP-R-68:source-VALID-1",
+        "EP-R-68:source-VALID-5",
+        "EP-R-68:source-PATH-WITNESS",
+        "EP-R-68:source-REVERSED-PATH",
+        "PAIR-R-68-VALID",
+        "PAIR-R-68-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0341",
+      "source_element": "R-68:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-68:target-VALID-1",
+        "EP-R-68:target-VALID-2",
+        "EP-R-68:target-VALID-5",
+        "EP-R-68:target-BELOW-MIN",
+        "EP-R-68:target-RELAXED-MIN",
+        "EP-R-68:target-PATH-WITNESS",
+        "EP-R-68:target-REVERSED-PATH",
+        "PAIR-R-68-VALID",
+        "PAIR-R-68-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0343",
+      "source_element": "R-69:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-69:source-VALID-0",
+        "EP-R-69:source-VALID-1",
+        "EP-R-69:source-VALID-5",
+        "EP-R-69:source-PATH-WITNESS",
+        "EP-R-69:source-REVERSED-PATH",
+        "PAIR-R-69-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0344",
+      "source_element": "R-69:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-69:target-VALID-0",
+        "EP-R-69:target-VALID-1",
+        "EP-R-69:target-VALID-5",
+        "EP-R-69:target-PATH-WITNESS",
+        "EP-R-69:target-REVERSED-PATH",
+        "PAIR-R-69-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0346",
+      "source_element": "R-70:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-70:source-VALID-0",
+        "EP-R-70:source-VALID-1",
+        "EP-R-70:source-VALID-5",
+        "EP-R-70:source-PATH-WITNESS",
+        "EP-R-70:source-REVERSED-PATH",
+        "PAIR-R-70-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0347",
+      "source_element": "R-70:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-70:target-VALID-0",
+        "EP-R-70:target-VALID-1",
+        "EP-R-70:target-VALID-5",
+        "EP-R-70:target-PATH-WITNESS",
+        "EP-R-70:target-REVERSED-PATH",
+        "PAIR-R-70-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0349",
+      "source_element": "R-71:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-71:source-VALID-0",
+        "EP-R-71:source-VALID-1",
+        "EP-R-71:source-VALID-5",
+        "EP-R-71:source-PATH-WITNESS",
+        "EP-R-71:source-REVERSED-PATH",
+        "PAIR-R-71-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0350",
+      "source_element": "R-71:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-71:target-VALID-0",
+        "EP-R-71:target-VALID-1",
+        "EP-R-71:target-VALID-5",
+        "EP-R-71:target-PATH-WITNESS",
+        "EP-R-71:target-REVERSED-PATH",
+        "PAIR-R-71-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0352",
+      "source_element": "R-72:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-72:source-VALID-0",
+        "EP-R-72:source-VALID-1",
+        "EP-R-72:source-VALID-5",
+        "EP-R-72:source-PATH-WITNESS",
+        "EP-R-72:source-REVERSED-PATH",
+        "PAIR-R-72-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0353",
+      "source_element": "R-72:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-R-72:target-VALID-0",
+        "EP-R-72:target-VALID-1",
+        "EP-R-72:target-VALID-5",
+        "EP-R-72:target-PATH-WITNESS",
+        "EP-R-72:target-REVERSED-PATH",
+        "PAIR-R-72-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0355",
+      "source_element": "RX-001:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-001:source-VALID-0",
+        "EP-RX-001:source-VALID-1",
+        "EP-RX-001:source-VALID-5",
+        "EP-RX-001:source-PATH-WITNESS",
+        "EP-RX-001:source-REVERSED-PATH",
+        "PAIR-RX-001-VALID",
+        "PAIR-RX-001-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0356",
+      "source_element": "RX-001:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-001:target-VALID-1",
+        "EP-RX-001:target-VALID-2",
+        "EP-RX-001:target-VALID-5",
+        "EP-RX-001:target-BELOW-MIN",
+        "EP-RX-001:target-RELAXED-MIN",
+        "EP-RX-001:target-PATH-WITNESS",
+        "EP-RX-001:target-REVERSED-PATH",
+        "PAIR-RX-001-VALID",
+        "PAIR-RX-001-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0358",
+      "source_element": "RX-002:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-002:source-VALID-0",
+        "EP-RX-002:source-VALID-1",
+        "EP-RX-002:source-VALID-5",
+        "EP-RX-002:source-PATH-WITNESS",
+        "EP-RX-002:source-REVERSED-PATH",
+        "PAIR-RX-002-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0359",
+      "source_element": "RX-002:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-002:target-VALID-0",
+        "EP-RX-002:target-VALID-1",
+        "EP-RX-002:target-VALID-5",
+        "EP-RX-002:target-PATH-WITNESS",
+        "EP-RX-002:target-REVERSED-PATH",
+        "PAIR-RX-002-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0361",
+      "source_element": "RX-003:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-003:source-VALID-0",
+        "EP-RX-003:source-VALID-1",
+        "EP-RX-003:source-VALID-5",
+        "EP-RX-003:source-PATH-WITNESS",
+        "EP-RX-003:source-REVERSED-PATH",
+        "PAIR-RX-003-VALID",
+        "PAIR-RX-003-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0362",
+      "source_element": "RX-003:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-003:target-VALID-1",
+        "EP-RX-003:target-VALID-2",
+        "EP-RX-003:target-VALID-5",
+        "EP-RX-003:target-BELOW-MIN",
+        "EP-RX-003:target-RELAXED-MIN",
+        "EP-RX-003:target-PATH-WITNESS",
+        "EP-RX-003:target-REVERSED-PATH",
+        "PAIR-RX-003-VALID",
+        "PAIR-RX-003-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0364",
+      "source_element": "RX-004:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-004:source-VALID-0",
+        "EP-RX-004:source-VALID-1",
+        "EP-RX-004:source-VALID-5",
+        "EP-RX-004:source-PATH-WITNESS",
+        "EP-RX-004:source-REVERSED-PATH",
+        "PAIR-RX-004-VALID",
+        "PAIR-RX-004-MISSING",
+        "PAIR-RX-004-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0365",
+      "source_element": "RX-004:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-004:target-VALID-1",
+        "EP-RX-004:target-BELOW-MIN",
+        "EP-RX-004:target-RELAXED-MIN",
+        "EP-RX-004:target-ABOVE-MAX",
+        "EP-RX-004:target-RELAXED-MAX",
+        "EP-RX-004:target-PATH-WITNESS",
+        "EP-RX-004:target-REVERSED-PATH",
+        "EP-RX-004:target-ALIASED-VALUES",
+        "EP-RX-004:target-ONE-BLANK",
+        "EP-RX-004:target-TWO-BLANKS",
+        "PAIR-RX-004-VALID",
+        "PAIR-RX-004-MISSING",
+        "PAIR-RX-004-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0367",
+      "source_element": "RX-006:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-006:source-VALID-0",
+        "EP-RX-006:source-VALID-1",
+        "EP-RX-006:source-VALID-5",
+        "EP-RX-006:source-PATH-WITNESS",
+        "EP-RX-006:source-REVERSED-PATH",
+        "PAIR-RX-006-VALID",
+        "PAIR-RX-006-MISSING",
+        "PAIR-RX-006-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0368",
+      "source_element": "RX-006:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-006:target-VALID-1",
+        "EP-RX-006:target-BELOW-MIN",
+        "EP-RX-006:target-RELAXED-MIN",
+        "EP-RX-006:target-ABOVE-MAX",
+        "EP-RX-006:target-RELAXED-MAX",
+        "EP-RX-006:target-PATH-WITNESS",
+        "EP-RX-006:target-REVERSED-PATH",
+        "EP-RX-006:target-ALIASED-VALUES",
+        "EP-RX-006:target-ONE-BLANK",
+        "EP-RX-006:target-TWO-BLANKS",
+        "PAIR-RX-006-VALID",
+        "PAIR-RX-006-MISSING",
+        "PAIR-RX-006-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0370",
+      "source_element": "RX-007:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-007:source-VALID-0",
+        "EP-RX-007:source-VALID-1",
+        "EP-RX-007:source-VALID-5",
+        "EP-RX-007:source-PATH-WITNESS",
+        "EP-RX-007:source-REVERSED-PATH",
+        "PAIR-RX-007-VALID",
+        "PAIR-RX-007-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0371",
+      "source_element": "RX-007:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-007:target-VALID-1",
+        "EP-RX-007:target-VALID-2",
+        "EP-RX-007:target-VALID-5",
+        "EP-RX-007:target-BELOW-MIN",
+        "EP-RX-007:target-RELAXED-MIN",
+        "EP-RX-007:target-PATH-WITNESS",
+        "EP-RX-007:target-REVERSED-PATH",
+        "PAIR-RX-007-VALID",
+        "PAIR-RX-007-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0373",
+      "source_element": "RX-008:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-008:source-VALID-0",
+        "EP-RX-008:source-VALID-1",
+        "EP-RX-008:source-VALID-5",
+        "EP-RX-008:source-PATH-WITNESS",
+        "EP-RX-008:source-REVERSED-PATH",
+        "PAIR-RX-008-VALID",
+        "PAIR-RX-008-MISSING",
+        "PAIR-RX-008-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0374",
+      "source_element": "RX-008:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-008:target-VALID-1",
+        "EP-RX-008:target-BELOW-MIN",
+        "EP-RX-008:target-RELAXED-MIN",
+        "EP-RX-008:target-ABOVE-MAX",
+        "EP-RX-008:target-RELAXED-MAX",
+        "EP-RX-008:target-PATH-WITNESS",
+        "EP-RX-008:target-REVERSED-PATH",
+        "EP-RX-008:target-ALIASED-VALUES",
+        "EP-RX-008:target-ONE-BLANK",
+        "EP-RX-008:target-TWO-BLANKS",
+        "PAIR-RX-008-VALID",
+        "PAIR-RX-008-MISSING",
+        "PAIR-RX-008-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0376",
+      "source_element": "RX-009:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-009:source-VALID-0",
+        "EP-RX-009:source-VALID-1",
+        "EP-RX-009:source-VALID-5",
+        "EP-RX-009:source-PATH-WITNESS",
+        "EP-RX-009:source-REVERSED-PATH",
+        "PAIR-RX-009-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0377",
+      "source_element": "RX-009:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-009:target-VALID-0",
+        "EP-RX-009:target-VALID-1",
+        "EP-RX-009:target-VALID-5",
+        "EP-RX-009:target-PATH-WITNESS",
+        "EP-RX-009:target-REVERSED-PATH",
+        "PAIR-RX-009-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0379",
+      "source_element": "RX-011:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-011:source-VALID-0",
+        "EP-RX-011:source-VALID-1",
+        "EP-RX-011:source-VALID-5",
+        "EP-RX-011:source-PATH-WITNESS",
+        "EP-RX-011:source-REVERSED-PATH",
+        "PAIR-RX-011-VALID",
+        "PAIR-RX-011-MISSING",
+        "PAIR-RX-011-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0380",
+      "source_element": "RX-011:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-011:target-VALID-1",
+        "EP-RX-011:target-BELOW-MIN",
+        "EP-RX-011:target-RELAXED-MIN",
+        "EP-RX-011:target-ABOVE-MAX",
+        "EP-RX-011:target-RELAXED-MAX",
+        "EP-RX-011:target-PATH-WITNESS",
+        "EP-RX-011:target-REVERSED-PATH",
+        "EP-RX-011:target-ALIASED-VALUES",
+        "EP-RX-011:target-ONE-BLANK",
+        "EP-RX-011:target-TWO-BLANKS",
+        "PAIR-RX-011-VALID",
+        "PAIR-RX-011-MISSING",
+        "PAIR-RX-011-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0382",
+      "source_element": "RX-012:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-012:source-VALID-0",
+        "EP-RX-012:source-VALID-1",
+        "EP-RX-012:source-VALID-5",
+        "EP-RX-012:source-PATH-WITNESS",
+        "EP-RX-012:source-REVERSED-PATH",
+        "PAIR-RX-012-VALID",
+        "PAIR-RX-012-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0383",
+      "source_element": "RX-012:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-012:target-VALID-1",
+        "EP-RX-012:target-VALID-2",
+        "EP-RX-012:target-VALID-5",
+        "EP-RX-012:target-BELOW-MIN",
+        "EP-RX-012:target-RELAXED-MIN",
+        "EP-RX-012:target-PATH-WITNESS",
+        "EP-RX-012:target-REVERSED-PATH",
+        "PAIR-RX-012-VALID",
+        "PAIR-RX-012-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0385",
+      "source_element": "RX-013:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-013:source-VALID-0",
+        "EP-RX-013:source-VALID-1",
+        "EP-RX-013:source-VALID-5",
+        "EP-RX-013:source-PATH-WITNESS",
+        "EP-RX-013:source-REVERSED-PATH",
+        "PAIR-RX-013-VALID",
+        "PAIR-RX-013-MISSING",
+        "PAIR-RX-013-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0386",
+      "source_element": "RX-013:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-013:target-VALID-1",
+        "EP-RX-013:target-BELOW-MIN",
+        "EP-RX-013:target-RELAXED-MIN",
+        "EP-RX-013:target-ABOVE-MAX",
+        "EP-RX-013:target-RELAXED-MAX",
+        "EP-RX-013:target-PATH-WITNESS",
+        "EP-RX-013:target-REVERSED-PATH",
+        "EP-RX-013:target-ALIASED-VALUES",
+        "EP-RX-013:target-ONE-BLANK",
+        "EP-RX-013:target-TWO-BLANKS",
+        "PAIR-RX-013-VALID",
+        "PAIR-RX-013-MISSING",
+        "PAIR-RX-013-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0388",
+      "source_element": "RX-014:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-014:source-VALID-0",
+        "EP-RX-014:source-VALID-1",
+        "EP-RX-014:source-VALID-5",
+        "EP-RX-014:source-PATH-WITNESS",
+        "EP-RX-014:source-REVERSED-PATH",
+        "PAIR-RX-014-VALID",
+        "PAIR-RX-014-MISSING",
+        "PAIR-RX-014-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0389",
+      "source_element": "RX-014:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-014:target-VALID-1",
+        "EP-RX-014:target-BELOW-MIN",
+        "EP-RX-014:target-RELAXED-MIN",
+        "EP-RX-014:target-ABOVE-MAX",
+        "EP-RX-014:target-RELAXED-MAX",
+        "EP-RX-014:target-PATH-WITNESS",
+        "EP-RX-014:target-REVERSED-PATH",
+        "EP-RX-014:target-ALIASED-VALUES",
+        "EP-RX-014:target-ONE-BLANK",
+        "EP-RX-014:target-TWO-BLANKS",
+        "PAIR-RX-014-VALID",
+        "PAIR-RX-014-MISSING",
+        "PAIR-RX-014-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0391",
+      "source_element": "RX-015:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-015:source-VALID-0",
+        "EP-RX-015:source-VALID-1",
+        "EP-RX-015:source-VALID-5",
+        "EP-RX-015:source-PATH-WITNESS",
+        "EP-RX-015:source-REVERSED-PATH",
+        "PAIR-RX-015-VALID",
+        "PAIR-RX-015-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0392",
+      "source_element": "RX-015:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-015:target-VALID-0",
+        "EP-RX-015:target-VALID-1",
+        "EP-RX-015:target-ABOVE-MAX",
+        "EP-RX-015:target-RELAXED-MAX",
+        "EP-RX-015:target-PATH-WITNESS",
+        "EP-RX-015:target-REVERSED-PATH",
+        "EP-RX-015:target-ALIASED-VALUES",
+        "EP-RX-015:target-ONE-BLANK",
+        "EP-RX-015:target-TWO-BLANKS",
+        "PAIR-RX-015-VALID",
+        "PAIR-RX-015-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0394",
+      "source_element": "RX-016:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-016:source-VALID-0",
+        "EP-RX-016:source-VALID-1",
+        "EP-RX-016:source-VALID-5",
+        "EP-RX-016:source-PATH-WITNESS",
+        "EP-RX-016:source-REVERSED-PATH",
+        "PAIR-RX-016-VALID",
+        "PAIR-RX-016-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0395",
+      "source_element": "RX-016:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-016:target-VALID-0",
+        "EP-RX-016:target-VALID-1",
+        "EP-RX-016:target-ABOVE-MAX",
+        "EP-RX-016:target-RELAXED-MAX",
+        "EP-RX-016:target-PATH-WITNESS",
+        "EP-RX-016:target-REVERSED-PATH",
+        "EP-RX-016:target-ALIASED-VALUES",
+        "EP-RX-016:target-ONE-BLANK",
+        "EP-RX-016:target-TWO-BLANKS",
+        "PAIR-RX-016-VALID",
+        "PAIR-RX-016-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0397",
+      "source_element": "RX-017:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-017:source-VALID-0",
+        "EP-RX-017:source-VALID-1",
+        "EP-RX-017:source-VALID-5",
+        "EP-RX-017:source-PATH-WITNESS",
+        "EP-RX-017:source-REVERSED-PATH",
+        "PAIR-RX-017-VALID",
+        "PAIR-RX-017-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0398",
+      "source_element": "RX-017:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-017:target-VALID-1",
+        "EP-RX-017:target-VALID-2",
+        "EP-RX-017:target-VALID-5",
+        "EP-RX-017:target-BELOW-MIN",
+        "EP-RX-017:target-RELAXED-MIN",
+        "EP-RX-017:target-PATH-WITNESS",
+        "EP-RX-017:target-REVERSED-PATH",
+        "PAIR-RX-017-VALID",
+        "PAIR-RX-017-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0400",
+      "source_element": "RX-018:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-018:source-VALID-0",
+        "EP-RX-018:source-VALID-1",
+        "EP-RX-018:source-VALID-5",
+        "EP-RX-018:source-PATH-WITNESS",
+        "EP-RX-018:source-REVERSED-PATH",
+        "PAIR-RX-018-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0401",
+      "source_element": "RX-018:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-018:target-VALID-0",
+        "EP-RX-018:target-VALID-1",
+        "EP-RX-018:target-VALID-5",
+        "EP-RX-018:target-PATH-WITNESS",
+        "EP-RX-018:target-REVERSED-PATH",
+        "PAIR-RX-018-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0403",
+      "source_element": "RX-019:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-019:source-VALID-0",
+        "EP-RX-019:source-VALID-1",
+        "EP-RX-019:source-VALID-5",
+        "EP-RX-019:source-PATH-WITNESS",
+        "EP-RX-019:source-REVERSED-PATH",
+        "PAIR-RX-019-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0404",
+      "source_element": "RX-019:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-019:target-VALID-0",
+        "EP-RX-019:target-VALID-1",
+        "EP-RX-019:target-VALID-5",
+        "EP-RX-019:target-PATH-WITNESS",
+        "EP-RX-019:target-REVERSED-PATH",
+        "PAIR-RX-019-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0406",
+      "source_element": "RX-021:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-021:source-VALID-1",
+        "EP-RX-021:source-VALID-2",
+        "EP-RX-021:source-VALID-5",
+        "EP-RX-021:source-BELOW-MIN",
+        "EP-RX-021:source-RELAXED-MIN",
+        "EP-RX-021:source-PATH-WITNESS",
+        "EP-RX-021:source-REVERSED-PATH",
+        "PAIR-RX-021-VALID",
+        "PAIR-RX-021-MISSING",
+        "PAIR-RX-021-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0407",
+      "source_element": "RX-021:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-021:target-VALID-1",
+        "EP-RX-021:target-BELOW-MIN",
+        "EP-RX-021:target-RELAXED-MIN",
+        "EP-RX-021:target-ABOVE-MAX",
+        "EP-RX-021:target-RELAXED-MAX",
+        "EP-RX-021:target-PATH-WITNESS",
+        "EP-RX-021:target-REVERSED-PATH",
+        "EP-RX-021:target-ALIASED-VALUES",
+        "EP-RX-021:target-ONE-BLANK",
+        "EP-RX-021:target-TWO-BLANKS",
+        "PAIR-RX-021-VALID",
+        "PAIR-RX-021-MISSING",
+        "PAIR-RX-021-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0409",
+      "source_element": "RX-022:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-022:source-VALID-1",
+        "EP-RX-022:source-BELOW-MIN",
+        "EP-RX-022:source-RELAXED-MIN",
+        "EP-RX-022:source-ABOVE-MAX",
+        "EP-RX-022:source-RELAXED-MAX",
+        "EP-RX-022:source-PATH-WITNESS",
+        "EP-RX-022:source-REVERSED-PATH",
+        "EP-RX-022:source-ALIASED-VALUES",
+        "EP-RX-022:source-ONE-BLANK",
+        "EP-RX-022:source-TWO-BLANKS",
+        "PAIR-RX-022-VALID",
+        "PAIR-RX-022-MISSING",
+        "PAIR-RX-022-EXCESS-source"
+      ]
+    },
+    {
+      "id": "SHACL-0410",
+      "source_element": "RX-022:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-022:target-VALID-0",
+        "EP-RX-022:target-VALID-1",
+        "EP-RX-022:target-VALID-5",
+        "EP-RX-022:target-PATH-WITNESS",
+        "EP-RX-022:target-REVERSED-PATH",
+        "PAIR-RX-022-VALID",
+        "PAIR-RX-022-MISSING",
+        "PAIR-RX-022-EXCESS-source"
+      ]
+    },
+    {
+      "id": "SHACL-0412",
+      "source_element": "RX-023:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-023:source-VALID-0",
+        "EP-RX-023:source-VALID-1",
+        "EP-RX-023:source-VALID-5",
+        "EP-RX-023:source-PATH-WITNESS",
+        "EP-RX-023:source-REVERSED-PATH",
+        "PAIR-RX-023-VALID",
+        "PAIR-RX-023-MISSING",
+        "PAIR-RX-023-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0413",
+      "source_element": "RX-023:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-023:target-VALID-1",
+        "EP-RX-023:target-BELOW-MIN",
+        "EP-RX-023:target-RELAXED-MIN",
+        "EP-RX-023:target-ABOVE-MAX",
+        "EP-RX-023:target-RELAXED-MAX",
+        "EP-RX-023:target-PATH-WITNESS",
+        "EP-RX-023:target-REVERSED-PATH",
+        "EP-RX-023:target-ALIASED-VALUES",
+        "EP-RX-023:target-ONE-BLANK",
+        "EP-RX-023:target-TWO-BLANKS",
+        "PAIR-RX-023-VALID",
+        "PAIR-RX-023-MISSING",
+        "PAIR-RX-023-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0415",
+      "source_element": "RX-024:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-024:source-VALID-0",
+        "EP-RX-024:source-VALID-1",
+        "EP-RX-024:source-VALID-5",
+        "EP-RX-024:source-PATH-WITNESS",
+        "EP-RX-024:source-REVERSED-PATH",
+        "PAIR-RX-024-VALID",
+        "PAIR-RX-024-MISSING",
+        "PAIR-RX-024-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0416",
+      "source_element": "RX-024:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-024:target-VALID-1",
+        "EP-RX-024:target-BELOW-MIN",
+        "EP-RX-024:target-RELAXED-MIN",
+        "EP-RX-024:target-ABOVE-MAX",
+        "EP-RX-024:target-RELAXED-MAX",
+        "EP-RX-024:target-PATH-WITNESS",
+        "EP-RX-024:target-REVERSED-PATH",
+        "EP-RX-024:target-ALIASED-VALUES",
+        "EP-RX-024:target-ONE-BLANK",
+        "EP-RX-024:target-TWO-BLANKS",
+        "PAIR-RX-024-VALID",
+        "PAIR-RX-024-MISSING",
+        "PAIR-RX-024-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0418",
+      "source_element": "RX-025:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-025:source-VALID-0",
+        "EP-RX-025:source-VALID-1",
+        "EP-RX-025:source-VALID-5",
+        "EP-RX-025:source-PATH-WITNESS",
+        "EP-RX-025:source-REVERSED-PATH",
+        "PAIR-RX-025-VALID",
+        "PAIR-RX-025-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0419",
+      "source_element": "RX-025:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-025:target-VALID-0",
+        "EP-RX-025:target-VALID-1",
+        "EP-RX-025:target-ABOVE-MAX",
+        "EP-RX-025:target-RELAXED-MAX",
+        "EP-RX-025:target-PATH-WITNESS",
+        "EP-RX-025:target-REVERSED-PATH",
+        "EP-RX-025:target-ALIASED-VALUES",
+        "EP-RX-025:target-ONE-BLANK",
+        "EP-RX-025:target-TWO-BLANKS",
+        "PAIR-RX-025-VALID",
+        "PAIR-RX-025-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0421",
+      "source_element": "RX-026:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-026:source-VALID-0",
+        "EP-RX-026:source-VALID-1",
+        "EP-RX-026:source-VALID-5",
+        "EP-RX-026:source-PATH-WITNESS",
+        "EP-RX-026:source-REVERSED-PATH",
+        "PAIR-RX-026-VALID",
+        "PAIR-RX-026-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0422",
+      "source_element": "RX-026:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-026:target-VALID-1",
+        "EP-RX-026:target-VALID-2",
+        "EP-RX-026:target-VALID-5",
+        "EP-RX-026:target-BELOW-MIN",
+        "EP-RX-026:target-RELAXED-MIN",
+        "EP-RX-026:target-PATH-WITNESS",
+        "EP-RX-026:target-REVERSED-PATH",
+        "PAIR-RX-026-VALID",
+        "PAIR-RX-026-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0424",
+      "source_element": "RX-027:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-027:source-VALID-0",
+        "EP-RX-027:source-VALID-1",
+        "EP-RX-027:source-VALID-5",
+        "EP-RX-027:source-PATH-WITNESS",
+        "EP-RX-027:source-REVERSED-PATH",
+        "PAIR-RX-027-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0425",
+      "source_element": "RX-027:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-027:target-VALID-0",
+        "EP-RX-027:target-VALID-1",
+        "EP-RX-027:target-VALID-5",
+        "EP-RX-027:target-PATH-WITNESS",
+        "EP-RX-027:target-REVERSED-PATH",
+        "PAIR-RX-027-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0427",
+      "source_element": "RX-028:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-028:source-VALID-0",
+        "EP-RX-028:source-VALID-1",
+        "EP-RX-028:source-VALID-5",
+        "EP-RX-028:source-PATH-WITNESS",
+        "EP-RX-028:source-REVERSED-PATH",
+        "PAIR-RX-028-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0428",
+      "source_element": "RX-028:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-028:target-VALID-0",
+        "EP-RX-028:target-VALID-1",
+        "EP-RX-028:target-VALID-5",
+        "EP-RX-028:target-PATH-WITNESS",
+        "EP-RX-028:target-REVERSED-PATH",
+        "PAIR-RX-028-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0430",
+      "source_element": "RX-029:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-029:source-VALID-0",
+        "EP-RX-029:source-VALID-1",
+        "EP-RX-029:source-VALID-5",
+        "EP-RX-029:source-PATH-WITNESS",
+        "EP-RX-029:source-REVERSED-PATH",
+        "PAIR-RX-029-VALID",
+        "PAIR-RX-029-MISSING",
+        "PAIR-RX-029-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0431",
+      "source_element": "RX-029:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-029:target-VALID-1",
+        "EP-RX-029:target-BELOW-MIN",
+        "EP-RX-029:target-RELAXED-MIN",
+        "EP-RX-029:target-ABOVE-MAX",
+        "EP-RX-029:target-RELAXED-MAX",
+        "EP-RX-029:target-PATH-WITNESS",
+        "EP-RX-029:target-REVERSED-PATH",
+        "EP-RX-029:target-ALIASED-VALUES",
+        "EP-RX-029:target-ONE-BLANK",
+        "EP-RX-029:target-TWO-BLANKS",
+        "PAIR-RX-029-VALID",
+        "PAIR-RX-029-MISSING",
+        "PAIR-RX-029-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0433",
+      "source_element": "RX-030:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-030:source-VALID-0",
+        "EP-RX-030:source-VALID-1",
+        "EP-RX-030:source-VALID-5",
+        "EP-RX-030:source-PATH-WITNESS",
+        "EP-RX-030:source-REVERSED-PATH",
+        "PAIR-RX-030-VALID",
+        "PAIR-RX-030-MISSING",
+        "PAIR-RX-030-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0434",
+      "source_element": "RX-030:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-030:target-VALID-1",
+        "EP-RX-030:target-BELOW-MIN",
+        "EP-RX-030:target-RELAXED-MIN",
+        "EP-RX-030:target-ABOVE-MAX",
+        "EP-RX-030:target-RELAXED-MAX",
+        "EP-RX-030:target-PATH-WITNESS",
+        "EP-RX-030:target-REVERSED-PATH",
+        "EP-RX-030:target-ALIASED-VALUES",
+        "EP-RX-030:target-ONE-BLANK",
+        "EP-RX-030:target-TWO-BLANKS",
+        "PAIR-RX-030-VALID",
+        "PAIR-RX-030-MISSING",
+        "PAIR-RX-030-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0436",
+      "source_element": "RX-031:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-031:source-VALID-0",
+        "EP-RX-031:source-VALID-1",
+        "EP-RX-031:source-VALID-5",
+        "EP-RX-031:source-PATH-WITNESS",
+        "EP-RX-031:source-REVERSED-PATH",
+        "PAIR-RX-031-VALID",
+        "PAIR-RX-031-MISSING",
+        "PAIR-RX-031-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0437",
+      "source_element": "RX-031:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-031:target-VALID-1",
+        "EP-RX-031:target-BELOW-MIN",
+        "EP-RX-031:target-RELAXED-MIN",
+        "EP-RX-031:target-ABOVE-MAX",
+        "EP-RX-031:target-RELAXED-MAX",
+        "EP-RX-031:target-PATH-WITNESS",
+        "EP-RX-031:target-REVERSED-PATH",
+        "EP-RX-031:target-ALIASED-VALUES",
+        "EP-RX-031:target-ONE-BLANK",
+        "EP-RX-031:target-TWO-BLANKS",
+        "PAIR-RX-031-VALID",
+        "PAIR-RX-031-MISSING",
+        "PAIR-RX-031-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0439",
+      "source_element": "RX-032:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-032:source-VALID-0",
+        "EP-RX-032:source-VALID-1",
+        "EP-RX-032:source-VALID-5",
+        "EP-RX-032:source-PATH-WITNESS",
+        "EP-RX-032:source-REVERSED-PATH",
+        "PAIR-RX-032-VALID",
+        "PAIR-RX-032-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0440",
+      "source_element": "RX-032:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RX-032:target-VALID-0",
+        "EP-RX-032:target-VALID-1",
+        "EP-RX-032:target-ABOVE-MAX",
+        "EP-RX-032:target-RELAXED-MAX",
+        "EP-RX-032:target-PATH-WITNESS",
+        "EP-RX-032:target-REVERSED-PATH",
+        "EP-RX-032:target-ALIASED-VALUES",
+        "EP-RX-032:target-ONE-BLANK",
+        "EP-RX-032:target-TWO-BLANKS",
+        "PAIR-RX-032-VALID",
+        "PAIR-RX-032-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0442",
+      "source_element": "RK2-001:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-001:source-VALID-0",
+        "EP-RK2-001:source-VALID-1",
+        "EP-RK2-001:source-VALID-5",
+        "EP-RK2-001:source-PATH-WITNESS",
+        "EP-RK2-001:source-REVERSED-PATH",
+        "PAIR-RK2-001-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0443",
+      "source_element": "RK2-001:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-001:target-VALID-0",
+        "EP-RK2-001:target-VALID-1",
+        "EP-RK2-001:target-VALID-5",
+        "EP-RK2-001:target-PATH-WITNESS",
+        "EP-RK2-001:target-REVERSED-PATH",
+        "PAIR-RK2-001-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0445",
+      "source_element": "RK2-002:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-002:source-VALID-0",
+        "EP-RK2-002:source-VALID-1",
+        "EP-RK2-002:source-VALID-5",
+        "EP-RK2-002:source-PATH-WITNESS",
+        "EP-RK2-002:source-REVERSED-PATH",
+        "PAIR-RK2-002-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0446",
+      "source_element": "RK2-002:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-002:target-VALID-0",
+        "EP-RK2-002:target-VALID-1",
+        "EP-RK2-002:target-VALID-5",
+        "EP-RK2-002:target-PATH-WITNESS",
+        "EP-RK2-002:target-REVERSED-PATH",
+        "PAIR-RK2-002-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0448",
+      "source_element": "RK2-003:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-003:source-VALID-0",
+        "EP-RK2-003:source-VALID-1",
+        "EP-RK2-003:source-VALID-5",
+        "EP-RK2-003:source-PATH-WITNESS",
+        "EP-RK2-003:source-REVERSED-PATH",
+        "PAIR-RK2-003-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0449",
+      "source_element": "RK2-003:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-003:target-VALID-0",
+        "EP-RK2-003:target-VALID-1",
+        "EP-RK2-003:target-VALID-5",
+        "EP-RK2-003:target-PATH-WITNESS",
+        "EP-RK2-003:target-REVERSED-PATH",
+        "PAIR-RK2-003-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0451",
+      "source_element": "RK2-004:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-004:source-VALID-0",
+        "EP-RK2-004:source-VALID-1",
+        "EP-RK2-004:source-VALID-5",
+        "EP-RK2-004:source-PATH-WITNESS",
+        "EP-RK2-004:source-REVERSED-PATH",
+        "PAIR-RK2-004-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0452",
+      "source_element": "RK2-004:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-004:target-VALID-0",
+        "EP-RK2-004:target-VALID-1",
+        "EP-RK2-004:target-VALID-5",
+        "EP-RK2-004:target-PATH-WITNESS",
+        "EP-RK2-004:target-REVERSED-PATH",
+        "PAIR-RK2-004-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0454",
+      "source_element": "RK2-005:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-005:source-VALID-0",
+        "EP-RK2-005:source-VALID-1",
+        "EP-RK2-005:source-VALID-5",
+        "EP-RK2-005:source-PATH-WITNESS",
+        "EP-RK2-005:source-REVERSED-PATH",
+        "PAIR-RK2-005-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0455",
+      "source_element": "RK2-005:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-005:target-VALID-0",
+        "EP-RK2-005:target-VALID-1",
+        "EP-RK2-005:target-VALID-5",
+        "EP-RK2-005:target-PATH-WITNESS",
+        "EP-RK2-005:target-REVERSED-PATH",
+        "PAIR-RK2-005-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0457",
+      "source_element": "RK2-007:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-007:source-VALID-0",
+        "EP-RK2-007:source-VALID-1",
+        "EP-RK2-007:source-VALID-5",
+        "EP-RK2-007:source-PATH-WITNESS",
+        "EP-RK2-007:source-REVERSED-PATH",
+        "PAIR-RK2-007-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0458",
+      "source_element": "RK2-007:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-007:target-VALID-0",
+        "EP-RK2-007:target-VALID-1",
+        "EP-RK2-007:target-VALID-5",
+        "EP-RK2-007:target-PATH-WITNESS",
+        "EP-RK2-007:target-REVERSED-PATH",
+        "PAIR-RK2-007-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0460",
+      "source_element": "RK2-008:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-008:source-VALID-0",
+        "EP-RK2-008:source-VALID-1",
+        "EP-RK2-008:source-VALID-5",
+        "EP-RK2-008:source-PATH-WITNESS",
+        "EP-RK2-008:source-REVERSED-PATH",
+        "PAIR-RK2-008-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0461",
+      "source_element": "RK2-008:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-008:target-VALID-0",
+        "EP-RK2-008:target-VALID-1",
+        "EP-RK2-008:target-VALID-5",
+        "EP-RK2-008:target-PATH-WITNESS",
+        "EP-RK2-008:target-REVERSED-PATH",
+        "PAIR-RK2-008-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0463",
+      "source_element": "RK2-009:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-009:source-VALID-0",
+        "EP-RK2-009:source-VALID-1",
+        "EP-RK2-009:source-VALID-5",
+        "EP-RK2-009:source-PATH-WITNESS",
+        "EP-RK2-009:source-REVERSED-PATH",
+        "PAIR-RK2-009-VALID",
+        "PAIR-RK2-009-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0464",
+      "source_element": "RK2-009:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-009:target-VALID-0",
+        "EP-RK2-009:target-VALID-1",
+        "EP-RK2-009:target-ABOVE-MAX",
+        "EP-RK2-009:target-RELAXED-MAX",
+        "EP-RK2-009:target-PATH-WITNESS",
+        "EP-RK2-009:target-REVERSED-PATH",
+        "EP-RK2-009:target-ALIASED-VALUES",
+        "EP-RK2-009:target-ONE-BLANK",
+        "EP-RK2-009:target-TWO-BLANKS",
+        "PAIR-RK2-009-VALID",
+        "PAIR-RK2-009-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0466",
+      "source_element": "RK2-010:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-010:source-VALID-0",
+        "EP-RK2-010:source-VALID-1",
+        "EP-RK2-010:source-VALID-5",
+        "EP-RK2-010:source-PATH-WITNESS",
+        "EP-RK2-010:source-REVERSED-PATH",
+        "PAIR-RK2-010-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0467",
+      "source_element": "RK2-010:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-010:target-VALID-0",
+        "EP-RK2-010:target-VALID-1",
+        "EP-RK2-010:target-VALID-5",
+        "EP-RK2-010:target-PATH-WITNESS",
+        "EP-RK2-010:target-REVERSED-PATH",
+        "PAIR-RK2-010-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0469",
+      "source_element": "RK2-011:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-011:source-VALID-0",
+        "EP-RK2-011:source-VALID-1",
+        "EP-RK2-011:source-VALID-5",
+        "EP-RK2-011:source-PATH-WITNESS",
+        "EP-RK2-011:source-REVERSED-PATH",
+        "PAIR-RK2-011-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0470",
+      "source_element": "RK2-011:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-011:target-VALID-0",
+        "EP-RK2-011:target-VALID-1",
+        "EP-RK2-011:target-VALID-5",
+        "EP-RK2-011:target-PATH-WITNESS",
+        "EP-RK2-011:target-REVERSED-PATH",
+        "PAIR-RK2-011-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0472",
+      "source_element": "RK2-012:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-012:source-VALID-0",
+        "EP-RK2-012:source-VALID-1",
+        "EP-RK2-012:source-VALID-5",
+        "EP-RK2-012:source-PATH-WITNESS",
+        "EP-RK2-012:source-REVERSED-PATH",
+        "PAIR-RK2-012-VALID",
+        "PAIR-RK2-012-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0473",
+      "source_element": "RK2-012:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-012:target-VALID-0",
+        "EP-RK2-012:target-VALID-1",
+        "EP-RK2-012:target-ABOVE-MAX",
+        "EP-RK2-012:target-RELAXED-MAX",
+        "EP-RK2-012:target-PATH-WITNESS",
+        "EP-RK2-012:target-REVERSED-PATH",
+        "EP-RK2-012:target-ALIASED-VALUES",
+        "EP-RK2-012:target-ONE-BLANK",
+        "EP-RK2-012:target-TWO-BLANKS",
+        "PAIR-RK2-012-VALID",
+        "PAIR-RK2-012-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0475",
+      "source_element": "RK2-013:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-013:source-VALID-0",
+        "EP-RK2-013:source-VALID-1",
+        "EP-RK2-013:source-VALID-5",
+        "EP-RK2-013:source-PATH-WITNESS",
+        "EP-RK2-013:source-REVERSED-PATH",
+        "PAIR-RK2-013-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0476",
+      "source_element": "RK2-013:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-013:target-VALID-0",
+        "EP-RK2-013:target-VALID-1",
+        "EP-RK2-013:target-VALID-5",
+        "EP-RK2-013:target-PATH-WITNESS",
+        "EP-RK2-013:target-REVERSED-PATH",
+        "PAIR-RK2-013-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0478",
+      "source_element": "RK2-014:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-014:source-VALID-0",
+        "EP-RK2-014:source-VALID-1",
+        "EP-RK2-014:source-VALID-5",
+        "EP-RK2-014:source-PATH-WITNESS",
+        "EP-RK2-014:source-REVERSED-PATH",
+        "PAIR-RK2-014-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0479",
+      "source_element": "RK2-014:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-014:target-VALID-0",
+        "EP-RK2-014:target-VALID-1",
+        "EP-RK2-014:target-VALID-5",
+        "EP-RK2-014:target-PATH-WITNESS",
+        "EP-RK2-014:target-REVERSED-PATH",
+        "PAIR-RK2-014-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0481",
+      "source_element": "RK2-015:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-015:source-VALID-0",
+        "EP-RK2-015:source-VALID-1",
+        "EP-RK2-015:source-VALID-5",
+        "EP-RK2-015:source-PATH-WITNESS",
+        "EP-RK2-015:source-REVERSED-PATH",
+        "PAIR-RK2-015-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0482",
+      "source_element": "RK2-015:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-015:target-VALID-0",
+        "EP-RK2-015:target-VALID-1",
+        "EP-RK2-015:target-VALID-5",
+        "EP-RK2-015:target-PATH-WITNESS",
+        "EP-RK2-015:target-REVERSED-PATH",
+        "PAIR-RK2-015-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0484",
+      "source_element": "RK2-016:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-016:source-VALID-0",
+        "EP-RK2-016:source-VALID-1",
+        "EP-RK2-016:source-VALID-5",
+        "EP-RK2-016:source-PATH-WITNESS",
+        "EP-RK2-016:source-REVERSED-PATH",
+        "PAIR-RK2-016-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0485",
+      "source_element": "RK2-016:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-016:target-VALID-0",
+        "EP-RK2-016:target-VALID-1",
+        "EP-RK2-016:target-VALID-5",
+        "EP-RK2-016:target-PATH-WITNESS",
+        "EP-RK2-016:target-REVERSED-PATH",
+        "PAIR-RK2-016-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0487",
+      "source_element": "RK2-017:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-017:source-VALID-0",
+        "EP-RK2-017:source-VALID-1",
+        "EP-RK2-017:source-VALID-5",
+        "EP-RK2-017:source-PATH-WITNESS",
+        "EP-RK2-017:source-REVERSED-PATH",
+        "PAIR-RK2-017-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0488",
+      "source_element": "RK2-017:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-017:target-VALID-0",
+        "EP-RK2-017:target-VALID-1",
+        "EP-RK2-017:target-VALID-5",
+        "EP-RK2-017:target-PATH-WITNESS",
+        "EP-RK2-017:target-REVERSED-PATH",
+        "PAIR-RK2-017-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0490",
+      "source_element": "RK2-018:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-018:source-VALID-0",
+        "EP-RK2-018:source-VALID-1",
+        "EP-RK2-018:source-VALID-5",
+        "EP-RK2-018:source-PATH-WITNESS",
+        "EP-RK2-018:source-REVERSED-PATH",
+        "PAIR-RK2-018-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0491",
+      "source_element": "RK2-018:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-018:target-VALID-0",
+        "EP-RK2-018:target-VALID-1",
+        "EP-RK2-018:target-VALID-5",
+        "EP-RK2-018:target-PATH-WITNESS",
+        "EP-RK2-018:target-REVERSED-PATH",
+        "PAIR-RK2-018-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0493",
+      "source_element": "RK2-019:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-019:source-VALID-0",
+        "EP-RK2-019:source-VALID-1",
+        "EP-RK2-019:source-VALID-5",
+        "EP-RK2-019:source-PATH-WITNESS",
+        "EP-RK2-019:source-REVERSED-PATH",
+        "PAIR-RK2-019-VALID",
+        "PAIR-RK2-019-MISSING",
+        "PAIR-RK2-019-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0494",
+      "source_element": "RK2-019:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-019:target-VALID-1",
+        "EP-RK2-019:target-BELOW-MIN",
+        "EP-RK2-019:target-RELAXED-MIN",
+        "EP-RK2-019:target-ABOVE-MAX",
+        "EP-RK2-019:target-RELAXED-MAX",
+        "EP-RK2-019:target-PATH-WITNESS",
+        "EP-RK2-019:target-REVERSED-PATH",
+        "EP-RK2-019:target-ALIASED-VALUES",
+        "EP-RK2-019:target-ONE-BLANK",
+        "EP-RK2-019:target-TWO-BLANKS",
+        "PAIR-RK2-019-VALID",
+        "PAIR-RK2-019-MISSING",
+        "PAIR-RK2-019-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0496",
+      "source_element": "RK2-020:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-020:source-VALID-0",
+        "EP-RK2-020:source-VALID-1",
+        "EP-RK2-020:source-VALID-5",
+        "EP-RK2-020:source-PATH-WITNESS",
+        "EP-RK2-020:source-REVERSED-PATH",
+        "PAIR-RK2-020-VALID",
+        "PAIR-RK2-020-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0497",
+      "source_element": "RK2-020:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-020:target-VALID-0",
+        "EP-RK2-020:target-VALID-1",
+        "EP-RK2-020:target-ABOVE-MAX",
+        "EP-RK2-020:target-RELAXED-MAX",
+        "EP-RK2-020:target-PATH-WITNESS",
+        "EP-RK2-020:target-REVERSED-PATH",
+        "EP-RK2-020:target-ALIASED-VALUES",
+        "EP-RK2-020:target-ONE-BLANK",
+        "EP-RK2-020:target-TWO-BLANKS",
+        "PAIR-RK2-020-VALID",
+        "PAIR-RK2-020-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0499",
+      "source_element": "RK2-021:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-021:source-VALID-0",
+        "EP-RK2-021:source-VALID-1",
+        "EP-RK2-021:source-VALID-5",
+        "EP-RK2-021:source-PATH-WITNESS",
+        "EP-RK2-021:source-REVERSED-PATH",
+        "PAIR-RK2-021-VALID",
+        "PAIR-RK2-021-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0500",
+      "source_element": "RK2-021:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-021:target-VALID-1",
+        "EP-RK2-021:target-VALID-2",
+        "EP-RK2-021:target-VALID-5",
+        "EP-RK2-021:target-BELOW-MIN",
+        "EP-RK2-021:target-RELAXED-MIN",
+        "EP-RK2-021:target-PATH-WITNESS",
+        "EP-RK2-021:target-REVERSED-PATH",
+        "PAIR-RK2-021-VALID",
+        "PAIR-RK2-021-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0502",
+      "source_element": "RK2-022:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-022:source-VALID-0",
+        "EP-RK2-022:source-VALID-1",
+        "EP-RK2-022:source-VALID-5",
+        "EP-RK2-022:source-PATH-WITNESS",
+        "EP-RK2-022:source-REVERSED-PATH",
+        "PAIR-RK2-022-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0503",
+      "source_element": "RK2-022:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-022:target-VALID-0",
+        "EP-RK2-022:target-VALID-1",
+        "EP-RK2-022:target-VALID-5",
+        "EP-RK2-022:target-PATH-WITNESS",
+        "EP-RK2-022:target-REVERSED-PATH",
+        "PAIR-RK2-022-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0505",
+      "source_element": "RK2-023:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-023:source-VALID-0",
+        "EP-RK2-023:source-VALID-1",
+        "EP-RK2-023:source-VALID-5",
+        "EP-RK2-023:source-PATH-WITNESS",
+        "EP-RK2-023:source-REVERSED-PATH",
+        "PAIR-RK2-023-VALID",
+        "PAIR-RK2-023-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0506",
+      "source_element": "RK2-023:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-023:target-VALID-1",
+        "EP-RK2-023:target-VALID-2",
+        "EP-RK2-023:target-VALID-5",
+        "EP-RK2-023:target-BELOW-MIN",
+        "EP-RK2-023:target-RELAXED-MIN",
+        "EP-RK2-023:target-PATH-WITNESS",
+        "EP-RK2-023:target-REVERSED-PATH",
+        "PAIR-RK2-023-VALID",
+        "PAIR-RK2-023-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0508",
+      "source_element": "RK2-024:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-024:source-VALID-0",
+        "EP-RK2-024:source-VALID-1",
+        "EP-RK2-024:source-VALID-5",
+        "EP-RK2-024:source-PATH-WITNESS",
+        "EP-RK2-024:source-REVERSED-PATH",
+        "PAIR-RK2-024-VALID",
+        "PAIR-RK2-024-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0509",
+      "source_element": "RK2-024:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-024:target-VALID-1",
+        "EP-RK2-024:target-VALID-2",
+        "EP-RK2-024:target-VALID-5",
+        "EP-RK2-024:target-BELOW-MIN",
+        "EP-RK2-024:target-RELAXED-MIN",
+        "EP-RK2-024:target-PATH-WITNESS",
+        "EP-RK2-024:target-REVERSED-PATH",
+        "PAIR-RK2-024-VALID",
+        "PAIR-RK2-024-MISSING"
+      ]
+    },
+    {
+      "id": "SHACL-0511",
+      "source_element": "RK2-025:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-025:source-VALID-0",
+        "EP-RK2-025:source-VALID-1",
+        "EP-RK2-025:source-VALID-5",
+        "EP-RK2-025:source-PATH-WITNESS",
+        "EP-RK2-025:source-REVERSED-PATH",
+        "PAIR-RK2-025-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0512",
+      "source_element": "RK2-025:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-025:target-VALID-0",
+        "EP-RK2-025:target-VALID-1",
+        "EP-RK2-025:target-VALID-5",
+        "EP-RK2-025:target-PATH-WITNESS",
+        "EP-RK2-025:target-REVERSED-PATH",
+        "PAIR-RK2-025-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0514",
+      "source_element": "RK2-026:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-026:source-VALID-0",
+        "EP-RK2-026:source-VALID-1",
+        "EP-RK2-026:source-VALID-5",
+        "EP-RK2-026:source-PATH-WITNESS",
+        "EP-RK2-026:source-REVERSED-PATH",
+        "PAIR-RK2-026-VALID",
+        "PAIR-RK2-026-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0515",
+      "source_element": "RK2-026:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK2-026:target-VALID-0",
+        "EP-RK2-026:target-VALID-1",
+        "EP-RK2-026:target-ABOVE-MAX",
+        "EP-RK2-026:target-RELAXED-MAX",
+        "EP-RK2-026:target-PATH-WITNESS",
+        "EP-RK2-026:target-REVERSED-PATH",
+        "EP-RK2-026:target-ALIASED-VALUES",
+        "EP-RK2-026:target-ONE-BLANK",
+        "EP-RK2-026:target-TWO-BLANKS",
+        "PAIR-RK2-026-VALID",
+        "PAIR-RK2-026-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0517",
+      "source_element": "RK3-001:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK3-001:source-VALID-0",
+        "EP-RK3-001:source-VALID-1",
+        "EP-RK3-001:source-VALID-5",
+        "EP-RK3-001:source-PATH-WITNESS",
+        "EP-RK3-001:source-REVERSED-PATH",
+        "PAIR-RK3-001-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0518",
+      "source_element": "RK3-001:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK3-001:target-VALID-0",
+        "EP-RK3-001:target-VALID-1",
+        "EP-RK3-001:target-VALID-5",
+        "EP-RK3-001:target-PATH-WITNESS",
+        "EP-RK3-001:target-REVERSED-PATH",
+        "PAIR-RK3-001-VALID"
+      ]
+    },
+    {
+      "id": "SHACL-0520",
+      "source_element": "RK3-003:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK3-003:source-VALID-0",
+        "EP-RK3-003:source-VALID-1",
+        "EP-RK3-003:source-VALID-5",
+        "EP-RK3-003:source-PATH-WITNESS",
+        "EP-RK3-003:source-REVERSED-PATH",
+        "PAIR-RK3-003-VALID",
+        "PAIR-RK3-003-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0521",
+      "source_element": "RK3-003:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK3-003:target-VALID-0",
+        "EP-RK3-003:target-VALID-1",
+        "EP-RK3-003:target-ABOVE-MAX",
+        "EP-RK3-003:target-RELAXED-MAX",
+        "EP-RK3-003:target-PATH-WITNESS",
+        "EP-RK3-003:target-REVERSED-PATH",
+        "EP-RK3-003:target-ALIASED-VALUES",
+        "EP-RK3-003:target-ONE-BLANK",
+        "EP-RK3-003:target-TWO-BLANKS",
+        "PAIR-RK3-003-VALID",
+        "PAIR-RK3-003-EXCESS-target"
+      ]
+    },
+    {
+      "id": "SHACL-0523",
+      "source_element": "RK3-004:source",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK3-004:source-VALID-1",
+        "EP-RK3-004:source-BELOW-MIN",
+        "EP-RK3-004:source-RELAXED-MIN",
+        "EP-RK3-004:source-ABOVE-MAX",
+        "EP-RK3-004:source-RELAXED-MAX",
+        "EP-RK3-004:source-PATH-WITNESS",
+        "EP-RK3-004:source-REVERSED-PATH",
+        "EP-RK3-004:source-ALIASED-VALUES",
+        "EP-RK3-004:source-ONE-BLANK",
+        "EP-RK3-004:source-TWO-BLANKS",
+        "PAIR-RK3-004-VALID",
+        "PAIR-RK3-004-MISSING",
+        "PAIR-RK3-004-EXCESS-source"
+      ]
+    },
+    {
+      "id": "SHACL-0524",
+      "source_element": "RK3-004:target",
+      "family": "Managed-profile endpoint cardinality",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/endpoints/report.json",
+      "case_ids": [
+        "EP-RK3-004:target-VALID-0",
+        "EP-RK3-004:target-VALID-1",
+        "EP-RK3-004:target-VALID-5",
+        "EP-RK3-004:target-PATH-WITNESS",
+        "EP-RK3-004:target-REVERSED-PATH",
+        "PAIR-RK3-004-VALID",
+        "PAIR-RK3-004-MISSING",
+        "PAIR-RK3-004-EXCESS-source"
+      ]
+    },
+    {
+      "id": "SHACL-0525",
+      "source_element": "RKM-C001",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0526",
+      "source_element": "RKM-C002",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0527",
+      "source_element": "RKM-C003",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0528",
+      "source_element": "RKM-C004",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0529",
+      "source_element": "RKM-C005",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0530",
+      "source_element": "RKM-C006",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0531",
+      "source_element": "RKM-C007",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0532",
+      "source_element": "RKM-C008",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0533",
+      "source_element": "RKM-C009",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0534",
+      "source_element": "RKM-C010",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0535",
+      "source_element": "RKM-C011",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0536",
+      "source_element": "RKM-C012",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0537",
+      "source_element": "RKM-C013",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0538",
+      "source_element": "RKM-C014",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0539",
+      "source_element": "RKM-C015",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0540",
+      "source_element": "RKM-C016",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0541",
+      "source_element": "RKM-C017",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0542",
+      "source_element": "RKM-C018",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0543",
+      "source_element": "RKM-C019",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0544",
+      "source_element": "RKM-C020",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0545",
+      "source_element": "RKM-C021",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0546",
+      "source_element": "RKM-C022",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0547",
+      "source_element": "RKM-C023",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0548",
+      "source_element": "RKM-C024",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0549",
+      "source_element": "RKM-C025",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0550",
+      "source_element": "RKM-C026",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0551",
+      "source_element": "RKM-C027",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0552",
+      "source_element": "RKM-C028",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0553",
+      "source_element": "RKM-C029",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0554",
+      "source_element": "RKM-C030",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0555",
+      "source_element": "RKM-C031",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0556",
+      "source_element": "RKM-C032",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0557",
+      "source_element": "RKM-C033",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0558",
+      "source_element": "RKM-C034",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0559",
+      "source_element": "RKM-C035",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0560",
+      "source_element": "RKM-C036",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0561",
+      "source_element": "RKM-C037",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0562",
+      "source_element": "RKM-C038",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0563",
+      "source_element": "RKM-C039",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0564",
+      "source_element": "RKM-C040",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0565",
+      "source_element": "RKM-C041",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0566",
+      "source_element": "RKM-C042",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0567",
+      "source_element": "RKM-C043",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0568",
+      "source_element": "RKM-C044",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0569",
+      "source_element": "RKM-C045",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0570",
+      "source_element": "RKM-C046",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0571",
+      "source_element": "RKM-C047",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0572",
+      "source_element": "RKM-C048",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0573",
+      "source_element": "RKM-C049",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0574",
+      "source_element": "RKM-C050",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0575",
+      "source_element": "RKM-C051",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0576",
+      "source_element": "RKM-C052",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0577",
+      "source_element": "RKM-C053",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0578",
+      "source_element": "RKM-C054",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0579",
+      "source_element": "RKM-C055",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0580",
+      "source_element": "RKM-C056",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0581",
+      "source_element": "RKM-C057",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0582",
+      "source_element": "RKM-C058",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0583",
+      "source_element": "RKM-C059",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0584",
+      "source_element": "RKM-C060",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0585",
+      "source_element": "RKM-C061",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0586",
+      "source_element": "RKM-C062",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0587",
+      "source_element": "RKM-C063",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0588",
+      "source_element": "RKM-C064",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0589",
+      "source_element": "RKM-C065",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0590",
+      "source_element": "RKM-C066",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0591",
+      "source_element": "RKM-C067",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0592",
+      "source_element": "RKM-C068",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0593",
+      "source_element": "RKM-C069",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0594",
+      "source_element": "RKM-C070",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0595",
+      "source_element": "RKM-C071",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0596",
+      "source_element": "RKM-C072",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0597",
+      "source_element": "RKM-C073",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0598",
+      "source_element": "RKM-C074",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0599",
+      "source_element": "RKM-X01",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0600",
+      "source_element": "RKM-X02",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0601",
+      "source_element": "RKM-X03",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0602",
+      "source_element": "RKM-X04",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0603",
+      "source_element": "RKM-X05",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0604",
+      "source_element": "RKM-X06",
+      "family": "Admission and class profile",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0606",
+      "source_element": "C-01",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0608",
+      "source_element": "C-02",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0610",
+      "source_element": "C-03",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0612",
+      "source_element": "C-04",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0614",
+      "source_element": "C-05",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0616",
+      "source_element": "C-06",
+      "family": "Constraint encoding disposition",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/report.json",
+      "case_ids": [
+        "S-C06-DISTINCT",
+        "S-C06-SUBTYPE-BEARER",
+        "S-C06-WRONG-BEARER-TYPE",
+        "S-C06-WRONG-AUTHORITY-TYPE",
+        "S-C06-REVERSE-DIFFERENCE",
+        "S-C06-UNRESOLVED-NAMES",
+        "S-C06-SAME-ACTOR",
+        "S-C06-ALIASED-SAME-ACTOR",
+        "S-C06-ALIAS-CHAIN",
+        "S-C06-IDENTITY-CONFLICT",
+        "S-C06-RAW-IDENTITY-CONFLICT",
+        "S-C06-MISSING-BEARER",
+        "S-C06-MISSING-AUTHORITY",
+        "S-C06-EXCESS-BEARER",
+        "S-C06-EXCESS-AUTHORITY",
+        "S-C06-INFORMATION-ONLY",
+        "S-C06-RAW-INCOMPLETE",
+        "S-C06-MANAGED-INCOMPLETE"
+      ]
+    },
+    {
+      "id": "SHACL-0618",
+      "source_element": "C-07",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0620",
+      "source_element": "C-08",
+      "family": "Constraint encoding disposition",
+      "outcome": "PARTIAL",
+      "evidence": "evaluation/shacl/report.json",
+      "case_ids": [
+        "S-C08-INDICATOR-ONLY",
+        "S-C08-SCALE-ONLY",
+        "S-C08-DUAL-STRUCTURAL",
+        "S-C08-NO-ANCHOR",
+        "S-C08-RAW-NO-ANCHOR",
+        "S-C08-WRONG-INDICATOR-TYPE",
+        "S-C08-WRONG-SCALE-TYPE",
+        "S-C08-TWO-INDICATORS",
+        "S-C08-TWO-SCALES",
+        "S-C08-TASK-DUAL-UNKNOWN",
+        "S-C08-DELETED-ANCHOR-RULE"
+      ]
+    },
+    {
+      "id": "SHACL-0622",
+      "source_element": "C-09",
+      "family": "Constraint encoding disposition",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/report.json",
+      "case_ids": [
+        "S-C09-CASE",
+        "S-C09-PATTERN",
+        "S-C09-WRONG-PATTERN-TYPE",
+        "S-C09-SCENARIO",
+        "S-C09-WRONG-SCENARIO-TYPE",
+        "S-C09-MULTIPLE-TARGETS",
+        "S-C09-PUBLISHED-NO-TARGET",
+        "S-C09-ORDINARY-NO-TARGET",
+        "S-C09-UNTYPED-PUBLISHED",
+        "S-C09-WRONG-TARGET-TYPE",
+        "S-C09-DELETED-MINIMUM"
+      ]
+    },
+    {
+      "id": "SHACL-0624",
+      "source_element": "C-10",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0626",
+      "source_element": "C-11",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0628",
+      "source_element": "C-12",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0630",
+      "source_element": "C-13",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0632",
+      "source_element": "C-14",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0634",
+      "source_element": "C-15",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0636",
+      "source_element": "C-16",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0638",
+      "source_element": "C-17",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0640",
+      "source_element": "C-18",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0642",
+      "source_element": "C-19",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0644",
+      "source_element": "C-20",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0646",
+      "source_element": "C-21",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0648",
+      "source_element": "C-22",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0650",
+      "source_element": "C-23",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0652",
+      "source_element": "C-24",
+      "family": "Constraint encoding disposition",
+      "outcome": "NOT_RUN",
+      "evidence": null,
+      "case_ids": []
+    },
+    {
+      "id": "SHACL-0654",
+      "source_element": "C-25",
+      "family": "Constraint encoding disposition",
+      "outcome": "PASS",
+      "evidence": "evaluation/shacl/report.json",
+      "case_ids": [
+        "S-C25-Context-VALID",
+        "S-C25-Context-UNTYPED-VERSION",
+        "S-C25-Context-UNTYPED-SOURCE",
+        "S-C25-Context-MISSING-TARGET",
+        "S-C25-Context-WRONG-KIND",
+        "S-C25-Context-TWO-TARGETS",
+        "S-C25-Context-ALIASED-TARGET",
+        "S-C25-Context-DIRECT-MATCH",
+        "S-C25-Context-DIRECT-MISMATCH",
+        "S-C25-Context-DIRECT-ALIAS",
+        "S-C25-Method-VALID",
+        "S-C25-Method-UNTYPED-VERSION",
+        "S-C25-Method-UNTYPED-SOURCE",
+        "S-C25-Method-MISSING-TARGET",
+        "S-C25-Method-WRONG-KIND",
+        "S-C25-Method-TWO-TARGETS",
+        "S-C25-Method-ALIASED-TARGET",
+        "S-C25-Method-DIRECT-MATCH",
+        "S-C25-Method-DIRECT-MISMATCH",
+        "S-C25-Method-DIRECT-ALIAS",
+        "S-C25-Scale-VALID",
+        "S-C25-Scale-UNTYPED-VERSION",
+        "S-C25-Scale-UNTYPED-SOURCE",
+        "S-C25-Scale-MISSING-TARGET",
+        "S-C25-Scale-WRONG-KIND",
+        "S-C25-Scale-TWO-TARGETS",
+        "S-C25-Scale-ALIASED-TARGET",
+        "S-C25-Scale-DIRECT-MATCH",
+        "S-C25-Scale-DIRECT-MISMATCH",
+        "S-C25-Scale-DIRECT-ALIAS",
+        "S-C25-Criteria-VALID",
+        "S-C25-Criteria-UNTYPED-VERSION",
+        "S-C25-Criteria-UNTYPED-SOURCE",
+        "S-C25-Criteria-MISSING-TARGET",
+        "S-C25-Criteria-WRONG-KIND",
+        "S-C25-Criteria-TWO-TARGETS",
+        "S-C25-Criteria-ALIASED-TARGET"
+      ]
+    }
+  ]
+}
