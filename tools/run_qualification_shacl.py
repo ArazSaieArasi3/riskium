@@ -1,5 +1,6 @@
 """Execute C-11/C-12 records with external focus and exact SHACL oracles."""
 import importlib.metadata
+import gzip
 import json
 import subprocess
 import sys
@@ -204,10 +205,10 @@ def main():
         limitations=["Application identity key does not prove domain identity or scheme governance.",
             "Role-qualified provenance does not establish truth, adequacy, endorsement or real-world interpretation.",
             "Selected endpoint/catalog integration does not establish complete managed-profile admission."])
-    (OUT/"report.json").write_text(json.dumps(report,indent=2)+"\n")
+    (OUT/"report.json.gz").write_bytes(gzip.compress((json.dumps(report,indent=2)+"\n").encode(),mtime=0))
     md=f"""# Scheme-qualified vocabulary and role-qualified evidence — module 0.5.0
 
-Source commit `{report['source_commit']}`. **{report['coverage']['passed']}/2 scoped obligations PASS**. **{len(rows)} actual SHACL validations**, {counts.get('FAIL',0)} unexpected outcomes and {counts.get('ERROR',0)} errors. [Policy](profile-review.md) and [full receipt](report.json) define the exact limits.
+Source commit `{report['source_commit']}`. **{report['coverage']['passed']}/2 scoped obligations PASS**. **{len(rows)} actual SHACL validations**, {counts.get('FAIL',0)} unexpected outcomes and {counts.get('ERROR',0)} errors. [Policy](profile-review.md) and [full compressed receipt](report.json.gz) define the exact limits.
 
 Every selected VocabularyConcept subtype receives a managed record with explicit scheme, edition, local code and descriptive label. Only ClassificationTerm descendants require the matching `belongsToScheme` pair. An EvidenceReference record identifies source, item, target and Support/Challenge/Context role; the explicit `pointsToEvidence` and role-appropriate support pair are checked. These are application metadata and graph checks. A source link and even a Support role never prove the target's truth.
 

@@ -71,6 +71,9 @@ The [endpoint receipt](../evaluation/shacl/endpoints/report.md) tests all 254 ca
 .venv-shacl/bin/python tools/package_admission_receipt.py
 .venv-shacl/bin/python tools/build_coherence_shapes.py
 .venv-shacl/bin/python tools/run_coherence_shacl.py
+.venv-shacl/bin/python tools/build_qualification_shapes.py
+.venv-shacl/bin/python tools/run_qualification_shacl.py
+.venv-shacl/bin/python tools/verify_qualification_receipt.py
 python3 tools/summarize_shacl.py
 ```
 
@@ -78,7 +81,7 @@ The endpoint JSON stores content-addressed canonical N-Triples snapshots. Recons
 
 ## Catalog metadata admission module
 
-Module 0.3.0 executes the 80 catalog rows under an explicit [application record policy](../evaluation/shacl/admission/profile-review.md), with 77 typed class profiles and three boundary exclusions. The sole supported task is CatalogInspection; risk assessment remains outside this module. The input model and the 359-row coverage contract are unchanged. Run the catalog builder, runner and lossless packager before merging the three receipts with `tools/summarize_shacl.py` as shown above.
+Module 0.3.0 executes the 80 catalog rows under an explicit [application record policy](../evaluation/shacl/admission/profile-review.md), with 77 typed class profiles and three boundary exclusions. The sole supported task is CatalogInspection; risk assessment remains outside this module. The input model and the 359-row coverage contract are unchanged. Run the catalog builder, runner and lossless packager before merging the module receipts with `tools/summarize_shacl.py` as shown above.
 
 The full `report.json.gz` archive preserves raw/effective data, shapes, external record/class requests and result graphs byte for byte; `report-index.json` keeps all obligations and compact case outcomes readable. The index pins compressed/uncompressed hashes and verifies a lossless round trip. Regenerated uncompressed `report.json` is ignored by git. Its N-Triples snapshots preserve blank labels within the receipt rather than canonicalizing each graph independently. Use `run_admission_shacl.reconstruct_pair(report, case)` to parse data and shapes with one shared blank-node context. Caller-added blank-record focus selectors are retained in effective data. No arbitrary instance input may supply schema/import axioms or reserved vocabulary identity aliases.
 
@@ -86,4 +89,8 @@ A relocated environment may retain packages while its interpreter symlink is mis
 
 ## Context and revision coherence module
 
-Module 0.4.0 adds C-23 and C-24 graph conformance under inference none, without context materialization or implicit entry equality. Its [profile](../evaluation/shacl/coherence/profile-review.md) specifies target populations and static/history limits. Run its builder/runner before merging the four SHACL receipts. The JSON stores full input/shapes/results and exact source-shape/component/focus oracles; replay via `run_admission_shacl.reconstruct_pair()`. Cycle and lineage rules have distinct source shapes. No C-03 history test or complete cross-profile acceptance is implied.
+Module 0.4.0 adds C-23 and C-24 graph conformance under inference none, without context materialization or implicit entry equality. Its [profile](../evaluation/shacl/coherence/profile-review.md) specifies target populations and static/history limits. Run its builder/runner before merging SHACL receipts. The JSON stores full input/shapes/results and exact source-shape/component/focus oracles; replay via `run_admission_shacl.reconstruct_pair()`. Cycle and lineage rules have distinct source shapes. No C-03 history test or complete cross-profile acceptance is implied.
+
+## Vocabulary and evidence qualification module
+
+Module 0.5.0 checks C-11/C-12 under a separately declared [application metadata policy](../evaluation/shacl/qualification/profile-review.md). The lossless `report.json.gz` stores all 47 engine executions, graph snapshots, exact oracles, source/input digests and versions; `verification.json` checks hashes and six saved graph replays. Run its builder, runner and verifier before the coverage summarizer. The vocabulary key is operational within the supplied graph; evidence roles and locators are not claim-truth judgments. Neither the HermiT denominator nor full managed-profile acceptance changes.
