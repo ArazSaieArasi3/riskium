@@ -58,3 +58,15 @@ python3 -m venv .venv-shacl
 The source signatures and profile SHA-256 digests are checked. Graphs use inference `none`; only source subclass triples and the documented identity normalization are supplied explicitly. No imports or OWL existential fillers are materialized. The task-ready dual-anchor C-08 case is BLOCKED, not a pass. Regenerated Turtle bytes can vary in blank-node/list serialization; the exact per-case snapshots in JSON pin the executed graphs.
 
 `python3 tools/build_semantic_register.py` creates an **unadjudicated planning inventory** for independent semantic review. Do not rerun it over completed reviewer annotations without a migration/reconciliation step: it never imports engineering passes or independent ratings. The [assurance plan](../evaluation/semantic-assurance-plan.md) distinguishes this review from engine testing.
+
+## Ordered endpoint module
+
+The [endpoint receipt](../evaluation/shacl/endpoints/report.md) tests all 254 cardinality obligations in module 0.2.0. The earlier 0.1.0 conditional profiles retain their own source-bound receipt.
+
+```sh
+.venv-shacl/bin/python tools/build_endpoint_shapes.py
+.venv-shacl/bin/python tools/run_endpoint_shacl.py
+python3 tools/summarize_shacl.py
+```
+
+The endpoint JSON stores content-addressed canonical N-Triples snapshots. Reconstruct each validation data graph from its normalized snapshot plus the shared source taxonomy; the exact effective shapes and result graphs are retained. Unit tests replace targetClass with an explicit targetNode to isolate one endpoint, while all 127 paired-end tests retain original targetClass populations. Supplementary hasValue sentinels expose path reversals even for 0..*; they are not domain axioms. Non-applicable below-zero or above-unbounded negative fixtures retain reasons. This module does not yet certify full managed-record admission.

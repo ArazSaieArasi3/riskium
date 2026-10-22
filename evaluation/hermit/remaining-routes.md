@@ -25,4 +25,4 @@ The newly exercised C-06, C-08 and C-25 still need **explicit-data** counterpart
 
 ## Next executable batch
 
-Continue #5 with the 254 ordered endpoint obligations, then catalog admission and the remaining rows above. For each fixture, record the data graph, shapes graph, focus population, inference policy and the exact violated shape. Keep positive, negative and boundary results separate from this HermiT receipt and reconcile requirement/CQ evidence in #6. Independent semantic adequacy remains #7.
+The 254 ordered endpoint obligations now have a separate [SHACL receipt](../shacl/endpoints/report.md). Continue #5 with catalog admission, remaining constraint routes and full managed-profile integration. For each fixture, record the data graph, shapes graph, focus population, inference policy and the exact violated shape. Keep positive, negative and boundary results separate from this HermiT receipt and reconcile requirement/CQ evidence in #6. Independent semantic adequacy remains #7.

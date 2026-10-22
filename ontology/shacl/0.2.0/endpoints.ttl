@@ -1,0 +1,2102 @@
+@prefix ep: <https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#> .
+@prefix risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ep:R-01-source a sh:NodeShape ;
+    sh:property ep:R-01-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:R-01-target a sh:NodeShape ;
+    sh:property ep:R-01-target-count ;
+    sh:targetClass risk:RKM-C022 .
+
+ep:R-02-source a sh:NodeShape ;
+    sh:property ep:R-02-source-count ;
+    sh:targetClass risk:RKM-C024 .
+
+ep:R-02-target a sh:NodeShape ;
+    sh:property ep:R-02-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:R-03-source a sh:NodeShape ;
+    sh:property ep:R-03-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:R-03-target a sh:NodeShape ;
+    sh:property ep:R-03-target-count ;
+    sh:targetClass risk:RKM-C020 .
+
+ep:R-04-source a sh:NodeShape ;
+    sh:property ep:R-04-source-count ;
+    sh:targetClass risk:RKM-C019 .
+
+ep:R-04-target a sh:NodeShape ;
+    sh:property ep:R-04-target-count ;
+    sh:targetClass risk:RKM-C020 .
+
+ep:R-05-source a sh:NodeShape ;
+    sh:property ep:R-05-source-count ;
+    sh:targetClass risk:RKM-C018 .
+
+ep:R-05-target a sh:NodeShape ;
+    sh:property ep:R-05-target-count ;
+    sh:targetClass risk:RKM-C019 .
+
+ep:R-06-source a sh:NodeShape ;
+    sh:property ep:R-06-source-count ;
+    sh:targetClass risk:RKM-C019 .
+
+ep:R-06-target a sh:NodeShape ;
+    sh:property ep:R-06-target-count ;
+    sh:targetClass risk:RKM-C019 .
+
+ep:R-07-source a sh:NodeShape ;
+    sh:property ep:R-07-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:R-07-target a sh:NodeShape ;
+    sh:property ep:R-07-target-count ;
+    sh:targetClass risk:RKM-C026 .
+
+ep:R-08-source a sh:NodeShape ;
+    sh:property ep:R-08-source-count ;
+    sh:targetClass risk:RKM-C050 .
+
+ep:R-08-target a sh:NodeShape ;
+    sh:property ep:R-08-target-count ;
+    sh:targetClass risk:RKM-C026 .
+
+ep:R-09-source a sh:NodeShape ;
+    sh:property ep:R-09-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:R-09-target a sh:NodeShape ;
+    sh:property ep:R-09-target-count ;
+    sh:targetClass risk:RKM-C051 .
+
+ep:R-10-source a sh:NodeShape ;
+    sh:property ep:R-10-source-count ;
+    sh:targetClass risk:RKM-C050 .
+
+ep:R-10-target a sh:NodeShape ;
+    sh:property ep:R-10-target-count ;
+    sh:targetClass risk:RKM-C051 .
+
+ep:R-11-source a sh:NodeShape ;
+    sh:property ep:R-11-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:R-11-target a sh:NodeShape ;
+    sh:property ep:R-11-target-count ;
+    sh:targetClass risk:RKM-C032 .
+
+ep:R-12-source a sh:NodeShape ;
+    sh:property ep:R-12-source-count ;
+    sh:targetClass risk:RKM-C033 .
+
+ep:R-12-target a sh:NodeShape ;
+    sh:property ep:R-12-target-count ;
+    sh:targetClass risk:RKM-C032 .
+
+ep:R-13-source a sh:NodeShape ;
+    sh:property ep:R-13-source-count ;
+    sh:targetClass risk:RKM-C034 .
+
+ep:R-13-target a sh:NodeShape ;
+    sh:property ep:R-13-target-count ;
+    sh:targetClass risk:RKM-C032 .
+
+ep:R-14-source a sh:NodeShape ;
+    sh:property ep:R-14-source-count ;
+    sh:targetClass risk:RKM-C036 .
+
+ep:R-14-target a sh:NodeShape ;
+    sh:property ep:R-14-target-count ;
+    sh:targetClass risk:RKM-C034 .
+
+ep:R-15-source a sh:NodeShape ;
+    sh:property ep:R-15-source-count ;
+    sh:targetClass risk:RKM-C038 .
+
+ep:R-15-target a sh:NodeShape ;
+    sh:property ep:R-15-target-count ;
+    sh:targetClass risk:RKM-C034 .
+
+ep:R-16-source a sh:NodeShape ;
+    sh:property ep:R-16-source-count ;
+    sh:targetClass risk:RKM-C036 .
+
+ep:R-16-target a sh:NodeShape ;
+    sh:property ep:R-16-target-count ;
+    sh:targetClass risk:RKM-C038 .
+
+ep:R-17-source a sh:NodeShape ;
+    sh:property ep:R-17-source-count ;
+    sh:targetClass risk:RKM-C037 .
+
+ep:R-17-target a sh:NodeShape ;
+    sh:property ep:R-17-target-count ;
+    sh:targetClass risk:RKM-C032 .
+
+ep:R-18-source a sh:NodeShape ;
+    sh:property ep:R-18-source-count ;
+    sh:targetClass risk:RKM-C034 .
+
+ep:R-18-target a sh:NodeShape ;
+    sh:property ep:R-18-target-count ;
+    sh:targetClass risk:RKM-C037 .
+
+ep:R-19-source a sh:NodeShape ;
+    sh:property ep:R-19-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:R-19-target a sh:NodeShape ;
+    sh:property ep:R-19-target-count ;
+    sh:targetClass risk:RKM-C041 .
+
+ep:R-20-source a sh:NodeShape ;
+    sh:property ep:R-20-source-count ;
+    sh:targetClass risk:RKM-C042 .
+
+ep:R-20-target a sh:NodeShape ;
+    sh:property ep:R-20-target-count ;
+    sh:targetClass risk:RKM-C041 .
+
+ep:R-21-source a sh:NodeShape ;
+    sh:property ep:R-21-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:R-21-target a sh:NodeShape ;
+    sh:property ep:R-21-target-count ;
+    sh:targetClass risk:RKM-C043 .
+
+ep:R-22-source a sh:NodeShape ;
+    sh:property ep:R-22-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:R-22-target a sh:NodeShape ;
+    sh:property ep:R-22-target-count ;
+    sh:targetClass risk:RKM-C025 .
+
+ep:R-23-source a sh:NodeShape ;
+    sh:property ep:R-23-source-count ;
+    sh:targetClass risk:RKM-C062 .
+
+ep:R-23-target a sh:NodeShape ;
+    sh:property ep:R-23-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:R-24-source a sh:NodeShape ;
+    sh:property ep:R-24-source-count ;
+    sh:targetClass risk:RKM-C021 .
+
+ep:R-24-target a sh:NodeShape ;
+    sh:property ep:R-24-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:R-25-source a sh:NodeShape ;
+    sh:property ep:R-25-source-count ;
+    sh:targetClass risk:RKM-C004 .
+
+ep:R-25-target a sh:NodeShape ;
+    sh:property ep:R-25-target-count ;
+    sh:targetClass risk:RKM-C003 .
+
+ep:R-26-source a sh:NodeShape ;
+    sh:property ep:R-26-source-count ;
+    sh:targetClass risk:RKM-C032 .
+
+ep:R-26-target a sh:NodeShape ;
+    sh:property ep:R-26-target-count ;
+    sh:targetClass risk:RKM-C031 .
+
+ep:R-27-source a sh:NodeShape ;
+    sh:property ep:R-27-source-count ;
+    sh:targetClass risk:RKM-C027 .
+
+ep:R-27-target a sh:NodeShape ;
+    sh:property ep:R-27-target-count ;
+    sh:targetClass risk:RKM-C026 .
+
+ep:R-28-source a sh:NodeShape ;
+    sh:property ep:R-28-source-count ;
+    sh:targetClass risk:RKM-C032 .
+
+ep:R-28-target a sh:NodeShape ;
+    sh:property ep:R-28-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:R-29-source a sh:NodeShape ;
+    sh:property ep:R-29-source-count ;
+    sh:targetClass risk:RKM-C020 .
+
+ep:R-29-target a sh:NodeShape ;
+    sh:property ep:R-29-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:R-30-source a sh:NodeShape ;
+    sh:property ep:R-30-source-count ;
+    sh:targetClass risk:RKM-C051 .
+
+ep:R-30-target a sh:NodeShape ;
+    sh:property ep:R-30-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:R-31-source a sh:NodeShape ;
+    sh:property ep:R-31-source-count ;
+    sh:targetClass risk:RKM-C060 .
+
+ep:R-31-target a sh:NodeShape ;
+    sh:property ep:R-31-target-count ;
+    sh:targetClass risk:RKM-C062 .
+
+ep:R-32-source a sh:NodeShape ;
+    sh:property ep:R-32-source-count ;
+    sh:targetClass risk:RKM-C061 .
+
+ep:R-32-target a sh:NodeShape ;
+    sh:property ep:R-32-target-count ;
+    sh:targetClass risk:RKM-C062 .
+
+ep:R-33-source a sh:NodeShape ;
+    sh:property ep:R-33-source-count ;
+    sh:targetClass risk:RKM-C022 .
+
+ep:R-33-target a sh:NodeShape ;
+    sh:property ep:R-33-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:R-34-source a sh:NodeShape ;
+    sh:property ep:R-34-source-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:R-34-target a sh:NodeShape ;
+    sh:property ep:R-34-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:R-35-source a sh:NodeShape ;
+    sh:property ep:R-35-source-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:R-35-target a sh:NodeShape ;
+    sh:property ep:R-35-target-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:R-36-source a sh:NodeShape ;
+    sh:property ep:R-36-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:R-36-target a sh:NodeShape ;
+    sh:property ep:R-36-target-count ;
+    sh:targetClass risk:RKM-C003 .
+
+ep:R-37-source a sh:NodeShape ;
+    sh:property ep:R-37-source-count ;
+    sh:targetClass risk:RKM-C003 .
+
+ep:R-37-target a sh:NodeShape ;
+    sh:property ep:R-37-target-count ;
+    sh:targetClass risk:RKM-C024 .
+
+ep:R-38-source a sh:NodeShape ;
+    sh:property ep:R-38-source-count ;
+    sh:targetClass risk:RKM-C025 .
+
+ep:R-38-target a sh:NodeShape ;
+    sh:property ep:R-38-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:R-39-source a sh:NodeShape ;
+    sh:property ep:R-39-source-count ;
+    sh:targetClass risk:RKM-C028 .
+
+ep:R-39-target a sh:NodeShape ;
+    sh:property ep:R-39-target-count ;
+    sh:targetClass risk:RKM-C024 .
+
+ep:R-40-source a sh:NodeShape ;
+    sh:property ep:R-40-source-count ;
+    sh:targetClass risk:RKM-C029 .
+
+ep:R-40-target a sh:NodeShape ;
+    sh:property ep:R-40-target-count ;
+    sh:targetClass risk:RKM-C025 .
+
+ep:R-41-source a sh:NodeShape ;
+    sh:property ep:R-41-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:R-41-target a sh:NodeShape ;
+    sh:property ep:R-41-target-count ;
+    sh:targetClass risk:RKM-C005 .
+
+ep:R-42-source a sh:NodeShape ;
+    sh:property ep:R-42-source-count ;
+    sh:targetClass risk:RKM-C006 .
+
+ep:R-42-target a sh:NodeShape ;
+    sh:property ep:R-42-target-count ;
+    sh:targetClass risk:RKM-C005 .
+
+ep:R-43-source a sh:NodeShape ;
+    sh:property ep:R-43-source-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:R-43-target a sh:NodeShape ;
+    sh:property ep:R-43-target-count ;
+    sh:targetClass risk:RKM-C005 .
+
+ep:R-44-source a sh:NodeShape ;
+    sh:property ep:R-44-source-count ;
+    sh:targetClass risk:RKM-C005 .
+
+ep:R-44-target a sh:NodeShape ;
+    sh:property ep:R-44-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:R-45-source a sh:NodeShape ;
+    sh:property ep:R-45-source-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:R-45-target a sh:NodeShape ;
+    sh:property ep:R-45-target-count ;
+    sh:targetClass risk:RKM-C032 .
+
+ep:R-46-source a sh:NodeShape ;
+    sh:property ep:R-46-source-count ;
+    sh:targetClass risk:RKM-C035 .
+
+ep:R-46-target a sh:NodeShape ;
+    sh:property ep:R-46-target-count ;
+    sh:targetClass risk:RKM-C032 .
+
+ep:R-47-source a sh:NodeShape ;
+    sh:property ep:R-47-source-count ;
+    sh:targetClass risk:RKM-C040 .
+
+ep:R-47-target a sh:NodeShape ;
+    sh:property ep:R-47-target-count ;
+    sh:targetClass risk:RKM-C032 .
+
+ep:R-48-source a sh:NodeShape ;
+    sh:property ep:R-48-source-count ;
+    sh:targetClass risk:RKM-C039 .
+
+ep:R-48-target a sh:NodeShape ;
+    sh:property ep:R-48-target-count ;
+    sh:targetClass risk:RKM-C034 .
+
+ep:R-49-source a sh:NodeShape ;
+    sh:property ep:R-49-source-count ;
+    sh:targetClass risk:RKM-C036 .
+
+ep:R-49-target a sh:NodeShape ;
+    sh:property ep:R-49-target-count ;
+    sh:targetClass risk:RKM-C035 .
+
+ep:R-50-source a sh:NodeShape ;
+    sh:property ep:R-50-source-count ;
+    sh:targetClass risk:RKM-C035 .
+
+ep:R-50-target a sh:NodeShape ;
+    sh:property ep:R-50-target-count ;
+    sh:targetClass risk:RKM-C037 .
+
+ep:R-51-source a sh:NodeShape ;
+    sh:property ep:R-51-source-count ;
+    sh:targetClass risk:RKM-C047 .
+
+ep:R-51-target a sh:NodeShape ;
+    sh:property ep:R-51-target-count ;
+    sh:targetClass risk:RKM-C031 .
+
+ep:R-52-source a sh:NodeShape ;
+    sh:property ep:R-52-source-count ;
+    sh:targetClass risk:RKM-C026 .
+
+ep:R-52-target a sh:NodeShape ;
+    sh:property ep:R-52-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:R-53-source a sh:NodeShape ;
+    sh:property ep:R-53-source-count ;
+    sh:targetClass risk:RKM-C047 .
+
+ep:R-53-target a sh:NodeShape ;
+    sh:property ep:R-53-target-count ;
+    sh:targetClass risk:RKM-C050 .
+
+ep:R-54-source a sh:NodeShape ;
+    sh:property ep:R-54-source-count ;
+    sh:targetClass risk:RKM-C059 .
+
+ep:R-54-target a sh:NodeShape ;
+    sh:property ep:R-54-target-count ;
+    sh:targetClass risk:RKM-C051 .
+
+ep:R-55-source a sh:NodeShape ;
+    sh:property ep:R-55-source-count ;
+    sh:targetClass risk:RKM-C052 .
+
+ep:R-55-target a sh:NodeShape ;
+    sh:property ep:R-55-target-count ;
+    sh:targetClass risk:RKM-C051 .
+
+ep:R-56-source a sh:NodeShape ;
+    sh:property ep:R-56-source-count ;
+    sh:targetClass risk:RKM-C053 .
+
+ep:R-56-target a sh:NodeShape ;
+    sh:property ep:R-56-target-count ;
+    sh:targetClass risk:RKM-C052 .
+
+ep:R-57-source a sh:NodeShape ;
+    sh:property ep:R-57-source-count ;
+    sh:targetClass risk:RKM-C054 .
+
+ep:R-57-target a sh:NodeShape ;
+    sh:property ep:R-57-target-count ;
+    sh:targetClass risk:RKM-C052 .
+
+ep:R-58-source a sh:NodeShape ;
+    sh:property ep:R-58-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:R-58-target a sh:NodeShape ;
+    sh:property ep:R-58-target-count ;
+    sh:targetClass risk:RKM-C052 .
+
+ep:R-59-source a sh:NodeShape ;
+    sh:property ep:R-59-source-count ;
+    sh:targetClass risk:RKM-C059 .
+
+ep:R-59-target a sh:NodeShape ;
+    sh:property ep:R-59-target-count ;
+    sh:targetClass risk:RKM-C052 .
+
+ep:R-60-source a sh:NodeShape ;
+    sh:property ep:R-60-source-count ;
+    sh:targetClass risk:RKM-C041 .
+
+ep:R-60-target a sh:NodeShape ;
+    sh:property ep:R-60-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:R-61-source a sh:NodeShape ;
+    sh:property ep:R-61-source-count ;
+    sh:targetClass risk:RKM-C043 .
+
+ep:R-61-target a sh:NodeShape ;
+    sh:property ep:R-61-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:R-62-source a sh:NodeShape ;
+    sh:property ep:R-62-source-count ;
+    sh:targetClass risk:RKM-C046 .
+
+ep:R-62-target a sh:NodeShape ;
+    sh:property ep:R-62-target-count ;
+    sh:targetClass risk:RKM-C043 .
+
+ep:R-63-source a sh:NodeShape ;
+    sh:property ep:R-63-source-count ;
+    sh:targetClass risk:RKM-C043 .
+
+ep:R-63-target a sh:NodeShape ;
+    sh:property ep:R-63-target-count ;
+    sh:targetClass risk:RKM-C041 .
+
+ep:R-64-source a sh:NodeShape ;
+    sh:property ep:R-64-source-count ;
+    sh:targetClass risk:RKM-C043 .
+
+ep:R-64-target a sh:NodeShape ;
+    sh:property ep:R-64-target-count ;
+    sh:targetClass risk:RKM-C044 .
+
+ep:R-65-source a sh:NodeShape ;
+    sh:property ep:R-65-source-count ;
+    sh:targetClass risk:RKM-C047 .
+
+ep:R-65-target a sh:NodeShape ;
+    sh:property ep:R-65-target-count ;
+    sh:targetClass risk:RKM-C044 .
+
+ep:R-68-source a sh:NodeShape ;
+    sh:property ep:R-68-source-count ;
+    sh:targetClass risk:RKM-C014 .
+
+ep:R-68-target a sh:NodeShape ;
+    sh:property ep:R-68-target-count ;
+    sh:targetClass risk:RKM-C065 .
+
+ep:R-69-source a sh:NodeShape ;
+    sh:property ep:R-69-source-count ;
+    sh:targetClass risk:RKM-C004 .
+
+ep:R-69-target a sh:NodeShape ;
+    sh:property ep:R-69-target-count ;
+    sh:targetClass risk:RKM-C065 .
+
+ep:R-70-source a sh:NodeShape ;
+    sh:property ep:R-70-source-count ;
+    sh:targetClass risk:RKM-C047 .
+
+ep:R-70-target a sh:NodeShape ;
+    sh:property ep:R-70-target-count ;
+    sh:targetClass risk:RKM-C065 .
+
+ep:R-71-source a sh:NodeShape ;
+    sh:property ep:R-71-source-count ;
+    sh:targetClass risk:RKM-C031 .
+
+ep:R-71-target a sh:NodeShape ;
+    sh:property ep:R-71-target-count ;
+    sh:targetClass risk:RKM-C065 .
+
+ep:R-72-source a sh:NodeShape ;
+    sh:property ep:R-72-source-count ;
+    sh:targetClass risk:RKM-C044 .
+
+ep:R-72-target a sh:NodeShape ;
+    sh:property ep:R-72-target-count ;
+    sh:targetClass risk:RKM-C065 .
+
+ep:RK2-001-source a sh:NodeShape ;
+    sh:property ep:RK2-001-source-count ;
+    sh:targetClass risk:RKM-C008 .
+
+ep:RK2-001-target a sh:NodeShape ;
+    sh:property ep:RK2-001-target-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:RK2-002-source a sh:NodeShape ;
+    sh:property ep:RK2-002-source-count ;
+    sh:targetClass risk:RKM-C011 .
+
+ep:RK2-002-target a sh:NodeShape ;
+    sh:property ep:RK2-002-target-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:RK2-003-source a sh:NodeShape ;
+    sh:property ep:RK2-003-source-count ;
+    sh:targetClass risk:RKM-C012 .
+
+ep:RK2-003-target a sh:NodeShape ;
+    sh:property ep:RK2-003-target-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:RK2-004-source a sh:NodeShape ;
+    sh:property ep:RK2-004-source-count ;
+    sh:targetClass risk:RKM-C013 .
+
+ep:RK2-004-target a sh:NodeShape ;
+    sh:property ep:RK2-004-target-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:RK2-005-source a sh:NodeShape ;
+    sh:property ep:RK2-005-source-count ;
+    sh:targetClass risk:RKM-C009 .
+
+ep:RK2-005-target a sh:NodeShape ;
+    sh:property ep:RK2-005-target-count ;
+    sh:targetClass risk:RKM-C004 .
+
+ep:RK2-007-source a sh:NodeShape ;
+    sh:property ep:RK2-007-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:RK2-007-target a sh:NodeShape ;
+    sh:property ep:RK2-007-target-count ;
+    sh:targetClass risk:RKM-C024 .
+
+ep:RK2-008-source a sh:NodeShape ;
+    sh:property ep:RK2-008-source-count ;
+    sh:targetClass risk:RKM-C001 .
+
+ep:RK2-008-target a sh:NodeShape ;
+    sh:property ep:RK2-008-target-count ;
+    sh:targetClass risk:RKM-C024 .
+
+ep:RK2-009-source a sh:NodeShape ;
+    sh:property ep:RK2-009-source-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:RK2-009-target a sh:NodeShape ;
+    sh:property ep:RK2-009-target-count ;
+    sh:targetClass risk:RKM-C024 .
+
+ep:RK2-010-source a sh:NodeShape ;
+    sh:property ep:RK2-010-source-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:RK2-010-target a sh:NodeShape ;
+    sh:property ep:RK2-010-target-count ;
+    sh:targetClass risk:RKM-C003 .
+
+ep:RK2-011-source a sh:NodeShape ;
+    sh:property ep:RK2-011-source-count ;
+    sh:targetClass risk:RKM-X02 .
+
+ep:RK2-011-target a sh:NodeShape ;
+    sh:property ep:RK2-011-target-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:RK2-012-source a sh:NodeShape ;
+    sh:property ep:RK2-012-source-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:RK2-012-target a sh:NodeShape ;
+    sh:property ep:RK2-012-target-count ;
+    sh:targetClass risk:RKM-X03 .
+
+ep:RK2-013-source a sh:NodeShape ;
+    sh:property ep:RK2-013-source-count ;
+    sh:targetClass risk:RKM-X03 .
+
+ep:RK2-013-target a sh:NodeShape ;
+    sh:property ep:RK2-013-target-count ;
+    sh:targetClass risk:RKM-C032 .
+
+ep:RK2-014-source a sh:NodeShape ;
+    sh:property ep:RK2-014-source-count ;
+    sh:targetClass risk:RKM-X04 .
+
+ep:RK2-014-target a sh:NodeShape ;
+    sh:property ep:RK2-014-target-count ;
+    sh:targetClass risk:RKM-C041 .
+
+ep:RK2-015-source a sh:NodeShape ;
+    sh:property ep:RK2-015-source-count ;
+    sh:targetClass risk:RKM-C032 .
+
+ep:RK2-015-target a sh:NodeShape ;
+    sh:property ep:RK2-015-target-count ;
+    sh:targetClass risk:RKM-C041 .
+
+ep:RK2-016-source a sh:NodeShape ;
+    sh:property ep:RK2-016-source-count ;
+    sh:targetClass risk:RKM-X05 .
+
+ep:RK2-016-target a sh:NodeShape ;
+    sh:property ep:RK2-016-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:RK2-017-source a sh:NodeShape ;
+    sh:property ep:RK2-017-source-count ;
+    sh:targetClass risk:RKM-C068 .
+
+ep:RK2-017-target a sh:NodeShape ;
+    sh:property ep:RK2-017-target-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:RK2-018-source a sh:NodeShape ;
+    sh:property ep:RK2-018-source-count ;
+    sh:targetClass risk:RKM-C039 .
+
+ep:RK2-018-target a sh:NodeShape ;
+    sh:property ep:RK2-018-target-count ;
+    sh:targetClass risk:RKM-C035 .
+
+ep:RK2-019-source a sh:NodeShape ;
+    sh:property ep:RK2-019-source-count ;
+    sh:targetClass risk:RKM-C039 .
+
+ep:RK2-019-target a sh:NodeShape ;
+    sh:property ep:RK2-019-target-count ;
+    sh:targetClass risk:RKM-C036 .
+
+ep:RK2-020-source a sh:NodeShape ;
+    sh:property ep:RK2-020-source-count ;
+    sh:targetClass risk:RKM-C036 .
+
+ep:RK2-020-target a sh:NodeShape ;
+    sh:property ep:RK2-020-target-count ;
+    sh:targetClass risk:RKM-C070 .
+
+ep:RK2-021-source a sh:NodeShape ;
+    sh:property ep:RK2-021-source-count ;
+    sh:targetClass risk:RKM-C063 .
+
+ep:RK2-021-target a sh:NodeShape ;
+    sh:property ep:RK2-021-target-count ;
+    sh:targetClass risk:RKM-C061 .
+
+ep:RK2-022-source a sh:NodeShape ;
+    sh:property ep:RK2-022-source-count ;
+    sh:targetClass risk:RKM-X05 .
+
+ep:RK2-022-target a sh:NodeShape ;
+    sh:property ep:RK2-022-target-count ;
+    sh:targetClass risk:RKM-C033 .
+
+ep:RK2-023-source a sh:NodeShape ;
+    sh:property ep:RK2-023-source-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:RK2-023-target a sh:NodeShape ;
+    sh:property ep:RK2-023-target-count ;
+    sh:targetClass risk:RKM-C073 .
+
+ep:RK2-024-source a sh:NodeShape ;
+    sh:property ep:RK2-024-source-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:RK2-024-target a sh:NodeShape ;
+    sh:property ep:RK2-024-target-count ;
+    sh:targetClass risk:RKM-C074 .
+
+ep:RK2-025-source a sh:NodeShape ;
+    sh:property ep:RK2-025-source-count ;
+    sh:targetClass risk:RKM-C050 .
+
+ep:RK2-025-target a sh:NodeShape ;
+    sh:property ep:RK2-025-target-count ;
+    sh:targetClass risk:RKM-C051 .
+
+ep:RK2-026-source a sh:NodeShape ;
+    sh:property ep:RK2-026-source-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:RK2-026-target a sh:NodeShape ;
+    sh:property ep:RK2-026-target-count ;
+    sh:targetClass risk:RKM-C068 .
+
+ep:RK3-001-source a sh:NodeShape ;
+    sh:property ep:RK3-001-source-count ;
+    sh:targetClass risk:RKM-X06 .
+
+ep:RK3-001-target a sh:NodeShape ;
+    sh:property ep:RK3-001-target-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:RK3-003-source a sh:NodeShape ;
+    sh:property ep:RK3-003-source-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:RK3-003-target a sh:NodeShape ;
+    sh:property ep:RK3-003-target-count ;
+    sh:targetClass risk:RKM-X06 .
+
+ep:RK3-004-source a sh:NodeShape ;
+    sh:property ep:RK3-004-source-count ;
+    sh:targetClass risk:RKM-C011 .
+
+ep:RK3-004-target a sh:NodeShape ;
+    sh:property ep:RK3-004-target-count ;
+    sh:targetClass risk:EXT-OBJECT .
+
+ep:RX-001-source a sh:NodeShape ;
+    sh:property ep:RX-001-source-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:RX-001-target a sh:NodeShape ;
+    sh:property ep:RX-001-target-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:RX-002-source a sh:NodeShape ;
+    sh:property ep:RX-002-source-count ;
+    sh:targetClass risk:RKM-C001 .
+
+ep:RX-002-target a sh:NodeShape ;
+    sh:property ep:RX-002-target-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:RX-003-source a sh:NodeShape ;
+    sh:property ep:RX-003-source-count ;
+    sh:targetClass risk:RKM-X02 .
+
+ep:RX-003-target a sh:NodeShape ;
+    sh:property ep:RX-003-target-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:RX-004-source a sh:NodeShape ;
+    sh:property ep:RX-004-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:RX-004-target a sh:NodeShape ;
+    sh:property ep:RX-004-target-count ;
+    sh:targetClass risk:RKM-X03 .
+
+ep:RX-006-source a sh:NodeShape ;
+    sh:property ep:RX-006-source-count ;
+    sh:targetClass risk:RKM-C014 .
+
+ep:RX-006-target a sh:NodeShape ;
+    sh:property ep:RX-006-target-count ;
+    sh:targetClass risk:RKM-C015 .
+
+ep:RX-007-source a sh:NodeShape ;
+    sh:property ep:RX-007-source-count ;
+    sh:targetClass risk:RKM-C016 .
+
+ep:RX-007-target a sh:NodeShape ;
+    sh:property ep:RX-007-target-count ;
+    sh:targetClass risk:RKM-C015 .
+
+ep:RX-008-source a sh:NodeShape ;
+    sh:property ep:RX-008-source-count ;
+    sh:targetClass risk:RKM-C030 .
+
+ep:RX-008-target a sh:NodeShape ;
+    sh:property ep:RX-008-target-count ;
+    sh:targetClass risk:RKM-C022 .
+
+ep:RX-009-source a sh:NodeShape ;
+    sh:property ep:RX-009-source-count ;
+    sh:targetClass risk:RKM-C025 .
+
+ep:RX-009-target a sh:NodeShape ;
+    sh:property ep:RX-009-target-count ;
+    sh:targetClass risk:RKM-C003 .
+
+ep:RX-011-source a sh:NodeShape ;
+    sh:property ep:RX-011-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:RX-011-target a sh:NodeShape ;
+    sh:property ep:RX-011-target-count ;
+    sh:targetClass risk:RKM-X04 .
+
+ep:RX-012-source a sh:NodeShape ;
+    sh:property ep:RX-012-source-count ;
+    sh:targetClass risk:RKM-C032 .
+
+ep:RX-012-target a sh:NodeShape ;
+    sh:property ep:RX-012-target-count ;
+    sh:targetClass risk:RKM-X04 .
+
+ep:RX-013-source a sh:NodeShape ;
+    sh:property ep:RX-013-source-count ;
+    sh:targetClass risk:RKM-C015 .
+
+ep:RX-013-target a sh:NodeShape ;
+    sh:property ep:RX-013-target-count ;
+    sh:targetClass risk:RKM-X04 .
+
+ep:RX-014-source a sh:NodeShape ;
+    sh:property ep:RX-014-source-count ;
+    sh:targetClass risk:RKM-C015 .
+
+ep:RX-014-target a sh:NodeShape ;
+    sh:property ep:RX-014-target-count ;
+    sh:targetClass risk:RKM-C032 .
+
+ep:RX-015-source a sh:NodeShape ;
+    sh:property ep:RX-015-source-count ;
+    sh:targetClass risk:RKM-C015 .
+
+ep:RX-015-target a sh:NodeShape ;
+    sh:property ep:RX-015-target-count ;
+    sh:targetClass risk:RKM-C032 .
+
+ep:RX-016-source a sh:NodeShape ;
+    sh:property ep:RX-016-source-count ;
+    sh:targetClass risk:RKM-C015 .
+
+ep:RX-016-target a sh:NodeShape ;
+    sh:property ep:RX-016-target-count ;
+    sh:targetClass risk:RKM-C034 .
+
+ep:RX-017-source a sh:NodeShape ;
+    sh:property ep:RX-017-source-count ;
+    sh:targetClass risk:RKM-C002 .
+
+ep:RX-017-target a sh:NodeShape ;
+    sh:property ep:RX-017-target-count ;
+    sh:targetClass risk:RKM-C072 .
+
+ep:RX-018-source a sh:NodeShape ;
+    sh:property ep:RX-018-source-count ;
+    sh:targetClass risk:RKM-C073 .
+
+ep:RX-018-target a sh:NodeShape ;
+    sh:property ep:RX-018-target-count ;
+    sh:targetClass risk:RKM-C072 .
+
+ep:RX-019-source a sh:NodeShape ;
+    sh:property ep:RX-019-source-count ;
+    sh:targetClass risk:RKM-C074 .
+
+ep:RX-019-target a sh:NodeShape ;
+    sh:property ep:RX-019-target-count ;
+    sh:targetClass risk:RKM-C072 .
+
+ep:RX-021-source a sh:NodeShape ;
+    sh:property ep:RX-021-source-count ;
+    sh:targetClass risk:RKM-C066 .
+
+ep:RX-021-target a sh:NodeShape ;
+    sh:property ep:RX-021-target-count ;
+    sh:targetClass risk:RKM-C065 .
+
+ep:RX-022-source a sh:NodeShape ;
+    sh:property ep:RX-022-source-count ;
+    sh:targetClass risk:RKM-C068 .
+
+ep:RX-022-target a sh:NodeShape ;
+    sh:property ep:RX-022-target-count ;
+    sh:targetClass risk:RKM-C067 .
+
+ep:RX-023-source a sh:NodeShape ;
+    sh:property ep:RX-023-source-count ;
+    sh:targetClass risk:RKM-C069 .
+
+ep:RX-023-target a sh:NodeShape ;
+    sh:property ep:RX-023-target-count ;
+    sh:targetClass risk:RKM-C068 .
+
+ep:RX-024-source a sh:NodeShape ;
+    sh:property ep:RX-024-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:RX-024-target a sh:NodeShape ;
+    sh:property ep:RX-024-target-count ;
+    sh:targetClass risk:RKM-C068 .
+
+ep:RX-025-source a sh:NodeShape ;
+    sh:property ep:RX-025-source-count ;
+    sh:targetClass risk:RKM-C069 .
+
+ep:RX-025-target a sh:NodeShape ;
+    sh:property ep:RX-025-target-count ;
+    sh:targetClass risk:RKM-C070 .
+
+ep:RX-026-source a sh:NodeShape ;
+    sh:property ep:RX-026-source-count ;
+    sh:targetClass risk:RKM-C068 .
+
+ep:RX-026-target a sh:NodeShape ;
+    sh:property ep:RX-026-target-count ;
+    sh:targetClass risk:RKM-C071 .
+
+ep:RX-027-source a sh:NodeShape ;
+    sh:property ep:RX-027-source-count ;
+    sh:targetClass risk:RKM-C070 .
+
+ep:RX-027-target a sh:NodeShape ;
+    sh:property ep:RX-027-target-count ;
+    sh:targetClass risk:RKM-C071 .
+
+ep:RX-028-source a sh:NodeShape ;
+    sh:property ep:RX-028-source-count ;
+    sh:targetClass risk:RKM-X01 .
+
+ep:RX-028-target a sh:NodeShape ;
+    sh:property ep:RX-028-target-count ;
+    sh:targetClass risk:RKM-C071 .
+
+ep:RX-029-source a sh:NodeShape ;
+    sh:property ep:RX-029-source-count ;
+    sh:targetClass risk:RKM-C061 .
+
+ep:RX-029-target a sh:NodeShape ;
+    sh:property ep:RX-029-target-count ;
+    sh:targetClass risk:RKM-C064 .
+
+ep:RX-030-source a sh:NodeShape ;
+    sh:property ep:RX-030-source-count ;
+    sh:targetClass risk:RKM-C063 .
+
+ep:RX-030-target a sh:NodeShape ;
+    sh:property ep:RX-030-target-count ;
+    sh:targetClass risk:RKM-C064 .
+
+ep:RX-031-source a sh:NodeShape ;
+    sh:property ep:RX-031-source-count ;
+    sh:targetClass risk:RKM-C023 .
+
+ep:RX-031-target a sh:NodeShape ;
+    sh:property ep:RX-031-target-count ;
+    sh:targetClass risk:RKM-C064 .
+
+ep:RX-032-source a sh:NodeShape ;
+    sh:property ep:RX-032-source-count ;
+    sh:targetClass risk:RKM-C064 .
+
+ep:RX-032-target a sh:NodeShape ;
+    sh:property ep:RX-032-target-count ;
+    sh:targetClass risk:RKM-C062 .
+
+ep:R-01-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-01 ] .
+
+ep:R-01-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-01 .
+
+ep:R-02-source-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:R-02 ] .
+
+ep:R-02-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-02 .
+
+ep:R-03-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-03 ] .
+
+ep:R-03-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-03 .
+
+ep:R-04-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-04 ] .
+
+ep:R-04-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-04 .
+
+ep:R-05-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-05 ] .
+
+ep:R-05-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-05 .
+
+ep:R-06-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-06 ] .
+
+ep:R-06-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-06 .
+
+ep:R-07-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-07 ] .
+
+ep:R-07-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-07 .
+
+ep:R-08-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-08 ] .
+
+ep:R-08-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-08 .
+
+ep:R-09-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-09 ] .
+
+ep:R-09-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-09 .
+
+ep:R-10-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-10 ] .
+
+ep:R-10-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-10 .
+
+ep:R-11-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-11 ] .
+
+ep:R-11-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-11 .
+
+ep:R-12-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-12 ] .
+
+ep:R-12-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-12 .
+
+ep:R-13-source-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:R-13 ] .
+
+ep:R-13-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-13 .
+
+ep:R-14-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-14 ] .
+
+ep:R-14-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:R-14 .
+
+ep:R-15-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-15 ] .
+
+ep:R-15-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:R-15 .
+
+ep:R-16-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-16 ] .
+
+ep:R-16-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-16 .
+
+ep:R-17-source-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:R-17 ] .
+
+ep:R-17-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-17 .
+
+ep:R-18-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-18 ] .
+
+ep:R-18-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-18 .
+
+ep:R-19-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-19 ] .
+
+ep:R-19-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-19 .
+
+ep:R-20-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-20 ] .
+
+ep:R-20-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-20 .
+
+ep:R-21-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-21 ] .
+
+ep:R-21-target-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:R-21 .
+
+ep:R-22-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-22 ] .
+
+ep:R-22-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-22 .
+
+ep:R-23-source-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:R-23 ] .
+
+ep:R-23-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-23 .
+
+ep:R-24-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-24 ] .
+
+ep:R-24-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-24 .
+
+ep:R-25-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-25 ] .
+
+ep:R-25-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-25 .
+
+ep:R-26-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-26 ] .
+
+ep:R-26-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-26 .
+
+ep:R-27-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-27 ] .
+
+ep:R-27-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-27 .
+
+ep:R-28-source-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:R-28 ] .
+
+ep:R-28-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-28 .
+
+ep:R-29-source-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:R-29 ] .
+
+ep:R-29-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-29 .
+
+ep:R-30-source-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:R-30 ] .
+
+ep:R-30-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-30 .
+
+ep:R-31-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-31 ] .
+
+ep:R-31-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:R-31 .
+
+ep:R-32-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-32 ] .
+
+ep:R-32-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:R-32 .
+
+ep:R-33-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-33 ] .
+
+ep:R-33-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-33 .
+
+ep:R-34-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-34 ] .
+
+ep:R-34-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:R-34 .
+
+ep:R-35-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-35 ] .
+
+ep:R-35-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-35 .
+
+ep:R-36-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-36 ] .
+
+ep:R-36-target-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:R-36 .
+
+ep:R-37-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-37 ] .
+
+ep:R-37-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-37 .
+
+ep:R-38-source-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:R-38 ] .
+
+ep:R-38-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-38 .
+
+ep:R-39-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-39 ] .
+
+ep:R-39-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-39 .
+
+ep:R-40-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-40 ] .
+
+ep:R-40-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-40 .
+
+ep:R-41-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-41 ] .
+
+ep:R-41-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-41 .
+
+ep:R-42-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-42 ] .
+
+ep:R-42-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-42 .
+
+ep:R-43-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-43 ] .
+
+ep:R-43-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:R-43 .
+
+ep:R-44-source-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:R-44 ] .
+
+ep:R-44-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-44 .
+
+ep:R-45-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-45 ] .
+
+ep:R-45-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:R-45 .
+
+ep:R-46-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-46 ] .
+
+ep:R-46-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:R-46 .
+
+ep:R-47-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-47 ] .
+
+ep:R-47-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:R-47 .
+
+ep:R-48-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-48 ] .
+
+ep:R-48-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-48 .
+
+ep:R-49-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-49 ] .
+
+ep:R-49-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-49 .
+
+ep:R-50-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-50 ] .
+
+ep:R-50-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-50 .
+
+ep:R-51-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-51 ] .
+
+ep:R-51-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-51 .
+
+ep:R-52-source-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:R-52 ] .
+
+ep:R-52-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-52 .
+
+ep:R-53-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-53 ] .
+
+ep:R-53-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:R-53 .
+
+ep:R-54-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-54 ] .
+
+ep:R-54-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-54 .
+
+ep:R-55-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-55 ] .
+
+ep:R-55-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:R-55 .
+
+ep:R-56-source-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:R-56 ] .
+
+ep:R-56-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-56 .
+
+ep:R-57-source-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:R-57 ] .
+
+ep:R-57-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-57 .
+
+ep:R-58-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-58 ] .
+
+ep:R-58-target-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:R-58 .
+
+ep:R-59-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-59 ] .
+
+ep:R-59-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-59 .
+
+ep:R-60-source-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:R-60 ] .
+
+ep:R-60-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-60 .
+
+ep:R-61-source-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:R-61 ] .
+
+ep:R-61-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-61 .
+
+ep:R-62-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-62 ] .
+
+ep:R-62-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:R-62 .
+
+ep:R-63-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-63 ] .
+
+ep:R-63-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-63 .
+
+ep:R-64-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-64 ] .
+
+ep:R-64-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-64 .
+
+ep:R-65-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-65 ] .
+
+ep:R-65-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-65 .
+
+ep:R-68-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-68 ] .
+
+ep:R-68-target-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:R-68 .
+
+ep:R-69-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-69 ] .
+
+ep:R-69-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-69 .
+
+ep:R-70-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-70 ] .
+
+ep:R-70-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-70 .
+
+ep:R-71-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-71 ] .
+
+ep:R-71-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-71 .
+
+ep:R-72-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:R-72 ] .
+
+ep:R-72-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:R-72 .
+
+ep:RK2-001-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-001 ] .
+
+ep:RK2-001-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-001 .
+
+ep:RK2-002-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-002 ] .
+
+ep:RK2-002-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-002 .
+
+ep:RK2-003-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-003 ] .
+
+ep:RK2-003-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-003 .
+
+ep:RK2-004-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-004 ] .
+
+ep:RK2-004-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-004 .
+
+ep:RK2-005-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-005 ] .
+
+ep:RK2-005-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-005 .
+
+ep:RK2-007-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-007 ] .
+
+ep:RK2-007-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-007 .
+
+ep:RK2-008-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-008 ] .
+
+ep:RK2-008-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-008 .
+
+ep:RK2-009-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-009 ] .
+
+ep:RK2-009-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-009 .
+
+ep:RK2-010-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-010 ] .
+
+ep:RK2-010-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-010 .
+
+ep:RK2-011-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-011 ] .
+
+ep:RK2-011-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-011 .
+
+ep:RK2-012-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-012 ] .
+
+ep:RK2-012-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-012 .
+
+ep:RK2-013-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-013 ] .
+
+ep:RK2-013-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-013 .
+
+ep:RK2-014-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-014 ] .
+
+ep:RK2-014-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-014 .
+
+ep:RK2-015-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-015 ] .
+
+ep:RK2-015-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-015 .
+
+ep:RK2-016-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-016 ] .
+
+ep:RK2-016-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-016 .
+
+ep:RK2-017-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-017 ] .
+
+ep:RK2-017-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-017 .
+
+ep:RK2-018-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-018 ] .
+
+ep:RK2-018-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-018 .
+
+ep:RK2-019-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-019 ] .
+
+ep:RK2-019-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RK2-019 .
+
+ep:RK2-020-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-020 ] .
+
+ep:RK2-020-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-020 .
+
+ep:RK2-021-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-021 ] .
+
+ep:RK2-021-target-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:RK2-021 .
+
+ep:RK2-022-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-022 ] .
+
+ep:RK2-022-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-022 .
+
+ep:RK2-023-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-023 ] .
+
+ep:RK2-023-target-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:RK2-023 .
+
+ep:RK2-024-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-024 ] .
+
+ep:RK2-024-target-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:RK2-024 .
+
+ep:RK2-025-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-025 ] .
+
+ep:RK2-025-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-025 .
+
+ep:RK2-026-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK2-026 ] .
+
+ep:RK2-026-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:RK2-026 .
+
+ep:RK3-001-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK3-001 ] .
+
+ep:RK3-001-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK3-001 .
+
+ep:RK3-003-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RK3-003 ] .
+
+ep:RK3-003-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:RK3-003 .
+
+ep:RK3-004-source-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:RK3-004 ] .
+
+ep:RK3-004-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RK3-004 .
+
+ep:RX-001-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-001 ] .
+
+ep:RX-001-target-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:RX-001 .
+
+ep:RX-002-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-002 ] .
+
+ep:RX-002-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RX-002 .
+
+ep:RX-003-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-003 ] .
+
+ep:RX-003-target-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:RX-003 .
+
+ep:RX-004-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-004 ] .
+
+ep:RX-004-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-004 .
+
+ep:RX-006-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-006 ] .
+
+ep:RX-006-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-006 .
+
+ep:RX-007-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-007 ] .
+
+ep:RX-007-target-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:RX-007 .
+
+ep:RX-008-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-008 ] .
+
+ep:RX-008-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-008 .
+
+ep:RX-009-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-009 ] .
+
+ep:RX-009-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RX-009 .
+
+ep:RX-011-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-011 ] .
+
+ep:RX-011-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-011 .
+
+ep:RX-012-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-012 ] .
+
+ep:RX-012-target-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:RX-012 .
+
+ep:RX-013-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-013 ] .
+
+ep:RX-013-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-013 .
+
+ep:RX-014-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-014 ] .
+
+ep:RX-014-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-014 .
+
+ep:RX-015-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-015 ] .
+
+ep:RX-015-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:RX-015 .
+
+ep:RX-016-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-016 ] .
+
+ep:RX-016-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:RX-016 .
+
+ep:RX-017-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-017 ] .
+
+ep:RX-017-target-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:RX-017 .
+
+ep:RX-018-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-018 ] .
+
+ep:RX-018-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RX-018 .
+
+ep:RX-019-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-019 ] .
+
+ep:RX-019-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RX-019 .
+
+ep:RX-021-source-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:RX-021 ] .
+
+ep:RX-021-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-021 .
+
+ep:RX-022-source-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path [ sh:inversePath risk:RX-022 ] .
+
+ep:RX-022-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RX-022 .
+
+ep:RX-023-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-023 ] .
+
+ep:RX-023-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-023 .
+
+ep:RX-024-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-024 ] .
+
+ep:RX-024-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-024 .
+
+ep:RX-025-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-025 ] .
+
+ep:RX-025-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:RX-025 .
+
+ep:RX-026-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-026 ] .
+
+ep:RX-026-target-count a sh:PropertyShape ;
+    sh:minCount 1 ;
+    sh:path risk:RX-026 .
+
+ep:RX-027-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-027 ] .
+
+ep:RX-027-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RX-027 .
+
+ep:RX-028-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-028 ] .
+
+ep:RX-028-target-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path risk:RX-028 .
+
+ep:RX-029-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-029 ] .
+
+ep:RX-029-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-029 .
+
+ep:RX-030-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-030 ] .
+
+ep:RX-030-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-030 .
+
+ep:RX-031-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-031 ] .
+
+ep:RX-031-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path risk:RX-031 .
+
+ep:RX-032-source-count a sh:PropertyShape ;
+    sh:minCount 0 ;
+    sh:path [ sh:inversePath risk:RX-032 ] .
+
+ep:RX-032-target-count a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:path risk:RX-032 .
+

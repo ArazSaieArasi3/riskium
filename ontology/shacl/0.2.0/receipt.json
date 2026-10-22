@@ -1,0 +1,2551 @@
+{
+  "profile_version": "0.2.0",
+  "source_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "typed_relations": 127,
+  "ordered_endpoint_shapes": 254,
+  "endpoints": [
+    {
+      "source_element": "R-01:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-01-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-01-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "R-01",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-01:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-01-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-01-target-count",
+      "focus_class": "RKM-C022",
+      "path": "direct",
+      "property": "R-01",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-02:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-02-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-02-source-count",
+      "focus_class": "RKM-C024",
+      "path": "inverse",
+      "property": "R-02",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-02:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-02-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-02-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "R-02",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-03:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-03-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-03-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "R-03",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-03:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-03-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-03-target-count",
+      "focus_class": "RKM-C020",
+      "path": "direct",
+      "property": "R-03",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-04:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-04-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-04-source-count",
+      "focus_class": "RKM-C019",
+      "path": "inverse",
+      "property": "R-04",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-04:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-04-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-04-target-count",
+      "focus_class": "RKM-C020",
+      "path": "direct",
+      "property": "R-04",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-05:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-05-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-05-source-count",
+      "focus_class": "RKM-C018",
+      "path": "inverse",
+      "property": "R-05",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-05:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-05-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-05-target-count",
+      "focus_class": "RKM-C019",
+      "path": "direct",
+      "property": "R-05",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-06:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-06-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-06-source-count",
+      "focus_class": "RKM-C019",
+      "path": "inverse",
+      "property": "R-06",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-06:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-06-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-06-target-count",
+      "focus_class": "RKM-C019",
+      "path": "direct",
+      "property": "R-06",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-07:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-07-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-07-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "R-07",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-07:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-07-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-07-target-count",
+      "focus_class": "RKM-C026",
+      "path": "direct",
+      "property": "R-07",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-08:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-08-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-08-source-count",
+      "focus_class": "RKM-C050",
+      "path": "inverse",
+      "property": "R-08",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-08:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-08-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-08-target-count",
+      "focus_class": "RKM-C026",
+      "path": "direct",
+      "property": "R-08",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-09:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-09-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-09-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "R-09",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-09:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-09-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-09-target-count",
+      "focus_class": "RKM-C051",
+      "path": "direct",
+      "property": "R-09",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-10:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-10-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-10-source-count",
+      "focus_class": "RKM-C050",
+      "path": "inverse",
+      "property": "R-10",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-10:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-10-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-10-target-count",
+      "focus_class": "RKM-C051",
+      "path": "direct",
+      "property": "R-10",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-11:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-11-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-11-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "R-11",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-11:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-11-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-11-target-count",
+      "focus_class": "RKM-C032",
+      "path": "direct",
+      "property": "R-11",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-12:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-12-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-12-source-count",
+      "focus_class": "RKM-C033",
+      "path": "inverse",
+      "property": "R-12",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-12:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-12-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-12-target-count",
+      "focus_class": "RKM-C032",
+      "path": "direct",
+      "property": "R-12",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-13:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-13-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-13-source-count",
+      "focus_class": "RKM-C034",
+      "path": "inverse",
+      "property": "R-13",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-13:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-13-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-13-target-count",
+      "focus_class": "RKM-C032",
+      "path": "direct",
+      "property": "R-13",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-14:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-14-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-14-source-count",
+      "focus_class": "RKM-C036",
+      "path": "inverse",
+      "property": "R-14",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-14:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-14-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-14-target-count",
+      "focus_class": "RKM-C034",
+      "path": "direct",
+      "property": "R-14",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-15:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-15-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-15-source-count",
+      "focus_class": "RKM-C038",
+      "path": "inverse",
+      "property": "R-15",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-15:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-15-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-15-target-count",
+      "focus_class": "RKM-C034",
+      "path": "direct",
+      "property": "R-15",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-16:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-16-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-16-source-count",
+      "focus_class": "RKM-C036",
+      "path": "inverse",
+      "property": "R-16",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-16:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-16-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-16-target-count",
+      "focus_class": "RKM-C038",
+      "path": "direct",
+      "property": "R-16",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-17:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-17-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-17-source-count",
+      "focus_class": "RKM-C037",
+      "path": "inverse",
+      "property": "R-17",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-17:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-17-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-17-target-count",
+      "focus_class": "RKM-C032",
+      "path": "direct",
+      "property": "R-17",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-18:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-18-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-18-source-count",
+      "focus_class": "RKM-C034",
+      "path": "inverse",
+      "property": "R-18",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-18:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-18-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-18-target-count",
+      "focus_class": "RKM-C037",
+      "path": "direct",
+      "property": "R-18",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-19:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-19-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-19-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "R-19",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-19:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-19-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-19-target-count",
+      "focus_class": "RKM-C041",
+      "path": "direct",
+      "property": "R-19",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-20:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-20-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-20-source-count",
+      "focus_class": "RKM-C042",
+      "path": "inverse",
+      "property": "R-20",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-20:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-20-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-20-target-count",
+      "focus_class": "RKM-C041",
+      "path": "direct",
+      "property": "R-20",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-21:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-21-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-21-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "R-21",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-21:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-21-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-21-target-count",
+      "focus_class": "RKM-C043",
+      "path": "direct",
+      "property": "R-21",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "R-22:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-22-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-22-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "R-22",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-22:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-22-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-22-target-count",
+      "focus_class": "RKM-C025",
+      "path": "direct",
+      "property": "R-22",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-23:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-23-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-23-source-count",
+      "focus_class": "RKM-C062",
+      "path": "inverse",
+      "property": "R-23",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-23:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-23-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-23-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "R-23",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-24:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-24-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-24-source-count",
+      "focus_class": "RKM-C021",
+      "path": "inverse",
+      "property": "R-24",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-24:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-24-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-24-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "R-24",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-25:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-25-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-25-source-count",
+      "focus_class": "RKM-C004",
+      "path": "inverse",
+      "property": "R-25",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-25:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-25-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-25-target-count",
+      "focus_class": "RKM-C003",
+      "path": "direct",
+      "property": "R-25",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-26:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-26-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-26-source-count",
+      "focus_class": "RKM-C032",
+      "path": "inverse",
+      "property": "R-26",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-26:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-26-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-26-target-count",
+      "focus_class": "RKM-C031",
+      "path": "direct",
+      "property": "R-26",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-27:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-27-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-27-source-count",
+      "focus_class": "RKM-C027",
+      "path": "inverse",
+      "property": "R-27",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-27:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-27-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-27-target-count",
+      "focus_class": "RKM-C026",
+      "path": "direct",
+      "property": "R-27",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-28:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-28-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-28-source-count",
+      "focus_class": "RKM-C032",
+      "path": "inverse",
+      "property": "R-28",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "R-28:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-28-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-28-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "R-28",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-29:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-29-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-29-source-count",
+      "focus_class": "RKM-C020",
+      "path": "inverse",
+      "property": "R-29",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "R-29:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-29-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-29-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "R-29",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-30:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-30-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-30-source-count",
+      "focus_class": "RKM-C051",
+      "path": "inverse",
+      "property": "R-30",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "R-30:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-30-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-30-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "R-30",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-31:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-31-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-31-source-count",
+      "focus_class": "RKM-C060",
+      "path": "inverse",
+      "property": "R-31",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-31:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-31-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-31-target-count",
+      "focus_class": "RKM-C062",
+      "path": "direct",
+      "property": "R-31",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-32:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-32-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-32-source-count",
+      "focus_class": "RKM-C061",
+      "path": "inverse",
+      "property": "R-32",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-32:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-32-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-32-target-count",
+      "focus_class": "RKM-C062",
+      "path": "direct",
+      "property": "R-32",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-33:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-33-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-33-source-count",
+      "focus_class": "RKM-C022",
+      "path": "inverse",
+      "property": "R-33",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-33:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-33-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-33-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "R-33",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-34:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-34-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-34-source-count",
+      "focus_class": "RKM-C023",
+      "path": "inverse",
+      "property": "R-34",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-34:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-34-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-34-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "R-34",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-35:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-35-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-35-source-count",
+      "focus_class": "RKM-C002",
+      "path": "inverse",
+      "property": "R-35",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-35:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-35-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-35-target-count",
+      "focus_class": "RKM-X01",
+      "path": "direct",
+      "property": "R-35",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-36:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-36-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-36-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "R-36",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-36:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-36-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-36-target-count",
+      "focus_class": "RKM-C003",
+      "path": "direct",
+      "property": "R-36",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "R-37:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-37-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-37-source-count",
+      "focus_class": "RKM-C003",
+      "path": "inverse",
+      "property": "R-37",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-37:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-37-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-37-target-count",
+      "focus_class": "RKM-C024",
+      "path": "direct",
+      "property": "R-37",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-38:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-38-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-38-source-count",
+      "focus_class": "RKM-C025",
+      "path": "inverse",
+      "property": "R-38",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-38:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-38-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-38-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "R-38",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-39:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-39-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-39-source-count",
+      "focus_class": "RKM-C028",
+      "path": "inverse",
+      "property": "R-39",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-39:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-39-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-39-target-count",
+      "focus_class": "RKM-C024",
+      "path": "direct",
+      "property": "R-39",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-40:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-40-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-40-source-count",
+      "focus_class": "RKM-C029",
+      "path": "inverse",
+      "property": "R-40",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-40:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-40-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-40-target-count",
+      "focus_class": "RKM-C025",
+      "path": "direct",
+      "property": "R-40",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-41:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-41-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-41-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "R-41",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-41:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-41-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-41-target-count",
+      "focus_class": "RKM-C005",
+      "path": "direct",
+      "property": "R-41",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-42:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-42-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-42-source-count",
+      "focus_class": "RKM-C006",
+      "path": "inverse",
+      "property": "R-42",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-42:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-42-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-42-target-count",
+      "focus_class": "RKM-C005",
+      "path": "direct",
+      "property": "R-42",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-43:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-43-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-43-source-count",
+      "focus_class": "RKM-C002",
+      "path": "inverse",
+      "property": "R-43",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-43:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-43-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-43-target-count",
+      "focus_class": "RKM-C005",
+      "path": "direct",
+      "property": "R-43",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-44:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-44-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-44-source-count",
+      "focus_class": "RKM-C005",
+      "path": "inverse",
+      "property": "R-44",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "R-44:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-44-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-44-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "R-44",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-45:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-45-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-45-source-count",
+      "focus_class": "RKM-C002",
+      "path": "inverse",
+      "property": "R-45",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-45:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-45-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-45-target-count",
+      "focus_class": "RKM-C032",
+      "path": "direct",
+      "property": "R-45",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-46:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-46-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-46-source-count",
+      "focus_class": "RKM-C035",
+      "path": "inverse",
+      "property": "R-46",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-46:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-46-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-46-target-count",
+      "focus_class": "RKM-C032",
+      "path": "direct",
+      "property": "R-46",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-47:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-47-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-47-source-count",
+      "focus_class": "RKM-C040",
+      "path": "inverse",
+      "property": "R-47",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-47:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-47-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-47-target-count",
+      "focus_class": "RKM-C032",
+      "path": "direct",
+      "property": "R-47",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-48:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-48-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-48-source-count",
+      "focus_class": "RKM-C039",
+      "path": "inverse",
+      "property": "R-48",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-48:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-48-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-48-target-count",
+      "focus_class": "RKM-C034",
+      "path": "direct",
+      "property": "R-48",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-49:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-49-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-49-source-count",
+      "focus_class": "RKM-C036",
+      "path": "inverse",
+      "property": "R-49",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-49:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-49-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-49-target-count",
+      "focus_class": "RKM-C035",
+      "path": "direct",
+      "property": "R-49",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-50:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-50-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-50-source-count",
+      "focus_class": "RKM-C035",
+      "path": "inverse",
+      "property": "R-50",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-50:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-50-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-50-target-count",
+      "focus_class": "RKM-C037",
+      "path": "direct",
+      "property": "R-50",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-51:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-51-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-51-source-count",
+      "focus_class": "RKM-C047",
+      "path": "inverse",
+      "property": "R-51",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-51:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-51-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-51-target-count",
+      "focus_class": "RKM-C031",
+      "path": "direct",
+      "property": "R-51",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-52:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-52-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-52-source-count",
+      "focus_class": "RKM-C026",
+      "path": "inverse",
+      "property": "R-52",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "R-52:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-52-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-52-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "R-52",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-53:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-53-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-53-source-count",
+      "focus_class": "RKM-C047",
+      "path": "inverse",
+      "property": "R-53",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-53:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-53-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-53-target-count",
+      "focus_class": "RKM-C050",
+      "path": "direct",
+      "property": "R-53",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-54:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-54-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-54-source-count",
+      "focus_class": "RKM-C059",
+      "path": "inverse",
+      "property": "R-54",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-54:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-54-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-54-target-count",
+      "focus_class": "RKM-C051",
+      "path": "direct",
+      "property": "R-54",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-55:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-55-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-55-source-count",
+      "focus_class": "RKM-C052",
+      "path": "inverse",
+      "property": "R-55",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-55:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-55-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-55-target-count",
+      "focus_class": "RKM-C051",
+      "path": "direct",
+      "property": "R-55",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-56:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-56-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-56-source-count",
+      "focus_class": "RKM-C053",
+      "path": "inverse",
+      "property": "R-56",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "R-56:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-56-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-56-target-count",
+      "focus_class": "RKM-C052",
+      "path": "direct",
+      "property": "R-56",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-57:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-57-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-57-source-count",
+      "focus_class": "RKM-C054",
+      "path": "inverse",
+      "property": "R-57",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "R-57:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-57-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-57-target-count",
+      "focus_class": "RKM-C052",
+      "path": "direct",
+      "property": "R-57",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-58:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-58-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-58-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "R-58",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-58:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-58-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-58-target-count",
+      "focus_class": "RKM-C052",
+      "path": "direct",
+      "property": "R-58",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "R-59:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-59-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-59-source-count",
+      "focus_class": "RKM-C059",
+      "path": "inverse",
+      "property": "R-59",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-59:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-59-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-59-target-count",
+      "focus_class": "RKM-C052",
+      "path": "direct",
+      "property": "R-59",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-60:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-60-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-60-source-count",
+      "focus_class": "RKM-C041",
+      "path": "inverse",
+      "property": "R-60",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "R-60:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-60-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-60-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "R-60",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-61:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-61-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-61-source-count",
+      "focus_class": "RKM-C043",
+      "path": "inverse",
+      "property": "R-61",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "R-61:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-61-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-61-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "R-61",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-62:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-62-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-62-source-count",
+      "focus_class": "RKM-C046",
+      "path": "inverse",
+      "property": "R-62",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-62:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-62-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-62-target-count",
+      "focus_class": "RKM-C043",
+      "path": "direct",
+      "property": "R-62",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "R-63:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-63-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-63-source-count",
+      "focus_class": "RKM-C043",
+      "path": "inverse",
+      "property": "R-63",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-63:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-63-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-63-target-count",
+      "focus_class": "RKM-C041",
+      "path": "direct",
+      "property": "R-63",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-64:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-64-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-64-source-count",
+      "focus_class": "RKM-C043",
+      "path": "inverse",
+      "property": "R-64",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-64:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-64-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-64-target-count",
+      "focus_class": "RKM-C044",
+      "path": "direct",
+      "property": "R-64",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-65:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-65-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-65-source-count",
+      "focus_class": "RKM-C047",
+      "path": "inverse",
+      "property": "R-65",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-65:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-65-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-65-target-count",
+      "focus_class": "RKM-C044",
+      "path": "direct",
+      "property": "R-65",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-68:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-68-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-68-source-count",
+      "focus_class": "RKM-C014",
+      "path": "inverse",
+      "property": "R-68",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-68:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-68-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-68-target-count",
+      "focus_class": "RKM-C065",
+      "path": "direct",
+      "property": "R-68",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "R-69:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-69-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-69-source-count",
+      "focus_class": "RKM-C004",
+      "path": "inverse",
+      "property": "R-69",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-69:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-69-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-69-target-count",
+      "focus_class": "RKM-C065",
+      "path": "direct",
+      "property": "R-69",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-70:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-70-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-70-source-count",
+      "focus_class": "RKM-C047",
+      "path": "inverse",
+      "property": "R-70",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-70:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-70-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-70-target-count",
+      "focus_class": "RKM-C065",
+      "path": "direct",
+      "property": "R-70",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-71:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-71-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-71-source-count",
+      "focus_class": "RKM-C031",
+      "path": "inverse",
+      "property": "R-71",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-71:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-71-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-71-target-count",
+      "focus_class": "RKM-C065",
+      "path": "direct",
+      "property": "R-71",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-72:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-72-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-72-source-count",
+      "focus_class": "RKM-C044",
+      "path": "inverse",
+      "property": "R-72",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "R-72:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-72-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#R-72-target-count",
+      "focus_class": "RKM-C065",
+      "path": "direct",
+      "property": "R-72",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-001:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-001-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-001-source-count",
+      "focus_class": "RKM-C008",
+      "path": "inverse",
+      "property": "RK2-001",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-001:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-001-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-001-target-count",
+      "focus_class": "RKM-C002",
+      "path": "direct",
+      "property": "RK2-001",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-002:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-002-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-002-source-count",
+      "focus_class": "RKM-C011",
+      "path": "inverse",
+      "property": "RK2-002",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-002:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-002-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-002-target-count",
+      "focus_class": "RKM-C002",
+      "path": "direct",
+      "property": "RK2-002",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-003:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-003-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-003-source-count",
+      "focus_class": "RKM-C012",
+      "path": "inverse",
+      "property": "RK2-003",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-003:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-003-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-003-target-count",
+      "focus_class": "RKM-C002",
+      "path": "direct",
+      "property": "RK2-003",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-004:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-004-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-004-source-count",
+      "focus_class": "RKM-C013",
+      "path": "inverse",
+      "property": "RK2-004",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-004:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-004-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-004-target-count",
+      "focus_class": "RKM-X01",
+      "path": "direct",
+      "property": "RK2-004",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-005:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-005-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-005-source-count",
+      "focus_class": "RKM-C009",
+      "path": "inverse",
+      "property": "RK2-005",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-005:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-005-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-005-target-count",
+      "focus_class": "RKM-C004",
+      "path": "direct",
+      "property": "RK2-005",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-007:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-007-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-007-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "RK2-007",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-007:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-007-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-007-target-count",
+      "focus_class": "RKM-C024",
+      "path": "direct",
+      "property": "RK2-007",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-008:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-008-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-008-source-count",
+      "focus_class": "RKM-C001",
+      "path": "inverse",
+      "property": "RK2-008",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-008:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-008-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-008-target-count",
+      "focus_class": "RKM-C024",
+      "path": "direct",
+      "property": "RK2-008",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-009:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-009-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-009-source-count",
+      "focus_class": "RKM-C002",
+      "path": "inverse",
+      "property": "RK2-009",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-009:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-009-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-009-target-count",
+      "focus_class": "RKM-C024",
+      "path": "direct",
+      "property": "RK2-009",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "RK2-010:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-010-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-010-source-count",
+      "focus_class": "RKM-C002",
+      "path": "inverse",
+      "property": "RK2-010",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-010:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-010-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-010-target-count",
+      "focus_class": "RKM-C003",
+      "path": "direct",
+      "property": "RK2-010",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-011:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-011-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-011-source-count",
+      "focus_class": "RKM-X02",
+      "path": "inverse",
+      "property": "RK2-011",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-011:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-011-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-011-target-count",
+      "focus_class": "RKM-C002",
+      "path": "direct",
+      "property": "RK2-011",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-012:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-012-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-012-source-count",
+      "focus_class": "RKM-C002",
+      "path": "inverse",
+      "property": "RK2-012",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-012:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-012-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-012-target-count",
+      "focus_class": "RKM-X03",
+      "path": "direct",
+      "property": "RK2-012",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "RK2-013:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-013-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-013-source-count",
+      "focus_class": "RKM-X03",
+      "path": "inverse",
+      "property": "RK2-013",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-013:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-013-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-013-target-count",
+      "focus_class": "RKM-C032",
+      "path": "direct",
+      "property": "RK2-013",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-014:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-014-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-014-source-count",
+      "focus_class": "RKM-X04",
+      "path": "inverse",
+      "property": "RK2-014",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-014:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-014-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-014-target-count",
+      "focus_class": "RKM-C041",
+      "path": "direct",
+      "property": "RK2-014",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-015:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-015-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-015-source-count",
+      "focus_class": "RKM-C032",
+      "path": "inverse",
+      "property": "RK2-015",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-015:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-015-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-015-target-count",
+      "focus_class": "RKM-C041",
+      "path": "direct",
+      "property": "RK2-015",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-016:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-016-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-016-source-count",
+      "focus_class": "RKM-X05",
+      "path": "inverse",
+      "property": "RK2-016",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-016:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-016-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-016-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "RK2-016",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-017:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-017-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-017-source-count",
+      "focus_class": "RKM-C068",
+      "path": "inverse",
+      "property": "RK2-017",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-017:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-017-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-017-target-count",
+      "focus_class": "RKM-C023",
+      "path": "direct",
+      "property": "RK2-017",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-018:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-018-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-018-source-count",
+      "focus_class": "RKM-C039",
+      "path": "inverse",
+      "property": "RK2-018",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-018:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-018-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-018-target-count",
+      "focus_class": "RKM-C035",
+      "path": "direct",
+      "property": "RK2-018",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-019:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-019-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-019-source-count",
+      "focus_class": "RKM-C039",
+      "path": "inverse",
+      "property": "RK2-019",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-019:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-019-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-019-target-count",
+      "focus_class": "RKM-C036",
+      "path": "direct",
+      "property": "RK2-019",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RK2-020:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-020-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-020-source-count",
+      "focus_class": "RKM-C036",
+      "path": "inverse",
+      "property": "RK2-020",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-020:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-020-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-020-target-count",
+      "focus_class": "RKM-C070",
+      "path": "direct",
+      "property": "RK2-020",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "RK2-021:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-021-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-021-source-count",
+      "focus_class": "RKM-C063",
+      "path": "inverse",
+      "property": "RK2-021",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-021:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-021-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-021-target-count",
+      "focus_class": "RKM-C061",
+      "path": "direct",
+      "property": "RK2-021",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-022:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-022-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-022-source-count",
+      "focus_class": "RKM-X05",
+      "path": "inverse",
+      "property": "RK2-022",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-022:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-022-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-022-target-count",
+      "focus_class": "RKM-C033",
+      "path": "direct",
+      "property": "RK2-022",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-023:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-023-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-023-source-count",
+      "focus_class": "RKM-C002",
+      "path": "inverse",
+      "property": "RK2-023",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-023:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-023-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-023-target-count",
+      "focus_class": "RKM-C073",
+      "path": "direct",
+      "property": "RK2-023",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-024:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-024-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-024-source-count",
+      "focus_class": "RKM-C002",
+      "path": "inverse",
+      "property": "RK2-024",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-024:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-024-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-024-target-count",
+      "focus_class": "RKM-C074",
+      "path": "direct",
+      "property": "RK2-024",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-025:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-025-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-025-source-count",
+      "focus_class": "RKM-C050",
+      "path": "inverse",
+      "property": "RK2-025",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-025:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-025-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-025-target-count",
+      "focus_class": "RKM-C051",
+      "path": "direct",
+      "property": "RK2-025",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-026:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-026-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-026-source-count",
+      "focus_class": "RKM-C002",
+      "path": "inverse",
+      "property": "RK2-026",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK2-026:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-026-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK2-026-target-count",
+      "focus_class": "RKM-C068",
+      "path": "direct",
+      "property": "RK2-026",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "RK3-001:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK3-001-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK3-001-source-count",
+      "focus_class": "RKM-X06",
+      "path": "inverse",
+      "property": "RK3-001",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK3-001:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK3-001-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK3-001-target-count",
+      "focus_class": "RKM-X01",
+      "path": "direct",
+      "property": "RK3-001",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK3-003:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK3-003-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK3-003-source-count",
+      "focus_class": "RKM-C002",
+      "path": "inverse",
+      "property": "RK3-003",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RK3-003:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK3-003-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK3-003-target-count",
+      "focus_class": "RKM-X06",
+      "path": "direct",
+      "property": "RK3-003",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "RK3-004:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK3-004-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK3-004-source-count",
+      "focus_class": "RKM-C011",
+      "path": "inverse",
+      "property": "RK3-004",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RK3-004:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK3-004-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RK3-004-target-count",
+      "focus_class": "EXT-OBJECT",
+      "path": "direct",
+      "property": "RK3-004",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-001:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-001-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-001-source-count",
+      "focus_class": "RKM-C002",
+      "path": "inverse",
+      "property": "RX-001",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-001:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-001-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-001-target-count",
+      "focus_class": "RKM-X01",
+      "path": "direct",
+      "property": "RX-001",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-002:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-002-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-002-source-count",
+      "focus_class": "RKM-C001",
+      "path": "inverse",
+      "property": "RX-002",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-002:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-002-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-002-target-count",
+      "focus_class": "RKM-X01",
+      "path": "direct",
+      "property": "RX-002",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-003:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-003-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-003-source-count",
+      "focus_class": "RKM-X02",
+      "path": "inverse",
+      "property": "RX-003",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-003:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-003-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-003-target-count",
+      "focus_class": "RKM-X01",
+      "path": "direct",
+      "property": "RX-003",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-004:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-004-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-004-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "RX-004",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-004:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-004-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-004-target-count",
+      "focus_class": "RKM-X03",
+      "path": "direct",
+      "property": "RX-004",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-006:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-006-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-006-source-count",
+      "focus_class": "RKM-C014",
+      "path": "inverse",
+      "property": "RX-006",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-006:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-006-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-006-target-count",
+      "focus_class": "RKM-C015",
+      "path": "direct",
+      "property": "RX-006",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-007:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-007-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-007-source-count",
+      "focus_class": "RKM-C016",
+      "path": "inverse",
+      "property": "RX-007",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-007:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-007-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-007-target-count",
+      "focus_class": "RKM-C015",
+      "path": "direct",
+      "property": "RX-007",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-008:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-008-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-008-source-count",
+      "focus_class": "RKM-C030",
+      "path": "inverse",
+      "property": "RX-008",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-008:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-008-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-008-target-count",
+      "focus_class": "RKM-C022",
+      "path": "direct",
+      "property": "RX-008",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-009:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-009-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-009-source-count",
+      "focus_class": "RKM-C025",
+      "path": "inverse",
+      "property": "RX-009",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-009:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-009-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-009-target-count",
+      "focus_class": "RKM-C003",
+      "path": "direct",
+      "property": "RX-009",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-011:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-011-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-011-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "RX-011",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-011:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-011-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-011-target-count",
+      "focus_class": "RKM-X04",
+      "path": "direct",
+      "property": "RX-011",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-012:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-012-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-012-source-count",
+      "focus_class": "RKM-C032",
+      "path": "inverse",
+      "property": "RX-012",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-012:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-012-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-012-target-count",
+      "focus_class": "RKM-X04",
+      "path": "direct",
+      "property": "RX-012",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-013:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-013-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-013-source-count",
+      "focus_class": "RKM-C015",
+      "path": "inverse",
+      "property": "RX-013",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-013:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-013-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-013-target-count",
+      "focus_class": "RKM-X04",
+      "path": "direct",
+      "property": "RX-013",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-014:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-014-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-014-source-count",
+      "focus_class": "RKM-C015",
+      "path": "inverse",
+      "property": "RX-014",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-014:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-014-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-014-target-count",
+      "focus_class": "RKM-C032",
+      "path": "direct",
+      "property": "RX-014",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-015:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-015-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-015-source-count",
+      "focus_class": "RKM-C015",
+      "path": "inverse",
+      "property": "RX-015",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-015:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-015-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-015-target-count",
+      "focus_class": "RKM-C032",
+      "path": "direct",
+      "property": "RX-015",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-016:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-016-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-016-source-count",
+      "focus_class": "RKM-C015",
+      "path": "inverse",
+      "property": "RX-016",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-016:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-016-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-016-target-count",
+      "focus_class": "RKM-C034",
+      "path": "direct",
+      "property": "RX-016",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-017:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-017-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-017-source-count",
+      "focus_class": "RKM-C002",
+      "path": "inverse",
+      "property": "RX-017",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-017:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-017-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-017-target-count",
+      "focus_class": "RKM-C072",
+      "path": "direct",
+      "property": "RX-017",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-018:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-018-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-018-source-count",
+      "focus_class": "RKM-C073",
+      "path": "inverse",
+      "property": "RX-018",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-018:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-018-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-018-target-count",
+      "focus_class": "RKM-C072",
+      "path": "direct",
+      "property": "RX-018",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-019:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-019-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-019-source-count",
+      "focus_class": "RKM-C074",
+      "path": "inverse",
+      "property": "RX-019",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-019:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-019-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-019-target-count",
+      "focus_class": "RKM-C072",
+      "path": "direct",
+      "property": "RX-019",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-021:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-021-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-021-source-count",
+      "focus_class": "RKM-C066",
+      "path": "inverse",
+      "property": "RX-021",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-021:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-021-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-021-target-count",
+      "focus_class": "RKM-C065",
+      "path": "direct",
+      "property": "RX-021",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-022:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-022-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-022-source-count",
+      "focus_class": "RKM-C068",
+      "path": "inverse",
+      "property": "RX-022",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-022:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-022-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-022-target-count",
+      "focus_class": "RKM-C067",
+      "path": "direct",
+      "property": "RX-022",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-023:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-023-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-023-source-count",
+      "focus_class": "RKM-C069",
+      "path": "inverse",
+      "property": "RX-023",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-023:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-023-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-023-target-count",
+      "focus_class": "RKM-C068",
+      "path": "direct",
+      "property": "RX-023",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-024:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-024-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-024-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "RX-024",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-024:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-024-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-024-target-count",
+      "focus_class": "RKM-C068",
+      "path": "direct",
+      "property": "RX-024",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-025:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-025-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-025-source-count",
+      "focus_class": "RKM-C069",
+      "path": "inverse",
+      "property": "RX-025",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-025:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-025-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-025-target-count",
+      "focus_class": "RKM-C070",
+      "path": "direct",
+      "property": "RX-025",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-026:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-026-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-026-source-count",
+      "focus_class": "RKM-C068",
+      "path": "inverse",
+      "property": "RX-026",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-026:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-026-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-026-target-count",
+      "focus_class": "RKM-C071",
+      "path": "direct",
+      "property": "RX-026",
+      "minimum": 1,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-027:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-027-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-027-source-count",
+      "focus_class": "RKM-C070",
+      "path": "inverse",
+      "property": "RX-027",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-027:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-027-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-027-target-count",
+      "focus_class": "RKM-C071",
+      "path": "direct",
+      "property": "RX-027",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-028:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-028-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-028-source-count",
+      "focus_class": "RKM-X01",
+      "path": "inverse",
+      "property": "RX-028",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-028:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-028-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-028-target-count",
+      "focus_class": "RKM-C071",
+      "path": "direct",
+      "property": "RX-028",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-029:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-029-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-029-source-count",
+      "focus_class": "RKM-C061",
+      "path": "inverse",
+      "property": "RX-029",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-029:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-029-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-029-target-count",
+      "focus_class": "RKM-C064",
+      "path": "direct",
+      "property": "RX-029",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-030:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-030-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-030-source-count",
+      "focus_class": "RKM-C063",
+      "path": "inverse",
+      "property": "RX-030",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-030:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-030-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-030-target-count",
+      "focus_class": "RKM-C064",
+      "path": "direct",
+      "property": "RX-030",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-031:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-031-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-031-source-count",
+      "focus_class": "RKM-C023",
+      "path": "inverse",
+      "property": "RX-031",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-031:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-031-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-031-target-count",
+      "focus_class": "RKM-C064",
+      "path": "direct",
+      "property": "RX-031",
+      "minimum": 1,
+      "maximum": 1
+    },
+    {
+      "source_element": "RX-032:source",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-032-source",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-032-source-count",
+      "focus_class": "RKM-C064",
+      "path": "inverse",
+      "property": "RX-032",
+      "minimum": 0,
+      "maximum": null
+    },
+    {
+      "source_element": "RX-032:target",
+      "shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-032-target",
+      "property_shape": "https://github.com/ArazSaieArasi3/riskium/shapes/0.2.0#RX-032-target-count",
+      "focus_class": "RKM-C062",
+      "path": "direct",
+      "property": "RX-032",
+      "minimum": 0,
+      "maximum": 1
+    }
+  ],
+  "semantics": "Unqualified RDF value-node counts after asserted identity normalization; no imports or OWL inference",
+  "limits": "Cardinality module only; class admission and unrelated conditional shapes are separate modules",
+  "shapes_sha256": "dd593129a300bba849a7efdf7ed1e89340d3ac1639ef2307d0c680702ccc75b4"
+}

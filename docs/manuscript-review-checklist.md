@@ -11,6 +11,7 @@ For each scientific claim, record its manuscript location, wording, evidence art
 - Describe what a pass establishes. Exchange compatibility and graph conformance do not establish domain adequacy.
 - Preserve failed, unsupported, blocked and unexecuted checks when they affect the article's claims.
 - Describe the scoped HermiT and SHACL profiles separately, including C-08 compatibility blocking and the external publication/identity policies. Neither suite's percentage is overall semantic correctness; cite the semantic-assurance plan and independent-review status when stating adequacy claims.
+- For endpoint results, distinguish all 254 isolated cardinality obligations and 127 paired-end integrations from full managed-profile admission. Report non-applicable boundary negatives with reasons and identify supplementary path-witness mutations as test controls.
 
 ## Numbers
 
