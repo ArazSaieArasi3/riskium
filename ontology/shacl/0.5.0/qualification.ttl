@@ -1,0 +1,133 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix q: <https://github.com/ArazSaieArasi3/riskium/profiles/qualification/0.5.0#> .
+@prefix qs: <https://github.com/ArazSaieArasi3/riskium/shapes/0.5.0#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+qs:ClassifiedTerm a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql qs:SchemeAgreement .
+
+qs:EvidenceRecord a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:property qs:EvidenceCandidate,
+        qs:EvidenceItem,
+        qs:EvidenceRole,
+        qs:EvidenceSource,
+        qs:EvidenceTarget ;
+    sh:sparql qs:ItemAgreement,
+        qs:RoleAgreement .
+
+qs:VocabularyRecord a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:property qs:VocabCandidate,
+        qs:VocabCode,
+        qs:VocabEdition,
+        qs:VocabLabel,
+        qs:VocabScheme ;
+    sh:sparql qs:DuplicateKey .
+
+qs:DuplicateKey a sh:SPARQLConstraint ;
+    sh:message "Two distinct candidates cannot share a scheme/edition/code application key." ;
+    sh:select """PREFIX q: <https://github.com/ArazSaieArasi3/riskium/profiles/qualification/0.5.0#>
+PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+SELECT $this WHERE {
+        $this q:candidate ?term ; q:scheme ?scheme ; q:edition ?edition ; q:localCode ?code .
+        ?other q:candidate ?otherTerm ; q:scheme ?scheme ; q:edition ?edition ; q:localCode ?code .
+        FILTER (?other != $this && ?otherTerm != ?term)
+    }""" .
+
+qs:EvidenceCandidate a sh:PropertyShape ;
+    sh:class risk:RKM-C065 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path q:candidate .
+
+qs:EvidenceItem a sh:PropertyShape ;
+    sh:class risk:RKM-C066 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path q:item .
+
+qs:EvidenceRole a sh:PropertyShape ;
+    sh:in ( q:Support q:Challenge q:Context ) ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path q:role .
+
+qs:EvidenceSource a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path dct:source .
+
+qs:EvidenceTarget a sh:PropertyShape ;
+    sh:class risk:RKM-C014 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path q:target .
+
+qs:ItemAgreement a sh:SPARQLConstraint ;
+    sh:message "The reference must explicitly point to the qualified evidence item." ;
+    sh:select """PREFIX q: <https://github.com/ArazSaieArasi3/riskium/profiles/qualification/0.5.0#>
+PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+SELECT $this WHERE {
+        $this q:candidate ?ref ; q:item ?item . FILTER NOT EXISTS { ?ref risk:RX-021 ?item }
+    }""" .
+
+qs:RoleAgreement a sh:SPARQLConstraint ;
+    sh:message "Support requires the explicit support pair; challenge/context cannot silently assert it for the same target." ;
+    sh:select """PREFIX q: <https://github.com/ArazSaieArasi3/riskium/profiles/qualification/0.5.0#>
+PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+SELECT $this WHERE {
+        $this q:candidate ?ref ; q:target ?target ; q:role ?role .
+        FILTER ((?role = q:Support && NOT EXISTS { ?ref risk:R-68 ?target }) ||
+                ((?role = q:Challenge || ?role = q:Context) && EXISTS { ?ref risk:R-68 ?target }))
+    }""" .
+
+qs:SchemeAgreement a sh:SPARQLConstraint ;
+    sh:message "The qualified scheme must match the explicit belongsToScheme pair." ;
+    sh:select """PREFIX q: <https://github.com/ArazSaieArasi3/riskium/profiles/qualification/0.5.0#>
+PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+SELECT $this WHERE {
+        $this q:candidate ?term ; q:scheme ?scheme .
+        FILTER NOT EXISTS { ?term risk:R-05 ?scheme }
+    }""" .
+
+qs:VocabCandidate a sh:PropertyShape ;
+    sh:class risk:RKM-C017 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path q:candidate .
+
+qs:VocabCode a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path q:localCode ;
+    sh:pattern "\\S" .
+
+qs:VocabEdition a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path q:edition .
+
+qs:VocabLabel a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:path dct:title ;
+    sh:pattern "\\S" .
+
+qs:VocabScheme a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path q:scheme .

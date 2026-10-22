@@ -1,0 +1,66 @@
+{
+  "version": "0.5.0",
+  "source_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "contract_sha256": "4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5",
+  "obligations": [
+    {
+      "id": "SHACL-0626",
+      "source_element": "C-11",
+      "source_element_sha256": "9038991d649db5615cdc5f2b084cf3cb8b8d53bc3ccf5576aa14e06748c911e7"
+    },
+    {
+      "id": "SHACL-0628",
+      "source_element": "C-12",
+      "source_element_sha256": "9341785a113fb468e6398e3d4e4b25fd2d5433acb55a1b88f57a90c94cdb06dc"
+    }
+  ],
+  "vocabulary_classes": [
+    "RKM-C006",
+    "RKM-C017",
+    "RKM-C019",
+    "RKM-C027",
+    "RKM-C028",
+    "RKM-C029",
+    "RKM-C038",
+    "RKM-C039",
+    "RKM-C040",
+    "RKM-C042",
+    "RKM-C046",
+    "RKM-C059",
+    "RKM-C060",
+    "RKM-C061"
+  ],
+  "classified_term_classes": [
+    "RKM-C006",
+    "RKM-C019",
+    "RKM-C027",
+    "RKM-C028",
+    "RKM-C029",
+    "RKM-C040",
+    "RKM-C042",
+    "RKM-C046",
+    "RKM-C059",
+    "RKM-C060",
+    "RKM-C061"
+  ],
+  "relation_signatures": {
+    "R-05": [
+      "RKM-C019",
+      "RKM-C018"
+    ],
+    "R-68": [
+      "RKM-C065",
+      "RKM-C014"
+    ],
+    "RX-021": [
+      "RKM-C065",
+      "RKM-C066"
+    ]
+  },
+  "profiles": [
+    "raw",
+    "managed"
+  ],
+  "limits": "Application metadata and explicit graph checks; no domain truth or global identity inference",
+  "shapes_sha256": "9aa94663376fde8a83f752ead8426896a9e329f67fd21fc4f2e9ed180b38c856"
+}
