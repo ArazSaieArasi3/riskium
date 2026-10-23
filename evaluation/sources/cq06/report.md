@@ -2,7 +2,7 @@
 
 **Scoped source-trace query evidence; no native managed-case admission, independent semantic acceptance or owner judgment.**
 
-Execution checkout `2542c5b0762c4390c2d5af132fe52a01249fe2fc`; prior source/oracle freeze `2542c5b0762c4390c2d5af132fe52a01249fe2fc`. [Cohort and inspected-source/rights policy](README.md); [complete receipt](report.json.gz). Exact code/input/graph/query hashes and answer/finding oracles are retained.
+Execution checkout `4b1d9f221a118494d19906893141de10efd18eac`; prior source/oracle freeze `2542c5b0762c4390c2d5af132fe52a01249fe2fc`. [Cohort and inspected-source/rights policy](README.md); [complete receipt](report.json.gz). Exact code/input/graph/query hashes and answer/finding oracles are retained.
 
 Engine: {"name": "RDFLib SPARQL SELECT", "version": "7.6.0", "python": "3.12.14", "inference": "none", "remote_service": false}. Automated replay uses the frozen selected source data; primary PDF inspection is separately recorded in inspection.json, not falsely repeated by CI.
 
