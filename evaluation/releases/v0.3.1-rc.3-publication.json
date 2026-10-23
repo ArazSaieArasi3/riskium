@@ -1,0 +1,96 @@
+{
+  "schema": "riskium-development-publication-v1",
+  "tag": "v0.3.1-rc.3",
+  "release_id": 421829168,
+  "published_at": "2026-10-23T12:41:50Z",
+  "source_commit": "679ff6745bbacbbce802fb6ef78a51e53dba7e39",
+  "release_url": "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.3",
+  "workflow_run": 39955001970,
+  "workflow_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/39955001970",
+  "publication_state": {
+    "draft": false,
+    "prerelease": true,
+    "latest_promoted": false,
+    "candidate_job": "success",
+    "publish_job": "success"
+  },
+  "assets": [
+    {
+      "name": "candidate-receipt.json",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.3/candidate-receipt.json",
+      "size": 23859,
+      "digest": "sha256:b1014b75054f23d55431ea4d85929d67cea9f21bd1bdbc50fcb1758d24e4df9c"
+    },
+    {
+      "name": "release-notes.md",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.3/release-notes.md",
+      "size": 5313,
+      "digest": "sha256:dfcbcc741f28b8b57d18755b5eb2137c08dc4d97b28e6fb37a634d6b0e4e79ea"
+    },
+    {
+      "name": "riskium-v0.3.1-rc.3-source.tar.gz",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.3/riskium-v0.3.1-rc.3-source.tar.gz",
+      "size": 3794488,
+      "digest": "sha256:a23995f9b81086acdce5ca79502da48d4a5744897f5ecadce79d7236ffe5f4d9"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.3/SHA256SUMS.txt",
+      "size": 359,
+      "digest": "sha256:7aecaee1df3e0f103c09fc7dae2c43b98a7f624b10ac6cf3cd736e9091c4402a"
+    },
+    {
+      "name": "source-manifest.json",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.3/source-manifest.json",
+      "size": 46994,
+      "digest": "sha256:88a2d4fc07a8c4f0f04b2ce3fa69cd327e9b47f44334797b6dc90f1835f666eb"
+    }
+  ],
+  "verification": {
+    "status": "PASS",
+    "published_asset_bytes_verified": true,
+    "published_assets_verified": 5,
+    "source_manifest_files_verified": 277,
+    "candidate_checks_passed": 12,
+    "software_regressions": 108,
+    "fresh_synthetic_query_executions": 40,
+    "fresh_c08_replay_engine_executions": 37,
+    "fresh_hermit_runs": 0,
+    "historical_hermit_and_five_shacl_module_receipts_unchanged": true,
+    "tag_target_checked_separately": true,
+    "source_archive_scope": "Tracked public source only; private manuscript/database companions excluded",
+    "all_19_c08_receipt_input_hashes_match_release_archive": true
+  },
+  "c08": {
+    "receipt_source_commit": "177f3bdcd0a2d12f80348771bbbd70cd8e2e1adb",
+    "summary": {
+      "scenarios": 41,
+      "engine_executions": 37,
+      "preflight_rejections": 4,
+      "selected_integration_cases": 5,
+      "mutation_controls": 2,
+      "statuses": {
+        "PASS": 41
+      },
+      "decisions": {
+        "COMPATIBLE_FOR_DECLARED_TASK": 8,
+        "NOT_READY": 13,
+        "INCOMPATIBLE": 9,
+        "INVALID": 6,
+        "STAGING_ONLY": 1,
+        "PROFILE_REJECTED": 4
+      }
+    },
+    "global_outcome": "PARTIAL",
+    "native_semantics_changed": false
+  },
+  "previous_releases": {
+    "tags": {
+      "v0.3.1-rc.1": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+      "v0.3.1-rc.2": "5f10ad103af5818cb99331a9d71e8b5f518e93de"
+    },
+    "release_ids_and_asset_metadata_unchanged": true
+  },
+  "stable_exit_gates": "docs/stable-release-gates.md",
+  "next_packet": "docs/next-release-v0.3.1-rc.4.md"
+}

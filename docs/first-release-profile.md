@@ -2,6 +2,10 @@
 
 The first **development prerelease, [v0.3.1-rc.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.1)**, was published on 22 October 2026. It freezes conceptual design 0.3.1 at `cfb85905ab37549c7090f00a41ca62cdd3364ab5`. It is not a stable scientific validation or production-readiness claim. The four release assets preserve the source archive, exact tracked-file inventory, fresh final-freeze evidence and checksums. Post-release documentation on main does not move the tag.
 
+## Current milestone after the first prerelease
+
+[v0.3.1-rc.2](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.2) and [v0.3.1-rc.3](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.3) are now published. The latter delivers the [C-08 application compatibility supplement](../evaluation/shacl/compatibility/report.md) while retaining global C-08 PARTIAL and the original scientific receipts. The [fixed final-release MUST gates](stable-release-gates.md) now control the exit to a final v0.3.1 research artifact. The table and subsequent historical account below describe rc.1 and must not be treated as evidence that the current final gates are complete.
+
 ## Completed development-prerelease gates
 
 | Gate | Completion evidence |
