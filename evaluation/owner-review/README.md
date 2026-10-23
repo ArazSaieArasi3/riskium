@@ -31,3 +31,7 @@ The recommendations are preparation for discussion, **not the owner's judgments*
 ## Rc.5 evidence available for the owner
 
 [The published SQL profile and clause dispositions](../relational/history/README.md) and [verified release](../releases/v0.3.1-rc.5-publication.json) now supply scoped executable evidence for OR-01 and OR-04: exact case/entry/revision separation, populated migration, immutable issued payload/dependencies and history. This supports discussion; both owner judgments and all other register ratings remain pending. No automatic acceptance is recorded.
+
+## Rc.6 evidence available for the owner
+
+[Published source-backed CQ06 evidence](../sources/cq06/README.md) and [verified rc.6 publication](../releases/v0.3.1-rc.6-publication.json) now support OR-09 discussion: 13 inspected source statements, exact DOI/page/row/origin joins, deliberate misjoin controls, and 11 still-withheld organizational case admissions. CQ07/08 and semantic adequacy remain explicit limits. No owner rating or independent judgment has been added.

@@ -1,0 +1,130 @@
+{
+  "schema": "riskium-development-publication-v1",
+  "tag": "v0.3.1-rc.6",
+  "release_id": 422271735,
+  "published_at": "2026-10-23T20:16:15Z",
+  "source_commit": "94ec64838a46b56b0da1a7b82bb926226b18d788",
+  "release_url": "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.6",
+  "workflow_run": 40017336893,
+  "workflow_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40017336893",
+  "publication_state": {
+    "draft": false,
+    "prerelease": true,
+    "latest_promoted": false,
+    "candidate_job": "success",
+    "publish_job": "success"
+  },
+  "assets": [
+    {
+      "name": "candidate-receipt.json",
+      "id": 670283529,
+      "size": 29185,
+      "digest": "sha256:f591c1b943ad8b18cf01fdc3263c2aee899301b937d4f34c53c7a6b5a347bef1",
+      "browser_download_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.6/candidate-receipt.json"
+    },
+    {
+      "name": "release-notes.md",
+      "id": 670283531,
+      "size": 7131,
+      "digest": "sha256:d6591fe85872704f9f6a46110a8c9bbd1d9f887e8d7483e4263294361f8b4afb",
+      "browser_download_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.6/release-notes.md"
+    },
+    {
+      "name": "riskium-v0.3.1-rc.6-source.tar.gz",
+      "id": 670283534,
+      "size": 4012062,
+      "digest": "sha256:85a6f33b4f04bb10c9eaa732b8544fedad3616583a1f4b9b6712449edd9e6941",
+      "browser_download_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.6/riskium-v0.3.1-rc.6-source.tar.gz"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "id": 670283533,
+      "size": 359,
+      "digest": "sha256:040cd73a22a2912f44d58c1498438a5aa9176a12d8cd47b9765146bc0dddda1c",
+      "browser_download_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.6/SHA256SUMS.txt"
+    },
+    {
+      "name": "source-manifest.json",
+      "id": 670283530,
+      "size": 54752,
+      "digest": "sha256:4622dbecef98ca45958b7a7f29d473982798ac8a6a52dade7455d5d3893081c6",
+      "browser_download_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.6/source-manifest.json"
+    }
+  ],
+  "verification": {
+    "status": "PASS",
+    "published_assets_verified": 5,
+    "published_asset_bytes_verified": true,
+    "source_manifest_files_verified": 322,
+    "candidate_checks_passed": 15,
+    "software_regressions": 129,
+    "fresh_source_cq06_queries": 35,
+    "source_backed_records": 13,
+    "source_documents_inspected_separately": 2,
+    "fresh_synthetic_cq_queries": 40,
+    "fresh_sql_scenarios": 67,
+    "fresh_comparison_shacl_executions": 50,
+    "fresh_c08_shacl_executions": 37,
+    "fresh_hermit_runs": 0,
+    "all_14_source_cq06_input_hashes_match_archive": true,
+    "historical_source_owl_cq_shacl_hermit_sql_quality_manuscript_receipt_bytes_unchanged": true,
+    "tag_target_checked_separately": true,
+    "private_pdf_database_binaries_excluded": true
+  },
+  "source_cq06": {
+    "receipt_source_commit": "4b1d9f221a118494d19906893141de10efd18eac",
+    "cohort_oracle_freeze_commit": "2542c5b0762c4390c2d5af132fe52a01249fe2fc",
+    "summary": {
+      "source_documents": 2,
+      "sourced_records": 13,
+      "withheld_case_admissions": 11,
+      "managed_cases_admitted": 0,
+      "scenarios": 35,
+      "actual_query_executions": 35,
+      "source_query_cases": 14,
+      "synthetic_negative_cases": 16,
+      "query_mutants_detected": 3,
+      "guard_mutation_controls": 1,
+      "identity_controls": 1,
+      "statuses": {
+        "PASS": 35
+      }
+    },
+    "local_engine": {
+      "name": "RDFLib SPARQL SELECT",
+      "version": "7.6.0",
+      "python": "3.12.14",
+      "inference": "none",
+      "remote_service": false
+    },
+    "hosted_engine": {
+      "name": "RDFLib SPARQL SELECT",
+      "version": "7.6.0",
+      "python": "3.12.15",
+      "inference": "none",
+      "remote_service": false
+    },
+    "inspection_receipt": "evaluation/sources/cq06/inspection.json",
+    "fresh_pdf_reading_in_ci": false,
+    "independent_semantic_acceptance": false
+  },
+  "owner_review": {
+    "cohort_rows": 11,
+    "ratings_recorded": 0,
+    "status": "PENDING_OWNER_JUDGMENTS",
+    "independent_validation_claimed": false,
+    "future_independent_review_issue": 23
+  },
+  "previous_releases": {
+    "tags": {
+      "v0.3.1-rc.1": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+      "v0.3.1-rc.2": "5f10ad103af5818cb99331a9d71e8b5f518e93de",
+      "v0.3.1-rc.3": "679ff6745bbacbbce802fb6ef78a51e53dba7e39",
+      "v0.3.1-rc.4": "dfa9674bfef9c0ca8d4b15015c677cd122bed29c",
+      "v0.3.1-rc.5": "a945beb8839228d007796c95745a89ce7457e7fe"
+    },
+    "release_ids_and_asset_metadata_unchanged": true
+  },
+  "stable_exit_gates": "docs/stable-release-gates.md",
+  "next_packet": "docs/next-release-v0.3.1-rc.7.md"
+}
