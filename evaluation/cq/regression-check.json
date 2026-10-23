@@ -1,0 +1,17 @@
+{
+  "command": ".venv-shacl/bin/python -m unittest discover -s tests -q",
+  "date": "2026-10-23",
+  "exit_code": 0,
+  "inputs_sha256": {
+    "evaluation/cq/fixtures.trig": "eafec5597ed1063ccb69329195b5e8b564496bbde3a12397e0ae6c4b165c3987",
+    "requirements/cq/contracts.json": "3a78317fc1be27f659ef48416a4616740f9fc06d4de3e0ef98b203902a6a207c",
+    "tests/test_cq.py": "dacf1d85207504efb7858077faa3d852a5b3e2bc94465ed3fa7d66ae736e9000",
+    "tools/build_traceability.py": "72bfad5947b924cd4670ee8900e1357963f3bbdc9d86b1234b9680de1276d48a",
+    "tools/run_cq.py": "216b25c8ea531b604bb9b0b659624b45663542edc489f7aa370de60ca823eab5"
+  },
+  "new_cq_regressions": 10,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "regression_tests": 89,
+  "scope": "Engineering regressions, distinct from the 40 synthetic SPARQL executions, source obligation counts and independent semantic/domain acceptance.",
+  "summary": "Ran 89 tests in 30.151s; OK"
+}

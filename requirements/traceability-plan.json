@@ -1,0 +1,427 @@
+{
+  "version": "0.1.0",
+  "scope": "Author trace review of all 12 public requirements and eight scope obligations; eight CQ rows are separately derived from the fixed CQ contracts. Trace completeness is not requirement acceptance.",
+  "requirements_and_scope": [
+    {
+      "id": "RKRS-01",
+      "model_elements": [
+        "RKM-X01",
+        "RKM-C001",
+        "RKM-C002",
+        "RKM-C003",
+        "RKM-C014",
+        "RKM-C065",
+        "R-01",
+        "R-36",
+        "R-68",
+        "RX-021"
+      ],
+      "cq_ids": [
+        "RQ-CQ01",
+        "RQ-CQ02",
+        "RQ-CQ06"
+      ],
+      "acceptance_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "remaining_obligation": "Meaning and standards alignment remain independent review; storage of content does not establish process compliance.",
+      "follow_up_issues": [
+        7,
+        8,
+        13
+      ],
+      "mapping_rationale": "Author trace review of the source acceptance and rejection criteria; engine and query evidence below establish only their recorded scopes."
+    },
+    {
+      "id": "RKRS-02",
+      "model_elements": [
+        "RKM-X01",
+        "RKM-C022",
+        "RKM-C023",
+        "RKM-C003",
+        "RKM-C004",
+        "RKM-C037",
+        "R-01",
+        "R-36",
+        "R-17",
+        "R-11"
+      ],
+      "cq_ids": [
+        "RQ-CQ01",
+        "RQ-CQ02",
+        "RQ-CQ03"
+      ],
+      "acceptance_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "remaining_obligation": "Independent case/scenario identity decisions and real reassessment examples remain unaccepted.",
+      "follow_up_issues": [
+        7,
+        13
+      ],
+      "mapping_rationale": "Author trace review of the source acceptance and rejection criteria; engine and query evidence below establish only their recorded scopes."
+    },
+    {
+      "id": "RKRS-03",
+      "model_elements": [
+        "RKM-C014",
+        "RKM-C015",
+        "RKM-C016",
+        "RKM-C022",
+        "RKM-C023",
+        "RX-006",
+        "RX-007",
+        "R-33",
+        "R-34"
+      ],
+      "cq_ids": [
+        "RQ-CQ07"
+      ],
+      "acceptance_state": "PARTIAL",
+      "remaining_obligation": "No database/application proof of issued-payload immutability or historical retrieval. Supplementary correction metadata does not add native lineage semantics.",
+      "follow_up_issues": [
+        12,
+        13
+      ],
+      "mapping_rationale": "Author trace review of the source acceptance and rejection criteria; engine and query evidence below establish only their recorded scopes."
+    },
+    {
+      "id": "RKRS-04",
+      "model_elements": [
+        "RKM-C032",
+        "RKM-C033",
+        "RKM-C034",
+        "RKM-C035",
+        "RKM-C036",
+        "RKM-C037",
+        "RKM-C038",
+        "RKM-C039",
+        "RKM-C015",
+        "R-12",
+        "R-13",
+        "R-14",
+        "R-16",
+        "R-18",
+        "RX-014",
+        "RX-015",
+        "RX-016",
+        "R-48"
+      ],
+      "cq_ids": [
+        "RQ-CQ03"
+      ],
+      "acceptance_state": "PARTIAL",
+      "remaining_obligation": "Full context/time/method joins, scale compatibility and numerical comparison are not established by retrieving linked values.",
+      "follow_up_issues": [
+        5,
+        12
+      ],
+      "mapping_rationale": "Author trace review of the source acceptance and rejection criteria; engine and query evidence below establish only their recorded scopes."
+    },
+    {
+      "id": "RKRS-05",
+      "model_elements": [
+        "RKM-C037",
+        "RKM-C034",
+        "RKM-C035",
+        "R-18",
+        "R-50"
+      ],
+      "cq_ids": [],
+      "acceptance_state": "NOT_RUN",
+      "remaining_obligation": "Conditional reported/computed readiness and justified arithmetic under C-21 have no complete acceptance run.",
+      "follow_up_issues": [
+        5,
+        12
+      ],
+      "mapping_rationale": "Author trace review of the source acceptance and rejection criteria; engine and query evidence below establish only their recorded scopes."
+    },
+    {
+      "id": "RKRS-06",
+      "model_elements": [
+        "RKM-C024",
+        "RKM-C065",
+        "RKM-C066",
+        "RKM-C014",
+        "RKM-C015",
+        "R-68",
+        "RX-021",
+        "RX-006",
+        "RX-007"
+      ],
+      "cq_ids": [
+        "RQ-CQ06",
+        "RQ-CQ07"
+      ],
+      "acceptance_state": "PARTIAL",
+      "remaining_obligation": "Source locator, interpretation and correction lineage use supplementary envelope fields; independent extraction and source/corroboration judgments remain pending.",
+      "follow_up_issues": [
+        7,
+        12,
+        13
+      ],
+      "mapping_rationale": "Author trace review of the source acceptance and rejection criteria; engine and query evidence below establish only their recorded scopes."
+    },
+    {
+      "id": "RKRS-07",
+      "model_elements": [
+        "RKM-C051",
+        "RKM-C050",
+        "RKM-C052",
+        "RKM-C053",
+        "RKM-C054",
+        "R-09",
+        "R-10",
+        "R-53",
+        "R-55",
+        "R-56",
+        "R-57",
+        "RK2-025"
+      ],
+      "cq_ids": [
+        "RQ-CQ04"
+      ],
+      "acceptance_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "remaining_obligation": "Actual mandate grounding, ownership, responsibility identity and authority require independent/application review.",
+      "follow_up_issues": [
+        7,
+        12
+      ],
+      "mapping_rationale": "Author trace review of the source acceptance and rejection criteria; engine and query evidence below establish only their recorded scopes."
+    },
+    {
+      "id": "RKRS-08",
+      "model_elements": [
+        "RKM-C062",
+        "RKM-C063",
+        "RKM-C064",
+        "RKM-C061",
+        "RKM-C013",
+        "RKM-C023",
+        "R-23",
+        "R-32",
+        "R-33",
+        "RX-029",
+        "RX-030",
+        "RX-031",
+        "RK2-004"
+      ],
+      "cq_ids": [
+        "RQ-CQ05"
+      ],
+      "acceptance_state": "PARTIAL",
+      "remaining_obligation": "Synthetic state codes and asserted-link retrieval do not validate time intervals, transition authority, cessation or treatment effectiveness.",
+      "follow_up_issues": [
+        7,
+        8,
+        12
+      ],
+      "mapping_rationale": "Author trace review of the source acceptance and rejection criteria; engine and query evidence below establish only their recorded scopes."
+    },
+    {
+      "id": "RKRS-09",
+      "model_elements": [
+        "RKM-C007",
+        "RKM-C010",
+        "RKM-C045",
+        "RKM-X06",
+        "RKM-X05",
+        "RKM-C025",
+        "RKM-C011",
+        "EXT-OBJECT",
+        "RK3-004"
+      ],
+      "cq_ids": [],
+      "acceptance_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "remaining_obligation": "External-reference resolution, substantial-bearer grounding and domain meaning remain independent decisions.",
+      "follow_up_issues": [
+        7,
+        8
+      ],
+      "mapping_rationale": "Author trace review of the source acceptance and rejection criteria; engine and query evidence below establish only their recorded scopes."
+    },
+    {
+      "id": "RKRS-10",
+      "model_elements": [
+        "RKM-C070",
+        "RKM-C069",
+        "RKM-C036",
+        "RKM-C073",
+        "RKM-C074",
+        "RX-025",
+        "RK2-020",
+        "RK2-023",
+        "RK2-024"
+      ],
+      "cq_ids": [],
+      "acceptance_state": "PARTIAL",
+      "remaining_obligation": "C-08 unit/scale compatibility is PARTIAL; source-framework appetite/tolerance interpretation remains pending.",
+      "follow_up_issues": [
+        5,
+        8
+      ],
+      "mapping_rationale": "Author trace review of the source acceptance and rejection criteria; engine and query evidence below establish only their recorded scopes."
+    },
+    {
+      "id": "RKRS-11",
+      "model_elements": [
+        "RKM-C003",
+        "RKM-X01",
+        "RKM-C014",
+        "RKM-C015",
+        "RKM-C023",
+        "R-36",
+        "R-33",
+        "RX-006"
+      ],
+      "cq_ids": [
+        "RQ-CQ08"
+      ],
+      "acceptance_state": "PARTIAL",
+      "remaining_obligation": "CatalogInspection is the sole executed admission task. Full risk-record, conditional and task readiness remain open; raw candidates are not managed OWL scenarios.",
+      "follow_up_issues": [
+        5,
+        12,
+        13
+      ],
+      "mapping_rationale": "Author trace review of the source acceptance and rejection criteria; engine and query evidence below establish only their recorded scopes."
+    },
+    {
+      "id": "RKRS-12",
+      "model_elements": [],
+      "cq_ids": [],
+      "acceptance_state": "BOUNDED_EVIDENCE_METADATA_CHECK",
+      "remaining_obligation": "No overall semantic-quality score or independent acceptance follows from traceability or engineering pass counts.",
+      "follow_up_issues": [
+        7,
+        11
+      ],
+      "mapping_rationale": "Nonfunctional evidence/provenance requirement: owned by versioned receipts and claim records rather than a fabricated ontology element or query."
+    },
+    {
+      "id": "RKM-SCOPE-01",
+      "requirement_ids": [
+        "RKRS-01"
+      ],
+      "model_elements": [],
+      "cq_ids": [
+        "RQ-CQ01",
+        "RQ-CQ02",
+        "RQ-CQ06"
+      ],
+      "acceptance_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "remaining_obligation": "Independent interpretation of real process descriptions remains #7/#13; no compliance claim follows.",
+      "follow_up_issues": [
+        7,
+        13
+      ],
+      "mapping_rationale": "Public scope trace; model elements are inherited explicitly from linked requirement rows."
+    },
+    {
+      "id": "RKM-SCOPE-02",
+      "requirement_ids": [
+        "RKRS-02",
+        "RKRS-04"
+      ],
+      "model_elements": [],
+      "cq_ids": [
+        "RQ-CQ01",
+        "RQ-CQ02",
+        "RQ-CQ03"
+      ],
+      "acceptance_state": "PARTIAL",
+      "remaining_obligation": "Synthetic case links and score/version joins are separate examples; real reassessment continuity remains #7/#13.",
+      "follow_up_issues": [
+        7,
+        13
+      ],
+      "mapping_rationale": "Public scope trace; model elements are inherited explicitly from linked requirement rows."
+    },
+    {
+      "id": "RKM-SCOPE-03",
+      "requirement_ids": [
+        "RKRS-10"
+      ],
+      "model_elements": [],
+      "cq_ids": [],
+      "acceptance_state": "PARTIAL",
+      "remaining_obligation": "Source-qualified appetite/tolerance meanings and framework/version comparison remain #8.",
+      "follow_up_issues": [
+        8
+      ],
+      "mapping_rationale": "Public scope trace; model elements are inherited explicitly from linked requirement rows."
+    },
+    {
+      "id": "RKM-SCOPE-04",
+      "requirement_ids": [],
+      "model_elements": [],
+      "cq_ids": [],
+      "acceptance_state": "NOT_RUN",
+      "remaining_obligation": "Edition/clause-qualified inspection, divergence and access-limit corpus is incomplete; current reference links are not a complete review.",
+      "follow_up_issues": [
+        8
+      ],
+      "mapping_rationale": "Documentary review obligation, not a model class/property: reference corpus and edition/inspection records own this requirement."
+    },
+    {
+      "id": "RKM-SCOPE-05",
+      "requirement_ids": [
+        "RKRS-11"
+      ],
+      "model_elements": [],
+      "cq_ids": [],
+      "acceptance_state": "PUBLIC_ID_CONTINUITY_CHECKED",
+      "remaining_obligation": "All retained public model and requirement identities are reconciled. Restricted pre-public acquisition identities are outside this export and are not claimed reconciled.",
+      "follow_up_issues": [
+        8
+      ],
+      "mapping_rationale": "Public scope trace; model elements are inherited explicitly from linked requirement rows."
+    },
+    {
+      "id": "RKM-SCOPE-06",
+      "requirement_ids": [
+        "RKRS-03",
+        "RKRS-08"
+      ],
+      "model_elements": [],
+      "cq_ids": [
+        "RQ-CQ05",
+        "RQ-CQ07"
+      ],
+      "acceptance_state": "PARTIAL",
+      "remaining_obligation": "No historical immutable-store or full temporal/workflow acceptance run; observed absence is not a universal negation.",
+      "follow_up_issues": [
+        7,
+        12
+      ],
+      "mapping_rationale": "Public scope trace; model elements are inherited explicitly from linked requirement rows."
+    },
+    {
+      "id": "RKM-SCOPE-07",
+      "requirement_ids": [
+        "RKRS-10"
+      ],
+      "model_elements": [],
+      "cq_ids": [],
+      "acceptance_state": "PARTIAL",
+      "remaining_obligation": "Scale-only anchor has prior bounded evidence; dual-anchor unit/scale compatibility remains PARTIAL in #5.",
+      "follow_up_issues": [
+        5
+      ],
+      "mapping_rationale": "Public scope trace; model elements are inherited explicitly from linked requirement rows."
+    },
+    {
+      "id": "RKM-SCOPE-08",
+      "requirement_ids": [
+        "RKRS-07"
+      ],
+      "model_elements": [],
+      "cq_ids": [
+        "RQ-CQ04"
+      ],
+      "acceptance_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "remaining_obligation": "Synthetic assignment retrieval and prior distinct-participant controls do not establish an actual mandate or authority.",
+      "follow_up_issues": [
+        7,
+        12
+      ],
+      "mapping_rationale": "Public scope trace; model elements are inherited explicitly from linked requirement rows."
+    }
+  ]
+}

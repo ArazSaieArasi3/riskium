@@ -1,0 +1,33 @@
+name: Requirement and CQ evidence
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'requirements/**'
+      - 'ontology/**'
+      - 'tools/run_cq.py'
+      - 'tools/build_traceability.py'
+      - 'tools/requirements-owl.txt'
+      - 'tests/test_cq.py'
+      - 'evaluation/**'
+      - '.github/workflows/requirements.yml'
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  traceability:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements-owl.txt
+      - run: python tools/run_cq.py --check
+      - run: python tools/build_traceability.py --check
+      - run: python -m unittest discover -s tests -p test_cq.py -v
+      - run: git diff --exit-code -- requirements evaluation/cq evaluation/traceability

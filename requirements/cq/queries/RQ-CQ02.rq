@@ -1,0 +1,9 @@
+PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX ex: <urn:riskium:cq-fixture:>
+PREFIX app: <urn:riskium:cq-profile:0.1.0#>
+PREFIX ap: <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT DISTINCT ?case ?scenario WHERE {
+ ?scenario a risk:RKM-C003; risk:R-36 ?case .
+}

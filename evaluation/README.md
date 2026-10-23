@@ -2,6 +2,8 @@
 
 This snapshot has migration-integrity, structural, coverage-design, native-exchange, bounded OWL-mapping, scoped HermiT and scoped SHACL checks. They verify the exported inventory, references, endpoint cardinality syntax and direction, inheritance structure, publication boundary, official exchange-schema conformance, SDK interoperability, OWL Turtle syntax and source mapping, and the executed reasoning/validation cases. They do not establish domain adequacy, complete OntoUML semantic conformance or full explicit-data conformance.
 
+The post-prerelease [requirement/CQ trace](traceability/README.md) reconciles 28 public source obligations and links their current evidence and gaps. The [query receipt](cq/report.json) records 40 actual synthetic SPARQL executions: 32 fixed answer cases and eight detected query mutants. Five original synthetic-task contracts have bounded execution; CQ06–CQ08 have synthetic controls only and still lack their declared independently prepared population. Supplementary scalar/provenance/lineage fields are explicitly separated from native OWL. This completes traceability, not full requirement or independent semantic acceptance.
+
 The [native model review](native-model-review.md) records the source-preserving exchange representation, ten design dispositions, explicit generalization-set policy and legacy verifier limitations.
 
 The [OWL mapping review](owl-mapping-review.md) records the three pinned inputs, axiom choices, import and identity decisions, and disposition of all 25 interpretation constraints. The [receipt](owl-mapping-receipt.json) records input and output digests and coverage counts. RDF parsing and regression checks are mapping checks, not logical reasoning.

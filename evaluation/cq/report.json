@@ -1,0 +1,1642 @@
+{
+  "cases": [
+    {
+      "columns": [
+        "case",
+        "entry"
+      ],
+      "cq_id": "RQ-CQ01",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:entryA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:entryB>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ01-positive",
+      "fixture_sha256": "ee15673ff889604e94200221c499fb5c7a0ce2c73fbf3face47f079f21d9787e",
+      "id": "RQ-CQ01-positive",
+      "kind": "positive",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:entryA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:entryB>"
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ01.rq",
+      "query_sha256": "ba738a026c0f3ae98f5a6e08209b2167bad7ac60a584af7e9f7ebe9d03c4a3b4",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "case",
+        "entry"
+      ],
+      "cq_id": "RQ-CQ01",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ01-negative",
+      "fixture_sha256": "4fb22648702d9fc296aba003d51f6b9dff9a2fe24057c61f66bfc06eda1edd49",
+      "id": "RQ-CQ01-negative",
+      "kind": "negative",
+      "observed_rows": [],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ01.rq",
+      "query_sha256": "ba738a026c0f3ae98f5a6e08209b2167bad7ac60a584af7e9f7ebe9d03c4a3b4",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "case",
+        "entry"
+      ],
+      "cq_id": "RQ-CQ01",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ01-incomplete",
+      "fixture_sha256": "0032289c101c0273ccd12258324d05db8cebf1bec354682067bfc5edd1d803eb",
+      "id": "RQ-CQ01-incomplete",
+      "kind": "incomplete",
+      "observed_rows": [],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ01.rq",
+      "query_sha256": "ba738a026c0f3ae98f5a6e08209b2167bad7ac60a584af7e9f7ebe9d03c4a3b4",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "case",
+        "entry"
+      ],
+      "cq_id": "RQ-CQ01",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:entryA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:entryB>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:caseB>",
+          "<urn:riskium:cq-fixture:entryA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:caseB>",
+          "<urn:riskium:cq-fixture:entryC>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ01-conflicting",
+      "fixture_sha256": "e0c826a7e4e5bacf3474a691477eee421414b5ebbfb11b9b6eefe4b62fa77209",
+      "id": "RQ-CQ01-conflicting",
+      "kind": "conflicting",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:entryA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:entryB>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:caseB>",
+          "<urn:riskium:cq-fixture:entryA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:caseB>",
+          "<urn:riskium:cq-fixture:entryC>"
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ01.rq",
+      "query_sha256": "ba738a026c0f3ae98f5a6e08209b2167bad7ac60a584af7e9f7ebe9d03c4a3b4",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "case",
+        "entry"
+      ],
+      "cq_id": "RQ-CQ01",
+      "error": null,
+      "expected_behavior": "DIFFERENT_FROM_ORACLE",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:entryA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:entryB>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ01-positive",
+      "fixture_sha256": "ee15673ff889604e94200221c499fb5c7a0ce2c73fbf3face47f079f21d9787e",
+      "id": "RQ-CQ01-QUERY-MUTANT",
+      "kind": "query_mutant",
+      "observed_rows": [],
+      "oracle_matched": false,
+      "query_path": "requirements/cq/mutants/RQ-CQ01.rq",
+      "query_sha256": "907d5ffd7e58a4077f17718d75f9ee618741bbe7ca661a4f0bc034dcfcf85b8e",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "case",
+        "scenario"
+      ],
+      "cq_id": "RQ-CQ02",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:s1>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:s2>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ02-positive",
+      "fixture_sha256": "84cfb34408593d1a961cb63e10cb3a14dee625484b031dfd35774b7e3d256870",
+      "id": "RQ-CQ02-positive",
+      "kind": "positive",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:s1>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:s2>"
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ02.rq",
+      "query_sha256": "496648913fbe93ec49e1a8de96691e86ce3f4ec7a23fa14cd271a317fd409b3f",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "case",
+        "scenario"
+      ],
+      "cq_id": "RQ-CQ02",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ02-negative",
+      "fixture_sha256": "34c494e7dd461113a7434c057e953e0bfc44dec93b1566f5ab6b92b5b8beb765",
+      "id": "RQ-CQ02-negative",
+      "kind": "negative",
+      "observed_rows": [],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ02.rq",
+      "query_sha256": "496648913fbe93ec49e1a8de96691e86ce3f4ec7a23fa14cd271a317fd409b3f",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "case",
+        "scenario"
+      ],
+      "cq_id": "RQ-CQ02",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ02-incomplete",
+      "fixture_sha256": "b9ea95f767048a578ee1052e5f948fb17e363ea5d11a9d324924f280a39a75c1",
+      "id": "RQ-CQ02-incomplete",
+      "kind": "incomplete",
+      "observed_rows": [],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ02.rq",
+      "query_sha256": "496648913fbe93ec49e1a8de96691e86ce3f4ec7a23fa14cd271a317fd409b3f",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "case",
+        "scenario"
+      ],
+      "cq_id": "RQ-CQ02",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:s1>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:caseB>",
+          "<urn:riskium:cq-fixture:s1>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ02-conflicting",
+      "fixture_sha256": "7ecbe65c85f874a798bfce509eb26c68d5169ed8ca49f2b475e06ae4d15d1769",
+      "id": "RQ-CQ02-conflicting",
+      "kind": "conflicting",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:s1>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:caseB>",
+          "<urn:riskium:cq-fixture:s1>"
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ02.rq",
+      "query_sha256": "496648913fbe93ec49e1a8de96691e86ce3f4ec7a23fa14cd271a317fd409b3f",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "case",
+        "scenario"
+      ],
+      "cq_id": "RQ-CQ02",
+      "error": null,
+      "expected_behavior": "DIFFERENT_FROM_ORACLE",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:s1>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:caseA>",
+          "<urn:riskium:cq-fixture:s2>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ02-positive",
+      "fixture_sha256": "84cfb34408593d1a961cb63e10cb3a14dee625484b031dfd35774b7e3d256870",
+      "id": "RQ-CQ02-QUERY-MUTANT",
+      "kind": "query_mutant",
+      "observed_rows": [],
+      "oracle_matched": false,
+      "query_path": "requirements/cq/mutants/RQ-CQ02.rq",
+      "query_sha256": "af02b33193dd0abed4fe111229e5d20f87b1bf573d750a32abe1e4a931929f1c",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "score",
+        "value",
+        "scaleVersion",
+        "scale"
+      ],
+      "cq_id": "RQ-CQ03",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:scoreA>",
+          "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "<urn:riskium:cq-fixture:vA>",
+          "<urn:riskium:cq-fixture:scaleA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:scoreB>",
+          "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "<urn:riskium:cq-fixture:vB>",
+          "<urn:riskium:cq-fixture:scaleB>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ03-positive",
+      "fixture_sha256": "d10a3a5ca672b21e3a92effb8cb24ffc0eabb0454aff89cdd1b27bee386eb083",
+      "id": "RQ-CQ03-positive",
+      "kind": "positive",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:scoreA>",
+          "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "<urn:riskium:cq-fixture:vA>",
+          "<urn:riskium:cq-fixture:scaleA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:scoreB>",
+          "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "<urn:riskium:cq-fixture:vB>",
+          "<urn:riskium:cq-fixture:scaleB>"
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ03.rq",
+      "query_sha256": "e54a0166ede6c93bce0c0924b6d49b0d514db3d763692a91856aa7c82b385c2a",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "score",
+        "value",
+        "scaleVersion",
+        "scale"
+      ],
+      "cq_id": "RQ-CQ03",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ03-negative",
+      "fixture_sha256": "ac01f44715e91fa9a3ed07dbef1829ee12a98e71ab6d06eafcae688816429ef6",
+      "id": "RQ-CQ03-negative",
+      "kind": "negative",
+      "observed_rows": [],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ03.rq",
+      "query_sha256": "e54a0166ede6c93bce0c0924b6d49b0d514db3d763692a91856aa7c82b385c2a",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "score",
+        "value",
+        "scaleVersion",
+        "scale"
+      ],
+      "cq_id": "RQ-CQ03",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ03-incomplete",
+      "fixture_sha256": "d1262b10b85f37de9262347faa9a01da66d9079524ce84a0c17f02d388860df0",
+      "id": "RQ-CQ03-incomplete",
+      "kind": "incomplete",
+      "observed_rows": [],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ03.rq",
+      "query_sha256": "e54a0166ede6c93bce0c0924b6d49b0d514db3d763692a91856aa7c82b385c2a",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "score",
+        "value",
+        "scaleVersion",
+        "scale"
+      ],
+      "cq_id": "RQ-CQ03",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:scoreA>",
+          "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "<urn:riskium:cq-fixture:vA>",
+          "<urn:riskium:cq-fixture:scaleA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:scoreA>",
+          "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "<urn:riskium:cq-fixture:vB>",
+          "<urn:riskium:cq-fixture:scaleB>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ03-conflicting",
+      "fixture_sha256": "9d93e8569bf0c195adb1889ad8c1c8ed3b4c315f133bb20c9a0e960deb25cf25",
+      "id": "RQ-CQ03-conflicting",
+      "kind": "conflicting",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:scoreA>",
+          "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "<urn:riskium:cq-fixture:vA>",
+          "<urn:riskium:cq-fixture:scaleA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:scoreA>",
+          "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "<urn:riskium:cq-fixture:vB>",
+          "<urn:riskium:cq-fixture:scaleB>"
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ03.rq",
+      "query_sha256": "e54a0166ede6c93bce0c0924b6d49b0d514db3d763692a91856aa7c82b385c2a",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "score",
+        "value",
+        "scaleVersion",
+        "scale"
+      ],
+      "cq_id": "RQ-CQ03",
+      "error": null,
+      "expected_behavior": "DIFFERENT_FROM_ORACLE",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:scoreA>",
+          "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "<urn:riskium:cq-fixture:vA>",
+          "<urn:riskium:cq-fixture:scaleA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:scoreB>",
+          "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "<urn:riskium:cq-fixture:vB>",
+          "<urn:riskium:cq-fixture:scaleB>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ03-positive",
+      "fixture_sha256": "d10a3a5ca672b21e3a92effb8cb24ffc0eabb0454aff89cdd1b27bee386eb083",
+      "id": "RQ-CQ03-QUERY-MUTANT",
+      "kind": "query_mutant",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:scoreA>",
+          "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "<urn:riskium:cq-fixture:vA>",
+          "<urn:riskium:cq-fixture:scaleA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:scoreA>",
+          "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "<urn:riskium:cq-fixture:vB>",
+          "<urn:riskium:cq-fixture:scaleB>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:scoreB>",
+          "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "<urn:riskium:cq-fixture:vA>",
+          "<urn:riskium:cq-fixture:scaleA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:scoreB>",
+          "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "<urn:riskium:cq-fixture:vB>",
+          "<urn:riskium:cq-fixture:scaleB>"
+        ]
+      ],
+      "oracle_matched": false,
+      "query_path": "requirements/cq/mutants/RQ-CQ03.rq",
+      "query_sha256": "fadf3211548fd10f02c909e1c35710c2d8c4b60e24df036f65a61788ad29180a",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "assignment",
+        "bearerReference",
+        "mandate"
+      ],
+      "cq_id": "RQ-CQ04",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:assignmentA>",
+          "<urn:riskium:cq-fixture:actorRef>",
+          null
+        ],
+        [
+          "<urn:riskium:cq-fixture:assignmentB>",
+          "<urn:riskium:cq-fixture:otherRef>",
+          "<urn:riskium:cq-fixture:mandateB>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ04-positive",
+      "fixture_sha256": "aa4d752a29998a4f1beb4dad507c7fa6cb3f02d5425b46950826a0f2b933cec3",
+      "id": "RQ-CQ04-positive",
+      "kind": "positive",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:assignmentA>",
+          "<urn:riskium:cq-fixture:actorRef>",
+          null
+        ],
+        [
+          "<urn:riskium:cq-fixture:assignmentB>",
+          "<urn:riskium:cq-fixture:otherRef>",
+          "<urn:riskium:cq-fixture:mandateB>"
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ04.rq",
+      "query_sha256": "8c7028996630f8bc0f6cd1f26a5d37d7627b9bff5c35a0f93b15d1d686239aa7",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "assignment",
+        "bearerReference",
+        "mandate"
+      ],
+      "cq_id": "RQ-CQ04",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:assignmentA>",
+          "<urn:riskium:cq-fixture:actorRef>",
+          null
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ04-negative",
+      "fixture_sha256": "efbc22ffe0dd55509113f30f91e7935578c1f7b04a71a4fbcdf8eeaa8a88339d",
+      "id": "RQ-CQ04-negative",
+      "kind": "negative",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:assignmentA>",
+          "<urn:riskium:cq-fixture:actorRef>",
+          null
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ04.rq",
+      "query_sha256": "8c7028996630f8bc0f6cd1f26a5d37d7627b9bff5c35a0f93b15d1d686239aa7",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "assignment",
+        "bearerReference",
+        "mandate"
+      ],
+      "cq_id": "RQ-CQ04",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:assignmentA>",
+          null,
+          null
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ04-incomplete",
+      "fixture_sha256": "a195b8e059c88d5e42f3bff43e717a090c901d79defc1cb5c7e348b48415b1b0",
+      "id": "RQ-CQ04-incomplete",
+      "kind": "incomplete",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:assignmentA>",
+          null,
+          null
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ04.rq",
+      "query_sha256": "8c7028996630f8bc0f6cd1f26a5d37d7627b9bff5c35a0f93b15d1d686239aa7",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "assignment",
+        "bearerReference",
+        "mandate"
+      ],
+      "cq_id": "RQ-CQ04",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:assignmentA>",
+          "<urn:riskium:cq-fixture:actorRef>",
+          "<urn:riskium:cq-fixture:mandateB>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:assignmentA>",
+          "<urn:riskium:cq-fixture:actorRef>",
+          "<urn:riskium:cq-fixture:mandateC>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ04-conflicting",
+      "fixture_sha256": "3004626c460733a91fa85185cce96c183545bb3ee5ae7ef9fc3f4261da21ac70",
+      "id": "RQ-CQ04-conflicting",
+      "kind": "conflicting",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:assignmentA>",
+          "<urn:riskium:cq-fixture:actorRef>",
+          "<urn:riskium:cq-fixture:mandateB>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:assignmentA>",
+          "<urn:riskium:cq-fixture:actorRef>",
+          "<urn:riskium:cq-fixture:mandateC>"
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ04.rq",
+      "query_sha256": "8c7028996630f8bc0f6cd1f26a5d37d7627b9bff5c35a0f93b15d1d686239aa7",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "assignment",
+        "bearerReference",
+        "mandate"
+      ],
+      "cq_id": "RQ-CQ04",
+      "error": null,
+      "expected_behavior": "DIFFERENT_FROM_ORACLE",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:assignmentA>",
+          "<urn:riskium:cq-fixture:actorRef>",
+          null
+        ],
+        [
+          "<urn:riskium:cq-fixture:assignmentB>",
+          "<urn:riskium:cq-fixture:otherRef>",
+          "<urn:riskium:cq-fixture:mandateB>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ04-positive",
+      "fixture_sha256": "aa4d752a29998a4f1beb4dad507c7fa6cb3f02d5425b46950826a0f2b933cec3",
+      "id": "RQ-CQ04-QUERY-MUTANT",
+      "kind": "query_mutant",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:assignmentA>",
+          "<urn:riskium:cq-fixture:actorRef>",
+          null
+        ],
+        [
+          "<urn:riskium:cq-fixture:assignmentB>",
+          "<urn:riskium:cq-fixture:otherRef>",
+          null
+        ]
+      ],
+      "oracle_matched": false,
+      "query_path": "requirements/cq/mutants/RQ-CQ04.rq",
+      "query_sha256": "84eb4b255565a041b2c00cb470d286081b3ab07ebcc0e07c4a536a3129c63db3",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "revision",
+        "case",
+        "cessationEvidence"
+      ],
+      "cq_id": "RQ-CQ05",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:revA>",
+          "<urn:riskium:cq-fixture:caseA>",
+          "\"NO_ASSERTED_CESSATION\""
+        ],
+        [
+          "<urn:riskium:cq-fixture:revB>",
+          "<urn:riskium:cq-fixture:caseB>",
+          "\"ASSERTED_CESSATION\""
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ05-positive",
+      "fixture_sha256": "c1e1bb36887a78e0e813dd61417f30216504a1694a5d4fd38f421dc79550f29e",
+      "id": "RQ-CQ05-positive",
+      "kind": "positive",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:revA>",
+          "<urn:riskium:cq-fixture:caseA>",
+          "\"NO_ASSERTED_CESSATION\""
+        ],
+        [
+          "<urn:riskium:cq-fixture:revB>",
+          "<urn:riskium:cq-fixture:caseB>",
+          "\"ASSERTED_CESSATION\""
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ05.rq",
+      "query_sha256": "e473eb13186190d1bef7997f26f444ad055234a96aac0d06f0f2d8d18adb3c8f",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "revision",
+        "case",
+        "cessationEvidence"
+      ],
+      "cq_id": "RQ-CQ05",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ05-negative",
+      "fixture_sha256": "1401db2e7a08adf75bfed516110d0666907f8dff7c154c9a8f840692115a5e9f",
+      "id": "RQ-CQ05-negative",
+      "kind": "negative",
+      "observed_rows": [],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ05.rq",
+      "query_sha256": "e473eb13186190d1bef7997f26f444ad055234a96aac0d06f0f2d8d18adb3c8f",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "revision",
+        "case",
+        "cessationEvidence"
+      ],
+      "cq_id": "RQ-CQ05",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ05-incomplete",
+      "fixture_sha256": "b3b600c2d09cbe9be4af8403d0a71419acf7ad1dedb321c29bbff0c3100f142b",
+      "id": "RQ-CQ05-incomplete",
+      "kind": "incomplete",
+      "observed_rows": [],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ05.rq",
+      "query_sha256": "e473eb13186190d1bef7997f26f444ad055234a96aac0d06f0f2d8d18adb3c8f",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "revision",
+        "case",
+        "cessationEvidence"
+      ],
+      "cq_id": "RQ-CQ05",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:revA>",
+          "<urn:riskium:cq-fixture:caseA>",
+          "\"ASSERTED_CESSATION\""
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ05-conflicting",
+      "fixture_sha256": "33c20e765d6d0682d46415a55e95dd55f6dac09f92b2463418a5c6bf1945c5ea",
+      "id": "RQ-CQ05-conflicting",
+      "kind": "conflicting",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:revA>",
+          "<urn:riskium:cq-fixture:caseA>",
+          "\"ASSERTED_CESSATION\""
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ05.rq",
+      "query_sha256": "e473eb13186190d1bef7997f26f444ad055234a96aac0d06f0f2d8d18adb3c8f",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "revision",
+        "case",
+        "cessationEvidence"
+      ],
+      "cq_id": "RQ-CQ05",
+      "error": null,
+      "expected_behavior": "DIFFERENT_FROM_ORACLE",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:revA>",
+          "<urn:riskium:cq-fixture:caseA>",
+          "\"NO_ASSERTED_CESSATION\""
+        ],
+        [
+          "<urn:riskium:cq-fixture:revB>",
+          "<urn:riskium:cq-fixture:caseB>",
+          "\"ASSERTED_CESSATION\""
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ05-positive",
+      "fixture_sha256": "c1e1bb36887a78e0e813dd61417f30216504a1694a5d4fd38f421dc79550f29e",
+      "id": "RQ-CQ05-QUERY-MUTANT",
+      "kind": "query_mutant",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:revA>",
+          "<urn:riskium:cq-fixture:caseA>",
+          "\"ASSERTED_CESSATION\""
+        ],
+        [
+          "<urn:riskium:cq-fixture:revB>",
+          "<urn:riskium:cq-fixture:caseB>",
+          "\"ASSERTED_CESSATION\""
+        ]
+      ],
+      "oracle_matched": false,
+      "query_path": "requirements/cq/mutants/RQ-CQ05.rq",
+      "query_sha256": "20e675cd140b77d625b5c5c65fcd95211ad09dee0f006e4fda44af138ee6b2cb",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "statement",
+        "source",
+        "locator",
+        "origin"
+      ],
+      "cq_id": "RQ-CQ06",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:statementA>",
+          "<urn:riskium:cq-fixture:sourceA>",
+          "\"synthetic paragraph A\"",
+          "\"author fixture A\""
+        ],
+        [
+          "<urn:riskium:cq-fixture:statementB>",
+          "<urn:riskium:cq-fixture:sourceB>",
+          "\"synthetic paragraph B\"",
+          "\"author fixture B\""
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ06-positive",
+      "fixture_sha256": "ab8795bb3c04326e8c137299ce70e3ecd5d6fccccb905a6f67ba6313d5e6ea70",
+      "id": "RQ-CQ06-positive",
+      "kind": "positive",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:statementA>",
+          "<urn:riskium:cq-fixture:sourceA>",
+          "\"synthetic paragraph A\"",
+          "\"author fixture A\""
+        ],
+        [
+          "<urn:riskium:cq-fixture:statementB>",
+          "<urn:riskium:cq-fixture:sourceB>",
+          "\"synthetic paragraph B\"",
+          "\"author fixture B\""
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ06.rq",
+      "query_sha256": "02af308f0cacc4f1d0a3ca0d2a28d16f58091997c6d223c34b0d3a942b5923f3",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "statement",
+        "source",
+        "locator",
+        "origin"
+      ],
+      "cq_id": "RQ-CQ06",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ06-negative",
+      "fixture_sha256": "dd273e7498480bc04a362960808c72510dab41dd61078aaa41b5b3b076a03ea4",
+      "id": "RQ-CQ06-negative",
+      "kind": "negative",
+      "observed_rows": [],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ06.rq",
+      "query_sha256": "02af308f0cacc4f1d0a3ca0d2a28d16f58091997c6d223c34b0d3a942b5923f3",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "statement",
+        "source",
+        "locator",
+        "origin"
+      ],
+      "cq_id": "RQ-CQ06",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ06-incomplete",
+      "fixture_sha256": "fccd72f2cde909fe3c9f33ecbdcfa2ebb0fa6f781c8cbed2a9da8917ae0d5c99",
+      "id": "RQ-CQ06-incomplete",
+      "kind": "incomplete",
+      "observed_rows": [],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ06.rq",
+      "query_sha256": "02af308f0cacc4f1d0a3ca0d2a28d16f58091997c6d223c34b0d3a942b5923f3",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "statement",
+        "source",
+        "locator",
+        "origin"
+      ],
+      "cq_id": "RQ-CQ06",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:statementA>",
+          "<urn:riskium:cq-fixture:sourceA>",
+          "\"synthetic paragraph A\"",
+          "\"author fixture A\""
+        ],
+        [
+          "<urn:riskium:cq-fixture:statementA>",
+          "<urn:riskium:cq-fixture:sourceB>",
+          "\"synthetic paragraph A\"",
+          "\"author fixture A\""
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ06-conflicting",
+      "fixture_sha256": "9c6b4d77c2b0e59fd07a30a9619f455492f4a79c9a5e6ceed9fffd2cb98427c6",
+      "id": "RQ-CQ06-conflicting",
+      "kind": "conflicting",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:statementA>",
+          "<urn:riskium:cq-fixture:sourceA>",
+          "\"synthetic paragraph A\"",
+          "\"author fixture A\""
+        ],
+        [
+          "<urn:riskium:cq-fixture:statementA>",
+          "<urn:riskium:cq-fixture:sourceB>",
+          "\"synthetic paragraph A\"",
+          "\"author fixture A\""
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ06.rq",
+      "query_sha256": "02af308f0cacc4f1d0a3ca0d2a28d16f58091997c6d223c34b0d3a942b5923f3",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "statement",
+        "source",
+        "locator",
+        "origin"
+      ],
+      "cq_id": "RQ-CQ06",
+      "error": null,
+      "expected_behavior": "DIFFERENT_FROM_ORACLE",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:statementA>",
+          "<urn:riskium:cq-fixture:sourceA>",
+          "\"synthetic paragraph A\"",
+          "\"author fixture A\""
+        ],
+        [
+          "<urn:riskium:cq-fixture:statementB>",
+          "<urn:riskium:cq-fixture:sourceB>",
+          "\"synthetic paragraph B\"",
+          "\"author fixture B\""
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ06-positive",
+      "fixture_sha256": "ab8795bb3c04326e8c137299ce70e3ecd5d6fccccb905a6f67ba6313d5e6ea70",
+      "id": "RQ-CQ06-QUERY-MUTANT",
+      "kind": "query_mutant",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:statementA>",
+          "<urn:riskium:cq-fixture:sourceA>",
+          "\"synthetic paragraph A\"",
+          "\"author fixture A\""
+        ],
+        [
+          "<urn:riskium:cq-fixture:statementA>",
+          "<urn:riskium:cq-fixture:sourceB>",
+          "\"synthetic paragraph A\"",
+          "\"author fixture A\""
+        ],
+        [
+          "<urn:riskium:cq-fixture:statementB>",
+          "<urn:riskium:cq-fixture:sourceA>",
+          "\"synthetic paragraph B\"",
+          "\"author fixture B\""
+        ],
+        [
+          "<urn:riskium:cq-fixture:statementB>",
+          "<urn:riskium:cq-fixture:sourceB>",
+          "\"synthetic paragraph B\"",
+          "\"author fixture B\""
+        ]
+      ],
+      "oracle_matched": false,
+      "query_path": "requirements/cq/mutants/RQ-CQ06.rq",
+      "query_sha256": "3ec45c408a7f3f0524667b2518609076b4a6443f54c8bfbaca0bd741c2a088bf",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "correctionRecord",
+        "previousRecord",
+        "source"
+      ],
+      "cq_id": "RQ-CQ07",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:correction>",
+          "<urn:riskium:cq-fixture:previousRecord>",
+          "<urn:riskium:cq-fixture:sourceA>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ07-positive",
+      "fixture_sha256": "29513ea7327087d1b3f11c0543a523d58023606969e01aa5d0c6b3f110b46dad",
+      "id": "RQ-CQ07-positive",
+      "kind": "positive",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:correction>",
+          "<urn:riskium:cq-fixture:previousRecord>",
+          "<urn:riskium:cq-fixture:sourceA>"
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ07.rq",
+      "query_sha256": "f1a6f9cb365bfa711b9871e70f9f93794d16a8ffec41b82baa9e952125aaf679",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "correctionRecord",
+        "previousRecord",
+        "source"
+      ],
+      "cq_id": "RQ-CQ07",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ07-negative",
+      "fixture_sha256": "ec3de8ab063af697c2a7fd04dcc722cb24e5522d57098bfd4ce8f021240451c3",
+      "id": "RQ-CQ07-negative",
+      "kind": "negative",
+      "observed_rows": [],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ07.rq",
+      "query_sha256": "f1a6f9cb365bfa711b9871e70f9f93794d16a8ffec41b82baa9e952125aaf679",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "correctionRecord",
+        "previousRecord",
+        "source"
+      ],
+      "cq_id": "RQ-CQ07",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ07-incomplete",
+      "fixture_sha256": "7ba3b30f39085c4833d55f1e20f728e991ed3c1e24b2f212a8c4a130bae56049",
+      "id": "RQ-CQ07-incomplete",
+      "kind": "incomplete",
+      "observed_rows": [],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ07.rq",
+      "query_sha256": "f1a6f9cb365bfa711b9871e70f9f93794d16a8ffec41b82baa9e952125aaf679",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "correctionRecord",
+        "previousRecord",
+        "source"
+      ],
+      "cq_id": "RQ-CQ07",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:correction>",
+          "<urn:riskium:cq-fixture:otherPrevious>",
+          "<urn:riskium:cq-fixture:sourceA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:correction>",
+          "<urn:riskium:cq-fixture:previousRecord>",
+          "<urn:riskium:cq-fixture:sourceA>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ07-conflicting",
+      "fixture_sha256": "6dc6450c75f8c48df4105f561903967a8a4e37e5ed5b15f0d90abc342cefd52c",
+      "id": "RQ-CQ07-conflicting",
+      "kind": "conflicting",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:correction>",
+          "<urn:riskium:cq-fixture:otherPrevious>",
+          "<urn:riskium:cq-fixture:sourceA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:correction>",
+          "<urn:riskium:cq-fixture:previousRecord>",
+          "<urn:riskium:cq-fixture:sourceA>"
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ07.rq",
+      "query_sha256": "f1a6f9cb365bfa711b9871e70f9f93794d16a8ffec41b82baa9e952125aaf679",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "correctionRecord",
+        "previousRecord",
+        "source"
+      ],
+      "cq_id": "RQ-CQ07",
+      "error": null,
+      "expected_behavior": "DIFFERENT_FROM_ORACLE",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:correction>",
+          "<urn:riskium:cq-fixture:previousRecord>",
+          "<urn:riskium:cq-fixture:sourceA>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ07-positive",
+      "fixture_sha256": "29513ea7327087d1b3f11c0543a523d58023606969e01aa5d0c6b3f110b46dad",
+      "id": "RQ-CQ07-QUERY-MUTANT",
+      "kind": "query_mutant",
+      "observed_rows": [],
+      "oracle_matched": false,
+      "query_path": "requirements/cq/mutants/RQ-CQ07.rq",
+      "query_sha256": "c3cc7b0829035aa0bb24e86cb8f9eb0ef9a0656c1ef78efe29af9b857455dc5a",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "record",
+        "candidate",
+        "case"
+      ],
+      "cq_id": "RQ-CQ08",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:rawA>",
+          "<urn:riskium:cq-fixture:candidateA>",
+          null
+        ],
+        [
+          "<urn:riskium:cq-fixture:rawB>",
+          "<urn:riskium:cq-fixture:candidateB>",
+          "<urn:riskium:cq-fixture:caseB>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ08-positive",
+      "fixture_sha256": "1c8c5d1bae966620042468d1184ce477acf96b99618adff9a0ba103cfd34ddae",
+      "id": "RQ-CQ08-positive",
+      "kind": "positive",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:rawA>",
+          "<urn:riskium:cq-fixture:candidateA>",
+          null
+        ],
+        [
+          "<urn:riskium:cq-fixture:rawB>",
+          "<urn:riskium:cq-fixture:candidateB>",
+          "<urn:riskium:cq-fixture:caseB>"
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ08.rq",
+      "query_sha256": "fe0d4501f77e6f7a7c35ebe068e58d0baf02f1eb2f2d779bd093ea935a433483",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "record",
+        "candidate",
+        "case"
+      ],
+      "cq_id": "RQ-CQ08",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:rawA>",
+          "<urn:riskium:cq-fixture:candidateA>",
+          null
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ08-negative",
+      "fixture_sha256": "06f4b177dac242e51a7d38f87367747ae021a00e1014329f4f5e8f8b16a0e747",
+      "id": "RQ-CQ08-negative",
+      "kind": "negative",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:rawA>",
+          "<urn:riskium:cq-fixture:candidateA>",
+          null
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ08.rq",
+      "query_sha256": "fe0d4501f77e6f7a7c35ebe068e58d0baf02f1eb2f2d779bd093ea935a433483",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "record",
+        "candidate",
+        "case"
+      ],
+      "cq_id": "RQ-CQ08",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ08-incomplete",
+      "fixture_sha256": "925fb7ab1fbea18a74983377979898412d16f521a8d51b09df0fa46f0e79cf55",
+      "id": "RQ-CQ08-incomplete",
+      "kind": "incomplete",
+      "observed_rows": [],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ08.rq",
+      "query_sha256": "fe0d4501f77e6f7a7c35ebe068e58d0baf02f1eb2f2d779bd093ea935a433483",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "record",
+        "candidate",
+        "case"
+      ],
+      "cq_id": "RQ-CQ08",
+      "error": null,
+      "expected_behavior": "EXACT_ORACLE_MATCH",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:rawA>",
+          "<urn:riskium:cq-fixture:candidateA>",
+          "<urn:riskium:cq-fixture:caseA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:rawA>",
+          "<urn:riskium:cq-fixture:candidateA>",
+          "<urn:riskium:cq-fixture:caseB>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ08-conflicting",
+      "fixture_sha256": "412293022cb6b5c476c964e19b64f874893f69bbc185ae1c259c786126ed6747",
+      "id": "RQ-CQ08-conflicting",
+      "kind": "conflicting",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:rawA>",
+          "<urn:riskium:cq-fixture:candidateA>",
+          "<urn:riskium:cq-fixture:caseA>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:rawA>",
+          "<urn:riskium:cq-fixture:candidateA>",
+          "<urn:riskium:cq-fixture:caseB>"
+        ]
+      ],
+      "oracle_matched": true,
+      "query_path": "requirements/cq/queries/RQ-CQ08.rq",
+      "query_sha256": "fe0d4501f77e6f7a7c35ebe068e58d0baf02f1eb2f2d779bd093ea935a433483",
+      "status": "PASS"
+    },
+    {
+      "columns": [
+        "record",
+        "candidate",
+        "case"
+      ],
+      "cq_id": "RQ-CQ08",
+      "error": null,
+      "expected_behavior": "DIFFERENT_FROM_ORACLE",
+      "expected_rows": [
+        [
+          "<urn:riskium:cq-fixture:rawA>",
+          "<urn:riskium:cq-fixture:candidateA>",
+          null
+        ],
+        [
+          "<urn:riskium:cq-fixture:rawB>",
+          "<urn:riskium:cq-fixture:candidateB>",
+          "<urn:riskium:cq-fixture:caseB>"
+        ]
+      ],
+      "fixture_graph": "urn:riskium:cq-fixture:RQ-CQ08-positive",
+      "fixture_sha256": "1c8c5d1bae966620042468d1184ce477acf96b99618adff9a0ba103cfd34ddae",
+      "id": "RQ-CQ08-QUERY-MUTANT",
+      "kind": "query_mutant",
+      "observed_rows": [
+        [
+          "<urn:riskium:cq-fixture:rawA>",
+          "<urn:riskium:cq-fixture:candidateA>",
+          "<urn:riskium:cq-fixture:caseB>"
+        ],
+        [
+          "<urn:riskium:cq-fixture:rawB>",
+          "<urn:riskium:cq-fixture:candidateB>",
+          "<urn:riskium:cq-fixture:caseB>"
+        ]
+      ],
+      "oracle_matched": false,
+      "query_path": "requirements/cq/mutants/RQ-CQ08.rq",
+      "query_sha256": "aa029638a0bf39d400427630ddd2537cacb78a57ae0fdcffb2009eb026ffa2e0",
+      "status": "PASS"
+    }
+  ],
+  "contracts": [
+    {
+      "answer_scope": "Native asserted links; explicit RDF resource identity, no owl:sameAs normalization",
+      "case_ids": [
+        "RQ-CQ01-positive",
+        "RQ-CQ01-negative",
+        "RQ-CQ01-incomplete",
+        "RQ-CQ01-conflicting",
+        "RQ-CQ01-QUERY-MUTANT"
+      ],
+      "cq_id": "RQ-CQ01",
+      "execution_status": "PASS",
+      "independent_or_real_data_acceptance": "NOT_ESTABLISHED",
+      "model_elements": [
+        "RKM-C022",
+        "RKM-X01",
+        "R-01"
+      ],
+      "source_cq_sha256": "4d95bb0bca933ad4b01a3d440752470569c87fa04c386c3395015cee774bf19e",
+      "source_population_execution": "EXECUTED_SYNTHETIC_QUERY_CONTRACT",
+      "uncovered_obligation": "Independent real-world case identity adjudication remains #7/#13; conflicting links are retrieved, not admitted."
+    },
+    {
+      "answer_scope": "Native asserted scenario-aboutness; no realization inference",
+      "case_ids": [
+        "RQ-CQ02-positive",
+        "RQ-CQ02-negative",
+        "RQ-CQ02-incomplete",
+        "RQ-CQ02-conflicting",
+        "RQ-CQ02-QUERY-MUTANT"
+      ],
+      "cq_id": "RQ-CQ02",
+      "execution_status": "PASS",
+      "independent_or_real_data_acceptance": "NOT_ESTABLISHED",
+      "model_elements": [
+        "RKM-C003",
+        "RKM-X01",
+        "R-36"
+      ],
+      "source_cq_sha256": "26030d47c75d5d9d76b7ccaff9289ef2bb3dd325a09b59d5828c30c11e78409a",
+      "source_population_execution": "EXECUTED_SYNTHETIC_QUERY_CONTRACT",
+      "uncovered_obligation": "Raw/managed admission and evidence that an occurrence happened are outside this retrieval test (#5/#13)."
+    },
+    {
+      "answer_scope": "Native explicit derivedFrom/version joins plus supplementary numeric record field; no comparability or verified computation claim",
+      "case_ids": [
+        "RQ-CQ03-positive",
+        "RQ-CQ03-negative",
+        "RQ-CQ03-incomplete",
+        "RQ-CQ03-conflicting",
+        "RQ-CQ03-QUERY-MUTANT"
+      ],
+      "cq_id": "RQ-CQ03",
+      "execution_status": "PASS",
+      "independent_or_real_data_acceptance": "NOT_ESTABLISHED",
+      "model_elements": [
+        "RKM-C032",
+        "RKM-C034",
+        "RKM-C037",
+        "RKM-C015",
+        "RKM-C036",
+        "R-17",
+        "R-13",
+        "RX-016",
+        "RX-006",
+        "R-18"
+      ],
+      "source_cq_sha256": "5f8080f773a36a41d2285e8b9449584459ebe7872256e4a341550db33e30c02a",
+      "source_population_execution": "EXECUTED_SYNTHETIC_QUERY_CONTRACT",
+      "uncovered_obligation": "Core OWL has no numeric scalar field. Arithmetic, method/scale compatibility and complete temporal joins remain #5/#12."
+    },
+    {
+      "answer_scope": "Native asserted assignment/mandate distinction; unbound is not false",
+      "case_ids": [
+        "RQ-CQ04-positive",
+        "RQ-CQ04-negative",
+        "RQ-CQ04-incomplete",
+        "RQ-CQ04-conflicting",
+        "RQ-CQ04-QUERY-MUTANT"
+      ],
+      "cq_id": "RQ-CQ04",
+      "execution_status": "PASS",
+      "independent_or_real_data_acceptance": "NOT_ESTABLISHED",
+      "model_elements": [
+        "RKM-C051",
+        "RKM-C050",
+        "RKM-C052",
+        "R-10",
+        "R-55"
+      ],
+      "source_cq_sha256": "bde18675f3160cd1ae0749923684f25d66ad350cbde0ec1be431b591c6c46c7d",
+      "source_population_execution": "EXECUTED_SYNTHETIC_QUERY_CONTRACT",
+      "uncovered_obligation": "Grounding, actual authority, ownership and participant identity remain #7/#12; no mandate is synthesized."
+    },
+    {
+      "answer_scope": "Native paths with explicit synthetic workflow/state codes; absence is absence of asserted cessation",
+      "case_ids": [
+        "RQ-CQ05-positive",
+        "RQ-CQ05-negative",
+        "RQ-CQ05-incomplete",
+        "RQ-CQ05-conflicting",
+        "RQ-CQ05-QUERY-MUTANT"
+      ],
+      "cq_id": "RQ-CQ05",
+      "execution_status": "PASS",
+      "independent_or_real_data_acceptance": "NOT_ESTABLISHED",
+      "model_elements": [
+        "RKM-C023",
+        "RKM-C022",
+        "RKM-C062",
+        "RKM-C061",
+        "RKM-C013",
+        "R-33",
+        "R-23",
+        "R-32",
+        "R-01",
+        "RK2-004"
+      ],
+      "source_cq_sha256": "39a85bd16bd3ec7935cc5f2a15f745ab771931f47c1e7f2cdd42a9dd0522c2ea",
+      "source_population_execution": "EXECUTED_SYNTHETIC_QUERY_CONTRACT",
+      "uncovered_obligation": "State-code interpretation is a synthetic fixture policy, not standards equivalence or an OWL non-entailment proof. Temporal/cessation adjudication remains #7/#12."
+    },
+    {
+      "answer_scope": "Native evidence links plus supplementary provenance envelope; synthetic source locators only",
+      "case_ids": [
+        "RQ-CQ06-positive",
+        "RQ-CQ06-negative",
+        "RQ-CQ06-incomplete",
+        "RQ-CQ06-conflicting",
+        "RQ-CQ06-QUERY-MUTANT"
+      ],
+      "cq_id": "RQ-CQ06",
+      "execution_status": "PASS",
+      "independent_or_real_data_acceptance": "NOT_ESTABLISHED",
+      "model_elements": [
+        "RKM-C065",
+        "RKM-C066",
+        "RKM-C014",
+        "R-68",
+        "RX-021"
+      ],
+      "source_cq_sha256": "6241e91db99af6f61605bce128ce07d78bc9a624b0d95c18532e1e354c16e0bb",
+      "source_population_execution": "NOT_RUN_ON_DECLARED_INDEPENDENT_POPULATION",
+      "uncovered_obligation": "Locator and interpretation-origin scalars are application fields, not native OWL properties. Independent literature extraction/support remains #13 and adequacy #7."
+    },
+    {
+      "answer_scope": "Native version-of join plus explicitly supplementary PROV revision lineage; no independent-corroboration count",
+      "case_ids": [
+        "RQ-CQ07-positive",
+        "RQ-CQ07-negative",
+        "RQ-CQ07-incomplete",
+        "RQ-CQ07-conflicting",
+        "RQ-CQ07-QUERY-MUTANT"
+      ],
+      "cq_id": "RQ-CQ07",
+      "execution_status": "PASS",
+      "independent_or_real_data_acceptance": "NOT_ESTABLISHED",
+      "model_elements": [
+        "RKM-C015",
+        "RKM-C014",
+        "RX-006"
+      ],
+      "source_cq_sha256": "840359122f352ffdc6598e1070dacc515372a551944f0041334ed5e4e1ecbe7d",
+      "source_population_execution": "NOT_RUN_ON_DECLARED_INDEPENDENT_POPULATION",
+      "uncovered_obligation": "General correction lineage is not a native Riskium property. This explicit application record profile does not prove source independence, immutable storage or real-data acceptance (#12/#13)."
+    },
+    {
+      "answer_scope": "Explicit raw staging envelope, without promoting candidate to an admitted ScenarioSpecification",
+      "case_ids": [
+        "RQ-CQ08-positive",
+        "RQ-CQ08-negative",
+        "RQ-CQ08-incomplete",
+        "RQ-CQ08-conflicting",
+        "RQ-CQ08-QUERY-MUTANT"
+      ],
+      "cq_id": "RQ-CQ08",
+      "execution_status": "PASS",
+      "independent_or_real_data_acceptance": "NOT_ESTABLISHED",
+      "model_elements": [
+        "RKM-C003",
+        "RKM-X01",
+        "R-36"
+      ],
+      "source_cq_sha256": "c7716035d8217b59e8d4f32a4a15ac97819bc6cfe3a47cfeecd8c66ef85feabc",
+      "source_population_execution": "NOT_RUN_ON_DECLARED_INDEPENDENT_POPULATION",
+      "uncovered_obligation": "Incomplete raw candidates are not asserted to be managed OWL scenarios. Independent source-case identities and admission remain #5/#13."
+    }
+  ],
+  "engine": {
+    "name": "RDFLib SPARQL SELECT",
+    "version": "7.6.0"
+  },
+  "evidence_base_commit": "098f8249394756333801d216de7f5eed63fb2ef1",
+  "graphs": {
+    "0032289c101c0273ccd12258324d05db8cebf1bec354682067bfc5edd1d803eb": "<urn:riskium:cq-fixture:entryA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C022> .\n<urn:riskium:cq-fixture:entryB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C022> .\n<urn:riskium:cq-fixture:entryB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01> <urn:riskium:cq-fixture:caseA> .\n",
+    "06f4b177dac242e51a7d38f87367747ae021a00e1014329f4f5e8f8b16a0e747": "<urn:riskium:cq-fixture:candidateA> <http://purl.org/dc/terms/title> \"same\" .\n<urn:riskium:cq-fixture:caseB> <http://purl.org/dc/terms/title> \"same\" .\n<urn:riskium:cq-fixture:caseB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .\n<urn:riskium:cq-fixture:rawA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:riskium:cq-profile:0.1.0#RawScenarioRecord> .\n<urn:riskium:cq-fixture:rawA> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:candidateA> .\n",
+    "1401db2e7a08adf75bfed516110d0666907f8dff7c154c9a8f840692115a5e9f": "<urn:riskium:cq-fixture:closed> <http://purl.org/dc/terms/identifier> \"open\" .\n<urn:riskium:cq-fixture:closed> <http://purl.org/dc/terms/title> \"closed\" .\n<urn:riskium:cq-fixture:entryA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01> <urn:riskium:cq-fixture:caseA> .\n<urn:riskium:cq-fixture:revA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-23> <urn:riskium:cq-fixture:stateAssertionA> .\n<urn:riskium:cq-fixture:revA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-33> <urn:riskium:cq-fixture:entryA> .\n<urn:riskium:cq-fixture:stateAssertionA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-32> <urn:riskium:cq-fixture:closed> .\n",
+    "1c8c5d1bae966620042468d1184ce477acf96b99618adff9a0ba103cfd34ddae": "<urn:riskium:cq-fixture:candidateB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:cq-fixture:caseB> .\n<urn:riskium:cq-fixture:caseB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .\n<urn:riskium:cq-fixture:rawA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:riskium:cq-profile:0.1.0#RawScenarioRecord> .\n<urn:riskium:cq-fixture:rawA> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:candidateA> .\n<urn:riskium:cq-fixture:rawB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:riskium:cq-profile:0.1.0#RawScenarioRecord> .\n<urn:riskium:cq-fixture:rawB> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:candidateB> .\n",
+    "29513ea7327087d1b3f11c0543a523d58023606969e01aa5d0c6b3f110b46dad": "<urn:riskium:cq-fixture:correction> <http://purl.org/dc/terms/source> <urn:riskium:cq-fixture:sourceA> .\n<urn:riskium:cq-fixture:correction> <http://www.w3.org/ns/prov#wasRevisionOf> <urn:riskium:cq-fixture:previousRecord> .\n<urn:riskium:cq-fixture:correction> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:newVersion> .\n<urn:riskium:cq-fixture:newVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .\n<urn:riskium:cq-fixture:newVersion> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:artifactA> .\n<urn:riskium:cq-fixture:oldVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .\n<urn:riskium:cq-fixture:oldVersion> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:artifactA> .\n<urn:riskium:cq-fixture:previousRecord> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:oldVersion> .\n",
+    "3004626c460733a91fa85185cce96c183545bb3ee5ae7ef9fc3f4261da21ac70": "<urn:riskium:cq-fixture:assignmentA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C051> .\n<urn:riskium:cq-fixture:assignmentA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-10> <urn:riskium:cq-fixture:actorRef> .\n<urn:riskium:cq-fixture:assignmentA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-55> <urn:riskium:cq-fixture:mandateB> .\n<urn:riskium:cq-fixture:assignmentA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-55> <urn:riskium:cq-fixture:mandateC> .\n",
+    "33c20e765d6d0682d46415a55e95dd55f6dac09f92b2463418a5c6bf1945c5ea": "<urn:riskium:cq-fixture:active> <http://purl.org/dc/terms/identifier> \"active\" .\n<urn:riskium:cq-fixture:caseA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-004> <urn:riskium:cq-fixture:active> .\n<urn:riskium:cq-fixture:caseA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-004> <urn:riskium:cq-fixture:ceased> .\n<urn:riskium:cq-fixture:ceased> <http://purl.org/dc/terms/identifier> \"ceased\" .\n<urn:riskium:cq-fixture:closed> <http://purl.org/dc/terms/identifier> \"closed\" .\n<urn:riskium:cq-fixture:entryA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01> <urn:riskium:cq-fixture:caseA> .\n<urn:riskium:cq-fixture:revA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-23> <urn:riskium:cq-fixture:stateAssertionA> .\n<urn:riskium:cq-fixture:revA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-33> <urn:riskium:cq-fixture:entryA> .\n<urn:riskium:cq-fixture:stateAssertionA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-32> <urn:riskium:cq-fixture:closed> .\n",
+    "34c494e7dd461113a7434c057e953e0bfc44dec93b1566f5ab6b92b5b8beb765": "<urn:riskium:cq-fixture:caseA> <http://purl.org/dc/terms/title> \"same\" .\n<urn:riskium:cq-fixture:caseA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .\n<urn:riskium:cq-fixture:s1> <http://purl.org/dc/terms/title> \"same\" .\n<urn:riskium:cq-fixture:s1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .\n",
+    "412293022cb6b5c476c964e19b64f874893f69bbc185ae1c259c786126ed6747": "<urn:riskium:cq-fixture:candidateA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:cq-fixture:caseA> .\n<urn:riskium:cq-fixture:candidateA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:cq-fixture:caseB> .\n<urn:riskium:cq-fixture:rawA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:riskium:cq-profile:0.1.0#RawScenarioRecord> .\n<urn:riskium:cq-fixture:rawA> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:candidateA> .\n",
+    "4fb22648702d9fc296aba003d51f6b9dff9a2fe24057c61f66bfc06eda1edd49": "<urn:riskium:cq-fixture:entryA> <http://purl.org/dc/terms/title> \"same\" .\n<urn:riskium:cq-fixture:entryA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C022> .\n<urn:riskium:cq-fixture:entryA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01> <urn:riskium:cq-fixture:caseA> .\n<urn:riskium:cq-fixture:entryB> <http://purl.org/dc/terms/title> \"same\" .\n<urn:riskium:cq-fixture:entryB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C022> .\n<urn:riskium:cq-fixture:entryB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01> <urn:riskium:cq-fixture:caseB> .\n",
+    "6dc6450c75f8c48df4105f561903967a8a4e37e5ed5b15f0d90abc342cefd52c": "<urn:riskium:cq-fixture:correction> <http://purl.org/dc/terms/source> <urn:riskium:cq-fixture:sourceA> .\n<urn:riskium:cq-fixture:correction> <http://www.w3.org/ns/prov#wasRevisionOf> <urn:riskium:cq-fixture:otherPrevious> .\n<urn:riskium:cq-fixture:correction> <http://www.w3.org/ns/prov#wasRevisionOf> <urn:riskium:cq-fixture:previousRecord> .\n<urn:riskium:cq-fixture:correction> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:newVersion> .\n<urn:riskium:cq-fixture:newVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .\n<urn:riskium:cq-fixture:newVersion> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:artifactA> .\n<urn:riskium:cq-fixture:oldVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .\n<urn:riskium:cq-fixture:oldVersion> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:artifactA> .\n<urn:riskium:cq-fixture:olderVersion> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:artifactA> .\n<urn:riskium:cq-fixture:otherPrevious> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:olderVersion> .\n<urn:riskium:cq-fixture:previousRecord> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:oldVersion> .\n",
+    "7ba3b30f39085c4833d55f1e20f728e991ed3c1e24b2f212a8c4a130bae56049": "<urn:riskium:cq-fixture:correction> <http://purl.org/dc/terms/source> <urn:riskium:cq-fixture:sourceA> .\n<urn:riskium:cq-fixture:correction> <http://www.w3.org/ns/prov#wasRevisionOf> <urn:riskium:cq-fixture:previousRecord> .\n<urn:riskium:cq-fixture:correction> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:newVersion> .\n<urn:riskium:cq-fixture:newVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .\n<urn:riskium:cq-fixture:newVersion> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:artifactA> .\n<urn:riskium:cq-fixture:oldVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .\n<urn:riskium:cq-fixture:oldVersion> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:artifactA> .\n",
+    "7ecbe65c85f874a798bfce509eb26c68d5169ed8ca49f2b475e06ae4d15d1769": "<urn:riskium:cq-fixture:s1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .\n<urn:riskium:cq-fixture:s1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:cq-fixture:caseA> .\n<urn:riskium:cq-fixture:s1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:cq-fixture:caseB> .\n",
+    "84cfb34408593d1a961cb63e10cb3a14dee625484b031dfd35774b7e3d256870": "<urn:riskium:cq-fixture:s1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .\n<urn:riskium:cq-fixture:s1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:cq-fixture:caseA> .\n<urn:riskium:cq-fixture:s2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .\n<urn:riskium:cq-fixture:s2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:cq-fixture:caseA> .\n",
+    "925fb7ab1fbea18a74983377979898412d16f521a8d51b09df0fa46f0e79cf55": "<urn:riskium:cq-fixture:rawA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:riskium:cq-profile:0.1.0#RawScenarioRecord> .\n",
+    "9c6b4d77c2b0e59fd07a30a9619f455492f4a79c9a5e6ceed9fffd2cb98427c6": "<urn:riskium:cq-fixture:recordA> <http://purl.org/dc/terms/source> <urn:riskium:cq-fixture:sourceA> .\n<urn:riskium:cq-fixture:recordA> <http://purl.org/dc/terms/source> <urn:riskium:cq-fixture:sourceB> .\n<urn:riskium:cq-fixture:recordA> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:refA> .\n<urn:riskium:cq-fixture:recordA> <urn:riskium:cq-profile:0.1.0#interpretationOrigin> \"author fixture A\" .\n<urn:riskium:cq-fixture:recordA> <urn:riskium:cq-profile:0.1.0#sourceLocator> \"synthetic paragraph A\" .\n<urn:riskium:cq-fixture:refA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C065> .\n<urn:riskium:cq-fixture:refA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-68> <urn:riskium:cq-fixture:statementA> .\n<urn:riskium:cq-fixture:refA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-021> <urn:riskium:cq-fixture:itemA> .\n",
+    "9d93e8569bf0c195adb1889ad8c1c8ed3b4c315f133bb20c9a0e960deb25cf25": "<urn:riskium:cq-fixture:a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-13> <urn:riskium:cq-fixture:rA> .\n<urn:riskium:cq-fixture:a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-17> <urn:riskium:cq-fixture:scoreA> .\n<urn:riskium:cq-fixture:rA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016> <urn:riskium:cq-fixture:vA> .\n<urn:riskium:cq-fixture:rA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016> <urn:riskium:cq-fixture:vB> .\n<urn:riskium:cq-fixture:recordA> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:scoreA> .\n<urn:riskium:cq-fixture:recordA> <urn:riskium:cq-profile:0.1.0#numericValue> \"7\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<urn:riskium:cq-fixture:scaleA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036> .\n<urn:riskium:cq-fixture:scaleB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036> .\n<urn:riskium:cq-fixture:scoreA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-18> <urn:riskium:cq-fixture:rA> .\n<urn:riskium:cq-fixture:vA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .\n<urn:riskium:cq-fixture:vA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:scaleA> .\n<urn:riskium:cq-fixture:vB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:scaleB> .\n",
+    "a195b8e059c88d5e42f3bff43e717a090c901d79defc1cb5c7e348b48415b1b0": "<urn:riskium:cq-fixture:assignmentA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C051> .\n",
+    "aa4d752a29998a4f1beb4dad507c7fa6cb3f02d5425b46950826a0f2b933cec3": "<urn:riskium:cq-fixture:assignmentA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C051> .\n<urn:riskium:cq-fixture:assignmentA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-10> <urn:riskium:cq-fixture:actorRef> .\n<urn:riskium:cq-fixture:assignmentB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C051> .\n<urn:riskium:cq-fixture:assignmentB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-10> <urn:riskium:cq-fixture:otherRef> .\n<urn:riskium:cq-fixture:assignmentB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-55> <urn:riskium:cq-fixture:mandateB> .\n",
+    "ab8795bb3c04326e8c137299ce70e3ecd5d6fccccb905a6f67ba6313d5e6ea70": "<urn:riskium:cq-fixture:recordA> <http://purl.org/dc/terms/source> <urn:riskium:cq-fixture:sourceA> .\n<urn:riskium:cq-fixture:recordA> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:refA> .\n<urn:riskium:cq-fixture:recordA> <urn:riskium:cq-profile:0.1.0#interpretationOrigin> \"author fixture A\" .\n<urn:riskium:cq-fixture:recordA> <urn:riskium:cq-profile:0.1.0#sourceLocator> \"synthetic paragraph A\" .\n<urn:riskium:cq-fixture:recordB> <http://purl.org/dc/terms/source> <urn:riskium:cq-fixture:sourceB> .\n<urn:riskium:cq-fixture:recordB> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:refB> .\n<urn:riskium:cq-fixture:recordB> <urn:riskium:cq-profile:0.1.0#interpretationOrigin> \"author fixture B\" .\n<urn:riskium:cq-fixture:recordB> <urn:riskium:cq-profile:0.1.0#sourceLocator> \"synthetic paragraph B\" .\n<urn:riskium:cq-fixture:refA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C065> .\n<urn:riskium:cq-fixture:refA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-68> <urn:riskium:cq-fixture:statementA> .\n<urn:riskium:cq-fixture:refA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-021> <urn:riskium:cq-fixture:itemA> .\n<urn:riskium:cq-fixture:refB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C065> .\n<urn:riskium:cq-fixture:refB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-68> <urn:riskium:cq-fixture:statementB> .\n<urn:riskium:cq-fixture:refB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-021> <urn:riskium:cq-fixture:itemB> .\n",
+    "ac01f44715e91fa9a3ed07dbef1829ee12a98e71ab6d06eafcae688816429ef6": "<urn:riskium:cq-fixture:a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-13> <urn:riskium:cq-fixture:wrongResult> .\n<urn:riskium:cq-fixture:a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-17> <urn:riskium:cq-fixture:scoreA> .\n<urn:riskium:cq-fixture:rA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016> <urn:riskium:cq-fixture:vA> .\n<urn:riskium:cq-fixture:recordA> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:scoreA> .\n<urn:riskium:cq-fixture:recordA> <urn:riskium:cq-profile:0.1.0#numericValue> \"7\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<urn:riskium:cq-fixture:scaleA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036> .\n<urn:riskium:cq-fixture:scoreA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-18> <urn:riskium:cq-fixture:wrongResult> .\n<urn:riskium:cq-fixture:vA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .\n<urn:riskium:cq-fixture:vA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:scaleA> .\n<urn:riskium:cq-fixture:wrongResult> <http://purl.org/dc/terms/title> \"same result\" .\n",
+    "b3b600c2d09cbe9be4af8403d0a71419acf7ad1dedb321c29bbff0c3100f142b": "<urn:riskium:cq-fixture:closed> <http://purl.org/dc/terms/identifier> \"closed\" .\n<urn:riskium:cq-fixture:revA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-23> <urn:riskium:cq-fixture:stateAssertionA> .\n<urn:riskium:cq-fixture:revA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-33> <urn:riskium:cq-fixture:entryA> .\n<urn:riskium:cq-fixture:stateAssertionA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-32> <urn:riskium:cq-fixture:closed> .\n",
+    "b9ea95f767048a578ee1052e5f948fb17e363ea5d11a9d324924f280a39a75c1": "<urn:riskium:cq-fixture:s1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .\n",
+    "c1e1bb36887a78e0e813dd61417f30216504a1694a5d4fd38f421dc79550f29e": "<urn:riskium:cq-fixture:caseB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-004> <urn:riskium:cq-fixture:ceased> .\n<urn:riskium:cq-fixture:ceased> <http://purl.org/dc/terms/identifier> \"ceased\" .\n<urn:riskium:cq-fixture:closed> <http://purl.org/dc/terms/identifier> \"closed\" .\n<urn:riskium:cq-fixture:entryA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01> <urn:riskium:cq-fixture:caseA> .\n<urn:riskium:cq-fixture:entryB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01> <urn:riskium:cq-fixture:caseB> .\n<urn:riskium:cq-fixture:revA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-23> <urn:riskium:cq-fixture:stateAssertionA> .\n<urn:riskium:cq-fixture:revA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-33> <urn:riskium:cq-fixture:entryA> .\n<urn:riskium:cq-fixture:revB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-23> <urn:riskium:cq-fixture:stateAssertionB> .\n<urn:riskium:cq-fixture:revB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-33> <urn:riskium:cq-fixture:entryB> .\n<urn:riskium:cq-fixture:stateAssertionA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-32> <urn:riskium:cq-fixture:closed> .\n<urn:riskium:cq-fixture:stateAssertionB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-32> <urn:riskium:cq-fixture:closed> .\n",
+    "d10a3a5ca672b21e3a92effb8cb24ffc0eabb0454aff89cdd1b27bee386eb083": "<urn:riskium:cq-fixture:a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-13> <urn:riskium:cq-fixture:rA> .\n<urn:riskium:cq-fixture:a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-17> <urn:riskium:cq-fixture:scoreA> .\n<urn:riskium:cq-fixture:b> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-13> <urn:riskium:cq-fixture:rB> .\n<urn:riskium:cq-fixture:b> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-17> <urn:riskium:cq-fixture:scoreB> .\n<urn:riskium:cq-fixture:rA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016> <urn:riskium:cq-fixture:vA> .\n<urn:riskium:cq-fixture:rB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016> <urn:riskium:cq-fixture:vB> .\n<urn:riskium:cq-fixture:recordA> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:scoreA> .\n<urn:riskium:cq-fixture:recordA> <urn:riskium:cq-profile:0.1.0#numericValue> \"7\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<urn:riskium:cq-fixture:recordB> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:scoreB> .\n<urn:riskium:cq-fixture:recordB> <urn:riskium:cq-profile:0.1.0#numericValue> \"7\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<urn:riskium:cq-fixture:scaleA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036> .\n<urn:riskium:cq-fixture:scaleB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036> .\n<urn:riskium:cq-fixture:scoreA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-18> <urn:riskium:cq-fixture:rA> .\n<urn:riskium:cq-fixture:scoreB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-18> <urn:riskium:cq-fixture:rB> .\n<urn:riskium:cq-fixture:vA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .\n<urn:riskium:cq-fixture:vA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:scaleA> .\n<urn:riskium:cq-fixture:vB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .\n<urn:riskium:cq-fixture:vB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:scaleB> .\n",
+    "d1262b10b85f37de9262347faa9a01da66d9079524ce84a0c17f02d388860df0": "<urn:riskium:cq-fixture:a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-13> <urn:riskium:cq-fixture:rA> .\n<urn:riskium:cq-fixture:a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-17> <urn:riskium:cq-fixture:scoreA> .\n<urn:riskium:cq-fixture:rA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016> <urn:riskium:cq-fixture:vA> .\n<urn:riskium:cq-fixture:recordA> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:scoreA> .\n<urn:riskium:cq-fixture:scaleA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036> .\n<urn:riskium:cq-fixture:scoreA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-18> <urn:riskium:cq-fixture:rA> .\n<urn:riskium:cq-fixture:vA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .\n<urn:riskium:cq-fixture:vA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:scaleA> .\n",
+    "dd273e7498480bc04a362960808c72510dab41dd61078aaa41b5b3b076a03ea4": "<urn:riskium:cq-fixture:otherRecord> <http://purl.org/dc/terms/source> <urn:riskium:cq-fixture:sourceA> .\n<urn:riskium:cq-fixture:recordA> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:refA> .\n<urn:riskium:cq-fixture:recordA> <urn:riskium:cq-profile:0.1.0#interpretationOrigin> \"author fixture A\" .\n<urn:riskium:cq-fixture:recordA> <urn:riskium:cq-profile:0.1.0#sourceLocator> \"synthetic paragraph A\" .\n<urn:riskium:cq-fixture:refA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C065> .\n<urn:riskium:cq-fixture:refA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-68> <urn:riskium:cq-fixture:statementA> .\n<urn:riskium:cq-fixture:refA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-021> <urn:riskium:cq-fixture:itemA> .\n",
+    "e0c826a7e4e5bacf3474a691477eee421414b5ebbfb11b9b6eefe4b62fa77209": "<urn:riskium:cq-fixture:entryA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C022> .\n<urn:riskium:cq-fixture:entryA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01> <urn:riskium:cq-fixture:caseA> .\n<urn:riskium:cq-fixture:entryA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01> <urn:riskium:cq-fixture:caseB> .\n<urn:riskium:cq-fixture:entryB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C022> .\n<urn:riskium:cq-fixture:entryB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01> <urn:riskium:cq-fixture:caseA> .\n<urn:riskium:cq-fixture:entryC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C022> .\n<urn:riskium:cq-fixture:entryC> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01> <urn:riskium:cq-fixture:caseB> .\n",
+    "ec3de8ab063af697c2a7fd04dcc722cb24e5522d57098bfd4ce8f021240451c3": "<urn:riskium:cq-fixture:correction> <http://purl.org/dc/terms/source> <urn:riskium:cq-fixture:sourceA> .\n<urn:riskium:cq-fixture:correction> <http://purl.org/dc/terms/title> \"same\" .\n<urn:riskium:cq-fixture:correction> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:newVersion> .\n<urn:riskium:cq-fixture:newVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .\n<urn:riskium:cq-fixture:newVersion> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:artifactA> .\n<urn:riskium:cq-fixture:oldVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .\n<urn:riskium:cq-fixture:oldVersion> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:cq-fixture:artifactA> .\n<urn:riskium:cq-fixture:previousRecord> <http://purl.org/dc/terms/title> \"same\" .\n<urn:riskium:cq-fixture:previousRecord> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:oldVersion> .\n",
+    "ee15673ff889604e94200221c499fb5c7a0ce2c73fbf3face47f079f21d9787e": "<urn:riskium:cq-fixture:caseA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .\n<urn:riskium:cq-fixture:caseB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .\n<urn:riskium:cq-fixture:decoy> <http://purl.org/dc/terms/title> \"same label\" .\n<urn:riskium:cq-fixture:decoy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C022> .\n<urn:riskium:cq-fixture:decoy> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01> <urn:riskium:cq-fixture:caseB> .\n<urn:riskium:cq-fixture:entryA> <http://purl.org/dc/terms/title> \"same label\" .\n<urn:riskium:cq-fixture:entryA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C022> .\n<urn:riskium:cq-fixture:entryA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01> <urn:riskium:cq-fixture:caseA> .\n<urn:riskium:cq-fixture:entryB> <http://purl.org/dc/terms/title> \"other label\" .\n<urn:riskium:cq-fixture:entryB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C022> .\n<urn:riskium:cq-fixture:entryB> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01> <urn:riskium:cq-fixture:caseA> .\n",
+    "efbc22ffe0dd55509113f30f91e7935578c1f7b04a71a4fbcdf8eeaa8a88339d": "<urn:riskium:cq-fixture:assignmentA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C051> .\n<urn:riskium:cq-fixture:assignmentA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-10> <urn:riskium:cq-fixture:actorRef> .\n<urn:riskium:cq-fixture:unrelated> <http://purl.org/dc/terms/title> \"same assignment\" .\n<urn:riskium:cq-fixture:unrelated> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-55> <urn:riskium:cq-fixture:mandateB> .\n",
+    "fccd72f2cde909fe3c9f33ecbdcfa2ebb0fa6f781c8cbed2a9da8917ae0d5c99": "<urn:riskium:cq-fixture:recordA> <http://purl.org/dc/terms/source> <urn:riskium:cq-fixture:sourceA> .\n<urn:riskium:cq-fixture:recordA> <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate> <urn:riskium:cq-fixture:refA> .\n<urn:riskium:cq-fixture:recordA> <urn:riskium:cq-profile:0.1.0#sourceLocator> \"synthetic paragraph A\" .\n<urn:riskium:cq-fixture:refA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C065> .\n<urn:riskium:cq-fixture:refA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-68> <urn:riskium:cq-fixture:statementA> .\n<urn:riskium:cq-fixture:refA> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-021> <urn:riskium:cq-fixture:itemA> .\n"
+  },
+  "inference": "none; each named graph queried separately; no OWL premise, remote SERVICE, entailment or normalization",
+  "input_sha256": {
+    "evaluation/cq/fixtures.trig": "eafec5597ed1063ccb69329195b5e8b564496bbde3a12397e0ae6c4b165c3987",
+    "ontology/derived/riskium.owl.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/cq/contracts.json": "3a78317fc1be27f659ef48416a4616740f9fc06d4de3e0ef98b203902a6a207c",
+    "requirements/cq/mutants/RQ-CQ01.rq": "907d5ffd7e58a4077f17718d75f9ee618741bbe7ca661a4f0bc034dcfcf85b8e",
+    "requirements/cq/mutants/RQ-CQ02.rq": "af02b33193dd0abed4fe111229e5d20f87b1bf573d750a32abe1e4a931929f1c",
+    "requirements/cq/mutants/RQ-CQ03.rq": "fadf3211548fd10f02c909e1c35710c2d8c4b60e24df036f65a61788ad29180a",
+    "requirements/cq/mutants/RQ-CQ04.rq": "84eb4b255565a041b2c00cb470d286081b3ab07ebcc0e07c4a536a3129c63db3",
+    "requirements/cq/mutants/RQ-CQ05.rq": "20e675cd140b77d625b5c5c65fcd95211ad09dee0f006e4fda44af138ee6b2cb",
+    "requirements/cq/mutants/RQ-CQ06.rq": "3ec45c408a7f3f0524667b2518609076b4a6443f54c8bfbaca0bd741c2a088bf",
+    "requirements/cq/mutants/RQ-CQ07.rq": "c3cc7b0829035aa0bb24e86cb8f9eb0ef9a0656c1ef78efe29af9b857455dc5a",
+    "requirements/cq/mutants/RQ-CQ08.rq": "aa029638a0bf39d400427630ddd2537cacb78a57ae0fdcffb2009eb026ffa2e0",
+    "requirements/cq/profile.json": "5e5643b34c6ea52cb361da53b46fb8578fcb42a6b91e925131ca0e85f5741319",
+    "requirements/cq/queries/RQ-CQ01.rq": "ba738a026c0f3ae98f5a6e08209b2167bad7ac60a584af7e9f7ebe9d03c4a3b4",
+    "requirements/cq/queries/RQ-CQ02.rq": "496648913fbe93ec49e1a8de96691e86ce3f4ec7a23fa14cd271a317fd409b3f",
+    "requirements/cq/queries/RQ-CQ03.rq": "e54a0166ede6c93bce0c0924b6d49b0d514db3d763692a91856aa7c82b385c2a",
+    "requirements/cq/queries/RQ-CQ04.rq": "8c7028996630f8bc0f6cd1f26a5d37d7627b9bff5c35a0f93b15d1d686239aa7",
+    "requirements/cq/queries/RQ-CQ05.rq": "e473eb13186190d1bef7997f26f444ad055234a96aac0d06f0f2d8d18adb3c8f",
+    "requirements/cq/queries/RQ-CQ06.rq": "02af308f0cacc4f1d0a3ca0d2a28d16f58091997c6d223c34b0d3a942b5923f3",
+    "requirements/cq/queries/RQ-CQ07.rq": "f1a6f9cb365bfa711b9871e70f9f93794d16a8ffec41b82baa9e952125aaf679",
+    "requirements/cq/queries/RQ-CQ08.rq": "fe0d4501f77e6f7a7c35ebe068e58d0baf02f1eb2f2d779bd093ea935a433483",
+    "tools/requirements-owl.txt": "708f247b52f0f37b4a30f355dc423547098c354ae6f8ac20307475c39396694e",
+    "tools/run_cq.py": "216b25c8ea531b604bb9b0b659624b45663542edc489f7aa370de60ca823eab5"
+  },
+  "limitations": [
+    "All answer fixtures are synthetic author tests; this does not replace independently prepared literature data or expert acceptance.",
+    "Queries retrieve asserted graph bindings without identity normalization, inference, managed-record conformance or truth adjudication.",
+    "Supplementary numeric/provenance/revision metadata are explicitly separate from the original OWL; native-only adequacy gaps remain recorded.",
+    "A mutated query must run successfully and disagree with the fixed positive oracle; parser errors do not count as detected mutations.",
+    "No HermiT, SHACL or 674-row planning baseline result is rewritten or increased by this query run."
+  ],
+  "model_version": "0.3.1",
+  "population": "Author-created synthetic/adversarial RDF records; no independent or literature-data acceptance is inherited.",
+  "profile_version": "0.1.0",
+  "recorded_execution": {
+    "at_utc": "2026-10-23T07:02:14.076351+00:00",
+    "command": ".venv-shacl/bin/python tools/run_cq.py --write",
+    "exit_code": 0,
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "schema_version": 1,
+  "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+  "source_note": "The semantic/evidence commits identify existing inputs; new query implementation and fixtures are pinned separately by their file hashes. Publication commit is recorded in issue #6.",
+  "status": "PASS",
+  "summary": {
+    "answer_cases": 32,
+    "contracts": 8,
+    "contracts_with_matching_bounded_tests": 8,
+    "independent_population_contracts_pending": 3,
+    "mutants_detected": 8,
+    "mutation_controls": 8,
+    "query_attempts": 40,
+    "query_executions": 40,
+    "source_synthetic_task_contracts_executed": 5,
+    "statuses": {
+      "PASS": 40
+    }
+  }
+}

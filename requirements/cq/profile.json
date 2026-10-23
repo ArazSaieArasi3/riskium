@@ -1,0 +1,21 @@
+{
+  "version": "0.1.0",
+  "namespace": "urn:riskium:cq-profile:0.1.0#",
+  "status": "Author-declared synthetic query test envelope; not a native ontology extension or independently accepted application standard",
+  "terms": {
+    "numericValue": "Literal value on the record of a score; not a core Riskium datatype property or a verified computation.",
+    "sourceLocator": "Synthetic source-location string on the record of an EvidenceReference.",
+    "interpretationOrigin": "Synthetic author interpretation string on the record of an EvidenceReference.",
+    "RawScenarioRecord": "Staging record whose candidate is not thereby typed as an admitted RiskScenarioSpecification."
+  },
+  "reused_application_envelope": "https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate",
+  "external_metadata": {
+    "http://purl.org/dc/terms/source": "Source locator; not endorsement or independent evidential support.",
+    "http://purl.org/dc/terms/identifier": "Synthetic controlled code for the closed/ceased examples; not universal workflow or ISO semantics.",
+    "http://purl.org/dc/terms/title": "Equal labels are deliberately used as decoys; they are not identity keys.",
+    "http://www.w3.org/ns/prov#wasRevisionOf": "Explicit lineage between application records; not a native Riskium correction property or proof of source independence."
+  },
+  "population": "Entirely synthetic author-created fixtures, independently stored fixed expected answer rows and separate mutated queries; no real people, source documents, DOI or expert ratings are fabricated.",
+  "interpretation": "Queries retrieve asserted graphs only, without OWL/SHACL execution. Unbound values mean no explicit match. Conflicting bindings remain visible; matching an answer oracle does not admit the record as a valid managed Riskium instance.",
+  "uncovered": "Real data extraction and independent acceptance remain #13/#7; native scalar/lineage completeness, history enforcement and application integration remain #12/#5."
+}

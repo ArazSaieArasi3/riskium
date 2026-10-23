@@ -1,0 +1,694 @@
+{
+  "version": "0.1.0",
+  "fixture_file": "evaluation/cq/fixtures.trig",
+  "population": "Author-created synthetic/adversarial RDF records; no independent or literature-data acceptance is inherited.",
+  "inference": "none; each named graph queried separately; no OWL premise, remote SERVICE, entailment or normalization",
+  "oracle_policy": "Expected binding rows are authored explicitly before execution; result sets must match exactly, including unbound values. Query mutants must execute successfully and differ from the same fixed positive oracle.",
+  "contracts": [
+    {
+      "cq_id": "RQ-CQ01",
+      "query": "requirements/cq/queries/RQ-CQ01.rq",
+      "mutant_query": "requirements/cq/mutants/RQ-CQ01.rq",
+      "columns": [
+        "case",
+        "entry"
+      ],
+      "answer_scope": "Native asserted links; explicit RDF resource identity, no owl:sameAs normalization",
+      "model_elements": [
+        "RKM-C022",
+        "RKM-X01",
+        "R-01"
+      ],
+      "uncovered_obligation": "Independent real-world case identity adjudication remains #7/#13; conflicting links are retrieved, not admitted.",
+      "cases": [
+        {
+          "id": "RQ-CQ01-positive",
+          "kind": "positive",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ01-positive",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:caseA>",
+              "<urn:riskium:cq-fixture:entryA>"
+            ],
+            [
+              "<urn:riskium:cq-fixture:caseA>",
+              "<urn:riskium:cq-fixture:entryB>"
+            ]
+          ]
+        },
+        {
+          "id": "RQ-CQ01-negative",
+          "kind": "negative",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ01-negative",
+          "expected_rows": []
+        },
+        {
+          "id": "RQ-CQ01-incomplete",
+          "kind": "incomplete",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ01-incomplete",
+          "expected_rows": []
+        },
+        {
+          "id": "RQ-CQ01-conflicting",
+          "kind": "conflicting",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ01-conflicting",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:caseA>",
+              "<urn:riskium:cq-fixture:entryA>"
+            ],
+            [
+              "<urn:riskium:cq-fixture:caseA>",
+              "<urn:riskium:cq-fixture:entryB>"
+            ],
+            [
+              "<urn:riskium:cq-fixture:caseB>",
+              "<urn:riskium:cq-fixture:entryA>"
+            ],
+            [
+              "<urn:riskium:cq-fixture:caseB>",
+              "<urn:riskium:cq-fixture:entryC>"
+            ]
+          ]
+        }
+      ],
+      "mutation_control": {
+        "id": "RQ-CQ01-QUERY-MUTANT",
+        "graph": "urn:riskium:cq-fixture:RQ-CQ01-positive",
+        "expected_rows": [
+          [
+            "<urn:riskium:cq-fixture:caseA>",
+            "<urn:riskium:cq-fixture:entryA>"
+          ],
+          [
+            "<urn:riskium:cq-fixture:caseA>",
+            "<urn:riskium:cq-fixture:entryB>"
+          ]
+        ],
+        "expected_behavior": "DIFFERENT_FROM_ORACLE"
+      }
+    },
+    {
+      "cq_id": "RQ-CQ02",
+      "query": "requirements/cq/queries/RQ-CQ02.rq",
+      "mutant_query": "requirements/cq/mutants/RQ-CQ02.rq",
+      "columns": [
+        "case",
+        "scenario"
+      ],
+      "answer_scope": "Native asserted scenario-aboutness; no realization inference",
+      "model_elements": [
+        "RKM-C003",
+        "RKM-X01",
+        "R-36"
+      ],
+      "uncovered_obligation": "Raw/managed admission and evidence that an occurrence happened are outside this retrieval test (#5/#13).",
+      "cases": [
+        {
+          "id": "RQ-CQ02-positive",
+          "kind": "positive",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ02-positive",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:caseA>",
+              "<urn:riskium:cq-fixture:s1>"
+            ],
+            [
+              "<urn:riskium:cq-fixture:caseA>",
+              "<urn:riskium:cq-fixture:s2>"
+            ]
+          ]
+        },
+        {
+          "id": "RQ-CQ02-negative",
+          "kind": "negative",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ02-negative",
+          "expected_rows": []
+        },
+        {
+          "id": "RQ-CQ02-incomplete",
+          "kind": "incomplete",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ02-incomplete",
+          "expected_rows": []
+        },
+        {
+          "id": "RQ-CQ02-conflicting",
+          "kind": "conflicting",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ02-conflicting",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:caseA>",
+              "<urn:riskium:cq-fixture:s1>"
+            ],
+            [
+              "<urn:riskium:cq-fixture:caseB>",
+              "<urn:riskium:cq-fixture:s1>"
+            ]
+          ]
+        }
+      ],
+      "mutation_control": {
+        "id": "RQ-CQ02-QUERY-MUTANT",
+        "graph": "urn:riskium:cq-fixture:RQ-CQ02-positive",
+        "expected_rows": [
+          [
+            "<urn:riskium:cq-fixture:caseA>",
+            "<urn:riskium:cq-fixture:s1>"
+          ],
+          [
+            "<urn:riskium:cq-fixture:caseA>",
+            "<urn:riskium:cq-fixture:s2>"
+          ]
+        ],
+        "expected_behavior": "DIFFERENT_FROM_ORACLE"
+      }
+    },
+    {
+      "cq_id": "RQ-CQ03",
+      "query": "requirements/cq/queries/RQ-CQ03.rq",
+      "mutant_query": "requirements/cq/mutants/RQ-CQ03.rq",
+      "columns": [
+        "score",
+        "value",
+        "scaleVersion",
+        "scale"
+      ],
+      "answer_scope": "Native explicit derivedFrom/version joins plus supplementary numeric record field; no comparability or verified computation claim",
+      "model_elements": [
+        "RKM-C032",
+        "RKM-C034",
+        "RKM-C037",
+        "RKM-C015",
+        "RKM-C036",
+        "R-17",
+        "R-13",
+        "RX-016",
+        "RX-006",
+        "R-18"
+      ],
+      "uncovered_obligation": "Core OWL has no numeric scalar field. Arithmetic, method/scale compatibility and complete temporal joins remain #5/#12.",
+      "cases": [
+        {
+          "id": "RQ-CQ03-positive",
+          "kind": "positive",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ03-positive",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:scoreA>",
+              "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+              "<urn:riskium:cq-fixture:vA>",
+              "<urn:riskium:cq-fixture:scaleA>"
+            ],
+            [
+              "<urn:riskium:cq-fixture:scoreB>",
+              "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+              "<urn:riskium:cq-fixture:vB>",
+              "<urn:riskium:cq-fixture:scaleB>"
+            ]
+          ]
+        },
+        {
+          "id": "RQ-CQ03-negative",
+          "kind": "negative",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ03-negative",
+          "expected_rows": []
+        },
+        {
+          "id": "RQ-CQ03-incomplete",
+          "kind": "incomplete",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ03-incomplete",
+          "expected_rows": []
+        },
+        {
+          "id": "RQ-CQ03-conflicting",
+          "kind": "conflicting",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ03-conflicting",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:scoreA>",
+              "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+              "<urn:riskium:cq-fixture:vA>",
+              "<urn:riskium:cq-fixture:scaleA>"
+            ],
+            [
+              "<urn:riskium:cq-fixture:scoreA>",
+              "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+              "<urn:riskium:cq-fixture:vB>",
+              "<urn:riskium:cq-fixture:scaleB>"
+            ]
+          ]
+        }
+      ],
+      "mutation_control": {
+        "id": "RQ-CQ03-QUERY-MUTANT",
+        "graph": "urn:riskium:cq-fixture:RQ-CQ03-positive",
+        "expected_rows": [
+          [
+            "<urn:riskium:cq-fixture:scoreA>",
+            "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+            "<urn:riskium:cq-fixture:vA>",
+            "<urn:riskium:cq-fixture:scaleA>"
+          ],
+          [
+            "<urn:riskium:cq-fixture:scoreB>",
+            "\"7\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+            "<urn:riskium:cq-fixture:vB>",
+            "<urn:riskium:cq-fixture:scaleB>"
+          ]
+        ],
+        "expected_behavior": "DIFFERENT_FROM_ORACLE"
+      }
+    },
+    {
+      "cq_id": "RQ-CQ04",
+      "query": "requirements/cq/queries/RQ-CQ04.rq",
+      "mutant_query": "requirements/cq/mutants/RQ-CQ04.rq",
+      "columns": [
+        "assignment",
+        "bearerReference",
+        "mandate"
+      ],
+      "answer_scope": "Native asserted assignment/mandate distinction; unbound is not false",
+      "model_elements": [
+        "RKM-C051",
+        "RKM-C050",
+        "RKM-C052",
+        "R-10",
+        "R-55"
+      ],
+      "uncovered_obligation": "Grounding, actual authority, ownership and participant identity remain #7/#12; no mandate is synthesized.",
+      "cases": [
+        {
+          "id": "RQ-CQ04-positive",
+          "kind": "positive",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ04-positive",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:assignmentA>",
+              "<urn:riskium:cq-fixture:actorRef>",
+              null
+            ],
+            [
+              "<urn:riskium:cq-fixture:assignmentB>",
+              "<urn:riskium:cq-fixture:otherRef>",
+              "<urn:riskium:cq-fixture:mandateB>"
+            ]
+          ]
+        },
+        {
+          "id": "RQ-CQ04-negative",
+          "kind": "negative",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ04-negative",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:assignmentA>",
+              "<urn:riskium:cq-fixture:actorRef>",
+              null
+            ]
+          ]
+        },
+        {
+          "id": "RQ-CQ04-incomplete",
+          "kind": "incomplete",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ04-incomplete",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:assignmentA>",
+              null,
+              null
+            ]
+          ]
+        },
+        {
+          "id": "RQ-CQ04-conflicting",
+          "kind": "conflicting",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ04-conflicting",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:assignmentA>",
+              "<urn:riskium:cq-fixture:actorRef>",
+              "<urn:riskium:cq-fixture:mandateB>"
+            ],
+            [
+              "<urn:riskium:cq-fixture:assignmentA>",
+              "<urn:riskium:cq-fixture:actorRef>",
+              "<urn:riskium:cq-fixture:mandateC>"
+            ]
+          ]
+        }
+      ],
+      "mutation_control": {
+        "id": "RQ-CQ04-QUERY-MUTANT",
+        "graph": "urn:riskium:cq-fixture:RQ-CQ04-positive",
+        "expected_rows": [
+          [
+            "<urn:riskium:cq-fixture:assignmentA>",
+            "<urn:riskium:cq-fixture:actorRef>",
+            null
+          ],
+          [
+            "<urn:riskium:cq-fixture:assignmentB>",
+            "<urn:riskium:cq-fixture:otherRef>",
+            "<urn:riskium:cq-fixture:mandateB>"
+          ]
+        ],
+        "expected_behavior": "DIFFERENT_FROM_ORACLE"
+      }
+    },
+    {
+      "cq_id": "RQ-CQ05",
+      "query": "requirements/cq/queries/RQ-CQ05.rq",
+      "mutant_query": "requirements/cq/mutants/RQ-CQ05.rq",
+      "columns": [
+        "revision",
+        "case",
+        "cessationEvidence"
+      ],
+      "answer_scope": "Native paths with explicit synthetic workflow/state codes; absence is absence of asserted cessation",
+      "model_elements": [
+        "RKM-C023",
+        "RKM-C022",
+        "RKM-C062",
+        "RKM-C061",
+        "RKM-C013",
+        "R-33",
+        "R-23",
+        "R-32",
+        "R-01",
+        "RK2-004"
+      ],
+      "uncovered_obligation": "State-code interpretation is a synthetic fixture policy, not standards equivalence or an OWL non-entailment proof. Temporal/cessation adjudication remains #7/#12.",
+      "cases": [
+        {
+          "id": "RQ-CQ05-positive",
+          "kind": "positive",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ05-positive",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:revA>",
+              "<urn:riskium:cq-fixture:caseA>",
+              "\"NO_ASSERTED_CESSATION\""
+            ],
+            [
+              "<urn:riskium:cq-fixture:revB>",
+              "<urn:riskium:cq-fixture:caseB>",
+              "\"ASSERTED_CESSATION\""
+            ]
+          ]
+        },
+        {
+          "id": "RQ-CQ05-negative",
+          "kind": "negative",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ05-negative",
+          "expected_rows": []
+        },
+        {
+          "id": "RQ-CQ05-incomplete",
+          "kind": "incomplete",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ05-incomplete",
+          "expected_rows": []
+        },
+        {
+          "id": "RQ-CQ05-conflicting",
+          "kind": "conflicting",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ05-conflicting",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:revA>",
+              "<urn:riskium:cq-fixture:caseA>",
+              "\"ASSERTED_CESSATION\""
+            ]
+          ]
+        }
+      ],
+      "mutation_control": {
+        "id": "RQ-CQ05-QUERY-MUTANT",
+        "graph": "urn:riskium:cq-fixture:RQ-CQ05-positive",
+        "expected_rows": [
+          [
+            "<urn:riskium:cq-fixture:revA>",
+            "<urn:riskium:cq-fixture:caseA>",
+            "\"NO_ASSERTED_CESSATION\""
+          ],
+          [
+            "<urn:riskium:cq-fixture:revB>",
+            "<urn:riskium:cq-fixture:caseB>",
+            "\"ASSERTED_CESSATION\""
+          ]
+        ],
+        "expected_behavior": "DIFFERENT_FROM_ORACLE"
+      }
+    },
+    {
+      "cq_id": "RQ-CQ06",
+      "query": "requirements/cq/queries/RQ-CQ06.rq",
+      "mutant_query": "requirements/cq/mutants/RQ-CQ06.rq",
+      "columns": [
+        "statement",
+        "source",
+        "locator",
+        "origin"
+      ],
+      "answer_scope": "Native evidence links plus supplementary provenance envelope; synthetic source locators only",
+      "model_elements": [
+        "RKM-C065",
+        "RKM-C066",
+        "RKM-C014",
+        "R-68",
+        "RX-021"
+      ],
+      "uncovered_obligation": "Locator and interpretation-origin scalars are application fields, not native OWL properties. Independent literature extraction/support remains #13 and adequacy #7.",
+      "cases": [
+        {
+          "id": "RQ-CQ06-positive",
+          "kind": "positive",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ06-positive",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:statementA>",
+              "<urn:riskium:cq-fixture:sourceA>",
+              "\"synthetic paragraph A\"",
+              "\"author fixture A\""
+            ],
+            [
+              "<urn:riskium:cq-fixture:statementB>",
+              "<urn:riskium:cq-fixture:sourceB>",
+              "\"synthetic paragraph B\"",
+              "\"author fixture B\""
+            ]
+          ]
+        },
+        {
+          "id": "RQ-CQ06-negative",
+          "kind": "negative",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ06-negative",
+          "expected_rows": []
+        },
+        {
+          "id": "RQ-CQ06-incomplete",
+          "kind": "incomplete",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ06-incomplete",
+          "expected_rows": []
+        },
+        {
+          "id": "RQ-CQ06-conflicting",
+          "kind": "conflicting",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ06-conflicting",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:statementA>",
+              "<urn:riskium:cq-fixture:sourceA>",
+              "\"synthetic paragraph A\"",
+              "\"author fixture A\""
+            ],
+            [
+              "<urn:riskium:cq-fixture:statementA>",
+              "<urn:riskium:cq-fixture:sourceB>",
+              "\"synthetic paragraph A\"",
+              "\"author fixture A\""
+            ]
+          ]
+        }
+      ],
+      "mutation_control": {
+        "id": "RQ-CQ06-QUERY-MUTANT",
+        "graph": "urn:riskium:cq-fixture:RQ-CQ06-positive",
+        "expected_rows": [
+          [
+            "<urn:riskium:cq-fixture:statementA>",
+            "<urn:riskium:cq-fixture:sourceA>",
+            "\"synthetic paragraph A\"",
+            "\"author fixture A\""
+          ],
+          [
+            "<urn:riskium:cq-fixture:statementB>",
+            "<urn:riskium:cq-fixture:sourceB>",
+            "\"synthetic paragraph B\"",
+            "\"author fixture B\""
+          ]
+        ],
+        "expected_behavior": "DIFFERENT_FROM_ORACLE"
+      }
+    },
+    {
+      "cq_id": "RQ-CQ07",
+      "query": "requirements/cq/queries/RQ-CQ07.rq",
+      "mutant_query": "requirements/cq/mutants/RQ-CQ07.rq",
+      "columns": [
+        "correctionRecord",
+        "previousRecord",
+        "source"
+      ],
+      "answer_scope": "Native version-of join plus explicitly supplementary PROV revision lineage; no independent-corroboration count",
+      "model_elements": [
+        "RKM-C015",
+        "RKM-C014",
+        "RX-006"
+      ],
+      "uncovered_obligation": "General correction lineage is not a native Riskium property. This explicit application record profile does not prove source independence, immutable storage or real-data acceptance (#12/#13).",
+      "cases": [
+        {
+          "id": "RQ-CQ07-positive",
+          "kind": "positive",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ07-positive",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:correction>",
+              "<urn:riskium:cq-fixture:previousRecord>",
+              "<urn:riskium:cq-fixture:sourceA>"
+            ]
+          ]
+        },
+        {
+          "id": "RQ-CQ07-negative",
+          "kind": "negative",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ07-negative",
+          "expected_rows": []
+        },
+        {
+          "id": "RQ-CQ07-incomplete",
+          "kind": "incomplete",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ07-incomplete",
+          "expected_rows": []
+        },
+        {
+          "id": "RQ-CQ07-conflicting",
+          "kind": "conflicting",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ07-conflicting",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:correction>",
+              "<urn:riskium:cq-fixture:previousRecord>",
+              "<urn:riskium:cq-fixture:sourceA>"
+            ],
+            [
+              "<urn:riskium:cq-fixture:correction>",
+              "<urn:riskium:cq-fixture:otherPrevious>",
+              "<urn:riskium:cq-fixture:sourceA>"
+            ]
+          ]
+        }
+      ],
+      "mutation_control": {
+        "id": "RQ-CQ07-QUERY-MUTANT",
+        "graph": "urn:riskium:cq-fixture:RQ-CQ07-positive",
+        "expected_rows": [
+          [
+            "<urn:riskium:cq-fixture:correction>",
+            "<urn:riskium:cq-fixture:previousRecord>",
+            "<urn:riskium:cq-fixture:sourceA>"
+          ]
+        ],
+        "expected_behavior": "DIFFERENT_FROM_ORACLE"
+      }
+    },
+    {
+      "cq_id": "RQ-CQ08",
+      "query": "requirements/cq/queries/RQ-CQ08.rq",
+      "mutant_query": "requirements/cq/mutants/RQ-CQ08.rq",
+      "columns": [
+        "record",
+        "candidate",
+        "case"
+      ],
+      "answer_scope": "Explicit raw staging envelope, without promoting candidate to an admitted ScenarioSpecification",
+      "model_elements": [
+        "RKM-C003",
+        "RKM-X01",
+        "R-36"
+      ],
+      "uncovered_obligation": "Incomplete raw candidates are not asserted to be managed OWL scenarios. Independent source-case identities and admission remain #5/#13.",
+      "cases": [
+        {
+          "id": "RQ-CQ08-positive",
+          "kind": "positive",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ08-positive",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:rawA>",
+              "<urn:riskium:cq-fixture:candidateA>",
+              null
+            ],
+            [
+              "<urn:riskium:cq-fixture:rawB>",
+              "<urn:riskium:cq-fixture:candidateB>",
+              "<urn:riskium:cq-fixture:caseB>"
+            ]
+          ]
+        },
+        {
+          "id": "RQ-CQ08-negative",
+          "kind": "negative",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ08-negative",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:rawA>",
+              "<urn:riskium:cq-fixture:candidateA>",
+              null
+            ]
+          ]
+        },
+        {
+          "id": "RQ-CQ08-incomplete",
+          "kind": "incomplete",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ08-incomplete",
+          "expected_rows": []
+        },
+        {
+          "id": "RQ-CQ08-conflicting",
+          "kind": "conflicting",
+          "graph": "urn:riskium:cq-fixture:RQ-CQ08-conflicting",
+          "expected_rows": [
+            [
+              "<urn:riskium:cq-fixture:rawA>",
+              "<urn:riskium:cq-fixture:candidateA>",
+              "<urn:riskium:cq-fixture:caseA>"
+            ],
+            [
+              "<urn:riskium:cq-fixture:rawA>",
+              "<urn:riskium:cq-fixture:candidateA>",
+              "<urn:riskium:cq-fixture:caseB>"
+            ]
+          ]
+        }
+      ],
+      "mutation_control": {
+        "id": "RQ-CQ08-QUERY-MUTANT",
+        "graph": "urn:riskium:cq-fixture:RQ-CQ08-positive",
+        "expected_rows": [
+          [
+            "<urn:riskium:cq-fixture:rawA>",
+            "<urn:riskium:cq-fixture:candidateA>",
+            null
+          ],
+          [
+            "<urn:riskium:cq-fixture:rawB>",
+            "<urn:riskium:cq-fixture:candidateB>",
+            "<urn:riskium:cq-fixture:caseB>"
+          ]
+        ],
+        "expected_behavior": "DIFFERENT_FROM_ORACLE"
+      }
+    }
+  ]
+}

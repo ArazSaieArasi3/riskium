@@ -1,0 +1,169 @@
+# Entirely synthetic author fixtures; not literature or operational data.
+@prefix risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#> .
+@prefix ex: <urn:riskium:cq-fixture:> .
+@prefix app: <urn:riskium:cq-profile:0.1.0#> .
+@prefix ap: <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+<urn:riskium:cq-fixture:RQ-CQ01-positive> {
+ex:entryA a risk:RKM-C022; risk:R-01 ex:caseA; dct:title "same label" .
+ex:entryB a risk:RKM-C022; risk:R-01 ex:caseA; dct:title "other label" .
+ex:decoy a risk:RKM-C022; risk:R-01 ex:caseB; dct:title "same label" .
+ex:caseA a risk:RKM-X01 . ex:caseB a risk:RKM-X01 .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ01-negative> {
+ex:entryA a risk:RKM-C022; risk:R-01 ex:caseA; dct:title "same" .
+ex:entryB a risk:RKM-C022; risk:R-01 ex:caseB; dct:title "same" .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ01-incomplete> {
+ex:entryA a risk:RKM-C022 . ex:entryB a risk:RKM-C022; risk:R-01 ex:caseA .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ01-conflicting> {
+ex:entryA a risk:RKM-C022; risk:R-01 ex:caseA, ex:caseB .
+ex:entryB a risk:RKM-C022; risk:R-01 ex:caseA .
+ex:entryC a risk:RKM-C022; risk:R-01 ex:caseB .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ02-positive> {
+ex:s1 a risk:RKM-C003; risk:R-36 ex:caseA . ex:s2 a risk:RKM-C003; risk:R-36 ex:caseA .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ02-negative> {
+ex:s1 a risk:RKM-C003; dct:title "same" . ex:caseA a risk:RKM-X01; dct:title "same" .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ02-incomplete> {
+ex:s1 a risk:RKM-C003 .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ02-conflicting> {
+ex:s1 a risk:RKM-C003; risk:R-36 ex:caseA, ex:caseB .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ03-positive> {
+ex:a risk:R-17 ex:scoreA; risk:R-13 ex:rA . ex:scoreA risk:R-18 ex:rA . ex:rA risk:RX-016 ex:vA .
+ex:vA a risk:RKM-C015; risk:RX-006 ex:scaleA . ex:scaleA a risk:RKM-C036 .
+ex:recordA ap:candidate ex:scoreA; app:numericValue 7 .ex:b risk:R-17 ex:scoreB; risk:R-13 ex:rB . ex:scoreB risk:R-18 ex:rB . ex:rB risk:RX-016 ex:vB .
+ex:vB a risk:RKM-C015; risk:RX-006 ex:scaleB . ex:scaleB a risk:RKM-C036 .
+ex:recordB ap:candidate ex:scoreB; app:numericValue 7 .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ03-negative> {
+ex:a risk:R-17 ex:scoreA; risk:R-13 ex:wrongResult . ex:scoreA risk:R-18 ex:wrongResult . ex:rA risk:RX-016 ex:vA .
+ex:vA a risk:RKM-C015; risk:RX-006 ex:scaleA . ex:scaleA a risk:RKM-C036 .
+ex:recordA ap:candidate ex:scoreA; app:numericValue 7 . ex:wrongResult dct:title "same result" .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ03-incomplete> {
+ex:a risk:R-17 ex:scoreA; risk:R-13 ex:rA . ex:scoreA risk:R-18 ex:rA . ex:rA risk:RX-016 ex:vA .
+ex:vA a risk:RKM-C015; risk:RX-006 ex:scaleA . ex:scaleA a risk:RKM-C036 .
+ex:recordA ap:candidate ex:scoreA .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ03-conflicting> {
+ex:a risk:R-17 ex:scoreA; risk:R-13 ex:rA . ex:scoreA risk:R-18 ex:rA . ex:rA risk:RX-016 ex:vA .
+ex:vA a risk:RKM-C015; risk:RX-006 ex:scaleA . ex:scaleA a risk:RKM-C036 .
+ex:recordA ap:candidate ex:scoreA; app:numericValue 7 . ex:rA risk:RX-016 ex:vB . ex:vB risk:RX-006 ex:scaleB . ex:scaleB a risk:RKM-C036 .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ04-positive> {
+ex:assignmentA a risk:RKM-C051; risk:R-10 ex:actorRef .ex:assignmentB a risk:RKM-C051; risk:R-10 ex:otherRef; risk:R-55 ex:mandateB .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ04-negative> {
+ex:assignmentA a risk:RKM-C051; risk:R-10 ex:actorRef . ex:unrelated risk:R-55 ex:mandateB; dct:title "same assignment" .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ04-incomplete> {
+ex:assignmentA a risk:RKM-C051 .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ04-conflicting> {
+ex:assignmentA a risk:RKM-C051; risk:R-10 ex:actorRef . ex:assignmentA risk:R-55 ex:mandateB, ex:mandateC .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ05-positive> {
+ex:revA risk:R-33 ex:entryA; risk:R-23 ex:stateAssertionA . ex:entryA risk:R-01 ex:caseA .
+ex:stateAssertionA risk:R-32 ex:closed . ex:closed dct:identifier "closed" .ex:revB risk:R-33 ex:entryB; risk:R-23 ex:stateAssertionB . ex:entryB risk:R-01 ex:caseB .
+ex:stateAssertionB risk:R-32 ex:closed . ex:caseB risk:RK2-004 ex:ceased . ex:ceased dct:identifier "ceased" .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ05-negative> {
+ex:revA risk:R-33 ex:entryA; risk:R-23 ex:stateAssertionA . ex:entryA risk:R-01 ex:caseA .
+ex:stateAssertionA risk:R-32 ex:closed . ex:closed dct:identifier "open"; dct:title "closed" .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ05-incomplete> {
+ex:revA risk:R-33 ex:entryA; risk:R-23 ex:stateAssertionA . 
+ex:stateAssertionA risk:R-32 ex:closed . ex:closed dct:identifier "closed" .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ05-conflicting> {
+ex:revA risk:R-33 ex:entryA; risk:R-23 ex:stateAssertionA . ex:entryA risk:R-01 ex:caseA .
+ex:stateAssertionA risk:R-32 ex:closed . ex:closed dct:identifier "closed" . ex:caseA risk:RK2-004 ex:ceased, ex:active . ex:ceased dct:identifier "ceased" . ex:active dct:identifier "active" .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ06-positive> {
+ex:refA a risk:RKM-C065; risk:R-68 ex:statementA; risk:RX-021 ex:itemA .
+ex:recordA ap:candidate ex:refA; dct:source ex:sourceA; app:sourceLocator "synthetic paragraph A"; app:interpretationOrigin "author fixture A" .ex:refB a risk:RKM-C065; risk:R-68 ex:statementB; risk:RX-021 ex:itemB .
+ex:recordB ap:candidate ex:refB; dct:source ex:sourceB; app:sourceLocator "synthetic paragraph B"; app:interpretationOrigin "author fixture B" .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ06-negative> {
+ex:refA a risk:RKM-C065; risk:R-68 ex:statementA; risk:RX-021 ex:itemA .
+ex:recordA ap:candidate ex:refA;  app:sourceLocator "synthetic paragraph A"; app:interpretationOrigin "author fixture A" . ex:otherRecord dct:source ex:sourceA .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ06-incomplete> {
+ex:refA a risk:RKM-C065; risk:R-68 ex:statementA; risk:RX-021 ex:itemA .
+ex:recordA ap:candidate ex:refA; dct:source ex:sourceA; app:sourceLocator "synthetic paragraph A" .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ06-conflicting> {
+ex:refA a risk:RKM-C065; risk:R-68 ex:statementA; risk:RX-021 ex:itemA .
+ex:recordA ap:candidate ex:refA; dct:source ex:sourceA; app:sourceLocator "synthetic paragraph A"; app:interpretationOrigin "author fixture A" . ex:recordA dct:source ex:sourceB .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ07-positive> {
+ex:correction ap:candidate ex:newVersion; prov:wasRevisionOf ex:previousRecord; dct:source ex:sourceA .
+ex:previousRecord ap:candidate ex:oldVersion . ex:newVersion a risk:RKM-C015; risk:RX-006 ex:artifactA .
+ex:oldVersion a risk:RKM-C015; risk:RX-006 ex:artifactA .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ07-negative> {
+ex:correction ap:candidate ex:newVersion; dct:source ex:sourceA .
+ex:previousRecord ap:candidate ex:oldVersion . ex:newVersion a risk:RKM-C015; risk:RX-006 ex:artifactA .
+ex:oldVersion a risk:RKM-C015; risk:RX-006 ex:artifactA . ex:correction dct:title "same" . ex:previousRecord dct:title "same" .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ07-incomplete> {
+ex:correction ap:candidate ex:newVersion; prov:wasRevisionOf ex:previousRecord; dct:source ex:sourceA .
+ ex:newVersion a risk:RKM-C015; risk:RX-006 ex:artifactA .
+ex:oldVersion a risk:RKM-C015; risk:RX-006 ex:artifactA .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ07-conflicting> {
+ex:correction ap:candidate ex:newVersion; prov:wasRevisionOf ex:previousRecord; dct:source ex:sourceA .
+ex:previousRecord ap:candidate ex:oldVersion . ex:newVersion a risk:RKM-C015; risk:RX-006 ex:artifactA .
+ex:oldVersion a risk:RKM-C015; risk:RX-006 ex:artifactA . ex:correction prov:wasRevisionOf ex:otherPrevious . ex:otherPrevious ap:candidate ex:olderVersion . ex:olderVersion risk:RX-006 ex:artifactA .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ08-positive> {
+ex:rawA a app:RawScenarioRecord; ap:candidate ex:candidateA .
+ex:rawB a app:RawScenarioRecord; ap:candidate ex:candidateB . ex:candidateB risk:R-36 ex:caseB . ex:caseB a risk:RKM-X01 .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ08-negative> {
+ex:rawA a app:RawScenarioRecord; ap:candidate ex:candidateA . ex:candidateA dct:title "same" . ex:caseB a risk:RKM-X01; dct:title "same" .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ08-incomplete> {
+ex:rawA a app:RawScenarioRecord .
+}
+
+<urn:riskium:cq-fixture:RQ-CQ08-conflicting> {
+ex:rawA a app:RawScenarioRecord; ap:candidate ex:candidateA . ex:candidateA risk:R-36 ex:caseA, ex:caseB .
+}

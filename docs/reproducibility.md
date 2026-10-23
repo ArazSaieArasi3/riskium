@@ -115,3 +115,15 @@ Module 0.5.0 checks C-11/C-12 under a separately declared [application metadata 
 Run `.venv-shacl/bin/python tools/review_c14_boundary.py` to reconcile the three optional catalog boundaries, their documentary representations and seven excluded bridges against the native, typed and OWL outputs. The [review](../evaluation/c14-boundary-review.md) pins all input digests and checks 12 cases from the earlier admission receipt. This is a structural readback of prior evidence, not a new SHACL or HermiT run.
 
 Run `python3 tools/build_release_claims.py` to regenerate the [candidate release claim inventory](../evaluation/release-claims.md). It checks the source, contract, OWL and C-14 input digests before listing all remaining HermiT/SHACL constraint rows. The inventory prepares the prerelease claims; a release still needs the clean freeze and publication gates.
+
+## Requirement and CQ traceability
+
+The post-prerelease CQ/traceability evidence is separate from the immutable release archive and earlier formal coverage plan. Install the pinned RDFLib dependency in `.venv-owl`, then run:
+
+```sh
+.venv-owl/bin/python tools/run_cq.py --check
+.venv-owl/bin/python tools/build_traceability.py --check
+.venv-owl/bin/python -m unittest discover -s tests -p test_cq.py -v
+```
+
+The [contracts and supplementary profile](../requirements/cq/README.md) explain the 32 synthetic answer graphs, eight query-mutant controls and exact expected bindings. Five original synthetic-task contracts have bounded execution; the independent evidence populations for CQ06–CQ08 remain pending in #13. These queries do not execute HermiT/SHACL, prove managed admission or establish semantic acceptance. The [ledger](../evaluation/traceability/README.md) records all 28 public requirement/scope/CQ traces and their unresolved routes. Original JSON/CSV planning statuses and formal denominators are preserved.

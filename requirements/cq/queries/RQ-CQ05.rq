@@ -1,0 +1,12 @@
+PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX ex: <urn:riskium:cq-fixture:>
+PREFIX app: <urn:riskium:cq-profile:0.1.0#>
+PREFIX ap: <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT DISTINCT ?revision ?case ?cessationEvidence WHERE {
+ ?revision risk:R-33 ?entry; risk:R-23 ?assertion . ?entry risk:R-01 ?case .
+ ?assertion risk:R-32 ?workflow . ?workflow dct:identifier "closed" .
+ OPTIONAL { ?case risk:RK2-004 ?state . ?state dct:identifier "ceased" . }
+ BIND(IF(BOUND(?state), "ASSERTED_CESSATION", "NO_ASSERTED_CESSATION") AS ?cessationEvidence)
+}

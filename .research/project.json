@@ -38,5 +38,14 @@
     "publication_evidence": "docs/documentation-publication.md",
     "explorer": "asserted OWL hypertext neighborhoods",
     "state": "published and read back; documentation checks do not establish semantic acceptance"
+  },
+  "requirement_cq_traceability": {
+    "state": "28 public traces complete; full requirement acceptance remains scoped/partial",
+    "evidence": "evaluation/traceability/README.md",
+    "query_executions": 40,
+    "source_synthetic_contracts_executed": 5,
+    "independent_population_contracts_pending": 3,
+    "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+    "post_prerelease_evidence": true
   }
 }
