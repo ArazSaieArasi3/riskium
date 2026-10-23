@@ -1,6 +1,6 @@
 # Next bounded packet: relational identity and issued-version preservation
 
-Status: **planned, not executed**. Target v0.3.1-rc.5, child of #12. The rc.4 graph joins do not establish persistence, migration, issued-content immutability or historical retrieval. The broader relational parent remains open.
+Status: **implemented and executed**, publication requested as v0.3.1-rc.5 in #24, child of #12. [Delivered profile, full dictionary and clause dispositions](../evaluation/relational/history/README.md): 67 matched SQLite scenarios and 122 software regressions; live publication is established separately by hosted jobs and asset readback. The original packet contract follows. The rc.4 graph joins do not establish persistence, migration, issued-content immutability or historical retrieval. The broader relational parent remains open.
 
 ## Small deliverable
 

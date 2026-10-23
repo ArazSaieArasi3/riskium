@@ -2,7 +2,7 @@
 
 **Scoped application/history evidence, not full relational or ontology acceptance.** Model/OWL unchanged; no PostgreSQL run or owner/independent judgment is claimed.
 
-Execution checkout `20436227335b32b933cdb4f3c8bb8d0614bcdc7e`; [full compressed receipt](report.json.gz), [mapping](../../../implementation/relational/0.1.0/mapping.json) and [scope/dictionary](README.md). Exact input hashes bind all executed files.
+Execution checkout `11ffed4f4e74a61909c92395201b9abe29798f44`; [full compressed receipt](report.json.gz), [mapping](../../../implementation/relational/0.1.0/mapping.json) and [scope/dictionary](README.md). Exact input hashes bind all executed files.
 
 Engine: SQLite 3.53.1; foreign_keys=ON and recursive_triggers=ON. Schema 1 is populated from public synthetic fixtures, then upgraded transactionally to schema 2 without rebuilding its rows. The private historical companion is not copied or migrated by this suite.
 
