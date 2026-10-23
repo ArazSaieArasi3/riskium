@@ -1,0 +1,10 @@
+PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX ap: <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#>
+PREFIX app: <urn:riskium:source-cq-profile:0.2.0#>
+PREFIX dct: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?statement ?source ?locator ?origin WHERE {
+ ?record ap:candidate ?reference; app:statement ?statement; app:evidenceItem ?item;
+         dct:source ?source; app:sourceLocator ?locator; app:interpretationOrigin ?origin .
+ ?reference risk:R-68 ?statement; risk:RX-021 ?item .
+ ?item dct:source ?source; app:sourceLocator ?locator .
+}

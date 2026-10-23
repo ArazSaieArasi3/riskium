@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "namespace": "urn:riskium:source-cq-profile:0.2.0#",
+  "task": "SourceTraceInspection",
+  "native": {"R-68": ["RKM-C065", "RKM-C014"], "RX-021": ["RKM-C065", "RKM-C066"]},
+  "terms": {
+    "statement": "Envelope link to the particular paraphrased InformationArtifact; not a new native relation.",
+    "evidenceItem": "Envelope link to the specific passage acting as EvidenceItem; not an assertion of evidential truth.",
+    "sourceLocator": "Edition-qualified PDF/table/row locator; shared by the record and its passage metadata.",
+    "interpretationOrigin": "Explicit assistant-paraphrase origin; does not imply primary author wording or owner acceptance."
+  },
+  "external": {"http://purl.org/dc/terms/source": "DOI identity of the inspected source on record and evidence item; not independent corroboration", "http://purl.org/dc/terms/description": "Brief original assistant paraphrase, not a source quotation"},
+  "envelope_candidate": "https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate",
+  "interpretation": "Query projection for source trace inspection, not complete native managed-instance admission. Explicit record/native joins plus caller-known frozen cohort checks prevent cross-record/source/locator reassignment. No inference, identity normalization or remote query.",
+  "unknowns": "Missing or conflicting metadata is preserved in the raw graph and rejected for this named trace task; no invented repair or case promotion.",
+  "limits": "Coherent but false metadata cannot be disproved by SPARQL syntax. Frozen independently authored joins and primary-source inspection bind this finite cohort; source truth and owner semantic acceptance remain separate."
+}

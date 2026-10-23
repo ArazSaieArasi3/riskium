@@ -1,6 +1,6 @@
 # CQ06 inspected literature source cohort
 
-Initial stage: source inspection and expected-answer freeze, **before new query execution**. Completion and execution evidence will be supplied in a subsequent implementation commit and rc.6 publication under #25/#13.
+Status: **implemented and executed**, publication planned as rc.6 under #25/#13. The source/oracle freeze at `2542c5b0762c4390c2d5af132fe52a01249fe2fc` preceded this query implementation. [Readable report](report.md), [complete receipt](report.json.gz), [profile](profile.json) and [query](query.rq) supply current method-specific evidence. A release request alone is not publication.
 
 The [cohort](cohort.json) has 13 short assistant-prepared paraphrases with exact historical IDs, DOI, supplied PDF/page/table/row locators and interpretation origin: all 11 previously withheld study-local scenario descriptions, plus two review labels from a second source. [Inspection receipt](inspection.json) records actual PDF hashes, page-text hashes, prior extraction/adjudication hashes and all 13 primary-passage matches. Original table pages were rendered and visually inspected. [Fixed expected join vector](expected.json) is stored separately and authored before executing the new query. No query output was used as its oracle. This is source-backed assistant preparation, not independent human review or an independent case-accuracy denominator.
 
@@ -14,3 +14,22 @@ The original 11 scenario decisions remain WITHHELD. No governed organizational R
 Repository licenses cover original code/annotations only; third-party works retain their rights. No publisher PDF or private SQLite file is tracked or packaged. Only the supplied editions are inspected; absence of corrections or a complete CrossMark search is not claimed. CQ07 correction lineage remains separate.
 
 The assistant performed extraction comparison, rendered-page review, selection, paraphrase and query preparation. The owner has supplied no new row judgments. Owner-led semantic review remains #7; independent review is future nonblocking #23. Current native model/OWL and all historical CQ/HermiT/SHACL/SQL receipts stay unchanged.
+
+## Query, fields and exact acceptance
+
+Native R-68 is EvidenceReference → InformationArtifact and RX-021 is EvidenceReference → EvidenceItem. A passage acts as evidence for one short paraphrased recorded statement; native typing/links are a selected query projection, **not complete managed-instance admission**. No RiskScenarioSpecification/RiskCase or event instance is created. Supplementary `ap:candidate`, `app:statement` and `app:evidenceItem` bind the record to its exact reference/statement/passage. `dct:source` identifies the DOI on record and passage; `app:sourceLocator` binds their exact edition-qualified location; `app:interpretationOrigin` identifies the assistant's changed wording. `dct:description` holds that short paraphrase. These metadata do not add native ontology predicates or axioms.
+
+The SELECT query requires the explicit native and envelope joins and source/locator equality. The separate validator compares caller-known record IDs, exact native targets/types and metadata cardinality/source/locator/origin with the already inspected frozen cohort. Raw conflicting statements are retained, without normalization or repair. A correct query result alone does not admit a record: coherently forged source/locator metadata remains queryable but fails the frozen-cohort checks. A deliberately deleted guard exposes that limitation. Equal description text cannot merge identifiers.
+
+**35 actual SELECT executions** matched their declared outcomes: 14 source-query cases (one complete cohort plus 13 individual records), 16 deliberately synthetic negatives, 3 successfully executed/detected query mutants, one deleted-guard control and one equal-description identity control. These are disjoint scenario kinds, not 35 real cases or independent observations. The complete receipt retains raw graphs, query hashes, fixed expected/observed RDF bindings, exact expected/observed findings and errors. Malformed query/parser errors are ERROR, never successful mutation detection. Conflicting origins yield two raw answers and a rejected trace task; multiple sources may leave a correct answer visible while still failing admission.
+
+Only the hash-bound selected public cohort is replayed in CI. This does not download or reinspect the copyrighted originals, re-evaluate all 1023 historical extraction rows, validate source truth or assert a complete correction search. `inspection.json` records the separate primary PDF/text/visual review. An optional exact-source recheck was executed with pypdf 6.10.0: both PDF hashes and all three inspected page-text hashes matched. The original PDFs are required only for that optional recheck, and remain outside the public repository.
+
+```sh
+python tools/run_source_cq06.py --check
+python -m unittest discover -s tests -p test_source_cq06.py -v
+# Optional, with pypdf installed and the exact privately held supplied PDFs:
+python tools/run_source_cq06.py --verify-pdfs /path/to/private-pdfs
+```
+
+The current result is a **scoped source-backed CQ06 supplement**. The historical CQ receipt remains 40 author-synthetic queries and retains its original three independently prepared populations pending; it is not rewritten as a fresh real-data run. Current source/CQ07/CQ08/owner acceptance must use their separately dated supplements and denominators. All 11 organizational case admissions stay WITHHELD, not reopened or converted into new organizational identities. CQ07 correction lineage, CQ08's dedicated unresolved-identity query population and owner OR-09 acceptance remain distinct next work under #13/#7. Owner review is with assistant support; actual independent review remains future #23.
