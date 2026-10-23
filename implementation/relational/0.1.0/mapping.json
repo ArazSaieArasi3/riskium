@@ -1,0 +1,131 @@
+{
+  "schema_version": "0.1.0",
+  "model_version": "0.3.1",
+  "source_model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "native_semantics_changed": false,
+  "engine": "SQLite >=3.38; foreign_keys=ON, recursive_triggers=ON",
+  "classes": [
+    {
+      "id": "RKM-X01",
+      "title": "RiskCase",
+      "representation": "risk_case"
+    },
+    {
+      "id": "RKM-C014",
+      "title": "InformationArtifact",
+      "representation": "information_artifact"
+    },
+    {
+      "id": "RKM-C015",
+      "title": "ArtifactVersion",
+      "representation": "version_snapshot WHERE is_issued=1"
+    },
+    {
+      "id": "RKM-C022",
+      "title": "RiskRegisterEntry",
+      "representation": "register_entry + information_artifact"
+    },
+    {
+      "id": "RKM-C023",
+      "title": "EntryRevision",
+      "representation": "issued version_snapshot with entry_id"
+    },
+    {
+      "id": "RKM-C030",
+      "title": "RiskRegister",
+      "representation": "register artifact kind"
+    },
+    {
+      "id": "RKM-C002",
+      "title": "RiskContextSpecification",
+      "representation": "Context artifact kind"
+    },
+    {
+      "id": "RKM-C035",
+      "title": "AssessmentMethodSpecification",
+      "representation": "Method artifact kind"
+    },
+    {
+      "id": "RKM-C036",
+      "title": "AssessmentScale",
+      "representation": "Scale artifact kind"
+    },
+    {
+      "id": "RKM-C072",
+      "title": "RiskCriteria",
+      "representation": "Criteria artifact kind"
+    }
+  ],
+  "relations": [
+    {
+      "id": "R-01",
+      "source": "RKM-C022",
+      "target": "RKM-X01",
+      "predicate": "recordsAbout"
+    },
+    {
+      "id": "RX-008",
+      "source": "RKM-C022",
+      "target": "RKM-C030",
+      "predicate": "memberOfRegister"
+    },
+    {
+      "id": "R-33",
+      "source": "RKM-C023",
+      "target": "RKM-C022",
+      "predicate": "revisionOf"
+    },
+    {
+      "id": "R-34",
+      "source": "RKM-C023",
+      "target": "RKM-C023",
+      "predicate": "previousRevision"
+    },
+    {
+      "id": "RX-006",
+      "source": "RKM-C015",
+      "target": "RKM-C014",
+      "predicate": "versionOf"
+    }
+  ],
+  "constraints": [
+    {
+      "id": "C-01",
+      "statement": "Case identity is preserved across descriptions, scores, owners and administrative states. Equal labels do not establish case identity.",
+      "sha256": "a589dc0a26d9679c929885730f4bc85febc6ed14bf4a366807e7e669311fcad9"
+    },
+    {
+      "id": "C-03",
+      "statement": "Issued semantic content and effective dependency versions are immutable. Correction and supersession create lineage-preserving new versions.",
+      "sha256": "2f181afe3401e02addf62d3614bee3d2f8413bcff9d883b3f296c561ca39c04d"
+    },
+    {
+      "id": "C-24",
+      "statement": "For each EntryRevision, revisionOf and inherited versionOf identify the same RiskRegisterEntry. previousRevision is irreflexive and acyclic and, when present, relates revisions of the same entry.",
+      "sha256": "cd6a9cde18a70da3955c516fd44e9fc1f0880f51179d6529374d7fd870a44581"
+    },
+    {
+      "id": "C-25",
+      "statement": "usesContextVersion targets a version of RiskContextSpecification; usesMethodVersion a version of AssessmentMethodSpecification; usesScaleVersion a version of AssessmentScale; usesCriteriaVersion a version of RiskCriteria. Artifact-level references, when present, agree with versionOf.",
+      "sha256": "36cd154a611c0a5da0772a5d63a72d47ecf981aba26922283ff1fd1cc6d51a80"
+    }
+  ],
+  "dependency_target_kinds": {
+    "Context": "RKM-C002",
+    "Method": "RKM-C035",
+    "Scale": "RKM-C036",
+    "Criteria": "RKM-C072"
+  },
+  "dependency_scope": "Supplementary version-owned effective bindings use C-25-style target checks; they are not native assessment usesVersion assertions. Full C-25 subject admission remains separate.",
+  "content_scope": "payload_json is a supplementary serialized semantic snapshot, not a new native InformationContent instance or full RX-007 encoding.",
+  "lifecycle": "working_draft is application staging; only sealed version_snapshot rows represent ArtifactVersion/EntryRevision in the selected native export.",
+  "identity": "Exact governed identifiers, global case/artifact/version families and no label-based keys; aliases/splits/merges require separate explicit identity decisions.",
+  "schema_policy": "Append-only admitted catalog/source identities in this local profile; edits are represented through new records/versions. This does not add universal ontology immutability axioms.",
+  "limits": [
+    "Selected identity/history slice only, not the private 128-table schema or full native admission",
+    "No PostgreSQL execution, production security/concurrency/performance or backup disaster-recovery certification",
+    "No formula, temporal interval, real-case acceptance or independent/owner semantic judgment",
+    "Administrative DDL/PRAGMA disabling can bypass storage guards; supported configured connections and integrity checks are the contract",
+    "C-25 dependency role presence and native source-subject admission are not globally established"
+  ]
+}
