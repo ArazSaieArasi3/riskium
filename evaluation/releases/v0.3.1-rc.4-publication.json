@@ -1,0 +1,107 @@
+{
+  "schema": "riskium-development-publication-v1",
+  "tag": "v0.3.1-rc.4",
+  "release_id": 421883152,
+  "published_at": "2026-10-23T13:35:10Z",
+  "source_commit": "dfa9674bfef9c0ca8d4b15015c677cd122bed29c",
+  "release_url": "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.4",
+  "workflow_run": 39961799416,
+  "workflow_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/39961799416",
+  "publication_state": {
+    "draft": false,
+    "prerelease": true,
+    "latest_promoted": false,
+    "candidate_job": "success",
+    "publish_job": "success"
+  },
+  "assets": [
+    {
+      "name": "candidate-receipt.json",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.4/candidate-receipt.json",
+      "size": 25724,
+      "digest": "sha256:a213bd31cc7fe843911fd083818752f55dbd4f7fd71999318eaacce8cecae0fd"
+    },
+    {
+      "name": "release-notes.md",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.4/release-notes.md",
+      "size": 5558,
+      "digest": "sha256:10c4bd4759bc8f89c36ba838a02e50dc93992cc6d7f0aab430810ab368222497"
+    },
+    {
+      "name": "riskium-v0.3.1-rc.4-source.tar.gz",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.4/riskium-v0.3.1-rc.4-source.tar.gz",
+      "size": 3928726,
+      "digest": "sha256:a0d2ff8542896d4d6ddd13e26bcf687dc98e633085990e57130e3e40424dd085"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.4/SHA256SUMS.txt",
+      "size": 359,
+      "digest": "sha256:62a4a21e61447d361d800a222dcda7f3fc52a77799f780d3f164663821237d40"
+    },
+    {
+      "name": "source-manifest.json",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.4/source-manifest.json",
+      "size": 49398,
+      "digest": "sha256:6208b053f142f4cedbdb3227d23c2a44f13799d9abd09b441716a32d03912725"
+    }
+  ],
+  "verification": {
+    "status": "PASS",
+    "published_asset_bytes_verified": true,
+    "published_assets_verified": 5,
+    "source_manifest_files_verified": 291,
+    "candidate_checks_passed": 13,
+    "software_regressions": 115,
+    "fresh_synthetic_query_executions": 40,
+    "fresh_comparison_replay_engine_executions": 50,
+    "fresh_c08_replay_engine_executions": 37,
+    "fresh_hermit_runs": 0,
+    "historical_hermit_and_earlier_shacl_receipt_bytes_unchanged": true,
+    "tag_target_checked_separately": true,
+    "source_archive_scope": "Tracked public source only; private manuscript/database companions excluded",
+    "all_19_comparison_receipt_input_hashes_match_release_archive": true
+  },
+  "comparison": {
+    "receipt_source_commit": "4cbae8e772f892e9550b12e1a0bedfeb1252afb2",
+    "summary": {
+      "scenarios": 55,
+      "engine_executions": 50,
+      "preflight_rejections": 5,
+      "selected_integration_cases": 4,
+      "mutation_controls": 3,
+      "statuses": {
+        "PASS": 55
+      },
+      "decisions": {
+        "DIRECT_COMPARISON_ADMISSIBLE": 8,
+        "NOT_READY": 21,
+        "INVALID_SELECTION": 6,
+        "NOT_COMPARABLE": 10,
+        "INVALID": 4,
+        "PROFILE_REJECTED": 5,
+        "STAGING_ONLY": 1
+      }
+    },
+    "global_acceptance": "PARTIAL",
+    "native_semantics_changed": false
+  },
+  "owner_review": {
+    "kind": "OWNER_AUTHOR_REVIEW_WITH_ASSISTANT_SUPPORT",
+    "cohort_rows": 11,
+    "ratings_recorded": 0,
+    "status": "PENDING_OWNER_JUDGMENTS",
+    "independent_validation_claimed": false,
+    "future_independent_review_issue": 23
+  },
+  "previous_releases": {
+    "tags": {
+      "v0.3.1-rc.1": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+      "v0.3.1-rc.2": "5f10ad103af5818cb99331a9d71e8b5f518e93de",
+      "v0.3.1-rc.3": "679ff6745bbacbbce802fb6ef78a51e53dba7e39"
+    },
+    "release_ids_and_asset_metadata_unchanged": true
+  },
+  "stable_exit_gates": "docs/stable-release-gates.md",
+  "next_packet": "docs/next-release-v0.3.1-rc.5.md"
+}
