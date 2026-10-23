@@ -1,6 +1,6 @@
 # Final manuscript checks
 
-The final manuscript review is tracked in [issue #14](https://github.com/ArazSaieArasi3/riskium/issues/14). Repository engineering and article review are separate tasks. This checklist does not report that the current manuscript has already passed review.
+The final manuscript review is tracked in [issue #14](https://github.com/ArazSaieArasi3/riskium/issues/14). Repository engineering and article review are separate tasks. [Manuscript 7.0.7 and its 65-row claim/number ledger](../evaluation/manuscript-review/README.md) now complete the bounded editorial review. Word/PDF equivalence and every rendered page were checked; independent semantic validation and venue-specific acceptance are not implied. Reapply this checklist after a material revision.
 
 For each scientific claim, record its manuscript location, wording, evidence artifact, exact model or dataset version, expected meaning, checked result and disposition. Tests material to the claim must be described in the method or evaluation section, with their population, oracle and limits. Engineering regression counts need not become headline scientific evidence.
 

@@ -1,0 +1,1014 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-23",
+  "source_manuscript_version": "7.0.6",
+  "reviewed_manuscript_version": "7.0.7",
+  "source_manuscript_sha256": "7bc5e9a3bae389dabd5e8dbd8812b9c1a20e14a6547e3ddcdc9c2175210262ae",
+  "evidence_checkpoint_commit": "94feca433e8b8fbccd792899428ea6b648a8a0da",
+  "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+  "claim_ceiling": "Bounded versioned verification and synthetic retrieval plus a source-qualified editorial corpus; no independent semantic acceptance, full normative conformance, held-out applicability or stable scientific validation.",
+  "artifacts": [
+    {
+      "filename": "Riskium_Manuscript_Release_Q_v7_0_7.docx",
+      "sha256": "d8562b6ce1d3eac90f782c45acb5fa32aac345530f5dcfd8297b2a953b6d7652",
+      "size_bytes": 1144103,
+      "pages": null,
+      "delivery": "author-facing file; not copied into the public source repository"
+    },
+    {
+      "filename": "Riskium_Manuscript_Release_Q_v7_0_7.pdf",
+      "sha256": "1ac26b8c6c8cbb8bcb3856ddd74aa16e95b8debb6b2935ae8ef0b93f5fe07f43",
+      "size_bytes": 737315,
+      "pages": 9,
+      "delivery": "author-facing file; not copied into the public source repository"
+    },
+    {
+      "filename": "Riskium_Claims_Assessment_FA_v7_0_7.pdf",
+      "sha256": "013aa4f17d5d222d9e13e925ec42a8195e4aa7f20ba4238338ae8667ce732048",
+      "size_bytes": 134950,
+      "pages": 3,
+      "delivery": "author-facing file; not copied into the public source repository"
+    }
+  ],
+  "bindings_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "diagrams/manifest.json": "2b8e016477e8915276c1eb787034a1716835fc20ba422dc69ee9d68e76deb7d5",
+    "diagrams/selected-view.svg": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+    "evaluation/native-exchange-checks.json": "aad639e138e61b5150a715637bb4c60a077edbfb7101b105c689b0ae35d57e0c",
+    "evaluation/native-roundtrip-checks.json": "1310510354b662e296ca1943e773036f2b26ed322dad948e6012a81f2152676e",
+    "evaluation/quality/report.json": "0ffd7cc0bebaac331fc94c38f3d914c434b2af62744e87d84409b8975691ed6e",
+    "evaluation/hermit/report.json": "414d57f9bb6c91c7b1c08430367669f67b6d57fbe96766cd3d30e233902cdd58",
+    "evaluation/shacl/coverage-status.json": "376c30a35caf40b0fc75710241fa2e87024a6d47b576e34f2cd42b0f04eb4632",
+    "evaluation/shacl/report.json": "3c3603ecfb0e7445e94022577534697b4791b8b7aa2fe04a794614080374abf0",
+    "evaluation/shacl/endpoints/report.json": "385fbb3913318475c4d65c0be3b8b47e50c1805a1cd3dc6655ca8e3262a26f5b",
+    "evaluation/shacl/admission/report.json.gz": "15c8cd89a6ca3fc543394f7ca53642954965c230dc671d9eb893c802719eb3b2",
+    "evaluation/shacl/coherence/report.json": "c87b965eb75b463caeb916293192ecbec0aac9956191f23a451b162e0592cee1",
+    "evaluation/shacl/qualification/report.json.gz": "377e27b5b13b48697e3ce1c94b112640f7b84628a47b87870c0a05a90745bd07",
+    "evaluation/cq/report.json": "0bde12f870030e1a17cea8db9b3cb1a70e882f6f1458eb38d27d891e42260f7f",
+    "evaluation/traceability/ledger.json": "3d972fd49ad5feead1b077b1b6c8de02492f0fe348ce666e32124daac5b74256",
+    "evaluation/references/report.json": "e32c593b16b1d7e227e1500243f3d951b7094f81173f018b86cf98794dc0cdce",
+    "references/corpus.json": "eb23983d2194c19d8b115da147b14cad89607e3e63181217add4e1e7df0f16f7",
+    "evaluation/semantic-review-register.json": "4920fca48a7eac5fd00e5cbfdef904954ebe6c022e6e2af79ec1894892645332"
+  },
+  "historical_archive_sha256": "0a7abf11cd143f1b02027eb77f4f5bfcee613021d9eebb63bb7c46fa81f8d220",
+  "rows": [
+    {
+      "id": "MC-001",
+      "location": "IV-A; Table IV",
+      "claim": "catalog concepts",
+      "declared_value": 80,
+      "checked_value": 80,
+      "evidence": [
+        "ontology/riskium-model.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-002",
+      "location": "IV-A; Table IV",
+      "claim": "typed core",
+      "declared_value": 77,
+      "checked_value": 77,
+      "evidence": [
+        "ontology/riskium-model.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-003",
+      "location": "IV-A; Table IV",
+      "claim": "optional boundaries",
+      "declared_value": 3,
+      "checked_value": 3,
+      "evidence": [
+        "ontology/riskium-model.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-004",
+      "location": "IV-A; Table IV",
+      "claim": "imported anchor, separate",
+      "declared_value": 1,
+      "checked_value": 1,
+      "evidence": [
+        "ontology/riskium-model.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-005",
+      "location": "IV-A; Table IV",
+      "claim": "domains",
+      "declared_value": 11,
+      "checked_value": 11,
+      "evidence": [
+        "ontology/riskium-model.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-006",
+      "location": "IV-A; Table IV",
+      "claim": "associations and optional bridges",
+      "declared_value": 134,
+      "checked_value": 134,
+      "evidence": [
+        "ontology/riskium-model.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-007",
+      "location": "IV-A; Table IV",
+      "claim": "core associations",
+      "declared_value": 127,
+      "checked_value": 127,
+      "evidence": [
+        "ontology/riskium-model.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-008",
+      "location": "IV-A; Table IV",
+      "claim": "generalizations",
+      "declared_value": 66,
+      "checked_value": 66,
+      "evidence": [
+        "ontology/riskium-model.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-009",
+      "location": "IV-A; Table IV",
+      "claim": "interpretation constraints",
+      "declared_value": 25,
+      "checked_value": 25,
+      "evidence": [
+        "ontology/riskium-model.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-010",
+      "location": "Fig. 1 caption",
+      "claim": "selected concepts",
+      "declared_value": 28,
+      "checked_value": 28,
+      "evidence": [
+        "diagrams/manifest.json",
+        "diagrams/selected-view.svg"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-011",
+      "location": "Fig. 1 caption",
+      "claim": "selected associations",
+      "declared_value": 31,
+      "checked_value": 31,
+      "evidence": [
+        "diagrams/manifest.json",
+        "diagrams/selected-view.svg"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-012",
+      "location": "Fig. 1 caption",
+      "claim": "selected generalizations",
+      "declared_value": 10,
+      "checked_value": 10,
+      "evidence": [
+        "diagrams/manifest.json",
+        "diagrams/selected-view.svg"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-013",
+      "location": "IV-F; V-D; Table IV",
+      "claim": "native schema",
+      "declared_value": "https://w3id.org/ontouml/schema/v1.0.2",
+      "checked_value": "https://w3id.org/ontouml/schema/v1.0.2",
+      "evidence": [
+        "evaluation/native-exchange-checks.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Exchange and bounded design evidence; not full native semantic validation."
+    },
+    {
+      "id": "MC-014",
+      "location": "IV-F; V-D; Table IV",
+      "claim": "SDK version",
+      "declared_value": "1.0.0",
+      "checked_value": "1.0.0",
+      "evidence": [
+        "evaluation/native-roundtrip-checks.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Exchange and bounded design evidence; not full native semantic validation."
+    },
+    {
+      "id": "MC-015",
+      "location": "IV-F; V-D; Table IV",
+      "claim": "serialization elements",
+      "declared_value": 585,
+      "checked_value": 585,
+      "evidence": [
+        "evaluation/native-roundtrip-checks.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Exchange and bounded design evidence; not full native semantic validation."
+    },
+    {
+      "id": "MC-016",
+      "location": "IV-F; V-D; Table IV",
+      "claim": "native classes including local anchor",
+      "declared_value": 78,
+      "checked_value": 78,
+      "evidence": [
+        "evaluation/native-exchange-checks.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Exchange and bounded design evidence; not full native semantic validation."
+    },
+    {
+      "id": "MC-017",
+      "location": "IV-F; V-D; Table IV",
+      "claim": "incomplete generalization sets",
+      "declared_value": 10,
+      "checked_value": 10,
+      "evidence": [
+        "evaluation/native-exchange-checks.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Exchange and bounded design evidence; not full native semantic validation."
+    },
+    {
+      "id": "MC-018",
+      "location": "V-C; Table IV",
+      "claim": "HermiT cases",
+      "declared_value": 693,
+      "checked_value": 693,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/hermit/report.json",
+        "evaluation/shacl/coverage-status.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Unlike denominators; neither coverage nor passing cases estimates semantic correctness."
+    },
+    {
+      "id": "MC-019",
+      "location": "V-C; Table IV",
+      "claim": "HermiT PASS obligations",
+      "declared_value": 281,
+      "checked_value": 281,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/hermit/report.json",
+        "evaluation/shacl/coverage-status.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Unlike denominators; neither coverage nor passing cases estimates semantic correctness."
+    },
+    {
+      "id": "MC-020",
+      "location": "V-C; Table IV",
+      "claim": "HermiT baseline",
+      "declared_value": 295,
+      "checked_value": 295,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/hermit/report.json",
+        "evaluation/shacl/coverage-status.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Unlike denominators; neither coverage nor passing cases estimates semantic correctness."
+    },
+    {
+      "id": "MC-021",
+      "location": "V-C; Table IV",
+      "claim": "HermiT NOT_RUN",
+      "declared_value": 14,
+      "checked_value": 14,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/hermit/report.json",
+        "evaluation/shacl/coverage-status.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Unlike denominators; neither coverage nor passing cases estimates semantic correctness."
+    },
+    {
+      "id": "MC-022",
+      "location": "V-C; Table IV",
+      "claim": "HermiT PASS coverage percent",
+      "declared_value": 95.25,
+      "checked_value": 95.25,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/hermit/report.json",
+        "evaluation/shacl/coverage-status.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Unlike denominators; neither coverage nor passing cases estimates semantic correctness."
+    },
+    {
+      "id": "MC-023",
+      "location": "V-C; Table IV",
+      "claim": "SHACL scoped PASS obligations",
+      "declared_value": 341,
+      "checked_value": 341,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/hermit/report.json",
+        "evaluation/shacl/coverage-status.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Unlike denominators; neither coverage nor passing cases estimates semantic correctness."
+    },
+    {
+      "id": "MC-024",
+      "location": "V-C; Table IV",
+      "claim": "SHACL baseline",
+      "declared_value": 359,
+      "checked_value": 359,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/hermit/report.json",
+        "evaluation/shacl/coverage-status.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Unlike denominators; neither coverage nor passing cases estimates semantic correctness."
+    },
+    {
+      "id": "MC-025",
+      "location": "V-C; Table IV",
+      "claim": "SHACL PARTIAL",
+      "declared_value": 1,
+      "checked_value": 1,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/hermit/report.json",
+        "evaluation/shacl/coverage-status.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Unlike denominators; neither coverage nor passing cases estimates semantic correctness."
+    },
+    {
+      "id": "MC-026",
+      "location": "V-C; Table IV",
+      "claim": "SHACL NOT_RUN",
+      "declared_value": 17,
+      "checked_value": 17,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/hermit/report.json",
+        "evaluation/shacl/coverage-status.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Unlike denominators; neither coverage nor passing cases estimates semantic correctness."
+    },
+    {
+      "id": "MC-027",
+      "location": "V-C; Table IV",
+      "claim": "SHACL scoped PASS coverage percent",
+      "declared_value": 94.99,
+      "checked_value": 94.99,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/hermit/report.json",
+        "evaluation/shacl/coverage-status.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Unlike denominators; neither coverage nor passing cases estimates semantic correctness."
+    },
+    {
+      "id": "MC-028",
+      "location": "V-C",
+      "claim": "SHACL module engine validations",
+      "declared_value": 77,
+      "checked_value": 77,
+      "evidence": [
+        "evaluation/shacl/report.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "The conditional module additionally has one expected identity preflight rejection and one blocked case, excluded from engine runs."
+    },
+    {
+      "id": "MC-029",
+      "location": "V-C",
+      "claim": "SHACL module engine validations",
+      "declared_value": 1878,
+      "checked_value": 1878,
+      "evidence": [
+        "evaluation/shacl/endpoints/report.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "The conditional module additionally has one expected identity preflight rejection and one blocked case, excluded from engine runs."
+    },
+    {
+      "id": "MC-030",
+      "location": "V-C",
+      "claim": "SHACL module engine validations",
+      "declared_value": 2012,
+      "checked_value": 2012,
+      "evidence": [
+        "evaluation/shacl/admission/report.json.gz"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "The conditional module additionally has one expected identity preflight rejection and one blocked case, excluded from engine runs."
+    },
+    {
+      "id": "MC-031",
+      "location": "V-C",
+      "claim": "SHACL module engine validations",
+      "declared_value": 48,
+      "checked_value": 48,
+      "evidence": [
+        "evaluation/shacl/coherence/report.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "The conditional module additionally has one expected identity preflight rejection and one blocked case, excluded from engine runs."
+    },
+    {
+      "id": "MC-032",
+      "location": "V-C",
+      "claim": "SHACL module engine validations",
+      "declared_value": 47,
+      "checked_value": 47,
+      "evidence": [
+        "evaluation/shacl/qualification/report.json.gz"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "The conditional module additionally has one expected identity preflight rejection and one blocked case, excluded from engine runs."
+    },
+    {
+      "id": "MC-033",
+      "location": "V-E; V-H; Table IV",
+      "claim": "fixed synthetic CQ answer cases",
+      "declared_value": 32,
+      "checked_value": 32,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/cq/report.json",
+        "evaluation/traceability/ledger.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "CQ06–08 independent populations remain NOT_RUN; trace accounting is not full acceptance."
+    },
+    {
+      "id": "MC-034",
+      "location": "V-E; V-H; Table IV",
+      "claim": "detected CQ mutants",
+      "declared_value": 8,
+      "checked_value": 8,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/cq/report.json",
+        "evaluation/traceability/ledger.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "CQ06–08 independent populations remain NOT_RUN; trace accounting is not full acceptance."
+    },
+    {
+      "id": "MC-035",
+      "location": "V-E; V-H; Table IV",
+      "claim": "original populations with bounded execution",
+      "declared_value": 5,
+      "checked_value": 5,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/cq/report.json",
+        "evaluation/traceability/ledger.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "CQ06–08 independent populations remain NOT_RUN; trace accounting is not full acceptance."
+    },
+    {
+      "id": "MC-036",
+      "location": "V-E; V-H; Table IV",
+      "claim": "original CQ contract population denominator",
+      "declared_value": 8,
+      "checked_value": 8,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/cq/report.json",
+        "evaluation/traceability/ledger.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "CQ06–08 independent populations remain NOT_RUN; trace accounting is not full acceptance."
+    },
+    {
+      "id": "MC-037",
+      "location": "V-E; V-H; Table IV",
+      "claim": "trace rows",
+      "declared_value": 28,
+      "checked_value": 28,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/cq/report.json",
+        "evaluation/traceability/ledger.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "CQ06–08 independent populations remain NOT_RUN; trace accounting is not full acceptance."
+    },
+    {
+      "id": "MC-038",
+      "location": "V-E",
+      "claim": "trace cohort RKRS-",
+      "declared_value": 12,
+      "checked_value": 12,
+      "evidence": [
+        "evaluation/traceability/ledger.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-039",
+      "location": "V-E",
+      "claim": "trace cohort RKM-SCOPE-",
+      "declared_value": 8,
+      "checked_value": 8,
+      "evidence": [
+        "evaluation/traceability/ledger.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-040",
+      "location": "V-E",
+      "claim": "trace cohort RQ-CQ",
+      "declared_value": 8,
+      "checked_value": 8,
+      "evidence": [
+        "evaluation/traceability/ledger.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-041",
+      "location": "V-F; Table IV",
+      "claim": "source register sources",
+      "declared_value": 11,
+      "checked_value": 11,
+      "evidence": [
+        "evaluation/references/report.json",
+        "references/corpus.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Inspected portions only; normative appetite/tolerance crosswalk not assessed."
+    },
+    {
+      "id": "MC-042",
+      "location": "V-F; Table IV",
+      "claim": "source register interpretations",
+      "declared_value": 13,
+      "checked_value": 13,
+      "evidence": [
+        "evaluation/references/report.json",
+        "references/corpus.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Inspected portions only; normative appetite/tolerance crosswalk not assessed."
+    },
+    {
+      "id": "MC-043",
+      "location": "V-G; Table IV",
+      "claim": "connectivity full_with_inheritance",
+      "declared_value": {
+        "nodes": 81,
+        "components": 1,
+        "isolated": 0
+      },
+      "checked_value": {
+        "nodes": 81,
+        "components": 1,
+        "isolated": 0
+      },
+      "evidence": [
+        "ontology/riskium-model.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Undirected adjacency; parallel links collapsed. Not a cohesion/coupling or domain quality score."
+    },
+    {
+      "id": "MC-044",
+      "location": "V-G; Table IV",
+      "claim": "connectivity core_with_import_and_inheritance",
+      "declared_value": {
+        "nodes": 78,
+        "components": 1,
+        "isolated": 0
+      },
+      "checked_value": {
+        "nodes": 78,
+        "components": 1,
+        "isolated": 0
+      },
+      "evidence": [
+        "ontology/riskium-model.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Undirected adjacency; parallel links collapsed. Not a cohesion/coupling or domain quality score."
+    },
+    {
+      "id": "MC-045",
+      "location": "V-G; Table IV",
+      "claim": "connectivity full_associations_only",
+      "declared_value": {
+        "nodes": 81,
+        "components": 8,
+        "isolated": 7
+      },
+      "checked_value": {
+        "nodes": 81,
+        "components": 8,
+        "isolated": 7
+      },
+      "evidence": [
+        "ontology/riskium-model.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Undirected adjacency; parallel links collapsed. Not a cohesion/coupling or domain quality score."
+    },
+    {
+      "id": "MC-046",
+      "location": "V-G",
+      "claim": "internally connected domains",
+      "declared_value": 9,
+      "checked_value": 9,
+      "evidence": [
+        "ontology/riskium-model.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-047",
+      "location": "V-G",
+      "claim": "domains with two internal components",
+      "declared_value": 2,
+      "checked_value": 2,
+      "evidence": [
+        "ontology/riskium-model.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": ""
+    },
+    {
+      "id": "MC-048",
+      "location": "V-H; Table IV",
+      "claim": "historical core checks",
+      "declared_value": 454,
+      "checked_value": 454,
+      "evidence": [
+        {
+          "archive": "Riskium_SQLite_v0.3.0-rc.1_integrated_review.zip",
+          "member": "Riskium_v0.3.0-rc.1_integrated_review/reports/core_verification_console.json",
+          "sha256": "b49bb51c97876563b16a16db2a5ce189613effbcfaf2dfc991dc0756c3bd0cc6",
+          "access": "author-supplied historical companion; not uploaded to public repository"
+        }
+      ],
+      "disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "limit": "SQLite v0.3.0-rc.1; not a fresh execution of the current public model."
+    },
+    {
+      "id": "MC-049",
+      "location": "V-H; Table IV",
+      "claim": "historical core passes",
+      "declared_value": 454,
+      "checked_value": 454,
+      "evidence": [
+        {
+          "archive": "Riskium_SQLite_v0.3.0-rc.1_integrated_review.zip",
+          "member": "Riskium_v0.3.0-rc.1_integrated_review/reports/core_verification_console.json",
+          "sha256": "b49bb51c97876563b16a16db2a5ce189613effbcfaf2dfc991dc0756c3bd0cc6",
+          "access": "author-supplied historical companion; not uploaded to public repository"
+        }
+      ],
+      "disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "limit": "SQLite v0.3.0-rc.1; not a fresh execution of the current public model."
+    },
+    {
+      "id": "MC-050",
+      "location": "V-H; Table IV",
+      "claim": "historical rejected mutations",
+      "declared_value": 157,
+      "checked_value": 157,
+      "evidence": [
+        {
+          "archive": "Riskium_SQLite_v0.3.0-rc.1_integrated_review.zip",
+          "member": "Riskium_v0.3.0-rc.1_integrated_review/reports/core_verification_console.json",
+          "sha256": "b49bb51c97876563b16a16db2a5ce189613effbcfaf2dfc991dc0756c3bd0cc6",
+          "access": "author-supplied historical companion; not uploaded to public repository"
+        }
+      ],
+      "disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "limit": "SQLite v0.3.0-rc.1; not a fresh execution of the current public model."
+    },
+    {
+      "id": "MC-051",
+      "location": "V-J; Table IV",
+      "claim": "source/loading checks",
+      "declared_value": 67,
+      "checked_value": 67,
+      "evidence": [
+        {
+          "archive": "Riskium_SQLite_v0.3.0-rc.1_integrated_review.zip",
+          "member": "Riskium_v0.3.0-rc.1_integrated_review/reports/verification_case.json",
+          "sha256": "dc6634a1d1a4d6d62c565b1bb51501f4d4aae7b48393b42b54d549197afb0edd",
+          "access": "author-supplied historical companion; not uploaded to public repository"
+        }
+      ],
+      "disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "limit": ""
+    },
+    {
+      "id": "MC-052",
+      "location": "V-J; Table IV",
+      "claim": "adjudication integrity checks",
+      "declared_value": 14,
+      "checked_value": 14,
+      "evidence": [
+        {
+          "archive": "Riskium_SQLite_v0.3.0-rc.1_integrated_review.zip",
+          "member": "Riskium_v0.3.0-rc.1_integrated_review/adjudication/Adjudication_Verification_Receipt.json",
+          "sha256": "92038fea2e2669df206bfb1af209c3d31cf211ea6c1eba1986177f1b9eb08f7f",
+          "access": "author-supplied historical companion; not uploaded to public repository"
+        }
+      ],
+      "disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "limit": "These are not fourteen query tests."
+    },
+    {
+      "id": "MC-053",
+      "location": "V-J",
+      "claim": "journal articles",
+      "declared_value": 30,
+      "checked_value": 30,
+      "evidence": [
+        {
+          "archive": "Riskium_SQLite_v0.3.0-rc.1_integrated_review.zip",
+          "member": "source/SemRisk_Pharma_v06.sqlite",
+          "sha256": "b1f08a5b9464f1c0c06acd112324707ae91d97d28883b006ca12ff6c2ee7b780",
+          "access": "author-supplied historical source snapshot"
+        }
+      ],
+      "disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "limit": ""
+    },
+    {
+      "id": "MC-054",
+      "location": "V-J",
+      "claim": "corrigenda",
+      "declared_value": 1,
+      "checked_value": 1,
+      "evidence": [
+        {
+          "archive": "Riskium_SQLite_v0.3.0-rc.1_integrated_review.zip",
+          "member": "source/SemRisk_Pharma_v06.sqlite",
+          "sha256": "b1f08a5b9464f1c0c06acd112324707ae91d97d28883b006ca12ff6c2ee7b780",
+          "access": "author-supplied historical source snapshot"
+        }
+      ],
+      "disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "limit": ""
+    },
+    {
+      "id": "MC-055",
+      "location": "V-J",
+      "claim": "consolidated items",
+      "declared_value": 883,
+      "checked_value": 883,
+      "evidence": [
+        {
+          "archive": "Riskium_SQLite_v0.3.0-rc.1_integrated_review.zip",
+          "member": "source/SemRisk_Pharma_v06.sqlite",
+          "sha256": "b1f08a5b9464f1c0c06acd112324707ae91d97d28883b006ca12ff6c2ee7b780",
+          "access": "author-supplied historical source snapshot"
+        }
+      ],
+      "disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "limit": ""
+    },
+    {
+      "id": "MC-056",
+      "location": "V-J",
+      "claim": "active source records",
+      "declared_value": 1011,
+      "checked_value": 1011,
+      "evidence": [
+        {
+          "archive": "Riskium_SQLite_v0.3.0-rc.1_integrated_review.zip",
+          "member": "source/SemRisk_Pharma_v06.sqlite",
+          "sha256": "b1f08a5b9464f1c0c06acd112324707ae91d97d28883b006ca12ff6c2ee7b780",
+          "access": "author-supplied historical source snapshot"
+        }
+      ],
+      "disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "limit": ""
+    },
+    {
+      "id": "MC-057",
+      "location": "V-J",
+      "claim": "reported values",
+      "declared_value": 1695,
+      "checked_value": 1695,
+      "evidence": [
+        {
+          "archive": "Riskium_SQLite_v0.3.0-rc.1_integrated_review.zip",
+          "member": "source/SemRisk_Pharma_v06.sqlite",
+          "sha256": "b1f08a5b9464f1c0c06acd112324707ae91d97d28883b006ca12ff6c2ee7b780",
+          "access": "author-supplied historical source snapshot"
+        }
+      ],
+      "disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "limit": ""
+    },
+    {
+      "id": "MC-058",
+      "location": "V-J",
+      "claim": "scenario components",
+      "declared_value": 84,
+      "checked_value": 84,
+      "evidence": [
+        {
+          "archive": "Riskium_SQLite_v0.3.0-rc.1_integrated_review.zip",
+          "member": "source/SemRisk_Pharma_v06.sqlite",
+          "sha256": "b1f08a5b9464f1c0c06acd112324707ae91d97d28883b006ca12ff6c2ee7b780",
+          "access": "author-supplied historical source snapshot"
+        }
+      ],
+      "disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "limit": ""
+    },
+    {
+      "id": "MC-059",
+      "location": "V-J",
+      "claim": "source scenarios/components/admitted RiskCases",
+      "declared_value": [
+        11,
+        84,
+        0
+      ],
+      "checked_value": [
+        11,
+        84,
+        0
+      ],
+      "evidence": [
+        {
+          "archive": "Riskium_SQLite_v0.3.0-rc.1_integrated_review.zip",
+          "member": "Riskium_v0.3.0-rc.1_integrated_review/reports/verification_case.json",
+          "sha256": "dc6634a1d1a4d6d62c565b1bb51501f4d4aae7b48393b42b54d549197afb0edd",
+          "access": "author-supplied historical companion; not uploaded to public repository"
+        }
+      ],
+      "disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "limit": ""
+    },
+    {
+      "id": "MC-060",
+      "location": "V-J",
+      "claim": "source FMECA arithmetic matches",
+      "declared_value": 11,
+      "checked_value": 11,
+      "evidence": [
+        {
+          "archive": "Riskium_SQLite_v0.3.0-rc.1_integrated_review.zip",
+          "member": "Riskium_v0.3.0-rc.1_integrated_review/reports/verification_case.json",
+          "sha256": "dc6634a1d1a4d6d62c565b1bb51501f4d4aae7b48393b42b54d549197afb0edd",
+          "access": "author-supplied historical companion; not uploaded to public repository"
+        }
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Arithmetic source fidelity, not prediction."
+    },
+    {
+      "id": "MC-061",
+      "location": "V-D; VI-D; Table IV",
+      "claim": "independent adjudications",
+      "declared_value": 0,
+      "checked_value": 0,
+      "evidence": [
+        "evaluation/quality/report.json",
+        "evaluation/semantic-review-register.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "No independent semantic acceptance; critical findings unknown, not zero."
+    },
+    {
+      "id": "MC-062",
+      "location": "V-C; VI-D",
+      "claim": "overall semantic correctness percent",
+      "declared_value": null,
+      "checked_value": null,
+      "evidence": [
+        "evaluation/quality/report.json"
+      ],
+      "disposition": "MATCHED_WITHIN_SCOPE",
+      "limit": "Unestimated; no aggregation of unlike engineering/scientific counts."
+    },
+    {
+      "id": "MC-063",
+      "location": "Original Table IV; V-G",
+      "claim": "Taxonomy COH/COP values 0.1557/0.2597, domain table, exhaustive oracle and printed-equation correction",
+      "declared_value": null,
+      "checked_value": null,
+      "evidence": [],
+      "disposition": "WITHDRAWN_NO_MATCHED_VERSION_BOUND_RECEIPT",
+      "limit": "Not transferred to manuscript 7.0.7; retain only supported qualitative boundaries."
+    },
+    {
+      "id": "MC-064",
+      "location": "Original Table V",
+      "claim": "13/13 mutation, 35/35 contract, 18/18 additional and 127/127 including 14/14 query assertions",
+      "declared_value": null,
+      "checked_value": null,
+      "evidence": [],
+      "disposition": "WITHDRAWN_NO_MATCHED_VERSION_BOUND_RECEIPT",
+      "limit": "Not transferred to manuscript 7.0.7; retain only supported qualitative boundaries."
+    },
+    {
+      "id": "MC-065",
+      "location": "V-D",
+      "claim": "8 abstraction candidates / 7 justified / 1 open historical counts",
+      "declared_value": null,
+      "checked_value": null,
+      "evidence": [],
+      "disposition": "WITHDRAWN_NO_MATCHED_VERSION_BOUND_RECEIPT",
+      "limit": "Not transferred to manuscript 7.0.7; retain only supported qualitative boundaries."
+    }
+  ],
+  "graph_recalculation": {
+    "full_with_inheritance": {
+      "nodes": 81,
+      "components": 1,
+      "isolated": 0
+    },
+    "core_with_import_and_inheritance": {
+      "nodes": 78,
+      "components": 1,
+      "isolated": 0
+    },
+    "full_associations_only": {
+      "nodes": 81,
+      "components": 8,
+      "isolated": 7
+    }
+  },
+  "document_qa": {
+    "status": "PASS_FOR_BOUNDED_EDITORIAL_RECONCILIATION",
+    "article_pages": 9,
+    "persian_assessment_pages": 3,
+    "all_revised_paragraphs_and_cells_present_in_equivalent_pdf": true,
+    "unaffected_paragraph_xml_unchanged": true,
+    "authors_affiliations_title_references_unchanged": true,
+    "bibliography_items": 24,
+    "bibliography_metadata_reverification": "Not an exhaustive external reference re-audit; retained author-approved bibliography and checked citation numbering and source-portion claim limits. No venue-specific submission rules were supplied.",
+    "figure_media_and_dimensions_unchanged": true,
+    "styles_relationships_headers_footers_unchanged": true,
+    "visual_review": "All 9 article pages and all 3 Persian report pages rendered and inspected; table headers repeat across breaks; no clipped cells or missing glyphs.",
+    "new_scientific_engine_runs": 0,
+    "manual_review_independent_of_repository_migration": true,
+    "independent_domain_expert_review": false
+  },
+  "preservation": {
+    "all_package_members_except_document_xml_and_version_metadata_byte_identical": true,
+    "unchanged_package_member_count": 26,
+    "images_styles_relationships_headers_footers_unchanged": true,
+    "main_figure_resized": false,
+    "authors_affiliations_and_bibliography_unchanged": true,
+    "metadata_changes": "Version, revision, subject, obsolete figure-pending description and modified date updated; stale lastModifiedBy removed; creator/title unchanged."
+  },
+  "recheck_rule": "Recheck this ledger and the document after a material manuscript/model/fixture revision; do not rewrite historical receipts.",
+  "remaining_work": {
+    "4": "14 HermiT-specific constraint routes",
+    "5": "C-08 compatibility, 17 NOT_RUN routes and full conditional/multi-relation integration",
+    "7": "Independent semantic adjudication",
+    "12": "Current relational/model reconciliation and application history/readiness",
+    "13": "Independent case/CQ populations and justified real-case admission",
+    "16": "Future extensions; not current capabilities"
+  },
+  "release_disposition": "Manuscript review complete for this bounded development profile. No new tag, moved archive, stable scientific acceptance or independent domain validation is implied."
+}

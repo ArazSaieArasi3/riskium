@@ -40,7 +40,7 @@ The post-prerelease [requirement/CQ trace](evaluation/traceability/README.md) ac
 
 The post-prerelease [source register](references/README.md) records 11 selected sources and 13 interpretation rows, including one explicitly unassessed detailed vocabulary mapping. It separates public overviews/abstracts from inspected method text and selected implementation declarations. This completes the bounded public corpus in #8; full normative crosswalks, independent semantic adjudication and exhaustive prior-art/novelty claims remain unestablished.
 
-The post-prerelease [quality synthesis](evaluation/quality/README.md) completes #11 with 14 measures, exact source binding, all 25 constraint routes and all 28 trace rows. It preserves separate formal, synthetic-query, source, independent-review and applicability judgments. No overall semantic-correctness score, stable scientific acceptance or completed manuscript review is established.
+The post-prerelease [quality synthesis](evaluation/quality/README.md) completes #11 with 14 measures, exact source binding, all 25 constraint routes and all 28 trace rows. It preserves separate formal, synthetic-query, source, independent-review and applicability judgments. The subsequent [manuscript 7.0.7 review](evaluation/manuscript-review/README.md) completes #14 for bounded claim/number reconciliation, with 65 ledger rows, preserved authors/figure/references and checked Word/PDF outputs. No overall semantic-correctness score or stable scientific acceptance is established.
 
 ## Reuse and contribution
 
