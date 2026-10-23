@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-10-23",
+  "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+  "evidence_checkpoint_commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+  "assessment_kind": "Retrospective claim-based synthesis of existing receipts; no new formal execution or independent adjudication",
+  "metric_timing": "The original 674-obligation allocation and fixture oracles predate their recorded executions. This synthesis defines descriptive measures before interpreting them here; it does not retrospectively invent statistical success thresholds or claim a newly pre-registered experiment.",
+  "aggregation_policy": "No weighted score, global PASS percentage, semantic-correctness probability or sum of unlike evidence units. Missing evidence stays unestablished; zero reviewed groups gives undefined acceptance, not 0% or 100% correctness. Ontology size and taxonomy shape are inventory descriptors, not semantic quality.",
+  "framework_decisions": [
+    {
+      "candidate": "Riskium's existing semantic-assurance plan and coverage contract",
+      "decision": "ADOPT_AS_LOCAL_EVIDENCE_PARTITION",
+      "basis": "Use the already declared formal, explicit-data, meaning, source, applicability, query, operational and reproducibility axes. Keep their distinct denominators and acceptance proposals; no universal scientific thresholds.",
+      "source": "evaluation/semantic-assurance-plan.md at evidence checkpoint; evaluation/coverage-contract.json"
+    },
+    {
+      "candidate": "Ontology Quality Framework (OQF), R-039",
+      "decision": "NOT_ADOPTED_AS_A_FROZEN_METRIC_OR_CONFORMANCE_STANDARD",
+      "basis": "The inspected repository explicitly has no frozen quality core or approved canonical metric/threshold/weight set. It can inform future work; citing it does not certify Riskium or create an OQF adoption/conformance result.",
+      "source": "https://github.com/ArazSaieArasi3/ontology-quality-framework/blob/90d7dfba29a6a09b1a210ae1b9ba65ebdd893c30/README.md",
+      "inspected": "Mission; VVEAA research questions; Current boundaries and nonclaims; checked 2026-10-23. No full framework or catalog assessment."
+    },
+    {
+      "candidate": "Taxonomy-only metrics and external composite quality schemes",
+      "decision": "NOT_USED_FOR_WHOLE_MODEL_SEMANTIC_ACCEPTANCE",
+      "basis": "Counting classes, subclass links or depth cannot adjudicate case identity, source meaning, dependency, record history or intended-use adequacy. No external scoring scheme was implemented, benchmarked or silently adopted by name.",
+      "source": "Local adoption decision; no uninspected external scheme is represented as implemented"
+    }
+  ],
+  "metric_definitions": [
+    {"id": "Q-01", "name": "Conceptual inventory", "unit": "Source elements by family", "numerator": "Count concepts, typed core, optional boundaries, imported anchor, associations, generalizations and constraints separately", "denominator": "None; counts are not a quality ratio", "interpretation": "Inventory only; no size or taxonomy-based quality ranking"},
+    {"id": "Q-02", "name": "HermiT obligation coverage", "unit": "Predeclared HermiT obligation", "numerator": "Rows recorded PASS", "denominator": "All 295 HermiT rows; retain NOT_RUN and other outcomes", "interpretation": "Scoped formal coverage of the reviewed encoding, not domain truth"},
+    {"id": "Q-03", "name": "HermiT case agreement", "unit": "Recorded engine case", "numerator": "Case outcomes matching the declared oracle", "denominator": "All cases in the pinned HermiT receipt", "interpretation": "Finite fixture agreement; distinct from baseline obligation coverage"},
+    {"id": "Q-04", "name": "SHACL obligation coverage", "unit": "Predeclared SHACL obligation", "numerator": "Rows recorded scoped PASS", "denominator": "All 359 SHACL rows, with PARTIAL and NOT_RUN separately retained", "interpretation": "Scoped module coverage; no arbitrary full-profile admission or semantic-validity percentage"},
+    {"id": "Q-05", "name": "Synthetic CQ answer agreement", "unit": "Fixed synthetic expected-answer case", "numerator": "Executed non-mutation cases with exact oracle agreement and no engine error", "denominator": "All non-mutation answer cases in the CQ receipt", "interpretation": "Synthetic retrieval evidence, not held-out real-case accuracy"},
+    {"id": "Q-06", "name": "Query mutation sensitivity", "unit": "Declared query mutant control", "numerator": "Successfully executed controls detecting the changed answer", "denominator": "All declared query mutants; errors never count as detection", "interpretation": "Sensitivity to these mutants, not a universal mutation or semantic score"},
+    {"id": "Q-07", "name": "Original CQ population execution", "unit": "Original source CQ contract", "numerator": "Contracts executed on the population actually declared by their source", "denominator": "Eight original CQs; distinguish five synthetic tasks from three independently prepared populations", "interpretation": "Population execution coverage; no acceptance of all eight original population contracts"},
+    {"id": "Q-08", "name": "Public trace completeness", "unit": "Requirement, scope or CQ row", "numerator": "Rows with complete public source/evidence accounting", "denominator": "12 requirements + 8 scope obligations + 8 CQs = 28; eight scope rows are outside the 674 baseline", "interpretation": "Trace completion, not full requirement acceptance"},
+    {"id": "Q-09", "name": "Independent semantic review completion", "unit": "Core review group", "numerator": "Groups with a recorded independent adjudication", "denominator": "295 core groups; separately report 4 boundary and 20 original acceptance groups", "interpretation": "Recorded review progress, not percent correct; original 20 acceptance groups do not include eight later scope traces"},
+    {"id": "Q-10", "name": "Independent semantic acceptance", "unit": "Independently adjudicated group", "numerator": "Accepted groups under a predeclared reviewer protocol", "denominator": "Actually adjudicated groups; undefined if zero or no approved rating interpretation", "interpretation": "Do not invent accepted labels, confidence intervals or overall correctness"},
+    {"id": "Q-11", "name": "Source interpretation evidence", "unit": "Selected source, reading locator or interpretation row, reported separately", "numerator": "Recorded corpus counts by category/disposition", "denominator": "No exhaustive source universe or independent acceptance denominator established", "interpretation": "Editorial traceability only; NOT_ASSESSED and access limits remain explicit"},
+    {"id": "Q-12", "name": "Independent case applicability", "unit": "Independently specified real/held-out case or CQ task", "numerator": "Correctly represented/adjudicated cases", "denominator": "Not established by the current public receipts", "interpretation": "NOT_ESTABLISHED; the approved 11 source scenarios are not automatically organizational RiskCases"},
+    {"id": "Q-13", "name": "Operational preservation", "unit": "Approved relational/application acceptance requirement", "numerator": "Validated identity/history/calculation/round-trip tasks", "denominator": "No reconciled public operational acceptance population established here", "interpretation": "NOT_ESTABLISHED; native OWL and supplementary CQ fields do not imply a tested relational implementation"},
+    {"id": "Q-14", "name": "Reproducibility and publication", "unit": "Version-bound receipt or historical release check", "numerator": "Retained source-bound evidence", "denominator": "Report each receipt's own scope; do not combine release commands, software regressions and scientific cases", "interpretation": "Historical reproduction and publication evidence; this synthesis does not rerun their engines or audit the manuscript"}
+  ],
+  "constraint_follow_up": {
+    "C-01": {"issues": [5, 7, 12], "route": "Case identity policy, label counterexamples and governed application identity"},
+    "C-02": {"issues": [5, 7, 13], "route": "No realization from documentary content; independent occurrence evidence"},
+    "C-03": {"issues": [4, 5, 12], "route": "History/application immutability and supersession evidence; static graphs alone are insufficient"},
+    "C-04": {"issues": [4, 5, 12], "route": "Pinned assessment interpretation, method/scale/context/time integration"},
+    "C-05": {"issues": [4, 5, 7, 12], "route": "Temporal meaning and closure/cessation distinction"},
+    "C-07": {"issues": [5, 7], "route": "Source-qualified mandate, responsibility and ownership interpretation"},
+    "C-08": {"issues": [5, 12], "route": "Approve and exercise dual-anchor unit/scale compatibility; retain BLOCKED case"},
+    "C-09": {"issues": [4, 5], "route": "Retain explicit-data aboutness evidence separately from the HermiT NOT_RUN row"},
+    "C-10": {"issues": [4, 5, 7, 14], "route": "Legitimate source access and independent framework-qualified tolerance review"},
+    "C-11": {"issues": [4, 7], "route": "Application vocabulary keys do not establish ontological identity or HermiT discharge"},
+    "C-12": {"issues": [4, 7, 13], "route": "Role-qualified evidence metadata does not establish claim truth or evidential adequacy"},
+    "C-13": {"issues": [4, 5, 12], "route": "Joint scale/version/dimension compatibility under an approved task profile"},
+    "C-14": {"issues": [4, 5, 7], "route": "Structural boundary review is alternative scoped evidence, not engine execution or actual referent existence"},
+    "C-15": {"issues": [5, 7], "route": "Intrinsic vulnerability bearer evidence and typing adjudication"},
+    "C-16": {"issues": [4, 5, 12], "route": "Full multi-relation/conditional admission and analytical readiness beyond CatalogInspection"},
+    "C-17": {"issues": [4, 5, 12, 13], "route": "Multiple assertions, provenance and scalar-selection behavior under application policy"},
+    "C-18": {"issues": [4, 5, 12], "route": "Comparable assessment tasks, explicit transformations and missing-data controls"},
+    "C-19": {"issues": [4, 5, 7, 12], "route": "Workflow rules, authority and history; no effectiveness inference from status"},
+    "C-20": {"issues": [5, 7, 14], "route": "Local Risk Item terminology without universal identity/equivalence"},
+    "C-21": {"issues": [4, 5, 12], "route": "Reported/computed score distinction with justified inputs and reproducible calculation"},
+    "C-22": {"issues": [5, 7, 12], "route": "Grounded mandate identity across scope/time; no key from participant equality alone"}
+  },
+  "trace_reconciliation": [
+    {"id": "RKM-SCOPE-03", "recorded_state": "PARTIAL", "current_disposition": "PARTIAL_SOURCE_QUALIFICATION_RECORDED_EXACT_TERMS_UNASSESSED", "evidence": "references/corpus.json: INT-06; LIM-01", "issues": [7, 14], "reason": "Closing #8's bounded corpus did not read the missing normative appetite/tolerance definitions."},
+    {"id": "RKM-SCOPE-04", "recorded_state": "NOT_RUN", "current_disposition": "BOUNDED_EDITORIAL_REVIEW_RECORDED", "evidence": "references/corpus.json; evaluation/references/report.json", "issues": [7, 14], "reason": "The later #8 corpus now identifies exact inspected portions and uninspected scope; no full clause compatibility or independent acceptance is inferred."},
+    {"id": "RKM-SCOPE-05", "recorded_state": "PUBLIC_ID_CONTINUITY_CHECKED", "current_disposition": "PUBLIC_ID_CONTINUITY_CHECKED", "evidence": "evaluation/traceability/historical-identities.json", "issues": [14], "reason": "Keep public identity continuity separate from unavailable pre-public acquisition inventories; source-corpus closure adds no private-ID reconciliation."},
+    {"id": "RKRS-12", "recorded_state": "BOUNDED_EVIDENCE_METADATA_CHECK", "current_disposition": "BOUNDED_CLAIM_SYNTHESIS_RECORDED", "evidence": "evaluation/quality/report.json", "issues": [7, 14], "reason": "This report adds versioned claim/denominator synthesis, not independent acceptance of the entire quality requirement."}
+  ],
+  "judgment": {
+    "report_milestone": "COMPLETE_FOR_BOUNDED_CLAIM_SYNTHESIS",
+    "development_prerelease": "PUBLISHED_HISTORICAL_BOUNDED_PROFILE",
+    "stable_scientific_acceptance": "NOT_ESTABLISHED",
+    "overall_semantic_correctness_percent": null,
+    "critical_findings_count": null,
+    "reason": "No independent semantic adjudications, held-out task acceptance or reconciled operational evaluation are established; formal and normative gaps remain explicit. Unknown criticality is not zero critical findings. No new universal release gate or quality threshold is imposed by this report."
+  }
+}

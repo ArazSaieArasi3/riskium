@@ -1,0 +1,1220 @@
+{
+  "claim_ceiling": "Bounded versioned verification and synthetic retrieval plus a source-qualified editorial corpus; no independent semantic acceptance, full normative conformance, held-out applicability or stable scientific validation.",
+  "constraint_rows": [
+    {
+      "follow_up": {
+        "issues": [
+          5,
+          7,
+          12
+        ],
+        "route": "Case identity policy, label counterexamples and governed application identity"
+      },
+      "hermit": {
+        "id": "HERMIT-0605",
+        "outcome": "PASS"
+      },
+      "id": "C-01",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0606",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Risk Case is not ISO Risk"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          5,
+          7,
+          13
+        ],
+        "route": "No realization from documentary content; independent occurrence evidence"
+      },
+      "hermit": {
+        "id": "HERMIT-0607",
+        "outcome": "PASS"
+      },
+      "id": "C-02",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0608",
+        "outcome": "NOT_RUN"
+      },
+      "title": "No realization from description"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          4,
+          5,
+          12
+        ],
+        "route": "History/application immutability and supersession evidence; static graphs alone are insufficient"
+      },
+      "hermit": {
+        "id": "HERMIT-0609",
+        "outcome": "NOT_RUN"
+      },
+      "id": "C-03",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0610",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Issued version immutability"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          4,
+          5,
+          12
+        ],
+        "route": "Pinned assessment interpretation, method/scale/context/time integration"
+      },
+      "hermit": {
+        "id": "HERMIT-0611",
+        "outcome": "NOT_RUN"
+      },
+      "id": "C-04",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0612",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Assessment interpretation"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          4,
+          5,
+          7,
+          12
+        ],
+        "route": "Temporal meaning and closure/cessation distinction"
+      },
+      "hermit": {
+        "id": "HERMIT-0613",
+        "outcome": "NOT_RUN"
+      },
+      "id": "C-05",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0614",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Temporal and administrative distinction"
+    },
+    {
+      "follow_up": null,
+      "hermit": {
+        "id": "HERMIT-0615",
+        "outcome": "PASS"
+      },
+      "id": "C-06",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": false,
+      "shacl": {
+        "id": "SHACL-0616",
+        "outcome": "PASS"
+      },
+      "title": "Relator participant distinctness"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          5,
+          7
+        ],
+        "route": "Source-qualified mandate, responsibility and ownership interpretation"
+      },
+      "hermit": {
+        "id": "HERMIT-0617",
+        "outcome": "PASS"
+      },
+      "id": "C-07",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0618",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Role-qualified ownership"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          5,
+          12
+        ],
+        "route": "Approve and exercise dual-anchor unit/scale compatibility; retain BLOCKED case"
+      },
+      "hermit": {
+        "id": "HERMIT-0619",
+        "outcome": "PASS"
+      },
+      "id": "C-08",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0620",
+        "outcome": "PARTIAL"
+      },
+      "title": "Threshold anchor"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          4,
+          5
+        ],
+        "route": "Retain explicit-data aboutness evidence separately from the HermiT NOT_RUN row"
+      },
+      "hermit": {
+        "id": "HERMIT-0621",
+        "outcome": "NOT_RUN"
+      },
+      "id": "C-09",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0622",
+        "outcome": "PASS"
+      },
+      "title": "Description aboutness"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          4,
+          5,
+          7,
+          14
+        ],
+        "route": "Legitimate source access and independent framework-qualified tolerance review"
+      },
+      "hermit": {
+        "id": "HERMIT-0623",
+        "outcome": "NOT_RUN"
+      },
+      "id": "C-10",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0624",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Framework-qualified tolerance"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          4,
+          7
+        ],
+        "route": "Application vocabulary keys do not establish ontological identity or HermiT discharge"
+      },
+      "hermit": {
+        "id": "HERMIT-0625",
+        "outcome": "NOT_RUN"
+      },
+      "id": "C-11",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0626",
+        "outcome": "PASS"
+      },
+      "title": "Vocabulary resource identity"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          4,
+          7,
+          13
+        ],
+        "route": "Role-qualified evidence metadata does not establish claim truth or evidential adequacy"
+      },
+      "hermit": {
+        "id": "HERMIT-0627",
+        "outcome": "NOT_RUN"
+      },
+      "id": "C-12",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0628",
+        "outcome": "PASS"
+      },
+      "title": "Evidence does not endorse"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          4,
+          5,
+          12
+        ],
+        "route": "Joint scale/version/dimension compatibility under an approved task profile"
+      },
+      "hermit": {
+        "id": "HERMIT-0629",
+        "outcome": "NOT_RUN"
+      },
+      "id": "C-13",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0630",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Scale and dimension compatibility"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          4,
+          5,
+          7
+        ],
+        "route": "Structural boundary review is alternative scoped evidence, not engine execution or actual referent existence"
+      },
+      "hermit": {
+        "id": "HERMIT-0631",
+        "outcome": "NOT_RUN"
+      },
+      "id": "C-14",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0632",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Heterogeneous boundaries"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          5,
+          7
+        ],
+        "route": "Intrinsic vulnerability bearer evidence and typing adjudication"
+      },
+      "hermit": {
+        "id": "HERMIT-0633",
+        "outcome": "PASS"
+      },
+      "id": "C-15",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0634",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Intrinsic vulnerability bearer"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          4,
+          5,
+          12
+        ],
+        "route": "Full multi-relation/conditional admission and analytical readiness beyond CatalogInspection"
+      },
+      "hermit": {
+        "id": "HERMIT-0635",
+        "outcome": "NOT_RUN"
+      },
+      "id": "C-16",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0636",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Admission profiles"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          4,
+          5,
+          12,
+          13
+        ],
+        "route": "Multiple assertions, provenance and scalar-selection behavior under application policy"
+      },
+      "hermit": {
+        "id": "HERMIT-0637",
+        "outcome": "NOT_RUN"
+      },
+      "id": "C-17",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0638",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Multiple assertions"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          4,
+          5,
+          12
+        ],
+        "route": "Comparable assessment tasks, explicit transformations and missing-data controls"
+      },
+      "hermit": {
+        "id": "HERMIT-0639",
+        "outcome": "NOT_RUN"
+      },
+      "id": "C-18",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0640",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Comparable assessments"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          4,
+          5,
+          7,
+          12
+        ],
+        "route": "Workflow rules, authority and history; no effectiveness inference from status"
+      },
+      "hermit": {
+        "id": "HERMIT-0641",
+        "outcome": "NOT_RUN"
+      },
+      "id": "C-19",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0642",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Workflow semantics"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          5,
+          7,
+          14
+        ],
+        "route": "Local Risk Item terminology without universal identity/equivalence"
+      },
+      "hermit": {
+        "id": "HERMIT-0643",
+        "outcome": "PASS"
+      },
+      "id": "C-20",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0644",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Risk Item vocabulary"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          4,
+          5,
+          12
+        ],
+        "route": "Reported/computed score distinction with justified inputs and reproducible calculation"
+      },
+      "hermit": {
+        "id": "HERMIT-0645",
+        "outcome": "NOT_RUN"
+      },
+      "id": "C-21",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0646",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Reported and computed scores"
+    },
+    {
+      "follow_up": {
+        "issues": [
+          5,
+          7,
+          12
+        ],
+        "route": "Grounded mandate identity across scope/time; no key from participant equality alone"
+      },
+      "hermit": {
+        "id": "HERMIT-0647",
+        "outcome": "PASS"
+      },
+      "id": "C-22",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": true,
+      "shacl": {
+        "id": "SHACL-0648",
+        "outcome": "NOT_RUN"
+      },
+      "title": "Responsibility identity"
+    },
+    {
+      "follow_up": null,
+      "hermit": {
+        "id": "HERMIT-0649",
+        "outcome": "PASS"
+      },
+      "id": "C-23",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": false,
+      "shacl": {
+        "id": "SHACL-0650",
+        "outcome": "PASS"
+      },
+      "title": "Context relation coherence"
+    },
+    {
+      "follow_up": null,
+      "hermit": {
+        "id": "HERMIT-0651",
+        "outcome": "PASS"
+      },
+      "id": "C-24",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": false,
+      "shacl": {
+        "id": "SHACL-0652",
+        "outcome": "PASS"
+      },
+      "title": "Revision coherence"
+    },
+    {
+      "follow_up": null,
+      "hermit": {
+        "id": "HERMIT-0653",
+        "outcome": "PASS"
+      },
+      "id": "C-25",
+      "independent_semantic_acceptance": "NOT_ESTABLISHED",
+      "open_route": false,
+      "shacl": {
+        "id": "SHACL-0654",
+        "outcome": "PASS"
+      },
+      "title": "Version target coherence"
+    }
+  ],
+  "evidence_checkpoint_commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+  "framework_decisions": [
+    {
+      "basis": "Use the already declared formal, explicit-data, meaning, source, applicability, query, operational and reproducibility axes. Keep their distinct denominators and acceptance proposals; no universal scientific thresholds.",
+      "candidate": "Riskium's existing semantic-assurance plan and coverage contract",
+      "decision": "ADOPT_AS_LOCAL_EVIDENCE_PARTITION",
+      "source": "evaluation/semantic-assurance-plan.md at evidence checkpoint; evaluation/coverage-contract.json"
+    },
+    {
+      "basis": "The inspected repository explicitly has no frozen quality core or approved canonical metric/threshold/weight set. It can inform future work; citing it does not certify Riskium or create an OQF adoption/conformance result.",
+      "candidate": "Ontology Quality Framework (OQF), R-039",
+      "decision": "NOT_ADOPTED_AS_A_FROZEN_METRIC_OR_CONFORMANCE_STANDARD",
+      "inspected": "Mission; VVEAA research questions; Current boundaries and nonclaims; checked 2026-10-23. No full framework or catalog assessment.",
+      "source": "https://github.com/ArazSaieArasi3/ontology-quality-framework/blob/90d7dfba29a6a09b1a210ae1b9ba65ebdd893c30/README.md"
+    },
+    {
+      "basis": "Counting classes, subclass links or depth cannot adjudicate case identity, source meaning, dependency, record history or intended-use adequacy. No external scoring scheme was implemented, benchmarked or silently adopted by name.",
+      "candidate": "Taxonomy-only metrics and external composite quality schemes",
+      "decision": "NOT_USED_FOR_WHOLE_MODEL_SEMANTIC_ACCEPTANCE",
+      "source": "Local adoption decision; no uninspected external scheme is represented as implemented"
+    }
+  ],
+  "integrity_status": "PASS",
+  "judgment": {
+    "critical_findings_count": null,
+    "development_prerelease": "PUBLISHED_HISTORICAL_BOUNDED_PROFILE",
+    "overall_semantic_correctness_percent": null,
+    "reason": "No independent semantic adjudications, held-out task acceptance or reconciled operational evaluation are established; formal and normative gaps remain explicit. Unknown criticality is not zero critical findings. No new universal release gate or quality threshold is imposed by this report.",
+    "report_milestone": "COMPLETE_FOR_BOUNDED_CLAIM_SYNTHESIS",
+    "stable_scientific_acceptance": "NOT_ESTABLISHED"
+  },
+  "metrics": {
+    "Q-01": {
+      "associations_bridges": 134,
+      "catalog_concepts": 80,
+      "constraints": 25,
+      "generalizations": 66,
+      "imported_anchors_separate": 1,
+      "optional_boundaries": 3,
+      "typed_core": 77
+    },
+    "Q-02": {
+      "denominator": 295,
+      "numerator": 281,
+      "outcomes": {
+        "NOT_RUN": 14,
+        "PASS": 281
+      },
+      "percent": 95.25
+    },
+    "Q-03": {
+      "case_statuses": {
+        "PASS": 693
+      },
+      "denominator": 693,
+      "numerator": 693,
+      "percent": 100.0,
+      "recorded_source_commit": "ee21a71cc02bab8368852e55cbed354bce0cfaa8"
+    },
+    "Q-04": {
+      "denominator": 359,
+      "numerator": 341,
+      "outcomes": {
+        "NOT_RUN": 17,
+        "PARTIAL": 1,
+        "PASS": 341
+      },
+      "percent": 94.99
+    },
+    "Q-05": {
+      "denominator": 32,
+      "numerator": 32,
+      "percent": 100.0
+    },
+    "Q-06": {
+      "denominator": 8,
+      "numerator": 8,
+      "percent": 100.0
+    },
+    "Q-07": {
+      "denominator": 8,
+      "independent_real_data_acceptance": "NOT_ESTABLISHED",
+      "numerator": 5,
+      "original_population_pending": [
+        "RQ-CQ06",
+        "RQ-CQ07",
+        "RQ-CQ08"
+      ],
+      "percent": 62.5
+    },
+    "Q-08": {
+      "denominator": 28,
+      "full_requirement_acceptance": false,
+      "numerator": 28,
+      "original_acceptance_states": {
+        "BOUNDED_ENGINEERING_EVIDENCE": 6,
+        "BOUNDED_EVIDENCE_METADATA_CHECK": 1,
+        "BOUNDED_SYNTHETIC_QUERY_EXECUTED": 5,
+        "INDEPENDENT_POPULATION_NOT_RUN_SYNTHETIC_CONTROL_ONLY": 3,
+        "NOT_RUN": 2,
+        "PARTIAL": 10,
+        "PUBLIC_ID_CONTINUITY_CHECKED": 1
+      },
+      "percent": 100.0,
+      "scope_rows_outside_674": 8
+    },
+    "Q-09": {
+      "cohorts": {
+        "acceptance": 20,
+        "boundary": 4,
+        "core": 295
+      },
+      "denominator": 295,
+      "independent_adjudications_all_cohorts": 0,
+      "numerator": 0,
+      "percent": 0.0
+    },
+    "Q-10": {
+      "denominator": 0,
+      "numerator": 0,
+      "percent": null,
+      "status": "UNDEFINED_NO_INDEPENDENT_ADJUDICATIONS_OR_ACCEPTANCE_SCHEMA"
+    },
+    "Q-11": {
+      "counts": {
+        "compliance_assertions": 0,
+        "dated_primary_locators": 19,
+        "dispositions": {
+          "METHOD_USE": 2,
+          "NOT_ASSESSED": 1,
+          "SCOPE_BOUNDARY": 5,
+          "SEMANTIC_DIVERGENCE": 2,
+          "VOCABULARY_CORRESPONDENCE": 3
+        },
+        "equivalence_assertions": 0,
+        "full_work_review_claims": 0,
+        "interpretations": 13,
+        "open_limits": 4,
+        "source_categories": {
+          "method": 3,
+          "prior-art": 4,
+          "standard-framework": 4
+        },
+        "sources": 11
+      },
+      "independent_mapping_acceptance": "NOT_ESTABLISHED"
+    },
+    "Q-12": {
+      "denominator": null,
+      "issues": [
+        7,
+        13
+      ],
+      "numerator": null,
+      "percent": null,
+      "status": "NOT_ESTABLISHED"
+    },
+    "Q-13": {
+      "denominator": null,
+      "issues": [
+        12
+      ],
+      "numerator": null,
+      "percent": null,
+      "status": "NOT_ESTABLISHED"
+    },
+    "Q-14": {
+      "historical_documentation_audit": {
+        "conceptual_entries": 305,
+        "explorer_classes": 78,
+        "explorer_object_properties": 127,
+        "graph_isomorphic_serializations": 4,
+        "html_pages": 20,
+        "limitations": [
+          "Browser keyboard/mobile and deployed readback are recorded separately.",
+          "External source hyperlinks are not asserted to be dereferenceable vocabulary endpoints."
+        ],
+        "local_links_checked": 3585,
+        "owl_triples": 2087,
+        "release": "v0.3.1-rc.1",
+        "runtime_external_assets": 0,
+        "scope": "Documentation/source/serialization/interface structure checks; not ontology validation or browser execution.",
+        "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+        "status": "PASS",
+        "upload_surfaces": 0
+      },
+      "historical_release_profile": "docs/first-release-profile.md at evidence checkpoint",
+      "issues": [
+        14
+      ],
+      "manuscript_review": "NOT_ESTABLISHED",
+      "native_checks": [
+        {
+          "command": "python3 tools/build_native.py --check",
+          "exit_code": 0,
+          "result": "Generated exchange matches current source and reviewed generator."
+        },
+        {
+          "command": "python3 tools/validate_native.py --schema /tmp/riskium-ontouml-schema.json --write",
+          "exit_code": 0,
+          "result": "Official schema and source-fidelity checks passed with date/date-time/URI checks enabled."
+        },
+        {
+          "command": "node tools/check_native_roundtrip.cjs <ontouml-js-1.0.0> --write",
+          "exit_code": 0,
+          "result": "585 elements and checked invariants survived direct SDK roundtrip."
+        },
+        {
+          "command": "node tools/check_native_sdk.cjs <ontouml-js-0.4.1> --write",
+          "exit_code": 0,
+          "result": "68 legacy-only missing-isExtensional errors retained; command success is not model conformance."
+        },
+        {
+          "command": "python3 -m unittest discover -s tests -v",
+          "exit_code": 0,
+          "result": "32 engineering regression tests passed: 9 structural, 12 coverage-design and 11 native-fidelity checks."
+        }
+      ],
+      "status": "HISTORICAL_VERSION_BOUND_EVIDENCE_RETAINED_NOT_RERUN_BY_SYNTHESIS"
+    }
+  },
+  "model_version": "0.3.1",
+  "new_scientific_engine_executions": 0,
+  "overall_semantic_correctness_percent": null,
+  "report_date": "2026-10-23",
+  "schema_version": 1,
+  "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+  "shacl_modules": [
+    {
+      "blocked_scenarios": [
+        "S-C08-TASK-DUAL-UNKNOWN"
+      ],
+      "engine_executions": 77,
+      "engine_outcomes": {
+        "PASS": 77
+      },
+      "preflight_outcomes": {
+        "PASS": 1
+      },
+      "receipt": "evaluation/shacl/report.json",
+      "recorded_source_commit": "9668e2bc2a3454ad14aae641b914c64d43cb993b",
+      "scenarios": 79
+    },
+    {
+      "blocked_scenarios": [],
+      "engine_executions": 1878,
+      "engine_outcomes": {
+        "PASS": 1878
+      },
+      "preflight_outcomes": {},
+      "receipt": "evaluation/shacl/endpoints/report.json",
+      "recorded_source_commit": "f8aede601232c3afd1068eaa93e336b89eb30ad5",
+      "scenarios": 1878
+    },
+    {
+      "blocked_scenarios": [],
+      "engine_executions": 2012,
+      "engine_outcomes": {
+        "PASS": 2012
+      },
+      "preflight_outcomes": {},
+      "receipt": "evaluation/shacl/admission/report.json.gz",
+      "recorded_source_commit": "de6194955c598c509b38acd1312e2012b7d4cd06",
+      "scenarios": 2012
+    },
+    {
+      "blocked_scenarios": [],
+      "engine_executions": 48,
+      "engine_outcomes": {
+        "PASS": 48
+      },
+      "preflight_outcomes": {},
+      "receipt": "evaluation/shacl/coherence/report.json",
+      "recorded_source_commit": "7330a0b4382a95c1e27c46c9452e2bb1eea28f50",
+      "scenarios": 48
+    },
+    {
+      "blocked_scenarios": [],
+      "engine_executions": 47,
+      "engine_outcomes": {
+        "PASS": 47
+      },
+      "preflight_outcomes": {},
+      "receipt": "evaluation/shacl/qualification/report.json.gz",
+      "recorded_source_commit": "3e34a5d446b788b71a97126246f0914e42b1efbc",
+      "scenarios": 47
+    }
+  ],
+  "source_inventory": {
+    "docs/first-release-profile.md": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "8d1a377274e6c5ad393a12537e270c19a26ea1ef1db5034824b352b3b7df5b9f",
+      "working_copy_checked": false
+    },
+    "evaluation/c14-boundary-review.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "7468e74a2fb016bc784038f80e1eee682eb3fd05c471486d84e9923a8185d43d",
+      "working_copy_checked": true
+    },
+    "evaluation/coverage-contract.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "65bf3818543ccbadd2bd94ac9fb8fc42586dbb3e71eedced1797224afbd2f080",
+      "working_copy_checked": true
+    },
+    "evaluation/coverage-review.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5",
+      "working_copy_checked": true
+    },
+    "evaluation/cq/report.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "0bde12f870030e1a17cea8db9b3cb1a70e882f6f1458eb38d27d891e42260f7f",
+      "working_copy_checked": true
+    },
+    "evaluation/documentation-audit.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "ac187bf09623ce728bc82a5b32dbb72c2204dcc30028a0e3203a1a30cf376fc0",
+      "working_copy_checked": false
+    },
+    "evaluation/hermit/report.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "414d57f9bb6c91c7b1c08430367669f67b6d57fbe96766cd3d30e233902cdd58",
+      "working_copy_checked": true
+    },
+    "evaluation/native-stage-receipt.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "feeb56caf0a25a40a9ab491c51778215d7bbd9bdb2d9929e3a96d9dbe043cd20",
+      "working_copy_checked": true
+    },
+    "evaluation/owl-mapping-receipt.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "e76fe0646509088c747e478cd3b1fcd86caa10da7ba4daf5e509195c68629009",
+      "working_copy_checked": true
+    },
+    "evaluation/references/report.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "e32c593b16b1d7e227e1500243f3d951b7094f81173f018b86cf98794dc0cdce",
+      "working_copy_checked": true
+    },
+    "evaluation/semantic-assurance-plan.md": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "8c747887504d808fec7a5e9db9584b94ff027cc542d0281f68ce67d85e01e4f2",
+      "working_copy_checked": false
+    },
+    "evaluation/semantic-review-register.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "4920fca48a7eac5fd00e5cbfdef904954ebe6c022e6e2af79ec1894892645332",
+      "working_copy_checked": true
+    },
+    "evaluation/shacl/admission/report.json.gz": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "15c8cd89a6ca3fc543394f7ca53642954965c230dc671d9eb893c802719eb3b2",
+      "working_copy_checked": true
+    },
+    "evaluation/shacl/coherence/report.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "c87b965eb75b463caeb916293192ecbec0aac9956191f23a451b162e0592cee1",
+      "working_copy_checked": true
+    },
+    "evaluation/shacl/coverage-status.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "376c30a35caf40b0fc75710241fa2e87024a6d47b576e34f2cd42b0f04eb4632",
+      "working_copy_checked": true
+    },
+    "evaluation/shacl/endpoints/report.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "385fbb3913318475c4d65c0be3b8b47e50c1805a1cd3dc6655ca8e3262a26f5b",
+      "working_copy_checked": true
+    },
+    "evaluation/shacl/qualification/report.json.gz": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "377e27b5b13b48697e3ce1c94b112640f7b84628a47b87870c0a05a90745bd07",
+      "working_copy_checked": true
+    },
+    "evaluation/shacl/report.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "3c3603ecfb0e7445e94022577534697b4791b8b7aa2fe04a794614080374abf0",
+      "working_copy_checked": true
+    },
+    "evaluation/traceability/ledger.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "3d972fd49ad5feead1b077b1b6c8de02492f0fe348ce666e32124daac5b74256",
+      "working_copy_checked": true
+    },
+    "ontology/derived/riskium.owl.ttl": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+      "working_copy_checked": true
+    },
+    "ontology/riskium-model.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+      "working_copy_checked": true
+    },
+    "references/corpus.json": {
+      "commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+      "sha256": "eb23983d2194c19d8b115da147b14cad89607e3e63181217add4e1e7df0f16f7",
+      "working_copy_checked": true
+    }
+  },
+  "source_limits": [
+    {
+      "id": "LIM-01",
+      "limitation": "Full ISO/Risk IT/COBIT clause and term-definition crosswalks are unassessed; exact appetite/tolerance and risk-owner interpretations require legitimate source access and qualified review.",
+      "owner_issues": [
+        7,
+        14
+      ]
+    },
+    {
+      "id": "LIM-02",
+      "limitation": "All interpretation rows are author-side. Independent adjudication, especially vulnerability typing, case identity and responsibility grounding, remains outstanding.",
+      "owner_issues": [
+        7,
+        11
+      ]
+    },
+    {
+      "id": "LIM-03",
+      "limitation": "The selected prior-art comparison is not a systematic review, novelty proof, feature-absence proof or head-to-head benchmark. Full ROSE/WATCHDOG/attack-tree analyses and the access-blocked 2026 candidate are not assessed.",
+      "owner_issues": [
+        13,
+        14
+      ]
+    },
+    {
+      "id": "LIM-04",
+      "limitation": "The conceptual source's historical no-fundamental-contradiction statement has no reconstructed historical reading corpus here; this review supports only the explicit inspected-portion findings, not universal compatibility or compliance.",
+      "owner_issues": [
+        11,
+        14
+      ]
+    }
+  ],
+  "status": "SYNTHESIS_COMPLETE_SCIENTIFIC_ACCEPTANCE_NOT_ESTABLISHED",
+  "synthesis_inputs_sha256": {
+    "evaluation/quality/policy.json": "7f292d2b409b161d97fab9c2a84336bbd15643fc9706595c16f5cbd21b392355",
+    "tests/test_quality.py": "1465532c7b4db3681f64b2b209c1418eb3bd812ea312c4ada19ed9c87e4363a9",
+    "tools/build_quality_report.py": "05ce8fdce1cc6e7dc29299a506c6fde3a9c57c39b7f5c8cb92e53e9fd9cc5617"
+  },
+  "trace_reconciliation": [
+    {
+      "current_disposition": "PARTIAL_SOURCE_QUALIFICATION_RECORDED_EXACT_TERMS_UNASSESSED",
+      "evidence": "references/corpus.json: INT-06; LIM-01",
+      "id": "RKM-SCOPE-03",
+      "issues": [
+        7,
+        14
+      ],
+      "reason": "Closing #8's bounded corpus did not read the missing normative appetite/tolerance definitions.",
+      "recorded_state": "PARTIAL"
+    },
+    {
+      "current_disposition": "BOUNDED_EDITORIAL_REVIEW_RECORDED",
+      "evidence": "references/corpus.json; evaluation/references/report.json",
+      "id": "RKM-SCOPE-04",
+      "issues": [
+        7,
+        14
+      ],
+      "reason": "The later #8 corpus now identifies exact inspected portions and uninspected scope; no full clause compatibility or independent acceptance is inferred.",
+      "recorded_state": "NOT_RUN"
+    },
+    {
+      "current_disposition": "PUBLIC_ID_CONTINUITY_CHECKED",
+      "evidence": "evaluation/traceability/historical-identities.json",
+      "id": "RKM-SCOPE-05",
+      "issues": [
+        14
+      ],
+      "reason": "Keep public identity continuity separate from unavailable pre-public acquisition inventories; source-corpus closure adds no private-ID reconciliation.",
+      "recorded_state": "PUBLIC_ID_CONTINUITY_CHECKED"
+    },
+    {
+      "current_disposition": "BOUNDED_CLAIM_SYNTHESIS_RECORDED",
+      "evidence": "evaluation/quality/report.json",
+      "id": "RKRS-12",
+      "issues": [
+        7,
+        14
+      ],
+      "reason": "This report adds versioned claim/denominator synthesis, not independent acceptance of the entire quality requirement.",
+      "recorded_state": "BOUNDED_EVIDENCE_METADATA_CHECK"
+    }
+  ],
+  "trace_rows": [
+    {
+      "id": "RKRS-01",
+      "post_trace_reconciliation": null,
+      "recorded_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "remaining_obligation_as_recorded": "Meaning and standards alignment remain independent review; storage of content does not establish process compliance."
+    },
+    {
+      "id": "RKRS-02",
+      "post_trace_reconciliation": null,
+      "recorded_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "remaining_obligation_as_recorded": "Independent case/scenario identity decisions and real reassessment examples remain unaccepted."
+    },
+    {
+      "id": "RKRS-03",
+      "post_trace_reconciliation": null,
+      "recorded_state": "PARTIAL",
+      "remaining_obligation_as_recorded": "No database/application proof of issued-payload immutability or historical retrieval. Supplementary correction metadata does not add native lineage semantics."
+    },
+    {
+      "id": "RKRS-04",
+      "post_trace_reconciliation": null,
+      "recorded_state": "PARTIAL",
+      "remaining_obligation_as_recorded": "Full context/time/method joins, scale compatibility and numerical comparison are not established by retrieving linked values."
+    },
+    {
+      "id": "RKRS-05",
+      "post_trace_reconciliation": null,
+      "recorded_state": "NOT_RUN",
+      "remaining_obligation_as_recorded": "Conditional reported/computed readiness and justified arithmetic under C-21 have no complete acceptance run."
+    },
+    {
+      "id": "RKRS-06",
+      "post_trace_reconciliation": null,
+      "recorded_state": "PARTIAL",
+      "remaining_obligation_as_recorded": "Source locator, interpretation and correction lineage use supplementary envelope fields; independent extraction and source/corroboration judgments remain pending."
+    },
+    {
+      "id": "RKRS-07",
+      "post_trace_reconciliation": null,
+      "recorded_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "remaining_obligation_as_recorded": "Actual mandate grounding, ownership, responsibility identity and authority require independent/application review."
+    },
+    {
+      "id": "RKRS-08",
+      "post_trace_reconciliation": null,
+      "recorded_state": "PARTIAL",
+      "remaining_obligation_as_recorded": "Synthetic state codes and asserted-link retrieval do not validate time intervals, transition authority, cessation or treatment effectiveness."
+    },
+    {
+      "id": "RKRS-09",
+      "post_trace_reconciliation": null,
+      "recorded_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "remaining_obligation_as_recorded": "External-reference resolution, substantial-bearer grounding and domain meaning remain independent decisions."
+    },
+    {
+      "id": "RKRS-10",
+      "post_trace_reconciliation": null,
+      "recorded_state": "PARTIAL",
+      "remaining_obligation_as_recorded": "C-08 unit/scale compatibility is PARTIAL; source-framework appetite/tolerance interpretation remains pending."
+    },
+    {
+      "id": "RKRS-11",
+      "post_trace_reconciliation": null,
+      "recorded_state": "PARTIAL",
+      "remaining_obligation_as_recorded": "CatalogInspection is the sole executed admission task. Full risk-record, conditional and task readiness remain open; raw candidates are not managed OWL scenarios."
+    },
+    {
+      "id": "RKRS-12",
+      "post_trace_reconciliation": {
+        "current_disposition": "BOUNDED_CLAIM_SYNTHESIS_RECORDED",
+        "evidence": "evaluation/quality/report.json",
+        "id": "RKRS-12",
+        "issues": [
+          7,
+          14
+        ],
+        "reason": "This report adds versioned claim/denominator synthesis, not independent acceptance of the entire quality requirement.",
+        "recorded_state": "BOUNDED_EVIDENCE_METADATA_CHECK"
+      },
+      "recorded_state": "BOUNDED_EVIDENCE_METADATA_CHECK",
+      "remaining_obligation_as_recorded": "No overall semantic-quality score or independent acceptance follows from traceability or engineering pass counts."
+    },
+    {
+      "id": "RKM-SCOPE-01",
+      "post_trace_reconciliation": null,
+      "recorded_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "remaining_obligation_as_recorded": "Independent interpretation of real process descriptions remains #7/#13; no compliance claim follows."
+    },
+    {
+      "id": "RKM-SCOPE-02",
+      "post_trace_reconciliation": null,
+      "recorded_state": "PARTIAL",
+      "remaining_obligation_as_recorded": "Synthetic case links and score/version joins are separate examples; real reassessment continuity remains #7/#13."
+    },
+    {
+      "id": "RKM-SCOPE-03",
+      "post_trace_reconciliation": {
+        "current_disposition": "PARTIAL_SOURCE_QUALIFICATION_RECORDED_EXACT_TERMS_UNASSESSED",
+        "evidence": "references/corpus.json: INT-06; LIM-01",
+        "id": "RKM-SCOPE-03",
+        "issues": [
+          7,
+          14
+        ],
+        "reason": "Closing #8's bounded corpus did not read the missing normative appetite/tolerance definitions.",
+        "recorded_state": "PARTIAL"
+      },
+      "recorded_state": "PARTIAL",
+      "remaining_obligation_as_recorded": "Source-qualified appetite/tolerance meanings and framework/version comparison remain #8."
+    },
+    {
+      "id": "RKM-SCOPE-04",
+      "post_trace_reconciliation": {
+        "current_disposition": "BOUNDED_EDITORIAL_REVIEW_RECORDED",
+        "evidence": "references/corpus.json; evaluation/references/report.json",
+        "id": "RKM-SCOPE-04",
+        "issues": [
+          7,
+          14
+        ],
+        "reason": "The later #8 corpus now identifies exact inspected portions and uninspected scope; no full clause compatibility or independent acceptance is inferred.",
+        "recorded_state": "NOT_RUN"
+      },
+      "recorded_state": "NOT_RUN",
+      "remaining_obligation_as_recorded": "Edition/clause-qualified inspection, divergence and access-limit corpus is incomplete; current reference links are not a complete review."
+    },
+    {
+      "id": "RKM-SCOPE-05",
+      "post_trace_reconciliation": {
+        "current_disposition": "PUBLIC_ID_CONTINUITY_CHECKED",
+        "evidence": "evaluation/traceability/historical-identities.json",
+        "id": "RKM-SCOPE-05",
+        "issues": [
+          14
+        ],
+        "reason": "Keep public identity continuity separate from unavailable pre-public acquisition inventories; source-corpus closure adds no private-ID reconciliation.",
+        "recorded_state": "PUBLIC_ID_CONTINUITY_CHECKED"
+      },
+      "recorded_state": "PUBLIC_ID_CONTINUITY_CHECKED",
+      "remaining_obligation_as_recorded": "All retained public model and requirement identities are reconciled. Restricted pre-public acquisition identities are outside this export and are not claimed reconciled."
+    },
+    {
+      "id": "RKM-SCOPE-06",
+      "post_trace_reconciliation": null,
+      "recorded_state": "PARTIAL",
+      "remaining_obligation_as_recorded": "No historical immutable-store or full temporal/workflow acceptance run; observed absence is not a universal negation."
+    },
+    {
+      "id": "RKM-SCOPE-07",
+      "post_trace_reconciliation": null,
+      "recorded_state": "PARTIAL",
+      "remaining_obligation_as_recorded": "Scale-only anchor has prior bounded evidence; dual-anchor unit/scale compatibility remains PARTIAL in #5."
+    },
+    {
+      "id": "RKM-SCOPE-08",
+      "post_trace_reconciliation": null,
+      "recorded_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "remaining_obligation_as_recorded": "Synthetic assignment retrieval and prior distinct-participant controls do not establish an actual mandate or authority."
+    },
+    {
+      "id": "RQ-CQ01",
+      "post_trace_reconciliation": null,
+      "recorded_state": "BOUNDED_SYNTHETIC_QUERY_EXECUTED",
+      "remaining_obligation_as_recorded": "Independent real-world case identity adjudication remains #7/#13; conflicting links are retrieved, not admitted."
+    },
+    {
+      "id": "RQ-CQ02",
+      "post_trace_reconciliation": null,
+      "recorded_state": "BOUNDED_SYNTHETIC_QUERY_EXECUTED",
+      "remaining_obligation_as_recorded": "Raw/managed admission and evidence that an occurrence happened are outside this retrieval test (#5/#13)."
+    },
+    {
+      "id": "RQ-CQ03",
+      "post_trace_reconciliation": null,
+      "recorded_state": "BOUNDED_SYNTHETIC_QUERY_EXECUTED",
+      "remaining_obligation_as_recorded": "Core OWL has no numeric scalar field. Arithmetic, method/scale compatibility and complete temporal joins remain #5/#12."
+    },
+    {
+      "id": "RQ-CQ04",
+      "post_trace_reconciliation": null,
+      "recorded_state": "BOUNDED_SYNTHETIC_QUERY_EXECUTED",
+      "remaining_obligation_as_recorded": "Grounding, actual authority, ownership and participant identity remain #7/#12; no mandate is synthesized."
+    },
+    {
+      "id": "RQ-CQ05",
+      "post_trace_reconciliation": null,
+      "recorded_state": "BOUNDED_SYNTHETIC_QUERY_EXECUTED",
+      "remaining_obligation_as_recorded": "State-code interpretation is a synthetic fixture policy, not standards equivalence or an OWL non-entailment proof. Temporal/cessation adjudication remains #7/#12."
+    },
+    {
+      "id": "RQ-CQ06",
+      "post_trace_reconciliation": null,
+      "recorded_state": "INDEPENDENT_POPULATION_NOT_RUN_SYNTHETIC_CONTROL_ONLY",
+      "remaining_obligation_as_recorded": "Locator and interpretation-origin scalars are application fields, not native OWL properties. Independent literature extraction/support remains #13 and adequacy #7."
+    },
+    {
+      "id": "RQ-CQ07",
+      "post_trace_reconciliation": null,
+      "recorded_state": "INDEPENDENT_POPULATION_NOT_RUN_SYNTHETIC_CONTROL_ONLY",
+      "remaining_obligation_as_recorded": "General correction lineage is not a native Riskium property. This explicit application record profile does not prove source independence, immutable storage or real-data acceptance (#12/#13)."
+    },
+    {
+      "id": "RQ-CQ08",
+      "post_trace_reconciliation": null,
+      "recorded_state": "INDEPENDENT_POPULATION_NOT_RUN_SYNTHETIC_CONTROL_ONLY",
+      "remaining_obligation_as_recorded": "Incomplete raw candidates are not asserted to be managed OWL scenarios. Independent source-case identities and admission remain #5/#13."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+name: Claim-based quality integrity
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'evaluation/**'
+      - 'ontology/**'
+      - 'requirements/**'
+      - 'references/**'
+      - 'tools/build_quality_report.py'
+      - 'tests/test_quality.py'
+      - '.github/workflows/quality.yml'
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  quality:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tools/build_quality_report.py --check
+      - run: python -m unittest discover -s tests -p test_quality.py -v

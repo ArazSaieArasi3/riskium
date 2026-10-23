@@ -8,6 +8,7 @@ From the repository root:
 python3 tools/validate_model.py
 python3 tools/review_coverage.py
 python3 tools/review_references.py --check
+python3 tools/build_quality_report.py --check
 python3 -m venv .venv-docs
 .venv-docs/bin/pip install -r tools/publication/requirements.txt
 .venv-docs/bin/python tools/build_reference.py
@@ -48,6 +49,8 @@ See `tools/publication/README.md` for the upstream download, post-processing and
 The coverage review verifies source allocation, planned constraint routes and expected fixture contracts. It detects a stale or missing stored review; regeneration with `python3 tools/review_coverage.py --write` is appropriate only after reviewing an intentional contract change.
 
 The [reference corpus check](../references/README.md) validates the dated editorial register and its model targets offline. It checks source/use identities, frozen model bytes and required limits, then compares generated documentation and its receipt. It does not repeat online reading or establish standards conformance. The corpus retains partial-access and unassessed comparisons explicitly.
+
+The [quality synthesis check](../evaluation/quality/README.md) reads 22 evidence artifacts at the declared checkpoint and verifies live scientific receipt bytes, exact source hashes and row-level denominators. Historical documentation/release-policy snapshots are intentionally read at that checkpoint. It regenerates the report without rerunning engines or importing expert judgments. Six regression guards prevent lost blocked cases, hidden row relabeling, error-as-mutation success, fabricated semantic percentages and retroactive rewriting of source/trace evidence.
 
 The optional [native-exchange checks](../evaluation/native-model-review.md) use a pinned schema, Python validation environment and official SDK versions. Their dependency installation and reproduction commands are documented separately; the standard-library checks above remain available without those dependencies.
 

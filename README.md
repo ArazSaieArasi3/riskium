@@ -13,7 +13,7 @@ The model supports the interpretation and traceability of risk information. It d
 | Inspect the bounded OWL mapping | [OWL Turtle](ontology/derived/riskium.owl.ttl) and [mapping review](evaluation/owl-mapping-review.md) |
 | View the model | [Selected view](diagrams/selected-view.svg) and [complete view](diagrams/complete-view.svg) |
 | Review the requirements | [Ontology requirements](requirements/ontology-requirements.md), [28-row traceability ledger](evaluation/traceability/README.md) and [executed CQ contracts](requirements/cq/README.md) |
-| Assess the evidence and remaining work | [Evaluation](evaluation/README.md) and [roadmap](docs/roadmap.md) |
+| Assess the evidence and remaining work | [Claim-based quality report](evaluation/quality/README.md), [evaluation](evaluation/README.md) and [roadmap](docs/roadmap.md) |
 | Read candidate release claims | [Claim inventory and unresolved routes](evaluation/release-claims.md) |
 | Track the first release | [Release profile and gates](docs/first-release-profile.md), [candidate notes](docs/release-candidate-notes.md), [prerelease specification](docs/prerelease-v0.3.1-rc.1.md), and [checklist](docs/release-checklist.md) |
 | Inspect the HermiT reasoning evidence | [Human-readable report](evaluation/hermit/report.md), [JSON receipt](evaluation/hermit/report.json) and [exact premise](evaluation/hermit/premise.rdf) |
@@ -39,6 +39,8 @@ The [documentation portal](https://arazsaiearasi3.github.io/riskium/) follows th
 The post-prerelease [requirement/CQ trace](evaluation/traceability/README.md) accounts for all 12 requirements, eight scope obligations and eight questions. The bounded synthetic suite executed 40 queries (32 answer cases and eight detected query mutants); five original synthetic-task contracts have execution, while CQ06–CQ08 retain their independently prepared evidence population as NOT_RUN in #13. Supplementary numeric, provenance and correction metadata are explicitly outside the native OWL core. This completes traceability, not full requirement or independent scientific acceptance.
 
 The post-prerelease [source register](references/README.md) records 11 selected sources and 13 interpretation rows, including one explicitly unassessed detailed vocabulary mapping. It separates public overviews/abstracts from inspected method text and selected implementation declarations. This completes the bounded public corpus in #8; full normative crosswalks, independent semantic adjudication and exhaustive prior-art/novelty claims remain unestablished.
+
+The post-prerelease [quality synthesis](evaluation/quality/README.md) completes #11 with 14 measures, exact source binding, all 25 constraint routes and all 28 trace rows. It preserves separate formal, synthetic-query, source, independent-review and applicability judgments. No overall semantic-correctness score, stable scientific acceptance or completed manuscript review is established.
 
 ## Reuse and contribution
 

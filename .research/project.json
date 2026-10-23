@@ -59,5 +59,19 @@
     "dated_primary_locators": 19,
     "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
     "post_prerelease_evidence": true
+  },
+  "quality_synthesis": {
+    "state": "bounded claim/evidence report complete; independent scientific acceptance unestablished",
+    "evidence": "evaluation/quality/README.md",
+    "report": "evaluation/quality/report.json",
+    "policy": "evaluation/quality/policy.json",
+    "metric_definitions": 14,
+    "constraint_rows": 25,
+    "trace_rows": 28,
+    "new_scientific_engine_executions": 0,
+    "overall_semantic_correctness_percent": null,
+    "evidence_checkpoint_commit": "0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a",
+    "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+    "post_prerelease_evidence": true
   }
 }
