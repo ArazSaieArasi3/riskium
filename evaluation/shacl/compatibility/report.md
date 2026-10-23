@@ -2,7 +2,7 @@
 
 **Scoped application policy executed; global C-08 remains PARTIAL.** No native ontology/OWL change, unit conversion, value/comparator evaluation or independent semantic acceptance is claimed.
 
-Execution checkout: `1003eaae4e77693af68f90acb70eed90095309ce`; exact input hashes and raw/effective/shapes/result graphs are in [the full receipt](report.json.gz). [Policy](profile-policy.json) and [review](profile-review.md) define the task.
+Execution checkout: `177f3bdcd0a2d12f80348771bbbd70cd8e2e1adb`; exact input hashes and raw/effective/shapes/result graphs are in [the full receipt](report.json.gz). [Policy](profile-policy.json) and [review](profile-review.md) define the task.
 
 Summary: {"scenarios": 41, "engine_executions": 37, "preflight_rejections": 4, "selected_integration_cases": 5, "mutation_controls": 2, "statuses": {"PASS": 41}, "decisions": {"COMPATIBLE_FOR_DECLARED_TASK": 8, "NOT_READY": 13, "INCOMPATIBLE": 9, "INVALID": 6, "STAGING_ONLY": 1, "PROFILE_REJECTED": 4}}.
 
