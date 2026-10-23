@@ -27,3 +27,7 @@ No owner-acceptance percentage is reported until actual ratings exist. No inter-
 | OR-11 | Final package is reproducible and critical findings are resolved | Clean freeze, files/tags/checksums/rights/diagrams/Pages and document bindings | Accept after final candidate verification; current prerelease checks alone are insufficient. |
 
 The recommendations are preparation for discussion, **not the owner's judgments**. Source-sensitive recommendations remain conditional. The final release may describe this as owner/author review with assistant support, and must leave independent validation unestablished until #23 supplies actual independent evidence.
+
+## Rc.5 evidence available for the owner
+
+[The published SQL profile and clause dispositions](../relational/history/README.md) and [verified release](../releases/v0.3.1-rc.5-publication.json) now supply scoped executable evidence for OR-01 and OR-04: exact case/entry/revision separation, populated migration, immutable issued payload/dependencies and history. This supports discussion; both owner judgments and all other register ratings remain pending. No automatic acceptance is recorded.

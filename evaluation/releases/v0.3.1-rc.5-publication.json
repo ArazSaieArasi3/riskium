@@ -1,0 +1,144 @@
+{
+  "schema": "riskium-development-publication-v1",
+  "tag": "v0.3.1-rc.5",
+  "release_id": 421994904,
+  "published_at": "2026-10-23T15:17:53Z",
+  "source_commit": "a945beb8839228d007796c95745a89ce7457e7fe",
+  "release_url": "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.5",
+  "workflow_run": 39976487459,
+  "workflow_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/39976487459",
+  "publication_state": {
+    "draft": false,
+    "prerelease": true,
+    "latest_promoted": false,
+    "candidate_job": "success",
+    "publish_job": "success"
+  },
+  "assets": [
+    {
+      "name": "candidate-receipt.json",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.5/candidate-receipt.json",
+      "size": 27348,
+      "digest": "sha256:f723ccdac5564137e2339547bc62fb51788c98a3e20c1d15c8340eb534ff843b"
+    },
+    {
+      "name": "release-notes.md",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.5/release-notes.md",
+      "size": 5516,
+      "digest": "sha256:afe8ddf7a68feedeb05a8832feef4679f09c81fd264ea7dd62a9f569053963ea"
+    },
+    {
+      "name": "riskium-v0.3.1-rc.5-source.tar.gz",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.5/riskium-v0.3.1-rc.5-source.tar.gz",
+      "size": 3977287,
+      "digest": "sha256:dd7c3291e364fd217e4125fe9f6366d026701f1d8724a5f43285b30987c9cfe5"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.5/SHA256SUMS.txt",
+      "size": 359,
+      "digest": "sha256:6c57130d8ae61612fbc7ff780368bf9d1c68ab9cc15081cd12e3b733e8ffb40c"
+    },
+    {
+      "name": "source-manifest.json",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.5/source-manifest.json",
+      "size": 52004,
+      "digest": "sha256:e7302447b8384a6b1c85ae86ab384cf54ab31955f2a807e50363ffb3df16efad"
+    }
+  ],
+  "verification": {
+    "status": "PASS",
+    "published_asset_bytes_verified": true,
+    "published_assets_verified": 5,
+    "source_manifest_files_verified": 306,
+    "candidate_checks_passed": 14,
+    "software_regressions": 122,
+    "fresh_synthetic_query_executions": 40,
+    "fresh_comparison_replay_engine_executions": 50,
+    "fresh_c08_replay_engine_executions": 37,
+    "fresh_hermit_runs": 0,
+    "historical_hermit_and_earlier_shacl_receipt_bytes_unchanged": true,
+    "tag_target_checked_separately": true,
+    "source_archive_scope": "Tracked public source only; private manuscript/database companions excluded",
+    "all_19_comparison_receipt_input_hashes_match_release_archive": true,
+    "all_10_sql_receipt_input_hashes_match_release_archive": true,
+    "fresh_sql_scenarios": 67
+  },
+  "relational": {
+    "receipt_source_commit": "11ffed4f4e74a61909c92395201b9abe29798f44",
+    "summary": {
+      "scenarios": 67,
+      "statuses": {
+        "PASS": 67
+      },
+      "by_kind": {
+        "migration": 9,
+        "preflight": 2,
+        "operation": 48,
+        "mutation-control": 4,
+        "roundtrip": 4
+      },
+      "native_relations_exported": 5,
+      "concepts_and_support_kinds": 10
+    },
+    "local_engine": {
+      "name": "SQLite",
+      "version": "3.53.1",
+      "python": "3.12.14",
+      "foreign_keys": true,
+      "recursive_triggers": true
+    },
+    "hosted_engine": {
+      "name": "SQLite",
+      "version": "3.45.1",
+      "python": "3.12.15",
+      "foreign_keys": true,
+      "recursive_triggers": true
+    },
+    "native_semantics_changed": false,
+    "postgresql_executed": false
+  },
+  "comparison": {
+    "receipt_source_commit": "4cbae8e772f892e9550b12e1a0bedfeb1252afb2",
+    "summary": {
+      "scenarios": 55,
+      "engine_executions": 50,
+      "preflight_rejections": 5,
+      "selected_integration_cases": 4,
+      "mutation_controls": 3,
+      "statuses": {
+        "PASS": 55
+      },
+      "decisions": {
+        "DIRECT_COMPARISON_ADMISSIBLE": 8,
+        "NOT_READY": 21,
+        "INVALID_SELECTION": 6,
+        "NOT_COMPARABLE": 10,
+        "INVALID": 4,
+        "PROFILE_REJECTED": 5,
+        "STAGING_ONLY": 1
+      }
+    },
+    "global_acceptance": "PARTIAL",
+    "native_semantics_changed": false
+  },
+  "owner_review": {
+    "kind": "OWNER_AUTHOR_REVIEW_WITH_ASSISTANT_SUPPORT",
+    "cohort_rows": 11,
+    "ratings_recorded": 0,
+    "status": "PENDING_OWNER_JUDGMENTS",
+    "independent_validation_claimed": false,
+    "future_independent_review_issue": 23
+  },
+  "previous_releases": {
+    "tags": {
+      "v0.3.1-rc.1": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+      "v0.3.1-rc.2": "5f10ad103af5818cb99331a9d71e8b5f518e93de",
+      "v0.3.1-rc.3": "679ff6745bbacbbce802fb6ef78a51e53dba7e39",
+      "v0.3.1-rc.4": "dfa9674bfef9c0ca8d4b15015c677cd122bed29c"
+    },
+    "release_ids_and_asset_metadata_unchanged": true
+  },
+  "stable_exit_gates": "docs/stable-release-gates.md",
+  "next_packet": "docs/next-release-v0.3.1-rc.6.md"
+}
