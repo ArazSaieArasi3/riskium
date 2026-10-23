@@ -1,0 +1,153 @@
+{
+  "profile_version": "0.7.0",
+  "source_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "contract_sha256": "4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5",
+  "policy_sha256": "dfb71c6cb66fafe2696e4279f8560000b3c29bd3072a1df44587361adf56d49d",
+  "obligations": [
+    {
+      "obligation_id": "HERMIT-0629",
+      "engine": "HermiT",
+      "source_element": "C-13",
+      "source_element_sha256": "eb82a554b33ec77896383c66c7d8da9f6a4cfa5f43c54c0b8d89228d72802044"
+    },
+    {
+      "obligation_id": "SHACL-0630",
+      "engine": "SHACL",
+      "source_element": "C-13",
+      "source_element_sha256": "eb82a554b33ec77896383c66c7d8da9f6a4cfa5f43c54c0b8d89228d72802044"
+    },
+    {
+      "obligation_id": "HERMIT-0639",
+      "engine": "HermiT",
+      "source_element": "C-18",
+      "source_element_sha256": "e6c8eee8325ea4ecab06b779601b34d97263318b95b31488af581a66c94a6a43"
+    },
+    {
+      "obligation_id": "SHACL-0640",
+      "engine": "SHACL",
+      "source_element": "C-18",
+      "source_element_sha256": "e6c8eee8325ea4ecab06b779601b34d97263318b95b31488af581a66c94a6a43"
+    }
+  ],
+  "relation_signatures": {
+    "R-12": [
+      "RKM-C032",
+      "RKM-C033"
+    ],
+    "R-13": [
+      "RKM-C032",
+      "RKM-C034"
+    ],
+    "R-14": [
+      "RKM-C034",
+      "RKM-C036"
+    ],
+    "R-15": [
+      "RKM-C034",
+      "RKM-C038"
+    ],
+    "R-16": [
+      "RKM-C038",
+      "RKM-C036"
+    ],
+    "R-45": [
+      "RKM-C032",
+      "RKM-C002"
+    ],
+    "R-46": [
+      "RKM-C032",
+      "RKM-C035"
+    ],
+    "R-48": [
+      "RKM-C034",
+      "RKM-C039"
+    ],
+    "R-49": [
+      "RKM-C035",
+      "RKM-C036"
+    ],
+    "RX-006": [
+      "RKM-C015",
+      "RKM-C014"
+    ],
+    "RX-014": [
+      "RKM-C032",
+      "RKM-C015"
+    ],
+    "RX-015": [
+      "RKM-C032",
+      "RKM-C015"
+    ],
+    "RX-016": [
+      "RKM-C034",
+      "RKM-C015"
+    ],
+    "RK2-018": [
+      "RKM-C035",
+      "RKM-C039"
+    ],
+    "RK2-019": [
+      "RKM-C036",
+      "RKM-C039"
+    ]
+  },
+  "target_owners": {
+    "selection": [
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#Selection",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LevelScaleMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LevelScaleUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LevelVersionMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LevelVersionUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#SelectedDimensionMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#SelectedDimensionUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#ScaleVersionBindingMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#ScaleVersionBindingUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LevelVersionBindingMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LevelVersionBindingUnknown"
+    ],
+    "comparison": [
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#Comparison",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LeftMissingMembership",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LeftMissingScalePermission",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LeftMissingDimensionPermission",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LeftMethodBindingMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LeftMethodBindingUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LeftBasisBindingMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LeftBasisBindingUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LeftContextBindingMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LeftContextBindingUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#RightMissingMembership",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#RightMissingScalePermission",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#RightMissingDimensionPermission",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#RightMethodBindingMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#RightMethodBindingUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#RightBasisBindingMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#RightBasisBindingUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#RightContextBindingMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#RightContextBindingUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairMethodMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairMethodUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairMethodVersionMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairMethodVersionUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairScaleMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairScaleUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairScaleVersionMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairScaleVersionUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairDimensionMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairDimensionUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairBasisMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairBasisUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairBasisVersionMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairBasisVersionUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairContextMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairContextUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairContextVersionMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairContextVersionUnknown",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairTemporalMismatch",
+      "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#PairTemporalUnknown"
+    ]
+  },
+  "native_semantics_changed": false,
+  "scope": "Selected level/version/dimension joins and strict direct-comparison eligibility; no numeric ranking/calculation/transformations",
+  "shapes_sha256": "8329c3ee80fdeace3201de96d01669ffbbb205909e2839064521f4c3f36a36ae"
+}

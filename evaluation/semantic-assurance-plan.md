@@ -1,5 +1,9 @@
 # Semantic assurance: what can and cannot be quantified
 
+## Current release review policy — owner decision, 23 October 2026
+
+The owner will personally judge the current release with assistant support. [Owner-review policy and pending register](owner-review/README.md) and #7 govern that current release gate; #23 preserves independent review as future nonblocking work. This changes the first-release acceptance process, not the meaning of independence or any historical result. Zero owner ratings and zero independent adjudications are recorded so far. The independent protocols and percentage definitions below remain future evidence proposals, and are not prerequisites for calling the first scoped research artifact owner-reviewed. [Final-release gates](../docs/stable-release-gates.md) still require actual attributable owner judgments, all retained technical claims supported, and no unresolved critical defect.
+
 ## Current answer for Riskium
 
 The post-prerelease [quality synthesis](quality/README.md) now reconciles this plan with completed #6 trace/CQ and #8 corpus evidence. The original review inventory remains unadjudicated; historical planning statuses are not current execution results.

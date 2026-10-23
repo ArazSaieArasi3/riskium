@@ -101,6 +101,7 @@ CHECKS = [
     ['tools/run_cq.py', '--check'], ['tools/build_traceability.py', '--check'],
     ['tools/build_reference.py', '--check'], ['tools/publication/audit_portal.py'],
     ['tools/run_compatibility_shacl.py', '--check'],
+    ['tools/run_comparison_shacl.py', '--check'],
     ['-m', 'unittest', 'discover', '-s', 'tests', '-v'],
 ]
 

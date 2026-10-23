@@ -1,0 +1,14 @@
+# Next bounded packet: relational identity and issued-version preservation
+
+Status: **planned, not executed**. Target v0.3.1-rc.5, child of #12. The rc.4 graph joins do not establish persistence, migration, issued-content immutability or historical retrieval. The broader relational parent remains open.
+
+## Small deliverable
+
+1. Inspect the actual available relational companions and their source/version boundaries. Publish a **new, separate mapping** to conceptual model 0.3.1 for the identity/history slice: RiskCase, RiskRegisterEntry, EntryRevision, InformationArtifact and ArtifactVersion, plus the source relations needed for entry/case identity, revision lineage and version targets. Preserve old/private companions and their provenance; a historical database is not relabeled as a current implementation.
+2. Define keys/foreign keys, explicit issued-versus-draft state, payload ownership and source/version/provenance fields. Distinguish supplementary storage fields from native ontology semantics. Preserve incomplete raw input in staging, and require the declared managed constraints only at admission. No equality from labels or invented replacement values.
+3. Execute an actual versioned schema/migration on a named engine/version. Record valid insert/admission, duplicate-label distinct identities, missing/invalid reference rejection, issued-payload update/delete rejection, explicit new revision creation, cross-entry/cycle/predecessor controls and historical retrieval/round trips. Mutations or deliberately weakened guards must expose the intended failure. Tests use synthetic public fixtures, not private case data.
+4. Preserve exact schema, fixtures, commands, engine, outputs and expected/observed history queries; compare the resulting identities/relations to the reviewed mapping and source-bound graph expectations. No PostgreSQL/runtime/history guarantee is inferred for an engine that was not actually executed. Publish exactly that slice and update C-03/C-24/C-25 route dispositions/claims.
+
+Acceptance: supported identity/version/history invariants survive the executed migration and round trip, deliberately invalid operations fail for the intended reason, expected historical queries match, no private data enters the public source package, and the final-release claim matrix records the remaining limits. Critical in-scope identity or data-loss findings must be fixed before release acceptance.
+
+Out of scope: complete concept/relation migration, score formulas, full temporal ontology, workload performance, all task admission, independent cases/CQs, future extensions and full #12 closure. Owner-led meaning/release review can proceed alongside this technical packet under #7; independent review is future #23.

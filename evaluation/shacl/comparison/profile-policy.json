@@ -1,0 +1,52 @@
+{
+  "profile_version": "0.7.0",
+  "source_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "contract_sha256": "4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5",
+  "task": "Eligibility for direct comparison of two explicitly caller-selected assessment/result pairs with selected scale levels",
+  "focus": "Caller supplies request,left assessment,left result,right assessment,right result as five named IRIs; raw graph cannot supply the four reserved selector predicates",
+  "supplemental_fields": {
+    "levelScaleVersion": "Declared scale-version membership of a level resource; not a new native relation",
+    "basisVersion": "Declared ArtifactVersion of the selected native assessment basis",
+    "temporalContext": "Opaque identity of the declared relevant temporal interpretation context; not a timestamp or interval algorithm",
+    "source": "Provenance IRI for each assessment declaration; presence is not truth"
+  },
+  "identity": "Asserted named sameAs normalized; different IRIs without differentFrom are unresolved; equal labels/numeric codes never establish identity or comparability; identity conflict rejects",
+  "required_native_selection": [
+    "usesScale R-14",
+    "selectsLevel R-15",
+    "levelOf R-16",
+    "dimension R-48",
+    "usesScaleVersion RX-016",
+    "scaleForDimension RK2-019",
+    "versionOf RX-006"
+  ],
+  "required_comparison": [
+    "Explicit hasDimensionResult membership R-13",
+    "usesMethod R-46 and usesMethodVersion RX-015 with matching versionOf target",
+    "hasBasis R-12 with supplementary basisVersion and matching target",
+    "assessmentContext R-45 and usesContextVersion RX-014 with matching target",
+    "Exact matching method/version,scale/version,dimension,basis/version,context/version,temporalContext",
+    "Explicit permitsScale R-49 and specifiesDimension RK2-018 for the selected result"
+  ],
+  "decisions": [
+    "DIRECT_COMPARISON_ADMISSIBLE",
+    "NOT_COMPARABLE",
+    "NOT_READY",
+    "INVALID_SELECTION",
+    "INVALID",
+    "PROFILE_REJECTED",
+    "STAGING_ONLY"
+  ],
+  "priority": "Malformed/type/count errors -> INVALID; known selection or version-binding mismatch -> INVALID_SELECTION; known cross-side policy mismatch -> NOT_COMPARABLE; missing or unresolved evidence -> NOT_READY; otherwise admissible under this strict policy",
+  "limits": [
+    "No numeric ordering/ranking or score calculation",
+    "No missing-to-zero conversion",
+    "No formula or reported-score reproducibility claim",
+    "No governed transformations executed",
+    "No physical unit conversion",
+    "No temporal interval/validity calculation",
+    "No source truth or independent validation",
+    "No whole-ontology/full-profile acceptance"
+  ],
+  "ledger": "Source-bound alternative-route supplement; historical HermiT and SHACL NOT_RUN rows remain immutable and visible; no relabeling of engine outcomes"
+}

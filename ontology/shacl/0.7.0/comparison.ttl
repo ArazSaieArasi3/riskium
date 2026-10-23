@@ -1,0 +1,1000 @@
+@prefix cmp: <https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cmp:Comparison a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:property cmp:LeftAssessment,
+        cmp:LeftBasis,
+        cmp:LeftBasisVersion,
+        cmp:LeftBasisVersionTarget,
+        cmp:LeftContext,
+        cmp:LeftContextVersion,
+        cmp:LeftContextVersionTarget,
+        cmp:LeftMethod,
+        cmp:LeftMethodVersion,
+        cmp:LeftMethodVersionTarget,
+        cmp:LeftSource,
+        cmp:LeftTemporal,
+        cmp:RightAssessment,
+        cmp:RightBasis,
+        cmp:RightBasisVersion,
+        cmp:RightBasisVersionTarget,
+        cmp:RightContext,
+        cmp:RightContextVersion,
+        cmp:RightContextVersionTarget,
+        cmp:RightMethod,
+        cmp:RightMethodVersion,
+        cmp:RightMethodVersionTarget,
+        cmp:RightSource,
+        cmp:RightTemporal .
+
+cmp:LeftBasisBindingMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LeftBasisBindingMismatchQuery .
+
+cmp:LeftBasisBindingUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LeftBasisBindingUnknownQuery .
+
+cmp:LeftContextBindingMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LeftContextBindingMismatchQuery .
+
+cmp:LeftContextBindingUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LeftContextBindingUnknownQuery .
+
+cmp:LeftMethodBindingMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LeftMethodBindingMismatchQuery .
+
+cmp:LeftMethodBindingUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LeftMethodBindingUnknownQuery .
+
+cmp:LeftMissingDimensionPermission a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LeftMissingDimensionPermissionQuery .
+
+cmp:LeftMissingMembership a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LeftMissingMembershipQuery .
+
+cmp:LeftMissingScalePermission a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LeftMissingScalePermissionQuery .
+
+cmp:LevelScaleMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LevelScaleMismatchQuery .
+
+cmp:LevelScaleUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LevelScaleUnknownQuery .
+
+cmp:LevelVersionBindingMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LevelVersionBindingMismatchQuery .
+
+cmp:LevelVersionBindingUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LevelVersionBindingUnknownQuery .
+
+cmp:LevelVersionMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LevelVersionMismatchQuery .
+
+cmp:LevelVersionUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:LevelVersionUnknownQuery .
+
+cmp:PairBasisMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairBasisMismatchQuery .
+
+cmp:PairBasisUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairBasisUnknownQuery .
+
+cmp:PairBasisVersionMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairBasisVersionMismatchQuery .
+
+cmp:PairBasisVersionUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairBasisVersionUnknownQuery .
+
+cmp:PairContextMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairContextMismatchQuery .
+
+cmp:PairContextUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairContextUnknownQuery .
+
+cmp:PairContextVersionMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairContextVersionMismatchQuery .
+
+cmp:PairContextVersionUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairContextVersionUnknownQuery .
+
+cmp:PairDimensionMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairDimensionMismatchQuery .
+
+cmp:PairDimensionUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairDimensionUnknownQuery .
+
+cmp:PairMethodMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairMethodMismatchQuery .
+
+cmp:PairMethodUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairMethodUnknownQuery .
+
+cmp:PairMethodVersionMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairMethodVersionMismatchQuery .
+
+cmp:PairMethodVersionUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairMethodVersionUnknownQuery .
+
+cmp:PairScaleMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairScaleMismatchQuery .
+
+cmp:PairScaleUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairScaleUnknownQuery .
+
+cmp:PairScaleVersionMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairScaleVersionMismatchQuery .
+
+cmp:PairScaleVersionUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairScaleVersionUnknownQuery .
+
+cmp:PairTemporalMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairTemporalMismatchQuery .
+
+cmp:PairTemporalUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:PairTemporalUnknownQuery .
+
+cmp:RightBasisBindingMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:RightBasisBindingMismatchQuery .
+
+cmp:RightBasisBindingUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:RightBasisBindingUnknownQuery .
+
+cmp:RightContextBindingMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:RightContextBindingMismatchQuery .
+
+cmp:RightContextBindingUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:RightContextBindingUnknownQuery .
+
+cmp:RightMethodBindingMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:RightMethodBindingMismatchQuery .
+
+cmp:RightMethodBindingUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:RightMethodBindingUnknownQuery .
+
+cmp:RightMissingDimensionPermission a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:RightMissingDimensionPermissionQuery .
+
+cmp:RightMissingMembership a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:RightMissingMembershipQuery .
+
+cmp:RightMissingScalePermission a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:RightMissingScalePermissionQuery .
+
+cmp:ScaleVersionBindingMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:ScaleVersionBindingMismatchQuery .
+
+cmp:ScaleVersionBindingUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:ScaleVersionBindingUnknownQuery .
+
+cmp:SelectedDimensionMismatch a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:SelectedDimensionMismatchQuery .
+
+cmp:SelectedDimensionUnknown a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:sparql cmp:SelectedDimensionUnknownQuery .
+
+cmp:Selection a sh:NodeShape ;
+    sh:class risk:RKM-C034 ;
+    sh:nodeKind sh:IRI ;
+    sh:property cmp:SelectionDimension,
+        cmp:SelectionLevel,
+        cmp:SelectionLevelScale,
+        cmp:SelectionLevelVersion,
+        cmp:SelectionLevelVersionTarget,
+        cmp:SelectionScale,
+        cmp:SelectionScaleDimension,
+        cmp:SelectionScaleVersion,
+        cmp:SelectionScaleVersionTarget .
+
+cmp:LeftAssessment a sh:PropertyShape ;
+    sh:class risk:RKM-C032 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path sp:leftAssessment .
+
+cmp:LeftBasis a sh:PropertyShape ;
+    sh:class risk:RKM-C033 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:leftAssessment risk:R-12 ) .
+
+cmp:LeftBasisBindingMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "LeftBasisBindingMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment ?assessment ; sp:leftResult ?result .
+?assessment sp:basisVersion/risk:RX-006 ?a ; risk:R-12 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:LeftBasisBindingUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "LeftBasisBindingUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment ?assessment ; sp:leftResult ?result .
+?assessment sp:basisVersion/risk:RX-006 ?a ; risk:R-12 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:LeftBasisVersion a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:leftAssessment sp:basisVersion ) .
+
+cmp:LeftBasisVersionTarget a sh:PropertyShape ;
+    sh:class risk:RKM-C033 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:leftAssessment sp:basisVersion risk:RX-006 ) .
+
+cmp:LeftContext a sh:PropertyShape ;
+    sh:class risk:RKM-C002 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:leftAssessment risk:R-45 ) .
+
+cmp:LeftContextBindingMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "LeftContextBindingMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment ?assessment ; sp:leftResult ?result .
+?assessment risk:RX-014/risk:RX-006 ?a ; risk:R-45 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:LeftContextBindingUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "LeftContextBindingUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment ?assessment ; sp:leftResult ?result .
+?assessment risk:RX-014/risk:RX-006 ?a ; risk:R-45 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:LeftContextVersion a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:leftAssessment risk:RX-014 ) .
+
+cmp:LeftContextVersionTarget a sh:PropertyShape ;
+    sh:class risk:RKM-C002 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:leftAssessment risk:RX-014 risk:RX-006 ) .
+
+cmp:LeftMethod a sh:PropertyShape ;
+    sh:class risk:RKM-C035 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:leftAssessment risk:R-46 ) .
+
+cmp:LeftMethodBindingMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "LeftMethodBindingMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment ?assessment ; sp:leftResult ?result .
+?assessment risk:RX-015/risk:RX-006 ?a ; risk:R-46 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:LeftMethodBindingUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "LeftMethodBindingUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment ?assessment ; sp:leftResult ?result .
+?assessment risk:RX-015/risk:RX-006 ?a ; risk:R-46 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:LeftMethodVersion a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:leftAssessment risk:RX-015 ) .
+
+cmp:LeftMethodVersionTarget a sh:PropertyShape ;
+    sh:class risk:RKM-C035 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:leftAssessment risk:RX-015 risk:RX-006 ) .
+
+cmp:LeftMissingDimensionPermissionQuery a sh:SPARQLConstraint ;
+    sh:message "LeftMissingDimensionPermission: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment ?assessment ; sp:leftResult ?result .
+?assessment risk:R-46 ?method . ?result risk:R-48 ?dimension . FILTER NOT EXISTS { ?method risk:RK2-018 ?dimension }
+}""" .
+
+cmp:LeftMissingMembershipQuery a sh:SPARQLConstraint ;
+    sh:message "LeftMissingMembership: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment ?assessment ; sp:leftResult ?result .
+FILTER NOT EXISTS { ?assessment risk:R-13 ?result }
+}""" .
+
+cmp:LeftMissingScalePermissionQuery a sh:SPARQLConstraint ;
+    sh:message "LeftMissingScalePermission: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment ?assessment ; sp:leftResult ?result .
+?assessment risk:R-46 ?method . ?result risk:R-14 ?scale . FILTER NOT EXISTS { ?method risk:R-49 ?scale }
+}""" .
+
+cmp:LeftSource a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:leftAssessment sp:source ) .
+
+cmp:LeftTemporal a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:leftAssessment sp:temporalContext ) .
+
+cmp:LevelScaleMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "LevelScaleMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this risk:R-15/risk:R-16 ?a ; risk:R-14 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:LevelScaleUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "LevelScaleUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this risk:R-15/risk:R-16 ?a ; risk:R-14 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:LevelVersionBindingMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "LevelVersionBindingMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this risk:R-15/sp:levelScaleVersion/risk:RX-006 ?a ; risk:R-14 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:LevelVersionBindingUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "LevelVersionBindingUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this risk:R-15/sp:levelScaleVersion/risk:RX-006 ?a ; risk:R-14 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:LevelVersionMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "LevelVersionMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this risk:R-15/sp:levelScaleVersion ?a ; risk:RX-016 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:LevelVersionUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "LevelVersionUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this risk:R-15/sp:levelScaleVersion ?a ; risk:RX-016 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairBasisMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "PairBasisMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment/risk:R-12 ?a ; sp:rightAssessment/risk:R-12 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairBasisUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "PairBasisUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment/risk:R-12 ?a ; sp:rightAssessment/risk:R-12 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairBasisVersionMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "PairBasisVersionMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment/<https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#basisVersion> ?a ; sp:rightAssessment/<https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#basisVersion> ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairBasisVersionUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "PairBasisVersionUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment/<https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#basisVersion> ?a ; sp:rightAssessment/<https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#basisVersion> ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairContextMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "PairContextMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment/risk:R-45 ?a ; sp:rightAssessment/risk:R-45 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairContextUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "PairContextUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment/risk:R-45 ?a ; sp:rightAssessment/risk:R-45 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairContextVersionMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "PairContextVersionMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment/risk:RX-014 ?a ; sp:rightAssessment/risk:RX-014 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairContextVersionUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "PairContextVersionUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment/risk:RX-014 ?a ; sp:rightAssessment/risk:RX-014 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairDimensionMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "PairDimensionMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftResult/risk:R-48 ?a ; sp:rightResult/risk:R-48 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairDimensionUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "PairDimensionUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftResult/risk:R-48 ?a ; sp:rightResult/risk:R-48 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairMethodMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "PairMethodMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment/risk:R-46 ?a ; sp:rightAssessment/risk:R-46 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairMethodUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "PairMethodUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment/risk:R-46 ?a ; sp:rightAssessment/risk:R-46 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairMethodVersionMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "PairMethodVersionMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment/risk:RX-015 ?a ; sp:rightAssessment/risk:RX-015 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairMethodVersionUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "PairMethodVersionUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment/risk:RX-015 ?a ; sp:rightAssessment/risk:RX-015 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairScaleMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "PairScaleMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftResult/risk:R-14 ?a ; sp:rightResult/risk:R-14 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairScaleUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "PairScaleUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftResult/risk:R-14 ?a ; sp:rightResult/risk:R-14 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairScaleVersionMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "PairScaleVersionMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftResult/risk:RX-016 ?a ; sp:rightResult/risk:RX-016 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairScaleVersionUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "PairScaleVersionUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftResult/risk:RX-016 ?a ; sp:rightResult/risk:RX-016 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairTemporalMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "PairTemporalMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment/<https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#temporalContext> ?a ; sp:rightAssessment/<https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#temporalContext> ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:PairTemporalUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "PairTemporalUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:leftAssessment/<https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#temporalContext> ?a ; sp:rightAssessment/<https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#temporalContext> ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:RightAssessment a sh:PropertyShape ;
+    sh:class risk:RKM-C032 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path sp:rightAssessment .
+
+cmp:RightBasis a sh:PropertyShape ;
+    sh:class risk:RKM-C033 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:rightAssessment risk:R-12 ) .
+
+cmp:RightBasisBindingMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "RightBasisBindingMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:rightAssessment ?assessment ; sp:rightResult ?result .
+?assessment sp:basisVersion/risk:RX-006 ?a ; risk:R-12 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:RightBasisBindingUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "RightBasisBindingUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:rightAssessment ?assessment ; sp:rightResult ?result .
+?assessment sp:basisVersion/risk:RX-006 ?a ; risk:R-12 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:RightBasisVersion a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:rightAssessment sp:basisVersion ) .
+
+cmp:RightBasisVersionTarget a sh:PropertyShape ;
+    sh:class risk:RKM-C033 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:rightAssessment sp:basisVersion risk:RX-006 ) .
+
+cmp:RightContext a sh:PropertyShape ;
+    sh:class risk:RKM-C002 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:rightAssessment risk:R-45 ) .
+
+cmp:RightContextBindingMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "RightContextBindingMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:rightAssessment ?assessment ; sp:rightResult ?result .
+?assessment risk:RX-014/risk:RX-006 ?a ; risk:R-45 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:RightContextBindingUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "RightContextBindingUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:rightAssessment ?assessment ; sp:rightResult ?result .
+?assessment risk:RX-014/risk:RX-006 ?a ; risk:R-45 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:RightContextVersion a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:rightAssessment risk:RX-014 ) .
+
+cmp:RightContextVersionTarget a sh:PropertyShape ;
+    sh:class risk:RKM-C002 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:rightAssessment risk:RX-014 risk:RX-006 ) .
+
+cmp:RightMethod a sh:PropertyShape ;
+    sh:class risk:RKM-C035 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:rightAssessment risk:R-46 ) .
+
+cmp:RightMethodBindingMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "RightMethodBindingMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:rightAssessment ?assessment ; sp:rightResult ?result .
+?assessment risk:RX-015/risk:RX-006 ?a ; risk:R-46 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:RightMethodBindingUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "RightMethodBindingUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:rightAssessment ?assessment ; sp:rightResult ?result .
+?assessment risk:RX-015/risk:RX-006 ?a ; risk:R-46 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:RightMethodVersion a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:rightAssessment risk:RX-015 ) .
+
+cmp:RightMethodVersionTarget a sh:PropertyShape ;
+    sh:class risk:RKM-C035 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:rightAssessment risk:RX-015 risk:RX-006 ) .
+
+cmp:RightMissingDimensionPermissionQuery a sh:SPARQLConstraint ;
+    sh:message "RightMissingDimensionPermission: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:rightAssessment ?assessment ; sp:rightResult ?result .
+?assessment risk:R-46 ?method . ?result risk:R-48 ?dimension . FILTER NOT EXISTS { ?method risk:RK2-018 ?dimension }
+}""" .
+
+cmp:RightMissingMembershipQuery a sh:SPARQLConstraint ;
+    sh:message "RightMissingMembership: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:rightAssessment ?assessment ; sp:rightResult ?result .
+FILTER NOT EXISTS { ?assessment risk:R-13 ?result }
+}""" .
+
+cmp:RightMissingScalePermissionQuery a sh:SPARQLConstraint ;
+    sh:message "RightMissingScalePermission: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this sp:rightAssessment ?assessment ; sp:rightResult ?result .
+?assessment risk:R-46 ?method . ?result risk:R-14 ?scale . FILTER NOT EXISTS { ?method risk:R-49 ?scale }
+}""" .
+
+cmp:RightSource a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:rightAssessment sp:source ) .
+
+cmp:RightTemporal a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( sp:rightAssessment sp:temporalContext ) .
+
+cmp:ScaleVersionBindingMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "ScaleVersionBindingMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-016/risk:RX-006 ?a ; risk:R-14 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:ScaleVersionBindingUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "ScaleVersionBindingUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-016/risk:RX-006 ?a ; risk:R-14 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:SelectedDimensionMismatchQuery a sh:SPARQLConstraint ;
+    sh:message "SelectedDimensionMismatch: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this risk:R-48 ?a ; risk:R-14/risk:RK2-019 ?b .
+FILTER (?a != ?b)
+FILTER EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:SelectedDimensionUnknownQuery a sh:SPARQLConstraint ;
+    sh:message "SelectedDimensionUnknown: exact declarations and explicit identity evidence govern this task." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT $this WHERE {
+$this risk:R-48 ?a ; risk:R-14/risk:RK2-019 ?b .
+FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a owl:differentFrom ?b }
+}""" .
+
+cmp:SelectionDimension a sh:PropertyShape ;
+    sh:class risk:RKM-C039 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path risk:R-48 .
+
+cmp:SelectionLevel a sh:PropertyShape ;
+    sh:class risk:RKM-C038 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path risk:R-15 .
+
+cmp:SelectionLevelScale a sh:PropertyShape ;
+    sh:class risk:RKM-C036 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:R-15 risk:R-16 ) .
+
+cmp:SelectionLevelVersion a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:R-15 sp:levelScaleVersion ) .
+
+cmp:SelectionLevelVersionTarget a sh:PropertyShape ;
+    sh:class risk:RKM-C036 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:R-15 sp:levelScaleVersion risk:RX-006 ) .
+
+cmp:SelectionScale a sh:PropertyShape ;
+    sh:class risk:RKM-C036 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path risk:R-14 .
+
+cmp:SelectionScaleDimension a sh:PropertyShape ;
+    sh:class risk:RKM-C039 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:R-14 risk:RK2-019 ) .
+
+cmp:SelectionScaleVersion a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path risk:RX-016 .
+
+cmp:SelectionScaleVersionTarget a sh:PropertyShape ;
+    sh:class risk:RKM-C036 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RX-016 risk:RX-006 ) .
+

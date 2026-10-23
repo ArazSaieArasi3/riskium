@@ -1,0 +1,138 @@
+{
+  "schema": "riskium-owner-release-review-v1",
+  "policy_date": "2026-10-23",
+  "review_kind": "OWNER_AUTHOR_REVIEW_WITH_ASSISTANT_SUPPORT",
+  "owner_reviewer": "Araz Saie Arasi",
+  "reviewer_role": "Project author and owner; not independent",
+  "authorization": "Owner stated he will judge this release with assistant help on 23 October 2026",
+  "status": "PENDING_OWNER_JUDGMENTS",
+  "owner_review_issue": 7,
+  "future_independent_review_issue": 23,
+  "independent_validation_claimed": false,
+  "critical_findings_count": null,
+  "ratings_recorded": 0,
+  "scope": "Predeclared critical cohort for first final release; not all 295 independent-review groups",
+  "rows": [
+    {
+      "id": "OR-01",
+      "topic": "RiskCase versus entry/revision identity",
+      "owner_rating": null,
+      "owner_response": null,
+      "rationale": null,
+      "evidence": [],
+      "critical_findings": [],
+      "resolution": null,
+      "status": "PENDING"
+    },
+    {
+      "id": "OR-02",
+      "topic": "Specification/description versus occurrence",
+      "owner_rating": null,
+      "owner_response": null,
+      "rationale": null,
+      "evidence": [],
+      "critical_findings": [],
+      "resolution": null,
+      "status": "PENDING"
+    },
+    {
+      "id": "OR-03",
+      "topic": "Responsibility information versus relator grounding",
+      "owner_rating": null,
+      "owner_response": null,
+      "rationale": null,
+      "evidence": [],
+      "critical_findings": [],
+      "resolution": null,
+      "status": "PENDING"
+    },
+    {
+      "id": "OR-04",
+      "topic": "Issued versions, lineage and history",
+      "owner_rating": null,
+      "owner_response": null,
+      "rationale": null,
+      "evidence": [],
+      "critical_findings": [],
+      "resolution": null,
+      "status": "PENDING"
+    },
+    {
+      "id": "OR-05",
+      "topic": "C-08 declared metadata compatibility",
+      "owner_rating": null,
+      "owner_response": null,
+      "rationale": null,
+      "evidence": [],
+      "critical_findings": [],
+      "resolution": null,
+      "status": "PENDING"
+    },
+    {
+      "id": "OR-06",
+      "topic": "C-13 level/version/dimension selection",
+      "owner_rating": null,
+      "owner_response": null,
+      "rationale": null,
+      "evidence": [],
+      "critical_findings": [],
+      "resolution": null,
+      "status": "PENDING"
+    },
+    {
+      "id": "OR-07",
+      "topic": "C-18 direct-comparison eligibility",
+      "owner_rating": null,
+      "owner_response": null,
+      "rationale": null,
+      "evidence": [],
+      "critical_findings": [],
+      "resolution": null,
+      "status": "PENDING"
+    },
+    {
+      "id": "OR-08",
+      "topic": "Qualified source/standards interpretation",
+      "owner_rating": null,
+      "owner_response": null,
+      "rationale": null,
+      "evidence": [],
+      "critical_findings": [],
+      "resolution": null,
+      "status": "PENDING"
+    },
+    {
+      "id": "OR-09",
+      "topic": "Sourced case/CQ adequacy and withheld admissions",
+      "owner_rating": null,
+      "owner_response": null,
+      "rationale": null,
+      "evidence": [],
+      "critical_findings": [],
+      "resolution": null,
+      "status": "PENDING"
+    },
+    {
+      "id": "OR-10",
+      "topic": "Final claims/manuscript/evidence consistency",
+      "owner_rating": null,
+      "owner_response": null,
+      "rationale": null,
+      "evidence": [],
+      "critical_findings": [],
+      "resolution": null,
+      "status": "PENDING"
+    },
+    {
+      "id": "OR-11",
+      "topic": "Final package/reproduction and critical findings",
+      "owner_rating": null,
+      "owner_response": null,
+      "rationale": null,
+      "evidence": [],
+      "critical_findings": [],
+      "resolution": null,
+      "status": "PENDING"
+    }
+  ]
+}
