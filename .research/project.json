@@ -47,5 +47,17 @@
     "independent_population_contracts_pending": 3,
     "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
     "post_prerelease_evidence": true
+  },
+  "reference_corpus": {
+    "state": "bounded public corpus complete; full normative crosswalk and independent adjudication unestablished",
+    "evidence": "references/README.md",
+    "integrity_receipt": "evaluation/references/report.json",
+    "review_date": "2026-10-23",
+    "selected_sources": 11,
+    "interpretation_rows": 13,
+    "unassessed_interpretation_rows": 1,
+    "dated_primary_locators": 19,
+    "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+    "post_prerelease_evidence": true
   }
 }

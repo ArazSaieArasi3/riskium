@@ -7,6 +7,7 @@ From the repository root:
 ```sh
 python3 tools/validate_model.py
 python3 tools/review_coverage.py
+python3 tools/review_references.py --check
 python3 -m venv .venv-docs
 .venv-docs/bin/pip install -r tools/publication/requirements.txt
 .venv-docs/bin/python tools/build_reference.py
@@ -45,6 +46,8 @@ The WIDOCO reference is checked in separately. Rebuild it with the pinned 1.4.25
 See `tools/publication/README.md` for the upstream download, post-processing and verification boundaries. The original Turtle is copied byte for byte; RDF/XML, JSON-LD and N-Triples are checked for graph isomorphism. These are serialization checks. The local explorer reads asserted OWL neighborhoods, with no inference or upload service. The [public documentation](https://arazsaiearasi3.github.io/riskium/) must be read back after each deployment before reporting publication success.
 
 The coverage review verifies source allocation, planned constraint routes and expected fixture contracts. It detects a stale or missing stored review; regeneration with `python3 tools/review_coverage.py --write` is appropriate only after reviewing an intentional contract change.
+
+The [reference corpus check](../references/README.md) validates the dated editorial register and its model targets offline. It checks source/use identities, frozen model bytes and required limits, then compares generated documentation and its receipt. It does not repeat online reading or establish standards conformance. The corpus retains partial-access and unassessed comparisons explicitly.
 
 The optional [native-exchange checks](../evaluation/native-model-review.md) use a pinned schema, Python validation environment and official SDK versions. Their dependency installation and reproduction commands are documented separately; the standard-library checks above remain available without those dependencies.
 

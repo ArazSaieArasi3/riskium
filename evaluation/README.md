@@ -23,3 +23,7 @@ HermiT tests OWL consistency, class satisfiability and supported entailment/non-
 Independent semantic review, case-based adequacy, standards interpretation, query answerability and reproducibility are separate evidence categories. A single aggregate pass percentage cannot replace these judgments.
 
 Read the [formal-validation plan](formal-validation-plan.md) and [roadmap](../docs/roadmap.md) for remaining work.
+
+## Source and standards review
+
+The post-prerelease [source register](../references/README.md) records 11 selected sources, their exact editions/versions, dated primary locators, inspected portions and actual uses. Its 13 interpretation rows distinguish method use, vocabulary correspondence, semantic divergence, scope boundaries and one explicitly unassessed detailed vocabulary comparison. The [integrity receipt](references/report.json) checks identifiers, frozen model bytes and explicit claim/access limits; its PASS is an editorial integrity result, not semantic or normative acceptance. Full standards clauses, independent adjudication and exhaustive prior-art/novelty claims remain outside this completed #8 corpus milestone. The original engine and query counts are unchanged.

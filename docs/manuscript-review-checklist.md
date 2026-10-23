@@ -24,3 +24,5 @@ For each scientific claim, record its manuscript location, wording, evidence art
 ## Publication wording
 
 Check references, availability links, version statements, limitations and figure/table consistency against the actual submitted package. Do not describe an unpublished Wiki or prepared Pages source as a verified public deployment. A final manuscript result requires the latest author-approved file and its own review record.
+
+Use the post-prerelease [source/interpretation register](../references/README.md) for exact editions, inspected portions and source-access limits. Cite WATCHDOG arXiv v2 separately from its earlier DODGE v1 title. Do not promote public summaries or selected declarations into full-work, universal compatibility, compliance, feature-absence or novelty proofs. Detailed appetite/tolerance definitions remain unassessed; preserve source-qualified meanings until qualified review. The register's editorial PASS is not independent semantic acceptance.

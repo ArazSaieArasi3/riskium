@@ -20,6 +20,7 @@ The model supports the interpretation and traceability of risk information. It d
 | Inspect explicit-data validation | [Current SHACL coverage](evaluation/shacl/coverage-status.md), [endpoint report](evaluation/shacl/endpoints/report.md), [conditional-profile report](evaluation/shacl/report.md), [catalog admission](evaluation/shacl/admission/report.md), [context/revision coherence](evaluation/shacl/coherence/report.md) and [vocabulary/evidence qualification](evaluation/shacl/qualification/report.md) |
 | Review the optional phenomenon boundary | [C-14 reconciliation](evaluation/c14-boundary-review.md) |
 | Understand semantic assurance | [Measures and limits](evaluation/semantic-assurance-plan.md) and [independent-review inventory](evaluation/semantic-review-register.json) |
+| Inspect sources and standards interpretation | [Edition/portion-qualified corpus and comparison findings](references/README.md) |
 | Reproduce the local checks | [Reproducibility](docs/reproducibility.md) |
 | Read the published Wiki | [Wiki Home](https://github.com/ArazSaieArasi3/riskium/wiki) and [version-controlled source](docs/wiki/Home.md) |
 | Browse the public documentation | [Overview, guide and WIDOCO reference](https://arazsaiearasi3.github.io/riskium/) |
@@ -36,6 +37,8 @@ The source JSON is a structured conceptual design. A [native OntoUML exchange re
 The [documentation portal](https://arazsaiearasi3.github.io/riskium/) follows the OntoSPK reading structure, with a versioned conceptual reference, WIDOCO 1.4.25 reference, local asserted-OWL explorer and verified downloads. Its semantic source is fixed to the prerelease commit; the post-release site is separate from the archived source. Pages publishes from `main` `/docs`, and the [native Wiki](https://github.com/ArazSaieArasi3/riskium/wiki) contains the six curated pages and sidebar. The public reference and Wiki were read back on 22 October 2026; publication does not establish semantic validation. No stable scholarly release or DOI is claimed.
 
 The post-prerelease [requirement/CQ trace](evaluation/traceability/README.md) accounts for all 12 requirements, eight scope obligations and eight questions. The bounded synthetic suite executed 40 queries (32 answer cases and eight detected query mutants); five original synthetic-task contracts have execution, while CQ06–CQ08 retain their independently prepared evidence population as NOT_RUN in #13. Supplementary numeric, provenance and correction metadata are explicitly outside the native OWL core. This completes traceability, not full requirement or independent scientific acceptance.
+
+The post-prerelease [source register](references/README.md) records 11 selected sources and 13 interpretation rows, including one explicitly unassessed detailed vocabulary mapping. It separates public overviews/abstracts from inspected method text and selected implementation declarations. This completes the bounded public corpus in #8; full normative crosswalks, independent semantic adjudication and exhaustive prior-art/novelty claims remain unestablished.
 
 ## Reuse and contribution
 

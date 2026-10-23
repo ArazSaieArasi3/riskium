@@ -1,0 +1,39 @@
+{
+  "counts": {
+    "compliance_assertions": 0,
+    "dated_primary_locators": 19,
+    "dispositions": {
+      "METHOD_USE": 2,
+      "NOT_ASSESSED": 1,
+      "SCOPE_BOUNDARY": 5,
+      "SEMANTIC_DIVERGENCE": 2,
+      "VOCABULARY_CORRESPONDENCE": 3
+    },
+    "equivalence_assertions": 0,
+    "full_work_review_claims": 0,
+    "interpretations": 13,
+    "open_limits": 4,
+    "source_categories": {
+      "method": 3,
+      "prior-art": 4,
+      "standard-framework": 4
+    },
+    "sources": 11
+  },
+  "inputs_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "references/corpus.json": "eb23983d2194c19d8b115da147b14cad89607e3e63181217add4e1e7df0f16f7",
+    "tools/review_references.py": "000693930b297dc0eed5e307d7c9b744570f785fdbd8d24f9ce4f467281ece16"
+  },
+  "limitations": [
+    "Full ISO/Risk IT/COBIT clause and term-definition crosswalks are unassessed; exact appetite/tolerance and risk-owner interpretations require legitimate source access and qualified review.",
+    "All interpretation rows are author-side. Independent adjudication, especially vulnerability typing, case identity and responsibility grounding, remains outstanding.",
+    "The selected prior-art comparison is not a systematic review, novelty proof, feature-absence proof or head-to-head benchmark. Full ROSE/WATCHDOG/attack-tree analyses and the access-blocked 2026 candidate are not assessed.",
+    "The conceptual source's historical no-fundamental-contradiction statement has no reconstructed historical reading corpus here; this review supports only the explicit inspected-portion findings, not universal compatibility or compliance."
+  ],
+  "online_reading": "Recorded editorial observations, not re-executed by this command.",
+  "review_date": "2026-10-23",
+  "scope": "Offline editorial provenance and register integrity only; not standards compliance, external-source revalidation or independent semantic acceptance.",
+  "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+  "status": "PASS"
+}

@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-23",
+  "review_kind": "author-side bounded editorial source review; no independent adjudication",
+  "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+  "model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "scope": "Eleven selected method, standards/framework and risk-ontology sources are recorded with their actual inspected portions. This completes the bounded public corpus in #8, not a full normative or systematic literature review.",
+  "selection_method": "Start from the five references already public at commit 7c2eed823a4d1e2df75c43bbdbf13b0c58960b2f; add official ISACA scope sources named by the model and a targeted COVER/ROSE research lineage update. Search primary publisher, author, standards-body and versioned repository records. Retain sources with a stated use in this model; do not rank ontologies by unmeasured quality. Search snippets identify candidates only. Selected public abstracts and selected method text support scope comparisons; they do not substitute for unseen chapters, clauses, experiments or formal mappings. The search is purposive and non-exhaustive through the review date.",
+  "historical_boundary": "The public baseline had a bibliography but no edition/portion-qualified comparison matrix. This is a new post-prerelease review, not a reconstruction of inaccessible pre-public acquisition records. Retained findings preserve the model's case/record, reference/referent, source-qualified vocabulary and knowledge/process distinctions. The model's historical claim ceiling is not inherited as proof that all source clauses were screened. No private text, unpublished review or reviewer approval is asserted.",
+  "search_log": [
+    {"family": "Existing methods", "query": "Exact SABiO and ORSD titles; OntoUML Role and Relator documentation", "disposition": "Retain REF-SABIO, REF-ORSD and REF-ONTOUML; correct the old no-native-validation wording."},
+    {"family": "Standards and frameworks", "query": "site:iso.org ISO 31000:2018 / ISO 31073:2022; site:isaca.org Risk IT 2nd Edition / COBIT 2019", "disposition": "Retain official catalog, committee, public announcement and publication-overview portions only; no paywalled full-work reading."},
+    {"family": "Risk-ontology lineage", "query": "Common Ontology of Value and Risk Sales Guizzardi; An Ontology of Security from a Risk Treatment Perspective", "disposition": "Retain COVER publisher/author abstract and introduction plus selected pinned OWL declarations; retain ROSE publisher abstract."},
+    {"family": "Recent related work", "query": "COVER risk ontology Guizzardi 2025 / 2026; DODGE ontology-aware risk; ontological lens attack trees", "disposition": "Retain versioned WATCHDOG v2 and attack-tree v1 records; explicitly reconcile the older DODGE title. No claim that these exhaust later work."},
+    {"family": "2026 candidate screening", "query": "site:foisconference.org/assets/pdfs/jowo risk ontology 2026", "disposition": "Towards a Conceptual Clarification of Cybersecurity candidate at fomi-6.pdf returned HTTP 403 on opening; not interpreted from its snippet or counted as reviewed. It remains an access-limited literature-update candidate."}
+  ],
+  "sources": [
+    {
+      "id": "REF-SABIO", "short_title": "SABiO", "category": "method",
+      "citation": "Ricardo de Almeida Falbo (2014). SABiO: Systematic Approach for Building Ontologies. ONTO.COM/ODISE, CEUR Workshop Proceedings, vol. 1301.",
+      "version": "2014 paper describing SABiO 2.0; not the original 1997 method",
+      "inspected": "Author/title, abstract, sections 1–2, and selected section 3 text on requirements, conceptual capture, operational design and testing (PDF pages 1–8).",
+      "finding": "Distinguishes reference conceptualizations from operational implementations and uses requirements and competency questions to organize development and finite testing.",
+      "actual_use": "Method context for requirements/ontology-requirements.md, evaluation/owl-mapping-review.md and requirements/cq/README.md; keep conceptual adequacy separate from executable query checks.",
+      "limits": "Selected sections only. This is a methodological influence, not evidence that every SABiO activity or stakeholder validation has been completed.",
+      "full_work_reviewed": false, "redistribution": "metadata-and-original-paraphrase-only",
+      "observations": [{"url": "https://ceur-ws.org/Vol-1301/ontocomodise2014_2.pdf", "locator": "Title/abstract; sections 1–2 and selected section 3 text, PDF pp. 1–8", "checked_on": "2026-10-23"}]
+    },
+    {
+      "id": "REF-ORSD", "short_title": "Ontology requirements specification", "category": "method",
+      "citation": "Mari Carmen Suárez-Figueroa, Asunción Gómez-Pérez and Boris Villazón-Terrazas (2009). How to Write and Use the Ontology Requirements Specification Document. OTM 2009, LNCS 5871, pp. 966–982. DOI: 10.1007/978-3-642-05151-7_16.",
+      "version": "2009 publisher chapter record",
+      "inspected": "Publisher title, authors, bibliographic metadata, abstract and access notice; full chapter not inspected.",
+      "finding": "Requirements specification states purpose, intended use, users and requirements, supporting reuse and verification.",
+      "actual_use": "Organization of requirements/ontology-requirements.md and the distinction between a requirement specification and its evaluation/traceability evidence.",
+      "limits": "Abstract-level method context only; no claim that the detailed chapter guidelines or its example projects were assessed. The DOI redirect initially failed; the explicit publisher chapter URL was readable.",
+      "full_work_reviewed": false, "redistribution": "metadata-and-original-paraphrase-only",
+      "observations": [{"url": "https://link.springer.com/chapter/10.1007/978-3-642-05151-7_16", "locator": "Bibliographic header, Abstract and subscription-content notice", "checked_on": "2026-10-23"}]
+    },
+    {
+      "id": "REF-ONTOUML", "short_title": "OntoUML Role and Relator", "category": "method",
+      "citation": "OntoUML specification documentation. Role; Relator. Read the Docs, latest channel, accessed 23 October 2026.",
+      "version": "Mutable latest documentation; no numbered specification release or commit inferred",
+      "inspected": "Role and Relator definition/constraint tables and prose; example images and the full language were not reviewed in this batch.",
+      "finding": "Roles depend on relational contexts and inherit identity; relators ground material relations and require mediation with aggregate minimum participation of at least two.",
+      "actual_use": "Interpretation context for responsibility roles/relators and C-06/C-07/C-22; source-schema/SDK checks are separately reported in evaluation/native-model-review.md.",
+      "limits": "C-06 participant distinctness and mandate-grounding policies remain explicit local decisions. The selected documentation is not a proof of full OntoUML conformance or independent semantic acceptance.",
+      "full_work_reviewed": false, "redistribution": "metadata-and-original-paraphrase-only",
+      "observations": [
+        {"url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/role/index.html", "locator": "Role definition and C1–C4", "checked_on": "2026-10-23"},
+        {"url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html", "locator": "Relator definition and C1–C6", "checked_on": "2026-10-23"}
+      ]
+    },
+    {
+      "id": "REF-ISO31000", "short_title": "ISO 31000:2018", "category": "standard-framework",
+      "citation": "International Organization for Standardization (2018). ISO 31000:2018, Risk management — Guidelines. Second edition, February 2018.",
+      "version": "Edition 2 (2018-02), catalog status Published; page reports 2023 confirmation and also flags stage 90.92 (to be revised). No successor edition assumed.",
+      "inspected": "Official catalog header/status, public overview and certification FAQ; ISO's 15 February 2018 news explanation of risk, context and guidelines.",
+      "finding": "The public explanation relates risk to uncertainty affecting objectives. Guidance covers organizational risk management and is not a certification requirements standard.",
+      "actual_use": "Scope screening and the deliberate separation of RiskCase, objective/uncertainty information and a whole management process; not a clause-conformance crosswalk.",
+      "limits": "Full standard not read. The OBP route exposed a JavaScript shell, not readable clauses. Do not assign an inspected clause number from the news article or infer universal multiplicities.",
+      "full_work_reviewed": false, "redistribution": "metadata-and-original-paraphrase-only",
+      "observations": [
+        {"url": "https://www.iso.org/standard/31000", "locator": "Edition/status, public overview and certification FAQ", "checked_on": "2026-10-23"},
+        {"url": "https://www.iso.org/news/ref2263.html", "locator": "15 February 2018 news: risk definition and certification explanation", "checked_on": "2026-10-23"}
+      ]
+    },
+    {
+      "id": "REF-ISO31073", "short_title": "ISO 31073:2022", "category": "standard-framework",
+      "citation": "International Organization for Standardization (2022). ISO 31073:2022, Risk management — Vocabulary. First edition, February 2022.",
+      "version": "Edition 1 (2022-02), catalog status Published; French corrected version 2023-01 is listed but was not inspected",
+      "inspected": "Official catalog identity/abstract and TC 262 committee publication summary; normative term entries not inspected.",
+      "finding": "Addresses organizational risk vocabulary, including threats and opportunities; its committee summary allows application-specific terminology qualification.",
+      "actual_use": "Keep source/version-qualified vocabulary in nature and tolerance statements; record detailed appetite/tolerance mappings as NOT_ASSESSED in this review.",
+      "limits": "Committee summary is explanatory and carries a third-party-maintained-content disclaimer; catalog is the edition authority. Neither summary nor indexed snippets establish current normative definitions or full compatibility.",
+      "full_work_reviewed": false, "redistribution": "metadata-and-original-paraphrase-only",
+      "observations": [
+        {"url": "https://www.iso.org/standard/79637.html", "locator": "Edition, publication metadata and Abstract", "checked_on": "2026-10-23"},
+        {"url": "https://committee.iso.org/sites/tc262/home/projects/published/iso-310732022-risk-management--v.html", "locator": "Publication summary, application-specific terminology and disclaimer", "checked_on": "2026-10-23"}
+      ]
+    },
+    {
+      "id": "REF-RISKIT", "short_title": "Risk IT Framework, second edition", "category": "standard-framework",
+      "citation": "ISACA (2020). Risk IT Framework, 2nd Edition. Edition and release verified through ISACA's public 25 June 2020 announcement and current IT Risk resources page.",
+      "version": "Second edition, 2020; Practitioner Guide is a separate work and is not silently merged with the Framework",
+      "inspected": "Public announcement and the Risk IT Framework resource description; not the paid/member framework or practitioner guide.",
+      "finding": "Addresses enterprise information-and-technology risk in business context and links its practices to broader governance guidance.",
+      "actual_use": "Check the model's knowledge/process scope boundary and retain source context for scenario, treatment and responsibility information.",
+      "limits": "No detailed scenario taxonomy, Risk Item identity, tolerance definition, activity or role crosswalk established. Historical 2009 terminology is not assumed to equal the 2020 edition.",
+      "full_work_reviewed": false, "redistribution": "metadata-and-original-paraphrase-only",
+      "observations": [
+        {"url": "https://www.isaca.org/about-us/newsroom/press-releases/2020/isacas-risk-it-framework-offers-a-structured-methodology", "locator": "25 June 2020 announcement, edition and business-context description", "checked_on": "2026-10-23"},
+        {"url": "https://www.isaca.org/resources/it-risk", "locator": "Risk IT Framework, 2nd Edition resource description", "checked_on": "2026-10-23"}
+      ]
+    },
+    {
+      "id": "REF-COBIT", "short_title": "COBIT 2019", "category": "standard-framework",
+      "citation": "ISACA. COBIT 2019 Framework: Governance and Management Objectives. Publication identity verified on ISACA's COBIT resources page.",
+      "version": "COBIT 2019 named framework; year in the edition name is not an assertion about the copyright date of each volume",
+      "inspected": "Official public publication description for Governance and Management Objectives and overview of the framework; not its objective/practice tables.",
+      "finding": "The described core contains 40 governance/management objectives connected to processes and enterprise/alignment goals.",
+      "actual_use": "Bound the claim: storing responsibility, policies, decisions and evidence does not implement the whole governance framework.",
+      "limits": "No APO12/EDM03 practice, RACI or process-capability conformance reviewed. Other COBIT volumes and focus-area publications are distinct works outside this inspected portion.",
+      "full_work_reviewed": false, "redistribution": "metadata-and-original-paraphrase-only",
+      "observations": [{"url": "https://www.isaca.org/resources/cobit", "locator": "COBIT 2019 Framework: Governance and Management Objectives publication description", "checked_on": "2026-10-23"}]
+    },
+    {
+      "id": "REF-COVER", "short_title": "COVER", "category": "prior-art",
+      "citation": "Tiago Prince Sales, Fernanda Baião, Giancarlo Guizzardi, João Paulo A. Almeida, Nicola Guarino and John Mylopoulos (2018). The Common Ontology of Value and Risk. ER 2018, LNCS 11157, pp. 121–135. DOI: 10.1007/978-3-030-00847-5_11.",
+      "version": "2018 paper; separate implementation inspected at unibz-core/value-and-risk-ontology commit 898a7d87d1da0f8c292620d966754a630ae3b57b (29 April 2024)",
+      "inspected": "Publisher abstract and citation; author-hosted PDF title/abstract/introduction (PDF pp. 1–2); repository README and selected OWL declarations for Vulnerability, RiskSubject, RiskAssessment and Risk. No full paper/model verification.",
+      "finding": "Connects risk assessment with value ascription. The inspected implementation distinguishes risk subjects and assessment notions; Vulnerability specializes an intrinsic mode and is metatyped RoleMixin.",
+      "actual_use": "Compare case identity with a risk subject; compare vulnerability bearer interpretation without asserting equivalent classes or adopting the entire value/risk account.",
+      "limits": "Paper and later OWL implementation have separate identities. No import, alignment proof, reasoning benchmark or full artifact assessment. The repository's Apache-2.0 notice does not establish the paper's license; no external implementation is redistributed. The author PDF later timed out/returned 503, so unread later sections are not included.",
+      "full_work_reviewed": false, "redistribution": "metadata-and-original-paraphrase-only",
+      "observations": [
+        {"url": "https://link.springer.com/chapter/10.1007/978-3-030-00847-5_11", "locator": "Bibliographic header and Abstract", "checked_on": "2026-10-23"},
+        {"url": "https://www.inf.ufes.br/~gguizzardi/ER2018-Risk.pdf", "locator": "Author PDF title, abstract and introduction, PDF pp. 1–2 only", "checked_on": "2026-10-23"},
+        {"url": "https://github.com/unibz-core/value-and-risk-ontology/blob/898a7d87d1da0f8c292620d966754a630ae3b57b/README.md", "locator": "README project structure and paper citation", "checked_on": "2026-10-23"},
+        {"url": "https://github.com/unibz-core/value-and-risk-ontology/blob/898a7d87d1da0f8c292620d966754a630ae3b57b/owl/cover.ttl", "locator": "Selected cover:Vulnerability, cover:RiskSubject, cover:RiskAssessment and cover:Risk declarations", "checked_on": "2026-10-23"}
+      ]
+    },
+    {
+      "id": "REF-ROSE", "short_title": "ROSE", "category": "prior-art",
+      "citation": "Ítalo Oliveira, Tiago Prince Sales, Riccardo Baratella, Mattia Fumagalli and Giancarlo Guizzardi (2022). An Ontology of Security from a Risk Treatment Perspective. ER 2022, LNCS 13607, pp. 365–379. DOI: 10.1007/978-3-031-17995-2_26.",
+      "version": "Publisher chapter first online 10 October 2022; artifact named Reference Ontology for Security Engineering (ROSE)",
+      "inspected": "Publisher citation metadata, abstract and access notice; full chapter/implementation not inspected.",
+      "finding": "Uses COVER and prevention foundations to clarify security engineering and security mechanisms from a treatment perspective.",
+      "actual_use": "Bound Riskium treatment/control references against a security-phenomena ontology; do not promote recorded references into established mechanisms or effectiveness.",
+      "limits": "Scope comparison from the abstract only. No class-by-class mapping, domain coverage ranking or experimental replication; absence of a feature in the abstract is not evidence it is absent from ROSE.",
+      "full_work_reviewed": false, "redistribution": "metadata-and-original-paraphrase-only",
+      "observations": [{"url": "https://link.springer.com/chapter/10.1007/978-3-031-17995-2_26", "locator": "Bibliographic header, Abstract and subscription notice", "checked_on": "2026-10-23"}]
+    },
+    {
+      "id": "REF-WATCHDOG", "short_title": "WATCHDOG, formerly DODGE", "category": "prior-art",
+      "citation": "Stefano M. Nicoletti, E. Moritz Hahn, Mattia Fumagalli, Giancarlo Guizzardi and Mariëlle Stoelinga (2025). WATCHDOG: an ontology-aWare risk AssessmenT approaCH via object-oriented DisruptiOn Graphs. arXiv:2412.13964v2. Related CAiSE 2025 DOI recorded by arXiv: 10.1007/978-3-031-94571-7_18.",
+      "version": "v2, revised 30 June 2025; v1 of 18 December 2024 was titled DODGE: Ontology-Aware Risk Assessment via Object-Oriented Disruption Graphs",
+      "inspected": "Versioned arXiv v1/v2 metadata, abstracts and submission history. Related publisher chapter and full experimental results not inspected.",
+      "finding": "Operationalizes selected COVER ideas using object-oriented disruption graphs and dedicated logic/query machinery for quantitative risk questions.",
+      "actual_use": "Separate an ontology-aware computational assessment framework from Riskium's knowledge representation and bounded synthetic SPARQL retrieval.",
+      "limits": "Version names are not interchangeable citations. No imported computation, probability propagation capability, predictive accuracy or performance comparison is established for Riskium.",
+      "full_work_reviewed": false, "redistribution": "metadata-and-original-paraphrase-only",
+      "observations": [
+        {"url": "https://arxiv.org/abs/2412.13964v1", "locator": "DODGE v1 title, abstract and submission history", "checked_on": "2026-10-23"},
+        {"url": "https://arxiv.org/abs/2412.13964v2", "locator": "WATCHDOG v2 title, abstract, submission history and related publication DOI", "checked_on": "2026-10-23"}
+      ]
+    },
+    {
+      "id": "REF-ATTACKTREES", "short_title": "Ontological lens on attack trees", "category": "prior-art",
+      "citation": "Ítalo Oliveira, Stefano M. Nicoletti, Gal Engelberg, Mattia Fumagalli, Dan Klein and Giancarlo Guizzardi (2025). An ontological lens on attack trees: Toward adequacy and interoperability. arXiv:2506.23841v1. DOI: 10.48550/arXiv.2506.23841.",
+      "version": "arXiv v1, submitted 30 June 2025; no journal publication status inferred",
+      "inspected": "Versioned arXiv citation metadata, abstract and submission history only.",
+      "finding": "Analyzes attack-tree conceptual adequacy and interoperability using COVER, distinguishing ontological analysis from quantitative formalism services.",
+      "actual_use": "Explain why engineering passes and executable retrieval alone do not establish semantic adequacy; delimit interoperability and independent-review claims.",
+      "limits": "Full analysis, proposed repairs and experiments not reviewed. This is not an independently replicated finding about Riskium or a superiority comparison.",
+      "full_work_reviewed": false, "redistribution": "metadata-and-original-paraphrase-only",
+      "observations": [{"url": "https://arxiv.org/abs/2506.23841v1", "locator": "Title, authors, Abstract and v1 submission history", "checked_on": "2026-10-23"}]
+    }
+  ],
+  "interpretations": [
+    {"id": "INT-01", "source_ids": ["REF-SABIO"], "targets": ["D02", "D05"], "disposition": "METHOD_USE", "interpretation": "Keep conceptual design, operational export and finite CQ tests as distinct evidence layers.", "restriction": "Method influence does not establish full process execution or stakeholder consensus.", "equivalence_asserted": false, "compliance_asserted": false},
+    {"id": "INT-02", "source_ids": ["REF-ORSD"], "targets": ["D01", "D04"], "disposition": "METHOD_USE", "interpretation": "Record purpose, scope and intended use before tracing requirements to evidence.", "restriction": "The inspected abstract supports organization, not full adherence to detailed ORSD guidelines.", "equivalence_asserted": false, "compliance_asserted": false},
+    {"id": "INT-03", "source_ids": ["REF-ONTOUML"], "targets": ["RKM-C052", "RKM-C053", "RKM-C054", "C-06", "C-22"], "disposition": "VOCABULARY_CORRESPONDENCE", "interpretation": "Responsibility roles and relators use relational dependence and mediated participation as conceptual anchors.", "restriction": "Two distinct participants, assignment grounding and mandate identity are reviewed local policies; no complete language-conformance proof follows.", "equivalence_asserted": false, "compliance_asserted": false},
+    {"id": "INT-04", "source_ids": ["REF-ISO31000"], "targets": ["RKM-X01", "RKM-X02", "RKM-X03", "C-01", "C-20"], "disposition": "SEMANTIC_DIVERGENCE", "interpretation": "RiskCase is a governed tracking subject; it is not the uncertainty-related effect described by ISO's public explanation.", "restriction": "Neither RiskCase nor a local Risk Item label is declared universally equivalent to ISO risk.", "equivalence_asserted": false, "compliance_asserted": false},
+    {"id": "INT-05", "source_ids": ["REF-ISO31000", "REF-ISO31073"], "targets": ["RKM-C002", "RKM-C005", "RKM-C006", "RKM-X02"], "disposition": "VOCABULARY_CORRESPONDENCE", "interpretation": "Source-qualified nature assertions can retain favorable, unfavorable or mixed effects relative to objective/context references.", "restriction": "This is a representation choice consistent with the inspected public scope; it is not a complete term-by-term normative mapping.", "equivalence_asserted": false, "compliance_asserted": false},
+    {"id": "INT-06", "source_ids": ["REF-ISO31073", "REF-RISKIT", "REF-COBIT"], "targets": ["RKM-C073", "RKM-C074", "C-10"], "disposition": "NOT_ASSESSED", "interpretation": "Preserve framework/version/original meaning on appetite and tolerance statements; retain distinct source meanings in the local contract.", "restriction": "Exact current normative definitions and their cross-edition relationship were not read here. No attribution of either local tolerance meaning to an unseen current clause.", "equivalence_asserted": false, "compliance_asserted": false},
+    {"id": "INT-07", "source_ids": ["REF-RISKIT"], "targets": ["RKM-C003", "RKM-C041", "RKM-C051"], "disposition": "SCOPE_BOUNDARY", "interpretation": "Riskium retains scenario, treatment and responsibility information; a framework describing enterprise IT risk practice has broader process aims.", "restriction": "The inspected overview does not verify the local scenario structure, mandatory fields or role identity against Risk IT's detailed definitions.", "equivalence_asserted": false, "compliance_asserted": false},
+    {"id": "INT-08", "source_ids": ["REF-COBIT"], "targets": ["RKM-C051", "RKM-C059", "C-07"], "disposition": "SCOPE_BOUNDARY", "interpretation": "Recorded responsibility is not implementation of COBIT governance objectives or proof of accountable ownership.", "restriction": "No RACI, APO12, EDM03 or capability assessment has been performed.", "equivalence_asserted": false, "compliance_asserted": false},
+    {"id": "INT-09", "source_ids": ["REF-COVER"], "targets": ["RKM-X01", "RKM-C031", "RKM-C037", "C-01", "C-04"], "disposition": "SEMANTIC_DIVERGENCE", "interpretation": "Do not identify a governed RiskCase with COVER's role-mixin RiskSubject or collapse a recorded result into its value/risk conceptualization.", "restriction": "Selected implementation declarations and the paper abstract do not prove cross-ontology alignment; no sameAs/equivalentClass bridge is asserted.", "equivalence_asserted": false, "compliance_asserted": false},
+    {"id": "INT-10", "source_ids": ["REF-COVER"], "targets": ["RKM-C011", "C-15"], "disposition": "VOCABULARY_CORRESPONDENCE", "interpretation": "Both interpretations connect vulnerability to intrinsic dependence; the inspected COVER declaration additionally uses RoleMixin metatyping.", "restriction": "Riskium's local mode/bearer contract is not the same typing decision. Retain this difference for independent review; no equivalence claimed.", "equivalence_asserted": false, "compliance_asserted": false},
+    {"id": "INT-11", "source_ids": ["REF-ROSE"], "targets": ["RKM-C041", "RKM-C045", "RKM-X05", "C-02", "C-14"], "disposition": "SCOPE_BOUNDARY", "interpretation": "ROSE's abstract concerns security mechanisms and treatment phenomena; Riskium can preserve unresolved control references as information.", "restriction": "A reference or treatment plan proves neither mechanism existence nor effectiveness. No conclusion that ROSE lacks documentary features.", "equivalence_asserted": false, "compliance_asserted": false},
+    {"id": "INT-12", "source_ids": ["REF-WATCHDOG"], "targets": ["RKM-C035", "RKM-C037", "C-18", "C-21"], "disposition": "SCOPE_BOUNDARY", "interpretation": "WATCHDOG's declared computational services are distinct from retrieval of supplied Riskium assessment information.", "restriction": "A SPARQL result is not a risk-propagation calculation, predictive validation or comparative performance result.", "equivalence_asserted": false, "compliance_asserted": false},
+    {"id": "INT-13", "source_ids": ["REF-ATTACKTREES"], "targets": ["RKM-C003", "RKM-C035", "C-12"], "disposition": "SCOPE_BOUNDARY", "interpretation": "Use conceptual adequacy as a separate evaluation question from executable formal/query services.", "restriction": "Riskium has no implemented attack-tree interoperability or independent semantic acceptance from citing this abstract.", "equivalence_asserted": false, "compliance_asserted": false}
+  ],
+  "open_limits": [
+    {"id": "LIM-01", "limitation": "Full ISO/Risk IT/COBIT clause and term-definition crosswalks are unassessed; exact appetite/tolerance and risk-owner interpretations require legitimate source access and qualified review.", "owner_issues": [7, 14]},
+    {"id": "LIM-02", "limitation": "All interpretation rows are author-side. Independent adjudication, especially vulnerability typing, case identity and responsibility grounding, remains outstanding.", "owner_issues": [7, 11]},
+    {"id": "LIM-03", "limitation": "The selected prior-art comparison is not a systematic review, novelty proof, feature-absence proof or head-to-head benchmark. Full ROSE/WATCHDOG/attack-tree analyses and the access-blocked 2026 candidate are not assessed.", "owner_issues": [13, 14]},
+    {"id": "LIM-04", "limitation": "The conceptual source's historical no-fundamental-contradiction statement has no reconstructed historical reading corpus here; this review supports only the explicit inspected-portion findings, not universal compatibility or compliance.", "owner_issues": [11, 14]}
+  ],
+  "claim_ceiling": "Riskium has a discoverable, edition/portion-qualified public source register and explicit bounded comparison findings. No universal standards equivalence, exhaustive contradiction screening, full normative compliance, novel superiority, independent validation or overall semantic-correctness percentage follows. The immutable v0.3.1-rc.1 semantic source and its historical evidence remain unchanged."
+}

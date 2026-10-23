@@ -19,6 +19,7 @@ GUIDES = [('Overview', 'docs/overview.md'), ('Decisions', 'docs/modeling-decisio
           ('Requirements', 'requirements/ontology-requirements.md'),
           ('Competency-Questions', 'requirements/cq/README.md'),
           ('Traceability', 'evaluation/traceability/README.md'),
+          ('References', 'references/README.md'),
           ('Formalization', 'evaluation/owl-mapping-review.md'),
           ('Evaluation', 'evaluation/README.md'), ('Reproduce', 'docs/reproducibility.md'),
           ('Citation', 'AUTHORS.md'), ('Limitations', 'docs/portal-limitations.md')]

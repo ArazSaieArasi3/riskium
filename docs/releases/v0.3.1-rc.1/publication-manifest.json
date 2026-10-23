@@ -11,10 +11,11 @@
     "docs/modeling-decisions.md": "c5b760e9b2f5620e8cd2662026b89e98e00843dcc26e0dc1b401256f39cb76a0",
     "docs/overview.md": "def7d12867cc66f190b08ae499e809f3598723f25844847207f2e3753d16b856",
     "docs/portal-limitations.md": "33f22cc65b98e204b6379b80251a263e48050b4bb645cdf94299f8bcfeca77bb",
-    "docs/reproducibility.md": "5db69ca3ed1f5de58c45fdab3d2b2bd0c281caf917cbdd5aa3e9b87b8a99ba84",
-    "evaluation/README.md": "3ea4496bf4eddef5c108de8dc32e7722b5d6b12b990d7090d9b4dd67cacf7f0b",
+    "docs/reproducibility.md": "034830a8d2339c55bbc389c9f8ee37372d51cec42b4880e154c3b69a544ca7df",
+    "evaluation/README.md": "9b288a21e0366166c6cee6481a4b67f00d680dd5ad6320f4979cd3ed23625b57",
     "evaluation/owl-mapping-review.md": "f51ad6dee980c27a503ac0245fc98394c90eaf929b04489e4a08aaee77049acb",
     "evaluation/traceability/README.md": "851b61c9a5298aa4b7c0ea6df92039c8fbc0f3f44e06e8ee1295d385b8ef9a82",
+    "references/README.md": "437a09488a721f6710d3153080c0588408e495221a8a9bb77704848091a63a6d",
     "requirements/cq/README.md": "ae4e6c8641abbe3ccedfb4cac81e597dfddf9629ed5e17802d973664139db16c",
     "requirements/ontology-requirements.md": "8c6d30a332705cf668550b02fae4c101021ae3c857ece937b9bcc84fea77d339"
   },
