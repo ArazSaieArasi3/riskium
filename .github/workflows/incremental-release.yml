@@ -1,0 +1,104 @@
+name: Incremental release candidate
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Development tag, for example v0.3.1-rc.2; required only for publication'
+        required: false
+        default: ''
+        type: string
+      publish:
+        description: 'Publish a new development prerelease after all checks'
+        required: true
+        default: false
+        type: boolean
+permissions:
+  contents: read
+concurrency:
+  group: incremental-release-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  candidate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
+      - name: Validate exact development version and prepare checked source package
+        env:
+          RELEASE_TAG: ${{ inputs.release_tag }}
+          PUBLISH: ${{ inputs.publish }}
+          SOURCE_REF: ${{ github.ref }}
+        run: |
+          args=()
+          if [ "$PUBLISH" = "true" ] && [ -z "$RELEASE_TAG" ]; then
+            echo 'Publication requires an explicit development prerelease tag.' >&2
+            exit 1
+          fi
+          if [ "$PUBLISH" = "true" ] && [ "$SOURCE_REF" != "refs/heads/main" ]; then
+            echo 'Publication runs must use the reviewed main branch.' >&2
+            exit 1
+          fi
+          if [ -n "$RELEASE_TAG" ]; then args+=(--tag "$RELEASE_TAG"); fi
+          python tools/prepare_incremental_release.py --run-checks --output "$RUNNER_TEMP/riskium-candidate" "${args[@]}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: riskium-candidate-${{ github.sha }}
+          path: ${{ runner.temp }}/riskium-candidate/*
+          if-no-files-found: error
+          retention-days: 30
+  publish:
+    if: github.event_name == 'workflow_dispatch' && inputs.publish
+    needs: candidate
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: riskium-candidate-${{ github.sha }}
+          path: candidate
+      - name: Publish only a new tag and verify every uploaded asset
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+          SOURCE_COMMIT: ${{ github.sha }}
+        run: |
+          python - <<'PY'
+          import hashlib,json,os,pathlib,re,subprocess,tempfile,urllib.request
+          tag=os.environ['RELEASE_TAG']; commit=os.environ['SOURCE_COMMIT']; repo=os.environ['GH_REPO']
+          receipt=json.loads(pathlib.Path('candidate/candidate-receipt.json').read_text())
+          assert re.fullmatch(r'v[0-9]+\.[0-9]+\.[0-9]+-rc\.[1-9][0-9]*',tag)
+          assert receipt['source_commit']==commit and receipt['package_name']==tag
+          assert receipt['checks'] and all(x['exit_code']==0 for x in receipt['checks'])
+          for line in pathlib.Path('candidate/SHA256SUMS.txt').read_text().splitlines():
+              expected,name=line.split('  ',1)
+              assert pathlib.Path(name).name==name
+              assert hashlib.sha256((pathlib.Path('candidate')/name).read_bytes()).hexdigest()==expected
+          # An existing tag/release is never moved or overwritten. Check API status explicitly.
+          for endpoint in ['git/ref/tags/'+tag,'releases/tags/'+tag]:
+              run=subprocess.run(['gh','api','--include','repos/'+repo+'/'+endpoint],capture_output=True,text=True)
+              if 'HTTP/2.0 404' not in run.stdout and 'HTTP/1.1 404' not in run.stdout:
+                  raise SystemExit('Existing tag/release or API failure; publication stopped: '+endpoint)
+          files=[str(p)for p in sorted(pathlib.Path('candidate').iterdir())if p.is_file()]
+          subprocess.run(['gh','release','create',tag,*files,'--target',commit,'--draft','--prerelease','--latest=false','--title','Riskium '+tag+' development prerelease','--notes-file','candidate/release-notes.md'],check=True)
+          ref=json.loads(subprocess.check_output(['gh','api','repos/'+repo+'/git/ref/tags/'+tag]))
+          assert ref['object']['type']=='commit' and ref['object']['sha']==commit
+          with tempfile.TemporaryDirectory()as folder:
+              subprocess.run(['gh','release','download',tag,'--dir',folder],check=True)
+              for source in files:
+                  p=pathlib.Path(source); assert (pathlib.Path(folder)/p.name).read_bytes()==p.read_bytes(),p.name
+          subprocess.run(['gh','release','edit',tag,'--draft=false','--prerelease','--latest=false'],check=True)
+          result=json.loads(subprocess.check_output(['gh','release','view',tag,'--json','isDraft,isPrerelease,url']))
+          assert result['isDraft'] is False and result['isPrerelease'] is True
+          print(result['url'])
+          PY
