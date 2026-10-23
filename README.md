@@ -4,6 +4,8 @@ Riskium is a conceptual ontology for organizing risk knowledge. It distinguishes
 
 The model supports the interpretation and traceability of risk information. It does not prescribe a complete risk-management process or establish regulatory compliance.
 
+The current development package is [v0.3.1-rc.2](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.2), published on 23 October 2026. Its five assets and 263-file source inventory were downloaded and verified against the exact release commit; [publication evidence](evaluation/releases/v0.3.1-rc.2-publication.json) records 11 candidate gates, 101 software regressions and 40 fresh synthetic query executions. HermiT/SHACL receipts retain their historical provenance. The next bounded packet is [C-08 compatibility for rc.3](docs/next-release-v0.3.1-rc.3.md).
+
 ## Start here
 
 | Goal | Read |

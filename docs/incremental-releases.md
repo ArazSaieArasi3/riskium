@@ -1,6 +1,6 @@
 # Small continuous development releases
 
-The first development prerelease, v0.3.1-rc.1, already exists. Manuscript 7.0.7 and the source/query/quality reconciliations are complete on main. The next scoped release is **v0.3.1-rc.2**; it need not wait for independent semantic validation, full application integration or every parent research issue to close. Those outcomes must remain unclaimed.
+The first development prerelease, v0.3.1-rc.1, remains unchanged. [v0.3.1-rc.2](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.2) was published on 23 October 2026 at `5f10ad103af5818cb99331a9d71e8b5f518e93de`, consolidating the public source/query/quality and manuscript 7.0.7 review work. The [publication receipt](../evaluation/releases/v0.3.1-rc.2-publication.json) records the successful candidate and publication jobs, all five downloaded/verified assets and 263 verified source files. The next bounded release target is **v0.3.1-rc.3**, with its [precise C-08 packet](next-release-v0.3.1-rc.3.md). Full application integration and independent semantic acceptance remain unclaimed.
 
 ## Delivery rule
 
@@ -20,7 +20,7 @@ The numbers below are proposed cut order, not promises that a whole parent issue
 
 | Proposed package | Focus and linked work | Small completion boundary | Broader work retained |
 | --- | --- | --- | --- |
-| v0.3.1-rc.2 | Consolidate completed #6/#8/#11/#14 and the continuous candidate path | Current public source/evidence, manuscript 7.0.7 review ledger, declared limitations, verified archive/downloads | No claim that author-facing manuscript binaries or private SQL companions are public release assets |
+| v0.3.1-rc.2 — published | Consolidate completed #6/#8/#11/#14 and the continuous candidate path; publication #20 | Current public source/evidence, manuscript 7.0.7 review ledger, 11 passed gates and five verified assets | Author-facing manuscript binaries and private SQL companions remain separate from the public source assets |
 | v0.3.1-rc.3 | #5: C-08 unit/scale policy and a selected integration batch | Approved explicit compatibility/missing-data policy plus positive, invalid, incomplete and mutation fixtures; publish exactly its scope | Remaining 17 NOT_RUN routes and full multi-relation acceptance can require more packets |
 | v0.3.1-rc.4 | #4: reconcile one cluster of remaining formal/alternative routes | Source-bound disposition and supported alternative evidence; preserve all HermiT NOT_RUN outcomes unless actually executed | All 14 routes need eventual explicit disposition; no artificial reasoner passes |
 | v0.3.1-rc.5 | #12: first current relational reconciliation batch | Identity/version/provenance mapping plus actual preservation/history tests for a selected population | Full migration, formula, workload and readiness claims remain separate |

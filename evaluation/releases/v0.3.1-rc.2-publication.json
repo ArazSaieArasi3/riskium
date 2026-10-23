@@ -1,0 +1,77 @@
+{
+  "assets": [
+    {
+      "name": "candidate-receipt.json",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.2/candidate-receipt.json",
+      "size": 22067,
+      "digest": "sha256:17201352dd35c87119af8e4e35ae0abc183b165cdef5483b8504b8ee215550d5"
+    },
+    {
+      "name": "release-notes.md",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.2/release-notes.md",
+      "size": 3741,
+      "digest": "sha256:821425d13891a9dc2b1483d236452371dc38e924bb6fcbbaea5c9ad060bdea4f"
+    },
+    {
+      "name": "riskium-v0.3.1-rc.2-source.tar.gz",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.2/riskium-v0.3.1-rc.2-source.tar.gz",
+      "size": 3710362,
+      "digest": "sha256:8c7bc08ca953d9badee27917458790c7af7c08148ef9c1729d48232e296daa79"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.2/SHA256SUMS.txt",
+      "size": 359,
+      "digest": "sha256:df4c87497ddc1d01e1c75a76d3334baf9f52b705ba45428f176194c49880ea79"
+    },
+    {
+      "name": "source-manifest.json",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.2/source-manifest.json",
+      "size": 44576,
+      "digest": "sha256:6d38b95c17bf4913c1a979f28d1d3371829744c553afde94c1c0e9d30b282ffc"
+    }
+  ],
+  "tag": "v0.3.1-rc.2",
+  "release_id": 421791603,
+  "published_at": "2026-10-23T12:01:33Z",
+  "source_commit": "5f10ad103af5818cb99331a9d71e8b5f518e93de",
+  "workflow_run": 39950139004,
+  "verification": {
+    "status": "PASS",
+    "published_asset_bytes_verified": true,
+    "source_manifest_files_verified": 263,
+    "candidate_checks_passed": 11,
+    "tag_target_checked_separately": true,
+    "source_archive_scope": "Tracked public source only; private manuscript/database companions excluded",
+    "fresh_hermit_or_shacl_runs": 0,
+    "fresh_synthetic_query_executions": 40,
+    "fresh_software_regressions": 101,
+    "published_assets_verified": 5
+  },
+  "schema": "riskium-development-publication-v1",
+  "release_url": "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.2",
+  "workflow_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/39950139004",
+  "publication_state": {
+    "draft": false,
+    "prerelease": true,
+    "latest_promoted": false,
+    "candidate_job": "success",
+    "publish_job": "success"
+  },
+  "previous_release": {
+    "tag": "v0.3.1-rc.1",
+    "resolved_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+    "changed": false
+  },
+  "source_bindings": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/derived/riskium.owl.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58"
+  },
+  "next_packet": "docs/next-release-v0.3.1-rc.3.md",
+  "software_regression_summary": {
+    "tests_run": 101,
+    "elapsed_seconds": 26.505,
+    "result": "OK",
+    "evidence": "Hosted candidate job 120402316206 in workflow run 39950139004"
+  }
+}
