@@ -1,0 +1,50 @@
+{
+  "profile_version": "0.6.0",
+  "source_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "contract_sha256": "4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5",
+  "policy_sha256": "2759b24f5ab30cc056321bb772a855e727d9d7b82bf9bae1ff647d2c6116a5ec",
+  "source_element": "C-08",
+  "obligation_id": "SHACL-0620",
+  "source_element_sha256": "86c29e1ce9596cf0c7912108ee91ee986b45056ab714e4a8dc1d5ccb96102f9c",
+  "relation_signatures": {
+    "RX-025": [
+      "RKM-C070",
+      "RKM-C069"
+    ],
+    "RK2-020": [
+      "RKM-C070",
+      "RKM-C036"
+    ],
+    "RK2-019": [
+      "RKM-C036",
+      "RKM-C039"
+    ],
+    "RX-006": [
+      "RKM-C015",
+      "RKM-C014"
+    ]
+  },
+  "target_owners": [
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#Threshold",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#VersionMatch",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#UnresolvedVersionMatch",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#DimensionMatch",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#UnresolvedDimensionMatch",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#KindMatch",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#VersionBinding",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#UnresolvedVersionBinding",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#MissingNumericUnit",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#UnitMatch",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#UnresolvedUnitMatch",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#MissingScheme",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#SchemeMatch",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#UnresolvedSchemeMatch",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#MissingTermSet",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#TermSetMatch",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#UnresolvedTermSetMatch",
+    "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#QualitativeNoUnit"
+  ],
+  "native_semantics_changed": false,
+  "scope": "Caller-selected dual-anchor declaration compatibility; not threshold-value evaluation or full risk readiness",
+  "shapes_sha256": "82f9c6b4ce1e1ee27e38605ac789dd74b7d2ed0f8255a175b64f1bebd21c9239"
+}

@@ -1,0 +1,27 @@
+# Exit from prereleases to the first final research-artifact release
+
+Target: **v0.3.1**, provided conceptual baseline 0.3.1 remains unchanged. A conceptual change requires a separately reviewed model version and matching package series. Stable here means a maintained, reproducible research artifact with explicitly accepted scope, not production-readiness or universal semantic correctness. No calendar date or overall correctness percentage is inferred from the number of rc tags.
+
+## Fixed exit rule
+
+Publish the final release when **all MUST gates below are evidenced and no unresolved critical finding remains within its declared scope**. Every obligation has a recorded disposition: accepted with suitable evidence, explicitly out of scope, or deferred with its associated claim removed. A critical in-scope identity, false-inference, integrity or data-loss defect cannot be deferred merely to ship. Unsupported rules must use an appropriate reviewed alternative route; a HermiT NOT_RUN row must not be relabeled as a HermiT PASS because another method addresses it.
+
+| MUST gate | Evidence needed at final freeze | Planned delivery | Current status at rc.3 preparation |
+| --- | --- | --- | --- |
+| Declared claims and requirement scope | A versioned acceptance matrix naming MUST requirements/CQs, supported tasks, exclusions and every open route's disposition; manuscript wording bound to that matrix | Consolidate rc.3–rc.7 results before final freeze | OPEN: bounded prerelease claims exist; final acceptance matrix not yet adjudicated |
+| Explicit-data rules and integration | C-08 application policy/evidence plus disposition of 17 NOT_RUN constraint routes and the required multi-relation/conditional interactions for declared tasks | rc.3 packet plus necessary #5 follow-up packets | OPEN: rc.3 delivers selected metadata compatibility; it does not close all #5 |
+| Formal obligations | Review all 14 HermiT NOT_RUN routes; execute applicable logic checks and document justified alternative/limited routes; no unexplained inconsistency or critical forbidden inference | rc.4 and any required follow-up under #4 | OPEN |
+| Relational claims, if retained | Execute declared identity/version/provenance preservation and history tests on the selected current schema/population; remove unsupported operational claims | rc.5 packet and required #12 follow-up | OPEN |
+| Case and CQ claims | Independently specified expected answers and sourced/held-out cases for every MUST population retained in the final claim matrix; explicitly dispose of CQ06–CQ08 and the 11 withheld case admissions | rc.6 starts CQ06; necessary CQ07/08 and case packets under #13 | OPEN: a first population alone does not complete this gate |
+| Independent semantic review | Predeclare the release's review cohort and criteria before ratings; real eligible domain/ontology reviewers independently rate the critical identity/interpretation cluster; preserve initial ratings, disagreements and adjudication; resolve critical findings | rc.7 or later under #7 | OPEN: no independent ratings yet; a first cluster does not certify all 295 core groups |
+| Reproduction and publication | Clean pinned build; rerun affected engines on the exact candidate; reproduce claimed evidence, archive/inventory/checksums, citation/rights/diagrams/Pages and manuscript bindings; read back final tag and assets | One final stabilization/freeze after acceptance | OPEN for final v0.3.1; previous rc publication checks are not final-freeze evidence |
+
+These are explicit project acceptance gates. A broadly named parent issue can stay open for later scope after its release-critical portion has a reviewed disposition. The retained claims control what must actually pass; merely narrowing the wording cannot conceal a critical defect in the retained model. Independent review of a selected cohort must be reported as selected coverage, with unreviewed groups visible and no whole-ontology semantic-acceptance claim.
+
+## What determines the point of final publication
+
+The earliest planned decision point is **after the rc.7 review packet and one final stabilization/freeze**. This is conditional: rc.4/rc.5/rc.6 are first bounded batches, so their release-critical residual work must also be resolved before final publication. The sequence is a work plan, not a promise that exactly five more prereleases suffice. Each failed gate gets a concrete fix and, when useful, another small rc; do not keep generating rc numbers without completing named acceptance work.
+
+No waiting for #16 future extensions, interoperability expansion, every possible conversion or every research idea. Unclaimed additional features go to the next release series. The owner does not need to wait for a hypothetical 100% universal correctness score. A calendar forecast becomes defensible only after the independent reviewer availability and remaining acceptance population are known; neither is currently recorded.
+
+The existing incremental workflow intentionally publishes **prereleases only**. Final publication requires a separate implementation/review of the stable profile once these gates are accepted, with an explicit final tag, reviewed notes, immutable source, verified assets and appropriate latest designation. Removing `-rc.N` from a tag is not acceptance evidence. No stable release or final designation is authorized by a green prerelease workflow alone.

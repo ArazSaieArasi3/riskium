@@ -69,7 +69,7 @@ def snapshot(root, ref, output, tag=None, checks=None):
                'model_version': model['version'], 'package_name': name,
                'maturity': 'development-prerelease', 'checks': checks or [],
                'archive_inventory_verified': True, 'publication_executed': False,
-               'scientific_engine_receipts': 'Historical source-bound evidence retained; packaging is not a fresh HermiT/SHACL run.',
+               'scientific_engine_receipts': 'Historical source-bound evidence retained; candidate checks explicitly name any fresh scoped replay. Packaging alone is not an engine run.',
                'independent_semantic_acceptance': 'NOT_ESTABLISHED'}
     (output / 'candidate-receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
     note = ('# Riskium ' + name + '\n\nDevelopment prerelease of conceptual baseline ' + model['version'] +
@@ -100,6 +100,7 @@ CHECKS = [
     ['tools/review_references.py', '--check'], ['tools/build_quality_report.py', '--check'],
     ['tools/run_cq.py', '--check'], ['tools/build_traceability.py', '--check'],
     ['tools/build_reference.py', '--check'], ['tools/publication/audit_portal.py'],
+    ['tools/run_compatibility_shacl.py', '--check'],
     ['-m', 'unittest', 'discover', '-s', 'tests', '-v'],
 ]
 

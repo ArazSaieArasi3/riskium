@@ -1,0 +1,375 @@
+@prefix co: <https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#> .
+@prefix cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+co:DimensionMatch a sh:NodeShape ;
+    sh:sparql co:DimensionMatchQuery .
+
+co:KindMatch a sh:NodeShape ;
+    sh:sparql co:KindMatchQuery .
+
+co:MissingNumericUnit a sh:NodeShape ;
+    sh:sparql co:MissingNumericUnitQuery .
+
+co:MissingScheme a sh:NodeShape ;
+    sh:sparql co:MissingSchemeQuery .
+
+co:MissingTermSet a sh:NodeShape ;
+    sh:sparql co:MissingTermSetQuery .
+
+co:QualitativeNoUnit a sh:NodeShape ;
+    sh:sparql co:QualitativeNoUnitQuery .
+
+co:SchemeMatch a sh:NodeShape ;
+    sh:sparql co:SchemeMatchQuery .
+
+co:TermSetMatch a sh:NodeShape ;
+    sh:sparql co:TermSetMatchQuery .
+
+co:Threshold a sh:NodeShape ;
+    sh:class risk:RKM-C070 ;
+    sh:nodeKind sh:IRI ;
+    sh:property co:Indicator,
+        co:IndicatorDimension,
+        co:IndicatorKind,
+        co:IndicatorScheme,
+        co:IndicatorSource,
+        co:IndicatorTermset,
+        co:IndicatorUnit,
+        co:IndicatorVersion,
+        co:IndicatorVersionTarget,
+        co:Scale,
+        co:ScaleDimension,
+        co:ScaleKind,
+        co:ScaleScheme,
+        co:ScaleSource,
+        co:ScaleTermset,
+        co:ScaleUnit,
+        co:ScaleVersion,
+        co:ScaleVersionTarget .
+
+co:UnitMatch a sh:NodeShape ;
+    sh:sparql co:UnitMatchQuery .
+
+co:UnresolvedDimensionMatch a sh:NodeShape ;
+    sh:sparql co:UnresolvedDimensionMatchQuery .
+
+co:UnresolvedSchemeMatch a sh:NodeShape ;
+    sh:sparql co:UnresolvedSchemeMatchQuery .
+
+co:UnresolvedTermSetMatch a sh:NodeShape ;
+    sh:sparql co:UnresolvedTermSetMatchQuery .
+
+co:UnresolvedUnitMatch a sh:NodeShape ;
+    sh:sparql co:UnresolvedUnitMatchQuery .
+
+co:UnresolvedVersionBinding a sh:NodeShape ;
+    sh:sparql co:UnresolvedVersionBindingQuery .
+
+co:UnresolvedVersionMatch a sh:NodeShape ;
+    sh:sparql co:UnresolvedVersionMatchQuery .
+
+co:VersionBinding a sh:NodeShape ;
+    sh:sparql co:VersionBindingQuery .
+
+co:VersionMatch a sh:NodeShape ;
+    sh:sparql co:VersionMatchQuery .
+
+co:DimensionMatchQuery a sh:SPARQLConstraint ;
+    sh:message "Declared interpretations must agree under this exact-match policy; distinctness requires explicit evidence except for the two policy-defined kinds." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+?indicator cp:dimension ?a . ?scale risk:RK2-019 ?b . FILTER (?a != ?b)
+FILTER EXISTS { ?a <http://www.w3.org/2002/07/owl#differentFrom> ?b }
+}""" .
+
+co:Indicator a sh:PropertyShape ;
+    sh:class risk:RKM-C069 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path risk:RX-025 .
+
+co:IndicatorDimension a sh:PropertyShape ;
+    sh:class risk:RKM-C039 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RX-025 cp:dimension ) .
+
+co:IndicatorKind a sh:PropertyShape ;
+    sh:in ( cp:Numeric cp:Qualitative ) ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RX-025 cp:kind ) .
+
+co:IndicatorScheme a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RX-025 cp:scheme ) .
+
+co:IndicatorSource a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RX-025 cp:source ) .
+
+co:IndicatorTermset a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RX-025 cp:termSet ) .
+
+co:IndicatorUnit a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RX-025 cp:unit ) .
+
+co:IndicatorVersion a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RX-025 cp:scaleVersion ) .
+
+co:IndicatorVersionTarget a sh:PropertyShape ;
+    sh:class risk:RKM-C036 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RX-025 cp:scaleVersion risk:RX-006 ) .
+
+co:KindMatchQuery a sh:SPARQLConstraint ;
+    sh:message "Declared interpretations must agree under this exact-match policy; distinctness requires explicit evidence except for the two policy-defined kinds." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+?indicator cp:kind ?a . ?scale cp:kind ?b . FILTER (?a != ?b)
+
+}""" .
+
+co:MissingNumericUnitQuery a sh:SPARQLConstraint ;
+    sh:message "Numeric compatibility requires explicit canonical unit IRIs on both declarations." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+?indicator cp:kind cp:Numeric . ?scale cp:kind cp:Numeric .
+FILTER (NOT EXISTS { ?indicator cp:unit ?a } || NOT EXISTS { ?scale cp:unit ?b })
+}""" .
+
+co:MissingSchemeQuery a sh:SPARQLConstraint ;
+    sh:message "Qualitative compatibility requires an explicit scheme and term-set identity." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+?indicator cp:kind cp:Qualitative . ?scale cp:kind cp:Qualitative .
+FILTER (NOT EXISTS { ?indicator cp:scheme ?a } || NOT EXISTS { ?scale cp:scheme ?b })
+}""" .
+
+co:MissingTermSetQuery a sh:SPARQLConstraint ;
+    sh:message "Qualitative compatibility requires an explicit scheme and term-set identity." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+?indicator cp:kind cp:Qualitative . ?scale cp:kind cp:Qualitative .
+FILTER (NOT EXISTS { ?indicator cp:termSet ?a } || NOT EXISTS { ?scale cp:termSet ?b })
+}""" .
+
+co:QualitativeNoUnitQuery a sh:SPARQLConstraint ;
+    sh:message "Qualitative boundaries must not invent numeric units." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+{ ?indicator cp:kind cp:Qualitative ; cp:unit ?u } UNION { ?scale cp:kind cp:Qualitative ; cp:unit ?u }
+}""" .
+
+co:Scale a sh:PropertyShape ;
+    sh:class risk:RKM-C036 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path risk:RK2-020 .
+
+co:ScaleDimension a sh:PropertyShape ;
+    sh:class risk:RKM-C039 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RK2-020 risk:RK2-019 ) .
+
+co:ScaleKind a sh:PropertyShape ;
+    sh:in ( cp:Numeric cp:Qualitative ) ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RK2-020 cp:kind ) .
+
+co:ScaleScheme a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RK2-020 cp:scheme ) .
+
+co:ScaleSource a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RK2-020 cp:source ) .
+
+co:ScaleTermset a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RK2-020 cp:termSet ) .
+
+co:ScaleUnit a sh:PropertyShape ;
+    sh:maxCount 1 ;
+    sh:minCount 0 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RK2-020 cp:unit ) .
+
+co:ScaleVersion a sh:PropertyShape ;
+    sh:class risk:RKM-C015 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RK2-020 cp:scaleVersion ) .
+
+co:ScaleVersionTarget a sh:PropertyShape ;
+    sh:class risk:RKM-C036 ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:path ( risk:RK2-020 cp:scaleVersion risk:RX-006 ) .
+
+co:SchemeMatchQuery a sh:SPARQLConstraint ;
+    sh:message "Distinct scheme/term-set declarations fail the exact-match policy." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+?indicator cp:kind cp:Qualitative . ?scale cp:kind cp:Qualitative .
+?indicator cp:scheme ?a . ?scale cp:scheme ?b . FILTER (?a != ?b)
+FILTER EXISTS { ?a <http://www.w3.org/2002/07/owl#differentFrom> ?b }
+}""" .
+
+co:TermSetMatchQuery a sh:SPARQLConstraint ;
+    sh:message "Distinct scheme/term-set declarations fail the exact-match policy." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+?indicator cp:kind cp:Qualitative . ?scale cp:kind cp:Qualitative .
+?indicator cp:termSet ?a . ?scale cp:termSet ?b . FILTER (?a != ?b)
+FILTER EXISTS { ?a <http://www.w3.org/2002/07/owl#differentFrom> ?b }
+}""" .
+
+co:UnitMatchQuery a sh:SPARQLConstraint ;
+    sh:message "Distinct unit declarations fail this exact-match policy; this is not a physical non-convertibility verdict." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+?indicator cp:kind cp:Numeric . ?scale cp:kind cp:Numeric .
+?indicator cp:unit ?a . ?scale cp:unit ?b . FILTER (?a != ?b)
+FILTER EXISTS { ?a <http://www.w3.org/2002/07/owl#differentFrom> ?b }
+}""" .
+
+co:UnresolvedDimensionMatchQuery a sh:SPARQLConstraint ;
+    sh:message "Different IRIs without identity/distinctness evidence are unresolved, not proven incompatible." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+?indicator cp:dimension ?a . ?scale risk:RK2-019 ?b . FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a <http://www.w3.org/2002/07/owl#differentFrom> ?b }
+}""" .
+
+co:UnresolvedSchemeMatchQuery a sh:SPARQLConstraint ;
+    sh:message "Scheme/term-set mapping is unresolved; labels do not settle it." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+?indicator cp:kind cp:Qualitative . ?scale cp:kind cp:Qualitative .
+?indicator cp:scheme ?a . ?scale cp:scheme ?b . FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a <http://www.w3.org/2002/07/owl#differentFrom> ?b }
+}""" .
+
+co:UnresolvedTermSetMatchQuery a sh:SPARQLConstraint ;
+    sh:message "Scheme/term-set mapping is unresolved; labels do not settle it." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+?indicator cp:kind cp:Qualitative . ?scale cp:kind cp:Qualitative .
+?indicator cp:termSet ?a . ?scale cp:termSet ?b . FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a <http://www.w3.org/2002/07/owl#differentFrom> ?b }
+}""" .
+
+co:UnresolvedUnitMatchQuery a sh:SPARQLConstraint ;
+    sh:message "Unresolved unit mapping is not ready; no equivalence or conversion is guessed." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+?indicator cp:kind cp:Numeric . ?scale cp:kind cp:Numeric .
+?indicator cp:unit ?a . ?scale cp:unit ?b . FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a <http://www.w3.org/2002/07/owl#differentFrom> ?b }
+}""" .
+
+co:UnresolvedVersionBindingQuery a sh:SPARQLConstraint ;
+    sh:message "The version target cannot be equated to or distinguished from the actual scale." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+{ ?indicator cp:scaleVersion ?v } UNION { ?scale cp:scaleVersion ?v }
+?v risk:RX-006 ?target . FILTER (?target != ?scale)
+FILTER NOT EXISTS { ?target <http://www.w3.org/2002/07/owl#differentFrom> ?scale }
+}""" .
+
+co:UnresolvedVersionMatchQuery a sh:SPARQLConstraint ;
+    sh:message "Different IRIs without identity/distinctness evidence are unresolved, not proven incompatible." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+?indicator cp:scaleVersion ?a . ?scale cp:scaleVersion ?b . FILTER (?a != ?b)
+FILTER NOT EXISTS { ?a <http://www.w3.org/2002/07/owl#differentFrom> ?b }
+}""" .
+
+co:VersionBindingQuery a sh:SPARQLConstraint ;
+    sh:message "Both declared scale versions must identify the actual threshold scale." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+{ ?indicator cp:scaleVersion ?v } UNION { ?scale cp:scaleVersion ?v }
+?v risk:RX-006 ?target . FILTER (?target != ?scale)
+FILTER EXISTS { ?target <http://www.w3.org/2002/07/owl#differentFrom> ?scale }
+}""" .
+
+co:VersionMatchQuery a sh:SPARQLConstraint ;
+    sh:message "Declared interpretations must agree under this exact-match policy; distinctness requires explicit evidence except for the two policy-defined kinds." ;
+    sh:select """PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#>
+SELECT DISTINCT $this WHERE {
+$this risk:RX-025 ?indicator ; risk:RK2-020 ?scale .
+?indicator cp:scaleVersion ?a . ?scale cp:scaleVersion ?b . FILTER (?a != ?b)
+FILTER EXISTS { ?a <http://www.w3.org/2002/07/owl#differentFrom> ?b }
+}""" .
+

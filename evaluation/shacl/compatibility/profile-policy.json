@@ -1,0 +1,23 @@
+{
+  "profile_version": "0.6.0",
+  "source_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "contract_sha256": "4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5",
+  "task": "Compare declared interpretation metadata for caller-selected dual-anchor thresholds",
+  "authority": "Author-maintained application engineering policy implemented under project-owner authorization; no independent semantic approval claimed",
+  "numeric": "Exact normalized scaleVersion, dimension, kind and canonical unit IRI equality; no conversions; differing units fail only this exact-match policy with explicit distinction evidence, not a physical non-convertibility claim",
+  "qualitative": "Exact normalized scaleVersion, dimension, kind, scheme and termSet IRI equality; numeric units forbidden; no ordering or boundary-value evaluation",
+  "provenance": "Each indicator and scale declaration requires a source IRI; scaleVersion identifies the version and versionOf binds it to the actual scale",
+  "unknown": "Missing required fields -> NOT_READY; malformed/conflicting declarations -> INVALID; complete unequal interpretations -> INCOMPATIBLE; never fabricate metadata",
+  "identity": "Asserted named instance sameAs only; no label equivalence or unique-name assumption; conflicting differentFrom rejected before engine; source schema and reserved vocabulary cannot be rewritten; unequal IRIs without asserted distinction remain NOT_READY; Numeric/Qualitative are the two mutually exclusive engineering-policy kind codes",
+  "focus": "Explicit nonempty named threshold list supplied by caller; no inference from input shape selectors",
+  "engine": "pySHACL, inference none, imports false; pinned source subclass support only",
+  "ledger": "Supplemental scoped evidence; original C-08 PARTIAL and historical blocked fixture remain unchanged",
+  "deferred": [
+    "Unit conversions",
+    "Cross-scheme equivalences",
+    "Term ordering and numeric comparator/value interpretation",
+    "Contextual appropriateness and source truth",
+    "Full multi-relation/conditional acceptance",
+    "Independent semantic review"
+  ]
+}
