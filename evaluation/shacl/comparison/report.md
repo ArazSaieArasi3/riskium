@@ -2,7 +2,7 @@
 
 **Scoped alternative SHACL route executed; global constraint acceptance remains partial.** Original engine NOT_RUN rows and historical receipts are unchanged. No native/OWL change, ranking, calculation, transformation execution or independent review is established.
 
-Execution checkout: `149c047a2322ee1e62146a6f36d796a0a99c0892`. [Full receipt](report.json.gz), [policy](profile-policy.json), [review and clause dispositions](profile-review.md). Exact executed bytes are bound by all input hashes.
+Execution checkout: `4cbae8e772f892e9550b12e1a0bedfeb1252afb2`. [Full receipt](report.json.gz), [policy](profile-policy.json), [review and clause dispositions](profile-review.md). Exact executed bytes are bound by all input hashes.
 
 Summary: {"scenarios": 55, "engine_executions": 50, "preflight_rejections": 5, "selected_integration_cases": 4, "mutation_controls": 3, "statuses": {"PASS": 55}, "decisions": {"DIRECT_COMPARISON_ADMISSIBLE": 8, "NOT_READY": 21, "INVALID_SELECTION": 6, "NOT_COMPARABLE": 10, "INVALID": 4, "PROFILE_REJECTED": 5, "STAGING_ONLY": 1}}.
 

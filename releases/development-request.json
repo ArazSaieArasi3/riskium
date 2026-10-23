@@ -1,9 +1,9 @@
 {
   "schema": "riskium-development-release-request-v1",
-  "tag": "v0.3.1-rc.3",
+  "tag": "v0.3.1-rc.4",
   "profile": "development-prerelease",
   "publish": true,
-  "purpose": "Publish scoped C-08 interpretation-metadata compatibility profile 0.6.0 with fresh source-bound SHACL evidence, selected integration and explicit final-release MUST gates; unchanged conceptual model/OWL and global C-08 PARTIAL.",
-  "authorization": "Project owner requested implementation through the agreed rc.3 release and clarification of final-release exit on 23 October 2026.",
+  "purpose": "Publish C-13/C-18 application profile 0.7.0: scoped selected-level/version/dimension joins and direct-comparison eligibility, fresh SHACL evidence and owner-led release-review policy; unchanged native/OWL semantics and historical engine rows.",
+  "authorization": "Project owner requested the next release step and specified personal release judgment with assistant support on 23 October 2026.",
   "publication_rule": "Only a change to this request in the triggering main push authorizes this release. An unchanged retained request does not republish."
 }

@@ -1,6 +1,6 @@
 # Next bounded packet: C-13/C-18 scale selection and comparison routes
 
-Status: **planned, not executed**. Target package: v0.3.1-rc.4 under #4, with explicit-data/application implementation owned jointly with #5. This packet follows C-08 application profile 0.6.0; no result for C-13/C-18 is inferred from C-08 fixtures.
+Status: **implemented and executed within declared scope; publication tracked in #22**. [Profile 0.7.0](../evaluation/shacl/comparison/profile-review.md) and [receipt](../evaluation/shacl/comparison/report.md) deliver 55 matching scenario expectations: 50 actual SHACL validations, five preflight rejections, four selected integration cases and three deleted-rule controls. Global acceptance remains partial; native/OWL and historical engine rows are unchanged. This packet is under #4/#5 and follows C-08 profile 0.6.0, without inferring C-13/C-18 outcomes from C-08 fixtures. The text below retains the original plan; linked evidence records its bounded implementation.
 
 ## Goal
 
@@ -13,4 +13,4 @@ Make the supported scale/version/dimension selection and exact comparison task d
 3. Retain exact input/shape/result/runtime hashes and expected oracles, replay in a clean environment, and publish a source-bound disposition addendum. Record which subclauses are discharged, which remain deferred and why. Keep the fixed engine denominator and immutable historical receipts. A SHACL/application result does not become a HermiT PASS.
 4. Reconcile the current claim matrix and final-release gates, then publish the narrow completed result as rc.4. Do not close all #4 or #5 merely because this cluster is complete. If a critical in-scope meaning or representation defect emerges, resolve/version it rather than mask it with a passing fixture.
 
-Out of this packet: C-03 persistence/history (#12), independent real-case/CQ acceptance (#13), actual expert judgments (#7), generic physical unit conversions, whole-profile admission and extensions (#16). These remain separately tracked; this plan claims no execution yet.
+Out of this packet: C-03 persistence/history (#12), independent real-case/CQ acceptance (#13), actual owner judgments (#7), generic physical unit conversions, whole-profile admission and extensions (#16). Actual independent review is future #23. The owner elected to judge this release with assistant support; a prepared protocol is not a recorded judgment. Next technical packet: [rc.5 relational identity and issued-version preservation](next-release-v0.3.1-rc.5.md).
