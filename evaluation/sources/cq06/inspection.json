@@ -1,0 +1,137 @@
+{
+  "schema": "riskium-cq06-primary-inspection-v1",
+  "inspected_at_utc": "2026-10-23T20:04:27.942225+00:00",
+  "method": "Read-only SQLite extraction + supplied original PDFs; pypdf text and rendered pages 14/15 and 4 visually inspected. Exact private passages matched after NFKC/casefold/whitespace removal. No publisher full text or raw private data copied to public tree.",
+  "private_extraction_sha256": "b1f08a5b9464f1c0c06acd112324707ae91d97d28883b006ca12ff6c2ee7b780",
+  "private_archive_sha256": "0a7abf11cd143f1b02027eb77f4f5bfcee613021d9eebb63bb7c46fa81f8d220",
+  "adjudication_member_sha256": "5cdb2697e5d245620bbfd06ef74d0d32979a73827cffe0839dea3d5f20ea88e6",
+  "cohort_sha256": "bc31b4af2f2d2cc4cf1c95bfeafdcb918a29f33d6400693723e7d8ed7893aa29",
+  "source_pdfs": [
+    {
+      "id": "MAT-004",
+      "pdf_sha256": "efe10350674d8ed4641f5d045a92987ab4fbc1cef057c3d61f12677b63aa2bf4",
+      "pdf_pages": 25,
+      "inspected_pdf_pages": [
+        14,
+        15
+      ],
+      "page_text_hashes": {
+        "14": "06f15621fbc14114c53c0c13b765419326d710bead04683c110ce54cc74d8ad2",
+        "15": "324bbb7b84d25a74a61c7e6910d510ca85161963507bb8ae822ae7362f118b14"
+      }
+    },
+    {
+      "id": "SRC-PH-001",
+      "pdf_sha256": "6015190747fd40fbf9c2663597e78df375996fd2ce37df4fe9d983f357b24ff1",
+      "pdf_pages": 7,
+      "inspected_pdf_pages": [
+        4
+      ],
+      "page_text_hashes": {
+        "4": "aa8f7e87c88c73c1f2467bf1f54bd1f4aa5af9ffaa98c91dfcf454feec69889a"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "record_id": "UPX-MAT-004-001",
+      "pdf_page": 14,
+      "legacy_passage_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_table_review": "PAGE_AND_ROW_INSPECTED",
+      "meaning_review": "Brief paraphrase prepared by assistant; owner semantic judgment pending"
+    },
+    {
+      "record_id": "UPX-MAT-004-002",
+      "pdf_page": 14,
+      "legacy_passage_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_table_review": "PAGE_AND_ROW_INSPECTED",
+      "meaning_review": "Brief paraphrase prepared by assistant; owner semantic judgment pending"
+    },
+    {
+      "record_id": "UPX-MAT-004-003",
+      "pdf_page": 14,
+      "legacy_passage_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_table_review": "PAGE_AND_ROW_INSPECTED",
+      "meaning_review": "Brief paraphrase prepared by assistant; owner semantic judgment pending"
+    },
+    {
+      "record_id": "UPX-MAT-004-004",
+      "pdf_page": 14,
+      "legacy_passage_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_table_review": "PAGE_AND_ROW_INSPECTED",
+      "meaning_review": "Brief paraphrase prepared by assistant; owner semantic judgment pending"
+    },
+    {
+      "record_id": "UPX-MAT-004-005",
+      "pdf_page": 14,
+      "legacy_passage_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_table_review": "PAGE_AND_ROW_INSPECTED",
+      "meaning_review": "Brief paraphrase prepared by assistant; owner semantic judgment pending"
+    },
+    {
+      "record_id": "UPX-MAT-004-006",
+      "pdf_page": 15,
+      "legacy_passage_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_table_review": "PAGE_AND_ROW_INSPECTED",
+      "meaning_review": "Brief paraphrase prepared by assistant; owner semantic judgment pending"
+    },
+    {
+      "record_id": "UPX-MAT-004-007",
+      "pdf_page": 15,
+      "legacy_passage_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_table_review": "PAGE_AND_ROW_INSPECTED",
+      "meaning_review": "Brief paraphrase prepared by assistant; owner semantic judgment pending"
+    },
+    {
+      "record_id": "UPX-MAT-004-008",
+      "pdf_page": 15,
+      "legacy_passage_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_table_review": "PAGE_AND_ROW_INSPECTED",
+      "meaning_review": "Brief paraphrase prepared by assistant; owner semantic judgment pending"
+    },
+    {
+      "record_id": "UPX-MAT-004-009",
+      "pdf_page": 15,
+      "legacy_passage_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_table_review": "PAGE_AND_ROW_INSPECTED",
+      "meaning_review": "Brief paraphrase prepared by assistant; owner semantic judgment pending"
+    },
+    {
+      "record_id": "UPX-MAT-004-010",
+      "pdf_page": 15,
+      "legacy_passage_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_table_review": "PAGE_AND_ROW_INSPECTED",
+      "meaning_review": "Brief paraphrase prepared by assistant; owner semantic judgment pending"
+    },
+    {
+      "record_id": "UPX-MAT-004-011",
+      "pdf_page": 15,
+      "legacy_passage_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_table_review": "PAGE_AND_ROW_INSPECTED",
+      "meaning_review": "Brief paraphrase prepared by assistant; owner semantic judgment pending"
+    },
+    {
+      "record_id": "EX-SRC-PH-001-001",
+      "pdf_page": 4,
+      "legacy_passage_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_table_review": "PAGE_AND_ROW_INSPECTED",
+      "meaning_review": "Review label only; no source-study frequency or incidence claim"
+    },
+    {
+      "record_id": "EX-SRC-PH-001-003",
+      "pdf_page": 4,
+      "legacy_passage_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_table_review": "PAGE_AND_ROW_INSPECTED",
+      "meaning_review": "Review label only; no source-study frequency or incidence claim"
+    }
+  ],
+  "summary": {
+    "source_documents": 2,
+    "sourced_records": 13,
+    "matched_passages": 13,
+    "withheld_case_admissions": 11,
+    "managed_cases_admitted": 0,
+    "source_truth_independently_validated": false
+  },
+  "machine_assistance": "Assistant selected and paraphrased records, checked text and viewed source pages; no second human/owner judgments invented."
+}

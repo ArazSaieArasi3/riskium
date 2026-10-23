@@ -1,0 +1,22 @@
+{
+  "schema": "riskium-cq06-independent-answer-vector-v1",
+  "preparation": "Manually fixed source/locator/origin joins from the inspected PDF table and historical IDs before new query execution. Not computed from RDF or query output; assistant-authored, not independent-review acceptance.",
+  "columns": ["statement", "source", "locator", "origin"],
+  "origin": "urn:riskium:source-cq06:origin:assistant-paraphrase-reviewed-against-pdf",
+  "joins": [
+    ["UPX-MAT-004-001", "https://doi.org/10.1080/13669877.2013.815653", "Table 1; PDF page 14; printed page 12; failure row 1"],
+    ["UPX-MAT-004-002", "https://doi.org/10.1080/13669877.2013.815653", "Table 1; PDF page 14; printed page 12; failure row 2"],
+    ["UPX-MAT-004-003", "https://doi.org/10.1080/13669877.2013.815653", "Table 1; PDF page 14; printed page 12; failure row 3"],
+    ["UPX-MAT-004-004", "https://doi.org/10.1080/13669877.2013.815653", "Table 1; PDF page 14; printed page 12; failure row 4"],
+    ["UPX-MAT-004-005", "https://doi.org/10.1080/13669877.2013.815653", "Table 1; PDF page 14; printed page 12; failure row 5"],
+    ["UPX-MAT-004-006", "https://doi.org/10.1080/13669877.2013.815653", "Table 1; PDF page 15; printed page 13; failure row 1"],
+    ["UPX-MAT-004-007", "https://doi.org/10.1080/13669877.2013.815653", "Table 1; PDF page 15; printed page 13; failure row 2"],
+    ["UPX-MAT-004-008", "https://doi.org/10.1080/13669877.2013.815653", "Table 1; PDF page 15; printed page 13; failure row 3"],
+    ["UPX-MAT-004-009", "https://doi.org/10.1080/13669877.2013.815653", "Table 1; PDF page 15; printed page 13; failure row 4"],
+    ["UPX-MAT-004-010", "https://doi.org/10.1080/13669877.2013.815653", "Table 1; PDF page 15; printed page 13; failure row 5"],
+    ["UPX-MAT-004-011", "https://doi.org/10.1080/13669877.2013.815653", "Table 1; PDF page 15; printed page 13; failure row 6"],
+    ["EX-SRC-PH-001-001", "https://doi.org/10.1186/2008-2231-21-69", "Table 1; PDF page 4; printed page 4; risk row 1"],
+    ["EX-SRC-PH-001-003", "https://doi.org/10.1186/2008-2231-21-69", "Table 1; PDF page 4; printed page 4; risk row 3"]
+  ],
+  "withheld_case_ids": ["UPX-MAT-004-001", "UPX-MAT-004-002", "UPX-MAT-004-003", "UPX-MAT-004-004", "UPX-MAT-004-005", "UPX-MAT-004-006", "UPX-MAT-004-007", "UPX-MAT-004-008", "UPX-MAT-004-009", "UPX-MAT-004-010", "UPX-MAT-004-011"]
+}
