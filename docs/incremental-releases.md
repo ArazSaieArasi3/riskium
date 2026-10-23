@@ -10,6 +10,8 @@ Every push to main now prepares a checked candidate through [the incremental wor
 
 To publish, run the same workflow from main with an explicit unused `v0.3.1-rc.N` tag and `publish=true`. The default is `publish=false`. The publication job checks all candidate gates, refuses an existing tag/release, creates a draft prerelease at the checked commit, uploads and byte-verifies its assets, then publishes it as a prerelease. No stable release or `latest` promotion is automated. A failed upload/verification leaves an inspectable draft; it never replaces a published version.
 
+An equivalent reviewed request can be committed in `releases/development-request.json` with an explicit unused development tag, `profile=development-prerelease` and `publish=true`, alongside `docs/prerelease-TAG.md`. Only a change to that request in the triggering main push enables publication. An unchanged retained request does not publish again on later ordinary pushes. The exact tagged commit supplies the request, release notes and packaged source. This path supports publication through repository changes when a client cannot call workflow_dispatch directly.
+
 New model, mapping or shape semantics require their affected scientific engines and reports to be rerun and reviewed before release; the candidate checks do not turn old receipts into new engine runs. Evidence is bound to its actual source hashes. Documentation-only packages can retain unchanged verified scientific receipts. The candidate workflow does not publish private manuscript/database files that are outside the public tracked tree.
 
 ## Current work mapped to small releases
@@ -26,7 +28,7 @@ The numbers below are proposed cut order, not promises that a whole parent issue
 | v0.3.1-rc.7 or later | #7: actual independent semantic review | Predeclared first identity cluster, actual eligible reviewer responses and reasoned dispositions | Timing depends on real reviewers; no simulated judgments or automatic stable designation |
 | Later separately scoped release | #16: extensions/interoperability | Only an approved extension with its own requirements, ownership and evidence | Non-blocking future scope; no reserved release date |
 
-Use a completed packet as the release trigger; aim for one focused packet per work cycle. A weekly review of completed packets is useful but no calendar-based publication is enabled. No time-to-stable or global readiness percentage is inferred from issue count. As of 23 October 2026, 13 of 19 issues are closed (68.4% by count), six remain open and one prerelease is already public.
+Use a completed packet as the release trigger; aim for one focused packet per work cycle. A weekly review of completed packets is useful but no calendar-based publication is enabled. No time-to-stable or global readiness percentage is inferred from issue count. Before the rc.2 publication task, 13 of 19 issues were closed (68.4% by count), six research issues remained open and one prerelease was public. The focused rc.2 publication task is tracked separately in [#20](https://github.com/ArazSaieArasi3/riskium/issues/20); its actual workflow and release state determine completion.
 
 ## Local preparation
 

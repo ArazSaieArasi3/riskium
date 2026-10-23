@@ -23,6 +23,9 @@ jobs:
   candidate:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
+    outputs:
+      release_tag: ${{ steps.request.outputs.release_tag }}
+      publish: ${{ steps.request.outputs.publish }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -31,11 +34,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Resolve reviewed release intent
+        id: request
+        run: python tools/resolve_release_request.py
       - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
       - name: Validate exact development version and prepare checked source package
         env:
-          RELEASE_TAG: ${{ inputs.release_tag }}
-          PUBLISH: ${{ inputs.publish }}
+          RELEASE_TAG: ${{ steps.request.outputs.release_tag }}
+          PUBLISH: ${{ steps.request.outputs.publish }}
           SOURCE_REF: ${{ github.ref }}
         run: |
           args=()
@@ -56,7 +62,7 @@ jobs:
           if-no-files-found: error
           retention-days: 30
   publish:
-    if: github.event_name == 'workflow_dispatch' && inputs.publish
+    if: needs.candidate.outputs.publish == 'true'
     needs: candidate
     runs-on: ubuntu-24.04
     permissions:
@@ -70,11 +76,11 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
-          RELEASE_TAG: ${{ inputs.release_tag }}
+          RELEASE_TAG: ${{ needs.candidate.outputs.release_tag }}
           SOURCE_COMMIT: ${{ github.sha }}
         run: |
           python - <<'PY'
-          import hashlib,json,os,pathlib,re,subprocess,tempfile,urllib.request
+          import hashlib,json,os,pathlib,re,subprocess,tempfile,urllib.request,urllib.error
           tag=os.environ['RELEASE_TAG']; commit=os.environ['SOURCE_COMMIT']; repo=os.environ['GH_REPO']
           receipt=json.loads(pathlib.Path('candidate/candidate-receipt.json').read_text())
           assert re.fullmatch(r'v[0-9]+\.[0-9]+\.[0-9]+-rc\.[1-9][0-9]*',tag)
@@ -86,18 +92,26 @@ jobs:
               assert hashlib.sha256((pathlib.Path('candidate')/name).read_bytes()).hexdigest()==expected
           # An existing tag/release is never moved or overwritten. Check API status explicitly.
           for endpoint in ['git/ref/tags/'+tag,'releases/tags/'+tag]:
-              run=subprocess.run(['gh','api','--include','repos/'+repo+'/'+endpoint],capture_output=True,text=True)
-              if 'HTTP/2.0 404' not in run.stdout and 'HTTP/1.1 404' not in run.stdout:
-                  raise SystemExit('Existing tag/release or API failure; publication stopped: '+endpoint)
+              request=urllib.request.Request('https://api.github.com/repos/'+repo+'/'+endpoint,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
+              try:
+                  with urllib.request.urlopen(request,timeout=30):
+                      raise SystemExit('Existing tag/release; publication stopped: '+endpoint)
+              except urllib.error.HTTPError as error:
+                  if error.code!=404:
+                      raise SystemExit('API failure; publication stopped: '+str(error.code))
           files=[str(p)for p in sorted(pathlib.Path('candidate').iterdir())if p.is_file()]
           subprocess.run(['gh','release','create',tag,*files,'--target',commit,'--draft','--prerelease','--latest=false','--title','Riskium '+tag+' development prerelease','--notes-file','candidate/release-notes.md'],check=True)
-          ref=json.loads(subprocess.check_output(['gh','api','repos/'+repo+'/git/ref/tags/'+tag]))
-          assert ref['object']['type']=='commit' and ref['object']['sha']==commit
           with tempfile.TemporaryDirectory()as folder:
               subprocess.run(['gh','release','download',tag,'--dir',folder],check=True)
               for source in files:
                   p=pathlib.Path(source); assert (pathlib.Path(folder)/p.name).read_bytes()==p.read_bytes(),p.name
           subprocess.run(['gh','release','edit',tag,'--draft=false','--prerelease','--latest=false'],check=True)
+          ref=json.loads(subprocess.check_output(['gh','api','repos/'+repo+'/git/ref/tags/'+tag]))
+          target=ref['object']
+          for _ in range(10):
+              if target['type']!='tag': break
+              target=json.loads(subprocess.check_output(['gh','api','repos/'+repo+'/git/tags/'+target['sha']]))['object']
+          assert target['type']=='commit' and target['sha']==commit
           result=json.loads(subprocess.check_output(['gh','release','view',tag,'--json','isDraft,isPrerelease,url']))
           assert result['isDraft'] is False and result['isPrerelease'] is True
           print(result['url'])

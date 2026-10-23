@@ -1,0 +1,9 @@
+{
+  "schema": "riskium-development-release-request-v1",
+  "tag": "v0.3.1-rc.2",
+  "profile": "development-prerelease",
+  "publish": true,
+  "purpose": "Consolidate the post-rc.1 public evidence, manuscript-review ledger and checked incremental delivery; no conceptual-semantic change.",
+  "authorization": "Project owner requested execution of the next release step on 23 October 2026.",
+  "publication_rule": "Only a change to this request in the triggering main push authorizes this release. An unchanged retained request does not republish."
+}

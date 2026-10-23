@@ -81,6 +81,12 @@ def snapshot(root, ref, output, tag=None, checks=None):
             'Full formal/application acceptance, independent semantic adjudication and a stable scientific release are not implied. '
             'Consult docs/incremental-releases.md and the source-bound reports for exact claims and issue mapping.\n\n'
             'All candidate files have a SHA256SUMS inventory. Candidate preparation is distinct from publication.\n')
+    if tag:
+        note_path = 'docs/prerelease-' + tag + '.md'
+        exists = subprocess.run(['git', '-C', str(root), 'cat-file', '-e', commit + ':' + note_path],
+                                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode == 0
+        if exists:
+            note = git(root, 'show', commit + ':' + note_path).decode() + '\n\nExact release source commit: `' + commit + '`.\n'
     (output / 'release-notes.md').write_text(note)
     sums = ''.join(hashlib.sha256(p.read_bytes()).hexdigest() + '  ' + p.name + '\n'
                    for p in sorted(output.iterdir()) if p.is_file())
