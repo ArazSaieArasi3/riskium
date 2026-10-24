@@ -2,7 +2,7 @@
 
 **Scoped correction/identity inspection, not complete native admission, clinical estimate validation, independent review or owner acceptance.**
 
-Execution checkout `920524ee05d4f7f7468ce7a9aa75a70cc7c08503`; source/oracle freeze `920524ee05d4f7f7468ce7a9aa75a70cc7c08503`. [Scope, dictionary, rights and sources](README.md); [complete receipt](report.json.gz). Exact inputs/query/graph/binding/finding oracles are retained.
+Execution checkout `3d1fe2d6f0509dc80b6e5f0b3684b963d69d366c`; source/oracle freeze `920524ee05d4f7f7468ce7a9aa75a70cc7c08503`. [Scope, dictionary, rights and sources](README.md); [complete receipt](report.json.gz). Exact inputs/query/graph/binding/finding oracles are retained.
 
 Engine: {"name": "RDFLib SPARQL SELECT", "version": "7.6.0", "python": "3.12.14", "inference": "none", "remote_service": false}. CI replays frozen public selected source data; the actual primary PDF review is separately recorded in inspection.json.
 
