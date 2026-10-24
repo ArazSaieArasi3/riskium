@@ -5,29 +5,23 @@ from urllib.parse import urlsplit, unquote
 import markdown
 from bs4 import BeautifulSoup
 from rdflib import Graph, RDF, RDFS, OWL, URIRef, BNode, Literal
+try:
+    from .guides import entries, source_ref
+except ImportError:
+    from guides import entries, source_ref
 
 ROOT = Path(__file__).resolve().parents[2]
 TOOLS = Path(__file__).resolve().parent
-TAG = 'v0.3.1-rc.1'
-COMMIT = 'cfb85905ab37549c7090f00a41ca62cdd3364ab5'
-PREFIX = Path('releases') / TAG
+TAG = 'v0.3.1'
+COMMIT = '8afe169968b5c1396c02834dbc499af691b894b4'
+PREFIX = Path('current')
 REPO = 'https://github.com/ArazSaieArasi3/riskium'
 MODEL = 'ontology/riskium-model.json'
 OWL_SOURCE = 'ontology/derived/riskium.owl.ttl'
 NAMESPACE = 'https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#'
-GUIDES = [('Overview', 'docs/overview.md'), ('Decisions', 'docs/modeling-decisions.md'),
-          ('Requirements', 'requirements/ontology-requirements.md'),
-          ('Artifact-Versions', 'docs/artifact-versions.md'),
-          ('Database-Assurance', 'docs/relational-assurance.md'),
-          ('Work-Plan', 'docs/work-plan.md'),
-          ('Publication-Comparison', 'docs/publication-comparison.md'),
-          ('Competency-Questions', 'requirements/cq/README.md'),
-          ('Traceability', 'evaluation/traceability/README.md'),
-          ('References', 'references/README.md'),
-          ('Quality', 'evaluation/quality/README.md'),
-          ('Formalization', 'evaluation/owl-mapping-review.md'),
-          ('Evaluation', 'evaluation/README.md'), ('Reproduce', 'docs/reproducibility.md'),
-          ('Citation', 'AUTHORS.md'), ('Limitations', 'docs/portal-limitations.md')]
+GUIDE_ROWS = entries()
+GUIDES = [(r['slug'], r['source']) for r in GUIDE_ROWS]
+GUIDE_TITLES = {r['slug']: r['title'] for r in GUIDE_ROWS}
 
 def digest(data): return hashlib.sha256(data).hexdigest()
 def esc(value): return html.escape(str(value), quote=True)
@@ -79,8 +73,8 @@ def build(out):
                     ('OWL reference','widoco/index-en.html'),('Evaluation','guide/Evaluation.html'),
                     ('Explore','explore/index.html'),('Downloads','downloads/index.html')]
         nav = ''.join('<a '+('aria-current="page" ' if str(path)==p else '')+'href="'+rel(version/p,base)+'">'+n+'</a>' for n,p in sections)
-        sidebar = ''.join('<li><a '+('aria-current="page" ' if str(path)=='guide/'+n+'.html' else '')+'href="'+rel(version/('guide/'+n+'.html'),base)+'">'+n+'</a></li>' for n,_ in GUIDES)
-        context = 'Semantic reference '+TAG+' · conceptual design '+esc(model['version'])+' · source '+link(COMMIT[:12], REPO+'/tree/'+COMMIT)
+        sidebar = ''.join('<li><a '+('aria-current="page" ' if str(path)=='guide/'+n+'.html' else '')+'href="'+rel(version/('guide/'+n+'.html'),base)+'">'+esc(GUIDE_TITLES[n])+'</a></li>' for n,_ in GUIDES)
+        context = 'Current documentation · published model '+TAG+' · semantic source '+link(COMMIT[:12], REPO+'/tree/'+COMMIT)+' · '+link('Documentation versions','../' * len(path.parts) + 'versions/index.html')
         footer = 'Scientific content: '+link('CC BY 4.0','https://creativecommons.org/licenses/by/4.0/')+'. Original software: MIT. Copyright 2026 Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi, for their respective original contributions. '+local('Citation and affiliations','guide/Citation.html',base)+' · '+local('Scope and limitations','guide/Limitations.html',base)+' · '+link('Repository', REPO)+'. Documentation generated after the release; semantic source is the fixed commit above.'
         script = '<script defer src="'+rel(version/'assets/filter.js',base)+'"></script>' if filtering else ''
         document = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Riskium ontology documentation for '+TAG+'"><title>'+esc(title)+' — Riskium</title><link rel="stylesheet" href="'+rel(version/'assets/portal.css',base)+'">'+script+'</head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="'+rel(version/'index.html',base)+'">Riskium</a><p>An Ontology for Modeling Enterprise Risk Knowledge</p><nav aria-label="Primary">'+nav+'</nav></header><div class="publication-context">'+context+'</div><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul>'+sidebar+'<li>'+local('Version and source record','publication-manifest.json',base)+'</li><li>'+link('GitHub Wiki',REPO+'/wiki')+'</li></ul></aside><main id="content" tabindex="-1">'+str(soup)+'</main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul>'+''.join('<li>'+a+'</li>' for a in toc)+'</ul></aside></div><footer>'+footer+'</footer></body></html>\n'
@@ -164,18 +158,20 @@ def build(out):
             elif target.is_relative_to(ROOT):
                 p = target.relative_to(ROOT).as_posix()
                 # Current narrative sources may postdate the semantic release.
-                ref = COMMIT if subprocess.run(['git','cat-file','-e',COMMIT+':'+p],cwd=ROOT,stderr=subprocess.DEVNULL).returncode == 0 else 'main'
+                ref = source_ref(p)
                 node[attr] = REPO+('/tree/' if target.is_dir() else '/blob/')+ref+'/'+p
             if u.fragment: node[attr] += '#'+u.fragment
         if name == 'Evaluation':
             soup.insert(0,BeautifulSoup('<p class="note">Frozen release evidence: '+coverage_text+' Independent semantic acceptance remains open.</p>','html.parser'))
-        page(Path('guide/'+name+'.html'), name, str(soup))
+        wiki_slug = next(r['wiki_slug'] for r in GUIDE_ROWS if r['slug'] == name)
+        soup.append(BeautifulSoup('<p class="note">'+link('Equivalent Wiki guide',REPO+'/wiki/'+wiki_slug)+' · Explanatory source: '+link(src,REPO+'/blob/'+source_ref(src)+'/'+src)+'. Source hashes are recorded in the documentation manifest; current engineering supplements are separate from the immutable stable assets.</p>','html.parser'))
+        page(Path('guide/'+name+'.html'), GUIDE_TITLES[name], str(soup))
     downloads = [('ontology/riskium-model.json','riskium-model.json'),('ontology/native/riskium.ontouml.json','riskium.ontouml.json'),('ontology/derived/typed-core.json','typed-core.json'),('CITATION.cff','CITATION.cff'),('RIGHTS.md','RIGHTS.md'),('LICENSE','LICENSE'),('NOTICE.md','NOTICE.md'),('LICENSES/CC-BY-4.0.txt','CC-BY-4.0.txt'),('LICENSES/MIT.txt','MIT.txt')]
     hashes = {}
     for src,name in downloads:
         data = source(src); write(version/'downloads'/name,data); hashes[name] = digest(data)
     write(version/'downloads/SHA256SUMS.txt',''.join(d+'  '+n+'\n' for n,d in sorted(hashes.items())))
-    body = '<h1>Downloads</h1><p>These conceptual and native files are byte-identical to commit <code>'+COMMIT+'</code>. The OWL Turtle is also preserved exactly; its alternative serializations have a graph-isomorphism receipt. Citation metadata here is the historical tagged copy; the authoritative release designation is '+link(TAG,REPO+'/releases/tag/'+TAG)+'.</p><ul>'+''.join('<li>'+link(n,n)+'</li>' for _,n in downloads)+'<li>'+link('SHA-256 checksums','SHA256SUMS.txt')+'</li></ul><h2>OWL serializations</h2><ul>'+''.join('<li>'+link(label,'../widoco/'+name)+'</li>' for label,name in [('Turtle','ontology.ttl'),('RDF/XML','ontology.owl'),('JSON-LD','ontology.jsonld'),('N-Triples','ontology.nt'),('Serialization receipt','serialization-receipt.json')])+'</ul><h2>Release evidence package</h2><p>'+link('Open the published release assets',REPO+'/releases/tag/'+TAG)+' for the original source archive, 149-file source inventory, final-freeze evidence and checksums. Website download checksums cover this website subset, not the entire release.</p><p>Scientific artifacts use CC BY 4.0; original software uses MIT. Dependencies and third-party template resources retain their own notices. See '+link('rights','RIGHTS.md')+' and '+link('current template notices','../../../THIRD-PARTY-DOCUMENTATION.txt')+'.</p>'
+    body = '<h1>Downloads</h1><p>These conceptual and native files are byte-identical to commit <code>'+COMMIT+'</code>. The OWL Turtle is also preserved exactly; its alternative serializations have a graph-isomorphism receipt. Citation metadata here is the historical tagged copy; the authoritative release designation is '+link(TAG,REPO+'/releases/tag/'+TAG)+'.</p><ul>'+''.join('<li>'+link(n,n)+'</li>' for _,n in downloads)+'<li>'+link('SHA-256 checksums','SHA256SUMS.txt')+'</li></ul><h2>OWL serializations</h2><ul>'+''.join('<li>'+link(label,'../widoco/'+name)+'</li>' for label,name in [('Turtle','ontology.ttl'),('RDF/XML','ontology.owl'),('JSON-LD','ontology.jsonld'),('N-Triples','ontology.nt'),('Serialization receipt','serialization-receipt.json')])+'</ul><h2>Release evidence package</h2><p>'+link('Open the published release assets',REPO+'/releases/tag/'+TAG)+' for the original source archive, 371-file source inventory, final-freeze evidence and checksums. Website download checksums cover this website subset, not the entire release.</p><p>Scientific artifacts use CC BY 4.0; original software uses MIT. Dependencies and third-party template resources retain their own notices. See '+link('rights','RIGHTS.md')+' and '+link('current template notices','../../THIRD-PARTY-DOCUMENTATION.txt')+'.</p>'
     page(Path('downloads/index.html'),'Downloads',body)
     write(version/'publication-manifest.json',json_text({'schema_version':1,'release':TAG,'semantic_source_commit':COMMIT,'model_version':model['version'],'semantic_inputs_sha256':inputs,'guide_sources_sha256':guide_inputs,'documentation_note':'Post-release documentation projection of immutable semantic inputs; not an additional semantic validation run.','counts':{'catalog_concepts':len(model['concepts']),'owl_named_classes':len(classes),'owl_object_properties':len(properties),'owl_triples':len(graph)},'template':'OntoSPK-style documentation portal with WIDOCO 1.4.25; bounded asserted hypertext explorer'}))
     # Stable entry points; version routes are explicit and self-contained.
@@ -189,6 +185,11 @@ def build(out):
         review += '<section><h2>'+title+'</h2><div class="frames">'+''.join('<div><h3>'+str(width)+' pixels</h3><iframe width="'+str(width)+'" title="'+title+' at '+str(width)+' pixels" src="'+PREFIX.as_posix()+'/'+route+'"></iframe></div>' for width in [390,760])+'</div></section>'
     write(out/'interface-review.html',review+'</body></html>\n')
     write(out/'.nojekyll','')
+    try:
+        from .site_registry import write_version_index
+    except ImportError:
+        from site_registry import write_version_index
+    write_version_index(out)
     return {'release':TAG,'source_commit':COMMIT,'counts':{'conceptual_entries':305,'explorer_terms':len(explorer_rows),'owl_triples':len(graph)}}
 
 def main():
@@ -202,6 +203,11 @@ def main():
                     if not existing.exists() or existing.read_bytes()!=p.read_bytes():changed.append(p.relative_to(out).as_posix())
             if changed:raise SystemExit('Stale portal files: '+', '.join(changed))
     else:result=build(ROOT/'docs')
+    try:
+        from .guides import sync_wiki
+    except ImportError:
+        from guides import sync_wiki
+    result['shared_wiki_guides'] = sync_wiki(check=args.check)
     print(json.dumps(result,sort_keys=True))
 
 if __name__=='__main__':main()

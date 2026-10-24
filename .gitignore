@@ -8,3 +8,6 @@ node_modules/
 .venv-shacl/
 # Full admission snapshots are published losslessly as report.json.gz.
 evaluation/shacl/admission/report.json
+
+# Deployable site is assembled and audited from tracked sources.
+build/

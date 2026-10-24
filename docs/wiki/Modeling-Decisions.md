@@ -24,4 +24,10 @@ Heterogeneous real-world referents are optional boundaries. A vulnerability mode
 
 ## Current limits
 
-The native exchange has official schema and SDK interoperability checks, preserved source fields and explicit generalization-set decisions. The [native review](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/native-model-review.md) records its scope and legacy-tool limitations. A [bounded OWL mapping](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/owl-mapping-review.md) and [C-14 boundary reconciliation](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/c14-boundary-review.md) are available. Complete semantic verification and independent domain review remain open.
+The native exchange now has official schema and SDK interoperability checks, preserved source fields and explicit generalization-set decisions. See the [native review](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/native-model-review.md) for its scope and legacy-tool limitations. A [bounded OWL mapping](Formalization) and scoped HermiT/SHACL modules have executed. Complete semantic verification and independent semantic review remain open; the engineering evidence retains its documented scope.
+
+---
+
+[Equivalent Pages guide](https://arazsaiearasi3.github.io/riskium/current/guide/Decisions.html) · [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) · [OWL explorer](https://arazsaiearasi3.github.io/riskium/current/explore/index.html) · [Published v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1).
+
+Explanatory source: [docs/modeling-decisions.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/modeling-decisions.md). Source SHA-256: `c5b760e9b2f5620e8cd2662026b89e98e00843dcc26e0dc1b401256f39cb76a0`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.

@@ -46,7 +46,7 @@ def finish(raw, out):
             ('Download','<a href="ontology.ttl">Turtle</a> · <a href="ontology.owl">RDF/XML</a> · <a href="ontology.jsonld">JSON-LD</a> · <a href="ontology.nt">N-Triples</a>')]
     for label,value in fields:
         dt=soup.new_tag('dt');dt.string=label;dd=soup.new_tag('dd');dd.append(BeautifulSoup(value,'html.parser'));meta.extend([dt,dd])
-    nav=BeautifulSoup('<nav aria-label="Documentation"><a href="../index.html">Overview</a> · <a href="../reference/native/index.html">Conceptual reference</a> · <a href="../explore/index.html">Explore OWL</a> · <a href="../guide/Evaluation.html">Evaluation</a> · <a href="../downloads/index.html">Downloads</a></nav><p class="riskium-note">Bounded typed-core export: 77 local classes, one local external-anchor proxy and 127 object properties. Three optional concepts and seven bridges are excluded. Ontology IRIs identify terms; they are not claims of deployed endpoints. Independent semantic acceptance remains open. This documentation was generated after the prerelease from its exact semantic source.</p>','html.parser')
+    nav=BeautifulSoup('<nav aria-label="Documentation"><a href="../index.html">Overview</a> · <a href="../reference/native/index.html">Conceptual reference</a> · <a href="../explore/index.html">Explore OWL</a> · <a href="../guide/Evaluation.html">Evaluation</a> · <a href="../downloads/index.html">Downloads</a></nav><p class="riskium-note">Bounded typed-core export: 77 local classes, one local external-anchor proxy and 127 object properties. Three optional concepts and seven bridges are excluded. Ontology IRIs identify terms; they are not claims of deployed endpoints. Independent semantic acceptance remains open. This documentation was generated after the stable release from its exact semantic source.</p>','html.parser')
     soup.select_one('.head').insert(0,nav)
     # The upstream template repeats the annotation-properties section ID.
     duplicate=soup.select_one('h3#annotationproperties')
@@ -56,7 +56,7 @@ def finish(raw, out):
     for anchor in soup.select('a[href^="ontology."]'):
         anchor['download']=anchor['href']
     # Preserve upstream generator credits, mark our post-processing.
-    footer=soup.new_tag('p');footer.append(BeautifulSoup('WIDOCO 1.4.25 output modified by Riskium: static table of contents and Markdown, explicit release metadata, local navigation and exact-graph downloads. No remote scripts, badge images or upload service. <a href="../../../THIRD-PARTY-DOCUMENTATION.txt">Template notices</a>.','html.parser'));soup.select_one('#acknowledgments').append(footer)
+    footer=soup.new_tag('p');footer.append(BeautifulSoup('WIDOCO 1.4.25 output modified by Riskium: static table of contents and Markdown, explicit release metadata, local navigation and exact-graph downloads. No remote scripts, badge images or upload service. <a href="../../THIRD-PARTY-DOCUMENTATION.txt">Template notices</a>.','html.parser'));soup.select_one('#acknowledgments').append(footer)
     (out/'index-en.html').write_text(str(soup)+'\n')
     (out/'resources').mkdir(exist_ok=True)
     for name in ['primer.css','rec.css','extra.css','owl.css']:shutil.copyfile(raw/'resources'/name,out/'resources'/name)

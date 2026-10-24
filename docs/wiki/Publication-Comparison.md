@@ -1,0 +1,39 @@
+# Riskium and OntoSPK publication comparison
+
+Comparison dated **24 October 2026**, before the current status-text corrections. Riskium source: `31f1dd07b73cc32cfcd1325b216d4cd1afc58541`; OntoSPK source: `5b67aa5bcad8876d36337fcf89937536ddf9dca9`. Fresh read-only native Wiki clones and direct HTTPS GETs supplement source inspection. The [machine-readable readback](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/publication-comparison/2026-10-24.json) records exact Wiki commits/file hashes and HTTP statuses/digests. This comparison does not perform a new browser or scientific validation.
+
+| Capability | OntoSPK observed implementation | Riskium observed implementation | Required follow-up |
+| --- | --- | --- | --- |
+| WIDOCO | Actual generated OWL reference, source/tool provenance | Actual WIDOCO **1.4.25** reference, tool/JAR hashes, notices and preserved original Turtle | Present already; retain it while fixing versioned publication (#31) |
+| Graph exploration | Bundled WebVOWL 1.1.7, explicit source-to-view adapter/coverage, embedded and full-size routes | Accessible asserted-OWL **hypertext** explorer with local filtering; no bundled graphical WebVOWL runtime | Add WebVOWL as an additional view (#32); keep the existing fallback |
+| Native Wiki | Fresh Wiki clone has **15 reader pages**, sidebar/footer; separate historical publication identity | Fresh Wiki clone has **6 reader pages** and sidebar; all seven files match current repository source | Update explanations and broaden equivalent subject coverage from shared sources (#30); page count is not a quality metric |
+| Shared Wiki/Pages explanations | Portal builder derives Wiki from curated guide Markdown; Pages hosts the guide | Separate `docs/wiki/` pages and selected Pages guide inputs can drift; current Wiki prose predates stable/SQL progress | One source per explanation with both projections and published readback (#30) |
+| Current/frozen version architecture | Live `/current/`, `/versions/`, frozen `/releases/v2.0.1/`, route registry and replacement guards | Root redirects to `/releases/v0.3.1-rc.1/`; tested `/current/index.html`, `/versions/index.html` and `/releases/v0.3.1/index.html` return 404 | New declared stable documentation snapshot/current/version index and immutable-route checks (#31) |
+| Release-status clarity | Explicit ontology-core versus documentation/source identity | Stable source v0.3.1 is published, but landing-page text still describes stable publication as pending; rc.1 semantic inputs coexist with later hashed guides | Correct stale text now; complete route/source architecture under #31 |
+| Deployment gate | Pages workflow waits for successful documentation workflow and checks out its exact source SHA | Documentation integrity CI exists; Pages deploys from `main` `/docs` without the same explicit workflow gate | Gate exact-source deployment and verify live manifests/files (#31) |
+| Formal method/reference | First-order reference/method/results, native/OWL references and explicit limits | Complete conceptual catalog/WIDOCO and engine/application reports exist; no equivalent complete FOL/TPTP verification package | Publish actual method/25-clause route explanation (#33); scope a new FOL/solver project separately if desired |
+| Search and diagrams | Dedicated term-search and diagram/domain navigation | Native and OWL local filtering plus selected/complete SVGs already exist | Improve direct lookup/diagram navigation and explanation coverage (#33), not a claim that diagrams/search are wholly absent |
+| Downloads, source, citation and notices | Versioned downloads and release/source records | Byte-preserved model/native/Turtle, four graph-isomorphic RDF serializations, checksums, author/citation and explicit CC BY/MIT scopes | Preserve these; align current/stable/development identities (#30/#31/#34) |
+| Database assurance | Database scope is outside that public core distribution | Current public SQL assessment profile 0.2.0, DRSD, mapping/dictionary, synthetic/workload/migration evidence and trace | Continue Riskium-specific #12/#35/#36; copying OntoSPK page counts does not assess SQL quality |
+
+## Findings and their limits
+
+WIDOCO is **not missing** from Riskium. The [reference](https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/widoco/index-en.html), its tool provenance and the [hypertext explorer](https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/explore/index.html) returned HTTP 200 during the fresh check. Their local source already records the accepted first publication under completed #10. The new graphical viewer is an explicit enhancement with a new acceptance contract, not a retroactive failure of that accepted alternative.
+
+The most immediate reader-facing defect is release-state drift: the live root and semantic manifest still identify rc.1, while the first bounded stable source v0.3.1 is already published. Current guides intentionally have separate mutable hashes, so the rc.1-labelled website as a whole must not be described as an immutable historical documentation snapshot. Preserve its semantic source and old release assets; introduce an explicit newly frozen documentation route instead of silently relabeling the old page.
+
+Riskium's Wiki matches its repository source byte for byte. Its problem is stale/incomplete current explanation, not an observed unexplained file mismatch. OntoSPK's native Wiki and current Pages also have distinct historical source identities; the dated 15-page Wiki clone is not presumed equal to every current guide. Neither the 15-versus-6 count nor a successful deployment establishes scientific quality.
+
+OntoSPK's live version manifest reported 267 files at the checked source. That number includes multiple routes and shared resources; it is not comparable to Riskium's 23 audited baseline HTML pages, 423-file development candidate archive or 371-file first stable source archive. These inventories measure different objects. The current documentation additions change Riskium's page/link inventory and receive a separate local audit.
+
+HTTP readback confirms availability and exact returned bytes at a date. It does not execute JavaScript, prove viewer initialization, inspect keyboard/mobile behavior or provide semantic validation. Existing dated browser receipts remain historical; the new WebVOWL and version-route tasks require their own actual live/interface evidence. No OntoSPK FOL formula, source/graph data, independent judgment or engine result has been transferred into Riskium.
+
+## Action
+
+Follow the [ordered work plan](Work-Plan): first shared Wiki/Pages sources and stable/current version architecture, then a new bounded stable publication mechanism; graphical WebVOWL and deeper reference navigation can ship separately. Source/scenario/correction mapping, broad semantic rules, legitimate normative reading, empirical cases, actual independent reviewers and real database deployment acceptance remain explicit research/engineering work with their own acceptance criteria.
+
+---
+
+[Equivalent Pages guide](https://arazsaiearasi3.github.io/riskium/current/guide/Publication-Comparison.html) · [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) · [OWL explorer](https://arazsaiearasi3.github.io/riskium/current/explore/index.html) · [Published v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1).
+
+Explanatory source: [docs/publication-comparison.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/publication-comparison.md). Source SHA-256: `a76039ecb1062028494f8a0a403167175304253aed4bec0d8cacbea90b1866e5`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.

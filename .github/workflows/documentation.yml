@@ -6,7 +6,10 @@ on:
       - 'docs/**'
       - 'tools/build_reference.py'
       - 'tools/publication/**'
+      - 'tests/test_documentation_routes.py'
       - 'requirements/ontology-requirements.md'
+      - 'requirements/cq/**'
+      - 'evaluation/traceability/**'
       - 'references/**'
       - 'evaluation/README.md'
       - 'evaluation/quality/**'
@@ -14,6 +17,7 @@ on:
       - 'evaluation/documentation-audit.json'
       - 'AUTHORS.md'
       - '.github/workflows/documentation.yml'
+      - '.github/workflows/pages.yml'
   pull_request:
   workflow_dispatch:
 permissions:
@@ -34,4 +38,7 @@ jobs:
       - run: python tools/review_references.py --check
       - run: python tools/build_quality_report.py --check
       - run: python tools/publication/audit_portal.py --write
+      - run: python tools/publication/build_wiki.py --check
+      - run: python -m unittest discover -s tests -p test_documentation_routes.py -v
+      - run: python tools/publication/build_versioned_site.py --check --previous-ref HEAD^
       - run: git diff --exit-code -- docs evaluation/documentation-audit.json

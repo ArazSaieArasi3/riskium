@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Riskium ontology documentation for v0.3.1"><title>Evaluation — Riskium</title><link rel="stylesheet" href="../assets/portal.css"></head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="../index.html">Riskium</a><p>An Ontology for Modeling Enterprise Risk Knowledge</p><nav aria-label="Primary"><a href="../index.html">Overview</a><a href="../reference/native/index.html">Conceptual reference</a><a href="../widoco/index-en.html">OWL reference</a><a aria-current="page" href="Evaluation.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="publication-context">Current documentation · published model v0.3.1 · semantic source <a href="https://github.com/ArazSaieArasi3/riskium/tree/8afe169968b5c1396c02834dbc499af691b894b4">8afe169968b5</a> · <a href="../../versions/index.html">Documentation versions</a></div><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul><li><a href="Home.html">Home</a></li><li><a href="Scope.html">Scope</a></li><li><a href="Overview.html">Overview</a></li><li><a href="Decisions.html">Modeling decisions</a></li><li><a href="Requirements.html">Requirements</a></li><li><a href="Artifact-Versions.html">Artifact versions</a></li><li><a href="Database-Assurance.html">Database assurance</a></li><li><a href="Work-Plan.html">Work and release plan</a></li><li><a href="Publication-Comparison.html">Publication comparison</a></li><li><a href="Competency-Questions.html">Competency questions</a></li><li><a href="Traceability.html">Traceability</a></li><li><a href="References.html">References</a></li><li><a href="Quality.html">Quality</a></li><li><a href="Formalization.html">Formalization</a></li><li><a aria-current="page" href="Evaluation.html">Evaluation</a></li><li><a href="Reproduce.html">Reproduce</a></li><li><a href="Citation.html">Citation</a></li><li><a href="Limitations.html">Limitations</a></li><li><a href="Using-the-Model.html">Using the model</a></li><li><a href="Visualization.html">Visualization</a></li><li><a href="Publication.html">Publication</a></li><li><a href="../publication-manifest.json">Version and source record</a></li><li><a href="https://github.com/ArazSaieArasi3/riskium/wiki">GitHub Wiki</a></li></ul></aside><main id="content" tabindex="-1"><p class="note">Frozen release evidence: HermiT: 693 executed cases PASS; 281/295 baseline obligations, 14 NOT_RUN. SHACL: 341 scoped PASS, 1 PARTIAL and 17 NOT_RUN of 359 obligations. Independent semantic acceptance remains open.</p><h1 id="evaluation-and-limitations">Evaluation and limitations</h1>
+<p>The first stable owner-reviewed scope is published as v0.3.1. Current engineering supplements are recorded separately. A requirement, an expected result, an actual engine execution, an author judgment and an independent judgment are different evidence records.</p>
+<table>
+<thead>
+<tr>
+<th>Evidence population</th>
+<th>Recorded result</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HermiT baseline</td>
+<td>693 matching cases; 281/295 scoped PASS, 14 NOT_RUN</td>
+<td>Bounded encoding/entailment evidence; not domain truth</td>
+</tr>
+<tr>
+<td>Historical SHACL ledger</td>
+<td>341 scoped PASS, one PARTIAL, 17 NOT_RUN /359</td>
+<td>Module coverage; global C-08 remains PARTIAL</td>
+</tr>
+<tr>
+<td>Later C-08 compatibility</td>
+<td>37 actual SHACL runs plus four preflight controls</td>
+<td>Named supplementary declaration policy, not full conversion/computation</td>
+</tr>
+<tr>
+<td>Selected comparison</td>
+<td>50 actual SHACL runs plus five preflight controls</td>
+<td>Exact scale/version/dimension and interpretation joins</td>
+</tr>
+<tr>
+<td>Shared-graph integration 0.1.0</td>
+<td>31 expected outcomes: 21 SHACL, nine preflight, one raw preservation</td>
+<td>Selected task composition; four deleted-rule controls are within the 21 runs</td>
+</tr>
+<tr>
+<td>SQLite assessment 0.2.0</td>
+<td>48 fixed controls and 100 frozen generated inputs; two SQL-exported SHACL validations</td>
+<td>Selected mapping/history/query/migration evidence, not complete ontology mapping</td>
+</tr>
+<tr>
+<td>Source CQ06–CQ08</td>
+<td>13 selected source statements, five original/reissued pairs, 11 WITHHELD identity candidates</td>
+<td>Finite source tasks; no fabricated organizational case admission or whole-extraction accuracy</td>
+</tr>
+<tr>
+<td>Independent semantic review</td>
+<td>Protocol prepared; zero actual reviewers, ratings and adjudications</td>
+<td>No independent acceptance result exists</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/hermit/report.md">HermiT receipt</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/coverage-status.md">SHACL ledger</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/integration/README.md">shared-graph receipt</a>, <a href="Database-Assurance.html">database assurance</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/sources/cq06/README.md">source CQ06</a> and <a href="https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/sources/cq0708/README.md">source correction/identity receipt</a> identify exact inputs and populations. Historical NOT_RUN/PARTIAL rows are not relabeled by later alternatives.</p>
+<p>Owner review accepted the finite first-final scope with assistant support. It is not independent review. The <a href="Work-Plan.html">current work plan</a> retains broader mapping, formal/application rules, independently prepared cases, legitimate normative-source interpretation, independent reviewers and actual deployment/user acceptance. Synthetic data can expose engineering defects; it cannot provide independent source truth, domain adequacy or an overall correctness percentage.</p><p class="note"><a href="https://github.com/ArazSaieArasi3/riskium/wiki/Evaluation">Equivalent Wiki guide</a> · Explanatory source: <a href="https://github.com/ArazSaieArasi3/riskium/blob/main/docs/guides/Evaluation.md">docs/guides/Evaluation.md</a>. Source hashes are recorded in the documentation manifest; current engineering supplements are separate from the immutable stable assets.</p></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul></ul></aside></div><footer>Scientific content: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Original software: MIT. Copyright 2026 Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi, for their respective original contributions. <a href="Citation.html">Citation and affiliations</a> · <a href="Limitations.html">Scope and limitations</a> · <a href="https://github.com/ArazSaieArasi3/riskium">Repository</a>. Documentation generated after the release; semantic source is the fixed commit above.</footer></body></html>

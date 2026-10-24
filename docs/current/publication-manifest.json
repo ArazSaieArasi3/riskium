@@ -1,0 +1,53 @@
+{
+  "counts": {
+    "catalog_concepts": 80,
+    "owl_named_classes": 78,
+    "owl_object_properties": 127,
+    "owl_triples": 2087
+  },
+  "documentation_note": "Post-release documentation projection of immutable semantic inputs; not an additional semantic validation run.",
+  "guide_sources_sha256": {
+    "AUTHORS.md": "c20830d719b9b1d1b13d85cac69253274a974edb79b3a2c56148fd900d038447",
+    "docs/artifact-versions.md": "ae17c5d4405c877ee2384c4740ccd465b89718ad628e8c5b55a503a1fb718c0e",
+    "docs/guides/Evaluation.md": "f801233cf9ff775b2cfe07be6487e458071d0240c5a696f22896a7e535435695",
+    "docs/guides/Home.md": "145ac85e1621df4b1f81929362b651ef7639536f16373220be8792de0bd4e84d",
+    "docs/guides/Publication.md": "d746ff29590f16947ca891ebfbd653c8806b1d70ffa70f2d122662ccd54d3041",
+    "docs/guides/Scope.md": "a095170e53e8e830915144d753d43b301c96f9368a47f2622e9a4ebc55dc7229",
+    "docs/guides/Using-the-Model.md": "439f2195438e9cbbfc07c08392f0e73912c7fe42a8a21792d7b439beef4fbdfc",
+    "docs/guides/Visualization.md": "c2718e0872405ca824d16ec920c75eebf51150ab9468af9db66e96677abf3cb7",
+    "docs/modeling-decisions.md": "c5b760e9b2f5620e8cd2662026b89e98e00843dcc26e0dc1b401256f39cb76a0",
+    "docs/overview.md": "def7d12867cc66f190b08ae499e809f3598723f25844847207f2e3753d16b856",
+    "docs/portal-limitations.md": "50c5561066f76dc0b52f2ee97ca18a37025cd0af7a185b331241e9a2d3f9fa01",
+    "docs/publication-comparison.md": "a76039ecb1062028494f8a0a403167175304253aed4bec0d8cacbea90b1866e5",
+    "docs/relational-assurance.md": "595f9a8e6a1bf0d2e46b4c38ab308b5dca475feb6e764051d60cb17d8aad3337",
+    "docs/reproducibility.md": "46956478848fd194c85a6c592bf34b2edf3ac51c1ea357eb3feba5570283c6a8",
+    "docs/work-plan.md": "371256205d1d0bbea448656e48689839bec956f6e921cb165a1b64315a3e6b0e",
+    "evaluation/owl-mapping-review.md": "f51ad6dee980c27a503ac0245fc98394c90eaf929b04489e4a08aaee77049acb",
+    "evaluation/quality/README.md": "d1d50ca91657686799f8299e821e3df3862fabcd047342dbe742f00f416a7d32",
+    "evaluation/traceability/README.md": "851b61c9a5298aa4b7c0ea6df92039c8fbc0f3f44e06e8ee1295d385b8ef9a82",
+    "references/README.md": "437a09488a721f6710d3153080c0588408e495221a8a9bb77704848091a63a6d",
+    "requirements/cq/README.md": "ae4e6c8641abbe3ccedfb4cac81e597dfddf9629ed5e17802d973664139db16c",
+    "requirements/ontology-requirements.md": "68e09fd8cce2805da2d2fa0f29f76b0601282c598855d99a41631dccfaf9ff33"
+  },
+  "model_version": "0.3.1",
+  "release": "v0.3.1",
+  "schema_version": 1,
+  "semantic_inputs_sha256": {
+    "CITATION.cff": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
+    "LICENSE": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+    "LICENSES/CC-BY-4.0.txt": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+    "LICENSES/MIT.txt": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+    "NOTICE.md": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce",
+    "RIGHTS.md": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+    "diagrams/complete-view.svg": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+    "diagrams/selected-view.svg": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+    "evaluation/hermit/report.json": "414d57f9bb6c91c7b1c08430367669f67b6d57fbe96766cd3d30e233902cdd58",
+    "evaluation/shacl/coverage-status.json": "376c30a35caf40b0fc75710241fa2e87024a6d47b576e34f2cd42b0f04eb4632",
+    "ontology/derived/riskium.owl.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+    "ontology/derived/typed-core.json": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+    "ontology/native/riskium.ontouml.json": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59"
+  },
+  "semantic_source_commit": "8afe169968b5c1396c02834dbc499af691b894b4",
+  "template": "OntoSPK-style documentation portal with WIDOCO 1.4.25; bounded asserted hypertext explorer"
+}

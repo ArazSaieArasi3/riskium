@@ -1,0 +1,131 @@
+{
+  "schema": "riskium-shared-guide-registry-v1",
+  "guides": [
+    {
+      "slug": "Home",
+      "wiki_slug": "Home",
+      "title": "Home",
+      "source": "docs/guides/Home.md"
+    },
+    {
+      "slug": "Scope",
+      "wiki_slug": "Scope",
+      "title": "Scope",
+      "source": "docs/guides/Scope.md"
+    },
+    {
+      "slug": "Overview",
+      "wiki_slug": "Overview",
+      "title": "Overview",
+      "source": "docs/overview.md"
+    },
+    {
+      "slug": "Decisions",
+      "wiki_slug": "Modeling-Decisions",
+      "title": "Modeling decisions",
+      "source": "docs/modeling-decisions.md"
+    },
+    {
+      "slug": "Requirements",
+      "wiki_slug": "Requirements",
+      "title": "Requirements",
+      "source": "requirements/ontology-requirements.md"
+    },
+    {
+      "slug": "Artifact-Versions",
+      "wiki_slug": "Artifact-Versions",
+      "title": "Artifact versions",
+      "source": "docs/artifact-versions.md"
+    },
+    {
+      "slug": "Database-Assurance",
+      "wiki_slug": "Database-Assurance",
+      "title": "Database assurance",
+      "source": "docs/relational-assurance.md"
+    },
+    {
+      "slug": "Work-Plan",
+      "wiki_slug": "Work-Plan",
+      "title": "Work and release plan",
+      "source": "docs/work-plan.md"
+    },
+    {
+      "slug": "Publication-Comparison",
+      "wiki_slug": "Publication-Comparison",
+      "title": "Publication comparison",
+      "source": "docs/publication-comparison.md"
+    },
+    {
+      "slug": "Competency-Questions",
+      "wiki_slug": "Competency-Questions",
+      "title": "Competency questions",
+      "source": "requirements/cq/README.md"
+    },
+    {
+      "slug": "Traceability",
+      "wiki_slug": "Traceability",
+      "title": "Traceability",
+      "source": "evaluation/traceability/README.md"
+    },
+    {
+      "slug": "References",
+      "wiki_slug": "References",
+      "title": "References",
+      "source": "references/README.md"
+    },
+    {
+      "slug": "Quality",
+      "wiki_slug": "Quality",
+      "title": "Quality",
+      "source": "evaluation/quality/README.md"
+    },
+    {
+      "slug": "Formalization",
+      "wiki_slug": "Formalization",
+      "title": "Formalization",
+      "source": "evaluation/owl-mapping-review.md"
+    },
+    {
+      "slug": "Evaluation",
+      "wiki_slug": "Evaluation",
+      "title": "Evaluation",
+      "source": "docs/guides/Evaluation.md"
+    },
+    {
+      "slug": "Reproduce",
+      "wiki_slug": "Reproduce",
+      "title": "Reproduce",
+      "source": "docs/reproducibility.md"
+    },
+    {
+      "slug": "Citation",
+      "wiki_slug": "Citation",
+      "title": "Citation",
+      "source": "AUTHORS.md"
+    },
+    {
+      "slug": "Limitations",
+      "wiki_slug": "Limitations",
+      "title": "Limitations",
+      "source": "docs/portal-limitations.md"
+    },
+    {
+      "slug": "Using-the-Model",
+      "wiki_slug": "Using-the-Model",
+      "title": "Using the model",
+      "source": "docs/guides/Using-the-Model.md"
+    },
+    {
+      "slug": "Visualization",
+      "wiki_slug": "Visualization",
+      "title": "Visualization",
+      "source": "docs/guides/Visualization.md"
+    },
+    {
+      "slug": "Publication",
+      "wiki_slug": "Publication",
+      "title": "Publication",
+      "source": "docs/guides/Publication.md"
+    }
+  ]
+}

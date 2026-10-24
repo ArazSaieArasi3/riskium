@@ -18,6 +18,8 @@ The [ordered work plan](work-plan.md) is the current cross-issue register, inclu
 
 ## Next focused implementation
 
+The shared-guide registry, Wiki projection, stable-model current reference, immutable legacy route and exact-source Pages workflow are now implemented for #30/#31. A new frozen documentation registration follows a committed current tree, then actual native Wiki and live Pages/interface readback determine acceptance. The next source/semantic implementation described below remains a separate later packet; source generation alone does not close publication issues.
+
 The finite assessment/result slice is implemented under #29, including context/method/scale-version roles, exact source-preserving queries, fixed/seeded controls, recovery and bounded concurrency. The [database assurance method/checklist and trace](relational-assurance.md) now determines the next omissions explicitly. Prioritize source/scenario task mapping and general correction semantics; add formulas, workflow and broad private-schema migration only with their specific policies and oracles.
 
 The [post-release work table](post-release-work.md) and [development component overlay](../releases/development-components.json) track current supplements independently of the published component set. All original scientific/model/document/SQL component bytes retain their accepted versions. The dedicated [post-release CI](../.github/workflows/post-release-validation.yml) replays the new shared-graph receipt and existing bounded SQL/source packets; ordinary candidate preparation now requires 23 fresh scoped gates and the full software suite before publication. The archived first stable release retains its historical 18 gates.

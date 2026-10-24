@@ -1,0 +1,575 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Riskium ontology documentation for v0.3.1"><title>Quality — Riskium</title><link rel="stylesheet" href="../assets/portal.css"></head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="../index.html">Riskium</a><p>An Ontology for Modeling Enterprise Risk Knowledge</p><nav aria-label="Primary"><a href="../index.html">Overview</a><a href="../reference/native/index.html">Conceptual reference</a><a href="../widoco/index-en.html">OWL reference</a><a href="Evaluation.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="publication-context">Current documentation · published model v0.3.1 · semantic source <a href="https://github.com/ArazSaieArasi3/riskium/tree/8afe169968b5c1396c02834dbc499af691b894b4">8afe169968b5</a> · <a href="../../versions/index.html">Documentation versions</a></div><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul><li><a href="Home.html">Home</a></li><li><a href="Scope.html">Scope</a></li><li><a href="Overview.html">Overview</a></li><li><a href="Decisions.html">Modeling decisions</a></li><li><a href="Requirements.html">Requirements</a></li><li><a href="Artifact-Versions.html">Artifact versions</a></li><li><a href="Database-Assurance.html">Database assurance</a></li><li><a href="Work-Plan.html">Work and release plan</a></li><li><a href="Publication-Comparison.html">Publication comparison</a></li><li><a href="Competency-Questions.html">Competency questions</a></li><li><a href="Traceability.html">Traceability</a></li><li><a href="References.html">References</a></li><li><a aria-current="page" href="Quality.html">Quality</a></li><li><a href="Formalization.html">Formalization</a></li><li><a href="Evaluation.html">Evaluation</a></li><li><a href="Reproduce.html">Reproduce</a></li><li><a href="Citation.html">Citation</a></li><li><a href="Limitations.html">Limitations</a></li><li><a href="Using-the-Model.html">Using the model</a></li><li><a href="Visualization.html">Visualization</a></li><li><a href="Publication.html">Publication</a></li><li><a href="../publication-manifest.json">Version and source record</a></li><li><a href="https://github.com/ArazSaieArasi3/riskium/wiki">GitHub Wiki</a></li></ul></aside><main id="content" tabindex="-1"><h1 id="claim-based-quality-and-evidence-report">Claim-based quality and evidence report</h1>
+<p><strong>Report milestone complete; independent scientific acceptance is not established.</strong> This post-prerelease synthesis is dated 2026-10-23, for conceptual design 0.3.1 at <code>cfb85905ab37549c7090f00a41ca62cdd3364ab5</code>. Evidence is pinned at checkpoint <code>0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a</code>; individual receipts retain their original execution provenance. This report runs no HermiT, SHACL or CQ engine.</p>
+<p>The <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/quality/policy.json">policy and metric definitions</a> are the interpretation contract; the <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/quality/report.json">machine-readable report</a> preserves counts, source hashes, all 25 constraint rows, all 28 trace rows and limitations. Its integrity PASS checks accounting, not domain truth.</p>
+<h2 id="measurement-contract">Measurement contract</h2>
+<p>The original 674-obligation allocation and fixture oracles predate their recorded executions. This synthesis defines descriptive measures before interpreting them here; it does not retrospectively invent statistical success thresholds or claim a newly pre-registered experiment.</p>
+<p>No weighted score, global PASS percentage, semantic-correctness probability or sum of unlike evidence units. Missing evidence stays unestablished; zero reviewed groups gives undefined acceptance, not 0% or 100% correctness. Ontology size and taxonomy shape are inventory descriptors, not semantic quality.</p>
+<table>
+<thead>
+<tr>
+<th>ID / measure</th>
+<th>Unit and numerator</th>
+<th>Denominator</th>
+<th>Permitted interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q-01 / Conceptual inventory</td>
+<td>Source elements by family: Count concepts, typed core, optional boundaries, imported anchor, associations, generalizations and constraints separately</td>
+<td>None; counts are not a quality ratio</td>
+<td>Inventory only; no size or taxonomy-based quality ranking</td>
+</tr>
+<tr>
+<td>Q-02 / HermiT obligation coverage</td>
+<td>Predeclared HermiT obligation: Rows recorded PASS</td>
+<td>All 295 HermiT rows; retain NOT_RUN and other outcomes</td>
+<td>Scoped formal coverage of the reviewed encoding, not domain truth</td>
+</tr>
+<tr>
+<td>Q-03 / HermiT case agreement</td>
+<td>Recorded engine case: Case outcomes matching the declared oracle</td>
+<td>All cases in the pinned HermiT receipt</td>
+<td>Finite fixture agreement; distinct from baseline obligation coverage</td>
+</tr>
+<tr>
+<td>Q-04 / SHACL obligation coverage</td>
+<td>Predeclared SHACL obligation: Rows recorded scoped PASS</td>
+<td>All 359 SHACL rows, with PARTIAL and NOT_RUN separately retained</td>
+<td>Scoped module coverage; no arbitrary full-profile admission or semantic-validity percentage</td>
+</tr>
+<tr>
+<td>Q-05 / Synthetic CQ answer agreement</td>
+<td>Fixed synthetic expected-answer case: Executed non-mutation cases with exact oracle agreement and no engine error</td>
+<td>All non-mutation answer cases in the CQ receipt</td>
+<td>Synthetic retrieval evidence, not held-out real-case accuracy</td>
+</tr>
+<tr>
+<td>Q-06 / Query mutation sensitivity</td>
+<td>Declared query mutant control: Successfully executed controls detecting the changed answer</td>
+<td>All declared query mutants; errors never count as detection</td>
+<td>Sensitivity to these mutants, not a universal mutation or semantic score</td>
+</tr>
+<tr>
+<td>Q-07 / Original CQ population execution</td>
+<td>Original source CQ contract: Contracts executed on the population actually declared by their source</td>
+<td>Eight original CQs; distinguish five synthetic tasks from three independently prepared populations</td>
+<td>Population execution coverage; no acceptance of all eight original population contracts</td>
+</tr>
+<tr>
+<td>Q-08 / Public trace completeness</td>
+<td>Requirement, scope or CQ row: Rows with complete public source/evidence accounting</td>
+<td>12 requirements + 8 scope obligations + 8 CQs = 28; eight scope rows are outside the 674 baseline</td>
+<td>Trace completion, not full requirement acceptance</td>
+</tr>
+<tr>
+<td>Q-09 / Independent semantic review completion</td>
+<td>Core review group: Groups with a recorded independent adjudication</td>
+<td>295 core groups; separately report 4 boundary and 20 original acceptance groups</td>
+<td>Recorded review progress, not percent correct; original 20 acceptance groups do not include eight later scope traces</td>
+</tr>
+<tr>
+<td>Q-10 / Independent semantic acceptance</td>
+<td>Independently adjudicated group: Accepted groups under a predeclared reviewer protocol</td>
+<td>Actually adjudicated groups; undefined if zero or no approved rating interpretation</td>
+<td>Do not invent accepted labels, confidence intervals or overall correctness</td>
+</tr>
+<tr>
+<td>Q-11 / Source interpretation evidence</td>
+<td>Selected source, reading locator or interpretation row, reported separately: Recorded corpus counts by category/disposition</td>
+<td>No exhaustive source universe or independent acceptance denominator established</td>
+<td>Editorial traceability only; NOT_ASSESSED and access limits remain explicit</td>
+</tr>
+<tr>
+<td>Q-12 / Independent case applicability</td>
+<td>Independently specified real/held-out case or CQ task: Correctly represented/adjudicated cases</td>
+<td>Not established by the current public receipts</td>
+<td>NOT_ESTABLISHED; the approved 11 source scenarios are not automatically organizational RiskCases</td>
+</tr>
+<tr>
+<td>Q-13 / Operational preservation</td>
+<td>Approved relational/application acceptance requirement: Validated identity/history/calculation/round-trip tasks</td>
+<td>No reconciled public operational acceptance population established here</td>
+<td>NOT_ESTABLISHED; native OWL and supplementary CQ fields do not imply a tested relational implementation</td>
+</tr>
+<tr>
+<td>Q-14 / Reproducibility and publication</td>
+<td>Version-bound receipt or historical release check: Retained source-bound evidence</td>
+<td>Report each receipt's own scope; do not combine release commands, software regressions and scientific cases</td>
+<td>Historical reproduction and publication evidence; this synthesis does not rerun their engines or audit the manuscript</td>
+</tr>
+</tbody>
+</table>
+<h2 id="evidence-and-bounded-claims">Evidence and bounded claims</h2>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Observed result</th>
+<th>Claim restriction / next route</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q-01</td>
+<td>80 catalog concepts; 77 typed core; 3 optional boundaries; 1 imported anchors separate; 134 associations bridges; 66 generalizations; 25 constraints</td>
+<td>Inventory only; neither a taxonomy score nor quality evidence.</td>
+</tr>
+<tr>
+<td>Q-02</td>
+<td>281/295 scoped PASS (95.25%); 14 NOT_RUN</td>
+<td>Formal encoding coverage; #4 remains open.</td>
+</tr>
+<tr>
+<td>Q-03</td>
+<td>693/693 recorded matching cases</td>
+<td>Finite original fixture suite; not 693 independent domain samples or 295 reviewed meanings.</td>
+</tr>
+<tr>
+<td>Q-04</td>
+<td>341/359 scoped PASS (94.99%); 1 PARTIAL; 17 NOT_RUN</td>
+<td>C-08 compatibility and complete profile integration remain #5; no global conformance claim.</td>
+</tr>
+<tr>
+<td>Q-05</td>
+<td>32/32 exact synthetic answer cases</td>
+<td>No OWL inference or independently specified held-out population; native/supplementary profile limits remain.</td>
+</tr>
+<tr>
+<td>Q-06</td>
+<td>8/8 successfully executed/detected query mutants</td>
+<td>Errors are not mutation detection; only the declared mutants were measured.</td>
+</tr>
+<tr>
+<td>Q-07</td>
+<td>5/8 original population contracts executed; CQ06–CQ08 pending</td>
+<td>Synthetic controls for all eight do not execute the three independent populations (#13).</td>
+</tr>
+<tr>
+<td>Q-08</td>
+<td>28/28 public traces; 12 requirements, 8 scope obligations, 8 CQs</td>
+<td>Trace completeness is not 28 accepted requirements; original per-row statuses and later overlay remain separate.</td>
+</tr>
+<tr>
+<td>Q-09</td>
+<td>0/295 core groups independently adjudicated; separate 4 boundary + 20 original acceptance groups</td>
+<td>0% review completion, not 0% correctness. Eight later scope traces do not silently enlarge this original review cohort (#7).</td>
+</tr>
+<tr>
+<td>Q-10</td>
+<td>Undefined; zero independently adjudicated groups</td>
+<td>No semantic acceptance rate, overall correctness or confidence interval is estimated.</td>
+</tr>
+<tr>
+<td>Q-11</td>
+<td>11 sources; 19 dated locators; 13 author-side interpretations, including 1 NOT_ASSESSED</td>
+<td>Source register complete within #8 scope; four limits and uninspected clauses remain (#7/#14).</td>
+</tr>
+<tr>
+<td>Q-12</td>
+<td>Not established in these public receipts</td>
+<td>Independent real/held-out case acceptance remains #7/#13; 11 source scenarios are not fabricated organizational cases.</td>
+</tr>
+<tr>
+<td>Q-13</td>
+<td>Not established</td>
+<td>Relational/application reconciliation, immutable history and calculation validation remain #12.</td>
+</tr>
+<tr>
+<td>Q-14</td>
+<td>Version-bound native, mapping, engine, query, source and historical publication receipts retained</td>
+<td>Release freeze was 21 commands/79 regressions at the release; later #6 reported 89 regressions. Neither is a new run by this synthesis; manuscript #14 remains open.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="module-populations-and-exclusions">Module populations and exclusions</h2>
+<p>Each module uses its own focus/identity/inference policy. A matched negative test means the expected rejection occurred, not that invalid data conformed. Do not sum these fixture families into independent scientific samples or a quality score.</p>
+<table>
+<thead>
+<tr>
+<th>Receipt</th>
+<th>Original source commit</th>
+<th style="text-align: right;">Scenarios</th>
+<th style="text-align: right;">Engine executions</th>
+<th>Engine outcomes</th>
+<th>Preflight outcomes / blocked scenarios</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/report.json">evaluation/shacl/report.json</a></td>
+<td><code>9668e2bc2a3454ad14aae641b914c64d43cb993b</code></td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">77</td>
+<td>{'PASS': 77}</td>
+<td>{'PASS': 1} / S-C08-TASK-DUAL-UNKNOWN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/endpoints/report.json">evaluation/shacl/endpoints/report.json</a></td>
+<td><code>f8aede601232c3afd1068eaa93e336b89eb30ad5</code></td>
+<td style="text-align: right;">1878</td>
+<td style="text-align: right;">1878</td>
+<td>{'PASS': 1878}</td>
+<td>{} /</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/admission/report.json.gz">evaluation/shacl/admission/report.json.gz</a></td>
+<td><code>de6194955c598c509b38acd1312e2012b7d4cd06</code></td>
+<td style="text-align: right;">2012</td>
+<td style="text-align: right;">2012</td>
+<td>{'PASS': 2012}</td>
+<td>{} /</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/coherence/report.json">evaluation/shacl/coherence/report.json</a></td>
+<td><code>7330a0b4382a95c1e27c46c9452e2bb1eea28f50</code></td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">48</td>
+<td>{'PASS': 48}</td>
+<td>{} /</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/qualification/report.json.gz">evaluation/shacl/qualification/report.json.gz</a></td>
+<td><code>3e34a5d446b788b71a97126246f0914e42b1efbc</code></td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">47</td>
+<td>{'PASS': 47}</td>
+<td>{} /</td>
+</tr>
+</tbody>
+</table>
+<p>The conditional batch retains its pre-validation identity rejection and blocked C-08 task. C-14 structural reconciliation reuses 12 earlier admission cases and adds <strong>zero</strong> engine executions or formal PASS rows. Historical planning labels in the source/coverage files are not current execution outcomes.</p>
+<h2 id="all-interpretation-constraint-routes">All interpretation-constraint routes</h2>
+<p>The two fixed engine denominators remain separate. A scoped pass in one engine never discharges the other engine's unexecuted row. All meanings still require independent review; this table reports encoded/exercised scope, not 25 independent semantic approvals.</p>
+<table>
+<thead>
+<tr>
+<th>Constraint</th>
+<th>HermiT row</th>
+<th>SHACL row</th>
+<th>Remaining route / owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C-01 — Risk Case is not ISO Risk</td>
+<td>HERMIT-0605 PASS</td>
+<td>SHACL-0606 NOT_RUN</td>
+<td>Case identity policy, label counterexamples and governed application identity (#5, #7, #12)</td>
+</tr>
+<tr>
+<td>C-02 — No realization from description</td>
+<td>HERMIT-0607 PASS</td>
+<td>SHACL-0608 NOT_RUN</td>
+<td>No realization from documentary content; independent occurrence evidence (#5, #7, #13)</td>
+</tr>
+<tr>
+<td>C-03 — Issued version immutability</td>
+<td>HERMIT-0609 NOT_RUN</td>
+<td>SHACL-0610 NOT_RUN</td>
+<td>History/application immutability and supersession evidence; static graphs alone are insufficient (#4, #5, #12)</td>
+</tr>
+<tr>
+<td>C-04 — Assessment interpretation</td>
+<td>HERMIT-0611 NOT_RUN</td>
+<td>SHACL-0612 NOT_RUN</td>
+<td>Pinned assessment interpretation, method/scale/context/time integration (#4, #5, #12)</td>
+</tr>
+<tr>
+<td>C-05 — Temporal and administrative distinction</td>
+<td>HERMIT-0613 NOT_RUN</td>
+<td>SHACL-0614 NOT_RUN</td>
+<td>Temporal meaning and closure/cessation distinction (#4, #5, #7, #12)</td>
+</tr>
+<tr>
+<td>C-06 — Relator participant distinctness</td>
+<td>HERMIT-0615 PASS</td>
+<td>SHACL-0616 PASS</td>
+<td>Both engine rows have scoped PASS; full semantic adequacy remains #7.</td>
+</tr>
+<tr>
+<td>C-07 — Role-qualified ownership</td>
+<td>HERMIT-0617 PASS</td>
+<td>SHACL-0618 NOT_RUN</td>
+<td>Source-qualified mandate, responsibility and ownership interpretation (#5, #7)</td>
+</tr>
+<tr>
+<td>C-08 — Threshold anchor</td>
+<td>HERMIT-0619 PASS</td>
+<td>SHACL-0620 PARTIAL</td>
+<td>Approve and exercise dual-anchor unit/scale compatibility; retain BLOCKED case (#5, #12)</td>
+</tr>
+<tr>
+<td>C-09 — Description aboutness</td>
+<td>HERMIT-0621 NOT_RUN</td>
+<td>SHACL-0622 PASS</td>
+<td>Retain explicit-data aboutness evidence separately from the HermiT NOT_RUN row (#4, #5)</td>
+</tr>
+<tr>
+<td>C-10 — Framework-qualified tolerance</td>
+<td>HERMIT-0623 NOT_RUN</td>
+<td>SHACL-0624 NOT_RUN</td>
+<td>Legitimate source access and independent framework-qualified tolerance review (#4, #5, #7, #14)</td>
+</tr>
+<tr>
+<td>C-11 — Vocabulary resource identity</td>
+<td>HERMIT-0625 NOT_RUN</td>
+<td>SHACL-0626 PASS</td>
+<td>Application vocabulary keys do not establish ontological identity or HermiT discharge (#4, #7)</td>
+</tr>
+<tr>
+<td>C-12 — Evidence does not endorse</td>
+<td>HERMIT-0627 NOT_RUN</td>
+<td>SHACL-0628 PASS</td>
+<td>Role-qualified evidence metadata does not establish claim truth or evidential adequacy (#4, #7, #13)</td>
+</tr>
+<tr>
+<td>C-13 — Scale and dimension compatibility</td>
+<td>HERMIT-0629 NOT_RUN</td>
+<td>SHACL-0630 NOT_RUN</td>
+<td>Joint scale/version/dimension compatibility under an approved task profile (#4, #5, #12)</td>
+</tr>
+<tr>
+<td>C-14 — Heterogeneous boundaries</td>
+<td>HERMIT-0631 NOT_RUN</td>
+<td>SHACL-0632 NOT_RUN</td>
+<td>Structural boundary review is alternative scoped evidence, not engine execution or actual referent existence (#4, #5, #7)</td>
+</tr>
+<tr>
+<td>C-15 — Intrinsic vulnerability bearer</td>
+<td>HERMIT-0633 PASS</td>
+<td>SHACL-0634 NOT_RUN</td>
+<td>Intrinsic vulnerability bearer evidence and typing adjudication (#5, #7)</td>
+</tr>
+<tr>
+<td>C-16 — Admission profiles</td>
+<td>HERMIT-0635 NOT_RUN</td>
+<td>SHACL-0636 NOT_RUN</td>
+<td>Full multi-relation/conditional admission and analytical readiness beyond CatalogInspection (#4, #5, #12)</td>
+</tr>
+<tr>
+<td>C-17 — Multiple assertions</td>
+<td>HERMIT-0637 NOT_RUN</td>
+<td>SHACL-0638 NOT_RUN</td>
+<td>Multiple assertions, provenance and scalar-selection behavior under application policy (#4, #5, #12, #13)</td>
+</tr>
+<tr>
+<td>C-18 — Comparable assessments</td>
+<td>HERMIT-0639 NOT_RUN</td>
+<td>SHACL-0640 NOT_RUN</td>
+<td>Comparable assessment tasks, explicit transformations and missing-data controls (#4, #5, #12)</td>
+</tr>
+<tr>
+<td>C-19 — Workflow semantics</td>
+<td>HERMIT-0641 NOT_RUN</td>
+<td>SHACL-0642 NOT_RUN</td>
+<td>Workflow rules, authority and history; no effectiveness inference from status (#4, #5, #7, #12)</td>
+</tr>
+<tr>
+<td>C-20 — Risk Item vocabulary</td>
+<td>HERMIT-0643 PASS</td>
+<td>SHACL-0644 NOT_RUN</td>
+<td>Local Risk Item terminology without universal identity/equivalence (#5, #7, #14)</td>
+</tr>
+<tr>
+<td>C-21 — Reported and computed scores</td>
+<td>HERMIT-0645 NOT_RUN</td>
+<td>SHACL-0646 NOT_RUN</td>
+<td>Reported/computed score distinction with justified inputs and reproducible calculation (#4, #5, #12)</td>
+</tr>
+<tr>
+<td>C-22 — Responsibility identity</td>
+<td>HERMIT-0647 PASS</td>
+<td>SHACL-0648 NOT_RUN</td>
+<td>Grounded mandate identity across scope/time; no key from participant equality alone (#5, #7, #12)</td>
+</tr>
+<tr>
+<td>C-23 — Context relation coherence</td>
+<td>HERMIT-0649 PASS</td>
+<td>SHACL-0650 PASS</td>
+<td>Both engine rows have scoped PASS; full semantic adequacy remains #7.</td>
+</tr>
+<tr>
+<td>C-24 — Revision coherence</td>
+<td>HERMIT-0651 PASS</td>
+<td>SHACL-0652 PASS</td>
+<td>Both engine rows have scoped PASS; full semantic adequacy remains #7.</td>
+</tr>
+<tr>
+<td>C-25 — Version target coherence</td>
+<td>HERMIT-0653 PASS</td>
+<td>SHACL-0654 PASS</td>
+<td>Both engine rows have scoped PASS; full semantic adequacy remains #7.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requirements-and-post-trace-reconciliation">Requirements and post-trace reconciliation</h2>
+<p>The original 28-row ledger remains unchanged at its actual provenance. Its acceptance-state distribution is <code>{"BOUNDED_ENGINEERING_EVIDENCE": 6, "BOUNDED_EVIDENCE_METADATA_CHECK": 1, "BOUNDED_SYNTHETIC_QUERY_EXECUTED": 5, "INDEPENDENT_POPULATION_NOT_RUN_SYNTHETIC_CONTROL_ONLY": 3, "NOT_RUN": 2, "PARTIAL": 10, "PUBLIC_ID_CONTINUITY_CHECKED": 1}</code>. The JSON report retains every row and its recorded remaining obligation. The following explicit overlay accounts for later evidence and reroutes remaining tasks; it does not rewrite historical statuses or count an editorial result as a formal pass.</p>
+<table>
+<thead>
+<tr>
+<th>Source row</th>
+<th>Recorded state</th>
+<th>Current synthesis disposition</th>
+<th>Evidence / remaining owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RKM-SCOPE-03</td>
+<td>PARTIAL</td>
+<td>PARTIAL_SOURCE_QUALIFICATION_RECORDED_EXACT_TERMS_UNASSESSED</td>
+<td>references/corpus.json: INT-06; LIM-01. Closing #8's bounded corpus did not read the missing normative appetite/tolerance definitions. Follow-up: #7, #14</td>
+</tr>
+<tr>
+<td>RKM-SCOPE-04</td>
+<td>NOT_RUN</td>
+<td>BOUNDED_EDITORIAL_REVIEW_RECORDED</td>
+<td>references/corpus.json; evaluation/references/report.json. The later #8 corpus now identifies exact inspected portions and uninspected scope; no full clause compatibility or independent acceptance is inferred. Follow-up: #7, #14</td>
+</tr>
+<tr>
+<td>RKM-SCOPE-05</td>
+<td>PUBLIC_ID_CONTINUITY_CHECKED</td>
+<td>PUBLIC_ID_CONTINUITY_CHECKED</td>
+<td>evaluation/traceability/historical-identities.json. Keep public identity continuity separate from unavailable pre-public acquisition inventories; source-corpus closure adds no private-ID reconciliation. Follow-up: #14</td>
+</tr>
+<tr>
+<td>RKRS-12</td>
+<td>BOUNDED_EVIDENCE_METADATA_CHECK</td>
+<td>BOUNDED_CLAIM_SYNTHESIS_RECORDED</td>
+<td>evaluation/quality/report.json. This report adds versioned claim/denominator synthesis, not independent acceptance of the entire quality requirement. Follow-up: #7, #14</td>
+</tr>
+</tbody>
+</table>
+<h2 id="quality-framework-adoption-decisions">Quality-framework adoption decisions</h2>
+<ul>
+<li>
+<p><strong>Riskium's existing semantic-assurance plan and coverage contract: ADOPT_AS_LOCAL_EVIDENCE_PARTITION.</strong> Use the already declared formal, explicit-data, meaning, source, applicability, query, operational and reproducibility axes. Keep their distinct denominators and acceptance proposals; no universal scientific thresholds. Source: evaluation/semantic-assurance-plan.md at evidence checkpoint; evaluation/coverage-contract.json.</p>
+</li>
+<li>
+<p><strong>Ontology Quality Framework (OQF), R-039: NOT_ADOPTED_AS_A_FROZEN_METRIC_OR_CONFORMANCE_STANDARD.</strong> The inspected repository explicitly has no frozen quality core or approved canonical metric/threshold/weight set. It can inform future work; citing it does not certify Riskium or create an OQF adoption/conformance result. Source: <a href="https://github.com/ArazSaieArasi3/ontology-quality-framework/blob/90d7dfba29a6a09b1a210ae1b9ba65ebdd893c30/README.md">https://github.com/ArazSaieArasi3/ontology-quality-framework/blob/90d7dfba29a6a09b1a210ae1b9ba65ebdd893c30/README.md</a>.</p>
+</li>
+<li>
+<p><strong>Taxonomy-only metrics and external composite quality schemes: NOT_USED_FOR_WHOLE_MODEL_SEMANTIC_ACCEPTANCE.</strong> Counting classes, subclass links or depth cannot adjudicate case identity, source meaning, dependency, record history or intended-use adequacy. No external scoring scheme was implemented, benchmarked or silently adopted by name. Source: Local adoption decision; no uninspected external scheme is represented as implemented.</p>
+</li>
+</ul>
+<p>Verification, validation, evaluation, assessment and assurance are separated here by the evidence question and intended use. They are not asserted to be a universal linear lifecycle or a newly implemented external standard.</p>
+<h2 id="judgment-and-remaining-claim-limits">Judgment and remaining claim limits</h2>
+<p>No independent semantic adjudications, held-out task acceptance or reconciled operational evaluation are established; formal and normative gaps remain explicit. Unknown criticality is not zero critical findings. No new universal release gate or quality threshold is imposed by this report.</p>
+<ul>
+<li>Development prerelease: published within its historical bounded profile.</li>
+<li>This quality-report milestone: complete for claim/evidence synthesis.</li>
+<li>Independent semantic acceptance, full normative acceptance, held-out applicability and operational preservation: not established.</li>
+<li>Overall semantic-correctness percentage and number of critical semantic findings: <strong>unestimated</strong>, not zero.</li>
+</ul>
+<p>The four source-review limits remain:</p>
+<ul>
+<li>LIM-01: Full ISO/Risk IT/COBIT clause and term-definition crosswalks are unassessed; exact appetite/tolerance and risk-owner interpretations require legitimate source access and qualified review. (#7/#14).</li>
+<li>LIM-02: All interpretation rows are author-side. Independent adjudication, especially vulnerability typing, case identity and responsibility grounding, remains outstanding. (#7/#11).</li>
+<li>LIM-03: The selected prior-art comparison is not a systematic review, novelty proof, feature-absence proof or head-to-head benchmark. Full ROSE/WATCHDOG/attack-tree analyses and the access-blocked 2026 candidate are not assessed. (#13/#14).</li>
+<li>LIM-04: The conceptual source's historical no-fundamental-contradiction statement has no reconstructed historical reading corpus here; this review supports only the explicit inspected-portion findings, not universal compatibility or compliance. (#11/#14).</li>
+</ul>
+<p>Next apply this report to the latest author-approved manuscript and a location-specific claim/number ledger (#14). Formal/application work remains #4/#5/#12, independent review #7 and independently prepared case/CQ populations #13. Future extension tracking #16 does not become a validated capability. No manuscript was reviewed or modified by this synthesis.</p>
+<h2 id="exact-source-binding-and-reproduction">Exact source binding and reproduction</h2>
+<p>All entries below are read at the evidence checkpoint. Scientific receipts must also match the working bytes; the historical assurance plan, documentation audit and release profile are intentionally read as historical versions to avoid circular dependence on new guide pages. Each receipt keeps its original execution commit as well. The new policy and generator hashes are in report.json.</p>
+<table>
+<thead>
+<tr>
+<th>Source at checkpoint</th>
+<th>SHA-256</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/ontology/riskium-model.json">ontology/riskium-model.json</a></td>
+<td><code>4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/ontology/derived/riskium.owl.ttl">ontology/derived/riskium.owl.ttl</a></td>
+<td><code>9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/coverage-contract.json">evaluation/coverage-contract.json</a></td>
+<td><code>65bf3818543ccbadd2bd94ac9fb8fc42586dbb3e71eedced1797224afbd2f080</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/coverage-review.json">evaluation/coverage-review.json</a></td>
+<td><code>4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/native-stage-receipt.json">evaluation/native-stage-receipt.json</a></td>
+<td><code>feeb56caf0a25a40a9ab491c51778215d7bbd9bdb2d9929e3a96d9dbe043cd20</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/owl-mapping-receipt.json">evaluation/owl-mapping-receipt.json</a></td>
+<td><code>e76fe0646509088c747e478cd3b1fcd86caa10da7ba4daf5e509195c68629009</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/hermit/report.json">evaluation/hermit/report.json</a></td>
+<td><code>414d57f9bb6c91c7b1c08430367669f67b6d57fbe96766cd3d30e233902cdd58</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/shacl/coverage-status.json">evaluation/shacl/coverage-status.json</a></td>
+<td><code>376c30a35caf40b0fc75710241fa2e87024a6d47b576e34f2cd42b0f04eb4632</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/shacl/report.json">evaluation/shacl/report.json</a></td>
+<td><code>3c3603ecfb0e7445e94022577534697b4791b8b7aa2fe04a794614080374abf0</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/shacl/endpoints/report.json">evaluation/shacl/endpoints/report.json</a></td>
+<td><code>385fbb3913318475c4d65c0be3b8b47e50c1805a1cd3dc6655ca8e3262a26f5b</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/shacl/admission/report.json.gz">evaluation/shacl/admission/report.json.gz</a></td>
+<td><code>15c8cd89a6ca3fc543394f7ca53642954965c230dc671d9eb893c802719eb3b2</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/shacl/coherence/report.json">evaluation/shacl/coherence/report.json</a></td>
+<td><code>c87b965eb75b463caeb916293192ecbec0aac9956191f23a451b162e0592cee1</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/shacl/qualification/report.json.gz">evaluation/shacl/qualification/report.json.gz</a></td>
+<td><code>377e27b5b13b48697e3ce1c94b112640f7b84628a47b87870c0a05a90745bd07</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/c14-boundary-review.json">evaluation/c14-boundary-review.json</a></td>
+<td><code>7468e74a2fb016bc784038f80e1eee682eb3fd05c471486d84e9923a8185d43d</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/cq/report.json">evaluation/cq/report.json</a></td>
+<td><code>0bde12f870030e1a17cea8db9b3cb1a70e882f6f1458eb38d27d891e42260f7f</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/traceability/ledger.json">evaluation/traceability/ledger.json</a></td>
+<td><code>3d972fd49ad5feead1b077b1b6c8de02492f0fe348ce666e32124daac5b74256</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/semantic-review-register.json">evaluation/semantic-review-register.json</a></td>
+<td><code>4920fca48a7eac5fd00e5cbfdef904954ebe6c022e6e2af79ec1894892645332</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/references/report.json">evaluation/references/report.json</a></td>
+<td><code>e32c593b16b1d7e227e1500243f3d951b7094f81173f018b86cf98794dc0cdce</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/references/corpus.json">references/corpus.json</a></td>
+<td><code>eb23983d2194c19d8b115da147b14cad89607e3e63181217add4e1e7df0f16f7</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/documentation-audit.json">evaluation/documentation-audit.json</a></td>
+<td><code>ac187bf09623ce728bc82a5b32dbb72c2204dcc30028a0e3203a1a30cf376fc0</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/evaluation/semantic-assurance-plan.md">evaluation/semantic-assurance-plan.md</a></td>
+<td><code>8c747887504d808fec7a5e9db9584b94ff027cc542d0281f68ce67d85e01e4f2</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ArazSaieArasi3/riskium/blob/0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a/docs/first-release-profile.md">docs/first-release-profile.md</a></td>
+<td><code>8d1a377274e6c5ad393a12537e270c19a26ea1ef1db5034824b352b3b7df5b9f</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-sh">python3 tools/build_quality_report.py --check
+</code></pre>
+<p>Without <code>--check</code>, regenerate only after deliberately reviewing the source bindings and policy. This command verifies provenance, hashes, row-level denominators, module accounting, error/mutation handling, independent-review absence and named gap ownership. It recomputes the synthesis, not the scientific executions. A current CI or website deployment is separate publication evidence.</p><p class="note"><a href="https://github.com/ArazSaieArasi3/riskium/wiki/Quality">Equivalent Wiki guide</a> · Explanatory source: <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/quality/README.md">evaluation/quality/README.md</a>. Source hashes are recorded in the documentation manifest; current engineering supplements are separate from the immutable stable assets.</p></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#measurement-contract">Measurement contract</a></li><li><a href="#evidence-and-bounded-claims">Evidence and bounded claims</a></li><li><a href="#module-populations-and-exclusions">Module populations and exclusions</a></li><li><a href="#all-interpretation-constraint-routes">All interpretation-constraint routes</a></li><li><a href="#requirements-and-post-trace-reconciliation">Requirements and post-trace reconciliation</a></li><li><a href="#quality-framework-adoption-decisions">Quality-framework adoption decisions</a></li><li><a href="#judgment-and-remaining-claim-limits">Judgment and remaining claim limits</a></li><li><a href="#exact-source-binding-and-reproduction">Exact source binding and reproduction</a></li></ul></aside></div><footer>Scientific content: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Original software: MIT. Copyright 2026 Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi, for their respective original contributions. <a href="Citation.html">Citation and affiliations</a> · <a href="Limitations.html">Scope and limitations</a> · <a href="https://github.com/ArazSaieArasi3/riskium">Repository</a>. Documentation generated after the release; semantic source is the fixed commit above.</footer></body></html>

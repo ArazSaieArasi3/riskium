@@ -100,6 +100,7 @@ CHECKS = [
     ['tools/review_references.py', '--check'], ['tools/build_quality_report.py', '--check'],
     ['tools/run_cq.py', '--check'], ['tools/build_traceability.py', '--check'],
     ['tools/build_reference.py', '--check'], ['tools/publication/audit_portal.py'],
+    ['tools/publication/build_versioned_site.py', '--check'],
     ['tools/run_compatibility_shacl.py', '--check'],
     ['tools/run_comparison_shacl.py', '--check'],
     ['tools/run_relational_history.py', '--check'],

@@ -3,17 +3,17 @@
   "explorer_classes": 78,
   "explorer_object_properties": 127,
   "graph_isomorphic_serializations": 4,
-  "html_pages": 25,
+  "html_pages": 30,
   "limitations": [
     "Browser keyboard/mobile and deployed readback are recorded separately.",
     "External source hyperlinks are not asserted to be dereferenceable vocabulary endpoints."
   ],
-  "local_links_checked": 3833,
+  "local_links_checked": 4148,
   "owl_triples": 2087,
-  "release": "v0.3.1-rc.1",
+  "release": "v0.3.1",
   "runtime_external_assets": 0,
   "scope": "Documentation/source/serialization/interface structure checks; not ontology validation or browser execution.",
-  "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+  "semantic_source_commit": "8afe169968b5c1396c02834dbc499af691b894b4",
   "status": "PASS",
   "upload_surfaces": 0
 }
