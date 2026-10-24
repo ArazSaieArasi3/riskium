@@ -1,0 +1,122 @@
+{
+  "schema": "riskium-assessment-relational-policy-v1",
+  "profile_version": "0.2.0",
+  "migration_version": 3,
+  "model_version": "0.3.1",
+  "baseline_profile": "0.1.0",
+  "baseline_release": "v0.3.1",
+  "issue": 29,
+  "status": "AUTHOR_MAINTAINED_ENGINEERING_POLICY_NO_NEW_OWNER_OR_INDEPENDENT_JUDGMENT",
+  "baseline_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/derived/riskium.owl.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+    "implementation/relational/0.1.0/001_tables.sql": "c7d85e0bc96b9e7626320cf2b1aeca5f4c17962ac4792e4f5dc78f9395a90660",
+    "implementation/relational/0.1.0/002_guards.sql": "c3f0d3479e538d15c90f0f5656f0c65645c4d34455481671d7dc8cfbd995b194",
+    "implementation/relational/0.1.0/mapping.json": "11c55fcc7bf7dc47c1f6a5acddf0fd7f5ceac8027ff62ff55816f7d500fc50f7",
+    "implementation/relational/0.1.0/fixtures.json": "217eb5d79e36b16af86b71020eb7955240d297afb5ea39719bc4186f2e2e9cd5",
+    "tools/relational_history.py": "098abac5e8b17c4754b0879d18b2030814d74a71d4694f50127f8deefe9d0182"
+  },
+  "decisions": [
+    {
+      "id": "DBD-01",
+      "question": "Must each ontology class become a separate SQL table?",
+      "decision": "No. Keep immutable artifact identity in the existing base table and add one explicit typed-membership relation for five selected subtypes; dedicated tables hold version-owned assessment/result facts.",
+      "reason": "Preserves model identity without dummy one-column tables or destructive alteration of accepted base tables."
+    },
+    {
+      "id": "DBD-02",
+      "question": "How are old rows migrated?",
+      "decision": "Apply additive migration 3 after verifying exact v2 schema/ledger; old rows and sealed payloads stay unchanged. The v3 reader/API is required afterward.",
+      "reason": "No silent rewriting of issued data or backfill of missing interpretation evidence."
+    },
+    {
+      "id": "DBD-03",
+      "question": "Which version owns assessment interpretation?",
+      "decision": "Assessment/result/scale/method facts are version-owned, staged before sealing and immutable afterward; result versions belong to one assessment version.",
+      "reason": "Joining mutable latest metadata would corrupt historical meaning."
+    },
+    {
+      "id": "DBD-04",
+      "question": "How does RDF export preserve history?",
+      "decision": "Export selected artifact facts into a separate named graph per issued assessment version; never silently union historical interpretation graphs for task acceptance.",
+      "reason": "An artifact can have changed versions while a selected interpretation has single-valued roles."
+    },
+    {
+      "id": "DBD-05",
+      "question": "Can raw/partial inputs be kept?",
+      "decision": "Keep raw JSON separately. Optional native fields may remain NULL; only complete exact-pin query inputs are task-eligible.",
+      "reason": "Unknown is neither zero nor invalid source material."
+    },
+    {
+      "id": "DBD-06",
+      "question": "Are calculations implemented?",
+      "decision": "No. Keep lexical reported values with provenance and explicitly reject COMPUTED claims.",
+      "reason": "No justified formula/scale arithmetic is supplied by this profile."
+    },
+    {
+      "id": "DBD-07",
+      "question": "Is a one-column table inherently wrong?",
+      "decision": "No. Audit purpose, key/FD, foreign-key/subtype membership, consumers and justification; unexplained tables fail design review.",
+      "reason": "Raw column/table counts do not measure normalization or usefulness."
+    },
+    {
+      "id": "DBD-08",
+      "question": "What can generated data establish?",
+      "decision": "Use frozen seeded inputs, boundary/invalid/mutation/metamorphic cases and independent answer vectors; keep engineering evidence distinct from real-case accuracy.",
+      "reason": "Synthetic agreement cannot establish empirical usefulness, source truth or independent semantics."
+    },
+    {
+      "id": "DBD-09",
+      "question": "What is the current operational target?",
+      "decision": "Public offline/research SQLite >=3.38, parameterized operations and bounded two-connection tests; no production SLO or PostgreSQL guarantee.",
+      "reason": "There is no approved real deployment workload or security/RPO/RTO contract yet."
+    }
+  ],
+  "inheritance_classes": [
+    "RKM-C032",
+    "RKM-C033",
+    "RKM-C034",
+    "RKM-C038",
+    "RKM-C039"
+  ],
+  "native_relation_ids": [
+    "R-12",
+    "R-13",
+    "R-14",
+    "R-15",
+    "R-16",
+    "R-45",
+    "R-46",
+    "R-48",
+    "R-49",
+    "RX-014",
+    "RX-015",
+    "RX-016",
+    "RK2-018",
+    "RK2-019"
+  ],
+  "synthetic_policy": {
+    "seeds": [
+      17,
+      29,
+      43,
+      101
+    ],
+    "records_per_seed": 25,
+    "performance_records": 1000,
+    "timing_repetitions": 31,
+    "warmups": 5,
+    "production_slo_approved": false,
+    "real_case_study_used": false,
+    "llm_generated_ground_truth": false
+  },
+  "schema_strategy": "Add six explicit tables, version-owned immutable joins and views. Existing artifact kind C014 supplies identity for newly typed resources; concrete membership is asserted separately before any version issues. No old subtype discriminator or record is reinterpreted.",
+  "scope_limits": [
+    "Partial selected assessment task mapping, not complete 77-class/127-relation/25-clause acceptance",
+    "No private 128-table migration, new real organizational RiskCase or historical 859-check claim",
+    "No PostgreSQL, general calculations/conversions/workflow or full temporal interval reasoning",
+    "No independent review or whole-ontology correctness percentage",
+    "SQL/RDF facts are scoped projections; R2RML serialization does not itself prove conceptual mapping adequacy",
+    "Observed timings describe only declared synthetic/runtime conditions; real user usability/security/SLO acceptance remains unexecuted"
+  ]
+}

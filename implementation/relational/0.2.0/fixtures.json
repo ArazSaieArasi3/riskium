@@ -1,0 +1,1640 @@
+{
+  "schema": "riskium-assessment-fixed-fixtures-v1",
+  "policy_sha256": "cdb55a25a369a5f608a0fa76d46a12fe5473c636f7dde85fcd5444e894d02ebb",
+  "requirements_sha256": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+  "prepared_before_execution": true,
+  "source": "Synthetic engineering records; zero actual organizational case admission; not a study or statistical accuracy sample.",
+  "cases": [
+    {
+      "id": "MIGRATE-POPULATED-PRESERVES-BASE",
+      "action": "migration",
+      "expected": true,
+      "expected_error": null,
+      "requirements": [
+        "DBR-05",
+        "DBR-10"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "MIGRATION-IDEMPOTENT",
+      "action": "idempotent",
+      "expected": true,
+      "expected_error": null,
+      "requirements": [
+        "DBR-10"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "MIGRATION-LEDGER-DRIFT",
+      "action": "ledger-drift",
+      "expected": null,
+      "expected_error": "R-MIGRATION-SOURCE-HASH",
+      "requirements": [
+        "DBR-10",
+        "DBR-21"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "MIGRATION-SCHEMA-DRIFT",
+      "action": "schema-drift",
+      "expected": null,
+      "expected_error": "R-MIGRATION-SCHEMA-DRIFT",
+      "requirements": [
+        "DBR-10",
+        "DBR-21"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "CONNECTION-FK-OFF",
+      "action": "fk-off",
+      "expected": null,
+      "expected_error": "R-CONNECTION-POLICY: foreign_keys and recursive_triggers must be ON",
+      "requirements": [
+        "DBR-09",
+        "DBR-21"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "CONNECTION-TRIGGERS-OFF",
+      "action": "triggers-off",
+      "expected": null,
+      "expected_error": "R-CONNECTION-POLICY: foreign_keys and recursive_triggers must be ON",
+      "requirements": [
+        "DBR-09",
+        "DBR-21"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "EXACT-VERSION-PINNED-LOOKUP",
+      "action": "lookup",
+      "expected": [
+        [
+          "urn:riskium:assessment:r1",
+          "0",
+          "urn:riskium:sql:context-v1",
+          "urn:riskium:assessment:method-v3",
+          "urn:riskium:assessment:basis-v1",
+          "urn:riskium:assessment:scale-v3",
+          "urn:riskium:assessment:dimension"
+        ]
+      ],
+      "expected_error": null,
+      "requirements": [
+        "DBR-03",
+        "DBR-04",
+        "DBR-18"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "UNKNOWN-IS-NULL-NOT-ZERO",
+      "action": "unknown",
+      "expected": [
+        [
+          "UNKNOWN",
+          null
+        ]
+      ],
+      "expected_error": null,
+      "requirements": [
+        "DBR-06",
+        "DBR-08"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "DUPLICATE-LABELS-NOT-IDENTITY",
+      "action": "labels",
+      "expected": 2,
+      "expected_error": null,
+      "requirements": [
+        "DBR-02",
+        "DBR-06"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "REPORTED-ZERO-LEXEME",
+      "action": "zero",
+      "expected": "0",
+      "expected_error": null,
+      "requirements": [
+        "DBR-06",
+        "DBR-08"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "RAW-INPUT-EXACT",
+      "action": "raw",
+      "expected": "{\"score\":null,\"case\":null,\"synthetic\":true}",
+      "expected_error": null,
+      "requirements": [
+        "DBR-07"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "DIRECT-COMPARISON-SAME-PINS",
+      "action": "compare",
+      "expected": "SCOPED_DIRECT_COMPARISON_ADMISSIBLE",
+      "expected_error": null,
+      "requirements": [
+        "DBR-04",
+        "DBR-18"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "DIRECT-COMPARISON-MISSING-TIME",
+      "action": "compare-missing",
+      "expected": "NOT_READY",
+      "expected_error": null,
+      "requirements": [
+        "DBR-04",
+        "DBR-12",
+        "DBR-18"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "DIRECT-COMPARISON-DIFFERENT-VERSION",
+      "action": "compare-version",
+      "expected": "NOT_ADMISSIBLE_BY_EXACT_PIN_POLICY",
+      "expected_error": null,
+      "requirements": [
+        "DBR-04",
+        "DBR-18"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "ISSUED-RESULT-NO-UPDATE",
+      "action": "update-result",
+      "expected": null,
+      "expected_error": "R-ISSUED-METADATA",
+      "requirements": [
+        "DBR-05"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "ISSUED-ASSESSMENT-NO-DELETE",
+      "action": "delete-assessment",
+      "expected": null,
+      "expected_error": "R-ISSUED-METADATA",
+      "requirements": [
+        "DBR-05"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "ISSUED-SCALE-NO-LEVEL-APPEND",
+      "action": "late-level",
+      "expected": null,
+      "expected_error": "R-ISSUED-METADATA",
+      "requirements": [
+        "DBR-05"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "ISSUED-ASSESSMENT-NO-RESULT-APPEND",
+      "action": "late-result",
+      "expected": null,
+      "expected_error": "R-ASSESSMENT-FROZEN",
+      "requirements": [
+        "DBR-05"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "TYPING-CANNOT-REINTERPRET-ISSUED-ARTIFACT",
+      "action": "late-type",
+      "expected": null,
+      "expected_error": "R-TYPE-ALREADY-ISSUED",
+      "requirements": [
+        "DBR-02",
+        "DBR-05"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "TYPING-BASE-KIND-MISMATCH",
+      "action": "bad-type",
+      "expected": null,
+      "expected_error": "R-TYPE-BASE-KIND",
+      "requirements": [
+        "DBR-02"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "WRONG-CONTEXT-VERSION-KIND",
+      "action": "invalid-bundle",
+      "expected": null,
+      "expected_error": "R-ROLE-KIND",
+      "requirements": [
+        "DBR-04"
+      ],
+      "patch": {
+        "context_version_id": "urn:riskium:assessment:method-v3"
+      },
+      "kind": "operation"
+    },
+    {
+      "id": "DIRECT-CONTEXT-TARGET-MISMATCH",
+      "action": "invalid-bundle",
+      "expected": null,
+      "expected_error": "R-ROLE-TARGET",
+      "requirements": [
+        "DBR-04"
+      ],
+      "patch": {
+        "context_id": "urn:riskium:sql:method"
+      },
+      "kind": "operation"
+    },
+    {
+      "id": "UNISSUED-METHOD-PIN",
+      "action": "invalid-bundle",
+      "expected": null,
+      "expected_error": "R-ROLE-ISSUED",
+      "requirements": [
+        "DBR-04"
+      ],
+      "patch": {
+        "method_version_id": "urn:riskium:assessment:unissued-method"
+      },
+      "kind": "operation"
+    },
+    {
+      "id": "INVALID-RECORDED-CALENDAR",
+      "action": "invalid-bundle",
+      "expected": null,
+      "expected_error": "R-TIME-LEXICAL",
+      "requirements": [
+        "DBR-12"
+      ],
+      "patch": {
+        "recorded_at": "2026-02-31T00:00:00Z"
+      },
+      "kind": "operation"
+    },
+    {
+      "id": "INVALID-VALIDITY-ORDER",
+      "action": "invalid-bundle",
+      "expected": null,
+      "expected_error": "R-TIME-ORDER",
+      "requirements": [
+        "DBR-12"
+      ],
+      "patch": {
+        "valid_from": "2026-10-25T00:00:00Z",
+        "valid_to": "2026-10-24T00:00:00Z"
+      },
+      "kind": "operation"
+    },
+    {
+      "id": "COMPUTED-WITHOUT-FORMULA",
+      "action": "invalid-bundle",
+      "expected": null,
+      "expected_error": "R-COMPUTATION-UNSUPPORTED",
+      "requirements": [
+        "DBR-08"
+      ],
+      "patch": {
+        "score_kind": "COMPUTED"
+      },
+      "kind": "operation"
+    },
+    {
+      "id": "REPORTED-NULL-IS-NOT-VALUE",
+      "action": "invalid-bundle",
+      "expected": null,
+      "expected_error": "R-REPORTED-VALUE",
+      "requirements": [
+        "DBR-06",
+        "DBR-08"
+      ],
+      "patch": {
+        "score_kind": "REPORTED",
+        "reported_value": null
+      },
+      "kind": "operation"
+    },
+    {
+      "id": "UNKNOWN-WITH-INVENTED-ZERO",
+      "action": "invalid-bundle",
+      "expected": null,
+      "expected_error": "R-UNKNOWN-VALUE",
+      "requirements": [
+        "DBR-06",
+        "DBR-08"
+      ],
+      "patch": {
+        "score_kind": "UNKNOWN",
+        "reported_value": "0"
+      },
+      "kind": "operation"
+    },
+    {
+      "id": "LEVEL-OF-DIFFERENT-SCALE-VERSION",
+      "action": "invalid-bundle",
+      "expected": null,
+      "expected_error": "R-LEVEL-VERSION",
+      "requirements": [
+        "DBR-04"
+      ],
+      "patch": {
+        "level_id": "urn:riskium:assessment:level-v4"
+      },
+      "kind": "operation"
+    },
+    {
+      "id": "MISSING-DIMENSION",
+      "action": "invalid-bundle",
+      "expected": null,
+      "expected_error": "NOT NULL constraint failed: result_snapshot.dimension_id",
+      "requirements": [
+        "DBR-03",
+        "DBR-09"
+      ],
+      "patch": {
+        "dimension_id": null
+      },
+      "kind": "operation"
+    },
+    {
+      "id": "MISSING-LOCATOR",
+      "action": "invalid-bundle",
+      "expected": null,
+      "expected_error": "R-SOURCE-QUALIFIER",
+      "requirements": [
+        "DBR-07"
+      ],
+      "patch": {
+        "source_locator": ""
+      },
+      "kind": "operation"
+    },
+    {
+      "id": "UNKNOWN-SOURCE-KEY",
+      "action": "invalid-bundle",
+      "expected": null,
+      "expected_error": "FOREIGN KEY constraint failed",
+      "requirements": [
+        "DBR-07",
+        "DBR-09"
+      ],
+      "patch": {
+        "source_record_id": "urn:missing:source"
+      },
+      "kind": "operation"
+    },
+    {
+      "id": "FAILED-BUNDLE-ROLLS-BACK-ALL-ROWS",
+      "action": "bundle-rollback",
+      "expected": true,
+      "expected_error": null,
+      "requirements": [
+        "DBR-05",
+        "DBR-10"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "HISTORICAL-ANSWER-UNCHANGED-AFTER-NEW-VERSION",
+      "action": "history-new",
+      "expected": true,
+      "expected_error": null,
+      "requirements": [
+        "DBR-04",
+        "DBR-05",
+        "DBR-18"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "TWO-QUALIFIED-RESULTS-SAME-DIMENSION",
+      "action": "multi-result",
+      "expected": 2,
+      "expected_error": null,
+      "requirements": [
+        "DBR-06",
+        "DBR-07"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "READ-ONLY-BACKUP-RESTORE",
+      "action": "backup",
+      "expected": true,
+      "expected_error": null,
+      "requirements": [
+        "DBR-11"
+      ],
+      "patch": {},
+      "kind": "roundtrip"
+    },
+    {
+      "id": "SQL-DUMP-RESTORE",
+      "action": "dump",
+      "expected": true,
+      "expected_error": null,
+      "requirements": [
+        "DBR-11"
+      ],
+      "patch": {},
+      "kind": "roundtrip"
+    },
+    {
+      "id": "FILE-CLOSE-REOPEN",
+      "action": "disk",
+      "expected": true,
+      "expected_error": null,
+      "requirements": [
+        "DBR-11"
+      ],
+      "patch": {},
+      "kind": "roundtrip"
+    },
+    {
+      "id": "SQL-RDF-FIXED-FACTS",
+      "action": "rdf",
+      "expected": true,
+      "expected_error": null,
+      "requirements": [
+        "DBR-03",
+        "DBR-17"
+      ],
+      "patch": {},
+      "kind": "differential"
+    },
+    {
+      "id": "RDF-NAMED-HISTORY-NOT-UNIONED",
+      "action": "named-graphs",
+      "expected": true,
+      "expected_error": null,
+      "requirements": [
+        "DBR-04",
+        "DBR-17"
+      ],
+      "patch": {},
+      "kind": "differential"
+    },
+    {
+      "id": "SHACL-DIRECT-COMPARISON-ELIGIBILITY",
+      "action": "shacl",
+      "expected": true,
+      "expected_error": null,
+      "requirements": [
+        "DBR-17"
+      ],
+      "patch": {},
+      "kind": "differential"
+    },
+    {
+      "id": "BOUND-PARAMETER-SQL-INJECTION-LEXEME",
+      "action": "binding",
+      "expected": "'; DROP TABLE result_snapshot; --",
+      "expected_error": null,
+      "requirements": [
+        "DBR-06",
+        "DBR-21"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "SCHEMA-DICTIONARY-DESIGN-AUDIT",
+      "action": "design-audit",
+      "expected": true,
+      "expected_error": null,
+      "requirements": [
+        "DBR-13",
+        "DBR-14"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "UNEXPLAINED-ONE-COLUMN-TABLE-FLAGGED",
+      "action": "one-column",
+      "expected": true,
+      "expected_error": null,
+      "requirements": [
+        "DBR-13"
+      ],
+      "patch": {},
+      "kind": "operation"
+    },
+    {
+      "id": "TWO-CONNECTION-WRITER-CONFLICT-RETRY",
+      "action": "concurrency",
+      "expected": true,
+      "expected_error": null,
+      "requirements": [
+        "DBR-20"
+      ],
+      "patch": {},
+      "kind": "concurrency"
+    },
+    {
+      "id": "DELETED-IMMUTABILITY-GUARD-EXPOSES-CHANGE",
+      "action": "mutant-immutability",
+      "expected": "changed",
+      "expected_error": null,
+      "requirements": [
+        "DBR-16"
+      ],
+      "patch": {},
+      "kind": "mutation-control"
+    },
+    {
+      "id": "DELETED-VERSION-TARGET-GUARD-EXPOSES-MISJOIN",
+      "action": "mutant-version",
+      "expected": true,
+      "expected_error": null,
+      "requirements": [
+        "DBR-16"
+      ],
+      "patch": {},
+      "kind": "mutation-control"
+    },
+    {
+      "id": "SCHEMA-TAMPERING-DETECTED",
+      "action": "tamper",
+      "expected": null,
+      "expected_error": "R-ASSESSMENT-SCHEMA-DRIFT",
+      "requirements": [
+        "DBR-21"
+      ],
+      "patch": {},
+      "kind": "operation"
+    }
+  ],
+  "generated_inputs": [
+    {
+      "id": "GEN-17-00",
+      "seed": 17,
+      "ordinal": 0,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-01",
+      "seed": 17,
+      "ordinal": 1,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-02",
+      "seed": 17,
+      "ordinal": 2,
+      "reported_value": "الف",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "الف",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-03",
+      "seed": 17,
+      "ordinal": 3,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-04",
+      "seed": 17,
+      "ordinal": 4,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-05",
+      "seed": 17,
+      "ordinal": 5,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-06",
+      "seed": 17,
+      "ordinal": 6,
+      "reported_value": "0",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-07",
+      "seed": 17,
+      "ordinal": 7,
+      "reported_value": "الف",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "الف",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-08",
+      "seed": 17,
+      "ordinal": 8,
+      "reported_value": "'; DROP TABLE result_snapshot; --",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "'; DROP TABLE result_snapshot; --",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-09",
+      "seed": 17,
+      "ordinal": 9,
+      "reported_value": "'; DROP TABLE result_snapshot; --",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "'; DROP TABLE result_snapshot; --",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-10",
+      "seed": 17,
+      "ordinal": 10,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-11",
+      "seed": 17,
+      "ordinal": 11,
+      "reported_value": "'; DROP TABLE result_snapshot; --",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "'; DROP TABLE result_snapshot; --",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-12",
+      "seed": 17,
+      "ordinal": 12,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-13",
+      "seed": 17,
+      "ordinal": 13,
+      "reported_value": null,
+      "expected_kind": "UNKNOWN",
+      "expected_lexeme": null,
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-14",
+      "seed": 17,
+      "ordinal": 14,
+      "reported_value": null,
+      "expected_kind": "UNKNOWN",
+      "expected_lexeme": null,
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-15",
+      "seed": 17,
+      "ordinal": 15,
+      "reported_value": "0",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-16",
+      "seed": 17,
+      "ordinal": 16,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-17",
+      "seed": 17,
+      "ordinal": 17,
+      "reported_value": "الف",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "الف",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-18",
+      "seed": 17,
+      "ordinal": 18,
+      "reported_value": "'; DROP TABLE result_snapshot; --",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "'; DROP TABLE result_snapshot; --",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-19",
+      "seed": 17,
+      "ordinal": 19,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-20",
+      "seed": 17,
+      "ordinal": 20,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-21",
+      "seed": 17,
+      "ordinal": 21,
+      "reported_value": "الف",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "الف",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-22",
+      "seed": 17,
+      "ordinal": 22,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-23",
+      "seed": 17,
+      "ordinal": 23,
+      "reported_value": "الف",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "الف",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-17-24",
+      "seed": 17,
+      "ordinal": 24,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-00",
+      "seed": 29,
+      "ordinal": 0,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-01",
+      "seed": 29,
+      "ordinal": 1,
+      "reported_value": null,
+      "expected_kind": "UNKNOWN",
+      "expected_lexeme": null,
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-02",
+      "seed": 29,
+      "ordinal": 2,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-03",
+      "seed": 29,
+      "ordinal": 3,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-04",
+      "seed": 29,
+      "ordinal": 4,
+      "reported_value": "الف",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "الف",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-05",
+      "seed": 29,
+      "ordinal": 5,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-06",
+      "seed": 29,
+      "ordinal": 6,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-07",
+      "seed": 29,
+      "ordinal": 7,
+      "reported_value": null,
+      "expected_kind": "UNKNOWN",
+      "expected_lexeme": null,
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-08",
+      "seed": 29,
+      "ordinal": 8,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-09",
+      "seed": 29,
+      "ordinal": 9,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-10",
+      "seed": 29,
+      "ordinal": 10,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-11",
+      "seed": 29,
+      "ordinal": 11,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-12",
+      "seed": 29,
+      "ordinal": 12,
+      "reported_value": null,
+      "expected_kind": "UNKNOWN",
+      "expected_lexeme": null,
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-13",
+      "seed": 29,
+      "ordinal": 13,
+      "reported_value": null,
+      "expected_kind": "UNKNOWN",
+      "expected_lexeme": null,
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-14",
+      "seed": 29,
+      "ordinal": 14,
+      "reported_value": null,
+      "expected_kind": "UNKNOWN",
+      "expected_lexeme": null,
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-15",
+      "seed": 29,
+      "ordinal": 15,
+      "reported_value": "الف",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "الف",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-16",
+      "seed": 29,
+      "ordinal": 16,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-17",
+      "seed": 29,
+      "ordinal": 17,
+      "reported_value": "'; DROP TABLE result_snapshot; --",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "'; DROP TABLE result_snapshot; --",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-18",
+      "seed": 29,
+      "ordinal": 18,
+      "reported_value": "0",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-19",
+      "seed": 29,
+      "ordinal": 19,
+      "reported_value": "الف",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "الف",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-20",
+      "seed": 29,
+      "ordinal": 20,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-21",
+      "seed": 29,
+      "ordinal": 21,
+      "reported_value": null,
+      "expected_kind": "UNKNOWN",
+      "expected_lexeme": null,
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-22",
+      "seed": 29,
+      "ordinal": 22,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-23",
+      "seed": 29,
+      "ordinal": 23,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-29-24",
+      "seed": 29,
+      "ordinal": 24,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-00",
+      "seed": 43,
+      "ordinal": 0,
+      "reported_value": null,
+      "expected_kind": "UNKNOWN",
+      "expected_lexeme": null,
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-01",
+      "seed": 43,
+      "ordinal": 1,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-02",
+      "seed": 43,
+      "ordinal": 2,
+      "reported_value": "'; DROP TABLE result_snapshot; --",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "'; DROP TABLE result_snapshot; --",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-03",
+      "seed": 43,
+      "ordinal": 3,
+      "reported_value": "الف",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "الف",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-04",
+      "seed": 43,
+      "ordinal": 4,
+      "reported_value": "0",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-05",
+      "seed": 43,
+      "ordinal": 5,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-06",
+      "seed": 43,
+      "ordinal": 6,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-07",
+      "seed": 43,
+      "ordinal": 7,
+      "reported_value": "'; DROP TABLE result_snapshot; --",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "'; DROP TABLE result_snapshot; --",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-08",
+      "seed": 43,
+      "ordinal": 8,
+      "reported_value": "'; DROP TABLE result_snapshot; --",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "'; DROP TABLE result_snapshot; --",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-09",
+      "seed": 43,
+      "ordinal": 9,
+      "reported_value": "الف",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "الف",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-10",
+      "seed": 43,
+      "ordinal": 10,
+      "reported_value": null,
+      "expected_kind": "UNKNOWN",
+      "expected_lexeme": null,
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-11",
+      "seed": 43,
+      "ordinal": 11,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-12",
+      "seed": 43,
+      "ordinal": 12,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-13",
+      "seed": 43,
+      "ordinal": 13,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-14",
+      "seed": 43,
+      "ordinal": 14,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-15",
+      "seed": 43,
+      "ordinal": 15,
+      "reported_value": null,
+      "expected_kind": "UNKNOWN",
+      "expected_lexeme": null,
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-16",
+      "seed": 43,
+      "ordinal": 16,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-17",
+      "seed": 43,
+      "ordinal": 17,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-18",
+      "seed": 43,
+      "ordinal": 18,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-19",
+      "seed": 43,
+      "ordinal": 19,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-20",
+      "seed": 43,
+      "ordinal": 20,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-21",
+      "seed": 43,
+      "ordinal": 21,
+      "reported_value": "الف",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "الف",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-22",
+      "seed": 43,
+      "ordinal": 22,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-23",
+      "seed": 43,
+      "ordinal": 23,
+      "reported_value": "الف",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "الف",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-43-24",
+      "seed": 43,
+      "ordinal": 24,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-00",
+      "seed": 101,
+      "ordinal": 0,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-01",
+      "seed": 101,
+      "ordinal": 1,
+      "reported_value": "الف",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "الف",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-02",
+      "seed": 101,
+      "ordinal": 2,
+      "reported_value": "0",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-03",
+      "seed": 101,
+      "ordinal": 3,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-04",
+      "seed": 101,
+      "ordinal": 4,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-05",
+      "seed": 101,
+      "ordinal": 5,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-06",
+      "seed": 101,
+      "ordinal": 6,
+      "reported_value": null,
+      "expected_kind": "UNKNOWN",
+      "expected_lexeme": null,
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-07",
+      "seed": 101,
+      "ordinal": 7,
+      "reported_value": "'; DROP TABLE result_snapshot; --",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "'; DROP TABLE result_snapshot; --",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-08",
+      "seed": 101,
+      "ordinal": 8,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-09",
+      "seed": 101,
+      "ordinal": 9,
+      "reported_value": "0",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-10",
+      "seed": 101,
+      "ordinal": 10,
+      "reported_value": "100000000000000000000.0001",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "100000000000000000000.0001",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-11",
+      "seed": 101,
+      "ordinal": 11,
+      "reported_value": "0",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-12",
+      "seed": 101,
+      "ordinal": 12,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-13",
+      "seed": 101,
+      "ordinal": 13,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-14",
+      "seed": 101,
+      "ordinal": 14,
+      "reported_value": "'; DROP TABLE result_snapshot; --",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "'; DROP TABLE result_snapshot; --",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-15",
+      "seed": 101,
+      "ordinal": 15,
+      "reported_value": "الف",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "الف",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-16",
+      "seed": 101,
+      "ordinal": 16,
+      "reported_value": "0",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-17",
+      "seed": 101,
+      "ordinal": 17,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-18",
+      "seed": 101,
+      "ordinal": 18,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-19",
+      "seed": 101,
+      "ordinal": 19,
+      "reported_value": null,
+      "expected_kind": "UNKNOWN",
+      "expected_lexeme": null,
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-20",
+      "seed": 101,
+      "ordinal": 20,
+      "reported_value": "0.000",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0.000",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-21",
+      "seed": 101,
+      "ordinal": 21,
+      "reported_value": "0",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-22",
+      "seed": 101,
+      "ordinal": 22,
+      "reported_value": "0",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "0",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-23",
+      "seed": 101,
+      "ordinal": 23,
+      "reported_value": null,
+      "expected_kind": "UNKNOWN",
+      "expected_lexeme": null,
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    },
+    {
+      "id": "GEN-101-24",
+      "seed": 101,
+      "ordinal": 24,
+      "reported_value": "-3",
+      "expected_kind": "REPORTED",
+      "expected_lexeme": "-3",
+      "duplicate_label": "same generated label",
+      "context_version": "urn:riskium:sql:context-v1"
+    }
+  ],
+  "native_expected_edges": [
+    [
+      "urn:riskium:assessment:a1",
+      "R-12",
+      "urn:riskium:assessment:basis"
+    ],
+    [
+      "urn:riskium:assessment:a1",
+      "R-13",
+      "urn:riskium:assessment:r1"
+    ],
+    [
+      "urn:riskium:assessment:r1",
+      "R-48",
+      "urn:riskium:assessment:dimension"
+    ],
+    [
+      "urn:riskium:assessment:r1",
+      "RX-016",
+      "urn:riskium:assessment:scale-v3"
+    ],
+    [
+      "urn:riskium:assessment:a1",
+      "RX-014",
+      "urn:riskium:sql:context-v1"
+    ],
+    [
+      "urn:riskium:assessment:a1",
+      "RX-015",
+      "urn:riskium:assessment:method-v3"
+    ]
+  ]
+}

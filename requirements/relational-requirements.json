@@ -1,0 +1,437 @@
+{
+  "schema": "riskium-database-requirements-v1",
+  "document_version": "0.1.0",
+  "date_local": "2026-10-24",
+  "model_version": "0.3.1",
+  "orsd_revision": "0.4.3",
+  "relational_profile": "0.2.0",
+  "parent_issue": 12,
+  "execution_issue": 29,
+  "authority": "Derived database engineering requirements; no change to original ORSD MUST/SHOULD priorities, owner decisions or manuscript claims.",
+  "source_hashes": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/scope-requirements.json": "7090abec35d8dca2c2034c9cefaeccbe3f4ecd547d28b78a56eb5662e401d2f8",
+    "requirements/release-scope-v0.3.1.json": "759eb3eb7cbd7597de24c28139389f3e44de9275c640a2c524fac7032f960639"
+  },
+  "requirements": [
+    {
+      "id": "DBR-01",
+      "title": "Scope and source inventory",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-01",
+        "RKRS-11",
+        "RKRS-12"
+      ],
+      "constraint_ids": [
+        "C-02",
+        "C-14"
+      ],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Account for all 306 elements with implemented, partial, external or unimplemented dispositions; allocation is not implementation coverage.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-02",
+      "title": "Governed identity and subtype strategy",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-02",
+        "RKRS-03"
+      ],
+      "constraint_ids": [
+        "C-01"
+      ],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Keep artifact/version/result identities and labels separate; review inheritance strategy explicitly, without one table per class as a default.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-03",
+      "title": "Native relations and loss register",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-04",
+        "RKRS-11"
+      ],
+      "constraint_ids": [
+        "C-04",
+        "C-25"
+      ],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Document every selected predicate, direction, optionality, storage/derivation and unimplemented subclause; retain source hashes.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-04",
+      "title": "Assessment interpretation pins",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-04"
+      ],
+      "constraint_ids": [
+        "C-04",
+        "C-13",
+        "C-18",
+        "C-25"
+      ],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Persist exact issued context/method/basis/scale versions and selected dimension/level; validate target kind and optional direct-target agreement.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-05",
+      "title": "Immutable issued history",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-03"
+      ],
+      "constraint_ids": [
+        "C-03",
+        "C-24"
+      ],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Stage relational payload and metadata together; sealing blocks update/delete/replace and late dependent metadata; preserve old versions.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-06",
+      "title": "Multiple values and missingness",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-04",
+        "RKRS-06"
+      ],
+      "constraint_ids": [
+        "C-17"
+      ],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Preserve distinct qualified result records, null/unknown and lexical zero without collapse or invented one-value selection.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-07",
+      "title": "Source and interpretation provenance",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-06"
+      ],
+      "constraint_ids": [
+        "C-02",
+        "C-12",
+        "C-17"
+      ],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Retain exact raw JSON and per-result source record, locator and interpretation origin; no scenario/occurrence admission is inferred.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-08",
+      "title": "Reported versus computed values",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-05"
+      ],
+      "constraint_ids": [
+        "C-21"
+      ],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Retain a supplied lexical value as reported; unknown has SQL NULL; reject computed claims because this profile has no justified formula engine.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-09",
+      "title": "Relational integrity and types",
+      "priority": "MUST",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Exercise primary/candidate/foreign keys, nullability, checks and STRICT types with exact negative errors, including configuration-off rejection.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-10",
+      "title": "Atomic writes and migrations",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-03"
+      ],
+      "constraint_ids": [
+        "C-03"
+      ],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Execute populated additive migration 3, idempotence and transaction rollback, preserving existing base rows and hashes; reject ledger/schema drift.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-11",
+      "title": "Backup and recovery",
+      "priority": "MUST",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Execute close/reopen, SQLite backup and logical dump/restore with exact logical rows, history, pins and declared queries.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-12",
+      "title": "Explicit time fields",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-08"
+      ],
+      "constraint_ids": [
+        "C-05"
+      ],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Keep recorded/reference/validity fields distinct; validate canonical UTC calendar strings and interval endpoint order only; unknown stays null.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-13",
+      "title": "Purpose and dependency review",
+      "priority": "MUST",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Each table has a purpose, key and declared functional dependencies; flag unexplained one-column/key-only tables; justified subtype membership is allowed.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-14",
+      "title": "Complete schema dictionary",
+      "priority": "MUST",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Document every actual table/column/key/FK/index and its purpose, native/supplementary role and source requirement; no generic unnamed columns.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-15",
+      "title": "Reproducible synthetic exploration",
+      "priority": "MUST",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Freeze seed, generated inputs, fixed answer vectors and metamorphic properties before execution; separate them from real data and external validity.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-16",
+      "title": "Sensitivity and exact failure oracles",
+      "priority": "MUST",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Delete selected guards deliberately and show the intended invalid operation becomes possible; unrelated engine errors never count as successful rejection.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-17",
+      "title": "SQL/RDF differential checks",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-04",
+        "RKRS-11"
+      ],
+      "constraint_ids": [
+        "C-04",
+        "C-13",
+        "C-18"
+      ],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Compare selected native facts, SQL answers and SHACL task eligibility against frozen expected answers; keep historical named graphs separate.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-18",
+      "title": "Query usability and historical retrieval",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-03",
+        "RKRS-04"
+      ],
+      "constraint_ids": [
+        "C-03",
+        "C-04"
+      ],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Provide executable version-pinned lookup, lineage and comparison examples with exact answers and missing/not-ready outcomes.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-19",
+      "title": "Measured workload and index evidence",
+      "priority": "MUST",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Measure declared seeded synthetic workload sizes, median/p95 and query plans; verify answers and index rationale; no unapproved production SLO claim.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-20",
+      "title": "Bounded concurrent transactions",
+      "priority": "MUST",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Execute two-connection read visibility and writer conflict/retry on a temporary file with recorded journal mode and busy policy.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-21",
+      "title": "Configured trust boundaries",
+      "priority": "MUST",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Use bound parameters; detect altered schema/guards and disabled FK/recursive triggers. Administrator DDL and file privileges remain outside logical guard guarantees.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-22",
+      "title": "Engine/runtime evidence",
+      "priority": "MUST",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Record actual SQLite/Python versions and configuration; test only declared engines; SQLite success does not establish PostgreSQL portability.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-23",
+      "title": "Artifact versions and trace integrity",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-12"
+      ],
+      "constraint_ids": [],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "Trace ORSD/CQs -> database requirements -> mapping/schema/query -> fixed case/oracle -> receipt, with independently versioned artifacts and fail-closed stale links.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-24",
+      "title": "Scoped release readiness",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-11",
+        "RKRS-12"
+      ],
+      "constraint_ids": [
+        "C-16"
+      ],
+      "applies_to_current_profile": true,
+      "acceptance_criterion": "All retained database requirements need matching evidence; missing, deferred, failed and not-applicable are distinct; no overall correctness percentage.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-25",
+      "title": "PostgreSQL implementation",
+      "priority": "MUST",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "applies_to_current_profile": false,
+      "acceptance_criterion": "Declare PostgreSQL schema, datatypes and transaction policies and execute its own migration/query tests before claiming portability.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "FUTURE_NOT_EXECUTED",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-26",
+      "title": "Private full-schema migration",
+      "priority": "MUST",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "applies_to_current_profile": false,
+      "acceptance_criterion": "Inspect exact authorized private source, map all relevant tables/fields, migrate actual data and reconcile loss; the public slice is not the private 128-table database.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "FUTURE_NOT_EXECUTED",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-27",
+      "title": "General formulas, intervals and workflow",
+      "priority": "MUST",
+      "derived_from_orsd": [
+        "RKRS-05",
+        "RKRS-08"
+      ],
+      "constraint_ids": [
+        "C-05",
+        "C-19",
+        "C-21"
+      ],
+      "applies_to_current_profile": false,
+      "acceptance_criterion": "Adopt justified formula inputs, interval semantics and workflow rules before implementing and validating their broader operational outcomes.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "FUTURE_NOT_EXECUTED",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    },
+    {
+      "id": "DBR-28",
+      "title": "Deployment and user acceptance",
+      "priority": "MUST",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "applies_to_current_profile": false,
+      "acceptance_criterion": "Declare actual roles/privacy/threat model, recovery objectives, real workload SLOs and user tasks; execute real user/deployment acceptance before production claims.",
+      "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+      "scope": "FUTURE_NOT_EXECUTED",
+      "status": "DECLARED_NOT_YET_EXECUTED"
+    }
+  ],
+  "overall_semantic_correctness_percent": null
+}
