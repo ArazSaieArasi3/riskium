@@ -1,6 +1,8 @@
 # Next finite packet: consolidate and review final v0.3.1
 
-Status: **planned, not accepted or executed**, tracked by [preparation issue #27](https://github.com/ArazSaieArasi3/riskium/issues/27). Rc.7 is the last planned technical source packet before consolidation. The next outcome is a concrete final-review package and freeze readiness; no additional feature prerelease is scheduled for this first final scope. A critical finding can require a narrowly named fix, never a fabricated PASS or automatic owner judgment.
+Status: **review preparation implemented; owner judgments and final freeze pending**, tracked by [preparation issue #27](https://github.com/ArazSaieArasi3/riskium/issues/27). Rc.7 is the last planned technical source packet before consolidation. The next outcome is a concrete final-review package and freeze readiness; no additional feature prerelease is scheduled for this first final scope. A critical finding can require a narrowly named fix, never a fabricated PASS or automatic owner judgment.
+
+The [completed review package](../evaluation/final-review/README.md) binds all 25 clauses, 31 historical NOT_RUN routes, 28 traces, 65 original manuscript claim rows, seven exact unapplied prose amendments and the [11 concrete owner decision prompts](../evaluation/final-review/owner-decisions.md). This is the completion boundary of preparation #27. The [finite freeze checklist](../evaluation/final-review/freeze-checklist.md) retains all remaining exit work; #7 has no inferred ratings.
 
 ## Completion boundary
 

@@ -105,6 +105,7 @@ CHECKS = [
     ['tools/run_relational_history.py', '--check'],
     ['tools/run_source_cq06.py', '--check'],
     ['tools/run_source_cq0708.py', '--check'],
+    ['tools/build_final_review.py', '--check'],
     ['-m', 'unittest', 'discover', '-s', 'tests', '-v'],
 ]
 

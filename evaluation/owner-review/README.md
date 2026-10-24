@@ -39,3 +39,7 @@ The recommendations are preparation for discussion, **not the owner's judgments*
 ## Rc.7 evidence available for the owner
 
 [Published CQ07/CQ08 evidence](../sources/cq0708/README.md) and [verified rc.7 publication](../releases/v0.3.1-rc.7-publication.json) now support OR-09 and final OR-10 discussion: five inspected original/reissued assertion pairs, one underlying study lineage, exact retained values/context and dedicated unresolved-identity queries over all 11 already-WITHHELD candidates. Raw conflicts/false case promotion and source forgery have separate controls. This is scoped technical evidence; no owner rating or independent judgment has been added. [Preparation issue #27](https://github.com/ArazSaieArasi3/riskium/issues/27) owns the next concrete final claim/route matrix and decision table.
+
+## Concrete final-review package
+
+Preparation #27 supplies the [11-row decision table](../final-review/owner-decisions.md), [all-clause and historical-route matrix](../final-review/README.md) and [seven exact manuscript proposals](../final-review/manuscript.md). These are assistant recommendations, not owner ratings. The live register remains unchanged; the review package preserves its historical zero-rating snapshot. Actual responses and critical resolutions remain #7, followed by one final stable freeze.

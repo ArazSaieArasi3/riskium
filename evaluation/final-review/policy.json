@@ -1,0 +1,1137 @@
+{
+  "schema": "riskium-final-review-policy-v1",
+  "evidence_checkpoint_commit": "7968d7ef5662d05f171568278f27df204f50cbd9",
+  "target": "v0.3.1",
+  "model_version": "0.3.1",
+  "manuscript_version": "7.0.7",
+  "status": "PREPARATION_ONLY_OWNER_SCOPE_DECISIONS_AND_FINAL_FREEZE_PENDING",
+  "authority": "Assistant proposals under preparation issue #27; actual owner judgments stay #7. No generic execution approval is recorded as a semantic rating.",
+  "constraints": [
+    {
+      "id": "C-01",
+      "proposed_disposition": "SCOPED_EVIDENCE",
+      "retained_claim": "Separate case, entry and revision keys; labels do not merge identities.",
+      "unclaimed_or_deferred": "Actual organizational case grounding and real reassessment continuity require attributable evidence; no automatic identity adjudication.",
+      "evidence_keys": [
+        "model",
+        "h",
+        "sql",
+        "cq"
+      ],
+      "follow_up_issues": [
+        7,
+        12,
+        13
+      ],
+      "owner_review_ids": [
+        "OR-01",
+        "OR-09"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-02",
+      "proposed_disposition": "SCOPED_EVIDENCE",
+      "retained_claim": "Documentary scenarios/source statements do not automatically assert actual occurrence or effect.",
+      "unclaimed_or_deferred": "No claim that every external inference/application obeys the boundary or that a missing graph assertion proves nonoccurrence.",
+      "evidence_keys": [
+        "model",
+        "h",
+        "cq",
+        "source78"
+      ],
+      "follow_up_issues": [
+        7,
+        13
+      ],
+      "owner_review_ids": [
+        "OR-02",
+        "OR-09"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-03",
+      "proposed_disposition": "SCOPED_ALTERNATIVE",
+      "retained_claim": "Executed SQLite profile 0.1.0 preserves sealed payload, provenance and version-owned dependency snapshots, creates new revisions and rejects specified mutations.",
+      "unclaimed_or_deferred": "No general native InformationContent/RX-007 admission, PostgreSQL/full private-schema migration or protection against administrative DDL/PRAGMA bypass.",
+      "evidence_keys": [
+        "model",
+        "sql",
+        "source78"
+      ],
+      "follow_up_issues": [
+        7,
+        12
+      ],
+      "owner_review_ids": [
+        "OR-04"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-04",
+      "proposed_disposition": "SCOPED_ALTERNATIVE",
+      "retained_claim": "Selected comparison records require pinned interpretation metadata and matching declared context; equal score labels/numbers cannot authorize that named task.",
+      "unclaimed_or_deferred": "Not universal assessment readiness, full temporal semantics, all qualitative likelihood interpretations or reproduced version-specific method payload permissions.",
+      "evidence_keys": [
+        "model",
+        "comparison",
+        "cq"
+      ],
+      "follow_up_issues": [
+        5,
+        7,
+        12
+      ],
+      "owner_review_ids": [
+        "OR-06",
+        "OR-07"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-05",
+      "proposed_disposition": "DESIGN_AND_FINITE_CONTROLS",
+      "retained_claim": "Recorded/reference/validity time and administrative versus real-world status remain distinct design commitments; synthetic retrieval illustrates closure versus cessation.",
+      "unclaimed_or_deferred": "Interval ordering, timezone/unknown-endpoint policy, actual cessation and treatment-effectiveness adjudication or workflow execution are not implemented/accepted claims.",
+      "evidence_keys": [
+        "model",
+        "cq"
+      ],
+      "follow_up_issues": [
+        4,
+        5,
+        7,
+        12
+      ],
+      "owner_review_ids": [
+        "OR-02",
+        "OR-10"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-06",
+      "proposed_disposition": "SCOPED_EVIDENCE",
+      "retained_claim": "Bounded OWL and explicit-data tests enforce declared participant distinctness and retain assignment information when no relator can be grounded.",
+      "unclaimed_or_deferred": "Explicit identity evidence is required; different names alone do not prove different individuals or actual mandate truth.",
+      "evidence_keys": [
+        "model",
+        "h",
+        "conditional"
+      ],
+      "follow_up_issues": [
+        7,
+        12
+      ],
+      "owner_review_ids": [
+        "OR-03"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-07",
+      "proposed_disposition": "DESIGN_AND_FINITE_CONTROLS",
+      "retained_claim": "A responsibility role/assignment record is not automatically an actual mandate or Risk Owner.",
+      "unclaimed_or_deferred": "Automatic source-to-owner mapping with validated accountability/authority/scope is deferred; no automatic Risk Owner population.",
+      "evidence_keys": [
+        "model",
+        "cq"
+      ],
+      "follow_up_issues": [
+        5,
+        7,
+        12
+      ],
+      "owner_review_ids": [
+        "OR-03"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-08",
+      "proposed_disposition": "SCOPED_ALTERNATIVE",
+      "retained_claim": "Profile 0.6.0 checks declared numeric/qualitative metadata compatibility for its caller-selected dual-anchor threshold task.",
+      "unclaimed_or_deferred": "Global C-08 remains PARTIAL; no unit conversion, broad dimensional adequacy, numeric evaluation or full risk-record admission.",
+      "evidence_keys": [
+        "model",
+        "conditional",
+        "compatibility"
+      ],
+      "follow_up_issues": [
+        5,
+        7,
+        12
+      ],
+      "owner_review_ids": [
+        "OR-05"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-09",
+      "proposed_disposition": "SCOPED_ALTERNATIVE",
+      "retained_claim": "Published-description SHACL checks explicit case/pattern/scenario aboutness and permits multiple declared targets.",
+      "unclaimed_or_deferred": "Not HermiT discharge, target truth, occurrence evidence or a single universal target interpretation.",
+      "evidence_keys": [
+        "model",
+        "conditional"
+      ],
+      "follow_up_issues": [
+        4,
+        7
+      ],
+      "owner_review_ids": [
+        "OR-02",
+        "OR-10"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-10",
+      "proposed_disposition": "DESIGN_AND_FINITE_CONTROLS",
+      "retained_claim": "Distinct source-qualified tolerance meanings are represented without global equivalence.",
+      "unclaimed_or_deferred": "Complete normative appetite/tolerance definitions and ISO/COBIT/Risk IT equivalence/crosswalk/compliance are unassessed and unclaimed.",
+      "evidence_keys": [
+        "model",
+        "references"
+      ],
+      "follow_up_issues": [
+        4,
+        5,
+        7
+      ],
+      "owner_review_ids": [
+        "OR-08"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-11",
+      "proposed_disposition": "SCOPED_ALTERNATIVE",
+      "retained_claim": "Vocabulary metadata is keyed by scheme/edition/code; label equality does not create classes or cross-scheme identity.",
+      "unclaimed_or_deferred": "Metadata key validation is not universal ontological identity adjudication or a HermiT PASS for this clause.",
+      "evidence_keys": [
+        "model",
+        "qualification"
+      ],
+      "follow_up_issues": [
+        4,
+        7
+      ],
+      "owner_review_ids": [
+        "OR-03",
+        "OR-08"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-12",
+      "proposed_disposition": "SCOPED_ALTERNATIVE",
+      "retained_claim": "Selected evidence records carry source/item/target and Support/Challenge/Context role; source-query provenance can be inspected.",
+      "unclaimed_or_deferred": "Conformance and source links do not establish truth, endorsement, evidential adequacy or independent corroboration.",
+      "evidence_keys": [
+        "model",
+        "qualification",
+        "source6",
+        "source78"
+      ],
+      "follow_up_issues": [
+        4,
+        7,
+        13
+      ],
+      "owner_review_ids": [
+        "OR-08",
+        "OR-09"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-13",
+      "proposed_disposition": "SCOPED_ALTERNATIVE",
+      "retained_claim": "Profile 0.7.0 checks selected level/scale-version/dimension joins for the declared comparison task.",
+      "unclaimed_or_deferred": "No general level ordering, numeric-code ranking, unit transformation or proof of scale meaning.",
+      "evidence_keys": [
+        "model",
+        "comparison"
+      ],
+      "follow_up_issues": [
+        4,
+        5,
+        7,
+        12
+      ],
+      "owner_review_ids": [
+        "OR-06"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-14",
+      "proposed_disposition": "STRUCTURAL_ALTERNATIVE",
+      "retained_claim": "Three optional heterogeneous boundaries and seven bridges are excluded from the typed core; documentary reference classes remain.",
+      "unclaimed_or_deferred": "Structural/boundary checks are not new HermiT runs or proof of external referent existence; external ontology import/mapping extension stays future work.",
+      "evidence_keys": [
+        "model",
+        "boundary",
+        "admission"
+      ],
+      "follow_up_issues": [
+        4,
+        5,
+        7,
+        16
+      ],
+      "owner_review_ids": [
+        "OR-02",
+        "OR-08"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-15",
+      "proposed_disposition": "DESIGN_AND_FINITE_CONTROLS",
+      "retained_claim": "Bounded OWL bearer dependence/cardinality supports the intrinsic-vulnerability design; reports remain documentary information.",
+      "unclaimed_or_deferred": "Full explicit-data bearer admission and real-world substantial-bearer/vulnerability grounding remain unexecuted/unaccepted; no automatic mode from a hypothesis.",
+      "evidence_keys": [
+        "model",
+        "h"
+      ],
+      "follow_up_issues": [
+        5,
+        7
+      ],
+      "owner_review_ids": [
+        "OR-02",
+        "OR-08"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-16",
+      "proposed_disposition": "SCOPED_ALTERNATIVE",
+      "retained_claim": "CatalogInspection metadata admission and separately named compatibility/comparison/source/history tasks have explicit staging and task boundaries.",
+      "unclaimed_or_deferred": "No general complete RiskAssessment readiness or arbitrary multi-relation/conditional integration; only named executed profiles may be called supported.",
+      "evidence_keys": [
+        "model",
+        "admission",
+        "compatibility",
+        "comparison",
+        "sql",
+        "source6",
+        "source78"
+      ],
+      "follow_up_issues": [
+        4,
+        5,
+        7,
+        12,
+        13
+      ],
+      "owner_review_ids": [
+        "OR-10"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-17",
+      "proposed_disposition": "SCOPED_ALTERNATIVE",
+      "retained_claim": "Selected source-query/SQL fixtures retain conflicting assertions, original/reissued values and provenance without silently selecting or overwriting.",
+      "unclaimed_or_deferred": "A universal scalar-export selection policy across all contexts/times and complete multi-assertion admission is deferred.",
+      "evidence_keys": [
+        "model",
+        "source6",
+        "source78",
+        "sql"
+      ],
+      "follow_up_issues": [
+        4,
+        5,
+        7,
+        12,
+        13
+      ],
+      "owner_review_ids": [
+        "OR-04",
+        "OR-09"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-18",
+      "proposed_disposition": "SCOPED_ALTERNATIVE",
+      "retained_claim": "Profile 0.7.0 checks strict eligibility for direct comparison of two selected pairs under declared pinned interpretation; missing data is not zero.",
+      "unclaimed_or_deferred": "Governed transformations, ranking/calculation, general temporal interpretation and universal assessment comparability are not claimed.",
+      "evidence_keys": [
+        "model",
+        "comparison",
+        "cq"
+      ],
+      "follow_up_issues": [
+        4,
+        5,
+        7,
+        12
+      ],
+      "owner_review_ids": [
+        "OR-07"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-19",
+      "proposed_disposition": "EXECUTABLE_CLAIM_DEFERRED",
+      "retained_claim": "Workflow labels/rules/authority remain source-qualified design content; Closed/Treated alone cannot establish cessation/effectiveness.",
+      "unclaimed_or_deferred": "No executable transition authority engine, universal workflow scheme mapping or treatment-effectiveness acceptance is claimed.",
+      "evidence_keys": [
+        "model",
+        "cq"
+      ],
+      "follow_up_issues": [
+        4,
+        5,
+        7,
+        12
+      ],
+      "owner_review_ids": [
+        "OR-10"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-20",
+      "proposed_disposition": "DESIGN_AND_FINITE_CONTROLS",
+      "retained_claim": "Risk Item is a local terminology convention for the managed RiskCase subject, distinct from entry/scenario/ISO risk.",
+      "unclaimed_or_deferred": "No global Risk Item equivalence, automatic label-based import/class alignment or universal terminology standard.",
+      "evidence_keys": [
+        "model",
+        "h",
+        "sql"
+      ],
+      "follow_up_issues": [
+        5,
+        7
+      ],
+      "owner_review_ids": [
+        "OR-01",
+        "OR-08"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-21",
+      "proposed_disposition": "EXECUTABLE_CLAIM_DEFERRED",
+      "retained_claim": "Reported and computed score meanings/links are distinguished in the conceptual design.",
+      "unclaimed_or_deferred": "Complete current conditional computed-score admission, formula/input scalar schema and reproducible arithmetic engine are not executed public capabilities. Historical private calculation checks remain historical.",
+      "evidence_keys": [
+        "model",
+        "cq",
+        "manuscript"
+      ],
+      "follow_up_issues": [
+        4,
+        5,
+        7,
+        12
+      ],
+      "owner_review_ids": [
+        "OR-07",
+        "OR-10"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-22",
+      "proposed_disposition": "DESIGN_AND_FINITE_CONTROLS",
+      "retained_claim": "Bounded OWL countermodels avoid using participant pair alone as a mandate identity key.",
+      "unclaimed_or_deferred": "Actual assignment/scope/validity grounding and application deduplication of mandates are deferred; no new actual responsibility identities from names.",
+      "evidence_keys": [
+        "model",
+        "h",
+        "cq"
+      ],
+      "follow_up_issues": [
+        5,
+        7,
+        12
+      ],
+      "owner_review_ids": [
+        "OR-03"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-23",
+      "proposed_disposition": "SCOPED_EVIDENCE",
+      "retained_claim": "Current explicit graph coherence checks analyzedInContext as a subrelation of hasContext with the same pair; no reverse repair.",
+      "unclaimed_or_deferred": "Finite asserted-graph constraint checks, not all data or full task/semantic acceptance.",
+      "evidence_keys": [
+        "model",
+        "h",
+        "coherence"
+      ],
+      "follow_up_issues": [
+        7
+      ],
+      "owner_review_ids": [
+        "OR-10"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-24",
+      "proposed_disposition": "SCOPED_EVIDENCE",
+      "retained_claim": "Current graph coherence and SQLite history enforce selected same-entry revision/version targets and predecessor-cycle rules, including branches and tested long chains.",
+      "unclaimed_or_deferred": "Static graph evidence alone is not history; SQLite history is limited to declared profile and configured connection, not universal storage certification.",
+      "evidence_keys": [
+        "model",
+        "h",
+        "coherence",
+        "sql"
+      ],
+      "follow_up_issues": [
+        7,
+        12
+      ],
+      "owner_review_ids": [
+        "OR-04"
+      ],
+      "owner_disposition": null
+    },
+    {
+      "id": "C-25",
+      "proposed_disposition": "SCOPED_EVIDENCE",
+      "retained_claim": "Bounded native version-target checks and selected explicit-data direct/version reference coherence have executed fixtures. SQL supplements version-owned target coherence only.",
+      "unclaimed_or_deferred": "SQL bindings do not replace native assessment subject/required-role admission; no full conditional multi-relation risk-record acceptance.",
+      "evidence_keys": [
+        "model",
+        "h",
+        "conditional",
+        "sql"
+      ],
+      "follow_up_issues": [
+        5,
+        7,
+        12
+      ],
+      "owner_review_ids": [
+        "OR-04",
+        "OR-10"
+      ],
+      "owner_disposition": null
+    }
+  ],
+  "trace_proposals": {
+    "RKRS-01": {
+      "constraint_ids": [
+        "C-01",
+        "C-02"
+      ],
+      "proposed_scope": "SCOPED_DESIGN_AND_EVIDENCE",
+      "limit": "Risk-knowledge representation only; no process compliance or improved decisions.",
+      "owner_disposition": null
+    },
+    "RKRS-02": {
+      "constraint_ids": [
+        "C-01",
+        "C-20"
+      ],
+      "proposed_scope": "SCOPED_IDENTITY_EVIDENCE",
+      "limit": "Synthetic keys/links and withheld candidates do not independently validate real case identity.",
+      "owner_disposition": null
+    },
+    "RKRS-03": {
+      "constraint_ids": [
+        "C-03",
+        "C-24",
+        "C-25"
+      ],
+      "proposed_scope": "SCOPED_SQLITE_HISTORY",
+      "limit": "Current selected SQLite preservation is executed; full private relational correspondence and InformationContent admission are not claimed.",
+      "owner_disposition": null
+    },
+    "RKRS-04": {
+      "constraint_ids": [
+        "C-04",
+        "C-13",
+        "C-18"
+      ],
+      "proposed_scope": "SCOPED_COMPARISON_TASK",
+      "limit": "Metadata-based selected comparison only, no general assessment readiness or calculations.",
+      "owner_disposition": null
+    },
+    "RKRS-05": {
+      "constraint_ids": [
+        "C-21"
+      ],
+      "proposed_scope": "DESIGN_ONLY_OPERATIONAL_CLAIM_DEFERRED",
+      "limit": "Original MUST priority is preserved. The first final release may claim conceptual distinction/reported content only; excluding current computation readiness/arithmetic is an explicit owner scope decision.",
+      "owner_disposition": null
+    },
+    "RKRS-06": {
+      "constraint_ids": [
+        "C-02",
+        "C-12",
+        "C-17"
+      ],
+      "proposed_scope": "SCOPED_SOURCE_BACKED_SUPPLEMENTS",
+      "limit": "CQ06: 13 source statements; CQ07: five source cell pairs; CQ08: 11 prior withheld candidates. Not whole extraction accuracy or independent semantic review.",
+      "owner_disposition": null
+    },
+    "RKRS-07": {
+      "constraint_ids": [
+        "C-06",
+        "C-07",
+        "C-22"
+      ],
+      "proposed_scope": "SCOPED_DISTINCTION_ONLY",
+      "limit": "No actual mandate/authority/ownership grounding or universal deduplication capability.",
+      "owner_disposition": null
+    },
+    "RKRS-08": {
+      "constraint_ids": [
+        "C-05",
+        "C-19"
+      ],
+      "proposed_scope": "DESIGN_ONLY_OPERATIONAL_CLAIM_DEFERRED",
+      "limit": "Original MUST retained; full interval/transition/cessation/effectiveness tasks excluded from proposed current executable scope.",
+      "owner_disposition": null
+    },
+    "RKRS-09": {
+      "constraint_ids": [
+        "C-14",
+        "C-15"
+      ],
+      "proposed_scope": "SCOPED_MAPPING_AND_BEARER_DESIGN",
+      "limit": "No automatic external referent existence or real-world mode/bearer grounding.",
+      "owner_disposition": null
+    },
+    "RKRS-10": {
+      "constraint_ids": [
+        "C-08",
+        "C-10",
+        "C-11"
+      ],
+      "proposed_scope": "SCOPED_DECLARATION_POLICY",
+      "limit": "Metadata threshold compatibility and scheme keys only; no full normative equivalence, arithmetic or conversion.",
+      "owner_disposition": null
+    },
+    "RKRS-11": {
+      "constraint_ids": [
+        "C-16",
+        "C-23",
+        "C-24",
+        "C-25"
+      ],
+      "proposed_scope": "SCOPED_NAMED_TASKS_ONLY",
+      "limit": "Only the named executed profiles are proposed supported. Generic risk-record/conditional readiness is not an accepted executable capability.",
+      "owner_disposition": null
+    },
+    "RKRS-12": {
+      "constraint_ids": [],
+      "proposed_scope": "SCOPED_PROVENANCE_SYNTHESIS",
+      "limit": "Inspectable method/version/population evidence; no overall semantic correctness percentage.",
+      "owner_disposition": null
+    },
+    "RKM-SCOPE-01": {
+      "constraint_ids": [
+        "C-01",
+        "C-02"
+      ],
+      "proposed_scope": "SCOPED_DESIGN_AND_EVIDENCE",
+      "limit": "No standards/process compliance.",
+      "owner_disposition": null
+    },
+    "RKM-SCOPE-02": {
+      "constraint_ids": [
+        "C-01",
+        "C-20"
+      ],
+      "proposed_scope": "SCOPED_IDENTITY_EVIDENCE",
+      "limit": "Real case grounding remains attributable; no equal-label merge.",
+      "owner_disposition": null
+    },
+    "RKM-SCOPE-03": {
+      "constraint_ids": [
+        "C-10"
+      ],
+      "proposed_scope": "SOURCE_MEANING_LIMITED",
+      "limit": "No global appetite/tolerance equivalence or normative full-source interpretation.",
+      "owner_disposition": null
+    },
+    "RKM-SCOPE-04": {
+      "constraint_ids": [
+        "C-10"
+      ],
+      "proposed_scope": "SCOPED_INSPECTED_CORPUS",
+      "limit": "The 11-source, 13-interpretation inspected-portion register exists; not a full normative crosswalk or systematic review.",
+      "owner_disposition": null
+    },
+    "RKM-SCOPE-05": {
+      "constraint_ids": [
+        "C-14"
+      ],
+      "proposed_scope": "PUBLIC_ID_CONTINUITY_ONLY",
+      "limit": "Retained public IDs are reconciled; restricted pre-public acquisition identities are excluded from this public-export claim.",
+      "owner_disposition": null
+    },
+    "RKM-SCOPE-06": {
+      "constraint_ids": [
+        "C-03",
+        "C-05",
+        "C-19"
+      ],
+      "proposed_scope": "SCOPED_HISTORY_AND_TEMPORAL_BOUNDARY",
+      "limit": "Selected SQLite history now executed; complete time/workflow semantics not claimed.",
+      "owner_disposition": null
+    },
+    "RKM-SCOPE-07": {
+      "constraint_ids": [
+        "C-08"
+      ],
+      "proposed_scope": "SCOPED_DECLARATION_POLICY",
+      "limit": "Dual-anchor compatibility is metadata-scoped, global C-08 still PARTIAL.",
+      "owner_disposition": null
+    },
+    "RKM-SCOPE-08": {
+      "constraint_ids": [
+        "C-06",
+        "C-07",
+        "C-22"
+      ],
+      "proposed_scope": "SCOPED_DISTINCTION_ONLY",
+      "limit": "Assignment information may exist without actual grounded mandate/second actor.",
+      "owner_disposition": null
+    },
+    "RQ-CQ01": {
+      "constraint_ids": [
+        "C-01"
+      ],
+      "proposed_scope": "SCOPED_SYNTHETIC_QUERY",
+      "limit": "Synthetic exact case/entry joins plus selected SQL identity evidence; no independent real-case adjudication.",
+      "owner_disposition": null
+    },
+    "RQ-CQ02": {
+      "constraint_ids": [
+        "C-02"
+      ],
+      "proposed_scope": "SCOPED_SYNTHETIC_QUERY",
+      "limit": "Scenario aboutness retrieval, not occurrence or admission.",
+      "owner_disposition": null
+    },
+    "RQ-CQ03": {
+      "constraint_ids": [
+        "C-04",
+        "C-13",
+        "C-18"
+      ],
+      "proposed_scope": "SCOPED_SYNTHETIC_QUERY",
+      "limit": "Retrieval and declared compatibility supplements are separate; no arithmetic or universal comparability.",
+      "owner_disposition": null
+    },
+    "RQ-CQ04": {
+      "constraint_ids": [
+        "C-06",
+        "C-07",
+        "C-22"
+      ],
+      "proposed_scope": "SCOPED_SYNTHETIC_QUERY",
+      "limit": "Assignment records without invented mandates; no actual authority judgment.",
+      "owner_disposition": null
+    },
+    "RQ-CQ05": {
+      "constraint_ids": [
+        "C-05",
+        "C-19"
+      ],
+      "proposed_scope": "SCOPED_SYNTHETIC_QUERY",
+      "limit": "Synthetic workflow labels illustrate distinction, not full temporal/workflow acceptance.",
+      "owner_disposition": null
+    },
+    "RQ-CQ06": {
+      "constraint_ids": [
+        "C-12",
+        "C-17"
+      ],
+      "proposed_scope": "SCOPED_SOURCE_BACKED_SUPPLEMENT",
+      "limit": "13 inspected source statements, 35 query/control outcomes; not complete original broad population or independent extraction validation.",
+      "owner_disposition": null
+    },
+    "RQ-CQ07": {
+      "constraint_ids": [
+        "C-03",
+        "C-17"
+      ],
+      "proposed_scope": "SCOPED_SOURCE_BACKED_SUPPLEMENT",
+      "limit": "Five original/reissued cell pairs and exact lineage/value/locator controls; no independent corroboration or recomputed estimates.",
+      "owner_disposition": null
+    },
+    "RQ-CQ08": {
+      "constraint_ids": [
+        "C-01",
+        "C-02",
+        "C-16"
+      ],
+      "proposed_scope": "SCOPED_SOURCE_BACKED_SUPPLEMENT",
+      "limit": "All 11 already-withheld candidates queried with unbound cases; absence of graph link is not proof of real-world nonexistence.",
+      "owner_disposition": null
+    }
+  },
+  "owner_proposals": [
+    {
+      "id": "OR-01",
+      "topic": "Case versus entry/revision identity",
+      "assistant_proposal": "ACCEPT_SCOPED",
+      "evidence_keys": [
+        "model",
+        "h",
+        "sql",
+        "source78"
+      ],
+      "counterexample_to_examine": "Two entries may refer to one case; equal labels cannot merge two case IDs.",
+      "residual_risk": "Actual organizational case grounding is not automated.",
+      "wording_or_scope_decision": "Accept the distinction and selected configured SQLite preservation, with no general real-case adjudication claim.",
+      "owner_rating": null,
+      "owner_response": null,
+      "status": "PENDING_OWNER_JUDGMENT"
+    },
+    {
+      "id": "OR-02",
+      "topic": "Document versus occurrence",
+      "assistant_proposal": "ACCEPT_SCOPED",
+      "evidence_keys": [
+        "model",
+        "h",
+        "cq",
+        "source78"
+      ],
+      "counterexample_to_examine": "A hospital failure description, plan, signal or absent case link must not create an occurrence or prove nonoccurrence.",
+      "residual_risk": "External applications can still assert unjustified facts; this is not universal source truth.",
+      "wording_or_scope_decision": "Retain description/occurrence separation and no benefits/effectiveness claim.",
+      "owner_rating": null,
+      "owner_response": null,
+      "status": "PENDING_OWNER_JUDGMENT"
+    },
+    {
+      "id": "OR-03",
+      "topic": "Assignment versus grounded responsibility",
+      "assistant_proposal": "ACCEPT_SCOPED",
+      "evidence_keys": [
+        "model",
+        "h",
+        "conditional",
+        "qualification",
+        "cq"
+      ],
+      "counterexample_to_examine": "Self-assignment or two names for one actor cannot fabricate the second participant; the same pair can have distinct scoped mandates.",
+      "residual_risk": "No automatic owner/authority grounding or complete mandate deduplication is implemented.",
+      "wording_or_scope_decision": "Accept documentary assignment/relator distinction and explicit identity evidence policy only; defer operational authority mapping.",
+      "owner_rating": null,
+      "owner_response": null,
+      "status": "PENDING_OWNER_JUDGMENT"
+    },
+    {
+      "id": "OR-04",
+      "topic": "Issued versions and lineage",
+      "assistant_proposal": "ACCEPT_SCOPED",
+      "evidence_keys": [
+        "sql",
+        "coherence",
+        "conditional",
+        "source78"
+      ],
+      "counterexample_to_examine": "UPDATE/DELETE/REPLACE of sealed content or late dependency append must fail; correction retains the original, including an unchanged reissued cell.",
+      "residual_risk": "SQL is a selected configured SQLite profile, not the full private schema, PostgreSQL or native InformationContent admission.",
+      "wording_or_scope_decision": "Accept tested profile 0.1.0 history and finite graph/version-target rules; retain all stated boundaries.",
+      "owner_rating": null,
+      "owner_response": null,
+      "status": "PENDING_OWNER_JUDGMENT"
+    },
+    {
+      "id": "OR-05",
+      "topic": "C-08 compatibility",
+      "assistant_proposal": "ACCEPT_SCOPED",
+      "evidence_keys": [
+        "compatibility",
+        "conditional"
+      ],
+      "counterexample_to_examine": "Missing unit/version cannot become compatible; a qualitative scale cannot be assigned an invented numeric unit.",
+      "residual_risk": "Metadata declarations can be wrong; conversion and complete semantic adequacy remain unassessed.",
+      "wording_or_scope_decision": "Accept only declared task metadata compatibility and keep global C-08 PARTIAL.",
+      "owner_rating": null,
+      "owner_response": null,
+      "status": "PENDING_OWNER_JUDGMENT"
+    },
+    {
+      "id": "OR-06",
+      "topic": "C-13 level/scale/dimension",
+      "assistant_proposal": "ACCEPT_SCOPED",
+      "evidence_keys": [
+        "comparison"
+      ],
+      "counterexample_to_examine": "A level from another scale version/dimension must fail membership even when its label/number is equal.",
+      "residual_risk": "No universal ordering, scale truth or unit conversion is implemented.",
+      "wording_or_scope_decision": "Accept profile 0.7.0 selected joins; remove any implied general ranking or numerical scale validation.",
+      "owner_rating": null,
+      "owner_response": null,
+      "status": "PENDING_OWNER_JUDGMENT"
+    },
+    {
+      "id": "OR-07",
+      "topic": "C-18 direct-comparison eligibility",
+      "assistant_proposal": "ACCEPT_SCOPED",
+      "evidence_keys": [
+        "comparison",
+        "cq"
+      ],
+      "counterexample_to_examine": "Equal numbers with different pinned method/scale/time are not directly comparable; missing context is not zero.",
+      "residual_risk": "No transformations, formula calculation or general assessment readiness.",
+      "wording_or_scope_decision": "Accept selected direct-comparison eligibility; current computed-score admission/arithmetic under C-21 is unclaimed.",
+      "owner_rating": null,
+      "owner_response": null,
+      "status": "PENDING_OWNER_JUDGMENT"
+    },
+    {
+      "id": "OR-08",
+      "topic": "Source/standards scope",
+      "assistant_proposal": "ACCEPT_SCOPED",
+      "evidence_keys": [
+        "references",
+        "boundary",
+        "qualification"
+      ],
+      "counterexample_to_examine": "An inspected abstract/portion or equal tolerance label cannot prove normative equivalence, full compliance or a complete systematic review.",
+      "residual_risk": "Exact appetite/tolerance source-definition crosswalks and broader external alignment remain unassessed.",
+      "wording_or_scope_decision": "Accept portion-qualified source interpretation; defer full normative equivalence and full framework compliance claims.",
+      "owner_rating": null,
+      "owner_response": null,
+      "status": "PENDING_OWNER_JUDGMENT"
+    },
+    {
+      "id": "OR-09",
+      "topic": "Source-backed CQ populations and withheld cases",
+      "assistant_proposal": "ACCEPT_SCOPED",
+      "evidence_keys": [
+        "source6",
+        "source78",
+        "sql"
+      ],
+      "counterexample_to_examine": "Correction is not independent corroboration; a stated hospital failure and an unbound case do not establish a governed organizational RiskCase.",
+      "residual_risk": "Finite assisted source preparation is not independent review, held-out validation or whole historical-extraction accuracy.",
+      "wording_or_scope_decision": "Accept 13 CQ06 statements, five CQ07 cell pairs and 11 still-withheld CQ08 candidates only; do not reopen the prior WITHHELD decision.",
+      "owner_rating": null,
+      "owner_response": null,
+      "status": "PENDING_OWNER_JUDGMENT"
+    },
+    {
+      "id": "OR-10",
+      "topic": "Claims and current manuscript",
+      "assistant_proposal": "REVISE_BEFORE_FINAL",
+      "evidence_keys": [
+        "manuscript",
+        "quality",
+        "source6",
+        "source78",
+        "compatibility",
+        "comparison",
+        "sql"
+      ],
+      "counterexample_to_examine": "Current article synthetic-only/source/history wording must not hide later scoped evidence or imply current complete computation.",
+      "residual_risk": "Manuscript 7.0.7 remains a historical checkpoint until the seven exact proposed text updates are applied and QA verified.",
+      "wording_or_scope_decision": "Review proposed scope, especially RKRS-05/RKRS-08/RKRS-11; apply seven necessary prose refreshes, preserve counts and old receipt boundaries, then bind new Word/PDF.",
+      "owner_rating": null,
+      "owner_response": null,
+      "status": "PENDING_OWNER_JUDGMENT"
+    },
+    {
+      "id": "OR-11",
+      "topic": "Final freeze and publication",
+      "assistant_proposal": "HOLD_UNTIL_FINAL_FREEZE",
+      "evidence_keys": [
+        "publication",
+        "documentation",
+        "manuscript"
+      ],
+      "counterexample_to_examine": "A green prerelease or prepared decision table cannot stand in for a reviewed final candidate/tag/assets or unresolved critical findings.",
+      "residual_risk": "No current final freeze, stable publication profile or completed owner record exists; critical findings remain unestablished, not zero.",
+      "wording_or_scope_decision": "Complete actual owner responses/critical resolution, final clean checks and explicit stable publication/readback; do not infer acceptance now.",
+      "owner_rating": null,
+      "owner_response": null,
+      "status": "PENDING_OWNER_JUDGMENT"
+    }
+  ],
+  "claims": [
+    {
+      "id": "FC-01",
+      "title": "Conceptual artifact and scope",
+      "evidence_keys": [
+        "model",
+        "native",
+        "owl"
+      ],
+      "permitted_wording": "80 concepts; 77 typed-core plus one separate local anchor in OWL; 134 associations/bridges with 127 core object properties; 25 interpretation constraints.",
+      "excluded_wording": "Risk knowledge representation, not a risk process or improved decisions; full native language/semantic certification not claimed.",
+      "owner_disposition": null
+    },
+    {
+      "id": "FC-02",
+      "title": "Native exchange and OWL projection",
+      "evidence_keys": [
+        "native",
+        "owl",
+        "boundary"
+      ],
+      "permitted_wording": "Source-bound schema/SDK exchange and reviewed bounded OWL export.",
+      "excluded_wording": "Exchange/round-trip validation is not full OntoUML language validation or native-editor import; optional boundaries/bridges stay excluded.",
+      "owner_disposition": null
+    },
+    {
+      "id": "FC-03",
+      "title": "Reasoner evidence",
+      "evidence_keys": [
+        "h"
+      ],
+      "permitted_wording": "693 matching executed cases; 281 PASS and 14 NOT_RUN obligations out of 295.",
+      "excluded_wording": "Finite bounded OWL consequences, not ontology-wide semantic correctness or a fresh HermiT run by this preparation.",
+      "owner_disposition": null
+    },
+    {
+      "id": "FC-04",
+      "title": "Explicit-data evidence",
+      "evidence_keys": [
+        "conditional",
+        "admission",
+        "coherence",
+        "qualification",
+        "compatibility",
+        "comparison"
+      ],
+      "permitted_wording": "Historical ledger: 341 scoped PASS, one PARTIAL, 17 NOT_RUN out of 359. Later C-08/C-13/C-18 supplements have their own exact cohorts.",
+      "excluded_wording": "No rewritten historical denominator or arbitrary full risk-record admission; scenarios, preflight rejects and actual engine runs remain separate.",
+      "owner_disposition": null
+    },
+    {
+      "id": "FC-05",
+      "title": "Relational implementation",
+      "evidence_keys": [
+        "sql"
+      ],
+      "permitted_wording": "67 matched scenario outcomes on selected public SQLite profile 0.1.0, including populated migration, immutability and history.",
+      "excluded_wording": "Private 128-table schema/859 old checks are not fresh public-model execution; PostgreSQL, formulas, workloads and full InformationContent mapping unclaimed.",
+      "owner_disposition": null
+    },
+    {
+      "id": "FC-06",
+      "title": "Requirements and queries",
+      "evidence_keys": [
+        "trace",
+        "cq",
+        "source6",
+        "source78"
+      ],
+      "permitted_wording": "28 trace identities; old 40 synthetic executions remain 32 answers plus eight mutants. Current CQ06 and CQ07/08 supplements separately bind finite primary-source cohorts.",
+      "excluded_wording": "Trace accounting and successful query/control outcomes are not full original requirement/source-population acceptance or independent validation.",
+      "owner_disposition": null
+    },
+    {
+      "id": "FC-07",
+      "title": "Reference alignment",
+      "evidence_keys": [
+        "references"
+      ],
+      "permitted_wording": "11 selected sources, 13 inspected-portion interpretation rows and explicit limits.",
+      "excluded_wording": "No full normative crosswalk/compliance, exhaustive literature search or head-to-head superiority claim.",
+      "owner_disposition": null
+    },
+    {
+      "id": "FC-08",
+      "title": "Pharmaceutical demonstration",
+      "evidence_keys": [
+        "manuscript",
+        "source6",
+        "source78"
+      ],
+      "permitted_wording": "Historical dataset/application numbers retain their archived source/version; current source-backed supplements separately inspect 13 statements, five cell pairs and 11 withheld candidates.",
+      "excluded_wording": "No independently validated RiskCases, incidents, complete extraction accuracy, held-out generalization, clinical probability recomputation or organizational benefit.",
+      "owner_disposition": null
+    },
+    {
+      "id": "FC-09",
+      "title": "Design structure and metrics",
+      "evidence_keys": [
+        "manuscript",
+        "quality"
+      ],
+      "permitted_wording": "Bounded graph connectivity/count observations and original source-bound qualitative design review.",
+      "excluded_wording": "No full semantic COH/COP, unsupported historical equations or overall domain/ontology quality ranking.",
+      "owner_disposition": null
+    },
+    {
+      "id": "FC-10",
+      "title": "Human review",
+      "evidence_keys": [
+        "owner"
+      ],
+      "permitted_wording": "Prepared 11-row owner/author review cohort with assistant evidence and counterexamples.",
+      "excluded_wording": "No owner rating yet; independent review #23 remains future and nonblocking, with no independent semantic-acceptance claim.",
+      "owner_disposition": null
+    },
+    {
+      "id": "FC-11",
+      "title": "Reproduction/publication/rights",
+      "evidence_keys": [
+        "publication",
+        "documentation",
+        "manuscript"
+      ],
+      "permitted_wording": "Rc.1\u2013rc.7 development publication/provenance is recorded, scientific/code rights declared; final candidate still pending.",
+      "excluded_wording": "Prerelease publication/readback is not final freeze or independent replication; private article/database bytes remain separate.",
+      "owner_disposition": null
+    },
+    {
+      "id": "FC-12",
+      "title": "Deferred operational and future scope",
+      "evidence_keys": [
+        "model",
+        "trace"
+      ],
+      "permitted_wording": "Retain conceptual commitments while explicitly narrowing current executable task claims for review.",
+      "excluded_wording": "No current computed-score engine, full temporal/workflow authority/admission, transformations, full private-schema migration, future extensions or universal standards compliance.",
+      "owner_disposition": null
+    }
+  ],
+  "blocked_until_review": [
+    "Actual OR-01\u2013OR-11 judgments and explicit acceptance/revision of narrowed executable scope, including original MUST priorities",
+    "Apply/QA/bind the seven proposed manuscript text refreshes if accepted; no article changes have been made",
+    "Resolve any critical retained identity/inference/integrity/data-loss finding; missing evidence is not concealed by deferral",
+    "Implement/review the stable publication profile; current incremental pipeline publishes prereleases only",
+    "Perform final clean stabilization/freeze and separate final tag/asset/Pages/manuscript readback"
+  ],
+  "future_ownership": [
+    {
+      "issue": 12,
+      "scope": "Full private relational migration, formulas, workloads and production/application correspondence; unclaimed current operations may remain later."
+    },
+    {
+      "issue": 13,
+      "scope": "Broader source/case population and accepted claim disposition remain pending; current finite technical cohorts do not establish full independent application acceptance."
+    },
+    {
+      "issue": 16,
+      "scope": "Unclaimed extensions/interoperability; nonblocking future scope."
+    },
+    {
+      "issue": 23,
+      "scope": "Actual independent semantic review; explicitly nonblocking for the owner-reviewed first bounded release."
+    }
+  ],
+  "critical_findings_count": null,
+  "critical_screen": "No new confirmed defect recorded by this source/evidence reconciliation; semantic critical findings remain unestablished until attributable review. This is not a zero-critical certificate.",
+  "full_requirement_acceptance_claimed": false,
+  "overall_semantic_correctness_percent": null,
+  "new_scientific_engine_executions": 0,
+  "owner_judgments_generated": 0,
+  "final_release_ready": false
+}
