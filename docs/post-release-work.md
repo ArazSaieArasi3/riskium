@@ -2,6 +2,8 @@
 
 The published **v0.3.1** remains the first owner-reviewed bounded research artifact. Its tag, six assets, 371-file source archive, accepted component matrix and earlier prereleases remain immutable. The new work below is development on main after that release; it is not a newly published release or a new owner/independent scientific judgment.
 
+Use the [ordered work plan](work-plan.md) for the current thirteen open issues, dependencies and small stable-release sequence. The [publication comparison](publication-comparison.md) adds shared Wiki/Pages maintenance, stable/current/frozen routing, graphical WebVOWL, formal-reference navigation and a successor release mechanism. Those are tracked explicitly as #30–#34; the next SQL slice, actual deployment acceptance and deferred source interpretation are #35–#37. The existing WIDOCO and accessible OWL explorer remain implemented.
+
 | Workstream | Completed development | Remaining acceptance |
 | --- | --- | --- |
 | Explicit-data/application integration (#4/#5) | [Shared-graph validator 0.1.0](../implementation/validation/0.1.0/README.md), 31 fixed matching scenarios across seven module families and 29 selected relation pairs; two explicit cross-module scale/version joins | Full native/profile coverage, temporal semantics, multi-value assertion policies, workflow transitions and calculations remain open; historical HermiT/SHACL rows unchanged |

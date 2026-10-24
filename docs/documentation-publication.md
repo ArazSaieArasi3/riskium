@@ -1,5 +1,7 @@
 # Versioned documentation publication
 
+This page preserves the original **22 October 2026 publication receipt** and its historical page/link/interface counts. It is not the current backlog. The [24 October comparison](publication-comparison.md), [fresh HTTP/Wiki readback](../evaluation/publication-comparison/2026-10-24.json) and [ordered work plan](work-plan.md) record later state: stable v0.3.1 is published; Wiki/common-guide maintenance, stable/current routes and graphical WebVOWL are separately tracked as #30–#32. Current local page/link counts are in `evaluation/documentation-audit.json`.
+
 The post-release Riskium documentation uses the reading structure selected for OntoSPK: overview, sidebar guide, conceptual reference, WIDOCO OWL reference, evaluation, local explorer and downloads. [Open the versioned portal](https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/index.html).
 
 Semantic source: `cfb85905ab37549c7090f00a41ca62cdd3364ab5`, tag `v0.3.1-rc.1`. Documentation implementation: `b83599a2f6cd5b8fe76ee91cce3ab76986721dd3`, followed by download controls and fully pinned dependencies at `f5f7571f3fffb6bad2e9d01a99246be7fb52a63d`. The existing release tag and archive are unchanged. The website was generated after the release; its manifest separates frozen semantic inputs from current explanatory-source hashes.

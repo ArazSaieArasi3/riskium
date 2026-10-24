@@ -4,6 +4,8 @@ Riskium v0.3.1 is published as the first stable owner-reviewed bounded research 
 
 ## Current remaining work
 
+The [ordered work plan](work-plan.md) is the current cross-issue register, including the [fresh OntoSPK Wiki/Pages comparison](publication-comparison.md). Five existing research parents remain open; eight explicit publication/release/database/source successors (#30–#37) now prevent those tasks from being hidden behind completed historical issues. Start shared Wiki/Pages sources and stable/current routes (#30/#31), then publish a bounded successor through #34. Existing WIDOCO is present; graphical WebVOWL is the separate enhancement #32.
+
 | Issue | Progress after v0.3.1 | Remaining outcome |
 | --- | --- | --- |
 | [#4 HermiT](https://github.com/ArazSaieArasi3/riskium/issues/4) | Historical 693 matching cases and 281/295 scoped PASS retained; all 14 NOT_RUN routes retain accepted alternatives/exclusions | Further justified native/engine-specific semantics; never relabel another engine's evidence as HermiT PASS |

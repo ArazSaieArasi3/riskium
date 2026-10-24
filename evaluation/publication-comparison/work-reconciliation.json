@@ -1,0 +1,227 @@
+{
+  "schema": "riskium-work-reconciliation-v1",
+  "date": "2026-10-24",
+  "riskium_baseline_commit": "31f1dd07b73cc32cfcd1325b216d4cd1afc58541",
+  "new_issues": [
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+  ],
+  "existing_open_issues_updated": [
+    4,
+    5,
+    12,
+    13,
+    23
+  ],
+  "completed_scope_successor_links_updated": [
+    8,
+    9,
+    10,
+    14,
+    28
+  ],
+  "open_count": 13,
+  "open_issues": [
+    {
+      "issue": 37,
+      "title": "Resolve deferred normative-source interpretation and detailed prior-art review within explicit access/claim limits",
+      "state": "open",
+      "url": "https://github.com/ArazSaieArasi3/riskium/issues/37",
+      "updated_at": "2026-10-24T18:13:06Z",
+      "priority": "P3_OR_ACTUAL_DEPENDENCY"
+    },
+    {
+      "issue": 36,
+      "title": "Establish database deployment acceptance, PostgreSQL/private migration evidence and real workload criteria",
+      "state": "open",
+      "url": "https://github.com/ArazSaieArasi3/riskium/issues/36",
+      "updated_at": "2026-10-24T18:13:05Z",
+      "priority": "P3_OR_ACTUAL_DEPENDENCY"
+    },
+    {
+      "issue": 35,
+      "title": "Predeclare and implement source/scenario and general correction mappings for the next SQL slice",
+      "state": "open",
+      "url": "https://github.com/ArazSaieArasi3/riskium/issues/35",
+      "updated_at": "2026-10-24T18:13:04Z",
+      "priority": "P2"
+    },
+    {
+      "issue": 34,
+      "title": "Generalize reviewed component releases beyond v0.3.1 and publish the next bounded stable package",
+      "state": "open",
+      "url": "https://github.com/ArazSaieArasi3/riskium/issues/34",
+      "updated_at": "2026-10-24T18:13:03Z",
+      "priority": "P1"
+    },
+    {
+      "issue": 33,
+      "title": "Complete formal-method, constraint-route and diagram/search reading coverage on Pages",
+      "state": "open",
+      "url": "https://github.com/ArazSaieArasi3/riskium/issues/33",
+      "updated_at": "2026-10-24T18:13:02Z",
+      "priority": "P2"
+    },
+    {
+      "issue": 32,
+      "title": "Add a source-bound WebVOWL graph viewer beside the existing accessible OWL explorer",
+      "state": "open",
+      "url": "https://github.com/ArazSaieArasi3/riskium/issues/32",
+      "updated_at": "2026-10-24T18:13:01Z",
+      "priority": "P2"
+    },
+    {
+      "issue": 31,
+      "title": "Publish stable/current documentation routes with immutable snapshots and CI-gated deployment",
+      "state": "open",
+      "url": "https://github.com/ArazSaieArasi3/riskium/issues/31",
+      "updated_at": "2026-10-24T18:12:59Z",
+      "priority": "P1"
+    },
+    {
+      "issue": 30,
+      "title": "Synchronize the Wiki and complete equivalent Pages guides from shared sources",
+      "state": "open",
+      "url": "https://github.com/ArazSaieArasi3/riskium/issues/30",
+      "updated_at": "2026-10-24T18:12:58Z",
+      "priority": "P1"
+    },
+    {
+      "issue": 23,
+      "title": "Future independent semantic review beyond the owner-reviewed first release",
+      "state": "open",
+      "url": "https://github.com/ArazSaieArasi3/riskium/issues/23",
+      "updated_at": "2026-10-24T18:12:50Z",
+      "priority": "P3_OR_ACTUAL_DEPENDENCY"
+    },
+    {
+      "issue": 13,
+      "title": "Prepare and review the independent literature case study",
+      "state": "open",
+      "url": "https://github.com/ArazSaieArasi3/riskium/issues/13",
+      "updated_at": "2026-10-24T18:12:49Z",
+      "priority": "P3_OR_ACTUAL_DEPENDENCY"
+    },
+    {
+      "issue": 12,
+      "title": "Reconcile the separate relational implementation with the reviewed model",
+      "state": "open",
+      "url": "https://github.com/ArazSaieArasi3/riskium/issues/12",
+      "updated_at": "2026-10-24T18:12:47Z",
+      "priority": "P2"
+    },
+    {
+      "issue": 5,
+      "title": "Implement SHACL validation profiles and fixtures",
+      "state": "open",
+      "url": "https://github.com/ArazSaieArasi3/riskium/issues/5",
+      "updated_at": "2026-10-24T18:12:46Z",
+      "priority": "P2"
+    },
+    {
+      "issue": 4,
+      "title": "Implement the HermiT consistency and inference suite",
+      "state": "open",
+      "url": "https://github.com/ArazSaieArasi3/riskium/issues/4",
+      "updated_at": "2026-10-24T18:12:45Z",
+      "priority": "P2"
+    }
+  ],
+  "scientific_evidence_changed": false,
+  "new_release_published": false,
+  "stable_release": "v0.3.1",
+  "execution_order_guide": "docs/work-plan.md",
+  "comparison_receipt": "evaluation/publication-comparison/2026-10-24.json",
+  "ontospk_source_files_reviewed": [
+    {
+      "repository": "ArazSaieArasi3/OntoSPK",
+      "commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+      "path": "tools/publication/build_versioned_site.py",
+      "git_blob_sha": "cf6f509b8dfe3a49f8049829a52b6c99786fd147"
+    },
+    {
+      "repository": "ArazSaieArasi3/OntoSPK",
+      "commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+      "path": "docs/publication-status.json",
+      "git_blob_sha": "6db0cdb414953018586c540c1c86c9d7c55df4bf"
+    },
+    {
+      "repository": "ArazSaieArasi3/OntoSPK",
+      "commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+      "path": "tools/publication/pages-registry.json",
+      "git_blob_sha": "c598fea22583672bcecbb77662358d0800488a99"
+    },
+    {
+      "repository": "ArazSaieArasi3/OntoSPK",
+      "commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+      "path": "tools/publication/build_portal.py",
+      "git_blob_sha": "b2f654b060960792d7c2cbdc53ebe75794d63197"
+    },
+    {
+      "repository": "ArazSaieArasi3/OntoSPK",
+      "commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+      "path": "tools/publication/build_webvowl_data.py",
+      "git_blob_sha": "a1db5f272510695448da0d620789643dd52316ca"
+    },
+    {
+      "repository": "ArazSaieArasi3/OntoSPK",
+      "commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+      "path": "tools/publication/audit_wiki.py",
+      "git_blob_sha": "af945dbee678b0f84bdb1ac95b2bfbcca39b19d8"
+    },
+    {
+      "repository": "ArazSaieArasi3/OntoSPK",
+      "commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+      "path": ".github/workflows/pages.yml",
+      "git_blob_sha": "b7e05b5c8f204bc114679c351e12d4a57a84da6b"
+    },
+    {
+      "repository": "ArazSaieArasi3/OntoSPK",
+      "commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+      "path": ".github/workflows/documentation.yml",
+      "git_blob_sha": "eb7fd72bd4157c0ad9ca4af016d776a5a0e74872"
+    },
+    {
+      "repository": "ArazSaieArasi3/OntoSPK",
+      "commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+      "path": "wiki-src/Visualization.md",
+      "git_blob_sha": "5f6c35b949826bd889b35ecd56e7aff961c43f99"
+    },
+    {
+      "repository": "ArazSaieArasi3/OntoSPK",
+      "commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+      "path": "wiki-src/Versions.md",
+      "git_blob_sha": "a0779cb3a6df05a882d07cfbc25b5724c6b9c940"
+    },
+    {
+      "repository": "ArazSaieArasi3/OntoSPK",
+      "commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+      "path": "wiki-src/Formalization.md",
+      "git_blob_sha": "cbd039b9fde16530ec0b74692c6665071f30b514"
+    },
+    {
+      "repository": "ArazSaieArasi3/OntoSPK",
+      "commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+      "path": "docs/reference/formal/method.html",
+      "git_blob_sha": "a41b44c318ec72b5d8e1b79d33751f0160fd6a93"
+    },
+    {
+      "repository": "ArazSaieArasi3/OntoSPK",
+      "commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+      "path": "evaluation/pages-publication-verification.json",
+      "git_blob_sha": "41e257cf75118013ce580637a5b42aecf8b07a00"
+    },
+    {
+      "repository": "ArazSaieArasi3/OntoSPK",
+      "commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+      "path": "docs/tool-provenance.json",
+      "git_blob_sha": "e271f79e276f0e7a8e3c4ff1bb46bb731d236c4d"
+    }
+  ]
+}

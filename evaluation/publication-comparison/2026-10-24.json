@@ -1,0 +1,315 @@
+{
+  "schema": "riskium-publication-comparison-v1",
+  "audit_date": "2026-10-24",
+  "riskium_baseline_commit": "31f1dd07b73cc32cfcd1325b216d4cd1afc58541",
+  "ontospk_source_commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+  "scope": "Dated source/inventory, fresh native Wiki Git readback and live HTTPS availability/identity comparison; no new browser or scientific execution. Before the current documentation corrections.",
+  "wikis": [
+    {
+      "repository": "riskium",
+      "method": "Fresh read-only Git clone; no browser rendering",
+      "commit": "709bcf003a43b692eb543d21fa0c61546e5e0d15",
+      "files_sha256": {
+        "Evaluation.md": "aa380e96d6f5e94d2cc03df35af519b3fb9077d07a487233a256cdb0596ceceb",
+        "Home.md": "40ffd3a43646bbfea01b7852f3037ef5c9370be8b0e19af72d172f2f523d3543",
+        "Modeling-Decisions.md": "3e64151ce145c63cfe5a60f6cd2f38ab9b5f4e2d0a63c000b9a7a6e407a5a355",
+        "Requirements.md": "f8e51191912957e3315f8284ba04c5c424b8fb75ac6fc8a24dcb5052d17e3bb7",
+        "Scope.md": "5021a5b19e000aebc6916961008422bfc8085ecb57e45cb0deb0997adba3507f",
+        "Using-the-Model.md": "165ef82d13287380dec19f9893246deb884d3c905de3c8b51341f851dba6b200",
+        "_Sidebar.md": "68815047c6dd779e56167757b90bc23a8fdc5f119deed8b56a68ffb96197ecde"
+      },
+      "reader_pages": 6,
+      "matches_baseline_source": {
+        "Evaluation.md": true,
+        "Home.md": true,
+        "Modeling-Decisions.md": true,
+        "Requirements.md": true,
+        "Scope.md": true,
+        "Using-the-Model.md": true,
+        "_Sidebar.md": true
+      }
+    },
+    {
+      "repository": "ontospk",
+      "method": "Fresh read-only Git clone; no browser rendering",
+      "commit": "24bc0b25f935a639e9ee247f07a601baf243365d",
+      "files_sha256": {
+        "Citation.md": "7f69121651beb3b4c96bb6ec0839601dc4aea1099feac40363390ee808f319ad",
+        "Competency-Questions.md": "bfe97e1879da2605312970acfae81f62facfb33c81b7d37653155b58e19ca319",
+        "Conceptual-Model.md": "fd1c0c7db04b67bb64727e11e0d7bd27771f63f40014219860a9da577412da00",
+        "Constraints.md": "4d82350b6f08fac7c2561f3fdef0d1af6a497e2730d167c4e758666aff265e5b",
+        "Domains.md": "48987ff170078c0305433ace00b3a85074db9aa0899fd2112d73673e56a6d173",
+        "External-References.md": "af0f194b77eb543ff532c0ea7b9a12fd03bad2f6b0d22abeb6eb94d3094c09f5",
+        "Formalization.md": "b50dc748a2898ef752ae4d14c53a58dc8ba3af8dffc2cfab6183b4d1311dca10",
+        "Home.md": "2492668233cb4870c0599de04fe4b11e2684cb0ff4d261b31acd44e77585ba88",
+        "Limitations.md": "9972d6b9ebe705b37462f255849ed483074fdb47c5003e57d15ba61d9b5cda92",
+        "Overview.md": "6648d23ceb0120a8252fc9f848c8f4894ac5c040013b43ac04548059433265c9",
+        "Quality.md": "baefab4f93ca8eebb35e109cf3d8fb1868be23c86adbd1f72061b5d67a457f64",
+        "References.md": "4300c788a89ed69762d7c918e67e394b49c67d8081c9d9bbe38f5bb90c948733",
+        "Reproduce.md": "499afaaf0ac5f5f242fd31e6837cba74a515d68b925861fc9b69fd9c0ed51220",
+        "Versions.md": "e989a4dea1fb77b9d6d929dbba25058a5cfae76d208a4cfbb44c3e1f9c84d7a7",
+        "Visualization.md": "d260bbba6fcfeec71f83d3aae9c2235d6ffc33b0366ca83a07fa86b734cb834a",
+        "_Footer.md": "6a767e4abcca4347bee607b1eadc31e39f38f43836fb14f75f809d75174491ca",
+        "_Sidebar.md": "820acf2ced821219a819b9ccc715a48841bc91f472e56b82d6d06a94fa609aca"
+      },
+      "reader_pages": 15
+    }
+  ],
+  "http": [
+    {
+      "url": "https://arazsaiearasi3.github.io/riskium/",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:23.479280+00:00",
+      "status": 200,
+      "bytes": 349,
+      "sha256": "ba600ebd4cd8c51a2dd5d1cf8394b26ab6b1a2374e2843a9e586eca1346faabe",
+      "final_url": "https://arazsaiearasi3.github.io/riskium/",
+      "title": "Open Riskium documentation",
+      "meta_refresh": "0;url=releases/v0.3.1-rc.1/index.html",
+      "matches_baseline_local_bytes": true
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/index.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:23.479835+00:00",
+      "status": 200,
+      "bytes": 5516,
+      "sha256": "16aa2adcbf1a307e90bbaaad954df2b408893c50fc3a67f42ae465ce9d9b6357",
+      "final_url": "https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/index.html",
+      "title": "Enterprise risk knowledge, explicitly modeled \u2014 Riskium",
+      "meta_refresh": null,
+      "matches_baseline_local_bytes": true
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/widoco/index-en.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:23.480214+00:00",
+      "status": 200,
+      "bytes": 289278,
+      "sha256": "5b4f5e865a9cb6ce9d2c3a6ba250ca0182c3062624b6887e2f3c5bcaf6803c8d",
+      "final_url": "https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/widoco/index-en.html",
+      "title": "Riskium bounded typed-core OWL mapping",
+      "meta_refresh": null,
+      "matches_baseline_local_bytes": true
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/widoco/tool-provenance.json",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:23.480688+00:00",
+      "status": 200,
+      "bytes": 1788,
+      "sha256": "80fe09df88eb2adb751b225b20e093c36b7be4c5fbd5f23073b630810efd53b8",
+      "final_url": "https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/widoco/tool-provenance.json",
+      "identity": {
+        "widoco_version": "1.4.25",
+        "jar_sha256": "be57a270fffb91e55810fa308717e704a44e2e7c027a3d68125a49da6c8b4e2b",
+        "source_sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+        "source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5"
+      },
+      "matches_baseline_local_bytes": true
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/explore/index.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:28.119118+00:00",
+      "status": 200,
+      "bytes": 168678,
+      "sha256": "30264ef1f55352e62fd2c10299fcb086a7f430e930ea5a1397807c4244ab4626",
+      "final_url": "https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/explore/index.html",
+      "title": "Explore the asserted OWL core \u2014 Riskium",
+      "meta_refresh": null,
+      "matches_baseline_local_bytes": true
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/publication-manifest.json",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:28.158768+00:00",
+      "status": 200,
+      "bytes": 3397,
+      "sha256": "0309f85a77c8cc2a56af9f9621b22a5fc6146afc9e519f896c21e92b2cecc133",
+      "final_url": "https://arazsaiearasi3.github.io/riskium/releases/v0.3.1-rc.1/publication-manifest.json",
+      "identity": {
+        "release": "v0.3.1-rc.1",
+        "semantic_source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+        "model_version": "0.3.1"
+      },
+      "matches_baseline_local_bytes": true
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/riskium/current/index.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:28.249096+00:00",
+      "status": 404,
+      "bytes": 9379,
+      "response_sha256": "b620507312c5e97566a3c6cfaf99144fefc18a0da7d941401dfa0f5f58fb0368"
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/riskium/versions/index.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:28.260685+00:00",
+      "status": 404,
+      "bytes": 9379,
+      "response_sha256": "b620507312c5e97566a3c6cfaf99144fefc18a0da7d941401dfa0f5f58fb0368"
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/riskium/releases/v0.3.1/index.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:33.855272+00:00",
+      "status": 404,
+      "bytes": 9379,
+      "response_sha256": "b620507312c5e97566a3c6cfaf99144fefc18a0da7d941401dfa0f5f58fb0368"
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:33.888182+00:00",
+      "status": 200,
+      "bytes": 1245,
+      "sha256": "7e3b4be0ba6076265a28755743ff43f9b919d0c17ce4e12507f53b12a54e8d0e",
+      "final_url": "https://arazsaiearasi3.github.io/OntoSPK/",
+      "title": "OntoSPK documentation",
+      "meta_refresh": null
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/current/index.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:33.959889+00:00",
+      "status": 200,
+      "bytes": 6561,
+      "sha256": "5935a21c4af7193faa143c94780b4ba0d8ca1b8a81602888080f9825cc66c018",
+      "final_url": "https://arazsaiearasi3.github.io/OntoSPK/current/index.html",
+      "title": "Software product knowledge, explicitly modeled \u2014 OntoSPK",
+      "meta_refresh": null
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/current/widoco/index-en.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:34.048859+00:00",
+      "status": 200,
+      "bytes": 1469513,
+      "sha256": "8c6788cfa1c301fbc73da31b45b13e41152d321c5597a022eae0ec37d7cb2be0",
+      "final_url": "https://arazsaiearasi3.github.io/OntoSPK/current/widoco/index-en.html",
+      "title": "OntoSPK bounded logical profile",
+      "meta_refresh": null
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/current/explore/index.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:39.691784+00:00",
+      "status": 200,
+      "bytes": 7299,
+      "sha256": "35c40b95dc5240eacc70837612238493d6a055992009b5e444e06e93b0d2b3a1",
+      "final_url": "https://arazsaiearasi3.github.io/OntoSPK/current/explore/index.html",
+      "title": "Explore the OWL profile \u2014 OntoSPK",
+      "meta_refresh": null
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/current/webvowl/index.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:39.693381+00:00",
+      "status": 200,
+      "bytes": 25602,
+      "sha256": "6ab699b45ca43506ef34cf87f6b39c443caa20f4a5751cbfe7dd660d1812df87",
+      "final_url": "https://arazsaiearasi3.github.io/OntoSPK/current/webvowl/index.html",
+      "title": "OntoSPK \u2014 WebVOWL",
+      "meta_refresh": null
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/current/webvowl/data/ontospk.json",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:39.715874+00:00",
+      "status": 200,
+      "bytes": 168244,
+      "sha256": "a91ef0f186a93e6808e9db46b4a5e16bcd8277171210e753385187b57edb1274",
+      "final_url": "https://arazsaiearasi3.github.io/OntoSPK/current/webvowl/data/ontospk.json",
+      "identity": {}
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/current/reference/formal/index.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:39.840275+00:00",
+      "status": 200,
+      "bytes": 10481,
+      "sha256": "99b82fe3a2a704c6882ee6d543462612a166d9bb983edd00a4e0613f282c89d8",
+      "final_url": "https://arazsaiearasi3.github.io/OntoSPK/current/reference/formal/index.html",
+      "title": "OntoSPK first-order specification \u2014 OntoSPK",
+      "meta_refresh": null
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/current/reference/formal/method.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:45.327166+00:00",
+      "status": 200,
+      "bytes": 15636,
+      "sha256": "d825545faead593a7bc77fc5aba3611fb96843bb60d3eda033a0362bd780632c",
+      "final_url": "https://arazsaiearasi3.github.io/OntoSPK/current/reference/formal/method.html",
+      "title": "Formal specification and verification \u2014 OntoSPK",
+      "meta_refresh": null
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/current/reference/search.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:45.380106+00:00",
+      "status": 200,
+      "bytes": 107432,
+      "sha256": "123325fb004809394b65cdbc68ab71556dc56f3948b1986e0e0e7fb57ab2a184",
+      "final_url": "https://arazsaiearasi3.github.io/OntoSPK/current/reference/search.html",
+      "title": "Find a class or property \u2014 OntoSPK",
+      "meta_refresh": null
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/current/reference/diagrams/index.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:45.387715+00:00",
+      "status": 200,
+      "bytes": 9896,
+      "sha256": "e5bd8843b26a43dc774065f14cff5911b9c4845e21d91e49e49429dab2971bef",
+      "final_url": "https://arazsaiearasi3.github.io/OntoSPK/current/reference/diagrams/index.html",
+      "title": "Diagrams, domains and source traceability \u2014 OntoSPK",
+      "meta_refresh": null
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/versions/index.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:46.120866+00:00",
+      "status": 200,
+      "bytes": 1257,
+      "sha256": "eb8d30a18add7407d74eefca04a363a6d113e26d722b19833c87675d5d4af11e",
+      "final_url": "https://arazsaiearasi3.github.io/OntoSPK/versions/index.html",
+      "title": "OntoSPK documentation",
+      "meta_refresh": null
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/index.html",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:51.335969+00:00",
+      "status": 200,
+      "bytes": 5832,
+      "sha256": "8944b95eb90ffaf6eaefd4ae3fcea129ff29386946264bea88b91bab023d3731",
+      "final_url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/index.html",
+      "title": "Software product knowledge, explicitly modeled \u2014 OntoSPK",
+      "meta_refresh": null
+    },
+    {
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/publication-manifest.json",
+      "method": "HTTPS GET",
+      "checked_at_utc": "2026-10-24T18:11:51.340043+00:00",
+      "status": 200,
+      "bytes": 31352,
+      "sha256": "d515833eaf33ccfff36670ac5c4fa4d6c32dffafb631a7e9d920038c32599883",
+      "final_url": "https://arazsaiearasi3.github.io/OntoSPK/publication-manifest.json",
+      "identity": {
+        "current_source_commit": "5b67aa5bcad8876d36337fcf89937536ddf9dca9",
+        "ontology_core": "v2.0.0"
+      },
+      "manifest_file_count": 267
+    }
+  ],
+  "limits": [
+    "Page counts do not measure documentation quality.",
+    "HTTP 200 does not prove WebVOWL JavaScript initialization or accessibility.",
+    "OntoSPK current and historical Wiki snapshots are separate sources; current-source equality is not presumed.",
+    "A current HTTP 404 identifies the checked route at this date, not a permanent absence of every possible route.",
+    "Original Riskium stable source/assets and historical receipts are unchanged."
+  ]
+}
