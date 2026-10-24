@@ -1,8 +1,12 @@
 # Semantic assurance: what can and cannot be quantified
 
-## Current release review policy — owner decision, 23 October 2026
+## Current publication and review state — 24 October 2026
 
-The owner will personally judge the current release with assistant support. [Owner-review policy and pending register](owner-review/README.md) and #7 govern that current release gate; #23 preserves independent review as future nonblocking work. This changes the first-release acceptance process, not the meaning of independence or any historical result. Zero owner ratings and zero independent adjudications are recorded so far. The independent protocols and percentage definitions below remain future evidence proposals, and are not prerequisites for calling the first scoped research artifact owner-reviewed. [Final-release gates](../docs/stable-release-gates.md) still require actual attributable owner judgments, all retained technical claims supported, and no unresolved critical defect.
+The owner's eleven attributable decisions are recorded in [the owner register](owner-review/README.md); accepted scope, ORSD 0.4.3 and manuscript 7.0.8 are synchronized. [Stable v0.3.1](releases/v0.3.1-publication.json) is published and independently downloaded/verified as a bounded owner-reviewed research artifact. This is not independent semantic validation or full original requirement fulfillment.
+
+The new [independent-review protocol](independent-review/README.md) predeclares 40 initial groups and preserves an empty response register under open #23. There are zero actual independent ratings. [Post-release development](../docs/post-release-work.md) adds a separately bound shared-graph engineering supplement; historical engine outcomes remain unchanged.
+
+The sections below retain the earlier assurance plan and its checkpoint-specific pending statuses. Subsequent finite source cohorts, owner judgments, manuscript corrections and stable publication are identified above and in the current roadmap; those older planning statuses are not current claims that #7/#14 or publication remain pending. The independent protocols and percentage definitions remain proposals for evidence, not prerequisites for calling the first scoped research artifact owner-reviewed.
 
 ## Current answer for Riskium
 

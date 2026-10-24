@@ -1,0 +1,1096 @@
+{
+  "schema": "riskium-independent-review-protocol-v1",
+  "protocol_version": "0.1.0",
+  "date_local": "2026-10-24",
+  "issue": 23,
+  "status": "PREPARED_NO_REVIEWER_RESPONSES",
+  "baseline_release": "v0.3.1",
+  "model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "inventory_path": "evaluation/semantic-review-register.json",
+  "inventory_sha256": "4920fca48a7eac5fd00e5cbfdef904954ebe6c022e6e2af79ec1894892645332",
+  "full_inventory": {
+    "core": 295,
+    "boundary": 4,
+    "acceptance": 20
+  },
+  "initial_cohort_selection": "Purposive identity, documentation/referent, responsibility, version/scale and boundary risk cohort; not representative/random or a universal correctness denominator.",
+  "initial_cohort": [
+    {
+      "group_id": "SEM-RKM-C003",
+      "source_element": "RKM-C003",
+      "source_sha256": "fcd741703aa9ea8986852e191e680a79052abd37ec6d344c053e7cdfc3b72390",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C004",
+      "source_element": "RKM-C004",
+      "source_sha256": "f43537de4bb78d647e7b9d8bfe95bab3211d3a536890f0ea81161a90325ff15b",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C007",
+      "source_element": "RKM-C007",
+      "source_sha256": "be60a18ada90037c32e0c4b5d6eea635cba1199846e9bb20633fd337993334f1",
+      "cohort": "boundary",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C010",
+      "source_element": "RKM-C010",
+      "source_sha256": "205fa2dbbfb54f1af72ab231083658264c2a23f3d4e3f1f0198813275facfc5d",
+      "cohort": "boundary",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C014",
+      "source_element": "RKM-C014",
+      "source_sha256": "98b70fa0d3876e1bbc5034816a39db32cf699fc201998166a1f145348e7461d0",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C015",
+      "source_element": "RKM-C015",
+      "source_sha256": "44701f9b05e19d2c1a6a594fea62618b4e1b67cd7ceee77be0fb5f3f180b7c43",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C016",
+      "source_element": "RKM-C016",
+      "source_sha256": "ad19ff55940f57a7db26d4a379c2fafd36ac884e832687ffd2caecb17daa6369",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C022",
+      "source_element": "RKM-C022",
+      "source_sha256": "906fddbf11ab6cbf7d1e5681a5d4f9edd71608cc6e6237ff60da1c6674fa2245",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C023",
+      "source_element": "RKM-C023",
+      "source_sha256": "bd536a2f98e0ce4ffbf48d112b5fe711b71701a5471d969ea267f5f2bd1477f4",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C024",
+      "source_element": "RKM-C024",
+      "source_sha256": "9fec7bb50fce47a9117c1eb9fdd306cb98a4b217349a4dd67d336c381805e687",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C032",
+      "source_element": "RKM-C032",
+      "source_sha256": "cb6c8f2f09a9b0c06bb366c1185bf6f36554e8f617e3d78485aef296de4e94f4",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C034",
+      "source_element": "RKM-C034",
+      "source_sha256": "5c44b7bc2fbca8e5e272c24054d6f1dcece2580b3b44d701efd90194f536eae2",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C035",
+      "source_element": "RKM-C035",
+      "source_sha256": "995dc865eedb36afb8ffc809da2d23acd16a03352eb97444490d7aeacc24da24",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C036",
+      "source_element": "RKM-C036",
+      "source_sha256": "aea21fc5c3376a171ae25e9a3c438e434bae000fc625602e3ead61d48c70f3ec",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C039",
+      "source_element": "RKM-C039",
+      "source_sha256": "877d9b1cc8c7d3d2e81842271149b109501d35b18d8b0054d4dd45d593df24fd",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C045",
+      "source_element": "RKM-C045",
+      "source_sha256": "c0209662e848fda53ac034d99849d04f7f4c5ecdc97dede06319643d42c1550a",
+      "cohort": "boundary",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C051",
+      "source_element": "RKM-C051",
+      "source_sha256": "8ad8d85fab998e3e021f014bceb92ecc627fac5261f7dfbaf24a1706f7815630",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C052",
+      "source_element": "RKM-C052",
+      "source_sha256": "9c91d724c3951a3c06c4fe48f76c65450bcc2963f5269688a5ab3fe5dfea65c9",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-C070",
+      "source_element": "RKM-C070",
+      "source_sha256": "4f2c693ee8f8df16178e953b51ed6ac4499c653768a238eca3fa77ceae120490",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RKM-X01",
+      "source_element": "RKM-X01",
+      "source_sha256": "627489e2fce0e30d81d5c711e1f53c4c936b485d63e5e7fa47018fb654637547",
+      "cohort": "core",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-EXT-OBJECT",
+      "source_element": "EXT-OBJECT",
+      "source_sha256": "0dd6436a14a1f350d5df5c45a6bd28dd5acf9fadaf9cc203c6a95fb037f18b40",
+      "cohort": "boundary",
+      "family": "Concept",
+      "review_aspects": [
+        "definition and scope",
+        "UFO/OntoUML category",
+        "identity and dependence",
+        "domain placement"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-R-01",
+      "source_element": "R-01",
+      "source_sha256": "46e8329fa77f29b9f313a8ee10e2b5443bba8975d0ea17cc0f5be805d84429d0",
+      "cohort": "core",
+      "family": "Relation",
+      "review_aspects": [
+        "intended relationship",
+        "endpoint kinds and direction",
+        "source-end multiplicity",
+        "target-end multiplicity",
+        "relation stereotype"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-R-33",
+      "source_element": "R-33",
+      "source_sha256": "538889cde9c2612d2308c51c5fac154805920fb097fe5a2e176a5b30ba1620a9",
+      "cohort": "core",
+      "family": "Relation",
+      "review_aspects": [
+        "intended relationship",
+        "endpoint kinds and direction",
+        "source-end multiplicity",
+        "target-end multiplicity",
+        "relation stereotype"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-R-34",
+      "source_element": "R-34",
+      "source_sha256": "975df5034f48e06f4dacd3e73a5e68fe01369db73c97d598b4460a3443d5c093",
+      "cohort": "core",
+      "family": "Relation",
+      "review_aspects": [
+        "intended relationship",
+        "endpoint kinds and direction",
+        "source-end multiplicity",
+        "target-end multiplicity",
+        "relation stereotype"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-R-37",
+      "source_element": "R-37",
+      "source_sha256": "5036e10224628b1b2b44204cb9711a1cdac7787ad5f5bdf10e00c1b8aee626e9",
+      "cohort": "core",
+      "family": "Relation",
+      "review_aspects": [
+        "intended relationship",
+        "endpoint kinds and direction",
+        "source-end multiplicity",
+        "target-end multiplicity",
+        "relation stereotype"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-R-56",
+      "source_element": "R-56",
+      "source_sha256": "da564b0b402f8f39607e6439b2cf0e04c45994b622187903d123320e3505321c",
+      "cohort": "core",
+      "family": "Relation",
+      "review_aspects": [
+        "intended relationship",
+        "endpoint kinds and direction",
+        "source-end multiplicity",
+        "target-end multiplicity",
+        "relation stereotype"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-R-57",
+      "source_element": "R-57",
+      "source_sha256": "59149722478f6d13b1d304a2281d70ddf1805fb00deca7d23067a434cf1e2945",
+      "cohort": "core",
+      "family": "Relation",
+      "review_aspects": [
+        "intended relationship",
+        "endpoint kinds and direction",
+        "source-end multiplicity",
+        "target-end multiplicity",
+        "relation stereotype"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RX-006",
+      "source_element": "RX-006",
+      "source_sha256": "d07c23aa7c324d9b32037ed6a0325cbefc259398b45d0639c008f297947c6afe",
+      "cohort": "core",
+      "family": "Relation",
+      "review_aspects": [
+        "intended relationship",
+        "endpoint kinds and direction",
+        "source-end multiplicity",
+        "target-end multiplicity",
+        "relation stereotype"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RX-014",
+      "source_element": "RX-014",
+      "source_sha256": "b9ac55d9e60af2212f16d8811f0f27e5282c45944fc659b79c69300efa027409",
+      "cohort": "core",
+      "family": "Relation",
+      "review_aspects": [
+        "intended relationship",
+        "endpoint kinds and direction",
+        "source-end multiplicity",
+        "target-end multiplicity",
+        "relation stereotype"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RX-015",
+      "source_element": "RX-015",
+      "source_sha256": "8ab593162acaf5bb8de0d955e0ed6837fad975e6a7362051f5e446957574a0d9",
+      "cohort": "core",
+      "family": "Relation",
+      "review_aspects": [
+        "intended relationship",
+        "endpoint kinds and direction",
+        "source-end multiplicity",
+        "target-end multiplicity",
+        "relation stereotype"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-RX-016",
+      "source_element": "RX-016",
+      "source_sha256": "02749770459bfc40c86366c1a6266f283d822bce522ca82d34af3082b4b23ebc",
+      "cohort": "core",
+      "family": "Relation",
+      "review_aspects": [
+        "intended relationship",
+        "endpoint kinds and direction",
+        "source-end multiplicity",
+        "target-end multiplicity",
+        "relation stereotype"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-C-01",
+      "source_element": "C-01",
+      "source_sha256": "b8981fd05c289bf832071a085ce00883e0ea5791f7206b16ffb94142670cf30a",
+      "cohort": "core",
+      "family": "Constraint",
+      "review_aspects": [
+        "source-backed intended rule",
+        "scope and exceptions",
+        "positive and prohibited instances",
+        "adequacy of formal or application disposition"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-C-02",
+      "source_element": "C-02",
+      "source_sha256": "20374064974b32c0775e88a8de15be26fa313e5bdadd80c3d76cc4cc8f824966",
+      "cohort": "core",
+      "family": "Constraint",
+      "review_aspects": [
+        "source-backed intended rule",
+        "scope and exceptions",
+        "positive and prohibited instances",
+        "adequacy of formal or application disposition"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-C-03",
+      "source_element": "C-03",
+      "source_sha256": "bd7dc6f909bb84905033406acde608e4f6b942123867fcef568a2b00e266c53a",
+      "cohort": "core",
+      "family": "Constraint",
+      "review_aspects": [
+        "source-backed intended rule",
+        "scope and exceptions",
+        "positive and prohibited instances",
+        "adequacy of formal or application disposition"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-C-06",
+      "source_element": "C-06",
+      "source_sha256": "5cc2df41187e6be1b20fcc4bba23658707c780c7652f1fbc8854752195e2cd60",
+      "cohort": "core",
+      "family": "Constraint",
+      "review_aspects": [
+        "source-backed intended rule",
+        "scope and exceptions",
+        "positive and prohibited instances",
+        "adequacy of formal or application disposition"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-C-08",
+      "source_element": "C-08",
+      "source_sha256": "09cf3c7736be9f2d79337c460f3d10506f23c5607bd8d2e84a47f0ec85cf0115",
+      "cohort": "core",
+      "family": "Constraint",
+      "review_aspects": [
+        "source-backed intended rule",
+        "scope and exceptions",
+        "positive and prohibited instances",
+        "adequacy of formal or application disposition"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-C-13",
+      "source_element": "C-13",
+      "source_sha256": "a3275946a1ecae894dfea88cc9fe521dc9d6c5893e277def5efdc70813b6cfa6",
+      "cohort": "core",
+      "family": "Constraint",
+      "review_aspects": [
+        "source-backed intended rule",
+        "scope and exceptions",
+        "positive and prohibited instances",
+        "adequacy of formal or application disposition"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-C-18",
+      "source_element": "C-18",
+      "source_sha256": "3f398a9763f6e4fbfb6115961081ac4b665127ffa3e281907ab89935016fe799",
+      "cohort": "core",
+      "family": "Constraint",
+      "review_aspects": [
+        "source-backed intended rule",
+        "scope and exceptions",
+        "positive and prohibited instances",
+        "adequacy of formal or application disposition"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-C-24",
+      "source_element": "C-24",
+      "source_sha256": "5412b5c876638fd39651d758163efe0d935c4962bfc743c2b190d7672daeeeec",
+      "cohort": "core",
+      "family": "Constraint",
+      "review_aspects": [
+        "source-backed intended rule",
+        "scope and exceptions",
+        "positive and prohibited instances",
+        "adequacy of formal or application disposition"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    },
+    {
+      "group_id": "SEM-C-25",
+      "source_element": "C-25",
+      "source_sha256": "3086dd03766f6ddd5f362d54ce570f5bcd05a8799db0fd2c4b20bc8778193dd9",
+      "cohort": "core",
+      "family": "Constraint",
+      "review_aspects": [
+        "source-backed intended rule",
+        "scope and exceptions",
+        "positive and prohibited instances",
+        "adequacy of formal or application disposition"
+      ],
+      "packet": [
+        "ontology/riskium-model.json",
+        "evaluation/coverage-contract.json"
+      ],
+      "counterexample_prompts": [
+        "Identify a source-backed counterexample in which a documentary assertion would incorrectly imply an actual referent, occurrence, effectiveness or identity.",
+        "Identify missing or conflicting identity/context/version/provenance evidence that must remain unresolved; explain any required scope restriction."
+      ],
+      "expectation": "Actual independent judgment required for every listed aspect; these prompts are hypothetical challenges, not real-case or human-review results.",
+      "after_initial_ratings_context": [
+        "evaluation/owner-review/accepted-scope.json"
+      ]
+    }
+  ],
+  "eligibility": {
+    "required_roles": [
+      "independent_risk_domain_reviewer",
+      "independent_ontology_engineer"
+    ],
+    "minimum_distinct_reviewers": 2,
+    "excluded": [
+      "Riskium authors and artifact designers",
+      "This assistant or automated tests",
+      "A reviewer whose initial ratings were produced jointly with the other reviewer"
+    ],
+    "declarations": [
+      "Actual identity and relevant expertise",
+      "Affiliation and relationship/conflict disclosure",
+      "No participation in designing the rated artifact",
+      "Independent initial ratings submitted before discussion; actual response evidence retained"
+    ]
+  },
+  "ratings": [
+    "ACCEPT",
+    "ACCEPT_WITH_LIMITATION",
+    "REVISE",
+    "REJECT",
+    "ABSTAIN"
+  ],
+  "severity": [
+    "CRITICAL",
+    "MAJOR",
+    "MINOR",
+    "NONE"
+  ],
+  "response_requirements": [
+    "Group identifier and exact artifact/source SHA-256",
+    "Reviewer identity/role/eligibility declaration and attributable actual response reference",
+    "Separate rating and rationale for every declared aspect",
+    "Supporting primary-source locators and counterexamples, or explicit missing evidence",
+    "Response timestamp; initial ratings append-only; corrections create linked later records"
+  ],
+  "packet_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "evaluation/coverage-contract.json": "65bf3818543ccbadd2bd94ac9fb8fc42586dbb3e71eedced1797224afbd2f080",
+    "evaluation/owner-review/accepted-scope.json": "a7da025a831114999529056aad105eb31ffcee1e4a88866fecbd4aa917da1a5c",
+    "references/corpus.json": "eb23983d2194c19d8b115da147b14cad89607e3e63181217add4e1e7df0f16f7",
+    "evaluation/sources/cq06/cohort.json": "bc31b4af2f2d2cc4cf1c95bfeafdcb918a29f33d6400693723e7d8ed7893aa29",
+    "evaluation/sources/cq06/inspection.json": "6501660f5aa34144995d293c1acdad01315e515ad578ca256cd06358e815b4ee",
+    "evaluation/sources/cq0708/cohort.json": "525c6f69cff592baf705ec48ee52b629d2b0f61e93adcbedf9535b5993843127",
+    "evaluation/sources/cq0708/inspection.json": "c8dc6f556fe0bf4a77bad0c35c7a99f8fd5c0f731d7019456c3afb352d1d377d",
+    "evaluation/integration/cases.json": "2c23d2928df40fc4d6b483ecfa459579f2438b8bbac8f7d8d8db0f0077799224",
+    "implementation/relational/0.1.0/mapping.json": "11c55fcc7bf7dc47c1f6a5acddf0fd7f5ceac8027ff62ff55816f7d500fc50f7"
+  },
+  "process": [
+    "Freeze protocol/cohort/source packets before any response; obtain actual reviewer eligibility declarations.",
+    "Give exact model/source/counterexample packets to each reviewer; keep initial ratings separate. Author dispositions are contextual material to inspect after independent initial judgments.",
+    "Preserve raw responses and aspect ratings; unknown/abstain/missing never become acceptance.",
+    "Record disagreements; a third independent adjudicator resolves them with cited reasons, preserving initial ratings.",
+    "Report completed paired groups, accepted/revised/rejected/unresolved groups, and reviewed/full-inventory counts separately. All aspects and both roles are needed for completion.",
+    "Report categorical agreement only on genuinely paired comparable initial ratings; no overall truth percentage or unjustified confidence interval.",
+    "Update affected claims/scope/artifact versions only from actual dispositions. Unresolved critical findings in retained claims require correction or explicit withdrawal."
+  ],
+  "current_results": {
+    "eligible_reviewers_recorded": 0,
+    "initial_ratings_recorded": 0,
+    "paired_groups_adjudicated": 0,
+    "independent_semantic_acceptance": false,
+    "overall_semantic_correctness_percent": null
+  },
+  "blocks_published_v0_3_1": false
+}

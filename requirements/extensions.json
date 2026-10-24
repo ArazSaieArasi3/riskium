@@ -1,0 +1,362 @@
+{
+  "schema": "riskium-extension-boundaries-v1",
+  "register_version": "0.1.0",
+  "date_local": "2026-10-24",
+  "issue": 16,
+  "baseline_release": "v0.3.1",
+  "compatible_model": "0.3.1",
+  "maintenance_authority": "Existing Riskium three-author team identified in CITATION.cff; no new coauthor, reviewer or external maintainer appointment.",
+  "status": "BOUNDARY_AND_ADOPTION_POLICY_ONLY",
+  "model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "references_sha256": "eb23983d2194c19d8b115da147b14cad89607e3e63181217add4e1e7df0f16f7",
+  "citation_sha256": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
+  "rights_sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+  "native_semantics_changed": false,
+  "external_imports_added": false,
+  "adoption_decisions_recorded": 0,
+  "rows": [
+    {
+      "id": "RKM-C007",
+      "kind": "OPTIONAL_BOUNDARY",
+      "title": "RiskSource",
+      "status": "DEFERRED_NOT_IMPLEMENTED",
+      "riskium_ownership": "Documentary reference only; Riskium author team maintains RKM-X06",
+      "external_ownership": "Bearer identity/category belongs to its explicitly selected external authority; none selected by this register.",
+      "current_representation": "RKM-X06",
+      "applicability": "Which cited evidence resolves the source reference to an independently identified bearer, without promoting a possible source to an established occurrence?",
+      "required_cq": "Which cited evidence resolves the source reference to an independently identified bearer, without promoting a possible source to an established occurrence?",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "RKM-C010",
+      "kind": "OPTIONAL_BOUNDARY",
+      "title": "Consequence",
+      "status": "DEFERRED_NOT_IMPLEMENTED",
+      "riskium_ownership": "Documentary reference only; Riskium author team maintains RKM-C025",
+      "external_ownership": "Bearer identity/category belongs to its explicitly selected external authority; none selected by this register.",
+      "current_representation": "RKM-C025",
+      "applicability": "Which cited evidence establishes an actual outcome, separately from a possible consequence statement and any causal claim?",
+      "required_cq": "Which cited evidence establishes an actual outcome, separately from a possible consequence statement and any causal claim?",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "RKM-C045",
+      "kind": "OPTIONAL_BOUNDARY",
+      "title": "RiskControl",
+      "status": "DEFERRED_NOT_IMPLEMENTED",
+      "riskium_ownership": "Documentary reference only; Riskium author team maintains RKM-X05",
+      "external_ownership": "Bearer identity/category belongs to its explicitly selected external authority; none selected by this register.",
+      "current_representation": "RKM-X05",
+      "applicability": "Which cited evidence distinguishes a control reference, a real control bearer, implementation and measured effectiveness?",
+      "required_cq": "Which cited evidence distinguishes a control reference, a real control bearer, implementation and measured effectiveness?",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "R-66",
+      "kind": "OPTIONAL_BRIDGE",
+      "title": "implementsControl",
+      "source": "RKM-C044",
+      "target": "RKM-C045",
+      "status": "DEFERRED_NOT_IMPLEMENTED",
+      "riskium_ownership": "Riskium author team owns this proposed bridge definition; no native/OWL property is currently exported.",
+      "external_ownership": "External referent identity and evidence authority must be selected explicitly, separately from the Riskium information artifact.",
+      "applicability": "Which cited evidence distinguishes a control reference, a real control bearer, implementation and measured effectiveness?",
+      "required_cq": "Can implementsControl be resolved with source/identity/edition evidence while the same incomplete input remains unresolved without fabricated facts?",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "R-67",
+      "kind": "OPTIONAL_BRIDGE",
+      "title": "controlAddressing",
+      "source": "RKM-C045",
+      "target": "RKM-X01",
+      "status": "DEFERRED_NOT_IMPLEMENTED",
+      "riskium_ownership": "Riskium author team owns this proposed bridge definition; no native/OWL property is currently exported.",
+      "external_ownership": "External referent identity and evidence authority must be selected explicitly, separately from the Riskium information artifact.",
+      "applicability": "Which cited evidence distinguishes a control reference, a real control bearer, implementation and measured effectiveness?",
+      "required_cq": "Can controlAddressing be resolved with source/identity/edition evidence while the same incomplete input remains unresolved without fabricated facts?",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "RX-005",
+      "kind": "OPTIONAL_BRIDGE",
+      "title": "hasSource",
+      "source": "RKM-X01",
+      "target": "RKM-C007",
+      "status": "DEFERRED_NOT_IMPLEMENTED",
+      "riskium_ownership": "Riskium author team owns this proposed bridge definition; no native/OWL property is currently exported.",
+      "external_ownership": "External referent identity and evidence authority must be selected explicitly, separately from the Riskium information artifact.",
+      "applicability": "Which cited evidence resolves the source reference to an independently identified bearer, without promoting a possible source to an established occurrence?",
+      "required_cq": "Can hasSource be resolved with source/identity/edition evidence while the same incomplete input remains unresolved without fabricated facts?",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "RX-010",
+      "kind": "OPTIONAL_BRIDGE",
+      "title": "refersToActualOutcome",
+      "source": "RKM-C025",
+      "target": "RKM-C010",
+      "status": "DEFERRED_NOT_IMPLEMENTED",
+      "riskium_ownership": "Riskium author team owns this proposed bridge definition; no native/OWL property is currently exported.",
+      "external_ownership": "External referent identity and evidence authority must be selected explicitly, separately from the Riskium information artifact.",
+      "applicability": "Which cited evidence establishes an actual outcome, separately from a possible consequence statement and any causal claim?",
+      "required_cq": "Can refersToActualOutcome be resolved with source/identity/edition evidence while the same incomplete input remains unresolved without fabricated facts?",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "RX-020",
+      "kind": "OPTIONAL_BRIDGE",
+      "title": "resolvesToControl",
+      "source": "RKM-X05",
+      "target": "RKM-C045",
+      "status": "DEFERRED_NOT_IMPLEMENTED",
+      "riskium_ownership": "Riskium author team owns this proposed bridge definition; no native/OWL property is currently exported.",
+      "external_ownership": "External referent identity and evidence authority must be selected explicitly, separately from the Riskium information artifact.",
+      "applicability": "Which cited evidence distinguishes a control reference, a real control bearer, implementation and measured effectiveness?",
+      "required_cq": "Can resolvesToControl be resolved with source/identity/edition evidence while the same incomplete input remains unresolved without fabricated facts?",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "RK2-006",
+      "kind": "OPTIONAL_BRIDGE",
+      "title": "hasEstablishedConsequence",
+      "source": "RKM-C004",
+      "target": "RKM-C010",
+      "status": "DEFERRED_NOT_IMPLEMENTED",
+      "riskium_ownership": "Riskium author team owns this proposed bridge definition; no native/OWL property is currently exported.",
+      "external_ownership": "External referent identity and evidence authority must be selected explicitly, separately from the Riskium information artifact.",
+      "applicability": "Which cited evidence establishes an actual outcome, separately from a possible consequence statement and any causal claim?",
+      "required_cq": "Can hasEstablishedConsequence be resolved with source/identity/edition evidence while the same incomplete input remains unresolved without fabricated facts?",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "RK3-002",
+      "kind": "OPTIONAL_BRIDGE",
+      "title": "resolvesToSource",
+      "source": "RKM-X06",
+      "target": "RKM-C007",
+      "status": "DEFERRED_NOT_IMPLEMENTED",
+      "riskium_ownership": "Riskium author team owns this proposed bridge definition; no native/OWL property is currently exported.",
+      "external_ownership": "External referent identity and evidence authority must be selected explicitly, separately from the Riskium information artifact.",
+      "applicability": "Which cited evidence resolves the source reference to an independently identified bearer, without promoting a possible source to an established occurrence?",
+      "required_cq": "Can resolvesToSource be resolved with source/identity/edition evidence while the same incomplete input remains unresolved without fabricated facts?",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "EXT-OBJECT",
+      "kind": "FOUNDATIONAL_ANCHOR",
+      "title": "External Object proxy",
+      "status": "LOCAL_PROXY_ONLY",
+      "riskium_ownership": "Riskium maintains the local EXT-OBJECT proxy and its explicit modeling boundary.",
+      "external_ownership": "External object kinds supply bearer identity; UFO/gUFO references do not transfer third-party ownership or imply an installed import.",
+      "applicability": "Vulnerability bearer typing; no additional Riskium kind or risk case.",
+      "required_cq": "Does a selected bearer retain its external kind identity without treating the local abstract proxy as a Riskium identity supplier?",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "EXT-BUSINESS",
+      "kind": "DOMAIN_PROPOSAL",
+      "title": "Business-domain profile",
+      "status": "DEFERRED_NOT_IMPLEMENTED",
+      "riskium_ownership": "Riskium author team owns any future documentary adapter; domain profile maintainer is unassigned until adoption.",
+      "external_ownership": "Domain vocabulary/source/provider authority must be named at adoption; no current external alignment.",
+      "applicability": "Separate optional versioned profile, never an implied current capability.",
+      "required_cq": "Do independently sourced business cases preserve case/entry/scenario identity, objective context and method-version pins?",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "EXT-HEALTH",
+      "kind": "DOMAIN_PROPOSAL",
+      "title": "Health-domain profile",
+      "status": "DEFERRED_NOT_IMPLEMENTED",
+      "riskium_ownership": "Riskium author team owns any future documentary adapter; domain profile maintainer is unassigned until adoption.",
+      "external_ownership": "Domain vocabulary/source/provider authority must be named at adoption; no current external alignment.",
+      "applicability": "Separate optional versioned profile, never an implied current capability.",
+      "required_cq": "Do independently adjudicated health cases preserve source claims, temporal context and scenario/occurrence boundaries without claiming clinical validity?",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "EXT-INTELLIGENCE",
+      "kind": "DOMAIN_PROPOSAL",
+      "title": "Risk-intelligence profile",
+      "status": "DEFERRED_NOT_IMPLEMENTED",
+      "riskium_ownership": "Riskium author team owns any future documentary adapter; domain profile maintainer is unassigned until adoption.",
+      "external_ownership": "Domain vocabulary/source/provider authority must be named at adoption; no current external alignment.",
+      "applicability": "Separate optional versioned profile, never an implied current capability.",
+      "required_cq": "Can sourced signals retain origin, corrections, uncertainty and unresolved case identity without inventing an occurrence or managed RiskCase?",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "ALIGN-COVER",
+      "kind": "ALIGNMENT_CANDIDATE",
+      "title": "REF-COVER",
+      "status": "CANDIDATE_UNASSESSED",
+      "riskium_ownership": "Riskium author team owns a proposed future mapping, not the external ontology.",
+      "external_ownership": "The cited external authors/maintainers retain their ontology/source authority and applicable terms; no import or equivalence is asserted.",
+      "applicability": "A prior-art citation is available in references/corpus.json; it establishes neither semantic alignment nor compatibility.",
+      "required_cq": "Which exact versioned REF-COVER definition and Riskium element preserve identity and expected answers under a reviewed directional mapping?",
+      "source_register_id": "REF-COVER",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "ALIGN-ROSE",
+      "kind": "ALIGNMENT_CANDIDATE",
+      "title": "REF-ROSE",
+      "status": "CANDIDATE_UNASSESSED",
+      "riskium_ownership": "Riskium author team owns a proposed future mapping, not the external ontology.",
+      "external_ownership": "The cited external authors/maintainers retain their ontology/source authority and applicable terms; no import or equivalence is asserted.",
+      "applicability": "A prior-art citation is available in references/corpus.json; it establishes neither semantic alignment nor compatibility.",
+      "required_cq": "Which exact versioned REF-ROSE definition and Riskium element preserve identity and expected answers under a reviewed directional mapping?",
+      "source_register_id": "REF-ROSE",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    },
+    {
+      "id": "ALIGN-WATCHDOG",
+      "kind": "ALIGNMENT_CANDIDATE",
+      "title": "REF-WATCHDOG",
+      "status": "CANDIDATE_UNASSESSED",
+      "riskium_ownership": "Riskium author team owns a proposed future mapping, not the external ontology.",
+      "external_ownership": "The cited external authors/maintainers retain their ontology/source authority and applicable terms; no import or equivalence is asserted.",
+      "applicability": "A prior-art citation is available in references/corpus.json; it establishes neither semantic alignment nor compatibility.",
+      "required_cq": "Which exact versioned REF-WATCHDOG definition and Riskium element preserve identity and expected answers under a reviewed directional mapping?",
+      "source_register_id": "REF-WATCHDOG",
+      "adoption_evidence": [
+        "Pin external ontology/document edition, identifier, exact source locator and authority.",
+        "Review identity, ontological category, dependence and alignment direction; no label-based equivalence.",
+        "Retain raw reference, missing/conflicting identity and correction lineage.",
+        "Declare positive, prohibited-inference, incomplete and mutation cases with expected CQ answers before execution.",
+        "Record redistribution/attribution terms or keep external material outside the public package.",
+        "Review affected requirements, native/OWL mappings, application/database profiles and manuscript claims; increment only affected components."
+      ],
+      "blocks_v0_3_1": false
+    }
+  ]
+}

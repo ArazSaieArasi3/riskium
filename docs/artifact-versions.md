@@ -17,6 +17,8 @@ This lightweight compatibility record implements the owner's 24 October 2026 req
 
 ## Change rules
 
+Post-release supplements are recorded in the separate [development overlay](../releases/development-components.json): shared-graph validation, exhaustive relational inventory, extension boundaries, prepared independent review and source-publication reconciliation each have version 0.1.0. The overlay binds the exact accepted matrix and current development inputs; it changes none of the ten published baseline components and makes no new publication or semantic-acceptance claim. [Current progress](post-release-work.md) distinguishes implementation, static accounting and pending real judgments.
+
 - Components retain independent versions. A package release pins an explicit set of component versions, exact content hashes and source commit.
 - An editorial paper change increments the paper revision only; semantic model changes need reviewed model versioning and refreshed affected mappings/tests.
 - An ORSD scope/evidence edit increments the ORSD documentation revision; no silent deletion/downgrading of original MUST priorities.

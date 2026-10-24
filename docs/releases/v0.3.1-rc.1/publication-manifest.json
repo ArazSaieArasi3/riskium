@@ -8,7 +8,7 @@
   "documentation_note": "Post-release documentation projection of immutable semantic inputs; not an additional semantic validation run.",
   "guide_sources_sha256": {
     "AUTHORS.md": "c20830d719b9b1d1b13d85cac69253274a974edb79b3a2c56148fd900d038447",
-    "docs/artifact-versions.md": "29f0cd966eeadf7dc39e52bbf88e5d38c8ba5ab5c35bc0ab7c72ce2a89070af9",
+    "docs/artifact-versions.md": "1d45870a87fb6ca3c6d0fa06f3744b9c041d69531dc49153e7d521bea566887d",
     "docs/modeling-decisions.md": "c5b760e9b2f5620e8cd2662026b89e98e00843dcc26e0dc1b401256f39cb76a0",
     "docs/overview.md": "def7d12867cc66f190b08ae499e809f3598723f25844847207f2e3753d16b856",
     "docs/portal-limitations.md": "cdf65d89f11617622cb7411a439db7c4918d59125284a5582272f27aa1c66dba",

@@ -1,0 +1,48 @@
+name: Post-release integration and scope
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'implementation/**'
+      - 'evaluation/**'
+      - 'requirements/**'
+      - 'ontology/**'
+      - 'references/**'
+      - 'tools/**'
+      - 'tests/**'
+      - 'CITATION.cff'
+      - 'RIGHTS.md'
+      - '.github/workflows/post-release-validation.yml'
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  integration:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements-shacl.txt
+      - name: Replay exact shared-graph source and result receipt
+        run: python tools/run_integrated_validation.py --check
+      - name: Check extension boundaries, unfilled reviewer responses and exhaustive SQL scope
+        run: python tools/check_research_backlog.py --check
+      - name: Test integration trust boundaries
+        run: python -m unittest discover -s tests -p test_integrated_validation.py -v
+      - name: Replay existing SQLite migration and history expectations
+        run: python tools/run_relational_history.py --check
+      - name: Replay the frozen source and correction/withheld-identity cohorts
+        run: |
+          python tools/run_source_cq06.py --check
+          python tools/run_source_cq0708.py --check
+      - name: Preserve published component bindings and source files
+        run: |
+          python tools/check_release_alignment.py
+          git diff --exit-code

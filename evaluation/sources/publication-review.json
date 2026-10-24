@@ -1,0 +1,68 @@
+{
+  "schema": "riskium-source-publication-boundary-review-v1",
+  "review_version": "0.1.0",
+  "method": "Reconciliation of frozen inspected notices, machine-assistance declarations, owner-scoped dispositions and current tracked-publication exclusions; no new primary inspection or legal clearance.",
+  "inputs": {
+    "evaluation/sources/cq06/cohort.json": "bc31b4af2f2d2cc4cf1c95bfeafdcb918a29f33d6400693723e7d8ed7893aa29",
+    "evaluation/sources/cq06/inspection.json": "6501660f5aa34144995d293c1acdad01315e515ad578ca256cd06358e815b4ee",
+    "evaluation/sources/cq0708/cohort.json": "525c6f69cff592baf705ec48ee52b629d2b0f61e93adcbedf9535b5993843127",
+    "evaluation/sources/cq0708/inspection.json": "c8dc6f556fe0bf4a77bad0c35c7a99f8fd5c0f731d7019456c3afb352d1d377d",
+    "evaluation/owner-review/accepted-scope.json": "a7da025a831114999529056aad105eb31ffcee1e4a88866fecbd4aa917da1a5c",
+    "RIGHTS.md": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+    "NOTICE.md": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce"
+  },
+  "sources": [
+    {
+      "source_id": "MAT-004",
+      "doi": "10.1080/13669877.2013.815653",
+      "source_cohort": "evaluation/sources/cq06/cohort.json",
+      "primary_pdf_sha256": "efe10350674d8ed4641f5d045a92987ab4fbc1cef057c3d61f12677b63aa2bf4",
+      "recorded_notice": "No verified redistribution license: citation, IDs, hashes and brief original paraphrases only; no PDF, complete table or scored rows redistributed",
+      "source_pdf_redistributed": false,
+      "current_package_boundary": "Citation, locators, hashes and selected curated paraphrases/assertions only; full source and private databases remain excluded.",
+      "new_license_clearance_claimed": false
+    },
+    {
+      "source_id": "SRC-PH-001",
+      "doi": "10.1186/2008-2231-21-69",
+      "source_cohort": "evaluation/sources/cq06/cohort.json",
+      "primary_pdf_sha256": "6015190747fd40fbf9c2663597e78df375996fd2ce37df4fe9d983f357b24ff1",
+      "recorded_notice": "CC BY 2.0 as stated by supplied article; authors credited, paraphrases marked; PDF not redistributed",
+      "source_pdf_redistributed": false,
+      "current_package_boundary": "Citation, locators, hashes and selected curated paraphrases/assertions only; full source and private databases remain excluded.",
+      "new_license_clearance_claimed": false
+    },
+    {
+      "source_id": "original",
+      "doi": "10.1093/biostatistics/kxx069",
+      "source_cohort": "evaluation/sources/cq0708/cohort.json",
+      "primary_pdf_sha256": "d46b9f274e160d19498e283ff9fdd2baa498519485082e2aa2bd28d136e577db",
+      "recorded_notice": "CC BY 4.0 as explicitly stated in the supplied primary PDF",
+      "source_pdf_redistributed": false,
+      "current_package_boundary": "Citation, locators, hashes and selected curated paraphrases/assertions only; full source and private databases remain excluded.",
+      "new_license_clearance_claimed": false
+    },
+    {
+      "source_id": "correction",
+      "doi": "10.1093/biostatistics/kxy072",
+      "source_cohort": "evaluation/sources/cq0708/cohort.json",
+      "primary_pdf_sha256": "c52d3d1ea6ea681bd679c3dfc75ff2a349e5fa14e2223ac00fcbbde7275dc3a6",
+      "recorded_notice": "CC BY 4.0 as explicitly stated in the supplied primary PDF",
+      "source_pdf_redistributed": false,
+      "current_package_boundary": "Citation, locators, hashes and selected curated paraphrases/assertions only; full source and private databases remain excluded.",
+      "new_license_clearance_claimed": false
+    }
+  ],
+  "original_source_pdfs_redistributed": false,
+  "private_database_or_manuscript_published": false,
+  "machine_assistance": "Assistant selected, transcribed, paraphrased and prepared queries; the current owner scope is accepted, independent judgments remain unrecorded.",
+  "cohort_boundary": {
+    "cq06_selected_statements": 13,
+    "cq07_old_reissued_pairs": 5,
+    "cq08_candidates_withheld": 11,
+    "new_organizational_risk_cases": 0,
+    "new_independent_case_accuracy_estimate": false
+  },
+  "original_historical_cohorts_unchanged": true,
+  "broader_case_study_completed": false
+}

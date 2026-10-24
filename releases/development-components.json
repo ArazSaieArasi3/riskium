@@ -1,0 +1,102 @@
+{
+  "schema": "riskium-development-component-overlay-v1",
+  "overlay_version": "0.1.0",
+  "baseline_release": "v0.3.1",
+  "baseline_source_commit": "8afe169968b5c1396c02834dbc499af691b894b4",
+  "accepted_matrix_path": "releases/artifact-matrix.json",
+  "accepted_matrix_sha256": "ef01f0408718d3b366daf145b482bb95fa4fbc73b219c9e15b650262fa05e012",
+  "status": "POST_RELEASE_DEVELOPMENT_NOT_PUBLISHED_AS_NEW_RELEASE",
+  "published_baseline_components_changed": false,
+  "new_owner_or_independent_acceptance_claimed": false,
+  "components": [
+    {
+      "id": "INTEGRATED_VALIDATION",
+      "description": "Application shared-graph validator",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "implementation/validation/0.1.0/policy.json",
+          "sha256": "c930eff4fe10116e4cbbe171288be72fc4b764290f093f4bff2eccdfc0f2320c"
+        },
+        {
+          "path": "tools/validate_integrated.py",
+          "sha256": "5594df14536eb114f996677dd05c5b1d140cc39fa7b63ae6e4f69aed8b9e1696"
+        },
+        {
+          "path": "tools/run_integrated_validation.py",
+          "sha256": "2682070751e6372165fbc7dc3669e2f41a951a270a03e4515bce193af31268a3"
+        },
+        {
+          "path": "evaluation/integration/cases.json",
+          "sha256": "2c23d2928df40fc4d6b483ecfa459579f2438b8bbac8f7d8d8db0f0077799224"
+        },
+        {
+          "path": "evaluation/integration/fixtures.ttl",
+          "sha256": "88a49af985cd68b5c17890aeeb484e6be35efeb2b374f6dba40b071bf014d397"
+        },
+        {
+          "path": "evaluation/integration/report.json.gz",
+          "sha256": "4d3db19a427d4fc624be04c8cde1962c124144fb1a292c0b811129a30dc264bc"
+        }
+      ]
+    },
+    {
+      "id": "RELATIONAL_INVENTORY",
+      "description": "Exhaustive static mapping inventory; schema stays 0.1.0",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "evaluation/relational/coverage/report.json",
+          "sha256": "60366bc0fb4fb5d8f20d38e37c42f7122f6b4cbb066560f059cce4868fc35cd8"
+        }
+      ]
+    },
+    {
+      "id": "EXTENSION_BOUNDARIES",
+      "description": "External/domain adoption policy only",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "requirements/extensions.json",
+          "sha256": "b8eecdd91cd4334c5c91e23e1aa7c3a7df9f461a9b088feead96f26244fb171e"
+        }
+      ]
+    },
+    {
+      "id": "INDEPENDENT_PROTOCOL",
+      "description": "Prepared protocol; zero actual responses",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "evaluation/independent-review/protocol.json",
+          "sha256": "acddb088c01b1f3594a8242c4ddc5e7a36bad661623bb76da64338c9955cc524"
+        },
+        {
+          "path": "evaluation/independent-review/responses.json",
+          "sha256": "3896793de4db0d1b5b0d0f96f2f9ce8ffd1dd31c738d0f22400d88b5f3e8b00f"
+        }
+      ]
+    },
+    {
+      "id": "SOURCE_PUBLICATION_REVIEW",
+      "description": "Existing source/rights and disclosure boundary reconciliation",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "evaluation/sources/publication-review.json",
+          "sha256": "f0147b311fb08b4b7f07bc8be51ed704b17549d54b5b140be4f5b20699a182ee"
+        }
+      ]
+    }
+  ]
+}

@@ -6,6 +6,8 @@ The model supports the interpretation and traceability of risk information. It d
 
 The first stable bounded research-artifact release, **[v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1)**, is published and verified at `8afe169968b5c1396c02834dbc499af691b894b4`: 18 passed final gates, six downloaded/verified assets and 371 source files. The [publication receipt](evaluation/releases/v0.3.1-publication.json) records the exact final tag, latest metadata, digests, inventory and unchanged rc.1–rc.7 assets. Model 0.3.1, ORSD 0.4.3, manuscript 7.0.8 and public SQL profile 0.1.0 are coordinated by the [artifact table](docs/artifact-versions.md). This is owner-reviewed bounded research scope; independent semantic validation remains future #23.
 
+Post-release development now adds [shared-graph validation, exhaustive SQL mapping accounting, source/publication reconciliation, extension ownership and an independent-review protocol](docs/post-release-work.md). These separately versioned supplements are checked in CI and pinned by the [development component overlay](releases/development-components.json); they are not part of the immutable v0.3.1 release assets.
+
 ## Earlier development milestones
 
 The following paragraphs record the scope and pending-state limits of their historical checkpoints; the final publication above is the current package state.
