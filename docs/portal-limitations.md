@@ -1,5 +1,7 @@
 # Scope and limitations
 
+The current source package is **[v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1)** with a [verified final receipt](../evaluation/releases/v0.3.1-publication.json). This OntoSPK-style portal retains its explicitly versioned rc.1 semantic reference, whose model/OWL bytes are unchanged; current explanatory guides and the artifact compatibility table have separately recorded hashes. Website projections do not move prior release tags/assets or create fresh semantic-validation evidence.
+
 This documentation uses the same reading structure selected for OntoSPK: an overview, a curated guide, a conceptual reference, a WIDOCO OWL reference, evaluation, an explorer and downloads. The Riskium portal was generated after the first prerelease. Its semantic inputs are fixed to `cfb85905ab37549c7090f00a41ca62cdd3364ab5`, the source of `v0.3.1-rc.1`; the new website is not part of the historical release archive. The publication manifest records the separate hashes of semantic inputs and explanatory sources.
 
 The complete conceptual catalog contains 80 concepts, including three optional boundaries, and 134 associations or bridges. The bounded OWL export has 77 local named classes, one local external-anchor proxy and 127 object properties. It excludes the optional boundaries and seven bridges. The anchor does not bundle an external ontology or establish its import closure. The ontology IRIs are identifiers; no dereferenceable vocabulary service is claimed.

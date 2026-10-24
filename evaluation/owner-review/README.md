@@ -1,5 +1,7 @@
 # Owner-led review for the first final Riskium release
 
+Final publication update: [v0.3.1 receipt](../releases/v0.3.1-publication.json) confirms that OR-11's accepted technical publication condition is satisfied. The register below remains the dated decision-time record, including its original pending-technical status; no further owner response is invented. Owner scope review #7 and final technical packet #28 are complete; independent review remains future #23.
+
 ## Decision, authority and evidence boundary
 
 On 23 October 2026, the project owner stated that **he will perform the current release's review with assistant support**. This supersedes the independent-review scheduling requirement for this first final release. It does not establish independence, supply ratings, change technical acceptance rules or accept unresolved critical defects. The reviewer is Araz Saie Arasi, a project author/owner. The assistant prepares evidence, counterexamples, explanations and proposed dispositions; only explicit owner responses become owner ratings.

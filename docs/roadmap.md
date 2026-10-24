@@ -1,7 +1,7 @@
 # Roadmap
 
 The remaining work is organized by outcome. Migration established a public conceptual-design snapshot. The curated Wiki and generated reference are now published; the first development prerelease is published; scientific validation and a stable release remain separate.
-Current on 24 October 2026: [owner scope review and manuscript/ORSD synchronization](artifact-versions.md) are complete. Remaining release work is the finite technical packet #28. Older technical histories below retain their original limits; mentions of earlier pending owner review are superseded by the recorded explicit decisions.
+Current on 24 October 2026: [owner scope review and manuscript/ORSD synchronization](artifact-versions.md) are complete. The finite technical packet #28 is complete; v0.3.1 is published and verified. Older technical histories below retain their original limits; mentions of earlier pending owner review are superseded by the recorded explicit decisions.
 
 | Work item | State |
 | --- | --- |
@@ -28,7 +28,7 @@ Current on 24 October 2026: [owner scope review and manuscript/ORSD synchronizat
 | [Ship rc.6 source-backed CQ06](https://github.com/ArazSaieArasi3/riskium/issues/25) | Published and verified: [rc.6](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.6), 13 inspected sourced statements, 35 matching SELECT/control outcomes, 129 regressions and 15 gates; [five verified assets / 322 source files](../evaluation/releases/v0.3.1-rc.6-publication.json). Parent #13 stays open |
 | [Ship rc.7 correction/withheld-identity CQ07/CQ08](https://github.com/ArazSaieArasi3/riskium/issues/26) | Published and verified: [rc.7](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.7), five inspected assertion pairs, 11 withheld candidates, 59 matching SELECT/control outcomes, 137 regressions, 16 gates and [five verified assets / 340 source files](../evaluation/releases/v0.3.1-rc.7-publication.json) |
 | [Prepare final claim/route matrix](https://github.com/ArazSaieArasi3/riskium/issues/27) | Complete: [historical preparation](../evaluation/final-review/README.md), followed by [accepted scope](../evaluation/owner-review/accepted-scope.json), ORSD 0.4.3 and manuscript 7.0.8 |
-| [Finalize stable v0.3.1 freeze/publication](https://github.com/ArazSaieArasi3/riskium/issues/28) | Next finite packet: stable profile, exact clean freeze, immutable final release and downloaded readback; no new feature prerelease |
+| [Finalize stable v0.3.1 freeze/publication](https://github.com/ArazSaieArasi3/riskium/issues/28) | Complete: [published v0.3.1 and downloaded readback](../evaluation/releases/v0.3.1-publication.json); 18 final gates, six verified assets and unchanged rc history |
 | [Future independent review](https://github.com/ArazSaieArasi3/riskium/issues/23) | Open, nonblocking for the first owner-reviewed research-artifact release; no independent ratings claimed |
 
 ## Recommended sequence

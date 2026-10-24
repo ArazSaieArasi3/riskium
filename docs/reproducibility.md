@@ -1,5 +1,7 @@
 # Reproduce the current checks
 
+Final package: **[v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1)**, exact source `8afe169968b5c1396c02834dbc499af691b894b4`. Install the pinned SHACL/publication requirements; from a clean checkout of that exact tag run `python tools/prepare_stable_release.py --output /absolute/empty/path/out` outside the source checkout. It runs the full 18-gate set before packaging. The [final receipt](../evaluation/releases/v0.3.1-publication.json) separates fresh scoped replays, historical full engine receipts and actual downloaded publication checks. Author-facing Word/PDF binaries remain separate and bound by their QA hashes.
+
 Use Python 3.12 or a compatible Python 3 installation. The conceptual-model and coverage builders use the standard library. The documentation portal uses pinned RDFLib, Markdown and Beautiful Soup packages. The OWL syntax and mapping regression tests require the pinned RDFLib package.
 
 From the repository root:

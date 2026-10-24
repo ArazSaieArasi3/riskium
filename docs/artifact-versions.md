@@ -1,6 +1,6 @@
 # Artifact versions and compatibility
 
-This lightweight compatibility record implements the owner's 24 October 2026 request to keep the paper, ontology requirements, model and database coordinated. [The machine-readable matrix](../releases/artifact-matrix.json) pins exact component hashes. Package target **v0.3.1** is not yet published; the latest published package remains **v0.3.1-rc.7**. Final technical work is [#28](https://github.com/ArazSaieArasi3/riskium/issues/28).
+This lightweight compatibility record implements the owner's 24 October 2026 request to keep the paper, ontology requirements, model and database coordinated. [The machine-readable matrix](../releases/artifact-matrix.json) pins exact component hashes. **[v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1) is published and independently downloaded/verified**, source `8afe169968b5c1396c02834dbc499af691b894b4`. Current coordination matrix revision is 0.1.1; the release asset retains frozen matrix 0.1.0. [Publication receipt](../evaluation/releases/v0.3.1-publication.json) closes #28.
 
 | Artifact | Own version | Compatible model | Current boundary |
 | --- | --- | --- | --- |
@@ -24,6 +24,6 @@ This lightweight compatibility record implements the owner's 24 October 2026 req
 - A changed model, requirement scope, schema, cohort or interpretation triggers review of its affected dependency links and evidence. No test receipt is inherited across changed evaluated inputs.
 - A versioned JSON manifest and readable table are the current implementation. Broader artifact-lifecycle automation is future work and does not block v0.3.1.
 
-The archived pharmaceutical dataset v0.6 and private SQLite v0.3.0-rc.1 retain their historical bindings; this matrix does not turn them into public reruns or the current SQL implementation. The historical quality synthesis and preparation package remain identifiable snapshots. The final release must add its exact clean source commit and verified publication receipt; this pre-freeze table is not that receipt.
+The archived pharmaceutical dataset v0.6 and private SQLite v0.3.0-rc.1 retain their historical bindings; this matrix does not turn them into public reruns or the current SQL implementation. The historical quality synthesis and preparation package remain identifiable snapshots. The final release source commit and publication receipt are now recorded. Component versions and hashes below remain unchanged; the frozen release asset preserves its decision-time matrix, while this current table points to the publication outcome.
 
 Check synchronization with `python tools/check_release_alignment.py`. This validates source/document bindings and recorded artifact relations; CI does not freshly render author-facing Word/PDF files or perform independent semantic review.

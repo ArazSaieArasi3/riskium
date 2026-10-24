@@ -1,11 +1,11 @@
 {
   "schema": "riskium-artifact-compatibility-v1",
-  "matrix_version": "0.1.0",
+  "matrix_version": "0.1.1",
   "date_local": "2026-10-24",
-  "status": "SYNCHRONIZED_OWNER_ACCEPTED_SCOPE_FINAL_PUBLICATION_PENDING",
+  "status": "FINAL_RELEASE_PUBLISHED_AND_DOWNLOADED_VERIFIED",
   "target_release": "v0.3.1",
-  "latest_published_package": "v0.3.1-rc.7",
-  "final_release_published": false,
+  "latest_published_package": "v0.3.1",
+  "final_release_published": true,
   "accepted_model_version": "0.3.1",
   "orsd_revision": "0.4.3",
   "manuscript_version": "7.0.8",
@@ -216,5 +216,8 @@
     "Database schema/profile changes have their own migration sequence and version, ontology mapping and preservation evidence. Historical private and current public schemas never share implied compatibility.",
     "A changed model, requirement scope, schema, cohort or interpretation triggers review of its affected dependency links and evidence. No test receipt is inherited across changed evaluated inputs.",
     "A versioned JSON manifest and readable table are the current implementation. Broader artifact-lifecycle automation is future work and does not block v0.3.1."
-  ]
+  ],
+  "publication_receipt": "evaluation/releases/v0.3.1-publication.json",
+  "frozen_source_commit": "8afe169968b5c1396c02834dbc499af691b894b4",
+  "frozen_matrix_version": "0.1.0"
 }

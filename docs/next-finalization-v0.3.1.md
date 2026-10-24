@@ -1,22 +1,17 @@
-# Final v0.3.1 stabilization and publication
+# Final v0.3.1 publication completed
 
-Current state on 24 October 2026: preparation #27 is complete; the owner explicitly read and accepted the concrete 11-axis recommendations. The [live decision register](../evaluation/owner-review/register.json) records nine scoped acceptances, one approved necessary manuscript revision (implemented), and one accepted publication condition whose technical execution remains pending. No further scope approval or feature prerelease is scheduled.
+**[Riskium v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1) is published**, source `8afe169968b5c1396c02834dbc499af691b894b4`. The stable final tag, final/latest metadata, six assets, exact SHA-256 values and 371-file source inventory were verified after downloading on a separate runner. All rc.1–rc.7 tag commits and assets were preserved. [Publication receipt](../evaluation/releases/v0.3.1-publication.json).
 
-| Completed stage | Bound result |
+Preparation #27, owner scope/synchronization #7 and final technical packet #28 are complete. Model 0.3.1, ORSD 0.4.3, manuscript 7.0.8 and public SQL profile 0.1.0 remain the accepted coordinated components. The 18 final checks include fresh named compatibility/comparison/SQLite/source-query replays and 148 software regressions. Historical full HermiT and early SHACL outcomes are not rewritten or claimed as fresh full runs.
+
+## Next work
+
+| Open issue | Later scope |
 | --- | --- |
-| Evidence consolidation #27 | [25 clauses, 31 historical NOT_RUN routes and 28 traces](../evaluation/final-review/README.md); historical statuses unchanged |
-| Owner scope review #7 | [Accepted scope and exclusions](../evaluation/owner-review/accepted-scope.json); author/owner review with assistant support, not independent validation |
-| Requirements synchronization | [ORSD revision 0.4.3](../requirements/ontology-requirements.md); original 11 MUST/one SHOULD priorities and definitions preserved |
-| Necessary manuscript edits | [Manuscript 7.0.8 and equivalent PDF QA](../evaluation/manuscript-review/v7.0.8/README.md); seven paragraphs, nine pages, unchanged figure/authors/references |
-| Artifact compatibility | [Independent component versions and exact hashes](artifact-versions.md); model 0.3.1 and SQL profile 0.1.0 unchanged |
+| #4 / #5 | Broader native/formal rules and application integration beyond the accepted first-final claims |
+| #12 | Full relational mapping/migration, PostgreSQL, formulas and workloads |
+| #13 | Broader independently prepared source/case populations |
+| #23 | Actual independent semantic review |
+| #16 | Extensions and interoperability |
 
-## Next finite packet
-
-[Issue #28](https://github.com/ArazSaieArasi3/riskium/issues/28) owns one final technical stabilization/publication packet:
-
-1. Implement and review an explicit stable v0.3.1 publication profile; preserve the prerelease guard, reject wrong/missing gate/version/source inputs and never overwrite rc tags/assets.
-2. Freeze the exact clean candidate and rerun affected evidence/checks. Bind model, selected diagram, accepted ORSD, mappings/cohorts, rights/citation, Pages and exact author-facing Word/PDF hashes. Resolve every critical retained-scope identity, forbidden-inference, integrity or data-loss finding.
-3. Satisfy the accepted OR-11 technical condition using actual freeze evidence, then publish the final tag/assets/inventory/checksums with correct final/latest metadata.
-4. Download independently, verify exact tag/commit/digests/inventory, record the final publication receipt and update the artifact table.
-
-The [fixed final gates](stable-release-gates.md) remain controlling. Original MUST requirements are not silently completed by narrowing current executable scope; full score arithmetic, temporal/workflow execution and generic record readiness are outside current execution claims. Broader unclaimed #12/#13/#16/#23 work can remain later. No new owner statement, independent validation or current zero-critical/final-candidate certificate is invented.
+No remaining item above is a waived known critical defect inside the retained first-final scope. A newly discovered retained-scope defect requires a corrective release and affected evidence checks. The owner's explicit scoped decisions and conditional publication authorization remain preserved; no new owner response or independent validation is fabricated. See [artifact versions](artifact-versions.md) and [release notes](release-v0.3.1.md).

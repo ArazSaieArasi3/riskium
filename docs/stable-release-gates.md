@@ -1,28 +1,18 @@
-# Gates for the first final Riskium research artifact
+# Final release gate outcome for v0.3.1
 
-Target **v0.3.1** retains conceptual baseline **0.3.1**. Stable denotes a maintained, reproducible research artifact within the expressly accepted scope. The latest published package is v0.3.1-rc.7; final publication has not occurred.
+**[v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1) is published and downloaded/verified**. Exact frozen source: `8afe169968b5c1396c02834dbc499af691b894b4`. [The final publication receipt](../evaluation/releases/v0.3.1-publication.json) records the actual outcome; the owner decision register remains its decision-time snapshot rather than a newly fabricated owner sign-off.
 
-## Accepted scope and owner authority
+| Gate | Verified outcome |
+| --- | --- |
+| Accepted claim and requirement scope | Owner-approved 25-clause/28-trace scope; original eleven MUST/one SHOULD priorities and criteria preserved |
+| Article/model/ORSD/schema correspondence | Model 0.3.1, ORSD 0.4.3, article 7.0.8 and SQLite profile 0.1.0; exact independent component hashes verified |
+| Critical retained-scope screen | No known unresolved critical finding in the bounded technical screen; no independent or universal zero-defect certificate |
+| Exact clean final checks | All 18 gates passed on the exact release commit, including named fresh profile replays and 148 regressions |
+| OR-11 publication condition | Technical condition satisfied by the exact freeze and subsequent readback; original owner response unchanged |
+| Stable publication | New v0.3.1 final tag; correct source commit, final metadata and latest designation |
+| Downloaded assets and inventory | All six downloaded assets match digests/expected bytes; full 371-file archive inventory verified |
+| Earlier releases | All seven rc tag commits, release IDs and asset IDs/digests preserved |
 
-On 24 October 2026 the owner explicitly said he had read and agreed with the concrete Persian 11-axis table and rationale. The [live register](../evaluation/owner-review/register.json) contains all 11 decisions: nine scoped acceptances, one approved necessary revision implemented in [manuscript 7.0.8](../evaluation/manuscript-review/v7.0.8/README.md), and one publication condition awaiting technical final freeze. This is attributable author/owner review with assistant support, not independent expert validation. No repeated approval of the same scope is required.
+The reviewed implementation remains separate from the prerelease-only guard. Its 11 boundary tests reject version/scope mismatches, incomplete or failed checks, unreviewed science changes, dirty sources, existing tags/drafts/assets and missing stable intent. First stable implementation review: workflow 40103739394. Actual final publication/readback: [workflow 40104223171](https://github.com/ArazSaieArasi3/riskium/actions/runs/40104223171).
 
-The [accepted matrix](../evaluation/owner-review/accepted-scope.json) covers 25 clauses and 28 traces and accepts the declared alternative/excluded routes for the historical 14 HermiT and 17 SHACL NOT_RUN rows. Those engine statuses remain unchanged; C-08 remains PARTIAL. [ORSD 0.4.3](../requirements/ontology-requirements.md) preserves original MUST priorities/criteria and explicitly separates current release scope from full original fulfillment. Historical quality, scientific receipts and independent-review denominators remain intact.
-
-| Gate | Current status | Remaining final-freeze evidence |
-| --- | --- | --- |
-| Claims, requirements and exclusions | OWNER_ACCEPTED_SCOPED | Bind the accepted scope and artifact hashes to the exact clean final candidate; do not broaden accepted claims |
-| Explicit-data/formal routes | OWNER_ACCEPTED_ALTERNATIVES_AND_EXCLUSIONS | Replay affected retained profiles; no historical NOT_RUN is renamed PASS; fix any critical retained inference/data-rule defect |
-| Relational tasks | OWNER_ACCEPTED_SCOPED | Retain the executed public SQLite 0.1.0 identity/history slice; no full private-schema/PostgreSQL/arithmetic claim |
-| Source and CQ tasks | OWNER_ACCEPTED_FINITE_COHORTS | Retain 13 CQ06 statements, five CQ07 old/reissued pairs and 11 still-WITHHELD CQ08 candidates; no held-out/independent/full-population accuracy claim |
-| Owner semantic/scope review | COMPLETE_FOR_DECLARED_SCOPE | OR-11 accepts the publication condition; its actual technical final-candidate gate remains #28. Independent review stays future #23 |
-| Necessary manuscript synchronization | IMPLEMENTED_AND_QA_VERIFIED | Manuscript 7.0.8, equivalent nine-page PDF and preservation/readback receipt must match the final artifact table |
-| Stable profile and exact reproduction | OPEN — #28 | Implement/review stable publication profile; clean pinned build, affected engine replays, required regressions, rights/citation/diagrams/Pages checks and critical resolution |
-| Publication and independent readback | OPEN — #28 | Immutable v0.3.1 final tag/assets/inventory/checksums; correct latest/final metadata; downloaded exact commit/digest/inventory verification |
-
-## Critical findings and exit rule
-
-Publish only when the remaining technical gates actually pass and no unresolved critical identity, prohibited inference, integrity or data-loss finding exists inside the retained scope. No critical finding was reported in the owner's agreement; this is not an independently established zero-critical certificate. Narrowing a claim cannot hide a defect within the model/task still being retained.
-
-The current incremental workflow publishes prereleases only. A green candidate alone does not execute the final publication condition. [Issue #28](https://github.com/ArazSaieArasi3/riskium/issues/28) specifies the stable implementation, one clean freeze and final downloaded readback. No additional feature prerelease is scheduled. Unclaimed extensions, complete private migration/formulas/workloads, broader source populations and independent review can proceed after the first final release under #12/#13/#16/#23.
-
-[The compatibility table](artifact-versions.md) keeps component versions independent: paper 7.0.8, ORSD 0.4.3, model 0.3.1 and public SQL profile 0.1.0 are coordinated by exact hash/compatibility bindings, not one forced version number.
+Stable means a maintained, reproducible research artifact within accepted scope, not production certification, full original requirement fulfillment or independent scientific validation. The historical HermiT 14 NOT_RUN and SHACL 17 NOT_RUN/one PARTIAL rows remain unchanged. Broader unclaimed #4/#5/#12/#13/#16/#23 work remains later; any newly discovered critical retained-scope issue requires a corrective release. [Accepted scope](../evaluation/owner-review/accepted-scope.json) and [artifact versions](artifact-versions.md).
