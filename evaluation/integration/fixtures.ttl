@@ -1,0 +1,312 @@
+@prefix ap: <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#> .
+@prefix cp: <https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ex: <urn:riskium:comparison-fixture:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix q: <https://github.com/ArazSaieArasi3/riskium/profiles/qualification/0.5.0#> .
+@prefix risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#> .
+@prefix sp: <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#> .
+
+ex:catalog-authority dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C054" ;
+    ap:candidate ex:authority ;
+    ap:declaredClass risk:RKM-C054 .
+
+ex:catalog-basis dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C033" ;
+    ap:candidate ex:basis ;
+    ap:declaredClass risk:RKM-C033 .
+
+ex:catalog-basisVersion dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C015" ;
+    ap:candidate ex:basisVersion ;
+    ap:declaredClass risk:RKM-C015 .
+
+ex:catalog-bearer dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C053" ;
+    ap:candidate ex:bearer ;
+    ap:declaredClass risk:RKM-C053 .
+
+ex:catalog-case dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-X01" ;
+    ap:candidate ex:case ;
+    ap:declaredClass risk:RKM-X01 .
+
+ex:catalog-context dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C002" ;
+    ap:candidate ex:context ;
+    ap:declaredClass risk:RKM-C002 .
+
+ex:catalog-contextVersion dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C015" ;
+    ap:candidate ex:contextVersion ;
+    ap:declaredClass risk:RKM-C015 .
+
+ex:catalog-description dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C024" ;
+    ap:candidate ex:description ;
+    ap:declaredClass risk:RKM-C024 .
+
+ex:catalog-dimension dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C039" ;
+    ap:candidate ex:dimension ;
+    ap:declaredClass risk:RKM-C039 .
+
+ex:catalog-entry dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C022" ;
+    ap:candidate ex:entry ;
+    ap:declaredClass risk:RKM-C022 .
+
+ex:catalog-evidenceItem dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C066" ;
+    ap:candidate ex:evidenceItem ;
+    ap:declaredClass risk:RKM-C066 .
+
+ex:catalog-evidenceReference dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C065" ;
+    ap:candidate ex:evidenceReference ;
+    ap:declaredClass risk:RKM-C065 .
+
+ex:catalog-indicator dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C069" ;
+    ap:candidate ex:indicator ;
+    ap:declaredClass risk:RKM-C069 .
+
+ex:catalog-leftAssessment dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C032" ;
+    ap:candidate ex:leftAssessment ;
+    ap:declaredClass risk:RKM-C032 .
+
+ex:catalog-leftResult dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C034" ;
+    ap:candidate ex:leftResult ;
+    ap:declaredClass risk:RKM-C034 .
+
+ex:catalog-level dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C038" ;
+    ap:candidate ex:level ;
+    ap:declaredClass risk:RKM-C038 .
+
+ex:catalog-method dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C035" ;
+    ap:candidate ex:method ;
+    ap:declaredClass risk:RKM-C035 .
+
+ex:catalog-methodVersion dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C015" ;
+    ap:candidate ex:methodVersion ;
+    ap:declaredClass risk:RKM-C015 .
+
+ex:catalog-register dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C030" ;
+    ap:candidate ex:register ;
+    ap:declaredClass risk:RKM-C030 .
+
+ex:catalog-relator dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C052" ;
+    ap:candidate ex:relator ;
+    ap:declaredClass risk:RKM-C052 .
+
+ex:catalog-revision dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C023" ;
+    ap:candidate ex:revision ;
+    ap:declaredClass risk:RKM-C023 .
+
+ex:catalog-rightAssessment dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C032" ;
+    ap:candidate ex:rightAssessment ;
+    ap:declaredClass risk:RKM-C032 .
+
+ex:catalog-rightResult dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C034" ;
+    ap:candidate ex:rightResult ;
+    ap:declaredClass risk:RKM-C034 .
+
+ex:catalog-scale dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C036" ;
+    ap:candidate ex:scale ;
+    ap:declaredClass risk:RKM-C036 .
+
+ex:catalog-scaleVersion dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C015" ;
+    ap:candidate ex:scaleVersion ;
+    ap:declaredClass risk:RKM-C015 .
+
+ex:catalog-scenario dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C003" ;
+    ap:candidate ex:scenario ;
+    ap:declaredClass risk:RKM-C003 .
+
+ex:catalog-scheme dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C018" ;
+    ap:candidate ex:scheme ;
+    ap:declaredClass risk:RKM-C018 .
+
+ex:catalog-term dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C019" ;
+    ap:candidate ex:term ;
+    ap:declaredClass risk:RKM-C019 .
+
+ex:catalog-threshold dct:source ex:syntheticSource ;
+    dct:subject ex:fixtureTopic ;
+    dct:title "Fixture RKM-C070" ;
+    ap:candidate ex:threshold ;
+    ap:declaredClass risk:RKM-C070 .
+
+ex:evidenceRecord dct:source ex:syntheticSource ;
+    q:candidate ex:evidenceReference ;
+    q:item ex:evidenceItem ;
+    q:role q:Support ;
+    q:target ex:basis .
+
+ex:vocabularyRecord dct:title "Qualified term" ;
+    q:candidate ex:term ;
+    q:edition ex:schemeEdition ;
+    q:localCode "TERM-A" ;
+    q:scheme ex:scheme .
+
+ex:description a risk:RKM-C024 ;
+    risk:R-37 ex:scenario .
+
+ex:leftAssessment a risk:RKM-C032 ;
+    risk:R-12 ex:basis ;
+    risk:R-13 ex:leftResult ;
+    risk:R-45 ex:context ;
+    risk:R-46 ex:method ;
+    risk:RX-014 ex:contextVersion ;
+    risk:RX-015 ex:methodVersion ;
+    sp:basisVersion ex:basisVersion ;
+    sp:source ex:syntheticSource ;
+    sp:temporalContext ex:temporal .
+
+ex:relator a risk:RKM-C052 ;
+    risk:R-56 ex:bearer ;
+    risk:R-57 ex:authority .
+
+ex:revision a risk:RKM-C023 ;
+    risk:R-33 ex:entry ;
+    risk:RX-006 ex:entry .
+
+ex:rightAssessment a risk:RKM-C032 ;
+    risk:R-12 ex:basis ;
+    risk:R-13 ex:rightResult ;
+    risk:R-45 ex:context ;
+    risk:R-46 ex:method ;
+    risk:RX-014 ex:contextVersion ;
+    risk:RX-015 ex:methodVersion ;
+    sp:basisVersion ex:basisVersion ;
+    sp:source ex:syntheticSource ;
+    sp:temporalContext ex:temporal .
+
+ex:threshold a risk:RKM-C070 ;
+    risk:RK2-020 ex:scale ;
+    risk:RX-025 ex:indicator .
+
+ex:bearer a risk:RKM-C053 ;
+    owl:differentFrom ex:authority .
+
+ex:case a risk:RKM-X01 ;
+    risk:R-35 ex:context ;
+    risk:RX-001 ex:context .
+
+ex:evidenceReference a risk:RKM-C065 ;
+    risk:R-68 ex:basis ;
+    risk:RX-021 ex:evidenceItem .
+
+ex:indicator a risk:RKM-C069 ;
+    cp:dimension ex:dimension ;
+    cp:kind cp:Numeric ;
+    cp:scaleVersion ex:scaleVersion ;
+    cp:source ex:syntheticSource ;
+    cp:unit ex:unit .
+
+ex:leftResult a risk:RKM-C034 ;
+    risk:R-14 ex:scale ;
+    risk:R-15 ex:level ;
+    risk:R-48 ex:dimension ;
+    risk:RX-016 ex:scaleVersion .
+
+ex:register a risk:RKM-C030 .
+
+ex:rightResult a risk:RKM-C034 ;
+    risk:R-14 ex:scale ;
+    risk:R-15 ex:level ;
+    risk:R-48 ex:dimension ;
+    risk:RX-016 ex:scaleVersion .
+
+ex:scenario a risk:RKM-C003 .
+
+ex:term a risk:RKM-C019 ;
+    risk:R-05 ex:scheme .
+
+ex:authority a risk:RKM-C054 .
+
+ex:basisVersion a risk:RKM-C015 ;
+    risk:RX-006 ex:basis .
+
+ex:contextVersion a risk:RKM-C015 ;
+    risk:RX-006 ex:context .
+
+ex:entry a risk:RKM-C022 ;
+    risk:R-01 ex:case ;
+    risk:RX-008 ex:register .
+
+ex:evidenceItem a risk:RKM-C066 .
+
+ex:level a risk:RKM-C038 ;
+    risk:R-16 ex:scale ;
+    sp:levelScaleVersion ex:scaleVersion .
+
+ex:methodVersion a risk:RKM-C015 ;
+    risk:RX-006 ex:method .
+
+ex:scheme a risk:RKM-C018 .
+
+ex:method a risk:RKM-C035 ;
+    risk:R-49 ex:scale ;
+    risk:RK2-018 ex:dimension .
+
+ex:basis a risk:RKM-C033 .
+
+ex:context a risk:RKM-C002 .
+
+ex:dimension a risk:RKM-C039 .
+
+ex:scaleVersion a risk:RKM-C015 ;
+    risk:RX-006 ex:scale .
+
+ex:scale a risk:RKM-C036 ;
+    risk:RK2-019 ex:dimension ;
+    cp:kind cp:Numeric ;
+    cp:scaleVersion ex:scaleVersion ;
+    cp:source ex:syntheticSource ;
+    cp:unit ex:unit .
+

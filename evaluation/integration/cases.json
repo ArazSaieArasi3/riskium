@@ -1,0 +1,1443 @@
+{
+  "schema": "riskium-integrated-fixture-oracles-v1",
+  "status": "PREDECLARED_EXACT_ENGINEERING_EXPECTATIONS_NOT_INDEPENDENT_REVIEW",
+  "fixture_sha256": "88a49af985cd68b5c17890aeeb484e6be35efeb2b374f6dba40b071bf014d397",
+  "policy_sha256": "c930eff4fe10116e4cbbe171288be72fc4b764290f093f4bff2eccdfc0f2320c",
+  "requests": {
+    "catalog": [
+      [
+        "urn:riskium:comparison-fixture:catalog-leftAssessment",
+        "RKM-C032"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-rightAssessment",
+        "RKM-C032"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-leftResult",
+        "RKM-C034"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-rightResult",
+        "RKM-C034"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-level",
+        "RKM-C038"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-scale",
+        "RKM-C036"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-dimension",
+        "RKM-C039"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-scaleVersion",
+        "RKM-C015"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-method",
+        "RKM-C035"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-methodVersion",
+        "RKM-C015"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-basis",
+        "RKM-C033"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-basisVersion",
+        "RKM-C015"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-context",
+        "RKM-C002"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-contextVersion",
+        "RKM-C015"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-threshold",
+        "RKM-C070"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-indicator",
+        "RKM-C069"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-case",
+        "RKM-X01"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-entry",
+        "RKM-C022"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-register",
+        "RKM-C030"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-revision",
+        "RKM-C023"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-relator",
+        "RKM-C052"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-bearer",
+        "RKM-C053"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-authority",
+        "RKM-C054"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-description",
+        "RKM-C024"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-scenario",
+        "RKM-C003"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-term",
+        "RKM-C019"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-scheme",
+        "RKM-C018"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-evidenceReference",
+        "RKM-C065"
+      ],
+      [
+        "urn:riskium:comparison-fixture:catalog-evidenceItem",
+        "RKM-C066"
+      ]
+    ],
+    "thresholds": [
+      "urn:riskium:comparison-fixture:threshold"
+    ],
+    "comparison": [
+      "urn:riskium:comparison-fixture:request",
+      "urn:riskium:comparison-fixture:leftAssessment",
+      "urn:riskium:comparison-fixture:leftResult",
+      "urn:riskium:comparison-fixture:rightAssessment",
+      "urn:riskium:comparison-fixture:rightResult"
+    ],
+    "vocabulary": [
+      [
+        "urn:riskium:comparison-fixture:vocabularyRecord",
+        "RKM-C019"
+      ]
+    ],
+    "evidence": [
+      "urn:riskium:comparison-fixture:evidenceRecord"
+    ],
+    "publication": [
+      "urn:riskium:comparison-fixture:description"
+    ]
+  },
+  "cases": [
+    {
+      "id": "JOINT-VALID",
+      "profile": "scoped-comparison",
+      "remove": [],
+      "insert": [],
+      "expected_decision": "SCOPED_TASK_ADMISSIBLE",
+      "expected_findings": [],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "CATALOG-ONLY-NO-TASK-ACCEPTANCE",
+      "profile": "managed-catalog",
+      "remove": [],
+      "insert": [],
+      "expected_decision": "CATALOG_ACCEPTED",
+      "expected_findings": [],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "RAW-INCOMPLETE-PRESERVED",
+      "profile": "raw",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:indicator>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#unit>",
+          "<urn:riskium:comparison-fixture:unit>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:leftAssessment>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#temporalContext>",
+          "<urn:riskium:comparison-fixture:temporal>"
+        ]
+      ],
+      "insert": [],
+      "expected_decision": "STAGING_ONLY",
+      "expected_findings": [],
+      "expected_engine_executed": false,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "MISSING-UNIT",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:indicator>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#unit>",
+          "<urn:riskium:comparison-fixture:unit>"
+        ]
+      ],
+      "insert": [],
+      "expected_decision": "NOT_ADMISSIBLE_FOR_SCOPED_TASK",
+      "expected_findings": [
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#MissingNumericUnit",
+          "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "urn:riskium:comparison-fixture:threshold"
+        ]
+      ],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "MISSING-TIME",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:leftAssessment>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#temporalContext>",
+          "<urn:riskium:comparison-fixture:temporal>"
+        ]
+      ],
+      "insert": [],
+      "expected_decision": "NOT_ADMISSIBLE_FOR_SCOPED_TASK",
+      "expected_findings": [
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LeftTemporal",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "urn:riskium:comparison-fixture:request"
+        ]
+      ],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "BLANK-VOCABULARY-CODE",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:vocabularyRecord>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/qualification/0.5.0#localCode>",
+          "\"TERM-A\""
+        ]
+      ],
+      "insert": [
+        [
+          "<urn:riskium:comparison-fixture:vocabularyRecord>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/qualification/0.5.0#localCode>",
+          "\"   \""
+        ]
+      ],
+      "expected_decision": "NOT_ADMISSIBLE_FOR_SCOPED_TASK",
+      "expected_findings": [
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.5.0#VocabCode",
+          "http://www.w3.org/ns/shacl#PatternConstraintComponent",
+          "urn:riskium:comparison-fixture:vocabularyRecord"
+        ]
+      ],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "CHALLENGE-CANNOT-ASSERT-SUPPORT",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:evidenceRecord>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/qualification/0.5.0#role>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/qualification/0.5.0#Support>"
+        ]
+      ],
+      "insert": [
+        [
+          "<urn:riskium:comparison-fixture:evidenceRecord>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/qualification/0.5.0#role>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/qualification/0.5.0#Challenge>"
+        ]
+      ],
+      "expected_decision": "NOT_ADMISSIBLE_FOR_SCOPED_TASK",
+      "expected_findings": [
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.5.0#EvidenceRecord",
+          "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "urn:riskium:comparison-fixture:evidenceRecord"
+        ]
+      ],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "CONTEXT-SUBSET-MISMATCH",
+      "profile": "scoped-comparison",
+      "remove": [],
+      "insert": [
+        [
+          "<urn:riskium:comparison-fixture:case>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-35>",
+          "<urn:riskium:comparison-fixture:basis>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:basis>",
+          "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002>"
+        ]
+      ],
+      "expected_decision": "NOT_ADMISSIBLE_FOR_SCOPED_TASK",
+      "expected_findings": [
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.4.0#C23Case",
+          "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "urn:riskium:comparison-fixture:case"
+        ]
+      ],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "REVISION-SELF-CYCLE",
+      "profile": "scoped-comparison",
+      "remove": [],
+      "insert": [
+        [
+          "<urn:riskium:comparison-fixture:revision>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-34>",
+          "<urn:riskium:comparison-fixture:revision>"
+        ]
+      ],
+      "expected_decision": "NOT_ADMISSIBLE_FOR_SCOPED_TASK",
+      "expected_findings": [
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.4.0#C24Acyclic",
+          "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "urn:riskium:comparison-fixture:revision"
+        ]
+      ],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "PUBLISHED-WITHOUT-ABOUTNESS",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:description>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-37>",
+          "<urn:riskium:comparison-fixture:scenario>"
+        ]
+      ],
+      "insert": [],
+      "expected_decision": "NOT_ADMISSIBLE_FOR_SCOPED_TASK",
+      "expected_findings": [
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.1.0#C09Aboutness",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "urn:riskium:comparison-fixture:description"
+        ]
+      ],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "UNRESOLVED-ACTOR-DISTINCTION",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:bearer>",
+          "<http://www.w3.org/2002/07/owl#differentFrom>",
+          "<urn:riskium:comparison-fixture:authority>"
+        ]
+      ],
+      "insert": [],
+      "expected_decision": "NOT_ADMISSIBLE_FOR_SCOPED_TASK",
+      "expected_findings": [
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.1.0#C06Distinct",
+          "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "urn:riskium:comparison-fixture:relator"
+        ]
+      ],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "MISSING-CATALOG-TITLE",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:catalog-indicator>",
+          "<http://purl.org/dc/terms/title>",
+          "\"Fixture RKM-C069\""
+        ]
+      ],
+      "insert": [],
+      "expected_decision": "NOT_ADMISSIBLE_FOR_SCOPED_TASK",
+      "expected_findings": [
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.3.0#Title",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "urn:riskium:comparison-fixture:catalog-indicator"
+        ]
+      ],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "MISSING-NATIVE-INDICATOR-TYPE",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:indicator>",
+          "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C069>"
+        ]
+      ],
+      "insert": [],
+      "expected_decision": "NOT_ADMISSIBLE_FOR_SCOPED_TASK",
+      "expected_findings": [
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.1.0#C08Indicator",
+          "http://www.w3.org/ns/shacl#ClassConstraintComponent",
+          "urn:riskium:comparison-fixture:threshold"
+        ],
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.3.0#CandidateType-RKM-C069",
+          "http://www.w3.org/ns/shacl#ClassConstraintComponent",
+          "urn:riskium:comparison-fixture:catalog-indicator"
+        ],
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#Indicator",
+          "http://www.w3.org/ns/shacl#ClassConstraintComponent",
+          "urn:riskium:comparison-fixture:threshold"
+        ]
+      ],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "COMPOUND-UNIT-TIME-TITLE",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:indicator>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#unit>",
+          "<urn:riskium:comparison-fixture:unit>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:leftAssessment>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#temporalContext>",
+          "<urn:riskium:comparison-fixture:temporal>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-indicator>",
+          "<http://purl.org/dc/terms/title>",
+          "\"Fixture RKM-C069\""
+        ]
+      ],
+      "insert": [],
+      "expected_decision": "NOT_ADMISSIBLE_FOR_SCOPED_TASK",
+      "expected_findings": [
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.3.0#Title",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "urn:riskium:comparison-fixture:catalog-indicator"
+        ],
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#MissingNumericUnit",
+          "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "urn:riskium:comparison-fixture:threshold"
+        ],
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#LeftTemporal",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "urn:riskium:comparison-fixture:request"
+        ]
+      ],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "VERSION-ALIAS-NORMALIZES-ALL-MODULES",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:indicator>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#scaleVersion>",
+          "<urn:riskium:comparison-fixture:scaleVersion>"
+        ]
+      ],
+      "insert": [
+        [
+          "<urn:riskium:comparison-fixture:indicator>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#scaleVersion>",
+          "<urn:riskium:comparison-fixture:aliasVersion>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:aliasVersion>",
+          "<http://www.w3.org/2002/07/owl#sameAs>",
+          "<urn:riskium:comparison-fixture:scaleVersion>"
+        ]
+      ],
+      "expected_decision": "SCOPED_TASK_ADMISSIBLE",
+      "expected_findings": [],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "IDENTITY-CONFLICT",
+      "profile": "scoped-comparison",
+      "remove": [],
+      "insert": [
+        [
+          "<urn:riskium:comparison-fixture:bearer>",
+          "<http://www.w3.org/2002/07/owl#sameAs>",
+          "<urn:riskium:comparison-fixture:authority>"
+        ]
+      ],
+      "expected_decision": "PROFILE_REJECTED",
+      "expected_findings": [],
+      "expected_engine_executed": false,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "CROSS-MODULE-RESERVED-ALIAS",
+      "profile": "scoped-comparison",
+      "remove": [],
+      "insert": [
+        [
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/qualification/0.5.0#Support>",
+          "<http://www.w3.org/2002/07/owl#sameAs>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#Numeric>"
+        ]
+      ],
+      "expected_decision": "PROFILE_REJECTED",
+      "expected_findings": [],
+      "expected_engine_executed": false,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "SCHEMA-INJECTION",
+      "profile": "scoped-comparison",
+      "remove": [],
+      "insert": [
+        [
+          "<urn:riskium:comparison-fixture:fake>",
+          "<http://www.w3.org/2000/01/rdf-schema#subClassOf>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C032>"
+        ]
+      ],
+      "expected_decision": "PROFILE_REJECTED",
+      "expected_findings": [],
+      "expected_engine_executed": false,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "IN-BAND-COMPARISON-SELECTOR",
+      "profile": "scoped-comparison",
+      "remove": [],
+      "insert": [
+        [
+          "<urn:riskium:comparison-fixture:request>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#leftAssessment>",
+          "<urn:riskium:comparison-fixture:leftAssessment>"
+        ]
+      ],
+      "expected_decision": "PROFILE_REJECTED",
+      "expected_findings": [],
+      "expected_engine_executed": false,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "IN-BAND-SHAPE-SWITCH",
+      "profile": "scoped-comparison",
+      "remove": [],
+      "insert": [
+        [
+          "<https://github.com/ArazSaieArasi3/riskium/shapes/0.7.0#Selection>",
+          "<http://www.w3.org/ns/shacl#deactivated>",
+          "\"true\"^^<http://www.w3.org/2001/XMLSchema#boolean>"
+        ]
+      ],
+      "expected_decision": "PROFILE_REJECTED",
+      "expected_findings": [],
+      "expected_engine_executed": false,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "IN-BAND-INTEGRATION-SELECTOR",
+      "profile": "scoped-comparison",
+      "remove": [],
+      "insert": [
+        [
+          "<urn:riskium:comparison-fixture:request>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/integration/0.1.0#threshold>",
+          "<urn:riskium:comparison-fixture:threshold>"
+        ]
+      ],
+      "expected_decision": "PROFILE_REJECTED",
+      "expected_findings": [],
+      "expected_engine_executed": false,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "EMPTY-COMPARISON-REQUEST",
+      "profile": "scoped-comparison",
+      "remove": [],
+      "insert": [],
+      "expected_decision": "PROFILE_REJECTED",
+      "expected_findings": [],
+      "expected_engine_executed": false,
+      "request_patch": {
+        "comparison": []
+      },
+      "mutation": null
+    },
+    {
+      "id": "EMPTY-CATALOG-REQUEST",
+      "profile": "scoped-comparison",
+      "remove": [],
+      "insert": [],
+      "expected_decision": "PROFILE_REJECTED",
+      "expected_findings": [],
+      "expected_engine_executed": false,
+      "request_patch": {
+        "catalog": []
+      },
+      "mutation": null
+    },
+    {
+      "id": "UNTARGETED-NATIVE-PARTICIPANT",
+      "profile": "scoped-comparison",
+      "remove": [],
+      "insert": [
+        [
+          "<urn:riskium:comparison-fixture:unselected>",
+          "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C039>"
+        ]
+      ],
+      "expected_decision": "PROFILE_REJECTED",
+      "expected_findings": [],
+      "expected_engine_executed": false,
+      "request_patch": {},
+      "mutation": null
+    },
+    {
+      "id": "MUTANT-DELETE-UNIT-CHECK",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:indicator>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#unit>",
+          "<urn:riskium:comparison-fixture:unit>"
+        ]
+      ],
+      "insert": [],
+      "expected_decision": "SCOPED_TASK_ADMISSIBLE",
+      "expected_findings": [],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": {
+        "remove": [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#MissingNumericUnit",
+          "http://www.w3.org/ns/shacl#sparql",
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.6.0#MissingNumericUnitQuery"
+        ],
+        "control_of": "MISSING-UNIT"
+      }
+    },
+    {
+      "id": "MUTANT-DELETE-ACTOR-DISTINCTION",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:bearer>",
+          "<http://www.w3.org/2002/07/owl#differentFrom>",
+          "<urn:riskium:comparison-fixture:authority>"
+        ]
+      ],
+      "insert": [],
+      "expected_decision": "SCOPED_TASK_ADMISSIBLE",
+      "expected_findings": [],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": {
+        "remove": [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.1.0#C06Distinct",
+          "http://www.w3.org/ns/shacl#sparql",
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.1.0#C06DistinctQuery"
+        ],
+        "control_of": "UNRESOLVED-ACTOR-DISTINCTION"
+      }
+    },
+    {
+      "id": "MUTANT-DELETE-CYCLE-CHECK",
+      "profile": "scoped-comparison",
+      "remove": [],
+      "insert": [
+        [
+          "<urn:riskium:comparison-fixture:revision>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-34>",
+          "<urn:riskium:comparison-fixture:revision>"
+        ]
+      ],
+      "expected_decision": "SCOPED_TASK_ADMISSIBLE",
+      "expected_findings": [],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": {
+        "remove": [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.4.0#C24Acyclic",
+          "http://www.w3.org/ns/shacl#sparql",
+          "https://github.com/ArazSaieArasi3/riskium/shapes/0.4.0#C24Cycle"
+        ],
+        "control_of": "REVISION-SELF-CYCLE"
+      }
+    },
+    {
+      "id": "MODULES-SEPARATELY-VALID-BUT-DIFFERENT-SCALE",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:indicator>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#scaleVersion>",
+          "<urn:riskium:comparison-fixture:scaleVersion>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:threshold>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-020>",
+          "<urn:riskium:comparison-fixture:scale>"
+        ]
+      ],
+      "insert": [
+        [
+          "<urn:riskium:comparison-fixture:indicator>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#scaleVersion>",
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>",
+          "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006>",
+          "<urn:riskium:comparison-fixture:thresholdScale>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:threshold>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-020>",
+          "<urn:riskium:comparison-fixture:thresholdScale>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:thresholdScale>",
+          "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:thresholdScale>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-019>",
+          "<urn:riskium:comparison-fixture:dimension>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:thresholdScale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#scaleVersion>",
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:thresholdScale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#kind>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#Numeric>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:thresholdScale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#unit>",
+          "<urn:riskium:comparison-fixture:unit>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:thresholdScale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#source>",
+          "<urn:riskium:comparison-fixture:syntheticSource>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate>",
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#declaredClass>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<http://purl.org/dc/terms/title>",
+          "\"Extra fixture participant\""
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<http://purl.org/dc/terms/subject>",
+          "<urn:riskium:comparison-fixture:fixtureTopic>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<http://purl.org/dc/terms/source>",
+          "<urn:riskium:comparison-fixture:syntheticSource>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate>",
+          "<urn:riskium:comparison-fixture:thresholdScale>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#declaredClass>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScale>",
+          "<http://purl.org/dc/terms/title>",
+          "\"Extra fixture participant\""
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScale>",
+          "<http://purl.org/dc/terms/subject>",
+          "<urn:riskium:comparison-fixture:fixtureTopic>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScale>",
+          "<http://purl.org/dc/terms/source>",
+          "<urn:riskium:comparison-fixture:syntheticSource>"
+        ]
+      ],
+      "expected_decision": "NOT_ADMISSIBLE_FOR_SCOPED_TASK",
+      "expected_findings": [
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/integration/0.1.0#SharedThresholdScale",
+          "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "urn:riskium:comparison-fixture:request"
+        ],
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/integration/0.1.0#SharedThresholdScaleVersion",
+          "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "urn:riskium:comparison-fixture:request"
+        ]
+      ],
+      "expected_engine_executed": true,
+      "request_patch": {
+        "catalog": [
+          [
+            "urn:riskium:comparison-fixture:catalog-leftAssessment",
+            "RKM-C032"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-rightAssessment",
+            "RKM-C032"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-leftResult",
+            "RKM-C034"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-rightResult",
+            "RKM-C034"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-level",
+            "RKM-C038"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-scale",
+            "RKM-C036"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-dimension",
+            "RKM-C039"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-scaleVersion",
+            "RKM-C015"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-method",
+            "RKM-C035"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-methodVersion",
+            "RKM-C015"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-basis",
+            "RKM-C033"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-basisVersion",
+            "RKM-C015"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-context",
+            "RKM-C002"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-contextVersion",
+            "RKM-C015"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-threshold",
+            "RKM-C070"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-indicator",
+            "RKM-C069"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-case",
+            "RKM-X01"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-entry",
+            "RKM-C022"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-register",
+            "RKM-C030"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-revision",
+            "RKM-C023"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-relator",
+            "RKM-C052"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-bearer",
+            "RKM-C053"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-authority",
+            "RKM-C054"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-description",
+            "RKM-C024"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-scenario",
+            "RKM-C003"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-term",
+            "RKM-C019"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-scheme",
+            "RKM-C018"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-evidenceReference",
+            "RKM-C065"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-evidenceItem",
+            "RKM-C066"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-thresholdScaleVersion",
+            "RKM-C015"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-thresholdScale",
+            "RKM-C036"
+          ]
+        ]
+      },
+      "mutation": null
+    },
+    {
+      "id": "MODULES-SEPARATELY-VALID-BUT-DIFFERENT-VERSION",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:indicator>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#scaleVersion>",
+          "<urn:riskium:comparison-fixture:scaleVersion>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:scale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#scaleVersion>",
+          "<urn:riskium:comparison-fixture:scaleVersion>"
+        ]
+      ],
+      "insert": [
+        [
+          "<urn:riskium:comparison-fixture:indicator>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#scaleVersion>",
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>",
+          "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006>",
+          "<urn:riskium:comparison-fixture:scale>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:scale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#scaleVersion>",
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:scale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#kind>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#Numeric>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:scale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#unit>",
+          "<urn:riskium:comparison-fixture:unit>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:scale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#source>",
+          "<urn:riskium:comparison-fixture:syntheticSource>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate>",
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#declaredClass>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<http://purl.org/dc/terms/title>",
+          "\"Extra fixture participant\""
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<http://purl.org/dc/terms/subject>",
+          "<urn:riskium:comparison-fixture:fixtureTopic>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<http://purl.org/dc/terms/source>",
+          "<urn:riskium:comparison-fixture:syntheticSource>"
+        ]
+      ],
+      "expected_decision": "NOT_ADMISSIBLE_FOR_SCOPED_TASK",
+      "expected_findings": [
+        [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/integration/0.1.0#SharedThresholdScaleVersion",
+          "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "urn:riskium:comparison-fixture:request"
+        ]
+      ],
+      "expected_engine_executed": true,
+      "request_patch": {
+        "catalog": [
+          [
+            "urn:riskium:comparison-fixture:catalog-leftAssessment",
+            "RKM-C032"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-rightAssessment",
+            "RKM-C032"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-leftResult",
+            "RKM-C034"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-rightResult",
+            "RKM-C034"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-level",
+            "RKM-C038"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-scale",
+            "RKM-C036"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-dimension",
+            "RKM-C039"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-scaleVersion",
+            "RKM-C015"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-method",
+            "RKM-C035"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-methodVersion",
+            "RKM-C015"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-basis",
+            "RKM-C033"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-basisVersion",
+            "RKM-C015"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-context",
+            "RKM-C002"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-contextVersion",
+            "RKM-C015"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-threshold",
+            "RKM-C070"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-indicator",
+            "RKM-C069"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-case",
+            "RKM-X01"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-entry",
+            "RKM-C022"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-register",
+            "RKM-C030"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-revision",
+            "RKM-C023"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-relator",
+            "RKM-C052"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-bearer",
+            "RKM-C053"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-authority",
+            "RKM-C054"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-description",
+            "RKM-C024"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-scenario",
+            "RKM-C003"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-term",
+            "RKM-C019"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-scheme",
+            "RKM-C018"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-evidenceReference",
+            "RKM-C065"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-evidenceItem",
+            "RKM-C066"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-thresholdScaleVersion",
+            "RKM-C015"
+          ]
+        ]
+      },
+      "mutation": null
+    },
+    {
+      "id": "MUTANT-DELETE-JOINT-VERSION-CHECK",
+      "profile": "scoped-comparison",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:indicator>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#scaleVersion>",
+          "<urn:riskium:comparison-fixture:scaleVersion>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:scale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#scaleVersion>",
+          "<urn:riskium:comparison-fixture:scaleVersion>"
+        ]
+      ],
+      "insert": [
+        [
+          "<urn:riskium:comparison-fixture:indicator>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#scaleVersion>",
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>",
+          "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006>",
+          "<urn:riskium:comparison-fixture:scale>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:scale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#scaleVersion>",
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:scale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#kind>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#Numeric>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:scale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#unit>",
+          "<urn:riskium:comparison-fixture:unit>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:scale>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#source>",
+          "<urn:riskium:comparison-fixture:syntheticSource>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#candidate>",
+          "<urn:riskium:comparison-fixture:thresholdScaleVersion>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#declaredClass>",
+          "<https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<http://purl.org/dc/terms/title>",
+          "\"Extra fixture participant\""
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<http://purl.org/dc/terms/subject>",
+          "<urn:riskium:comparison-fixture:fixtureTopic>"
+        ],
+        [
+          "<urn:riskium:comparison-fixture:catalog-thresholdScaleVersion>",
+          "<http://purl.org/dc/terms/source>",
+          "<urn:riskium:comparison-fixture:syntheticSource>"
+        ]
+      ],
+      "expected_decision": "SCOPED_TASK_ADMISSIBLE",
+      "expected_findings": [],
+      "expected_engine_executed": true,
+      "request_patch": {
+        "catalog": [
+          [
+            "urn:riskium:comparison-fixture:catalog-leftAssessment",
+            "RKM-C032"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-rightAssessment",
+            "RKM-C032"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-leftResult",
+            "RKM-C034"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-rightResult",
+            "RKM-C034"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-level",
+            "RKM-C038"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-scale",
+            "RKM-C036"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-dimension",
+            "RKM-C039"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-scaleVersion",
+            "RKM-C015"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-method",
+            "RKM-C035"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-methodVersion",
+            "RKM-C015"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-basis",
+            "RKM-C033"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-basisVersion",
+            "RKM-C015"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-context",
+            "RKM-C002"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-contextVersion",
+            "RKM-C015"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-threshold",
+            "RKM-C070"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-indicator",
+            "RKM-C069"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-case",
+            "RKM-X01"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-entry",
+            "RKM-C022"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-register",
+            "RKM-C030"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-revision",
+            "RKM-C023"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-relator",
+            "RKM-C052"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-bearer",
+            "RKM-C053"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-authority",
+            "RKM-C054"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-description",
+            "RKM-C024"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-scenario",
+            "RKM-C003"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-term",
+            "RKM-C019"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-scheme",
+            "RKM-C018"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-evidenceReference",
+            "RKM-C065"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-evidenceItem",
+            "RKM-C066"
+          ],
+          [
+            "urn:riskium:comparison-fixture:catalog-thresholdScaleVersion",
+            "RKM-C015"
+          ]
+        ]
+      },
+      "mutation": {
+        "remove": [
+          "https://github.com/ArazSaieArasi3/riskium/shapes/integration/0.1.0#SharedThresholdScaleVersion",
+          "http://www.w3.org/ns/shacl#sparql",
+          "https://github.com/ArazSaieArasi3/riskium/shapes/integration/0.1.0#SharedThresholdScaleVersionQuery"
+        ],
+        "control_of": "MODULES-SEPARATELY-VALID-BUT-DIFFERENT-VERSION"
+      }
+    },
+    {
+      "id": "CATALOG-ACCEPTS-MISSING-TASK-UNIT",
+      "profile": "managed-catalog",
+      "remove": [
+        [
+          "<urn:riskium:comparison-fixture:indicator>",
+          "<https://github.com/ArazSaieArasi3/riskium/profiles/compatibility/0.6.0#unit>",
+          "<urn:riskium:comparison-fixture:unit>"
+        ]
+      ],
+      "insert": [],
+      "expected_decision": "CATALOG_ACCEPTED",
+      "expected_findings": [],
+      "expected_engine_executed": true,
+      "request_patch": {},
+      "mutation": null
+    }
+  ],
+  "accounting": "Synthetic records and deliberately weakened-rule controls are separate; a mutant admitting a bad graph demonstrates sensitivity and is never a valid domain result."
+}

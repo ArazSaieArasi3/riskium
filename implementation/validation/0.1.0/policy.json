@@ -1,0 +1,91 @@
+{
+  "schema": "riskium-integrated-validation-policy-v1",
+  "profile_version": "0.1.0",
+  "compatible_model": "0.3.1",
+  "baseline_release": "v0.3.1",
+  "status": "AUTHOR_MAINTAINED_ENGINEERING_SUPPLEMENT_NOT_NEW_OWNER_OR_INDEPENDENT_JUDGMENT",
+  "task": "One shared RDF graph: qualified declarations, publication/coherence, threshold metadata and strict direct-comparison eligibility",
+  "profiles": [
+    "raw",
+    "managed-catalog",
+    "scoped-comparison"
+  ],
+  "modules": {
+    "conditional": "ontology/shacl/0.1.0/published.ttl",
+    "endpoints": "ontology/shacl/0.2.0/endpoints.ttl",
+    "admission": "ontology/shacl/0.3.0/admission.ttl",
+    "coherence": "ontology/shacl/0.4.0/coherence.ttl",
+    "qualification": "ontology/shacl/0.5.0/qualification.ttl",
+    "compatibility": "ontology/shacl/0.6.0/compatibility.ttl",
+    "comparison": "ontology/shacl/0.7.0/comparison.ttl"
+  },
+  "endpoint_relations": [
+    "R-01",
+    "R-05",
+    "R-12",
+    "R-13",
+    "R-14",
+    "R-15",
+    "R-16",
+    "R-33",
+    "R-34",
+    "R-35",
+    "R-37",
+    "R-45",
+    "R-46",
+    "R-48",
+    "R-49",
+    "R-56",
+    "R-57",
+    "R-68",
+    "RK2-018",
+    "RK2-019",
+    "RK2-020",
+    "RX-001",
+    "RX-006",
+    "RX-008",
+    "RX-014",
+    "RX-015",
+    "RX-016",
+    "RX-021",
+    "RX-025"
+  ],
+  "frozen_inputs": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/derived/riskium.owl.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+    "evaluation/coverage-review.json": "4fefe152a982be4e41fe6f9ba92c3f7ed65af9e35250d58ebad6330acd7606b5",
+    "ontology/shacl/0.1.0/published.ttl": "e9dee13320bce5aba20670cbd62a86cf7f29721998a8a7e9ed373515677dc75a",
+    "ontology/shacl/0.2.0/endpoints.ttl": "dd593129a300bba849a7efdf7ed1e89340d3ac1639ef2307d0c680702ccc75b4",
+    "ontology/shacl/0.3.0/admission.ttl": "1cf1308824d4944081557c714b377b107b0ae4f4c607619e6378060711b53958",
+    "ontology/shacl/0.4.0/coherence.ttl": "b8b7ba9e02623626418323941fa31ff1412de56bd7c07f55d8de64eb8d41bc93",
+    "ontology/shacl/0.5.0/qualification.ttl": "9aa94663376fde8a83f752ead8426896a9e329f67fd21fc4f2e9ed180b38c856",
+    "ontology/shacl/0.6.0/compatibility.ttl": "82f9c6b4ce1e1ee27e38605ac789dd74b7d2ed0f8255a175b64f1bebd21c9239",
+    "ontology/shacl/0.7.0/comparison.ttl": "8329c3ee80fdeace3201de96d01669ffbbb205909e2839064521f4c3f36a36ae",
+    "ontology/shacl/0.5.0/receipt.json": "89b90bcbbc7ba34a1463e7daa804108bffd44aec48b51b6325abc2b46826bd11",
+    "ontology/shacl/0.6.0/receipt.json": "bd85f093e3f17be9dc4de04cee5fd1e58b369ae2bcc5552bc3b5f4666221f7e9",
+    "ontology/shacl/0.7.0/receipt.json": "983b126e373907a51ea156377f8825ebf6a455877a4dd833d3b02feca5522585"
+  },
+  "identity": "Normalize asserted named sameAs once across the graph and all external requests; preserve explicit difference; labels and equal numbers never imply identity.",
+  "focus": "Every task focus is caller supplied. In-band shape/selector/schema/import declarations and aliases of any participating reserved vocabulary are rejected. All explicitly typed native participants require caller-selected catalog envelopes; envelope metadata cannot supply a missing native type.",
+  "joint_task_rules": [
+    "The one requested threshold and both comparison results must select exactly the same normalized scale.",
+    "The threshold scale metadata and both selected results must pin exactly the same normalized scale version. Unequal unresolved identities do not satisfy this exact-join policy; no claim of physical incompatibility is inferred."
+  ],
+  "decisions": [
+    "STAGING_ONLY",
+    "CATALOG_ACCEPTED",
+    "CATALOG_NOT_ADMITTED",
+    "SCOPED_TASK_ADMISSIBLE",
+    "NOT_ADMISSIBLE_FOR_SCOPED_TASK",
+    "PROFILE_REJECTED",
+    "ENGINE_ERROR"
+  ],
+  "limits": [
+    "Finite synthetic shared-graph fixtures only; no held-out/domain accuracy",
+    "Seven module families; selected relation endpoints only, not all 127 relations or full managed acceptance",
+    "No new HermiT outcomes or changes to the historical 359-row SHACL checkpoint",
+    "No source truth, clinical inference, governed organizational case admission or independent ratings",
+    "No risk score arithmetic, transformations, conversions, workflow transitions or interval reasoning",
+    "No change to model, manuscript, ORSD, SQL schema, owner decisions or frozen v0.3.1 assets"
+  ]
+}
