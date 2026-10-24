@@ -1,0 +1,2672 @@
+{
+  "mode": "asserted hypertext neighborhoods; no inference",
+  "source_commit": "8afe169968b5c1396c02834dbc499af691b894b4",
+  "source_sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+  "terms": [
+    {
+      "children": [],
+      "id": "EXT-OBJECT",
+      "incoming": [],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#EXT-OBJECT",
+      "label": "ExternalObject",
+      "outgoing": [
+        "RK3-004"
+      ],
+      "parents": []
+    },
+    {
+      "children": [],
+      "id": "RKM-C001",
+      "incoming": [
+        "RK2-008",
+        "RX-002"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C001",
+      "label": "RiskPatternSpecification",
+      "outgoing": [],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C002",
+      "incoming": [
+        "R-35",
+        "R-43",
+        "R-45",
+        "RK2-009",
+        "RK2-010",
+        "RK2-012",
+        "RK2-023",
+        "RK2-024",
+        "RK2-026",
+        "RK3-003",
+        "RX-001",
+        "RX-017"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002",
+      "label": "RiskContextSpecification",
+      "outgoing": [
+        "RK2-001",
+        "RK2-002",
+        "RK2-003",
+        "RK2-011"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C003",
+      "incoming": [
+        "R-37"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003",
+      "label": "RiskScenarioSpecification",
+      "outgoing": [
+        "R-25",
+        "R-36",
+        "RK2-010",
+        "RX-009"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [
+        "RKM-C009"
+      ],
+      "id": "RKM-C004",
+      "incoming": [
+        "R-25",
+        "R-69"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C004",
+      "label": "RiskOccurrence",
+      "outgoing": [
+        "RK2-005"
+      ],
+      "parents": []
+    },
+    {
+      "children": [],
+      "id": "RKM-C005",
+      "incoming": [
+        "R-44"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C005",
+      "label": "RiskNatureAssertion",
+      "outgoing": [
+        "R-41",
+        "R-42",
+        "R-43"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C006",
+      "incoming": [
+        "R-42"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C006",
+      "label": "NatureTerm",
+      "outgoing": [],
+      "parents": [
+        "RKM-C019"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C008",
+      "incoming": [
+        "RK2-001"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C008",
+      "label": "PredisposingCondition",
+      "outgoing": [],
+      "parents": []
+    },
+    {
+      "children": [],
+      "id": "RKM-C009",
+      "incoming": [
+        "RK2-005"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C009",
+      "label": "Trigger",
+      "outgoing": [],
+      "parents": [
+        "RKM-C004"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C011",
+      "incoming": [
+        "RK2-002",
+        "RK3-004"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C011",
+      "label": "Vulnerability",
+      "outgoing": [],
+      "parents": []
+    },
+    {
+      "children": [],
+      "id": "RKM-C012",
+      "incoming": [
+        "RK2-003"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C012",
+      "label": "Exposure",
+      "outgoing": [],
+      "parents": []
+    },
+    {
+      "children": [],
+      "id": "RKM-C013",
+      "incoming": [
+        "RK2-004"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C013",
+      "label": "RiskState",
+      "outgoing": [],
+      "parents": []
+    },
+    {
+      "children": [
+        "RKM-C001",
+        "RKM-C002",
+        "RKM-C003",
+        "RKM-C005",
+        "RKM-C017",
+        "RKM-C018",
+        "RKM-C020",
+        "RKM-C021",
+        "RKM-C022",
+        "RKM-C024",
+        "RKM-C025",
+        "RKM-C026",
+        "RKM-C030",
+        "RKM-C032",
+        "RKM-C033",
+        "RKM-C034",
+        "RKM-C035",
+        "RKM-C036",
+        "RKM-C037",
+        "RKM-C041",
+        "RKM-C043",
+        "RKM-C050",
+        "RKM-C051",
+        "RKM-C062",
+        "RKM-C065",
+        "RKM-C066",
+        "RKM-C068",
+        "RKM-C069",
+        "RKM-C070",
+        "RKM-C071",
+        "RKM-C072",
+        "RKM-C073",
+        "RKM-C074",
+        "RKM-X02",
+        "RKM-X03",
+        "RKM-X04",
+        "RKM-X05",
+        "RKM-X06"
+      ],
+      "id": "RKM-C014",
+      "incoming": [
+        "R-68",
+        "RX-006"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014",
+      "label": "InformationArtifact",
+      "outgoing": [],
+      "parents": []
+    },
+    {
+      "children": [
+        "RKM-C023",
+        "RKM-C063"
+      ],
+      "id": "RKM-C015",
+      "incoming": [
+        "RX-013",
+        "RX-014",
+        "RX-015",
+        "RX-016"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015",
+      "label": "ArtifactVersion",
+      "outgoing": [
+        "RX-006",
+        "RX-007"
+      ],
+      "parents": []
+    },
+    {
+      "children": [],
+      "id": "RKM-C016",
+      "incoming": [
+        "RX-007"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C016",
+      "label": "InformationContent",
+      "outgoing": [],
+      "parents": []
+    },
+    {
+      "children": [
+        "RKM-C019",
+        "RKM-C038",
+        "RKM-C039"
+      ],
+      "id": "RKM-C017",
+      "incoming": [],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C017",
+      "label": "VocabularyConcept",
+      "outgoing": [],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C018",
+      "incoming": [
+        "R-05"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C018",
+      "label": "ClassificationScheme",
+      "outgoing": [],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [
+        "RKM-C006",
+        "RKM-C027",
+        "RKM-C028",
+        "RKM-C029",
+        "RKM-C040",
+        "RKM-C042",
+        "RKM-C046",
+        "RKM-C059",
+        "RKM-C060",
+        "RKM-C061"
+      ],
+      "id": "RKM-C019",
+      "incoming": [
+        "R-04",
+        "R-06"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C019",
+      "label": "ClassificationTerm",
+      "outgoing": [
+        "R-05",
+        "R-06"
+      ],
+      "parents": [
+        "RKM-C017"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C020",
+      "incoming": [
+        "R-29"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C020",
+      "label": "ClassificationAssertion",
+      "outgoing": [
+        "R-03",
+        "R-04"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C021",
+      "incoming": [
+        "R-24"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C021",
+      "label": "Tag",
+      "outgoing": [],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C022",
+      "incoming": [
+        "R-33"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C022",
+      "label": "RiskRegisterEntry",
+      "outgoing": [
+        "R-01",
+        "RX-008"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C023",
+      "incoming": [
+        "R-34",
+        "RX-031"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C023",
+      "label": "EntryRevision",
+      "outgoing": [
+        "R-02",
+        "R-23",
+        "R-24",
+        "R-28",
+        "R-29",
+        "R-30",
+        "R-33",
+        "R-34",
+        "R-38",
+        "R-44",
+        "R-52",
+        "R-60",
+        "R-61",
+        "RK2-016",
+        "RK2-017"
+      ],
+      "parents": [
+        "RKM-C015"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C024",
+      "incoming": [
+        "R-02"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C024",
+      "label": "RiskDescription",
+      "outgoing": [
+        "R-37",
+        "R-39",
+        "RK2-007",
+        "RK2-008",
+        "RK2-009"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C025",
+      "incoming": [
+        "R-38",
+        "RX-009"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C025",
+      "label": "ConsequenceStatement",
+      "outgoing": [
+        "R-22",
+        "R-40"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C026",
+      "incoming": [
+        "R-52"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C026",
+      "label": "IdentificationInformation",
+      "outgoing": [
+        "R-07",
+        "R-08",
+        "R-27"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C027",
+      "incoming": [
+        "R-27"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C027",
+      "label": "IntakeChannelTerm",
+      "outgoing": [],
+      "parents": [
+        "RKM-C019"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C028",
+      "incoming": [
+        "R-39"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C028",
+      "label": "DescriptionRoleTerm",
+      "outgoing": [],
+      "parents": [
+        "RKM-C019"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C029",
+      "incoming": [
+        "R-40"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C029",
+      "label": "ConsequenceSlotTerm",
+      "outgoing": [],
+      "parents": [
+        "RKM-C019"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C030",
+      "incoming": [
+        "RX-008"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C030",
+      "label": "RiskRegister",
+      "outgoing": [],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C031",
+      "incoming": [
+        "R-71"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C031",
+      "label": "AssessmentActivity",
+      "outgoing": [
+        "R-26",
+        "R-51"
+      ],
+      "parents": []
+    },
+    {
+      "children": [],
+      "id": "RKM-C032",
+      "incoming": [
+        "R-26",
+        "R-28",
+        "RK2-015",
+        "RX-012"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C032",
+      "label": "AssessmentInformation",
+      "outgoing": [
+        "R-11",
+        "R-12",
+        "R-13",
+        "R-17",
+        "R-45",
+        "R-46",
+        "R-47",
+        "RK2-013",
+        "RX-014",
+        "RX-015"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C033",
+      "incoming": [
+        "R-12"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C033",
+      "label": "AssessmentBasis",
+      "outgoing": [
+        "RK2-022"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C034",
+      "incoming": [
+        "R-13",
+        "R-18"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C034",
+      "label": "DimensionAssessmentResult",
+      "outgoing": [
+        "R-14",
+        "R-15",
+        "R-48",
+        "RX-016"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C035",
+      "incoming": [
+        "R-46",
+        "R-50"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C035",
+      "label": "AssessmentMethodSpecification",
+      "outgoing": [
+        "R-49",
+        "RK2-018"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C036",
+      "incoming": [
+        "R-14",
+        "R-16",
+        "R-49",
+        "RK2-020"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036",
+      "label": "AssessmentScale",
+      "outgoing": [
+        "RK2-019"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C037",
+      "incoming": [
+        "R-17"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C037",
+      "label": "RiskScoreResult",
+      "outgoing": [
+        "R-18",
+        "R-50"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C038",
+      "incoming": [
+        "R-15"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C038",
+      "label": "AssessmentScaleLevel",
+      "outgoing": [
+        "R-16"
+      ],
+      "parents": [
+        "RKM-C017"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C039",
+      "incoming": [
+        "R-48",
+        "RK2-018",
+        "RK2-019"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C039",
+      "label": "AssessmentDimension",
+      "outgoing": [],
+      "parents": [
+        "RKM-C017"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C040",
+      "incoming": [
+        "R-47"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C040",
+      "label": "EpistemicStatusTerm",
+      "outgoing": [],
+      "parents": [
+        "RKM-C019"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C041",
+      "incoming": [
+        "R-60"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C041",
+      "label": "TreatmentDecisionInformation",
+      "outgoing": [
+        "R-19",
+        "R-20",
+        "R-63",
+        "RK2-014",
+        "RK2-015"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C042",
+      "incoming": [
+        "R-20"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C042",
+      "label": "TreatmentStrategyTerm",
+      "outgoing": [],
+      "parents": [
+        "RKM-C019"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C043",
+      "incoming": [
+        "R-61",
+        "R-63",
+        "R-64"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C043",
+      "label": "PlanSpecification",
+      "outgoing": [
+        "R-21",
+        "R-62"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C044",
+      "incoming": [
+        "R-72"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C044",
+      "label": "TreatmentActivity",
+      "outgoing": [
+        "R-64",
+        "R-65"
+      ],
+      "parents": []
+    },
+    {
+      "children": [],
+      "id": "RKM-C046",
+      "incoming": [
+        "R-62"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C046",
+      "label": "PlanRoleTerm",
+      "outgoing": [],
+      "parents": [
+        "RKM-C019"
+      ]
+    },
+    {
+      "children": [
+        "RKM-C048",
+        "RKM-C049",
+        "RKM-C053",
+        "RKM-C054"
+      ],
+      "id": "RKM-C047",
+      "incoming": [
+        "R-51",
+        "R-53",
+        "R-65",
+        "R-70"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C047",
+      "label": "Agent",
+      "outgoing": [],
+      "parents": []
+    },
+    {
+      "children": [
+        "RKM-C055",
+        "RKM-C057"
+      ],
+      "id": "RKM-C048",
+      "incoming": [],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C048",
+      "label": "Person",
+      "outgoing": [],
+      "parents": [
+        "RKM-C047"
+      ]
+    },
+    {
+      "children": [
+        "RKM-C056",
+        "RKM-C058"
+      ],
+      "id": "RKM-C049",
+      "incoming": [],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C049",
+      "label": "Organization",
+      "outgoing": [],
+      "parents": [
+        "RKM-C047"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C050",
+      "incoming": [
+        "R-08",
+        "R-10",
+        "RK2-025"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C050",
+      "label": "ActorReference",
+      "outgoing": [
+        "R-53"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C051",
+      "incoming": [
+        "R-30"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C051",
+      "label": "ResponsibilityAssignmentInformation",
+      "outgoing": [
+        "R-09",
+        "R-10",
+        "R-54",
+        "R-55",
+        "RK2-025"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C052",
+      "incoming": [
+        "R-55"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C052",
+      "label": "ResponsibilityRelator",
+      "outgoing": [
+        "R-56",
+        "R-57",
+        "R-58",
+        "R-59"
+      ],
+      "parents": []
+    },
+    {
+      "children": [
+        "RKM-C055",
+        "RKM-C056"
+      ],
+      "id": "RKM-C053",
+      "incoming": [
+        "R-56"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C053",
+      "label": "ResponsibleAgentRole",
+      "outgoing": [],
+      "parents": [
+        "RKM-C047"
+      ]
+    },
+    {
+      "children": [
+        "RKM-C057",
+        "RKM-C058"
+      ],
+      "id": "RKM-C054",
+      "incoming": [
+        "R-57"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C054",
+      "label": "AuthorizingAgentRole",
+      "outgoing": [],
+      "parents": [
+        "RKM-C047"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C055",
+      "incoming": [],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C055",
+      "label": "ResponsiblePerson",
+      "outgoing": [],
+      "parents": [
+        "RKM-C048",
+        "RKM-C053"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C056",
+      "incoming": [],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C056",
+      "label": "ResponsibleOrganization",
+      "outgoing": [],
+      "parents": [
+        "RKM-C049",
+        "RKM-C053"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C057",
+      "incoming": [],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C057",
+      "label": "AuthorizingPerson",
+      "outgoing": [],
+      "parents": [
+        "RKM-C048",
+        "RKM-C054"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C058",
+      "incoming": [],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C058",
+      "label": "AuthorizingOrganization",
+      "outgoing": [],
+      "parents": [
+        "RKM-C049",
+        "RKM-C054"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C059",
+      "incoming": [
+        "R-54",
+        "R-59"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C059",
+      "label": "ResponsibilityRoleTerm",
+      "outgoing": [],
+      "parents": [
+        "RKM-C019"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C060",
+      "incoming": [
+        "R-31"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C060",
+      "label": "AnalysisStateTerm",
+      "outgoing": [],
+      "parents": [
+        "RKM-C019"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C061",
+      "incoming": [
+        "R-32",
+        "RX-029"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C061",
+      "label": "WorkflowStateTerm",
+      "outgoing": [
+        "RK2-021"
+      ],
+      "parents": [
+        "RKM-C019"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C062",
+      "incoming": [
+        "R-23"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C062",
+      "label": "RecordStateAssertion",
+      "outgoing": [
+        "R-31",
+        "R-32",
+        "RX-032"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C063",
+      "incoming": [
+        "RK2-021",
+        "RX-030"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C063",
+      "label": "WorkflowSchemeVersion",
+      "outgoing": [],
+      "parents": [
+        "RKM-C015"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C064",
+      "incoming": [
+        "RX-032"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C064",
+      "label": "WorkflowAssignment",
+      "outgoing": [
+        "RX-029",
+        "RX-030",
+        "RX-031"
+      ],
+      "parents": []
+    },
+    {
+      "children": [],
+      "id": "RKM-C065",
+      "incoming": [],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C065",
+      "label": "EvidenceReference",
+      "outgoing": [
+        "R-68",
+        "R-69",
+        "R-70",
+        "R-71",
+        "R-72",
+        "RX-021"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C066",
+      "incoming": [
+        "RX-021"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C066",
+      "label": "EvidenceItem",
+      "outgoing": [],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C067",
+      "incoming": [],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C067",
+      "label": "ObservationActivity",
+      "outgoing": [
+        "RX-022"
+      ],
+      "parents": []
+    },
+    {
+      "children": [],
+      "id": "RKM-C068",
+      "incoming": [
+        "RK2-017",
+        "RX-022",
+        "RX-026"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C068",
+      "label": "ObservationResult",
+      "outgoing": [
+        "RK2-026",
+        "RX-023",
+        "RX-024"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C069",
+      "incoming": [
+        "RX-023",
+        "RX-025"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C069",
+      "label": "Indicator",
+      "outgoing": [],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C070",
+      "incoming": [
+        "RX-027"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C070",
+      "label": "Threshold",
+      "outgoing": [
+        "RK2-020",
+        "RX-025"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C071",
+      "incoming": [],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C071",
+      "label": "Signal",
+      "outgoing": [
+        "RX-026",
+        "RX-027",
+        "RX-028"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C072",
+      "incoming": [],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C072",
+      "label": "RiskCriteria",
+      "outgoing": [
+        "RX-017",
+        "RX-018",
+        "RX-019"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C073",
+      "incoming": [
+        "RX-018"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C073",
+      "label": "RiskAppetiteStatement",
+      "outgoing": [
+        "RK2-023"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-C074",
+      "incoming": [
+        "RX-019"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C074",
+      "label": "RiskToleranceStatement",
+      "outgoing": [
+        "RK2-024"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-X01",
+      "incoming": [
+        "R-01",
+        "R-03",
+        "R-07",
+        "R-09",
+        "R-11",
+        "R-19",
+        "R-21",
+        "R-22",
+        "R-36",
+        "R-41",
+        "R-58",
+        "RK2-007",
+        "RX-004",
+        "RX-011",
+        "RX-024",
+        "RX-028"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01",
+      "label": "RiskCase",
+      "outgoing": [
+        "R-35",
+        "RK2-004",
+        "RK3-001",
+        "RX-001",
+        "RX-002",
+        "RX-003"
+      ],
+      "parents": []
+    },
+    {
+      "children": [],
+      "id": "RKM-X02",
+      "incoming": [
+        "RK2-011",
+        "RX-003"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X02",
+      "label": "ObjectiveReference",
+      "outgoing": [],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-X03",
+      "incoming": [
+        "RK2-013"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X03",
+      "label": "UncertaintyStatement",
+      "outgoing": [
+        "RK2-012",
+        "RX-004"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-X04",
+      "incoming": [
+        "RK2-014"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X04",
+      "label": "RiskEvaluationOutcome",
+      "outgoing": [
+        "RX-011",
+        "RX-012",
+        "RX-013"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-X05",
+      "incoming": [
+        "RK2-016",
+        "RK2-022"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X05",
+      "label": "ControlReference",
+      "outgoing": [],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "children": [],
+      "id": "RKM-X06",
+      "incoming": [
+        "RK3-001"
+      ],
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06",
+      "label": "RiskSourceReference",
+      "outgoing": [
+        "RK3-003"
+      ],
+      "parents": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C022"
+      ],
+      "id": "R-01",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01",
+      "label": "recordsAbout",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "R-02",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-02",
+      "label": "hasDescription",
+      "range": [
+        "RKM-C024"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C020"
+      ],
+      "id": "R-03",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-03",
+      "label": "classifies",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C020"
+      ],
+      "id": "R-04",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-04",
+      "label": "selectsTerm",
+      "range": [
+        "RKM-C019"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C019"
+      ],
+      "id": "R-05",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-05",
+      "label": "belongsToScheme",
+      "range": [
+        "RKM-C018"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C019"
+      ],
+      "id": "R-06",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-06",
+      "label": "hasBroaderTerm",
+      "range": [
+        "RKM-C019"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C026"
+      ],
+      "id": "R-07",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-07",
+      "label": "identifiedRisk",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C026"
+      ],
+      "id": "R-08",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-08",
+      "label": "hasParticipantReference",
+      "range": [
+        "RKM-C050"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C051"
+      ],
+      "id": "R-09",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-09",
+      "label": "assignmentAbout",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C051"
+      ],
+      "id": "R-10",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-10",
+      "label": "hasBearerReference",
+      "range": [
+        "RKM-C050"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C032"
+      ],
+      "id": "R-11",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-11",
+      "label": "assesses",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C032"
+      ],
+      "id": "R-12",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-12",
+      "label": "hasBasis",
+      "range": [
+        "RKM-C033"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C032"
+      ],
+      "id": "R-13",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-13",
+      "label": "hasDimensionResult",
+      "range": [
+        "RKM-C034"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C034"
+      ],
+      "id": "R-14",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-14",
+      "label": "usesScale",
+      "range": [
+        "RKM-C036"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C034"
+      ],
+      "id": "R-15",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-15",
+      "label": "selectsLevel",
+      "range": [
+        "RKM-C038"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C038"
+      ],
+      "id": "R-16",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-16",
+      "label": "levelOf",
+      "range": [
+        "RKM-C036"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C032"
+      ],
+      "id": "R-17",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-17",
+      "label": "hasScoreResult",
+      "range": [
+        "RKM-C037"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C037"
+      ],
+      "id": "R-18",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-18",
+      "label": "derivedFrom",
+      "range": [
+        "RKM-C034"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C041"
+      ],
+      "id": "R-19",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-19",
+      "label": "decisionAbout",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C041"
+      ],
+      "id": "R-20",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-20",
+      "label": "selectsStrategy",
+      "range": [
+        "RKM-C042"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C043"
+      ],
+      "id": "R-21",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-21",
+      "label": "planAbout",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C025"
+      ],
+      "id": "R-22",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-22",
+      "label": "statementAbout",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "R-23",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-23",
+      "label": "hasStateAssertion",
+      "range": [
+        "RKM-C062"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "R-24",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-24",
+      "label": "hasTag",
+      "range": [
+        "RKM-C021"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C003"
+      ],
+      "id": "R-25",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-25",
+      "label": "mayBeRealizedBy",
+      "range": [
+        "RKM-C004"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C031"
+      ],
+      "id": "R-26",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-26",
+      "label": "producesAssessmentInformation",
+      "range": [
+        "RKM-C032"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C026"
+      ],
+      "id": "R-27",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-27",
+      "label": "declaresIntakeChannel",
+      "range": [
+        "RKM-C027"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "R-28",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-28",
+      "label": "documentsAssessment",
+      "range": [
+        "RKM-C032"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "R-29",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-29",
+      "label": "documentsClassification",
+      "range": [
+        "RKM-C020"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "R-30",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-30",
+      "label": "documentsAssignment",
+      "range": [
+        "RKM-C051"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C062"
+      ],
+      "id": "R-31",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-31",
+      "label": "declaresAnalysisState",
+      "range": [
+        "RKM-C060"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C062"
+      ],
+      "id": "R-32",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-32",
+      "label": "declaresWorkflowState",
+      "range": [
+        "RKM-C061"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "R-33",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-33",
+      "label": "revisionOf",
+      "range": [
+        "RKM-C022"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "R-34",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-34",
+      "label": "previousRevision",
+      "range": [
+        "RKM-C023"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-X01"
+      ],
+      "id": "R-35",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-35",
+      "label": "analyzedInContext",
+      "range": [
+        "RKM-C002"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C003"
+      ],
+      "id": "R-36",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36",
+      "label": "scenarioAbout",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C024"
+      ],
+      "id": "R-37",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-37",
+      "label": "expressesScenario",
+      "range": [
+        "RKM-C003"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "R-38",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-38",
+      "label": "recordsConsequence",
+      "range": [
+        "RKM-C025"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C024"
+      ],
+      "id": "R-39",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-39",
+      "label": "descriptionRole",
+      "range": [
+        "RKM-C028"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C025"
+      ],
+      "id": "R-40",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-40",
+      "label": "sourceSlot",
+      "range": [
+        "RKM-C029"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C005"
+      ],
+      "id": "R-41",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-41",
+      "label": "natureOf",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C005"
+      ],
+      "id": "R-42",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-42",
+      "label": "declaresNature",
+      "range": [
+        "RKM-C006"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C005"
+      ],
+      "id": "R-43",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-43",
+      "label": "natureInContext",
+      "range": [
+        "RKM-C002"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "R-44",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-44",
+      "label": "recordsNature",
+      "range": [
+        "RKM-C005"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C032"
+      ],
+      "id": "R-45",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-45",
+      "label": "assessmentContext",
+      "range": [
+        "RKM-C002"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C032"
+      ],
+      "id": "R-46",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-46",
+      "label": "usesMethod",
+      "range": [
+        "RKM-C035"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C032"
+      ],
+      "id": "R-47",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-47",
+      "label": "epistemicStatus",
+      "range": [
+        "RKM-C040"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C034"
+      ],
+      "id": "R-48",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-48",
+      "label": "dimension",
+      "range": [
+        "RKM-C039"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C035"
+      ],
+      "id": "R-49",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-49",
+      "label": "permitsScale",
+      "range": [
+        "RKM-C036"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C037"
+      ],
+      "id": "R-50",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-50",
+      "label": "scoreMethod",
+      "range": [
+        "RKM-C035"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C031"
+      ],
+      "id": "R-51",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-51",
+      "label": "assessmentPerformer",
+      "range": [
+        "RKM-C047"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "R-52",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-52",
+      "label": "recordsIdentification",
+      "range": [
+        "RKM-C026"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C050"
+      ],
+      "id": "R-53",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-53",
+      "label": "resolvesToAgent",
+      "range": [
+        "RKM-C047"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C051"
+      ],
+      "id": "R-54",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-54",
+      "label": "assignmentRole",
+      "range": [
+        "RKM-C059"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C051"
+      ],
+      "id": "R-55",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-55",
+      "label": "documentsActualMandate",
+      "range": [
+        "RKM-C052"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C052"
+      ],
+      "id": "R-56",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-56",
+      "label": "mediatesBearer",
+      "range": [
+        "RKM-C053"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C052"
+      ],
+      "id": "R-57",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-57",
+      "label": "mediatesAuthority",
+      "range": [
+        "RKM-C054"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C052"
+      ],
+      "id": "R-58",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-58",
+      "label": "mandateAbout",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C052"
+      ],
+      "id": "R-59",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-59",
+      "label": "mandateRole",
+      "range": [
+        "RKM-C059"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "R-60",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-60",
+      "label": "recordsDecision",
+      "range": [
+        "RKM-C041"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "R-61",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-61",
+      "label": "recordsPlan",
+      "range": [
+        "RKM-C043"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C043"
+      ],
+      "id": "R-62",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-62",
+      "label": "planRole",
+      "range": [
+        "RKM-C046"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C041"
+      ],
+      "id": "R-63",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-63",
+      "label": "isSpecifiedByPlan",
+      "range": [
+        "RKM-C043"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C044"
+      ],
+      "id": "R-64",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-64",
+      "label": "executesPlan",
+      "range": [
+        "RKM-C043"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C044"
+      ],
+      "id": "R-65",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-65",
+      "label": "treatmentPerformer",
+      "range": [
+        "RKM-C047"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C065"
+      ],
+      "id": "R-68",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-68",
+      "label": "supportsRecordedArtifact",
+      "range": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C065"
+      ],
+      "id": "R-69",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-69",
+      "label": "refersToOccurrence",
+      "range": [
+        "RKM-C004"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C065"
+      ],
+      "id": "R-70",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-70",
+      "label": "refersToAgent",
+      "range": [
+        "RKM-C047"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C065"
+      ],
+      "id": "R-71",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-71",
+      "label": "refersToAssessmentActivity",
+      "range": [
+        "RKM-C031"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C065"
+      ],
+      "id": "R-72",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-72",
+      "label": "refersToTreatmentActivity",
+      "range": [
+        "RKM-C044"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C002"
+      ],
+      "id": "RK2-001",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-001",
+      "label": "refersToCondition",
+      "range": [
+        "RKM-C008"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C002"
+      ],
+      "id": "RK2-002",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-002",
+      "label": "refersToVulnerability",
+      "range": [
+        "RKM-C011"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C002"
+      ],
+      "id": "RK2-003",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-003",
+      "label": "refersToExposure",
+      "range": [
+        "RKM-C012"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-X01"
+      ],
+      "id": "RK2-004",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-004",
+      "label": "hasEstablishedState",
+      "range": [
+        "RKM-C013"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C004"
+      ],
+      "id": "RK2-005",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-005",
+      "label": "initiatedBy",
+      "range": [
+        "RKM-C009"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C024"
+      ],
+      "id": "RK2-007",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-007",
+      "label": "describesCase",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C024"
+      ],
+      "id": "RK2-008",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-008",
+      "label": "describesPattern",
+      "range": [
+        "RKM-C001"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C024"
+      ],
+      "id": "RK2-009",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-009",
+      "label": "descriptionContext",
+      "range": [
+        "RKM-C002"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C003"
+      ],
+      "id": "RK2-010",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-010",
+      "label": "scenarioContext",
+      "range": [
+        "RKM-C002"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C002"
+      ],
+      "id": "RK2-011",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-011",
+      "label": "referencesObjective",
+      "range": [
+        "RKM-X02"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-X03"
+      ],
+      "id": "RK2-012",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-012",
+      "label": "uncertaintyContext",
+      "range": [
+        "RKM-C002"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C032"
+      ],
+      "id": "RK2-013",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-013",
+      "label": "recordsUncertainty",
+      "range": [
+        "RKM-X03"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C041"
+      ],
+      "id": "RK2-014",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-014",
+      "label": "basedOnEvaluation",
+      "range": [
+        "RKM-X04"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C041"
+      ],
+      "id": "RK2-015",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-015",
+      "label": "recordsRemainingRiskAssessment",
+      "range": [
+        "RKM-C032"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "RK2-016",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-016",
+      "label": "recordsControlReference",
+      "range": [
+        "RKM-X05"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C023"
+      ],
+      "id": "RK2-017",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-017",
+      "label": "recordsObservation",
+      "range": [
+        "RKM-C068"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C035"
+      ],
+      "id": "RK2-018",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-018",
+      "label": "specifiesDimension",
+      "range": [
+        "RKM-C039"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C036"
+      ],
+      "id": "RK2-019",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-019",
+      "label": "scaleForDimension",
+      "range": [
+        "RKM-C039"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C070"
+      ],
+      "id": "RK2-020",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-020",
+      "label": "thresholdOnScale",
+      "range": [
+        "RKM-C036"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C061"
+      ],
+      "id": "RK2-021",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-021",
+      "label": "availableInWorkflowScheme",
+      "range": [
+        "RKM-C063"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C033"
+      ],
+      "id": "RK2-022",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-022",
+      "label": "referencesControlBaseline",
+      "range": [
+        "RKM-X05"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C073"
+      ],
+      "id": "RK2-023",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-023",
+      "label": "appetiteContext",
+      "range": [
+        "RKM-C002"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C074"
+      ],
+      "id": "RK2-024",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-024",
+      "label": "toleranceContext",
+      "range": [
+        "RKM-C002"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C051"
+      ],
+      "id": "RK2-025",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-025",
+      "label": "authorizerReference",
+      "range": [
+        "RKM-C050"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C068"
+      ],
+      "id": "RK2-026",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-026",
+      "label": "observationContext",
+      "range": [
+        "RKM-C002"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-X01"
+      ],
+      "id": "RK3-001",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001",
+      "label": "hasSourceReference",
+      "range": [
+        "RKM-X06"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-X06"
+      ],
+      "id": "RK3-003",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-003",
+      "label": "sourceReferenceContext",
+      "range": [
+        "RKM-C002"
+      ]
+    },
+    {
+      "domain": [
+        "EXT-OBJECT"
+      ],
+      "id": "RK3-004",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-004",
+      "label": "bearsVulnerability",
+      "range": [
+        "RKM-C011"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-X01"
+      ],
+      "id": "RX-001",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-001",
+      "label": "hasContext",
+      "range": [
+        "RKM-C002"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-X01"
+      ],
+      "id": "RX-002",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-002",
+      "label": "appliesPattern",
+      "range": [
+        "RKM-C001"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-X01"
+      ],
+      "id": "RX-003",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-003",
+      "label": "concernsObjective",
+      "range": [
+        "RKM-X02"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-X03"
+      ],
+      "id": "RX-004",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-004",
+      "label": "uncertaintyAbout",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C015"
+      ],
+      "id": "RX-006",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006",
+      "label": "versionOf",
+      "range": [
+        "RKM-C014"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C015"
+      ],
+      "id": "RX-007",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-007",
+      "label": "expressesContent",
+      "range": [
+        "RKM-C016"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C022"
+      ],
+      "id": "RX-008",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-008",
+      "label": "memberOfRegister",
+      "range": [
+        "RKM-C030"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C003"
+      ],
+      "id": "RX-009",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-009",
+      "label": "hasPossibleConsequenceStatement",
+      "range": [
+        "RKM-C025"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-X04"
+      ],
+      "id": "RX-011",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-011",
+      "label": "evaluatesCase",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-X04"
+      ],
+      "id": "RX-012",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-012",
+      "label": "usesAssessment",
+      "range": [
+        "RKM-C032"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-X04"
+      ],
+      "id": "RX-013",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-013",
+      "label": "usesCriteriaVersion",
+      "range": [
+        "RKM-C015"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C032"
+      ],
+      "id": "RX-014",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-014",
+      "label": "usesContextVersion",
+      "range": [
+        "RKM-C015"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C032"
+      ],
+      "id": "RX-015",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-015",
+      "label": "usesMethodVersion",
+      "range": [
+        "RKM-C015"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C034"
+      ],
+      "id": "RX-016",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016",
+      "label": "usesScaleVersion",
+      "range": [
+        "RKM-C015"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C072"
+      ],
+      "id": "RX-017",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-017",
+      "label": "criteriaForContext",
+      "range": [
+        "RKM-C002"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C072"
+      ],
+      "id": "RX-018",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-018",
+      "label": "considersAppetiteStatement",
+      "range": [
+        "RKM-C073"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C072"
+      ],
+      "id": "RX-019",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-019",
+      "label": "considersToleranceStatement",
+      "range": [
+        "RKM-C074"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C065"
+      ],
+      "id": "RX-021",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-021",
+      "label": "pointsToEvidence",
+      "range": [
+        "RKM-C066"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C067"
+      ],
+      "id": "RX-022",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-022",
+      "label": "producesObservation",
+      "range": [
+        "RKM-C068"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C068"
+      ],
+      "id": "RX-023",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-023",
+      "label": "reportsIndicator",
+      "range": [
+        "RKM-C069"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C068"
+      ],
+      "id": "RX-024",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-024",
+      "label": "observesCase",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C070"
+      ],
+      "id": "RX-025",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-025",
+      "label": "thresholdForIndicator",
+      "range": [
+        "RKM-C069"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C071"
+      ],
+      "id": "RX-026",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-026",
+      "label": "basedOnObservation",
+      "range": [
+        "RKM-C068"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C071"
+      ],
+      "id": "RX-027",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-027",
+      "label": "evaluatedAgainstThreshold",
+      "range": [
+        "RKM-C070"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C071"
+      ],
+      "id": "RX-028",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-028",
+      "label": "promptsReviewOf",
+      "range": [
+        "RKM-X01"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C064"
+      ],
+      "id": "RX-029",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-029",
+      "label": "assignsState",
+      "range": [
+        "RKM-C061"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C064"
+      ],
+      "id": "RX-030",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-030",
+      "label": "underSchemeVersion",
+      "range": [
+        "RKM-C063"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C064"
+      ],
+      "id": "RX-031",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-031",
+      "label": "assignmentForRevision",
+      "range": [
+        "RKM-C023"
+      ]
+    },
+    {
+      "domain": [
+        "RKM-C062"
+      ],
+      "id": "RX-032",
+      "iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-032",
+      "label": "documentsWorkflowAssignment",
+      "range": [
+        "RKM-C064"
+      ]
+    }
+  ]
+}

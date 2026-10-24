@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="Riskium ontology documentation for v0.3.1" name="description"/><title>Formalization — Riskium</title><link href="../assets/portal.css" rel="stylesheet"/></head><body><aside aria-label="Frozen documentation identity" class="publication-context">Frozen documentation <strong>0.1.0</strong> for model v0.3.1 · <a href="https://github.com/ArazSaieArasi3/riskium/commit/609c7cd0fd07053262fffe5720ff0b2605062778">source 609c7cd0fd07</a> · <a href="../../../versions/index.html">Documentation versions</a></aside><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="../index.html">Riskium</a><p>An Ontology for Modeling Enterprise Risk Knowledge</p><nav aria-label="Primary"><a href="../index.html">Overview</a><a href="../reference/native/index.html">Conceptual reference</a><a href="../widoco/index-en.html">OWL reference</a><a href="Evaluation.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="publication-context">Frozen documentation 0.1.0 · published model v0.3.1 · explanatory source 609c7cd0fd07</div><div class="layout"><aside aria-label="Documentation navigation" class="sidebar"><h2>Documentation</h2><ul><li><a href="Home.html">Home</a></li><li><a href="Scope.html">Scope</a></li><li><a href="Overview.html">Overview</a></li><li><a href="Decisions.html">Modeling decisions</a></li><li><a href="Requirements.html">Requirements</a></li><li><a href="Artifact-Versions.html">Artifact versions</a></li><li><a href="Database-Assurance.html">Database assurance</a></li><li><a href="Work-Plan.html">Work and release plan</a></li><li><a href="Publication-Comparison.html">Publication comparison</a></li><li><a href="Competency-Questions.html">Competency questions</a></li><li><a href="Traceability.html">Traceability</a></li><li><a href="References.html">References</a></li><li><a href="Quality.html">Quality</a></li><li><a aria-current="page" href="Formalization.html">Formalization</a></li><li><a href="Evaluation.html">Evaluation</a></li><li><a href="Reproduce.html">Reproduce</a></li><li><a href="Citation.html">Citation</a></li><li><a href="Limitations.html">Limitations</a></li><li><a href="Using-the-Model.html">Using the model</a></li><li><a href="Visualization.html">Visualization</a></li><li><a href="Publication.html">Publication</a></li><li><a href="../publication-manifest.json">Version and source record</a></li><li><a href="https://github.com/ArazSaieArasi3/riskium/wiki">GitHub Wiki</a></li></ul></aside><main id="content" tabindex="-1"><h1 id="reviewed-owl-mapping-conceptual-design-031">Reviewed OWL mapping, conceptual design 0.3.1</h1>
+<p>This is the bounded formal export for issue #3. Generate it with <code>python3 tools/build_owl.py</code> and check it with <code>python3 tools/build_owl.py --check</code>. The committed Turtle and receipt are derived from three inputs: <code>ontology/riskium-model.json</code>, <code>ontology/native/riskium.ontouml.json</code>, and <code>evaluation/native-review-decisions.json</code>. The exporter checks their digests, identifiers, directions, relation ends, multiplicities and set policy. The receipt pins all three SHA-256 digests and the output digest. The source conceptual model was not changed.</p>
+<h2 id="namespace-and-import-decision">Namespace and import decision</h2>
+<p>The logical ontology IRI is <code>https://github.com/ArazSaieArasi3/riskium/ontologies/riskium</code>; its version IRI is that IRI followed by <code>/0.3.1</code>, and its term namespace is the version IRI followed by <code>#</code>. These are identifiers, <strong>not claims of deployed or dereferenceable web endpoints</strong>. Local terms use stable source IDs (<code>RKM-C...</code>, <code>R-...</code>, etc.); labels remain annotations. A new reviewed version must receive a deliberate IRI decision and a fresh receipt. No external ontology is bundled or asserted through <code>owl:imports</code>. <code>EXT-OBJECT</code> is a separately annotated local proxy for the foundational Object category; external kind identities and the eventual gUFO/UFO alignment remain unresolved. Import closure for this export consists only of its own graph. There is no placeholder external import that a reasoner might silently fail to retrieve.</p>
+<h2 id="encoding-choices">Encoding choices</h2>
+<table>
+<thead>
+<tr>
+<th>Source commitment</th>
+<th>OWL encoding</th>
+<th>Interpretation boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>77 typed local classes, one external anchor</td>
+<td>78 named classes, source ID and OntoUML stereotype annotations</td>
+<td>The anchor is a local proxy. <code>isAbstract</code> and stereotypes are annotations, not OWL abstract-class semantics. Three optional boundary notions and seven bridges are excluded.</td>
+</tr>
+<tr>
+<td>66 directed generalizations</td>
+<td><code>rdfs:subClassOf</code></td>
+<td>No equivalence or exhaustive specialization is inferred.</td>
+</tr>
+<tr>
+<td>127 typed binary associations</td>
+<td>Unique ID-based object properties with declared domain and range; predicate text is a label</td>
+<td>Domain/range infer types from assertions. Reading direction is source to target, independent of diagram navigability. No mediation or characterization axiom is invented from the stereotype alone.</td>
+</tr>
+<tr>
+<td>Two source-backed relation inclusions</td>
+<td><code>R-35 analyzedInContext</code> is a subproperty of <code>RX-001 hasContext</code> (C-23); <code>R-33 revisionOf</code> is a subproperty of <code>RX-006 versionOf</code> (C-24)</td>
+<td>Both directions and endpoint signatures are checked; the reverse inclusions and global property equivalences are not asserted.</td>
+</tr>
+<tr>
+<td>C-06 same-pair mediation exclusion</td>
+<td><code>R-56 owl:propertyDisjointWith R-57</code></td>
+<td>The same relator cannot mediate the same individual through both role relations. It does not prove explicit distinct witnesses or a grounded assignment in an admission graph.</td>
+</tr>
+<tr>
+<td>C-08 alternative threshold anchors</td>
+<td><code>Threshold</code> subclass of a union of <code>thresholdForIndicator some Indicator</code> and <code>thresholdOnScale some AssessmentScale</code></td>
+<td>The OWL existential may have an anonymous witness; missing explicit anchors and dual-anchor compatibility remain graph/profile checks.</td>
+</tr>
+<tr>
+<td>C-25 selected version typing</td>
+<td>Four source-scoped universal restrictions on <code>usesContextVersion</code>, <code>usesMethodVersion</code>, <code>usesScaleVersion</code>, <code>usesCriteriaVersion</code>, whose fillers <code>versionOf some</code> the corresponding artifact kind</td>
+<td>This infers an appropriate artifact target in some model. It does not validate named <code>versionOf</code> links against optional direct artifact references or assert unreviewed disjointness between artifact kinds.</td>
+</tr>
+<tr>
+<td>Multiplicities on ordered relation ends</td>
+<td>Qualified class restrictions for each nontrivial end; target end on source class, source end through inverse property on target class</td>
+<td>Applies to admitted instances of typed classes in the managed profile. An OWL reasoner may satisfy a missing required value with an anonymous individual or equate two named values to satisfy an upper bound. Explicit-data completeness and distinctness require SHACL or other separately reviewed evidence.</td>
+</tr>
+<tr>
+<td>Ten reviewed generalization sets</td>
+<td>Three declared disjoint sets become <code>owl:AllDisjointClasses</code>; seven remain without blanket disjointness</td>
+<td>All ten are incomplete. No <code>unionOf</code> covering or global sibling disjointness is added. Non-disjoint does not assert actual overlap.</td>
+</tr>
+<tr>
+<td>Identity and dependence rationale</td>
+<td>Source annotations and explicit class/relation restrictions only</td>
+<td>No <code>owl:hasKey</code>, unique-name assumption, global class equivalence, relator existence rule or automated identity merge. C-09 publication has no approved formal focus class; no unconditional aboutness axiom is asserted.</td>
+</tr>
+</tbody>
+</table>
+<p>The 88 generated qualified restrictions represent nontrivial ends among the 254 ordered ends; unconstrained <code>0..*</code> ends have no restriction. Even a syntactically valid OWL graph is not an executed HermiT check, a SHACL validation result, a consistency proof or independent semantic acceptance.</p>
+<h2 id="constraint-disposition">Constraint disposition</h2>
+<p>The table accounts for every one of the 25 interpretation constraints. “Partial” means the listed structural portion is encoded; the rest remains an obligation for #4–#6, database/application rules or independent review. An annotation alone does not execute a rule.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>OWL disposition</th>
+<th>Remaining obligation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C-01</td>
+<td>Separate Case, Entry, Scenario and Result classes; no label key</td>
+<td>Verify intended identity examples and non-entailment without assuming unique names.</td>
+</tr>
+<tr>
+<td>C-02</td>
+<td>No description-to-occurrence realization property chain</td>
+<td>Verify prohibited inferences; source statements alone cannot certify absence in an open world.</td>
+</tr>
+<tr>
+<td>C-03</td>
+<td>Version classes/links only; no immutable issued payload semantics</td>
+<td>Enforce immutable payloads and lineage in data governance/database.</td>
+</tr>
+<tr>
+<td>C-04</td>
+<td>Assessment classes, typed links and applicable end bounds</td>
+<td>Verify method, scale, dimension, basis, context and time joins in data rules.</td>
+</tr>
+<tr>
+<td>C-05</td>
+<td>Distinct class/link vocabulary only</td>
+<td>Temporal interval and administrative-state rules require explicit data validation.</td>
+</tr>
+<tr>
+<td>C-06</td>
+<td>Local end bounds and same-pair property disjointness for the two mediation roles</td>
+<td>Explicit distinct participants, identity resolution and assignment grounding still need an admission/profile check.</td>
+</tr>
+<tr>
+<td>C-07</td>
+<td>Responsible/authorizing roles stay separate; no automatic owner equivalence</td>
+<td>Ownership interpretation depends on mandate, scope and evidence review.</td>
+</tr>
+<tr>
+<td>C-08</td>
+<td>Threshold anchor union plus individual end bounds</td>
+<td>A named anchor and cross-field unit/scale compatibility require explicit-data validation.</td>
+</tr>
+<tr>
+<td>C-09</td>
+<td>Aboutness links and individual end bounds; no global description existential</td>
+<td>A published-description profile needs an explicit publication focus and a validated aboutness alternative. Ordinary descriptions are not thereby rejected.</td>
+</tr>
+<tr>
+<td>C-10</td>
+<td>Source-qualified tolerance vocabulary retained</td>
+<td>Framework/version meaning and applicability are not a universal OWL equivalence.</td>
+</tr>
+<tr>
+<td>C-11</td>
+<td>Vocabulary resources are classes of resources, labels annotations</td>
+<td>Scheme-qualified identity and label governance require data checks.</td>
+</tr>
+<tr>
+<td>C-12</td>
+<td>Evidence links carry types, no endorsement implication</td>
+<td>Evidential role and truth/endorsement require interpretation.</td>
+</tr>
+<tr>
+<td>C-13</td>
+<td>Scale/dimension classes and links</td>
+<td>Pinning, compatibility and numerical ordering require explicit data rules.</td>
+</tr>
+<tr>
+<td>C-14</td>
+<td>Three optional boundaries and seven bridges excluded from class/property export</td>
+<td>External alignment requires a separately reviewed import or bridge.</td>
+</tr>
+<tr>
+<td>C-15</td>
+<td>Characterization bearer relation has its reviewed exactly-one source-end restriction</td>
+<td>OWL can satisfy existence anonymously or merge named bearers; actual substantial bearer/admission needs separate evidence.</td>
+</tr>
+<tr>
+<td>C-16</td>
+<td>Typed managed profile is documented</td>
+<td>Raw, managed and task-ready admission are SHACL/application profiles, not inferred from absent triples.</td>
+</tr>
+<tr>
+<td>C-17</td>
+<td>No scalar collapse or forced functional property beyond stated end bounds</td>
+<td>Assertion-level provenance, context and export selection remain data obligations.</td>
+</tr>
+<tr>
+<td>C-18</td>
+<td>Distinct pinned interpretation vocabulary</td>
+<td>Comparison and approved transformations need governed calculation rules.</td>
+</tr>
+<tr>
+<td>C-19</td>
+<td>Workflow labels and state classes remain source-qualified</td>
+<td>Transitions, authorization and UNKNOWN handling need data/application rules.</td>
+</tr>
+<tr>
+<td>C-20</td>
+<td>Risk Item contextual synonym retained in requirements, no OWL equivalence</td>
+<td>Context-sensitive terminology needs human review.</td>
+</tr>
+<tr>
+<td>C-21</td>
+<td>Score/result properties retain local bounds, no universal derivedFrom minimum</td>
+<td>Conditional reported-versus-computed dependency and arithmetic need data rules.</td>
+</tr>
+<tr>
+<td>C-22</td>
+<td>No keys based solely on mediated participant pairs</td>
+<td>Mandate identity and duplicate adjudication depend on assignment, scope and validity.</td>
+</tr>
+<tr>
+<td>C-23</td>
+<td>The source-backed <code>analyzedInContext</code> to <code>hasContext</code> subproperty axiom is encoded</td>
+<td>Reverse implication is absent; same-pair implication needs a reasoner test.</td>
+</tr>
+<tr>
+<td>C-24</td>
+<td>The source-backed <code>revisionOf</code> to <code>versionOf</code> subproperty axiom is encoded</td>
+<td>Target coherence follows only for this relationship; irreflexivity, acyclicity and ordering still need reviewed data rules.</td>
+</tr>
+<tr>
+<td>C-25</td>
+<td>Four selected-version target-kind existential restrictions on their source classes</td>
+<td>Named <code>versionOf</code> and artifact-level reference agreement remain explicit-data joins; no wrong-kind contradiction follows without reviewed artifact-kind disjointness.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="review-and-remaining-gates">Review and remaining gates</h2>
+<p>The generated graph is parsed and its expected terms and axiom patterns are checked in <code>tests/test_owl_mapping.py</code>. Those tests detect omitted elements, reversed cardinalities, accidental boundary promotion, unexpected covering/disjointness, stale inputs and a changed native relation end. The syntax pass is performed with the pinned RDFLib dependency; it is not an OWL 2 DL profile classification. The subsequent <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/hermit/report.md">HermiT report</a> tests the bounded mapping, including the C-06, C-08 and C-25 consequences and the C-09 boundary. Issue #4 remains open for the individually listed unexecuted routes. Issue #5 must test explicit-data obligations using declared SHACL profiles. Issue #6 must connect the resulting evidence to requirements and competency questions.</p><p class="note"><a href="https://github.com/ArazSaieArasi3/riskium/wiki/Formalization">Equivalent Wiki guide</a> · Explanatory source: <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/owl-mapping-review.md">evaluation/owl-mapping-review.md</a>. Source hashes are recorded in the documentation manifest; current engineering supplements are separate from the immutable stable assets.</p></main><aside aria-label="On this page" class="toc"><h2>On this page</h2><ul><li><a href="#namespace-and-import-decision">Namespace and import decision</a></li><li><a href="#encoding-choices">Encoding choices</a></li><li><a href="#constraint-disposition">Constraint disposition</a></li><li><a href="#review-and-remaining-gates">Review and remaining gates</a></li></ul></aside></div><footer>Scientific content: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Original software: MIT. Copyright 2026 Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi, for their respective original contributions. <a href="Citation.html">Citation and affiliations</a> · <a href="Limitations.html">Scope and limitations</a> · <a href="https://github.com/ArazSaieArasi3/riskium">Repository</a>. Documentation generated after the release; semantic source is the fixed commit above.</footer></body></html>
+
