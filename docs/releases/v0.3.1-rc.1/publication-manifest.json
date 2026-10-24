@@ -8,6 +8,7 @@
   "documentation_note": "Post-release documentation projection of immutable semantic inputs; not an additional semantic validation run.",
   "guide_sources_sha256": {
     "AUTHORS.md": "c20830d719b9b1d1b13d85cac69253274a974edb79b3a2c56148fd900d038447",
+    "docs/artifact-versions.md": "18b7c8f12a2ab0b24e179ba4d282926860b5afc4421e6a95ce2f5c3806eac54b",
     "docs/modeling-decisions.md": "c5b760e9b2f5620e8cd2662026b89e98e00843dcc26e0dc1b401256f39cb76a0",
     "docs/overview.md": "def7d12867cc66f190b08ae499e809f3598723f25844847207f2e3753d16b856",
     "docs/portal-limitations.md": "33f22cc65b98e204b6379b80251a263e48050b4bb645cdf94299f8bcfeca77bb",
@@ -18,7 +19,7 @@
     "evaluation/traceability/README.md": "851b61c9a5298aa4b7c0ea6df92039c8fbc0f3f44e06e8ee1295d385b8ef9a82",
     "references/README.md": "437a09488a721f6710d3153080c0588408e495221a8a9bb77704848091a63a6d",
     "requirements/cq/README.md": "ae4e6c8641abbe3ccedfb4cac81e597dfddf9629ed5e17802d973664139db16c",
-    "requirements/ontology-requirements.md": "8c6d30a332705cf668550b02fae4c101021ae3c857ece937b9bcc84fea77d339"
+    "requirements/ontology-requirements.md": "68e09fd8cce2805da2d2fa0f29f76b0601282c598855d99a41631dccfaf9ff33"
   },
   "model_version": "0.3.1",
   "release": "v0.3.1-rc.1",

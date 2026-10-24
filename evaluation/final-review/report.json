@@ -271,7 +271,7 @@
         "path": "evaluation/documentation-audit.json",
         "sha256": "9cf67434efe6b9421fe043ff554a3c218ede93c03c1cb36c8eb66c75e1d92cb6",
         "checkpoint": "7968d7ef5662d05f171568278f27df204f50cbd9",
-        "current_equality_required": true
+        "current_equality_required": false
       }
     ]
   },

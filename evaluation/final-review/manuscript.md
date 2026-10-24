@@ -1,6 +1,6 @@
 # Manuscript 7.0.7 reconciliation and exact proposed amendments
 
-Baseline 0.3.1; manuscript 7.0.7; evidence checkpoint `7968d7ef5662d05f171568278f27df204f50cbd9`. Preparation #27; **proposals only, not owner acceptance or final release**. Machine bindings and unchanged source outcomes: [report.json](report.json).
+Baseline 0.3.1; manuscript 7.0.7; evidence checkpoint `7968d7ef5662d05f171568278f27df204f50cbd9`. Preparation #27; **proposals only, not owner acceptance or final release**. Machine bindings and unchanged source outcomes: [report.json](report.json). This is the historical preparation snapshot; see the [live owner decisions](../owner-review/README.md) and [current article](../manuscript-review/v7.0.8/README.md) for subsequent approved work.
 
 Exact local author-facing Word/PDF hashes verified against the existing manuscript ledger; complete DOCX paragraph/table text read for claim reconciliation. This is text review, not fresh layout QA or a new article version. **The DOCX/PDF were not edited and no new article version was created.**
 

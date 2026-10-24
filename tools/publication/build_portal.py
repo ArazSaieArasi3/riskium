@@ -17,6 +17,7 @@ OWL_SOURCE = 'ontology/derived/riskium.owl.ttl'
 NAMESPACE = 'https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#'
 GUIDES = [('Overview', 'docs/overview.md'), ('Decisions', 'docs/modeling-decisions.md'),
           ('Requirements', 'requirements/ontology-requirements.md'),
+          ('Artifact-Versions', 'docs/artifact-versions.md'),
           ('Competency-Questions', 'requirements/cq/README.md'),
           ('Traceability', 'evaluation/traceability/README.md'),
           ('References', 'references/README.md'),

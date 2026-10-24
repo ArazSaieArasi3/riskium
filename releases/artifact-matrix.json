@@ -1,0 +1,220 @@
+{
+  "schema": "riskium-artifact-compatibility-v1",
+  "matrix_version": "0.1.0",
+  "date_local": "2026-10-24",
+  "status": "SYNCHRONIZED_OWNER_ACCEPTED_SCOPE_FINAL_PUBLICATION_PENDING",
+  "target_release": "v0.3.1",
+  "latest_published_package": "v0.3.1-rc.7",
+  "final_release_published": false,
+  "accepted_model_version": "0.3.1",
+  "orsd_revision": "0.4.3",
+  "manuscript_version": "7.0.8",
+  "final_technical_issue": 28,
+  "artifacts": [
+    {
+      "id": "MODEL",
+      "artifact": "Conceptual ontology and derived representations",
+      "version": "0.3.1",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "ontology/riskium-model.json",
+          "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59"
+        },
+        {
+          "path": "ontology/native/riskium.ontouml.json",
+          "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95"
+        },
+        {
+          "path": "ontology/derived/riskium.owl.ttl",
+          "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58"
+        }
+      ],
+      "scope": "Conceptual/native/OWL bytes unchanged from accepted technical baseline; derived artifacts keep their generation/evidence bindings."
+    },
+    {
+      "id": "DIAGRAM",
+      "artifact": "Selected ontology diagram",
+      "version": "model-0.3.1",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "diagrams/manifest.json",
+          "sha256": "2b8e016477e8915276c1eb787034a1716835fc20ba422dc69ee9d68e76deb7d5"
+        },
+        {
+          "path": "diagrams/selected-view.svg",
+          "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88"
+        }
+      ],
+      "scope": "Existing approved diagram and layout remain unchanged."
+    },
+    {
+      "id": "ORSD",
+      "artifact": "Ontology requirements specification",
+      "version": "0.4.3",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "requirements/ontology-requirements.md",
+          "sha256": "68e09fd8cce2805da2d2fa0f29f76b0601282c598855d99a41631dccfaf9ff33"
+        },
+        {
+          "path": "requirements/release-scope-v0.3.1.json",
+          "sha256": "759eb3eb7cbd7597de24c28139389f3e44de9275c640a2c524fac7032f960639"
+        }
+      ],
+      "scope": "Documentation/evidence/scope revision; original MUST/SHOULD priorities, criteria and source JSON definitions preserved."
+    },
+    {
+      "id": "OWNER",
+      "artifact": "Owner scope review",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "evaluation/owner-review/register.json",
+          "sha256": "b6c8b188411d33b758b3c4444f59a5904dd79f588fccafad41f2b65a50775b10"
+        },
+        {
+          "path": "evaluation/owner-review/accepted-scope.json",
+          "sha256": "a7da025a831114999529056aad105eb31ffcee1e4a88866fecbd4aa917da1a5c"
+        }
+      ],
+      "scope": "Nine scoped acceptances, one implemented prose revision and one conditional technical publication gate; not independent."
+    },
+    {
+      "id": "RELATIONAL",
+      "artifact": "Public SQLite identity/history profile",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "implementation/relational/0.1.0/mapping.json",
+          "sha256": "11c55fcc7bf7dc47c1f6a5acddf0fd7f5ceac8027ff62ff55816f7d500fc50f7"
+        },
+        {
+          "path": "implementation/relational/0.1.0/001_tables.sql",
+          "sha256": "c7d85e0bc96b9e7626320cf2b1aeca5f4c17962ac4792e4f5dc78f9395a90660"
+        },
+        {
+          "path": "implementation/relational/0.1.0/002_guards.sql",
+          "sha256": "c3f0d3479e538d15c90f0f5656f0c65645c4d34455481671d7dc8cfbd995b194"
+        },
+        {
+          "path": "implementation/relational/0.1.0/fixtures.json",
+          "sha256": "217eb5d79e36b16af86b71020eb7955240d297afb5ea39719bc4186f2e2e9cd5"
+        }
+      ],
+      "scope": "Unchanged bounded public schema/profile with migrations 1 and 2; distinct from private historical SQLite v0.3.0-rc.1. PostgreSQL/full migration not claimed."
+    },
+    {
+      "id": "C08",
+      "artifact": "Declared metadata compatibility profile",
+      "version": "0.6.0",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "ontology/shacl/0.6.0/receipt.json",
+          "sha256": "bd85f093e3f17be9dc4de04cee5fd1e58b369ae2bcc5552bc3b5f4666221f7e9"
+        },
+        {
+          "path": "evaluation/shacl/compatibility/report.json.gz",
+          "sha256": "d6759a5b056c1b3bf349717c27c44c2a3d4e77832d890c234a4d36a6bfb6e458"
+        }
+      ],
+      "scope": "Historical separately bound supplement; global C-08 PARTIAL retained."
+    },
+    {
+      "id": "COMPARISON",
+      "artifact": "Selected comparison profile",
+      "version": "0.7.0",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "ontology/shacl/0.7.0/receipt.json",
+          "sha256": "983b126e373907a51ea156377f8825ebf6a455877a4dd833d3b02feca5522585"
+        },
+        {
+          "path": "evaluation/shacl/comparison/report.json.gz",
+          "sha256": "c04432c09068f87ce961617561fd5e2fca8abf5f38a46b459b70c90ce1857362"
+        }
+      ],
+      "scope": "Scoped C-13/C-18 task eligibility; no generic arithmetic/conversion."
+    },
+    {
+      "id": "CQ06",
+      "artifact": "Source trace cohort/profile",
+      "version": "0.2.0",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "evaluation/sources/cq06/report.json.gz",
+          "sha256": "81861275e6f5569690c806d6c95badfee0b03b994f4a085ded1342b1d5d44a50"
+        }
+      ],
+      "scope": "13 inspected statements; 35 query/control outcomes; no independent population acceptance."
+    },
+    {
+      "id": "CQ0708",
+      "artifact": "Correction and withheld-identity cohort/profile",
+      "version": "0.3.0",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "evaluation/sources/cq0708/report.json.gz",
+          "sha256": "da8ec348280e788f2490b0dd053c0901f175fb969de8d73ca8959c2cec8a1612"
+        }
+      ],
+      "scope": "Five selected old/reissued pairs and 11 still-withheld candidates; 59 query/control outcomes."
+    },
+    {
+      "id": "MANUSCRIPT",
+      "artifact": "Article Word and equivalent PDF",
+      "version": "7.0.8",
+      "compatible_model": "0.3.1",
+      "compatible_orsd": "0.4.3",
+      "status": "AUTHOR_FACING_VERIFIED",
+      "files": [
+        {
+          "path": "evaluation/manuscript-review/v7.0.8/receipt.json",
+          "sha256": "5c32310eb1e5b689ed188e16a2b7d69af0c27454316defa661da53deefe2f634"
+        }
+      ],
+      "external_artifacts": [
+        {
+          "filename": "Riskium_Manuscript_Release_Q_v7_0_8.docx",
+          "sha256": "8e9ac824703512e5a7be91d31b1aedbf7936f727621f73d704b907b2aaf4dbe0",
+          "size_bytes": 1144414,
+          "pages": null,
+          "delivery": "author-facing file; not copied into public source repository"
+        },
+        {
+          "filename": "Riskium_Manuscript_Release_Q_v7_0_8.pdf",
+          "sha256": "16779f16049a133b8ca1dd0089090ea0e286b25738fb930e9a14290082255b9e",
+          "size_bytes": 763727,
+          "pages": 9,
+          "delivery": "author-facing file; not copied into public source repository"
+        }
+      ],
+      "scope": "Nine-page manuscript; seven necessary paragraphs updated and final delivery readback verified. Binaries stay outside public source repository."
+    }
+  ],
+  "rules": [
+    "Components retain independent versions. A package release pins an explicit set of component versions, exact content hashes and source commit.",
+    "An editorial paper change increments the paper revision only; semantic model changes need reviewed model versioning and refreshed affected mappings/tests.",
+    "An ORSD scope/evidence edit increments the ORSD documentation revision; no silent deletion/downgrading of original MUST priorities.",
+    "Database schema/profile changes have their own migration sequence and version, ontology mapping and preservation evidence. Historical private and current public schemas never share implied compatibility.",
+    "A changed model, requirement scope, schema, cohort or interpretation triggers review of its affected dependency links and evidence. No test receipt is inherited across changed evaluated inputs.",
+    "A versioned JSON manifest and readable table are the current implementation. Broader artifact-lifecycle automation is future work and does not block v0.3.1."
+  ]
+}

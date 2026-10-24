@@ -106,6 +106,7 @@ CHECKS = [
     ['tools/run_source_cq06.py', '--check'],
     ['tools/run_source_cq0708.py', '--check'],
     ['tools/build_final_review.py', '--check'],
+    ['tools/check_release_alignment.py'],
     ['-m', 'unittest', 'discover', '-s', 'tests', '-v'],
 ]
 

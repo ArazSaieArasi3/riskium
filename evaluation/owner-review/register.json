@@ -1,138 +1,437 @@
 {
-  "schema": "riskium-owner-release-review-v1",
+  "schema": "riskium-owner-release-review-v2",
   "policy_date": "2026-10-23",
   "review_kind": "OWNER_AUTHOR_REVIEW_WITH_ASSISTANT_SUPPORT",
   "owner_reviewer": "Araz Saie Arasi",
   "reviewer_role": "Project author and owner; not independent",
-  "authorization": "Owner stated he will judge this release with assistant help on 23 October 2026",
-  "status": "PENDING_OWNER_JUDGMENTS",
+  "authorization": {
+    "date_local": "2026-10-24",
+    "timezone": "Asia/Tehran",
+    "reviewer": "Araz Saie Arasi",
+    "role": "Project author and owner; not independent",
+    "response_verbatim_fa": "من دقیقا خوندمش و باش موافقم. و از این موافقت من رو مد نظر داشته باش.",
+    "reviewed_material": "The immediately preceding Persian 11-axis table and eleven explanatory paragraphs, corresponding to OR-01–OR-11 and preparation #27 at commit 193dc7209bc762f11e5e12e19e5aae42cee22cb3",
+    "interpretation": "Explicit agreement after reading the concrete recommendations: nine scoped acceptances, required necessary manuscript revision, and final publication conditional on successful final freeze. This is not an unconditional final-candidate pass."
+  },
+  "status": "OWNER_SCOPE_REVIEW_COMPLETE_FINAL_FREEZE_PENDING",
   "owner_review_issue": 7,
   "future_independent_review_issue": 23,
   "independent_validation_claimed": false,
   "critical_findings_count": null,
-  "ratings_recorded": 0,
+  "ratings_recorded": 11,
   "scope": "Predeclared critical cohort for first final release; not all 295 independent-review groups",
   "rows": [
     {
       "id": "OR-01",
       "topic": "RiskCase versus entry/revision identity",
-      "owner_rating": null,
-      "owner_response": null,
-      "rationale": null,
-      "evidence": [],
+      "owner_rating": "ACCEPT_SCOPED",
+      "owner_response": "من دقیقا خوندمش و باش موافقم. و از این موافقت من رو مد نظر داشته باش.",
+      "rationale": "Owner explicitly agreed with the concrete scoped recommendation and accompanying rationale after reading it.",
+      "evidence": [
+        "evaluation/hermit/report.json",
+        "evaluation/relational/history/report.json.gz",
+        "evaluation/sources/cq0708/report.json.gz",
+        "ontology/riskium-model.json"
+      ],
       "critical_findings": [],
-      "resolution": null,
-      "status": "PENDING"
+      "resolution": "Accepted only within declared receipt/population/implementation limits; exclusions retained.",
+      "status": "DECIDED",
+      "assistant_recommendation": {
+        "id": "OR-01",
+        "topic": "Case versus entry/revision identity",
+        "assistant_proposal": "ACCEPT_SCOPED",
+        "evidence_keys": [
+          "model",
+          "h",
+          "sql",
+          "source78"
+        ],
+        "counterexample_to_examine": "Two entries may refer to one case; equal labels cannot merge two case IDs.",
+        "residual_risk": "Actual organizational case grounding is not automated.",
+        "wording_or_scope_decision": "Accept the distinction and selected configured SQLite preservation, with no general real-case adjudication claim.",
+        "owner_rating": null,
+        "owner_response": null,
+        "status": "PENDING_OWNER_JUDGMENT"
+      },
+      "decision_date_local": "2026-10-24",
+      "retained_scope": "Accept the distinction and selected configured SQLite preservation, with no general real-case adjudication claim.",
+      "limits": "Actual organizational case grounding is not automated."
     },
     {
       "id": "OR-02",
       "topic": "Specification/description versus occurrence",
-      "owner_rating": null,
-      "owner_response": null,
-      "rationale": null,
-      "evidence": [],
+      "owner_rating": "ACCEPT_SCOPED",
+      "owner_response": "من دقیقا خوندمش و باش موافقم. و از این موافقت من رو مد نظر داشته باش.",
+      "rationale": "Owner explicitly agreed with the concrete scoped recommendation and accompanying rationale after reading it.",
+      "evidence": [
+        "evaluation/cq/report.json",
+        "evaluation/hermit/report.json",
+        "evaluation/sources/cq0708/report.json.gz",
+        "ontology/riskium-model.json"
+      ],
       "critical_findings": [],
-      "resolution": null,
-      "status": "PENDING"
+      "resolution": "Accepted only within declared receipt/population/implementation limits; exclusions retained.",
+      "status": "DECIDED",
+      "assistant_recommendation": {
+        "id": "OR-02",
+        "topic": "Document versus occurrence",
+        "assistant_proposal": "ACCEPT_SCOPED",
+        "evidence_keys": [
+          "model",
+          "h",
+          "cq",
+          "source78"
+        ],
+        "counterexample_to_examine": "A hospital failure description, plan, signal or absent case link must not create an occurrence or prove nonoccurrence.",
+        "residual_risk": "External applications can still assert unjustified facts; this is not universal source truth.",
+        "wording_or_scope_decision": "Retain description/occurrence separation and no benefits/effectiveness claim.",
+        "owner_rating": null,
+        "owner_response": null,
+        "status": "PENDING_OWNER_JUDGMENT"
+      },
+      "decision_date_local": "2026-10-24",
+      "retained_scope": "Retain description/occurrence separation and no benefits/effectiveness claim.",
+      "limits": "External applications can still assert unjustified facts; this is not universal source truth."
     },
     {
       "id": "OR-03",
       "topic": "Responsibility information versus relator grounding",
-      "owner_rating": null,
-      "owner_response": null,
-      "rationale": null,
-      "evidence": [],
+      "owner_rating": "ACCEPT_SCOPED",
+      "owner_response": "من دقیقا خوندمش و باش موافقم. و از این موافقت من رو مد نظر داشته باش.",
+      "rationale": "Owner explicitly agreed with the concrete scoped recommendation and accompanying rationale after reading it.",
+      "evidence": [
+        "evaluation/cq/report.json",
+        "evaluation/hermit/report.json",
+        "evaluation/shacl/coverage-status.json",
+        "evaluation/shacl/endpoints/report.json",
+        "evaluation/shacl/qualification/report.json.gz",
+        "evaluation/shacl/report.json",
+        "ontology/riskium-model.json"
+      ],
       "critical_findings": [],
-      "resolution": null,
-      "status": "PENDING"
+      "resolution": "Accepted only within declared receipt/population/implementation limits; exclusions retained.",
+      "status": "DECIDED",
+      "assistant_recommendation": {
+        "id": "OR-03",
+        "topic": "Assignment versus grounded responsibility",
+        "assistant_proposal": "ACCEPT_SCOPED",
+        "evidence_keys": [
+          "model",
+          "h",
+          "conditional",
+          "qualification",
+          "cq"
+        ],
+        "counterexample_to_examine": "Self-assignment or two names for one actor cannot fabricate the second participant; the same pair can have distinct scoped mandates.",
+        "residual_risk": "No automatic owner/authority grounding or complete mandate deduplication is implemented.",
+        "wording_or_scope_decision": "Accept documentary assignment/relator distinction and explicit identity evidence policy only; defer operational authority mapping.",
+        "owner_rating": null,
+        "owner_response": null,
+        "status": "PENDING_OWNER_JUDGMENT"
+      },
+      "decision_date_local": "2026-10-24",
+      "retained_scope": "Accept documentary assignment/relator distinction and explicit identity evidence policy only; defer operational authority mapping.",
+      "limits": "No automatic owner/authority grounding or complete mandate deduplication is implemented."
     },
     {
       "id": "OR-04",
       "topic": "Issued versions, lineage and history",
-      "owner_rating": null,
-      "owner_response": null,
-      "rationale": null,
-      "evidence": [],
+      "owner_rating": "ACCEPT_SCOPED",
+      "owner_response": "من دقیقا خوندمش و باش موافقم. و از این موافقت من رو مد نظر داشته باش.",
+      "rationale": "Owner explicitly agreed with the concrete scoped recommendation and accompanying rationale after reading it.",
+      "evidence": [
+        "evaluation/relational/history/report.json.gz",
+        "evaluation/shacl/coherence/report.json",
+        "evaluation/shacl/coverage-status.json",
+        "evaluation/shacl/endpoints/report.json",
+        "evaluation/shacl/report.json",
+        "evaluation/sources/cq0708/report.json.gz"
+      ],
       "critical_findings": [],
-      "resolution": null,
-      "status": "PENDING"
+      "resolution": "Accepted only within declared receipt/population/implementation limits; exclusions retained.",
+      "status": "DECIDED",
+      "assistant_recommendation": {
+        "id": "OR-04",
+        "topic": "Issued versions and lineage",
+        "assistant_proposal": "ACCEPT_SCOPED",
+        "evidence_keys": [
+          "sql",
+          "coherence",
+          "conditional",
+          "source78"
+        ],
+        "counterexample_to_examine": "UPDATE/DELETE/REPLACE of sealed content or late dependency append must fail; correction retains the original, including an unchanged reissued cell.",
+        "residual_risk": "SQL is a selected configured SQLite profile, not the full private schema, PostgreSQL or native InformationContent admission.",
+        "wording_or_scope_decision": "Accept tested profile 0.1.0 history and finite graph/version-target rules; retain all stated boundaries.",
+        "owner_rating": null,
+        "owner_response": null,
+        "status": "PENDING_OWNER_JUDGMENT"
+      },
+      "decision_date_local": "2026-10-24",
+      "retained_scope": "Accept tested profile 0.1.0 history and finite graph/version-target rules; retain all stated boundaries.",
+      "limits": "SQL is a selected configured SQLite profile, not the full private schema, PostgreSQL or native InformationContent admission."
     },
     {
       "id": "OR-05",
       "topic": "C-08 declared metadata compatibility",
-      "owner_rating": null,
-      "owner_response": null,
-      "rationale": null,
-      "evidence": [],
+      "owner_rating": "ACCEPT_SCOPED",
+      "owner_response": "من دقیقا خوندمش و باش موافقم. و از این موافقت من رو مد نظر داشته باش.",
+      "rationale": "Owner explicitly agreed with the concrete scoped recommendation and accompanying rationale after reading it.",
+      "evidence": [
+        "evaluation/shacl/compatibility/report.json.gz",
+        "evaluation/shacl/coverage-status.json",
+        "evaluation/shacl/endpoints/report.json",
+        "evaluation/shacl/report.json"
+      ],
       "critical_findings": [],
-      "resolution": null,
-      "status": "PENDING"
+      "resolution": "Accepted only within declared receipt/population/implementation limits; exclusions retained.",
+      "status": "DECIDED",
+      "assistant_recommendation": {
+        "id": "OR-05",
+        "topic": "C-08 compatibility",
+        "assistant_proposal": "ACCEPT_SCOPED",
+        "evidence_keys": [
+          "compatibility",
+          "conditional"
+        ],
+        "counterexample_to_examine": "Missing unit/version cannot become compatible; a qualitative scale cannot be assigned an invented numeric unit.",
+        "residual_risk": "Metadata declarations can be wrong; conversion and complete semantic adequacy remain unassessed.",
+        "wording_or_scope_decision": "Accept only declared task metadata compatibility and keep global C-08 PARTIAL.",
+        "owner_rating": null,
+        "owner_response": null,
+        "status": "PENDING_OWNER_JUDGMENT"
+      },
+      "decision_date_local": "2026-10-24",
+      "retained_scope": "Accept only declared task metadata compatibility and keep global C-08 PARTIAL.",
+      "limits": "Metadata declarations can be wrong; conversion and complete semantic adequacy remain unassessed."
     },
     {
       "id": "OR-06",
       "topic": "C-13 level/version/dimension selection",
-      "owner_rating": null,
-      "owner_response": null,
-      "rationale": null,
-      "evidence": [],
+      "owner_rating": "ACCEPT_SCOPED",
+      "owner_response": "من دقیقا خوندمش و باش موافقم. و از این موافقت من رو مد نظر داشته باش.",
+      "rationale": "Owner explicitly agreed with the concrete scoped recommendation and accompanying rationale after reading it.",
+      "evidence": [
+        "evaluation/shacl/comparison/report.json.gz"
+      ],
       "critical_findings": [],
-      "resolution": null,
-      "status": "PENDING"
+      "resolution": "Accepted only within declared receipt/population/implementation limits; exclusions retained.",
+      "status": "DECIDED",
+      "assistant_recommendation": {
+        "id": "OR-06",
+        "topic": "C-13 level/scale/dimension",
+        "assistant_proposal": "ACCEPT_SCOPED",
+        "evidence_keys": [
+          "comparison"
+        ],
+        "counterexample_to_examine": "A level from another scale version/dimension must fail membership even when its label/number is equal.",
+        "residual_risk": "No universal ordering, scale truth or unit conversion is implemented.",
+        "wording_or_scope_decision": "Accept profile 0.7.0 selected joins; remove any implied general ranking or numerical scale validation.",
+        "owner_rating": null,
+        "owner_response": null,
+        "status": "PENDING_OWNER_JUDGMENT"
+      },
+      "decision_date_local": "2026-10-24",
+      "retained_scope": "Accept profile 0.7.0 selected joins; remove any implied general ranking or numerical scale validation.",
+      "limits": "No universal ordering, scale truth or unit conversion is implemented."
     },
     {
       "id": "OR-07",
       "topic": "C-18 direct-comparison eligibility",
-      "owner_rating": null,
-      "owner_response": null,
-      "rationale": null,
-      "evidence": [],
+      "owner_rating": "ACCEPT_SCOPED",
+      "owner_response": "من دقیقا خوندمش و باش موافقم. و از این موافقت من رو مد نظر داشته باش.",
+      "rationale": "Owner explicitly agreed with the concrete scoped recommendation and accompanying rationale after reading it.",
+      "evidence": [
+        "evaluation/cq/report.json",
+        "evaluation/shacl/comparison/report.json.gz"
+      ],
       "critical_findings": [],
-      "resolution": null,
-      "status": "PENDING"
+      "resolution": "Accepted only within declared receipt/population/implementation limits; exclusions retained.",
+      "status": "DECIDED",
+      "assistant_recommendation": {
+        "id": "OR-07",
+        "topic": "C-18 direct-comparison eligibility",
+        "assistant_proposal": "ACCEPT_SCOPED",
+        "evidence_keys": [
+          "comparison",
+          "cq"
+        ],
+        "counterexample_to_examine": "Equal numbers with different pinned method/scale/time are not directly comparable; missing context is not zero.",
+        "residual_risk": "No transformations, formula calculation or general assessment readiness.",
+        "wording_or_scope_decision": "Accept selected direct-comparison eligibility; current computed-score admission/arithmetic under C-21 is unclaimed.",
+        "owner_rating": null,
+        "owner_response": null,
+        "status": "PENDING_OWNER_JUDGMENT"
+      },
+      "decision_date_local": "2026-10-24",
+      "retained_scope": "Accept selected direct-comparison eligibility; current computed-score admission/arithmetic under C-21 is unclaimed.",
+      "limits": "No transformations, formula calculation or general assessment readiness."
     },
     {
       "id": "OR-08",
       "topic": "Qualified source/standards interpretation",
-      "owner_rating": null,
-      "owner_response": null,
-      "rationale": null,
-      "evidence": [],
+      "owner_rating": "ACCEPT_SCOPED",
+      "owner_response": "من دقیقا خوندمش و باش موافقم. و از این موافقت من رو مد نظر داشته باش.",
+      "rationale": "Owner explicitly agreed with the concrete scoped recommendation and accompanying rationale after reading it.",
+      "evidence": [
+        "evaluation/c14-boundary-review.json",
+        "evaluation/references/report.json",
+        "evaluation/shacl/qualification/report.json.gz",
+        "references/corpus.json"
+      ],
       "critical_findings": [],
-      "resolution": null,
-      "status": "PENDING"
+      "resolution": "Accepted only within declared receipt/population/implementation limits; exclusions retained.",
+      "status": "DECIDED",
+      "assistant_recommendation": {
+        "id": "OR-08",
+        "topic": "Source/standards scope",
+        "assistant_proposal": "ACCEPT_SCOPED",
+        "evidence_keys": [
+          "references",
+          "boundary",
+          "qualification"
+        ],
+        "counterexample_to_examine": "An inspected abstract/portion or equal tolerance label cannot prove normative equivalence, full compliance or a complete systematic review.",
+        "residual_risk": "Exact appetite/tolerance source-definition crosswalks and broader external alignment remain unassessed.",
+        "wording_or_scope_decision": "Accept portion-qualified source interpretation; defer full normative equivalence and full framework compliance claims.",
+        "owner_rating": null,
+        "owner_response": null,
+        "status": "PENDING_OWNER_JUDGMENT"
+      },
+      "decision_date_local": "2026-10-24",
+      "retained_scope": "Accept portion-qualified source interpretation; defer full normative equivalence and full framework compliance claims.",
+      "limits": "Exact appetite/tolerance source-definition crosswalks and broader external alignment remain unassessed."
     },
     {
       "id": "OR-09",
       "topic": "Sourced case/CQ adequacy and withheld admissions",
-      "owner_rating": null,
-      "owner_response": null,
-      "rationale": null,
-      "evidence": [],
+      "owner_rating": "ACCEPT_SCOPED",
+      "owner_response": "من دقیقا خوندمش و باش موافقم. و از این موافقت من رو مد نظر داشته باش.",
+      "rationale": "Owner explicitly agreed with the concrete scoped recommendation and accompanying rationale after reading it.",
+      "evidence": [
+        "evaluation/relational/history/report.json.gz",
+        "evaluation/sources/cq06/report.json.gz",
+        "evaluation/sources/cq0708/report.json.gz"
+      ],
       "critical_findings": [],
-      "resolution": null,
-      "status": "PENDING"
+      "resolution": "Accepted only within declared receipt/population/implementation limits; exclusions retained.",
+      "status": "DECIDED",
+      "assistant_recommendation": {
+        "id": "OR-09",
+        "topic": "Source-backed CQ populations and withheld cases",
+        "assistant_proposal": "ACCEPT_SCOPED",
+        "evidence_keys": [
+          "source6",
+          "source78",
+          "sql"
+        ],
+        "counterexample_to_examine": "Correction is not independent corroboration; a stated hospital failure and an unbound case do not establish a governed organizational RiskCase.",
+        "residual_risk": "Finite assisted source preparation is not independent review, held-out validation or whole historical-extraction accuracy.",
+        "wording_or_scope_decision": "Accept 13 CQ06 statements, five CQ07 cell pairs and 11 still-withheld CQ08 candidates only; do not reopen the prior WITHHELD decision.",
+        "owner_rating": null,
+        "owner_response": null,
+        "status": "PENDING_OWNER_JUDGMENT"
+      },
+      "decision_date_local": "2026-10-24",
+      "retained_scope": "Accept 13 CQ06 statements, five CQ07 cell pairs and 11 still-withheld CQ08 candidates only; do not reopen the prior WITHHELD decision.",
+      "limits": "Finite assisted source preparation is not independent review, held-out validation or whole historical-extraction accuracy."
     },
     {
       "id": "OR-10",
       "topic": "Final claims/manuscript/evidence consistency",
-      "owner_rating": null,
-      "owner_response": null,
-      "rationale": null,
-      "evidence": [],
+      "owner_rating": "REVISE_BEFORE_FINAL",
+      "owner_response": "من دقیقا خوندمش و باش موافقم. و از این موافقت من رو مد نظر داشته باش.",
+      "rationale": "Owner explicitly agreed with the concrete scoped recommendation and accompanying rationale after reading it.",
+      "evidence": [
+        "evaluation/manuscript-review/ledger.json",
+        "evaluation/quality/report.json",
+        "evaluation/relational/history/report.json.gz",
+        "evaluation/shacl/comparison/report.json.gz",
+        "evaluation/shacl/compatibility/report.json.gz",
+        "evaluation/sources/cq06/report.json.gz",
+        "evaluation/sources/cq0708/report.json.gz"
+      ],
       "critical_findings": [],
-      "resolution": null,
-      "status": "PENDING"
+      "resolution": "Approved seven-paragraph amendment implemented in manuscript 7.0.8 and equivalent nine-page PDF; structural/text/visual/readback checks passed. See evaluation/manuscript-review/v7.0.8/receipt.json.",
+      "status": "DECIDED_REVISION_IMPLEMENTED",
+      "assistant_recommendation": {
+        "id": "OR-10",
+        "topic": "Claims and current manuscript",
+        "assistant_proposal": "REVISE_BEFORE_FINAL",
+        "evidence_keys": [
+          "manuscript",
+          "quality",
+          "source6",
+          "source78",
+          "compatibility",
+          "comparison",
+          "sql"
+        ],
+        "counterexample_to_examine": "Current article synthetic-only/source/history wording must not hide later scoped evidence or imply current complete computation.",
+        "residual_risk": "Manuscript 7.0.7 remains a historical checkpoint until the seven exact proposed text updates are applied and QA verified.",
+        "wording_or_scope_decision": "Review proposed scope, especially RKRS-05/RKRS-08/RKRS-11; apply seven necessary prose refreshes, preserve counts and old receipt boundaries, then bind new Word/PDF.",
+        "owner_rating": null,
+        "owner_response": null,
+        "status": "PENDING_OWNER_JUDGMENT"
+      },
+      "decision_date_local": "2026-10-24",
+      "retained_scope": "Review proposed scope, especially RKRS-05/RKRS-08/RKRS-11; apply seven necessary prose refreshes, preserve counts and old receipt boundaries, then bind new Word/PDF.",
+      "limits": "Manuscript 7.0.7 remains a historical checkpoint until the seven exact proposed text updates are applied and QA verified."
     },
     {
       "id": "OR-11",
       "topic": "Final package/reproduction and critical findings",
-      "owner_rating": null,
-      "owner_response": null,
-      "rationale": null,
-      "evidence": [],
+      "owner_rating": "HOLD_UNTIL_FINAL_FREEZE",
+      "owner_response": "من دقیقا خوندمش و باش موافقم. و از این موافقت من رو مد نظر داشته باش.",
+      "rationale": "Owner explicitly agreed with the concrete scoped recommendation and accompanying rationale after reading it.",
+      "evidence": [
+        "docs/first-release-profile.md",
+        "evaluation/documentation-audit.json",
+        "evaluation/manuscript-review/ledger.json",
+        "evaluation/releases/v0.3.1-rc.2-publication.json",
+        "evaluation/releases/v0.3.1-rc.3-publication.json",
+        "evaluation/releases/v0.3.1-rc.4-publication.json",
+        "evaluation/releases/v0.3.1-rc.5-publication.json",
+        "evaluation/releases/v0.3.1-rc.6-publication.json",
+        "evaluation/releases/v0.3.1-rc.7-publication.json"
+      ],
       "critical_findings": [],
-      "resolution": null,
-      "status": "PENDING"
+      "resolution": "Publication rule accepted; final-candidate reproduction, critical-finding resolution and downloaded final-asset readback remain required.",
+      "status": "CONDITION_ACCEPTED_TECHNICAL_GATE_PENDING",
+      "assistant_recommendation": {
+        "id": "OR-11",
+        "topic": "Final freeze and publication",
+        "assistant_proposal": "HOLD_UNTIL_FINAL_FREEZE",
+        "evidence_keys": [
+          "publication",
+          "documentation",
+          "manuscript"
+        ],
+        "counterexample_to_examine": "A green prerelease or prepared decision table cannot stand in for a reviewed final candidate/tag/assets or unresolved critical findings.",
+        "residual_risk": "No current final freeze, stable publication profile or completed owner record exists; critical findings remain unestablished, not zero.",
+        "wording_or_scope_decision": "Complete actual owner responses/critical resolution, final clean checks and explicit stable publication/readback; do not infer acceptance now.",
+        "owner_rating": null,
+        "owner_response": null,
+        "status": "PENDING_OWNER_JUDGMENT"
+      },
+      "decision_date_local": "2026-10-24",
+      "retained_scope": "Complete actual owner responses/critical resolution, final clean checks and explicit stable publication/readback; do not infer acceptance now.",
+      "limits": "No current final freeze, stable publication profile or completed owner record exists; critical findings remain unestablished, not zero.",
+      "technical_execution_issue": 28
     }
-  ]
+  ],
+  "decision_version": "0.1.0",
+  "decision_date_local": "2026-10-24",
+  "critical_findings_reported_in_this_response": 0,
+  "final_candidate_signoff": false,
+  "release_authorization": "Proceed within the explicitly accepted bounded profile after technical final gates pass. No repeated scope approval is needed; conditional publication judgment is not a current freeze PASS.",
+  "summary": {
+    "scoped_acceptances": 9,
+    "approved_revision_decisions": 1,
+    "accepted_conditional_publication_decisions": 1,
+    "unanswered_owner_prompts": 0,
+    "unconditional_final_candidate_passes": 0,
+    "independent_reviews": 0,
+    "overall_semantic_correctness_percent": null
+  }
 }

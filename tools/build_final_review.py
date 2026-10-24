@@ -63,7 +63,7 @@ def build():
             data = subprocess.check_output(['git', '-C', str(ROOT), 'show', checkpoint + ':' + path])
             # This review remains a dated snapshot when the owner's live register evolves.
             # Other mutable prose is also read from its named checkpoint, not HEAD.
-            frozen_only = key == 'owner' or path.endswith('.md')
+            frozen_only = key in ('owner', 'documentation') or path.endswith('.md')
             if not frozen_only:
                 require((ROOT / path).read_bytes() == data, 'Evidence changed after checkpoint: ' + path)
             sources[path] = data
@@ -173,7 +173,8 @@ def build():
     def write(name, title, body):
         intro = (f'# {title}\n\nBaseline 0.3.1; manuscript 7.0.7; evidence checkpoint `{checkpoint}`. '
                  'Preparation #27; **proposals only, not owner acceptance or final release**. '
-                 'Machine bindings and unchanged source outcomes: [report.json](report.json).\n\n')
+                 'Machine bindings and unchanged source outcomes: [report.json](report.json). '
+                 'This is the historical preparation snapshot; see the [live owner decisions](../owner-review/README.md) and [current article](../manuscript-review/v7.0.8/README.md) for subsequent approved work.\n\n')
         outputs[name] = (intro + body + '\n').encode()
 
     write('README.md', 'Final v0.3.1 claim and review package',

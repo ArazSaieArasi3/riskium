@@ -4,7 +4,9 @@
 
 On 23 October 2026, the project owner stated that **he will perform the current release's review with assistant support**. This supersedes the independent-review scheduling requirement for this first final release. It does not establish independence, supply ratings, change technical acceptance rules or accept unresolved critical defects. The reviewer is Araz Saie Arasi, a project author/owner. The assistant prepares evidence, counterexamples, explanations and proposed dispositions; only explicit owner responses become owner ratings.
 
-Current status: **PENDING_OWNER_JUDGMENTS**. [The versioned register](register.json) contains no ratings or approvals. #7 owns current release review; #23 preserves the original independent domain/ontology review as separate future, nonblocking work. The historical independent-review register, source quality synthesis and their zero-independent-rating status remain unchanged.
+Current status: **OWNER_SCOPE_REVIEW_COMPLETE_FINAL_FREEZE_PENDING**. On 24 October 2026 the owner explicitly stated that he had read and agreed with the concrete Persian table and rationale. The [versioned register](register.json) now records all 11 decisions: nine scoped acceptances, one approved necessary revision (implemented in manuscript 7.0.8), and one accepted publication condition awaiting the exact final freeze. The [accepted scope](accepted-scope.json) applies to all 25 clauses and 28 traces; full original MUST fulfillment is not claimed. #7 completes the owner scope-review phase; [#28](https://github.com/ArazSaieArasi3/riskium/issues/28) owns the remaining technical publication condition. #23 preserves independent review as future nonblocking work. The historical independent-review register, source quality synthesis and their zero-independent-rating status remain unchanged.
+
+The rc.5–rc.7 paragraphs and preliminary recommendation table below document the earlier preparation state. Their statements about pending ratings are historical; the current live status is the explicit decision recorded above. No unconditional final-candidate PASS is inferred.
 
 ## Review protocol
 
@@ -42,4 +44,4 @@ The recommendations are preparation for discussion, **not the owner's judgments*
 
 ## Concrete final-review package
 
-Preparation #27 supplies the [11-row decision table](../final-review/owner-decisions.md), [all-clause and historical-route matrix](../final-review/README.md) and [seven exact manuscript proposals](../final-review/manuscript.md). These are assistant recommendations, not owner ratings. The live register remains unchanged; the review package preserves its historical zero-rating snapshot. Actual responses and critical resolutions remain #7, followed by one final stable freeze.
+Preparation #27 supplies the [11-row decision table](../final-review/owner-decisions.md), [all-clause and historical-route matrix](../final-review/README.md) and [seven exact manuscript proposals](../final-review/manuscript.md). These are assistant recommendations, not owner ratings. The preparation package preserves its historical zero-rating snapshot. The live register now contains the owner's explicit decisions; remaining technical critical-finding checks and final freeze are tracked in #28.

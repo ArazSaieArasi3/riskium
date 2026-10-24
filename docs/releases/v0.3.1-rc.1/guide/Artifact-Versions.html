@@ -1,0 +1,85 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Riskium ontology documentation for v0.3.1-rc.1"><title>Artifact-Versions — Riskium</title><link rel="stylesheet" href="../assets/portal.css"></head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="../index.html">Riskium</a><p>An Ontology for Modeling Enterprise Risk Knowledge</p><nav aria-label="Primary"><a href="../index.html">Overview</a><a href="../reference/native/index.html">Conceptual reference</a><a href="../widoco/index-en.html">OWL reference</a><a href="Evaluation.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="publication-context">Development prerelease v0.3.1-rc.1 · conceptual design 0.3.1 · source <a href="https://github.com/ArazSaieArasi3/riskium/tree/cfb85905ab37549c7090f00a41ca62cdd3364ab5">cfb85905ab37</a></div><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul><li><a href="Overview.html">Overview</a></li><li><a href="Decisions.html">Decisions</a></li><li><a href="Requirements.html">Requirements</a></li><li><a aria-current="page" href="Artifact-Versions.html">Artifact-Versions</a></li><li><a href="Competency-Questions.html">Competency-Questions</a></li><li><a href="Traceability.html">Traceability</a></li><li><a href="References.html">References</a></li><li><a href="Quality.html">Quality</a></li><li><a href="Formalization.html">Formalization</a></li><li><a href="Evaluation.html">Evaluation</a></li><li><a href="Reproduce.html">Reproduce</a></li><li><a href="Citation.html">Citation</a></li><li><a href="Limitations.html">Limitations</a></li><li><a href="../publication-manifest.json">Version and source record</a></li><li><a href="https://github.com/ArazSaieArasi3/riskium/wiki">GitHub Wiki</a></li></ul></aside><main id="content" tabindex="-1"><h1 id="artifact-versions-and-compatibility">Artifact versions and compatibility</h1>
+<p>This lightweight compatibility record implements the owner's 24 October 2026 request to keep the paper, ontology requirements, model and database coordinated. <a href="https://github.com/ArazSaieArasi3/riskium/blob/main/releases/artifact-matrix.json">The machine-readable matrix</a> pins exact component hashes. Package target <strong>v0.3.1</strong> is not yet published; the latest published package remains <strong>v0.3.1-rc.7</strong>. Final technical work is <a href="https://github.com/ArazSaieArasi3/riskium/issues/28">#28</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Artifact</th>
+<th>Own version</th>
+<th>Compatible model</th>
+<th>Current boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conceptual ontology and derived representations</td>
+<td>0.3.1</td>
+<td>0.3.1</td>
+<td>Conceptual/native/OWL bytes unchanged from accepted technical baseline; derived artifacts keep their generation/evidence bindings.</td>
+</tr>
+<tr>
+<td>Selected ontology diagram</td>
+<td>model-0.3.1</td>
+<td>0.3.1</td>
+<td>Existing approved diagram and layout remain unchanged.</td>
+</tr>
+<tr>
+<td>Ontology requirements specification</td>
+<td>0.4.3</td>
+<td>0.3.1</td>
+<td>Documentation/evidence/scope revision; original MUST/SHOULD priorities, criteria and source JSON definitions preserved.</td>
+</tr>
+<tr>
+<td>Owner scope review</td>
+<td>0.1.0</td>
+<td>0.3.1</td>
+<td>Nine scoped acceptances, one implemented prose revision and one conditional technical publication gate; not independent.</td>
+</tr>
+<tr>
+<td>Public SQLite identity/history profile</td>
+<td>0.1.0</td>
+<td>0.3.1</td>
+<td>Unchanged bounded public schema/profile with migrations 1 and 2; distinct from private historical SQLite v0.3.0-rc.1. PostgreSQL/full migration not claimed.</td>
+</tr>
+<tr>
+<td>Declared metadata compatibility profile</td>
+<td>0.6.0</td>
+<td>0.3.1</td>
+<td>Historical separately bound supplement; global C-08 PARTIAL retained.</td>
+</tr>
+<tr>
+<td>Selected comparison profile</td>
+<td>0.7.0</td>
+<td>0.3.1</td>
+<td>Scoped C-13/C-18 task eligibility; no generic arithmetic/conversion.</td>
+</tr>
+<tr>
+<td>Source trace cohort/profile</td>
+<td>0.2.0</td>
+<td>0.3.1</td>
+<td>13 inspected statements; 35 query/control outcomes; no independent population acceptance.</td>
+</tr>
+<tr>
+<td>Correction and withheld-identity cohort/profile</td>
+<td>0.3.0</td>
+<td>0.3.1</td>
+<td>Five selected old/reissued pairs and 11 still-withheld candidates; 59 query/control outcomes.</td>
+</tr>
+<tr>
+<td>Article Word and equivalent PDF</td>
+<td>7.0.8</td>
+<td>0.3.1</td>
+<td>Nine-page manuscript; seven necessary paragraphs updated and final delivery readback verified. Binaries stay outside public source repository.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="change-rules">Change rules</h2>
+<ul>
+<li>Components retain independent versions. A package release pins an explicit set of component versions, exact content hashes and source commit.</li>
+<li>An editorial paper change increments the paper revision only; semantic model changes need reviewed model versioning and refreshed affected mappings/tests.</li>
+<li>An ORSD scope/evidence edit increments the ORSD documentation revision; no silent deletion/downgrading of original MUST priorities.</li>
+<li>Database schema/profile changes have their own migration sequence and version, ontology mapping and preservation evidence. Historical private and current public schemas never share implied compatibility.</li>
+<li>A changed model, requirement scope, schema, cohort or interpretation triggers review of its affected dependency links and evidence. No test receipt is inherited across changed evaluated inputs.</li>
+<li>A versioned JSON manifest and readable table are the current implementation. Broader artifact-lifecycle automation is future work and does not block v0.3.1.</li>
+</ul>
+<p>The archived pharmaceutical dataset v0.6 and private SQLite v0.3.0-rc.1 retain their historical bindings; this matrix does not turn them into public reruns or the current SQL implementation. The historical quality synthesis and preparation package remain identifiable snapshots. The final release must add its exact clean source commit and verified publication receipt; this pre-freeze table is not that receipt.</p>
+<p>Check synchronization with <code>python tools/check_release_alignment.py</code>. This validates source/document bindings and recorded artifact relations; CI does not freshly render author-facing Word/PDF files or perform independent semantic review.</p></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#change-rules">Change rules</a></li></ul></aside></div><footer>Scientific content: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Original software: MIT. Copyright 2026 Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi, for their respective original contributions. <a href="Citation.html">Citation and affiliations</a> · <a href="Limitations.html">Scope and limitations</a> · <a href="https://github.com/ArazSaieArasi3/riskium">Repository</a>. Documentation generated after the release; semantic source is the fixed commit above.</footer></body></html>

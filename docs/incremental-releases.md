@@ -44,8 +44,12 @@ The output directory must be empty and outside the source checkout. `--run-check
 
 GitHub supports explicit manual workflow inputs and CLI draft/prerelease publication. Primary references: [workflow triggers](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow) and [gh release create](https://cli.github.com/manual/gh_release_create). Automatic candidate delivery is verified by a successful hosted run and its uploaded artifacts; publication itself is verified only after an actual publish run. An implemented publication job is not evidence that a new release was published.
 
+## Current finalization state
+
+The owner explicitly accepted the concrete review recommendations on 24 October 2026. [ORSD 0.4.3, manuscript 7.0.8 and artifact compatibility](artifact-versions.md) are synchronized. #7 completes the scope-review phase; [#28](https://github.com/ArazSaieArasi3/riskium/issues/28) owns the remaining technical stable profile/freeze/publication/readback. Historical zero-rating/preparation statements below describe their earlier checkpoints and are superseded by the live owner register. No extra feature prerelease is scheduled.
+
 ## Exit to a final release
 
 Use the [fixed final-release MUST gates](stable-release-gates.md). The decision point is after the owner-led review packet (target rc.7, or alongside technical work) and one final stabilization/freeze, conditional on resolving earlier packets' release-critical residual work. Complete required #5 integration/routes and #13 populations rather than assuming their first small batches close those gates. No waiting for future extensions #16 or a universal 100% semantic-correctness score; no calendar forecast without actual owner judgments and the final accepted technical population.
 
-Owner decision on 23 October 2026: the owner will judge this release personally with assistant support. The [owner-review register](../evaluation/owner-review/README.md) is prepared with zero ratings; future independent review is preserved in #23 and does not block the first owner-reviewed release. This replaces independent-review scheduling in the older rc.3 plan, without changing historical claims.
+Owner decision on 23 October 2026: the owner will judge this release personally with assistant support. The [owner-review register](../evaluation/owner-review/README.md) records the eleven explicit scoped/revision/conditional decisions; future independent review is preserved in #23 and does not block the first owner-reviewed release. This replaces independent-review scheduling in the older rc.3 plan, without changing historical claims.

@@ -1,0 +1,735 @@
+{
+  "schema": "riskium-orsd-release-scope-v1",
+  "documentation_revision": "0.4.3",
+  "previous_documentation_revision": "0.4.2",
+  "date_local": "2026-10-24",
+  "model_version": "0.3.1",
+  "target_release": "v0.3.1",
+  "authority": "evaluation/owner-review/accepted-scope.json",
+  "change_kind": "Release-scope and evidence synchronization; no conceptual requirement deletion or lowered MUST priority",
+  "baseline_definition_sha256": {
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "requirements/scope-requirements.json": "7090abec35d8dca2c2034c9cefaeccbe3f4ecd547d28b78a56eb5662e401d2f8",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024"
+  },
+  "full_original_requirement_fulfillment": false,
+  "rows": [
+    {
+      "id": "RKRS-01",
+      "original_definition": {
+        "id": "RKRS-01",
+        "title": "Content scope",
+        "priority": "MUST",
+        "requirement": "Represent risk content, context and evidence without prescribing a management process.",
+        "acceptance_criterion": "Map information without inferring process compliance.",
+        "negative_acceptance_criterion": "Inferring a complete process or certification from stored content.",
+        "constraint_ids": [
+          "C-01",
+          "C-02"
+        ],
+        "status": "Design requirement; formal and independent adequacy assessment pending"
+      },
+      "original_acceptance_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "original_remaining_obligation": "Meaning and standards alignment remain independent review; storage of content does not establish process compliance.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-01",
+          "C-02"
+        ],
+        "proposed_scope": "SCOPED_DESIGN_AND_EVIDENCE",
+        "limit": "Risk-knowledge representation only; no process compliance or improved decisions.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKRS-02",
+      "original_definition": {
+        "id": "RKRS-02",
+        "title": "Case continuity",
+        "priority": "MUST",
+        "requirement": "Keep a case distinct from register entries, scenarios, scores and occurrences.",
+        "acceptance_criterion": "Two entries and two scenarios can concern one case without identity collapse.",
+        "negative_acceptance_criterion": "Merging cases solely because labels or scores match.",
+        "constraint_ids": [
+          "C-01",
+          "C-20"
+        ],
+        "status": "Design requirement; formal and independent adequacy assessment pending"
+      },
+      "original_acceptance_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "original_remaining_obligation": "Independent case/scenario identity decisions and real reassessment examples remain unaccepted.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-01",
+          "C-20"
+        ],
+        "proposed_scope": "SCOPED_IDENTITY_EVIDENCE",
+        "limit": "Synthetic keys/links and withheld candidates do not independently validate real case identity.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKRS-03",
+      "original_definition": {
+        "id": "RKRS-03",
+        "title": "Document identity and history",
+        "priority": "MUST",
+        "requirement": "Separate artifact, issued version and expressed content; preserve issued payloads.",
+        "acceptance_criterion": "Retrieve a superseded issued version without overwriting it.",
+        "negative_acceptance_criterion": "Historical retrieval silently reads current mutable values.",
+        "constraint_ids": [
+          "C-03",
+          "C-24",
+          "C-25"
+        ],
+        "status": "Design requirement; formal and independent adequacy assessment pending"
+      },
+      "original_acceptance_state": "PARTIAL",
+      "original_remaining_obligation": "No database/application proof of issued-payload immutability or historical retrieval. Supplementary correction metadata does not add native lineage semantics.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-03",
+          "C-24",
+          "C-25"
+        ],
+        "proposed_scope": "SCOPED_SQLITE_HISTORY",
+        "limit": "Current selected SQLite preservation is executed; full private relational correspondence and InformationContent admission are not claimed.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKRS-04",
+      "original_definition": {
+        "id": "RKRS-04",
+        "title": "Assessment context",
+        "priority": "MUST",
+        "requirement": "Retain method, scale, dimension, basis, context and time with results.",
+        "acceptance_criterion": "Equal scores on incompatible versions remain distinguishable.",
+        "negative_acceptance_criterion": "Treating missing context as zero or equal values as comparability.",
+        "constraint_ids": [
+          "C-04",
+          "C-13",
+          "C-18"
+        ],
+        "status": "Design requirement; formal and independent adequacy assessment pending"
+      },
+      "original_acceptance_state": "PARTIAL",
+      "original_remaining_obligation": "Full context/time/method joins, scale compatibility and numerical comparison are not established by retrieving linked values.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-04",
+          "C-13",
+          "C-18"
+        ],
+        "proposed_scope": "SCOPED_COMPARISON_TASK",
+        "limit": "Metadata-based selected comparison only, no general assessment readiness or calculations.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKRS-05",
+      "original_definition": {
+        "id": "RKRS-05",
+        "title": "Reported and computed scores",
+        "priority": "MUST",
+        "requirement": "Distinguish supplied scores from calculations with justified pinned inputs.",
+        "acceptance_criterion": "Retain an unverified reported score; reject a claimed computation with missing required inputs.",
+        "negative_acceptance_criterion": "Presenting supplied arithmetic as a verified calculation.",
+        "constraint_ids": [
+          "C-21"
+        ],
+        "status": "Design requirement; formal and independent adequacy assessment pending"
+      },
+      "original_acceptance_state": "NOT_RUN",
+      "original_remaining_obligation": "Conditional reported/computed readiness and justified arithmetic under C-21 have no complete acceptance run.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-21"
+        ],
+        "proposed_scope": "DESIGN_ONLY_OPERATIONAL_CLAIM_DEFERRED",
+        "limit": "Original MUST priority is preserved. The first final release may claim conceptual distinction/reported content only; excluding current computation readiness/arithmetic is an explicit owner scope decision.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKRS-06",
+      "original_definition": {
+        "id": "RKRS-06",
+        "title": "Source-qualified assertions",
+        "priority": "MUST",
+        "requirement": "Preserve source content, locator, interpretation origin, corrections and conflicting assertions.",
+        "acceptance_criterion": "A proposed mapping preserves its source assertion and does not create an occurrence.",
+        "negative_acceptance_criterion": "Overwriting evidence or treating a correction as independent corroboration.",
+        "constraint_ids": [
+          "C-02",
+          "C-12",
+          "C-17"
+        ],
+        "status": "Design requirement; formal and independent adequacy assessment pending"
+      },
+      "original_acceptance_state": "PARTIAL",
+      "original_remaining_obligation": "Source locator, interpretation and correction lineage use supplementary envelope fields; independent extraction and source/corroboration judgments remain pending.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-02",
+          "C-12",
+          "C-17"
+        ],
+        "proposed_scope": "SCOPED_SOURCE_BACKED_SUPPLEMENTS",
+        "limit": "CQ06: 13 source statements; CQ07: five source cell pairs; CQ08: 11 prior withheld candidates. Not whole extraction accuracy or independent semantic review.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKRS-07",
+      "original_definition": {
+        "id": "RKRS-07",
+        "title": "Evidence-qualified responsibility",
+        "priority": "MUST",
+        "requirement": "Keep assignment information separate from an asserted mandate; ground actual relators with distinct participants.",
+        "acceptance_criterion": "Retain an assignment record without fabricating an actor or actual mandate.",
+        "negative_acceptance_criterion": "Inferring Risk Owner or a second actor from documentation alone.",
+        "constraint_ids": [
+          "C-06",
+          "C-07",
+          "C-22"
+        ],
+        "status": "Design requirement; formal and independent adequacy assessment pending"
+      },
+      "original_acceptance_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "original_remaining_obligation": "Actual mandate grounding, ownership, responsibility identity and authority require independent/application review.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-06",
+          "C-07",
+          "C-22"
+        ],
+        "proposed_scope": "SCOPED_DISTINCTION_ONLY",
+        "limit": "No actual mandate/authority/ownership grounding or universal deduplication capability.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKRS-08",
+      "original_definition": {
+        "id": "RKRS-08",
+        "title": "Time and workflow",
+        "priority": "MUST",
+        "requirement": "Separate recorded, reference and validity time and scheme-qualified workflow interpretation.",
+        "acceptance_criterion": "A closed entry does not establish cessation; an absent rule stays unknown.",
+        "negative_acceptance_criterion": "Inferring treatment effectiveness or cessation from a state label.",
+        "constraint_ids": [
+          "C-05",
+          "C-19"
+        ],
+        "status": "Design requirement; formal and independent adequacy assessment pending"
+      },
+      "original_acceptance_state": "PARTIAL",
+      "original_remaining_obligation": "Synthetic state codes and asserted-link retrieval do not validate time intervals, transition authority, cessation or treatment effectiveness.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-05",
+          "C-19"
+        ],
+        "proposed_scope": "DESIGN_ONLY_OPERATIONAL_CLAIM_DEFERRED",
+        "limit": "Original MUST retained; full interval/transition/cessation/effectiveness tasks excluded from proposed current executable scope.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKRS-09",
+      "original_definition": {
+        "id": "RKRS-09",
+        "title": "External boundaries and modes",
+        "priority": "MUST",
+        "requirement": "Keep heterogeneous referents optional; vulnerability requires one justified object bearer.",
+        "acceptance_criterion": "The typed projection excludes untyped boundary notions and preserves bearer dependence.",
+        "negative_acceptance_criterion": "Treating a description as an actual vulnerability or an untyped boundary as a typed core class.",
+        "constraint_ids": [
+          "C-14",
+          "C-15"
+        ],
+        "status": "Design requirement; formal and independent adequacy assessment pending"
+      },
+      "original_acceptance_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "original_remaining_obligation": "External-reference resolution, substantial-bearer grounding and domain meaning remain independent decisions.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-14",
+          "C-15"
+        ],
+        "proposed_scope": "SCOPED_MAPPING_AND_BEARER_DESIGN",
+        "limit": "No automatic external referent existence or real-world mode/bearer grounding.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKRS-10",
+      "original_definition": {
+        "id": "RKRS-10",
+        "title": "Policies and thresholds",
+        "priority": "MUST",
+        "requirement": "Preserve source-qualified appetite/tolerance meanings and a compatible indicator or scale anchor.",
+        "acceptance_criterion": "A scale-only threshold can be represented without inventing an indicator.",
+        "negative_acceptance_criterion": "Collapsing different source meanings or inventing required evidence.",
+        "constraint_ids": [
+          "C-08",
+          "C-10",
+          "C-11"
+        ],
+        "status": "Design requirement; formal and independent adequacy assessment pending"
+      },
+      "original_acceptance_state": "PARTIAL",
+      "original_remaining_obligation": "C-08 unit/scale compatibility is PARTIAL; source-framework appetite/tolerance interpretation remains pending.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-08",
+          "C-10",
+          "C-11"
+        ],
+        "proposed_scope": "SCOPED_DECLARATION_POLICY",
+        "limit": "Metadata threshold compatibility and scheme keys only; no full normative equivalence, arithmetic or conversion.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKRS-11",
+      "original_definition": {
+        "id": "RKRS-11",
+        "title": "Projection and admission",
+        "priority": "MUST",
+        "requirement": "Account for model elements and distinguish raw, managed and task-ready data.",
+        "acceptance_criterion": "An incomplete record remains available without a false readiness declaration.",
+        "negative_acceptance_criterion": "Confusing data completeness, mapping allocation and semantic adequacy.",
+        "constraint_ids": [
+          "C-16",
+          "C-23",
+          "C-24",
+          "C-25"
+        ],
+        "status": "Design requirement; formal and independent adequacy assessment pending"
+      },
+      "original_acceptance_state": "PARTIAL",
+      "original_remaining_obligation": "CatalogInspection is the sole executed admission task. Full risk-record, conditional and task readiness remain open; raw candidates are not managed OWL scenarios.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-16",
+          "C-23",
+          "C-24",
+          "C-25"
+        ],
+        "proposed_scope": "SCOPED_NAMED_TASKS_ONLY",
+        "limit": "Only the named executed profiles are proposed supported. Generic risk-record/conditional readiness is not an accepted executable capability.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKRS-12",
+      "original_definition": {
+        "id": "RKRS-12",
+        "title": "Quality evidence and reuse",
+        "priority": "SHOULD",
+        "requirement": "Bind claims to the exact model, evidence population, method and limits.",
+        "acceptance_criterion": "Every published result identifies its input version and scope.",
+        "negative_acceptance_criterion": "Inheriting a result from a different version or treating counts as semantic validity.",
+        "constraint_ids": [],
+        "status": "Design requirement; formal and independent adequacy assessment pending"
+      },
+      "original_acceptance_state": "BOUNDED_EVIDENCE_METADATA_CHECK",
+      "original_remaining_obligation": "No overall semantic-quality score or independent acceptance follows from traceability or engineering pass counts.",
+      "accepted_release_scope": {
+        "constraint_ids": [],
+        "proposed_scope": "SCOPED_PROVENANCE_SYNTHESIS",
+        "limit": "Inspectable method/version/population evidence; no overall semantic correctness percentage.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKM-SCOPE-01",
+      "original_definition": {
+        "id": "RKM-SCOPE-01",
+        "title": "Risk knowledge scope",
+        "requirement": "The ontology shall represent risk-related content and context without prescribing the risk-management process.",
+        "acceptance_criterion": "Given a process description, only relevant information content is mapped; process-compliance claims are absent.",
+        "negative_acceptance_criterion": "A RACI design or complete process lifecycle is inferred as mandatory ontology scope.",
+        "status": "Design obligation; public-export execution pending",
+        "source": "Current conceptual scope decision"
+      },
+      "original_acceptance_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "original_remaining_obligation": "Independent interpretation of real process descriptions remains #7/#13; no compliance claim follows.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-01",
+          "C-02"
+        ],
+        "proposed_scope": "SCOPED_DESIGN_AND_EVIDENCE",
+        "limit": "No standards/process compliance.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKM-SCOPE-02",
+      "original_definition": {
+        "id": "RKM-SCOPE-02",
+        "title": "Case continuity",
+        "requirement": "A RiskCase shall remain distinct from records, pattern specifications, scores and actual occurrences.",
+        "acceptance_criterion": "A reassessment links to the same case while preserving separate result identity.",
+        "negative_acceptance_criterion": "Equal text or scores automatically merge cases or create occurrences.",
+        "status": "Design obligation; public-export execution pending",
+        "source": "Current conceptual scope decision"
+      },
+      "original_acceptance_state": "PARTIAL",
+      "original_remaining_obligation": "Synthetic case links and score/version joins are separate examples; real reassessment continuity remains #7/#13.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-01",
+          "C-20"
+        ],
+        "proposed_scope": "SCOPED_IDENTITY_EVIDENCE",
+        "limit": "Real case grounding remains attributable; no equal-label merge.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKM-SCOPE-03",
+      "original_definition": {
+        "id": "RKM-SCOPE-03",
+        "title": "Source-qualified policy statements",
+        "requirement": "Appetite and tolerance shall be stored as versioned statements with source meaning and context.",
+        "acceptance_criterion": "Permissible-deviation and willingness-to-bear statements remain distinguishable.",
+        "negative_acceptance_criterion": "Equal labels create equivalentClass or exactMatch assertions.",
+        "status": "Design obligation; public-export execution pending",
+        "source": "Current conceptual scope decision"
+      },
+      "original_acceptance_state": "PARTIAL",
+      "original_remaining_obligation": "Source-qualified appetite/tolerance meanings and framework/version comparison remain #8.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-10"
+        ],
+        "proposed_scope": "SOURCE_MEANING_LIMITED",
+        "limit": "No global appetite/tolerance equivalence or normative full-source interpretation.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKM-SCOPE-04",
+      "original_definition": {
+        "id": "RKM-SCOPE-04",
+        "title": "Boundary-aware standards review",
+        "requirement": "The review shall record edition, inspected portions, semantic difference and access limitations.",
+        "acceptance_criterion": "The report identifies accessible clauses and leaves uninspected scope unassessed.",
+        "negative_acceptance_criterion": "Absence of inspected conflict is reported as full compliance.",
+        "status": "Design obligation; public-export execution pending",
+        "source": "Current conceptual scope decision"
+      },
+      "original_acceptance_state": "NOT_RUN",
+      "original_remaining_obligation": "Edition/clause-qualified inspection, divergence and access-limit corpus is incomplete; current reference links are not a complete review.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-10"
+        ],
+        "proposed_scope": "SCOPED_INSPECTED_CORPUS",
+        "limit": "The 11-source, 13-interpretation inspected-portion register exists; not a full normative crosswalk or systematic review.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKM-SCOPE-05",
+      "original_definition": {
+        "id": "RKM-SCOPE-05",
+        "title": "Complete inventory disposition",
+        "requirement": "Every inherited concept, association and generalization shall have a retained, revised or removed disposition.",
+        "acceptance_criterion": "All prior IDs reconcile to the current registers or a reasoned removal ledger.",
+        "negative_acceptance_criterion": "A prior item disappears silently or an unresolved stereotype is fabricated.",
+        "status": "Design obligation; public-export execution pending",
+        "source": "Current conceptual scope decision"
+      },
+      "original_acceptance_state": "PUBLIC_ID_CONTINUITY_CHECKED",
+      "original_remaining_obligation": "All retained public model and requirement identities are reconciled. Restricted pre-public acquisition identities are outside this export and are not claimed reconciled.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-14"
+        ],
+        "proposed_scope": "PUBLIC_ID_CONTINUITY_ONLY",
+        "limit": "Retained public IDs are reconciled; restricted pre-public acquisition identities are excluded from this public-export claim.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKM-SCOPE-06",
+      "original_definition": {
+        "id": "RKM-SCOPE-06",
+        "title": "Temporal statement interpretation",
+        "requirement": "Issued information, reference time and administrative state shall remain distinguishable.",
+        "acceptance_criterion": "Closure alone cannot satisfy a test for cessation or treatment effectiveness.",
+        "negative_acceptance_criterion": "A closed entry is interpreted as a ceased risk.",
+        "status": "Design obligation; public-export execution pending",
+        "source": "Current conceptual scope decision"
+      },
+      "original_acceptance_state": "PARTIAL",
+      "original_remaining_obligation": "No historical immutable-store or full temporal/workflow acceptance run; observed absence is not a universal negation.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-03",
+          "C-05",
+          "C-19"
+        ],
+        "proposed_scope": "SCOPED_HISTORY_AND_TEMPORAL_BOUNDARY",
+        "limit": "Selected SQLite history now executed; complete time/workflow semantics not claimed.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKM-SCOPE-07",
+      "original_definition": {
+        "id": "RKM-SCOPE-07",
+        "title": "Threshold interpretation",
+        "requirement": "Thresholds shall declare an indicator or scale anchor and compatible interpretation.",
+        "acceptance_criterion": "Indicator-based and scale-only boundaries can be represented without inventing an indicator.",
+        "negative_acceptance_criterion": "A scale-only threshold is rejected solely because a nonexistent indicator was not fabricated.",
+        "status": "Design obligation; public-export execution pending",
+        "source": "Current conceptual scope decision"
+      },
+      "original_acceptance_state": "PARTIAL",
+      "original_remaining_obligation": "Scale-only anchor has prior bounded evidence; dual-anchor unit/scale compatibility remains PARTIAL in #5.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-08"
+        ],
+        "proposed_scope": "SCOPED_DECLARATION_POLICY",
+        "limit": "Dual-anchor compatibility is metadata-scoped, global C-08 still PARTIAL.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RKM-SCOPE-08",
+      "original_definition": {
+        "id": "RKM-SCOPE-08",
+        "title": "Evidence-qualified responsibility",
+        "requirement": "Recorded assignment information shall be preserved even when a real responsibility relation cannot be grounded.",
+        "acceptance_criterion": "A self-assignment source can be recorded without inventing a second actor.",
+        "negative_acceptance_criterion": "A technical relation creates authority, accountability or a second actor without evidence.",
+        "status": "Design obligation; public-export execution pending",
+        "source": "Current conceptual scope decision"
+      },
+      "original_acceptance_state": "BOUNDED_ENGINEERING_EVIDENCE",
+      "original_remaining_obligation": "Synthetic assignment retrieval and prior distinct-participant controls do not establish an actual mandate or authority.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-06",
+          "C-07",
+          "C-22"
+        ],
+        "proposed_scope": "SCOPED_DISTINCTION_ONLY",
+        "limit": "Assignment information may exist without actual grounded mandate/second actor.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RQ-CQ01",
+      "original_definition": {
+        "id": "RQ-CQ01",
+        "question": "Which entries document the same case?",
+        "expected_result": "Two distinct entries can refer to one case.",
+        "rejection": "Entries become the case or are grouped by equal labels.",
+        "status": "Planned for execution on the public model; no inherited pass",
+        "population": "Synthetic design task"
+      },
+      "original_acceptance_state": "BOUNDED_SYNTHETIC_QUERY_EXECUTED",
+      "original_remaining_obligation": "Independent real-world case identity adjudication remains #7/#13; conflicting links are retrieved, not admitted.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-01"
+        ],
+        "proposed_scope": "SCOPED_SYNTHETIC_QUERY",
+        "limit": "Synthetic exact case/entry joins plus selected SQL identity evidence; no independent real-case adjudication.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RQ-CQ02",
+      "original_definition": {
+        "id": "RQ-CQ02",
+        "question": "Which scenarios concern a case?",
+        "expected_result": "Distinct scenario specifications link to the case.",
+        "rejection": "Scenario identity is collapsed into case identity.",
+        "status": "Planned for execution on the public model; no inherited pass",
+        "population": "Synthetic design task"
+      },
+      "original_acceptance_state": "BOUNDED_SYNTHETIC_QUERY_EXECUTED",
+      "original_remaining_obligation": "Raw/managed admission and evidence that an occurrence happened are outside this retrieval test (#5/#13).",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-02"
+        ],
+        "proposed_scope": "SCOPED_SYNTHETIC_QUERY",
+        "limit": "Scenario aboutness retrieval, not occurrence or admission.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RQ-CQ03",
+      "original_definition": {
+        "id": "RQ-CQ03",
+        "question": "Can equal scores use different scale versions?",
+        "expected_result": "Both values and their different pinned scales remain retrievable.",
+        "rejection": "Numeric equality alone authorizes comparison.",
+        "status": "Planned for execution on the public model; no inherited pass",
+        "population": "Synthetic design task"
+      },
+      "original_acceptance_state": "BOUNDED_SYNTHETIC_QUERY_EXECUTED",
+      "original_remaining_obligation": "Core OWL has no numeric scalar field. Arithmetic, method/scale compatibility and complete temporal joins remain #5/#12.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-04",
+          "C-13",
+          "C-18"
+        ],
+        "proposed_scope": "SCOPED_SYNTHETIC_QUERY",
+        "limit": "Retrieval and declared compatibility supplements are separate; no arithmetic or universal comparability.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RQ-CQ04",
+      "original_definition": {
+        "id": "RQ-CQ04",
+        "question": "Can assignment information exist without an actual mandate?",
+        "expected_result": "The assignment is retained without an asserted real mandate.",
+        "rejection": "A relator or second actor is invented.",
+        "status": "Planned for execution on the public model; no inherited pass",
+        "population": "Synthetic design task"
+      },
+      "original_acceptance_state": "BOUNDED_SYNTHETIC_QUERY_EXECUTED",
+      "original_remaining_obligation": "Grounding, actual authority, ownership and participant identity remain #7/#12; no mandate is synthesized.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-06",
+          "C-07",
+          "C-22"
+        ],
+        "proposed_scope": "SCOPED_SYNTHETIC_QUERY",
+        "limit": "Assignment records without invented mandates; no actual authority judgment.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RQ-CQ05",
+      "original_definition": {
+        "id": "RQ-CQ05",
+        "question": "Does entry closure establish risk cessation?",
+        "expected_result": "Closure and cessation evidence are independent.",
+        "rejection": "Closure automatically establishes cessation.",
+        "status": "Planned for execution on the public model; no inherited pass",
+        "population": "Synthetic design task"
+      },
+      "original_acceptance_state": "BOUNDED_SYNTHETIC_QUERY_EXECUTED",
+      "original_remaining_obligation": "State-code interpretation is a synthetic fixture policy, not standards equivalence or an OWL non-entailment proof. Temporal/cessation adjudication remains #7/#12.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-05",
+          "C-19"
+        ],
+        "proposed_scope": "SCOPED_SYNTHETIC_QUERY",
+        "limit": "Synthetic workflow labels illustrate distinction, not full temporal/workflow acceptance.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RQ-CQ06",
+      "original_definition": {
+        "id": "RQ-CQ06",
+        "question": "Can an assertion be traced to its source?",
+        "expected_result": "Its source identity, locator and interpretation origin are recoverable.",
+        "rejection": "Missing or misjoined provenance is presented as source support.",
+        "status": "Planned for execution on the public model; no inherited pass",
+        "population": "Evidence-preservation task; independent data preparation required"
+      },
+      "original_acceptance_state": "INDEPENDENT_POPULATION_NOT_RUN_SYNTHETIC_CONTROL_ONLY",
+      "original_remaining_obligation": "Locator and interpretation-origin scalars are application fields, not native OWL properties. Independent literature extraction/support remains #13 and adequacy #7.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-12",
+          "C-17"
+        ],
+        "proposed_scope": "SCOPED_SOURCE_BACKED_SUPPLEMENT",
+        "limit": "13 inspected source statements, 35 query/control outcomes; not complete original broad population or independent extraction validation.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RQ-CQ07",
+      "original_definition": {
+        "id": "RQ-CQ07",
+        "question": "Does correction lineage remain distinguishable?",
+        "expected_result": "A correction is linked to its corrected statement.",
+        "rejection": "The correction is counted as independent corroboration.",
+        "status": "Planned for execution on the public model; no inherited pass",
+        "population": "Evidence-preservation task; independent data preparation required"
+      },
+      "original_acceptance_state": "INDEPENDENT_POPULATION_NOT_RUN_SYNTHETIC_CONTROL_ONLY",
+      "original_remaining_obligation": "General correction lineage is not a native Riskium property. This explicit application record profile does not prove source independence, immutable storage or real-data acceptance (#12/#13).",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-03",
+          "C-17"
+        ],
+        "proposed_scope": "SCOPED_SOURCE_BACKED_SUPPLEMENT",
+        "limit": "Five original/reissued cell pairs and exact lineage/value/locator controls; no independent corroboration or recomputed estimates.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    },
+    {
+      "id": "RQ-CQ08",
+      "original_definition": {
+        "id": "RQ-CQ08",
+        "question": "Can unsupported case identity remain unasserted?",
+        "expected_result": "A candidate scenario can remain incomplete without a fabricated case.",
+        "rejection": "An identity is invented to satisfy a managed-record constraint.",
+        "status": "Planned for execution on the public model; no inherited pass",
+        "population": "Evidence-preservation task; independent data preparation required"
+      },
+      "original_acceptance_state": "INDEPENDENT_POPULATION_NOT_RUN_SYNTHETIC_CONTROL_ONLY",
+      "original_remaining_obligation": "Incomplete raw candidates are not asserted to be managed OWL scenarios. Independent source-case identities and admission remain #5/#13.",
+      "accepted_release_scope": {
+        "constraint_ids": [
+          "C-01",
+          "C-02",
+          "C-16"
+        ],
+        "proposed_scope": "SCOPED_SOURCE_BACKED_SUPPLEMENT",
+        "limit": "All 11 already-withheld candidates queried with unbound cases; absence of graph link is not proof of real-world nonexistence.",
+        "owner_disposition": "ACCEPTED_CURRENT_RELEASE_SCOPE_NOT_FULL_ORIGINAL_FULFILLMENT"
+      },
+      "historical_receipt": "evaluation/traceability/ledger.json"
+    }
+  ]
+}

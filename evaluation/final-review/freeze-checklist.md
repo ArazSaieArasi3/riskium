@@ -1,6 +1,6 @@
 # Finite first-final freeze and publication checklist
 
-Baseline 0.3.1; manuscript 7.0.7; evidence checkpoint `7968d7ef5662d05f171568278f27df204f50cbd9`. Preparation #27; **proposals only, not owner acceptance or final release**. Machine bindings and unchanged source outcomes: [report.json](report.json).
+Baseline 0.3.1; manuscript 7.0.7; evidence checkpoint `7968d7ef5662d05f171568278f27df204f50cbd9`. Preparation #27; **proposals only, not owner acceptance or final release**. Machine bindings and unchanged source outcomes: [report.json](report.json). This is the historical preparation snapshot; see the [live owner decisions](../owner-review/README.md) and [current article](../manuscript-review/v7.0.8/README.md) for subsequent approved work.
 
 | Step | Current state | Exit evidence |
 | --- | --- | --- |

@@ -1,0 +1,136 @@
+{
+  "schema": "riskium-manuscript-prose-sync-v1",
+  "source_manuscript_version": "7.0.7",
+  "manuscript_version": "7.0.8",
+  "model_version": "0.3.1",
+  "orsd_revision": "0.4.3",
+  "source_docx_sha256": "d8562b6ce1d3eac90f782c45acb5fa32aac345530f5dcfd8297b2a953b6d7652",
+  "proposal_sha256": "98ab6bd663d18bb60205e0a624b12df405dfb5baaf4b9018cddff325dec5d975",
+  "output_docx_sha256": "8e9ac824703512e5a7be91d31b1aedbf7936f727621f73d704b907b2aaf4dbe0",
+  "modified_at": "2026-10-24T13:06:07Z",
+  "changes": [
+    {
+      "id": "MA-01",
+      "paragraph_index": 36,
+      "reason": "Qualify the declared quality checkpoint as the baseline, leaving later supplements separately bound.",
+      "additional_reason": null,
+      "original_text": "The working chain is source statement → requirement → conceptual decision → representation → test → qualified claim. Ontology v0.3.1 is the design baseline for this paper. Current formal and query evidence is reconciled in the companion quality snapshot at repository commit 94feca4. Synthetic fixtures and pharmaceutical dataset v0.6 are separate inputs. Historical relational results refer to the archived SQLite v0.3.0-rc.1 companion and its pre-publication v0.3.1 model. Catalog identities, endpoints, multiplicities and generalizations agree with the public baseline, but annotations and selected definitions differ; those historical executions are not claimed as reruns of the public package.",
+      "new_text": "The working chain is source statement → requirement → conceptual decision → representation → test → qualified claim. Ontology v0.3.1 is the design baseline for this paper. Baseline formal and query evidence is reconciled in the companion quality snapshot at repository commit 94feca4. Synthetic fixtures and pharmaceutical dataset v0.6 are separate inputs. Historical relational results refer to the archived SQLite v0.3.0-rc.1 companion and its pre-publication v0.3.1 model. Catalog identities, endpoints, multiplicities and generalizations agree with the public baseline, but annotations and selected definitions differ; those historical executions are not claimed as reruns of the public package.",
+      "original_paragraph_sha256": "06c811cf3b01b9da4ad2a6babd8956362bc5c95ce986e843dfdc76e5f941e660",
+      "new_paragraph_sha256": "40cc4804ee18eddfbb77a05027accf22f4fd6c6007c4de910b6af5fc40d85783"
+    },
+    {
+      "id": "MA-02",
+      "paragraph_index": 77,
+      "reason": "Prevent a historical complete relational-disposition claim from being read as current public full-schema implementation.",
+      "additional_reason": null,
+      "original_text": "The reference implementation allocates every catalog concept, association and generalization to an explicit relational disposition. Shared-identity inheritance and derived role views preserve identity across class memberships; normalized associations retain qualified links. Raw source records and incomplete drafts are separated from managed records, whose admission checks enforce required catalog cardinalities. Issued content and outgoing dependency versions are frozen in snapshots, so historical queries do not silently read mutable working tables.",
+      "new_text": "The archived relational reference implementation allocates every catalog concept, association and generalization to an explicit relational disposition. Shared-identity inheritance and derived role views preserve identity across class memberships; normalized associations retain qualified links. Raw source records and incomplete drafts are separated from managed records, whose admission checks enforce required catalog cardinalities. Issued content and outgoing dependency versions are frozen in snapshots, so historical queries do not silently read mutable working tables.",
+      "original_paragraph_sha256": "5d4dec1257adf92bb96731d897dd5be419a50811386ffe3b4497367c4b4e4e3c",
+      "new_paragraph_sha256": "22d7c3738a506c36ebb8d83952c1c33ebc662a87beefc669234a4242fdd09f9f"
+    },
+    {
+      "id": "MA-03",
+      "paragraph_index": 87,
+      "reason": "Attribute the computation/history/temporal contract sentence to its actual historical companion; current public computation admission remains unexecuted.",
+      "additional_reason": null,
+      "original_text": "Selected executable contracts exercise admission, assessment comparability, reported versus computed values, issued-version immutability and temporal boundaries. The historical relational suite checks mapped objects, managed-profile integrity, pinned dependencies and rejected mutations. Current OWL verification uses HermiT 1.3.8.1099 with an empty import closure. The typed-core premise is consistent; all 693 executed cases match their expected outcomes. Of 295 predeclared obligations, 281 pass (95.25%) and 14 remain NOT_RUN. The denominator includes 77 class, 66 generalization, 127 relation and 25 interpretation-constraint obligations; only 11 of the latter have a sound bounded HermiT oracle. Open-world reasoning has no unique-name assumption: missing named fillers and equal labels do not establish explicit-data completeness or identity.",
+      "new_text": "Selected contracts in the archived relational companion exercise admission, assessment comparability, reported versus computed values, issued-version immutability and temporal boundaries. The historical relational suite checks mapped objects, managed-profile integrity, pinned dependencies and rejected mutations. Current OWL verification uses HermiT 1.3.8.1099 with an empty import closure. The typed-core premise is consistent; all 693 executed cases match their expected outcomes. Of 295 predeclared obligations, 281 pass (95.25%) and 14 remain NOT_RUN. The denominator includes 77 class, 66 generalization, 127 relation and 25 interpretation-constraint obligations; only 11 of the latter have a sound bounded HermiT oracle. Open-world reasoning has no unique-name assumption: missing named fillers and equal labels do not establish explicit-data completeness or identity.",
+      "original_paragraph_sha256": "62b9e5134364226aa279cd873544490bb63d121a1b80299d1fdc00c99212d1a7",
+      "new_paragraph_sha256": "edae7462d527d68b350f8e90e57dbc90946cf71992149217189f03357d32317c"
+    },
+    {
+      "id": "MA-04",
+      "paragraph_index": 89,
+      "reason": "Keep 341/359, PARTIAL and NOT_RUN unchanged while distinguishing actual later scoped supplements from unresolved general claims.",
+      "additional_reason": null,
+      "original_text": "The fixed SHACL ledger has 341 scoped PASS, one PARTIAL (C-08) and 17 NOT_RUN out of 359 obligations (94.99% scoped PASS coverage). Its denominator is 254 ordered endpoints, 80 catalog-admission obligations and 25 interpretation constraints. Endpoint evidence includes local checks and paired integration for all 127 relations; catalog admission concerns 77 metadata profiles and three boundary exclusions, not complete risk-record admission. Selected cross-module fixtures do not close conditional and multi-relation integration. C-08 unit/scale compatibility, historical immutability and broader interpretation rules remain open. These execution and coverage populations are separate from software regressions and independent semantic validation; no overall semantic-correctness percentage is estimated.",
+      "new_text": "The fixed SHACL ledger has 341 scoped PASS, one PARTIAL (C-08) and 17 NOT_RUN out of 359 obligations (94.99% scoped PASS coverage). Its denominator is 254 ordered endpoints, 80 catalog-admission obligations and 25 interpretation constraints. Endpoint evidence includes local checks and paired integration for all 127 relations; catalog admission concerns 77 metadata profiles and three boundary exclusions, not complete risk-record admission. Selected cross-module fixtures do not close conditional and multi-relation integration. Those historical rows retain their recorded status. Later public supplements add scoped C-08 metadata compatibility, selected C-13/C-18 joins and direct-comparison eligibility, and an executed SQLite identity/history slice. They do not establish general unit conversion, formula execution, temporal reasoning or full risk-record admission. These execution and coverage populations are separate from software regressions and independent semantic validation; no overall semantic-correctness percentage is estimated.",
+      "original_paragraph_sha256": "673e9919c1c5efffa49aa959deebdff1df4a7793502d8be71e324955e1b9232b",
+      "new_paragraph_sha256": "4f8cdf53ee6aa7f2993e196cee467a0d848eada9c6bba6f5f7a09658434bd0b4"
+    },
+    {
+      "id": "MA-05",
+      "paragraph_index": 94,
+      "reason": "Remove the stale current synthetic-only wording without turning new finite cohorts into 8/8 original independent acceptance.",
+      "additional_reason": null,
+      "original_text": "The updated ORSD connects requirement families to concepts, constraints and current evidence. The public trace ledger accounts for 28 rows: 12 requirements, eight scope statements and eight CQ contracts; complete trace accounting does not mean complete acceptance. The five synthetic tasks in Table III correspond to CQ01–CQ05. Across all eight contracts, asserted-graph SPARQL execution with inference disabled matches 32 fixed-answer cases and detects eight query mutants, including missing and conflicting data controls. Numeric values, locators, interpretation origin, correction metadata and raw candidates are explicit application fields, not native OWL properties. CQ06–CQ08 have synthetic controls only; their original independently prepared populations remain NOT_RUN. Thus five of eight original population contracts have bounded synthetic execution, and independent stakeholder acceptance remains absent. The historical pre-public registry retains its separate provenance.",
+      "new_text": "The updated ORSD connects requirement families to concepts, constraints and current evidence. The public trace ledger accounts for 28 rows: 12 requirements, eight scope statements and eight CQ contracts; complete trace accounting does not mean complete acceptance. The five synthetic tasks in Table III correspond to CQ01–CQ05. Across all eight contracts, asserted-graph SPARQL execution with inference disabled matches 32 fixed-answer cases and detects eight query mutants, including missing and conflicting data controls. Numeric values, locators, interpretation origin, correction metadata and raw candidates are explicit application fields, not native OWL properties. In that baseline, CQ06–CQ08 have synthetic controls only and their original independently prepared populations remain NOT_RUN; five of eight original population contracts have bounded synthetic execution. Separate source-backed supplements now inspect 13 CQ06 statements and, for CQ07/CQ08, five original/reissued assertion pairs and 11 already-withheld documentary candidates. Their source queries and synthetic controls retain separate populations; they do not establish complete original case-population acceptance or independent stakeholder validation. The historical pre-public registry retains its separate provenance.",
+      "original_paragraph_sha256": "b266d1f3d14b4290693a5bd7d6601817e913925b542a8a9a5d9561a9c867e523",
+      "new_paragraph_sha256": "3a738bdfe2dedd4289145f2c8ce19d724ed13f99c9d8f03e917743187ca224ce"
+    },
+    {
+      "id": "MA-06",
+      "paragraph_index": 107,
+      "reason": "Update publication/provenance wording while preserving the no-independent-replication and bounded-acceptance limits.",
+      "additional_reason": "Necessary factual update within the same approved paragraph: disclose the now-explicit owner/author scope review and its independence/final-freeze limits.",
+      "original_text": "Versioned inputs, model hashes, scripts, fixed expected answers and result receipts make the reported executions inspectable. The pharmaceutical companion retains frozen source snapshots, row hashes and deterministic loading checks; this does not reproduce every original language-model interpretation or constitute independent reproduction. The public repository now supplies hosted continuous integration, a documentation portal and development prerelease v0.3.1-rc.1. Historical SQLite and pharmaceutical companions are separate from that public prerelease. Later CQ, source-register and quality-synthesis evidence remains bound to its own declared commits rather than being attributed to that earlier archive. No production application, independent replication or stable scientific acceptance is established.",
+      "new_text": "Versioned inputs, model hashes, scripts, fixed expected answers and result receipts make the reported executions inspectable. The pharmaceutical companion retains frozen source snapshots, row hashes and deterministic loading checks; this does not reproduce every original language-model interpretation or constitute independent reproduction. The public repository supplies hosted continuous integration, a documentation portal and versioned development prereleases. Historical SQLite and pharmaceutical companions remain separate from the public source packages. The baseline quality snapshot and later application, history and source-query supplements retain their own declared input and execution bindings. An author-led review with assistant support accepted the declared bounded release scope; this review is not independent validation, and final package verification remains separate. No production application, independent replication or stable scientific acceptance is established.",
+      "original_paragraph_sha256": "7c1ed73c974f443c29790c1945945acda82ef93e97b9df8c8dc8abdcfbfb1e87",
+      "new_paragraph_sha256": "bfc5132ecbc62cf870bd5b1d8103e005eeb57a729add14fdf2a2d26749c690c7"
+    },
+    {
+      "id": "MA-07",
+      "paragraph_index": 131,
+      "reason": "Move the finite source-population preparation from unexecuted work to review/extension; broader admission and benefits remain unclaimed.",
+      "additional_reason": null,
+      "original_text": "Priorities are to complete the native semantic profile, adjudicate open pattern findings and evaluate the three CQ populations that currently have synthetic controls only. The relational implementation needs justified source-case admission and closure of its remaining semantic-preservation obligations [16]. Subsequent studies should use new sources, independent experts and matched tasks. Fuller framework mappings and organizational performance evaluation should follow demonstrated needs rather than expand the present scope by default.",
+      "new_text": "Priorities are to complete the native semantic profile, adjudicate open pattern findings and review and extend the bounded source-backed CQ06–CQ08 populations. The relational implementation needs justified source-case admission and closure of its remaining semantic-preservation obligations [16]. Subsequent studies should use new sources, independent experts and matched tasks. Fuller framework mappings and organizational performance evaluation should follow demonstrated needs rather than expand the present scope by default.",
+      "original_paragraph_sha256": "e94dd8a151be897cbd6ed8f986cc0d53fed644e1b41ddaf13561296ea5665047",
+      "new_paragraph_sha256": "2593071b0c16be0de7d8797e689fbb904d3264d6e6722d7c035accd4895990ae"
+    }
+  ],
+  "preservation": {
+    "changed_body_paragraphs": 7,
+    "inserted_or_removed_paragraphs": 0,
+    "unaffected_body_paragraph_xml_unchanged": true,
+    "all_tables_unchanged": true,
+    "all_other_package_members_byte_identical": true,
+    "unchanged_package_members": 26,
+    "title_authors_affiliations_references_unchanged": true,
+    "figure_media_dimensions_styles_headers_footers_unchanged": true,
+    "numeric_results_and_historical_statuses_preserved": true
+  },
+  "render_and_visual_qa": {
+    "status": "PASS_FOR_NECESSARY_EDITORIAL_SYNC",
+    "pages": 9,
+    "all_seven_full_revised_paragraphs_present_in_pdf": true,
+    "all_nine_page_images_visually_inspected": true,
+    "no_new_clipping_overlap_or_broken_tables_observed": true,
+    "delivered_word_byte_identical_to_inspected_source": true,
+    "delivered_pdf_all_nine_pages_pixel_identical_to_inspected_render": true,
+    "delivered_pdf_metadata_changes_recorded_separately": true,
+    "fresh_scientific_engine_runs": 0,
+    "independent_semantic_review": false
+  },
+  "status": "APPLIED_AND_VERIFIED",
+  "decision_authority": "evaluation/owner-review/register.json",
+  "review_date_local": "2026-10-24",
+  "artifacts": [
+    {
+      "filename": "Riskium_Manuscript_Release_Q_v7_0_8.docx",
+      "sha256": "8e9ac824703512e5a7be91d31b1aedbf7936f727621f73d704b907b2aaf4dbe0",
+      "size_bytes": 1144414,
+      "pages": null,
+      "delivery": "author-facing file; not copied into public source repository"
+    },
+    {
+      "filename": "Riskium_Manuscript_Release_Q_v7_0_8.pdf",
+      "sha256": "16779f16049a133b8ca1dd0089090ea0e286b25738fb930e9a14290082255b9e",
+      "size_bytes": 763727,
+      "pages": 9,
+      "delivery": "author-facing file; not copied into public source repository"
+    }
+  ],
+  "render_pdf_sha256": "f4c6a3d529ff5b19ab399eb5f3b2bf2ea4464fbe89319d71a102d65e35a2101c",
+  "bindings_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/native/riskium.ontouml.json": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+    "ontology/derived/riskium.owl.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+    "diagrams/manifest.json": "2b8e016477e8915276c1eb787034a1716835fc20ba422dc69ee9d68e76deb7d5",
+    "diagrams/selected-view.svg": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+    "requirements/ontology-requirements.md": "68e09fd8cce2805da2d2fa0f29f76b0601282c598855d99a41631dccfaf9ff33",
+    "requirements/release-scope-v0.3.1.json": "759eb3eb7cbd7597de24c28139389f3e44de9275c640a2c524fac7032f960639",
+    "evaluation/owner-review/accepted-scope.json": "a7da025a831114999529056aad105eb31ffcee1e4a88866fecbd4aa917da1a5c"
+  }
+}

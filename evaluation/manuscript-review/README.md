@@ -1,5 +1,7 @@
 # Manuscript claim and number review
 
+Latest author-approved prose revision: [7.0.8](v7.0.8/README.md), synchronized with ORSD 0.4.3 and accepted release scope. The 7.0.7 ledger and QA below remain a historical checkpoint.
+
 Manuscript **7.0.7** is the author-authorized revision of **7.0.6**, reviewed against evidence checkpoint `94feca433e8b8fbccd792899428ea6b648a8a0da`. The [ledger](ledger.json) binds manuscript locations, checked values, exact evidence hashes, historical source versions, withdrawn assertions and final file digests. This completes #14 as bounded manuscript reconciliation; it is not independent semantic acceptance or a new scientific engine execution.
 
 The author-facing Word and equivalent PDF each contain the same revised article (9 rendered pages). A separate Persian RTL report contains all 16 assessment rows (3 pages). These files and the author-supplied historical SQLite/pharmaceutical archive are not silently added to the public prerelease. Their hashes identify the reviewed copies; this repository does not claim that the private companion is publicly reproducible.
