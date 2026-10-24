@@ -104,6 +104,7 @@ CHECKS = [
     ['tools/run_comparison_shacl.py', '--check'],
     ['tools/run_relational_history.py', '--check'],
     ['tools/run_source_cq06.py', '--check'],
+    ['tools/run_source_cq0708.py', '--check'],
     ['-m', 'unittest', 'discover', '-s', 'tests', '-v'],
 ]
 

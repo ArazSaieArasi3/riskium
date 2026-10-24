@@ -1,0 +1,7 @@
+PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX app: <urn:riskium:source-cq-profile:0.3.0#>
+PREFIX ap: <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#>
+SELECT DISTINCT ?record ?candidate ?case WHERE {
+ ?record a app:RawScenarioRecord; ap:candidate ?candidate .
+ ?candidate risk:R-36 ?case .
+}

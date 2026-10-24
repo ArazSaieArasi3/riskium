@@ -1,0 +1,26 @@
+{
+  "version": "0.3.0",
+  "namespace": "urn:riskium:source-cq-profile:0.3.0#",
+  "tasks": ["CorrectionLineageInspection", "WithheldIdentityInspection"],
+  "native_signatures": {"RX-006": ["RKM-C015", "RKM-C014"], "R-36": ["RKM-C003", "RKM-X01"]},
+  "terms": {
+    "AssertionRecord": "Supplementary extraction envelope; not a new native class.",
+    "reportedValue": "Exact source-reported selected percent cell, not a RiskScore or recomputed estimate.",
+    "standardErrorPercent": "Selected source standard error; absent stays absent rather than zero.",
+    "totalPaths": "Selected source denominator where available; no invented Table 1 count.",
+    "unit": "Supplementary literal percent, distinct from native measurement/unit semantic admission.",
+    "cellContext": "Exact serialized table/panel/therapeutic/method/transition/time/denominator context.",
+    "sourceLocator": "Exact supplied edition/PDF/table/panel/row/column locator.",
+    "disposition": "CORRECTED_VALUE or REISSUED_UNCHANGED; lineage does not imply a numeric change.",
+    "correctsSource": "Source-level correction DOI points to original DOI, based on the actual notice; no independent corroboration.",
+    "independentStudyLineages": "One underlying study lineage for the original/corrigendum pair; duplicate table presentations add none.",
+    "RawScenarioRecord": "Unadmitted documentary staging record; not a managed RiskScenarioSpecification.",
+    "caseAdmission": "Preserved prior WITHHELD decision, not reopened by this task.",
+    "occurrenceAsserted": "False describes this pipeline's lack of occurrence assertion, not proof that a real event did not happen.",
+    "priorRecord": "Link to the already inspected rc.6 source record; preserves its source/adjudication identity."
+  },
+  "external_metadata": {"http://www.w3.org/ns/prov#wasRevisionOf": "Revision between our curated assertion envelopes, not a native correction predicate or assertion that the two publication DOIs are versions of one native artifact.", "http://purl.org/dc/terms/source": "Distinct original/correction DOI or inherited hospital DOI.", "http://purl.org/dc/terms/title": "Display only; equal titles do not merge identities."},
+  "native_projection": "CQ07 versions are versions of our curated cell assertion artifacts, not of the source publications. CQ08 documentary candidates reuse native InformationArtifact typing only; no native scenario/case or event is admitted. Invalid native R-36 links appear only in explicitly synthetic rejection/control graphs.",
+  "raw_query_boundary": "SELECT returns asserted graph bindings, including false/conflicting bindings. Separate exact frozen-cohort checks enforce the named inspection tasks. Neither query nor cohort syntax proves source truth, real-world nonexistence or general semantic validity.",
+  "execution": "Local RDFLib 7.6.0 SELECT; no inference, remote service, imports or identifier normalization. Automated replay uses hash-bound selected public data, not new primary PDF reading."
+}

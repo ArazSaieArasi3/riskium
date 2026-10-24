@@ -1,0 +1,15 @@
+PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX app: <urn:riskium:source-cq-profile:0.3.0#>
+PREFIX ap: <https://github.com/ArazSaieArasi3/riskium/profiles/catalog/0.3.0#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT DISTINCT ?correctionRecord ?previousRecord ?source ?previousValue ?currentValue ?disposition WHERE {
+ ?correctionRecord a app:AssertionRecord; prov:wasRevisionOf ?previousRecord;
+   ap:candidate ?currentVersion; dct:source ?source; app:reportedValue ?currentValue;
+   app:disposition ?disposition; app:cellContext ?context .
+ ?previousRecord a app:AssertionRecord; ap:candidate ?previousVersion;
+   dct:source ?originalSource; app:reportedValue ?originalValue; app:cellContext ?context .
+ BIND(?currentValue AS ?previousValue)
+ ?source app:correctsSource ?originalSource .
+ ?currentVersion risk:RX-006 ?artifact . ?previousVersion risk:RX-006 ?artifact .
+}
