@@ -35,3 +35,7 @@ The recommendations are preparation for discussion, **not the owner's judgments*
 ## Rc.6 evidence available for the owner
 
 [Published source-backed CQ06 evidence](../sources/cq06/README.md) and [verified rc.6 publication](../releases/v0.3.1-rc.6-publication.json) now support OR-09 discussion: 13 inspected source statements, exact DOI/page/row/origin joins, deliberate misjoin controls, and 11 still-withheld organizational case admissions. CQ07/08 and semantic adequacy remain explicit limits. No owner rating or independent judgment has been added.
+
+## Rc.7 evidence available for the owner
+
+[Published CQ07/CQ08 evidence](../sources/cq0708/README.md) and [verified rc.7 publication](../releases/v0.3.1-rc.7-publication.json) now support OR-09 and final OR-10 discussion: five inspected original/reissued assertion pairs, one underlying study lineage, exact retained values/context and dedicated unresolved-identity queries over all 11 already-WITHHELD candidates. Raw conflicts/false case promotion and source forgery have separate controls. This is scoped technical evidence; no owner rating or independent judgment has been added. [Preparation issue #27](https://github.com/ArazSaieArasi3/riskium/issues/27) owns the next concrete final claim/route matrix and decision table.

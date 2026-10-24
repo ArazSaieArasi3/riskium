@@ -1,0 +1,147 @@
+{
+  "schema": "riskium-development-publication-v1",
+  "tag": "v0.3.1-rc.7",
+  "release_id": 422538932,
+  "published_at": "2026-10-24T05:32:40Z",
+  "source_commit": "6ec9ffc7f10f6495db1b226864bb3835233a2dc1",
+  "release_url": "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.7",
+  "workflow_run": 40066298810,
+  "workflow_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40066298810",
+  "publication_state": {
+    "draft": false,
+    "prerelease": true,
+    "latest_promoted": false,
+    "candidate_job": "success",
+    "publish_job": "success"
+  },
+  "assets": [
+    {
+      "name": "candidate-receipt.json",
+      "id": 671379800,
+      "size": 31551,
+      "digest": "sha256:e9aab345e8a6a8d4f98aa41a0ba118578547b6e4b12c2f287c17986f477e0c35",
+      "browser_download_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.7/candidate-receipt.json"
+    },
+    {
+      "name": "release-notes.md",
+      "id": 671379805,
+      "size": 8687,
+      "digest": "sha256:eca75c455dbe417fcded69eeef41ae87031cd100acfa7ab347f46c69f90f67f5",
+      "browser_download_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.7/release-notes.md"
+    },
+    {
+      "name": "riskium-v0.3.1-rc.7-source.tar.gz",
+      "id": 671379807,
+      "size": 4054494,
+      "digest": "sha256:9c15efa1aa55bc4e7c814a92a11422578956b8dcb1444491da2307b55e11356b",
+      "browser_download_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.7/riskium-v0.3.1-rc.7-source.tar.gz"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "id": 671379806,
+      "size": 359,
+      "digest": "sha256:f521eef1542ec81537d4ca3525714d136b97fbe183882b4abf26f2d739f4318a",
+      "browser_download_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.7/SHA256SUMS.txt"
+    },
+    {
+      "name": "source-manifest.json",
+      "id": 671379803,
+      "size": 57884,
+      "digest": "sha256:19da413e8c3498c011654d661e01f20f83acdab35522fb1c5bfdbfa8ec427a90",
+      "browser_download_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.1-rc.7/source-manifest.json"
+    }
+  ],
+  "verification": {
+    "status": "PASS",
+    "published_assets_verified": 5,
+    "published_asset_bytes_verified": true,
+    "source_manifest_files_verified": 340,
+    "candidate_checks_passed": 16,
+    "software_regressions": 137,
+    "fresh_source_cq0708_queries": 59,
+    "selected_assertion_pairs": 5,
+    "retained_assertion_versions": 10,
+    "withheld_identity_candidates": 11,
+    "fresh_source_cq06_queries": 35,
+    "source_documents_inspected_separately": 2,
+    "fresh_synthetic_cq_queries": 40,
+    "fresh_sql_scenarios": 67,
+    "fresh_comparison_shacl_executions": 50,
+    "fresh_c08_shacl_executions": 37,
+    "fresh_hermit_runs": 0,
+    "all_19_source_cq0708_input_hashes_match_archive": true,
+    "historical_source_owl_cq_shacl_hermit_sql_quality_manuscript_receipt_bytes_unchanged": true,
+    "tag_target_checked_separately": true,
+    "private_pdf_database_binaries_excluded": true
+  },
+  "source_cq0708": {
+    "receipt_source_commit": "3d1fe2d6f0509dc80b6e5f0b3684b963d69d366c",
+    "cohort_oracle_freeze_commit": "920524ee05d4f7f7468ce7a9aa75a70cc7c08503",
+    "summary": {
+      "correction_source_documents": 2,
+      "independent_study_lineages": 1,
+      "selected_assertion_pairs": 5,
+      "retained_assertion_versions": 10,
+      "changed_selected_values": 4,
+      "unchanged_reissued_values": 1,
+      "withheld_identity_candidates": 11,
+      "managed_cases_admitted": 0,
+      "scenarios": 59,
+      "actual_query_executions": 59,
+      "by_route": {
+        "cq07": 30,
+        "cq08": 29
+      },
+      "by_kind": {
+        "source-query": 18,
+        "synthetic-negative": 31,
+        "identity-control": 2,
+        "guard-mutation": 2,
+        "query-mutation": 4,
+        "roundtrip": 2
+      },
+      "query_mutants_detected": 4,
+      "statuses": {
+        "PASS": 59
+      }
+    },
+    "local_engine": {
+      "name": "RDFLib SPARQL SELECT",
+      "version": "7.6.0",
+      "python": "3.12.14",
+      "inference": "none",
+      "remote_service": false
+    },
+    "hosted_engine": {
+      "name": "RDFLib SPARQL SELECT",
+      "version": "7.6.0",
+      "python": "3.12.15",
+      "inference": "none",
+      "remote_service": false
+    },
+    "inspection_receipt": "evaluation/sources/cq0708/inspection.json",
+    "fresh_pdf_reading_in_ci": false,
+    "independent_semantic_acceptance": false
+  },
+  "owner_review": {
+    "cohort_rows": 11,
+    "ratings_recorded": 0,
+    "status": "PENDING_OWNER_JUDGMENTS",
+    "independent_validation_claimed": false,
+    "future_independent_review_issue": 23
+  },
+  "previous_releases": {
+    "tags": {
+      "v0.3.1-rc.1": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+      "v0.3.1-rc.2": "5f10ad103af5818cb99331a9d71e8b5f518e93de",
+      "v0.3.1-rc.3": "679ff6745bbacbbce802fb6ef78a51e53dba7e39",
+      "v0.3.1-rc.4": "dfa9674bfef9c0ca8d4b15015c677cd122bed29c",
+      "v0.3.1-rc.5": "a945beb8839228d007796c95745a89ce7457e7fe",
+      "v0.3.1-rc.6": "94ec64838a46b56b0da1a7b82bb926226b18d788"
+    },
+    "release_ids_and_asset_metadata_unchanged": true
+  },
+  "stable_exit_gates": "docs/stable-release-gates.md",
+  "next_packet": "docs/next-finalization-v0.3.1.md",
+  "next_preparation_issue": 27
+}
