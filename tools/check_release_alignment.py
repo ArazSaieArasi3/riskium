@@ -40,7 +40,15 @@ def check(root=None):
     require(matrix['orsd_revision'] == scope['documentation_revision'] == article['orsd_revision'] == accepted['orsd_revision'] == '0.4.3', 'ORSD compatibility mismatch')
     require(matrix['manuscript_version'] == article['manuscript_version'] == accepted['manuscript_version'] == '7.0.8', 'Manuscript compatibility mismatch')
     require(matrix['target_release'] == accepted['release_target'] == scope['target_release'] == 'v0.3.1', 'Package version mismatch')
-    require(matrix['final_release_published'] is False and owner['final_candidate_signoff'] is False, 'This synchronization snapshot cannot claim final publication/signoff')
+    require(owner['final_candidate_signoff'] is False, 'Do not invent another owner signoff')
+    if matrix['final_release_published']:
+        publication = read(matrix['publication_receipt'])
+        require(publication['tag'] == matrix['latest_published_package'] == matrix['target_release'], 'Published version mismatch')
+        require(publication['publication_state'] == 'PUBLISHED_AND_INDEPENDENTLY_DOWNLOADED_VERIFIED', 'Publication readback missing')
+        require(publication['downloaded_bytes_match'] and publication['archive_inventory_verified'] and publication['tag_commit_verified'] and publication['latest_verified'], 'Final readback gates missing')
+        require(publication['final_metadata'] == {'draft': False, 'prerelease': False}, 'Wrong final maturity metadata')
+    else:
+        require(matrix['latest_published_package'] == 'v0.3.1-rc.7', 'Unknown pre-final publication state')
     require('0.4.3' in (ROOT / 'requirements/ontology-requirements.md').read_text(), 'ORSD prose revision missing')
     require(owner['ratings_recorded'] == 11 and len(owner['rows']) == 11, 'Explicit owner decisions missing')
     require({r['id'] for r in owner['rows']} == {f'OR-{i:02}' for i in range(1, 12)}, 'Owner prompt identity mismatch')
@@ -100,7 +108,7 @@ def check(root=None):
     return {'status': 'ARTIFACT_SCOPE_ALIGNMENT_PASS', 'components': 10, 'owner_decisions': 11,
             'scoped_acceptances': 9, 'implemented_article_revision': '7.0.8',
             'orsd_revision': '0.4.3', 'model_version': '0.3.1',
-            'final_freeze_pending': True, 'new_scientific_engine_executions': 0}
+            'final_freeze_pending': not matrix['final_release_published'], 'new_scientific_engine_executions': 0}
 
 
 if __name__ == '__main__':

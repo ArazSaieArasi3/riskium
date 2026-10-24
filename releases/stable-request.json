@@ -1,0 +1,6 @@
+{
+  "profile": "stable-bounded-research-artifact",
+  "tag": "v0.3.1",
+  "publish": false,
+  "reason": "Implementation/review first; publication is requested only after the stable profile passes on committed source."
+}

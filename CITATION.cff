@@ -19,10 +19,10 @@ authors:
     given-names: "Hossein"
     affiliation: "Department of Computer Engineering, Ra.C., Islamic Azad University, Rasht, Iran"
     email: "azgomi@iaurasht.ac.ir"
-version: "0.3.1-rc.1"
-date-released: "2026-10-22"
+version: "0.3.1"
+date-released: "2026-10-24"
 repository-code: "https://github.com/ArazSaieArasi3/riskium"
-url: "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1-rc.1"
+url: "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1"
 license:
   - CC-BY-4.0
   - MIT

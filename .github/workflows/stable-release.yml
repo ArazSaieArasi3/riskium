@@ -1,0 +1,137 @@
+name: Stable research artifact release
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Reviewed stable tag v0.3.1'
+        type: string
+        default: 'v0.3.1'
+      publish:
+        description: 'Publish the owner-approved stable profile after exact final checks'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: stable-release-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  intent:
+    runs-on: ubuntu-24.04
+    outputs:
+      publish: ${{ steps.intent.outputs.publish }}
+      prepare: ${{ steps.intent.outputs.prepare }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Resolve explicit reviewed stable intent
+        id: intent
+        run: |
+          python - <<'PY'
+          import json,os,sys
+          sys.path.insert(0,'tools')
+          from prepare_stable_release import resolve_intent,git
+          event=json.load(open(os.environ['GITHUB_EVENT_PATH']))
+          value=resolve_intent('.',os.environ['GITHUB_EVENT_NAME'],os.environ['GITHUB_REF'],event.get('before',''),os.environ['GITHUB_SHA'],event.get('inputs'))
+          paths=[]
+          if os.environ['GITHUB_EVENT_NAME']=='push' and event.get('before'):
+              paths=git('.', 'diff','--name-only',event['before'],os.environ['GITHUB_SHA']).decode().splitlines()
+          tracked=['releases/stable-request.json','releases/stable-profile-v0.3.1.json','evaluation/finalization/v0.3.1-review.json','tools/prepare_stable_release.py','tools/publish_stable_release.py','tests/test_stable_release.py','.github/workflows/stable-release.yml']
+          prepare=value['publish'] or os.environ['GITHUB_EVENT_NAME']=='workflow_dispatch' or any(p in tracked for p in paths)
+          with open(os.environ['GITHUB_OUTPUT'],'a') as output:
+              output.write('publish='+str(value['publish']).lower()+'\n')
+              output.write('prepare='+str(prepare).lower()+'\n')
+          print(json.dumps(value))
+          PY
+  freeze:
+    needs: intent
+    if: needs.intent.outputs.prepare == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
+      - name: Validate accepted profile and freeze exact clean source
+        run: python tools/prepare_stable_release.py --output "$RUNNER_TEMP/riskium-stable"
+      - name: Verify the complete staged stable package before publication is possible
+        run: |
+          python - <<'PY'
+          import os,sys
+          from pathlib import Path
+          sys.path.insert(0,'tools')
+          from publish_stable_release import validate_package
+          freeze,manifest=validate_package(Path(os.environ['RUNNER_TEMP'])/'riskium-stable',os.environ['GITHUB_SHA'])
+          print({'staged_assets':6,'source_files':manifest['file_count'],'passed_checks':freeze['passed_checks']})
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: riskium-stable-${{ github.sha }}
+          path: ${{ runner.temp }}/riskium-stable/*
+          if-no-files-found: error
+          retention-days: 30
+  publish:
+    needs: [intent, freeze]
+    if: needs.intent.outputs.publish == 'true'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: riskium-stable-${{ github.sha }}
+          path: stable
+      - name: Publish only a new stable tag after draft asset verification
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python tools/publish_stable_release.py publish --repo "$GITHUB_REPOSITORY" --folder stable --source-commit "$GITHUB_SHA" --record run-record/publication-start.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: riskium-publication-start-${{ github.sha }}
+          path: run-record/publication-start.json
+          if-no-files-found: error
+  verify:
+    needs: [freeze, publish]
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: riskium-stable-${{ github.sha }}
+          path: expected
+      - uses: actions/download-artifact@v4
+        with:
+          name: riskium-publication-start-${{ github.sha }}
+          path: run-record
+      - name: Independently download published final assets and verify latest, digests, tag and archive
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python tools/publish_stable_release.py verify --repo "$GITHUB_REPOSITORY" --folder expected --source-commit "$GITHUB_SHA" --record run-record/publication-start.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: riskium-final-readback-${{ github.sha }}
+          path: run-record/v0.3.1-publication.json
+          if-no-files-found: error
+          retention-days: 90
