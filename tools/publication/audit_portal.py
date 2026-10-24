@@ -15,6 +15,7 @@ def audit(docs):
     version=docs/PREFIX
     manifest=json.loads((version/'publication-manifest.json').read_text())
     require(manifest['semantic_source_commit']==COMMIT,'wrong semantic source commit')
+    require(manifest['guide_registry_sha256']==digest((TOOLS/'guide-registry.json').read_bytes()),'shared explanatory registry changed')
     for path,sha in manifest['semantic_inputs_sha256'].items():require(digest(frozen(path))==sha,'frozen input changed: '+path)
     for path,sha in manifest['guide_sources_sha256'].items():require(digest((ROOT/path).read_bytes())==sha,'guide source changed: '+path)
     for p in docs.rglob('*.html'):

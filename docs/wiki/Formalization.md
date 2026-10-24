@@ -1,5 +1,8 @@
 # Reviewed OWL mapping, conceptual design 0.3.1
 
+> This source explains the reviewed bounded OWL mapping and its original verification limits. It does not supply a new complete FOL verification package. Current published/development versions and remaining acceptance are identified in Artifact versions and the Work and release plan.
+
+
 This is the bounded formal export for issue #3. Generate it with `python3 tools/build_owl.py` and check it with `python3 tools/build_owl.py --check`. The committed Turtle and receipt are derived from three inputs: `ontology/riskium-model.json`, `ontology/native/riskium.ontouml.json`, and `evaluation/native-review-decisions.json`. The exporter checks their digests, identifiers, directions, relation ends, multiplicities and set policy. The receipt pins all three SHA-256 digests and the output digest. The source conceptual model was not changed.
 
 ## Namespace and import decision

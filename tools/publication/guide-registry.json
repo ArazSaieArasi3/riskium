@@ -59,31 +59,36 @@
       "slug": "Competency-Questions",
       "wiki_slug": "Competency-Questions",
       "title": "Competency questions",
-      "source": "requirements/cq/README.md"
+      "source": "requirements/cq/README.md",
+      "context_note": "These original task contracts retain their own population and source boundaries. Later finite source-backed CQ06\u2013CQ08 supplements and owner acceptance do not retroactively make the original independent populations complete. Current scope and remaining case/meaning work are identified in the Work and release plan."
     },
     {
       "slug": "Traceability",
       "wiki_slug": "Traceability",
       "title": "Traceability",
-      "source": "evaluation/traceability/README.md"
+      "source": "evaluation/traceability/README.md",
+      "context_note": "This is the original source-bound requirement/CQ checkpoint, not a replacement for later dated SQL/source/owner/publication evidence. Historical acceptance states remain unchanged; current completion and remaining work are identified in the Work and release plan."
     },
     {
       "slug": "References",
       "wiki_slug": "References",
       "title": "References",
-      "source": "references/README.md"
+      "source": "references/README.md",
+      "context_note": "This source register preserves its dated inspected portions, access limits and original follow-up links. The current owners of unresolved normative/prior-art interpretation and independent adjudication are #37 and #23, with broader case adequacy in #13. A historical link to completed #7 or #14 does not discharge those future tasks."
     },
     {
       "slug": "Quality",
       "wiki_slug": "Quality",
       "title": "Quality",
-      "source": "evaluation/quality/README.md"
+      "source": "evaluation/quality/README.md",
+      "context_note": "Historical evidence synthesis: retain the statuses and populations at this source's dated checkpoint. Earlier pending references to owner review, manuscript or first-final publication are historical; those bounded tasks are now complete. Later scoped supplements and actual remaining work are identified in the Work and release plan. This is not an overall correctness score."
     },
     {
       "slug": "Formalization",
       "wiki_slug": "Formalization",
       "title": "Formalization",
-      "source": "evaluation/owl-mapping-review.md"
+      "source": "evaluation/owl-mapping-review.md",
+      "context_note": "This source explains the reviewed bounded OWL mapping and its original verification limits. It does not supply a new complete FOL verification package. Current published/development versions and remaining acceptance are identified in Artifact versions and the Work and release plan."
     },
     {
       "slug": "Evaluation",

@@ -50,8 +50,16 @@ def wiki_link(url, source, rows, root=ROOT):
     return result + ('?' + parts.query if parts.query else '') + ('#' + parts.fragment if parts.fragment else '')
 
 
-def project_wiki(row, rows, root=ROOT):
+def explanatory_markdown(row, root=ROOT):
     text = (root / row['source']).read_text()
+    if row.get('context_note'):
+        heading, separator, rest = text.partition('\n')
+        text = heading + '\n\n> ' + row['context_note'] + '\n' + separator + rest
+    return text
+
+
+def project_wiki(row, rows, root=ROOT):
+    text = explanatory_markdown(row, root)
     # Preserve scientific text and Markdown; only project ordinary inline URLs.
     text = re.sub(r'(!?\[[^\]\n]*\])\(([^\s)]+)\)',
                   lambda m: m[1] + '(' + wiki_link(m[2], row['source'], rows, root) + ')', text)

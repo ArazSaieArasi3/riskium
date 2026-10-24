@@ -1,5 +1,8 @@
 # Claim-based quality and evidence report
 
+> Historical evidence synthesis: retain the statuses and populations at this source's dated checkpoint. Earlier pending references to owner review, manuscript or first-final publication are historical; those bounded tasks are now complete. Later scoped supplements and actual remaining work are identified in the Work and release plan. This is not an overall correctness score.
+
+
 **Report milestone complete; independent scientific acceptance is not established.** This post-prerelease synthesis is dated 2026-10-23, for conceptual design 0.3.1 at `cfb85905ab37549c7090f00a41ca62cdd3364ab5`. Evidence is pinned at checkpoint `0913cd6ef1b9cc4869b1f644ccb648acae4e0d6a`; individual receipts retain their original execution provenance. This report runs no HermiT, SHACL or CQ engine.
 
 The [policy and metric definitions](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/quality/policy.json) are the interpretation contract; the [machine-readable report](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/quality/report.json) preserves counts, source hashes, all 25 constraint rows, all 28 trace rows and limitations. Its integrity PASS checks accounting, not domain truth.

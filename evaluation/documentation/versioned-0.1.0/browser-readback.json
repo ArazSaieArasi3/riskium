@@ -1,0 +1,108 @@
+{
+  "schema": "riskium-browser-publication-readback-v1",
+  "date": "2026-10-24",
+  "source_commit": "f9cdf60b84ea0ab32aa926d3bb561ddf6962e6c1",
+  "browser": "Connected Chrome UI",
+  "root_redirect": "https://arazsaiearasi3.github.io/riskium/current/index.html",
+  "keyboard_skip_link": {
+    "observed": true,
+    "sequence": "Tab then Return",
+    "focused_element_id": "content",
+    "focused_element_tag": "MAIN"
+  },
+  "version_navigation": {
+    "observed": true,
+    "steps": [
+      "current -> versions",
+      "versions -> frozen v0.3.1",
+      "frozen explorer -> frozen WIDOCO term RKM-X01",
+      "frozen WIDOCO -> versions -> current"
+    ],
+    "frozen_documentation_version": "0.1.0",
+    "frozen_source_commit": "609c7cd0fd07053262fffe5720ff0b2605062778"
+  },
+  "frozen_explorer_filter": {
+    "query": "RKM-X01",
+    "observed_status": "23 of 205 entries shown"
+  },
+  "wiki": {
+    "observed_reader_pages": 21,
+    "sidebar_subject_links": 21,
+    "equivalent_pages_link_observed": true
+  },
+  "pages_setting": {
+    "observed_saved_message": "GitHub Pages source saved.",
+    "observed_source": "GitHub Actions"
+  },
+  "responsive_current": [
+    {
+      "view": "Overview",
+      "declared_frame_width": 390,
+      "heading": "Enterprise risk knowledge, explicitly modeled",
+      "client_width": 375,
+      "scroll_width": 375,
+      "no_horizontal_overflow": true
+    },
+    {
+      "view": "Overview",
+      "declared_frame_width": 760,
+      "heading": "Enterprise risk knowledge, explicitly modeled",
+      "client_width": 745,
+      "scroll_width": 745,
+      "no_horizontal_overflow": true
+    },
+    {
+      "view": "Conceptual reference",
+      "declared_frame_width": 390,
+      "heading": "Conceptual reference",
+      "client_width": 375,
+      "scroll_width": 375,
+      "no_horizontal_overflow": true
+    },
+    {
+      "view": "Conceptual reference",
+      "declared_frame_width": 760,
+      "heading": "Conceptual reference",
+      "client_width": 745,
+      "scroll_width": 745,
+      "no_horizontal_overflow": true
+    },
+    {
+      "view": "OWL reference",
+      "declared_frame_width": 390,
+      "heading": "Riskium bounded typed-core OWL mapping",
+      "client_width": 375,
+      "scroll_width": 375,
+      "no_horizontal_overflow": true
+    },
+    {
+      "view": "OWL reference",
+      "declared_frame_width": 760,
+      "heading": "Riskium bounded typed-core OWL mapping",
+      "client_width": 745,
+      "scroll_width": 745,
+      "no_horizontal_overflow": true
+    },
+    {
+      "view": "Explorer",
+      "declared_frame_width": 390,
+      "heading": "Explore the asserted OWL core",
+      "client_width": 375,
+      "scroll_width": 375,
+      "no_horizontal_overflow": true
+    },
+    {
+      "view": "Explorer",
+      "declared_frame_width": 760,
+      "heading": "Explore the asserted OWL core",
+      "client_width": 745,
+      "scroll_width": 745,
+      "no_horizontal_overflow": true
+    }
+  ],
+  "limits": [
+    "390/760-pixel iframe viewports are not physical-device or full accessibility certification.",
+    "Frozen-route navigation and filtering were checked at full desktop size; the eight quantified responsive frames are current-reference views.",
+    "No graphical WebVOWL, new semantic/engine result, independent judgment or new stable source release is claimed."
+  ]
+}

@@ -6,9 +6,10 @@
     "owl_triples": 2087
   },
   "documentation_note": "Post-release documentation projection of immutable semantic inputs; not an additional semantic validation run.",
+  "guide_registry_sha256": "623cd119cd6d53bffa1b77e91adcde1534531faaea253984549bb65846747ac2",
   "guide_sources_sha256": {
     "AUTHORS.md": "c20830d719b9b1d1b13d85cac69253274a974edb79b3a2c56148fd900d038447",
-    "docs/artifact-versions.md": "ae17c5d4405c877ee2384c4740ccd465b89718ad628e8c5b55a503a1fb718c0e",
+    "docs/artifact-versions.md": "dcf7ae59edeefe6a848058c82dec55c4b5c7ddf64cbf9958f9e15f63090e19ef",
     "docs/guides/Evaluation.md": "f801233cf9ff775b2cfe07be6487e458071d0240c5a696f22896a7e535435695",
     "docs/guides/Home.md": "145ac85e1621df4b1f81929362b651ef7639536f16373220be8792de0bd4e84d",
     "docs/guides/Publication.md": "d746ff29590f16947ca891ebfbd653c8806b1d70ffa70f2d122662ccd54d3041",
@@ -21,7 +22,7 @@
     "docs/publication-comparison.md": "a76039ecb1062028494f8a0a403167175304253aed4bec0d8cacbea90b1866e5",
     "docs/relational-assurance.md": "595f9a8e6a1bf0d2e46b4c38ab308b5dca475feb6e764051d60cb17d8aad3337",
     "docs/reproducibility.md": "46956478848fd194c85a6c592bf34b2edf3ac51c1ea357eb3feba5570283c6a8",
-    "docs/work-plan.md": "371256205d1d0bbea448656e48689839bec956f6e921cb165a1b64315a3e6b0e",
+    "docs/work-plan.md": "a4d24a0fad487a64e6bbb4ce5974fb56f7b7c6266bd892b409509fa588985d2f",
     "evaluation/owl-mapping-review.md": "f51ad6dee980c27a503ac0245fc98394c90eaf929b04489e4a08aaee77049acb",
     "evaluation/quality/README.md": "d1d50ca91657686799f8299e821e3df3862fabcd047342dbe742f00f416a7d32",
     "evaluation/traceability/README.md": "851b61c9a5298aa4b7c0ea6df92039c8fbc0f3f44e06e8ee1295d385b8ef9a82",

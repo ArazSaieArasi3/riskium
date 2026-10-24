@@ -1,5 +1,15 @@
 # Artifact versions and compatibility
 
+## Post-release documentation register
+
+Documentation publication **0.1.0** is independently versioned for model **0.3.1**. Its frozen source is `609c7cd0fd07053262fffe5720ff0b2605062778`; current explanations may advance. [The route registry](https://github.com/ArazSaieArasi3/riskium/blob/main/tools/publication/pages-registry.json) binds the exact source tree and output hashes for both the new stable-model documentation and the preserved legacy rc.1 snapshot. [Publication/readback evidence](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/documentation/versioned-0.1.0/README.md) links actual Wiki, HTTPS, browser and candidate-package checks.
+
+| Artifact | Version / compatible model | Source and lifecycle |
+| --- | --- | --- |
+| Shared Wiki/Pages publication | Documentation 0.1.0 / model 0.3.1 | Registry-bound frozen snapshot plus mutable current route; one explanatory source per subject; exact source/file hashes in the deployment manifest |
+
+This is a post-release documentation component, outside the unchanged accepted v0.3.1 source/assets and the eight engineering supplements in the existing development overlay. Successor distribution #34 must explicitly select and pin its documentation snapshot alongside independently versioned model, ORSD/article, SQL/DRSD and evidence components. It must not rewrite the first release's compatibility matrix.
+
 This lightweight compatibility record implements the owner's 24 October 2026 request to keep the paper, ontology requirements, model and database coordinated. [The machine-readable matrix](https://github.com/ArazSaieArasi3/riskium/blob/main/releases/artifact-matrix.json) pins exact component hashes. **[v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1) is published and independently downloaded/verified**, source `8afe169968b5c1396c02834dbc499af691b894b4`. Current coordination matrix revision is 0.1.1; the release asset retains frozen matrix 0.1.0. [Publication receipt](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/releases/v0.3.1-publication.json) closes #28.
 
 | Artifact | Own version | Compatible model | Current boundary |
@@ -36,4 +46,4 @@ Check synchronization with `python tools/check_release_alignment.py`. This valid
 
 [Equivalent Pages guide](https://arazsaiearasi3.github.io/riskium/current/guide/Artifact-Versions.html) · [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) · [OWL explorer](https://arazsaiearasi3.github.io/riskium/current/explore/index.html) · [Published v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1).
 
-Explanatory source: [docs/artifact-versions.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/artifact-versions.md). Source SHA-256: `ae17c5d4405c877ee2384c4740ccd465b89718ad628e8c5b55a503a1fb718c0e`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.
+Explanatory source: [docs/artifact-versions.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/artifact-versions.md). Source SHA-256: `dcf7ae59edeefe6a848058c82dec55c4b5c7ddf64cbf9958f9e15f63090e19ef`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.

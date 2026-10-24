@@ -29,6 +29,10 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
           ref: ${{ github.event.workflow_run.head_sha }}
+      - name: Refuse a stale documentation run after main advances
+        run: |
+          git fetch --no-tags origin main
+          test "$(git rev-parse HEAD)" = "$(git rev-parse FETCH_HEAD)"
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'

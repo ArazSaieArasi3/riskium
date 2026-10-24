@@ -1,5 +1,8 @@
 # Competency-question execution contracts
 
+> These original task contracts retain their own population and source boundaries. Later finite source-backed CQ06–CQ08 supplements and owner acceptance do not retroactively make the original independent populations complete. Current scope and remaining case/meaning work are identified in the Work and release plan.
+
+
 These eight SELECT contracts supplement the unchanged public CQ planning snapshot in `../competency-questions.json`. They use conceptual design 0.3.1 and its exact released OWL mapping. The post-prerelease implementation is not part of the historical `v0.3.1-rc.1` archive.
 
 Each query has four separate named fixture graphs: positive, negative, incomplete and conflicting. The fixed expected binding rows in `contracts.json` were authored separately from execution; no answer is computed from the query and then installed as its own oracle. Each separate mutant query must run successfully on the unchanged positive graph and disagree with the unchanged expected rows. Parser/engine errors are errors, never successful mutation detection.

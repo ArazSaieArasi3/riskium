@@ -6,9 +6,9 @@ import markdown
 from bs4 import BeautifulSoup
 from rdflib import Graph, RDF, RDFS, OWL, URIRef, BNode, Literal
 try:
-    from .guides import entries, source_ref
+    from .guides import entries, source_ref, explanatory_markdown
 except ImportError:
-    from guides import entries, source_ref
+    from guides import entries, source_ref, explanatory_markdown
 
 ROOT = Path(__file__).resolve().parents[2]
 TOOLS = Path(__file__).resolve().parent
@@ -148,7 +148,8 @@ def build(out):
     guide_inputs = {}
     for name,src in GUIDES:
         data = (ROOT/src).read_bytes(); guide_inputs[src] = digest(data)
-        soup = BeautifulSoup(markdown.markdown(data.decode(),extensions=['tables','fenced_code','toc']), 'html.parser')
+        row = next(r for r in GUIDE_ROWS if r['slug'] == name)
+        soup = BeautifulSoup(markdown.markdown(explanatory_markdown(row),extensions=['tables','fenced_code','toc']), 'html.parser')
         base = (version/('guide/'+name+'.html')).parent
         for node in soup.find_all(['a','img']):
             attr = 'src' if node.name=='img' else 'href'; url = node.get(attr,''); u = urlsplit(url)
@@ -173,7 +174,7 @@ def build(out):
     write(version/'downloads/SHA256SUMS.txt',''.join(d+'  '+n+'\n' for n,d in sorted(hashes.items())))
     body = '<h1>Downloads</h1><p>These conceptual and native files are byte-identical to commit <code>'+COMMIT+'</code>. The OWL Turtle is also preserved exactly; its alternative serializations have a graph-isomorphism receipt. Citation metadata here is the historical tagged copy; the authoritative release designation is '+link(TAG,REPO+'/releases/tag/'+TAG)+'.</p><ul>'+''.join('<li>'+link(n,n)+'</li>' for _,n in downloads)+'<li>'+link('SHA-256 checksums','SHA256SUMS.txt')+'</li></ul><h2>OWL serializations</h2><ul>'+''.join('<li>'+link(label,'../widoco/'+name)+'</li>' for label,name in [('Turtle','ontology.ttl'),('RDF/XML','ontology.owl'),('JSON-LD','ontology.jsonld'),('N-Triples','ontology.nt'),('Serialization receipt','serialization-receipt.json')])+'</ul><h2>Release evidence package</h2><p>'+link('Open the published release assets',REPO+'/releases/tag/'+TAG)+' for the original source archive, 371-file source inventory, final-freeze evidence and checksums. Website download checksums cover this website subset, not the entire release.</p><p>Scientific artifacts use CC BY 4.0; original software uses MIT. Dependencies and third-party template resources retain their own notices. See '+link('rights','RIGHTS.md')+' and '+link('current template notices','../../THIRD-PARTY-DOCUMENTATION.txt')+'.</p>'
     page(Path('downloads/index.html'),'Downloads',body)
-    write(version/'publication-manifest.json',json_text({'schema_version':1,'release':TAG,'semantic_source_commit':COMMIT,'model_version':model['version'],'semantic_inputs_sha256':inputs,'guide_sources_sha256':guide_inputs,'documentation_note':'Post-release documentation projection of immutable semantic inputs; not an additional semantic validation run.','counts':{'catalog_concepts':len(model['concepts']),'owl_named_classes':len(classes),'owl_object_properties':len(properties),'owl_triples':len(graph)},'template':'OntoSPK-style documentation portal with WIDOCO 1.4.25; bounded asserted hypertext explorer'}))
+    write(version/'publication-manifest.json',json_text({'schema_version':1,'release':TAG,'semantic_source_commit':COMMIT,'model_version':model['version'],'semantic_inputs_sha256':inputs,'guide_sources_sha256':guide_inputs,'guide_registry_sha256':digest((TOOLS/'guide-registry.json').read_bytes()),'documentation_note':'Post-release documentation projection of immutable semantic inputs; not an additional semantic validation run.','counts':{'catalog_concepts':len(model['concepts']),'owl_named_classes':len(classes),'owl_object_properties':len(properties),'owl_triples':len(graph)},'template':'OntoSPK-style documentation portal with WIDOCO 1.4.25; bounded asserted hypertext explorer'}))
     # Stable entry points; version routes are explicit and self-contained.
     def redirect(path,target,title):
         write(out/path,'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url='+target+'"><title>'+title+'</title></head><body><p>'+link(title,target)+'</p></body></html>\n')

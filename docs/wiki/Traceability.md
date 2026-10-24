@@ -1,5 +1,8 @@
 # Requirement and competency-question traceability
 
+> This is the original source-bound requirement/CQ checkpoint, not a replacement for later dated SQL/source/owner/publication evidence. Historical acceptance states remain unchanged; current completion and remaining work are identified in the Work and release plan.
+
+
 Conceptual design 0.3.1; semantic source `cfb85905ab37549c7090f00a41ca62cdd3364ab5`. This post-prerelease author trace review completes #6 as **evidence reconciliation**, not full requirement or independent scientific acceptance.
 
 All **12 requirements, eight scope obligations and eight CQs** have source hashes, exact model identifiers, acceptance/rejection criteria, current evidence and named remaining routes. The 20 Combined baseline identities are reconciled; eight scope rows remain outside the 674-row denominator.

@@ -4,7 +4,7 @@ Riskium v0.3.1 is published as the first stable owner-reviewed bounded research 
 
 ## Current remaining work
 
-The [ordered work plan](work-plan.md) is the current cross-issue register, including the [fresh OntoSPK Wiki/Pages comparison](publication-comparison.md). Five existing research parents remain open; eight explicit publication/release/database/source successors (#30–#37) now prevent those tasks from being hidden behind completed historical issues. Start shared Wiki/Pages sources and stable/current routes (#30/#31), then publish a bounded successor through #34. Existing WIDOCO is present; graphical WebVOWL is the separate enhancement #32.
+The [ordered work plan](work-plan.md) is the current cross-issue register, including the [fresh OntoSPK Wiki/Pages comparison](publication-comparison.md). Five existing research parents and six follow-ups remain open (eleven total). Shared Wiki/Pages sources and stable/current publication (#30/#31) are complete with actual readback; continue with successor distribution/profile #34. The historical comparison retains the original thirteen-issue inventory. Existing WIDOCO is present; graphical WebVOWL is the separate enhancement #32.
 
 | Issue | Progress after v0.3.1 | Remaining outcome |
 | --- | --- | --- |
@@ -18,7 +18,7 @@ The [ordered work plan](work-plan.md) is the current cross-issue register, inclu
 
 ## Next focused implementation
 
-The shared-guide registry, Wiki projection, stable-model current reference, immutable legacy route and exact-source Pages workflow are now implemented for #30/#31. A new frozen documentation registration follows a committed current tree, then actual native Wiki and live Pages/interface readback determine acceptance. The next source/semantic implementation described below remains a separate later packet; source generation alone does not close publication issues.
+The shared-guide registry, 21-page native Wiki publication, stable-model current reference, frozen documentation 0.1.0, immutable legacy route and exact-source Pages workflow complete #30/#31. Independent Wiki Git/HTTPS byte readback and actual browser/interface checks are recorded in the publication evidence. The next source/semantic implementation described below remains a separate later packet; source generation alone does not close publication issues.
 
 The finite assessment/result slice is implemented under #29, including context/method/scale-version roles, exact source-preserving queries, fixed/seeded controls, recovery and bounded concurrency. The [database assurance method/checklist and trace](relational-assurance.md) now determines the next omissions explicitly. Prioritize source/scenario task mapping and general correction semantics; add formulas, workflow and broad private-schema migration only with their specific policies and oracles.
 

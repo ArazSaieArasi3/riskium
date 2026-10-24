@@ -1,5 +1,8 @@
 # Sources, standards and prior-art interpretation
 
+> This source register preserves its dated inspected portions, access limits and original follow-up links. The current owners of unresolved normative/prior-art interpretation and independent adjudication are #37 and #23, with broader case adequacy in #13. A historical link to completed #7 or #14 does not discharge those future tasks.
+
+
 Post-prerelease editorial review dated **2026-10-23**, against conceptual design **0.3.1** at `cfb85905ab37549c7090f00a41ca62cdd3364ab5`. Eleven selected method, standards/framework and risk-ontology sources are recorded with their actual inspected portions. This completes the bounded public corpus in #8, not a full normative or systematic literature review.
 
 The machine-readable [corpus](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/references/corpus.json) owns source identities, reading locators, uses, interpretations and remaining limits. The [integrity receipt](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/references/report.json) checks this register against the model; it does not assess the truth of the external sources or establish semantic correctness.
