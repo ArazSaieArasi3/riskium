@@ -1,0 +1,988 @@
+{
+  "schema": "riskium-database-assurance-trace-v1",
+  "assurance_version": "0.1.0",
+  "drsd_version": "0.1.0",
+  "relational_profile": "0.2.0",
+  "model_version": "0.3.1",
+  "orsd_revision": "0.4.3",
+  "inputs": {
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "evaluation/relational/assessment/report.json.gz": "c39cf33e1cde70b2d54b073874449376a049aa3a82f6e07e9461c5a942d35944",
+    "implementation/relational/0.2.0/mapping.json": "81ecb3954057021b3e135fee041723ca59234de8324c81254b33a6f4d03984da",
+    "implementation/relational/0.2.0/policy.json": "cdb55a25a369a5f608a0fa76d46a12fe5473c636f7dde85fcd5444e894d02ebb",
+    "implementation/relational/0.2.0/schema-dictionary.md": "20e4e08f2ae1576ad6451a224886385b756ff89f8819813329d35518127bbb1e",
+    "tools/check_database_assurance.py": "4abd237246e3f241c162d2a40c37cc37c9e07f9c45d9470fcb160dad28610edd",
+    "docs/relational-assurance-request.md": "d4642309cc6a63154327ea904ff06681f82696bf5c927a4187e2edfe46c6561d",
+    "docs/relational-assurance.md": "595f9a8e6a1bf0d2e46b4c38ab308b5dca475feb6e764051d60cb17d8aad3337"
+  },
+  "summary": {
+    "database_requirements": 28,
+    "retained": 24,
+    "retained_with_scoped_evidence": 24,
+    "future_not_run": 4,
+    "original_requirements_accounted": 12,
+    "original_cqs_accounted": 8,
+    "orphan_requirements": 0,
+    "orphan_fixed_case_links": 0,
+    "fixed_scenarios": 48,
+    "generated_inputs": 100,
+    "selected_class_representations": 15,
+    "selected_native_predicates": 19
+  },
+  "status": "SCOPED_DATABASE_ENGINEERING_GATES_PASS",
+  "overall_semantic_correctness_percent": null,
+  "full_original_orsd_acceptance": false,
+  "actual_user_acceptance": false,
+  "production_slo_approved": false,
+  "independent_semantic_acceptance": false,
+  "db_requirements": [
+    {
+      "id": "DBR-01",
+      "title": "Scope and source inventory",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [
+        "RKRS-01",
+        "RKRS-11",
+        "RKRS-12"
+      ],
+      "constraint_ids": [
+        "C-02",
+        "C-14"
+      ],
+      "source_requirement_sha256": "cb7e07e8b1e76c0d58388ca6aec9cf20ab31e270baacbcc4f932c71377cc0e62",
+      "implementation_objects": [
+        "full source inventory",
+        "mapping.json"
+      ],
+      "case_ids": [],
+      "additional_evidence": [
+        "mapping-coverage.json"
+      ],
+      "evidence_kinds": [
+        "STATIC_EXHAUSTIVE_SOURCE_ACCOUNTING"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-02",
+      "title": "Governed identity and subtype strategy",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [
+        "RKRS-02",
+        "RKRS-03"
+      ],
+      "constraint_ids": [
+        "C-01"
+      ],
+      "source_requirement_sha256": "fd8df686f8f0599c9bfd6e0b22e2761b8ad3a80b85c9af9511c5cea740ef08c3",
+      "implementation_objects": [
+        "identity_registry",
+        "information_artifact",
+        "artifact_typing"
+      ],
+      "case_ids": [
+        "DUPLICATE-LABELS-NOT-IDENTITY",
+        "TYPING-CANNOT-REINTERPRET-ISSUED-ARTIFACT",
+        "TYPING-BASE-KIND-MISMATCH"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-03",
+      "title": "Native relations and loss register",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [
+        "RKRS-04",
+        "RKRS-11"
+      ],
+      "constraint_ids": [
+        "C-04",
+        "C-25"
+      ],
+      "source_requirement_sha256": "94b26b27f60edc59f75b74438281e5fcb07ef2aa63a81a4305e9ed48add18f52",
+      "implementation_objects": [
+        "mapping.json",
+        "v_assessment_quads"
+      ],
+      "case_ids": [
+        "EXACT-VERSION-PINNED-LOOKUP",
+        "MISSING-DIMENSION",
+        "SQL-RDF-FIXED-FACTS"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-04",
+      "title": "Assessment interpretation pins",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [
+        "RKRS-04"
+      ],
+      "constraint_ids": [
+        "C-04",
+        "C-13",
+        "C-18",
+        "C-25"
+      ],
+      "source_requirement_sha256": "9404090a12423e4d7af8ed2d4db86c2cb25886c39ed912e81809ed59aaf7c573",
+      "implementation_objects": [
+        "assessment_snapshot",
+        "result_snapshot",
+        "scale_snapshot",
+        "scale_level",
+        "method_scope"
+      ],
+      "case_ids": [
+        "EXACT-VERSION-PINNED-LOOKUP",
+        "DIRECT-COMPARISON-SAME-PINS",
+        "DIRECT-COMPARISON-MISSING-TIME",
+        "DIRECT-COMPARISON-DIFFERENT-VERSION",
+        "WRONG-CONTEXT-VERSION-KIND",
+        "DIRECT-CONTEXT-TARGET-MISMATCH",
+        "UNISSUED-METHOD-PIN",
+        "LEVEL-OF-DIFFERENT-SCALE-VERSION",
+        "HISTORICAL-ANSWER-UNCHANGED-AFTER-NEW-VERSION",
+        "RDF-NAMED-HISTORY-NOT-UNIONED"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-05",
+      "title": "Immutable issued history",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [
+        "RKRS-03"
+      ],
+      "constraint_ids": [
+        "C-03",
+        "C-24"
+      ],
+      "source_requirement_sha256": "5d5d7fd36793884b94c631a3885452fac48327fb883a39bfd554cf0e3263f7d0",
+      "implementation_objects": [
+        "version_snapshot",
+        "version-owned guards",
+        "atomic issue_bundle"
+      ],
+      "case_ids": [
+        "MIGRATE-POPULATED-PRESERVES-BASE",
+        "ISSUED-RESULT-NO-UPDATE",
+        "ISSUED-ASSESSMENT-NO-DELETE",
+        "ISSUED-SCALE-NO-LEVEL-APPEND",
+        "ISSUED-ASSESSMENT-NO-RESULT-APPEND",
+        "TYPING-CANNOT-REINTERPRET-ISSUED-ARTIFACT",
+        "FAILED-BUNDLE-ROLLS-BACK-ALL-ROWS",
+        "HISTORICAL-ANSWER-UNCHANGED-AFTER-NEW-VERSION"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-06",
+      "title": "Multiple values and missingness",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [
+        "RKRS-04",
+        "RKRS-06"
+      ],
+      "constraint_ids": [
+        "C-17"
+      ],
+      "source_requirement_sha256": "7d963a824f82156620abb542dcca4de2ce28cef36e7b0b5f19ac6b5176e93194",
+      "implementation_objects": [
+        "result_snapshot",
+        "source_record"
+      ],
+      "case_ids": [
+        "UNKNOWN-IS-NULL-NOT-ZERO",
+        "DUPLICATE-LABELS-NOT-IDENTITY",
+        "REPORTED-ZERO-LEXEME",
+        "REPORTED-NULL-IS-NOT-VALUE",
+        "UNKNOWN-WITH-INVENTED-ZERO",
+        "TWO-QUALIFIED-RESULTS-SAME-DIMENSION",
+        "BOUND-PARAMETER-SQL-INJECTION-LEXEME"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-07",
+      "title": "Source and interpretation provenance",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [
+        "RKRS-06"
+      ],
+      "constraint_ids": [
+        "C-02",
+        "C-12",
+        "C-17"
+      ],
+      "source_requirement_sha256": "fa8b0e90f263fe049b844806a78be49e1d96eaa2f3515ef962a6ec1d9043e1c6",
+      "implementation_objects": [
+        "source_record",
+        "result source_locator/interpretation_origin",
+        "owner-specific RDF source"
+      ],
+      "case_ids": [
+        "RAW-INPUT-EXACT",
+        "MISSING-LOCATOR",
+        "UNKNOWN-SOURCE-KEY",
+        "TWO-QUALIFIED-RESULTS-SAME-DIMENSION"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-08",
+      "title": "Reported versus computed values",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [
+        "RKRS-05"
+      ],
+      "constraint_ids": [
+        "C-21"
+      ],
+      "source_requirement_sha256": "04cbe1d81af3b2f6f5ff99151d76edb65833f713a0e5c489f789830c0e5e8225",
+      "implementation_objects": [
+        "result_snapshot.score_kind/reported_value"
+      ],
+      "case_ids": [
+        "UNKNOWN-IS-NULL-NOT-ZERO",
+        "REPORTED-ZERO-LEXEME",
+        "COMPUTED-WITHOUT-FORMULA",
+        "REPORTED-NULL-IS-NOT-VALUE",
+        "UNKNOWN-WITH-INVENTED-ZERO"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-09",
+      "title": "Relational integrity and types",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "source_requirement_sha256": "35995332b02dbee936e7c9e1c69dffe12c1f226c992caa0d4d3350d0a333bc5a",
+      "implementation_objects": [
+        "all table keys/FKs/STRICT/checks",
+        "configured connection"
+      ],
+      "case_ids": [
+        "CONNECTION-FK-OFF",
+        "CONNECTION-TRIGGERS-OFF",
+        "MISSING-DIMENSION",
+        "UNKNOWN-SOURCE-KEY"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-10",
+      "title": "Atomic writes and migrations",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [
+        "RKRS-03"
+      ],
+      "constraint_ids": [
+        "C-03"
+      ],
+      "source_requirement_sha256": "5ea739e5198dc81023883856655011bec2cbbd105245aabc8348148a5be6622c",
+      "implementation_objects": [
+        "schema_migration",
+        "migration 3",
+        "atomic issue_bundle"
+      ],
+      "case_ids": [
+        "MIGRATE-POPULATED-PRESERVES-BASE",
+        "MIGRATION-IDEMPOTENT",
+        "MIGRATION-LEDGER-DRIFT",
+        "MIGRATION-SCHEMA-DRIFT",
+        "FAILED-BUNDLE-ROLLS-BACK-ALL-ROWS"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-11",
+      "title": "Backup and recovery",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "source_requirement_sha256": "200c1b7d3df25cff00cd8a33e6907d655f7bcdad9f345d975527f87c226bdcff",
+      "implementation_objects": [
+        "backup API",
+        "restore_dump data audit",
+        "reopen"
+      ],
+      "case_ids": [
+        "READ-ONLY-BACKUP-RESTORE",
+        "SQL-DUMP-RESTORE",
+        "FILE-CLOSE-REOPEN"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-12",
+      "title": "Explicit time fields",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [
+        "RKRS-08"
+      ],
+      "constraint_ids": [
+        "C-05"
+      ],
+      "source_requirement_sha256": "8236b9746b9755b074d432a3d6b58983d76a2e46840269d6b5c1e07f1c40eb43",
+      "implementation_objects": [
+        "assessment_snapshot recorded/reference/validity fields"
+      ],
+      "case_ids": [
+        "DIRECT-COMPARISON-MISSING-TIME",
+        "INVALID-RECORDED-CALENDAR",
+        "INVALID-VALIDITY-ORDER"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-13",
+      "title": "Purpose and dependency review",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "source_requirement_sha256": "76861858eb0fe9e6c32e1ea2655d3543c40001b616397e5905aab437ff1ef32f",
+      "implementation_objects": [
+        "actual table purposes",
+        "authored FD/denormalization review",
+        "one-column controls"
+      ],
+      "case_ids": [
+        "SCHEMA-DICTIONARY-DESIGN-AUDIT",
+        "UNEXPLAINED-ONE-COLUMN-TABLE-FLAGGED"
+      ],
+      "additional_evidence": [
+        "schema_audit"
+      ],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES",
+        "ACTUAL_SCHEMA_INSPECTION",
+        "AUTHORED_DESIGN_REVIEW"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-14",
+      "title": "Complete schema dictionary",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "source_requirement_sha256": "a79d245b4d15b6c73f2ab2679b3bd1bf058c959af27ad181cf65614be25880a5",
+      "implementation_objects": [
+        "schema-dictionary.md"
+      ],
+      "case_ids": [
+        "SCHEMA-DICTIONARY-DESIGN-AUDIT"
+      ],
+      "additional_evidence": [
+        "schema_audit"
+      ],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES",
+        "ACTUAL_SCHEMA_INSPECTION",
+        "AUTHORED_DESIGN_REVIEW"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-15",
+      "title": "Reproducible synthetic exploration",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "source_requirement_sha256": "e459cdbb6e023fd14d3378ed9660706e42014c0e09f8beab1dd9fc5ccd725cf1",
+      "implementation_objects": [
+        "fixtures.json generated_inputs",
+        "seeded metamorphic checks"
+      ],
+      "case_ids": [],
+      "additional_evidence": [
+        "generative:100"
+      ],
+      "evidence_kinds": [
+        "EXECUTED_SEEDED_PROPERTIES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-16",
+      "title": "Sensitivity and exact failure oracles",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "source_requirement_sha256": "e0c677b122535f3ea2006e920238baecae0d72a0a1f77f0fe26c9ae2964406cc",
+      "implementation_objects": [
+        "a_result_snapshot_update",
+        "a_assessment_snapshot_insert",
+        "exact error oracles"
+      ],
+      "case_ids": [
+        "DELETED-IMMUTABILITY-GUARD-EXPOSES-CHANGE",
+        "DELETED-VERSION-TARGET-GUARD-EXPOSES-MISJOIN"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-17",
+      "title": "SQL/RDF differential checks",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [
+        "RKRS-04",
+        "RKRS-11"
+      ],
+      "constraint_ids": [
+        "C-04",
+        "C-13",
+        "C-18"
+      ],
+      "source_requirement_sha256": "3b245168d3d22aea28810f94ac1e120a4ee435b7fa19b354e12bdab05f1151ff",
+      "implementation_objects": [
+        "v_assessment_quads",
+        "mapping.ttl",
+        "expected_graph",
+        "SHACL selection task"
+      ],
+      "case_ids": [
+        "SQL-RDF-FIXED-FACTS",
+        "RDF-NAMED-HISTORY-NOT-UNIONED",
+        "SHACL-DIRECT-COMPARISON-ELIGIBILITY"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-18",
+      "title": "Query usability and historical retrieval",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [
+        "RKRS-03",
+        "RKRS-04"
+      ],
+      "constraint_ids": [
+        "C-03",
+        "C-04"
+      ],
+      "source_requirement_sha256": "f0cd94f353096e0a67845c4dbb09b3d6f5284724840c0699ac51ccc5a59f6f6b",
+      "implementation_objects": [
+        "queries/*.sql",
+        "historical version lookups"
+      ],
+      "case_ids": [
+        "EXACT-VERSION-PINNED-LOOKUP",
+        "DIRECT-COMPARISON-SAME-PINS",
+        "DIRECT-COMPARISON-MISSING-TIME",
+        "DIRECT-COMPARISON-DIFFERENT-VERSION",
+        "HISTORICAL-ANSWER-UNCHANGED-AFTER-NEW-VERSION"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-19",
+      "title": "Measured workload and index evidence",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "source_requirement_sha256": "b97fe2a83621f7ede4d71993f4ffff42cc7494bd2bbea10b0c3a946c2544fed4",
+      "implementation_objects": [
+        "four workload SQL files",
+        "answer oracles",
+        "EXPLAIN QUERY PLAN",
+        "timing samples"
+      ],
+      "case_ids": [],
+      "additional_evidence": [
+        "pinned_result",
+        "source_trace",
+        "assessment_results",
+        "historical_versions"
+      ],
+      "evidence_kinds": [
+        "MEASURED_SYNTHETIC_WORKLOAD"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-20",
+      "title": "Bounded concurrent transactions",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "source_requirement_sha256": "5395d2a4cd19ba6e8df30f0ff7717a6582c0aeb4142bcb1c67b0a191e8a73647",
+      "implementation_objects": [
+        "two-connection WAL/snapshot/writer conflict"
+      ],
+      "case_ids": [
+        "TWO-CONNECTION-WRITER-CONFLICT-RETRY"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-21",
+      "title": "Configured trust boundaries",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "source_requirement_sha256": "deb640b62e0cb0bbd8171f824deb11644885154aae6903f010da82010616a061",
+      "implementation_objects": [
+        "parameter binding",
+        "field whitelist",
+        "connection policy",
+        "schema/data health"
+      ],
+      "case_ids": [
+        "MIGRATION-LEDGER-DRIFT",
+        "MIGRATION-SCHEMA-DRIFT",
+        "CONNECTION-FK-OFF",
+        "CONNECTION-TRIGGERS-OFF",
+        "BOUND-PARAMETER-SQL-INJECTION-LEXEME",
+        "SCHEMA-TAMPERING-DETECTED"
+      ],
+      "additional_evidence": [],
+      "evidence_kinds": [
+        "EXECUTED_FIXED_CASES"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-22",
+      "title": "Engine/runtime evidence",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "source_requirement_sha256": "a330f3856c33d7fed25fb72ea5ac7769f120e229d3e46a3db172c9581c7bf9b6",
+      "implementation_objects": [
+        "declared and actual runtime/configuration"
+      ],
+      "case_ids": [],
+      "additional_evidence": [
+        "engine"
+      ],
+      "evidence_kinds": [
+        "RECORDED_RUNTIME_AND_CONFIGURATION"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-23",
+      "title": "Artifact versions and trace integrity",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [
+        "RKRS-12"
+      ],
+      "constraint_ids": [],
+      "source_requirement_sha256": "c35f97d8eb16eeeb3c07b3139d5c6cdea3567dd7ada9d3ed080aa0895faafcc2",
+      "implementation_objects": [
+        "versioned manifest",
+        "artifact/requirement/case crosswalk",
+        "source hashes"
+      ],
+      "case_ids": [],
+      "additional_evidence": [
+        "component/requirement/case references"
+      ],
+      "evidence_kinds": [
+        "STATIC_HASH_AND_TRACE_INTEGRITY"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-24",
+      "title": "Scoped release readiness",
+      "priority": "MUST",
+      "scope": "PUBLIC_SQLITE_0.2.0",
+      "derived_from_orsd": [
+        "RKRS-11",
+        "RKRS-12"
+      ],
+      "constraint_ids": [
+        "C-16"
+      ],
+      "source_requirement_sha256": "be8d030328590394cc285efec53142ef9895cf9b4e41540417542726754d1b0b",
+      "implementation_objects": [
+        "all retained scoped gates"
+      ],
+      "case_ids": [],
+      "additional_evidence": [
+        "all current DBR-01..DBR-23 evidence"
+      ],
+      "evidence_kinds": [
+        "SCOPED_RETAINED_GATE_ACCOUNTING"
+      ],
+      "status": "PASS_WITH_DECLARED_PROFILE_LIMITS",
+      "remaining_issue": null
+    },
+    {
+      "id": "DBR-25",
+      "title": "PostgreSQL implementation",
+      "priority": "MUST",
+      "scope": "FUTURE_NOT_EXECUTED",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "source_requirement_sha256": "3496d67ef1d3f392fa139ab3db2979a92e42242b020f109dd49830d2667544b7",
+      "implementation_objects": [
+        "future PostgreSQL work"
+      ],
+      "case_ids": [],
+      "additional_evidence": [],
+      "evidence_kinds": [],
+      "status": "NOT_RUN_FUTURE",
+      "remaining_issue": 12
+    },
+    {
+      "id": "DBR-26",
+      "title": "Private full-schema migration",
+      "priority": "MUST",
+      "scope": "FUTURE_NOT_EXECUTED",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "source_requirement_sha256": "7b1402ba07f1ee4449e2578c89b770ba83893fecac03b7ef15427065ae3b4bef",
+      "implementation_objects": [
+        "future authorized private full-schema migration"
+      ],
+      "case_ids": [],
+      "additional_evidence": [],
+      "evidence_kinds": [],
+      "status": "NOT_RUN_FUTURE",
+      "remaining_issue": 12
+    },
+    {
+      "id": "DBR-27",
+      "title": "General formulas, intervals and workflow",
+      "priority": "MUST",
+      "scope": "FUTURE_NOT_EXECUTED",
+      "derived_from_orsd": [
+        "RKRS-05",
+        "RKRS-08"
+      ],
+      "constraint_ids": [
+        "C-05",
+        "C-19",
+        "C-21"
+      ],
+      "source_requirement_sha256": "a4e7da9a3626fce1a4b05b1f6a064ea512b27da7633d3d58a920b74c907604b1",
+      "implementation_objects": [
+        "future formula/interval/workflow semantics"
+      ],
+      "case_ids": [],
+      "additional_evidence": [],
+      "evidence_kinds": [],
+      "status": "NOT_RUN_FUTURE",
+      "remaining_issue": 12
+    },
+    {
+      "id": "DBR-28",
+      "title": "Deployment and user acceptance",
+      "priority": "MUST",
+      "scope": "FUTURE_NOT_EXECUTED",
+      "derived_from_orsd": [],
+      "constraint_ids": [],
+      "source_requirement_sha256": "305f4ee93a071e5ce1b12c8a1deb71215a030f914516a12b96fe547c508b49ed",
+      "implementation_objects": [
+        "future real user/deployment acceptance"
+      ],
+      "case_ids": [],
+      "additional_evidence": [],
+      "evidence_kinds": [],
+      "status": "NOT_RUN_FUTURE",
+      "remaining_issue": 12
+    }
+  ],
+  "original_orsd": [
+    {
+      "id": "RKRS-01",
+      "original_priority": "MUST",
+      "database_requirements": [
+        "DBR-01"
+      ],
+      "status": "DERIVED_SUBCLAUSES_ONLY_NOT_FULL_ORSD_ACCEPTANCE",
+      "reason": "Current DBR scope supplies only the named subclauses; original semantic/application acceptance is not inherited."
+    },
+    {
+      "id": "RKRS-02",
+      "original_priority": "MUST",
+      "database_requirements": [
+        "DBR-02"
+      ],
+      "status": "DERIVED_SUBCLAUSES_ONLY_NOT_FULL_ORSD_ACCEPTANCE",
+      "reason": "Current DBR scope supplies only the named subclauses; original semantic/application acceptance is not inherited."
+    },
+    {
+      "id": "RKRS-03",
+      "original_priority": "MUST",
+      "database_requirements": [
+        "DBR-02",
+        "DBR-05",
+        "DBR-10",
+        "DBR-18"
+      ],
+      "status": "DERIVED_SUBCLAUSES_ONLY_NOT_FULL_ORSD_ACCEPTANCE",
+      "reason": "Current DBR scope supplies only the named subclauses; original semantic/application acceptance is not inherited."
+    },
+    {
+      "id": "RKRS-04",
+      "original_priority": "MUST",
+      "database_requirements": [
+        "DBR-03",
+        "DBR-04",
+        "DBR-06",
+        "DBR-17",
+        "DBR-18"
+      ],
+      "status": "DERIVED_SUBCLAUSES_ONLY_NOT_FULL_ORSD_ACCEPTANCE",
+      "reason": "Current DBR scope supplies only the named subclauses; original semantic/application acceptance is not inherited."
+    },
+    {
+      "id": "RKRS-05",
+      "original_priority": "MUST",
+      "database_requirements": [
+        "DBR-08",
+        "DBR-27"
+      ],
+      "status": "DERIVED_SUBCLAUSES_ONLY_NOT_FULL_ORSD_ACCEPTANCE",
+      "reason": "Current DBR scope supplies only the named subclauses; original semantic/application acceptance is not inherited."
+    },
+    {
+      "id": "RKRS-06",
+      "original_priority": "MUST",
+      "database_requirements": [
+        "DBR-06",
+        "DBR-07"
+      ],
+      "status": "DERIVED_SUBCLAUSES_ONLY_NOT_FULL_ORSD_ACCEPTANCE",
+      "reason": "Current DBR scope supplies only the named subclauses; original semantic/application acceptance is not inherited."
+    },
+    {
+      "id": "RKRS-07",
+      "original_priority": "MUST",
+      "database_requirements": [],
+      "status": "NO_CURRENT_DB_IMPLEMENTATION",
+      "reason": "Responsibility and actual mandates are outside this assessment/result slice."
+    },
+    {
+      "id": "RKRS-08",
+      "original_priority": "MUST",
+      "database_requirements": [
+        "DBR-12",
+        "DBR-27"
+      ],
+      "status": "DERIVED_SUBCLAUSES_ONLY_NOT_FULL_ORSD_ACCEPTANCE",
+      "reason": "Current DBR scope supplies only the named subclauses; original semantic/application acceptance is not inherited."
+    },
+    {
+      "id": "RKRS-09",
+      "original_priority": "MUST",
+      "database_requirements": [],
+      "status": "NO_CURRENT_DB_IMPLEMENTATION",
+      "reason": "External/mode bearer boundary remains in the model; no new full relational bearer mapping."
+    },
+    {
+      "id": "RKRS-10",
+      "original_priority": "MUST",
+      "database_requirements": [],
+      "status": "NO_CURRENT_DB_IMPLEMENTATION",
+      "reason": "Appetite, tolerance and threshold task tables are not implemented here."
+    },
+    {
+      "id": "RKRS-11",
+      "original_priority": "MUST",
+      "database_requirements": [
+        "DBR-01",
+        "DBR-03",
+        "DBR-17",
+        "DBR-24"
+      ],
+      "status": "DERIVED_SUBCLAUSES_ONLY_NOT_FULL_ORSD_ACCEPTANCE",
+      "reason": "Current DBR scope supplies only the named subclauses; original semantic/application acceptance is not inherited."
+    },
+    {
+      "id": "RKRS-12",
+      "original_priority": "SHOULD",
+      "database_requirements": [
+        "DBR-01",
+        "DBR-23",
+        "DBR-24"
+      ],
+      "status": "DERIVED_SUBCLAUSES_ONLY_NOT_FULL_ORSD_ACCEPTANCE",
+      "reason": "Current DBR scope supplies only the named subclauses; original semantic/application acceptance is not inherited."
+    }
+  ],
+  "original_cqs": [
+    {
+      "id": "RQ-CQ01",
+      "question": "Which entries document the same case?",
+      "status": "BASE_PROFILE_EVIDENCE_ONLY",
+      "evidence": [
+        "original 67-case history suite"
+      ],
+      "limits": "Selected case/entry joins remain the original public profile, not independently adjudicated cases."
+    },
+    {
+      "id": "RQ-CQ02",
+      "question": "Which scenarios concern a case?",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": [],
+      "limits": "No scenario-to-case relational population is added."
+    },
+    {
+      "id": "RQ-CQ03",
+      "question": "Can equal scores use different scale versions?",
+      "status": "SCOPED_SQL_TASK_SUPPLEMENT",
+      "evidence": [
+        "DIRECT-COMPARISON-DIFFERENT-VERSION",
+        "EXACT-VERSION-PINNED-LOOKUP"
+      ],
+      "limits": "Equal lexical scores retain distinct pins; no arithmetic/ranking is supplied."
+    },
+    {
+      "id": "RQ-CQ04",
+      "question": "Can assignment information exist without an actual mandate?",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": [],
+      "limits": "Assignment/actual mandate mapping remains separate."
+    },
+    {
+      "id": "RQ-CQ05",
+      "question": "Does entry closure establish risk cessation?",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": [],
+      "limits": "No full workflow/cessation engine or acceptance is supplied."
+    },
+    {
+      "id": "RQ-CQ06",
+      "question": "Can an assertion be traced to its source?",
+      "status": "SCOPED_SYNTHETIC_SQL_TRACE_ONLY",
+      "evidence": [
+        "RAW-INPUT-EXACT",
+        "SQL-RDF-FIXED-FACTS"
+      ],
+      "limits": "Source FK/locator/origin engineering; not the independent literature/source accuracy population."
+    },
+    {
+      "id": "RQ-CQ07",
+      "question": "Does correction lineage remain distinguishable?",
+      "status": "NOT_IMPLEMENTED_GENERAL_CORRECTION",
+      "evidence": [],
+      "limits": "Artifact version grouping and original entry lineage do not implement general corrected-assertion semantics."
+    },
+    {
+      "id": "RQ-CQ08",
+      "question": "Can unsupported case identity remain unasserted?",
+      "status": "BOUNDARY_PRESERVED_NOT_FULL_TASK",
+      "evidence": [],
+      "limits": "No new governed organizational case is admitted; no original independent population is relabeled."
+    }
+  ],
+  "limits": [
+    "Partial selected assessment task mapping, not complete 77-class/127-relation/25-clause acceptance",
+    "No private 128-table migration, new real organizational RiskCase or historical 859-check claim",
+    "No PostgreSQL, general calculations/conversions/workflow or full temporal interval reasoning",
+    "No independent review or whole-ontology correctness percentage",
+    "SQL/RDF facts are scoped projections; R2RML serialization does not itself prove conceptual mapping adequacy",
+    "Observed timings describe only declared synthetic/runtime conditions; real user usability/security/SLO acceptance remains unexecuted"
+  ]
+}

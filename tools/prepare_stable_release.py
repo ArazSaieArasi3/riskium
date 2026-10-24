@@ -147,7 +147,7 @@ def package(root, output, profile, checks):
               'owner_decision_source': 'evaluation/owner-review/register.json; explicit 24 October 2026 scoped review',
               'new_owner_responses_generated': 0, 'independent_validation': False,
               'historical_outcomes_preserved': {'HermiT': {'PASS': 281, 'NOT_RUN': 14}, 'SHACL': {'PASS': 341, 'PARTIAL': 1, 'NOT_RUN': 17}},
-              'fresh_replay_scope': ['C-08 metadata compatibility', 'C-13/C-18 selected comparison', 'SQLite identity/history', 'CQ06 source trace', 'CQ07/CQ08 correction and withheld identity'],
+              'fresh_replay_scope': ['C-08 metadata compatibility', 'C-13/C-18 selected comparison', 'SQLite identity/history', 'CQ06 source trace', 'CQ07/CQ08 correction and withheld identity', 'Shared-graph selected-task integration', 'SQLite assessment/result 0.2.0 fixed and seeded controls, schema audit and declared synthetic workloads'],
               'retained_historical_engine_scope': 'The unchanged full HermiT and early SHACL receipts are not claimed as new full engine executions at this freeze.',
               'publication_executed': False, 'downloaded_final_readback': 'Required after publication in a separate job'}
     write(output / 'freeze-receipt.json', freeze)

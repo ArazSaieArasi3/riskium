@@ -1,6 +1,6 @@
 {
   "schema": "riskium-development-component-overlay-v1",
-  "overlay_version": "0.1.0",
+  "overlay_version": "0.2.0",
   "baseline_release": "v0.3.1",
   "baseline_source_commit": "8afe169968b5c1396c02834dbc499af691b894b4",
   "accepted_matrix_path": "releases/artifact-matrix.json",
@@ -95,6 +95,125 @@
         {
           "path": "evaluation/sources/publication-review.json",
           "sha256": "f0147b311fb08b4b7f07bc8be51ed704b17549d54b5b140be4f5b20699a182ee"
+        }
+      ]
+    },
+    {
+      "id": "RELATIONAL_ASSESSMENT",
+      "description": "Version-owned assessment/result profile, additive migration 3",
+      "version": "0.2.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "implementation/relational/0.2.0/policy.json",
+          "sha256": "cdb55a25a369a5f608a0fa76d46a12fe5473c636f7dde85fcd5444e894d02ebb"
+        },
+        {
+          "path": "implementation/relational/0.2.0/mapping.json",
+          "sha256": "81ecb3954057021b3e135fee041723ca59234de8324c81254b33a6f4d03984da"
+        },
+        {
+          "path": "implementation/relational/0.2.0/mapping.ttl",
+          "sha256": "962e5c6059c662651959844580a2ec02b021fbc04fd357bc2f1b500d5e0d8c31"
+        },
+        {
+          "path": "implementation/relational/0.2.0/003_assessment_tables.sql",
+          "sha256": "a173b662cdcb2aa0b52d734bcf93fd1fad8d4be2b3f0463b2fdc62be99438526"
+        },
+        {
+          "path": "implementation/relational/0.2.0/003_assessment_guards.sql",
+          "sha256": "ecf432726dcf87c8e85f9a78392cad272bab93b3a0e081271506622a45ac2058"
+        },
+        {
+          "path": "implementation/relational/0.2.0/fixtures.json",
+          "sha256": "f6059dc460fc11d30793fd73f30316d086a3551e3bed414ae518edce75786dfa"
+        },
+        {
+          "path": "implementation/relational/0.2.0/schema-dictionary.md",
+          "sha256": "20e4e08f2ae1576ad6451a224886385b756ff89f8819813329d35518127bbb1e"
+        },
+        {
+          "path": "tools/build_relational_assessment.py",
+          "sha256": "3a815f20084f1a829cdc6c788b545e887b8e084e8dfac6e284ba0ba0e6c162e8"
+        },
+        {
+          "path": "tools/relational_assessment.py",
+          "sha256": "70dbcbbe72e53d4eb36dc37e3fff3acb6f502b5b15f9376a3eb85d9bb6d11038"
+        },
+        {
+          "path": "tools/run_relational_assessment.py",
+          "sha256": "47cdfd931a0e90fd3fa0f2c95d8cafde5d6f5ae9b27e33d8ca378fea04110d73"
+        },
+        {
+          "path": "tools/audit_relational_design.py",
+          "sha256": "a25625e463eed97ec7eae7170fa655f0299c8b3e1c70d7948023564c2099e843"
+        },
+        {
+          "path": "tests/test_relational_assessment.py",
+          "sha256": "ea60fa971d27dd830c82a04e0af36a0816cb3bf6319c48c703145ab4846886c7"
+        },
+        {
+          "path": "evaluation/relational/assessment/report.json.gz",
+          "sha256": "c39cf33e1cde70b2d54b073874449376a049aa3a82f6e07e9461c5a942d35944"
+        },
+        {
+          "path": "implementation/relational/0.2.0/queries/comparison_inputs.sql",
+          "sha256": "5c971cc49cf1f9c2f7bd5282e49df380c4368b1ab59eaabd74aaf7cf8cd09aa1"
+        },
+        {
+          "path": "implementation/relational/0.2.0/queries/result_by_version.sql",
+          "sha256": "39d63a52f42db7bf5c0a590cc0c0ac187dbbb55493245292ca1febfde46444a1"
+        },
+        {
+          "path": "implementation/relational/0.2.0/queries/result_history.sql",
+          "sha256": "a680872bd6e87fdeeaa7bc7bb419bf31a87e3aede3d462f528af039faa0b7d60"
+        },
+        {
+          "path": "implementation/relational/0.2.0/queries/results_for_assessment.sql",
+          "sha256": "260e843338c5012bdf16d9862b4ea7fd4e27c85585aacc1d19d81808f8aca997"
+        },
+        {
+          "path": "implementation/relational/0.2.0/queries/source_trace.sql",
+          "sha256": "62cac553fbdcdb7439fe6214850361176f4f028f3e1e250643f68ee11fd57590"
+        }
+      ]
+    },
+    {
+      "id": "DATABASE_REQUIREMENTS",
+      "description": "Derived database requirements, with original ORSD priorities preserved",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "requirements/relational-requirements.json",
+          "sha256": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00"
+        }
+      ]
+    },
+    {
+      "id": "DATABASE_ASSURANCE",
+      "description": "Source-to-storage/requirement/case trace and explicit engineering/future gates",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "evaluation/relational/assessment/assurance.json",
+          "sha256": "9f7e0a8fda30051f3843b70efc951a7253f43d9610679607bb4ab8f92b6e533f"
+        },
+        {
+          "path": "evaluation/relational/assessment/mapping-coverage.json",
+          "sha256": "4f4b1d2bb5d379a2cdc4aee28767ba80161b04cdf33d50dda0ecc5dd05fd1441"
+        },
+        {
+          "path": "evaluation/relational/assessment/traceability.md",
+          "sha256": "dbb9a35c41a1f313fa10008ee233f51b4dbff7eef9353c96561e66735e3fecf4"
+        },
+        {
+          "path": "tools/check_database_assurance.py",
+          "sha256": "4abd237246e3f241c162d2a40c37cc37c9e07f9c45d9470fcb160dad28610edd"
         }
       ]
     }

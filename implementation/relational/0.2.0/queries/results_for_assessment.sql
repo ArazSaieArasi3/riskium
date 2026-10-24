@@ -1,0 +1,2 @@
+SELECT result_version_id FROM result_snapshot
+WHERE assessment_version_id=:assessment_version;

@@ -179,13 +179,24 @@ def development_components():
         ('EXTENSION_BOUNDARIES', 'External/domain adoption policy only', ['requirements/extensions.json']),
         ('INDEPENDENT_PROTOCOL', 'Prepared protocol; zero actual responses', ['evaluation/independent-review/protocol.json', 'evaluation/independent-review/responses.json']),
         ('SOURCE_PUBLICATION_REVIEW', 'Existing source/rights and disclosure boundary reconciliation', ['evaluation/sources/publication-review.json']),
+        ('RELATIONAL_ASSESSMENT', 'Version-owned assessment/result profile, additive migration 3',
+            ['implementation/relational/0.2.0/policy.json','implementation/relational/0.2.0/mapping.json','implementation/relational/0.2.0/mapping.ttl',
+             'implementation/relational/0.2.0/003_assessment_tables.sql','implementation/relational/0.2.0/003_assessment_guards.sql',
+             'implementation/relational/0.2.0/fixtures.json','implementation/relational/0.2.0/schema-dictionary.md',
+             'tools/build_relational_assessment.py','tools/relational_assessment.py','tools/run_relational_assessment.py',
+             'tools/audit_relational_design.py','tests/test_relational_assessment.py','evaluation/relational/assessment/report.json.gz']),
+        ('DATABASE_REQUIREMENTS', 'Derived database requirements, with original ORSD priorities preserved', ['requirements/relational-requirements.json']),
+        ('DATABASE_ASSURANCE', 'Source-to-storage/requirement/case trace and explicit engineering/future gates',
+            ['evaluation/relational/assessment/assurance.json','evaluation/relational/assessment/mapping-coverage.json',
+             'evaluation/relational/assessment/traceability.md','tools/check_database_assurance.py']),
     ]
-    return dict(schema='riskium-development-component-overlay-v1', overlay_version='0.1.0',
+    definitions[-3][2].extend(str(p.relative_to(ROOT)) for p in sorted((ROOT/'implementation/relational/0.2.0/queries').glob('*.sql')))
+    return dict(schema='riskium-development-component-overlay-v1', overlay_version='0.2.0',
         baseline_release='v0.3.1', baseline_source_commit='8afe169968b5c1396c02834dbc499af691b894b4',
         accepted_matrix_path='releases/artifact-matrix.json', accepted_matrix_sha256=sha('releases/artifact-matrix.json'),
         status='POST_RELEASE_DEVELOPMENT_NOT_PUBLISHED_AS_NEW_RELEASE',
         published_baseline_components_changed=False, new_owner_or_independent_acceptance_claimed=False,
-        components=[dict(id=sid, description=description, version='0.1.0', compatible_model='0.3.1',
+        components=[dict(id=sid, description=description, version='0.2.0' if sid=='RELATIONAL_ASSESSMENT' else '0.1.0', compatible_model='0.3.1',
             status='DEVELOPMENT_SUPPLEMENT', files=[dict(path=path, sha256=sha(path)) for path in paths]) for sid, description, paths in definitions])
 
 

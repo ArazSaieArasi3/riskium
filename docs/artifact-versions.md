@@ -17,6 +17,8 @@ This lightweight compatibility record implements the owner's 24 October 2026 req
 
 ## Change rules
 
+The database work now adds a separately versioned **public assessment profile 0.2.0 / migration 3**, **DRSD 0.1.0** and **database-assurance trace 0.1.0**. [Development overlay 0.2.0](../releases/development-components.json) binds all eight development supplements; [mapping and assurance](relational-assurance.md) records selected support, actual SQL/generative/workload evidence and future requirements. The published baseline table above remains the frozen v0.3.1 component set; profile 0.2.0 is not silently added to those release assets or manuscript 7.0.8.
+
 Post-release supplements are recorded in the separate [development overlay](../releases/development-components.json): shared-graph validation, exhaustive relational inventory, extension boundaries, prepared independent review and source-publication reconciliation each have version 0.1.0. The overlay binds the exact accepted matrix and current development inputs; it changes none of the ten published baseline components and makes no new publication or semantic-acceptance claim. [Current progress](post-release-work.md) distinguishes implementation, static accounting and pending real judgments.
 
 - Components retain independent versions. A package release pins an explicit set of component versions, exact content hashes and source commit.

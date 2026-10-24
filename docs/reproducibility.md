@@ -135,3 +135,18 @@ The post-prerelease CQ/traceability evidence is separate from the immutable rele
 ```
 
 The [contracts and supplementary profile](../requirements/cq/README.md) explain the 32 synthetic answer graphs, eight query-mutant controls and exact expected bindings. Five original synthetic-task contracts have bounded execution; the independent evidence populations for CQ06–CQ08 remain pending in #13. These queries do not execute HermiT/SHACL, prove managed admission or establish semantic acceptance. The [ledger](../evaluation/traceability/README.md) records all 28 public requirement/scope/CQ traces and their unresolved routes. Original JSON/CSV planning statuses and formal denominators are preserved.
+
+## Database assessment mapping and assurance after v0.3.1
+
+The separate [SQLite assessment profile 0.2.0](../implementation/relational/0.2.0/README.md) applies additive migration 3 to the unchanged public 0.1.0 base. [DRSD 0.1.0](../requirements/relational-requirements.json), [method/checklist](relational-assurance.md), [source/requirement/case trace](../evaluation/relational/assessment/traceability.md), exact dictionary and named queries identify the scope.
+
+```sh
+python tools/build_relational_assessment.py --check
+python tools/run_relational_assessment.py --check
+python tools/check_database_assurance.py --check
+python -m unittest discover -s tests -p test_relational_assessment.py -v
+```
+
+The replay executes 48 fixed cases, 100 frozen generated inputs, two actual SHACL comparison checks and four measured workload patterns on 1,000 generated assessment/result pairs. It checks SQL/RDF answers, current schema/dictionary, populated migration, immutability, backup/restore and bounded two-connection behavior. Two deliberately weakened-rule controls are sensitivity tests, not domain records. Timings and query-plan text are recorded observations and are not required identical across engines; exact logical answers and source hashes are. The current engineering gates do not execute PostgreSQL, full private migration, real user acceptance or independent scientific adjudication.
+
+For a reproducible public synthetic database, the supported Python helper is `relational_assessment.baseline(path)` from `tools/`; use a fresh output path. Open existing v3 databases through `relational_assessment.connect` and its health check. The old v2-only reader intentionally rejects the newer schema. No private source database or binary is needed by these checks.

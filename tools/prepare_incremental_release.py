@@ -107,6 +107,11 @@ CHECKS = [
     ['tools/run_source_cq0708.py', '--check'],
     ['tools/build_final_review.py', '--check'],
     ['tools/check_release_alignment.py'],
+    ['tools/run_integrated_validation.py', '--check'],
+    ['tools/build_relational_assessment.py', '--check'],
+    ['tools/run_relational_assessment.py', '--check'],
+    ['tools/check_database_assurance.py', '--check'],
+    ['tools/check_research_backlog.py', '--check'],
     ['-m', 'unittest', 'discover', '-s', 'tests', '-v'],
 ]
 

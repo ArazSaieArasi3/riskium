@@ -8,6 +8,8 @@ The first stable bounded research-artifact release, **[v0.3.1](https://github.co
 
 Post-release development now adds [shared-graph validation, exhaustive SQL mapping accounting, source/publication reconciliation, extension ownership and an independent-review protocol](docs/post-release-work.md). These separately versioned supplements are checked in CI and pinned by the [development component overlay](releases/development-components.json); they are not part of the immutable v0.3.1 release assets.
 
+The current database work adds [assessment/result profile 0.2.0, database requirements, full source/requirement trace and an executable assurance checklist](docs/relational-assurance.md). It preserves the original SQL 0.1.0 and uses additive migration 3; synthetic engineering evidence is separated from real case, user and deployment acceptance.
+
 ## Earlier development milestones
 
 The following paragraphs record the scope and pending-state limits of their historical checkpoints; the final publication above is the current package state.

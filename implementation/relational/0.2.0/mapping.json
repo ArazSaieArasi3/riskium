@@ -1,0 +1,175 @@
+{
+  "schema": "riskium-assessment-relational-mapping-v1",
+  "profile_version": "0.2.0",
+  "migration": 3,
+  "model_version": "0.3.1",
+  "source_model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "policy_sha256": "cdb55a25a369a5f608a0fa76d46a12fe5473c636f7dde85fcd5444e894d02ebb",
+  "base_mapping": "implementation/relational/0.1.0/mapping.json",
+  "new_classes": [
+    {
+      "id": "RKM-C032",
+      "source_sha256": "60eed4828678a9c3e6281418176d2aa355a8a2010e7e7337d21376a8ef759dac",
+      "representation": "information_artifact identity + artifact_typing exact native membership"
+    },
+    {
+      "id": "RKM-C033",
+      "source_sha256": "b55ffce904c23c7ef5d5a3e9ebfd2681747ece0ed0b84a14cd151303f17234fd",
+      "representation": "information_artifact identity + artifact_typing exact native membership"
+    },
+    {
+      "id": "RKM-C034",
+      "source_sha256": "077e2519528a2c3f4784f6460bb872cce8b593e3f8905de61944053c4143a700",
+      "representation": "information_artifact identity + artifact_typing exact native membership"
+    },
+    {
+      "id": "RKM-C038",
+      "source_sha256": "f8fe05470430244f93becdfa2d63e0a28b382bb0db5a9315a99e2360c7be8545",
+      "representation": "information_artifact identity + artifact_typing exact native membership"
+    },
+    {
+      "id": "RKM-C039",
+      "source_sha256": "1ebf1e9cc9bdb0290a0de88b70f7454f32e6a5afcf6f9f82ba302a75c06be731",
+      "representation": "information_artifact identity + artifact_typing exact native membership"
+    }
+  ],
+  "new_relations": [
+    {
+      "id": "R-12",
+      "source": "RKM-C032",
+      "target": "RKM-C033",
+      "predicate": "hasBasis",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    {
+      "id": "R-13",
+      "source": "RKM-C032",
+      "target": "RKM-C034",
+      "predicate": "hasDimensionResult",
+      "source_end_cardinality": "1",
+      "target_end_cardinality": "0..*"
+    },
+    {
+      "id": "R-14",
+      "source": "RKM-C034",
+      "target": "RKM-C036",
+      "predicate": "usesScale",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    {
+      "id": "R-15",
+      "source": "RKM-C034",
+      "target": "RKM-C038",
+      "predicate": "selectsLevel",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    {
+      "id": "R-16",
+      "source": "RKM-C038",
+      "target": "RKM-C036",
+      "predicate": "levelOf",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    {
+      "id": "R-45",
+      "source": "RKM-C032",
+      "target": "RKM-C002",
+      "predicate": "assessmentContext",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    {
+      "id": "R-46",
+      "source": "RKM-C032",
+      "target": "RKM-C035",
+      "predicate": "usesMethod",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    {
+      "id": "R-48",
+      "source": "RKM-C034",
+      "target": "RKM-C039",
+      "predicate": "dimension",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    {
+      "id": "R-49",
+      "source": "RKM-C035",
+      "target": "RKM-C036",
+      "predicate": "permitsScale",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    },
+    {
+      "id": "RX-014",
+      "source": "RKM-C032",
+      "target": "RKM-C015",
+      "predicate": "usesContextVersion",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    {
+      "id": "RX-015",
+      "source": "RKM-C032",
+      "target": "RKM-C015",
+      "predicate": "usesMethodVersion",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    {
+      "id": "RX-016",
+      "source": "RKM-C034",
+      "target": "RKM-C015",
+      "predicate": "usesScaleVersion",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    {
+      "id": "RK2-018",
+      "source": "RKM-C035",
+      "target": "RKM-C039",
+      "predicate": "specifiesDimension",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    },
+    {
+      "id": "RK2-019",
+      "source": "RKM-C036",
+      "target": "RKM-C039",
+      "predicate": "scaleForDimension",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    }
+  ],
+  "native_export": "v_assessment_quads, one named graph per issued assessment version; base v_native_facts remains available for the original identity/history slice.",
+  "supplemental_columns": [
+    "source_record_id",
+    "source_locator",
+    "interpretation_origin",
+    "recorded_at",
+    "reference_at",
+    "valid_from",
+    "valid_to",
+    "temporal_context_id",
+    "basis_version_id",
+    "score_kind",
+    "reported_value",
+    "scheme_uri",
+    "scheme_edition",
+    "local_code"
+  ],
+  "limits": [
+    "Partial selected assessment task mapping, not complete 77-class/127-relation/25-clause acceptance",
+    "No private 128-table migration, new real organizational RiskCase or historical 859-check claim",
+    "No PostgreSQL, general calculations/conversions/workflow or full temporal interval reasoning",
+    "No independent review or whole-ontology correctness percentage",
+    "SQL/RDF facts are scoped projections; R2RML serialization does not itself prove conceptual mapping adequacy",
+    "Observed timings describe only declared synthetic/runtime conditions; real user usability/security/SLO acceptance remains unexecuted"
+  ]
+}
