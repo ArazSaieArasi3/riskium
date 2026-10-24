@@ -1,0 +1,110 @@
+{
+  "schema": "riskium-cq0708-primary-inspection-v1",
+  "inspected_at_utc": "2026-10-24T05:15:40.889591+00:00",
+  "cohort_sha256": "525c6f69cff592baf705ec48ee52b629d2b0f61e93adcbedf9535b5993843127",
+  "source_pdfs": [
+    {
+      "id": "original",
+      "pdf_sha256": "d46b9f274e160d19498e283ff9fdd2baa498519485082e2aa2bd28d136e577db",
+      "pdf_page_count": 14,
+      "inspected_pdf_pages": [
+        1,
+        6,
+        7
+      ],
+      "page_text_hashes": {
+        "1": "05af097e185a4aebebc8d0ec16c8cb2821f82079823f7699934a6697e5879158",
+        "6": "fd46ddb281d5b5e1d5e54d304fde9f437291659b5321d0b84ae8493074e8f04e",
+        "7": "866f57ac79b95f05056f67bac1f445af6dc122cebfff0aa43f1403fd0c164d97"
+      }
+    },
+    {
+      "id": "correction",
+      "pdf_sha256": "c52d3d1ea6ea681bd679c3dfc75ff2a349e5fa14e2223ac00fcbbde7275dc3a6",
+      "pdf_page_count": 3,
+      "inspected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "page_text_hashes": {
+        "1": "e33a8c09271858f95318e45e22d5ba3e68bbd834af1922618362ee0ff1aedaf7",
+        "2": "d71618d399f087c1fa12bf812300dd3cd7013ebfb4c0dc6fa8600de0b0bcadb1",
+        "3": "bce083cd28cfed1eaa86c8988e249454d7ac495e816968cc9469ec4b535a64e9"
+      }
+    }
+  ],
+  "correction_notice": {
+    "pdf_page": 1,
+    "original_doi_explicit": true,
+    "affected_tables_explicit": [
+      1,
+      2
+    ],
+    "original_doi": "10.1093/biostatistics/kxx069",
+    "notice_page_text_sha256": "e33a8c09271858f95318e45e22d5ba3e68bbd834af1922618362ee0ff1aedaf7",
+    "license_verified_in_both_pdf_notices": "CC BY 4.0"
+  },
+  "checks": [
+    {
+      "assertion_id": "T1-ALL-P2P3",
+      "original_cell_context_anchor_sha256": "e519d58f90f97aa079bf3ac832c806530162e2355a5b49a01b47c46fed6d2d15",
+      "reissued_cell_context_anchor_sha256": "ab97a4fe5c9d9625dcb07a676f26e369fceb97f4d620bb3bf2b5ac1721df74d2",
+      "original_anchor_matches_nfkc_casefold_whitespace_removed": true,
+      "reissued_anchor_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_cell_review": "TABLE_PANELS_ROWS_COLUMNS_AND_SELECTED_VALUES_INSPECTED"
+    },
+    {
+      "assertion_id": "T2-ALL-P2P3",
+      "original_cell_context_anchor_sha256": "87f470accec7ef73715f2aa6926f0feb485d104c593e38ed6bd1454ddb930441",
+      "reissued_cell_context_anchor_sha256": "89f3a6a71c445af0f412c83addeaeb3412bb06ba0e6109cb7308ce0df49c59af",
+      "original_anchor_matches_nfkc_casefold_whitespace_removed": true,
+      "reissued_anchor_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_cell_review": "TABLE_PANELS_ROWS_COLUMNS_AND_SELECTED_VALUES_INSPECTED"
+    },
+    {
+      "assertion_id": "T2-NONONC-P2P3",
+      "original_cell_context_anchor_sha256": "795b4607b72d37859bfb6af1afb9804e4004456e5bc94a94bfbead3311304307",
+      "reissued_cell_context_anchor_sha256": "e5f4d585286a837d632c3cefa2f8e799bb1de83798c8b29b95cb80d61e0d6c0b",
+      "original_anchor_matches_nfkc_casefold_whitespace_removed": true,
+      "reissued_anchor_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_cell_review": "TABLE_PANELS_ROWS_COLUMNS_AND_SELECTED_VALUES_INSPECTED"
+    },
+    {
+      "assertion_id": "T2-LEAD-P2P3",
+      "original_cell_context_anchor_sha256": "2f88c4e952add8a3fcfa7668b82211f873c5ce5866c9e42fa4a5a6075b3f00aa",
+      "reissued_cell_context_anchor_sha256": "930c3648f63ab9b4ca6ed87312056c2e6ed9b95bab4da69a8dd56aef59256f82",
+      "original_anchor_matches_nfkc_casefold_whitespace_removed": true,
+      "reissued_anchor_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_cell_review": "TABLE_PANELS_ROWS_COLUMNS_AND_SELECTED_VALUES_INSPECTED"
+    },
+    {
+      "assertion_id": "T2-ONC-P2P3",
+      "original_cell_context_anchor_sha256": "2cc27627cf2e8439421c5f49194f2c7eb1e1f8d39ec9bdec791eecdfe705fb8b",
+      "reissued_cell_context_anchor_sha256": "2cc27627cf2e8439421c5f49194f2c7eb1e1f8d39ec9bdec791eecdfe705fb8b",
+      "original_anchor_matches_nfkc_casefold_whitespace_removed": true,
+      "reissued_anchor_matches_nfkc_casefold_whitespace_removed": true,
+      "visual_cell_review": "TABLE_PANELS_ROWS_COLUMNS_AND_SELECTED_VALUES_INSPECTED"
+    }
+  ],
+  "prior_identity_evidence": {
+    "cohort_path": "evaluation/sources/cq06/cohort.json",
+    "inspection_path": "evaluation/sources/cq06/inspection.json",
+    "withheld_candidates": 11,
+    "new_hospital_pdf_reinspection_claimed": false,
+    "reuse": "Exact prior inspected source/adjudication hashes are preserved, not relabeled as a fresh hospital source reading"
+  },
+  "summary": {
+    "source_documents_inspected": 2,
+    "source_pages_visually_reviewed": 5,
+    "selected_cell_pairs": 5,
+    "changed_values": 4,
+    "unchanged_reissued_values": 1,
+    "source_anchor_matches": 10,
+    "withheld_identity_candidates_reused": 11,
+    "managed_cases_admitted": 0,
+    "independent_study_lineages": 1,
+    "owner_ratings_added": 0
+  },
+  "method": "Exact supplied PDF hashes; pypdf text; rendered correction notice and both old/new table pages. Selected row/context anchors matched with NFKC/casefold/whitespace removal; visual panel/column check. Public output contains only selected cells/context, not raw PDFs/full tables."
+}

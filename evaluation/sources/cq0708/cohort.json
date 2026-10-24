@@ -1,0 +1,369 @@
+{
+  "schema": "riskium-cq0708-cohort-v1",
+  "prepared_at_utc": "2026-10-24T05:15:40.889199+00:00",
+  "model_version": "0.3.1",
+  "sources": [
+    {
+      "id": "original",
+      "uri": "https://doi.org/10.1093/biostatistics/kxx069",
+      "doi": "10.1093/biostatistics/kxx069",
+      "title": "Estimation of clinical trial success rates and related parameters",
+      "authors": [
+        "Chi Heem Wong",
+        "Kien Wei Siah",
+        "Andrew W. Lo"
+      ],
+      "online_publication_date": "2018-01-31",
+      "issue_year": 2019,
+      "edition": "Biostatistics 20(2):273-286 (2019); supplied online-first 2018 PDF, pages 1-14",
+      "pdf_sha256": "d46b9f274e160d19498e283ff9fdd2baa498519485082e2aa2bd28d136e577db",
+      "pdf_page_count": 14,
+      "inspected_pdf_pages": [
+        1,
+        6,
+        7
+      ],
+      "page_text_hashes": {
+        "1": "05af097e185a4aebebc8d0ec16c8cb2821f82079823f7699934a6697e5879158",
+        "6": "fd46ddb281d5b5e1d5e54d304fde9f437291659b5321d0b84ae8493074e8f04e",
+        "7": "866f57ac79b95f05056f67bac1f445af6dc122cebfff0aa43f1403fd0c164d97"
+      },
+      "license": "CC BY 4.0 as explicitly stated in the supplied primary PDF",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "fresh_web_check": "Publisher indexed metadata checked; direct Oxford opening redirected to inaccessible CDN and PMC opening hit browser-check page. Source cell evidence comes from inspected supplied PDFs, not snippets."
+    },
+    {
+      "id": "correction",
+      "uri": "https://doi.org/10.1093/biostatistics/kxy072",
+      "doi": "10.1093/biostatistics/kxy072",
+      "title": "Corrigendum: Estimation of clinical trial success rates and related parameters",
+      "authors": [
+        "Chi Heem Wong",
+        "Kien Wei Siah",
+        "Andrew W. Lo"
+      ],
+      "online_publication_date": "2018-11-14",
+      "issue_year": 2019,
+      "edition": "Biostatistics 20(2):366 (2019); supplied three-page online-first 2018 corrigendum with corrected tables, not the one-page final issue notice",
+      "pdf_sha256": "c52d3d1ea6ea681bd679c3dfc75ff2a349e5fa14e2223ac00fcbbde7275dc3a6",
+      "pdf_page_count": 3,
+      "inspected_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "page_text_hashes": {
+        "1": "e33a8c09271858f95318e45e22d5ba3e68bbd834af1922618362ee0ff1aedaf7",
+        "2": "d71618d399f087c1fa12bf812300dd3cd7013ebfb4c0dc6fa8600de0b0bcadb1",
+        "3": "bce083cd28cfed1eaa86c8988e249454d7ac495e816968cc9469ec4b535a64e9"
+      },
+      "license": "CC BY 4.0 as explicitly stated in the supplied primary PDF",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "fresh_web_check": "Publisher indexed metadata checked; direct Oxford opening redirected to inaccessible CDN and PMC opening hit browser-check page. Source cell evidence comes from inspected supplied PDFs, not snippets."
+    }
+  ],
+  "correction_link": {
+    "source_id": "correction",
+    "corrects_source_id": "original",
+    "scope": "Tables 1 and 2; selected five cell assertions only; one cell reissued without numeric change",
+    "evidence": "Supplied corrigendum PDF page 1 explicitly identifies original DOI and affected tables; original and reissued cells inspected",
+    "independent_study_lineages": 1
+  },
+  "assertions": [
+    {
+      "id": "T1-ALL-P2P3",
+      "kind": "CURATED_PUBLICATION_CELL_ASSERTION",
+      "context": {
+        "table": 1,
+        "industry_sponsored": true,
+        "indication_scope": "all-indications",
+        "therapeutic_group": "all-groups",
+        "method": "path-by-path",
+        "transition": "Phase 2 to Phase 3",
+        "source_data_start": "2000-01-01",
+        "source_data_end": "2015-10-31",
+        "unit": "percent",
+        "total_paths": null,
+        "denominator_note": "Selected table does not separately state cell path count"
+      },
+      "original": {
+        "source_id": "original",
+        "value": "58.3",
+        "standard_error_percent": null,
+        "locator": "Table 1; supplied original PDF page 6; panel all-indications; row Overall; path-by-path POS2,3",
+        "pdf_page": 6
+      },
+      "reissued": {
+        "source_id": "correction",
+        "value": "48.6",
+        "standard_error_percent": null,
+        "locator": "Table 1; supplied corrigendum PDF page 2; panel all-indications; row Overall; path-by-path POS2,3",
+        "pdf_page": 2
+      },
+      "disposition": "CORRECTED_VALUE",
+      "derivation": "Selected original/corrected cells transcribed by assistant and visually checked; no trial-data recomputation",
+      "independent_evidence_lineages": 1
+    },
+    {
+      "id": "T2-ALL-P2P3",
+      "kind": "CURATED_PUBLICATION_CELL_ASSERTION",
+      "context": {
+        "table": 2,
+        "industry_sponsored": true,
+        "indication_scope": "all-indications",
+        "therapeutic_group": "all-groups",
+        "method": "path-by-path",
+        "transition": "Phase 2 to Phase 3",
+        "source_data_start": "2000-01-01",
+        "source_data_end": "2015-10-31",
+        "unit": "percent",
+        "total_paths": 21180,
+        "denominator_note": "Table 2 Total paths for this selected transition and population"
+      },
+      "original": {
+        "source_id": "original",
+        "value": "58.3",
+        "standard_error_percent": "2.3",
+        "locator": "Table 2; supplied original PDF page 7; panel all-indications; row Overall; path-by-path POS2,3",
+        "pdf_page": 7
+      },
+      "reissued": {
+        "source_id": "correction",
+        "value": "48.6",
+        "standard_error_percent": "0.3",
+        "locator": "Table 2; supplied corrigendum PDF page 3; panel all-indications; row Overall; path-by-path POS2,3",
+        "pdf_page": 3
+      },
+      "disposition": "CORRECTED_VALUE",
+      "derivation": "Selected original/corrected cells transcribed by assistant and visually checked; no trial-data recomputation",
+      "independent_evidence_lineages": 1
+    },
+    {
+      "id": "T2-NONONC-P2P3",
+      "kind": "CURATED_PUBLICATION_CELL_ASSERTION",
+      "context": {
+        "table": 2,
+        "industry_sponsored": true,
+        "indication_scope": "all-indications",
+        "therapeutic_group": "excluding-oncology",
+        "method": "path-by-path",
+        "transition": "Phase 2 to Phase 3",
+        "source_data_start": "2000-01-01",
+        "source_data_end": "2015-10-31",
+        "unit": "percent",
+        "total_paths": 14647,
+        "denominator_note": "Table 2 Total paths for this selected transition and population"
+      },
+      "original": {
+        "source_id": "original",
+        "value": "27.3",
+        "standard_error_percent": "0.4",
+        "locator": "Table 2; supplied original PDF page 7; panel all-indications; row All without oncology; path-by-path POS2,3",
+        "pdf_page": 7
+      },
+      "reissued": {
+        "source_id": "correction",
+        "value": "55.7",
+        "standard_error_percent": "0.4",
+        "locator": "Table 2; supplied corrigendum PDF page 3; panel all-indications; row All without oncology; path-by-path POS2,3",
+        "pdf_page": 3
+      },
+      "disposition": "CORRECTED_VALUE",
+      "derivation": "Selected original/corrected cells transcribed by assistant and visually checked; no trial-data recomputation",
+      "independent_evidence_lineages": 1
+    },
+    {
+      "id": "T2-LEAD-P2P3",
+      "kind": "CURATED_PUBLICATION_CELL_ASSERTION",
+      "context": {
+        "table": 2,
+        "industry_sponsored": true,
+        "indication_scope": "lead-indications",
+        "therapeutic_group": "all-groups",
+        "method": "path-by-path",
+        "transition": "Phase 2 to Phase 3",
+        "source_data_start": "2000-01-01",
+        "source_data_end": "2015-10-31",
+        "unit": "percent",
+        "total_paths": 10010,
+        "denominator_note": "Table 2 Total paths for this selected transition and population"
+      },
+      "original": {
+        "source_id": "original",
+        "value": "55.9",
+        "standard_error_percent": "0.5",
+        "locator": "Table 2; supplied original PDF page 7; panel lead-indications; row Overall; path-by-path POS2,3",
+        "pdf_page": 7
+      },
+      "reissued": {
+        "source_id": "correction",
+        "value": "55.6",
+        "standard_error_percent": "0.5",
+        "locator": "Table 2; supplied corrigendum PDF page 3; panel lead-indications; row Overall; path-by-path POS2,3",
+        "pdf_page": 3
+      },
+      "disposition": "CORRECTED_VALUE",
+      "derivation": "Selected original/corrected cells transcribed by assistant and visually checked; no trial-data recomputation",
+      "independent_evidence_lineages": 1
+    },
+    {
+      "id": "T2-ONC-P2P3",
+      "kind": "CURATED_PUBLICATION_CELL_ASSERTION",
+      "context": {
+        "table": 2,
+        "industry_sponsored": true,
+        "indication_scope": "all-indications",
+        "therapeutic_group": "oncology",
+        "method": "path-by-path",
+        "transition": "Phase 2 to Phase 3",
+        "source_data_start": "2000-01-01",
+        "source_data_end": "2015-10-31",
+        "unit": "percent",
+        "total_paths": 6533,
+        "denominator_note": "Table 2 Total paths for this selected transition and population"
+      },
+      "original": {
+        "source_id": "original",
+        "value": "32.7",
+        "standard_error_percent": "0.6",
+        "locator": "Table 2; supplied original PDF page 7; panel all-indications; row Oncology; path-by-path POS2,3",
+        "pdf_page": 7
+      },
+      "reissued": {
+        "source_id": "correction",
+        "value": "32.7",
+        "standard_error_percent": "0.6",
+        "locator": "Table 2; supplied corrigendum PDF page 3; panel all-indications; row Oncology; path-by-path POS2,3",
+        "pdf_page": 3
+      },
+      "disposition": "REISSUED_UNCHANGED",
+      "derivation": "Selected original/corrected cells transcribed by assistant and visually checked; no trial-data recomputation",
+      "independent_evidence_lineages": 1
+    }
+  ],
+  "identity_candidates": [
+    {
+      "id": "UPX-MAT-004-001",
+      "prior_evidence_id": "EV04-0036",
+      "source_id": "MAT-004",
+      "locator": "Table 1; PDF page 14; printed page 12; failure row 1",
+      "case_admission": "WITHHELD",
+      "risk_case_identity": null,
+      "occurrence_asserted": false,
+      "representation": "Raw documentary candidate only, not a native managed scenario"
+    },
+    {
+      "id": "UPX-MAT-004-002",
+      "prior_evidence_id": "EV04-0037",
+      "source_id": "MAT-004",
+      "locator": "Table 1; PDF page 14; printed page 12; failure row 2",
+      "case_admission": "WITHHELD",
+      "risk_case_identity": null,
+      "occurrence_asserted": false,
+      "representation": "Raw documentary candidate only, not a native managed scenario"
+    },
+    {
+      "id": "UPX-MAT-004-003",
+      "prior_evidence_id": "EV04-0038",
+      "source_id": "MAT-004",
+      "locator": "Table 1; PDF page 14; printed page 12; failure row 3",
+      "case_admission": "WITHHELD",
+      "risk_case_identity": null,
+      "occurrence_asserted": false,
+      "representation": "Raw documentary candidate only, not a native managed scenario"
+    },
+    {
+      "id": "UPX-MAT-004-004",
+      "prior_evidence_id": "EV04-0039",
+      "source_id": "MAT-004",
+      "locator": "Table 1; PDF page 14; printed page 12; failure row 4",
+      "case_admission": "WITHHELD",
+      "risk_case_identity": null,
+      "occurrence_asserted": false,
+      "representation": "Raw documentary candidate only, not a native managed scenario"
+    },
+    {
+      "id": "UPX-MAT-004-005",
+      "prior_evidence_id": "EV04-0040",
+      "source_id": "MAT-004",
+      "locator": "Table 1; PDF page 14; printed page 12; failure row 5",
+      "case_admission": "WITHHELD",
+      "risk_case_identity": null,
+      "occurrence_asserted": false,
+      "representation": "Raw documentary candidate only, not a native managed scenario"
+    },
+    {
+      "id": "UPX-MAT-004-006",
+      "prior_evidence_id": "EV04-0041",
+      "source_id": "MAT-004",
+      "locator": "Table 1; PDF page 15; printed page 13; failure row 1",
+      "case_admission": "WITHHELD",
+      "risk_case_identity": null,
+      "occurrence_asserted": false,
+      "representation": "Raw documentary candidate only, not a native managed scenario"
+    },
+    {
+      "id": "UPX-MAT-004-007",
+      "prior_evidence_id": "EV04-0042",
+      "source_id": "MAT-004",
+      "locator": "Table 1; PDF page 15; printed page 13; failure row 2",
+      "case_admission": "WITHHELD",
+      "risk_case_identity": null,
+      "occurrence_asserted": false,
+      "representation": "Raw documentary candidate only, not a native managed scenario"
+    },
+    {
+      "id": "UPX-MAT-004-008",
+      "prior_evidence_id": "EV04-0043",
+      "source_id": "MAT-004",
+      "locator": "Table 1; PDF page 15; printed page 13; failure row 3",
+      "case_admission": "WITHHELD",
+      "risk_case_identity": null,
+      "occurrence_asserted": false,
+      "representation": "Raw documentary candidate only, not a native managed scenario"
+    },
+    {
+      "id": "UPX-MAT-004-009",
+      "prior_evidence_id": "EV04-0044",
+      "source_id": "MAT-004",
+      "locator": "Table 1; PDF page 15; printed page 13; failure row 4",
+      "case_admission": "WITHHELD",
+      "risk_case_identity": null,
+      "occurrence_asserted": false,
+      "representation": "Raw documentary candidate only, not a native managed scenario"
+    },
+    {
+      "id": "UPX-MAT-004-010",
+      "prior_evidence_id": "EV04-0045",
+      "source_id": "MAT-004",
+      "locator": "Table 1; PDF page 15; printed page 13; failure row 5",
+      "case_admission": "WITHHELD",
+      "risk_case_identity": null,
+      "occurrence_asserted": false,
+      "representation": "Raw documentary candidate only, not a native managed scenario"
+    },
+    {
+      "id": "UPX-MAT-004-011",
+      "prior_evidence_id": "EV04-0046",
+      "source_id": "MAT-004",
+      "locator": "Table 1; PDF page 15; printed page 13; failure row 6",
+      "case_admission": "WITHHELD",
+      "risk_case_identity": null,
+      "occurrence_asserted": false,
+      "representation": "Raw documentary candidate only, not a native managed scenario"
+    }
+  ],
+  "prior_cq06_cohort_sha256": "bc31b4af2f2d2cc4cf1c95bfeafdcb918a29f33d6400693723e7d8ed7893aa29",
+  "prior_cq06_inspection_sha256": "6501660f5aa34144995d293c1acdad01315e515ad578ca256cd06358e815b4ee",
+  "prior_source_freeze_commit": "2542c5b0762c4390c2d5af132fe52a01249fe2fc",
+  "owner_judgments_added": 0,
+  "machine_assistance": "Assistant selected/transcribed/inspected source cells, froze expected answers and prepared code. No independent expert or owner acceptance is supplied.",
+  "limits": [
+    "Five selected source cells, not a complete table/data validation or recomputed clinical success probabilities",
+    "Table 1 and Table 2 overall entries repeat one underlying estimate, not independent corroboration",
+    "Original and corrigendum are distinct publications; our curated assertion versions, not those two papers, share native versionOf targets",
+    "Optional absent case bindings mean no link asserted in the selected raw graph; not proof that no real RiskCase exists",
+    "All 11 approved WITHHELD decisions are reused without new adjudication or promotion",
+    "Supplied original/corrigendum snapshots only; no exhaustive later correction/retraction search or current clinical guidance"
+  ]
+}

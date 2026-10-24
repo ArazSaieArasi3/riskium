@@ -1,0 +1,20 @@
+{
+  "schema": "riskium-cq0708-independent-answer-vector-v1",
+  "preparation": "Separately authored selected cell lineage and withheld-ID oracles from inspected sources before any new CQ07/CQ08 query execution. Assistant preparation, not independent human judgment.",
+  "correction_source": "https://doi.org/10.1093/biostatistics/kxy072",
+  "original_source": "https://doi.org/10.1093/biostatistics/kxx069",
+  "cq07_columns": ["correctionRecord", "previousRecord", "source", "previousValue", "currentValue", "disposition"],
+  "cq07_cells": [
+    ["T1-ALL-P2P3", "58.3", "48.6", "CORRECTED_VALUE"],
+    ["T2-ALL-P2P3", "58.3", "48.6", "CORRECTED_VALUE"],
+    ["T2-NONONC-P2P3", "27.3", "55.7", "CORRECTED_VALUE"],
+    ["T2-LEAD-P2P3", "55.9", "55.6", "CORRECTED_VALUE"],
+    ["T2-ONC-P2P3", "32.7", "32.7", "REISSUED_UNCHANGED"]
+  ],
+  "cq08_columns": ["record", "candidate", "case"],
+  "cq08_unbound_case_ids": ["UPX-MAT-004-001", "UPX-MAT-004-002", "UPX-MAT-004-003", "UPX-MAT-004-004", "UPX-MAT-004-005", "UPX-MAT-004-006", "UPX-MAT-004-007", "UPX-MAT-004-008", "UPX-MAT-004-009", "UPX-MAT-004-010", "UPX-MAT-004-011"],
+  "case_binding": null,
+  "independent_study_lineages": 1,
+  "retained_assertion_versions": 10,
+  "owner_ratings_added": 0
+}
