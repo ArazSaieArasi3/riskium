@@ -1,0 +1,1010 @@
+{
+  "schema": "riskium-successor-component-matrix-v1",
+  "tag": "v0.3.2",
+  "model_version": "0.3.1",
+  "orsd_revision": "0.4.3",
+  "manuscript_version": "7.0.8",
+  "new_owner_ratings": 0,
+  "independent_validation_claimed": false,
+  "source_registers_sha256": {
+    "releases/artifact-matrix.json": "ef01f0408718d3b366daf145b482bb95fa4fbc73b219c9e15b650262fa05e012",
+    "releases/development-components.json": "f5c0cbb86f4089c79b7b76495510c3680cd521a670e0951984303bbdd33f2066"
+  },
+  "artifacts": [
+    {
+      "id": "MODEL",
+      "artifact": "Conceptual ontology and derived representations",
+      "version": "0.3.1",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "ontology/riskium-model.json",
+          "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59"
+        },
+        {
+          "path": "ontology/native/riskium.ontouml.json",
+          "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95"
+        },
+        {
+          "path": "ontology/derived/riskium.owl.ttl",
+          "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58"
+        }
+      ],
+      "scope": "Conceptual/native/OWL bytes unchanged from accepted technical baseline; derived artifacts keep their generation/evidence bindings."
+    },
+    {
+      "id": "DIAGRAM",
+      "artifact": "Selected ontology diagram",
+      "version": "model-0.3.1",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "diagrams/manifest.json",
+          "sha256": "2b8e016477e8915276c1eb787034a1716835fc20ba422dc69ee9d68e76deb7d5"
+        },
+        {
+          "path": "diagrams/selected-view.svg",
+          "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88"
+        }
+      ],
+      "scope": "Existing approved diagram and layout remain unchanged."
+    },
+    {
+      "id": "ORSD",
+      "artifact": "Ontology requirements specification",
+      "version": "0.4.3",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "requirements/ontology-requirements.md",
+          "sha256": "68e09fd8cce2805da2d2fa0f29f76b0601282c598855d99a41631dccfaf9ff33"
+        },
+        {
+          "path": "requirements/release-scope-v0.3.1.json",
+          "sha256": "759eb3eb7cbd7597de24c28139389f3e44de9275c640a2c524fac7032f960639"
+        }
+      ],
+      "scope": "Documentation/evidence/scope revision; original MUST/SHOULD priorities, criteria and source JSON definitions preserved."
+    },
+    {
+      "id": "OWNER",
+      "artifact": "Owner scope review",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "evaluation/owner-review/register.json",
+          "sha256": "b6c8b188411d33b758b3c4444f59a5904dd79f588fccafad41f2b65a50775b10"
+        },
+        {
+          "path": "evaluation/owner-review/accepted-scope.json",
+          "sha256": "a7da025a831114999529056aad105eb31ffcee1e4a88866fecbd4aa917da1a5c"
+        }
+      ],
+      "scope": "Nine scoped acceptances, one implemented prose revision and one conditional technical publication gate; not independent."
+    },
+    {
+      "id": "RELATIONAL",
+      "artifact": "Public SQLite identity/history profile",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "implementation/relational/0.1.0/mapping.json",
+          "sha256": "11c55fcc7bf7dc47c1f6a5acddf0fd7f5ceac8027ff62ff55816f7d500fc50f7"
+        },
+        {
+          "path": "implementation/relational/0.1.0/001_tables.sql",
+          "sha256": "c7d85e0bc96b9e7626320cf2b1aeca5f4c17962ac4792e4f5dc78f9395a90660"
+        },
+        {
+          "path": "implementation/relational/0.1.0/002_guards.sql",
+          "sha256": "c3f0d3479e538d15c90f0f5656f0c65645c4d34455481671d7dc8cfbd995b194"
+        },
+        {
+          "path": "implementation/relational/0.1.0/fixtures.json",
+          "sha256": "217eb5d79e36b16af86b71020eb7955240d297afb5ea39719bc4186f2e2e9cd5"
+        }
+      ],
+      "scope": "Unchanged bounded public schema/profile with migrations 1 and 2; distinct from private historical SQLite v0.3.0-rc.1. PostgreSQL/full migration not claimed."
+    },
+    {
+      "id": "C08",
+      "artifact": "Declared metadata compatibility profile",
+      "version": "0.6.0",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "ontology/shacl/0.6.0/receipt.json",
+          "sha256": "bd85f093e3f17be9dc4de04cee5fd1e58b369ae2bcc5552bc3b5f4666221f7e9"
+        },
+        {
+          "path": "evaluation/shacl/compatibility/report.json.gz",
+          "sha256": "d6759a5b056c1b3bf349717c27c44c2a3d4e77832d890c234a4d36a6bfb6e458"
+        }
+      ],
+      "scope": "Historical separately bound supplement; global C-08 PARTIAL retained."
+    },
+    {
+      "id": "COMPARISON",
+      "artifact": "Selected comparison profile",
+      "version": "0.7.0",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "ontology/shacl/0.7.0/receipt.json",
+          "sha256": "983b126e373907a51ea156377f8825ebf6a455877a4dd833d3b02feca5522585"
+        },
+        {
+          "path": "evaluation/shacl/comparison/report.json.gz",
+          "sha256": "c04432c09068f87ce961617561fd5e2fca8abf5f38a46b459b70c90ce1857362"
+        }
+      ],
+      "scope": "Scoped C-13/C-18 task eligibility; no generic arithmetic/conversion."
+    },
+    {
+      "id": "CQ06",
+      "artifact": "Source trace cohort/profile",
+      "version": "0.2.0",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "evaluation/sources/cq06/report.json.gz",
+          "sha256": "81861275e6f5569690c806d6c95badfee0b03b994f4a085ded1342b1d5d44a50"
+        }
+      ],
+      "scope": "13 inspected statements; 35 query/control outcomes; no independent population acceptance."
+    },
+    {
+      "id": "CQ0708",
+      "artifact": "Correction and withheld-identity cohort/profile",
+      "version": "0.3.0",
+      "compatible_model": "0.3.1",
+      "status": "CURRENT_BOUND_COMPONENT",
+      "files": [
+        {
+          "path": "evaluation/sources/cq0708/report.json.gz",
+          "sha256": "da8ec348280e788f2490b0dd053c0901f175fb969de8d73ca8959c2cec8a1612"
+        }
+      ],
+      "scope": "Five selected old/reissued pairs and 11 still-withheld candidates; 59 query/control outcomes."
+    },
+    {
+      "id": "MANUSCRIPT",
+      "artifact": "Article Word and equivalent PDF",
+      "version": "7.0.8",
+      "compatible_model": "0.3.1",
+      "compatible_orsd": "0.4.3",
+      "status": "AUTHOR_FACING_VERIFIED",
+      "files": [
+        {
+          "path": "evaluation/manuscript-review/v7.0.8/receipt.json",
+          "sha256": "5c32310eb1e5b689ed188e16a2b7d69af0c27454316defa661da53deefe2f634"
+        }
+      ],
+      "external_artifacts": [
+        {
+          "filename": "Riskium_Manuscript_Release_Q_v7_0_8.docx",
+          "sha256": "8e9ac824703512e5a7be91d31b1aedbf7936f727621f73d704b907b2aaf4dbe0",
+          "size_bytes": 1144414,
+          "pages": null,
+          "delivery": "author-facing file; not copied into public source repository"
+        },
+        {
+          "filename": "Riskium_Manuscript_Release_Q_v7_0_8.pdf",
+          "sha256": "16779f16049a133b8ca1dd0089090ea0e286b25738fb930e9a14290082255b9e",
+          "size_bytes": 763727,
+          "pages": 9,
+          "delivery": "author-facing file; not copied into public source repository"
+        }
+      ],
+      "scope": "Nine-page manuscript; seven necessary paragraphs updated and final delivery readback verified. Binaries stay outside public source repository."
+    },
+    {
+      "id": "INTEGRATED_VALIDATION",
+      "description": "Application shared-graph validator",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "implementation/validation/0.1.0/policy.json",
+          "sha256": "c930eff4fe10116e4cbbe171288be72fc4b764290f093f4bff2eccdfc0f2320c"
+        },
+        {
+          "path": "tools/validate_integrated.py",
+          "sha256": "5594df14536eb114f996677dd05c5b1d140cc39fa7b63ae6e4f69aed8b9e1696"
+        },
+        {
+          "path": "tools/run_integrated_validation.py",
+          "sha256": "2682070751e6372165fbc7dc3669e2f41a951a270a03e4515bce193af31268a3"
+        },
+        {
+          "path": "evaluation/integration/cases.json",
+          "sha256": "2c23d2928df40fc4d6b483ecfa459579f2438b8bbac8f7d8d8db0f0077799224"
+        },
+        {
+          "path": "evaluation/integration/fixtures.ttl",
+          "sha256": "88a49af985cd68b5c17890aeeb484e6be35efeb2b374f6dba40b071bf014d397"
+        },
+        {
+          "path": "evaluation/integration/report.json.gz",
+          "sha256": "4d3db19a427d4fc624be04c8cde1962c124144fb1a292c0b811129a30dc264bc"
+        }
+      ]
+    },
+    {
+      "id": "RELATIONAL_INVENTORY",
+      "description": "Exhaustive static mapping inventory; schema stays 0.1.0",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "evaluation/relational/coverage/report.json",
+          "sha256": "60366bc0fb4fb5d8f20d38e37c42f7122f6b4cbb066560f059cce4868fc35cd8"
+        }
+      ]
+    },
+    {
+      "id": "EXTENSION_BOUNDARIES",
+      "description": "External/domain adoption policy only",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "requirements/extensions.json",
+          "sha256": "b8eecdd91cd4334c5c91e23e1aa7c3a7df9f461a9b088feead96f26244fb171e"
+        }
+      ]
+    },
+    {
+      "id": "INDEPENDENT_PROTOCOL",
+      "description": "Prepared protocol; zero actual responses",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "evaluation/independent-review/protocol.json",
+          "sha256": "acddb088c01b1f3594a8242c4ddc5e7a36bad661623bb76da64338c9955cc524"
+        },
+        {
+          "path": "evaluation/independent-review/responses.json",
+          "sha256": "3896793de4db0d1b5b0d0f96f2f9ce8ffd1dd31c738d0f22400d88b5f3e8b00f"
+        }
+      ]
+    },
+    {
+      "id": "SOURCE_PUBLICATION_REVIEW",
+      "description": "Existing source/rights and disclosure boundary reconciliation",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "evaluation/sources/publication-review.json",
+          "sha256": "f0147b311fb08b4b7f07bc8be51ed704b17549d54b5b140be4f5b20699a182ee"
+        }
+      ]
+    },
+    {
+      "id": "RELATIONAL_ASSESSMENT",
+      "description": "Version-owned assessment/result profile, additive migration 3",
+      "version": "0.2.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "implementation/relational/0.2.0/policy.json",
+          "sha256": "cdb55a25a369a5f608a0fa76d46a12fe5473c636f7dde85fcd5444e894d02ebb"
+        },
+        {
+          "path": "implementation/relational/0.2.0/mapping.json",
+          "sha256": "81ecb3954057021b3e135fee041723ca59234de8324c81254b33a6f4d03984da"
+        },
+        {
+          "path": "implementation/relational/0.2.0/mapping.ttl",
+          "sha256": "962e5c6059c662651959844580a2ec02b021fbc04fd357bc2f1b500d5e0d8c31"
+        },
+        {
+          "path": "implementation/relational/0.2.0/003_assessment_tables.sql",
+          "sha256": "a173b662cdcb2aa0b52d734bcf93fd1fad8d4be2b3f0463b2fdc62be99438526"
+        },
+        {
+          "path": "implementation/relational/0.2.0/003_assessment_guards.sql",
+          "sha256": "ecf432726dcf87c8e85f9a78392cad272bab93b3a0e081271506622a45ac2058"
+        },
+        {
+          "path": "implementation/relational/0.2.0/fixtures.json",
+          "sha256": "f6059dc460fc11d30793fd73f30316d086a3551e3bed414ae518edce75786dfa"
+        },
+        {
+          "path": "implementation/relational/0.2.0/schema-dictionary.md",
+          "sha256": "20e4e08f2ae1576ad6451a224886385b756ff89f8819813329d35518127bbb1e"
+        },
+        {
+          "path": "tools/build_relational_assessment.py",
+          "sha256": "3a815f20084f1a829cdc6c788b545e887b8e084e8dfac6e284ba0ba0e6c162e8"
+        },
+        {
+          "path": "tools/relational_assessment.py",
+          "sha256": "70dbcbbe72e53d4eb36dc37e3fff3acb6f502b5b15f9376a3eb85d9bb6d11038"
+        },
+        {
+          "path": "tools/run_relational_assessment.py",
+          "sha256": "47cdfd931a0e90fd3fa0f2c95d8cafde5d6f5ae9b27e33d8ca378fea04110d73"
+        },
+        {
+          "path": "tools/audit_relational_design.py",
+          "sha256": "a25625e463eed97ec7eae7170fa655f0299c8b3e1c70d7948023564c2099e843"
+        },
+        {
+          "path": "tests/test_relational_assessment.py",
+          "sha256": "ea60fa971d27dd830c82a04e0af36a0816cb3bf6319c48c703145ab4846886c7"
+        },
+        {
+          "path": "evaluation/relational/assessment/report.json.gz",
+          "sha256": "c39cf33e1cde70b2d54b073874449376a049aa3a82f6e07e9461c5a942d35944"
+        },
+        {
+          "path": "implementation/relational/0.2.0/queries/comparison_inputs.sql",
+          "sha256": "5c971cc49cf1f9c2f7bd5282e49df380c4368b1ab59eaabd74aaf7cf8cd09aa1"
+        },
+        {
+          "path": "implementation/relational/0.2.0/queries/result_by_version.sql",
+          "sha256": "39d63a52f42db7bf5c0a590cc0c0ac187dbbb55493245292ca1febfde46444a1"
+        },
+        {
+          "path": "implementation/relational/0.2.0/queries/result_history.sql",
+          "sha256": "a680872bd6e87fdeeaa7bc7bb419bf31a87e3aede3d462f528af039faa0b7d60"
+        },
+        {
+          "path": "implementation/relational/0.2.0/queries/results_for_assessment.sql",
+          "sha256": "260e843338c5012bdf16d9862b4ea7fd4e27c85585aacc1d19d81808f8aca997"
+        },
+        {
+          "path": "implementation/relational/0.2.0/queries/source_trace.sql",
+          "sha256": "62cac553fbdcdb7439fe6214850361176f4f028f3e1e250643f68ee11fd57590"
+        }
+      ]
+    },
+    {
+      "id": "DATABASE_REQUIREMENTS",
+      "description": "Derived database requirements, with original ORSD priorities preserved",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "requirements/relational-requirements.json",
+          "sha256": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00"
+        }
+      ]
+    },
+    {
+      "id": "DATABASE_ASSURANCE",
+      "description": "Source-to-storage/requirement/case trace and explicit engineering/future gates",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "DEVELOPMENT_SUPPLEMENT",
+      "files": [
+        {
+          "path": "evaluation/relational/assessment/assurance.json",
+          "sha256": "9f7e0a8fda30051f3843b70efc951a7253f43d9610679607bb4ab8f92b6e533f"
+        },
+        {
+          "path": "evaluation/relational/assessment/mapping-coverage.json",
+          "sha256": "4f4b1d2bb5d379a2cdc4aee28767ba80161b04cdf33d50dda0ecc5dd05fd1441"
+        },
+        {
+          "path": "evaluation/relational/assessment/traceability.md",
+          "sha256": "dbb9a35c41a1f313fa10008ee233f51b4dbff7eef9353c96561e66735e3fecf4"
+        },
+        {
+          "path": "tools/check_database_assurance.py",
+          "sha256": "4abd237246e3f241c162d2a40c37cc37c9e07f9c45d9470fcb160dad28610edd"
+        }
+      ]
+    },
+    {
+      "id": "DOCUMENTATION",
+      "version": "0.1.0",
+      "compatible_model": "0.3.1",
+      "status": "PUBLISHED_DOCUMENTATION_SELECTED",
+      "files": [
+        {
+          "path": "AUTHORS.md",
+          "sha256": "c20830d719b9b1d1b13d85cac69253274a974edb79b3a2c56148fd900d038447"
+        },
+        {
+          "path": "docs/artifact-versions.md",
+          "sha256": "dcf7ae59edeefe6a848058c82dec55c4b5c7ddf64cbf9958f9e15f63090e19ef"
+        },
+        {
+          "path": "docs/current/assets/complete-model.svg",
+          "sha256": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853"
+        },
+        {
+          "path": "docs/current/assets/filter.js",
+          "sha256": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c"
+        },
+        {
+          "path": "docs/current/assets/portal.css",
+          "sha256": "8769420abcb7cb9470dbae07e6d2bd78679dcc6f0d138dd09bd16188d9b6aaaf"
+        },
+        {
+          "path": "docs/current/assets/selected-model.svg",
+          "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88"
+        },
+        {
+          "path": "docs/current/downloads/CC-BY-4.0.txt",
+          "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744"
+        },
+        {
+          "path": "docs/current/downloads/CITATION.cff",
+          "sha256": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae"
+        },
+        {
+          "path": "docs/current/downloads/LICENSE",
+          "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba"
+        },
+        {
+          "path": "docs/current/downloads/MIT.txt",
+          "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c"
+        },
+        {
+          "path": "docs/current/downloads/NOTICE.md",
+          "sha256": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce"
+        },
+        {
+          "path": "docs/current/downloads/RIGHTS.md",
+          "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47"
+        },
+        {
+          "path": "docs/current/downloads/SHA256SUMS.txt",
+          "sha256": "27c5a9fc39869adf953d681e6dc29144be384fe2603b7f3c68e55ea143fcc960"
+        },
+        {
+          "path": "docs/current/downloads/index.html",
+          "sha256": "19346dadb45c684bf41ac2cff02763cae77fc3bc1fc2fd4bdd00a52e4baa3073"
+        },
+        {
+          "path": "docs/current/downloads/riskium-model.json",
+          "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59"
+        },
+        {
+          "path": "docs/current/downloads/riskium.ontouml.json",
+          "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95"
+        },
+        {
+          "path": "docs/current/downloads/typed-core.json",
+          "sha256": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311"
+        },
+        {
+          "path": "docs/current/explore/graph.json",
+          "sha256": "865ec4717967315793851766f6a32ff99206b8c402b2afd249327413ed045f7c"
+        },
+        {
+          "path": "docs/current/explore/index.html",
+          "sha256": "6b1d3a29c2cf49f46dea4c9f900b5fbd61d11cdbe37997372058e061533b536d"
+        },
+        {
+          "path": "docs/current/guide/Artifact-Versions.html",
+          "sha256": "3fdc36a7d6bade49ea32fc4f44b9c123f05432fa65cda7e9c427598723943653"
+        },
+        {
+          "path": "docs/current/guide/Citation.html",
+          "sha256": "5bac8efc4b88689da766ec827b8300cc5bc262ab41506c30b6a8f6ea7a15b602"
+        },
+        {
+          "path": "docs/current/guide/Competency-Questions.html",
+          "sha256": "55dc9863469dbab5023b1aea21ac86a844b626536c5bbf97a05f562a32e8b229"
+        },
+        {
+          "path": "docs/current/guide/Database-Assurance.html",
+          "sha256": "f803d0d0b9b0b86db9e180afbfb40e4b3ac3d789d25c9aa946684a0b7db2dfab"
+        },
+        {
+          "path": "docs/current/guide/Decisions.html",
+          "sha256": "ca356c32d6f4e262707b57267fa6e62f9831aa2325f0f4ddaefe88041a853ca0"
+        },
+        {
+          "path": "docs/current/guide/Evaluation.html",
+          "sha256": "61de317ffd72b73cd156a243b9b1f3af8531cf1d24ab33b13fa32407959d88d8"
+        },
+        {
+          "path": "docs/current/guide/Formalization.html",
+          "sha256": "51f058fd109079f9244f05110f9aeb0e9f4b57bb7ba0d82536ed2ff11bdad745"
+        },
+        {
+          "path": "docs/current/guide/Home.html",
+          "sha256": "786a635ee81e935f529d07942b19fa27edf4c6ef4880a2926674a543b02ed65b"
+        },
+        {
+          "path": "docs/current/guide/Limitations.html",
+          "sha256": "41bf7882f00f8d5aacb77397f7585ef17259912e856faa4d40baf0095c60a352"
+        },
+        {
+          "path": "docs/current/guide/Overview.html",
+          "sha256": "7a86f60e61a54511c8f824266e2640df1f628d2b2ad5bdeaa407ea8cd1db3cb6"
+        },
+        {
+          "path": "docs/current/guide/Publication-Comparison.html",
+          "sha256": "16183b3873b6878e287143f60b8f4191398912d9092a2743fbc9f167a538f5a3"
+        },
+        {
+          "path": "docs/current/guide/Publication.html",
+          "sha256": "6d06a640adbc4950d5f1e5b1e254d7b5a82ad6b1580831b13d940a1993608ef3"
+        },
+        {
+          "path": "docs/current/guide/Quality.html",
+          "sha256": "5d9370d98db0cb990bd6d19e0b06d5daabda191c7f49d2dce9c260e1bfb3bdcc"
+        },
+        {
+          "path": "docs/current/guide/References.html",
+          "sha256": "1c7d64ac639e46846ede506917c727e742bf93eb4f7d8092a76f3f71e85122a9"
+        },
+        {
+          "path": "docs/current/guide/Reproduce.html",
+          "sha256": "6c1f2a2248b24e461ba20fea85aae3bbd974833a164e2a92909987f61640a91a"
+        },
+        {
+          "path": "docs/current/guide/Requirements.html",
+          "sha256": "8047adc76be0c95a3aab44077bf3312878b04ebbea1a3bb5b9e9eb62d00ef180"
+        },
+        {
+          "path": "docs/current/guide/Scope.html",
+          "sha256": "3a8b48f5bb1899bf87b40ed20a3a660b4de2ff99ed797cf74897ed56428eaae3"
+        },
+        {
+          "path": "docs/current/guide/Traceability.html",
+          "sha256": "b230e3f01c1f42739a47a00f2b49759856f89276e10e704ce7d36f7a60e93e0b"
+        },
+        {
+          "path": "docs/current/guide/Using-the-Model.html",
+          "sha256": "da9be6bf11ac5c3e5913a5e152b93e7cedba0504be6a4b2e6c17d1da4651341a"
+        },
+        {
+          "path": "docs/current/guide/Visualization.html",
+          "sha256": "11852eba30a0cacf5f9a2f83fdef56b6b47e970651da676447559dafb19a41e4"
+        },
+        {
+          "path": "docs/current/guide/Work-Plan.html",
+          "sha256": "b4c12917631f77abb970a59ce0784c151053f5743f0b93942ca9e163c63aefaa"
+        },
+        {
+          "path": "docs/current/index.html",
+          "sha256": "4b901afb3acb13dece6e4f8c09b1ae830f63ae898ec963c3b4f643fbbddb3505"
+        },
+        {
+          "path": "docs/current/publication-manifest.json",
+          "sha256": "655a8c8cd34a4b4519a0b3e9b6f71f6db7c0aa3207cb581641c4320bd4031d86"
+        },
+        {
+          "path": "docs/current/reference/native/index.html",
+          "sha256": "2fccecc1600b9ca3814c372929280008a252c568673b710dfbfa88731a44df51"
+        },
+        {
+          "path": "docs/current/widoco/index-en.html",
+          "sha256": "7d642ec2ade7d4e2ce6ba493dc59636d32cdeb9441efee9bdb21167e8b0d929f"
+        },
+        {
+          "path": "docs/current/widoco/ontology.jsonld",
+          "sha256": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10"
+        },
+        {
+          "path": "docs/current/widoco/ontology.nt",
+          "sha256": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd"
+        },
+        {
+          "path": "docs/current/widoco/ontology.owl",
+          "sha256": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875"
+        },
+        {
+          "path": "docs/current/widoco/ontology.ttl",
+          "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58"
+        },
+        {
+          "path": "docs/current/widoco/provenance/provenance-en.html",
+          "sha256": "1512fc3c7c5460cbab981b02fc8a2871bb8ecb7b34c44745c09a58b2415300d8"
+        },
+        {
+          "path": "docs/current/widoco/resources/extra.css",
+          "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e"
+        },
+        {
+          "path": "docs/current/widoco/resources/owl.css",
+          "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298"
+        },
+        {
+          "path": "docs/current/widoco/resources/primer.css",
+          "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908"
+        },
+        {
+          "path": "docs/current/widoco/resources/rec.css",
+          "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526"
+        },
+        {
+          "path": "docs/current/widoco/serialization-receipt.json",
+          "sha256": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d"
+        },
+        {
+          "path": "docs/current/widoco/tool-provenance.json",
+          "sha256": "fa8bc1e6e190e1b9cb18ec05b0196535bb730946ea79fe99a99d84c0515b4f54"
+        },
+        {
+          "path": "docs/guides/Evaluation.md",
+          "sha256": "f801233cf9ff775b2cfe07be6487e458071d0240c5a696f22896a7e535435695"
+        },
+        {
+          "path": "docs/guides/Home.md",
+          "sha256": "145ac85e1621df4b1f81929362b651ef7639536f16373220be8792de0bd4e84d"
+        },
+        {
+          "path": "docs/guides/Publication.md",
+          "sha256": "d746ff29590f16947ca891ebfbd653c8806b1d70ffa70f2d122662ccd54d3041"
+        },
+        {
+          "path": "docs/guides/Scope.md",
+          "sha256": "a095170e53e8e830915144d753d43b301c96f9368a47f2622e9a4ebc55dc7229"
+        },
+        {
+          "path": "docs/guides/Using-the-Model.md",
+          "sha256": "439f2195438e9cbbfc07c08392f0e73912c7fe42a8a21792d7b439beef4fbdfc"
+        },
+        {
+          "path": "docs/guides/Visualization.md",
+          "sha256": "c2718e0872405ca824d16ec920c75eebf51150ab9468af9db66e96677abf3cb7"
+        },
+        {
+          "path": "docs/modeling-decisions.md",
+          "sha256": "c5b760e9b2f5620e8cd2662026b89e98e00843dcc26e0dc1b401256f39cb76a0"
+        },
+        {
+          "path": "docs/overview.md",
+          "sha256": "def7d12867cc66f190b08ae499e809f3598723f25844847207f2e3753d16b856"
+        },
+        {
+          "path": "docs/portal-limitations.md",
+          "sha256": "50c5561066f76dc0b52f2ee97ca18a37025cd0af7a185b331241e9a2d3f9fa01"
+        },
+        {
+          "path": "docs/publication-comparison.md",
+          "sha256": "a76039ecb1062028494f8a0a403167175304253aed4bec0d8cacbea90b1866e5"
+        },
+        {
+          "path": "docs/relational-assurance.md",
+          "sha256": "595f9a8e6a1bf0d2e46b4c38ab308b5dca475feb6e764051d60cb17d8aad3337"
+        },
+        {
+          "path": "docs/reproducibility.md",
+          "sha256": "46956478848fd194c85a6c592bf34b2edf3ac51c1ea357eb3feba5570283c6a8"
+        },
+        {
+          "path": "docs/wiki/Artifact-Versions.md",
+          "sha256": "4347f7a45ec094423685a94ca29fd4b837f70686046712f676beca9f3094a1ec"
+        },
+        {
+          "path": "docs/wiki/Citation.md",
+          "sha256": "993d8a3101b44e16c0d0e314c4e9edab119e87b28f553cc37dc200217fa74f46"
+        },
+        {
+          "path": "docs/wiki/Competency-Questions.md",
+          "sha256": "dd1eed6a7973a5f1b9096012e6307d000c53dfb3fe51bef8f8dff443634cf4e5"
+        },
+        {
+          "path": "docs/wiki/Database-Assurance.md",
+          "sha256": "755dfb67e239b6b8a11ebf855efbd150318c38b9ea9cf8bf8476f21292113b7e"
+        },
+        {
+          "path": "docs/wiki/Evaluation.md",
+          "sha256": "8bee1e5fe1de18a1f6de7bf1aae6951a4a612541ed438d7376abfb31d0bdd01f"
+        },
+        {
+          "path": "docs/wiki/Formalization.md",
+          "sha256": "245377c0a167b91eac6216a5376f3942af1f4f1e9d152cff85a72e629728d158"
+        },
+        {
+          "path": "docs/wiki/Home.md",
+          "sha256": "dd2a7cd88cfb474823a7ca51ba34e241045230de8fdb0177e918ed788dfe3d9c"
+        },
+        {
+          "path": "docs/wiki/Limitations.md",
+          "sha256": "701d58c0baf9d7eb0dfae464ae1bfb6121ce06a1fbcf66c87f90a57912240c65"
+        },
+        {
+          "path": "docs/wiki/Modeling-Decisions.md",
+          "sha256": "6cbbcca370da2695bd3c8b1b8d2f1fbb564d303cbceda00c2c88a75caab361ba"
+        },
+        {
+          "path": "docs/wiki/Overview.md",
+          "sha256": "4302b57313f75ee1f57bf727ec3cb2736856598863cc7f03a95a21cccf506ac4"
+        },
+        {
+          "path": "docs/wiki/Publication-Comparison.md",
+          "sha256": "6eba106761c9eeb3f29140da32451b76ea039e4e7a51af1a664d6e962054a92e"
+        },
+        {
+          "path": "docs/wiki/Publication.md",
+          "sha256": "a3562326df341e7c65823e11ed6e8c21bd841df805910acb9bed0c2d70071ac7"
+        },
+        {
+          "path": "docs/wiki/Quality.md",
+          "sha256": "748f3cf721bfb3fd5ed1bea1dc4d981fcbf8b5aa6e8e7fc8ad732588904fe7ab"
+        },
+        {
+          "path": "docs/wiki/References.md",
+          "sha256": "4341ab8ffb7be442841588c9e26b552f19dda268f1fc262f82848ca074f63168"
+        },
+        {
+          "path": "docs/wiki/Reproduce.md",
+          "sha256": "8d0cd1697d3b3a974890dfb8385df5fefb01f74b81bf02e9218e038c6108506b"
+        },
+        {
+          "path": "docs/wiki/Requirements.md",
+          "sha256": "8b49dffbe3cbd521c84fcd55bea66757d233d3d5143fe252498886540d8fc9a9"
+        },
+        {
+          "path": "docs/wiki/Scope.md",
+          "sha256": "80f0d015123286a57bd8ed0e9acac10658569e96f48ac32eb59006ebf58f4e7b"
+        },
+        {
+          "path": "docs/wiki/Traceability.md",
+          "sha256": "940c3105392181e9d7e9132de95c5eea75f22a1c4e5ad61fcce90d509d916605"
+        },
+        {
+          "path": "docs/wiki/Using-the-Model.md",
+          "sha256": "a374d73fc51c8fc61d13fd75e468d3231b442eb01e8ab18388735bf22ae07228"
+        },
+        {
+          "path": "docs/wiki/Visualization.md",
+          "sha256": "613db13cebff6a0aa58a28d4e500acb5ced96ed0a252dd40651bb5f96a0e619f"
+        },
+        {
+          "path": "docs/wiki/Work-Plan.md",
+          "sha256": "27756b126a984dc56220d19d353944a4b7659d9fe8a535873af7e475baf5681c"
+        },
+        {
+          "path": "docs/wiki/_Footer.md",
+          "sha256": "fd887554e6c2ddf68aa059d34cf2c7f407a483dfa2d32cfc733e8af94cc1bcfd"
+        },
+        {
+          "path": "docs/wiki/_Sidebar.md",
+          "sha256": "d9db6fc9c68103f75c9e58cd0b9c02e8f2ba79b38937221ec77b134062342a3f"
+        },
+        {
+          "path": "docs/work-plan.md",
+          "sha256": "a4d24a0fad487a64e6bbb4ce5974fb56f7b7c6266bd892b409509fa588985d2f"
+        },
+        {
+          "path": "evaluation/documentation/versioned-0.1.0/wiki-final-readback.json",
+          "sha256": "229b67a0f72463cc3734694b05d28aaf8ed18d162a7a825e7a80c50cfcf9f2eb"
+        },
+        {
+          "path": "evaluation/owl-mapping-review.md",
+          "sha256": "f51ad6dee980c27a503ac0245fc98394c90eaf929b04489e4a08aaee77049acb"
+        },
+        {
+          "path": "evaluation/quality/README.md",
+          "sha256": "d1d50ca91657686799f8299e821e3df3862fabcd047342dbe742f00f416a7d32"
+        },
+        {
+          "path": "evaluation/traceability/README.md",
+          "sha256": "851b61c9a5298aa4b7c0ea6df92039c8fbc0f3f44e06e8ee1295d385b8ef9a82"
+        },
+        {
+          "path": "references/README.md",
+          "sha256": "437a09488a721f6710d3153080c0588408e495221a8a9bb77704848091a63a6d"
+        },
+        {
+          "path": "requirements/cq/README.md",
+          "sha256": "ae4e6c8641abbe3ccedfb4cac81e597dfddf9629ed5e17802d973664139db16c"
+        },
+        {
+          "path": "requirements/ontology-requirements.md",
+          "sha256": "68e09fd8cce2805da2d2fa0f29f76b0601282c598855d99a41631dccfaf9ff33"
+        },
+        {
+          "path": "tools/publication/guide-registry.json",
+          "sha256": "623cd119cd6d53bffa1b77e91adcde1534531faaea253984549bb65846747ac2"
+        },
+        {
+          "path": "tools/publication/pages-registry.json",
+          "sha256": "eab947c80d46e04289ba2ee59f6726fbe0bec0eeb0cdc564255196d581c76df5"
+        }
+      ]
+    },
+    {
+      "id": "RIGHTS_AND_MODEL_CITATION",
+      "version": "model-0.3.1",
+      "compatible_model": "0.3.1",
+      "status": "UNCHANGED_RIGHTS_AND_MODEL_CITATION",
+      "files": [
+        {
+          "path": "AUTHORS.md",
+          "sha256": "c20830d719b9b1d1b13d85cac69253274a974edb79b3a2c56148fd900d038447"
+        },
+        {
+          "path": "CITATION.cff",
+          "sha256": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba"
+        },
+        {
+          "path": "LICENSES/CC-BY-4.0.txt",
+          "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744"
+        },
+        {
+          "path": "LICENSES/MIT.txt",
+          "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c"
+        },
+        {
+          "path": "LICENSES/WIDOCO-Apache-2.0.txt",
+          "sha256": "f6bde110648aedc2ddf28bb2ddd7d110ffd02cfd36f64e55f7de7938b3d02287"
+        },
+        {
+          "path": "NOTICE.md",
+          "sha256": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce"
+        },
+        {
+          "path": "RIGHTS.md",
+          "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47"
+        }
+      ]
+    }
+  ],
+  "documentation": {
+    "version": "0.1.0",
+    "snapshot": {
+      "route": "releases/v0.3.1",
+      "documentation_version": "0.1.0",
+      "model_version": "0.3.1",
+      "semantic_source_commit": "8afe169968b5c1396c02834dbc499af691b894b4",
+      "source_commit": "609c7cd0fd07053262fffe5720ff0b2605062778",
+      "source_path": "docs/current",
+      "source_tree": "94b42f84870c0275b5379cf6556464795d8bff8a",
+      "rendering": "FROZEN_GUIDE_REFS_V1",
+      "files_sha256": {
+        "assets/complete-model.svg": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+        "assets/filter.js": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+        "assets/portal.css": "8769420abcb7cb9470dbae07e6d2bd78679dcc6f0d138dd09bd16188d9b6aaaf",
+        "assets/selected-model.svg": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+        "downloads/CC-BY-4.0.txt": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+        "downloads/CITATION.cff": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
+        "downloads/LICENSE": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+        "downloads/MIT.txt": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+        "downloads/NOTICE.md": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce",
+        "downloads/RIGHTS.md": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+        "downloads/SHA256SUMS.txt": "27c5a9fc39869adf953d681e6dc29144be384fe2603b7f3c68e55ea143fcc960",
+        "downloads/index.html": "51f345aa9aa4e88c1b97c5fcc9535440baf8c9b6056dfdd5da3a30cdb8c7827c",
+        "downloads/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+        "downloads/riskium.ontouml.json": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+        "downloads/typed-core.json": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+        "explore/graph.json": "865ec4717967315793851766f6a32ff99206b8c402b2afd249327413ed045f7c",
+        "explore/index.html": "ca77f68aa40bd62f197159701bd1fb1e12addb3a4c1edb66e9e5e64fe7704b3d",
+        "guide/Artifact-Versions.html": "9bd60375d35b9d0e3aa809f886617ad89dbba87d95403dcf3035c2ac263ad364",
+        "guide/Citation.html": "626b9e3037a786db523a5ec5b39e64abd061e47d94afffcb47e985505699307d",
+        "guide/Competency-Questions.html": "aef373d2dbb548d179778f368547d54749e9bf0caec4a274224d855bd5f1726e",
+        "guide/Database-Assurance.html": "c92491062b05df9000fa76f8d0c055e4c7afb3011acb23561a394698dc248d4b",
+        "guide/Decisions.html": "9c516713f1bc4015f208cff69e8e5974ee375402e4bc35c854061365519cafb7",
+        "guide/Evaluation.html": "8241129e6206d4aaee0a44f516ebf1448493deaec61da5e2a57fbcb2f79eec0b",
+        "guide/Formalization.html": "432e3277a5292763877b19cc1c41068f298c0a80a65b2de7429f32d0c2ff4008",
+        "guide/Home.html": "dbf30abc4ad788e6091b0f099bfb33abdcf142e6a0c9bb2d9ad974eccc1e8a19",
+        "guide/Limitations.html": "b6f34580f69f826f5ef5f30221267cdd2dda2b717d63323f147cdd8db5073dc2",
+        "guide/Overview.html": "aa74c8d47c272387a4e6b8f3cc1ad542177c06d35b9ab859b342631aba983939",
+        "guide/Publication-Comparison.html": "6e40631bdcae9238962dae0ff618c1e02fc19b787196294366223671b204e8ae",
+        "guide/Publication.html": "b64588f951d75420e07edeba9552a5275ac70a06e94803b0342503921046beca",
+        "guide/Quality.html": "f10575edb61efaffb5a5862091c123d143235b27758afc6f3d784848fc0fd015",
+        "guide/References.html": "de693edd736339cc0f4499b87f907e0457c2df233c97cdce9f7f1a0cfa73e196",
+        "guide/Reproduce.html": "33aa9d582b4cef5b029a7fd7fe0919f65350df7ee4b3e42eec1bdf1d7bac748c",
+        "guide/Requirements.html": "15ddb773c3d33920e2941c67cdccfd6679a7d7b57af619d461790d804d7183cb",
+        "guide/Scope.html": "da2e85b389f39be43a9184c3fcf68541256ad401ca412e126142a01f27e8a135",
+        "guide/Traceability.html": "dfa3a9b6bcd8c3fb2bd45c0e13dd0a0fca20f8c1b8f4dd99ddfd318198a205a6",
+        "guide/Using-the-Model.html": "d3b2ba2a9a3e3ae2fbdd6201e4bb9eaddfdf0dde1fb3919ab53066ee8fedaf91",
+        "guide/Visualization.html": "ffed628591da7e60f00fbf27831e3c760262d95158f35c0e3c08794f3137fe5c",
+        "guide/Work-Plan.html": "9689789eaccffe72c04faa7ae57b0a0deb840001cabb62d6d0ef4c1c5ed96549",
+        "index.html": "0b2d812c3ea39ac2064c8fef44936799ed9571359c383b4d4db9d85878c2c01d",
+        "publication-manifest.json": "480e4e19921b352a6900f34226192dc968a304dce1565056e97a2511ec0abbb3",
+        "reference/native/index.html": "6b1c2cec42b5595671dffd91a6c83295802e3e04edd7d19d77cc7927d55ba1bf",
+        "widoco/index-en.html": "59b32e6a24ec6e67c1dc2ce590fccc672e90e442b76fd3e281e2d04528c28e6d",
+        "widoco/ontology.jsonld": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+        "widoco/ontology.nt": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+        "widoco/ontology.owl": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+        "widoco/ontology.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+        "widoco/provenance/provenance-en.html": "d58739bb51b6da79b49e7825c3d3e92a27e9288529181bac132e745b02699d2e",
+        "widoco/resources/extra.css": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+        "widoco/resources/owl.css": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+        "widoco/resources/primer.css": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+        "widoco/resources/rec.css": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+        "widoco/serialization-receipt.json": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d",
+        "widoco/tool-provenance.json": "243f6a56902007570c43e9f3a85e1e36ae510fc7a9dfc2fcae945e8f7d211b4e"
+      }
+    },
+    "current_files_sha256": {
+      "assets/complete-model.svg": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+      "assets/filter.js": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+      "assets/portal.css": "8769420abcb7cb9470dbae07e6d2bd78679dcc6f0d138dd09bd16188d9b6aaaf",
+      "assets/selected-model.svg": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+      "downloads/CC-BY-4.0.txt": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "downloads/CITATION.cff": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
+      "downloads/LICENSE": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+      "downloads/MIT.txt": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+      "downloads/NOTICE.md": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce",
+      "downloads/RIGHTS.md": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+      "downloads/SHA256SUMS.txt": "27c5a9fc39869adf953d681e6dc29144be384fe2603b7f3c68e55ea143fcc960",
+      "downloads/index.html": "19346dadb45c684bf41ac2cff02763cae77fc3bc1fc2fd4bdd00a52e4baa3073",
+      "downloads/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+      "downloads/riskium.ontouml.json": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+      "downloads/typed-core.json": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+      "explore/graph.json": "865ec4717967315793851766f6a32ff99206b8c402b2afd249327413ed045f7c",
+      "explore/index.html": "6b1d3a29c2cf49f46dea4c9f900b5fbd61d11cdbe37997372058e061533b536d",
+      "guide/Artifact-Versions.html": "3fdc36a7d6bade49ea32fc4f44b9c123f05432fa65cda7e9c427598723943653",
+      "guide/Citation.html": "5bac8efc4b88689da766ec827b8300cc5bc262ab41506c30b6a8f6ea7a15b602",
+      "guide/Competency-Questions.html": "55dc9863469dbab5023b1aea21ac86a844b626536c5bbf97a05f562a32e8b229",
+      "guide/Database-Assurance.html": "f803d0d0b9b0b86db9e180afbfb40e4b3ac3d789d25c9aa946684a0b7db2dfab",
+      "guide/Decisions.html": "ca356c32d6f4e262707b57267fa6e62f9831aa2325f0f4ddaefe88041a853ca0",
+      "guide/Evaluation.html": "61de317ffd72b73cd156a243b9b1f3af8531cf1d24ab33b13fa32407959d88d8",
+      "guide/Formalization.html": "51f058fd109079f9244f05110f9aeb0e9f4b57bb7ba0d82536ed2ff11bdad745",
+      "guide/Home.html": "786a635ee81e935f529d07942b19fa27edf4c6ef4880a2926674a543b02ed65b",
+      "guide/Limitations.html": "41bf7882f00f8d5aacb77397f7585ef17259912e856faa4d40baf0095c60a352",
+      "guide/Overview.html": "7a86f60e61a54511c8f824266e2640df1f628d2b2ad5bdeaa407ea8cd1db3cb6",
+      "guide/Publication-Comparison.html": "16183b3873b6878e287143f60b8f4191398912d9092a2743fbc9f167a538f5a3",
+      "guide/Publication.html": "6d06a640adbc4950d5f1e5b1e254d7b5a82ad6b1580831b13d940a1993608ef3",
+      "guide/Quality.html": "5d9370d98db0cb990bd6d19e0b06d5daabda191c7f49d2dce9c260e1bfb3bdcc",
+      "guide/References.html": "1c7d64ac639e46846ede506917c727e742bf93eb4f7d8092a76f3f71e85122a9",
+      "guide/Reproduce.html": "6c1f2a2248b24e461ba20fea85aae3bbd974833a164e2a92909987f61640a91a",
+      "guide/Requirements.html": "8047adc76be0c95a3aab44077bf3312878b04ebbea1a3bb5b9e9eb62d00ef180",
+      "guide/Scope.html": "3a8b48f5bb1899bf87b40ed20a3a660b4de2ff99ed797cf74897ed56428eaae3",
+      "guide/Traceability.html": "b230e3f01c1f42739a47a00f2b49759856f89276e10e704ce7d36f7a60e93e0b",
+      "guide/Using-the-Model.html": "da9be6bf11ac5c3e5913a5e152b93e7cedba0504be6a4b2e6c17d1da4651341a",
+      "guide/Visualization.html": "11852eba30a0cacf5f9a2f83fdef56b6b47e970651da676447559dafb19a41e4",
+      "guide/Work-Plan.html": "b4c12917631f77abb970a59ce0784c151053f5743f0b93942ca9e163c63aefaa",
+      "index.html": "4b901afb3acb13dece6e4f8c09b1ae830f63ae898ec963c3b4f643fbbddb3505",
+      "publication-manifest.json": "655a8c8cd34a4b4519a0b3e9b6f71f6db7c0aa3207cb581641c4320bd4031d86",
+      "reference/native/index.html": "2fccecc1600b9ca3814c372929280008a252c568673b710dfbfa88731a44df51",
+      "widoco/index-en.html": "7d642ec2ade7d4e2ce6ba493dc59636d32cdeb9441efee9bdb21167e8b0d929f",
+      "widoco/ontology.jsonld": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+      "widoco/ontology.nt": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+      "widoco/ontology.owl": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+      "widoco/ontology.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+      "widoco/provenance/provenance-en.html": "1512fc3c7c5460cbab981b02fc8a2871bb8ecb7b34c44745c09a58b2415300d8",
+      "widoco/resources/extra.css": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+      "widoco/resources/owl.css": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+      "widoco/resources/primer.css": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+      "widoco/resources/rec.css": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+      "widoco/serialization-receipt.json": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d",
+      "widoco/tool-provenance.json": "fa8bc1e6e190e1b9cb18ec05b0196535bb730946ea79fe99a99d84c0515b4f54"
+    },
+    "wiki_receipt": "evaluation/documentation/versioned-0.1.0/wiki-final-readback.json",
+    "wiki_commit": "1c330da134e9b13528760a5cd8f223d0d680d4e6"
+  },
+  "preserve_releases": [
+    "v0.3.1-rc.1",
+    "v0.3.1-rc.2",
+    "v0.3.1-rc.3",
+    "v0.3.1-rc.4",
+    "v0.3.1-rc.5",
+    "v0.3.1-rc.6",
+    "v0.3.1-rc.7",
+    "v0.3.1"
+  ],
+  "authority": "User explicitly requested the next focused successor release on 25 October 2026. Engineering additions are selected and reviewed with assistant support; prior owner scientific ratings are not expanded.",
+  "limitations": [
+    "Original 14 HermiT NOT_RUN and 17 SHACL NOT_RUN/one PARTIAL remain unchanged.",
+    "Zero actual independent reviewer responses; all 11 organizational case admissions remain WITHHELD.",
+    "No WebVOWL, full FOL, complete SQL mapping, PostgreSQL/private migration or production acceptance.",
+    "Article 7.0.8 makes no new claim for post-release engineering additions."
+  ]
+}

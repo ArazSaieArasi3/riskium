@@ -1,0 +1,7 @@
+{
+  "schema": "riskium-reviewed-stable-profiles-v1",
+  "profiles": {
+    "v0.3.1": "releases/stable-profile-v0.3.1.json",
+    "v0.3.2": "releases/stable-profile-v0.3.2.json"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema": "riskium-final-technical-screen-v1",
+  "target": "v0.3.2",
+  "date_local": "2026-10-25",
+  "reviewed_scope_commit": "3afa861b5296addefc98ce401767c7ab7d025d2c",
+  "review_kind": "Bounded successor release-engineering screen of unchanged scientific baseline and explicitly selected, tested post-release components",
+  "known_unresolved_critical_findings": [],
+  "new_owner_responses_generated": 0,
+  "universal_zero_defect_claimed": false,
+  "independent_semantic_review_claimed": false,
+  "material_scientific_change_since_owner_acceptance": false,
+  "scope_policy": "Original definitions, priorities, receipts and owner responses remain unchanged. Final technical gates discharge the accepted publication condition; they do not create another owner response or independent validation.",
+  "reviewed_risks": [
+    {
+      "risk": "Identity collapse by equal labels or aliases",
+      "retained_evidence": [
+        "evaluation/hermit/report.json",
+        "evaluation/relational/history/report.json.gz"
+      ],
+      "fresh_gate": "tools/run_relational_history.py --check"
+    },
+    {
+      "risk": "Occurrence or governed case invented from documentary content",
+      "retained_evidence": [
+        "evaluation/hermit/report.json",
+        "evaluation/sources/cq0708/report.json.gz"
+      ],
+      "fresh_gate": "tools/run_source_cq0708.py --check"
+    },
+    {
+      "risk": "Issued payload or dependency history overwritten",
+      "retained_evidence": [
+        "evaluation/relational/history/report.json.gz"
+      ],
+      "fresh_gate": "tools/run_relational_history.py --check"
+    },
+    {
+      "risk": "Incompatible selected scales/versions accepted for direct comparison",
+      "retained_evidence": [
+        "evaluation/shacl/compatibility/report.json.gz",
+        "evaluation/shacl/comparison/report.json.gz"
+      ],
+      "fresh_gate": "tools/run_comparison_shacl.py --check"
+    },
+    {
+      "risk": "Forged or misjoined provenance; correction treated as corroboration",
+      "retained_evidence": [
+        "evaluation/sources/cq06/report.json.gz",
+        "evaluation/sources/cq0708/report.json.gz"
+      ],
+      "fresh_gate": "tools/run_source_cq06.py --check"
+    },
+    {
+      "risk": "Model, ORSD, article or schema versions drift",
+      "retained_evidence": [
+        "releases/artifact-matrix.json",
+        "evaluation/manuscript-review/v7.0.8/receipt.json"
+      ],
+      "fresh_gate": "tools/check_release_alignment.py"
+    },
+    {
+      "risk": "Unaccepted original MUST capability silently claimed",
+      "retained_evidence": [
+        "requirements/release-scope-v0.3.1.json",
+        "evaluation/owner-review/accepted-scope.json"
+      ],
+      "fresh_gate": "tools/prepare_stable_release.py --check-profile"
+    },
+    {
+      "risk": "Wrong source, missing checks or overwritten release assets",
+      "retained_evidence": [
+        "releases/stable-profile-v0.3.1.json"
+      ],
+      "fresh_gate": "tests/test_stable_release.py plus independent final downloaded readback"
+    },
+    {
+      "risk": "Selected development component drift or undeclared SQL/article claim",
+      "retained_evidence": [
+        "releases/development-components.json",
+        "releases/distribution-v0.3.2.json"
+      ],
+      "fresh_gate": "tools/review_distribution.py plus assessment, assurance and integration replays"
+    },
+    {
+      "risk": "Stale native Wiki or deployed current/frozen documentation",
+      "retained_evidence": [
+        "evaluation/documentation/versioned-0.1.0/wiki-final-readback.json",
+        "tools/publication/pages-registry.json"
+      ],
+      "fresh_gate": "Fresh native Wiki Git and current/frozen HTTPS byte readback before freeze"
+    }
+  ],
+  "broader_unclaimed_work": {
+    "4": "Remaining engine-specific/full native semantic coverage",
+    "5": "Broader rule and application integration",
+    "12": "Full private-schema/PostgreSQL/formula/workload implementation",
+    "13": "Broader independent source/case population",
+    "16": "Extensions and interoperability",
+    "23": "Independent semantic review"
+  },
+  "limit": "No known critical retained-scope defect was identified in this bounded screen; unknown/domain-wide defects are not ruled out. Any failed retained-task or integrity check blocks publication. Historical HermiT NOT_RUN and SHACL NOT_RUN/PARTIAL rows retain their original status.",
+  "component_matrix_sha256": "7cb1e07814fb1c2363adfb9c59b644dee322c13abd1316c9edbfb16965e74a1a"
+}

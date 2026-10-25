@@ -86,6 +86,8 @@ class StableProfile(unittest.TestCase):
         with tempfile.TemporaryDirectory()as folder:
             root=Path(folder);subprocess.run(['git','init','-q',folder],check=True)
             (root/'releases').mkdir()
+            (root/stable.REGISTRY).write_bytes((ROOT/stable.REGISTRY).read_bytes())
+            (root/stable.PROFILE).write_bytes((ROOT/stable.PROFILE).read_bytes())
             def commit():
                 subprocess.run(['git','-C',folder,'add','.'],check=True)
                 subprocess.run(['git','-C',folder,'-c','user.name=Release Test','-c','user.email=release-test@example.invalid','commit','-qm','fixture'],check=True)

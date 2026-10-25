@@ -5,9 +5,9 @@ on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: 'Reviewed stable tag v0.3.1'
+        description: 'Explicitly registered stable distribution tag'
         type: string
-        default: 'v0.3.1'
+        default: 'v0.3.2'
       publish:
         description: 'Publish the owner-approved stable profile after exact final checks'
         type: boolean
@@ -23,6 +23,7 @@ jobs:
     outputs:
       publish: ${{ steps.intent.outputs.publish }}
       prepare: ${{ steps.intent.outputs.prepare }}
+      release_tag: ${{ steps.intent.outputs.release_tag }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -40,11 +41,13 @@ jobs:
           paths=[]
           if os.environ['GITHUB_EVENT_NAME']=='push' and event.get('before'):
               paths=git('.', 'diff','--name-only',event['before'],os.environ['GITHUB_SHA']).decode().splitlines()
-          tracked=['releases/stable-request.json','releases/stable-profile-v0.3.1.json','evaluation/finalization/v0.3.1-review.json','tools/prepare_stable_release.py','tools/publish_stable_release.py','tests/test_stable_release.py','.github/workflows/stable-release.yml']
-          prepare=value['publish'] or os.environ['GITHUB_EVENT_NAME']=='workflow_dispatch' or any(p in tracked for p in paths)
+          tracked=['releases/stable-request.json','releases/stable-profile-v0.3.1.json','evaluation/finalization/v0.3.1-review.json','tools/prepare_stable_release.py','tools/publish_stable_release.py','tests/test_stable_release.py','tests/test_successor_release.py','tools/review_distribution.py','.github/workflows/stable-release.yml']
+          prepare=value['publish'] or os.environ['GITHUB_EVENT_NAME']=='workflow_dispatch' or any(p in tracked or p.startswith('releases/stable-profile') or p.startswith('releases/distribution-') or p.startswith('evaluation/finalization/') for p in paths)
           with open(os.environ['GITHUB_OUTPUT'],'a') as output:
               output.write('publish='+str(value['publish']).lower()+'\n')
               output.write('prepare='+str(prepare).lower()+'\n')
+              selected=value['release_tag'] or json.load(open('releases/stable-request.json'))['tag']
+              output.write('release_tag='+selected+'\n')
           print(json.dumps(value))
           PY
   freeze:
@@ -62,7 +65,7 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
       - name: Validate accepted profile and freeze exact clean source
-        run: python tools/prepare_stable_release.py --output "$RUNNER_TEMP/riskium-stable"
+        run: python tools/prepare_stable_release.py --tag "${{ needs.intent.outputs.release_tag }}" --output "$RUNNER_TEMP/riskium-stable"
       - name: Verify the complete staged stable package before publication is possible
         run: |
           python - <<'PY'
@@ -132,6 +135,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: riskium-final-readback-${{ github.sha }}
-          path: run-record/v0.3.1-publication.json
+          path: run-record/${{ needs.intent.outputs.release_tag }}-publication.json
           if-no-files-found: error
           retention-days: 90

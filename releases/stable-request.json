@@ -1,6 +1,6 @@
 {
   "profile": "stable-bounded-research-artifact",
-  "tag": "v0.3.1",
-  "publish": true,
-  "reason": "Owner-approved final v0.3.1 publication after stable-profile run 40103739394 passed all 18 gates and complete six-asset staged-package verification on implementation commit 43126f4ba775b74c5da4667bc1398430e94f9e54. The new request commit is frozen and checked again before publication."
+  "tag": "v0.3.2",
+  "publish": false,
+  "reason": "Explicitly selected successor component dry run for #34; publication requires a later changed request after successful exact profile/package verification."
 }

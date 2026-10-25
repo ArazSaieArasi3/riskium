@@ -17,6 +17,16 @@ import check_release_alignment as alignment
 ROOT = Path(__file__).resolve().parents[1]
 PROFILE = 'releases/stable-profile-v0.3.1.json'
 REQUEST = 'releases/stable-request.json'
+REGISTRY = 'releases/stable-profiles.json'
+
+
+def profile_path(root, tag):
+    require(isinstance(tag, str) and re.fullmatch(r'v[0-9]+\.[0-9]+\.[0-9]+', tag), 'Invalid stable distribution tag')
+    registry = read(root, REGISTRY)
+    require(tag in registry['profiles'], 'Unreviewed stable distribution tag')
+    path = registry['profiles'][tag]
+    require(path == 'releases/stable-profile-' + tag + '.json', 'Unsafe stable profile path')
+    return path
 
 
 def require(ok, message):
@@ -41,9 +51,16 @@ def ensure_clean(root, ref='HEAD'):
     require(git(root, 'rev-parse', ref + '^{commit}') == git(root, 'rev-parse', 'HEAD'), 'Stable freeze must evaluate exact HEAD')
 
 
-def validate_profile(root):
+def validate_profile(root, tag='v0.3.1'):
     root = Path(root)
-    p = read(root, PROFILE)
+    path = profile_path(root, tag)
+    p = read(root, path)
+    if tag != 'v0.3.1':
+        from review_distribution import validate_distribution
+        validate_distribution(root, p)
+        # The original owner-reviewed component set remains the unchanged baseline.
+        validate_profile(root, 'v0.3.1')
+        return p
     model = read(root, 'ontology/riskium-model.json')
     require(p['profile'] == 'stable-bounded-research-artifact', 'Wrong stable maturity profile')
     require(re.fullmatch(r'v[0-9]+\.[0-9]+\.[0-9]+', p['tag']) and p['tag'] == 'v' + model['version'] == 'v0.3.1', 'Stable tag/model mismatch')
@@ -86,6 +103,11 @@ def validate_checks(checks):
 def resolve_intent(root, event, ref, before, after, inputs=None):
     inputs = inputs or {}
     request = None
+    if event == 'workflow_dispatch' and inputs.get('publish') in (False, 'false', None):
+        tag = inputs.get('release_tag') or read(root, REQUEST)['tag']
+        require(ref == 'refs/heads/main', 'Stable dry run requires main')
+        profile_path(root, tag)
+        return {'publish': False, 'release_tag': tag}
     if event == 'workflow_dispatch' and inputs.get('publish') in (True, 'true'):
         request = {'profile': 'stable-bounded-research-artifact', 'tag': inputs.get('release_tag'), 'publish': True}
     elif event == 'push' and ref == 'refs/heads/main' and re.fullmatch(r'[0-9a-f]{40}', before or '') and set(before) != {'0'}:
@@ -95,15 +117,21 @@ def resolve_intent(root, event, ref, before, after, inputs=None):
     if request is None or request.get('publish') is False:
         return {'publish': False, 'release_tag': ''}
     require(request.get('publish') is True and request.get('profile') == 'stable-bounded-research-artifact', 'Explicit stable intent required')
-    require(ref == 'refs/heads/main' and request.get('tag') == 'v0.3.1', 'Stable publication requires v0.3.1 on main')
+    require(ref == 'refs/heads/main', 'Stable publication requires main')
+    path = profile_path(root, request.get('tag'))
+    require(read(root, path)['tag'] == request['tag'], 'Stable intent/profile mismatch')
     require(git(root, 'rev-parse', after + '^{commit}').strip().decode() == after, 'Stable intent must name an exact commit')
     return {'publish': True, 'release_tag': request['tag']}
 
 
-def package(root, output, profile, checks):
+def package(root, output, profile, checks, freshness=None):
     root, output = Path(root), Path(output)
     ensure_clean(root)
     validate_checks(checks)
+    if profile['tag'] != 'v0.3.1':
+        from review_distribution import validate_freshness
+        require(freshness is not None, 'Successor freeze requires live publication readback')
+        validate_freshness(read(root, profile['artifact_matrix']), freshness)
     require(not output.resolve().is_relative_to(root.resolve()), 'Keep stable package outside the source checkout')
     output.mkdir(parents=True, exist_ok=True)
     require(not any(output.iterdir()), 'Never overwrite an existing stable package')
@@ -138,7 +166,10 @@ def package(root, output, profile, checks):
                                               'matrix_sha256': sha((root / profile['artifact_matrix']).read_bytes()), 'matrix': matrix})
     freeze = {'schema': 'riskium-stable-freeze-v1', 'tag': tag, 'source_commit': commit,
               'model_version': profile['model_version'], 'maturity': profile['profile'], 'clean_exact_head': True,
-              'profile_sha256': sha((root / PROFILE).read_bytes()),
+              'profile_path': profile_path(root, tag),
+              'profile_sha256': sha((root / profile_path(root, tag)).read_bytes()),
+              'critical_screen_path': profile['critical_screen'],
+              'artifact_matrix_path': profile['artifact_matrix'],
               'critical_screen_sha256': sha((root / profile['critical_screen']).read_bytes()),
               'critical_screen_kind': 'Bounded release-engineering review of accepted scope; no universal zero-defect assertion',
               'known_unresolved_critical_findings': [], 'archive_inventory_verified': True,
@@ -150,6 +181,11 @@ def package(root, output, profile, checks):
               'fresh_replay_scope': ['C-08 metadata compatibility', 'C-13/C-18 selected comparison', 'SQLite identity/history', 'CQ06 source trace', 'CQ07/CQ08 correction and withheld identity', 'Shared-graph selected-task integration', 'SQLite assessment/result 0.2.0 fixed and seeded controls, schema audit and declared synthetic workloads'],
               'retained_historical_engine_scope': 'The unchanged full HermiT and early SHACL receipts are not claimed as new full engine executions at this freeze.',
               'publication_executed': False, 'downloaded_final_readback': 'Required after publication in a separate job'}
+    if tag != 'v0.3.1':
+        require(freshness is not None, 'Successor freeze requires live publication readback')
+        freeze['publication_freshness'] = freshness
+        freeze['owner_decision_source'] += '; later engineering additions are separately disclosed, not new owner ratings'
+        freeze['accepted_publication_condition'] = 'REVIEWED_SUCCESSOR_COMPONENT_GATES_SATISFIED_BEFORE_PUBLICATION'
     write(output / 'freeze-receipt.json', freeze)
     notes = (root / profile['notes']).read_text() + '\n\nExact frozen source commit: `' + commit + '`.\n'
     (output / 'release-notes.md').write_text(notes)
@@ -162,15 +198,20 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path)
     parser.add_argument('--check-profile', action='store_true')
+    parser.add_argument('--tag', default='v0.3.1')
     args = parser.parse_args()
-    profile = validate_profile(ROOT)
+    profile = validate_profile(ROOT, args.tag)
     if args.check_profile:
         print(json.dumps({'status': 'STABLE_PROFILE_REVIEW_MATCHED', 'tag': profile['tag'], 'publication_executed': False}))
         return
     require(args.output is not None, 'Stable freeze requires an output folder')
     ensure_clean(ROOT)
+    freshness = None
+    if args.tag != 'v0.3.1':
+        from review_distribution import live_readback
+        freshness = live_readback(ROOT, profile)
     checks = run_checks(ROOT)
-    freeze = package(ROOT, args.output, profile, checks)
+    freeze = package(ROOT, args.output, profile, checks, freshness)
     print(json.dumps({k: freeze[k] for k in ('tag', 'source_commit', 'passed_checks', 'clean_exact_head', 'archive_inventory_verified', 'publication_executed')}))
 
 
