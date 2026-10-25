@@ -25,6 +25,10 @@ class FormalReference(unittest.TestCase):
         page=BeautifulSoup((ROOT/'docs/current/guide/Formalization.html').read_text(),'html.parser')
         for ident in expected:
             self.assertIsNotNone(page.find(id=ident))
+        fixture=page.select('main details')[7]
+        self.assertIn('H-C08-ANCHOR-UNION',fixture.get_text())
+        self.assertTrue(fixture.select('a[href]'))
+        self.assertNotIn('**HermiT cases:**',fixture.get_text())
         for path, prefix in [('reference/native/index.html','../../guide/'),('reference/search.html','../guide/')]:
             source=BeautifulSoup((ROOT/'docs/current'/path).read_text(),'html.parser')
             for ident in expected:

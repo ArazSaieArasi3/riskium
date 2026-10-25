@@ -107,7 +107,7 @@ Case identity is preserved across descriptions, scores, owners and administrativ
 
 **Evidence:** [evaluation/cq/report.json](../evaluation/cq/report.json) · [evaluation/hermit/report.json](../evaluation/hermit/report.json) · [evaluation/relational/history/report.json.gz](../evaluation/relational/history/report.json.gz) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** H-C-01-IDENTITY-COUNTERMODEL
 
@@ -133,7 +133,7 @@ A scenario, consequence statement, signal, plan or report alone must not create 
 
 **Evidence:** [evaluation/cq/report.json](../evaluation/cq/report.json) · [evaluation/hermit/report.json](../evaluation/hermit/report.json) · [evaluation/sources/cq0708/report.json.gz](../evaluation/sources/cq0708/report.json.gz) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** H-C02-NO-REALIZATION
 
@@ -161,7 +161,7 @@ Issued semantic content and effective dependency versions are immutable. Correct
 
 **Evidence:** [evaluation/relational/history/report.json.gz](../evaluation/relational/history/report.json.gz) · [evaluation/sources/cq0708/report.json.gz](../evaluation/sources/cq0708/report.json.gz) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** No executed case for this obligation.
 
@@ -189,7 +189,7 @@ Results retain method/scale version, dimension, basis, relevant context and time
 
 **Evidence:** [evaluation/cq/report.json](../evaluation/cq/report.json) · [evaluation/shacl/comparison/report.json.gz](../evaluation/shacl/comparison/report.json.gz) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** No executed case for this obligation.
 
@@ -217,7 +217,7 @@ Recorded time, reference time and validity intervals are distinct. Workflow clos
 
 **Evidence:** [evaluation/cq/report.json](../evaluation/cq/report.json) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** No executed case for this obligation.
 
@@ -243,7 +243,7 @@ An asserted ResponsibilityRelator requires at least two distinct mediated indivi
 
 **Evidence:** [evaluation/hermit/report.json](../evaluation/hermit/report.json) · [evaluation/shacl/coverage-status.json](../evaluation/shacl/coverage-status.json) · [evaluation/shacl/endpoints/report.json](../evaluation/shacl/endpoints/report.json) · [evaluation/shacl/report.json](../evaluation/shacl/report.json) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** H-C06-DISTINCT-PARTICIPANTS, H-C06-SAME-PARTICIPANT
 
@@ -269,7 +269,7 @@ ResponsibleAgentRole does not automatically mean Risk Owner. Ownership mapping r
 
 **Evidence:** [evaluation/cq/report.json](../evaluation/cq/report.json) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** H-C07-NO-AUTHORITY
 
@@ -295,7 +295,7 @@ At least one of thresholdForIndicator or thresholdOnScale is present. If both ar
 
 **Evidence:** [evaluation/shacl/compatibility/report.json.gz](../evaluation/shacl/compatibility/report.json.gz) · [evaluation/shacl/coverage-status.json](../evaluation/shacl/coverage-status.json) · [evaluation/shacl/endpoints/report.json](../evaluation/shacl/endpoints/report.json) · [evaluation/shacl/report.json](../evaluation/shacl/report.json) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** H-C08-ANCHOR-UNION, H-C08-REMOVED-UNION, H-C08-SCALE-ONLY, H-C08-ANONYMOUS-ANCHOR, H-C08-DUAL-ANCHOR, H-C08-NO-FABRICATED-INDICATOR
 
@@ -321,7 +321,7 @@ Every published RiskDescription has at least one case, pattern or scenario targe
 
 **Evidence:** [evaluation/shacl/coverage-status.json](../evaluation/shacl/coverage-status.json) · [evaluation/shacl/endpoints/report.json](../evaluation/shacl/endpoints/report.json) · [evaluation/shacl/report.json](../evaluation/shacl/report.json) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** No executed case for this obligation.
 
@@ -347,7 +347,7 @@ Tolerance statements retain source framework/version, original meaning and conte
 
 **Evidence:** [evaluation/references/report.json](../evaluation/references/report.json) · [ontology/riskium-model.json](../ontology/riskium-model.json) · [references/corpus.json](../references/corpus.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** No executed case for this obligation.
 
@@ -373,7 +373,7 @@ Vocabulary resources retain scheme-qualified identity. Labels are representation
 
 **Evidence:** [evaluation/shacl/qualification/report.json.gz](../evaluation/shacl/qualification/report.json.gz) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** No executed case for this obligation.
 
@@ -399,7 +399,7 @@ EvidenceReference states an evidential role such as support, challenge or contex
 
 **Evidence:** [evaluation/shacl/qualification/report.json.gz](../evaluation/shacl/qualification/report.json.gz) · [evaluation/sources/cq06/report.json.gz](../evaluation/sources/cq06/report.json.gz) · [evaluation/sources/cq0708/report.json.gz](../evaluation/sources/cq0708/report.json.gz) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** No executed case for this obligation.
 
@@ -427,7 +427,7 @@ A selected level belongs to the selected scale version and dimension. Results on
 
 **Evidence:** [evaluation/shacl/comparison/report.json.gz](../evaluation/shacl/comparison/report.json.gz) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** No executed case for this obligation.
 
@@ -453,7 +453,7 @@ RiskSource, Consequence and RiskControl remain catalog notions and optional exte
 
 **Evidence:** [evaluation/c14-boundary-review.json](../evaluation/c14-boundary-review.json) · [evaluation/shacl/admission/report.json.gz](../evaluation/shacl/admission/report.json.gz) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** No executed case for this obligation.
 
@@ -479,7 +479,7 @@ Every asserted intrinsic Vulnerability has exactly one substantial-endurant bear
 
 **Evidence:** [evaluation/hermit/report.json](../evaluation/hermit/report.json) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** H-C15-TWO-DISTINCT-BEARERS
 
@@ -507,7 +507,7 @@ Raw source content is retained in staging. Managed records require identity, sub
 
 **Evidence:** [evaluation/relational/history/report.json.gz](../evaluation/relational/history/report.json.gz) · [evaluation/shacl/admission/report.json.gz](../evaluation/shacl/admission/report.json.gz) · [evaluation/shacl/comparison/report.json.gz](../evaluation/shacl/comparison/report.json.gz) · [evaluation/shacl/compatibility/report.json.gz](../evaluation/shacl/compatibility/report.json.gz) · [evaluation/sources/cq06/report.json.gz](../evaluation/sources/cq06/report.json.gz) · [evaluation/sources/cq0708/report.json.gz](../evaluation/sources/cq0708/report.json.gz) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** No executed case for this obligation.
 
@@ -535,7 +535,7 @@ Multiple classifications, descriptions, actors and evidence assertions are retai
 
 **Evidence:** [evaluation/relational/history/report.json.gz](../evaluation/relational/history/report.json.gz) · [evaluation/sources/cq06/report.json.gz](../evaluation/sources/cq06/report.json.gz) · [evaluation/sources/cq0708/report.json.gz](../evaluation/sources/cq0708/report.json.gz) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** No executed case for this obligation.
 
@@ -563,7 +563,7 @@ Direct comparison requires matching pinned method, scale, dimension, basis and t
 
 **Evidence:** [evaluation/cq/report.json](../evaluation/cq/report.json) · [evaluation/shacl/comparison/report.json.gz](../evaluation/shacl/comparison/report.json.gz) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** No executed case for this obligation.
 
@@ -589,7 +589,7 @@ State labels are scheme/version qualified. Transition rules and authority are so
 
 **Evidence:** [evaluation/cq/report.json](../evaluation/cq/report.json) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** No executed case for this obligation.
 
@@ -615,7 +615,7 @@ In the terminology adopted by this profile, Risk Item denotes the managed risk s
 
 **Evidence:** [evaluation/hermit/report.json](../evaluation/hermit/report.json) · [evaluation/relational/history/report.json.gz](../evaluation/relational/history/report.json.gz) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** H-C20-NO-CASE-ENTRY-EQUIVALENCE
 
@@ -643,7 +643,7 @@ A reported RiskScoreResult may have no derivedFrom links. A computed RiskScoreRe
 
 **Evidence:** [evaluation/cq/report.json](../evaluation/cq/report.json) · [evaluation/manuscript-review/ledger.json](../evaluation/manuscript-review/ledger.json) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** No executed case for this obligation.
 
@@ -669,7 +669,7 @@ Repeated mandates between the same participants are permitted when grounding ass
 
 **Evidence:** [evaluation/cq/report.json](../evaluation/cq/report.json) · [evaluation/hermit/report.json](../evaluation/hermit/report.json) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** H-C22-NO-PARTICIPANT-PAIR-KEY
 
@@ -695,7 +695,7 @@ Every analyzedInContext link is also a hasContext link for the same RiskCase and
 
 **Evidence:** [evaluation/hermit/report.json](../evaluation/hermit/report.json) · [evaluation/shacl/coherence/report.json](../evaluation/shacl/coherence/report.json) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** H-C23-NO-REVERSE-CONTEXT, H-C23-ANALYZED-IMPLIES-CONTEXT
 
@@ -723,7 +723,7 @@ For each EntryRevision, revisionOf and inherited versionOf identify the same Ris
 
 **Evidence:** [evaluation/hermit/report.json](../evaluation/hermit/report.json) · [evaluation/relational/history/report.json.gz](../evaluation/relational/history/report.json.gz) · [evaluation/shacl/coherence/report.json](../evaluation/shacl/coherence/report.json) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** H-C-24-IDENTITY-COUNTERMODEL, H-C24-REVISION-IMPLIES-VERSION
 
@@ -751,7 +751,7 @@ usesContextVersion targets a version of RiskContextSpecification; usesMethodVers
 
 **Evidence:** [evaluation/hermit/report.json](../evaluation/hermit/report.json) · [evaluation/relational/history/report.json.gz](../evaluation/relational/history/report.json.gz) · [evaluation/shacl/coverage-status.json](../evaluation/shacl/coverage-status.json) · [evaluation/shacl/endpoints/report.json](../evaluation/shacl/endpoints/report.json) · [evaluation/shacl/report.json](../evaluation/shacl/report.json) · [ontology/riskium-model.json](../ontology/riskium-model.json).
 
-<details><summary>Original fixture identifiers and source route</summary>
+<details markdown="1"><summary>Original fixture identifiers and source route</summary>
 
 **HermiT cases:** H-C25-VERSION-TARGET-RX-014, H-C25-VERSION-TARGET-RX-015, H-C25-VERSION-TARGET-RX-016, H-C25-VERSION-TARGET-RX-013
 

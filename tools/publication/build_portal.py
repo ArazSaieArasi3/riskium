@@ -164,7 +164,7 @@ def build(out):
     for name,src in GUIDES:
         data = (ROOT/src).read_bytes(); guide_inputs[src] = digest(data)
         row = next(r for r in GUIDE_ROWS if r['slug'] == name)
-        soup = BeautifulSoup(markdown.markdown(explanatory_markdown(row),extensions=['tables','fenced_code','toc']), 'html.parser')
+        soup = BeautifulSoup(markdown.markdown(explanatory_markdown(row),extensions=['tables','fenced_code','toc','md_in_html']), 'html.parser')
         base = (version/('guide/'+name+'.html')).parent
         for node in soup.find_all(['a','img']):
             attr = 'src' if node.name=='img' else 'href'; url = node.get(attr,''); u = urlsplit(url)

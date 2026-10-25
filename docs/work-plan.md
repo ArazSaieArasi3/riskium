@@ -6,7 +6,7 @@ The latest source distribution, **[v0.3.2](https://github.com/ArazSaieArasi3/ris
 
 WIDOCO, the conceptual reference, the text explorer and WebVOWL are deployed. The current Pages upgrade, [#38](https://github.com/ArazSaieArasi3/riskium/issues/38), brings those views into one reading experience and corrects stale explanations. Its implementation and browser review are recorded separately from the released scientific evidence. Frozen documentation and source assets remain historical records.
 
-The formal reference task is [#33](https://github.com/ArazSaieArasi3/riskium/issues/33): explain the formal-method routes and all 25 constraint dispositions with direct evidence and reproduction paths. The maintained [formal-method guide](formal-method.md) now connects the languages, assumptions, all 25 clause dispositions, original obligation/case IDs, later bounded alternatives and reproduction routes. Publication verification determines closure of #33; this explanation adds no scientific execution.
+The formal reference delivery, [#33](https://github.com/ArazSaieArasi3/riskium/issues/33), is documented in the maintained [formal-method guide](formal-method.md) now connects the languages, assumptions, all 25 clause dispositions, original obligation/case IDs, later bounded alternatives and reproduction routes. The issue records exact publication verification and closure evidence; this explanation adds no scientific execution. The next implementation packet is the bounded relational extension in #35/#12.
 
 ## Cross-document consistency checkpoint
 
@@ -20,7 +20,6 @@ This gate checks documentation consistency and trace completeness; it does not w
 
 | Purpose | Required result | Tracking |
 | --- | --- | --- |
-| Formal reference publication | Verify the new method/25-clause explanation and close its bounded publication task | [#33](https://github.com/ArazSaieArasi3/riskium/issues/33) |
 | Relational coverage | Next finite source/scenario/correction mapping, fixed query answers and additive populated migration | [#35](https://github.com/ArazSaieArasi3/riskium/issues/35), [#12](https://github.com/ArazSaieArasi3/riskium/issues/12) |
 | Remaining rules | Justified formal and application policies for time, workflow, multiple values and computation | [#4](https://github.com/ArazSaieArasi3/riskium/issues/4), [#5](https://github.com/ArazSaieArasi3/riskium/issues/5) |
 | Source and case adequacy | Legitimate normative/prior-art interpretation and broader source-backed cases | [#37](https://github.com/ArazSaieArasi3/riskium/issues/37), [#13](https://github.com/ArazSaieArasi3/riskium/issues/13) |
