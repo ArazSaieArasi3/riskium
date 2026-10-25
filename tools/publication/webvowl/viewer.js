@@ -17,7 +17,7 @@
   window.addEventListener("unhandledrejection", event => fail(event.reason));
   function markReady() {
     if (ready || !valid) return;
-    const ids = [...document.querySelectorAll("#graph .node")].map(n => n.id).sort();
+    const ids = [...document.querySelectorAll("#graph .node:not(.hidden-in-export)")].map(n => n.id).sort();
     const expected = source.class.map(n => n.id).sort();
     if (JSON.stringify(ids) !== JSON.stringify(expected)) { fail("Rendered class inventory differs from source"); return; }
     ready = true;

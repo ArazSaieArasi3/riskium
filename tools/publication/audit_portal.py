@@ -36,7 +36,7 @@ def audit(docs):
             if node.name=='link' and 'stylesheet' in node.get('rel',[]):require(not urlsplit(node.get('href','')).scheme,'external stylesheet')
         for script in soup.find_all('script'):
             if script.get('type')=='application/ld+json':continue
-            viewer_script = p == version/'webvowl/index.html' and script.get('src') in ['vendor/d3.min.js','vendor/webvowl.js','viewer.js']
+            viewer_script = p == version/'webvowl/index.html' and urlsplit(script.get('src','')).path in ['vendor/d3.min.js','vendor/webvowl.js','viewer.js']
             require(viewer_script or script.get('src','').endswith('/filter.js') or script.get('src')=='filter.js','unexpected runtime script: '+str(p))
     for p,soup in pages.items():
         for node in soup.find_all(['a','img','script','link']):

@@ -3,6 +3,8 @@ from pathlib import Path
 import json
 import sys
 import unittest
+import tempfile
+from unittest.mock import patch
 from rdflib import Graph, RDF, RDFS, OWL, URIRef
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -69,6 +71,16 @@ class WebVOWL(unittest.TestCase):
 
     def test_source_and_runtime_byte_checks_pass(self):
         self.assertEqual(wv.audit(ROOT/'docs')['status'],'WEBVOWL_PROJECTION_RUNTIME_PASS')
+
+    def test_changed_shell_assets_get_new_cache_identity(self):
+        initial=BeautifulSoup(wv.shell_html(),'html.parser')
+        with tempfile.TemporaryDirectory()as folder:
+            root=Path(folder)
+            for name in ['index.html','viewer.js','viewer.css']:(root/name).write_bytes((wv.HERE/name).read_bytes())
+            (root/'viewer.js').write_text((root/'viewer.js').read_text()+'\n/* changed version */\n')
+            with patch.object(wv,'HERE',root):changed=BeautifulSoup(wv.shell_html(),'html.parser')
+        self.assertNotEqual(initial.select('script')[-1]['src'],changed.select('script')[-1]['src'])
+        self.assertEqual(initial.select('script')[0]['src'],changed.select('script')[0]['src'])
 
 
 if __name__=='__main__':unittest.main()

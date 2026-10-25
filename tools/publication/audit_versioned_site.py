@@ -33,7 +33,7 @@ def audit(folder):
                 if urlsplit(url).scheme or url.startswith('//'):
                     raise ValueError('Remote runtime asset: ' + name)
         for script in soup.find_all('script'):
-            viewer_script = name.endswith('/webvowl/index.html') and script.get('src') in ['vendor/d3.min.js','vendor/webvowl.js','viewer.js']
+            viewer_script = name.endswith('/webvowl/index.html') and urlsplit(script.get('src','')).path in ['vendor/d3.min.js','vendor/webvowl.js','viewer.js']
             if script.get('type') != 'application/ld+json' and not viewer_script and not script.get('src', '').endswith('filter.js'):
                 raise ValueError('Unexpected runtime script: ' + name)
     for name, soup in pages.items():

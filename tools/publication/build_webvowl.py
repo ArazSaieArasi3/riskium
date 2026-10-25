@@ -22,6 +22,14 @@ def encode(value):
     return (json.dumps(value, indent=2, sort_keys=True) + '\n').encode()
 
 
+def shell_html(root=ROOT):
+    text = (HERE/'index.html').read_text()
+    for name in ['viewer.js','viewer.css','vendor/webvowl.js','vendor/d3.min.js','vendor/webvowl.css']:
+        path = root/'vendor/webvowl/1.1.7'/name.removeprefix('vendor/') if name.startswith('vendor/') else HERE/name
+        text = text.replace('"'+name+'"','"'+name+'?v='+sha(path.read_bytes())[:12]+'"')
+    return text.encode()
+
+
 def project(source):
     graph = Graph().parse(data=source.decode(), format='turtle')
     canonical = to_canonical_graph(graph)
@@ -115,6 +123,7 @@ def build(output, root=ROOT):
     target.mkdir(parents=True, exist_ok=True)
     for name in ['index.html', 'viewer.js', 'viewer.css']:
         shutil.copyfile(HERE/name, target/name)
+    (target/'index.html').write_bytes(shell_html(root))
     shutil.copytree(root/'vendor/webvowl/1.1.7', target/'vendor', dirs_exist_ok=True)
     (target/'data').mkdir(exist_ok=True)
     (target/'data/riskium.json').write_bytes(encode(data))
@@ -129,7 +138,8 @@ def audit(docs, root=ROOT):
     if (target/'data/riskium.json').read_bytes() != encode(data) or (target/'coverage.json').read_bytes() != encode(coverage):
         raise ValueError('Stale or changed WebVOWL source projection/omission inventory')
     for name in ['index.html','viewer.js','viewer.css']:
-        if (target/name).read_bytes() != (HERE/name).read_bytes():
+        expected = shell_html(root) if name == 'index.html' else (HERE/name).read_bytes()
+        if (target/name).read_bytes() != expected:
             raise ValueError('Stale viewer shell: ' + name)
     provenance = json.loads((target/'vendor/provenance.json').read_bytes())
     if provenance['upstream_commit'] != '28e7dd9540622e8cb723dc000824b5eef5ae775f':
