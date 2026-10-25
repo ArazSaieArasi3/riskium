@@ -1,0 +1,20 @@
+{
+  "schema": "riskium-successor-dry-run-v1",
+  "tag": "v0.3.2",
+  "implementation_commit": "63b5e2bc6d28b81584bef35561a0855efab6f9ac",
+  "hosted_run": 40194813369,
+  "freeze_job": 121173296457,
+  "workflow_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40194813369",
+  "hosted_freeze_and_staged_package": "PASS",
+  "gates": 25,
+  "local_source_files": 584,
+  "local_software_regressions": 198,
+  "local_boundary_tests_after_final_pipeline_guards": 30,
+  "actual_live_wiki_files": 23,
+  "actual_live_current_pages_files": 53,
+  "actual_live_frozen_pages_files": 53,
+  "publication_executed": false,
+  "final_source_must_be_rechecked": true,
+  "new_owner_ratings": 0,
+  "independent_semantic_validation": false
+}

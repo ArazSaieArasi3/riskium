@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / 'tools'))
 import prepare_stable_release as stable
 import publish_stable_release as publisher
 import review_distribution as dist
+import prepare_incremental_release as incremental
 
 
 class SuccessorRelease(unittest.TestCase):
@@ -117,6 +118,20 @@ class SuccessorRelease(unittest.TestCase):
         with patch.object(publisher,'api',side_effect=api),patch.object(publisher,'tag_commit',return_value='a'*40):
             self.assertEqual([r['tag'] for r in publisher.previous_releases('owner/repo','v0.3.2')],
                              self.matrix['preserve_releases'])
+
+    def test_head_change_during_checks_fails_even_with_identical_clean_files(self):
+        from subprocess import CompletedProcess
+        with patch.object(incremental,'git',side_effect=[b'',b'old',b'',b'new']), \
+             patch.object(incremental,'CHECKS',[['fixture-only']]), \
+             patch.object(incremental.subprocess,'run',return_value=CompletedProcess([],0,'','')):
+            with self.assertRaisesRegex(ValueError,'HEAD changed'):
+                incremental.run_checks(ROOT)
+
+    def test_verify_job_can_access_selected_intent_tag(self):
+        # Regression for a skipped/missing uploaded receipt after successful readback.
+        workflow=(ROOT/'.github/workflows/stable-release.yml').read_text()
+        self.assertIn('needs: [intent, freeze, publish]',workflow)
+        self.assertIn('path: run-record/${{ needs.intent.outputs.release_tag }}-publication.json',workflow)
 
     def test_unreviewed_critical_screen_or_missing_gate_fails(self):
         original=dist.read

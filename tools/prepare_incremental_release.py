@@ -121,6 +121,7 @@ CHECKS = [
 def run_checks(root):
     if git(root, 'status', '--porcelain').strip():
         raise ValueError('A checked release candidate requires a clean source checkout')
+    source = git(root, 'rev-parse', 'HEAD')
     results = []
     for args in CHECKS:
         run = subprocess.run([sys.executable, *args], cwd=root, capture_output=True, text=True)
@@ -130,6 +131,8 @@ def run_checks(root):
             raise ValueError('Candidate check failed: ' + ' '.join(args) + '\n' + run.stdout + run.stderr)
     if git(root, 'status', '--porcelain').strip():
         raise ValueError('Checks changed source files; review and commit them before packaging')
+    if git(root, 'rev-parse', 'HEAD') != source:
+        raise ValueError('Source HEAD changed while checks ran; freeze the exact source again')
     return results
 
 

@@ -1,0 +1,44 @@
+{
+  "schema": "riskium-stable-action-provenance-v1",
+  "date": "2026-10-25",
+  "scope": "Only the stable successor pipeline; original release assets and historical workflows remain unchanged.",
+  "actions": [
+    {
+      "repo": "actions/checkout",
+      "tag": "v7.0.1",
+      "sha": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "runtime": "node24",
+      "source_url": "https://github.com/actions/checkout/blob/3d3c42e5aac5ba805825da76410c181273ba90b1/action.yml",
+      "release_url": "https://github.com/actions/checkout/releases/tag/v7.0.1"
+    },
+    {
+      "repo": "actions/setup-python",
+      "tag": "v7.1.0",
+      "sha": "6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+      "runtime": "node24",
+      "source_url": "https://github.com/actions/setup-python/blob/6d4fd22b20465ccc0f7354476588e8df7c9ca0e0/action.yml",
+      "release_url": "https://github.com/actions/setup-python/releases/tag/v7.1.0"
+    },
+    {
+      "repo": "actions/upload-artifact",
+      "tag": "v7.0.2",
+      "sha": "cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+      "runtime": "node24",
+      "source_url": "https://github.com/actions/upload-artifact/blob/cf430e030ddbb5b0abf93d22962f4752f3646cd9/action.yml",
+      "release_url": "https://github.com/actions/upload-artifact/releases/tag/v7.0.2"
+    },
+    {
+      "repo": "actions/download-artifact",
+      "tag": "v8.0.2",
+      "sha": "9000827ccba6bdab643e8b6fd33ac0654aef8333",
+      "runtime": "node24",
+      "source_url": "https://github.com/actions/download-artifact/blob/9000827ccba6bdab643e8b6fd33ac0654aef8333/action.yml",
+      "release_url": "https://github.com/actions/download-artifact/releases/tag/v8.0.2"
+    }
+  ],
+  "boundaries": [
+    "checkout persist-credentials=false; exact commit and main guards retained",
+    "read-only intent/freeze/verification; contents:write only for publication",
+    "new-runtime complete freeze, staging and downloaded publication checks required"
+  ]
+}

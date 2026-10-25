@@ -25,7 +25,7 @@ jobs:
       prepare: ${{ steps.intent.outputs.prepare }}
       release_tag: ${{ steps.intent.outputs.release_tag }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1; Node 24
         with:
           fetch-depth: 0
           persist-credentials: false
@@ -56,11 +56,11 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1; Node 24
         with:
           fetch-depth: 0
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0; Node 24
         with:
           python-version: '3.12'
       - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
@@ -76,7 +76,7 @@ jobs:
           freeze,manifest=validate_package(Path(os.environ['RUNNER_TEMP'])/'riskium-stable',os.environ['GITHUB_SHA'])
           print({'staged_assets':6,'source_files':manifest['file_count'],'passed_checks':freeze['passed_checks']})
           PY
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2; Node 24
         with:
           name: riskium-stable-${{ github.sha }}
           path: ${{ runner.temp }}/riskium-stable/*
@@ -89,13 +89,13 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1; Node 24
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0; Node 24
         with:
           python-version: '3.12'
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2; Node 24
         with:
           name: riskium-stable-${{ github.sha }}
           path: stable
@@ -103,28 +103,28 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python tools/publish_stable_release.py publish --repo "$GITHUB_REPOSITORY" --folder stable --source-commit "$GITHUB_SHA" --record run-record/publication-start.json
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2; Node 24
         with:
           name: riskium-publication-start-${{ github.sha }}
           path: run-record/publication-start.json
           if-no-files-found: error
   verify:
-    needs: [freeze, publish]
+    needs: [intent, freeze, publish]
     runs-on: ubuntu-24.04
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1; Node 24
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0; Node 24
         with:
           python-version: '3.12'
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2; Node 24
         with:
           name: riskium-stable-${{ github.sha }}
           path: expected
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2; Node 24
         with:
           name: riskium-publication-start-${{ github.sha }}
           path: run-record
@@ -132,7 +132,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python tools/publish_stable_release.py verify --repo "$GITHUB_REPOSITORY" --folder expected --source-commit "$GITHUB_SHA" --record run-record/publication-start.json
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2; Node 24
         with:
           name: riskium-final-readback-${{ github.sha }}
           path: run-record/${{ needs.intent.outputs.release_tag }}-publication.json

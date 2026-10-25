@@ -1,6 +1,6 @@
 {
   "profile": "stable-bounded-research-artifact",
   "tag": "v0.3.2",
-  "publish": false,
-  "reason": "Explicitly selected successor component dry run for #34; publication requires a later changed request after successful exact profile/package verification."
+  "publish": true,
+  "reason": "Explicit user-authorized bounded successor release #34. Hosted dry-run workflow 40194813369 on 63b5e2bc6d28b81584bef35561a0855efab6f9ac passed all 25 gates and complete six-asset staging; the identical local source passed 198 regressions and fresh Wiki/106 Pages file checks. Final source adds reviewed official Node 24 action pins, exact-HEAD stability and readback-job dependency guards with 30 boundary tests passed. This exact new request commit must pass the complete freeze, live readback and staged-package gates again before any publication."
 }
