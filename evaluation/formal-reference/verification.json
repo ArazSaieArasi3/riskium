@@ -1,0 +1,108 @@
+{
+  "schema": "riskium-formal-reference-verification-v1",
+  "tested_source_commit": "67b0cee46280f7533743d6cdcfd8178acf6011e7",
+  "software_regression": {
+    "tests": 216,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "seconds": 93.954
+  },
+  "unchanged_inputs": [
+    {
+      "path": "ontology/riskium-model.json",
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+      "unchanged_from": "30f322f8d157ebb9cf612817a89d3782318400f0"
+    },
+    {
+      "path": "ontology/native/riskium.ontouml.json",
+      "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+      "unchanged_from": "30f322f8d157ebb9cf612817a89d3782318400f0"
+    },
+    {
+      "path": "ontology/derived/riskium.owl.ttl",
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+      "unchanged_from": "30f322f8d157ebb9cf612817a89d3782318400f0"
+    },
+    {
+      "path": "requirements/ontology-requirements.md",
+      "sha256": "68e09fd8cce2805da2d2fa0f29f76b0601282c598855d99a41631dccfaf9ff33",
+      "unchanged_from": "30f322f8d157ebb9cf612817a89d3782318400f0"
+    },
+    {
+      "path": "requirements/relational-requirements.json",
+      "sha256": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+      "unchanged_from": "30f322f8d157ebb9cf612817a89d3782318400f0"
+    },
+    {
+      "path": "evaluation/hermit/report.json",
+      "sha256": "414d57f9bb6c91c7b1c08430367669f67b6d57fbe96766cd3d30e233902cdd58",
+      "unchanged_from": "30f322f8d157ebb9cf612817a89d3782318400f0"
+    },
+    {
+      "path": "evaluation/shacl/coverage-status.json",
+      "sha256": "376c30a35caf40b0fc75710241fa2e87024a6d47b576e34f2cd42b0f04eb4632",
+      "unchanged_from": "30f322f8d157ebb9cf612817a89d3782318400f0"
+    },
+    {
+      "path": "evaluation/owner-review/accepted-scope.json",
+      "sha256": "a7da025a831114999529056aad105eb31ffcee1e4a88866fecbd4aa917da1a5c",
+      "unchanged_from": "30f322f8d157ebb9cf612817a89d3782318400f0"
+    },
+    {
+      "path": "evaluation/relational/assessment/report.json.gz",
+      "sha256": "c39cf33e1cde70b2d54b073874449376a049aa3a82f6e07e9461c5a942d35944",
+      "unchanged_from": "30f322f8d157ebb9cf612817a89d3782318400f0"
+    }
+  ],
+  "constraint_routes": {
+    "constraints": 25,
+    "sql_selected_subclauses": 11
+  },
+  "historical_engine_states_preserved": true,
+  "new_full_fol_package": false,
+  "new_source_release": false,
+  "live_wiki_sync_claimed": false,
+  "shared_wiki_sources_checked": 21,
+  "current_check_replays": [
+    {
+      "command": "tools/run_compatibility_shacl.py --check",
+      "scenarios": 41,
+      "engine_executions": 37,
+      "preflight_rejections": 4,
+      "status": "PASS"
+    },
+    {
+      "command": "tools/run_comparison_shacl.py --check",
+      "scenarios": 55,
+      "engine_executions": 50,
+      "preflight_rejections": 5,
+      "status": "PASS"
+    },
+    {
+      "command": "tools/run_relational_history.py --check",
+      "scenarios": 67,
+      "status": "PASS"
+    },
+    {
+      "command": "tools/run_relational_assessment.py --check",
+      "fixed_cases": 48,
+      "generated_inputs": 100,
+      "generated_matches": 100,
+      "shacl_comparisons": 2,
+      "measured_workloads": 4,
+      "status": "PASS"
+    }
+  ],
+  "documentation": {
+    "current_template_pages": 31,
+    "assembled_files": 177,
+    "assembled_html_pages": 83,
+    "local_links_checked": 14747,
+    "frozen_snapshots": 2
+  },
+  "screenshots_sha256": {
+    "screenshots/constraint-c08.jpg": "41858b29f185f335ba84c7b0ef766245fd3866310ec17fa9604ccaa3af040926"
+  }
+}

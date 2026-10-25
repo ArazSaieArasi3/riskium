@@ -1,0 +1,71 @@
+{
+  "schema": "riskium-formal-reference-ci-readback-v1",
+  "source_commit": "67b0cee46280f7533743d6cdcfd8178acf6011e7",
+  "candidate_job_id": 121251002829,
+  "candidate_summary": {
+    "source_commit": "67b0cee46280f7533743d6cdcfd8178acf6011e7",
+    "package_name": "candidate-67b0cee46280",
+    "passed_checks": 25,
+    "inventory_verified": true,
+    "publication_executed": false
+  },
+  "workflows": [
+    {
+      "id": 40220595073,
+      "name": "Publish versioned documentation",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40220595073",
+      "head_sha": "67b0cee46280f7533743d6cdcfd8178acf6011e7"
+    },
+    {
+      "id": 40220537450,
+      "name": "Stable research artifact release",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40220537450",
+      "head_sha": "67b0cee46280f7533743d6cdcfd8178acf6011e7"
+    },
+    {
+      "id": 40220537497,
+      "name": "Claim-based quality integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40220537497",
+      "head_sha": "67b0cee46280f7533743d6cdcfd8178acf6011e7"
+    },
+    {
+      "id": 40220537411,
+      "name": "Requirement and CQ evidence",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40220537411",
+      "head_sha": "67b0cee46280f7533743d6cdcfd8178acf6011e7"
+    },
+    {
+      "id": 40220537472,
+      "name": "Documentation integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40220537472",
+      "head_sha": "67b0cee46280f7533743d6cdcfd8178acf6011e7"
+    },
+    {
+      "id": 40220537482,
+      "name": "Post-release integration and scope",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40220537482",
+      "head_sha": "67b0cee46280f7533743d6cdcfd8178acf6011e7"
+    },
+    {
+      "id": 40220537590,
+      "name": "Incremental release candidate",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40220537590",
+      "head_sha": "67b0cee46280f7533743d6cdcfd8178acf6011e7"
+    }
+  ],
+  "scope": "Hosted checks for the tested code/deployed source. A later evidence-only commit does not change the tested code or claim a new source release."
+}
