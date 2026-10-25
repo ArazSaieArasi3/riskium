@@ -22,3 +22,7 @@ The [HermiT receipt](../../evaluation/hermit/report.md), [SHACL ledger](../../ev
 ## What remains open
 
 Owner review accepted the finite first-final scope with assistant support. It is not independent review. The [current work plan](../work-plan.md) retains broader mapping, formal/application rules, independently prepared cases, legitimate normative-source interpretation, independent reviewers and actual deployment/user acceptance. Synthetic data can expose engineering defects; it cannot provide independent source truth, domain adequacy or an overall correctness percentage.
+
+## Find the formal route for a constraint
+
+The [formal-method guide](../formal-method.md) explains OWL interpretation, explicit-data and application checks, then connects all 25 clauses to their unchanged historical outcomes, bounded claims, exclusions and reproduction routes. The [pre-release consistency gate](../work-plan.md#cross-document-consistency-checkpoint) reconciles the wider documentation set at a declared candidate commit.

@@ -105,7 +105,7 @@ def build(out):
         body += '<li class="entry" id="'+esc(g['id'])+'">'+link(concepts[g['specific']]['display_title'],'#'+g['specific'])+' is a '+link(concepts[g['general']]['display_title'],'#'+g['general'])+'.</li>'
     body += '</ul><h2 id="constraints">Interpretation constraints</h2>'
     for c in model['constraints']:
-        body += '<article class="entry" id="'+esc(c['id'])+'"><h3>'+esc(c['title'])+'</h3><p>'+esc(c['statement'])+'</p><p class="meta">'+esc(c['id'])+'</p></article>'
+        body += '<article class="entry" id="'+esc(c['id'])+'"><h3>'+esc(c['title'])+'</h3><p>'+esc(c['statement'])+'</p><p class="meta">'+esc(c['id'])+'</p><p>'+link('Method, evidence and remaining work','../../guide/Formalization.html#'+c['id'])+'</p></article>'
     page(Path('reference/native/index.html'), 'Conceptual reference', body, True)
     # Alternative explorer: accessible local hypertext, grounded only in asserted RDF.
     def term_id(s): return str(s).removeprefix(NAMESPACE)
@@ -145,6 +145,8 @@ def build(out):
             search += '<article class="entry" id="'+esc(ident)+'"><p class="eyebrow">'+kind+' · '+esc(ident)+'</p><h3>'+esc(label)+'</h3><p>'+esc(definition)+'</p><p>'+link('Conceptual reference','native/index.html#'+ident)
             if URIRef(NAMESPACE+ident) in classes+properties:
                 search+=' · '+link('OWL declaration','../widoco/index-en.html#'+ident)+' · '+link('Text neighborhood','../explore/index.html#'+ident)
+            if kind == 'Constraint':
+                search+=' · '+link('Method and evidence','../guide/Formalization.html#'+ident)
             search+='</p></article>'
     page(Path('reference/search.html'),'Find a term',search,True)
     diagrams = '<h1>Read the conceptual diagrams</h1><p>Begin with the selected view to follow the main risk-knowledge distinctions. Use the complete view when checking the catalog and its boundary concepts. The diagrams are inspection aids; source definitions remain authoritative.</p>'

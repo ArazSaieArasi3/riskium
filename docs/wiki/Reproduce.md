@@ -29,7 +29,7 @@ python3 tools/build_owl.py --check
 .venv-owl/bin/python -m unittest discover -s tests -v
 ```
 
-The [OWL review](Formalization) describes the mapping and its limits. Parsing the RDF and checking source allocation do not execute HermiT or SHACL.
+The [OWL review](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/owl-mapping-review.md) describes the mapping and its limits. Parsing the RDF and checking source allocation do not execute HermiT or SHACL.
 
 To browse the generated reference locally:
 
@@ -153,8 +153,12 @@ The replay executes 48 fixed cases, 100 frozen generated inputs, two actual SHAC
 
 For a reproducible public synthetic database, the supported Python helper is `relational_assessment.baseline(path)` from `tools/`; use a fresh output path. Open existing v3 databases through `relational_assessment.connect` and its health check. The old v2-only reader intentionally rejects the newer schema. No private source database or binary is needed by these checks.
 
+## Formal reading reference
+
+Run `python tools/build_formal_reference.py --check` to verify the source-bound [method and 25-clause explanation](Formalization). After an intentional evidence change, review the underlying sources and regenerate with `python tools/build_formal_reference.py`, then rebuild Pages/Wiki with `python tools/build_reference.py`. This check creates no engine outcomes and cannot turn historical NOT_RUN or PARTIAL into PASS.
+
 ---
 
 [Equivalent Pages guide](https://arazsaiearasi3.github.io/riskium/current/guide/Reproduce.html) · [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) · [OWL explorer](https://arazsaiearasi3.github.io/riskium/current/explore/index.html) · [Published v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1).
 
-Explanatory source: [docs/reproducibility.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/reproducibility.md). Source SHA-256: `5c708dae1b09abf59ea2e177a013f3cb70523c4810a983233ce3e1b85de4f637`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.
+Explanatory source: [docs/reproducibility.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/reproducibility.md). Source SHA-256: `ca0de5c312f6498ed7491ad7fe622d060012b829aacd8299221ff6038a0926de`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.

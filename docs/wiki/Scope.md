@@ -8,7 +8,7 @@ The model separates an information artifact, an issued version and its expressed
 
 Riskium models risk knowledge. It does not prescribe a complete management lifecycle, establish regulatory compliance, predict losses or certify treatment effectiveness. Three heterogeneous phenomenon notions remain optional conceptual boundaries, and the local external anchor does not import an external ontology or resolve real-world identity.
 
-The [conceptual model](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/riskium-model.json), [original requirements](Requirements), [mapping review](Formalization) and [limits](Limitations) retain their separate authority and acceptance scopes.
+The [conceptual model](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/riskium-model.json), [original requirements](Requirements), [mapping review](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/owl-mapping-review.md) and [limits](Limitations) retain their separate authority and acceptance scopes.
 
 ---
 

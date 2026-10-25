@@ -24,7 +24,7 @@ Heterogeneous real-world referents are optional boundaries. A vulnerability mode
 
 ## Current limits
 
-The native exchange now has official schema and SDK interoperability checks, preserved source fields and explicit generalization-set decisions. See the [native review](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/native-model-review.md) for its scope and legacy-tool limitations. A [bounded OWL mapping](Formalization) and scoped HermiT/SHACL modules have executed. Complete semantic verification and independent semantic review remain open; the engineering evidence retains its documented scope.
+The native exchange now has official schema and SDK interoperability checks, preserved source fields and explicit generalization-set decisions. See the [native review](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/native-model-review.md) for its scope and legacy-tool limitations. A [bounded OWL mapping](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/owl-mapping-review.md) and scoped HermiT/SHACL modules have executed. Complete semantic verification and independent semantic review remain open; the engineering evidence retains its documented scope.
 
 ---
 

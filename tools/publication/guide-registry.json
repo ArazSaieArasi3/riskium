@@ -88,8 +88,7 @@
       "slug": "Formalization",
       "wiki_slug": "Formalization",
       "title": "Formalization",
-      "source": "evaluation/owl-mapping-review.md",
-      "context_note": "This source explains the reviewed bounded OWL mapping and its original verification limits. It does not supply a new complete FOL verification package. Current published/development versions and remaining acceptance are identified in Artifact versions and the Work and release plan."
+      "source": "docs/formal-method.md"
     },
     {
       "slug": "Evaluation",

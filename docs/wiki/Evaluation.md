@@ -23,8 +23,12 @@ The [HermiT receipt](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5
 
 Owner review accepted the finite first-final scope with assistant support. It is not independent review. The [current work plan](Work-Plan) retains broader mapping, formal/application rules, independently prepared cases, legitimate normative-source interpretation, independent reviewers and actual deployment/user acceptance. Synthetic data can expose engineering defects; it cannot provide independent source truth, domain adequacy or an overall correctness percentage.
 
+## Find the formal route for a constraint
+
+The [formal-method guide](Formalization) explains OWL interpretation, explicit-data and application checks, then connects all 25 clauses to their unchanged historical outcomes, bounded claims, exclusions and reproduction routes. The [pre-release consistency gate](Work-Plan#cross-document-consistency-checkpoint) reconciles the wider documentation set at a declared candidate commit.
+
 ---
 
 [Equivalent Pages guide](https://arazsaiearasi3.github.io/riskium/current/guide/Evaluation.html) · [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) · [OWL explorer](https://arazsaiearasi3.github.io/riskium/current/explore/index.html) · [Published v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1).
 
-Explanatory source: [docs/guides/Evaluation.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/guides/Evaluation.md). Source SHA-256: `5a9205e79a1259f425fb10dcbdc1410c7515bd2fea40bef3250c47cadbcba19c`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.
+Explanatory source: [docs/guides/Evaluation.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/guides/Evaluation.md). Source SHA-256: `7b4ebb2bb495b08a11febf07613a3e53cc21c73a51bd0b77c101923d54179e38`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.

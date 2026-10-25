@@ -1,0 +1,1787 @@
+{
+  "schema": "riskium-formal-reading-routes-v1",
+  "model_version": "0.3.1",
+  "scientific_executions": 0,
+  "independent_review_claimed": false,
+  "input_sha256": {
+    "evaluation/c14-boundary-review.json": "7468e74a2fb016bc784038f80e1eee682eb3fd05c471486d84e9923a8185d43d",
+    "evaluation/cq/report.json": "0bde12f870030e1a17cea8db9b3cb1a70e882f6f1458eb38d27d891e42260f7f",
+    "evaluation/final-review/report.json": "688c42957c1263afc393bc654a9a0389858e42d90ca96e270623e77705e4c60d",
+    "evaluation/hermit/report.json": "414d57f9bb6c91c7b1c08430367669f67b6d57fbe96766cd3d30e233902cdd58",
+    "evaluation/manuscript-review/ledger.json": "d581667afba9823285639c6c1f57a30cc737f2a0aa915f15645f81d5568ab81d",
+    "evaluation/owl-mapping-review.md": "f51ad6dee980c27a503ac0245fc98394c90eaf929b04489e4a08aaee77049acb",
+    "evaluation/owner-review/accepted-scope.json": "a7da025a831114999529056aad105eb31ffcee1e4a88866fecbd4aa917da1a5c",
+    "evaluation/references/report.json": "e32c593b16b1d7e227e1500243f3d951b7094f81173f018b86cf98794dc0cdce",
+    "evaluation/relational/assessment/mapping-coverage.json": "4f4b1d2bb5d379a2cdc4aee28767ba80161b04cdf33d50dda0ecc5dd05fd1441",
+    "evaluation/relational/assessment/report.json.gz": "c39cf33e1cde70b2d54b073874449376a049aa3a82f6e07e9461c5a942d35944",
+    "evaluation/relational/history/report.json.gz": "76d6429210350f2abcd102b465bbaf4371008dc5ce17b10b41e7fa61caa7a366",
+    "evaluation/shacl/admission/report.json.gz": "15c8cd89a6ca3fc543394f7ca53642954965c230dc671d9eb893c802719eb3b2",
+    "evaluation/shacl/coherence/report.json": "c87b965eb75b463caeb916293192ecbec0aac9956191f23a451b162e0592cee1",
+    "evaluation/shacl/comparison/report.json.gz": "c04432c09068f87ce961617561fd5e2fca8abf5f38a46b459b70c90ce1857362",
+    "evaluation/shacl/compatibility/report.json.gz": "d6759a5b056c1b3bf349717c27c44c2a3d4e77832d890c234a4d36a6bfb6e458",
+    "evaluation/shacl/coverage-status.json": "376c30a35caf40b0fc75710241fa2e87024a6d47b576e34f2cd42b0f04eb4632",
+    "evaluation/shacl/endpoints/report.json": "385fbb3913318475c4d65c0be3b8b47e50c1805a1cd3dc6655ca8e3262a26f5b",
+    "evaluation/shacl/qualification/report.json.gz": "377e27b5b13b48697e3ce1c94b112640f7b84628a47b87870c0a05a90745bd07",
+    "evaluation/shacl/report.json": "3c3603ecfb0e7445e94022577534697b4791b8b7aa2fe04a794614080374abf0",
+    "evaluation/sources/cq06/report.json.gz": "81861275e6f5569690c806d6c95badfee0b03b994f4a085ded1342b1d5d44a50",
+    "evaluation/sources/cq0708/report.json.gz": "da8ec348280e788f2490b0dd053c0901f175fb969de8d73ca8959c2cec8a1612",
+    "implementation/relational/0.1.0/001_tables.sql": "c7d85e0bc96b9e7626320cf2b1aeca5f4c17962ac4792e4f5dc78f9395a90660",
+    "implementation/relational/0.1.0/002_guards.sql": "c3f0d3479e538d15c90f0f5656f0c65645c4d34455481671d7dc8cfbd995b194",
+    "implementation/relational/0.1.0/fixtures.json": "217eb5d79e36b16af86b71020eb7955240d297afb5ea39719bc4186f2e2e9cd5",
+    "implementation/relational/0.1.0/mapping.json": "11c55fcc7bf7dc47c1f6a5acddf0fd7f5ceac8027ff62ff55816f7d500fc50f7",
+    "implementation/relational/0.2.0/mapping.json": "81ecb3954057021b3e135fee041723ca59234de8324c81254b33a6f4d03984da",
+    "ontology/derived/riskium.owl.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+    "ontology/native/riskium.ontouml.json": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "references/corpus.json": "eb23983d2194c19d8b115da147b14cad89607e3e63181217add4e1e7df0f16f7",
+    "tools/publication/formal-method-introduction.md": "1192de2e3b4219d2ebe9fff11d1ab35b0eda8c67fb4ce8e3e0697653d24a2ba9"
+  },
+  "constraints": [
+    {
+      "id": "C-01",
+      "source": {
+        "id": "C-01",
+        "title": "Risk Case is not ISO Risk",
+        "statement": "Case identity is preserved across descriptions, scores, owners and administrative states. Equal labels do not establish case identity.",
+        "status": "DESIGN_CONSTRAINT"
+      },
+      "owl_encoding": "Separate Case, Entry, Scenario and Result classes; no label key",
+      "owl_remainder": "Verify intended identity examples and non-entailment without assuming unique names.",
+      "hermit": {
+        "id": "HERMIT-0605",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-01",
+        "outcome": "PASS",
+        "case_id": "H-C-01-IDENTITY-COUNTERMODEL",
+        "scope": "bounded OWL portion only"
+      },
+      "shacl": {
+        "id": "SHACL-0606",
+        "source_element": "C-01",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-01",
+        "proposed_disposition": "SCOPED_EVIDENCE",
+        "retained_claim": "Separate case, entry and revision keys; labels do not merge identities.",
+        "unclaimed_or_deferred": "Actual organizational case grounding and real reassessment continuity require attributable evidence; no automatic identity adjudication.",
+        "evidence_keys": [
+          "model",
+          "h",
+          "sql",
+          "cq"
+        ],
+        "follow_up_issues": [
+          7,
+          12,
+          13
+        ],
+        "owner_review_ids": [
+          "OR-01",
+          "OR-09"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/cq/report.json",
+        "evaluation/hermit/report.json",
+        "evaluation/relational/history/report.json.gz",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-01",
+        "family": "Constraint",
+        "source_sha256": "a589dc0a26d9679c929885730f4bc85febc6ed14bf4a366807e7e669311fcad9",
+        "title": "Risk Case is not ISO Risk",
+        "source_structure": {},
+        "disposition": "SELECTED_SUBCLAUSES_ONLY",
+        "reason": "Original 0.1.0 and new 0.2.0 named engineering subclauses only; no full original constraint acceptance.",
+        "next_evidence": "Follow the explicit policy/ORSD exclusions; broad #12/#4/#5 remains open."
+      }
+    },
+    {
+      "id": "C-02",
+      "source": {
+        "id": "C-02",
+        "title": "No realization from description",
+        "statement": "A scenario, consequence statement, signal, plan or report alone must not create actual occurrences, outcomes, controls or effectiveness assertions.",
+        "status": "DESIGN_CONSTRAINT"
+      },
+      "owl_encoding": "No description-to-occurrence realization property chain",
+      "owl_remainder": "Verify prohibited inferences; source statements alone cannot certify absence in an open world.",
+      "hermit": {
+        "id": "HERMIT-0607",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-02",
+        "outcome": "PASS",
+        "case_id": "H-C02-NO-REALIZATION",
+        "scope": "bounded OWL portion only"
+      },
+      "shacl": {
+        "id": "SHACL-0608",
+        "source_element": "C-02",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-02",
+        "proposed_disposition": "SCOPED_EVIDENCE",
+        "retained_claim": "Documentary scenarios/source statements do not automatically assert actual occurrence or effect.",
+        "unclaimed_or_deferred": "No claim that every external inference/application obeys the boundary or that a missing graph assertion proves nonoccurrence.",
+        "evidence_keys": [
+          "model",
+          "h",
+          "cq",
+          "source78"
+        ],
+        "follow_up_issues": [
+          7,
+          13
+        ],
+        "owner_review_ids": [
+          "OR-02",
+          "OR-09"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/cq/report.json",
+        "evaluation/hermit/report.json",
+        "evaluation/sources/cq0708/report.json.gz",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-02",
+        "family": "Constraint",
+        "source_sha256": "f1a4c925bef7b9d13b97fd5983abaf68c1a2b4e8356539218cace23645996e7a",
+        "title": "No realization from description",
+        "source_structure": {},
+        "disposition": "DEFERRED_NO_COMPLETE_SQL_MAPPING",
+        "reason": "Not an explicit complete mapping in the public 0.1.0 profile; no implementation is inferred from storage of opaque JSON or a historical private schema.",
+        "next_evidence": "Declare storage/derivation/external ownership, preserve unknown and provenance, add exact migration/query/counterexample oracles, then execute under #12."
+      }
+    },
+    {
+      "id": "C-03",
+      "source": {
+        "id": "C-03",
+        "title": "Issued version immutability",
+        "statement": "Issued semantic content and effective dependency versions are immutable. Correction and supersession create lineage-preserving new versions.",
+        "status": "DESIGN_CONSTRAINT"
+      },
+      "owl_encoding": "Version classes/links only; no immutable issued payload semantics",
+      "owl_remainder": "Enforce immutable payloads and lineage in data governance/database.",
+      "hermit": {
+        "id": "HERMIT-0609",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-03",
+        "outcome": "NOT_RUN",
+        "reason": "Current OWL route: Not applicable to change prevention: monotonic axioms do not enforce immutability across transactions. Remaining route: Partial: check version links and required snapshot references within one graph. Application history test: change an issued payload, reject overwrite and create a new version with lineage."
+      },
+      "shacl": {
+        "id": "SHACL-0610",
+        "source_element": "C-03",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-03",
+        "proposed_disposition": "SCOPED_ALTERNATIVE",
+        "retained_claim": "Executed SQLite profile 0.1.0 preserves sealed payload, provenance and version-owned dependency snapshots, creates new revisions and rejects specified mutations.",
+        "unclaimed_or_deferred": "No general native InformationContent/RX-007 admission, PostgreSQL/full private-schema migration or protection against administrative DDL/PRAGMA bypass.",
+        "evidence_keys": [
+          "model",
+          "sql",
+          "source78"
+        ],
+        "follow_up_issues": [
+          7,
+          12
+        ],
+        "owner_review_ids": [
+          "OR-04"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/relational/history/report.json.gz",
+        "evaluation/sources/cq0708/report.json.gz",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-03",
+        "family": "Constraint",
+        "source_sha256": "2f181afe3401e02addf62d3614bee3d2f8413bcff9d883b3f296c561ca39c04d",
+        "title": "Issued version immutability",
+        "source_structure": {},
+        "disposition": "SELECTED_SUBCLAUSES_ONLY",
+        "reason": "Original 0.1.0 and new 0.2.0 named engineering subclauses only; no full original constraint acceptance.",
+        "next_evidence": "Follow the explicit policy/ORSD exclusions; broad #12/#4/#5 remains open."
+      }
+    },
+    {
+      "id": "C-04",
+      "source": {
+        "id": "C-04",
+        "title": "Assessment interpretation",
+        "statement": "Results retain method/scale version, dimension, basis, relevant context and time semantics. A score is not the risk, and estimated likelihood need not be numeric.",
+        "status": "DESIGN_CONSTRAINT"
+      },
+      "owl_encoding": "Assessment classes, typed links and applicable end bounds",
+      "owl_remainder": "Verify method, scale, dimension, basis, context and time joins in data rules.",
+      "hermit": {
+        "id": "HERMIT-0611",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-04",
+        "outcome": "NOT_RUN",
+        "reason": "Current OWL route: Partial: map result types and reference links without reducing risk to a number. Remaining route: Partial: task-ready shapes require task-specific pinned method, scale, dimension, basis and time. Review measurement interpretation and qualitative likelihood; scalar fields still need an approved schema."
+      },
+      "shacl": {
+        "id": "SHACL-0612",
+        "source_element": "C-04",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-04",
+        "proposed_disposition": "SCOPED_ALTERNATIVE",
+        "retained_claim": "Selected comparison records require pinned interpretation metadata and matching declared context; equal score labels/numbers cannot authorize that named task.",
+        "unclaimed_or_deferred": "Not universal assessment readiness, full temporal semantics, all qualitative likelihood interpretations or reproduced version-specific method payload permissions.",
+        "evidence_keys": [
+          "model",
+          "comparison",
+          "cq"
+        ],
+        "follow_up_issues": [
+          5,
+          7,
+          12
+        ],
+        "owner_review_ids": [
+          "OR-06",
+          "OR-07"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/cq/report.json",
+        "evaluation/shacl/comparison/report.json.gz",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-04",
+        "family": "Constraint",
+        "source_sha256": "81f988f47c05f4179380e64cd7f817284df47e79f6e1e4e9fe9ad27aba09728f",
+        "title": "Assessment interpretation",
+        "source_structure": {},
+        "disposition": "SELECTED_SUBCLAUSES_ONLY",
+        "reason": "Original 0.1.0 and new 0.2.0 named engineering subclauses only; no full original constraint acceptance.",
+        "next_evidence": "Follow the explicit policy/ORSD exclusions; broad #12/#4/#5 remains open."
+      }
+    },
+    {
+      "id": "C-05",
+      "source": {
+        "id": "C-05",
+        "title": "Temporal and administrative distinction",
+        "statement": "Recorded time, reference time and validity intervals are distinct. Workflow closure does not prove risk cessation or successful treatment.",
+        "status": "DESIGN_CONSTRAINT"
+      },
+      "owl_encoding": "Distinct class/link vocabulary only",
+      "owl_remainder": "Temporal interval and administrative-state rules require explicit data validation.",
+      "hermit": {
+        "id": "HERMIT-0613",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-05",
+        "outcome": "NOT_RUN",
+        "reason": "Current OWL route: Partial: test that administrative state does not entail cessation or effectiveness. Remaining route: Partial: check distinct temporal fields and interval ordering after the datatype schema is approved. Application and semantic review define time zones, unknown endpoints and cessation evidence."
+      },
+      "shacl": {
+        "id": "SHACL-0614",
+        "source_element": "C-05",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-05",
+        "proposed_disposition": "DESIGN_AND_FINITE_CONTROLS",
+        "retained_claim": "Recorded/reference/validity time and administrative versus real-world status remain distinct design commitments; synthetic retrieval illustrates closure versus cessation.",
+        "unclaimed_or_deferred": "Interval ordering, timezone/unknown-endpoint policy, actual cessation and treatment-effectiveness adjudication or workflow execution are not implemented/accepted claims.",
+        "evidence_keys": [
+          "model",
+          "cq"
+        ],
+        "follow_up_issues": [
+          4,
+          5,
+          7,
+          12
+        ],
+        "owner_review_ids": [
+          "OR-02",
+          "OR-10"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/cq/report.json",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-05",
+        "family": "Constraint",
+        "source_sha256": "d748d34fa1777a20dbb1ee8d1e17f88a38c41bc2ce978fcf1d6d49714c0139e4",
+        "title": "Temporal and administrative distinction",
+        "source_structure": {},
+        "disposition": "SELECTED_SUBCLAUSES_ONLY",
+        "reason": "Original 0.1.0 and new 0.2.0 named engineering subclauses only; no full original constraint acceptance.",
+        "next_evidence": "Follow the explicit policy/ORSD exclusions; broad #12/#4/#5 remains open."
+      }
+    },
+    {
+      "id": "C-06",
+      "source": {
+        "id": "C-06",
+        "title": "Relator participant distinctness",
+        "statement": "An asserted ResponsibilityRelator requires at least two distinct mediated individuals. If bearer and authority resolve to one actor and no further grounding exists, retain ResponsibilityAssignmentInformation without asserting the relator.",
+        "status": "IMPLEMENTED_CONDITIONAL_CONTRACT"
+      },
+      "owl_encoding": "Local end bounds and same-pair property disjointness for the two mediation roles",
+      "owl_remainder": "Explicit distinct participants, identity resolution and assignment grounding still need an admission/profile check.",
+      "hermit": {
+        "id": "HERMIT-0615",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-06",
+        "outcome": "PASS",
+        "case_id": "H-C06-DISTINCT-PARTICIPANTS, H-C06-SAME-PARTICIPANT",
+        "scope": "bounded OWL portion only"
+      },
+      "shacl": {
+        "id": "SHACL-0616",
+        "source_element": "C-06",
+        "family": "Constraint encoding disposition",
+        "outcome": "PASS",
+        "evidence": "evaluation/shacl/report.json",
+        "case_ids": [
+          "S-C06-DISTINCT",
+          "S-C06-SUBTYPE-BEARER",
+          "S-C06-WRONG-BEARER-TYPE",
+          "S-C06-WRONG-AUTHORITY-TYPE",
+          "S-C06-REVERSE-DIFFERENCE",
+          "S-C06-UNRESOLVED-NAMES",
+          "S-C06-SAME-ACTOR",
+          "S-C06-ALIASED-SAME-ACTOR",
+          "S-C06-ALIAS-CHAIN",
+          "S-C06-IDENTITY-CONFLICT",
+          "S-C06-RAW-IDENTITY-CONFLICT",
+          "S-C06-MISSING-BEARER",
+          "S-C06-MISSING-AUTHORITY",
+          "S-C06-EXCESS-BEARER",
+          "S-C06-EXCESS-AUTHORITY",
+          "S-C06-INFORMATION-ONLY",
+          "S-C06-RAW-INCOMPLETE",
+          "S-C06-MANAGED-INCOMPLETE"
+        ]
+      },
+      "accepted_scope": {
+        "id": "C-06",
+        "proposed_disposition": "SCOPED_EVIDENCE",
+        "retained_claim": "Bounded OWL and explicit-data tests enforce declared participant distinctness and retain assignment information when no relator can be grounded.",
+        "unclaimed_or_deferred": "Explicit identity evidence is required; different names alone do not prove different individuals or actual mandate truth.",
+        "evidence_keys": [
+          "model",
+          "h",
+          "conditional"
+        ],
+        "follow_up_issues": [
+          7,
+          12
+        ],
+        "owner_review_ids": [
+          "OR-03"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/hermit/report.json",
+        "evaluation/shacl/coverage-status.json",
+        "evaluation/shacl/endpoints/report.json",
+        "evaluation/shacl/report.json",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-06",
+        "family": "Constraint",
+        "source_sha256": "701a3d66ecb0c211936668070a74b030c258eb6c4264ea6b7d52ac1170cf7df2",
+        "title": "Relator participant distinctness",
+        "source_structure": {},
+        "disposition": "DEFERRED_NO_COMPLETE_SQL_MAPPING",
+        "reason": "Not an explicit complete mapping in the public 0.1.0 profile; no implementation is inferred from storage of opaque JSON or a historical private schema.",
+        "next_evidence": "Declare storage/derivation/external ownership, preserve unknown and provenance, add exact migration/query/counterexample oracles, then execute under #12."
+      }
+    },
+    {
+      "id": "C-07",
+      "source": {
+        "id": "C-07",
+        "title": "Role-qualified ownership",
+        "statement": "ResponsibleAgentRole does not automatically mean Risk Owner. Ownership mapping requires recorded responsibility type, accountability, authority and applicable context.",
+        "status": "DESIGN_CONSTRAINT"
+      },
+      "owl_encoding": "Responsible/authorizing roles stay separate; no automatic owner equivalence",
+      "owl_remainder": "Ownership interpretation depends on mandate, scope and evidence review.",
+      "hermit": {
+        "id": "HERMIT-0617",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-07",
+        "outcome": "PASS",
+        "case_id": "H-C07-NO-AUTHORITY",
+        "scope": "bounded OWL portion only"
+      },
+      "shacl": {
+        "id": "SHACL-0618",
+        "source_element": "C-07",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-07",
+        "proposed_disposition": "DESIGN_AND_FINITE_CONTROLS",
+        "retained_claim": "A responsibility role/assignment record is not automatically an actual mandate or Risk Owner.",
+        "unclaimed_or_deferred": "Automatic source-to-owner mapping with validated accountability/authority/scope is deferred; no automatic Risk Owner population.",
+        "evidence_keys": [
+          "model",
+          "cq"
+        ],
+        "follow_up_issues": [
+          5,
+          7,
+          12
+        ],
+        "owner_review_ids": [
+          "OR-03"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/cq/report.json",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-07",
+        "family": "Constraint",
+        "source_sha256": "4bb79759dc0dded575632073cad8978b48f654948b443d6745888484d6def3a2",
+        "title": "Role-qualified ownership",
+        "source_structure": {},
+        "disposition": "DEFERRED_NO_COMPLETE_SQL_MAPPING",
+        "reason": "Not an explicit complete mapping in the public 0.1.0 profile; no implementation is inferred from storage of opaque JSON or a historical private schema.",
+        "next_evidence": "Declare storage/derivation/external ownership, preserve unknown and provenance, add exact migration/query/counterexample oracles, then execute under #12."
+      }
+    },
+    {
+      "id": "C-08",
+      "source": {
+        "id": "C-08",
+        "title": "Threshold anchor",
+        "statement": "At least one of thresholdForIndicator or thresholdOnScale is present. If both are present, their scale/unit interpretation is compatible. Qualitative boundaries use scale semantics rather than invented numeric units.",
+        "status": "DESIGN_CONSTRAINT"
+      },
+      "owl_encoding": "Threshold anchor union plus individual end bounds",
+      "owl_remainder": "A named anchor and cross-field unit/scale compatibility require explicit-data validation.",
+      "hermit": {
+        "id": "HERMIT-0619",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-08",
+        "outcome": "PASS",
+        "case_id": "H-C08-ANCHOR-UNION, H-C08-REMOVED-UNION, H-C08-SCALE-ONLY, H-C08-ANONYMOUS-ANCHOR, H-C08-DUAL-ANCHOR, H-C08-NO-FABRICATED-INDICATOR",
+        "scope": "bounded OWL portion only"
+      },
+      "shacl": {
+        "id": "SHACL-0620",
+        "source_element": "C-08",
+        "family": "Constraint encoding disposition",
+        "outcome": "PARTIAL",
+        "evidence": "evaluation/shacl/report.json",
+        "case_ids": [
+          "S-C08-INDICATOR-ONLY",
+          "S-C08-SCALE-ONLY",
+          "S-C08-DUAL-STRUCTURAL",
+          "S-C08-NO-ANCHOR",
+          "S-C08-RAW-NO-ANCHOR",
+          "S-C08-WRONG-INDICATOR-TYPE",
+          "S-C08-WRONG-SCALE-TYPE",
+          "S-C08-TWO-INDICATORS",
+          "S-C08-TWO-SCALES",
+          "S-C08-TASK-DUAL-UNKNOWN",
+          "S-C08-DELETED-ANCHOR-RULE"
+        ]
+      },
+      "accepted_scope": {
+        "id": "C-08",
+        "proposed_disposition": "SCOPED_ALTERNATIVE",
+        "retained_claim": "Profile 0.6.0 checks declared numeric/qualitative metadata compatibility for its caller-selected dual-anchor threshold task.",
+        "unclaimed_or_deferred": "Global C-08 remains PARTIAL; no unit conversion, broad dimensional adequacy, numeric evaluation or full risk-record admission.",
+        "evidence_keys": [
+          "model",
+          "conditional",
+          "compatibility"
+        ],
+        "follow_up_issues": [
+          5,
+          7,
+          12
+        ],
+        "owner_review_ids": [
+          "OR-05"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/shacl/compatibility/report.json.gz",
+        "evaluation/shacl/coverage-status.json",
+        "evaluation/shacl/endpoints/report.json",
+        "evaluation/shacl/report.json",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-08",
+        "family": "Constraint",
+        "source_sha256": "86c29e1ce9596cf0c7912108ee91ee986b45056ab714e4a8dc1d5ccb96102f9c",
+        "title": "Threshold anchor",
+        "source_structure": {},
+        "disposition": "DEFERRED_NO_COMPLETE_SQL_MAPPING",
+        "reason": "Not an explicit complete mapping in the public 0.1.0 profile; no implementation is inferred from storage of opaque JSON or a historical private schema.",
+        "next_evidence": "Declare storage/derivation/external ownership, preserve unknown and provenance, add exact migration/query/counterexample oracles, then execute under #12."
+      }
+    },
+    {
+      "id": "C-09",
+      "source": {
+        "id": "C-09",
+        "title": "Description aboutness",
+        "statement": "Every published RiskDescription has at least one case, pattern or scenario target. Multiple valid targets are permitted and require explicit interpretation.",
+        "status": "PROFILE_CONSTRAINT"
+      },
+      "owl_encoding": "Aboutness links and individual end bounds; no global description existential",
+      "owl_remainder": "A published-description profile needs an explicit publication focus and a validated aboutness alternative. Ordinary descriptions are not thereby rejected.",
+      "hermit": {
+        "id": "HERMIT-0621",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-09",
+        "outcome": "NOT_RUN",
+        "reason": "Current OWL route: Partial: an existential aboutness disjunction may be mapped, but publication completeness is a graph policy. Remaining route: Planned: Core alternativePath over describesCase, describesPattern and expressesScenario with minCount 1. Select the published-description profile and document multiple-target interpretation."
+      },
+      "shacl": {
+        "id": "SHACL-0622",
+        "source_element": "C-09",
+        "family": "Constraint encoding disposition",
+        "outcome": "PASS",
+        "evidence": "evaluation/shacl/report.json",
+        "case_ids": [
+          "S-C09-CASE",
+          "S-C09-PATTERN",
+          "S-C09-WRONG-PATTERN-TYPE",
+          "S-C09-SCENARIO",
+          "S-C09-WRONG-SCENARIO-TYPE",
+          "S-C09-MULTIPLE-TARGETS",
+          "S-C09-PUBLISHED-NO-TARGET",
+          "S-C09-ORDINARY-NO-TARGET",
+          "S-C09-UNTYPED-PUBLISHED",
+          "S-C09-WRONG-TARGET-TYPE",
+          "S-C09-DELETED-MINIMUM"
+        ]
+      },
+      "accepted_scope": {
+        "id": "C-09",
+        "proposed_disposition": "SCOPED_ALTERNATIVE",
+        "retained_claim": "Published-description SHACL checks explicit case/pattern/scenario aboutness and permits multiple declared targets.",
+        "unclaimed_or_deferred": "Not HermiT discharge, target truth, occurrence evidence or a single universal target interpretation.",
+        "evidence_keys": [
+          "model",
+          "conditional"
+        ],
+        "follow_up_issues": [
+          4,
+          7
+        ],
+        "owner_review_ids": [
+          "OR-02",
+          "OR-10"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/shacl/coverage-status.json",
+        "evaluation/shacl/endpoints/report.json",
+        "evaluation/shacl/report.json",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-09",
+        "family": "Constraint",
+        "source_sha256": "7c3f269adeff5c846baca7ce6de2998b43a7d907178cdde0a9e3956d34313474",
+        "title": "Description aboutness",
+        "source_structure": {},
+        "disposition": "DEFERRED_NO_COMPLETE_SQL_MAPPING",
+        "reason": "Not an explicit complete mapping in the public 0.1.0 profile; no implementation is inferred from storage of opaque JSON or a historical private schema.",
+        "next_evidence": "Declare storage/derivation/external ownership, preserve unknown and provenance, add exact migration/query/counterexample oracles, then execute under #12."
+      }
+    },
+    {
+      "id": "C-10",
+      "source": {
+        "id": "C-10",
+        "title": "Framework-qualified tolerance",
+        "statement": "Tolerance statements retain source framework/version, original meaning and context. Permissible deviation is not automatically equivalent to readiness to bear remaining risk.",
+        "status": "DESIGN_CONSTRAINT"
+      },
+      "owl_encoding": "Source-qualified tolerance vocabulary retained",
+      "owl_remainder": "Framework/version meaning and applicability are not a universal OWL equivalence.",
+      "hermit": {
+        "id": "HERMIT-0623",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-10",
+        "outcome": "NOT_RUN",
+        "reason": "Current OWL route: Partial: preserve separate statement resources without asserting a global equivalence of tolerance meanings. Remaining route: Partial: require source framework/version and context once provenance properties are approved. Review source-specific meanings and inspected source portions."
+      },
+      "shacl": {
+        "id": "SHACL-0624",
+        "source_element": "C-10",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-10",
+        "proposed_disposition": "DESIGN_AND_FINITE_CONTROLS",
+        "retained_claim": "Distinct source-qualified tolerance meanings are represented without global equivalence.",
+        "unclaimed_or_deferred": "Complete normative appetite/tolerance definitions and ISO/COBIT/Risk IT equivalence/crosswalk/compliance are unassessed and unclaimed.",
+        "evidence_keys": [
+          "model",
+          "references"
+        ],
+        "follow_up_issues": [
+          4,
+          5,
+          7
+        ],
+        "owner_review_ids": [
+          "OR-08"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/references/report.json",
+        "ontology/riskium-model.json",
+        "references/corpus.json"
+      ],
+      "sql_assessment": {
+        "id": "C-10",
+        "family": "Constraint",
+        "source_sha256": "1340464754c30673b5a25cf758deb99659189b3a1bee752ca1746f7b2805e59e",
+        "title": "Framework-qualified tolerance",
+        "source_structure": {},
+        "disposition": "DEFERRED_NO_COMPLETE_SQL_MAPPING",
+        "reason": "Not an explicit complete mapping in the public 0.1.0 profile; no implementation is inferred from storage of opaque JSON or a historical private schema.",
+        "next_evidence": "Declare storage/derivation/external ownership, preserve unknown and provenance, add exact migration/query/counterexample oracles, then execute under #12."
+      }
+    },
+    {
+      "id": "C-11",
+      "source": {
+        "id": "C-11",
+        "title": "Vocabulary resource identity",
+        "statement": "Vocabulary resources retain scheme-qualified identity. Labels are representations and are not OWL classes by default.",
+        "status": "DESIGN_CONSTRAINT"
+      },
+      "owl_encoding": "Vocabulary resources are classes of resources, labels annotations",
+      "owl_remainder": "Scheme-qualified identity and label governance require data checks.",
+      "hermit": {
+        "id": "HERMIT-0625",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-11",
+        "outcome": "NOT_RUN",
+        "reason": "Current OWL route: Partial: vocabulary individuals are not generated as OWL classes or equality axioms from labels. Remaining route: Planned: scheme membership, resource identity and label-data validation using an approved vocabulary profile. Review scheme identifiers and legitimate cross-scheme mappings."
+      },
+      "shacl": {
+        "id": "SHACL-0626",
+        "source_element": "C-11",
+        "family": "Constraint encoding disposition",
+        "outcome": "PASS",
+        "evidence": "evaluation/shacl/qualification/report.json.gz",
+        "case_ids": [
+          "VOC-RKM-C006",
+          "VOC-RKM-C017",
+          "VOC-RKM-C019",
+          "VOC-RKM-C027",
+          "VOC-RKM-C028",
+          "VOC-RKM-C029",
+          "VOC-RKM-C038",
+          "VOC-RKM-C039",
+          "VOC-RKM-C040",
+          "VOC-RKM-C042",
+          "VOC-RKM-C046",
+          "VOC-RKM-C059",
+          "VOC-RKM-C060",
+          "VOC-RKM-C061",
+          "VOC-RAW-INCOMPLETE",
+          "VOC-MISSING-SCHEME",
+          "VOC-MISSING-EDITION",
+          "VOC-MISSING-CODE",
+          "VOC-MISSING-LABEL",
+          "VOC-BLANK-CODE",
+          "VOC-SCHEME-MISMATCH",
+          "VOC-DELETED-AGREEMENT",
+          "VOC-DUPLICATE-KEY",
+          "VOC-DELETED-UNIQUENESS",
+          "VOC-OTHER-SCHEME",
+          "VOC-OTHER-EDITION",
+          "VOC-ASSERTED-ALIAS",
+          "VOC-WRONG-CANDIDATE",
+          "VOC-INTEGRATED"
+        ]
+      },
+      "accepted_scope": {
+        "id": "C-11",
+        "proposed_disposition": "SCOPED_ALTERNATIVE",
+        "retained_claim": "Vocabulary metadata is keyed by scheme/edition/code; label equality does not create classes or cross-scheme identity.",
+        "unclaimed_or_deferred": "Metadata key validation is not universal ontological identity adjudication or a HermiT PASS for this clause.",
+        "evidence_keys": [
+          "model",
+          "qualification"
+        ],
+        "follow_up_issues": [
+          4,
+          7
+        ],
+        "owner_review_ids": [
+          "OR-03",
+          "OR-08"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/shacl/qualification/report.json.gz",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-11",
+        "family": "Constraint",
+        "source_sha256": "9038991d649db5615cdc5f2b084cf3cb8b8d53bc3ccf5576aa14e06748c911e7",
+        "title": "Vocabulary resource identity",
+        "source_structure": {},
+        "disposition": "DEFERRED_NO_COMPLETE_SQL_MAPPING",
+        "reason": "Not an explicit complete mapping in the public 0.1.0 profile; no implementation is inferred from storage of opaque JSON or a historical private schema.",
+        "next_evidence": "Declare storage/derivation/external ownership, preserve unknown and provenance, add exact migration/query/counterexample oracles, then execute under #12."
+      }
+    },
+    {
+      "id": "C-12",
+      "source": {
+        "id": "C-12",
+        "title": "Evidence does not endorse",
+        "statement": "EvidenceReference states an evidential role such as support, challenge or context. Linking a source does not automatically prove the target claim.",
+        "status": "DESIGN_CONSTRAINT"
+      },
+      "owl_encoding": "Evidence links carry types, no endorsement implication",
+      "owl_remainder": "Evidential role and truth/endorsement require interpretation.",
+      "hermit": {
+        "id": "HERMIT-0627",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-12",
+        "outcome": "NOT_RUN",
+        "reason": "Current OWL route: Partial: evidential links alone must not entail truth or endorsement of the target claim. Remaining route: Partial: require support/challenge/context qualification and source locators after the assertion schema is reviewed. Review evidential adequacy independently of presence or graph conformance."
+      },
+      "shacl": {
+        "id": "SHACL-0628",
+        "source_element": "C-12",
+        "family": "Constraint encoding disposition",
+        "outcome": "PASS",
+        "evidence": "evaluation/shacl/qualification/report.json.gz",
+        "case_ids": [
+          "EVIDENCE-SUPPORT",
+          "EVIDENCE-CHALLENGE",
+          "EVIDENCE-CONTEXT",
+          "EVIDENCE-RAW",
+          "EVIDENCE-MISSING-ROLE",
+          "EVIDENCE-MISSING-SOURCE",
+          "EVIDENCE-MISSING-ITEM",
+          "EVIDENCE-MISSING-TARGET",
+          "EVIDENCE-UNKNOWN-ROLE",
+          "EVIDENCE-LITERAL-SOURCE",
+          "EVIDENCE-MISSING-ITEM-PAIR",
+          "EVIDENCE-DELETED-ITEM-RULE",
+          "EVIDENCE-SUPPORT-WITHOUT-PAIR",
+          "EVIDENCE-DELETED-ROLE-RULE",
+          "EVIDENCE-CHALLENGE-WITH-SUPPORT-PAIR",
+          "EVIDENCE-OTHER-ITEM",
+          "EVIDENCE-OTHER-TARGET",
+          "EVIDENCE-INTEGRATED"
+        ]
+      },
+      "accepted_scope": {
+        "id": "C-12",
+        "proposed_disposition": "SCOPED_ALTERNATIVE",
+        "retained_claim": "Selected evidence records carry source/item/target and Support/Challenge/Context role; source-query provenance can be inspected.",
+        "unclaimed_or_deferred": "Conformance and source links do not establish truth, endorsement, evidential adequacy or independent corroboration.",
+        "evidence_keys": [
+          "model",
+          "qualification",
+          "source6",
+          "source78"
+        ],
+        "follow_up_issues": [
+          4,
+          7,
+          13
+        ],
+        "owner_review_ids": [
+          "OR-08",
+          "OR-09"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/shacl/qualification/report.json.gz",
+        "evaluation/sources/cq06/report.json.gz",
+        "evaluation/sources/cq0708/report.json.gz",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-12",
+        "family": "Constraint",
+        "source_sha256": "9341785a113fb468e6398e3d4e4b25fd2d5433acb55a1b88f57a90c94cdb06dc",
+        "title": "Evidence does not endorse",
+        "source_structure": {},
+        "disposition": "DEFERRED_NO_COMPLETE_SQL_MAPPING",
+        "reason": "Not an explicit complete mapping in the public 0.1.0 profile; no implementation is inferred from storage of opaque JSON or a historical private schema.",
+        "next_evidence": "Declare storage/derivation/external ownership, preserve unknown and provenance, add exact migration/query/counterexample oracles, then execute under #12."
+      }
+    },
+    {
+      "id": "C-13",
+      "source": {
+        "id": "C-13",
+        "title": "Scale and dimension compatibility",
+        "statement": "A selected level belongs to the selected scale version and dimension. Results on incompatible methods/scales are not ranked merely by equal labels or numeric codes.",
+        "status": "PROFILE_CONSTRAINT"
+      },
+      "owl_encoding": "Scale/dimension classes and links",
+      "owl_remainder": "Pinning, compatibility and numerical ordering require explicit data rules.",
+      "hermit": {
+        "id": "HERMIT-0629",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-13",
+        "outcome": "NOT_RUN",
+        "reason": "Current OWL route: Partial: typed relationships can be represented; arbitrary joins across scale/version/dimension are not assumed expressible. Remaining route: Planned: SPARQL checks selected level, scale version and dimension against pinned interpretation. Review unit conversion, dimensions and missing-version policy."
+      },
+      "shacl": {
+        "id": "SHACL-0630",
+        "source_element": "C-13",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-13",
+        "proposed_disposition": "SCOPED_ALTERNATIVE",
+        "retained_claim": "Profile 0.7.0 checks selected level/scale-version/dimension joins for the declared comparison task.",
+        "unclaimed_or_deferred": "No general level ordering, numeric-code ranking, unit transformation or proof of scale meaning.",
+        "evidence_keys": [
+          "model",
+          "comparison"
+        ],
+        "follow_up_issues": [
+          4,
+          5,
+          7,
+          12
+        ],
+        "owner_review_ids": [
+          "OR-06"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/shacl/comparison/report.json.gz",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-13",
+        "family": "Constraint",
+        "source_sha256": "eb82a554b33ec77896383c66c7d8da9f6a4cfa5f43c54c0b8d89228d72802044",
+        "title": "Scale and dimension compatibility",
+        "source_structure": {},
+        "disposition": "SELECTED_SUBCLAUSES_ONLY",
+        "reason": "Original 0.1.0 and new 0.2.0 named engineering subclauses only; no full original constraint acceptance.",
+        "next_evidence": "Follow the explicit policy/ORSD exclusions; broad #12/#4/#5 remains open."
+      }
+    },
+    {
+      "id": "C-14",
+      "source": {
+        "id": "C-14",
+        "title": "Heterogeneous boundaries",
+        "statement": "RiskSource, Consequence and RiskControl remain catalog notions and optional external boundaries, excluded from native formal-core class assertions. Source, outcome and control content is represented by RiskSourceReference, ConsequenceStatement and ControlReference.",
+        "status": "IMPLEMENTED_DESIGN_BOUNDARY"
+      },
+      "owl_encoding": "Three optional boundaries and seven bridges excluded from class/property export",
+      "owl_remainder": "External alignment requires a separately reviewed import or bridge.",
+      "hermit": {
+        "id": "HERMIT-0631",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-14",
+        "outcome": "NOT_RUN",
+        "reason": "Current OWL route: Planned: reject typed-core declarations for the three excluded catalog boundaries in the export. Remaining route: Planned: boundary-admission checks reject using those catalog notions as managed core classes. Record optional external bridges separately; adding an external ontology requires a new ownership decision."
+      },
+      "shacl": {
+        "id": "SHACL-0632",
+        "source_element": "C-14",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-14",
+        "proposed_disposition": "STRUCTURAL_ALTERNATIVE",
+        "retained_claim": "Three optional heterogeneous boundaries and seven bridges are excluded from the typed core; documentary reference classes remain.",
+        "unclaimed_or_deferred": "Structural/boundary checks are not new HermiT runs or proof of external referent existence; external ontology import/mapping extension stays future work.",
+        "evidence_keys": [
+          "model",
+          "boundary",
+          "admission"
+        ],
+        "follow_up_issues": [
+          4,
+          5,
+          7,
+          16
+        ],
+        "owner_review_ids": [
+          "OR-02",
+          "OR-08"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/c14-boundary-review.json",
+        "evaluation/shacl/admission/report.json.gz",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-14",
+        "family": "Constraint",
+        "source_sha256": "e93b5fc1937abca829e21308312719b7e96df6eb2c5927f2d2b3e360c74a14b8",
+        "title": "Heterogeneous boundaries",
+        "source_structure": {},
+        "disposition": "DEFERRED_NO_COMPLETE_SQL_MAPPING",
+        "reason": "Not an explicit complete mapping in the public 0.1.0 profile; no implementation is inferred from storage of opaque JSON or a historical private schema.",
+        "next_evidence": "Declare storage/derivation/external ownership, preserve unknown and provenance, add exact migration/query/counterexample oracles, then execute under #12."
+      }
+    },
+    {
+      "id": "C-15",
+      "source": {
+        "id": "C-15",
+        "title": "Intrinsic vulnerability bearer",
+        "statement": "Every asserted intrinsic Vulnerability has exactly one substantial-endurant bearer. A reported hypothesis alone is information, not an actual mode.",
+        "status": "APPROVED_PROFILE_CONTRACT"
+      },
+      "owl_encoding": "Characterization bearer relation has its reviewed exactly-one source-end restriction",
+      "owl_remainder": "OWL can satisfy existence anonymously or merge named bearers; actual substantial bearer/admission needs separate evidence.",
+      "hermit": {
+        "id": "HERMIT-0633",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-15",
+        "outcome": "PASS",
+        "case_id": "H-C15-TWO-DISTINCT-BEARERS",
+        "scope": "bounded OWL portion only"
+      },
+      "shacl": {
+        "id": "SHACL-0634",
+        "source_element": "C-15",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-15",
+        "proposed_disposition": "DESIGN_AND_FINITE_CONTROLS",
+        "retained_claim": "Bounded OWL bearer dependence/cardinality supports the intrinsic-vulnerability design; reports remain documentary information.",
+        "unclaimed_or_deferred": "Full explicit-data bearer admission and real-world substantial-bearer/vulnerability grounding remain unexecuted/unaccepted; no automatic mode from a hypothesis.",
+        "evidence_keys": [
+          "model",
+          "h"
+        ],
+        "follow_up_issues": [
+          5,
+          7
+        ],
+        "owner_review_ids": [
+          "OR-02",
+          "OR-08"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/hermit/report.json",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-15",
+        "family": "Constraint",
+        "source_sha256": "fd53ec15766d62d0c4b245b337626663714ba5e47f4d911a10cfff9d6c6f4646",
+        "title": "Intrinsic vulnerability bearer",
+        "source_structure": {},
+        "disposition": "DEFERRED_NO_COMPLETE_SQL_MAPPING",
+        "reason": "Not an explicit complete mapping in the public 0.1.0 profile; no implementation is inferred from storage of opaque JSON or a historical private schema.",
+        "next_evidence": "Declare storage/derivation/external ownership, preserve unknown and provenance, add exact migration/query/counterexample oracles, then execute under #12."
+      }
+    },
+    {
+      "id": "C-16",
+      "source": {
+        "id": "C-16",
+        "title": "Admission profiles",
+        "statement": "Raw source content is retained in staging. Managed records require identity, subject, title and provenance. Analytical readiness additionally requires the pinned context, method, scale, basis, dimension and time required for the selected task.",
+        "status": "APPROVED_PROFILE_CONTRACT"
+      },
+      "owl_encoding": "Typed managed profile is documented",
+      "owl_remainder": "Raw, managed and task-ready admission are SHACL/application profiles, not inferred from absent triples.",
+      "hermit": {
+        "id": "HERMIT-0635",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-16",
+        "outcome": "NOT_RUN",
+        "reason": "Current OWL route: Not applicable to explicit-data completeness: OWL inference is not a record-admission decision. Remaining route: Planned: separate raw, managed and task-ready shapes; never run a managed requirement as raw rejection. Approve required identity, title and provenance properties and task-specific input sets."
+      },
+      "shacl": {
+        "id": "SHACL-0636",
+        "source_element": "C-16",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-16",
+        "proposed_disposition": "SCOPED_ALTERNATIVE",
+        "retained_claim": "CatalogInspection metadata admission and separately named compatibility/comparison/source/history tasks have explicit staging and task boundaries.",
+        "unclaimed_or_deferred": "No general complete RiskAssessment readiness or arbitrary multi-relation/conditional integration; only named executed profiles may be called supported.",
+        "evidence_keys": [
+          "model",
+          "admission",
+          "compatibility",
+          "comparison",
+          "sql",
+          "source6",
+          "source78"
+        ],
+        "follow_up_issues": [
+          4,
+          5,
+          7,
+          12,
+          13
+        ],
+        "owner_review_ids": [
+          "OR-10"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/relational/history/report.json.gz",
+        "evaluation/shacl/admission/report.json.gz",
+        "evaluation/shacl/comparison/report.json.gz",
+        "evaluation/shacl/compatibility/report.json.gz",
+        "evaluation/sources/cq06/report.json.gz",
+        "evaluation/sources/cq0708/report.json.gz",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-16",
+        "family": "Constraint",
+        "source_sha256": "8b0d7c2e32b26f31333aae1294830facf93085fcbfbcbd1ea3d3c388d9f60770",
+        "title": "Admission profiles",
+        "source_structure": {},
+        "disposition": "SELECTED_SUBCLAUSES_ONLY",
+        "reason": "Original 0.1.0 and new 0.2.0 named engineering subclauses only; no full original constraint acceptance.",
+        "next_evidence": "Follow the explicit policy/ORSD exclusions; broad #12/#4/#5 remains open."
+      }
+    },
+    {
+      "id": "C-17",
+      "source": {
+        "id": "C-17",
+        "title": "Multiple assertions",
+        "statement": "Multiple classifications, descriptions, actors and evidence assertions are retained with role, context, provenance and time. Scalar export requires an explicit selection rule when several values apply.",
+        "status": "APPROVED_PROFILE_CONTRACT"
+      },
+      "owl_encoding": "No scalar collapse or forced functional property beyond stated end bounds",
+      "owl_remainder": "Assertion-level provenance, context and export selection remain data obligations.",
+      "hermit": {
+        "id": "HERMIT-0637",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-17",
+        "outcome": "NOT_RUN",
+        "reason": "Current OWL route: Partial: multiple assertions must remain consistent without unsupported functional properties or identity keys. Remaining route: Partial: check qualified assertion context, time and provenance after schema review. Application export test: multiple applicable values require a declared scalar selection rule."
+      },
+      "shacl": {
+        "id": "SHACL-0638",
+        "source_element": "C-17",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-17",
+        "proposed_disposition": "SCOPED_ALTERNATIVE",
+        "retained_claim": "Selected source-query/SQL fixtures retain conflicting assertions, original/reissued values and provenance without silently selecting or overwriting.",
+        "unclaimed_or_deferred": "A universal scalar-export selection policy across all contexts/times and complete multi-assertion admission is deferred.",
+        "evidence_keys": [
+          "model",
+          "source6",
+          "source78",
+          "sql"
+        ],
+        "follow_up_issues": [
+          4,
+          5,
+          7,
+          12,
+          13
+        ],
+        "owner_review_ids": [
+          "OR-04",
+          "OR-09"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/relational/history/report.json.gz",
+        "evaluation/sources/cq06/report.json.gz",
+        "evaluation/sources/cq0708/report.json.gz",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-17",
+        "family": "Constraint",
+        "source_sha256": "48df6184d0a6c10c29f45b046bb6ad7a07554eeadcab607c447e82821be1429e",
+        "title": "Multiple assertions",
+        "source_structure": {},
+        "disposition": "SELECTED_SUBCLAUSES_ONLY",
+        "reason": "Original 0.1.0 and new 0.2.0 named engineering subclauses only; no full original constraint acceptance.",
+        "next_evidence": "Follow the explicit policy/ORSD exclusions; broad #12/#4/#5 remains open."
+      }
+    },
+    {
+      "id": "C-18",
+      "source": {
+        "id": "C-18",
+        "title": "Comparable assessments",
+        "statement": "Direct comparison requires matching pinned method, scale, dimension, basis and temporal context; a governed explicit transformation may enable a different comparison. Missing data is not zero. Reported scores do not imply a reproducible computation.",
+        "status": "APPROVED_PROFILE_CONTRACT"
+      },
+      "owl_encoding": "Distinct pinned interpretation vocabulary",
+      "owl_remainder": "Comparison and approved transformations need governed calculation rules.",
+      "hermit": {
+        "id": "HERMIT-0639",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-18",
+        "outcome": "NOT_RUN",
+        "reason": "Current OWL route: Partial: test absence of comparability entailments from equal numbers or labels. Remaining route: Planned: SPARQL task-readiness joins over pinned method, scale, dimension, basis and temporal context. Application calculation/comparison tests cover governed transformations and missing values."
+      },
+      "shacl": {
+        "id": "SHACL-0640",
+        "source_element": "C-18",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-18",
+        "proposed_disposition": "SCOPED_ALTERNATIVE",
+        "retained_claim": "Profile 0.7.0 checks strict eligibility for direct comparison of two selected pairs under declared pinned interpretation; missing data is not zero.",
+        "unclaimed_or_deferred": "Governed transformations, ranking/calculation, general temporal interpretation and universal assessment comparability are not claimed.",
+        "evidence_keys": [
+          "model",
+          "comparison",
+          "cq"
+        ],
+        "follow_up_issues": [
+          4,
+          5,
+          7,
+          12
+        ],
+        "owner_review_ids": [
+          "OR-07"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/cq/report.json",
+        "evaluation/shacl/comparison/report.json.gz",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-18",
+        "family": "Constraint",
+        "source_sha256": "e6c8eee8325ea4ecab06b779601b34d97263318b95b31488af581a66c94a6a43",
+        "title": "Comparable assessments",
+        "source_structure": {},
+        "disposition": "SELECTED_SUBCLAUSES_ONLY",
+        "reason": "Original 0.1.0 and new 0.2.0 named engineering subclauses only; no full original constraint acceptance.",
+        "next_evidence": "Follow the explicit policy/ORSD exclusions; broad #12/#4/#5 remains open."
+      }
+    },
+    {
+      "id": "C-19",
+      "source": {
+        "id": "C-19",
+        "title": "Workflow semantics",
+        "statement": "State labels are scheme/version qualified. Transition rules and authority are source-backed content. Missing rule means UNKNOWN; Closed does not imply ceased risk and Treated does not imply effectiveness.",
+        "status": "APPROVED_PROFILE_CONTRACT"
+      },
+      "owl_encoding": "Workflow labels and state classes remain source-qualified",
+      "owl_remainder": "Transitions, authorization and UNKNOWN handling need data/application rules.",
+      "hermit": {
+        "id": "HERMIT-0641",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-19",
+        "outcome": "NOT_RUN",
+        "reason": "Current OWL route: Partial: scheme-qualified workflow state does not entail actual risk cessation or effectiveness. Remaining route: Partial: validate scheme/version references and source-backed transition-rule records. Application transition tests enforce authority; absent rules yield UNKNOWN, not automatic permission."
+      },
+      "shacl": {
+        "id": "SHACL-0642",
+        "source_element": "C-19",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-19",
+        "proposed_disposition": "EXECUTABLE_CLAIM_DEFERRED",
+        "retained_claim": "Workflow labels/rules/authority remain source-qualified design content; Closed/Treated alone cannot establish cessation/effectiveness.",
+        "unclaimed_or_deferred": "No executable transition authority engine, universal workflow scheme mapping or treatment-effectiveness acceptance is claimed.",
+        "evidence_keys": [
+          "model",
+          "cq"
+        ],
+        "follow_up_issues": [
+          4,
+          5,
+          7,
+          12
+        ],
+        "owner_review_ids": [
+          "OR-10"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/cq/report.json",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-19",
+        "family": "Constraint",
+        "source_sha256": "f949561828fb94090d469c7c4b1edffbdd5b221276c3c12a8643dfe7b5e70d7b",
+        "title": "Workflow semantics",
+        "source_structure": {},
+        "disposition": "DEFERRED_NO_COMPLETE_SQL_MAPPING",
+        "reason": "Not an explicit complete mapping in the public 0.1.0 profile; no implementation is inferred from storage of opaque JSON or a historical private schema.",
+        "next_evidence": "Declare storage/derivation/external ownership, preserve unknown and provenance, add exact migration/query/counterexample oracles, then execute under #12."
+      }
+    },
+    {
+      "id": "C-20",
+      "source": {
+        "id": "C-20",
+        "title": "Risk Item vocabulary",
+        "statement": "In the terminology adopted by this profile, Risk Item denotes the managed risk subject modeled as RiskCase. This context-qualified mapping does not equate RiskCase with RiskRegisterEntry, RiskScenarioSpecification, ISO risk or any global Risk Item class.",
+        "status": "APPROVED_PROFILE_CONTRACT"
+      },
+      "owl_encoding": "Risk Item contextual synonym retained in requirements, no OWL equivalence",
+      "owl_remainder": "Context-sensitive terminology needs human review.",
+      "hermit": {
+        "id": "HERMIT-0643",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-20",
+        "outcome": "PASS",
+        "case_id": "H-C20-NO-CASE-ENTRY-EQUIVALENCE",
+        "scope": "bounded OWL portion only"
+      },
+      "shacl": {
+        "id": "SHACL-0644",
+        "source_element": "C-20",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-20",
+        "proposed_disposition": "DESIGN_AND_FINITE_CONTROLS",
+        "retained_claim": "Risk Item is a local terminology convention for the managed RiskCase subject, distinct from entry/scenario/ISO risk.",
+        "unclaimed_or_deferred": "No global Risk Item equivalence, automatic label-based import/class alignment or universal terminology standard.",
+        "evidence_keys": [
+          "model",
+          "h",
+          "sql"
+        ],
+        "follow_up_issues": [
+          5,
+          7
+        ],
+        "owner_review_ids": [
+          "OR-01",
+          "OR-08"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/hermit/report.json",
+        "evaluation/relational/history/report.json.gz",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-20",
+        "family": "Constraint",
+        "source_sha256": "a23fb0e0915f26e2f6f6d8f504cd79151f92cd959f9b0c5b3e165001e46bb254",
+        "title": "Risk Item vocabulary",
+        "source_structure": {},
+        "disposition": "DEFERRED_NO_COMPLETE_SQL_MAPPING",
+        "reason": "Not an explicit complete mapping in the public 0.1.0 profile; no implementation is inferred from storage of opaque JSON or a historical private schema.",
+        "next_evidence": "Declare storage/derivation/external ownership, preserve unknown and provenance, add exact migration/query/counterexample oracles, then execute under #12."
+      }
+    },
+    {
+      "id": "C-21",
+      "source": {
+        "id": "C-21",
+        "title": "Reported and computed scores",
+        "statement": "A reported RiskScoreResult may have no derivedFrom links. A computed RiskScoreResult requires at least one linked DimensionAssessmentResult, a pinned method and adequate inputs. The score kind must be recorded.",
+        "status": "REVIEW_DESIGN_CONSTRAINT_SELECTED_TESTS_ONLY"
+      },
+      "owl_encoding": "Score/result properties retain local bounds, no universal derivedFrom minimum",
+      "owl_remainder": "Conditional reported-versus-computed dependency and arithmetic need data rules.",
+      "hermit": {
+        "id": "HERMIT-0645",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-21",
+        "outcome": "NOT_RUN",
+        "reason": "Current OWL route: Partial: represent result and input relationships without treating a missing triple as proof of inconsistency. Remaining route: Planned: conditional reported/computed shapes require derivedFrom, pinned method and adequate inputs for computed results. Application tests rerun the formula; score-kind and formula/input scalar schema still need review."
+      },
+      "shacl": {
+        "id": "SHACL-0646",
+        "source_element": "C-21",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-21",
+        "proposed_disposition": "EXECUTABLE_CLAIM_DEFERRED",
+        "retained_claim": "Reported and computed score meanings/links are distinguished in the conceptual design.",
+        "unclaimed_or_deferred": "Complete current conditional computed-score admission, formula/input scalar schema and reproducible arithmetic engine are not executed public capabilities. Historical private calculation checks remain historical.",
+        "evidence_keys": [
+          "model",
+          "cq",
+          "manuscript"
+        ],
+        "follow_up_issues": [
+          4,
+          5,
+          7,
+          12
+        ],
+        "owner_review_ids": [
+          "OR-07",
+          "OR-10"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/cq/report.json",
+        "evaluation/manuscript-review/ledger.json",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-21",
+        "family": "Constraint",
+        "source_sha256": "ef406f7241dab0eace49d010cbf9847821fe6d0332c5ecc529d73dc4566e1c9c",
+        "title": "Reported and computed scores",
+        "source_structure": {},
+        "disposition": "SELECTED_SUBCLAUSES_ONLY",
+        "reason": "Original 0.1.0 and new 0.2.0 named engineering subclauses only; no full original constraint acceptance.",
+        "next_evidence": "Follow the explicit policy/ORSD exclusions; broad #12/#4/#5 remains open."
+      }
+    },
+    {
+      "id": "C-22",
+      "source": {
+        "id": "C-22",
+        "title": "Responsibility identity",
+        "statement": "Repeated mandates between the same participants are permitted when grounding assignment, responsibility scope or validity differs. Duplicate representations of the same grounded mandate must resolve to one relator identity; participant equality alone is not an identity key.",
+        "status": "REVIEW_DESIGN_CONSTRAINT_SELECTED_TESTS_ONLY"
+      },
+      "owl_encoding": "No keys based solely on mediated participant pairs",
+      "owl_remainder": "Mandate identity and duplicate adjudication depend on assignment, scope and validity.",
+      "hermit": {
+        "id": "HERMIT-0647",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-22",
+        "outcome": "PASS",
+        "case_id": "H-C22-NO-PARTICIPANT-PAIR-KEY",
+        "scope": "bounded OWL portion only"
+      },
+      "shacl": {
+        "id": "SHACL-0648",
+        "source_element": "C-22",
+        "family": "Constraint encoding disposition",
+        "outcome": "NOT_RUN",
+        "evidence": null,
+        "case_ids": []
+      },
+      "accepted_scope": {
+        "id": "C-22",
+        "proposed_disposition": "DESIGN_AND_FINITE_CONTROLS",
+        "retained_claim": "Bounded OWL countermodels avoid using participant pair alone as a mandate identity key.",
+        "unclaimed_or_deferred": "Actual assignment/scope/validity grounding and application deduplication of mandates are deferred; no new actual responsibility identities from names.",
+        "evidence_keys": [
+          "model",
+          "h",
+          "cq"
+        ],
+        "follow_up_issues": [
+          5,
+          7,
+          12
+        ],
+        "owner_review_ids": [
+          "OR-03"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/cq/report.json",
+        "evaluation/hermit/report.json",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-22",
+        "family": "Constraint",
+        "source_sha256": "e1ead1343ef4bc6f983e432038442ab9033b65604d4da6bc866ad08583376060",
+        "title": "Responsibility identity",
+        "source_structure": {},
+        "disposition": "DEFERRED_NO_COMPLETE_SQL_MAPPING",
+        "reason": "Not an explicit complete mapping in the public 0.1.0 profile; no implementation is inferred from storage of opaque JSON or a historical private schema.",
+        "next_evidence": "Declare storage/derivation/external ownership, preserve unknown and provenance, add exact migration/query/counterexample oracles, then execute under #12."
+      }
+    },
+    {
+      "id": "C-23",
+      "source": {
+        "id": "C-23",
+        "title": "Context relation coherence",
+        "statement": "Every analyzedInContext link is also a hasContext link for the same RiskCase and RiskContextSpecification. The broader hasContext relation may include non-analysis context.",
+        "status": "REVIEW_DESIGN_CONSTRAINT_SELECTED_TESTS_ONLY"
+      },
+      "owl_encoding": "The source-backed `analyzedInContext` to `hasContext` subproperty axiom is encoded",
+      "owl_remainder": "Reverse implication is absent; same-pair implication needs a reasoner test.",
+      "hermit": {
+        "id": "HERMIT-0649",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-23",
+        "outcome": "PASS",
+        "case_id": "H-C23-NO-REVERSE-CONTEXT, H-C23-ANALYZED-IMPLIES-CONTEXT",
+        "scope": "bounded OWL portion only"
+      },
+      "shacl": {
+        "id": "SHACL-0650",
+        "source_element": "C-23",
+        "family": "Constraint encoding disposition",
+        "outcome": "PASS",
+        "evidence": "evaluation/shacl/coherence/report.json",
+        "case_ids": [
+          "C23-MATCH",
+          "C23-GENERAL-ONLY",
+          "C23-UNSPECIFIED",
+          "C23-MISSING-GENERAL",
+          "C23-DIFFERENT-GENERAL",
+          "C23-MULTIPLE",
+          "C23-MISSING-ONE",
+          "C23-UNTYPED-SUBJECT",
+          "C23-WRONG-CONTEXT-TYPE",
+          "C23-CONTEXT-ALIASES",
+          "C23-LABELS-NOT-IDENTITY",
+          "C23-RAW-INCOMPLETE",
+          "C23-DELETED-RULE",
+          "C23-REVERSED-RULE",
+          "C23-INTEGRATED-VALID",
+          "C23-INTEGRATED-MISSING"
+        ]
+      },
+      "accepted_scope": {
+        "id": "C-23",
+        "proposed_disposition": "SCOPED_EVIDENCE",
+        "retained_claim": "Current explicit graph coherence checks analyzedInContext as a subrelation of hasContext with the same pair; no reverse repair.",
+        "unclaimed_or_deferred": "Finite asserted-graph constraint checks, not all data or full task/semantic acceptance.",
+        "evidence_keys": [
+          "model",
+          "h",
+          "coherence"
+        ],
+        "follow_up_issues": [
+          7
+        ],
+        "owner_review_ids": [
+          "OR-10"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/hermit/report.json",
+        "evaluation/shacl/coherence/report.json",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-23",
+        "family": "Constraint",
+        "source_sha256": "2210f9c4aedeb4dd984c7dc122c0b5df56a46731141924638eac5806afa15aa7",
+        "title": "Context relation coherence",
+        "source_structure": {},
+        "disposition": "DEFERRED_NO_COMPLETE_SQL_MAPPING",
+        "reason": "Not an explicit complete mapping in the public 0.1.0 profile; no implementation is inferred from storage of opaque JSON or a historical private schema.",
+        "next_evidence": "Declare storage/derivation/external ownership, preserve unknown and provenance, add exact migration/query/counterexample oracles, then execute under #12."
+      }
+    },
+    {
+      "id": "C-24",
+      "source": {
+        "id": "C-24",
+        "title": "Revision coherence",
+        "statement": "For each EntryRevision, revisionOf and inherited versionOf identify the same RiskRegisterEntry. previousRevision is irreflexive and acyclic and, when present, relates revisions of the same entry.",
+        "status": "REVIEW_DESIGN_CONSTRAINT_SELECTED_TESTS_ONLY"
+      },
+      "owl_encoding": "The source-backed `revisionOf` to `versionOf` subproperty axiom is encoded",
+      "owl_remainder": "Target coherence follows only for this relationship; irreflexivity, acyclicity and ordering still need reviewed data rules.",
+      "hermit": {
+        "id": "HERMIT-0651",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-24",
+        "outcome": "PASS",
+        "case_id": "H-C-24-IDENTITY-COUNTERMODEL, H-C24-REVISION-IMPLIES-VERSION",
+        "scope": "bounded OWL portion only"
+      },
+      "shacl": {
+        "id": "SHACL-0652",
+        "source_element": "C-24",
+        "family": "Constraint encoding disposition",
+        "outcome": "PASS",
+        "evidence": "evaluation/shacl/coherence/report.json",
+        "case_ids": [
+          "C24-CHAIN-1",
+          "C24-CHAIN-2",
+          "C24-CHAIN-3",
+          "C24-CHAIN-6",
+          "C24-CHAIN-12",
+          "C24-BRANCH",
+          "C24-SKIPPED-PREDECESSOR",
+          "C24-BLANK-NODES",
+          "C24-MISSING-REVISION-OF",
+          "C24-MISSING-VERSION-OF",
+          "C24-DIFFERENT-ENTRY-TARGETS",
+          "C24-DELETED-EQUALITY",
+          "C24-WRONG-ENTRY-TYPE",
+          "C24-UNTYPED-REVISION",
+          "C24-MULTIPLE-ENTRY-TARGETS",
+          "C24-CYCLE-1",
+          "C24-CYCLE-2",
+          "C24-CYCLE-3",
+          "C24-CYCLE-8",
+          "C24-CYCLE-17",
+          "C24-DELETED-CYCLE",
+          "C24-WEAKENED-CYCLE",
+          "C24-CROSS-ENTRY",
+          "C24-DELETED-LINEAGE",
+          "C24-TWO-PREDECESSORS",
+          "C24-RELAXED-PREDECESSORS",
+          "C24-ENTRY-ALIASES",
+          "C24-ALIASED-SELF-LOOP",
+          "C24-LABELS-NOT-IDENTITY",
+          "C24-RAW-CONFLICT",
+          "C24-INTEGRATED-VALID",
+          "C24-INTEGRATED-CROSS-ENTRY"
+        ]
+      },
+      "accepted_scope": {
+        "id": "C-24",
+        "proposed_disposition": "SCOPED_EVIDENCE",
+        "retained_claim": "Current graph coherence and SQLite history enforce selected same-entry revision/version targets and predecessor-cycle rules, including branches and tested long chains.",
+        "unclaimed_or_deferred": "Static graph evidence alone is not history; SQLite history is limited to declared profile and configured connection, not universal storage certification.",
+        "evidence_keys": [
+          "model",
+          "h",
+          "coherence",
+          "sql"
+        ],
+        "follow_up_issues": [
+          7,
+          12
+        ],
+        "owner_review_ids": [
+          "OR-04"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/hermit/report.json",
+        "evaluation/relational/history/report.json.gz",
+        "evaluation/shacl/coherence/report.json",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-24",
+        "family": "Constraint",
+        "source_sha256": "cd6a9cde18a70da3955c516fd44e9fc1f0880f51179d6529374d7fd870a44581",
+        "title": "Revision coherence",
+        "source_structure": {},
+        "disposition": "SELECTED_SUBCLAUSES_ONLY",
+        "reason": "Original 0.1.0 and new 0.2.0 named engineering subclauses only; no full original constraint acceptance.",
+        "next_evidence": "Follow the explicit policy/ORSD exclusions; broad #12/#4/#5 remains open."
+      }
+    },
+    {
+      "id": "C-25",
+      "source": {
+        "id": "C-25",
+        "title": "Version target coherence",
+        "statement": "usesContextVersion targets a version of RiskContextSpecification; usesMethodVersion a version of AssessmentMethodSpecification; usesScaleVersion a version of AssessmentScale; usesCriteriaVersion a version of RiskCriteria. Artifact-level references, when present, agree with versionOf.",
+        "status": "REVIEW_DESIGN_CONSTRAINT_SELECTED_TESTS_ONLY"
+      },
+      "owl_encoding": "Four selected-version target-kind existential restrictions on their source classes",
+      "owl_remainder": "Named `versionOf` and artifact-level reference agreement remain explicit-data joins; no wrong-kind contradiction follows without reviewed artifact-kind disjointness.",
+      "hermit": {
+        "id": "HERMIT-0653",
+        "family": "Constraint encoding disposition",
+        "source_element": "C-25",
+        "outcome": "PASS",
+        "case_id": "H-C25-VERSION-TARGET-RX-014, H-C25-VERSION-TARGET-RX-015, H-C25-VERSION-TARGET-RX-016, H-C25-VERSION-TARGET-RX-013",
+        "scope": "bounded OWL portion only"
+      },
+      "shacl": {
+        "id": "SHACL-0654",
+        "source_element": "C-25",
+        "family": "Constraint encoding disposition",
+        "outcome": "PASS",
+        "evidence": "evaluation/shacl/report.json",
+        "case_ids": [
+          "S-C25-Context-VALID",
+          "S-C25-Context-UNTYPED-VERSION",
+          "S-C25-Context-UNTYPED-SOURCE",
+          "S-C25-Context-MISSING-TARGET",
+          "S-C25-Context-WRONG-KIND",
+          "S-C25-Context-TWO-TARGETS",
+          "S-C25-Context-ALIASED-TARGET",
+          "S-C25-Context-DIRECT-MATCH",
+          "S-C25-Context-DIRECT-MISMATCH",
+          "S-C25-Context-DIRECT-ALIAS",
+          "S-C25-Method-VALID",
+          "S-C25-Method-UNTYPED-VERSION",
+          "S-C25-Method-UNTYPED-SOURCE",
+          "S-C25-Method-MISSING-TARGET",
+          "S-C25-Method-WRONG-KIND",
+          "S-C25-Method-TWO-TARGETS",
+          "S-C25-Method-ALIASED-TARGET",
+          "S-C25-Method-DIRECT-MATCH",
+          "S-C25-Method-DIRECT-MISMATCH",
+          "S-C25-Method-DIRECT-ALIAS",
+          "S-C25-Scale-VALID",
+          "S-C25-Scale-UNTYPED-VERSION",
+          "S-C25-Scale-UNTYPED-SOURCE",
+          "S-C25-Scale-MISSING-TARGET",
+          "S-C25-Scale-WRONG-KIND",
+          "S-C25-Scale-TWO-TARGETS",
+          "S-C25-Scale-ALIASED-TARGET",
+          "S-C25-Scale-DIRECT-MATCH",
+          "S-C25-Scale-DIRECT-MISMATCH",
+          "S-C25-Scale-DIRECT-ALIAS",
+          "S-C25-Criteria-VALID",
+          "S-C25-Criteria-UNTYPED-VERSION",
+          "S-C25-Criteria-UNTYPED-SOURCE",
+          "S-C25-Criteria-MISSING-TARGET",
+          "S-C25-Criteria-WRONG-KIND",
+          "S-C25-Criteria-TWO-TARGETS",
+          "S-C25-Criteria-ALIASED-TARGET"
+        ]
+      },
+      "accepted_scope": {
+        "id": "C-25",
+        "proposed_disposition": "SCOPED_EVIDENCE",
+        "retained_claim": "Bounded native version-target checks and selected explicit-data direct/version reference coherence have executed fixtures. SQL supplements version-owned target coherence only.",
+        "unclaimed_or_deferred": "SQL bindings do not replace native assessment subject/required-role admission; no full conditional multi-relation risk-record acceptance.",
+        "evidence_keys": [
+          "model",
+          "h",
+          "conditional",
+          "sql"
+        ],
+        "follow_up_issues": [
+          5,
+          7,
+          12
+        ],
+        "owner_review_ids": [
+          "OR-04",
+          "OR-10"
+        ],
+        "owner_disposition": "ACCEPTED_WITH_DECLARED_EXCLUSIONS"
+      },
+      "evidence": [
+        "evaluation/hermit/report.json",
+        "evaluation/relational/history/report.json.gz",
+        "evaluation/shacl/coverage-status.json",
+        "evaluation/shacl/endpoints/report.json",
+        "evaluation/shacl/report.json",
+        "ontology/riskium-model.json"
+      ],
+      "sql_assessment": {
+        "id": "C-25",
+        "family": "Constraint",
+        "source_sha256": "36cd154a611c0a5da0772a5d63a72d47ecf981aba26922283ff1fd1cc6d51a80",
+        "title": "Version target coherence",
+        "source_structure": {},
+        "disposition": "SELECTED_SUBCLAUSES_ONLY",
+        "reason": "Original 0.1.0 and new 0.2.0 named engineering subclauses only; no full original constraint acceptance.",
+        "next_evidence": "Follow the explicit policy/ORSD exclusions; broad #12/#4/#5 remains open."
+      }
+    }
+  ],
+  "summary": {
+    "constraints": 25,
+    "sql_selected_subclauses": 11
+  }
+}

@@ -13,3 +13,5 @@ For subsequent edits, synchronize the generated pages and verify links, source v
 Fresh read-only Git readback on 24 October at Wiki commit `709bcf003a43b692eb543d21fa0c61546e5e0d15` again matched all seven source files. The content nevertheless predates the final release and current engineering supplements. [Successor #30](https://github.com/ArazSaieArasi3/riskium/issues/30) owns current-content maintenance, shared Wiki/Pages explanatory sources and actual new publication/readback; the [ordered work plan](../work-plan.md) records its dependencies. This audit does not claim the new Wiki content has already been published.
 
 The Pages upgrade updates the shared guide sources and generated Markdown in this directory. This records repository parity; it does not claim a new live Wiki synchronization. Current publication evidence belongs to `evaluation/pages-upgrade/`.
+
+Formal reference task #33 projects the same method and all 25 clause routes into `Formalization.md` and Pages. This records source parity only; a new native Wiki publish/readback is not included in that receipt. Gate #39 explicitly verifies the live channel before the next stable freeze.

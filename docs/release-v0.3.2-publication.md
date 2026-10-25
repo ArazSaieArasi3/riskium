@@ -1,5 +1,8 @@
 # Current release and next work — 25 October 2026
 
+> Current documentation maintenance: Pages upgrade #38 is complete. The [formal-method guide](formal-method.md) implements the explanation and 25-clause evidence routes in #33. The [work plan](work-plan.md) schedules the next SQL packet and cross-document traceability gate #39 before the next stable freeze. The v0.3.2 source and assets described below remain immutable.
+
+
 **[Riskium v0.3.2](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.2) is published and independently downloaded/verified.** Exact frozen source: `67ebe1e9bd8b2e82649ed4ff43bfb1620c13bd48`. [Machine receipt](../evaluation/releases/v0.3.2-publication.json) and [actual successful publication workflow](https://github.com/ArazSaieArasi3/riskium/actions/runs/40195574878).
 
 Issue #34 completes the successor distribution/profile, exact clean freeze, publication and downloaded verification. All 25 final gates and 200 software regressions passed. Six public assets and their complete 586-file tracked source inventory were verified in a separate hosted job, then downloaded again with independent root-agent HTTPS requests and validated locally. GitHub final/latest metadata, exact tag commit, source/component hashes and all eight earlier release IDs/tag commits/assets were checked. The first stable v0.3.1 and seven rc releases remain unchanged.
