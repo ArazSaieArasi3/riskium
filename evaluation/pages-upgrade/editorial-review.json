@@ -156,5 +156,12 @@
       "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
       "sha256": "49508373d062b1cef4ded403bfe1bedde4a25131a6bb1799c613e9e44a9e4596"
     }
+  ],
+  "registry_context_changes": [
+    {
+      "slug": "Requirements",
+      "disposition": "E4_VERIFIED_CONTEXT_ONLY",
+      "reason": "ORSD checkpoint is unchanged; pending freeze is explicitly distinguished from subsequent verified publications."
+    }
   ]
 }

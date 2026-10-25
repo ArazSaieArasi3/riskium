@@ -198,7 +198,9 @@ def build(out):
     redirect(Path('site/index.html'),'../'+PREFIX.as_posix()+'/reference/native/index.html','Open the Riskium conceptual reference')
     previews = [('Overview', 'index.html'), ('Conceptual reference', 'reference/native/index.html'), ('OWL reference', 'widoco/index-en.html'), ('Explorer', 'explore/index.html'), ('WebVOWL', VIEW_ROUTE), ('Term search','reference/search.html'), ('Guide','guide/Overview.html'), ('Versions','../versions/index.html')]
     review = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Riskium responsive interface review</title><style>body{font:16px/1.6 system-ui;margin:24px;color:#172b3a}section{margin:30px 0}.frames{display:flex;flex-wrap:wrap;gap:24px}iframe{border:1px solid #526574;height:620px;max-width:100%}a{color:#135a7a}</style></head><body><h1>Responsive interface review</h1><p>Maintainer review surface: the same versioned documents are rendered in real 390-pixel and 760-pixel frame viewports. Each frame has its own scroll area and keyboard focus. These checks concern reading and navigation, not ontology validation.</p><p><a href="'+PREFIX.as_posix()+'/index.html">Open the documentation</a></p>'
+    review_token=hashlib.sha256(b''.join((TOOLS/p).read_bytes() for p in ['presentation.py','portal.css','build_portal.py'])).hexdigest()[:12]
     for title, route in previews:
+        route += ('&' if '?' in route else '?')+'review='+review_token
         review += '<section><h2>'+title+'</h2><div class="frames">'+''.join('<div><h3>'+str(width)+' pixels</h3><iframe width="'+str(width)+'" title="'+title+' at '+str(width)+' pixels" src="'+PREFIX.as_posix()+'/'+route+'"></iframe></div>' for width in [390,760])+'</div></section>'
     write(out/'interface-review.html',review+'</body></html>\n')
     write(out/'.nojekyll','')

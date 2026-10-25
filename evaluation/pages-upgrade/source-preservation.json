@@ -1,0 +1,56 @@
+{
+  "baseline": "eb0ff1d64e87c8667aa9f3eab46d700ffc61a7ee",
+  "checks": [
+    {
+      "path": "ontology/riskium-model.json",
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+      "unchanged": true
+    },
+    {
+      "path": "ontology/native/riskium.ontouml.json",
+      "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+      "unchanged": true
+    },
+    {
+      "path": "ontology/derived/riskium.owl.ttl",
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+      "unchanged": true
+    },
+    {
+      "path": "requirements/requirements.json",
+      "sha256": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+      "unchanged": true
+    },
+    {
+      "path": "requirements/scope-requirements.json",
+      "sha256": "7090abec35d8dca2c2034c9cefaeccbe3f4ecd547d28b78a56eb5662e401d2f8",
+      "unchanged": true
+    },
+    {
+      "path": "evaluation/hermit/report.json",
+      "sha256": "414d57f9bb6c91c7b1c08430367669f67b6d57fbe96766cd3d30e233902cdd58",
+      "unchanged": true
+    },
+    {
+      "path": "evaluation/shacl/coverage-status.json",
+      "sha256": "376c30a35caf40b0fc75710241fa2e87024a6d47b576e34f2cd42b0f04eb4632",
+      "unchanged": true
+    },
+    {
+      "path": "docs/current/webvowl/data/riskium.json",
+      "sha256": "4b96dfd769858256a13aedf760e32bb64aa740437d9dc5cfc278787ae41fbdc2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/current/webvowl/coverage.json",
+      "sha256": "bebe79ba85ad4f3d6c920b101046dbee84a3121b48ae0f395461220a8ec3ae31",
+      "unchanged": true
+    },
+    {
+      "path": "vendor/webvowl/1.1.7/webvowl.js",
+      "sha256": "a46d5a71e0d8d05aad6fd3ea4ed4e2cc66ba738958a04aa2dc7568f31f2c2006",
+      "unchanged": true
+    }
+  ],
+  "scope": "Exact retained sources; registered frozen snapshots additionally checked by versioned-site audit."
+}

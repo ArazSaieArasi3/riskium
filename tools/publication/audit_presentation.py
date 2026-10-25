@@ -1,5 +1,6 @@
 """Audit current reader routes; frozen presentations are assessed separately."""
 from pathlib import Path
+from urllib.parse import urlsplit
 from bs4 import BeautifulSoup
 
 
@@ -19,7 +20,7 @@ def audit(docs):
         require(bool(soup.select('details.mobile-navigation')),'Missing narrow-screen navigation')
         require(bool(soup.select('.site-footer')),'Missing common footer')
         css=[n.get('href','') for n in soup.select('link[rel=stylesheet]')]
-        require(any(n.endswith('assets/portal.css') for n in css),'Shared design tokens absent')
+        require(any(urlsplit(n).path.endswith('assets/portal.css') for n in css),'Shared design tokens absent')
         rows.append(dict(path=path.relative_to(docs).as_posix(),title=title,template='riskium-pages-1',h1=1,main=1,primary_nav=True,skip=True,mobile_navigation=True))
     return dict(status='CURRENT_PRESENTATION_PASS',pages=len(rows),inventory=rows,
                 limits='Static landmarks and shared presentation contract; browser behavior and usability are separate evidence.')
