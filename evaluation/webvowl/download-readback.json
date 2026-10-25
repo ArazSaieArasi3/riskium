@@ -1,0 +1,22 @@
+{
+  "schema": "riskium-webvowl-browser-download-readback-v1",
+  "method": "Actual shared browser download files after clicking the rendered download link and documented downloadMedia; exact-byte local comparison. Browser event-reporting APIs timed out, but both resulting synced files were present and matched.",
+  "expected_sha256": "4b96dfd769858256a13aedf760e32bb64aa740437d9dc5cfc278787ae41fbdc2",
+  "files": [
+    {
+      "path": "/workspace/scratch/riskium-webvowl-0.1.0.json",
+      "bytes": 162349,
+      "modified_utc": "2026-10-25T13:54:42.457958+00:00",
+      "sha256": "4b96dfd769858256a13aedf760e32bb64aa740437d9dc5cfc278787ae41fbdc2",
+      "matches_exact_projection": true
+    },
+    {
+      "path": "/workspace/scratch/riskium.json",
+      "bytes": 162349,
+      "modified_utc": "2026-10-25T13:56:13.951797+00:00",
+      "sha256": "4b96dfd769858256a13aedf760e32bb64aa740437d9dc5cfc278787ae41fbdc2",
+      "matches_exact_projection": true
+    }
+  ],
+  "all_bytes_match": true
+}

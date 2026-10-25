@@ -6,19 +6,18 @@ Issue #34 completes the successor distribution/profile, exact clean freeze, publ
 
 The distribution matrix explicitly selects 20 independently versioned components: ten original accepted components, eight engineering supplements, documentation 0.1.0 and rights/model-citation metadata. Model 0.3.1, ORSD 0.4.3, manuscript 7.0.8 and original owner decisions remain unchanged; SQLite assessment/result 0.2.0, DRSD/assurance 0.1.0 and selected integration evidence are now included as separately disclosed engineering components. An ordinary later push cannot republish the unchanged request. The stable pipeline uses official, exact-commit-pinned Node 24 actions, rejects changed HEAD/dirty sources or old tags/assets, and requires staged and separate final downloads.
 
-Documentation 0.1.0 remains the exact Wiki/current/frozen source set selected before publication; its dated work-plan snapshot describes #34 as planned. Fresh final-freeze evidence matched all 23 actual Wiki files and 53 current plus 53 frozen Pages files. This later status page records completion without rewriting selected documentation snapshots or inventing a new semantic-documentation version. The remaining graphical WebVOWL and reference/navigation enhancements are still #32/#33.
+Documentation 0.1.0 remains the exact Wiki/current/frozen source set selected before publication; its dated work-plan snapshot describes #34 as planned. Fresh final-freeze evidence matched all 23 actual Wiki files and 53 current plus 53 frozen Pages files. This later status page records completion without rewriting selected documentation snapshots or inventing a new semantic-documentation version. WebVOWL #32 is now complete as a separately published documentation/view component 0.1.0; [source/runtime/browser/download evidence](../evaluation/webvowl/README.md) binds the exact released OWL and unchanged scientific scope. It is not retroactively added to v0.3.2 assets. Reference/navigation #33 is next.
 
 ## Remaining execution order
 
-There are 27 closed and ten open issues after completing #34. Parent/child scopes below are not counted twice. The next focused task is #32.
+There are 28 closed and nine open issues after completing #34 and #32. Parent/child scopes below are not counted twice. The next focused task is #33.
 
 | Order | Issues | Remaining result |
 | --- | --- | --- |
-| 1 | [#32](https://github.com/ArazSaieArasi3/riskium/issues/32) | Source-bound local WebVOWL graph, omission inventory, accessible fallback and actual deployed interaction checks |
-| 2 | [#33](https://github.com/ArazSaieArasi3/riskium/issues/33) | Readable formal-method/25-clause evidence routes, term search and diagram navigation |
-| 3 | [#35](https://github.com/ArazSaieArasi3/riskium/issues/35), [#12](https://github.com/ArazSaieArasi3/riskium/issues/12) | Next finite source/scenario/correction SQL mapping, fixed query answers and additive populated migration |
-| 4 | [#4](https://github.com/ArazSaieArasi3/riskium/issues/4), [#5](https://github.com/ArazSaieArasi3/riskium/issues/5) | Justified remaining formal/application rules, time/workflow/multi-value/calculation policies and actual controls |
-| 5 | [#37](https://github.com/ArazSaieArasi3/riskium/issues/37), [#13](https://github.com/ArazSaieArasi3/riskium/issues/13) | Legitimate normative/prior-art reading and broader source-backed case adequacy |
+| 1 | [#33](https://github.com/ArazSaieArasi3/riskium/issues/33) | Readable formal-method/25-clause evidence routes, term search and diagram navigation |
+| 2 | [#35](https://github.com/ArazSaieArasi3/riskium/issues/35), [#12](https://github.com/ArazSaieArasi3/riskium/issues/12) | Next finite source/scenario/correction SQL mapping, fixed query answers and additive populated migration |
+| 3 | [#4](https://github.com/ArazSaieArasi3/riskium/issues/4), [#5](https://github.com/ArazSaieArasi3/riskium/issues/5) | Justified remaining formal/application rules, time/workflow/multi-value/calculation policies and actual controls |
+| 4 | [#37](https://github.com/ArazSaieArasi3/riskium/issues/37), [#13](https://github.com/ArazSaieArasi3/riskium/issues/13) | Legitimate normative/prior-art reading and broader source-backed case adequacy |
 | Alongside when reviewers are available | [#23](https://github.com/ArazSaieArasi3/riskium/issues/23) | Actual independent initial ratings and adjudication; current responses remain zero |
 | Deployment dependent | [#36](https://github.com/ArazSaieArasi3/riskium/issues/36) | PostgreSQL/private migration, real workload, recovery/roles and actual user/deployment acceptance |
 
