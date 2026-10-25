@@ -36,7 +36,8 @@ def audit(docs):
             if node.name=='link' and 'stylesheet' in node.get('rel',[]):require(not urlsplit(node.get('href','')).scheme,'external stylesheet')
         for script in soup.find_all('script'):
             if script.get('type')=='application/ld+json':continue
-            require(script.get('src','').endswith('/filter.js') or script.get('src')=='filter.js','unexpected runtime script: '+str(p))
+            viewer_script = p == version/'webvowl/index.html' and script.get('src') in ['vendor/d3.min.js','vendor/webvowl.js','viewer.js']
+            require(viewer_script or script.get('src','').endswith('/filter.js') or script.get('src')=='filter.js','unexpected runtime script: '+str(p))
     for p,soup in pages.items():
         for node in soup.find_all(['a','img','script','link']):
             url=node.get('href') or node.get('src') or '';u=urlsplit(url)
@@ -91,6 +92,8 @@ def audit(docs):
     runtime=(version/'assets/filter.js').read_text()
     require(not re.search(r'\b(fetch|XMLHttpRequest|WebSocket|sendBeacon|localStorage|sessionStorage)\b',runtime),'runtime network/storage behavior requires review')
     require(runtime==(TOOLS/'filter.js').read_text(),'stale filter script')
+    from build_webvowl import audit as audit_webvowl
+    audit_webvowl(docs)
     if errors:raise ValueError('\n'.join(errors))
     return {'status':'PASS','scope':'Documentation/source/serialization/interface structure checks; not ontology validation or browser execution.','release':TAG,'semantic_source_commit':COMMIT,'html_pages':len(pages),'local_links_checked':links,'conceptual_entries':305,'explorer_classes':len(classes),'explorer_object_properties':len(props),'owl_triples':len(graph),'graph_isomorphic_serializations':4,'runtime_external_assets':0,'upload_surfaces':0,'limitations':['Browser keyboard/mobile and deployed readback are recorded separately.','External source hyperlinks are not asserted to be dereferenceable vocabulary endpoints.']}
 

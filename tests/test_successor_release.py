@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import sys
 import tempfile
+import subprocess
 import unittest
 from unittest.mock import patch
 
@@ -17,6 +18,17 @@ import prepare_incremental_release as incremental
 
 
 class SuccessorRelease(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls._frozen = tempfile.TemporaryDirectory()
+        cls.frozen = Path(cls._frozen.name)/'source'
+        subprocess.run(['git','clone','--quiet','--shared','--no-checkout',str(ROOT),str(cls.frozen)],check=True)
+        subprocess.run(['git','checkout','--quiet','--detach','67ebe1e9bd8b2e82649ed4ff43bfb1620c13bd48'],cwd=cls.frozen,check=True)
+
+    @classmethod
+    def tearDownClass(cls):
+        cls._frozen.cleanup()
+
     def setUp(self):
         self.profile = stable.read(ROOT, 'releases/stable-profile-v0.3.2.json')
         self.matrix = stable.read(ROOT, self.profile['artifact_matrix'])
@@ -32,9 +44,9 @@ class SuccessorRelease(unittest.TestCase):
                     current_files=53, frozen_files=53, files_sha256=files)
 
     def test_successor_keeps_original_model_and_twenty_explicit_components(self):
-        p = stable.validate_profile(ROOT, 'v0.3.2')
+        p = stable.validate_profile(self.frozen, 'v0.3.2')
         self.assertEqual((p['tag'], p['model_version']), ('v0.3.2', '0.3.1'))
-        self.assertEqual(len(dist.validate_distribution(ROOT, p)['artifacts']), 20)
+        self.assertEqual(len(dist.validate_distribution(self.frozen, p)['artifacts']), 20)
 
     def test_unregistered_and_unsafe_tags_are_rejected(self):
         for tag in ['v0.3.3', '../v0.3.2', 'v0.3.2-rc.1', 'v0.3.2\npublish=true']:
@@ -50,12 +62,12 @@ class SuccessorRelease(unittest.TestCase):
             elif kind == 'selection': m['artifacts'][10]['version'] = '9.0.0'
             else: m['preserve_releases'].remove('v0.3.1')
             with self.subTest(kind=kind), self.assertRaises(ValueError):
-                dist.validate_matrix(m, lambda p:(ROOT/p).read_bytes())
+                dist.validate_matrix(m, lambda p:(self.frozen/p).read_bytes())
 
     def test_stale_wiki_source_or_projection_receipt_blocks_selection(self):
         for path in ['tools/publication/guide-registry.json', 'docs/work-plan.md', 'docs/wiki/Home.md']:
             def blob(p):
-                data = (ROOT/p).read_bytes()
+                data = (self.frozen/p).read_bytes()
                 return data+b'changed' if p == path else data
             with self.subTest(path=path), self.assertRaises(ValueError):
                 dist.validate_matrix(self.matrix, blob)
@@ -89,10 +101,10 @@ class SuccessorRelease(unittest.TestCase):
         # Explicit software-test fixture: these synthetic check records are never
         # submitted as a real workflow/freeze/publication result.
         checks=[dict(command=['python',*args],exit_code=0) for args in stable.CHECKS]
-        head=stable.git(ROOT,'rev-parse','HEAD').decode().strip()
+        head=stable.git(self.frozen,'rev-parse','HEAD').decode().strip()
         with tempfile.TemporaryDirectory() as folder:
             out=Path(folder)/'package'
-            stable.package(ROOT,out,self.profile,checks,self.receipt())
+            stable.package(self.frozen,out,self.profile,checks,self.receipt())
             freeze,manifest=publisher.validate_package(out,head)
             self.assertEqual(freeze['tag'],'v0.3.2')
             self.assertGreater(manifest['file_count'],568)
@@ -142,7 +154,7 @@ class SuccessorRelease(unittest.TestCase):
                 if path==self.profile['critical_screen']: x[field]=value
                 return x
             with self.subTest(field=field),patch.object(dist,'read',side_effect=read),self.assertRaises(ValueError):
-                dist.validate_distribution(ROOT,self.profile)
+                dist.validate_distribution(self.frozen,self.profile)
         p=copy.deepcopy(self.profile);p['readback_required']=False
         with self.assertRaises(ValueError):dist.validate_distribution(ROOT,p)
 

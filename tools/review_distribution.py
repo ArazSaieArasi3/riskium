@@ -164,5 +164,22 @@ def live_readback(root, profile):
 
 if __name__ == '__main__':
     p = read(ROOT, 'releases/stable-profile-v0.3.2.json')
-    m = validate_distribution(ROOT, p)
-    print(json.dumps({'status': 'SUCCESSOR_COMPONENT_SELECTION_PASS', 'tag': m['tag'], 'components': len(m['artifacts'])}))
+    receipt = ROOT/'evaluation/releases/v0.3.2-publication.json'
+    if receipt.is_file():
+        # Current documentation may evolve after a published distribution. Its
+        # immutable selection is checked at the recorded/tagged source, not
+        # silently rebound to later current-page bytes.
+        released = json.loads(receipt.read_bytes())
+        commit = released['source_commit']
+        require(released['publication_state'] == 'PUBLISHED_AND_INDEPENDENTLY_DOWNLOADED_VERIFIED', 'Unverified published distribution')
+        require(subprocess.check_output(['git','rev-parse','v0.3.2^{commit}'],cwd=ROOT,text=True).strip() == commit, 'Published distribution tag moved')
+        def blob(path):
+            return subprocess.check_output(['git','show',commit+':'+safe_path(path)],cwd=ROOT)
+        require((ROOT/p['artifact_matrix']).read_bytes() == blob(p['artifact_matrix']), 'Published selection matrix changed')
+        m = json.loads(blob(p['artifact_matrix']))
+        validate_matrix(m, blob)
+        status = 'PUBLISHED_DISTRIBUTION_EXACT_SOURCE_PASS'
+    else:
+        m = validate_distribution(ROOT, p)
+        status = 'SUCCESSOR_COMPONENT_SELECTION_PASS'
+    print(json.dumps({'status': status, 'tag': m['tag'], 'components': len(m['artifacts'])}))

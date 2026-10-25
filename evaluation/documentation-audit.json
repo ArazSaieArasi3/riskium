@@ -3,12 +3,12 @@
   "explorer_classes": 78,
   "explorer_object_properties": 127,
   "graph_isomorphic_serializations": 4,
-  "html_pages": 30,
+  "html_pages": 31,
   "limitations": [
     "Browser keyboard/mobile and deployed readback are recorded separately.",
     "External source hyperlinks are not asserted to be dereferenceable vocabulary endpoints."
   ],
-  "local_links_checked": 4149,
+  "local_links_checked": 4198,
   "owl_triples": 2087,
   "release": "v0.3.1",
   "runtime_external_assets": 0,

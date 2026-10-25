@@ -1,0 +1,131 @@
+diff --git a/src/webvowl/js/graph.js b/src/webvowl/js/graph.js
+index a519e8e..1018fe4 100644
+--- a/src/webvowl/js/graph.js
++++ b/src/webvowl/js/graph.js
+@@ -80,7 +80,7 @@ module.exports = function ( graphContainerSelector ){
+     
+     eP = 0, // id for new properties
+     eN = 0, // id for new Nodes
+-    editMode = true,
++    editMode = false,
+     debugContainer = d3.select("#FPS_Statistics"),
+     finishedLoadingSequence = false,
+     
+@@ -2720,112 +2720,15 @@ module.exports = function ( graphContainerSelector ){
+     
+   }
+   
++  // Riskium read-only shell: editing is intentionally unavailable.
+   graph.editorMode = function ( val ){
+-    var create_entry = d3.select("#empty");
+-    var create_container = d3.select("#emptyContainer");
+-    
+-    var modeOfOpString = d3.select("#modeOfOperationString").node();
+-    if ( !arguments.length ) {
+-      create_entry.node().checked = editMode;
+-      if ( editMode === false ) {
+-        create_container.node().title = "Enable editing in modes menu to create a new ontology";
+-        create_entry.node().title = "Enable editing in modes menu to create a new ontology";
+-        create_entry.style("pointer-events", "none");
+-      } else {
+-        create_container.node().title = "Creates a new empty ontology";
+-        create_entry.node().title = "Creates a new empty ontology";
+-        d3.select("#useAccuracyHelper").style("color", "#2980b9");
+-        d3.select("#useAccuracyHelper").style("pointer-events", "auto");
+-        create_entry.node().disabled = false;
+-        create_entry.style("pointer-events", "auto");
+-      }
+-      
+-      return editMode;
+-    }
+-    graph.options().setEditorModeForDefaultObject(val);
+-    
+-    // if (seenEditorHint===false  && val===true){
+-    //     seenEditorHint=true;
+-    //     graph.options().warningModule().showEditorHint();
+-    // }
+-    editMode = val;
+-    
+-    if ( create_entry ) {
+-      create_entry.classed("disabled", !editMode);
+-      if ( !editMode ) {
+-        create_container.node().title = "Enable editing in modes menu to create a new ontology";
+-        create_entry.node().title = "Enable editing in modes menu to create a new ontology";
+-        create_entry.node().disabled = true;
+-        d3.select("#useAccuracyHelper").style("color", "#979797");
+-        d3.select("#useAccuracyHelper").style("pointer-events", "none");
+-        create_entry.style("pointer-events", "none");
+-      } else {
+-        create_container.node().title = "Creates a new empty ontology";
+-        create_entry.node().title = "Creates a new empty ontology";
+-        d3.select("#useAccuracyHelper").style("color", "#2980b9");
+-        d3.select("#useAccuracyHelper").style("pointer-events", "auto");
+-        create_entry.style("pointer-events", "auto");
+-      }
+-    }
+-    
+-    // adjust compact notation
+-    // selector = compactNotationOption;
+-    // box =ModuleCheckbox
+-    var compactNotationContainer = d3.select("#compactnotationModuleCheckbox");
+-    if ( compactNotationContainer ) {
+-      compactNotationContainer.classed("disabled", !editMode);
+-      if ( !editMode ) {
+-        compactNotationContainer.node().title = "";
+-        compactNotationContainer.node().disabled = false;
+-        compactNotationContainer.style("pointer-events", "auto");
+-        d3.select("#compactNotationOption").style("color", "");
+-        d3.select("#compactNotationOption").node().title = "";
+-        options.literalFilter().enabled(true);
+-        graph.update();
+-      } else {
+-        // if editor Mode
+-        //1) uncheck the element
+-        d3.select("#compactNotationOption").node().title = "Compact notation can only be used in view mode";
+-        compactNotationContainer.node().disabled = true;
+-        compactNotationContainer.node().checked = false;
+-        options.compactNotationModule().enabled(false);
+-        options.literalFilter().enabled(false);
+-        graph.executeCompactNotationModule();
+-        graph.executeEmptyLiteralFilter();
+-        graph.lazyRefresh();
+-        compactNotationContainer.style("pointer-events", "none");
+-        d3.select("#compactNotationOption").style("color", "#979797");
+-      }
+-    }
+-    
+-    if ( modeOfOpString ) {
+-      if ( touchDevice === true ) {
+-        modeOfOpString.innerHTML = "touch able device detected";
+-      } else {
+-        modeOfOpString.innerHTML = "point & click device detected";
+-      }
++    if (arguments.length && val !== false) {
++      throw new Error("Riskium viewer does not support ontology editing");
+     }
+-    var svgGraph = d3.selectAll(".vowlGraph");
+-    
+-    if ( editMode === true ) {
+-      options.leftSidebar().showSidebar(options.leftSidebar().getSidebarVisibility(), true);
+-      options.leftSidebar().hideCollapseButton(false);
+-      graph.options().editSidebar().updatePrefixUi();
+-      graph.options().editSidebar().updateElementWidth();
+-      svgGraph.on("dblclick.zoom", graph.modified_dblClickFunction);
+-      
+-    } else {
+-      svgGraph.on("dblclick.zoom", originalD3_dblClickFunction);
+-      options.leftSidebar().showSidebar(0);
+-      options.leftSidebar().hideCollapseButton(true);
+-      // hide hovered edit elements
+-      removeEditElements();
+-    }
+-    options.sidebar().updateShowedInformation();
+-    options.editSidebar().updateElementWidth();
+-    
++    return false;
+   };
+   
++
+   function createLowerCasePrototypeMap( prototypeMap ){
+     return d3.map(prototypeMap.values(), function ( Prototype ){
+       return new Prototype().type().toLowerCase();

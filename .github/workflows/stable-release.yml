@@ -43,6 +43,11 @@ jobs:
               paths=git('.', 'diff','--name-only',event['before'],os.environ['GITHUB_SHA']).decode().splitlines()
           tracked=['releases/stable-request.json','releases/stable-profile-v0.3.1.json','evaluation/finalization/v0.3.1-review.json','tools/prepare_stable_release.py','tools/publish_stable_release.py','tests/test_stable_release.py','tests/test_successor_release.py','tools/review_distribution.py','.github/workflows/stable-release.yml']
           prepare=value['publish'] or os.environ['GITHUB_EVENT_NAME']=='workflow_dispatch' or any(p in tracked or p.startswith('releases/stable-profile') or p.startswith('releases/distribution-') or p.startswith('evaluation/finalization/') for p in paths)
+          selected=value['release_tag'] or json.load(open('releases/stable-request.json'))['tag']
+          import subprocess
+          already_published=subprocess.run(['git','show-ref','--verify','--quiet','refs/tags/'+selected]).returncode==0
+          if os.environ['GITHUB_EVENT_NAME']=='push' and not value['publish'] and already_published:
+              prepare=False  # Current docs can evolve; do not re-freeze an old published distribution.
           with open(os.environ['GITHUB_OUTPUT'],'a') as output:
               output.write('publish='+str(value['publish']).lower()+'\n')
               output.write('prepare='+str(prepare).lower()+'\n')
