@@ -47,7 +47,7 @@
     const node = document.getElementById(term.id); if (node && $("graph").contains(node)) node.classList.add("selected");
     if (move) {
       const target = graph.graphNodeElements().data().find(n => n.id() === term.id) || graph.graphLabelElements().find(n => n.property().id() === term.id);
-      if (target && Number.isFinite(target.x) && Number.isFinite(target.y)) graph.zoomToElementInGraph(target);
+      if (target && Number.isFinite(target.x) && Number.isFinite(target.y)) { graph.setTargetZoom(0.9); graph.setDefaultZoom(0.6); graph.zoomToElementInGraph(target); }
     }
     renderResults();
   }
@@ -66,6 +66,18 @@
     if (!graph) return;
     const box = $("graph").getBoundingClientRect(); graph.options().width(box.width).height(box.height); graph.updateCanvasContainerSize();
   }
+  function fitGraph() {
+    const group = document.querySelector("#graph svg > g");
+    if (!group) return;
+    const box = group.getBBox();
+    if (!box.width || !box.height) return;
+    const viewport = $("graph").getBoundingClientRect();
+    const scale = Math.max(0.05, Math.min(1.2, viewport.width/(box.width+140), viewport.height/(box.height+140)));
+    // The upstream full-screen fitter uses absolute screen coordinates. This
+    // widget/iframe uses SVG-local bounds and the renderer's public zoom API.
+    graph.setTargetZoom(scale); graph.setDefaultZoom(scale/1.5);
+    graph.zoomToElementInGraph({x:box.x+box.width/2,y:box.y+box.height/2});
+  }
   async function start() {
     const response = await fetch("data/riskium.json", {credentials: "omit", cache: "no-cache"});
     if (!response.ok) throw new Error("Local graph request failed");
@@ -75,6 +87,7 @@
     if (nodeIds.size !== source.class.length || source.propertyAttribute.some(p => !nodeIds.has(p.domain) || !nodeIds.has(p.range))) throw new Error("Unresolved or duplicate graph identifier");
     terms = source.riskiumSource.terms.slice().sort((a,b) => a.label.localeCompare(b.label));
     graph = webvowl.graph("#graph");
+    graph.forceRelocationEvent = fitGraph;
     const options = graph.options();
     // Core UI callbacks are explicitly adapted; the upstream application, editor,
     // ontology loader/converter and export modules are never bundled or started.
@@ -101,7 +114,7 @@
     $("pause").addEventListener("click", () => { const paused = !graph.paused(); graph.paused(paused); $("pause").setAttribute("aria-pressed", String(paused)); $("pause").textContent = paused ? "Resume layout" : "Pause layout"; });
     $("zoom-in").addEventListener("click", () => graph.zoomIn());
     $("zoom-out").addEventListener("click", () => graph.zoomOut());
-    $("reset").addEventListener("click", () => { graph.setDefaultZoom(0.55); graph.updateCanvasContainerSize(); });
+    $("reset").addEventListener("click", fitGraph);
     new ResizeObserver(resize).observe($("graph"));
     // The core marks layout completion asynchronously. This fallback also checks
     // actual SVG class identities; a successful fetch cannot certify an empty SVG.
