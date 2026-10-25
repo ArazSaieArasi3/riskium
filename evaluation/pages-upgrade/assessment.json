@@ -1,0 +1,42 @@
+{
+  "baseline": "eb0ff1d64e87c8667aa9f3eab46d700ffc61a7ee",
+  "evaluated_source": "bfcdc287b2d74341dee4e366771ec04af1a0127b",
+  "scale": {
+    "0": "absent or broken",
+    "1": "fragmented with major friction",
+    "2": "usable with material friction",
+    "3": "coherent and tested with minor limits",
+    "4": "coherent across covered families with independent user confirmation"
+  },
+  "dimensions": [
+    {
+      "name": "Visual consistency",
+      "before": 1,
+      "after": 3
+    },
+    {
+      "name": "Navigation and findability",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "name": "Reference usability",
+      "before": 1,
+      "after": 3
+    },
+    {
+      "name": "Graph usability",
+      "before": 1,
+      "after": 3
+    },
+    {
+      "name": "Editorial and version clarity",
+      "before": 1,
+      "after": 3
+    }
+  ],
+  "total_before": 6,
+  "total_after": 15,
+  "total_possible": 20,
+  "interpretation": "Assistant-assisted rubric assessment of this documentation scope. Nine rubric points gained; not a measured percentage of comprehension, satisfaction or ontology correctness. No dimension receives 4 without independent reader confirmation."
+}

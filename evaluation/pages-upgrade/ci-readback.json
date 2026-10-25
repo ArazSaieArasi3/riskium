@@ -1,0 +1,38 @@
+{
+  "source_commit": "bfcdc287b2d74341dee4e366771ec04af1a0127b",
+  "candidate_summary": {
+    "source_commit": "bfcdc287b2d74341dee4e366771ec04af1a0127b",
+    "package_name": "candidate-bfcdc287b2d7",
+    "passed_checks": 25,
+    "inventory_verified": true,
+    "publication_executed": false
+  },
+  "workflows": [
+    {
+      "id": 40207631058,
+      "name": "Documentation integrity",
+      "conclusion": "success"
+    },
+    {
+      "id": 40207682189,
+      "name": "Publish versioned documentation",
+      "conclusion": "success"
+    },
+    {
+      "id": 40207631070,
+      "name": "Incremental release candidate",
+      "conclusion": "success"
+    },
+    {
+      "id": 40207631054,
+      "name": "Post-release integration and scope",
+      "conclusion": "success"
+    },
+    {
+      "id": 40207631055,
+      "name": "Stable research artifact release",
+      "conclusion": "success",
+      "note": "Maintenance push did not publish a source release."
+    }
+  ]
+}

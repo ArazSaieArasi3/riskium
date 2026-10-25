@@ -1,0 +1,1060 @@
+{
+  "source_commit": "bfcdc287b2d74341dee4e366771ec04af1a0127b",
+  "manifest_sha256": "7f75be7be1a19dcc7349378eefe60871a289d44da82841f22148d239a64bb81f",
+  "public_files_downloaded": 175,
+  "all_hashes_matched": true,
+  "files": [
+    {
+      "path": "THIRD-PARTY-DOCUMENTATION.txt",
+      "bytes": 1089,
+      "sha256": "757ad3a1219a88aa2341cc83f0dc1d0d8884b72ce684e2d6e8714dff073b9ca8",
+      "status": 200
+    },
+    {
+      "path": "WIDOCO-Apache-2.0.txt",
+      "bytes": 11385,
+      "sha256": "f6bde110648aedc2ddf28bb2ddd7d110ffd02cfd36f64e55f7de7938b3d02287",
+      "status": 200
+    },
+    {
+      "path": "current/assets/complete-model.svg",
+      "bytes": 2315785,
+      "sha256": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+      "status": 200
+    },
+    {
+      "path": "current/assets/filter.js",
+      "bytes": 1086,
+      "sha256": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+      "status": 200
+    },
+    {
+      "path": "current/assets/portal.css",
+      "bytes": 9359,
+      "sha256": "0987488cda1aae98c68e6d330325f43f8a14f9bd8e1ce33d852b5a01fd4ed54c",
+      "status": 200
+    },
+    {
+      "path": "current/assets/selected-model.svg",
+      "bytes": 736456,
+      "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+      "status": 200
+    },
+    {
+      "path": "current/downloads/CC-BY-4.0.txt",
+      "bytes": 17023,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "status": 200
+    },
+    {
+      "path": "current/downloads/CITATION.cff",
+      "bytes": 1633,
+      "sha256": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
+      "status": 200
+    },
+    {
+      "path": "current/downloads/LICENSE",
+      "bytes": 1191,
+      "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+      "status": 200
+    },
+    {
+      "path": "current/downloads/MIT.txt",
+      "bytes": 1155,
+      "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+      "status": 200
+    },
+    {
+      "path": "current/downloads/NOTICE.md",
+      "bytes": 2377,
+      "sha256": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce",
+      "status": 200
+    },
+    {
+      "path": "current/downloads/RIGHTS.md",
+      "bytes": 2834,
+      "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+      "status": 200
+    },
+    {
+      "path": "current/downloads/SHA256SUMS.txt",
+      "bytes": 713,
+      "sha256": "27c5a9fc39869adf953d681e6dc29144be384fe2603b7f3c68e55ea143fcc960",
+      "status": 200
+    },
+    {
+      "path": "current/downloads/index.html",
+      "bytes": 8556,
+      "sha256": "c866bebe8644b046e99f1681b481aead6997c3f96bfe63ff4db0876a4448c3ab",
+      "status": 200
+    },
+    {
+      "path": "current/downloads/riskium-model.json",
+      "bytes": 328986,
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+      "status": 200
+    },
+    {
+      "path": "current/downloads/riskium.ontouml.json",
+      "bytes": 434181,
+      "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+      "status": 200
+    },
+    {
+      "path": "current/downloads/typed-core.json",
+      "bytes": 315732,
+      "sha256": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+      "status": 200
+    },
+    {
+      "path": "current/explore/graph.json",
+      "bytes": 59421,
+      "sha256": "865ec4717967315793851766f6a32ff99206b8c402b2afd249327413ed045f7c",
+      "status": 200
+    },
+    {
+      "path": "current/explore/index.html",
+      "bytes": 171970,
+      "sha256": "43ce328356fedc5f352498881f746128df97e9236e615ce5ded5ecd8ece63535",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Artifact-Versions.html",
+      "bytes": 14926,
+      "sha256": "0e6152b045daf2d250fd7738c09f6bc9c1159bcc55ccb68115e5499454caee7f",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Citation.html",
+      "bytes": 8100,
+      "sha256": "4c4c10187e5e40bb375be9b41a44b13772f10bc50cf8c56426e72da79a98b9ef",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Competency-Questions.html",
+      "bytes": 11359,
+      "sha256": "23ab63166cbedd6275181ffa6b4e6f92e63dc9f156b67a1f4289f1c704ebcc9c",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Database-Assurance.html",
+      "bytes": 18124,
+      "sha256": "cb3e668462b3205f2d792fe8b4394b96519c223743c1401dabe02a889602068c",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Decisions.html",
+      "bytes": 9432,
+      "sha256": "123401830b46425178d6a8b5e67d3835437b71c98398aaef3c9ee7e9cdc9d71e",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Evaluation.html",
+      "bytes": 10053,
+      "sha256": "6b4eea97d12ac02f5faf0ed217f0b32423f182dc8e99c83a9ceff65e11aa813b",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Formalization.html",
+      "bytes": 19308,
+      "sha256": "d7ccc5f101fed5780ab61a77ed6bba2fbbc769e8a97b924ad04e853a6634b3e4",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Home.html",
+      "bytes": 9406,
+      "sha256": "43b8ba6e6f428fda9e69f1f5b073bd9875fa0afda6d14c6db8fee09f9adaf7f1",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Limitations.html",
+      "bytes": 10247,
+      "sha256": "c067250557d9612d312d8b7469fdfd8b799a2d503c6f257f3754d60383a70186",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Overview.html",
+      "bytes": 8256,
+      "sha256": "ac797ef19ecfe8df5db582be8aceb5ed26d4b13452817ab5021c22f6cc03c6a7",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Publication-Comparison.html",
+      "bytes": 14311,
+      "sha256": "0319ede8665bb10bbcfd2e172046d95ce5cba12e483b7fea95cc044f30c1223e",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Publication.html",
+      "bytes": 9999,
+      "sha256": "2db39dfa0758015f0cd98df7f142ed01720cded200587a31f80be56cd378d822",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Quality.html",
+      "bytes": 39483,
+      "sha256": "c82c62723422ef0b7fe0d67b910b8b71474c41b079966b5b94dd8d9515698023",
+      "status": 200
+    },
+    {
+      "path": "current/guide/References.html",
+      "bytes": 36773,
+      "sha256": "0c97fd3e22c84aa48df21cb40e3cb1d24d398b335e9cc1d1808b39e8bf786d3f",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Reproduce.html",
+      "bytes": 25302,
+      "sha256": "b155167d854873f473cd114b9cc55ed9c707506d7e20ee9dbbdc3492ec955486",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Requirements.html",
+      "bytes": 19907,
+      "sha256": "742095896afdfe5a319e0881dfd9390e60b823a9974eb72dd458d311c6a4470f",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Scope.html",
+      "bytes": 7814,
+      "sha256": "5cb29cedb2cd2ca92a7eb7a106387b75a46b31c7b3fae05c4fa8630358f2d2e3",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Traceability.html",
+      "bytes": 17346,
+      "sha256": "52588a44ec842f7ecf5c8bc5252f280d075b08d64ee319a781fc63aed8503e4e",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Using-the-Model.html",
+      "bytes": 7832,
+      "sha256": "d3213f81cf8f10a9c2f19812cf4cfa72c1a94f511b91ad665178b11771cca60e",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Visualization.html",
+      "bytes": 9694,
+      "sha256": "a878a191a9c68e626503d2b8f026f612ddf0fabf52b57fd1017bd3bf0502a520",
+      "status": 200
+    },
+    {
+      "path": "current/guide/Work-Plan.html",
+      "bytes": 10595,
+      "sha256": "424685d10334e5ab7b8462d60408c0af5e80101fe0e56cece56c0051f884de26",
+      "status": 200
+    },
+    {
+      "path": "current/index.html",
+      "bytes": 10544,
+      "sha256": "4c150c9f1146fb1a02d64daf3ceb24c05f7d20a98a3f8f2da97c5187cafca429",
+      "status": 200
+    },
+    {
+      "path": "current/publication-manifest.json",
+      "bytes": 4194,
+      "sha256": "2f54d3ded4c0e0f1b153609ca5171b4335c043cbd363d28b1869b3d77fb5ec8d",
+      "status": 200
+    },
+    {
+      "path": "current/reference/diagrams/index.html",
+      "bytes": 7899,
+      "sha256": "a78b3a5e43a16aeac8f16722446531bcc3165400c7e97cb550b5df46ae2db4b5",
+      "status": 200
+    },
+    {
+      "path": "current/reference/native/index.html",
+      "bytes": 97231,
+      "sha256": "a7e9360e9dcf4f850de30a4e37d2a25e3fab3b7bb2b91b2ec22683539ad01850",
+      "status": 200
+    },
+    {
+      "path": "current/reference/search.html",
+      "bytes": 109617,
+      "sha256": "93a40e9ad5772d578e9d1f9c5f26ab1c30feba230d323a7d0121914043e92746",
+      "status": 200
+    },
+    {
+      "path": "current/webvowl/coverage.json",
+      "bytes": 403378,
+      "sha256": "bebe79ba85ad4f3d6c920b101046dbee84a3121b48ae0f395461220a8ec3ae31",
+      "status": 200
+    },
+    {
+      "path": "current/webvowl/data/riskium.json",
+      "bytes": 162349,
+      "sha256": "4b96dfd769858256a13aedf760e32bb64aa740437d9dc5cfc278787ae41fbdc2",
+      "status": 200
+    },
+    {
+      "path": "current/webvowl/index.html",
+      "bytes": 10449,
+      "sha256": "70323a6ce0d0dd84a0d04b217780c8f278170cd0462d157d029f7b4c29f0b83e",
+      "status": 200
+    },
+    {
+      "path": "current/webvowl/vendor/D3-BSD.txt",
+      "bytes": 1429,
+      "sha256": "e4796bd1fdc09e06a3683957a177d59b38aec4143df81b2d25472438f5763482",
+      "status": 200
+    },
+    {
+      "path": "current/webvowl/vendor/Lodash-MIT.txt",
+      "bytes": 1952,
+      "sha256": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc",
+      "status": 200
+    },
+    {
+      "path": "current/webvowl/vendor/WebVOWL-MIT.txt",
+      "bytes": 1167,
+      "sha256": "d07986d8f3441f0a563f237aa3778489c763def2e151911e1774a18deff89cde",
+      "status": 200
+    },
+    {
+      "path": "current/webvowl/vendor/d3.min.js",
+      "bytes": 151725,
+      "sha256": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7",
+      "status": 200
+    },
+    {
+      "path": "current/webvowl/vendor/provenance.json",
+      "bytes": 2097,
+      "sha256": "bcbb184bfec22d57732baffd3e812dbf5eda8997c2f754c80be7c38316ab1704",
+      "status": 200
+    },
+    {
+      "path": "current/webvowl/vendor/webvowl.css",
+      "bytes": 5341,
+      "sha256": "067bb2fe6dfb69a4ef4be734a7b3788335f4c3cd419ce3e42d86c3cf302c49f8",
+      "status": 200
+    },
+    {
+      "path": "current/webvowl/vendor/webvowl.js",
+      "bytes": 751389,
+      "sha256": "a46d5a71e0d8d05aad6fd3ea4ed4e2cc66ba738958a04aa2dc7568f31f2c2006",
+      "status": 200
+    },
+    {
+      "path": "current/webvowl/viewer.css",
+      "bytes": 3629,
+      "sha256": "9c764071adcbca0664fd9bc4431e0e1752f83092a869f1e65c70b2b4f13e43d7",
+      "status": 200
+    },
+    {
+      "path": "current/webvowl/viewer.js",
+      "bytes": 10794,
+      "sha256": "fab10c32e3ce34c48d8eb8bda7e05bb4e703d6681260cf26a9411ed2bf301869",
+      "status": 200
+    },
+    {
+      "path": "current/widoco/index-en.html",
+      "bytes": 331918,
+      "sha256": "eda66aaef73df7d9bb4f6bd348c0e99696e02c3e7f591329b3f6add3170b79c2",
+      "status": 200
+    },
+    {
+      "path": "current/widoco/ontology.jsonld",
+      "bytes": 325242,
+      "sha256": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+      "status": 200
+    },
+    {
+      "path": "current/widoco/ontology.nt",
+      "bytes": 382810,
+      "sha256": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+      "status": 200
+    },
+    {
+      "path": "current/widoco/ontology.owl",
+      "bytes": 317036,
+      "sha256": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+      "status": 200
+    },
+    {
+      "path": "current/widoco/ontology.ttl",
+      "bytes": 82492,
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+      "status": 200
+    },
+    {
+      "path": "current/widoco/provenance/provenance-en.html",
+      "bytes": 6911,
+      "sha256": "71a9eb639f3920576eb1b899649b6ea54be68f4092761c51dfa3d34a4e56f6b8",
+      "status": 200
+    },
+    {
+      "path": "current/widoco/resources/extra.css",
+      "bytes": 1846,
+      "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+      "status": 200
+    },
+    {
+      "path": "current/widoco/resources/owl.css",
+      "bytes": 4419,
+      "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+      "status": 200
+    },
+    {
+      "path": "current/widoco/resources/primer.css",
+      "bytes": 2496,
+      "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+      "status": 200
+    },
+    {
+      "path": "current/widoco/resources/rec.css",
+      "bytes": 2687,
+      "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+      "status": 200
+    },
+    {
+      "path": "current/widoco/resources/riskium.css",
+      "bytes": 2381,
+      "sha256": "b6bda9ae35ba69dec80a60435f9720bfff2cc490ca66b1cd7f76899cb69a4d07",
+      "status": 200
+    },
+    {
+      "path": "current/widoco/serialization-receipt.json",
+      "bytes": 645,
+      "sha256": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d",
+      "status": 200
+    },
+    {
+      "path": "current/widoco/tool-provenance.json",
+      "bytes": 1883,
+      "sha256": "7ce6bbbaed1fecbbcf2d0223ff0ffe21218c900370bdcb8b29852d8424cfa326",
+      "status": 200
+    },
+    {
+      "path": "index.html",
+      "bytes": 323,
+      "sha256": "9774dde5d2f1d7464f99be2dec394c1d086afbba76d7518a689b075b4ec99fdc",
+      "status": 200
+    },
+    {
+      "path": "interface-review.html",
+      "bytes": 3648,
+      "sha256": "54e9e6901c403950950fa3ed243afb7b21ebb803e220a0fab28c64b0b81ef905",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/assets/complete-model.svg",
+      "bytes": 2315785,
+      "sha256": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/assets/filter.js",
+      "bytes": 1086,
+      "sha256": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/assets/portal.css",
+      "bytes": 3830,
+      "sha256": "8769420abcb7cb9470dbae07e6d2bd78679dcc6f0d138dd09bd16188d9b6aaaf",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/assets/selected-model.svg",
+      "bytes": 736456,
+      "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/CC-BY-4.0.txt",
+      "bytes": 17023,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/CITATION.cff",
+      "bytes": 1590,
+      "sha256": "32d61999936e92161f1f36a80843f8c4de43658cfddf1e6c9419d8097b8357db",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/LICENSE",
+      "bytes": 1191,
+      "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/MIT.txt",
+      "bytes": 1155,
+      "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/NOTICE.md",
+      "bytes": 1886,
+      "sha256": "92a19f4d4025128c5d3d534d0df1888c768148aa5fe0f25442a7049eb828a46f",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/RIGHTS.md",
+      "bytes": 2834,
+      "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/SHA256SUMS.txt",
+      "bytes": 713,
+      "sha256": "9bdf3f0c2ac212ae33552405dfa7edd6b343ac9f569c15d12c216d61020bae16",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/index.html",
+      "bytes": 5429,
+      "sha256": "732abd49e156e63176374b5b53ad4ea481497d3810ff2e90df419b265368ad6d",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/riskium-model.json",
+      "bytes": 328986,
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/riskium.ontouml.json",
+      "bytes": 434181,
+      "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/typed-core.json",
+      "bytes": 315732,
+      "sha256": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/explore/graph.json",
+      "bytes": 59421,
+      "sha256": "378989de1e45a53894dddccd50773c1251efe6b06634048ea5045b32466c4e80",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/explore/index.html",
+      "bytes": 168812,
+      "sha256": "f5cac921eef3434b0fcb1b0020bd76d4ab09ab1b6aa14d00753bcdc1aab3e139",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Artifact-Versions.html",
+      "bytes": 9176,
+      "sha256": "2b23f3dcd19ccddba60a1b39912fdd9820b171d84aad1a9822d78d5bfc4b8e50",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Citation.html",
+      "bytes": 4813,
+      "sha256": "b1ce3fe5c0e7a4c819e40c85bdae9013ee6b2e0d02fc6c9d51f1382c5a7f7eb6",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Competency-Questions.html",
+      "bytes": 7631,
+      "sha256": "2f72a07ba676c890c9356622a077a78b1c19be1ab2a4cd6db1b9db14a07f2136",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Database-Assurance.html",
+      "bytes": 14388,
+      "sha256": "dc55465cb9e35995707c6023013525ceaaac92cd13bd31141fffd56a7f43941d",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Decisions.html",
+      "bytes": 5663,
+      "sha256": "54e7e952cea66f465020206cf43471689a170c7bcc1b59f13a7eaab67e77ae7b",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Evaluation.html",
+      "bytes": 13807,
+      "sha256": "757e039b353d83ba3cd77a84b77781f7c9b2df1ff4a8f33988a8df2fd66c745a",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Formalization.html",
+      "bytes": 15364,
+      "sha256": "8148a90c0b4678eb1ac92a1b319ed95efa98e17172fb156fe8e6cf87e466452b",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Limitations.html",
+      "bytes": 6721,
+      "sha256": "c7dfd8fa93a307df2f58cc12538886fcb85b024a9bb2edfb13fb980a0e6c1590",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Overview.html",
+      "bytes": 4900,
+      "sha256": "7e958c0ba98f344e8db3ccee7cd5f29f313d1ef243108eaa8f22ac0fd18e3f59",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Publication-Comparison.html",
+      "bytes": 10880,
+      "sha256": "5069a25fc877d9afda90f929d1d0417ab83033199441c6006871f1c3b1d3f1a1",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Quality.html",
+      "bytes": 34948,
+      "sha256": "b18daffed638580d4c20d1657f5eb3b189eb4666c6d6b83221991973350b962d",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/References.html",
+      "bytes": 32538,
+      "sha256": "46bc6ab9aa8a8c3d28787a7b6750e58ebd4b72e0dc38301de8d617ed418a3393",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Reproduce.html",
+      "bytes": 21192,
+      "sha256": "ae61e61c283a98fefe4f9c3cae6c1d64eb26b8ae643eceb3226f3f67b86bdbb5",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Requirements.html",
+      "bytes": 15736,
+      "sha256": "335285ac39a10e49c6a4594f9939c92567be22d9912bf24fcb3cef91b4eda670",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Traceability.html",
+      "bytes": 13416,
+      "sha256": "703d631688fbe65c2ace0468ce6139357be5d9d8808463f7c8417f3ae2de6680",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Work-Plan.html",
+      "bytes": 13872,
+      "sha256": "24357382b823c2bbfddf9e8039f5642f0439e4d878b576b6e736af604c4ddd47",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/index.html",
+      "bytes": 5798,
+      "sha256": "91906ea1f8022742724840b5b8bced0a6d3c7f0c846703672c53acfaa49fccbf",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/publication-manifest.json",
+      "bytes": 3596,
+      "sha256": "6fbf5db63b58ffe0c3765b646fb914c9c1784d14b0c532d9a37318ed0c901f75",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/reference/native/index.html",
+      "bytes": 93850,
+      "sha256": "56b314eb86d8e6d2d50acb31b8fa08ac488f1b0ff0ca857ff8ed730e0d70b008",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/index-en.html",
+      "bytes": 289278,
+      "sha256": "5b4f5e865a9cb6ce9d2c3a6ba250ca0182c3062624b6887e2f3c5bcaf6803c8d",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/ontology.jsonld",
+      "bytes": 325242,
+      "sha256": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/ontology.nt",
+      "bytes": 382810,
+      "sha256": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/ontology.owl",
+      "bytes": 317036,
+      "sha256": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/ontology.ttl",
+      "bytes": 82492,
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/provenance/provenance-en.html",
+      "bytes": 785,
+      "sha256": "dda12e87fceab815516f560415acc2b32c7ac3443257f48f669e140af9e4da30",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/resources/extra.css",
+      "bytes": 1846,
+      "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/resources/owl.css",
+      "bytes": 4419,
+      "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/resources/primer.css",
+      "bytes": 2496,
+      "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/resources/rec.css",
+      "bytes": 2687,
+      "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/serialization-receipt.json",
+      "bytes": 645,
+      "sha256": "641813c62cf1bd72630db02269068cd1e998faf387a0c9c4edfbd5df4556820f",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/tool-provenance.json",
+      "bytes": 1788,
+      "sha256": "80fe09df88eb2adb751b225b20e093c36b7be4c5fbd5f23073b630810efd53b8",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/assets/complete-model.svg",
+      "bytes": 2315785,
+      "sha256": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/assets/filter.js",
+      "bytes": 1086,
+      "sha256": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/assets/portal.css",
+      "bytes": 3830,
+      "sha256": "8769420abcb7cb9470dbae07e6d2bd78679dcc6f0d138dd09bd16188d9b6aaaf",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/assets/selected-model.svg",
+      "bytes": 736456,
+      "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/downloads/CC-BY-4.0.txt",
+      "bytes": 17023,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/downloads/CITATION.cff",
+      "bytes": 1633,
+      "sha256": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/downloads/LICENSE",
+      "bytes": 1191,
+      "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/downloads/MIT.txt",
+      "bytes": 1155,
+      "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/downloads/NOTICE.md",
+      "bytes": 2377,
+      "sha256": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/downloads/RIGHTS.md",
+      "bytes": 2834,
+      "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/downloads/SHA256SUMS.txt",
+      "bytes": 713,
+      "sha256": "27c5a9fc39869adf953d681e6dc29144be384fe2603b7f3c68e55ea143fcc960",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/downloads/index.html",
+      "bytes": 5969,
+      "sha256": "51f345aa9aa4e88c1b97c5fcc9535440baf8c9b6056dfdd5da3a30cdb8c7827c",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/downloads/riskium-model.json",
+      "bytes": 328986,
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/downloads/riskium.ontouml.json",
+      "bytes": 434181,
+      "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/downloads/typed-core.json",
+      "bytes": 315732,
+      "sha256": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/explore/graph.json",
+      "bytes": 59421,
+      "sha256": "865ec4717967315793851766f6a32ff99206b8c402b2afd249327413ed045f7c",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/explore/index.html",
+      "bytes": 169370,
+      "sha256": "ca77f68aa40bd62f197159701bd1fb1e12addb3a4c1edb66e9e5e64fe7704b3d",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Artifact-Versions.html",
+      "bytes": 10301,
+      "sha256": "9bd60375d35b9d0e3aa809f886617ad89dbba87d95403dcf3035c2ac263ad364",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Citation.html",
+      "bytes": 5719,
+      "sha256": "626b9e3037a786db523a5ec5b39e64abd061e47d94afffcb47e985505699307d",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Competency-Questions.html",
+      "bytes": 8615,
+      "sha256": "aef373d2dbb548d179778f368547d54749e9bf0caec4a274224d855bd5f1726e",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Database-Assurance.html",
+      "bytes": 15592,
+      "sha256": "c92491062b05df9000fa76f8d0c055e4c7afb3011acb23561a394698dc248d4b",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Decisions.html",
+      "bytes": 6656,
+      "sha256": "9c516713f1bc4015f208cff69e8e5974ee375402e4bc35c854061365519cafb7",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Evaluation.html",
+      "bytes": 7475,
+      "sha256": "8241129e6206d4aaee0a44f516ebf1448493deaec61da5e2a57fbcb2f79eec0b",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Formalization.html",
+      "bytes": 16319,
+      "sha256": "432e3277a5292763877b19cc1c41068f298c0a80a65b2de7429f32d0c2ff4008",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Home.html",
+      "bytes": 6106,
+      "sha256": "dbf30abc4ad788e6091b0f099bfb33abdcf142e6a0c9bb2d9ad974eccc1e8a19",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Limitations.html",
+      "bytes": 7872,
+      "sha256": "b6f34580f69f826f5ef5f30221267cdd2dda2b717d63323f147cdd8db5073dc2",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Overview.html",
+      "bytes": 5818,
+      "sha256": "aa74c8d47c272387a4e6b8f3cc1ad542177c06d35b9ab859b342631aba983939",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Publication-Comparison.html",
+      "bytes": 11876,
+      "sha256": "6e40631bdcae9238962dae0ff618c1e02fc19b787196294366223671b204e8ae",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Publication.html",
+      "bytes": 6064,
+      "sha256": "b64588f951d75420e07edeba9552a5275ac70a06e94803b0342503921046beca",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Quality.html",
+      "bytes": 35961,
+      "sha256": "f10575edb61efaffb5a5862091c123d143235b27758afc6f3d784848fc0fd015",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/References.html",
+      "bytes": 33538,
+      "sha256": "de693edd736339cc0f4499b87f907e0457c2df233c97cdce9f7f1a0cfa73e196",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Reproduce.html",
+      "bytes": 22269,
+      "sha256": "33aa9d582b4cef5b029a7fd7fe0919f65350df7ee4b3e42eec1bdf1d7bac748c",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Requirements.html",
+      "bytes": 16772,
+      "sha256": "15ddb773c3d33920e2941c67cdccfd6679a7d7b57af619d461790d804d7183cb",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Scope.html",
+      "bytes": 5472,
+      "sha256": "da2e85b389f39be43a9184c3fcf68541256ad401ca412e126142a01f27e8a135",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Traceability.html",
+      "bytes": 14660,
+      "sha256": "dfa3a9b6bcd8c3fb2bd45c0e13dd0a0fca20f8c1b8f4dd99ddfd318198a205a6",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Using-the-Model.html",
+      "bytes": 5483,
+      "sha256": "d3b2ba2a9a3e3ae2fbdd6201e4bb9eaddfdf0dde1fb3919ab53066ee8fedaf91",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Visualization.html",
+      "bytes": 5282,
+      "sha256": "ffed628591da7e60f00fbf27831e3c760262d95158f35c0e3c08794f3137fe5c",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/guide/Work-Plan.html",
+      "bytes": 14949,
+      "sha256": "9689789eaccffe72c04faa7ae57b0a0deb840001cabb62d6d0ef4c1c5ed96549",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/index.html",
+      "bytes": 6330,
+      "sha256": "0b2d812c3ea39ac2064c8fef44936799ed9571359c383b4d4db9d85878c2c01d",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/publication-manifest.json",
+      "bytes": 4369,
+      "sha256": "480e4e19921b352a6900f34226192dc968a304dce1565056e97a2511ec0abbb3",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/reference/native/index.html",
+      "bytes": 94426,
+      "sha256": "6b1c2cec42b5595671dffd91a6c83295802e3e04edd7d19d77cc7927d55ba1bf",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/widoco/index-en.html",
+      "bytes": 289610,
+      "sha256": "59b32e6a24ec6e67c1dc2ce590fccc672e90e442b76fd3e281e2d04528c28e6d",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/widoco/ontology.jsonld",
+      "bytes": 325242,
+      "sha256": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/widoco/ontology.nt",
+      "bytes": 382810,
+      "sha256": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/widoco/ontology.owl",
+      "bytes": 317036,
+      "sha256": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/widoco/ontology.ttl",
+      "bytes": 82492,
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/widoco/provenance/provenance-en.html",
+      "bytes": 1134,
+      "sha256": "d58739bb51b6da79b49e7825c3d3e92a27e9288529181bac132e745b02699d2e",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/widoco/resources/extra.css",
+      "bytes": 1846,
+      "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/widoco/resources/owl.css",
+      "bytes": 4419,
+      "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/widoco/resources/primer.css",
+      "bytes": 2496,
+      "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/widoco/resources/rec.css",
+      "bytes": 2687,
+      "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/widoco/serialization-receipt.json",
+      "bytes": 645,
+      "sha256": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d",
+      "status": 200
+    },
+    {
+      "path": "releases/v0.3.1/widoco/tool-provenance.json",
+      "bytes": 3289,
+      "sha256": "243f6a56902007570c43e9f3a85e1e36ae510fc7a9dfc2fcae945e8f7d211b4e",
+      "status": 200
+    },
+    {
+      "path": "site/index.html",
+      "bytes": 385,
+      "sha256": "d8f69c71e3d58d8eb7f2a2244b3c0308aa017af7a7ebf7625373a57d1bc02e0a",
+      "status": 200
+    },
+    {
+      "path": "versions/index.html",
+      "bytes": 8144,
+      "sha256": "75b2eb9731da1ed394737800890921365a1b5f0268bafb146437dbdca68a4a3a",
+      "status": 200
+    }
+  ],
+  "excluded_build_marker": ".nojekyll",
+  "scope": "Actual HTTPS bodies; all current and frozen site files plus RDF/model/viewer downloads. Browser interactions are separate."
+}

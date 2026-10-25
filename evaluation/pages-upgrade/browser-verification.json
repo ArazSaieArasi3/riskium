@@ -1,0 +1,11 @@
+{
+  "source_commit": "bfcdc287b2d74341dee4e366771ec04af1a0127b",
+  "exact_full_class_id_set": true,
+  "exact_full_property_subclass_id_set": true,
+  "classes": 78,
+  "property_subclass_links": 193,
+  "responsive_cases": 16,
+  "horizontal_overflow_cases": 0,
+  "site_console_errors": 0,
+  "scope": "Exact actual SVG/DOM and iframe observations, compared with frozen projection; not semantic or independent user validation."
+}

@@ -1,0 +1,16 @@
+/workspace/scratch/b3da153c4441/riskium/.venv-shacl/lib/python3.12/site-packages/rdflib/graph.py:2508: DeprecationWarning: Dataset.default_context is deprecated, use Dataset.default_graph instead.
+  context = self.default_context
+/workspace/scratch/b3da153c4441/riskium/.venv-shacl/lib/python3.12/site-packages/rdflib/plugins/parsers/trig.py:155: DeprecationWarning: ConjunctiveGraph is deprecated, use Dataset instead.
+  conj_graph = ConjunctiveGraph(store=graph.store, identifier=graph.identifier)
+/workspace/scratch/b3da153c4441/riskium/.venv-shacl/lib/python3.12/site-packages/rdflib/graph.py:2508: DeprecationWarning: Dataset.default_context is deprecated, use Dataset.default_graph instead.
+  context = self.default_context
+/workspace/scratch/b3da153c4441/riskium/.venv-shacl/lib/python3.12/site-packages/rdflib/plugins/parsers/trig.py:155: DeprecationWarning: ConjunctiveGraph is deprecated, use Dataset instead.
+  conj_graph = ConjunctiveGraph(store=graph.store, identifier=graph.identifier)
+/workspace/scratch/b3da153c4441/riskium/.venv-shacl/lib/python3.12/site-packages/rdflib/graph.py:2508: DeprecationWarning: Dataset.default_context is deprecated, use Dataset.default_graph instead.
+  context = self.default_context
+/workspace/scratch/b3da153c4441/riskium/.venv-shacl/lib/python3.12/site-packages/rdflib/plugins/parsers/trig.py:155: DeprecationWarning: ConjunctiveGraph is deprecated, use Dataset instead.
+  conj_graph = ConjunctiveGraph(store=graph.store, identifier=graph.identifier)
+----------------------------------------------------------------------
+Ran 213 tests in 98.168s
+
+OK

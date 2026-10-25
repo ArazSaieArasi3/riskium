@@ -1,0 +1,70 @@
+{
+  "images": [
+    {
+      "path": "screenshots/01-before-home.jpg",
+      "bytes": 138682,
+      "sha256": "453578be75806c078f3970b8db931c7e55a90c7cc59ec545bc9cd0d3d6857ef7"
+    },
+    {
+      "path": "screenshots/02-before-owl.jpg",
+      "bytes": 99675,
+      "sha256": "435d54de47b7b8bd1dc74ed456afd9a958b26d8c5e525099034ab1d972be733e"
+    },
+    {
+      "path": "screenshots/03-before-webvowl.jpg",
+      "bytes": 185456,
+      "sha256": "880519938f8233d6ce064b5c9a814b697a5bed2d331772cc4a78626754135306"
+    },
+    {
+      "path": "screenshots/04-reference-ontospk.jpg",
+      "bytes": 140319,
+      "sha256": "893ff35e5fd211652f921fa59b203e1a3200b8c8e09c3a8ca2e38d7bb132cd7f"
+    },
+    {
+      "path": "screenshots/05-after-home.jpg",
+      "bytes": 115359,
+      "sha256": "e8501144af91a1fbef8b3051dd0c1bde7b74b737e9ee8371e4031f223ccd557e"
+    },
+    {
+      "path": "screenshots/06-after-owl.jpg",
+      "bytes": 137150,
+      "sha256": "4331ae35eeee763a6c7d8d7bc86ea00d64b44ee912e6be17a80d0c5eab691b3f"
+    },
+    {
+      "path": "screenshots/07-after-owl-term.jpg",
+      "bytes": 103145,
+      "sha256": "8ff5b026fea51d3f2ba311e4b9303551bb54e3628f53674c48b9e01ef1ea99d4"
+    },
+    {
+      "path": "screenshots/08-after-webvowl.jpg",
+      "bytes": 70824,
+      "sha256": "113e6c16c7e81341715321f651b0f525ee5f4492d05344e298e685efbe4a3306"
+    },
+    {
+      "path": "screenshots/09-responsive-versions.jpg",
+      "bytes": 135454,
+      "sha256": "133b6fa51817cb682222e7e53e53f5fd322d0f2e36c71dbc554bba492052e2fc"
+    },
+    {
+      "path": "screenshots/10-search.jpg",
+      "bytes": 97168,
+      "sha256": "cc4c6766b420a2f25d705a355852404457275a763a4c46df226d44fe41428df7"
+    },
+    {
+      "path": "screenshots/11-native-constraint.jpg",
+      "bytes": 104239,
+      "sha256": "1fede7be11eb572c3e748224279471583eb5a05c345d98b58c2fb6c031d86d86"
+    },
+    {
+      "path": "screenshots/12-diagrams.jpg",
+      "bytes": 93095,
+      "sha256": "8ced92837ef71c60446c042a988da69bd98aef2da2783bdade34816a59bc00c1"
+    },
+    {
+      "path": "screenshots/13-guide.jpg",
+      "bytes": 148184,
+      "sha256": "c8c2621891142761c3e77e9e964738fa294c530ae5f3e4816685193c930bd924"
+    }
+  ],
+  "policy": "Exact browser JPEG bytes, visually inspected in this audit. Baseline 01\u201304; final published source bfcdc287 05\u201313."
+}
