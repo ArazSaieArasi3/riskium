@@ -4,3 +4,4 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 @media print{.site-header,.sidebar,.toc,.mobile-navigation,.skip-link,.breadcrumbs,.header-tools{display:none}.layout,.wide-page .layout{display:block;padding:0}.publication-context{background:none}.site-footer{display:block}article.entry{break-inside:avoid}a{color:#111}h1{max-width:none;font-size:26pt}h2{break-after:avoid}}
 h1,h2,h3,h4{overflow-wrap:anywhere}
+#graph .class.hovered,#graph .property.hovered,#graph .cardinality.hovered,#graph .filled.hovered,#graph .values-from.filled.hovered{fill:#c6e2e7!important}#graph .focused,#graph path.hovered,#graph .hovered-MathSymbol{stroke:#15596b!important}#graph .searchResultA,#graph .searchResultB{stroke:#aa5a22}

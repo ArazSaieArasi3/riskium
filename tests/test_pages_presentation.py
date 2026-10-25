@@ -3,6 +3,8 @@ from pathlib import Path
 import subprocess
 import sys
 import unittest
+import tempfile
+from unittest.mock import patch
 from bs4 import BeautifulSoup
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -15,6 +17,16 @@ class PagesPresentation(unittest.TestCase):
         report=audit(ROOT/'docs')
         self.assertEqual(report['status'],'CURRENT_PRESENTATION_PASS')
         self.assertGreaterEqual(report['pages'],31)
+
+    def test_shared_style_changes_invalidate_graph_entry_cache(self):
+        import presentation
+        first=presentation.graph_route()
+        with tempfile.TemporaryDirectory() as temp:
+            target=Path(temp);(target/'webvowl').mkdir()
+            for name in ['index.html','viewer.js','viewer.css']:(target/'webvowl'/name).write_bytes((presentation.HERE/'webvowl'/name).read_bytes())
+            for name in ['portal.css','presentation.py']:(target/name).write_bytes((presentation.HERE/name).read_bytes())
+            (target/'portal.css').write_text((target/'portal.css').read_text()+'\n/* presentation changed */\n')
+            with patch.object(presentation,'HERE',target):self.assertNotEqual(first,presentation.graph_route())
 
     def test_all_widoco_term_and_axiom_text_survives_template_integration(self):
         baseline=subprocess.check_output(['git','show','eb0ff1d64e87c8667aa9f3eab46d700ffc61a7ee:docs/current/widoco/index-en.html'],cwd=ROOT)

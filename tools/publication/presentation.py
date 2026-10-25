@@ -19,7 +19,7 @@ GROUPS = {
 }
 
 def graph_route():
-    token = hashlib.sha256(b''.join((HERE/'webvowl'/p).read_bytes() for p in ['index.html','viewer.js','viewer.css'])).hexdigest()[:12]
+    token = hashlib.sha256(b''.join((HERE/'webvowl'/p).read_bytes() for p in ['index.html','viewer.js','viewer.css'])+(HERE/'portal.css').read_bytes()+(HERE/'presentation.py').read_bytes()).hexdigest()[:12]
     return 'webvowl/index.html?v='+token
 
 
