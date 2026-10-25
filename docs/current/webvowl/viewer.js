@@ -11,6 +11,10 @@
     $("status").classList.add("error");
     console.error("Riskium WebVOWL:", error);
   }
+  window.addEventListener("error", event => {
+    if (event.filename && event.filename.includes("/webvowl/")) fail(event.error || event.message);
+  });
+  window.addEventListener("unhandledrejection", event => fail(event.reason));
   function markReady() {
     if (ready || !valid) return;
     const ids = [...document.querySelectorAll("#graph .node")].map(n => n.id).sort();
@@ -81,6 +85,7 @@
     options.ontologyMenu({append_bulletPoint: noop, append_message_toLastBulletPoint: noop});
     options.warningModule({closeFilterHint: noop, showFilterHint: noop, showEditorHint: noop});
     options.sidebar({clearOntologyInformation: noop, updateShowedInformation: noop});
+    options.leftSidebar({isSidebarVisible: () => false, getSidebarVisibility: () => 0, showSidebar: noop, hideCollapseButton: noop});
     options.editSidebar({clearMetaObjectValue: noop, updateGeneralOntologyInfo: noop, updatePrefixUi: noop, updateElementWidth: noop, updateSelectionInformation: noop});
     options.searchMenu({requestDictionaryUpdate: noop, getSearchString: () => $("search").value});
     options.zoomSlider({updateZoomSliderValue: (v) => { $("zoom-value").textContent = `${Math.round(v*100)}%`; }});
