@@ -92,10 +92,12 @@ def audit(docs):
     runtime=(version/'assets/filter.js').read_text()
     require(not re.search(r'\b(fetch|XMLHttpRequest|WebSocket|sendBeacon|localStorage|sessionStorage)\b',runtime),'runtime network/storage behavior requires review')
     require(runtime==(TOOLS/'filter.js').read_text(),'stale filter script')
+    from audit_presentation import audit as audit_presentation
+    presentation=audit_presentation(docs)
     from build_webvowl import audit as audit_webvowl
     audit_webvowl(docs)
     if errors:raise ValueError('\n'.join(errors))
-    return {'status':'PASS','scope':'Documentation/source/serialization/interface structure checks; not ontology validation or browser execution.','release':TAG,'semantic_source_commit':COMMIT,'html_pages':len(pages),'local_links_checked':links,'conceptual_entries':305,'explorer_classes':len(classes),'explorer_object_properties':len(props),'owl_triples':len(graph),'graph_isomorphic_serializations':4,'runtime_external_assets':0,'upload_surfaces':0,'limitations':['Browser keyboard/mobile and deployed readback are recorded separately.','External source hyperlinks are not asserted to be dereferenceable vocabulary endpoints.']}
+    return {'status':'PASS','current_shared_template_pages':presentation['pages'],'scope':'Documentation/source/serialization/interface structure checks; not ontology validation or browser execution.','release':TAG,'semantic_source_commit':COMMIT,'html_pages':len(pages),'local_links_checked':links,'conceptual_entries':305,'explorer_classes':len(classes),'explorer_object_properties':len(props),'owl_triples':len(graph),'graph_isomorphic_serializations':4,'runtime_external_assets':0,'upload_surfaces':0,'limitations':['Browser keyboard/mobile and deployed readback are recorded separately.','External source hyperlinks are not asserted to be dereferenceable vocabulary endpoints.']}
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--write',action='store_true');args=parser.parse_args()

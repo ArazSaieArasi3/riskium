@@ -23,7 +23,13 @@ def encode(value):
 
 
 def shell_html(root=ROOT):
-    text = (HERE/'index.html').read_text()
+    try:
+        from .presentation import render
+    except ImportError:
+        from presentation import render
+    text = render(Path('current/webvowl/index.html'), 'WebVOWL graph', (HERE/'index.html').read_text(), wide=True,
+        head='<meta http-equiv="Content-Security-Policy" content="default-src \'self\'; script-src \'self\'; style-src \'self\' \'unsafe-inline\'; connect-src \'self\'; img-src \'self\' data:; object-src \'none\'; base-uri \'none\'; form-action \'none\'"><link rel="stylesheet" href="vendor/webvowl.css"><link rel="stylesheet" href="viewer.css">',
+        scripts='<script defer src="vendor/d3.min.js"></script><script defer src="vendor/webvowl.js"></script><script defer src="viewer.js"></script><div hidden aria-hidden="true"><span id="locateSearchResult"></span><span id="progressBarValue"></span></div>')
     for name in ['viewer.js','viewer.css','vendor/webvowl.js','vendor/d3.min.js','vendor/webvowl.css']:
         path = root/'vendor/webvowl/1.1.7'/name.removeprefix('vendor/') if name.startswith('vendor/') else HERE/name
         text = text.replace('"'+name+'"','"'+name+'?v='+sha(path.read_bytes())[:12]+'"')

@@ -2,7 +2,7 @@
 (() => {
   "use strict";
   const $ = (id) => document.getElementById(id);
-  let graph, source, terms = [], selected;
+  let graph, source, activeData, terms = [], selected, settleTimer;
   let valid = false, ready = false, initializing = true;
   const noop = () => {};
   function fail(error) {
@@ -18,15 +18,16 @@
   function markReady() {
     if (ready || !valid) return;
     const ids = [...document.querySelectorAll("#graph .node:not(.hidden-in-export)")].map(n => n.id).sort();
-    const expected = source.class.map(n => n.id).sort();
+    const expected = activeData.class.map(n => n.id).sort();
     if (JSON.stringify(ids) !== JSON.stringify(expected)) { fail("Rendered class inventory differs from source"); return; }
     ready = true;
     document.body.dataset.graphReady = "true";
-    $("status").textContent = `${source.metrics.classCount} classes · ${source.metrics.objectPropertyCount} object properties · ${source.metrics.propertyCount-source.metrics.objectPropertyCount} subclass links`;
-    document.querySelectorAll(".toolbar button, #search").forEach(n => { n.disabled = false; });
+    $("status").textContent = `${activeData.class.length} of ${source.class.length} classes · ${activeData.property.length} of ${source.property.length} asserted links · ${$("view-mode").value === "complete" ? "complete projection" : "immediate neighborhood"}`;
+    document.querySelectorAll(".toolbar button, .toolbar select, #search").forEach(n => { n.disabled = false; });
     renderResults();
   }
   function selectTerm(term, move = true) {
+    if (move && $("view-mode").value === "neighborhood" && selected !== term?.id) drawView(term);
     if (!term) return;
     selected = term.id;
     const box = $("details"); box.replaceChildren();
@@ -45,7 +46,7 @@
     box.append(links);
     document.querySelectorAll("#graph .selected").forEach(n => n.classList.remove("selected"));
     const node = document.getElementById(term.id); if (node && $("graph").contains(node)) node.classList.add("selected");
-    if (move) {
+    if (move && $("view-mode").value === "complete") {
       const target = graph.graphNodeElements().data().find(n => n.id() === term.id) || graph.graphLabelElements().find(n => n.property().id() === term.id);
       if (target && Number.isFinite(target.x) && Number.isFinite(target.y)) { graph.setTargetZoom(0.9); graph.setDefaultZoom(0.6); graph.zoomToElementInGraph(target); }
     }
@@ -61,6 +62,35 @@
       const b = document.createElement("button"); b.textContent = term.label; b.title = `${term.kind} · ${term.id}`;
       b.setAttribute("aria-pressed", String(selected === term.id)); b.addEventListener("click", () => selectTerm(term)); $("results").append(b);
     }
+  }
+  function drawView(term) {
+    clearTimeout(settleTimer);
+    const ids = new Set();
+    if ($("view-mode").value === "complete") source.class.forEach(n => ids.add(n.id));
+    else if (term.domain) { ids.add(term.domain); ids.add(term.range); }
+    else {
+      ids.add(term.id);
+      source.propertyAttribute.forEach(p => { if (p.domain === term.id || p.range === term.id) { ids.add(p.domain); ids.add(p.range); } });
+    }
+    const properties = source.propertyAttribute.filter(p => ids.has(p.domain) && ids.has(p.range));
+    const propertyIds = new Set(properties.map(p => p.id));
+    // Filter only exact declared endpoints; this changes visibility, not source data.
+    activeData = JSON.parse(JSON.stringify(source));
+    activeData.class = activeData.class.filter(n => ids.has(n.id));
+    activeData.classAttribute = activeData.classAttribute.filter(n => ids.has(n.id));
+    activeData.property = activeData.property.filter(n => propertyIds.has(n.id));
+    activeData.propertyAttribute = properties;
+    ready = false;
+    document.body.dataset.graphReady = "false";
+    graph.paused(false);
+    graph.options().data(activeData); graph.load();
+    $("status").textContent = "Arranging the selected view…";
+    settleTimer = setTimeout(() => {
+      if (!valid) return;
+      markReady(); fitGraph(); graph.paused(true);
+      $("pause").setAttribute("aria-pressed", "true"); $("pause").textContent = "Resume layout";
+      const node = document.getElementById(selected); if (node && $("graph").contains(node)) node.classList.add("selected");
+    }, 1800);
   }
   function resize() {
     if (!graph) return;
@@ -92,7 +122,7 @@
     // Core UI callbacks are explicitly adapted; the upstream application, editor,
     // ontology loader/converter and export modules are never bundled or started.
     options.loadingModule({successfullyLoadedOntology: () => valid, missingImportsWarning: () => false,
-      setPercentValue: noop, setPercentMode: noop, setSuccessful: markReady, hideLoadingIndicator: noop,
+      setPercentValue: noop, setPercentMode: noop, setSuccessful: noop, hideLoadingIndicator: noop,
       collapseDetails: noop, showWarningDetailsMessage: noop, setErrorMode: () => { if (!initializing) fail("Core parser/layout error"); },
       showErrorDetailsMessage: () => fail("Core parser/layout error")});
     options.ontologyMenu({append_bulletPoint: noop, append_message_toLastBulletPoint: noop});
@@ -105,10 +135,13 @@
     options.focuserModule({handle: noop}); options.pickAndPinModule({enabled: () => false});
     const literals = webvowl.modules.emptyLiteralFilter(); literals.enabled(true); options.literalFilter(literals);
     options.filterModules([literals]);
-    options.selectionModules([{handle: element => { const term = terms.find(t => t.id === element.id()); if (term) selectTerm(term, false); }}]);
+    options.selectionModules([{handle: element => { const term = terms.find(t => t.id === element.id()); if (term) selectTerm(term); }}]);
     options.drawPropertyDraggerOnHover(false); options.useAccuracyHelper(false);
     options.classDistance(190); options.charge(-750); options.gravity(0.035);
-    resize(); options.data(source); graph.start(); initializing = false; valid = true; graph.load(); graph.setDefaultZoom(0.55);
+    resize(); graph.start(); initializing = false; valid = true;
+    const first = terms.find(t => t.id === "RKM-C022");
+    drawView(first); selectTerm(first, false);
+    $("view-mode").addEventListener("change", () => drawView(terms.find(t => t.id === selected)));
     $("search").addEventListener("input", renderResults);
     $("search").addEventListener("keydown", event => { if (event.key === "Enter") { const match = $("results").querySelector("button"); if (match) match.click(); } });
     $("pause").addEventListener("click", () => { const paused = !graph.paused(); graph.paused(paused); $("pause").setAttribute("aria-pressed", String(paused)); $("pause").textContent = paused ? "Resume layout" : "Pause layout"; });

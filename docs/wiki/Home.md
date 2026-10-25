@@ -1,22 +1,27 @@
-# Riskium: An Ontology for Risk Knowledge
+# Riskium: an ontology for enterprise risk knowledge
 
-Riskium separates the subject of risk analysis from entries, scenarios, assessments and the evidence describing it. The conceptual model owns the definitions; these explanations help readers inspect the model, its implementation choices and its limits.
+A register entry, a possible scenario, an assessment result and supporting evidence can concern the same risk without being the same thing. Riskium separates these subjects and records the context needed to interpret their relationships. The conceptual model owns their definitions; the guide explains how to read and use them.
 
-The first stable bounded research artifact, **[v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1)**, is published. It contains owner-reviewed research scope, not independent semantic certification or a production system. Current development also includes SQLite assessment/result profile 0.2.0 and shared-graph integration; these additions are separately versioned and are outside the original six stable assets.
+## Start with the question you need to answer
 
-## Reading routes
+For meaning and scope, read the [overview](Overview), [scope](Scope) and [modeling decisions](Modeling-Decisions). The [use guide](Using-the-Model) connects those distinctions to inspection and implementation tasks.
 
-- Research: [scope](Scope), [requirements](Requirements), [competency questions](Competency-Questions), then [evaluation](Evaluation).
-- Domain interpretation: [overview](Overview), [modeling decisions](Modeling-Decisions) and [use of the model](Using-the-Model).
-- Implementation: [database assurance and DRSD](Database-Assurance), [traceability](Traceability) and [reproduction](Reproduce).
-- Publication: [versions and surfaces](Publication), [visualization](Visualization), [artifact identities](Artifact-Versions) and [ordered work](Work-Plan).
+For scientific assessment, follow the [requirements](Requirements) and [competency questions](Competency-Questions) into [evaluation](Evaluation). The recorded results have different populations and limits; they do not combine into an overall correctness score.
+
+For implementation, begin with [database assurance](Database-Assurance), then the [reproduction instructions](Reproduce). For lookup and visual inspection, use the [visualization guide](Visualization).
+
+## Which version am I reading?
+
+The latest published source distribution is **[v0.3.2](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.2)**. The ontology model remains **0.3.1**; the distribution includes independently versioned engineering and documentation components. The conceptual and OWL reference downloads preserve the original model source. [Publication and versions](Publication) explains current pages, frozen snapshots and source releases.
+
+The published scope received owner review with assistant support. Independent semantic review has no recorded responses, and the software is a bounded research implementation. Read [evaluation](Evaluation) and [limitations](Limitations) when deciding what the artifact supports.
 
 ## Authors and reuse
 
-The authors are Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi, in manuscript order. Their exact affiliations and citation information are in [the author record](Citation). Original scientific artifacts and explanations use CC BY 4.0; original project software uses MIT under the [separate license scopes](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/RIGHTS.md). Third-party resources keep their own terms. No DOI or published-article status is asserted.
+Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi are listed in manuscript order. [The author record](Citation) gives their affiliations and citation information. Original scientific artifacts use CC BY 4.0; original software uses MIT under the [separate rights scopes](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/RIGHTS.md). Third-party resources retain their own terms. No DOI or published-article status is asserted.
 
 ---
 
 [Equivalent Pages guide](https://arazsaiearasi3.github.io/riskium/current/guide/Home.html) · [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) · [OWL explorer](https://arazsaiearasi3.github.io/riskium/current/explore/index.html) · [Published v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1).
 
-Explanatory source: [docs/guides/Home.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/guides/Home.md). Source SHA-256: `145ac85e1621df4b1f81929362b651ef7639536f16373220be8792de0bd4e84d`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.
+Explanatory source: [docs/guides/Home.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/guides/Home.md). Source SHA-256: `579f8a4b16a3f9c1f237e1df9d09439d5c1cf2a587c65039e43edd3e124d5b22`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.

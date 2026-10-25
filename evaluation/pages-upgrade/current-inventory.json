@@ -1,0 +1,317 @@
+{
+  "status": "CURRENT_PRESENTATION_PASS",
+  "pages": 31,
+  "inventory": [
+    {
+      "path": "current/downloads/index.html",
+      "title": "Downloads \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/explore/index.html",
+      "title": "Explore the asserted OWL core \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Artifact-Versions.html",
+      "title": "Artifact versions \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Citation.html",
+      "title": "Citation \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Competency-Questions.html",
+      "title": "Competency questions \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Database-Assurance.html",
+      "title": "Database assurance \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Decisions.html",
+      "title": "Modeling decisions \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Evaluation.html",
+      "title": "Evaluation \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Formalization.html",
+      "title": "Formalization \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Home.html",
+      "title": "Home \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Limitations.html",
+      "title": "Limitations \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Overview.html",
+      "title": "Overview \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Publication-Comparison.html",
+      "title": "Publication comparison \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Publication.html",
+      "title": "Publication \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Quality.html",
+      "title": "Quality \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/References.html",
+      "title": "References \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Reproduce.html",
+      "title": "Reproduce \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Requirements.html",
+      "title": "Requirements \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Scope.html",
+      "title": "Scope \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Traceability.html",
+      "title": "Traceability \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Using-the-Model.html",
+      "title": "Using the model \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Visualization.html",
+      "title": "Visualization \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/guide/Work-Plan.html",
+      "title": "Work and release plan \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/index.html",
+      "title": "Risk knowledge, with its meaning intact \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/reference/diagrams/index.html",
+      "title": "Conceptual diagrams \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/reference/native/index.html",
+      "title": "Conceptual reference \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/reference/search.html",
+      "title": "Find a term \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/webvowl/index.html",
+      "title": "WebVOWL graph \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/widoco/index-en.html",
+      "title": "OWL reference \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "current/widoco/provenance/provenance-en.html",
+      "title": "WIDOCO generation record \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    },
+    {
+      "path": "versions/index.html",
+      "title": "Documentation versions \u2014 Riskium",
+      "template": "riskium-pages-1",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "mobile_navigation": true
+    }
+  ],
+  "limits": "Static landmarks and shared presentation contract; browser behavior and usability are separate evidence."
+}

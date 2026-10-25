@@ -22,7 +22,11 @@ NAMESPACE = 'https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#
 GUIDE_ROWS = entries()
 GUIDES = [(r['slug'], r['source']) for r in GUIDE_ROWS]
 GUIDE_TITLES = {r['slug']: r['title'] for r in GUIDE_ROWS}
-VIEW_ROUTE = 'webvowl/index.html?v=' + hashlib.sha256(b''.join((TOOLS/'webvowl'/p).read_bytes() for p in ['index.html','viewer.js','viewer.css'])).hexdigest()[:12]
+try:
+    from .presentation import graph_route
+except ImportError:
+    from presentation import graph_route
+VIEW_ROUTE = graph_route()
 
 def digest(data): return hashlib.sha256(data).hexdigest()
 def esc(value): return html.escape(str(value), quote=True)
@@ -66,19 +70,12 @@ def build(out):
                 url = urlsplit(anchor['href'])
                 if url.path and not url.scheme and not url.path.endswith('.html'):
                     anchor['download'] = Path(url.path).name
-        toc = []
-        for i, heading in enumerate(soup.find_all('h2'), 1):
-            if not heading.get('id'): heading['id'] = 'section-'+str(i)
-            toc.append(link(heading.get_text(), '#'+heading['id']))
-        sections = [('Overview','index.html'),('Conceptual reference','reference/native/index.html'),
-                    ('OWL reference','widoco/index-en.html'),('Evaluation','guide/Evaluation.html'),
-                    ('Explore','explore/index.html'),('WebVOWL',VIEW_ROUTE),('Downloads','downloads/index.html')]
-        nav = ''.join('<a '+('aria-current="page" ' if str(path)==p else '')+'href="'+rel(version/p,base)+'">'+n+'</a>' for n,p in sections)
-        sidebar = ''.join('<li><a '+('aria-current="page" ' if str(path)=='guide/'+n+'.html' else '')+'href="'+rel(version/('guide/'+n+'.html'),base)+'">'+esc(GUIDE_TITLES[n])+'</a></li>' for n,_ in GUIDES)
-        context = 'Current documentation · published model '+TAG+' · semantic source '+link(COMMIT[:12], REPO+'/tree/'+COMMIT)+' · '+link('Documentation versions','../' * len(path.parts) + 'versions/index.html')
-        footer = 'Scientific content: '+link('CC BY 4.0','https://creativecommons.org/licenses/by/4.0/')+'. Original software: MIT. Copyright 2026 Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi, for their respective original contributions. '+local('Citation and affiliations','guide/Citation.html',base)+' · '+local('Scope and limitations','guide/Limitations.html',base)+' · '+link('Repository', REPO)+'. Documentation generated after the release; semantic source is the fixed commit above.'
+        try:
+            from .presentation import render
+        except ImportError:
+            from presentation import render
         script = '<script defer src="'+rel(version/'assets/filter.js',base)+'"></script>' if filtering else ''
-        document = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Riskium ontology documentation for '+TAG+'"><title>'+esc(title)+' — Riskium</title><link rel="stylesheet" href="'+rel(version/'assets/portal.css',base)+'">'+script+'</head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="'+rel(version/'index.html',base)+'">Riskium</a><p>An Ontology for Modeling Enterprise Risk Knowledge</p><nav aria-label="Primary">'+nav+'</nav></header><div class="publication-context">'+context+'</div><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul>'+sidebar+'<li>'+local('Version and source record','publication-manifest.json',base)+'</li><li>'+link('GitHub Wiki',REPO+'/wiki')+'</li></ul></aside><main id="content" tabindex="-1">'+str(soup)+'</main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul>'+''.join('<li>'+a+'</li>' for a in toc)+'</ul></aside></div><footer>'+footer+'</footer></body></html>\n'
+        document = render(Path('current')/path, title, str(soup), scripts=script)
         write(target, document)
     def filter_box(count):
         return '<label for="filter">Filter by name, identifier or description</label><input id="filter" type="search" placeholder="For example: Risk Case" aria-describedby="filter-status"><p id="filter-status" role="status" aria-live="polite">'+str(count)+' of '+str(count)+' entries shown</p><noscript><p>All entries and term links remain available without JavaScript.</p></noscript>'
@@ -88,10 +85,9 @@ def build(out):
     write(version/'assets/complete-model.svg', source('diagrams/complete-view.svg'))
     coverage = shacl['outcomes']; reasoned = hermit['coverage']
     coverage_text = f"HermiT: {sum(x['status']=='PASS' for x in hermit['cases'])} executed cases PASS; {reasoned['outcomes']['PASS']}/{reasoned['baseline_obligations']} baseline obligations, {reasoned['outcomes']['NOT_RUN']} NOT_RUN. SHACL: {coverage['PASS']} scoped PASS, {coverage['PARTIAL']} PARTIAL and {coverage['NOT_RUN']} NOT_RUN of {shacl['baseline']} obligations."
-    cards = [('Understand the model','Keep cases, entries, scenarios and evidence distinct.','guide/Overview.html','Read the overview'),('Inspect the conceptual source','Browse all 80 catalog concepts, 134 relations and 25 interpretation constraints.','reference/native/index.html','Conceptual reference'),('Read the OWL commitments','Inspect 78 named classes, including the local anchor, and 127 object properties.','widoco/index-en.html','WIDOCO reference'),('Explore and reproduce','Follow asserted parent and relation links; inspect the exact source and finite evidence.','explore/index.html','Explore the typed core')]
-    body = '<h1>Enterprise risk knowledge, explicitly modeled</h1><p class="eyebrow">Conceptual design 0.3.1 · WIDOCO reference</p><p>Riskium distinguishes a managed risk case from register entries, scenario specifications, assessment results and supporting evidence. Use the conceptual guide for meaning, the OWL reference for asserted logical commitments, and evaluation for the scope of executed checks.</p><p class="note">The first '+link('stable bounded research artifact v0.3.1',REPO+'/releases/tag/v0.3.1')+' is published. This semantic reference remains pinned to '+esc(TAG)+'; current explanatory guides have separate source hashes. Independent semantic acceptance remains open. See the '+link('current work and release plan','guide/Work-Plan.html')+'.</p><div class="cards">'+''.join('<div class="card"><h2>'+t+'</h2><p>'+d+'</p>'+link(a,p)+'</div>' for t,d,p,a in cards)+'</div><h2>Evidence and limits</h2><p>'+coverage_text+'</p><p>These populations have different meanings. Their counts do not estimate overall semantic correctness. C-08 remains partial; external alignment and full profile integration remain open.</p><h2>Selected conceptual view</h2><p>The selected diagram is a subset. The complete catalog, optional boundaries and local external anchor are distinguished in the reference.</p><a href="assets/selected-model.svg"><img src="assets/selected-model.svg" alt="Selected conceptual view of Riskium; open the source SVG to inspect labels"></a><p>'+link('Complete diagram','assets/complete-model.svg')+' · '+link('Verified downloads','downloads/index.html')+'</p>'
-    body += '<h2>Graphical exploration</h2><p>'+link('Open the WebVOWL graph',VIEW_ROUTE)+' to search, select and navigate the asserted named-class and relation projection. The text explorer remains available without JavaScript.</p>'
-    page(Path('index.html'), 'Enterprise risk knowledge, explicitly modeled', body)
+    home = markdown.markdown((TOOLS/'home.md').read_text(), extensions=['tables','fenced_code'])
+    home = home.replace('WEBVOWL_ROUTE', VIEW_ROUTE)
+    page(Path('index.html'), 'Risk knowledge, with its meaning intact', home)
     # The model owns every definition; no manually maintained duplicate catalog.
     body = '<h1>Conceptual reference</h1><p>Conceptual design 0.3.1: 80 catalog concepts, including 77 typed concepts and three optional boundaries; one local external anchor is listed separately. There are 134 associations or bridges, 66 generalizations and 25 interpretation constraints. This full catalog is broader than the bounded OWL export.</p>'+filter_box(305)
     body += '<h2 id="domains">Domains</h2><ul>'+''.join('<li><b>'+esc(d['title'])+'</b>: '+esc(d['definition'])+'</li>' for d in model['domains'])+'</ul><h2 id="concepts">Concepts</h2>'
@@ -141,6 +137,21 @@ def build(out):
         body += '<article class="entry" id="'+esc(ident)+'"><h3>'+esc(names[str(s)])+'</h3><p><code>'+esc(s)+'</code></p><p>Domain: '+' · '.join(term_link(x) for x in domains)+' → Range: '+' · '.join(term_link(x) for x in ranges)+'</p><p>'+link('Conceptual relation','../reference/native/index.html#'+ident)+' · '+link('WIDOCO term','../widoco/index-en.html#'+term_id(s))+'</p><details><summary>Asserted predicates and expressions</summary><pre>'+esc('\n'.join(expression(p)+' '+expression(o) for p,o in sorted(graph.predicate_objects(s),key=lambda x:(str(x[0]),expression(x[1])))))+'</pre></details></article>'
     page(Path('explore/index.html'), 'Explore the asserted OWL core', body, True)
     write(version/'explore/graph.json',json_text({'source_commit':COMMIT,'source_sha256':inputs[OWL_SOURCE],'mode':'asserted hypertext neighborhoods; no inference','terms':explorer_rows}))
+    search = '<h1>Find a concept, relation or constraint</h1><p>Search labels, identifiers and definitions. The conceptual catalog contains optional boundaries that are outside the OWL core. Each result links to the views that actually contain it.</p>'+filter_box(240)
+    search += '<h2 id="results">Term directory</h2>'
+    for kind, rows in [('Concept', model['concepts']), ('Relation', model['associations']), ('Constraint', model['constraints']), ('Anchor', model['imported_types'])]:
+        for row in rows:
+            ident=row['id']; label=row.get('display_title') or row.get('predicate') or row.get('title'); definition=row.get('definition') or row.get('rationale') or row.get('statement')
+            search += '<article class="entry" id="'+esc(ident)+'"><p class="eyebrow">'+kind+' · '+esc(ident)+'</p><h3>'+esc(label)+'</h3><p>'+esc(definition)+'</p><p>'+link('Conceptual reference','native/index.html#'+ident)
+            if URIRef(NAMESPACE+ident) in classes+properties:
+                search+=' · '+link('OWL declaration','../widoco/index-en.html#'+ident)+' · '+link('Text neighborhood','../explore/index.html#'+ident)
+            search+='</p></article>'
+    page(Path('reference/search.html'),'Find a term',search,True)
+    diagrams = '<h1>Read the conceptual diagrams</h1><p>Begin with the selected view to follow the main risk-knowledge distinctions. Use the complete view when checking the catalog and its boundary concepts. The diagrams are inspection aids; source definitions remain authoritative.</p>'
+    for label,name,caption in [('Selected view','selected-model.svg','A subset of the model: follow cases, descriptions, scenarios, assessment and evidence.'),('Complete view','complete-model.svg','The full conceptual catalog, including optional boundaries and the local anchor. This is broader than the OWL projection.')]:
+        diagrams+='<section><h2>'+label+'</h2><p>'+caption+'</p><a class="diagram-link" href="../../assets/'+name+'">Open '+label.lower()+' as SVG</a><figure><a href="../../assets/'+name+'"><img loading="lazy" src="../../assets/'+name+'" alt="Riskium '+label.lower()+'; open the original SVG to zoom and read labels"></a><figcaption>'+caption+'</figcaption></figure></section>'
+    diagrams+='<p>'+link('Search the definitions','../search.html')+' · '+link('Explore the asserted OWL graph','../../'+VIEW_ROUTE)+'</p>'
+    page(Path('reference/diagrams/index.html'),'Conceptual diagrams',diagrams)
     # Curated explanatory sources stay distinct from the frozen semantic inputs.
     mapping = {(ROOT/p).resolve():version/('guide/'+n+'.html') for n,p in GUIDES}
     mapping[(ROOT/MODEL).resolve()] = version/'downloads/riskium-model.json'
@@ -164,10 +175,8 @@ def build(out):
                 ref = source_ref(p)
                 node[attr] = REPO+('/tree/' if target.is_dir() else '/blob/')+ref+'/'+p
             if u.fragment: node[attr] += '#'+u.fragment
-        if name == 'Evaluation':
-            soup.insert(0,BeautifulSoup('<p class="note">Frozen release evidence: '+coverage_text+' Independent semantic acceptance remains open.</p>','html.parser'))
         wiki_slug = next(r['wiki_slug'] for r in GUIDE_ROWS if r['slug'] == name)
-        soup.append(BeautifulSoup('<p class="note">'+link('Equivalent Wiki guide',REPO+'/wiki/'+wiki_slug)+' · Explanatory source: '+link(src,REPO+'/blob/'+source_ref(src)+'/'+src)+'. Source hashes are recorded in the documentation manifest; current engineering supplements are separate from the immutable stable assets.</p>','html.parser'))
+        soup.append(BeautifulSoup('<details class="source-record"><summary>Sources and equivalent Wiki guide</summary><p>'+link('Equivalent Wiki guide',REPO+'/wiki/'+wiki_slug)+' · Explanatory source: '+link(src,REPO+'/blob/'+source_ref(src)+'/'+src)+'. Source hashes are recorded in the documentation manifest; current engineering supplements are separate from the immutable source assets.</p></details>','html.parser'))
         page(Path('guide/'+name+'.html'), GUIDE_TITLES[name], str(soup))
     downloads = [('ontology/riskium-model.json','riskium-model.json'),('ontology/native/riskium.ontouml.json','riskium.ontouml.json'),('ontology/derived/typed-core.json','typed-core.json'),('CITATION.cff','CITATION.cff'),('RIGHTS.md','RIGHTS.md'),('LICENSE','LICENSE'),('NOTICE.md','NOTICE.md'),('LICENSES/CC-BY-4.0.txt','CC-BY-4.0.txt'),('LICENSES/MIT.txt','MIT.txt')]
     hashes = {}
@@ -187,7 +196,7 @@ def build(out):
         write(out/path,'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url='+target+'"><title>'+title+'</title></head><body><p>'+link(title,target)+'</p></body></html>\n')
     redirect(Path('index.html'),PREFIX.as_posix()+'/index.html','Open Riskium documentation')
     redirect(Path('site/index.html'),'../'+PREFIX.as_posix()+'/reference/native/index.html','Open the Riskium conceptual reference')
-    previews = [('Overview', 'index.html'), ('Conceptual reference', 'reference/native/index.html'), ('OWL reference', 'widoco/index-en.html'), ('Explorer', 'explore/index.html'), ('WebVOWL', VIEW_ROUTE)]
+    previews = [('Overview', 'index.html'), ('Conceptual reference', 'reference/native/index.html'), ('OWL reference', 'widoco/index-en.html'), ('Explorer', 'explore/index.html'), ('WebVOWL', VIEW_ROUTE), ('Term search','reference/search.html'), ('Guide','guide/Overview.html'), ('Versions','../versions/index.html')]
     review = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Riskium responsive interface review</title><style>body{font:16px/1.6 system-ui;margin:24px;color:#172b3a}section{margin:30px 0}.frames{display:flex;flex-wrap:wrap;gap:24px}iframe{border:1px solid #526574;height:620px;max-width:100%}a{color:#135a7a}</style></head><body><h1>Responsive interface review</h1><p>Maintainer review surface: the same versioned documents are rendered in real 390-pixel and 760-pixel frame viewports. Each frame has its own scroll area and keyboard focus. These checks concern reading and navigation, not ontology validation.</p><p><a href="'+PREFIX.as_posix()+'/index.html">Open the documentation</a></p>'
     for title, route in previews:
         review += '<section><h2>'+title+'</h2><div class="frames">'+''.join('<div><h3>'+str(width)+' pixels</h3><iframe width="'+str(width)+'" title="'+title+' at '+str(width)+' pixels" src="'+PREFIX.as_posix()+'/'+route+'"></iframe></div>' for width in [390,760])+'</div></section>'

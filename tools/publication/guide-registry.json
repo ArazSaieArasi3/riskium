@@ -29,7 +29,8 @@
       "slug": "Requirements",
       "wiki_slug": "Requirements",
       "title": "Requirements",
-      "source": "requirements/ontology-requirements.md"
+      "source": "requirements/ontology-requirements.md",
+      "context_note": "Dated ontology requirements revision 0.4.3 and owner-approved scope, 24 October 2026. Its pending final-freeze statement describes that checkpoint: source releases v0.3.1 and v0.3.2 were subsequently published and independently downloaded/verified. Original priorities, acceptance criteria and definitions remain unchanged; Publication and the current Work plan identify the later state."
     },
     {
       "slug": "Artifact-Versions",

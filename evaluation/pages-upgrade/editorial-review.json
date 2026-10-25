@@ -1,0 +1,160 @@
+{
+  "baseline": "eb0ff1d64e87c8667aa9f3eab46d700ffc61a7ee",
+  "reviewer": "Assistant-assisted editorial/source review; no independent expert or detector claim",
+  "references": [
+    "OGCM-RF editorial-integrity-standard",
+    "portfolio academic-writing-quality",
+    "portfolio research-manuscript-quality-standard",
+    "portfolio cross-chapter-coherence"
+  ],
+  "constraints": "No definition/axiom, source evidence population, reviewer response or withheld identity changed.",
+  "guides": [
+    {
+      "slug": "Home",
+      "source": "docs/guides/Home.md",
+      "disposition": "PASS_EDITED_E0_E1_E4_VERIFIED",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "579f8a4b16a3f9c1f237e1df9d09439d5c1cf2a587c65039e43edd3e124d5b22"
+    },
+    {
+      "slug": "Scope",
+      "source": "docs/guides/Scope.md",
+      "disposition": "PASS_NO_CHANGE",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "a095170e53e8e830915144d753d43b301c96f9368a47f2622e9a4ebc55dc7229"
+    },
+    {
+      "slug": "Overview",
+      "source": "docs/overview.md",
+      "disposition": "PASS_NO_CHANGE",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "def7d12867cc66f190b08ae499e809f3598723f25844847207f2e3753d16b856"
+    },
+    {
+      "slug": "Decisions",
+      "source": "docs/modeling-decisions.md",
+      "disposition": "PASS_NO_CHANGE",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "c5b760e9b2f5620e8cd2662026b89e98e00843dcc26e0dc1b401256f39cb76a0"
+    },
+    {
+      "slug": "Requirements",
+      "source": "requirements/ontology-requirements.md",
+      "disposition": "PASS_NO_CHANGE",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "68e09fd8cce2805da2d2fa0f29f76b0601282c598855d99a41631dccfaf9ff33"
+    },
+    {
+      "slug": "Artifact-Versions",
+      "source": "docs/artifact-versions.md",
+      "disposition": "PASS_EDITED_E0_E1_E4_VERIFIED",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "ff05cab0b700570412ed0a7a7276e78ec8fe7c4fd688e2a5c63c888f2293fb00"
+    },
+    {
+      "slug": "Database-Assurance",
+      "source": "docs/relational-assurance.md",
+      "disposition": "PASS_NO_CHANGE",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "595f9a8e6a1bf0d2e46b4c38ab308b5dca475feb6e764051d60cb17d8aad3337"
+    },
+    {
+      "slug": "Work-Plan",
+      "source": "docs/work-plan.md",
+      "disposition": "PASS_EDITED_E0_E1_E4_VERIFIED",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "192841fa416ef01013afbb3e3292218d843aee6d2ae09ae6b1b58ef351b444c5"
+    },
+    {
+      "slug": "Publication-Comparison",
+      "source": "docs/publication-comparison.md",
+      "disposition": "PASS_NO_CHANGE",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "a76039ecb1062028494f8a0a403167175304253aed4bec0d8cacbea90b1866e5"
+    },
+    {
+      "slug": "Competency-Questions",
+      "source": "requirements/cq/README.md",
+      "disposition": "PASS_NO_CHANGE",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "ae4e6c8641abbe3ccedfb4cac81e597dfddf9629ed5e17802d973664139db16c"
+    },
+    {
+      "slug": "Traceability",
+      "source": "evaluation/traceability/README.md",
+      "disposition": "PASS_NO_CHANGE",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "851b61c9a5298aa4b7c0ea6df92039c8fbc0f3f44e06e8ee1295d385b8ef9a82"
+    },
+    {
+      "slug": "References",
+      "source": "references/README.md",
+      "disposition": "PASS_NO_CHANGE",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "437a09488a721f6710d3153080c0588408e495221a8a9bb77704848091a63a6d"
+    },
+    {
+      "slug": "Quality",
+      "source": "evaluation/quality/README.md",
+      "disposition": "PASS_NO_CHANGE",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "d1d50ca91657686799f8299e821e3df3862fabcd047342dbe742f00f416a7d32"
+    },
+    {
+      "slug": "Formalization",
+      "source": "evaluation/owl-mapping-review.md",
+      "disposition": "PASS_NO_CHANGE",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "f51ad6dee980c27a503ac0245fc98394c90eaf929b04489e4a08aaee77049acb"
+    },
+    {
+      "slug": "Evaluation",
+      "source": "docs/guides/Evaluation.md",
+      "disposition": "PASS_EDITED_E0_E1_E4_VERIFIED",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "5a9205e79a1259f425fb10dcbdc1410c7515bd2fea40bef3250c47cadbcba19c"
+    },
+    {
+      "slug": "Reproduce",
+      "source": "docs/reproducibility.md",
+      "disposition": "PASS_EDITED_E0_E1_E4_VERIFIED",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "5c708dae1b09abf59ea2e177a013f3cb70523c4810a983233ce3e1b85de4f637"
+    },
+    {
+      "slug": "Citation",
+      "source": "AUTHORS.md",
+      "disposition": "PASS_NO_CHANGE",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "c20830d719b9b1d1b13d85cac69253274a974edb79b3a2c56148fd900d038447"
+    },
+    {
+      "slug": "Limitations",
+      "source": "docs/portal-limitations.md",
+      "disposition": "PASS_EDITED_E0_E1_E4_VERIFIED",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "0fe5db2551302193159e52fbec1f04da369bd811f6f951e0ee7ffaa673d3e131"
+    },
+    {
+      "slug": "Using-the-Model",
+      "source": "docs/guides/Using-the-Model.md",
+      "disposition": "PASS_EDITED_E0_E1_E4_VERIFIED",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "2f1b64033e9d47607d79e10db94e54556bc476e8c5e5e3cfa8b16ae17858bbad"
+    },
+    {
+      "slug": "Visualization",
+      "source": "docs/guides/Visualization.md",
+      "disposition": "PASS_EDITED_E0_E1_E4_VERIFIED",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "791010a7e15187915a3b6adfecc81049dda9d6366beab67bc49121f8afb65530"
+    },
+    {
+      "slug": "Publication",
+      "source": "docs/guides/Publication.md",
+      "disposition": "PASS_EDITED_E0_E1_E4_VERIFIED",
+      "basis": "Compared conceptual meaning, cited evidence boundaries and present/historical status; unchanged historical evidence pages retain explicit checkpoint notes.",
+      "sha256": "49508373d062b1cef4ded403bfe1bedde4a25131a6bb1799c613e9e44a9e4596"
+    }
+  ]
+}

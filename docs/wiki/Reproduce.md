@@ -1,6 +1,8 @@
 # Reproduce the current checks
 
-Final package: **[v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1)**, exact source `8afe169968b5c1396c02834dbc499af691b894b4`. Install the pinned SHACL/publication requirements; from a clean checkout of that exact tag run `python tools/prepare_stable_release.py --output /absolute/empty/path/out` outside the source checkout. It runs the full 18-gate set before packaging. The [final receipt](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/releases/v0.3.1-publication.json) separates fresh scoped replays, historical full engine receipts and actual downloaded publication checks. Author-facing Word/PDF binaries remain separate and bound by their QA hashes.
+The latest published source distribution is **[v0.3.2](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.2)**, frozen at `67ebe1e9bd8b2e82649ed4ff43bfb1620c13bd48`. Its [publication receipt](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/releases/v0.3.2-publication.json) records 25 final checks, 200 software regressions and independent downloaded verification. These are packaging and scoped engineering results, not independent semantic review.
+
+To reproduce that package, use a clean checkout of its exact tag with the pinned requirements and run `python tools/prepare_stable_release.py --output /absolute/empty/path/out` outside the checkout. To inspect the maintained documentation, use a current checkout and the documentation commands below. These tasks have different source identities; do not reproduce the historical release from later current pages.
 
 Use Python 3.12 or a compatible Python 3 installation. The conceptual-model and coverage builders use the standard library. The documentation portal uses pinned RDFLib, Markdown and Beautiful Soup packages. The OWL syntax and mapping regression tests require the pinned RDFLib package.
 
@@ -35,9 +37,9 @@ To browse the generated reference locally:
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000/docs/site/`. The generated reference links to the model and conceptual views. Local browsing does not establish a live Pages deployment.
+Open `http://localhost:8000/docs/current/`. The generated reference links to the model and conceptual views. Local browsing does not establish a live Pages deployment.
 
-The builder generates a portal under `docs/releases/v0.3.1-rc.1/`, with fixed semantic inputs from `cfb85905ab37549c7090f00a41ca62cdd3364ab5`. `docs/index.html` opens that version's overview; the existing `/site/` route opens its conceptual reference. Curated guide sources and their hashes are recorded separately in `publication-manifest.json`. The new website was produced after the release and does not change its archive or tag.
+The builder generates the maintained portal under `docs/current/`. `docs/index.html` opens that overview and `/site/` opens its conceptual reference. Curated guide hashes are recorded separately from the immutable model source in `publication-manifest.json`. The versioned-site builder assembles current pages and registered frozen snapshots without altering the latter.
 
 The WIDOCO reference is checked in separately. Rebuild it with the pinned 1.4.25 JDK-17 jar whose SHA-256 is `be57a270fffb91e55810fa308717e704a44e2e7c027a3d68125a49da6c8b4e2b`:
 
@@ -155,4 +157,4 @@ For a reproducible public synthetic database, the supported Python helper is `re
 
 [Equivalent Pages guide](https://arazsaiearasi3.github.io/riskium/current/guide/Reproduce.html) · [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) · [OWL explorer](https://arazsaiearasi3.github.io/riskium/current/explore/index.html) · [Published v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1).
 
-Explanatory source: [docs/reproducibility.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/reproducibility.md). Source SHA-256: `46956478848fd194c85a6c592bf34b2edf3ac51c1ea357eb3feba5570283c6a8`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.
+Explanatory source: [docs/reproducibility.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/reproducibility.md). Source SHA-256: `5c708dae1b09abf59ea2e177a013f3cb70523c4810a983233ce3e1b85de4f637`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.

@@ -1,6 +1,8 @@
 # Evaluation and limitations
 
-The first stable owner-reviewed scope is published as v0.3.1. Current engineering supplements are recorded separately. A requirement, an expected result, an actual engine execution, an author judgment and an independent judgment are different evidence records.
+The ontology model is 0.3.1. Source distribution v0.3.2 includes the selected engineering supplements with their own versions; later Pages changes remain separate. A requirement, an expected result, an actual engine execution, an author judgment and an independent judgment are different evidence records.
+
+## Recorded evidence
 
 | Evidence population | Recorded result | Interpretation |
 | --- | --- | --- |
@@ -13,6 +15,10 @@ The first stable owner-reviewed scope is published as v0.3.1. Current engineerin
 | Source CQ06–CQ08 | 13 selected source statements, five original/reissued pairs, 11 WITHHELD identity candidates | Finite source tasks; no fabricated organizational case admission or whole-extraction accuracy |
 | Independent semantic review | Protocol prepared; zero actual reviewers, ratings and adjudications | No independent acceptance result exists |
 
+## Interpret the results
+
 The [HermiT receipt](../../evaluation/hermit/report.md), [SHACL ledger](../../evaluation/shacl/coverage-status.md), [shared-graph receipt](../../evaluation/integration/README.md), [database assurance](../relational-assurance.md), [source CQ06](../../evaluation/sources/cq06/README.md) and [source correction/identity receipt](../../evaluation/sources/cq0708/README.md) identify exact inputs and populations. Historical NOT_RUN/PARTIAL rows are not relabeled by later alternatives.
+
+## What remains open
 
 Owner review accepted the finite first-final scope with assistant support. It is not independent review. The [current work plan](../work-plan.md) retains broader mapping, formal/application rules, independently prepared cases, legitimate normative-source interpretation, independent reviewers and actual deployment/user acceptance. Synthetic data can expose engineering defects; it cannot provide independent source truth, domain adequacy or an overall correctness percentage.

@@ -33,33 +33,39 @@ def finish(raw, out):
     for node in list(soup.select('.markdown')):
         node.replace_with(BeautifulSoup(markdown.markdown(node.get_text()),'html.parser'))
     for img in list(soup.find_all('img')):img.replace_with(soup.new_string(img.get('alt','')))
-    # WIDOCO's default header uses placeholder dates and a term namespace as
-    # ontology IRI. Replace display metadata; the source ontology stays intact.
-    meta=soup.select_one('.head dl');meta.clear()
-    fields=[('Documentation source','<a href="../index.html">Riskium documentation portal</a>'),
-            ('Release','<a href="https://github.com/ArazSaieArasi3/riskium/releases/tag/'+TAG+'">'+TAG+'</a>'),
-            ('Ontology IRI','<code>https://github.com/ArazSaieArasi3/riskium/ontologies/riskium</code>'),
-            ('Version IRI','<code>https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1</code>'),
-            ('Source commit','<code>'+COMMIT+'</code>'),('Source SHA-256','<code>'+digest(frozen(OWL_SOURCE))+'</code>'),
-            ('Authors','Araz Saie Arasi; Hassan Haghighi; Hossein Azgomi. <a href="../guide/Citation.html">Affiliations and citation</a>.'),
-            ('Reuse','<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>; <a href="../downloads/RIGHTS.md">scopes and exclusions</a>.'),
-            ('Download','<a href="ontology.ttl">Turtle</a> · <a href="ontology.owl">RDF/XML</a> · <a href="ontology.jsonld">JSON-LD</a> · <a href="ontology.nt">N-Triples</a>')]
-    for label,value in fields:
-        dt=soup.new_tag('dt');dt.string=label;dd=soup.new_tag('dd');dd.append(BeautifulSoup(value,'html.parser'));meta.extend([dt,dd])
-    nav=BeautifulSoup('<nav aria-label="Documentation"><a href="../index.html">Overview</a> · <a href="../reference/native/index.html">Conceptual reference</a> · <a href="../explore/index.html">Explore OWL</a> · <a href="../guide/Evaluation.html">Evaluation</a> · <a href="../downloads/index.html">Downloads</a></nav><p class="riskium-note">Bounded typed-core export: 77 local classes, one local external-anchor proxy and 127 object properties. Three optional concepts and seven bridges are excluded. Ontology IRIs identify terms; they are not claims of deployed endpoints. Independent semantic acceptance remains open. This documentation was generated after the stable release from its exact semantic source.</p>','html.parser')
-    soup.select_one('.head').insert(0,nav)
-    # The upstream template repeats the annotation-properties section ID.
-    duplicate=soup.select_one('h3#annotationproperties')
-    if duplicate:duplicate['id']='annotationproperties-headline'
-    toc=soup.select_one('#toc');toc.clear();toc.append(BeautifulSoup('<h2>Table of contents</h2><ul>'+''.join('<li><a href="#'+h['id']+'">'+h.get_text().split(' back to')[0]+'</a></li>' for h in soup.select('h2.list[id],h3.list[id]'))+'</ul>','html.parser'))
-    css=soup.new_tag('style');css.string='body{overflow-wrap:anywhere}nav{margin:1rem 0;line-height:1.8}.riskium-note{border-left:4px solid #135a7a;background:#f2f6f8;padding:1rem;color:#172b3a}.entity{scroll-margin-top:1rem}a:focus-visible{outline:3px solid #b45a13;outline-offset:3px}img{max-width:100%}pre{white-space:pre-wrap}@media(max-width:760px){body{padding:1rem!important;margin:0!important;min-width:0!important}.container{width:100%!important;padding:0!important}.status{display:none}.entity{padding:.65rem!important}h1{font-size:1.8rem}dl{margin-left:0}}';soup.head.append(css)
-    for anchor in soup.select('a[href^="ontology."]'):
-        anchor['download']=anchor['href']
-    # Preserve upstream generator credits, mark our post-processing.
-    footer=soup.new_tag('p');footer.append(BeautifulSoup('WIDOCO 1.4.25 output modified by Riskium: static table of contents and Markdown, explicit release metadata, local navigation and exact-graph downloads. No remote scripts, badge images or upload service. <a href="../../THIRD-PARTY-DOCUMENTATION.txt">Template notices</a>.','html.parser'));soup.select_one('#acknowledgments').append(footer)
-    (out/'index-en.html').write_text(str(soup)+'\n')
+    # Retain the genuine LODE/WIDOCO entities, expressions and anchors. The
+    # project presentation adds reading context without rewriting declarations.
+    for node in soup.select('.head, .status, #toc, #abstract, #namespacedeclarations'):
+        node.decompose()
+    for node in soup.find_all(['style','link']):
+        node.decompose()
+    for h in soup.select('h3#annotationproperties'):
+        h['id']='annotationproperties-headline'
+    for entity in soup.select('.entity'):
+        entity['class']=entity.get('class',[])+['entry']
+        ident=entity.get('id')
+        if ident and ident.startswith(('RKM-','RX-','RK2-','RK3-','R-','EXT-')):
+            extra=BeautifulSoup('<p class="term-links"><a href="../reference/native/index.html#'+ident+'">Conceptual definition</a><a href="../explore/index.html#'+ident+'">Text neighborhood</a></p>','html.parser')
+            entity.append(extra)
+    for node in soup.select('.entity:not([id])'):
+        node['class']=[c for c in node.get('class',[]) if c != 'entry']
+    structured=''.join(str(n) for n in soup.head.select('script[type="application/ld+json"]'))
+    crossref=''.join(str(n) for n in soup.body.contents)
+    metadata='<details class="source-record"><summary>Ontology identity, exact source and reuse</summary><dl><dt>Ontology IRI</dt><dd><code>https://github.com/ArazSaieArasi3/riskium/ontologies/riskium</code></dd><dt>Version IRI</dt><dd><code>https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1</code></dd><dt>Semantic source</dt><dd><a href="https://github.com/ArazSaieArasi3/riskium/tree/'+COMMIT+'">'+COMMIT+'</a></dd><dt>Turtle SHA-256</dt><dd><code>'+digest(frozen(OWL_SOURCE))+'</code></dd><dt>Authors</dt><dd>Araz Saie Arasi; Hassan Haghighi; Hossein Azgomi. <a href="../guide/Citation.html">Affiliations and citation</a>.</dd><dt>Reuse</dt><dd>CC BY 4.0 for scientific content. <a href="../downloads/RIGHTS.md">Rights and exclusions</a>.</dd></dl><p><a href="provenance/provenance-en.html">WIDOCO generation record</a></p></details>'
+    intro='<p class="eyebrow">WIDOCO 1.4.25 · Ontology model 0.3.1</p><h1>Riskium OWL reference</h1><p class="lead">The asserted logical commitments of the typed conceptual core, with definitions and links between classes and properties.</p><div class="actions"><a class="button primary" href="#classes">Browse classes</a><a class="button" href="#objectproperties">Browse properties</a><a class="button" href="../webvowl/index.html">Explore the graph</a></div><h2 id="abstract">Abstract</h2><p>Riskium distinguishes a continuing risk case from its records, scenario specifications, assessment artifacts and supporting evidence. This bounded OWL mapping expresses selected class, relation and restriction commitments from the conceptual model. It is narrower than the full conceptual catalog.</p><p class="note">77 local named classes, one local external-anchor proxy and 127 object properties. Three optional concepts and seven bridges are outside this export. The local anchor does not establish an external import closure.</p><h2 id="introduction">How to read this reference</h2><p>Each entry gives its IRI, definition when supplied, and the axioms asserted in the source. Domain and range statements describe OWL typing commitments; they are not data-admission checks. OWL uses an open-world interpretation and does not assume that different names denote different individuals. Read the <a href="../guide/Formalization.html">formalization explanation</a> for mapping limits and the separate SHACL/application routes.</p><label for="filter">Find a class or property</label><input type="search" id="filter" placeholder="For example: RiskCase or appliesPattern" aria-describedby="filter-status"><p id="filter-status" role="status" aria-live="polite">215 of 215 entries shown</p><noscript><p>All entries and in-page term links remain available without JavaScript.</p></noscript><details><summary>RDF downloads</summary><p><a href="ontology.ttl" download="ontology.ttl">Turtle</a> · <a href="ontology.owl" download="ontology.owl">RDF/XML</a> · <a href="ontology.jsonld" download="ontology.jsonld">JSON-LD</a> · <a href="ontology.nt" download="ontology.nt">N-Triples</a></p><p>The original Turtle is byte-preserved. <a href="serialization-receipt.json">All four serializations are graph-isomorphic</a>.</p></details>'+metadata
+    intro+='<nav id="toc" aria-label="Reference sections"><h2>Reference contents</h2><ul class="hlist"><li><a href="#overv">Term index</a></li><li><a href="#classes">Classes</a></li><li><a href="#objectproperties">Object properties</a></li><li><a href="#annotationproperties">Annotation properties</a></li><li><a href="#interpretation">Scope and evidence</a></li></ul></nav>'
+    tail='<h2 id="interpretation">Scope and evidence</h2><p>Restrictions, disjointness and other asserted axioms remain in the entries and exact RDF. The WebVOWL graph shows only named endpoints and subclass links. Neither a generated reference nor a successful reasoner check establishes domain adequacy or independent semantic acceptance. <a href="../guide/Evaluation.html">Evaluation and limitations</a> explains the executed evidence populations.</p><h2 id="namespaces">Namespace declarations</h2><table><thead><tr><th>Prefix</th><th>Namespace</th></tr></thead><tbody>'
+    for prefix,uri in sorted(Graph().parse(data=frozen(OWL_SOURCE).decode(),format='turtle').namespaces()):
+        if str(uri) in ['http://www.w3.org/2002/07/owl#','http://www.w3.org/1999/02/22-rdf-syntax-ns#','http://www.w3.org/2000/01/rdf-schema#','http://www.w3.org/2001/XMLSchema#'] or str(uri).startswith('https://github.com/ArazSaieArasi3/riskium/ontologies/'):
+            tail+='<tr><td>'+str(prefix)+'</td><td><code>'+str(uri)+'</code></td></tr>'
+    tail+='</tbody></table><h2 id="reference-sources">Sources and generator</h2><p><a href="../guide/References.html">Research sources</a> · <a href="../reference/native/index.html">Complete conceptual catalog</a> · <a href="../guide/Publication.html">Model and distribution versions</a></p><p>Cross-reference generated by WIDOCO 1.4.25 using LODE. Riskium adds static navigation, authored context, local filtering, accessible styles and exact-source downloads. Upstream entity/axiom content is retained. <a href="../../THIRD-PARTY-DOCUMENTATION.txt">Template notices</a>.</p>'
+    from presentation import render
+    page=render(Path('current/widoco/index-en.html'), 'OWL reference', '<div class="widoco">'+intro+crossref+tail+'</div>',
+        head=structured+'<link rel="stylesheet" href="resources/primer.css"><link rel="stylesheet" href="resources/rec.css"><link rel="stylesheet" href="resources/extra.css"><link rel="stylesheet" href="resources/owl.css"><link rel="stylesheet" href="resources/riskium.css">', scripts='<script defer src="../assets/filter.js"></script>')
+    (out/'index-en.html').write_text(page)
     (out/'resources').mkdir(exist_ok=True)
     for name in ['primer.css','rec.css','extra.css','owl.css']:shutil.copyfile(raw/'resources'/name,out/'resources'/name)
+    shutil.copyfile(TOOLS/'widoco.css',out/'resources/riskium.css')
     # No WIDOCO/OWL API reserialization replaces the pinned semantic graph.
     source=frozen(OWL_SOURCE);graph=to_canonical_graph(Graph().parse(data=source.decode(),format='turtle'))
     (out/'ontology.ttl').write_bytes(source)
@@ -82,9 +88,9 @@ def finish(raw, out):
         hashes[name]=digest((out/name).read_bytes())
     (out/'serialization-receipt.json').write_text(json_text({'source_commit':COMMIT,'source_path':OWL_SOURCE,'source_sha256':digest(source),'rdf_triples':len(graph),'graph_isomorphic_to_source':True,'files_sha256':hashes}))
     provenance=out/'provenance';provenance.mkdir(exist_ok=True)
-    (provenance/'provenance-en.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WIDOCO generation provenance</title></head><body><h1>WIDOCO generation provenance</h1><p>WIDOCO 1.4.25, verified jar SHA-256 <code>'+JAR_SHA256+'</code>, generated this view from commit <code>'+COMMIT+'</code>. Riskium post-processing makes the page static and replaces display metadata and downloads; it does not change the source OWL graph.</p><p><a href="../index-en.html">Return to the OWL reference</a> · <a href="../serialization-receipt.json">Serialization verification</a> · <a href="../tool-provenance.json">Tool and configuration receipt</a></p></body></html>\n')
+    (provenance/'provenance-en.html').write_text(render(Path('current/widoco/provenance/provenance-en.html'), 'WIDOCO generation record', '<h1>WIDOCO generation record</h1><p>WIDOCO 1.4.25 generated the cross-reference from the exact model 0.3.1 source. Riskium adds the common documentation shell and authored reading context; the source OWL graph and generated entity commitments are preserved.</p><dl><dt>Verified jar SHA-256</dt><dd><code>'+JAR_SHA256+'</code></dd><dt>Semantic source</dt><dd><code>'+COMMIT+'</code></dd></dl><p><a href="../index-en.html">Return to the OWL reference</a> · <a href="../serialization-receipt.json">Serialization verification</a> · <a href="../tool-provenance.json">Tool and configuration receipt</a></p>'))
     output_hashes={p.relative_to(out).as_posix():digest(p.read_bytes()) for p in sorted(out.rglob('*')) if p.is_file() and p.name!='tool-provenance.json'}
-    (out/'tool-provenance.json').write_text(json_text({'widoco_version':'1.4.25','jar_download':DOWNLOAD,'jar_sha256':JAR_SHA256,'source_commit':COMMIT,'source_sha256':digest(source),'configuration_sha256':digest((TOOLS/'widoco.properties').read_bytes()),'postprocessor_sha256':digest(Path(__file__).read_bytes()),'files_sha256':output_hashes,'runtime_network':'No scripts, remote active assets, uploads or analytics in the published WIDOCO page. External hyperlinks load only when followed.'}))
+    (out/'tool-provenance.json').write_text(json_text({'widoco_version':'1.4.25','jar_download':DOWNLOAD,'jar_sha256':JAR_SHA256,'source_commit':COMMIT,'source_sha256':digest(source),'configuration_sha256':digest((TOOLS/'widoco.properties').read_bytes()),'postprocessor_sha256':digest(Path(__file__).read_bytes()),'files_sha256':output_hashes,'runtime_network':'Only local text filtering. No remote active assets, uploads, storage or analytics. External hyperlinks load only when followed.'}))
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--jar',type=Path,required=True);args=parser.parse_args()

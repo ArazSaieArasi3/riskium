@@ -59,9 +59,9 @@ class WebVOWL(unittest.TestCase):
         with self.assertRaises(ValueError):wv.project(b'')
 
     def test_shell_has_no_upload_editor_or_external_active_resources(self):
-        soup=BeautifulSoup((wv.HERE/'index.html').read_text(),'html.parser')
+        soup=BeautifulSoup(wv.shell_html(),'html.parser')
         self.assertFalse(soup.select('form,input[type=file],object,embed,iframe'))
-        self.assertEqual([n['src']for n in soup.select('script')],['vendor/d3.min.js','vendor/webvowl.js','viewer.js'])
+        self.assertEqual([n['src'].split('?')[0]for n in soup.select('script')],['vendor/d3.min.js','vendor/webvowl.js','viewer.js'])
         self.assertIn("connect-src 'self'",soup.select_one('meta[http-equiv="Content-Security-Policy"]')['content'])
         js=(wv.HERE/'viewer.js').read_text()
         self.assertIn('fetch("data/riskium.json"',js)

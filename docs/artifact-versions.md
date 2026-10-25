@@ -1,5 +1,7 @@
 # Artifact versions and compatibility
 
+The latest source distribution is **[v0.3.2](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.2)**. Its [distribution matrix](../releases/distribution-v0.3.2.json) selects 20 components; the model remains 0.3.1, ORSD 0.4.3 and manuscript 7.0.8. The [publication receipt](../evaluation/releases/v0.3.2-publication.json) verifies the actual package. Current Pages/WebVOWL presentation changes postdate that package and do not replace its frozen documentation component.
+
 ## Post-release documentation register
 
 Documentation publication **0.1.0** is independently versioned for model **0.3.1**. Its frozen source is `609c7cd0fd07053262fffe5720ff0b2605062778`; current explanations may advance. [The route registry](../tools/publication/pages-registry.json) binds the exact source tree and output hashes for both the new stable-model documentation and the preserved legacy rc.1 snapshot. [Publication/readback evidence](../evaluation/documentation/versioned-0.1.0/README.md) links actual Wiki, HTTPS, browser and candidate-package checks.
@@ -8,7 +10,7 @@ Documentation publication **0.1.0** is independently versioned for model **0.3.1
 | --- | --- | --- |
 | Shared Wiki/Pages publication | Documentation 0.1.0 / model 0.3.1 | Registry-bound frozen snapshot plus mutable current route; one explanatory source per subject; exact source/file hashes in the deployment manifest |
 
-This is a post-release documentation component, outside the unchanged accepted v0.3.1 source/assets and the eight engineering supplements in the existing development overlay. Successor distribution #34 must explicitly select and pin its documentation snapshot alongside independently versioned model, ORSD/article, SQL/DRSD and evidence components. It must not rewrite the first release's compatibility matrix.
+This is a post-release documentation component, outside the unchanged accepted v0.3.1 source/assets and the eight engineering supplements in the existing development overlay. Successor distribution v0.3.2 explicitly selects that documentation snapshot alongside independently versioned model, ORSD/article, SQL/DRSD and evidence components. It must not rewrite the first release's compatibility matrix.
 
 This lightweight compatibility record implements the owner's 24 October 2026 request to keep the paper, ontology requirements, model and database coordinated. [The machine-readable matrix](../releases/artifact-matrix.json) pins exact component hashes. **[v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1) is published and independently downloaded/verified**, source `8afe169968b5c1396c02834dbc499af691b894b4`. Current coordination matrix revision is 0.1.1; the release asset retains frozen matrix 0.1.0. [Publication receipt](../evaluation/releases/v0.3.1-publication.json) closes #28.
 

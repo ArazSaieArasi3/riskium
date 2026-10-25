@@ -1,0 +1,303 @@
+{
+  "source": "eb0ff1d64e87c8667aa9f3eab46d700ffc61a7ee",
+  "pages": [
+    {
+      "path": "docs/current/downloads/index.html",
+      "title": "Downloads \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "474a1287f0aba1aacfc3cf1062198c8401a03a0cda8ef3c75e242871edd47227"
+    },
+    {
+      "path": "docs/current/explore/index.html",
+      "title": "Explore the asserted OWL core \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "0141adcefc59397180b0f28c5f0ce0a31f0aed5a6b9ed3593bbaeadeedfbb5f1"
+    },
+    {
+      "path": "docs/current/guide/Artifact-Versions.html",
+      "title": "Artifact versions \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "2b3f08636fe7742bd27876afe88bc0d63ed6cd8f3df940f115a8527440186779"
+    },
+    {
+      "path": "docs/current/guide/Citation.html",
+      "title": "Citation \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "af95d7171a6f4aaa82c7697e2b1af43f7e098dca32a829ed11f5d83e37847520"
+    },
+    {
+      "path": "docs/current/guide/Competency-Questions.html",
+      "title": "Competency questions \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "409c922fed53cfebbf95fa48d9f30eed3babff22f3a81ea8232e4e705c2fa234"
+    },
+    {
+      "path": "docs/current/guide/Database-Assurance.html",
+      "title": "Database assurance \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "ff64da52b43d49943fc1c4005bb80efb7250e260c2ec81fce0a3f80bccddbd24"
+    },
+    {
+      "path": "docs/current/guide/Decisions.html",
+      "title": "Modeling decisions \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "e5136ac26dd8e0143693d4c63dc7d72bdb0b091b7d6a15704da73a771ef8d33b"
+    },
+    {
+      "path": "docs/current/guide/Evaluation.html",
+      "title": "Evaluation \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "ccc1be6525bf24a14f5b97982d27d69d9f954f1e3aeabcf542a2532a294ca075"
+    },
+    {
+      "path": "docs/current/guide/Formalization.html",
+      "title": "Formalization \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "3e85e9e2ad650decd81621dbbcab265821a0b6a8c3f1b849faecd971030a795e"
+    },
+    {
+      "path": "docs/current/guide/Home.html",
+      "title": "Home \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "9da1543e3258fa810283bbfdf220e8a7743ffd44139de0c24c660d7fd61848b0"
+    },
+    {
+      "path": "docs/current/guide/Limitations.html",
+      "title": "Limitations \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "07cd7526e2dc17569404cee496514fa69cff3bf875ee9719fd6d0ef2345465ad"
+    },
+    {
+      "path": "docs/current/guide/Overview.html",
+      "title": "Overview \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "44f67f4c4ae569c8703e12bcdf9f19155bf3c769cfe43490348e3dd69408b563"
+    },
+    {
+      "path": "docs/current/guide/Publication-Comparison.html",
+      "title": "Publication comparison \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "124037ce47e93a508afb090972e50d6f571bdc5e37e0b705b98197367c25ce30"
+    },
+    {
+      "path": "docs/current/guide/Publication.html",
+      "title": "Publication \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "85772e66f19a10b7af8a2fc44e735645c85ad261fec7717e673b6308706df0bd"
+    },
+    {
+      "path": "docs/current/guide/Quality.html",
+      "title": "Quality \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "ee595085cd06a6d4eeb891841cdd1547517c6eb3a589a4b2e46d4af485256071"
+    },
+    {
+      "path": "docs/current/guide/References.html",
+      "title": "References \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "047a1abfee7602dac57b798365d8b7395509935d1832c7652be8a6505c4bf571"
+    },
+    {
+      "path": "docs/current/guide/Reproduce.html",
+      "title": "Reproduce \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "c31ec1e661b14016114e2acc15465cfb9dd39bdac990abec81f964095f21030f"
+    },
+    {
+      "path": "docs/current/guide/Requirements.html",
+      "title": "Requirements \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "322d5cf33b898ee59d8f8fc1acda8a3adecfb67e7496ba22acb87875e5d298e9"
+    },
+    {
+      "path": "docs/current/guide/Scope.html",
+      "title": "Scope \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "afe2052894781a0469c4abef0533f1bc64591c082600c5081bbf2736e989951d"
+    },
+    {
+      "path": "docs/current/guide/Traceability.html",
+      "title": "Traceability \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "2d41ef56dc90bf130be8ca47c2e5bee3d2034a155e0f17c026304dbbf9ba4559"
+    },
+    {
+      "path": "docs/current/guide/Using-the-Model.html",
+      "title": "Using the model \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "448b77e8ddbbfa197a2ff1e22426b35466f399004c6f0daac9539e92d5498ce2"
+    },
+    {
+      "path": "docs/current/guide/Visualization.html",
+      "title": "Visualization \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "95c79b507a5e7103d151c2f4206756f05747458e8053f5eeb1e7f71214570467"
+    },
+    {
+      "path": "docs/current/guide/Work-Plan.html",
+      "title": "Work and release plan \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "dfe38a1cd23e25efa6a03d687515d566465fe94805c148543ffbaf7290624a5d"
+    },
+    {
+      "path": "docs/current/index.html",
+      "title": "Enterprise risk knowledge, explicitly modeled \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "bcea589eef19ce483bf44d69fb460696331ed101113fbe8503d8537f3806d2e8"
+    },
+    {
+      "path": "docs/current/reference/native/index.html",
+      "title": "Conceptual reference \u2014 Riskium",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": true,
+      "skip": true,
+      "template": null,
+      "sha256": "40153e91a2e12c67da54632f0c2c417a9e4def72f2a9c0b9f871b2779d3c198d"
+    },
+    {
+      "path": "docs/current/webvowl/index.html",
+      "title": "Riskium \u2014 WebVOWL graph",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": false,
+      "skip": false,
+      "template": null,
+      "sha256": "a76dc83d74c5182748b6c73bd33d0342fcd8903b523442f47506c06642e37c53"
+    },
+    {
+      "path": "docs/current/widoco/index-en.html",
+      "title": "Riskium bounded typed-core OWL mapping",
+      "h1": 1,
+      "main": 0,
+      "primary_nav": false,
+      "skip": false,
+      "template": null,
+      "sha256": "7d642ec2ade7d4e2ce6ba493dc59636d32cdeb9441efee9bdb21167e8b0d929f"
+    },
+    {
+      "path": "docs/current/widoco/provenance/provenance-en.html",
+      "title": "WIDOCO generation provenance",
+      "h1": 1,
+      "main": 0,
+      "primary_nav": false,
+      "skip": false,
+      "template": null,
+      "sha256": "1512fc3c7c5460cbab981b02fc8a2871bb8ecb7b34c44745c09a58b2415300d8"
+    },
+    {
+      "path": "docs/versions/index.html",
+      "title": "Riskium documentation versions",
+      "h1": 1,
+      "main": 1,
+      "primary_nav": false,
+      "skip": true,
+      "template": null,
+      "sha256": "71b37dd0a4e6e55a5ec921746c530caa6963d16fb0d53664d9c2459193c1cebf"
+    }
+  ],
+  "scores": {
+    "visual_consistency": 1,
+    "navigation_findability": 2,
+    "reference_usability": 1,
+    "graph_usability": 1,
+    "editorial_version_clarity": 1
+  },
+  "score_scale": "0\u20134 anchored in issue #38; assistant audit, not user study"
+}

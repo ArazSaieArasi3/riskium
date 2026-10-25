@@ -1,22 +1,23 @@
 {
   "configuration_sha256": "817b3e2711554cec4c303a73fa5b6bfd5eea772659c9b92cc68ec4a9fd10f62d",
   "files_sha256": {
-    "index-en.html": "7d642ec2ade7d4e2ce6ba493dc59636d32cdeb9441efee9bdb21167e8b0d929f",
+    "index-en.html": "4b681d764d9f7d6ef97bc89c44c0496a95c7b3f31d1efece23d278b4a0fc49f7",
     "ontology.jsonld": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
     "ontology.nt": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
     "ontology.owl": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
     "ontology.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
-    "provenance/provenance-en.html": "1512fc3c7c5460cbab981b02fc8a2871bb8ecb7b34c44745c09a58b2415300d8",
+    "provenance/provenance-en.html": "81d4813717fa5760f95bab8814c857df28f8a7c2c427f24fc3f3fa1300ce9b42",
     "resources/extra.css": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
     "resources/owl.css": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
     "resources/primer.css": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
     "resources/rec.css": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+    "resources/riskium.css": "590f3aba8384f7a61eac6c3757a93f2b1921d4d877412b19a6588ad2ad46a93f",
     "serialization-receipt.json": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d"
   },
   "jar_download": "https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar",
   "jar_sha256": "be57a270fffb91e55810fa308717e704a44e2e7c027a3d68125a49da6c8b4e2b",
-  "postprocessor_sha256": "b49f5df09db59f42899997e6039c921cbe7cb6c1339ee685d055b6e95814daef",
-  "runtime_network": "No scripts, remote active assets, uploads or analytics in the published WIDOCO page. External hyperlinks load only when followed.",
+  "postprocessor_sha256": "ccb82603ab1f4ec8a56a24bf5fa3d7f03e124632cd7405c26351b02eba72b227",
+  "runtime_network": "Only local text filtering. No remote active assets, uploads, storage or analytics. External hyperlinks load only when followed.",
   "source_commit": "8afe169968b5c1396c02834dbc499af691b894b4",
   "source_sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
   "widoco_version": "1.4.25"

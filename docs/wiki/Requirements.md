@@ -1,5 +1,8 @@
 # Ontology requirements specification
 
+> Dated ontology requirements revision 0.4.3 and owner-approved scope, 24 October 2026. Its pending final-freeze statement describes that checkpoint: source releases v0.3.1 and v0.3.2 were subsequently published and independently downloaded/verified. Original priorities, acceptance criteria and definitions remain unchanged; Publication and the current Work plan identify the later state.
+
+
 Documentation revision **0.4.3**; conceptual design **0.3.1**; owner-approved release scope, **24 October 2026**. Previous documentation revision 0.4.2 remains in Git history at commit `193dc7209bc762f11e5e12e19e5aae42cee22cb3`.
 
 Riskium organizes risk knowledge for interpretation, continuity, provenance and analysis. Intended readers include risk analysts, domain experts, ontology researchers and technical integrators. The scope concerns knowledge and recorded statements, rather than prescribing a complete management process.

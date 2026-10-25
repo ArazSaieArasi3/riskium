@@ -1,37 +1,5 @@
-<!DOCTYPE html>
-
-<html lang="en">
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
-<link href="resources/primer.css" media="screen" rel="stylesheet"/>
-<link href="resources/rec.css" media="screen" rel="stylesheet"/>
-<link href="resources/extra.css" media="screen" rel="stylesheet"/>
-<link href="resources/owl.css" media="screen" rel="stylesheet"/>
-
-
-
-
-
-<title>Riskium bounded typed-core OWL mapping</title>
-<!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "author": [{"@type": "Person", "name": "Araz Saie Arasi"}, {"@type": "Person", "name": "Hassan Haghighi"}, {"@type": "Person", "name": "Hossein Azgomi"}], "headline": "A bounded OWL 2 mapping of the typed Riskium conceptual core. Optional phenomenon boundaries and data-validation obligations have separate interpretations.", "license": "https://creativecommons.org/licenses/by/4.0/", "name": "Riskium bounded typed-core OWL mapping", "url": "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1", "version": "0.3.1"}</script>
-
-
-
-<meta content="width=device-width,initial-scale=1" name="viewport"/><style>body{overflow-wrap:anywhere}nav{margin:1rem 0;line-height:1.8}.riskium-note{border-left:4px solid #135a7a;background:#f2f6f8;padding:1rem;color:#172b3a}.entity{scroll-margin-top:1rem}a:focus-visible{outline:3px solid #b45a13;outline-offset:3px}img{max-width:100%}pre{white-space:pre-wrap}@media(max-width:760px){body{padding:1rem!important;margin:0!important;min-width:0!important}.container{width:100%!important;padding:0!important}.status{display:none}.entity{padding:.65rem!important}h1{font-size:1.8rem}dl{margin-left:0}}</style></head>
-<body>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Riskium enterprise risk ontology: conceptual definitions, bounded OWL reference, evaluation and reproducible sources."><title>OWL reference — Riskium</title><script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "author": [{"@type": "Person", "name": "Araz Saie Arasi"}, {"@type": "Person", "name": "Hassan Haghighi"}, {"@type": "Person", "name": "Hossein Azgomi"}], "headline": "A bounded OWL 2 mapping of the typed Riskium conceptual core. Optional phenomenon boundaries and data-validation obligations have separate interpretations.", "license": "https://creativecommons.org/licenses/by/4.0/", "name": "Riskium bounded typed-core OWL mapping", "url": "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1", "version": "0.3.1"}</script><link rel="stylesheet" href="resources/primer.css"><link rel="stylesheet" href="resources/rec.css"><link rel="stylesheet" href="resources/extra.css"><link rel="stylesheet" href="resources/owl.css"><link rel="stylesheet" href="resources/riskium.css"><link rel="stylesheet" href="../assets/portal.css"></head><body class="reading-page" data-template="riskium-pages-1"><a class="skip-link" href="#content">Skip to content</a><header class="site-header"><div class="brand-row"><a href="../index.html">Riskium</a><p>Enterprise risk knowledge</p><div class="header-tools"><a href="../reference/search.html">Find a term</a><a href="../../versions/index.html">Versions</a></div></div><nav class="primary-nav" aria-label="Primary"><a href="../index.html">Overview</a><a href="../reference/native/index.html">Conceptual reference</a><a aria-current="page" href="index-en.html">OWL reference</a><a href="../guide/Evaluation.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../webvowl/index.html?v=16ee74e09bf8">WebVOWL</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="publication-context"><span>Current documentation · Model <strong>0.3.1</strong></span><span>Source distribution <a href="https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.2">v0.3.2</a> · <a href="../guide/Publication.html">Version policy</a></span></div><details class="mobile-navigation"><summary>Documentation and page contents</summary><div><h2>Understand</h2><ul><li><a href="../guide/Home.html">Home</a></li><li><a href="../guide/Scope.html">Scope</a></li><li><a href="../guide/Overview.html">Overview</a></li><li><a href="../guide/Decisions.html">Modeling decisions</a></li><li><a href="../guide/Using-the-Model.html">Using the model</a></li></ul><h2>Inspect and evaluate</h2><ul><li><a href="../guide/Requirements.html">Requirements</a></li><li><a href="../guide/Competency-Questions.html">Competency questions</a></li><li><a href="../guide/Formalization.html">Formalization</a></li><li><a href="../guide/Evaluation.html">Evaluation</a></li><li><a href="../guide/Quality.html">Quality</a></li><li><a href="../guide/Traceability.html">Traceability</a></li><li><a href="../guide/Database-Assurance.html">Database assurance</a></li><li><a href="../guide/Reproduce.html">Reproduce</a></li></ul><h2>Sources and publication</h2><ul><li><a href="../guide/Visualization.html">Visualization</a></li><li><a href="../guide/References.html">References</a></li><li><a href="../guide/Citation.html">Citation</a></li><li><a href="../guide/Limitations.html">Limitations</a></li><li><a href="../guide/Artifact-Versions.html">Artifact versions</a></li><li><a href="../guide/Publication.html">Publication</a></li><li><a href="../guide/Publication-Comparison.html">Publication comparison</a></li><li><a href="../guide/Work-Plan.html">Work and release plan</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a term</a></li><li><a href="../reference/diagrams/index.html">Diagrams</a></li><li><a href="../publication-manifest.json">Source record</a></li><li><a href="../../versions/index.html">Documentation versions</a></li><li><a href="https://github.com/ArazSaieArasi3/riskium/wiki">GitHub Wiki</a></li></ul><h2>On this page</h2><ul><li><a href="#abstract">Abstract</a></li><li><a href="#introduction">How to read this reference</a></li><li><a href="#section-3">Reference contents</a></li><li><a href="#overv">Riskium: Overview</a></li><li><a href="#crossreference">Cross-reference for Riskium classes, object properties and data properties</a></li><li><a href="#section-6">Legend</a></li><li><a href="#ack">Acknowledgments</a></li><li><a href="#interpretation">Scope and evidence</a></li><li><a href="#namespaces">Namespace declarations</a></li><li><a href="#reference-sources">Sources and generator</a></li></ul></div></details><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Understand</h2><ul><li><a href="../guide/Home.html">Home</a></li><li><a href="../guide/Scope.html">Scope</a></li><li><a href="../guide/Overview.html">Overview</a></li><li><a href="../guide/Decisions.html">Modeling decisions</a></li><li><a href="../guide/Using-the-Model.html">Using the model</a></li></ul><h2>Inspect and evaluate</h2><ul><li><a href="../guide/Requirements.html">Requirements</a></li><li><a href="../guide/Competency-Questions.html">Competency questions</a></li><li><a href="../guide/Formalization.html">Formalization</a></li><li><a href="../guide/Evaluation.html">Evaluation</a></li><li><a href="../guide/Quality.html">Quality</a></li><li><a href="../guide/Traceability.html">Traceability</a></li><li><a href="../guide/Database-Assurance.html">Database assurance</a></li><li><a href="../guide/Reproduce.html">Reproduce</a></li></ul><h2>Sources and publication</h2><ul><li><a href="../guide/Visualization.html">Visualization</a></li><li><a href="../guide/References.html">References</a></li><li><a href="../guide/Citation.html">Citation</a></li><li><a href="../guide/Limitations.html">Limitations</a></li><li><a href="../guide/Artifact-Versions.html">Artifact versions</a></li><li><a href="../guide/Publication.html">Publication</a></li><li><a href="../guide/Publication-Comparison.html">Publication comparison</a></li><li><a href="../guide/Work-Plan.html">Work and release plan</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a term</a></li><li><a href="../reference/diagrams/index.html">Diagrams</a></li><li><a href="../publication-manifest.json">Source record</a></li><li><a href="../../versions/index.html">Documentation versions</a></li><li><a href="https://github.com/ArazSaieArasi3/riskium/wiki">GitHub Wiki</a></li></ul></aside><main id="content" tabindex="-1"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Riskium</a><span aria-hidden="true">/</span><span>OWL reference</span></nav><div class="widoco"><p class="eyebrow">WIDOCO 1.4.25 · Ontology model 0.3.1</p><h1>Riskium OWL reference</h1><p class="lead">The asserted logical commitments of the typed conceptual core, with definitions and links between classes and properties.</p><div class="actions"><a class="button primary" href="#classes">Browse classes</a><a class="button" href="#objectproperties">Browse properties</a><a class="button" href="../webvowl/index.html">Explore the graph</a></div><h2 id="abstract">Abstract</h2><p>Riskium distinguishes a continuing risk case from its records, scenario specifications, assessment artifacts and supporting evidence. This bounded OWL mapping expresses selected class, relation and restriction commitments from the conceptual model. It is narrower than the full conceptual catalog.</p><p class="note">77 local named classes, one local external-anchor proxy and 127 object properties. Three optional concepts and seven bridges are outside this export. The local anchor does not establish an external import closure.</p><h2 id="introduction">How to read this reference</h2><p>Each entry gives its IRI, definition when supplied, and the axioms asserted in the source. Domain and range statements describe OWL typing commitments; they are not data-admission checks. OWL uses an open-world interpretation and does not assume that different names denote different individuals. Read the <a href="../guide/Formalization.html">formalization explanation</a> for mapping limits and the separate SHACL/application routes.</p><label for="filter">Find a class or property</label><input aria-describedby="filter-status" id="filter" placeholder="For example: RiskCase or appliesPattern" type="search"/><p aria-live="polite" id="filter-status" role="status">215 of 215 entries shown</p><noscript><p>All entries and in-page term links remain available without JavaScript.</p></noscript><details><summary>RDF downloads</summary><p><a download="ontology.ttl" href="ontology.ttl">Turtle</a> · <a download="ontology.owl" href="ontology.owl">RDF/XML</a> · <a download="ontology.jsonld" href="ontology.jsonld">JSON-LD</a> · <a download="ontology.nt" href="ontology.nt">N-Triples</a></p><p>The original Turtle is byte-preserved. <a href="serialization-receipt.json">All four serializations are graph-isomorphic</a>.</p></details><details class="source-record"><summary>Ontology identity, exact source and reuse</summary><dl><dt>Ontology IRI</dt><dd><code>https://github.com/ArazSaieArasi3/riskium/ontologies/riskium</code></dd><dt>Version IRI</dt><dd><code>https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1</code></dd><dt>Semantic source</dt><dd><a href="https://github.com/ArazSaieArasi3/riskium/tree/8afe169968b5c1396c02834dbc499af691b894b4">8afe169968b5c1396c02834dbc499af691b894b4</a></dd><dt>Turtle SHA-256</dt><dd><code>9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58</code></dd><dt>Authors</dt><dd>Araz Saie Arasi; Hassan Haghighi; Hossein Azgomi. <a href="../guide/Citation.html">Affiliations and citation</a>.</dd><dt>Reuse</dt><dd>CC BY 4.0 for scientific content. <a href="../downloads/RIGHTS.md">Rights and exclusions</a>.</dd></dl><p><a href="provenance/provenance-en.html">WIDOCO generation record</a></p></details><nav aria-label="Reference sections" id="toc"><h2 id="section-3">Reference contents</h2><ul class="hlist"><li><a href="#overv">Term index</a></li><li><a href="#classes">Classes</a></li><li><a href="#objectproperties">Object properties</a></li><li><a href="#annotationproperties">Annotation properties</a></li><li><a href="#interpretation">Scope and evidence</a></li></ul></nav>
 <div class="container">
-<div class="head"><nav aria-label="Documentation"><a href="../index.html">Overview</a> · <a href="../reference/native/index.html">Conceptual reference</a> · <a href="../explore/index.html">Explore OWL</a> · <a href="../guide/Evaluation.html">Evaluation</a> · <a href="../downloads/index.html">Downloads</a></nav><p class="riskium-note">Bounded typed-core export: 77 local classes, one local external-anchor proxy and 127 object properties. Three optional concepts and seven bridges are excluded. Ontology IRIs identify terms; they are not claims of deployed endpoints. Independent semantic acceptance remains open. This documentation was generated after the stable release from its exact semantic source.</p>
-<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
-<h1>Riskium bounded typed-core OWL mapping</h1>
-<dl><dt>Documentation source</dt><dd><a href="../index.html">Riskium documentation portal</a></dd><dt>Release</dt><dd><a href="https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1">v0.3.1</a></dd><dt>Ontology IRI</dt><dd><code>https://github.com/ArazSaieArasi3/riskium/ontologies/riskium</code></dd><dt>Version IRI</dt><dd><code>https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1</code></dd><dt>Source commit</dt><dd><code>8afe169968b5c1396c02834dbc499af691b894b4</code></dd><dt>Source SHA-256</dt><dd><code>9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58</code></dd><dt>Authors</dt><dd>Araz Saie Arasi; Hassan Haghighi; Hossein Azgomi. <a href="../guide/Citation.html">Affiliations and citation</a>.</dd><dt>Reuse</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>; <a href="../downloads/RIGHTS.md">scopes and exclusions</a>.</dd><dt>Download</dt><dd><a download="ontology.ttl" href="ontology.ttl">Turtle</a> · <a download="ontology.owl" href="ontology.owl">RDF/XML</a> · <a download="ontology.jsonld" href="ontology.jsonld">JSON-LD</a> · <a download="ontology.nt" href="ontology.nt">N-Triples</a></dd></dl>
-<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
-</div>
-<div class="status">
-<div>
-<span>Published bounded research artifact v0.3.1</span>
-</div>
-</div><div id="toc"><h2>Table of contents</h2><ul><li><a href="#overv">Riskium: Overview </a></li><li><a href="#crossreference">Cross-reference for Riskium classes, object properties and data properties </a></li><li><a href="#classes-headline">Classes</a></li><li><a href="#properties">Object Properties</a></li><li><a href="#annotationproperties-headline">Annotation Properties</a></li><li><a href="#ack">Acknowledgments </a></li></ul></div>
 <!--OVERVIEW SECTION-->
 <div id="overview"><h2 class="list" id="overv">Riskium: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>This ontology has the following classes and properties.</p>
@@ -791,7 +759,7 @@ This section provides details for each class and property defined by Riskium.
 <li><a href="#RKM-C063" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C063">WorkflowSchemeVersion</a></li>
 <li><a href="#RKM-C061" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C061">WorkflowStateTerm</a></li>
 </ul>
-<div class="entity" id="RKM-C050">
+<div class="entity entry" id="RKM-C050">
 <h3>ActorReference<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C050</p>
 <div class="comment">
@@ -817,8 +785,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RK2-025" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-025">authorizerReference</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-10" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-10">hasBearerReference</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-08" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-08">hasParticipantReference</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C047">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C050">Conceptual definition</a><a href="../explore/index.html#RKM-C050">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C047">
 <h3>Agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C047</p>
 <div class="comment">
@@ -838,8 +806,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-51" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-51">assessmentPerformer</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-70" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-70">refersToAgent</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-53" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-53">resolvesToAgent</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-65" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-65">treatmentPerformer</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C060">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C047">Conceptual definition</a><a href="../explore/index.html#RKM-C047">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C060">
 <h3>AnalysisStateTerm<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C060</p>
 <div class="comment">
@@ -859,8 +827,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-31" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-31">declaresAnalysisState</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C015">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C060">Conceptual definition</a><a href="../explore/index.html#RKM-C060">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C015">
 <h3>ArtifactVersion<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015</p>
 <div class="comment">
@@ -890,8 +858,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-014" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-014">usesContextVersion</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-013" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-013">usesCriteriaVersion</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-015" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-015">usesMethodVersion</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-016" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016">usesScaleVersion</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C031">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C015">Conceptual definition</a><a href="../explore/index.html#RKM-C015">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C031">
 <h3>AssessmentActivity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C031</p>
 <div class="comment">
@@ -911,8 +879,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-71" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-71">refersToAssessmentActivity</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C033">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C031">Conceptual definition</a><a href="../explore/index.html#RKM-C031">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C033">
 <h3>AssessmentBasis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C033</p>
 <div class="comment">
@@ -938,8 +906,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-12" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-12">hasBasis</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C039">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C033">Conceptual definition</a><a href="../explore/index.html#RKM-C033">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C039">
 <h3>AssessmentDimension<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C039</p>
 <div class="comment">
@@ -959,8 +927,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-48" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-48">dimension</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-019" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-019">scaleForDimension</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-018" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-018">specifiesDimension</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C032">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C039">Conceptual definition</a><a href="../explore/index.html#RKM-C039">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C032">
 <h3>AssessmentInformation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C032</p>
 <div class="comment">
@@ -986,8 +954,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-28" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-28">documentsAssessment</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-26" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-26">producesAssessmentInformation</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-015" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-015">recordsRemainingRiskAssessment</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-012" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-012">usesAssessment</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C035">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C032">Conceptual definition</a><a href="../explore/index.html#RKM-C032">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C035">
 <h3>AssessmentMethodSpecification<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C035</p>
 <div class="comment">
@@ -1013,8 +981,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-50" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-50">scoreMethod</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-46" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-46">usesMethod</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C036">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C035">Conceptual definition</a><a href="../explore/index.html#RKM-C035">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C036">
 <h3>AssessmentScale<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036</p>
 <div class="comment">
@@ -1040,8 +1008,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-16" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-16">levelOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-49" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-49">permitsScale</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-020" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-020">thresholdOnScale</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-14" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-14">usesScale</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C038">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C036">Conceptual definition</a><a href="../explore/index.html#RKM-C036">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C038">
 <h3>AssessmentScaleLevel<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C038</p>
 <div class="comment">
@@ -1067,8 +1035,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-15" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-15">selectsLevel</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C054">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C038">Conceptual definition</a><a href="../explore/index.html#RKM-C038">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C054">
 <h3>AuthorizingAgentRole<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C054</p>
 <div class="comment">
@@ -1094,8 +1062,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-57" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-57">mediatesAuthority</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C058">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C054">Conceptual definition</a><a href="../explore/index.html#RKM-C054">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C058">
 <h3>AuthorizingOrganization<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C058</p>
 <div class="comment">
@@ -1115,8 +1083,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RKM-C057" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C057">AuthorizingPerson</a> <sup class="type-c" title="class">c</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C057">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C058">Conceptual definition</a><a href="../explore/index.html#RKM-C058">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C057">
 <h3>AuthorizingPerson<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C057</p>
 <div class="comment">
@@ -1136,8 +1104,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RKM-C058" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C058">AuthorizingOrganization</a> <sup class="type-c" title="class">c</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C020">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C057">Conceptual definition</a><a href="../explore/index.html#RKM-C057">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C020">
 <h3>ClassificationAssertion<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C020</p>
 <div class="comment">
@@ -1163,8 +1131,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-29" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-29">documentsClassification</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C018">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C020">Conceptual definition</a><a href="../explore/index.html#RKM-C020">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C018">
 <h3>ClassificationScheme<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C018</p>
 <div class="comment">
@@ -1184,8 +1152,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-05" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-05">belongsToScheme</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C019">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C018">Conceptual definition</a><a href="../explore/index.html#RKM-C018">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C019">
 <h3>ClassificationTerm<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C019</p>
 <div class="comment">
@@ -1217,8 +1185,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-06" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-06">hasBroaderTerm</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-04" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-04">selectsTerm</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C029">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C019">Conceptual definition</a><a href="../explore/index.html#RKM-C019">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C029">
 <h3>ConsequenceSlotTerm<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C029</p>
 <div class="comment">
@@ -1238,8 +1206,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-40" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-40">sourceSlot</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C025">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C029">Conceptual definition</a><a href="../explore/index.html#RKM-C029">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C025">
 <h3>ConsequenceStatement<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C025</p>
 <div class="comment">
@@ -1265,8 +1233,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-009" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-009">hasPossibleConsequenceStatement</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-38" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-38">recordsConsequence</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-X05">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C025">Conceptual definition</a><a href="../explore/index.html#RKM-C025">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-X05">
 <h3>ControlReference<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X05</p>
 <div class="comment">
@@ -1286,8 +1254,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RK2-016" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-016">recordsControlReference</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-022" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-022">referencesControlBaseline</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C028">
+<p class="term-links"><a href="../reference/native/index.html#RKM-X05">Conceptual definition</a><a href="../explore/index.html#RKM-X05">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C028">
 <h3>DescriptionRoleTerm<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C028</p>
 <div class="comment">
@@ -1307,8 +1275,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-39" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-39">descriptionRole</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C034">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C028">Conceptual definition</a><a href="../explore/index.html#RKM-C028">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C034">
 <h3>DimensionAssessmentResult<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C034</p>
 <div class="comment">
@@ -1334,8 +1302,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-18" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-18">derivedFrom</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-13" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-13">hasDimensionResult</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C023">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C034">Conceptual definition</a><a href="../explore/index.html#RKM-C034">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C023">
 <h3>EntryRevision<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C023</p>
 <div class="comment">
@@ -1361,8 +1329,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-031" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-031">assignmentForRevision</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-34" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-34">previousRevision</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C040">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C023">Conceptual definition</a><a href="../explore/index.html#RKM-C023">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C040">
 <h3>EpistemicStatusTerm<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C040</p>
 <div class="comment">
@@ -1382,8 +1350,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-47" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-47">epistemicStatus</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C066">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C040">Conceptual definition</a><a href="../explore/index.html#RKM-C040">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C066">
 <h3>EvidenceItem<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C066</p>
 <div class="comment">
@@ -1403,8 +1371,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-021" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-021">pointsToEvidence</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C065">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C066">Conceptual definition</a><a href="../explore/index.html#RKM-C066">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C065">
 <h3>EvidenceReference<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C065</p>
 <div class="comment">
@@ -1424,8 +1392,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-021" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-021">pointsToEvidence</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-70" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-70">refersToAgent</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-71" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-71">refersToAssessmentActivity</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-69" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-69">refersToOccurrence</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-72" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-72">refersToTreatmentActivity</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-68" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-68">supportsRecordedArtifact</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C012">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C065">Conceptual definition</a><a href="../explore/index.html#RKM-C065">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C012">
 <h3>Exposure<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C012</p>
 <div class="comment">
@@ -1439,8 +1407,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RK2-003" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-003">refersToExposure</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="EXT-OBJECT">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C012">Conceptual definition</a><a href="../explore/index.html#RKM-C012">Text neighborhood</a></p></div>
+<div class="entity entry" id="EXT-OBJECT">
 <h3>ExternalObject<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#EXT-OBJECT</p>
 <div class="comment">
@@ -1454,8 +1422,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RK3-004" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-004">bearsVulnerability</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C026">
+<p class="term-links"><a href="../reference/native/index.html#EXT-OBJECT">Conceptual definition</a><a href="../explore/index.html#EXT-OBJECT">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C026">
 <h3>IdentificationInformation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C026</p>
 <div class="comment">
@@ -1481,8 +1449,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-52" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-52">recordsIdentification</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C069">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C026">Conceptual definition</a><a href="../explore/index.html#RKM-C026">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C069">
 <h3>Indicator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C069</p>
 <div class="comment">
@@ -1502,8 +1470,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-023" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-023">reportsIndicator</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-025" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-025">thresholdForIndicator</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C014">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C069">Conceptual definition</a><a href="../explore/index.html#RKM-C069">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C014">
 <h3>InformationArtifact<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014</p>
 <div class="comment">
@@ -1523,8 +1491,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-68" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-68">supportsRecordedArtifact</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-006" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006">versionOf</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C016">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C014">Conceptual definition</a><a href="../explore/index.html#RKM-C014">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C016">
 <h3>InformationContent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C016</p>
 <div class="comment">
@@ -1538,8 +1506,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-007" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-007">expressesContent</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C027">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C016">Conceptual definition</a><a href="../explore/index.html#RKM-C016">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C027">
 <h3>IntakeChannelTerm<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C027</p>
 <div class="comment">
@@ -1559,8 +1527,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-27" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-27">declaresIntakeChannel</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C006">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C027">Conceptual definition</a><a href="../explore/index.html#RKM-C027">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C006">
 <h3>NatureTerm<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C006</p>
 <div class="comment">
@@ -1580,8 +1548,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-42" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-42">declaresNature</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-X02">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C006">Conceptual definition</a><a href="../explore/index.html#RKM-C006">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-X02">
 <h3>ObjectiveReference<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X02</p>
 <div class="comment">
@@ -1601,8 +1569,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-003" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-003">concernsObjective</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-011" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-011">referencesObjective</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C067">
+<p class="term-links"><a href="../reference/native/index.html#RKM-X02">Conceptual definition</a><a href="../explore/index.html#RKM-X02">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C067">
 <h3>ObservationActivity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C067</p>
 <div class="comment">
@@ -1616,8 +1584,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-022" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-022">producesObservation</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C068">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C067">Conceptual definition</a><a href="../explore/index.html#RKM-C067">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C068">
 <h3>ObservationResult<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C068</p>
 <div class="comment">
@@ -1643,8 +1611,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-026" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-026">basedOnObservation</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-022" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-022">producesObservation</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-017" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-017">recordsObservation</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C049">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C068">Conceptual definition</a><a href="../explore/index.html#RKM-C068">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C049">
 <h3>Organization<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C049</p>
 <div class="comment">
@@ -1670,8 +1638,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RKM-C048" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C048">Person</a> <sup class="type-c" title="class">c</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C048">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C049">Conceptual definition</a><a href="../explore/index.html#RKM-C049">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C048">
 <h3>Person<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C048</p>
 <div class="comment">
@@ -1697,8 +1665,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RKM-C049" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C049">Organization</a> <sup class="type-c" title="class">c</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C046">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C048">Conceptual definition</a><a href="../explore/index.html#RKM-C048">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C046">
 <h3>PlanRoleTerm<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C046</p>
 <div class="comment">
@@ -1718,8 +1686,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-62" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-62">planRole</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C043">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C046">Conceptual definition</a><a href="../explore/index.html#RKM-C046">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C043">
 <h3>PlanSpecification<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C043</p>
 <div class="comment">
@@ -1745,8 +1713,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-64" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-64">executesPlan</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-63" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-63">isSpecifiedByPlan</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-61" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-61">recordsPlan</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C008">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C043">Conceptual definition</a><a href="../explore/index.html#RKM-C043">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C008">
 <h3>PredisposingCondition<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C008</p>
 <div class="comment">
@@ -1760,8 +1728,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RK2-001" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-001">refersToCondition</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C062">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C008">Conceptual definition</a><a href="../explore/index.html#RKM-C008">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C062">
 <h3>RecordStateAssertion<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C062</p>
 <div class="comment">
@@ -1787,8 +1755,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-23" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-23">hasStateAssertion</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C051">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C062">Conceptual definition</a><a href="../explore/index.html#RKM-C062">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C051">
 <h3>ResponsibilityAssignmentInformation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C051</p>
 <div class="comment">
@@ -1814,8 +1782,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-30" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-30">documentsAssignment</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C052">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C051">Conceptual definition</a><a href="../explore/index.html#RKM-C051">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C052">
 <h3>ResponsibilityRelator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C052</p>
 <div class="comment">
@@ -1839,8 +1807,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-55" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-55">documentsActualMandate</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C059">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C052">Conceptual definition</a><a href="../explore/index.html#RKM-C052">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C059">
 <h3>ResponsibilityRoleTerm<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C059</p>
 <div class="comment">
@@ -1860,8 +1828,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-54" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-54">assignmentRole</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-59" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-59">mandateRole</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C053">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C059">Conceptual definition</a><a href="../explore/index.html#RKM-C059">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C053">
 <h3>ResponsibleAgentRole<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C053</p>
 <div class="comment">
@@ -1887,8 +1855,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-56" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-56">mediatesBearer</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C056">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C053">Conceptual definition</a><a href="../explore/index.html#RKM-C053">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C056">
 <h3>ResponsibleOrganization<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C056</p>
 <div class="comment">
@@ -1908,8 +1876,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RKM-C055" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C055">ResponsiblePerson</a> <sup class="type-c" title="class">c</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C055">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C056">Conceptual definition</a><a href="../explore/index.html#RKM-C056">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C055">
 <h3>ResponsiblePerson<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C055</p>
 <div class="comment">
@@ -1929,8 +1897,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RKM-C056" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C056">ResponsibleOrganization</a> <sup class="type-c" title="class">c</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C073">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C055">Conceptual definition</a><a href="../explore/index.html#RKM-C055">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C073">
 <h3>RiskAppetiteStatement<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C073</p>
 <div class="comment">
@@ -1956,8 +1924,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-018" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-018">considersAppetiteStatement</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-X01">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C073">Conceptual definition</a><a href="../explore/index.html#RKM-C073">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-X01">
 <h3>RiskCase<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01</p>
 <div class="comment">
@@ -1981,8 +1949,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-11" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-11">assesses</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-09" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-09">assignmentAbout</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-03" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-03">classifies</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-19" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-19">decisionAbout</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-007" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-007">describesCase</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-011" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-011">evaluatesCase</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-07" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-07">identifiedRisk</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-58" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-58">mandateAbout</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-41" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-41">natureOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-024" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-024">observesCase</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-21" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-21">planAbout</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-028" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-028">promptsReviewOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-01" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01">recordsAbout</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-36" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36">scenarioAbout</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-22" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-22">statementAbout</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-004" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-004">uncertaintyAbout</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C002">
+<p class="term-links"><a href="../reference/native/index.html#RKM-X01">Conceptual definition</a><a href="../explore/index.html#RKM-X01">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C002">
 <h3>RiskContextSpecification<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002</p>
 <div class="comment">
@@ -2008,8 +1976,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-35" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-35">analyzedInContext</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-023" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-023">appetiteContext</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-45" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-45">assessmentContext</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-017" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-017">criteriaForContext</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-009" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-009">descriptionContext</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-001" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-001">hasContext</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-43" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-43">natureInContext</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-026" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-026">observationContext</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-010" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-010">scenarioContext</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK3-003" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-003">sourceReferenceContext</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-024" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-024">toleranceContext</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-012" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-012">uncertaintyContext</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C072">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C002">Conceptual definition</a><a href="../explore/index.html#RKM-C002">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C072">
 <h3>RiskCriteria<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C072</p>
 <div class="comment">
@@ -2029,8 +1997,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-018" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-018">considersAppetiteStatement</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-019" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-019">considersToleranceStatement</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-017" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-017">criteriaForContext</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C024">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C072">Conceptual definition</a><a href="../explore/index.html#RKM-C072">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C024">
 <h3>RiskDescription<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C024</p>
 <div class="comment">
@@ -2056,8 +2024,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-02" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-02">hasDescription</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-X04">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C024">Conceptual definition</a><a href="../explore/index.html#RKM-C024">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-X04">
 <h3>RiskEvaluationOutcome<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X04</p>
 <div class="comment">
@@ -2083,8 +2051,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RK2-014" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-014">basedOnEvaluation</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C005">
+<p class="term-links"><a href="../reference/native/index.html#RKM-X04">Conceptual definition</a><a href="../explore/index.html#RKM-X04">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C005">
 <h3>RiskNatureAssertion<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C005</p>
 <div class="comment">
@@ -2110,8 +2078,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-44" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-44">recordsNature</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C004">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C005">Conceptual definition</a><a href="../explore/index.html#RKM-C005">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C004">
 <h3>RiskOccurrence<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C004</p>
 <div class="comment">
@@ -2137,8 +2105,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-25" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-25">mayBeRealizedBy</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-69" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-69">refersToOccurrence</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C001">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C004">Conceptual definition</a><a href="../explore/index.html#RKM-C004">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C001">
 <h3>RiskPatternSpecification<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C001</p>
 <div class="comment">
@@ -2158,8 +2126,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-002" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-002">appliesPattern</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-008" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-008">describesPattern</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C030">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C001">Conceptual definition</a><a href="../explore/index.html#RKM-C001">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C030">
 <h3>RiskRegister<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C030</p>
 <div class="comment">
@@ -2179,8 +2147,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-008" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-008">memberOfRegister</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C022">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C030">Conceptual definition</a><a href="../explore/index.html#RKM-C030">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C022">
 <h3>RiskRegisterEntry<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C022</p>
 <div class="comment">
@@ -2206,8 +2174,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-33" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-33">revisionOf</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C003">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C022">Conceptual definition</a><a href="../explore/index.html#RKM-C022">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C003">
 <h3>RiskScenarioSpecification<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003</p>
 <div class="comment">
@@ -2233,8 +2201,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-37" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-37">expressesScenario</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C037">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C003">Conceptual definition</a><a href="../explore/index.html#RKM-C003">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C037">
 <h3>RiskScoreResult<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C037</p>
 <div class="comment">
@@ -2260,8 +2228,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-17" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-17">hasScoreResult</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-X06">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C037">Conceptual definition</a><a href="../explore/index.html#RKM-C037">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-X06">
 <h3>RiskSourceReference<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06</p>
 <div class="comment">
@@ -2287,8 +2255,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RK3-001" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001">hasSourceReference</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C013">
+<p class="term-links"><a href="../reference/native/index.html#RKM-X06">Conceptual definition</a><a href="../explore/index.html#RKM-X06">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C013">
 <h3>RiskState<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C013</p>
 <div class="comment">
@@ -2302,8 +2270,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RK2-004" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-004">hasEstablishedState</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C074">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C013">Conceptual definition</a><a href="../explore/index.html#RKM-C013">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C074">
 <h3>RiskToleranceStatement<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C074</p>
 <div class="comment">
@@ -2329,8 +2297,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-019" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-019">considersToleranceStatement</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C071">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C074">Conceptual definition</a><a href="../explore/index.html#RKM-C074">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C071">
 <h3>Signal<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C071</p>
 <div class="comment">
@@ -2350,8 +2318,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-026" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-026">basedOnObservation</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-027" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-027">evaluatedAgainstThreshold</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-028" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-028">promptsReviewOf</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C021">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C071">Conceptual definition</a><a href="../explore/index.html#RKM-C071">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C021">
 <h3>Tag<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C021</p>
 <div class="comment">
@@ -2371,8 +2339,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-24" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-24">hasTag</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C070">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C021">Conceptual definition</a><a href="../explore/index.html#RKM-C021">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C070">
 <h3>Threshold<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C070</p>
 <div class="comment">
@@ -2398,8 +2366,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-027" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-027">evaluatedAgainstThreshold</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C044">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C070">Conceptual definition</a><a href="../explore/index.html#RKM-C070">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C044">
 <h3>TreatmentActivity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C044</p>
 <div class="comment">
@@ -2419,8 +2387,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-72" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-72">refersToTreatmentActivity</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C041">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C044">Conceptual definition</a><a href="../explore/index.html#RKM-C044">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C041">
 <h3>TreatmentDecisionInformation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C041</p>
 <div class="comment">
@@ -2446,8 +2414,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-60" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-60">recordsDecision</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C042">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C041">Conceptual definition</a><a href="../explore/index.html#RKM-C041">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C042">
 <h3>TreatmentStrategyTerm<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C042</p>
 <div class="comment">
@@ -2467,8 +2435,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#R-20" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-20">selectsStrategy</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C009">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C042">Conceptual definition</a><a href="../explore/index.html#RKM-C042">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C009">
 <h3>Trigger<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C009</p>
 <div class="comment">
@@ -2488,8 +2456,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RK2-005" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-005">initiatedBy</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-X03">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C009">Conceptual definition</a><a href="../explore/index.html#RKM-C009">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-X03">
 <h3>UncertaintyStatement<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X03</p>
 <div class="comment">
@@ -2515,8 +2483,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RK2-013" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-013">recordsUncertainty</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C017">
+<p class="term-links"><a href="../reference/native/index.html#RKM-X03">Conceptual definition</a><a href="../explore/index.html#RKM-X03">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C017">
 <h3>VocabularyConcept<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C017</p>
 <div class="comment">
@@ -2536,8 +2504,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RKM-C039" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C039">AssessmentDimension</a> <sup class="type-c" title="class">c</sup>, <a href="#RKM-C038" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C038">AssessmentScaleLevel</a> <sup class="type-c" title="class">c</sup>, <a href="#RKM-C019" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C019">ClassificationTerm</a> <sup class="type-c" title="class">c</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C011">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C017">Conceptual definition</a><a href="../explore/index.html#RKM-C017">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C011">
 <h3>Vulnerability<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C011</p>
 <div class="comment">
@@ -2555,8 +2523,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RK3-004" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-004">bearsVulnerability</a> <sup class="type-op" title="object property">op</sup>, <a href="#RK2-002" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-002">refersToVulnerability</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C064">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C011">Conceptual definition</a><a href="../explore/index.html#RKM-C011">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C064">
 <h3>WorkflowAssignment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C064</p>
 <div class="comment">
@@ -2580,8 +2548,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-032" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-032">documentsWorkflowAssignment</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C063">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C064">Conceptual definition</a><a href="../explore/index.html#RKM-C064">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C063">
 <h3>WorkflowSchemeVersion<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C063</p>
 <div class="comment">
@@ -2601,8 +2569,8 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RK2-021" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-021">availableInWorkflowScheme</a> <sup class="type-op" title="object property">op</sup>, <a href="#RX-030" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-030">underSchemeVersion</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
-<div class="entity" id="RKM-C061">
+<p class="term-links"><a href="../reference/native/index.html#RKM-C063">Conceptual definition</a><a href="../explore/index.html#RKM-C063">Text neighborhood</a></p></div>
+<div class="entity entry" id="RKM-C061">
 <h3>WorkflowStateTerm<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C061</p>
 <div class="comment">
@@ -2628,7 +2596,7 @@ This section provides details for each class and property defined by Riskium.
 <a href="#RX-029" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-029">assignsState</a> <sup class="type-op" title="object property">op</sup>, <a href="#R-32" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-32">declaresWorkflowState</a> <sup class="type-op" title="object property">op</sup>
 </dd>
 </dl>
-</div>
+<p class="term-links"><a href="../reference/native/index.html#RKM-C061">Conceptual definition</a><a href="../explore/index.html#RKM-C061">Text neighborhood</a></p></div>
 </div><div id="objectproperties" xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <h3 class="list" id="properties">Object Properties</h3>
 <ul class="hlist">
@@ -2760,7 +2728,7 @@ This section provides details for each class and property defined by Riskium.
 <li><a href="#RX-016" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016">usesScaleVersion</a></li>
 <li><a href="#RX-006" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006">versionOf</a></li>
 </ul>
-<div class="entity" id="R-35">
+<div class="entity entry" id="R-35">
 <h3>analyzedInContext<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-35</p>
 <div class="description">
@@ -2785,8 +2753,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-023">
+<p class="term-links"><a href="../reference/native/index.html#R-35">Conceptual definition</a><a href="../explore/index.html#R-35">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-023">
 <h3>appetiteContext<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-023</p>
 <div class="description">
@@ -2805,8 +2773,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-002">
+<p class="term-links"><a href="../reference/native/index.html#RK2-023">Conceptual definition</a><a href="../explore/index.html#RK2-023">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-002">
 <h3>appliesPattern<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-002</p>
 <div class="description">
@@ -2825,8 +2793,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-11">
+<p class="term-links"><a href="../reference/native/index.html#RX-002">Conceptual definition</a><a href="../explore/index.html#RX-002">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-11">
 <h3>assesses<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-11</p>
 <div class="description">
@@ -2845,8 +2813,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-45">
+<p class="term-links"><a href="../reference/native/index.html#R-11">Conceptual definition</a><a href="../explore/index.html#R-11">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-45">
 <h3>assessmentContext<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-45</p>
 <div class="description">
@@ -2865,8 +2833,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-51">
+<p class="term-links"><a href="../reference/native/index.html#R-45">Conceptual definition</a><a href="../explore/index.html#R-45">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-51">
 <h3>assessmentPerformer<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-51</p>
 <div class="description">
@@ -2885,8 +2853,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-09">
+<p class="term-links"><a href="../reference/native/index.html#R-51">Conceptual definition</a><a href="../explore/index.html#R-51">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-09">
 <h3>assignmentAbout<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-09</p>
 <div class="description">
@@ -2905,8 +2873,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-031">
+<p class="term-links"><a href="../reference/native/index.html#R-09">Conceptual definition</a><a href="../explore/index.html#R-09">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-031">
 <h3>assignmentForRevision<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-031</p>
 <div class="description">
@@ -2925,8 +2893,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-54">
+<p class="term-links"><a href="../reference/native/index.html#RX-031">Conceptual definition</a><a href="../explore/index.html#RX-031">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-54">
 <h3>assignmentRole<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-54</p>
 <div class="description">
@@ -2945,8 +2913,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-029">
+<p class="term-links"><a href="../reference/native/index.html#R-54">Conceptual definition</a><a href="../explore/index.html#R-54">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-029">
 <h3>assignsState<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-029</p>
 <div class="description">
@@ -2965,8 +2933,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-025">
+<p class="term-links"><a href="../reference/native/index.html#RX-029">Conceptual definition</a><a href="../explore/index.html#RX-029">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-025">
 <h3>authorizerReference<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-025</p>
 <div class="description">
@@ -2985,8 +2953,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-021">
+<p class="term-links"><a href="../reference/native/index.html#RK2-025">Conceptual definition</a><a href="../explore/index.html#RK2-025">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-021">
 <h3>availableInWorkflowScheme<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-021</p>
 <div class="description">
@@ -3005,8 +2973,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-014">
+<p class="term-links"><a href="../reference/native/index.html#RK2-021">Conceptual definition</a><a href="../explore/index.html#RK2-021">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-014">
 <h3>basedOnEvaluation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-014</p>
 <div class="description">
@@ -3025,8 +2993,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-026">
+<p class="term-links"><a href="../reference/native/index.html#RK2-014">Conceptual definition</a><a href="../explore/index.html#RK2-014">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-026">
 <h3>basedOnObservation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-026</p>
 <div class="description">
@@ -3045,8 +3013,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK3-004">
+<p class="term-links"><a href="../reference/native/index.html#RX-026">Conceptual definition</a><a href="../explore/index.html#RX-026">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK3-004">
 <h3>bearsVulnerability<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-004</p>
 <div class="description">
@@ -3065,8 +3033,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-05">
+<p class="term-links"><a href="../reference/native/index.html#RK3-004">Conceptual definition</a><a href="../explore/index.html#RK3-004">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-05">
 <h3>belongsToScheme<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-05</p>
 <div class="description">
@@ -3085,8 +3053,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-03">
+<p class="term-links"><a href="../reference/native/index.html#R-05">Conceptual definition</a><a href="../explore/index.html#R-05">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-03">
 <h3>classifies<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-03</p>
 <div class="description">
@@ -3105,8 +3073,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-003">
+<p class="term-links"><a href="../reference/native/index.html#R-03">Conceptual definition</a><a href="../explore/index.html#R-03">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-003">
 <h3>concernsObjective<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-003</p>
 <div class="description">
@@ -3125,8 +3093,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-018">
+<p class="term-links"><a href="../reference/native/index.html#RX-003">Conceptual definition</a><a href="../explore/index.html#RX-003">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-018">
 <h3>considersAppetiteStatement<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-018</p>
 <div class="description">
@@ -3145,8 +3113,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-019">
+<p class="term-links"><a href="../reference/native/index.html#RX-018">Conceptual definition</a><a href="../explore/index.html#RX-018">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-019">
 <h3>considersToleranceStatement<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-019</p>
 <div class="description">
@@ -3165,8 +3133,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-017">
+<p class="term-links"><a href="../reference/native/index.html#RX-019">Conceptual definition</a><a href="../explore/index.html#RX-019">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-017">
 <h3>criteriaForContext<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-017</p>
 <div class="description">
@@ -3185,8 +3153,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-19">
+<p class="term-links"><a href="../reference/native/index.html#RX-017">Conceptual definition</a><a href="../explore/index.html#RX-017">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-19">
 <h3>decisionAbout<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-19</p>
 <div class="description">
@@ -3205,8 +3173,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-31">
+<p class="term-links"><a href="../reference/native/index.html#R-19">Conceptual definition</a><a href="../explore/index.html#R-19">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-31">
 <h3>declaresAnalysisState<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-31</p>
 <div class="description">
@@ -3225,8 +3193,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-27">
+<p class="term-links"><a href="../reference/native/index.html#R-31">Conceptual definition</a><a href="../explore/index.html#R-31">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-27">
 <h3>declaresIntakeChannel<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-27</p>
 <div class="description">
@@ -3245,8 +3213,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-42">
+<p class="term-links"><a href="../reference/native/index.html#R-27">Conceptual definition</a><a href="../explore/index.html#R-27">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-42">
 <h3>declaresNature<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-42</p>
 <div class="description">
@@ -3265,8 +3233,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-32">
+<p class="term-links"><a href="../reference/native/index.html#R-42">Conceptual definition</a><a href="../explore/index.html#R-42">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-32">
 <h3>declaresWorkflowState<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-32</p>
 <div class="description">
@@ -3285,8 +3253,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-18">
+<p class="term-links"><a href="../reference/native/index.html#R-32">Conceptual definition</a><a href="../explore/index.html#R-32">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-18">
 <h3>derivedFrom<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-18</p>
 <div class="description">
@@ -3305,8 +3273,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-007">
+<p class="term-links"><a href="../reference/native/index.html#R-18">Conceptual definition</a><a href="../explore/index.html#R-18">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-007">
 <h3>describesCase<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-007</p>
 <div class="description">
@@ -3325,8 +3293,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-008">
+<p class="term-links"><a href="../reference/native/index.html#RK2-007">Conceptual definition</a><a href="../explore/index.html#RK2-007">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-008">
 <h3>describesPattern<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-008</p>
 <div class="description">
@@ -3345,8 +3313,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-009">
+<p class="term-links"><a href="../reference/native/index.html#RK2-008">Conceptual definition</a><a href="../explore/index.html#RK2-008">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-009">
 <h3>descriptionContext<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-009</p>
 <div class="description">
@@ -3365,8 +3333,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-39">
+<p class="term-links"><a href="../reference/native/index.html#RK2-009">Conceptual definition</a><a href="../explore/index.html#RK2-009">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-39">
 <h3>descriptionRole<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-39</p>
 <div class="description">
@@ -3385,8 +3353,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-48">
+<p class="term-links"><a href="../reference/native/index.html#R-39">Conceptual definition</a><a href="../explore/index.html#R-39">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-48">
 <h3>dimension<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-48</p>
 <div class="description">
@@ -3405,8 +3373,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-55">
+<p class="term-links"><a href="../reference/native/index.html#R-48">Conceptual definition</a><a href="../explore/index.html#R-48">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-55">
 <h3>documentsActualMandate<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-55</p>
 <div class="description">
@@ -3425,8 +3393,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-28">
+<p class="term-links"><a href="../reference/native/index.html#R-55">Conceptual definition</a><a href="../explore/index.html#R-55">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-28">
 <h3>documentsAssessment<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-28</p>
 <div class="description">
@@ -3445,8 +3413,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-30">
+<p class="term-links"><a href="../reference/native/index.html#R-28">Conceptual definition</a><a href="../explore/index.html#R-28">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-30">
 <h3>documentsAssignment<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-30</p>
 <div class="description">
@@ -3465,8 +3433,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-29">
+<p class="term-links"><a href="../reference/native/index.html#R-30">Conceptual definition</a><a href="../explore/index.html#R-30">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-29">
 <h3>documentsClassification<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-29</p>
 <div class="description">
@@ -3485,8 +3453,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-032">
+<p class="term-links"><a href="../reference/native/index.html#R-29">Conceptual definition</a><a href="../explore/index.html#R-29">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-032">
 <h3>documentsWorkflowAssignment<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-032</p>
 <div class="description">
@@ -3505,8 +3473,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-47">
+<p class="term-links"><a href="../reference/native/index.html#RX-032">Conceptual definition</a><a href="../explore/index.html#RX-032">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-47">
 <h3>epistemicStatus<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-47</p>
 <div class="description">
@@ -3525,8 +3493,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-027">
+<p class="term-links"><a href="../reference/native/index.html#R-47">Conceptual definition</a><a href="../explore/index.html#R-47">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-027">
 <h3>evaluatedAgainstThreshold<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-027</p>
 <div class="description">
@@ -3545,8 +3513,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-011">
+<p class="term-links"><a href="../reference/native/index.html#RX-027">Conceptual definition</a><a href="../explore/index.html#RX-027">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-011">
 <h3>evaluatesCase<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-011</p>
 <div class="description">
@@ -3565,8 +3533,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-64">
+<p class="term-links"><a href="../reference/native/index.html#RX-011">Conceptual definition</a><a href="../explore/index.html#RX-011">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-64">
 <h3>executesPlan<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-64</p>
 <div class="description">
@@ -3585,8 +3553,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-007">
+<p class="term-links"><a href="../reference/native/index.html#R-64">Conceptual definition</a><a href="../explore/index.html#R-64">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-007">
 <h3>expressesContent<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-007</p>
 <div class="description">
@@ -3605,8 +3573,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-37">
+<p class="term-links"><a href="../reference/native/index.html#RX-007">Conceptual definition</a><a href="../explore/index.html#RX-007">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-37">
 <h3>expressesScenario<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-37</p>
 <div class="description">
@@ -3625,8 +3593,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-12">
+<p class="term-links"><a href="../reference/native/index.html#R-37">Conceptual definition</a><a href="../explore/index.html#R-37">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-12">
 <h3>hasBasis<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-12</p>
 <div class="description">
@@ -3645,8 +3613,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-10">
+<p class="term-links"><a href="../reference/native/index.html#R-12">Conceptual definition</a><a href="../explore/index.html#R-12">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-10">
 <h3>hasBearerReference<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-10</p>
 <div class="description">
@@ -3665,8 +3633,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-06">
+<p class="term-links"><a href="../reference/native/index.html#R-10">Conceptual definition</a><a href="../explore/index.html#R-10">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-06">
 <h3>hasBroaderTerm<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-06</p>
 <div class="description">
@@ -3685,8 +3653,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-001">
+<p class="term-links"><a href="../reference/native/index.html#R-06">Conceptual definition</a><a href="../explore/index.html#R-06">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-001">
 <h3>hasContext<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-001</p>
 <div class="description">
@@ -3711,8 +3679,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-02">
+<p class="term-links"><a href="../reference/native/index.html#RX-001">Conceptual definition</a><a href="../explore/index.html#RX-001">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-02">
 <h3>hasDescription<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-02</p>
 <div class="description">
@@ -3731,8 +3699,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-13">
+<p class="term-links"><a href="../reference/native/index.html#R-02">Conceptual definition</a><a href="../explore/index.html#R-02">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-13">
 <h3>hasDimensionResult<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-13</p>
 <div class="description">
@@ -3751,8 +3719,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-004">
+<p class="term-links"><a href="../reference/native/index.html#R-13">Conceptual definition</a><a href="../explore/index.html#R-13">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-004">
 <h3>hasEstablishedState<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-004</p>
 <div class="description">
@@ -3771,8 +3739,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-08">
+<p class="term-links"><a href="../reference/native/index.html#RK2-004">Conceptual definition</a><a href="../explore/index.html#RK2-004">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-08">
 <h3>hasParticipantReference<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-08</p>
 <div class="description">
@@ -3791,8 +3759,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-009">
+<p class="term-links"><a href="../reference/native/index.html#R-08">Conceptual definition</a><a href="../explore/index.html#R-08">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-009">
 <h3>hasPossibleConsequenceStatement<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-009</p>
 <div class="description">
@@ -3811,8 +3779,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-17">
+<p class="term-links"><a href="../reference/native/index.html#RX-009">Conceptual definition</a><a href="../explore/index.html#RX-009">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-17">
 <h3>hasScoreResult<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-17</p>
 <div class="description">
@@ -3831,8 +3799,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK3-001">
+<p class="term-links"><a href="../reference/native/index.html#R-17">Conceptual definition</a><a href="../explore/index.html#R-17">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK3-001">
 <h3>hasSourceReference<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001</p>
 <div class="description">
@@ -3851,8 +3819,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-23">
+<p class="term-links"><a href="../reference/native/index.html#RK3-001">Conceptual definition</a><a href="../explore/index.html#RK3-001">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-23">
 <h3>hasStateAssertion<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-23</p>
 <div class="description">
@@ -3871,8 +3839,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-24">
+<p class="term-links"><a href="../reference/native/index.html#R-23">Conceptual definition</a><a href="../explore/index.html#R-23">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-24">
 <h3>hasTag<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-24</p>
 <div class="description">
@@ -3891,8 +3859,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-07">
+<p class="term-links"><a href="../reference/native/index.html#R-24">Conceptual definition</a><a href="../explore/index.html#R-24">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-07">
 <h3>identifiedRisk<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-07</p>
 <div class="description">
@@ -3911,8 +3879,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-005">
+<p class="term-links"><a href="../reference/native/index.html#R-07">Conceptual definition</a><a href="../explore/index.html#R-07">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-005">
 <h3>initiatedBy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-005</p>
 <div class="description">
@@ -3931,8 +3899,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-63">
+<p class="term-links"><a href="../reference/native/index.html#RK2-005">Conceptual definition</a><a href="../explore/index.html#RK2-005">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-63">
 <h3>isSpecifiedByPlan<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-63</p>
 <div class="description">
@@ -3951,8 +3919,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-16">
+<p class="term-links"><a href="../reference/native/index.html#R-63">Conceptual definition</a><a href="../explore/index.html#R-63">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-16">
 <h3>levelOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-16</p>
 <div class="description">
@@ -3971,8 +3939,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-58">
+<p class="term-links"><a href="../reference/native/index.html#R-16">Conceptual definition</a><a href="../explore/index.html#R-16">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-58">
 <h3>mandateAbout<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-58</p>
 <div class="description">
@@ -3991,8 +3959,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-59">
+<p class="term-links"><a href="../reference/native/index.html#R-58">Conceptual definition</a><a href="../explore/index.html#R-58">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-59">
 <h3>mandateRole<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-59</p>
 <div class="description">
@@ -4011,8 +3979,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-25">
+<p class="term-links"><a href="../reference/native/index.html#R-59">Conceptual definition</a><a href="../explore/index.html#R-59">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-25">
 <h3>mayBeRealizedBy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-25</p>
 <div class="description">
@@ -4031,8 +3999,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-57">
+<p class="term-links"><a href="../reference/native/index.html#R-25">Conceptual definition</a><a href="../explore/index.html#R-25">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-57">
 <h3>mediatesAuthority<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-57</p>
 <div class="description">
@@ -4051,8 +4019,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-56">
+<p class="term-links"><a href="../reference/native/index.html#R-57">Conceptual definition</a><a href="../explore/index.html#R-57">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-56">
 <h3>mediatesBearer<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-56</p>
 <div class="description">
@@ -4071,8 +4039,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-008">
+<p class="term-links"><a href="../reference/native/index.html#R-56">Conceptual definition</a><a href="../explore/index.html#R-56">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-008">
 <h3>memberOfRegister<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-008</p>
 <div class="description">
@@ -4091,8 +4059,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-43">
+<p class="term-links"><a href="../reference/native/index.html#RX-008">Conceptual definition</a><a href="../explore/index.html#RX-008">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-43">
 <h3>natureInContext<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-43</p>
 <div class="description">
@@ -4111,8 +4079,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-41">
+<p class="term-links"><a href="../reference/native/index.html#R-43">Conceptual definition</a><a href="../explore/index.html#R-43">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-41">
 <h3>natureOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-41</p>
 <div class="description">
@@ -4131,8 +4099,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-026">
+<p class="term-links"><a href="../reference/native/index.html#R-41">Conceptual definition</a><a href="../explore/index.html#R-41">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-026">
 <h3>observationContext<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-026</p>
 <div class="description">
@@ -4151,8 +4119,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-024">
+<p class="term-links"><a href="../reference/native/index.html#RK2-026">Conceptual definition</a><a href="../explore/index.html#RK2-026">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-024">
 <h3>observesCase<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-024</p>
 <div class="description">
@@ -4171,8 +4139,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-49">
+<p class="term-links"><a href="../reference/native/index.html#RX-024">Conceptual definition</a><a href="../explore/index.html#RX-024">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-49">
 <h3>permitsScale<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-49</p>
 <div class="description">
@@ -4191,8 +4159,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-21">
+<p class="term-links"><a href="../reference/native/index.html#R-49">Conceptual definition</a><a href="../explore/index.html#R-49">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-21">
 <h3>planAbout<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-21</p>
 <div class="description">
@@ -4211,8 +4179,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-62">
+<p class="term-links"><a href="../reference/native/index.html#R-21">Conceptual definition</a><a href="../explore/index.html#R-21">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-62">
 <h3>planRole<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-62</p>
 <div class="description">
@@ -4231,8 +4199,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-021">
+<p class="term-links"><a href="../reference/native/index.html#R-62">Conceptual definition</a><a href="../explore/index.html#R-62">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-021">
 <h3>pointsToEvidence<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-021</p>
 <div class="description">
@@ -4251,8 +4219,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-34">
+<p class="term-links"><a href="../reference/native/index.html#RX-021">Conceptual definition</a><a href="../explore/index.html#RX-021">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-34">
 <h3>previousRevision<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-34</p>
 <div class="description">
@@ -4271,8 +4239,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-26">
+<p class="term-links"><a href="../reference/native/index.html#R-34">Conceptual definition</a><a href="../explore/index.html#R-34">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-26">
 <h3>producesAssessmentInformation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-26</p>
 <div class="description">
@@ -4291,8 +4259,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-022">
+<p class="term-links"><a href="../reference/native/index.html#R-26">Conceptual definition</a><a href="../explore/index.html#R-26">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-022">
 <h3>producesObservation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-022</p>
 <div class="description">
@@ -4311,8 +4279,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-028">
+<p class="term-links"><a href="../reference/native/index.html#RX-022">Conceptual definition</a><a href="../explore/index.html#RX-022">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-028">
 <h3>promptsReviewOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-028</p>
 <div class="description">
@@ -4331,8 +4299,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-01">
+<p class="term-links"><a href="../reference/native/index.html#RX-028">Conceptual definition</a><a href="../explore/index.html#RX-028">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-01">
 <h3>recordsAbout<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-01</p>
 <div class="description">
@@ -4351,8 +4319,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-38">
+<p class="term-links"><a href="../reference/native/index.html#R-01">Conceptual definition</a><a href="../explore/index.html#R-01">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-38">
 <h3>recordsConsequence<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-38</p>
 <div class="description">
@@ -4371,8 +4339,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-016">
+<p class="term-links"><a href="../reference/native/index.html#R-38">Conceptual definition</a><a href="../explore/index.html#R-38">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-016">
 <h3>recordsControlReference<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-016</p>
 <div class="description">
@@ -4391,8 +4359,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-60">
+<p class="term-links"><a href="../reference/native/index.html#RK2-016">Conceptual definition</a><a href="../explore/index.html#RK2-016">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-60">
 <h3>recordsDecision<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-60</p>
 <div class="description">
@@ -4411,8 +4379,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-52">
+<p class="term-links"><a href="../reference/native/index.html#R-60">Conceptual definition</a><a href="../explore/index.html#R-60">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-52">
 <h3>recordsIdentification<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-52</p>
 <div class="description">
@@ -4431,8 +4399,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-44">
+<p class="term-links"><a href="../reference/native/index.html#R-52">Conceptual definition</a><a href="../explore/index.html#R-52">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-44">
 <h3>recordsNature<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-44</p>
 <div class="description">
@@ -4451,8 +4419,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-017">
+<p class="term-links"><a href="../reference/native/index.html#R-44">Conceptual definition</a><a href="../explore/index.html#R-44">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-017">
 <h3>recordsObservation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-017</p>
 <div class="description">
@@ -4471,8 +4439,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-61">
+<p class="term-links"><a href="../reference/native/index.html#RK2-017">Conceptual definition</a><a href="../explore/index.html#RK2-017">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-61">
 <h3>recordsPlan<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-61</p>
 <div class="description">
@@ -4491,8 +4459,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-015">
+<p class="term-links"><a href="../reference/native/index.html#R-61">Conceptual definition</a><a href="../explore/index.html#R-61">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-015">
 <h3>recordsRemainingRiskAssessment<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-015</p>
 <div class="description">
@@ -4511,8 +4479,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-013">
+<p class="term-links"><a href="../reference/native/index.html#RK2-015">Conceptual definition</a><a href="../explore/index.html#RK2-015">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-013">
 <h3>recordsUncertainty<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-013</p>
 <div class="description">
@@ -4531,8 +4499,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-022">
+<p class="term-links"><a href="../reference/native/index.html#RK2-013">Conceptual definition</a><a href="../explore/index.html#RK2-013">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-022">
 <h3>referencesControlBaseline<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-022</p>
 <div class="description">
@@ -4551,8 +4519,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-011">
+<p class="term-links"><a href="../reference/native/index.html#RK2-022">Conceptual definition</a><a href="../explore/index.html#RK2-022">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-011">
 <h3>referencesObjective<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-011</p>
 <div class="description">
@@ -4571,8 +4539,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-70">
+<p class="term-links"><a href="../reference/native/index.html#RK2-011">Conceptual definition</a><a href="../explore/index.html#RK2-011">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-70">
 <h3>refersToAgent<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-70</p>
 <div class="description">
@@ -4591,8 +4559,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-71">
+<p class="term-links"><a href="../reference/native/index.html#R-70">Conceptual definition</a><a href="../explore/index.html#R-70">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-71">
 <h3>refersToAssessmentActivity<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-71</p>
 <div class="description">
@@ -4611,8 +4579,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-001">
+<p class="term-links"><a href="../reference/native/index.html#R-71">Conceptual definition</a><a href="../explore/index.html#R-71">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-001">
 <h3>refersToCondition<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-001</p>
 <div class="description">
@@ -4631,8 +4599,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-003">
+<p class="term-links"><a href="../reference/native/index.html#RK2-001">Conceptual definition</a><a href="../explore/index.html#RK2-001">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-003">
 <h3>refersToExposure<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-003</p>
 <div class="description">
@@ -4651,8 +4619,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-69">
+<p class="term-links"><a href="../reference/native/index.html#RK2-003">Conceptual definition</a><a href="../explore/index.html#RK2-003">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-69">
 <h3>refersToOccurrence<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-69</p>
 <div class="description">
@@ -4671,8 +4639,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-72">
+<p class="term-links"><a href="../reference/native/index.html#R-69">Conceptual definition</a><a href="../explore/index.html#R-69">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-72">
 <h3>refersToTreatmentActivity<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-72</p>
 <div class="description">
@@ -4691,8 +4659,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-002">
+<p class="term-links"><a href="../reference/native/index.html#R-72">Conceptual definition</a><a href="../explore/index.html#R-72">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-002">
 <h3>refersToVulnerability<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-002</p>
 <div class="description">
@@ -4711,8 +4679,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-023">
+<p class="term-links"><a href="../reference/native/index.html#RK2-002">Conceptual definition</a><a href="../explore/index.html#RK2-002">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-023">
 <h3>reportsIndicator<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-023</p>
 <div class="description">
@@ -4731,8 +4699,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-53">
+<p class="term-links"><a href="../reference/native/index.html#RX-023">Conceptual definition</a><a href="../explore/index.html#RX-023">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-53">
 <h3>resolvesToAgent<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-53</p>
 <div class="description">
@@ -4751,8 +4719,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-33">
+<p class="term-links"><a href="../reference/native/index.html#R-53">Conceptual definition</a><a href="../explore/index.html#R-53">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-33">
 <h3>revisionOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-33</p>
 <div class="description">
@@ -4777,8 +4745,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-019">
+<p class="term-links"><a href="../reference/native/index.html#R-33">Conceptual definition</a><a href="../explore/index.html#R-33">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-019">
 <h3>scaleForDimension<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-019</p>
 <div class="description">
@@ -4797,8 +4765,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-36">
+<p class="term-links"><a href="../reference/native/index.html#RK2-019">Conceptual definition</a><a href="../explore/index.html#RK2-019">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-36">
 <h3>scenarioAbout<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36</p>
 <div class="description">
@@ -4817,8 +4785,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-010">
+<p class="term-links"><a href="../reference/native/index.html#R-36">Conceptual definition</a><a href="../explore/index.html#R-36">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-010">
 <h3>scenarioContext<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-010</p>
 <div class="description">
@@ -4837,8 +4805,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-50">
+<p class="term-links"><a href="../reference/native/index.html#RK2-010">Conceptual definition</a><a href="../explore/index.html#RK2-010">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-50">
 <h3>scoreMethod<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-50</p>
 <div class="description">
@@ -4857,8 +4825,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-15">
+<p class="term-links"><a href="../reference/native/index.html#R-50">Conceptual definition</a><a href="../explore/index.html#R-50">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-15">
 <h3>selectsLevel<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-15</p>
 <div class="description">
@@ -4877,8 +4845,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-20">
+<p class="term-links"><a href="../reference/native/index.html#R-15">Conceptual definition</a><a href="../explore/index.html#R-15">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-20">
 <h3>selectsStrategy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-20</p>
 <div class="description">
@@ -4897,8 +4865,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-04">
+<p class="term-links"><a href="../reference/native/index.html#R-20">Conceptual definition</a><a href="../explore/index.html#R-20">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-04">
 <h3>selectsTerm<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-04</p>
 <div class="description">
@@ -4917,8 +4885,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK3-003">
+<p class="term-links"><a href="../reference/native/index.html#R-04">Conceptual definition</a><a href="../explore/index.html#R-04">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK3-003">
 <h3>sourceReferenceContext<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-003</p>
 <div class="description">
@@ -4937,8 +4905,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-40">
+<p class="term-links"><a href="../reference/native/index.html#RK3-003">Conceptual definition</a><a href="../explore/index.html#RK3-003">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-40">
 <h3>sourceSlot<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-40</p>
 <div class="description">
@@ -4957,8 +4925,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-018">
+<p class="term-links"><a href="../reference/native/index.html#R-40">Conceptual definition</a><a href="../explore/index.html#R-40">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-018">
 <h3>specifiesDimension<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-018</p>
 <div class="description">
@@ -4977,8 +4945,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-22">
+<p class="term-links"><a href="../reference/native/index.html#RK2-018">Conceptual definition</a><a href="../explore/index.html#RK2-018">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-22">
 <h3>statementAbout<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-22</p>
 <div class="description">
@@ -4997,8 +4965,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-68">
+<p class="term-links"><a href="../reference/native/index.html#R-22">Conceptual definition</a><a href="../explore/index.html#R-22">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-68">
 <h3>supportsRecordedArtifact<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-68</p>
 <div class="description">
@@ -5017,8 +4985,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-025">
+<p class="term-links"><a href="../reference/native/index.html#R-68">Conceptual definition</a><a href="../explore/index.html#R-68">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-025">
 <h3>thresholdForIndicator<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-025</p>
 <div class="description">
@@ -5037,8 +5005,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-020">
+<p class="term-links"><a href="../reference/native/index.html#RX-025">Conceptual definition</a><a href="../explore/index.html#RX-025">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-020">
 <h3>thresholdOnScale<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-020</p>
 <div class="description">
@@ -5057,8 +5025,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-024">
+<p class="term-links"><a href="../reference/native/index.html#RK2-020">Conceptual definition</a><a href="../explore/index.html#RK2-020">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-024">
 <h3>toleranceContext<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-024</p>
 <div class="description">
@@ -5077,8 +5045,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-65">
+<p class="term-links"><a href="../reference/native/index.html#RK2-024">Conceptual definition</a><a href="../explore/index.html#RK2-024">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-65">
 <h3>treatmentPerformer<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-65</p>
 <div class="description">
@@ -5097,8 +5065,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-004">
+<p class="term-links"><a href="../reference/native/index.html#R-65">Conceptual definition</a><a href="../explore/index.html#R-65">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-004">
 <h3>uncertaintyAbout<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-004</p>
 <div class="description">
@@ -5117,8 +5085,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RK2-012">
+<p class="term-links"><a href="../reference/native/index.html#RX-004">Conceptual definition</a><a href="../explore/index.html#RX-004">Text neighborhood</a></p></div>
+<div class="entity entry" id="RK2-012">
 <h3>uncertaintyContext<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-012</p>
 <div class="description">
@@ -5137,8 +5105,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-030">
+<p class="term-links"><a href="../reference/native/index.html#RK2-012">Conceptual definition</a><a href="../explore/index.html#RK2-012">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-030">
 <h3>underSchemeVersion<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-030</p>
 <div class="description">
@@ -5157,8 +5125,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-012">
+<p class="term-links"><a href="../reference/native/index.html#RX-030">Conceptual definition</a><a href="../explore/index.html#RX-030">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-012">
 <h3>usesAssessment<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-012</p>
 <div class="description">
@@ -5177,8 +5145,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-014">
+<p class="term-links"><a href="../reference/native/index.html#RX-012">Conceptual definition</a><a href="../explore/index.html#RX-012">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-014">
 <h3>usesContextVersion<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-014</p>
 <div class="description">
@@ -5197,8 +5165,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-013">
+<p class="term-links"><a href="../reference/native/index.html#RX-014">Conceptual definition</a><a href="../explore/index.html#RX-014">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-013">
 <h3>usesCriteriaVersion<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-013</p>
 <div class="description">
@@ -5217,8 +5185,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-46">
+<p class="term-links"><a href="../reference/native/index.html#RX-013">Conceptual definition</a><a href="../explore/index.html#RX-013">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-46">
 <h3>usesMethod<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-46</p>
 <div class="description">
@@ -5237,8 +5205,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-015">
+<p class="term-links"><a href="../reference/native/index.html#R-46">Conceptual definition</a><a href="../explore/index.html#R-46">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-015">
 <h3>usesMethodVersion<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-015</p>
 <div class="description">
@@ -5257,8 +5225,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="R-14">
+<p class="term-links"><a href="../reference/native/index.html#RX-015">Conceptual definition</a><a href="../explore/index.html#RX-015">Text neighborhood</a></p></div>
+<div class="entity entry" id="R-14">
 <h3>usesScale<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-14</p>
 <div class="description">
@@ -5277,8 +5245,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-016">
+<p class="term-links"><a href="../reference/native/index.html#R-14">Conceptual definition</a><a href="../explore/index.html#R-14">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-016">
 <h3>usesScaleVersion<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016</p>
 <div class="description">
@@ -5297,8 +5265,8 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
-<div class="entity" id="RX-006">
+<p class="term-links"><a href="../reference/native/index.html#RX-016">Conceptual definition</a><a href="../explore/index.html#RX-016">Text neighborhood</a></p></div>
+<div class="entity entry" id="RX-006">
 <h3>versionOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006</p>
 <div class="description">
@@ -5323,7 +5291,7 @@ This section provides details for each class and property defined by Riskium.
 </dd>
 </dl>
 </div>
-</div>
+<p class="term-links"><a href="../reference/native/index.html#RX-006">Conceptual definition</a><a href="../explore/index.html#RX-006">Text neighborhood</a></p></div>
 </div><div id="annotationproperties" xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <h3 class="list" id="annotationproperties-headline">Annotation Properties</h3>
 <ul class="hlist">
@@ -5338,48 +5306,48 @@ This section provides details for each class and property defined by Riskium.
 <li><a href="#sourceId" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#sourceId"> <span>source Id</span> </a></li>
 <li><a href="#targetEndCardinality" title="https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#targetEndCardinality"> <span>target End Cardinality</span> </a></li>
 </ul>
-<div class="entity" id="isAbstractInSource">
+<div class="entity entry" id="isAbstractInSource">
 <h3>is Abstract In Source<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#isAbstractInSource</p>
 </div>
-<div class="entity" id="nativeDigest">
+<div class="entity entry" id="nativeDigest">
 <h3>native Digest<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#nativeDigest</p>
 </div>
-<div class="entity" id="ontoumlStereotype">
+<div class="entity entry" id="ontoumlStereotype">
 <h3>ontouml Stereotype<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#ontoumlStereotype</p>
 </div>
-<div class="entity" id="relationStereotype">
+<div class="entity entry" id="relationStereotype">
 <h3>relation Stereotype<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#relationStereotype</p>
 </div>
-<div class="entity" id="reviewDigest">
+<div class="entity entry" id="reviewDigest">
 <h3>review Digest<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#reviewDigest</p>
 </div>
-<div class="entity" id="scopeNote">
+<div class="entity entry" id="scopeNote">
 <h3>scope Note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#scopeNote</p>
 </div>
-<div class="entity" id="sourceDigest">
+<div class="entity entry" id="sourceDigest">
 <h3>source Digest<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#sourceDigest</p>
 </div>
-<div class="entity" id="sourceEndCardinality">
+<div class="entity entry" id="sourceEndCardinality">
 <h3>source End Cardinality<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#sourceEndCardinality</p>
 </div>
-<div class="entity" id="sourceId">
+<div class="entity entry" id="sourceId">
 <h3>source Id<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#sourceId</p>
 </div>
-<div class="entity" id="targetEndCardinality">
+<div class="entity entry" id="targetEndCardinality">
 <h3>target End Cardinality<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
 <p><strong>IRI:</strong> https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#targetEndCardinality</p>
 </div>
 </div><div id="legend">
-<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="section-6">Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
@@ -5390,7 +5358,6 @@ This section provides details for each class and property defined by Riskium.
 <h2 class="list" id="ack">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
 The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
-<p>WIDOCO 1.4.25 output modified by Riskium: static table of contents and Markdown, explicit release metadata, local navigation and exact-graph downloads. No remote scripts, badge images or upload service. <a href="../../THIRD-PARTY-DOCUMENTATION.txt">Template notices</a>.</p></div>
 </div>
-</body>
-</html>
+</div>
+<h2 id="interpretation">Scope and evidence</h2><p>Restrictions, disjointness and other asserted axioms remain in the entries and exact RDF. The WebVOWL graph shows only named endpoints and subclass links. Neither a generated reference nor a successful reasoner check establishes domain adequacy or independent semantic acceptance. <a href="../guide/Evaluation.html">Evaluation and limitations</a> explains the executed evidence populations.</p><h2 id="namespaces">Namespace declarations</h2><table><thead><tr><th>Prefix</th><th>Namespace</th></tr></thead><tbody><tr><td>owl</td><td><code>http://www.w3.org/2002/07/owl#</code></td></tr><tr><td>rdf</td><td><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></td></tr><tr><td>rdfs</td><td><code>http://www.w3.org/2000/01/rdf-schema#</code></td></tr><tr><td>risk</td><td><code>https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#</code></td></tr><tr><td>xsd</td><td><code>http://www.w3.org/2001/XMLSchema#</code></td></tr></tbody></table><h2 id="reference-sources">Sources and generator</h2><p><a href="../guide/References.html">Research sources</a> · <a href="../reference/native/index.html">Complete conceptual catalog</a> · <a href="../guide/Publication.html">Model and distribution versions</a></p><p>Cross-reference generated by WIDOCO 1.4.25 using LODE. Riskium adds static navigation, authored context, local filtering, accessible styles and exact-source downloads. Upstream entity/axiom content is retained. <a href="../../THIRD-PARTY-DOCUMENTATION.txt">Template notices</a>.</p></div></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#abstract">Abstract</a></li><li><a href="#introduction">How to read this reference</a></li><li><a href="#section-3">Reference contents</a></li><li><a href="#overv">Riskium: Overview</a></li><li><a href="#crossreference">Cross-reference for Riskium classes, object properties and data properties</a></li><li><a href="#section-6">Legend</a></li><li><a href="#ack">Acknowledgments</a></li><li><a href="#interpretation">Scope and evidence</a></li><li><a href="#namespaces">Namespace declarations</a></li><li><a href="#reference-sources">Sources and generator</a></li></ul></aside></div><footer class="site-footer"><div><strong>Riskium</strong><p>An ontology for modeling enterprise risk knowledge.</p></div><div><a href="../guide/Citation.html">Citation and authors</a> · <a href="../guide/Limitations.html">Scope and limitations</a> · <a href="https://github.com/ArazSaieArasi3/riskium">Repository</a><p>Scientific content: CC BY 4.0 · Original software: MIT. Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi, for their respective contributions.</p></div></footer><script defer src="../assets/filter.js"></script></body></html>
