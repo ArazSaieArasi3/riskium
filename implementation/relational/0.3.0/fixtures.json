@@ -1,0 +1,75 @@
+{
+  "schema": "riskium-correction-fixed-oracles-v1",
+  "authorship": "Fixed before implementation from the accepted task, not generated from observed SQL output.",
+  "family": [
+    [
+      "urn:riskium:assessment:a1-v1",
+      "urn:riskium:assessment:r1-v1",
+      "REPORTED",
+      "0",
+      "urn:riskium:assessment:source"
+    ],
+    [
+      "urn:riskium:assessment:a1-v2",
+      "urn:riskium:assessment:r1-v2",
+      "REPORTED",
+      "0.25",
+      "urn:riskium:assessment:source"
+    ],
+    [
+      "urn:riskium:assessment:a1-v3",
+      "urn:riskium:assessment:r1-v3",
+      "UNKNOWN",
+      null,
+      "urn:riskium:assessment:other-source"
+    ]
+  ],
+  "lineage": [
+    [
+      "urn:riskium:assessment:a1-v1",
+      0
+    ],
+    [
+      "urn:riskium:assessment:a1-v2",
+      1
+    ],
+    [
+      "urn:riskium:assessment:a1-v3",
+      1
+    ]
+  ],
+  "old_result": [
+    "REPORTED",
+    "0"
+  ],
+  "new_result": [
+    "REPORTED",
+    "0.25"
+  ],
+  "native_predicate_inventory": "Exactly the existing profile 0.2.0 native predicates; no correction triple.",
+  "negative_cases": [
+    "CROSS_IDENTITY",
+    "MISSING_PARENT",
+    "UNISSUED_PARENT",
+    "SELF_EDGE",
+    "CYCLE",
+    "DUPLICATE_EDGE",
+    "REPLACE_EDGE",
+    "UPDATE_EDGE",
+    "DELETE_EDGE",
+    "EMPTY_REASON",
+    "MISSING_SOURCE",
+    "BAD_CALENDAR",
+    "EARLY_DECLARATION",
+    "ATOMIC_BUNDLE_FAILURE",
+    "FAILED_UPGRADE",
+    "RESTORE_TAMPER",
+    "CONFIGURATION_OFF",
+    "SCHEMA_DRIFT",
+    "LEDGER_DRIFT"
+  ],
+  "mutations": [
+    "DROP correction_update guard exposes an actual forbidden change",
+    "DROP correction_insert guard admits a cross-identity edge; restored-data audit must detect it"
+  ]
+}

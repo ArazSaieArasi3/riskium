@@ -1,0 +1,103 @@
+{
+  "schema": "riskium-assessment-correction-contract-v1",
+  "version": "0.3.0",
+  "parent_issues": [
+    35,
+    12
+  ],
+  "execution_issue": 40,
+  "baseline_commit": "96bdfb6373f0d38b0d5345505e0a4d123dc4c017",
+  "source_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "implementation/relational/0.2.0/003_assessment_tables.sql": "a173b662cdcb2aa0b52d734bcf93fd1fad8d4be2b3f0463b2fdc62be99438526",
+    "implementation/relational/0.2.0/003_assessment_guards.sql": "ecf432726dcf87c8e85f9a78392cad272bab93b3a0e081271506622a45ac2058",
+    "tools/relational_assessment.py": "70dbcbbe72e53d4eb36dc37e3fff3acb6f502b5b15f9376a3eb85d9bb6d11038"
+  },
+  "requirements": [
+    {
+      "id": "COR-01",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-11"
+      ],
+      "clauses": [
+        "C-03"
+      ],
+      "accept": "Populated v3 to v4 upgrade preserves every existing row, payload, graph and ledger; failed upgrade rolls back.",
+      "reject": "Silent old-schema mutation or promotion of an unverified database."
+    },
+    {
+      "id": "COR-02",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "clauses": [
+        "C-03",
+        "C-17"
+      ],
+      "accept": "An explicit immutable single-parent correction relates two issued versions of the same assessment identity; branches remain visible.",
+      "reject": "Cross-identity, missing/unissued/self/cyclic predecessor, duplicate/replace/update/delete edge."
+    },
+    {
+      "id": "COR-03",
+      "source_requirements": [
+        "RKRS-04",
+        "RKRS-11"
+      ],
+      "clauses": [
+        "C-04",
+        "C-17"
+      ],
+      "accept": "Atomic issue plus correction declaration; retain source, reason, canonical UTC recorded time and exact lexical values including UNKNOWN.",
+      "reject": "Partial issued bundle, missing provenance, overwritten old value or coerced missing value."
+    },
+    {
+      "id": "COR-04",
+      "source_requirements": [
+        "RKRS-05",
+        "RKRS-11"
+      ],
+      "clauses": [
+        "C-02",
+        "C-12",
+        "C-17"
+      ],
+      "accept": "Bound queries return original and corrected branches separately; correction versions are not independent corroboration.",
+      "reject": "Silent latest-wins selection or source truth/actual occurrence inferred from correction storage."
+    },
+    {
+      "id": "COR-05",
+      "source_requirements": [
+        "RKRS-11",
+        "RKRS-12"
+      ],
+      "clauses": [
+        "C-03"
+      ],
+      "accept": "Backup/reopen/dump restoration validates schema, ledger and stored semantics; exact native RDF from old and new version graphs is preserved.",
+      "reject": "Tampered restored lineage accepted or application correction exported as a native ontology property."
+    }
+  ],
+  "policy": {
+    "scope": "Same-identity assessment correction only; not arbitrary assertion/scenario/source admission.",
+    "correction_predicate": "Application metadata only; no native predicate added.",
+    "declaration": "Append immutable declaration after both versions are issued; declaration time must be no earlier than either recorded assessment time. No claim of causal/event/interval order.",
+    "branching": "One parent per corrected version; many children per prior version. No automatic latest or authoritative branch.",
+    "source": "Correction declaration source is distinct from assessment/result sources; none establishes independent support.",
+    "rdf": "Existing native named-graph projection is unchanged; correction lineage remains SQL metadata.",
+    "withheld_case_admissions": 11,
+    "unimplemented": [
+      "general assertion correction",
+      "source/scenario mapping",
+      "formula engine",
+      "workflow authorization",
+      "interval reasoning",
+      "PostgreSQL/private migration",
+      "independent acceptance"
+    ]
+  }
+}
