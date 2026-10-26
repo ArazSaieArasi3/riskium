@@ -1,0 +1,23 @@
+{
+  "schema": "riskium-consistency-preservation-v1",
+  "baseline_commit": "caf58628a6b6a02508c644dbcb53d7e298b9b5a7",
+  "audited_source": "f5053e62679a5086ab707fcedb87fc6e581455d4",
+  "protected_roots": [
+    "ontology",
+    "requirements",
+    "references",
+    "implementation",
+    "evaluation/hermit",
+    "evaluation/shacl",
+    "evaluation/owner-review",
+    "evaluation/independent-review",
+    "evaluation/manuscript-review",
+    "evaluation/relational",
+    "evaluation/releases",
+    "releases",
+    "docs/releases",
+    "docs/versions"
+  ],
+  "changed_protected_paths": [],
+  "checked_at": "2026-10-26T18:33:46.106846+00:00"
+}

@@ -22,6 +22,8 @@ The [manuscript readback](manuscript-readback.json) records fresh checks of the 
 
 The [Wiki readback](wiki-readback.json) binds a fresh independent Wiki Git fetch and byte comparison for all 23 files. The browser also confirmed the rendered traceability, formal-method and work-plan pages. The [Pages readback](pages-readback.json) binds the deployment's source commit and actual HTTP response bodies, including current and frozen outputs. Generated-source equality and deployed equality are separate checks; a historical readback never proves a later publication.
 
+The [release readback](release-readback.json) records fresh independent downloads of all six v0.3.2 assets and verifies all 586 archived source files. The eight earlier releases retain their registered asset IDs, digests, sizes and status, and all nine remote tags still identify their recorded source commits. Those older assets have fresh metadata/tag comparisons, not another full historical download. Fourteen protected source/evidence/frozen roots have no changes from the declared pre-audit baseline.
+
 ## Reproduce and use the gate
 
 Run `python tools/audit_consistency.py --check`, `python tools/build_reference.py --check`, `python tools/publication/build_wiki.py --check` and `python tools/publication/build_versioned_site.py --check --previous-ref HEAD^` in the pinned Python environment. The audit rejects missing/duplicate rows, stale source hashes and changed historical acceptance states. Five regression tests include deliberately removed native/claim rows, a stale binding and an attempted independent-acceptance promotion. The current aggregate candidate preparation includes this audit as its twenty-eighth gate.

@@ -1,0 +1,405 @@
+{
+  "schema": "riskium-consistency-release-readback-v1",
+  "observed_at": "2026-10-26T18:30:54.158474+00:00",
+  "latest": "v0.3.2",
+  "latest_release_id": 423408761,
+  "latest_assets_freshly_downloaded": [
+    {
+      "name": "artifact-versions.json",
+      "id": 675067228,
+      "bytes": 48093,
+      "sha256": "f1aedb567baed53664e7dc1e79e2f35383a77dee414d26bb17afcfb8a383d450",
+      "matched": true
+    },
+    {
+      "name": "freeze-receipt.json",
+      "id": 675067225,
+      "bytes": 61223,
+      "sha256": "de71abe8707403c811459db44ebd0009fd242565e88fc73a57c846b6224e744c",
+      "matched": true
+    },
+    {
+      "name": "release-notes.md",
+      "id": 675067226,
+      "bytes": 4176,
+      "sha256": "e6d93c4b39cf1cd0a6151195bc66617d7165afa65939b05caed6f4cac2bb6295",
+      "matched": true
+    },
+    {
+      "name": "riskium-v0.3.2-source.tar.gz",
+      "id": 675067227,
+      "bytes": 6396130,
+      "sha256": "4fbbc6981ccc5f1d3890eb85885ddf3159077b852710652fc5eb6e8ac6c9db25",
+      "matched": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "id": 675067229,
+      "bytes": 440,
+      "sha256": "f7d1c3ddf8425f440e42a4c1936173c4bc9ce83c28bbc2dda5cb1a5c699b2da3",
+      "matched": true
+    },
+    {
+      "name": "source-manifest.json",
+      "id": 675067241,
+      "bytes": 100708,
+      "sha256": "2fe3f06e92984b2c118f481953e3c41e58f9f5aefd3aa0e56ff81d313922ffc8",
+      "matched": true
+    }
+  ],
+  "downloaded_archive_source_files_verified": 586,
+  "all_previous_metadata_assets_unchanged": [
+    {
+      "tag": "v0.3.1-rc.1",
+      "release_id": 421068963,
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "id": 666769950,
+          "name": "riskium-v0.3.1-rc.1-freeze-evidence.tar.gz",
+          "size": 2090629,
+          "digest": "sha256:128bf37768e7f80fc7af4f62d6386a320cd9dc03adc4fd44371a625576de5879"
+        },
+        {
+          "id": 666727548,
+          "name": "riskium-v0.3.1-rc.1-source.tar.gz",
+          "size": 2770410,
+          "digest": "sha256:3ad85dacfccb67719dd7f16a8c7d69ed035e209f171162883ea08ae1dccb8181"
+        },
+        {
+          "id": 666769990,
+          "name": "SHA256SUMS.txt",
+          "size": 296,
+          "digest": "sha256:9f965918eebb3c944206e4c43bb636c984a664358cd284b7d8ae317f991e172f"
+        },
+        {
+          "id": 666727509,
+          "name": "source-manifest.json",
+          "size": 24807,
+          "digest": "sha256:f5e0f3db56bb3b721e62bf17778d67df6684c5add1dcec638b6157662da3088a"
+        }
+      ]
+    },
+    {
+      "tag": "v0.3.1-rc.2",
+      "release_id": 421791603,
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "id": 668994904,
+          "name": "candidate-receipt.json",
+          "size": 22067,
+          "digest": "sha256:17201352dd35c87119af8e4e35ae0abc183b165cdef5483b8504b8ee215550d5"
+        },
+        {
+          "id": 668994909,
+          "name": "release-notes.md",
+          "size": 3741,
+          "digest": "sha256:821425d13891a9dc2b1483d236452371dc38e924bb6fcbbaea5c9ad060bdea4f"
+        },
+        {
+          "id": 668994903,
+          "name": "riskium-v0.3.1-rc.2-source.tar.gz",
+          "size": 3710362,
+          "digest": "sha256:8c7bc08ca953d9badee27917458790c7af7c08148ef9c1729d48232e296daa79"
+        },
+        {
+          "id": 668994908,
+          "name": "SHA256SUMS.txt",
+          "size": 359,
+          "digest": "sha256:df4c87497ddc1d01e1c75a76d3334baf9f52b705ba45428f176194c49880ea79"
+        },
+        {
+          "id": 668994905,
+          "name": "source-manifest.json",
+          "size": 44576,
+          "digest": "sha256:6d38b95c17bf4913c1a979f28d1d3371829744c553afde94c1c0e9d30b282ffc"
+        }
+      ]
+    },
+    {
+      "tag": "v0.3.1-rc.3",
+      "release_id": 421829168,
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "id": 669092263,
+          "name": "candidate-receipt.json",
+          "size": 23859,
+          "digest": "sha256:b1014b75054f23d55431ea4d85929d67cea9f21bd1bdbc50fcb1758d24e4df9c"
+        },
+        {
+          "id": 669092262,
+          "name": "release-notes.md",
+          "size": 5313,
+          "digest": "sha256:dfcbcc741f28b8b57d18755b5eb2137c08dc4d97b28e6fb37a634d6b0e4e79ea"
+        },
+        {
+          "id": 669092260,
+          "name": "riskium-v0.3.1-rc.3-source.tar.gz",
+          "size": 3794488,
+          "digest": "sha256:a23995f9b81086acdce5ca79502da48d4a5744897f5ecadce79d7236ffe5f4d9"
+        },
+        {
+          "id": 669092264,
+          "name": "SHA256SUMS.txt",
+          "size": 359,
+          "digest": "sha256:7aecaee1df3e0f103c09fc7dae2c43b98a7f624b10ac6cf3cd736e9091c4402a"
+        },
+        {
+          "id": 669092265,
+          "name": "source-manifest.json",
+          "size": 46994,
+          "digest": "sha256:88a2d4fc07a8c4f0f04b2ce3fa69cd327e9b47f44334797b6dc90f1835f666eb"
+        }
+      ]
+    },
+    {
+      "tag": "v0.3.1-rc.4",
+      "release_id": 421883152,
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "id": 669231735,
+          "name": "candidate-receipt.json",
+          "size": 25724,
+          "digest": "sha256:a213bd31cc7fe843911fd083818752f55dbd4f7fd71999318eaacce8cecae0fd"
+        },
+        {
+          "id": 669231739,
+          "name": "release-notes.md",
+          "size": 5558,
+          "digest": "sha256:10c4bd4759bc8f89c36ba838a02e50dc93992cc6d7f0aab430810ab368222497"
+        },
+        {
+          "id": 669231736,
+          "name": "riskium-v0.3.1-rc.4-source.tar.gz",
+          "size": 3928726,
+          "digest": "sha256:a0d2ff8542896d4d6ddd13e26bcf687dc98e633085990e57130e3e40424dd085"
+        },
+        {
+          "id": 669231732,
+          "name": "SHA256SUMS.txt",
+          "size": 359,
+          "digest": "sha256:62a4a21e61447d361d800a222dcda7f3fc52a77799f780d3f164663821237d40"
+        },
+        {
+          "id": 669231734,
+          "name": "source-manifest.json",
+          "size": 49398,
+          "digest": "sha256:6208b053f142f4cedbdb3227d23c2a44f13799d9abd09b441716a32d03912725"
+        }
+      ]
+    },
+    {
+      "tag": "v0.3.1-rc.5",
+      "release_id": 421994904,
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "id": 669513376,
+          "name": "candidate-receipt.json",
+          "size": 27348,
+          "digest": "sha256:f723ccdac5564137e2339547bc62fb51788c98a3e20c1d15c8340eb534ff843b"
+        },
+        {
+          "id": 669513379,
+          "name": "release-notes.md",
+          "size": 5516,
+          "digest": "sha256:afe8ddf7a68feedeb05a8832feef4679f09c81fd264ea7dd62a9f569053963ea"
+        },
+        {
+          "id": 669513380,
+          "name": "riskium-v0.3.1-rc.5-source.tar.gz",
+          "size": 3977287,
+          "digest": "sha256:dd7c3291e364fd217e4125fe9f6366d026701f1d8724a5f43285b30987c9cfe5"
+        },
+        {
+          "id": 669513378,
+          "name": "SHA256SUMS.txt",
+          "size": 359,
+          "digest": "sha256:6c57130d8ae61612fbc7ff780368bf9d1c68ab9cc15081cd12e3b733e8ffb40c"
+        },
+        {
+          "id": 669513390,
+          "name": "source-manifest.json",
+          "size": 52004,
+          "digest": "sha256:e7302447b8384a6b1c85ae86ab384cf54ab31955f2a807e50363ffb3df16efad"
+        }
+      ]
+    },
+    {
+      "tag": "v0.3.1-rc.6",
+      "release_id": 422271735,
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "id": 670283529,
+          "name": "candidate-receipt.json",
+          "size": 29185,
+          "digest": "sha256:f591c1b943ad8b18cf01fdc3263c2aee899301b937d4f34c53c7a6b5a347bef1"
+        },
+        {
+          "id": 670283531,
+          "name": "release-notes.md",
+          "size": 7131,
+          "digest": "sha256:d6591fe85872704f9f6a46110a8c9bbd1d9f887e8d7483e4263294361f8b4afb"
+        },
+        {
+          "id": 670283534,
+          "name": "riskium-v0.3.1-rc.6-source.tar.gz",
+          "size": 4012062,
+          "digest": "sha256:85a6f33b4f04bb10c9eaa732b8544fedad3616583a1f4b9b6712449edd9e6941"
+        },
+        {
+          "id": 670283533,
+          "name": "SHA256SUMS.txt",
+          "size": 359,
+          "digest": "sha256:040cd73a22a2912f44d58c1498438a5aa9176a12d8cd47b9765146bc0dddda1c"
+        },
+        {
+          "id": 670283530,
+          "name": "source-manifest.json",
+          "size": 54752,
+          "digest": "sha256:4622dbecef98ca45958b7a7f29d473982798ac8a6a52dade7455d5d3893081c6"
+        }
+      ]
+    },
+    {
+      "tag": "v0.3.1-rc.7",
+      "release_id": 422538932,
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "id": 671379800,
+          "name": "candidate-receipt.json",
+          "size": 31551,
+          "digest": "sha256:e9aab345e8a6a8d4f98aa41a0ba118578547b6e4b12c2f287c17986f477e0c35"
+        },
+        {
+          "id": 671379805,
+          "name": "release-notes.md",
+          "size": 8687,
+          "digest": "sha256:eca75c455dbe417fcded69eeef41ae87031cd100acfa7ab347f46c69f90f67f5"
+        },
+        {
+          "id": 671379807,
+          "name": "riskium-v0.3.1-rc.7-source.tar.gz",
+          "size": 4054494,
+          "digest": "sha256:9c15efa1aa55bc4e7c814a92a11422578956b8dcb1444491da2307b55e11356b"
+        },
+        {
+          "id": 671379806,
+          "name": "SHA256SUMS.txt",
+          "size": 359,
+          "digest": "sha256:f521eef1542ec81537d4ca3525714d136b97fbe183882b4abf26f2d739f4318a"
+        },
+        {
+          "id": 671379803,
+          "name": "source-manifest.json",
+          "size": 57884,
+          "digest": "sha256:19da413e8c3498c011654d661e01f20f83acdab35522fb1c5bfdbfa8ec427a90"
+        }
+      ]
+    },
+    {
+      "tag": "v0.3.1",
+      "release_id": 422793950,
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "id": 672531373,
+          "name": "artifact-versions.json",
+          "size": 9648,
+          "digest": "sha256:37a6465e90561a49fae27853f869ca708ed8907981671564d1a4228c270356e9"
+        },
+        {
+          "id": 672531375,
+          "name": "freeze-receipt.json",
+          "size": 35223,
+          "digest": "sha256:ca0fb093f6ed4eb504e34c1066ea5a26599ef60c941672aee50ad165aad2cca5"
+        },
+        {
+          "id": 672531371,
+          "name": "release-notes.md",
+          "size": 4276,
+          "digest": "sha256:a91573cee3a4f4ceaa3033ecde7f9be738d7f74eea799babc8c11f1e1c8830a1"
+        },
+        {
+          "id": 672531369,
+          "name": "riskium-v0.3.1-source.tar.gz",
+          "size": 4181111,
+          "digest": "sha256:47243d1d75a6704e9b51fff2cb4cc410c04d9f6939e2770fbaf94a04f67e02b7"
+        },
+        {
+          "id": 672531370,
+          "name": "SHA256SUMS.txt",
+          "size": 440,
+          "digest": "sha256:01be1d73c2aa958262ae0a3c0752184316d27954d0a18b9215644fcaee5acec6"
+        },
+        {
+          "id": 672531396,
+          "name": "source-manifest.json",
+          "size": 63224,
+          "digest": "sha256:10116685bcad4a36a99191d12d38079f05409234c4b60ff9a6e89fcaa58eae56"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "tag": "v0.3.1-rc.1",
+      "source_commit": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+      "unchanged": true
+    },
+    {
+      "tag": "v0.3.1-rc.2",
+      "source_commit": "5f10ad103af5818cb99331a9d71e8b5f518e93de",
+      "unchanged": true
+    },
+    {
+      "tag": "v0.3.1-rc.3",
+      "source_commit": "679ff6745bbacbbce802fb6ef78a51e53dba7e39",
+      "unchanged": true
+    },
+    {
+      "tag": "v0.3.1-rc.4",
+      "source_commit": "dfa9674bfef9c0ca8d4b15015c677cd122bed29c",
+      "unchanged": true
+    },
+    {
+      "tag": "v0.3.1-rc.5",
+      "source_commit": "a945beb8839228d007796c95745a89ce7457e7fe",
+      "unchanged": true
+    },
+    {
+      "tag": "v0.3.1-rc.6",
+      "source_commit": "94ec64838a46b56b0da1a7b82bb926226b18d788",
+      "unchanged": true
+    },
+    {
+      "tag": "v0.3.1-rc.7",
+      "source_commit": "6ec9ffc7f10f6495db1b226864bb3835233a2dc1",
+      "unchanged": true
+    },
+    {
+      "tag": "v0.3.1",
+      "source_commit": "8afe169968b5c1396c02834dbc499af691b894b4",
+      "unchanged": true
+    },
+    {
+      "tag": "v0.3.2",
+      "source_commit": "67ebe1e9bd8b2e82649ed4ff43bfb1620c13bd48",
+      "unchanged": true
+    }
+  ],
+  "limits": "Previous eight releases have fresh metadata/digest/tag comparisons, not a fresh download of every historical asset. New stable publication is #41."
+}

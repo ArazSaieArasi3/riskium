@@ -1,0 +1,89 @@
+{
+  "schema": "riskium-consistency-completion-v1",
+  "issue": 39,
+  "status": "COMPLETED",
+  "completed_at": "2026-10-26T22:14:35.811109+03:30",
+  "baseline_commit": "caf58628a6b6a02508c644dbcb53d7e298b9b5a7",
+  "first_audit_implementation": "6220a9d706e0be544ee6cbeb918fa5c31793058a",
+  "audited_source": "f5053e62679a5086ab707fcedb87fc6e581455d4",
+  "versions": {
+    "model": "0.3.1",
+    "orsd": "0.4.3",
+    "drsd": "0.1.0",
+    "manuscript": "7.0.8",
+    "assessment_correction": "0.3.0 / migration 4",
+    "latest_published_distribution": "v0.3.2",
+    "documentation": "Current unversioned development explanations; two registered frozen snapshots unchanged"
+  },
+  "summary": {
+    "trace_rows": 423,
+    "families": {
+      "REQUIREMENT": 28,
+      "MODEL": 306,
+      "MANUSCRIPT": 65,
+      "AMENDMENT": 7,
+      "RETAINED_CLAIM": 12,
+      "CORRECTION_REQUIREMENT": 5
+    },
+    "inventoried_source_files": 495,
+    "findings_fixed": 6,
+    "critical_unresolved": 0,
+    "software_tests": 227,
+    "aggregate_gates": 28,
+    "hosted_workflows": 7,
+    "wiki_files_matched": 23,
+    "wiki_commit": "8f2192c1a3a92c2767c622171922b8b49a0ee7cd",
+    "https_bodies_matched": 175,
+    "stable_assets_downloaded": 6,
+    "stable_archive_files_verified": 586,
+    "remote_tags_verified": 9
+  },
+  "historical_outcomes": {
+    "hermit": {
+      "PASS": 281,
+      "NOT_RUN": 14
+    },
+    "shacl": {
+      "PASS": 341,
+      "NOT_RUN": 17,
+      "PARTIAL": 1
+    },
+    "independent_ratings": 0
+  },
+  "evidence_sha256": {
+    "README.md": "74b7a10fd851145014d0318382ac416a2a08d204d4102066702be181692a135e",
+    "traceability.json": "53b9cc81ac4f4f85fc71a2bb752acc5b47aabcc114debfcf3db7497703ad2cf9",
+    "traceability.csv": "befcba3e48efdb023326f3419771dac676058fc8994fd3262fef17e2549bd095",
+    "inventory.json": "ffa45c9419f80f759a4508cc5f591130373458827021689c9c97af2290aed7c5",
+    "findings.json": "db661cf730602b31879e760b136c6a8a6639bac7410d8bc7cad88fa0c021949f",
+    "manuscript-readback.json": "fce5fdf17541b40e98baea129938a7dd80ae5e4d3ffb7aa5c319e9fb0ee51380",
+    "wiki-readback.json": "6e2f3a5e4f44e75a7625ef02f1f5bfebf97557521261bb54b110415f61ef6edf",
+    "pages-readback.json": "04db22f4dac445b2065224bca5cc0a1f789261ff9c9d50079622a7efa2f4db92",
+    "release-readback.json": "9483bfabe85a2bda64693bbf096ef56da3637b0b24001c0c90c7c0bee8612143",
+    "preservation.json": "1adc797cbed16626301319ad09a39af94aa4bec0cf2dedf88d7b5a9484cc775f",
+    "software-tests.json": "cae8f3301651bd430814dd23613bb449734373843e6b3b2b7020b5877e6db01b",
+    "hosted-checks.json": "053d1b59939b567e3129531bfea2d0d1edd1e730b348b1b8c3cc02e2bf370420",
+    "screenshots/wiki-traceability.jpg": "6a710c543149c04aaf55916a41c605fd262ad11fefa3536d1beb143ae52fa8d9",
+    "screenshots/pages-traceability.jpg": "5e3f08ffc74fa90ffff776305b58ab71f61e3740dbd0f54ed141fe61918777dd"
+  },
+  "limits": [
+    "Trace completeness is accounting, not ontology correctness or original MUST fulfillment.",
+    "No new HermiT or original historical SHACL execution is claimed by the audit; later scoped replays retain their own receipts.",
+    "Thirteen private historical companion claim rows were retained, not freshly replayed; no private article/database binaries are included.",
+    "Human comprehension and independent scientific/user acceptance were not measured.",
+    "The final evidence-only commit must leave all audited source/Pages/Wiki projections unchanged.",
+    "No new stable tag/assets are published here. #41 must select its exact component set, rerun affected checks and independently verify new assets after publication."
+  ],
+  "next_issue": 41,
+  "remaining_open_issues": [
+    4,
+    5,
+    12,
+    13,
+    23,
+    35,
+    36,
+    37,
+    41
+  ]
+}
