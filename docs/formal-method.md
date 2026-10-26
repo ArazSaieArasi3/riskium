@@ -36,6 +36,8 @@ A static graph cannot demonstrate that an issued payload survived an attempted u
 
 The assessment supplement covers selected subclauses of eleven constraints. It does not implement their complete original meanings. In particular, preserving a reported/computed distinction is not an arithmetic engine; storing a time token is not an interval or timezone policy. PostgreSQL, private migration and real workloads remain separate acceptance work.
 
+The later [assessment-correction overlay 0.3.0](../implementation/relational/0.3.0/README.md) adds migration 4 and an immutable application declaration between issued versions of one assessment identity. Its 36 fixed scenarios retain original values, source qualifiers and conflicting branches; three native graph comparisons show that no correction predicate was added to OWL. This does not implement general assertion/scenario correction or identify independent corroboration. Reproduce with `python tools/run_relational_correction.py --check` and `python tools/build_correction_inventory.py --check`. The original accepted-scope rows below remain unchanged.
+
 ## Reproduce without replacing historical evidence
 
 Use a clean checkout of the desired source and record its commit first. Commands below run from the repository root. Create the appropriate environment from `tools/requirements-hermit.txt`, `tools/requirements-shacl.txt` or `tools/requirements-owl.txt`; documentation dependencies are in `tools/publication/requirements.txt`. The [reproduction guide](reproducibility.md) gives installation and the full module sequence.

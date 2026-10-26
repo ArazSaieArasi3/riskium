@@ -22,7 +22,7 @@ The [profile policy](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5
 
 Conflicting graphs deliberately preserve multiple answers and are not claimed conformant managed instances. An unbound value means no asserted match, not falsehood or an OWL negative assertion. These queries do not establish actual event occurrence, mandate authority, independent source corroboration, immutable history, verified arithmetic or standards compliance.
 
-The eight new synthetic contracts execute 40 queries (32 answer cases plus eight mutation controls). Only CQ01–CQ05 match the original planning snapshot's synthetic population; CQ06–CQ08 still need independent data preparation and acceptance in #13/#7. All 28 public requirement/scope/CQ identities, current evidence and gaps are in [the traceability ledger](Traceability). Trace completeness does not imply that all requirements are accepted.
+The eight new synthetic contracts execute 40 queries (32 answer cases plus eight mutation controls). Only CQ01–CQ05 match the original planning snapshot's synthetic population; CQ06–CQ08 still need independent data preparation and acceptance in #13/#7. All 28 public requirement/scope/CQ identities, current evidence and gaps are in [the traceability ledger](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/traceability/README.md). Trace completeness does not imply that all requirements are accepted.
 
 ```sh
 python3 -m venv .venv-owl

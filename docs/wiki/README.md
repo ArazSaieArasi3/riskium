@@ -15,3 +15,5 @@ Fresh read-only Git readback on 24 October at Wiki commit `709bcf003a43b692eb543
 The Pages upgrade updates the shared guide sources and generated Markdown in this directory. This records repository parity; it does not claim a new live Wiki synchronization. Current publication evidence belongs to `evaluation/pages-upgrade/`.
 
 Formal reference task #33 projects the same method and all 25 clause routes into `Formalization.md` and Pages. This records source parity only; a new native Wiki publish/readback is not included in that receipt. Gate #39 explicitly verifies the live channel before the next stable freeze.
+
+The consistency audit #39 records the subsequent live synchronization and independent source readback in [evaluation/consistency](../../evaluation/consistency/). The older readbacks above retain their dates; only that new record can establish current live parity.

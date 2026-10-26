@@ -35,7 +35,7 @@
     "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
     "references/corpus.json": "eb23983d2194c19d8b115da147b14cad89607e3e63181217add4e1e7df0f16f7",
     "tools/build_formal_reference.py": "979a0768c2966be0784065a14e39822ab445fba105afc4e1d5838785d7c171a7",
-    "tools/publication/formal-method-introduction.md": "1192de2e3b4219d2ebe9fff11d1ab35b0eda8c67fb4ce8e3e0697653d24a2ba9"
+    "tools/publication/formal-method-introduction.md": "04d60e739465d03c590c9dbbdf23c8ac6bd01d9261f5c3aa3ce050785b3b5ff3"
   },
   "constraints": [
     {

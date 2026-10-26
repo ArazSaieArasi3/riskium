@@ -6,11 +6,11 @@
     "owl_triples": 2087
   },
   "documentation_note": "Post-release documentation projection of immutable semantic inputs; not an additional semantic validation run.",
-  "guide_registry_sha256": "ba327b0788a149c64a1159d065e6601430d1786c9e18f9249f551b4ba08dc622",
+  "guide_registry_sha256": "1c09e7951f4eced92855d61cac3b112d8b2eafb67d327da190aa62f4c7c87063",
   "guide_sources_sha256": {
     "AUTHORS.md": "c20830d719b9b1d1b13d85cac69253274a974edb79b3a2c56148fd900d038447",
     "docs/artifact-versions.md": "656b0f86e7faa7d3c4f3a88285d1753e46c0e432f07ef9a5f8712be140ce6315",
-    "docs/formal-method.md": "c5fa66386ebc42fcd138ef6dbb615dc3049b4cec12544d27449dff5f451b314b",
+    "docs/formal-method.md": "245dc6cbf56d56472ed61e9b8274eb4c9d641b2e1e8a445cd88e882016b6ba26",
     "docs/guides/Evaluation.md": "7b4ebb2bb495b08a11febf07613a3e53cc21c73a51bd0b77c101923d54179e38",
     "docs/guides/Home.md": "579f8a4b16a3f9c1f237e1df9d09439d5c1cf2a587c65039e43edd3e124d5b22",
     "docs/guides/Publication.md": "49508373d062b1cef4ded403bfe1bedde4a25131a6bb1799c613e9e44a9e4596",
@@ -22,10 +22,10 @@
     "docs/portal-limitations.md": "0fe5db2551302193159e52fbec1f04da369bd811f6f951e0ee7ffaa673d3e131",
     "docs/publication-comparison.md": "a76039ecb1062028494f8a0a403167175304253aed4bec0d8cacbea90b1866e5",
     "docs/relational-assurance.md": "595f9a8e6a1bf0d2e46b4c38ab308b5dca475feb6e764051d60cb17d8aad3337",
-    "docs/reproducibility.md": "41e4fdef982a4720d48c0121f661b1c64ac9eeef564c247f7d0d14a9a1377296",
-    "docs/work-plan.md": "58a247f903c10fd0cc470bd6ef66f853a6b4a0f7ae717cdf4d5f4f3674fdaa63",
+    "docs/reproducibility.md": "eb05fe63474c50ad5607c4b0d43f391f00c88b805f993489c09bc5075db7c251",
+    "docs/traceability.md": "e7242f19206c13b4332309095e96d31cc6ffe9a91b208be70ad6ba5fa84aab6e",
+    "docs/work-plan.md": "f9292ec13a2d72ec306ed857e199982475f92c8f354688e830fedbb780dea0f9",
     "evaluation/quality/README.md": "d1d50ca91657686799f8299e821e3df3862fabcd047342dbe742f00f416a7d32",
-    "evaluation/traceability/README.md": "851b61c9a5298aa4b7c0ea6df92039c8fbc0f3f44e06e8ee1295d385b8ef9a82",
     "references/README.md": "437a09488a721f6710d3153080c0588408e495221a8a9bb77704848091a63a6d",
     "requirements/cq/README.md": "ae4e6c8641abbe3ccedfb4cac81e597dfddf9629ed5e17802d973664139db16c",
     "requirements/ontology-requirements.md": "68e09fd8cce2805da2d2fa0f29f76b0601282c598855d99a41631dccfaf9ff33"

@@ -1,0 +1,77 @@
+{
+  "schema": "riskium-consistency-findings-v1",
+  "baseline_commit": "caf58628a6b6a02508c644dbcb53d7e298b9b5a7",
+  "findings": [
+    {
+      "id": "DC-01",
+      "severity": "MAJOR",
+      "locations": [
+        "README.md"
+      ],
+      "finding": "Active navigation still called closed #33 the next task and omitted the completed SQL correction packet.",
+      "resolution": "Route current work to the central consistency guide and next stable release #41; preserve dated milestones.",
+      "verification": "Current-navigation text guards and source/Pages link checks",
+      "status": "FIXED"
+    },
+    {
+      "id": "DC-02",
+      "severity": "MAJOR",
+      "locations": [
+        "GitHub Wiki: 14 reader pages"
+      ],
+      "finding": "Fresh Wiki clone 1c330da134e9b13528760a5cd8f223d0d680d4e6 differed from 14 current shared projections, including the formal-method page.",
+      "resolution": "Publish the generated current sources and independently fetch/read back all 21 guides plus sidebar/footer.",
+      "verification": "All 23 live Wiki files equal generated sources at independently fetched commit; rendered key pages confirmed. See wiki-readback.json.",
+      "status": "FIXED"
+    },
+    {
+      "id": "DC-03",
+      "severity": "MINOR",
+      "locations": [
+        "docs/manuscript-review-checklist.md"
+      ],
+      "finding": "The active checklist pointed to historical 7.0.7 as its completed review without the approved 7.0.8 successor.",
+      "resolution": "Identify 7.0.7 as the retained claim baseline and link the actual approved 7.0.8 receipt and current binary readback.",
+      "verification": "Both delivered binary SHA-256 values and all seven amended paragraph XML texts match",
+      "status": "FIXED"
+    },
+    {
+      "id": "DC-04",
+      "severity": "MAJOR",
+      "locations": [
+        "evaluation/traceability/ledger.json",
+        "evaluation/formal-reference/register.json",
+        "evaluation/relational/correction/traceability.json",
+        "evaluation/manuscript-review/ledger.json"
+      ],
+      "finding": "Valid separate ledgers had no single current join spanning native elements, requirements, correction requirements and manuscript claims.",
+      "resolution": "Publish a normalized, version-bound 423-row trace table and CSV, retaining historical outcomes and withdrawn manuscript claims.",
+      "verification": "Exact family ID sets, source digests, evidence/engine IDs, owner scopes, known limitations and component guards",
+      "status": "FIXED"
+    },
+    {
+      "id": "DC-05",
+      "severity": "MINOR",
+      "locations": [
+        "tools/publication/formal-method-introduction.md"
+      ],
+      "finding": "The current method introduction explained SQL 0.2.0 without the later bounded correction overlay 0.3.0.",
+      "resolution": "Add a narrowly worded correction paragraph and reproduction commands; do not expand native semantics or owner acceptance.",
+      "verification": "Regenerated formal reference and source/Wiki/Pages parity",
+      "status": "FIXED"
+    },
+    {
+      "id": "DC-06",
+      "severity": "MINOR",
+      "locations": [
+        "README.md"
+      ],
+      "finding": "The active WebVOWL links retained an earlier cache token instead of the current presentation entry token.",
+      "resolution": "Generate the current entry route from the publication presentation source and update both active links.",
+      "verification": "Generated graph route and public Pages manifest/readback",
+      "status": "FIXED"
+    }
+  ],
+  "critical_unresolved": 0,
+  "release_boundary": "Audit closure is not new stable publication. #41 must pin final selection/source, rerun affected checks and verify newly published assets."
+}

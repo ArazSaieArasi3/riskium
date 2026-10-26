@@ -1,197 +1,268 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Riskium enterprise risk ontology: conceptual definitions, bounded OWL reference, evaluation and reproducible sources."><title>Traceability — Riskium</title><link rel="stylesheet" href="../assets/portal.css?v=0987488cda1a"></head><body class="reading-page" data-template="riskium-pages-1"><a class="skip-link" href="#content">Skip to content</a><header class="site-header"><div class="brand-row"><a href="../index.html">Riskium</a><p>Enterprise risk knowledge</p><div class="header-tools"><a href="../reference/search.html">Find a term</a><a href="../../versions/index.html">Versions</a></div></div><nav class="primary-nav" aria-label="Primary"><a href="../index.html">Overview</a><a href="../reference/native/index.html">Conceptual reference</a><a href="../widoco/index-en.html">OWL reference</a><a href="Evaluation.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../webvowl/index.html?v=38df5ef406a0">WebVOWL</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="publication-context"><span>Current documentation · Model <strong>0.3.1</strong></span><span>Source distribution <a href="https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.2">v0.3.2</a> · <a href="Publication.html">Version policy</a></span></div><details class="mobile-navigation"><summary>Documentation and page contents</summary><div><h2>Understand</h2><ul><li><a href="Home.html">Home</a></li><li><a href="Scope.html">Scope</a></li><li><a href="Overview.html">Overview</a></li><li><a href="Decisions.html">Modeling decisions</a></li><li><a href="Using-the-Model.html">Using the model</a></li></ul><h2>Inspect and evaluate</h2><ul><li><a href="Requirements.html">Requirements</a></li><li><a href="Competency-Questions.html">Competency questions</a></li><li><a href="Formalization.html">Formalization</a></li><li><a href="Evaluation.html">Evaluation</a></li><li><a href="Quality.html">Quality</a></li><li><a aria-current="page" href="Traceability.html">Traceability</a></li><li><a href="Database-Assurance.html">Database assurance</a></li><li><a href="Reproduce.html">Reproduce</a></li></ul><h2>Sources and publication</h2><ul><li><a href="Visualization.html">Visualization</a></li><li><a href="References.html">References</a></li><li><a href="Citation.html">Citation</a></li><li><a href="Limitations.html">Limitations</a></li><li><a href="Artifact-Versions.html">Artifact versions</a></li><li><a href="Publication.html">Publication</a></li><li><a href="Publication-Comparison.html">Publication comparison</a></li><li><a href="Work-Plan.html">Work and release plan</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a term</a></li><li><a href="../reference/diagrams/index.html">Diagrams</a></li><li><a href="../publication-manifest.json">Source record</a></li><li><a href="../../versions/index.html">Documentation versions</a></li><li><a href="https://github.com/ArazSaieArasi3/riskium/wiki">GitHub Wiki</a></li></ul><h2>On this page</h2><ul><li><a href="#evidence-and-reproduction">Evidence and reproduction</a></li></ul></div></details><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Understand</h2><ul><li><a href="Home.html">Home</a></li><li><a href="Scope.html">Scope</a></li><li><a href="Overview.html">Overview</a></li><li><a href="Decisions.html">Modeling decisions</a></li><li><a href="Using-the-Model.html">Using the model</a></li></ul><h2>Inspect and evaluate</h2><ul><li><a href="Requirements.html">Requirements</a></li><li><a href="Competency-Questions.html">Competency questions</a></li><li><a href="Formalization.html">Formalization</a></li><li><a href="Evaluation.html">Evaluation</a></li><li><a href="Quality.html">Quality</a></li><li><a aria-current="page" href="Traceability.html">Traceability</a></li><li><a href="Database-Assurance.html">Database assurance</a></li><li><a href="Reproduce.html">Reproduce</a></li></ul><h2>Sources and publication</h2><ul><li><a href="Visualization.html">Visualization</a></li><li><a href="References.html">References</a></li><li><a href="Citation.html">Citation</a></li><li><a href="Limitations.html">Limitations</a></li><li><a href="Artifact-Versions.html">Artifact versions</a></li><li><a href="Publication.html">Publication</a></li><li><a href="Publication-Comparison.html">Publication comparison</a></li><li><a href="Work-Plan.html">Work and release plan</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a term</a></li><li><a href="../reference/diagrams/index.html">Diagrams</a></li><li><a href="../publication-manifest.json">Source record</a></li><li><a href="../../versions/index.html">Documentation versions</a></li><li><a href="https://github.com/ArazSaieArasi3/riskium/wiki">GitHub Wiki</a></li></ul></aside><main id="content" tabindex="-1"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Riskium</a><span aria-hidden="true">/</span><span>Traceability</span></nav><h1 id="requirement-and-competency-question-traceability">Requirement and competency-question traceability</h1>
-<blockquote>
-<p>This is the original source-bound requirement/CQ checkpoint, not a replacement for later dated SQL/source/owner/publication evidence. Historical acceptance states remain unchanged; current completion and remaining work are identified in the Work and release plan.</p>
-</blockquote>
-<p>Conceptual design 0.3.1; semantic source <code>cfb85905ab37549c7090f00a41ca62cdd3364ab5</code>. This post-prerelease author trace review completes #6 as <strong>evidence reconciliation</strong>, not full requirement or independent scientific acceptance.</p>
-<p>All <strong>12 requirements, eight scope obligations and eight CQs</strong> have source hashes, exact model identifiers, acceptance/rejection criteria, current evidence and named remaining routes. The 20 Combined baseline identities are reconciled; eight scope rows remain outside the 674-row denominator.</p>
-<p>Eight query contracts executed <strong>40 local SPARQL queries: 32 fixed answer cases and eight successfully executed, detected query mutants</strong>. Five original synthetic-task contracts now have bounded execution. CQ06–CQ08 have synthetic controls only; their declared independent evidence-preservation population remains NOT_RUN in #13. Query execution does not prove native-only adequacy or real-data acceptance.</p>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Riskium enterprise risk ontology: conceptual definitions, bounded OWL reference, evaluation and reproducible sources."><title>Traceability — Riskium</title><link rel="stylesheet" href="../assets/portal.css?v=0987488cda1a"></head><body class="reading-page" data-template="riskium-pages-1"><a class="skip-link" href="#content">Skip to content</a><header class="site-header"><div class="brand-row"><a href="../index.html">Riskium</a><p>Enterprise risk knowledge</p><div class="header-tools"><a href="../reference/search.html">Find a term</a><a href="../../versions/index.html">Versions</a></div></div><nav class="primary-nav" aria-label="Primary"><a href="../index.html">Overview</a><a href="../reference/native/index.html">Conceptual reference</a><a href="../widoco/index-en.html">OWL reference</a><a href="Evaluation.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../webvowl/index.html?v=38df5ef406a0">WebVOWL</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="publication-context"><span>Current documentation · Model <strong>0.3.1</strong></span><span>Source distribution <a href="https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.2">v0.3.2</a> · <a href="Publication.html">Version policy</a></span></div><details class="mobile-navigation"><summary>Documentation and page contents</summary><div><h2>Understand</h2><ul><li><a href="Home.html">Home</a></li><li><a href="Scope.html">Scope</a></li><li><a href="Overview.html">Overview</a></li><li><a href="Decisions.html">Modeling decisions</a></li><li><a href="Using-the-Model.html">Using the model</a></li></ul><h2>Inspect and evaluate</h2><ul><li><a href="Requirements.html">Requirements</a></li><li><a href="Competency-Questions.html">Competency questions</a></li><li><a href="Formalization.html">Formalization</a></li><li><a href="Evaluation.html">Evaluation</a></li><li><a href="Quality.html">Quality</a></li><li><a aria-current="page" href="Traceability.html">Traceability</a></li><li><a href="Database-Assurance.html">Database assurance</a></li><li><a href="Reproduce.html">Reproduce</a></li></ul><h2>Sources and publication</h2><ul><li><a href="Visualization.html">Visualization</a></li><li><a href="References.html">References</a></li><li><a href="Citation.html">Citation</a></li><li><a href="Limitations.html">Limitations</a></li><li><a href="Artifact-Versions.html">Artifact versions</a></li><li><a href="Publication.html">Publication</a></li><li><a href="Publication-Comparison.html">Publication comparison</a></li><li><a href="Work-Plan.html">Work and release plan</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a term</a></li><li><a href="../reference/diagrams/index.html">Diagrams</a></li><li><a href="../publication-manifest.json">Source record</a></li><li><a href="../../versions/index.html">Documentation versions</a></li><li><a href="https://github.com/ArazSaieArasi3/riskium/wiki">GitHub Wiki</a></li></ul><h2>On this page</h2><ul><li><a href="#versions-and-evidence-boundaries">Versions and evidence boundaries</a></li><li><a href="#how-to-follow-a-row">How to follow a row</a></li><li><a href="#requirement-and-question-routes">Requirement and question routes</a></li><li><a href="#native-and-application-coverage">Native and application coverage</a></li><li><a href="#manuscript-reconciliation">Manuscript reconciliation</a></li><li><a href="#publication-and-next-release">Publication and next release</a></li></ul></div></details><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Understand</h2><ul><li><a href="Home.html">Home</a></li><li><a href="Scope.html">Scope</a></li><li><a href="Overview.html">Overview</a></li><li><a href="Decisions.html">Modeling decisions</a></li><li><a href="Using-the-Model.html">Using the model</a></li></ul><h2>Inspect and evaluate</h2><ul><li><a href="Requirements.html">Requirements</a></li><li><a href="Competency-Questions.html">Competency questions</a></li><li><a href="Formalization.html">Formalization</a></li><li><a href="Evaluation.html">Evaluation</a></li><li><a href="Quality.html">Quality</a></li><li><a aria-current="page" href="Traceability.html">Traceability</a></li><li><a href="Database-Assurance.html">Database assurance</a></li><li><a href="Reproduce.html">Reproduce</a></li></ul><h2>Sources and publication</h2><ul><li><a href="Visualization.html">Visualization</a></li><li><a href="References.html">References</a></li><li><a href="Citation.html">Citation</a></li><li><a href="Limitations.html">Limitations</a></li><li><a href="Artifact-Versions.html">Artifact versions</a></li><li><a href="Publication.html">Publication</a></li><li><a href="Publication-Comparison.html">Publication comparison</a></li><li><a href="Work-Plan.html">Work and release plan</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a term</a></li><li><a href="../reference/diagrams/index.html">Diagrams</a></li><li><a href="../publication-manifest.json">Source record</a></li><li><a href="../../versions/index.html">Documentation versions</a></li><li><a href="https://github.com/ArazSaieArasi3/riskium/wiki">GitHub Wiki</a></li></ul></aside><main id="content" tabindex="-1"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Riskium</a><span aria-hidden="true">/</span><span>Traceability</span></nav><h1 id="current-traceability-and-document-consistency">Current traceability and document consistency</h1>
+<p>This guide joins the existing source-bound ledgers for the audited public Riskium baseline. It contains <strong>423 trace rows</strong>: 28 original requirement/scope/CQ rows, 306 native elements, 65 historical manuscript claims, seven approved manuscript amendments, twelve retained release claims and five correction requirements. A row is an accounting route, not a successful scientific test.</p>
+<p><a href="https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/consistency/traceability.json">Full JSON table</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/consistency/traceability.csv">CSV table</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/consistency/inventory.json">Input inventory</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/consistency/findings.json">Findings and resolutions</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/consistency/manuscript-readback.json">Actual manuscript readback</a>.</p>
+<h2 id="versions-and-evidence-boundaries">Versions and evidence boundaries</h2>
+<p>The ontology remains 0.3.1, ORSD 0.4.3 and approved article 7.0.8. The latest published source distribution is v0.3.2. Later SQL correction 0.3.0/migration 4 and current Pages explanations are separately identified development artifacts; they have not replaced immutable source assets. Next publication #41 must select and freeze its exact component set.</p>
+<p>Original HermiT outcomes remain 281 PASS / 14 NOT_RUN of 295 obligations. Historical SHACL outcomes remain 341 scoped PASS / one PARTIAL / 17 NOT_RUN of 359. Original CQ populations, three withdrawn article claims and zero independent ratings remain visible. Owner acceptance is bounded and does not complete original MUST requirements. Later correction, comparison and source receipts supplement rather than relabel those populations.</p>
+<h2 id="how-to-follow-a-row">How to follow a row</h2>
+<p>Start with a requirement or stable native identifier. The table records the source, linked model elements/constraints, selected implementation or explicit omission, original obligation/query/fixture IDs, actual receipts and outcomes, retained claim and limit, article location, reading routes, owner scope and current follow-up issues. The same row can have a passing structural check and an unimplemented application meaning. Article-wide inventory claims do not imply that every term has its own article paragraph.</p>
+<p>The original <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/traceability/README.md">28-row ledger</a>, <a href="Formalization.html">formal-method guide</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/relational/correction/README.md">SQL correction receipt</a> and <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/manuscript-review/v7.0.8/README.md">approved article receipt</a> retain their full source detail. The current table adds a common reading route without rewriting those checkpoints.</p>
+<h2 id="requirement-and-question-routes">Requirement and question routes</h2>
 <table>
 <thead>
 <tr>
 <th>ID</th>
-<th>Subject</th>
-<th>Current acceptance/evidence state</th>
-<th>Remaining work</th>
+<th>Purpose</th>
+<th style="text-align: right;">Model elements</th>
+<th>Constraints</th>
+<th>Current bounded scope</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>RKRS-01</td>
 <td>Content scope</td>
-<td>BOUNDED_ENGINEERING_EVIDENCE</td>
-<td>Meaning and standards alignment remain independent review; storage of content does not establish process compliance.</td>
+<td style="text-align: right;">10</td>
+<td>C-01, C-02</td>
+<td>scoped design and evidence</td>
 </tr>
 <tr>
 <td>RKRS-02</td>
 <td>Case continuity</td>
-<td>BOUNDED_ENGINEERING_EVIDENCE</td>
-<td>Independent case/scenario identity decisions and real reassessment examples remain unaccepted.</td>
+<td style="text-align: right;">10</td>
+<td>C-01, C-20</td>
+<td>scoped identity evidence</td>
 </tr>
 <tr>
 <td>RKRS-03</td>
 <td>Document identity and history</td>
-<td>PARTIAL</td>
-<td>No database/application proof of issued-payload immutability or historical retrieval. Supplementary correction metadata does not add native lineage semantics.</td>
+<td style="text-align: right;">9</td>
+<td>C-03, C-24, C-25</td>
+<td>scoped sqlite history</td>
 </tr>
 <tr>
 <td>RKRS-04</td>
 <td>Assessment context</td>
-<td>PARTIAL</td>
-<td>Full context/time/method joins, scale compatibility and numerical comparison are not established by retrieving linked values.</td>
+<td style="text-align: right;">18</td>
+<td>C-04, C-13, C-18</td>
+<td>scoped comparison task</td>
 </tr>
 <tr>
 <td>RKRS-05</td>
 <td>Reported and computed scores</td>
-<td>NOT_RUN</td>
-<td>Conditional reported/computed readiness and justified arithmetic under C-21 have no complete acceptance run.</td>
+<td style="text-align: right;">5</td>
+<td>C-21</td>
+<td>design only operational claim deferred</td>
 </tr>
 <tr>
 <td>RKRS-06</td>
 <td>Source-qualified assertions</td>
-<td>PARTIAL</td>
-<td>Source locator, interpretation and correction lineage use supplementary envelope fields; independent extraction and source/corroboration judgments remain pending.</td>
+<td style="text-align: right;">9</td>
+<td>C-02, C-12, C-17</td>
+<td>scoped source backed supplements</td>
 </tr>
 <tr>
 <td>RKRS-07</td>
 <td>Evidence-qualified responsibility</td>
-<td>BOUNDED_ENGINEERING_EVIDENCE</td>
-<td>Actual mandate grounding, ownership, responsibility identity and authority require independent/application review.</td>
+<td style="text-align: right;">12</td>
+<td>C-06, C-07, C-22</td>
+<td>scoped distinction only</td>
 </tr>
 <tr>
 <td>RKRS-08</td>
 <td>Time and workflow</td>
-<td>PARTIAL</td>
-<td>Synthetic state codes and asserted-link retrieval do not validate time intervals, transition authority, cessation or treatment effectiveness.</td>
+<td style="text-align: right;">13</td>
+<td>C-05, C-19</td>
+<td>design only operational claim deferred</td>
 </tr>
 <tr>
 <td>RKRS-09</td>
 <td>External boundaries and modes</td>
-<td>BOUNDED_ENGINEERING_EVIDENCE</td>
-<td>External-reference resolution, substantial-bearer grounding and domain meaning remain independent decisions.</td>
+<td style="text-align: right;">9</td>
+<td>C-14, C-15</td>
+<td>scoped mapping and bearer design</td>
 </tr>
 <tr>
 <td>RKRS-10</td>
 <td>Policies and thresholds</td>
-<td>PARTIAL</td>
-<td>C-08 unit/scale compatibility is PARTIAL; source-framework appetite/tolerance interpretation remains pending.</td>
+<td style="text-align: right;">9</td>
+<td>C-08, C-10, C-11</td>
+<td>scoped declaration policy</td>
 </tr>
 <tr>
 <td>RKRS-11</td>
 <td>Projection and admission</td>
-<td>PARTIAL</td>
-<td>CatalogInspection is the sole executed admission task. Full risk-record, conditional and task readiness remain open; raw candidates are not managed OWL scenarios.</td>
+<td style="text-align: right;">8</td>
+<td>C-16, C-23, C-24, C-25</td>
+<td>scoped named tasks only</td>
 </tr>
 <tr>
 <td>RKRS-12</td>
 <td>Quality evidence and reuse</td>
-<td>BOUNDED_EVIDENCE_METADATA_CHECK</td>
-<td>No overall semantic-quality score or independent acceptance follows from traceability or engineering pass counts.</td>
+<td style="text-align: right;">0</td>
+<td></td>
+<td>scoped provenance synthesis</td>
 </tr>
 <tr>
 <td>RKM-SCOPE-01</td>
 <td>Risk knowledge scope</td>
-<td>BOUNDED_ENGINEERING_EVIDENCE</td>
-<td>Independent interpretation of real process descriptions remains #7/#13; no compliance claim follows.</td>
+<td style="text-align: right;">10</td>
+<td>C-01, C-02</td>
+<td>scoped design and evidence</td>
 </tr>
 <tr>
 <td>RKM-SCOPE-02</td>
 <td>Case continuity</td>
-<td>PARTIAL</td>
-<td>Synthetic case links and score/version joins are separate examples; real reassessment continuity remains #7/#13.</td>
+<td style="text-align: right;">27</td>
+<td>C-01, C-04, C-13, C-18, C-20</td>
+<td>scoped identity evidence</td>
 </tr>
 <tr>
 <td>RKM-SCOPE-03</td>
 <td>Source-qualified policy statements</td>
-<td>PARTIAL</td>
-<td>Source-qualified appetite/tolerance meanings and framework/version comparison remain #8.</td>
+<td style="text-align: right;">9</td>
+<td>C-08, C-10, C-11</td>
+<td>source meaning limited</td>
 </tr>
 <tr>
 <td>RKM-SCOPE-04</td>
 <td>Boundary-aware standards review</td>
-<td>NOT_RUN</td>
-<td>Edition/clause-qualified inspection, divergence and access-limit corpus is incomplete; current reference links are not a complete review.</td>
+<td style="text-align: right;">0</td>
+<td></td>
+<td>scoped inspected corpus</td>
 </tr>
 <tr>
 <td>RKM-SCOPE-05</td>
 <td>Complete inventory disposition</td>
-<td>PUBLIC_ID_CONTINUITY_CHECKED</td>
-<td>All retained public model and requirement identities are reconciled. Restricted pre-public acquisition identities are outside this export and are not claimed reconciled.</td>
+<td style="text-align: right;">8</td>
+<td>C-16, C-23, C-24, C-25</td>
+<td>public id continuity only</td>
 </tr>
 <tr>
 <td>RKM-SCOPE-06</td>
 <td>Temporal statement interpretation</td>
-<td>PARTIAL</td>
-<td>No historical immutable-store or full temporal/workflow acceptance run; observed absence is not a universal negation.</td>
+<td style="text-align: right;">20</td>
+<td>C-03, C-05, C-19, C-24, C-25</td>
+<td>scoped history and temporal boundary</td>
 </tr>
 <tr>
 <td>RKM-SCOPE-07</td>
 <td>Threshold interpretation</td>
-<td>PARTIAL</td>
-<td>Scale-only anchor has prior bounded evidence; dual-anchor unit/scale compatibility remains PARTIAL in #5.</td>
+<td style="text-align: right;">9</td>
+<td>C-08, C-10, C-11</td>
+<td>scoped declaration policy</td>
 </tr>
 <tr>
 <td>RKM-SCOPE-08</td>
 <td>Evidence-qualified responsibility</td>
-<td>BOUNDED_ENGINEERING_EVIDENCE</td>
-<td>Synthetic assignment retrieval and prior distinct-participant controls do not establish an actual mandate or authority.</td>
+<td style="text-align: right;">12</td>
+<td>C-06, C-07, C-22</td>
+<td>scoped distinction only</td>
 </tr>
 <tr>
 <td>RQ-CQ01</td>
 <td>Which entries document the same case?</td>
-<td>BOUNDED_SYNTHETIC_QUERY_EXECUTED</td>
-<td>Independent real-world case identity adjudication remains #7/#13; conflicting links are retrieved, not admitted.</td>
+<td style="text-align: right;">3</td>
+<td></td>
+<td>scoped synthetic query</td>
 </tr>
 <tr>
 <td>RQ-CQ02</td>
 <td>Which scenarios concern a case?</td>
-<td>BOUNDED_SYNTHETIC_QUERY_EXECUTED</td>
-<td>Raw/managed admission and evidence that an occurrence happened are outside this retrieval test (#5/#13).</td>
+<td style="text-align: right;">3</td>
+<td></td>
+<td>scoped synthetic query</td>
 </tr>
 <tr>
 <td>RQ-CQ03</td>
 <td>Can equal scores use different scale versions?</td>
-<td>BOUNDED_SYNTHETIC_QUERY_EXECUTED</td>
-<td>Core OWL has no numeric scalar field. Arithmetic, method/scale compatibility and complete temporal joins remain #5/#12.</td>
+<td style="text-align: right;">10</td>
+<td></td>
+<td>scoped synthetic query</td>
 </tr>
 <tr>
 <td>RQ-CQ04</td>
 <td>Can assignment information exist without an actual mandate?</td>
-<td>BOUNDED_SYNTHETIC_QUERY_EXECUTED</td>
-<td>Grounding, actual authority, ownership and participant identity remain #7/#12; no mandate is synthesized.</td>
+<td style="text-align: right;">5</td>
+<td></td>
+<td>scoped synthetic query</td>
 </tr>
 <tr>
 <td>RQ-CQ05</td>
 <td>Does entry closure establish risk cessation?</td>
-<td>BOUNDED_SYNTHETIC_QUERY_EXECUTED</td>
-<td>State-code interpretation is a synthetic fixture policy, not standards equivalence or an OWL non-entailment proof. Temporal/cessation adjudication remains #7/#12.</td>
+<td style="text-align: right;">10</td>
+<td></td>
+<td>scoped synthetic query</td>
 </tr>
 <tr>
 <td>RQ-CQ06</td>
 <td>Can an assertion be traced to its source?</td>
-<td>INDEPENDENT_POPULATION_NOT_RUN_SYNTHETIC_CONTROL_ONLY</td>
-<td>Locator and interpretation-origin scalars are application fields, not native OWL properties. Independent literature extraction/support remains #13 and adequacy #7.</td>
+<td style="text-align: right;">5</td>
+<td></td>
+<td>scoped source backed supplement</td>
 </tr>
 <tr>
 <td>RQ-CQ07</td>
 <td>Does correction lineage remain distinguishable?</td>
-<td>INDEPENDENT_POPULATION_NOT_RUN_SYNTHETIC_CONTROL_ONLY</td>
-<td>General correction lineage is not a native Riskium property. This explicit application record profile does not prove source independence, immutable storage or real-data acceptance (#12/#13).</td>
+<td style="text-align: right;">3</td>
+<td></td>
+<td>scoped source backed supplement</td>
 </tr>
 <tr>
 <td>RQ-CQ08</td>
 <td>Can unsupported case identity remain unasserted?</td>
-<td>INDEPENDENT_POPULATION_NOT_RUN_SYNTHETIC_CONTROL_ONLY</td>
-<td>Incomplete raw candidates are not asserted to be managed OWL scenarios. Independent source-case identities and admission remain #5/#13.</td>
+<td style="text-align: right;">3</td>
+<td></td>
+<td>scoped source backed supplement</td>
 </tr>
 </tbody>
 </table>
-<h2 id="evidence-and-reproduction">Evidence and reproduction</h2>
-<p>The <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/traceability/ledger.json">full ledger</a> retains source hashes, original criteria, exact model element hashes, baseline IDs and historical formal receipt/case IDs. <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/traceability/historical-identities.json">Public identity continuity</a> reconciles 345 retained public identities (317 model/domain elements plus 28 requirement/scope/CQ records) from the first public import. Restricted acquisition records and pre-public denominators are not copied or claimed reconciled.</p>
-<p>The <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/cq/report.json">CQ receipt</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/requirements/cq/contracts.json">contract/oracle files</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/cq/fixtures.trig">named fixtures</a>, <a href="https://github.com/ArazSaieArasi3/riskium/tree/main/requirements/cq/queries">eight SELECT queries</a>, <a href="https://github.com/ArazSaieArasi3/riskium/tree/main/requirements/cq/mutants">query mutants</a> and <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/requirements/cq/profile.json">supplementary data policy</a> are separately inspectable. Values/locators/correction metadata outside the core are explicitly identified. All populations are synthetic; independent literature data preparation and expert acceptance remain #13/#7.</p>
-<pre><code class="language-sh">python3 -m venv .venv-owl
-.venv-owl/bin/pip install -r tools/requirements-owl.txt
-.venv-owl/bin/python tools/run_cq.py --check
-.venv-owl/bin/python tools/build_traceability.py --check
-</code></pre>
-<p>Use <code>--write</code> only after reviewing an intentional input/oracle change. The query receipt records execution time, Python/RDFLib versions, per-case expected/observed rows, graph snapshots, query hashes and the declared inference policy. A query error never counts as a detected mutant. Negative and conflicting fixtures are retrieval tests, not claims that those graphs satisfy managed admission. Missing asserted values are not logical negation.</p>
-<p>Historical HermiT coverage remains <strong>281/295, 14 NOT_RUN</strong>. SHACL remains <strong>341 scoped PASS, 1 PARTIAL, 17 NOT_RUN / 359</strong>. Report sizes, test counts and the 28-row trace denominator are separate from semantic correctness.</p><details class="source-record"><summary>Sources and equivalent Wiki guide</summary><p><a href="https://github.com/ArazSaieArasi3/riskium/wiki/Traceability">Equivalent Wiki guide</a> · Explanatory source: <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/traceability/README.md">evaluation/traceability/README.md</a>. Source hashes are recorded in the documentation manifest; current engineering supplements are separate from the immutable source assets.</p></details></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#evidence-and-reproduction">Evidence and reproduction</a></li></ul></aside></div><footer class="site-footer"><div><strong>Riskium</strong><p>An ontology for modeling enterprise risk knowledge.</p></div><div><a href="Citation.html">Citation and authors</a> · <a href="Limitations.html">Scope and limitations</a> · <a href="https://github.com/ArazSaieArasi3/riskium">Repository</a><p>Scientific content: CC BY 4.0 · Original software: MIT. Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi, for their respective contributions.</p></div></footer></body></html>
+<h2 id="native-and-application-coverage">Native and application coverage</h2>
+<p>All 306 source elements retain their exact identities and source hashes. The SQL register still records 250 incomplete core mappings and 11 external elements. Correction 0.3.0 adds application history for selected C-03/C-17 subclauses and no new native classes/predicates. All 25 constraint sections in the Formalization guide retain original engine outcomes, bounded claims and exclusions.</p>
+<table>
+<thead>
+<tr>
+<th>Correction requirement</th>
+<th>Original requirements</th>
+<th>Constraints</th>
+<th style="text-align: right;">Executed case links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COR-01</td>
+<td>RKRS-03, RKRS-11</td>
+<td>C-03</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>COR-02</td>
+<td>RKRS-03, RKRS-06</td>
+<td>C-03, C-17</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>COR-03</td>
+<td>RKRS-04, RKRS-11</td>
+<td>C-04, C-17</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>COR-04</td>
+<td>RKRS-06, RKRS-11</td>
+<td>C-02, C-12, C-17</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>COR-05</td>
+<td>RKRS-11, RKRS-12</td>
+<td>C-03</td>
+<td style="text-align: right;">7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="manuscript-reconciliation">Manuscript reconciliation</h2>
+<p>The 65-row 7.0.7 claim baseline is retained with the seven approved 7.0.8 paragraph amendments and twelve bounded release claims. Fresh readback of both author-facing files matched their approved SHA-256 values; all seven amended DOCX paragraphs matched exactly. The unchanged PDF retains its earlier nine-page rendering QA; this audit does not claim a new render, article revision or independent review. New SQL/Pages capabilities are not silently added article claims.</p>
+<h2 id="publication-and-next-release">Publication and next release</h2>
+<p>The audit report records source/generated parity separately from actual Wiki/Pages publication. Historical readbacks stay dated. The completion record binds the final corrected source, deployed file bodies and fresh Wiki commit. After any further change, #41 must rerun affected checks before its final stable freeze and independently verify its new assets after publication. Broader source/scenario mapping, formal/application policies, source adequacy, independent review and deployment remain open in the <a href="Work-Plan.html">work plan</a>.</p>
+<p>Run <code>python tools/audit_consistency.py --check</code> and the documentation builders to reject missing rows, stale hashes or changed historical denominators. This check executes no new HermiT/SHACL test and produces no ontology correctness percentage.</p><details class="source-record"><summary>Sources and equivalent Wiki guide</summary><p><a href="https://github.com/ArazSaieArasi3/riskium/wiki/Traceability">Equivalent Wiki guide</a> · Explanatory source: <a href="https://github.com/ArazSaieArasi3/riskium/blob/main/docs/traceability.md">docs/traceability.md</a>. Source hashes are recorded in the documentation manifest; current engineering supplements are separate from the immutable source assets.</p></details></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#versions-and-evidence-boundaries">Versions and evidence boundaries</a></li><li><a href="#how-to-follow-a-row">How to follow a row</a></li><li><a href="#requirement-and-question-routes">Requirement and question routes</a></li><li><a href="#native-and-application-coverage">Native and application coverage</a></li><li><a href="#manuscript-reconciliation">Manuscript reconciliation</a></li><li><a href="#publication-and-next-release">Publication and next release</a></li></ul></aside></div><footer class="site-footer"><div><strong>Riskium</strong><p>An ontology for modeling enterprise risk knowledge.</p></div><div><a href="Citation.html">Citation and authors</a> · <a href="Limitations.html">Scope and limitations</a> · <a href="https://github.com/ArazSaieArasi3/riskium">Repository</a><p>Scientific content: CC BY 4.0 · Original software: MIT. Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi, for their respective contributions.</p></div></footer></body></html>

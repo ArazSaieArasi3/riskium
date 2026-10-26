@@ -136,7 +136,7 @@ The post-prerelease CQ/traceability evidence is separate from the immutable rele
 .venv-owl/bin/python -m unittest discover -s tests -p test_cq.py -v
 ```
 
-The [contracts and supplementary profile](Competency-Questions) explain the 32 synthetic answer graphs, eight query-mutant controls and exact expected bindings. Five original synthetic-task contracts have bounded execution; the independent evidence populations for CQ06–CQ08 remain pending in #13. These queries do not execute HermiT/SHACL, prove managed admission or establish semantic acceptance. The [ledger](Traceability) records all 28 public requirement/scope/CQ traces and their unresolved routes. Original JSON/CSV planning statuses and formal denominators are preserved.
+The [contracts and supplementary profile](Competency-Questions) explain the 32 synthetic answer graphs, eight query-mutant controls and exact expected bindings. Five original synthetic-task contracts have bounded execution; the independent evidence populations for CQ06–CQ08 remain pending in #13. These queries do not execute HermiT/SHACL, prove managed admission or establish semantic acceptance. The [ledger](https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/traceability/README.md) records all 28 public requirement/scope/CQ traces and their unresolved routes. Original JSON/CSV planning statuses and formal denominators are preserved.
 
 ## Database assessment mapping and assurance after v0.3.1
 
@@ -161,8 +161,12 @@ Run `python tools/build_formal_reference.py --check` to verify the source-bound 
 
 After the earlier assessment checks, run `python tools/run_relational_correction.py --check`, `python tools/build_correction_inventory.py --check` and `python -m unittest discover -s tests -p test_relational_correction.py -v` in the pinned SHACL/RDF environment. The [separate receipt](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/relational/correction/README.md) retains exact fixed correction, populated migration, history, restoration and native-RDF outcomes. This adds no native predicate or historical engine PASS.
 
+## Cross-document reconciliation
+
+Run `python tools/audit_consistency.py --check` for the [423-row joined source/claim table](Traceability), source inventory, exact model/claim IDs and preserved historical denominators. This generates no new scientific results. Actual author-file, Wiki and deployed Pages readbacks are recorded separately in `evaluation/consistency/`. Recheck affected rows and the final component/source selection under #41 before another stable release.
+
 ---
 
 [Equivalent Pages guide](https://arazsaiearasi3.github.io/riskium/current/guide/Reproduce.html) · [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) · [OWL explorer](https://arazsaiearasi3.github.io/riskium/current/explore/index.html) · [Published v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1).
 
-Explanatory source: [docs/reproducibility.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/reproducibility.md). Source SHA-256: `41e4fdef982a4720d48c0121f661b1c64ac9eeef564c247f7d0d14a9a1377296`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.
+Explanatory source: [docs/reproducibility.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/reproducibility.md). Source SHA-256: `eb05fe63474c50ad5607c4b0d43f391f00c88b805f993489c09bc5075db7c251`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.

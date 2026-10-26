@@ -160,3 +160,7 @@ Run `python tools/build_formal_reference.py --check` to verify the source-bound 
 ## Assessment correction overlay 0.3.0
 
 After the earlier assessment checks, run `python tools/run_relational_correction.py --check`, `python tools/build_correction_inventory.py --check` and `python -m unittest discover -s tests -p test_relational_correction.py -v` in the pinned SHACL/RDF environment. The [separate receipt](../evaluation/relational/correction/README.md) retains exact fixed correction, populated migration, history, restoration and native-RDF outcomes. This adds no native predicate or historical engine PASS.
+
+## Cross-document reconciliation
+
+Run `python tools/audit_consistency.py --check` for the [423-row joined source/claim table](traceability.md), source inventory, exact model/claim IDs and preserved historical denominators. This generates no new scientific results. Actual author-file, Wiki and deployed Pages readbacks are recorded separately in `evaluation/consistency/`. Recheck affected rows and the final component/source selection under #41 before another stable release.

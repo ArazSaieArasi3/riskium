@@ -68,8 +68,7 @@
       "slug": "Traceability",
       "wiki_slug": "Traceability",
       "title": "Traceability",
-      "source": "evaluation/traceability/README.md",
-      "context_note": "This is the original source-bound requirement/CQ checkpoint, not a replacement for later dated SQL/source/owner/publication evidence. Historical acceptance states remain unchanged; current completion and remaining work are identified in the Work and release plan."
+      "source": "docs/traceability.md"
     },
     {
       "slug": "References",

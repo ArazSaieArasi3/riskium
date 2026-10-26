@@ -1,0 +1,148 @@
+{
+  "schema": "riskium-live-wiki-readback-v1",
+  "observed_at": "2026-10-26T18:25:14.888263+00:00",
+  "wiki_commit": "8f2192c1a3a92c2767c622171922b8b49a0ee7cd",
+  "guides": 21,
+  "navigation_files": 2,
+  "files": [
+    {
+      "page": "Artifact-Versions",
+      "bytes": 8982,
+      "sha256": "c20c65ac85ce6fc191358f455704807b1cb08f89d5a8ea1c9fbced7f089121f2",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Citation",
+      "bytes": 2396,
+      "sha256": "993d8a3101b44e16c0d0e314c4e9edab119e87b28f553cc37dc200217fa74f46",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Competency-Questions",
+      "bytes": 5381,
+      "sha256": "8299397581178adc080320c03a0477aa1407c975014a24906b1213ed855d484f",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Database-Assurance",
+      "bytes": 11068,
+      "sha256": "f2fe419c46fcb34f7aecaf165cfb44676aea19e7a0c0cf92ec9a9e0bedd614ac",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Evaluation",
+      "bytes": 4128,
+      "sha256": "c676deb20204086fce7ac5c47aae5fa0287ae38d78252cef5b86afc490ba84e2",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Formalization",
+      "bytes": 72874,
+      "sha256": "7ebee219f51e9642eff2243478cb135f0bb6b624ec749f49e6eb597bbc310b3c",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Home",
+      "bytes": 3010,
+      "sha256": "584fa88d1b5e01b0cbf81478392229cb70600ace0a529cd2b2439d7380d54c49",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Limitations",
+      "bytes": 4614,
+      "sha256": "c7472aa21d35a943ddf95001e14435b6b0202fcb367dd95ad3b2caf06d389538",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Modeling-Decisions",
+      "bytes": 2904,
+      "sha256": "ce4ae567e72b67617e4bca3da942a911e33467cc0e44f84ac8c5c7304d996dab",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Overview",
+      "bytes": 2710,
+      "sha256": "4302b57313f75ee1f57bf727ec3cb2736856598863cc7f03a95a21cccf506ac4",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Publication-Comparison",
+      "bytes": 7755,
+      "sha256": "6eba106761c9eeb3f29140da32451b76ea039e4e7a51af1a664d6e962054a92e",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Publication",
+      "bytes": 3554,
+      "sha256": "f7ce2c8b5083131311a6eb225f58cee513ba498b9be413dfaf753986cb282096",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Quality",
+      "bytes": 27668,
+      "sha256": "748f3cf721bfb3fd5ed1bea1dc4d981fcbf8b5aa6e8e7fc8ad732588904fe7ab",
+      "matches_generated_source": true
+    },
+    {
+      "page": "References",
+      "bytes": 26925,
+      "sha256": "4341ab8ffb7be442841588c9e26b552f19dda268f1fc262f82848ca074f63168",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Reproduce",
+      "bytes": 18599,
+      "sha256": "fbb37fb7018981801c80d9a04f52c13ab67287644f55a68dbbfa832b82b9e01e",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Requirements",
+      "bytes": 12603,
+      "sha256": "2e63fffe8cb95b91c499e170e1812d8c7128fcc625f89e54c1ef28fbbba5d241",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Scope",
+      "bytes": 2465,
+      "sha256": "11b096496c2943c642a6b2cb1586c542bb89ca13ec6f2e92dc5781442516f5b6",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Traceability",
+      "bytes": 8517,
+      "sha256": "78c43b8a413a9d3f96bc3d9144006405418479cc7368888661799b550896d8fa",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Using-the-Model",
+      "bytes": 2249,
+      "sha256": "020ac04261779f6bfa19a57b8e2efa45a0b46bb38eb7ae21ce1f9ba463e0e315",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Visualization",
+      "bytes": 3515,
+      "sha256": "18d0f91d25f600ea325b10ef4de6d74cb314041e6f6f71fad944343621e1dbb7",
+      "matches_generated_source": true
+    },
+    {
+      "page": "Work-Plan",
+      "bytes": 6503,
+      "sha256": "b903005a6d5aa5aa9439b6638114fac0cfd7c0cd14d016e88844f908128cafe8",
+      "matches_generated_source": true
+    },
+    {
+      "page": "_Footer",
+      "bytes": 267,
+      "sha256": "fd887554e6c2ddf68aa059d34cf2c7f407a483dfa2d32cfc733e8af94cc1bcfd",
+      "matches_generated_source": true
+    },
+    {
+      "page": "_Sidebar",
+      "bytes": 674,
+      "sha256": "d9db6fc9c68103f75c9e58cd0b9c02e8f2ba79b38937221ec77b134062342a3f",
+      "matches_generated_source": true
+    }
+  ],
+  "verification": "Fresh independent Wiki Git fetch compared byte-for-byte with all generated source files; 16 reader pages updated through the UI after baseline reconciliation."
+}

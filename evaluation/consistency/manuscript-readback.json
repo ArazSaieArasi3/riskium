@@ -1,0 +1,65 @@
+{
+  "schema": "riskium-current-manuscript-readback-v1",
+  "version": "7.0.8",
+  "method": "Fresh authorized author-file bytes; SHA-256 equals approved delivery receipt. DOCX XML independently matches all seven approved paragraphs; unchanged PDF bytes retain their original nine-page rendering QA. No new rendering or prose edit claimed.",
+  "artifacts": [
+    {
+      "filename": "Riskium_Manuscript_Release_Q_v7_0_8.docx",
+      "sha256": "8e9ac824703512e5a7be91d31b1aedbf7936f727621f73d704b907b2aaf4dbe0",
+      "size_bytes": 1144414,
+      "matched_approved_receipt": true
+    },
+    {
+      "filename": "Riskium_Manuscript_Release_Q_v7_0_8.pdf",
+      "sha256": "16779f16049a133b8ca1dd0089090ea0e286b25738fb930e9a14290082255b9e",
+      "size_bytes": 763727,
+      "matched_approved_receipt": true
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "MA-01",
+      "paragraph_index": 36,
+      "text_sha256": "40cc4804ee18eddfbb77a05027accf22f4fd6c6007c4de910b6af5fc40d85783",
+      "matched": true
+    },
+    {
+      "id": "MA-02",
+      "paragraph_index": 77,
+      "text_sha256": "22d7c3738a506c36ebb8d83952c1c33ebc662a87beefc669234a4242fdd09f9f",
+      "matched": true
+    },
+    {
+      "id": "MA-03",
+      "paragraph_index": 87,
+      "text_sha256": "edae7462d527d68b350f8e90e57dbc90946cf71992149217189f03357d32317c",
+      "matched": true
+    },
+    {
+      "id": "MA-04",
+      "paragraph_index": 89,
+      "text_sha256": "4f8cdf53ee6aa7f2993e196cee467a0d848eada9c6bba6f5f7a09658434bd0b4",
+      "matched": true
+    },
+    {
+      "id": "MA-05",
+      "paragraph_index": 94,
+      "text_sha256": "3a738bdfe2dedd4289145f2c8ce19d724ed13f99c9d8f03e917743187ca224ce",
+      "matched": true
+    },
+    {
+      "id": "MA-06",
+      "paragraph_index": 107,
+      "text_sha256": "bfc5132ecbc62cf870bd5b1d8103e005eeb57a729add14fdf2a2d26749c690c7",
+      "matched": true
+    },
+    {
+      "id": "MA-07",
+      "paragraph_index": 131,
+      "text_sha256": "2593071b0c16be0de7d8797e689fbb904d3264d6e6722d7c035accd4895990ae",
+      "matched": true
+    }
+  ],
+  "pdf_rerendered": false,
+  "private_binaries_committed": false
+}
