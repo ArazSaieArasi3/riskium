@@ -1,0 +1,806 @@
+{
+  "schema": "riskium-correction-execution-v1",
+  "source_commit": "753dccdce0865c6cbd3400aa245cea1b2e26d0d6",
+  "predeclared_contract_commit": "753dccdce0865c6cbd3400aa245cea1b2e26d0d6",
+  "source_note": "Execution checkout plus exact input digests; evaluated worktree bytes may be committed subsequently. Hosted --check replays fixed outcomes without rewriting the receipt.",
+  "inputs_sha256": {
+    "implementation/relational/0.3.0/contract.json": "02524445f500966f62e9f8647f43c9b8084db82ffa7d7e6ce3ce235d468b6f4e",
+    "implementation/relational/0.3.0/fixtures.json": "1709378f9462d1cb46309f97fc54e7d4eb48ea9beed1ccebb45f6088a23865cf",
+    "implementation/relational/0.3.0/004_correction.sql": "06779add05006dbd2cdfa77c749797f2416d388b6d663c7c4b18e78acc34e039",
+    "implementation/relational/0.3.0/queries/family.sql": "b8cf11146dcaeddd99b939f0335a1e9b0401d29ae4d16a6dc4eb70d33c6532f2",
+    "implementation/relational/0.3.0/queries/descendants.sql": "2116cc1e9e9dbffb8065f003c2cd71ea0a2b6c3cf5d448ef5bab71e5f561f5e1",
+    "tools/relational_correction.py": "f350cf25c8206fc2d299678d12833b54978ddb133b42be5c6ac1a0364b0d6ed4",
+    "tools/run_relational_correction.py": "59a5592c0e3259deeb65bd3b97b8ed3baff955eeea22e241384c617e0c735b4e",
+    "tools/relational_assessment.py": "70dbcbbe72e53d4eb36dc37e3fff3acb6f502b5b15f9376a3eb85d9bb6d11038",
+    "tools/relational_history.py": "098abac5e8b17c4754b0879d18b2030814d74a71d4694f50127f8deefe9d0182",
+    "tools/run_relational_assessment.py": "47cdfd931a0e90fd3fa0f2c95d8cafde5d6f5ae9b27e33d8ca378fea04110d73",
+    "tools/build_relational_assessment.py": "3a815f20084f1a829cdc6c788b545e887b8e084e8dfac6e284ba0ba0e6c162e8",
+    "tools/build_relational_history.py": "75f81ed8cb5e93bb93e0c3e04720a840dfbdb504b2d463fed7e8d9a2231181f6",
+    "tools/requirements-shacl.txt": "975267a8c63388f02db316190ef9ecb489010f27b9477074e5f49c3c323bf210",
+    "implementation/relational/0.1.0/001_tables.sql": "c7d85e0bc96b9e7626320cf2b1aeca5f4c17962ac4792e4f5dc78f9395a90660",
+    "implementation/relational/0.1.0/002_guards.sql": "c3f0d3479e538d15c90f0f5656f0c65645c4d34455481671d7dc8cfbd995b194",
+    "implementation/relational/0.1.0/fixtures.json": "217eb5d79e36b16af86b71020eb7955240d297afb5ea39719bc4186f2e2e9cd5",
+    "implementation/relational/0.2.0/policy.json": "cdb55a25a369a5f608a0fa76d46a12fe5473c636f7dde85fcd5444e894d02ebb"
+  },
+  "preserved_sources_sha256": {
+    "evaluation/hermit/report.json": "414d57f9bb6c91c7b1c08430367669f67b6d57fbe96766cd3d30e233902cdd58",
+    "evaluation/shacl/coverage-status.json": "376c30a35caf40b0fc75710241fa2e87024a6d47b576e34f2cd42b0f04eb4632",
+    "evaluation/owner-review/accepted-scope.json": "a7da025a831114999529056aad105eb31ffcee1e4a88866fecbd4aa917da1a5c",
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "implementation/relational/0.2.0/003_assessment_tables.sql": "a173b662cdcb2aa0b52d734bcf93fd1fad8d4be2b3f0463b2fdc62be99438526",
+    "implementation/relational/0.2.0/003_assessment_guards.sql": "ecf432726dcf87c8e85f9a78392cad272bab93b3a0e081271506622a45ac2058",
+    "tools/relational_assessment.py": "70dbcbbe72e53d4eb36dc37e3fff3acb6f502b5b15f9376a3eb85d9bb6d11038"
+  },
+  "engine": {
+    "name": "SQLite",
+    "version": "3.53.1"
+  },
+  "summary": {
+    "cases": 36,
+    "passed": 36,
+    "mutation_controls": 2,
+    "native_graph_comparisons": 3
+  },
+  "cases": [
+    {
+      "id": "POPULATED_UPGRADE",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "IDEMPOTENT_UPGRADE",
+      "kind": "positive",
+      "expected": {
+        "state_sha256": "9fd82765324066c60b1b6ee70f5b4ba714a45a4013a898c3446c9a35ea859b35",
+        "tables": 17,
+        "user_version": 4
+      },
+      "observed": {
+        "state_sha256": "9fd82765324066c60b1b6ee70f5b4ba714a45a4013a898c3446c9a35ea859b35",
+        "tables": 17,
+        "user_version": 4
+      },
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "FAILED_UPGRADE",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "ALL_BRANCH_VALUES",
+      "kind": "positive",
+      "expected": [
+        [
+          "urn:riskium:assessment:a1-v1",
+          "urn:riskium:assessment:r1-v1",
+          "REPORTED",
+          "0",
+          "urn:riskium:assessment:source"
+        ],
+        [
+          "urn:riskium:assessment:a1-v2",
+          "urn:riskium:assessment:r1-v2",
+          "REPORTED",
+          "0.25",
+          "urn:riskium:assessment:source"
+        ],
+        [
+          "urn:riskium:assessment:a1-v3",
+          "urn:riskium:assessment:r1-v3",
+          "UNKNOWN",
+          null,
+          "urn:riskium:assessment:other-source"
+        ]
+      ],
+      "observed": [
+        [
+          "urn:riskium:assessment:a1-v1",
+          "urn:riskium:assessment:r1-v1",
+          "REPORTED",
+          "0",
+          "urn:riskium:assessment:source"
+        ],
+        [
+          "urn:riskium:assessment:a1-v2",
+          "urn:riskium:assessment:r1-v2",
+          "REPORTED",
+          "0.25",
+          "urn:riskium:assessment:source"
+        ],
+        [
+          "urn:riskium:assessment:a1-v3",
+          "urn:riskium:assessment:r1-v3",
+          "UNKNOWN",
+          null,
+          "urn:riskium:assessment:other-source"
+        ]
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "BRANCH_DEPTHS",
+      "kind": "positive",
+      "expected": [
+        [
+          "urn:riskium:assessment:a1-v1",
+          0
+        ],
+        [
+          "urn:riskium:assessment:a1-v2",
+          1
+        ],
+        [
+          "urn:riskium:assessment:a1-v3",
+          1
+        ]
+      ],
+      "observed": [
+        [
+          "urn:riskium:assessment:a1-v1",
+          0
+        ],
+        [
+          "urn:riskium:assessment:a1-v2",
+          1
+        ],
+        [
+          "urn:riskium:assessment:a1-v3",
+          1
+        ]
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "OLD_VALUE",
+      "kind": "positive",
+      "expected": [
+        "REPORTED",
+        "0"
+      ],
+      "observed": [
+        "REPORTED",
+        "0"
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "NEW_VALUE",
+      "kind": "positive",
+      "expected": [
+        "REPORTED",
+        "0.25"
+      ],
+      "observed": [
+        "REPORTED",
+        "0.25"
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "CORROBORATION_NOT_INFERRED",
+      "kind": "positive",
+      "expected": "NOT_ASSESSED",
+      "observed": "NOT_ASSESSED",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "BOUND_QUERY_INJECTION",
+      "kind": "positive",
+      "expected": [],
+      "observed": [],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "NATIVE_RDF_V1",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": {
+        "expected_nt": [
+          "<urn:riskium:assessment:a1-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:a1-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:a1> .",
+          "<urn:riskium:assessment:a1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:a1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C032> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-12> <urn:riskium:assessment:basis> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-13> <urn:riskium:assessment:r1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-45> <urn:riskium:sql:context> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-46> <urn:riskium:sql:method> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-014> <urn:riskium:sql:context-v1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-015> <urn:riskium:assessment:method-v3> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#basisVersion> <urn:riskium:assessment:basis-v1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#source> <urn:riskium:assessment:source> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#temporalContext> <urn:riskium:assessment:time-context> .",
+          "<urn:riskium:assessment:basis-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:basis-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:basis> .",
+          "<urn:riskium:assessment:basis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:basis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C033> .",
+          "<urn:riskium:assessment:dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C039> .",
+          "<urn:riskium:assessment:level-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:level-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C038> .",
+          "<urn:riskium:assessment:level-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-16> <urn:riskium:sql:scale> .",
+          "<urn:riskium:assessment:level-v3> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#levelScaleVersion> <urn:riskium:assessment:scale-v3> .",
+          "<urn:riskium:assessment:method-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:method-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:method> .",
+          "<urn:riskium:assessment:r1-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:r1-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:r1> .",
+          "<urn:riskium:assessment:r1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:r1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C034> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-14> <urn:riskium:sql:scale> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-15> <urn:riskium:assessment:level-v3> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-48> <urn:riskium:assessment:dimension> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016> <urn:riskium:assessment:scale-v3> .",
+          "<urn:riskium:assessment:scale-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:scale-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:scale> .",
+          "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C035> .",
+          "<urn:riskium:sql:method> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-49> <urn:riskium:sql:scale> .",
+          "<urn:riskium:sql:method> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-018> <urn:riskium:assessment:dimension> .",
+          "<urn:riskium:sql:scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036> .",
+          "<urn:riskium:sql:scale> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-019> <urn:riskium:assessment:dimension> ."
+        ],
+        "observed_nt": [
+          "<urn:riskium:assessment:a1-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:a1-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:a1> .",
+          "<urn:riskium:assessment:a1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:a1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C032> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-12> <urn:riskium:assessment:basis> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-13> <urn:riskium:assessment:r1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-45> <urn:riskium:sql:context> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-46> <urn:riskium:sql:method> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-014> <urn:riskium:sql:context-v1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-015> <urn:riskium:assessment:method-v3> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#basisVersion> <urn:riskium:assessment:basis-v1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#source> <urn:riskium:assessment:source> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#temporalContext> <urn:riskium:assessment:time-context> .",
+          "<urn:riskium:assessment:basis-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:basis-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:basis> .",
+          "<urn:riskium:assessment:basis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:basis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C033> .",
+          "<urn:riskium:assessment:dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C039> .",
+          "<urn:riskium:assessment:level-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:level-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C038> .",
+          "<urn:riskium:assessment:level-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-16> <urn:riskium:sql:scale> .",
+          "<urn:riskium:assessment:level-v3> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#levelScaleVersion> <urn:riskium:assessment:scale-v3> .",
+          "<urn:riskium:assessment:method-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:method-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:method> .",
+          "<urn:riskium:assessment:r1-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:r1-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:r1> .",
+          "<urn:riskium:assessment:r1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:r1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C034> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-14> <urn:riskium:sql:scale> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-15> <urn:riskium:assessment:level-v3> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-48> <urn:riskium:assessment:dimension> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016> <urn:riskium:assessment:scale-v3> .",
+          "<urn:riskium:assessment:scale-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:scale-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:scale> .",
+          "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C035> .",
+          "<urn:riskium:sql:method> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-49> <urn:riskium:sql:scale> .",
+          "<urn:riskium:sql:method> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-018> <urn:riskium:assessment:dimension> .",
+          "<urn:riskium:sql:scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036> .",
+          "<urn:riskium:sql:scale> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-019> <urn:riskium:assessment:dimension> ."
+        ]
+      }
+    },
+    {
+      "id": "NATIVE_RDF_V2",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": {
+        "expected_nt": [
+          "<urn:riskium:assessment:a1-v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:a1-v2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:a1> .",
+          "<urn:riskium:assessment:a1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:a1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C032> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-12> <urn:riskium:assessment:basis> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-13> <urn:riskium:assessment:r1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-45> <urn:riskium:sql:context> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-46> <urn:riskium:sql:method> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-014> <urn:riskium:sql:context-v1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-015> <urn:riskium:assessment:method-v3> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#basisVersion> <urn:riskium:assessment:basis-v1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#source> <urn:riskium:assessment:source> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#temporalContext> <urn:riskium:assessment:time-context> .",
+          "<urn:riskium:assessment:basis-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:basis-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:basis> .",
+          "<urn:riskium:assessment:basis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:basis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C033> .",
+          "<urn:riskium:assessment:dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C039> .",
+          "<urn:riskium:assessment:level-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:level-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C038> .",
+          "<urn:riskium:assessment:level-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-16> <urn:riskium:sql:scale> .",
+          "<urn:riskium:assessment:level-v3> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#levelScaleVersion> <urn:riskium:assessment:scale-v3> .",
+          "<urn:riskium:assessment:method-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:method-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:method> .",
+          "<urn:riskium:assessment:r1-v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:r1-v2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:r1> .",
+          "<urn:riskium:assessment:r1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:r1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C034> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-14> <urn:riskium:sql:scale> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-15> <urn:riskium:assessment:level-v3> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-48> <urn:riskium:assessment:dimension> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016> <urn:riskium:assessment:scale-v3> .",
+          "<urn:riskium:assessment:scale-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:scale-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:scale> .",
+          "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C035> .",
+          "<urn:riskium:sql:method> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-49> <urn:riskium:sql:scale> .",
+          "<urn:riskium:sql:method> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-018> <urn:riskium:assessment:dimension> .",
+          "<urn:riskium:sql:scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036> .",
+          "<urn:riskium:sql:scale> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-019> <urn:riskium:assessment:dimension> ."
+        ],
+        "observed_nt": [
+          "<urn:riskium:assessment:a1-v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:a1-v2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:a1> .",
+          "<urn:riskium:assessment:a1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:a1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C032> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-12> <urn:riskium:assessment:basis> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-13> <urn:riskium:assessment:r1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-45> <urn:riskium:sql:context> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-46> <urn:riskium:sql:method> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-014> <urn:riskium:sql:context-v1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-015> <urn:riskium:assessment:method-v3> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#basisVersion> <urn:riskium:assessment:basis-v1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#source> <urn:riskium:assessment:source> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#temporalContext> <urn:riskium:assessment:time-context> .",
+          "<urn:riskium:assessment:basis-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:basis-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:basis> .",
+          "<urn:riskium:assessment:basis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:basis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C033> .",
+          "<urn:riskium:assessment:dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C039> .",
+          "<urn:riskium:assessment:level-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:level-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C038> .",
+          "<urn:riskium:assessment:level-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-16> <urn:riskium:sql:scale> .",
+          "<urn:riskium:assessment:level-v3> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#levelScaleVersion> <urn:riskium:assessment:scale-v3> .",
+          "<urn:riskium:assessment:method-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:method-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:method> .",
+          "<urn:riskium:assessment:r1-v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:r1-v2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:r1> .",
+          "<urn:riskium:assessment:r1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:r1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C034> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-14> <urn:riskium:sql:scale> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-15> <urn:riskium:assessment:level-v3> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-48> <urn:riskium:assessment:dimension> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016> <urn:riskium:assessment:scale-v3> .",
+          "<urn:riskium:assessment:scale-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:scale-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:scale> .",
+          "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C035> .",
+          "<urn:riskium:sql:method> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-49> <urn:riskium:sql:scale> .",
+          "<urn:riskium:sql:method> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-018> <urn:riskium:assessment:dimension> .",
+          "<urn:riskium:sql:scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036> .",
+          "<urn:riskium:sql:scale> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-019> <urn:riskium:assessment:dimension> ."
+        ]
+      }
+    },
+    {
+      "id": "NATIVE_RDF_V3",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": {
+        "expected_nt": [
+          "<urn:riskium:assessment:a1-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:a1-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:a1> .",
+          "<urn:riskium:assessment:a1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:a1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C032> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-12> <urn:riskium:assessment:basis> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-13> <urn:riskium:assessment:r1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-45> <urn:riskium:sql:context> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-46> <urn:riskium:sql:method> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-014> <urn:riskium:sql:context-v1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-015> <urn:riskium:assessment:method-v3> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#basisVersion> <urn:riskium:assessment:basis-v1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#source> <urn:riskium:assessment:source> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#temporalContext> <urn:riskium:assessment:time-context> .",
+          "<urn:riskium:assessment:basis-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:basis-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:basis> .",
+          "<urn:riskium:assessment:basis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:basis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C033> .",
+          "<urn:riskium:assessment:dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C039> .",
+          "<urn:riskium:assessment:level-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:level-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C038> .",
+          "<urn:riskium:assessment:level-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-16> <urn:riskium:sql:scale> .",
+          "<urn:riskium:assessment:level-v3> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#levelScaleVersion> <urn:riskium:assessment:scale-v3> .",
+          "<urn:riskium:assessment:method-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:method-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:method> .",
+          "<urn:riskium:assessment:r1-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:r1-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:r1> .",
+          "<urn:riskium:assessment:r1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:r1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C034> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-14> <urn:riskium:sql:scale> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-15> <urn:riskium:assessment:level-v3> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-48> <urn:riskium:assessment:dimension> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016> <urn:riskium:assessment:scale-v3> .",
+          "<urn:riskium:assessment:scale-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:scale-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:scale> .",
+          "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C035> .",
+          "<urn:riskium:sql:method> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-49> <urn:riskium:sql:scale> .",
+          "<urn:riskium:sql:method> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-018> <urn:riskium:assessment:dimension> .",
+          "<urn:riskium:sql:scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036> .",
+          "<urn:riskium:sql:scale> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-019> <urn:riskium:assessment:dimension> ."
+        ],
+        "observed_nt": [
+          "<urn:riskium:assessment:a1-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:a1-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:a1> .",
+          "<urn:riskium:assessment:a1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:a1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C032> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-12> <urn:riskium:assessment:basis> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-13> <urn:riskium:assessment:r1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-45> <urn:riskium:sql:context> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-46> <urn:riskium:sql:method> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-014> <urn:riskium:sql:context-v1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-015> <urn:riskium:assessment:method-v3> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#basisVersion> <urn:riskium:assessment:basis-v1> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#source> <urn:riskium:assessment:source> .",
+          "<urn:riskium:assessment:a1> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#temporalContext> <urn:riskium:assessment:time-context> .",
+          "<urn:riskium:assessment:basis-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:basis-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:basis> .",
+          "<urn:riskium:assessment:basis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:basis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C033> .",
+          "<urn:riskium:assessment:dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C039> .",
+          "<urn:riskium:assessment:level-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:level-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C038> .",
+          "<urn:riskium:assessment:level-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-16> <urn:riskium:sql:scale> .",
+          "<urn:riskium:assessment:level-v3> <https://github.com/ArazSaieArasi3/riskium/profiles/comparison/0.7.0#levelScaleVersion> <urn:riskium:assessment:scale-v3> .",
+          "<urn:riskium:assessment:method-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:method-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:method> .",
+          "<urn:riskium:assessment:r1-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:r1-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:assessment:r1> .",
+          "<urn:riskium:assessment:r1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:assessment:r1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C034> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-14> <urn:riskium:sql:scale> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-15> <urn:riskium:assessment:level-v3> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-48> <urn:riskium:assessment:dimension> .",
+          "<urn:riskium:assessment:r1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-016> <urn:riskium:assessment:scale-v3> .",
+          "<urn:riskium:assessment:scale-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:assessment:scale-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:scale> .",
+          "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C035> .",
+          "<urn:riskium:sql:method> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-49> <urn:riskium:sql:scale> .",
+          "<urn:riskium:sql:method> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-018> <urn:riskium:assessment:dimension> .",
+          "<urn:riskium:sql:scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:sql:scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C036> .",
+          "<urn:riskium:sql:scale> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-019> <urn:riskium:assessment:dimension> ."
+        ]
+      }
+    },
+    {
+      "id": "BACKUP_REOPEN",
+      "kind": "positive",
+      "expected": {
+        "state_sha256": "95e53e422501575dc872b2f1167396e0b96a61fe9c18ab9b6653575366f1783f",
+        "tables": 17,
+        "user_version": 4
+      },
+      "observed": {
+        "state_sha256": "95e53e422501575dc872b2f1167396e0b96a61fe9c18ab9b6653575366f1783f",
+        "tables": 17,
+        "user_version": 4
+      },
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "FILE_REOPEN",
+      "kind": "positive",
+      "expected": {
+        "independent_corroboration": "NOT_ASSESSED",
+        "selection": "ALL_DECLARED_BRANCHES",
+        "rows": [
+          [
+            "urn:riskium:assessment:a1-v1",
+            "urn:riskium:assessment:r1-v1",
+            "REPORTED",
+            "0",
+            "urn:riskium:assessment:source"
+          ],
+          [
+            "urn:riskium:assessment:a1-v2",
+            "urn:riskium:assessment:r1-v2",
+            "REPORTED",
+            "0.25",
+            "urn:riskium:assessment:source"
+          ],
+          [
+            "urn:riskium:assessment:a1-v3",
+            "urn:riskium:assessment:r1-v3",
+            "UNKNOWN",
+            null,
+            "urn:riskium:assessment:other-source"
+          ]
+        ]
+      },
+      "observed": {
+        "independent_corroboration": "NOT_ASSESSED",
+        "selection": "ALL_DECLARED_BRANCHES",
+        "rows": [
+          [
+            "urn:riskium:assessment:a1-v1",
+            "urn:riskium:assessment:r1-v1",
+            "REPORTED",
+            "0",
+            "urn:riskium:assessment:source"
+          ],
+          [
+            "urn:riskium:assessment:a1-v2",
+            "urn:riskium:assessment:r1-v2",
+            "REPORTED",
+            "0.25",
+            "urn:riskium:assessment:source"
+          ],
+          [
+            "urn:riskium:assessment:a1-v3",
+            "urn:riskium:assessment:r1-v3",
+            "UNKNOWN",
+            null,
+            "urn:riskium:assessment:other-source"
+          ]
+        ]
+      },
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "DUMP_RESTORE",
+      "kind": "positive",
+      "expected": {
+        "state_sha256": "95e53e422501575dc872b2f1167396e0b96a61fe9c18ab9b6653575366f1783f",
+        "tables": 17,
+        "user_version": 4
+      },
+      "observed": {
+        "state_sha256": "95e53e422501575dc872b2f1167396e0b96a61fe9c18ab9b6653575366f1783f",
+        "tables": 17,
+        "user_version": 4
+      },
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "RESTORE_TAMPER",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "CROSS_IDENTITY",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": "R-CORRECTION-PARENT-OR-TIME"
+    },
+    {
+      "id": "MISSING_PARENT",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": "R-CORRECTION-PARENT-OR-TIME"
+    },
+    {
+      "id": "SELF_EDGE",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": "R-CORRECTION-CYCLE"
+    },
+    {
+      "id": "EMPTY_REASON",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": "CHECK constraint failed: length(trim(reason))>0"
+    },
+    {
+      "id": "MISSING_SOURCE",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": "FOREIGN KEY constraint failed"
+    },
+    {
+      "id": "BAD_CALENDAR",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": "R-CORRECTION-PARENT-OR-TIME"
+    },
+    {
+      "id": "EARLY_DECLARATION",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": "R-CORRECTION-PARENT-OR-TIME"
+    },
+    {
+      "id": "DUPLICATE_EDGE",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": "R-CORRECTION-DUPLICATE"
+    },
+    {
+      "id": "REPLACE_EDGE",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": "R-CORRECTION-DUPLICATE"
+    },
+    {
+      "id": "UPDATE_EDGE",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": "R-CORRECTION-IMMUTABLE"
+    },
+    {
+      "id": "DELETE_EDGE",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": "R-CORRECTION-IMMUTABLE"
+    },
+    {
+      "id": "CYCLE",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": "R-CORRECTION-CYCLE"
+    },
+    {
+      "id": "STAGING_NOT_PUBLISHED",
+      "kind": "positive",
+      "expected": [],
+      "observed": [],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "UNISSUED_PARENT",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "ATOMIC_BUNDLE_FAILURE",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "CONFIGURATION_OFF",
+      "kind": "negative",
+      "expected": "R-CONNECTION-POLICY",
+      "observed": "R-CONNECTION-POLICY",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "SCHEMA_DRIFT",
+      "kind": "negative",
+      "expected": "R-CORRECTION-SCHEMA",
+      "observed": "R-CORRECTION-SCHEMA",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "LEDGER_DRIFT",
+      "kind": "negative",
+      "expected": "R-CORRECTION-HASH",
+      "observed": "R-CORRECTION-HASH",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "MUTANT_UPDATE_EXPOSED",
+      "kind": "mutation",
+      "expected": "weakened rule admitted change",
+      "observed": "weakened rule admitted change",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "MUTANT_IDENTITY_EXPOSED",
+      "kind": "mutation",
+      "expected": "R-CORRECTION-DATA",
+      "observed": "R-CORRECTION-DATA",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "limits": {
+    "scope": "Same-identity assessment correction only; not arbitrary assertion/scenario/source admission.",
+    "correction_predicate": "Application metadata only; no native predicate added.",
+    "declaration": "Append immutable declaration after both versions are issued; declaration time must be no earlier than either recorded assessment time. No claim of causal/event/interval order.",
+    "branching": "One parent per corrected version; many children per prior version. No automatic latest or authoritative branch.",
+    "source": "Correction declaration source is distinct from assessment/result sources; none establishes independent support.",
+    "rdf": "Existing native named-graph projection is unchanged; correction lineage remains SQL metadata.",
+    "withheld_case_admissions": 11,
+    "unimplemented": [
+      "general assertion correction",
+      "source/scenario mapping",
+      "formula engine",
+      "workflow authorization",
+      "interval reasoning",
+      "PostgreSQL/private migration",
+      "independent acceptance"
+    ]
+  },
+  "independent_acceptance": false,
+  "postgresql_executed": false
+}

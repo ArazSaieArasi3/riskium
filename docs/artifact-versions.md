@@ -43,3 +43,7 @@ Post-release supplements are recorded in the separate [development overlay](../r
 The archived pharmaceutical dataset v0.6 and private SQLite v0.3.0-rc.1 retain their historical bindings; this matrix does not turn them into public reruns or the current SQL implementation. The historical quality synthesis and preparation package remain identifiable snapshots. The final release source commit and publication receipt are now recorded. Component versions and hashes below remain unchanged; the frozen release asset preserves its decision-time matrix, while this current table points to the publication outcome.
 
 Check synchronization with `python tools/check_release_alignment.py`. This validates source/document bindings and recorded artifact relations; CI does not freshly render author-facing Word/PDF files or perform independent semantic review.
+
+## Current correction development component
+
+[SQL assessment-correction overlay 0.3.0](../implementation/relational/0.3.0/component.json), schema migration 4, is a separately hashed post-release component for model 0.3.1 and base SQL 0.2.0. Its own contract and requirement/source trace supplement the unchanged DRSD 0.1.0 and earlier development overlay 0.2.0. It has not been inserted into immutable v0.3.2 assets or manuscript 7.0.8. [Scope and executed evidence](../evaluation/relational/correction/README.md) remain distinct from the source/scenario/general-correction and deployment work still open. #39 must reconcile the candidate component selection before another stable freeze.

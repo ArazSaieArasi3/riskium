@@ -112,6 +112,8 @@ CHECKS = [
     ['tools/build_relational_assessment.py', '--check'],
     ['tools/run_relational_assessment.py', '--check'],
     ['tools/check_database_assurance.py', '--check'],
+    ['tools/run_relational_correction.py', '--check'],
+    ['tools/build_correction_inventory.py', '--check'],
     ['tools/check_research_backlog.py', '--check'],
     ['tools/review_distribution.py'],
     ['-m', 'unittest', 'discover', '-s', 'tests', '-v'],

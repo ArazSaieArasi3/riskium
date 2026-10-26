@@ -42,7 +42,8 @@
       "slug": "Database-Assurance",
       "wiki_slug": "Database-Assurance",
       "title": "Database assurance",
-      "source": "docs/relational-assurance.md"
+      "source": "docs/relational-assurance.md",
+      "context_note": "This source retains the original assessment-profile 0.2.0 assurance checkpoint. Later [assessment-correction overlay 0.3.0](../implementation/relational/0.3.0/README.md) adds migration 4, immutable correction branches and a separate executed receipt; it does not change the earlier profile or its evidence. The Work plan identifies broader source/scenario mapping and the next cross-document consistency gate."
     },
     {
       "slug": "Work-Plan",

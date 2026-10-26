@@ -44,8 +44,12 @@ The archived pharmaceutical dataset v0.6 and private SQLite v0.3.0-rc.1 retain t
 
 Check synchronization with `python tools/check_release_alignment.py`. This validates source/document bindings and recorded artifact relations; CI does not freshly render author-facing Word/PDF files or perform independent semantic review.
 
+## Current correction development component
+
+[SQL assessment-correction overlay 0.3.0](https://github.com/ArazSaieArasi3/riskium/blob/main/implementation/relational/0.3.0/component.json), schema migration 4, is a separately hashed post-release component for model 0.3.1 and base SQL 0.2.0. Its own contract and requirement/source trace supplement the unchanged DRSD 0.1.0 and earlier development overlay 0.2.0. It has not been inserted into immutable v0.3.2 assets or manuscript 7.0.8. [Scope and executed evidence](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/relational/correction/README.md) remain distinct from the source/scenario/general-correction and deployment work still open. #39 must reconcile the candidate component selection before another stable freeze.
+
 ---
 
 [Equivalent Pages guide](https://arazsaiearasi3.github.io/riskium/current/guide/Artifact-Versions.html) · [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) · [OWL explorer](https://arazsaiearasi3.github.io/riskium/current/explore/index.html) · [Published v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1).
 
-Explanatory source: [docs/artifact-versions.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/artifact-versions.md). Source SHA-256: `ff05cab0b700570412ed0a7a7276e78ec8fe7c4fd688e2a5c63c888f2293fb00`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.
+Explanatory source: [docs/artifact-versions.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/artifact-versions.md). Source SHA-256: `656b0f86e7faa7d3c4f3a88285d1753e46c0e432f07ef9a5f8712be140ce6315`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.

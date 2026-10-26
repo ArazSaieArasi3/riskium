@@ -6,7 +6,7 @@ The latest source distribution, **[v0.3.2](https://github.com/ArazSaieArasi3/ris
 
 WIDOCO, the conceptual reference, the text explorer and WebVOWL are deployed. The current Pages upgrade, [#38](https://github.com/ArazSaieArasi3/riskium/issues/38), brings those views into one reading experience and corrects stale explanations. Its implementation and browser review are recorded separately from the released scientific evidence. Frozen documentation and source assets remain historical records.
 
-The formal reference delivery, [#33](https://github.com/ArazSaieArasi3/riskium/issues/33), is documented in the maintained [formal-method guide](Formalization) now connects the languages, assumptions, all 25 clause dispositions, original obligation/case IDs, later bounded alternatives and reproduction routes. The issue records exact publication verification and closure evidence; this explanation adds no scientific execution. The next implementation packet is the bounded relational extension in #35/#12.
+The formal reference delivery, [#33](https://github.com/ArazSaieArasi3/riskium/issues/33), is documented in the maintained [formal-method guide](Formalization), which connects the languages, assumptions, all 25 clause dispositions, original obligation/case IDs, later bounded alternatives and reproduction routes. The issue records exact publication verification and closure evidence; this explanation adds no scientific execution. The bounded relational child [#40](https://github.com/ArazSaieArasi3/riskium/issues/40) adds [assessment-correction overlay 0.3.0](https://github.com/ArazSaieArasi3/riskium/blob/main/implementation/relational/0.3.0/README.md): immutable lineage, migration 4, historical query/RDF checks and 36 matching synthetic scenarios. Source/scenario and general assertion correction remain #35/#12. The next release task is the cross-document consistency audit #39; it can prepare a small stable distribution of these bounded changes before broader mapping work continues.
 
 ## Cross-document consistency checkpoint
 
@@ -20,7 +20,7 @@ This gate checks documentation consistency and trace completeness; it does not w
 
 | Purpose | Required result | Tracking |
 | --- | --- | --- |
-| Relational coverage | Next finite source/scenario/correction mapping, fixed query answers and additive populated migration | [#35](https://github.com/ArazSaieArasi3/riskium/issues/35), [#12](https://github.com/ArazSaieArasi3/riskium/issues/12) |
+| Relational coverage | Continue source/scenario and general assertion mapping after the completed bounded assessment-correction child #40 | [#35](https://github.com/ArazSaieArasi3/riskium/issues/35), [#12](https://github.com/ArazSaieArasi3/riskium/issues/12) |
 | Remaining rules | Justified formal and application policies for time, workflow, multiple values and computation | [#4](https://github.com/ArazSaieArasi3/riskium/issues/4), [#5](https://github.com/ArazSaieArasi3/riskium/issues/5) |
 | Source and case adequacy | Legitimate normative/prior-art interpretation and broader source-backed cases | [#37](https://github.com/ArazSaieArasi3/riskium/issues/37), [#13](https://github.com/ArazSaieArasi3/riskium/issues/13) |
 | Release consistency | Commit-bound cross-document trace table, mismatch resolution and live readback before the next stable freeze | [#39](https://github.com/ArazSaieArasi3/riskium/issues/39) |
@@ -39,4 +39,4 @@ A better reference interface, a passing CI build or a verified release download 
 
 [Equivalent Pages guide](https://arazsaiearasi3.github.io/riskium/current/guide/Work-Plan.html) · [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) · [OWL explorer](https://arazsaiearasi3.github.io/riskium/current/explore/index.html) · [Published v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1).
 
-Explanatory source: [docs/work-plan.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/work-plan.md). Source SHA-256: `cc5a6d2a2447c63ba624dd996020e251adba86dd0f064e803a855f99423bf956`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.
+Explanatory source: [docs/work-plan.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/work-plan.md). Source SHA-256: `58a247f903c10fd0cc470bd6ef66f853a6b4a0f7ae717cdf4d5f4f3674fdaa63`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.

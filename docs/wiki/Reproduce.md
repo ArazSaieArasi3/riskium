@@ -157,8 +157,12 @@ For a reproducible public synthetic database, the supported Python helper is `re
 
 Run `python tools/build_formal_reference.py --check` to verify the source-bound [method and 25-clause explanation](Formalization). After an intentional evidence change, review the underlying sources and regenerate with `python tools/build_formal_reference.py`, then rebuild Pages/Wiki with `python tools/build_reference.py`. This check creates no engine outcomes and cannot turn historical NOT_RUN or PARTIAL into PASS.
 
+## Assessment correction overlay 0.3.0
+
+After the earlier assessment checks, run `python tools/run_relational_correction.py --check`, `python tools/build_correction_inventory.py --check` and `python -m unittest discover -s tests -p test_relational_correction.py -v` in the pinned SHACL/RDF environment. The [separate receipt](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/relational/correction/README.md) retains exact fixed correction, populated migration, history, restoration and native-RDF outcomes. This adds no native predicate or historical engine PASS.
+
 ---
 
 [Equivalent Pages guide](https://arazsaiearasi3.github.io/riskium/current/guide/Reproduce.html) · [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) · [OWL explorer](https://arazsaiearasi3.github.io/riskium/current/explore/index.html) · [Published v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1).
 
-Explanatory source: [docs/reproducibility.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/reproducibility.md). Source SHA-256: `ca0de5c312f6498ed7491ad7fe622d060012b829aacd8299221ff6038a0926de`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.
+Explanatory source: [docs/reproducibility.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/reproducibility.md). Source SHA-256: `41e4fdef982a4720d48c0121f661b1c64ac9eeef564c247f7d0d14a9a1377296`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.

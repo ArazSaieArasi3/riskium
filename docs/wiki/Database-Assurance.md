@@ -1,5 +1,8 @@
 # Relational mapping and database assurance
 
+> This source retains the original assessment-profile 0.2.0 assurance checkpoint. Later [assessment-correction overlay 0.3.0](https://github.com/ArazSaieArasi3/riskium/blob/main/implementation/relational/0.3.0/README.md) adds migration 4, immutable correction branches and a separate executed receipt; it does not change the earlier profile or its evidence. The Work plan identifies broader source/scenario mapping and the next cross-document consistency gate.
+
+
 The ontology owns domain meaning. The database implements selected storage and task policies under a separately versioned contract. Mapping confidence needs semantic trace, actual SQL behavior and useful task evidence together; class/table counts or passing synthetic tests alone cannot establish universal correctness or production usefulness.
 
 [The executable brief and organized questions](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/relational-assurance-request.md), [database requirements specification](https://github.com/ArazSaieArasi3/riskium/blob/main/requirements/relational-requirements.json), [profile 0.2.0](https://github.com/ArazSaieArasi3/riskium/blob/main/implementation/relational/0.2.0/README.md), [mapping](https://github.com/ArazSaieArasi3/riskium/blob/main/implementation/relational/0.2.0/mapping.json), [actual schema dictionary](https://github.com/ArazSaieArasi3/riskium/blob/main/implementation/relational/0.2.0/schema-dictionary.md), [executed results](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/relational/assessment/README.md) and [trace/readiness record](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/relational/assessment/assurance.json) form one source-bound evidence chain.

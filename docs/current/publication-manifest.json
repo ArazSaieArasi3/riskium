@@ -6,10 +6,10 @@
     "owl_triples": 2087
   },
   "documentation_note": "Post-release documentation projection of immutable semantic inputs; not an additional semantic validation run.",
-  "guide_registry_sha256": "8b158b1e72ed45c42dea04c9c4fee13715c05e4df6e6c9dd634b7ea11d3bc76b",
+  "guide_registry_sha256": "ba327b0788a149c64a1159d065e6601430d1786c9e18f9249f551b4ba08dc622",
   "guide_sources_sha256": {
     "AUTHORS.md": "c20830d719b9b1d1b13d85cac69253274a974edb79b3a2c56148fd900d038447",
-    "docs/artifact-versions.md": "ff05cab0b700570412ed0a7a7276e78ec8fe7c4fd688e2a5c63c888f2293fb00",
+    "docs/artifact-versions.md": "656b0f86e7faa7d3c4f3a88285d1753e46c0e432f07ef9a5f8712be140ce6315",
     "docs/formal-method.md": "c5fa66386ebc42fcd138ef6dbb615dc3049b4cec12544d27449dff5f451b314b",
     "docs/guides/Evaluation.md": "7b4ebb2bb495b08a11febf07613a3e53cc21c73a51bd0b77c101923d54179e38",
     "docs/guides/Home.md": "579f8a4b16a3f9c1f237e1df9d09439d5c1cf2a587c65039e43edd3e124d5b22",
@@ -22,8 +22,8 @@
     "docs/portal-limitations.md": "0fe5db2551302193159e52fbec1f04da369bd811f6f951e0ee7ffaa673d3e131",
     "docs/publication-comparison.md": "a76039ecb1062028494f8a0a403167175304253aed4bec0d8cacbea90b1866e5",
     "docs/relational-assurance.md": "595f9a8e6a1bf0d2e46b4c38ab308b5dca475feb6e764051d60cb17d8aad3337",
-    "docs/reproducibility.md": "ca0de5c312f6498ed7491ad7fe622d060012b829aacd8299221ff6038a0926de",
-    "docs/work-plan.md": "cc5a6d2a2447c63ba624dd996020e251adba86dd0f064e803a855f99423bf956",
+    "docs/reproducibility.md": "41e4fdef982a4720d48c0121f661b1c64ac9eeef564c247f7d0d14a9a1377296",
+    "docs/work-plan.md": "58a247f903c10fd0cc470bd6ef66f853a6b4a0f7ae717cdf4d5f4f3674fdaa63",
     "evaluation/quality/README.md": "d1d50ca91657686799f8299e821e3df3862fabcd047342dbe742f00f416a7d32",
     "evaluation/traceability/README.md": "851b61c9a5298aa4b7c0ea6df92039c8fbc0f3f44e06e8ee1295d385b8ef9a82",
     "references/README.md": "437a09488a721f6710d3153080c0588408e495221a8a9bb77704848091a63a6d",

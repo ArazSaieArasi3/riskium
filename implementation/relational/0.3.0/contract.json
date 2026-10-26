@@ -58,7 +58,7 @@
     {
       "id": "COR-04",
       "source_requirements": [
-        "RKRS-05",
+        "RKRS-06",
         "RKRS-11"
       ],
       "clauses": [
@@ -99,5 +99,13 @@
       "PostgreSQL/private migration",
       "independent acceptance"
     ]
-  }
+  },
+  "trace_amendments": [
+    {
+      "requirement": "COR-04",
+      "from_id": "RKRS-05",
+      "to_id": "RKRS-06",
+      "reason": "Correct a source-ID citation: source-qualified assertions, rather than reported/computed scores. No expected answer or acceptance meaning changed; original declaration remains in commit 753dccdce0865c6cbd3400aa245cea1b2e26d0d6."
+    }
+  ]
 }

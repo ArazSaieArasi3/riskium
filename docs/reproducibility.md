@@ -156,3 +156,7 @@ For a reproducible public synthetic database, the supported Python helper is `re
 ## Formal reading reference
 
 Run `python tools/build_formal_reference.py --check` to verify the source-bound [method and 25-clause explanation](formal-method.md). After an intentional evidence change, review the underlying sources and regenerate with `python tools/build_formal_reference.py`, then rebuild Pages/Wiki with `python tools/build_reference.py`. This check creates no engine outcomes and cannot turn historical NOT_RUN or PARTIAL into PASS.
+
+## Assessment correction overlay 0.3.0
+
+After the earlier assessment checks, run `python tools/run_relational_correction.py --check`, `python tools/build_correction_inventory.py --check` and `python -m unittest discover -s tests -p test_relational_correction.py -v` in the pinned SHACL/RDF environment. The [separate receipt](../evaluation/relational/correction/README.md) retains exact fixed correction, populated migration, history, restoration and native-RDF outcomes. This adds no native predicate or historical engine PASS.
