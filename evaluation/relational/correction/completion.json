@@ -1,0 +1,38 @@
+{
+  "schema": "riskium-correction-completion-v1",
+  "issue": 40,
+  "code_source": "621e0492f10ceac4845e4a7c28f35afe7c775620",
+  "declaration_source": "753dccdce0865c6cbd3400aa245cea1b2e26d0d6",
+  "unchanged_from": "96bdfb6373f0d38b0d5345505e0a4d123dc4c017",
+  "preserved_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/native/riskium.ontouml.json": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+    "ontology/derived/riskium.owl.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "requirements/ontology-requirements.md": "68e09fd8cce2805da2d2fa0f29f76b0601282c598855d99a41631dccfaf9ff33",
+    "evaluation/hermit/report.json": "414d57f9bb6c91c7b1c08430367669f67b6d57fbe96766cd3d30e233902cdd58",
+    "evaluation/shacl/coverage-status.json": "376c30a35caf40b0fc75710241fa2e87024a6d47b576e34f2cd42b0f04eb4632",
+    "evaluation/owner-review/accepted-scope.json": "a7da025a831114999529056aad105eb31ffcee1e4a88866fecbd4aa917da1a5c",
+    "implementation/relational/0.1.0/001_tables.sql": "c7d85e0bc96b9e7626320cf2b1aeca5f4c17962ac4792e4f5dc78f9395a90660",
+    "implementation/relational/0.1.0/002_guards.sql": "c3f0d3479e538d15c90f0f5656f0c65645c4d34455481671d7dc8cfbd995b194",
+    "implementation/relational/0.2.0/003_assessment_tables.sql": "a173b662cdcb2aa0b52d734bcf93fd1fad8d4be2b3f0463b2fdc62be99438526",
+    "implementation/relational/0.2.0/003_assessment_guards.sql": "ecf432726dcf87c8e85f9a78392cad272bab93b3a0e081271506622a45ac2058",
+    "evaluation/relational/assessment/report.json.gz": "c39cf33e1cde70b2d54b073874449376a049aa3a82f6e07e9461c5a942d35944",
+    "evaluation/sources/cq0708/report.json.gz": "da8ec348280e788f2490b0dd053c0901f175fb969de8d73ca8959c2cec8a1612"
+  },
+  "software_tests": 222,
+  "fixed_sql_cases": 36,
+  "native_graph_comparisons": 3,
+  "mutation_controls": 2,
+  "accounted_native_elements": 306,
+  "new_native_mappings": 0,
+  "closed_packet_only": 40,
+  "parents_remain_open": [
+    35,
+    12
+  ],
+  "next_release_gate": 39,
+  "new_release_published": false,
+  "aggregate_candidate_packaging_claimed": false
+}

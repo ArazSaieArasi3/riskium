@@ -1,0 +1,34 @@
+{
+  "deployed_documentation_source": "2aecc090d8ab5fdc77e0e2144b0edfd4327b4753",
+  "tested_sql_source": "621e0492f10ceac4845e4a7c28f35afe7c775620",
+  "root_manifest_sha256": "81ce6d654bcae67eadcd8175be49efef520727ef3e732095700e39ec38cb7895",
+  "files": [
+    {
+      "path": "current/guide/Work-Plan.html",
+      "sha256": "e2ee87d880a761b143b22c0ce0f84a09aafe300c42ee9d883b312e8160043120",
+      "bytes": 12961
+    },
+    {
+      "path": "current/guide/Database-Assurance.html",
+      "sha256": "eec9e664ae823601ccb5c996759477c4e6275383272a9a43e2e2d88ba73b4f07",
+      "bytes": 18628
+    },
+    {
+      "path": "current/guide/Artifact-Versions.html",
+      "sha256": "82c20e2ee13fc7f7954b293305bfb35002d586a1b908a2ffe8c7821680869919",
+      "bytes": 16003
+    },
+    {
+      "path": "current/guide/Reproduce.html",
+      "sha256": "78c7ad226c2255d297519011173ec8330efc5ffcd16398f4db5f2b0e52812da1",
+      "bytes": 26949
+    },
+    {
+      "path": "current/publication-manifest.json",
+      "sha256": "8e7969dc2f17d0877ebac74bf9312393b759a506e9deb3c1772af717b4e72423",
+      "bytes": 4183
+    }
+  ],
+  "all_body_hashes_matched": true,
+  "native_wiki_sync_claimed": false
+}

@@ -1,0 +1,114 @@
+{
+  "schema": "riskium-correction-ci-readback-v1",
+  "tested_sql_source": "621e0492f10ceac4845e4a7c28f35afe7c775620",
+  "deployed_documentation_source": "2aecc090d8ab5fdc77e0e2144b0edfd4327b4753",
+  "required_hosted_gate": {
+    "run_id": 40360596910,
+    "job_id": 121704651659,
+    "status": "completed",
+    "conclusion": "success",
+    "scope": "Actual final-source correction replay, inventory, focused tests and prior integration/history/source cohorts."
+  },
+  "final_source_workflows": [
+    {
+      "id": 40360596576,
+      "name": "Claim-based quality integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40360596576",
+      "head_sha": "621e0492f10ceac4845e4a7c28f35afe7c775620"
+    },
+    {
+      "id": 40360596942,
+      "name": "Requirement and CQ evidence",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40360596942",
+      "head_sha": "621e0492f10ceac4845e4a7c28f35afe7c775620"
+    },
+    {
+      "id": 40360596852,
+      "name": "Incremental release candidate",
+      "status": "pending",
+      "conclusion": null,
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40360596852",
+      "head_sha": "621e0492f10ceac4845e4a7c28f35afe7c775620"
+    },
+    {
+      "id": 40360596573,
+      "name": "Stable research artifact release",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40360596573",
+      "head_sha": "621e0492f10ceac4845e4a7c28f35afe7c775620"
+    },
+    {
+      "id": 40360596910,
+      "name": "Post-release integration and scope",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40360596910",
+      "head_sha": "621e0492f10ceac4845e4a7c28f35afe7c775620"
+    }
+  ],
+  "documentation_and_implementation_workflows": [
+    {
+      "id": 40360474167,
+      "name": "Publish versioned documentation",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40360474167",
+      "head_sha": "2aecc090d8ab5fdc77e0e2144b0edfd4327b4753"
+    },
+    {
+      "id": 40360354335,
+      "name": "Incremental release candidate",
+      "status": "in_progress",
+      "conclusion": null,
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40360354335",
+      "head_sha": "2aecc090d8ab5fdc77e0e2144b0edfd4327b4753"
+    },
+    {
+      "id": 40360354354,
+      "name": "Requirement and CQ evidence",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40360354354",
+      "head_sha": "2aecc090d8ab5fdc77e0e2144b0edfd4327b4753"
+    },
+    {
+      "id": 40360354450,
+      "name": "Claim-based quality integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40360354450",
+      "head_sha": "2aecc090d8ab5fdc77e0e2144b0edfd4327b4753"
+    },
+    {
+      "id": 40360354493,
+      "name": "Stable research artifact release",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40360354493",
+      "head_sha": "2aecc090d8ab5fdc77e0e2144b0edfd4327b4753"
+    },
+    {
+      "id": 40360354367,
+      "name": "Documentation integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40360354367",
+      "head_sha": "2aecc090d8ab5fdc77e0e2144b0edfd4327b4753"
+    },
+    {
+      "id": 40360354287,
+      "name": "Post-release integration and scope",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40360354287",
+      "head_sha": "2aecc090d8ab5fdc77e0e2144b0edfd4327b4753"
+    }
+  ],
+  "packaging_note": "The serialized aggregate candidate workflow is queued/running separately. No new release or successful final-source aggregate package is claimed; stable freeze remains gated by #39.",
+  "retrieved_at_utc": "2026-10-26T16:41:31.503026+00:00"
+}
