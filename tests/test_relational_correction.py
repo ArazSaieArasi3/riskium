@@ -50,7 +50,7 @@ class CorrectionRegression(unittest.TestCase):
             db.execute('INSERT INTO assessment_correction VALUES(?,?,?,?,?)',(a.U('a1-v1'),prior,'cycle',run.TIME,a.SOURCE))
         self.assertEqual(c.family(db,a.U('a1-v1'))['rows'][0][3],'0');db.close()
 
-    def test_bad_calendar_and_missing_role_fail_atomic_issuance(self):
+    def test_missing_role_fails_atomic_issuance(self):
         db=run.fresh();old=run.state(db);assessment,result=run.bundle();assessment['context_version_id']=a.U('absent')
         with self.assertRaises(sqlite3.IntegrityError):
             c.issue_corrected(db,assessment,[result],a.U('a1-v1'),'reason',run.TIME,a.SOURCE)

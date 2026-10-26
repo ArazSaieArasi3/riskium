@@ -100,13 +100,17 @@ def execute():
       'SELF_EDGE':lambda d:issue(d,prior=a.U('a1-v2')),
       'EMPTY_REASON':lambda d:issue(d,reason='  '),
       'MISSING_SOURCE':lambda d:issue(d,source='urn:absent'),
-      'BAD_CALENDAR':lambda d:issue(d,recorded_at='2026-02-30T01:00:00Z'),
+      'BAD_CALENDAR':lambda d:issue(d,recorded_at='2026-11-31T01:00:00Z'),
       'EARLY_DECLARATION':lambda d:issue(d,recorded_at='2026-10-25T01:00:00Z')}
     for ident,operation in negatives.items():
         db=fresh();old=state(db)
         try:operation(db);rejected=False;error=None
         except (sqlite3.IntegrityError,ValueError) as e:rejected=True;error=str(e)
-        add(ident,True,rejected and state(db)==old,'negative',error);db.close()
+        required={'CROSS_IDENTITY':'R-CORRECTION-PARENT-OR-TIME','MISSING_PARENT':'R-CORRECTION-PARENT-OR-TIME',
+          'SELF_EDGE':'R-CORRECTION-CYCLE','EMPTY_REASON':'CHECK constraint failed: length(trim(reason))',
+          'MISSING_SOURCE':'FOREIGN KEY constraint failed','BAD_CALENDAR':'CHECK constraint failed: length(recorded_at)',
+          'EARLY_DECLARATION':'R-CORRECTION-PARENT-OR-TIME'}[ident]
+        add(ident,True,rejected and required in (error or '') and state(db)==old,'negative',dict(error=error,required_rule=required));db.close()
     for ident,sql in {
       'DUPLICATE_EDGE':'INSERT INTO assessment_correction SELECT * FROM assessment_correction',
       'REPLACE_EDGE':'INSERT OR REPLACE INTO assessment_correction SELECT * FROM assessment_correction',
@@ -116,7 +120,9 @@ def execute():
         db=fresh();issue(db);old=state(db)
         try:db.execute(sql);rejected=False;error=None
         except sqlite3.IntegrityError as e:rejected=True;error=str(e)
-        add(ident,True,rejected and state(db)==old,'negative',error);db.close()
+        required={'DUPLICATE_EDGE':'R-CORRECTION-DUPLICATE','REPLACE_EDGE':'R-CORRECTION-DUPLICATE',
+          'UPDATE_EDGE':'R-CORRECTION-IMMUTABLE','DELETE_EDGE':'R-CORRECTION-IMMUTABLE','CYCLE':'R-CORRECTION-CYCLE'}[ident]
+        add(ident,True,rejected and required in (error or '') and state(db)==old,'negative',dict(error=error,required_rule=required));db.close()
     db=fresh();assessment,result=bundle();a.stage_version(db,a.U('unissued-assessment'),a.U('a1'),payload=dict(assessment,assessment_version_id=a.U('unissued-assessment')))
     a.insert_dict(db,'assessment_snapshot',dict(assessment,assessment_version_id=a.U('unissued-assessment')));old=state(db)
     add('STAGING_NOT_PUBLISHED',[],c.family(db,a.U('unissued-assessment'))['rows'])

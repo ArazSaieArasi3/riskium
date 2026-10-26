@@ -1,6 +1,6 @@
 {
   "schema": "riskium-correction-execution-v1",
-  "source_commit": "753dccdce0865c6cbd3400aa245cea1b2e26d0d6",
+  "source_commit": "2aecc090d8ab5fdc77e0e2144b0edfd4327b4753",
   "predeclared_contract_commit": "753dccdce0865c6cbd3400aa245cea1b2e26d0d6",
   "source_note": "Execution checkout plus exact input digests; evaluated worktree bytes may be committed subsequently. Hosted --check replays fixed outcomes without rewriting the receipt.",
   "inputs_sha256": {
@@ -10,7 +10,7 @@
     "implementation/relational/0.3.0/queries/family.sql": "b8cf11146dcaeddd99b939f0335a1e9b0401d29ae4d16a6dc4eb70d33c6532f2",
     "implementation/relational/0.3.0/queries/descendants.sql": "2116cc1e9e9dbffb8065f003c2cd71ea0a2b6c3cf5d448ef5bab71e5f561f5e1",
     "tools/relational_correction.py": "f350cf25c8206fc2d299678d12833b54978ddb133b42be5c6ac1a0364b0d6ed4",
-    "tools/run_relational_correction.py": "59a5592c0e3259deeb65bd3b97b8ed3baff955eeea22e241384c617e0c735b4e",
+    "tools/run_relational_correction.py": "157f00980b30b7b9c0464b74c488d23ab843e1a05ec165d55d0723e8329a594c",
     "tools/relational_assessment.py": "70dbcbbe72e53d4eb36dc37e3fff3acb6f502b5b15f9376a3eb85d9bb6d11038",
     "tools/relational_history.py": "098abac5e8b17c4754b0879d18b2030814d74a71d4694f50127f8deefe9d0182",
     "tools/run_relational_assessment.py": "47cdfd931a0e90fd3fa0f2c95d8cafde5d6f5ae9b27e33d8ca378fea04110d73",
@@ -628,7 +628,10 @@
       "expected": true,
       "observed": true,
       "status": "PASS",
-      "detail": "R-CORRECTION-PARENT-OR-TIME"
+      "detail": {
+        "error": "R-CORRECTION-PARENT-OR-TIME",
+        "required_rule": "R-CORRECTION-PARENT-OR-TIME"
+      }
     },
     {
       "id": "MISSING_PARENT",
@@ -636,7 +639,10 @@
       "expected": true,
       "observed": true,
       "status": "PASS",
-      "detail": "R-CORRECTION-PARENT-OR-TIME"
+      "detail": {
+        "error": "R-CORRECTION-PARENT-OR-TIME",
+        "required_rule": "R-CORRECTION-PARENT-OR-TIME"
+      }
     },
     {
       "id": "SELF_EDGE",
@@ -644,7 +650,10 @@
       "expected": true,
       "observed": true,
       "status": "PASS",
-      "detail": "R-CORRECTION-CYCLE"
+      "detail": {
+        "error": "R-CORRECTION-CYCLE",
+        "required_rule": "R-CORRECTION-CYCLE"
+      }
     },
     {
       "id": "EMPTY_REASON",
@@ -652,7 +661,10 @@
       "expected": true,
       "observed": true,
       "status": "PASS",
-      "detail": "CHECK constraint failed: length(trim(reason))>0"
+      "detail": {
+        "error": "CHECK constraint failed: length(trim(reason))>0",
+        "required_rule": "CHECK constraint failed: length(trim(reason))"
+      }
     },
     {
       "id": "MISSING_SOURCE",
@@ -660,7 +672,10 @@
       "expected": true,
       "observed": true,
       "status": "PASS",
-      "detail": "FOREIGN KEY constraint failed"
+      "detail": {
+        "error": "FOREIGN KEY constraint failed",
+        "required_rule": "FOREIGN KEY constraint failed"
+      }
     },
     {
       "id": "BAD_CALENDAR",
@@ -668,7 +683,10 @@
       "expected": true,
       "observed": true,
       "status": "PASS",
-      "detail": "R-CORRECTION-PARENT-OR-TIME"
+      "detail": {
+        "error": "CHECK constraint failed: length(recorded_at)=20 AND recorded_at GLOB '????-??-??T??:??:??Z'\n   AND strftime('%Y-%m-%dT%H:%M:%SZ',recorded_at) IS recorded_at\n   AND date(recorded_at,'+0 days') IS substr(recorded_at,1,10)",
+        "required_rule": "CHECK constraint failed: length(recorded_at)"
+      }
     },
     {
       "id": "EARLY_DECLARATION",
@@ -676,7 +694,10 @@
       "expected": true,
       "observed": true,
       "status": "PASS",
-      "detail": "R-CORRECTION-PARENT-OR-TIME"
+      "detail": {
+        "error": "R-CORRECTION-PARENT-OR-TIME",
+        "required_rule": "R-CORRECTION-PARENT-OR-TIME"
+      }
     },
     {
       "id": "DUPLICATE_EDGE",
@@ -684,7 +705,10 @@
       "expected": true,
       "observed": true,
       "status": "PASS",
-      "detail": "R-CORRECTION-DUPLICATE"
+      "detail": {
+        "error": "R-CORRECTION-DUPLICATE",
+        "required_rule": "R-CORRECTION-DUPLICATE"
+      }
     },
     {
       "id": "REPLACE_EDGE",
@@ -692,7 +716,10 @@
       "expected": true,
       "observed": true,
       "status": "PASS",
-      "detail": "R-CORRECTION-DUPLICATE"
+      "detail": {
+        "error": "R-CORRECTION-DUPLICATE",
+        "required_rule": "R-CORRECTION-DUPLICATE"
+      }
     },
     {
       "id": "UPDATE_EDGE",
@@ -700,7 +727,10 @@
       "expected": true,
       "observed": true,
       "status": "PASS",
-      "detail": "R-CORRECTION-IMMUTABLE"
+      "detail": {
+        "error": "R-CORRECTION-IMMUTABLE",
+        "required_rule": "R-CORRECTION-IMMUTABLE"
+      }
     },
     {
       "id": "DELETE_EDGE",
@@ -708,7 +738,10 @@
       "expected": true,
       "observed": true,
       "status": "PASS",
-      "detail": "R-CORRECTION-IMMUTABLE"
+      "detail": {
+        "error": "R-CORRECTION-IMMUTABLE",
+        "required_rule": "R-CORRECTION-IMMUTABLE"
+      }
     },
     {
       "id": "CYCLE",
@@ -716,7 +749,10 @@
       "expected": true,
       "observed": true,
       "status": "PASS",
-      "detail": "R-CORRECTION-CYCLE"
+      "detail": {
+        "error": "R-CORRECTION-CYCLE",
+        "required_rule": "R-CORRECTION-CYCLE"
+      }
     },
     {
       "id": "STAGING_NOT_PUBLISHED",
