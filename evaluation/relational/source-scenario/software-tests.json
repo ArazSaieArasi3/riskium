@@ -1,0 +1,26 @@
+{
+  "schema": "riskium-source-scenario-software-regression-v1",
+  "profile": "0.4.0",
+  "source_commit": "1fee57158aa9e3b96c576fc2c21a271e19bb100e",
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "sqlite": "3.53.1"
+  },
+  "tests": 249,
+  "seconds": 116.679,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "status": "PASS",
+  "local_log_sha256": "20128f2f0fe9385422a063d76a2f84080531cbfcc5635fa3c830a6444470383d",
+  "scope": "Full final-source software regressions; includes 16 focused source/scenario tests. Not 249 independent scientific assessments."
+}

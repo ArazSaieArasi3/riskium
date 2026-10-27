@@ -1,0 +1,65 @@
+{
+  "schema": "riskium-source-scenario-hosted-checks-v1",
+  "source_commit": "1fee57158aa9e3b96c576fc2c21a271e19bb100e",
+  "all_workflows_passed": true,
+  "workflows": [
+    {
+      "id": 40564716181,
+      "name": "Publish versioned documentation",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40564716181"
+    },
+    {
+      "id": 40564600852,
+      "name": "Post-release integration and scope",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40564600852"
+    },
+    {
+      "id": 40564600546,
+      "name": "Stable research artifact release",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40564600546"
+    },
+    {
+      "id": 40564600726,
+      "name": "Requirement and CQ evidence",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40564600726"
+    },
+    {
+      "id": 40564601048,
+      "name": "Claim-based quality integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40564601048"
+    },
+    {
+      "id": 40564601011,
+      "name": "Documentation integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40564601011"
+    },
+    {
+      "id": 40564600452,
+      "name": "Incremental release candidate",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40564600452"
+    }
+  ],
+  "integration_evidence": [
+    "2026-10-27T18:58:19.8827442Z {\"status\": \"SOURCE_SCENARIO_EXECUTION_PASS\", \"sqlite\": \"3.45.1\", \"cases\": 54, \"outcomes\": {\"PASS\": 54}, \"kinds\": {\"negative\": 28, \"positive\": 23, \"mutation\": 3}}",
+    "2026-10-27T18:58:19.9439630Z   \"status\": \"SOURCE_SCENARIO_ACCOUNTING_PASS\",",
+    "2026-10-27T18:58:19.9440224Z   \"new_class_representations\": 2,",
+    "2026-10-27T18:58:22.8515793Z Ran 16 tests in 2.804s"
+  ],
+  "candidate_evidence": [
+    "2026-10-27T19:05:28.7648312Z {\"source_commit\": \"1fee57158aa9e3b96c576fc2c21a271e19bb100e\", \"package_name\": \"candidate-1fee57158aa9\", \"passed_checks\": 28, \"inventory_verified\": true, \"publication_executed\": false}"
+  ]
+}

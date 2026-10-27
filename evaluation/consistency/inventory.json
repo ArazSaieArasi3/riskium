@@ -99,8 +99,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "e69055550dc2aafcc73b1203ee403a43376c70f2c64f694caadf008e9ec0d49e",
-      "bytes": 18406
+      "sha256": "8fae5d556d2f734815cdd40bd408d9edbd9da24c0b68a908c3b0e7e0133d5e42",
+      "bytes": 18692
     },
     {
       "path": "RIGHTS.md",
@@ -1033,6 +1033,16 @@
       "bytes": 3279
     },
     {
+      "path": "evaluation/relational/source-scenario/completion.json",
+      "sha256": "152a43800bf89f045f0609a083dbe594ba657bd0d42ca39ae24236e2710ddfa0",
+      "bytes": 3773
+    },
+    {
+      "path": "evaluation/relational/source-scenario/hosted-checks.json",
+      "sha256": "3fbde06a37e3771ca1d7dcef96a8efd17a2763c95126f75ce0b2e5aea4960ea4",
+      "bytes": 2500
+    },
+    {
       "path": "evaluation/relational/source-scenario/mapping-accounting.json",
       "sha256": "ec2df64496dcf3a088c7493328d52c95e141a0604750fac73ea8056821ea65a2",
       "bytes": 269350
@@ -1041,6 +1051,11 @@
       "path": "evaluation/relational/source-scenario/report.json",
       "sha256": "2f795efc38233e30f39ba69a2d272913faef8bfa99b1ba7e6480679aa91e84d7",
       "bytes": 34247
+    },
+    {
+      "path": "evaluation/relational/source-scenario/software-tests.json",
+      "sha256": "25d553ae36f5a3bd1c3a278547d3c9b76594304ffbcb6e304521c5eac5890c0e",
+      "bytes": 661
     },
     {
       "path": "evaluation/relational/source-scenario/traceability.json",

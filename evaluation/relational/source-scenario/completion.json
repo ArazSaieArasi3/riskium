@@ -1,0 +1,82 @@
+{
+  "schema": "riskium-source-scenario-completion-v1",
+  "issue": 42,
+  "parent_issues": [
+    35,
+    12
+  ],
+  "status": "COMPLETED",
+  "completed_at": "2026-10-27T22:37:59.563726+03:30",
+  "declaration_commit": "ed3f8e56899275eeb4d289843834bfceaedd4c2f",
+  "implementation_source": "1fee57158aa9e3b96c576fc2c21a271e19bb100e",
+  "component_version": "0.4.0",
+  "schema_migration": 5,
+  "model_version": "0.3.1",
+  "orsd_revision": "0.4.3",
+  "drsd_revision": "0.1.0 plus explicit SSC-01..06 supplement",
+  "manuscript_version": "7.0.8",
+  "stable_distribution": "v0.3.3 unchanged",
+  "native_support": {
+    "existing_classes_newly_represented": 2,
+    "new_relation_exports": 4,
+    "inherited_typing_routes": 2
+  },
+  "derived_requirements": 6,
+  "accounted_native_elements": 306,
+  "remaining_deferred": 242,
+  "new_partial_routes": 8,
+  "executed_fixed_controls": 54,
+  "full_software_regressions": 249,
+  "focused_source_scenario_regressions": 16,
+  "candidate_gates": 28,
+  "successful_hosted_workflows": 7,
+  "sqlite_runtime_local": "3.53.1",
+  "sqlite_runtime_hosted": "3.45.1",
+  "protected_source_baseline": "4e5e7fe5176fa987992f7a9a8da0334103ab2e0f",
+  "protected_roots_unchanged": [
+    "ontology",
+    "requirements",
+    "releases",
+    "implementation/relational/0.1.0",
+    "implementation/relational/0.2.0",
+    "implementation/relational/0.3.0",
+    "docs/current",
+    "docs/wiki",
+    "docs/releases",
+    "evaluation/hermit",
+    "evaluation/shacl",
+    "evaluation/sources",
+    "evaluation/owner-review",
+    "evaluation/manuscript-review"
+  ],
+  "changed_protected_files": [],
+  "evidence_sha256": {
+    "implementation/relational/0.4.0/contract.json": "defb5b7dd66fd0083f3ff913bd467a1b72ebd7d4c946083f8f3d5c8c4d6809db",
+    "implementation/relational/0.4.0/fixtures.json": "bfba7e6e220987abee2f070125c70cd9c60e5975a7bc8b1b6f209691f15edf97",
+    "implementation/relational/0.4.0/component.json": "49afaf2c02ed831107330e64f113dc543346cd79b1a4e82aff54f15185d966d2",
+    "evaluation/relational/source-scenario/report.json": "2f795efc38233e30f39ba69a2d272913faef8bfa99b1ba7e6480679aa91e84d7",
+    "evaluation/relational/source-scenario/mapping-accounting.json": "ec2df64496dcf3a088c7493328d52c95e141a0604750fac73ea8056821ea65a2",
+    "evaluation/relational/source-scenario/traceability.json": "e2704b1054b5f9bc8d8ee8abaa055ac362dac87e05135bdec0e4a0e6b61251af",
+    "evaluation/relational/source-scenario/software-tests.json": "25d553ae36f5a3bd1c3a278547d3c9b76594304ffbcb6e304521c5eac5890c0e",
+    "evaluation/relational/source-scenario/hosted-checks.json": "3fbde06a37e3771ca1d7dcef96a8efd17a2763c95126f75ce0b2e5aea4960ea4"
+  },
+  "next_packet": "Version-owned correction lineage for issued scenario/source-reference assertions; preserve branches/provenance and original values; broader general assertion correction remains #35/#12.",
+  "remaining_open_issues": [
+    4,
+    5,
+    12,
+    13,
+    23,
+    35,
+    36,
+    37
+  ],
+  "limits": [
+    "Controlled synthetic engineering task; no real organizational identity is admitted. All 11 original WITHHELD candidates remain unchanged.",
+    "No RiskSource bearer/causation, occurrence, endorsement or native EvidenceReference admission is inferred.",
+    "The historical 423-row release trace and original engine populations stay unchanged; this component adds its own 306-row overlay and six-requirement trace.",
+    "242 deferred plus eight newly partial routes are not complete native or original requirement fulfillment.",
+    "No new stable tag/assets or article claims, independent semantic rating, PostgreSQL/private migration or production acceptance are asserted.",
+    "Completion files/README are evidence-only; they change none of the implementation or selected component bytes."
+  ]
+}
