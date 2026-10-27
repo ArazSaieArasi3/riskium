@@ -1553,6 +1553,26 @@
       "bytes": 2238
     },
     {
+      "path": "implementation/relational/0.4.0/contract.json",
+      "sha256": "defb5b7dd66fd0083f3ff913bd467a1b72ebd7d4c946083f8f3d5c8c4d6809db",
+      "bytes": 4869
+    },
+    {
+      "path": "implementation/relational/0.4.0/fixtures.json",
+      "sha256": "bfba7e6e220987abee2f070125c70cd9c60e5975a7bc8b1b6f209691f15edf97",
+      "bytes": 12675
+    },
+    {
+      "path": "implementation/relational/0.4.0/queries/by_case.sql",
+      "sha256": "3da01d2ebb9239b9d74e70b3950d0a068e29354373e82c45fe23eddbd843ace1",
+      "bytes": 312
+    },
+    {
+      "path": "implementation/relational/0.4.0/queries/provenance.sql",
+      "sha256": "c71818df51b7c780703e2f9d8906d679a869010d1f3163d64d671c492f7c1571",
+      "bytes": 281
+    },
+    {
       "path": "implementation/validation/0.1.0/README.md",
       "sha256": "aa1a49c52dcae87ff2728889974ec60f38f27b822fc40944ed3bc6b6d6a0e792",
       "bytes": 2970

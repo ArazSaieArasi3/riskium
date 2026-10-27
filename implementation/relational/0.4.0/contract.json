@@ -1,0 +1,124 @@
+{
+  "schema": "riskium-source-scenario-contract-v1",
+  "version": "0.4.0",
+  "schema_version": 5,
+  "execution_issue": 42,
+  "parent_issues": [
+    35,
+    12
+  ],
+  "baseline_commit": "4e5e7fe5176fa987992f7a9a8da0334103ab2e0f",
+  "source_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "implementation/relational/0.3.0/contract.json": "02524445f500966f62e9f8647f43c9b8084db82ffa7d7e6ce3ce235d468b6f4e",
+    "implementation/relational/0.3.0/component.json": "f0a98955dfa36782b1c9dfda30aca48080e310dc2ed68d5a8765ca790fac79a5",
+    "tools/relational_correction.py": "f350cf25c8206fc2d299678d12833b54978ddb133b42be5c6ac1a0364b0d6ed4"
+  },
+  "requirements": [
+    {
+      "id": "SSC-01",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-11"
+      ],
+      "constraints": [
+        "C-03"
+      ],
+      "accept": "Populated migration 4 to 5 preserves every old row, issued graph and ledger entry; idempotence and failed-upgrade rollback execute."
+    },
+    {
+      "id": "SSC-02",
+      "source_requirements": [
+        "RKRS-06",
+        "RKRS-11"
+      ],
+      "constraints": [
+        "C-02",
+        "C-16"
+      ],
+      "accept": "Explicit scenario/source-reference admission uses existing case identities and an issued snapshot. Raw/incomplete source records do not become managed cases or native knowledge artifacts."
+    },
+    {
+      "id": "SSC-03",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "constraints": [
+        "C-03",
+        "C-12"
+      ],
+      "accept": "Per-version source, locator, interpretation and narrative are immutable; exact context versions are pinned when explicitly supplied, and unknown context stays unasserted."
+    },
+    {
+      "id": "SSC-04",
+      "source_requirements": [
+        "RKRS-06",
+        "RKRS-11"
+      ],
+      "constraints": [
+        "C-02",
+        "C-12",
+        "C-17"
+      ],
+      "accept": "Preserve multiple identities, cases, versions, documentary sources and disagreements. Query and native RDF answer fixed independent oracles; no current/authoritative/occurrence/causation/endorsement inference."
+    },
+    {
+      "id": "SSC-05",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-12"
+      ],
+      "constraints": [
+        "C-03"
+      ],
+      "accept": "Schema/ledger/hash/FK/payload and semantic audits reject drift and tampered restore; reopen, backup and dump restoration preserve original graphs and branch history."
+    },
+    {
+      "id": "SSC-06",
+      "source_requirements": [
+        "RKRS-11",
+        "RKRS-12"
+      ],
+      "constraints": [
+        "C-16"
+      ],
+      "accept": "Account for all 306 native elements with bounded support and explicit omissions; preserve historical 250 incomplete mappings, 11 external elements and all 11 original WITHHELD admissions."
+    }
+  ],
+  "native_classes": [
+    "RKM-C003",
+    "RKM-X06"
+  ],
+  "native_relations": [
+    "R-36",
+    "RK2-010",
+    "RK3-001",
+    "RK3-003"
+  ],
+  "generalizations": [
+    "GX-048",
+    "G3-001"
+  ],
+  "policy": {
+    "raw": "Retain raw source_record.original_json without creating a RiskCase or managed scenario/source-reference.",
+    "documentary_source": "source_record is documentary provenance, not RiskSource or EvidenceReference admission.",
+    "managed": "Scenario requires >=1 existing case; source reference allows 0..* existing cases and 0..1 context. Scenario allows 0..* contexts with at most one pinned issued version per context artifact.",
+    "versioning": "Each graph is selected by exact issued version; no union/latest selection. New versions do not assert a native or general correction relationship.",
+    "provenance": "Narrative, documentary source, locator, interpretation and canonical UTC recorded time are immutable per issued version. Artifact origin may differ from a later version source.",
+    "context": "Only explicitly supplied, correctly typed issued context versions are accepted. Unknown is empty, never invented.",
+    "publication": "Separately versioned development component; stable v0.3.3 and all selected inputs remain unchanged.",
+    "unimplemented": [
+      "EvidenceReference/EvidenceItem admission",
+      "RiskSource causal bearer/resolvesToSource",
+      "general assertion correction",
+      "all omitted native mappings",
+      "formula/workflow/interval engines",
+      "PostgreSQL/private migration",
+      "independent semantic or production acceptance"
+    ]
+  }
+}
