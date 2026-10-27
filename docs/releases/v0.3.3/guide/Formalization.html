@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="Riskium enterprise risk ontology: conceptual definitions, bounded OWL reference, evaluation and reproducible sources." name="description"/><title>Formalization — Riskium</title><link href="../assets/portal.css?v=0987488cda1a" rel="stylesheet"/></head><body class="reading-page" data-template="riskium-pages-1"><aside aria-label="Frozen documentation identity" class="publication-context">Frozen documentation <strong>0.2.0</strong> for model v0.3.1 · <a href="https://github.com/ArazSaieArasi3/riskium/commit/e574f19dea81f58a7112ded67fe02452ece2e8bd">source e574f19dea81</a> · <a href="../../../versions/index.html">Documentation versions</a></aside><a class="skip-link" href="#content">Skip to content</a><header class="site-header"><div class="brand-row"><a href="../index.html">Riskium</a><p>Enterprise risk knowledge</p><div class="header-tools"><a href="../reference/search.html">Find a term</a><a href="../../../versions/index.html">Versions</a></div></div><nav aria-label="Primary" class="primary-nav"><a href="../index.html">Overview</a><a href="../reference/native/index.html">Conceptual reference</a><a href="../widoco/index-en.html">OWL reference</a><a href="Evaluation.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../webvowl/index.html?v=38df5ef406a0">WebVOWL</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="publication-context">Frozen documentation 0.2.0 · published model v0.3.1 · explanatory source e574f19dea81</div><details class="mobile-navigation"><summary>Documentation and page contents</summary><div><h2>Understand</h2><ul><li><a href="Home.html">Home</a></li><li><a href="Scope.html">Scope</a></li><li><a href="Overview.html">Overview</a></li><li><a href="Decisions.html">Modeling decisions</a></li><li><a href="Using-the-Model.html">Using the model</a></li></ul><h2>Inspect and evaluate</h2><ul><li><a href="Requirements.html">Requirements</a></li><li><a href="Competency-Questions.html">Competency questions</a></li><li><a aria-current="page" href="Formalization.html">Formalization</a></li><li><a href="Evaluation.html">Evaluation</a></li><li><a href="Quality.html">Quality</a></li><li><a href="Traceability.html">Traceability</a></li><li><a href="Database-Assurance.html">Database assurance</a></li><li><a href="Reproduce.html">Reproduce</a></li></ul><h2>Sources and publication</h2><ul><li><a href="Visualization.html">Visualization</a></li><li><a href="References.html">References</a></li><li><a href="Citation.html">Citation</a></li><li><a href="Limitations.html">Limitations</a></li><li><a href="Artifact-Versions.html">Artifact versions</a></li><li><a href="Publication.html">Publication</a></li><li><a href="Publication-Comparison.html">Publication comparison</a></li><li><a href="Work-Plan.html">Work and release plan</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a term</a></li><li><a href="../reference/diagrams/index.html">Diagrams</a></li><li><a href="../publication-manifest.json">Source record</a></li><li><a href="../../../versions/index.html">Documentation versions</a></li><li><a href="https://github.com/ArazSaieArasi3/riskium/wiki">GitHub Wiki</a></li></ul><h2>On this page</h2><ul><li><a href="#choose-the-question-first">Choose the question first</a></li><li><a href="#read-owl-results-under-its-assumptions">Read OWL results under its assumptions</a></li><li><a href="#validate-explicit-data-under-a-named-task">Validate explicit data under a named task</a></li><li><a href="#test-changes-over-time-in-the-application">Test changes over time in the application</a></li><li><a href="#reproduce-without-replacing-historical-evidence">Reproduce without replacing historical evidence</a></li><li><a href="#read-the-constraint-register">Read the constraint register</a></li><li><a href="#C-01">C-01 — Risk Case is not ISO Risk</a></li><li><a href="#C-02">C-02 — No realization from description</a></li><li><a href="#C-03">C-03 — Issued version immutability</a></li><li><a href="#C-04">C-04 — Assessment interpretation</a></li><li><a href="#C-05">C-05 — Temporal and administrative distinction</a></li><li><a href="#C-06">C-06 — Relator participant distinctness</a></li><li><a href="#C-07">C-07 — Role-qualified ownership</a></li><li><a href="#C-08">C-08 — Threshold anchor</a></li><li><a href="#C-09">C-09 — Description aboutness</a></li><li><a href="#C-10">C-10 — Framework-qualified tolerance</a></li><li><a href="#C-11">C-11 — Vocabulary resource identity</a></li><li><a href="#C-12">C-12 — Evidence does not endorse</a></li><li><a href="#C-13">C-13 — Scale and dimension compatibility</a></li><li><a href="#C-14">C-14 — Heterogeneous boundaries</a></li><li><a href="#C-15">C-15 — Intrinsic vulnerability bearer</a></li><li><a href="#C-16">C-16 — Admission profiles</a></li><li><a href="#C-17">C-17 — Multiple assertions</a></li><li><a href="#C-18">C-18 — Comparable assessments</a></li><li><a href="#C-19">C-19 — Workflow semantics</a></li><li><a href="#C-20">C-20 — Risk Item vocabulary</a></li><li><a href="#C-21">C-21 — Reported and computed scores</a></li><li><a href="#C-22">C-22 — Responsibility identity</a></li><li><a href="#C-23">C-23 — Context relation coherence</a></li><li><a href="#C-24">C-24 — Revision coherence</a></li><li><a href="#C-25">C-25 — Version target coherence</a></li><li><a href="#source-and-review-record">Source and review record</a></li></ul></div></details><div class="layout"><aside aria-label="Documentation navigation" class="sidebar"><h2>Understand</h2><ul><li><a href="Home.html">Home</a></li><li><a href="Scope.html">Scope</a></li><li><a href="Overview.html">Overview</a></li><li><a href="Decisions.html">Modeling decisions</a></li><li><a href="Using-the-Model.html">Using the model</a></li></ul><h2>Inspect and evaluate</h2><ul><li><a href="Requirements.html">Requirements</a></li><li><a href="Competency-Questions.html">Competency questions</a></li><li><a aria-current="page" href="Formalization.html">Formalization</a></li><li><a href="Evaluation.html">Evaluation</a></li><li><a href="Quality.html">Quality</a></li><li><a href="Traceability.html">Traceability</a></li><li><a href="Database-Assurance.html">Database assurance</a></li><li><a href="Reproduce.html">Reproduce</a></li></ul><h2>Sources and publication</h2><ul><li><a href="Visualization.html">Visualization</a></li><li><a href="References.html">References</a></li><li><a href="Citation.html">Citation</a></li><li><a href="Limitations.html">Limitations</a></li><li><a href="Artifact-Versions.html">Artifact versions</a></li><li><a href="Publication.html">Publication</a></li><li><a href="Publication-Comparison.html">Publication comparison</a></li><li><a href="Work-Plan.html">Work and release plan</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a term</a></li><li><a href="../reference/diagrams/index.html">Diagrams</a></li><li><a href="../publication-manifest.json">Source record</a></li><li><a href="../../../versions/index.html">Documentation versions</a></li><li><a href="https://github.com/ArazSaieArasi3/riskium/wiki">GitHub Wiki</a></li></ul></aside><main id="content" tabindex="-1"><nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../index.html">Riskium</a><span aria-hidden="true">/</span><span>Formalization</span></nav><h1 id="how-riskiums-formal-checks-fit-together">How Riskium's formal checks fit together</h1>
+<p>A well-formed ontology, a conforming record and a trustworthy risk assessment answer different questions. Riskium therefore keeps its conceptual commitments, OWL reasoning, explicit-data validation and application history separate. This page explains their connection and gives every interpretation constraint a route to its evidence and remaining work.</p>
+<h2 id="choose-the-question-first">Choose the question first</h2>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Language and input</th>
+<th>What the check can establish</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What does the model mean?</td>
+<td>Structured conceptual JSON and native OntoUML exchange</td>
+<td>Source definitions, relation directions, multiplicities and interpretation constraints; exchange checks establish representation fidelity.</td>
+</tr>
+<tr>
+<td>What follows from the bounded ontology?</td>
+<td>OWL 2 axioms in Turtle, loaded as RDF/XML by HermiT</td>
+<td>Consistency, class satisfiability and the declared entailment/countermodel probes for this mapping.</td>
+</tr>
+<tr>
+<td>Is the required information explicitly present?</td>
+<td>RDF data plus a named SHACL profile</td>
+<td>Conformance of the selected graph and focus population under the stated identity and inference policy.</td>
+</tr>
+<tr>
+<td>Can a selected assessment be compared or preserved?</td>
+<td>Supplementary task metadata, SHACL profiles and SQLite schema/transactions</td>
+<td>Declared compatibility/selection decisions and tested storage/history behavior within a named profile.</td>
+</tr>
+<tr>
+<td>Does a source support the claim?</td>
+<td>SPARQL answer contracts, source locators and human interpretation</td>
+<td>Reproducible retrieval and provenance joins; truth, normative meaning and adequacy still require judgment.</td>
+</tr>
+</tbody>
+</table>
+<p>The conceptual catalog contains 80 concepts, 134 associations/bridges, 66 generalizations and 25 interpretation constraints. The bounded OWL export contains 77 typed local classes plus one local foundational proxy, 127 object properties and the 66 subclass links. Three optional boundary concepts and seven bridges are excluded. Stereotypes and abstractness annotations do not automatically acquire executable OWL semantics. The <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/owl-mapping-review.md">reviewed mapping</a> records the exact axiom choices, restrictions and exclusions.</p>
+<h2 id="read-owl-results-under-its-assumptions">Read OWL results under its assumptions</h2>
+<p>OWL uses an open-world interpretation: a missing asserted link need not be false. If a Threshold must have an indicator or a scale, the ontology may satisfy that existential with an unnamed witness. That does not supply the named anchor an application needs. C-08 therefore has distinct OWL and explicit-data routes.</p>
+<p>OWL also has no unique-name assumption. Two names need not denote two different individuals; a maximum-one restriction can sometimes be satisfied by identifying their referents. Explicit distinction or an independently justified identity policy is needed before treating two names as two witnesses. Domain and range infer types from a relation assertion; they are not database-style rejection rules for untyped input.</p>
+<p>This export has no external <code>owl:imports</code>. Its closure is its own graph, and its foundational Object is an annotated local proxy. A non-entailment probe concerns the declared premise and conclusion: absence of an assertion alone is not proof of negation. The original HermiT receipt records 693 passing finite cases covering 281 of 295 baseline obligations; 14 remain NOT_RUN. This does not certify all possible interpretations or data.</p>
+<h2 id="validate-explicit-data-under-a-named-task">Validate explicit data under a named task</h2>
+<p>SHACL receipts identify the raw/effective data, shapes, focus selectors, engine, identity policy and expected result components. They use inference <code>none</code>; documented source taxonomy and normalization are supplied explicitly. OWL existential witnesses are not silently materialized. Source-end bounds count sources per target through an inverse path; target-end bounds count targets per source through a direct path.</p>
+<p>Raw staging, CatalogInspection and selected task-ready profiles have different admission rules. Catalog metadata acceptance does not establish complete risk-assessment readiness. A negative fixture passes its test when the intended rule rejects it, rather than when an unrelated defect happens to fail validation. Preflight policy rejection and an actual SHACL execution are counted separately.</p>
+<p>The historical 359-obligation ledger remains 341 scoped PASS, one PARTIAL and 17 NOT_RUN. Later compatibility profile 0.6.0 and comparison profile 0.7.0 add scoped alternatives without relabeling that ledger. For example, compatible declared metadata does not prove correct unit conversion, numerical evaluation or general dimensional adequacy. C-08 remains globally PARTIAL.</p>
+<h2 id="test-changes-over-time-in-the-application">Test changes over time in the application</h2>
+<p>A static graph cannot demonstrate that an issued payload survived an attempted update. The SQLite history profile 0.1.0 tests sealing, mutation rejection, revision lineage and populated migration. Assessment profile 0.2.0 adds selected pinned assessment/result snapshots, queries, migration and bounded backup/concurrency checks. Its 306-element mapping register is source accounting, not 306 successful semantic tests.</p>
+<p>The assessment supplement covers selected subclauses of eleven constraints. It does not implement their complete original meanings. In particular, preserving a reported/computed distinction is not an arithmetic engine; storing a time token is not an interval or timezone policy. PostgreSQL, private migration and real workloads remain separate acceptance work.</p>
+<p>The later <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/implementation/relational/0.3.0/README.md">assessment-correction overlay 0.3.0</a> adds migration 4 and an immutable application declaration between issued versions of one assessment identity. Its 36 fixed scenarios retain original values, source qualifiers and conflicting branches; three native graph comparisons show that no correction predicate was added to OWL. This does not implement general assertion/scenario correction or identify independent corroboration. Reproduce with <code>python tools/run_relational_correction.py --check</code> and <code>python tools/build_correction_inventory.py --check</code>. The original accepted-scope rows below remain unchanged.</p>
+<h2 id="reproduce-without-replacing-historical-evidence">Reproduce without replacing historical evidence</h2>
+<p>Use a clean checkout of the desired source and record its commit first. Commands below run from the repository root. Create the appropriate environment from <code>tools/requirements-hermit.txt</code>, <code>tools/requirements-shacl.txt</code> or <code>tools/requirements-owl.txt</code>; documentation dependencies are in <code>tools/publication/requirements.txt</code>. The <a href="Reproduce.html">reproduction guide</a> gives installation and the full module sequence.</p>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Command</th>
+<th>Expected and recorded evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conceptual/native allocation</td>
+<td><code>python tools/validate_model.py</code> and <code>python tools/review_coverage.py</code></td>
+<td>Source and planned-obligation consistency; not an engine result.</td>
+</tr>
+<tr>
+<td>OWL representation</td>
+<td><code>python tools/build_owl.py --check</code></td>
+<td>Export matches reviewed sources; not a reasoner run.</td>
+</tr>
+<tr>
+<td>HermiT</td>
+<td><code>.venv-hermit/bin/python tools/run_hermit.py</code></td>
+<td>Re-executes the bounded probes and writes a new receipt; original observed population is 693 cases, 281/295 obligations.</td>
+</tr>
+<tr>
+<td>Original SHACL modules</td>
+<td>Run builders/runners in the reproduction guide, then <code>python tools/summarize_shacl.py</code></td>
+<td>Re-executes declared graphs; original observed ledger is 341 PASS / 1 PARTIAL / 17 NOT_RUN.</td>
+</tr>
+<tr>
+<td>C-08 compatibility</td>
+<td><code>.venv-shacl/bin/python tools/run_compatibility_shacl.py --check</code></td>
+<td>Fresh replay against stored oracles: 41 scenarios, including 37 engine executions and four preflight rejections.</td>
+</tr>
+<tr>
+<td>C-13/C-18 comparison</td>
+<td><code>.venv-shacl/bin/python tools/run_comparison_shacl.py --check</code></td>
+<td>Fresh replay: 55 scenarios, including 50 engine executions and five preflight rejections.</td>
+</tr>
+<tr>
+<td>SQL history</td>
+<td><code>python tools/run_relational_history.py --check</code></td>
+<td>Fresh finite history/migration replay checked against its saved receipt.</td>
+</tr>
+<tr>
+<td>SQL assessment</td>
+<td><code>.venv-shacl/bin/python tools/run_relational_assessment.py --check</code></td>
+<td>48 fixed cases, 100 frozen generated inputs, two SHACL comparisons and four generated workload patterns; runtime timing need not be identical.</td>
+</tr>
+<tr>
+<td>Query and requirement traces</td>
+<td><code>.venv-shacl/bin/python tools/run_cq.py --check</code> and <code>.venv-shacl/bin/python tools/build_traceability.py --check</code></td>
+<td>Fixed answer/mutation and trace checks; independent-population and adequacy boundaries remain separate.</td>
+</tr>
+<tr>
+<td>This reading register</td>
+<td><code>.venv-shacl/bin/python tools/build_formal_reference.py --check</code></td>
+<td>Verifies source bindings, all 25 rows and generated explanation parity; zero new scientific executions.</td>
+</tr>
+</tbody>
+</table>
+<p>Run receipt-writing commands in a disposable checkout or preserve the original files first. A new execution has its own source/runtime/serialization identity. Compare logical results, exact oracles and source hashes as specified by each runner; do not replace a dated receipt merely to make a current page look complete.</p>
+<h2 id="read-the-constraint-register">Read the constraint register</h2>
+<p>Each row below retains the source statement, OWL encoding boundary, historical engine obligation IDs/outcomes, owner-accepted bounded claim and exclusions. Evidence links point to the actual source receipts; saved case IDs allow inspection of the original oracles. The later SQL assessment overlay is labeled separately. All 25 bounded dispositions were accepted by the author/owner for the first final release; this is not independent review or full original MUST fulfillment. The dated accepted-scope file's pending-freeze status was subsequently resolved by published v0.3.1; its original bytes are retained.</p>
+<p>Use the <a href="https://arazsaiearasi3.github.io/riskium/current/reference/search.html">term search</a> or <a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#constraints">conceptual constraints</a> to locate the source vocabulary. <a href="Evaluation.html">Evaluation</a> and the <a href="Work-Plan.html">work plan</a> explain the wider evidence and remaining tasks. No complete first-order/TPTP verification package is claimed: adding one requires a separately reviewed translation, assumptions, source mappings, oracles and validation issue before implementation or acceptance claims.</p>
+<table>
+<thead>
+<tr>
+<th>Constraint</th>
+<th>Historical HermiT</th>
+<th>Historical SHACL</th>
+<th>Bounded disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#C-01">C-01 Risk Case is not ISO Risk</a></td>
+<td>PASS</td>
+<td>NOT_RUN</td>
+<td>scoped evidence</td>
+</tr>
+<tr>
+<td><a href="#C-02">C-02 No realization from description</a></td>
+<td>PASS</td>
+<td>NOT_RUN</td>
+<td>scoped evidence</td>
+</tr>
+<tr>
+<td><a href="#C-03">C-03 Issued version immutability</a></td>
+<td>NOT_RUN</td>
+<td>NOT_RUN</td>
+<td>scoped alternative</td>
+</tr>
+<tr>
+<td><a href="#C-04">C-04 Assessment interpretation</a></td>
+<td>NOT_RUN</td>
+<td>NOT_RUN</td>
+<td>scoped alternative</td>
+</tr>
+<tr>
+<td><a href="#C-05">C-05 Temporal and administrative distinction</a></td>
+<td>NOT_RUN</td>
+<td>NOT_RUN</td>
+<td>design and finite controls</td>
+</tr>
+<tr>
+<td><a href="#C-06">C-06 Relator participant distinctness</a></td>
+<td>PASS</td>
+<td>PASS</td>
+<td>scoped evidence</td>
+</tr>
+<tr>
+<td><a href="#C-07">C-07 Role-qualified ownership</a></td>
+<td>PASS</td>
+<td>NOT_RUN</td>
+<td>design and finite controls</td>
+</tr>
+<tr>
+<td><a href="#C-08">C-08 Threshold anchor</a></td>
+<td>PASS</td>
+<td>PARTIAL</td>
+<td>scoped alternative</td>
+</tr>
+<tr>
+<td><a href="#C-09">C-09 Description aboutness</a></td>
+<td>NOT_RUN</td>
+<td>PASS</td>
+<td>scoped alternative</td>
+</tr>
+<tr>
+<td><a href="#C-10">C-10 Framework-qualified tolerance</a></td>
+<td>NOT_RUN</td>
+<td>NOT_RUN</td>
+<td>design and finite controls</td>
+</tr>
+<tr>
+<td><a href="#C-11">C-11 Vocabulary resource identity</a></td>
+<td>NOT_RUN</td>
+<td>PASS</td>
+<td>scoped alternative</td>
+</tr>
+<tr>
+<td><a href="#C-12">C-12 Evidence does not endorse</a></td>
+<td>NOT_RUN</td>
+<td>PASS</td>
+<td>scoped alternative</td>
+</tr>
+<tr>
+<td><a href="#C-13">C-13 Scale and dimension compatibility</a></td>
+<td>NOT_RUN</td>
+<td>NOT_RUN</td>
+<td>scoped alternative</td>
+</tr>
+<tr>
+<td><a href="#C-14">C-14 Heterogeneous boundaries</a></td>
+<td>NOT_RUN</td>
+<td>NOT_RUN</td>
+<td>structural alternative</td>
+</tr>
+<tr>
+<td><a href="#C-15">C-15 Intrinsic vulnerability bearer</a></td>
+<td>PASS</td>
+<td>NOT_RUN</td>
+<td>design and finite controls</td>
+</tr>
+<tr>
+<td><a href="#C-16">C-16 Admission profiles</a></td>
+<td>NOT_RUN</td>
+<td>NOT_RUN</td>
+<td>scoped alternative</td>
+</tr>
+<tr>
+<td><a href="#C-17">C-17 Multiple assertions</a></td>
+<td>NOT_RUN</td>
+<td>NOT_RUN</td>
+<td>scoped alternative</td>
+</tr>
+<tr>
+<td><a href="#C-18">C-18 Comparable assessments</a></td>
+<td>NOT_RUN</td>
+<td>NOT_RUN</td>
+<td>scoped alternative</td>
+</tr>
+<tr>
+<td><a href="#C-19">C-19 Workflow semantics</a></td>
+<td>NOT_RUN</td>
+<td>NOT_RUN</td>
+<td>executable claim deferred</td>
+</tr>
+<tr>
+<td><a href="#C-20">C-20 Risk Item vocabulary</a></td>
+<td>PASS</td>
+<td>NOT_RUN</td>
+<td>design and finite controls</td>
+</tr>
+<tr>
+<td><a href="#C-21">C-21 Reported and computed scores</a></td>
+<td>NOT_RUN</td>
+<td>NOT_RUN</td>
+<td>executable claim deferred</td>
+</tr>
+<tr>
+<td><a href="#C-22">C-22 Responsibility identity</a></td>
+<td>PASS</td>
+<td>NOT_RUN</td>
+<td>design and finite controls</td>
+</tr>
+<tr>
+<td><a href="#C-23">C-23 Context relation coherence</a></td>
+<td>PASS</td>
+<td>PASS</td>
+<td>scoped evidence</td>
+</tr>
+<tr>
+<td><a href="#C-24">C-24 Revision coherence</a></td>
+<td>PASS</td>
+<td>PASS</td>
+<td>scoped evidence</td>
+</tr>
+<tr>
+<td><a href="#C-25">C-25 Version target coherence</a></td>
+<td>PASS</td>
+<td>PASS</td>
+<td>scoped evidence</td>
+</tr>
+</tbody>
+</table>
+<h2 id="C-01">C-01 — Risk Case is not ISO Risk</h2>
+<p>Case identity is preserved across descriptions, scores, owners and administrative states. Equal labels do not establish case identity.</p>
+<p><strong>OWL encoding:</strong> Separate Case, Entry, Scenario and Result classes; no label key</p>
+<p><strong>OWL boundary:</strong> Verify intended identity examples and non-entailment without assuming unique names.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0605</code> <strong>PASS</strong>; SHACL <code>SHACL-0606</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Separate case, entry and revision keys; labels do not merge identities.</p>
+<p><strong>Remaining/excluded:</strong> Actual organizational case grounding and real reassessment continuity require attributable evidence; no automatic identity adjudication.</p>
+<p><strong>Later SQL assessment overlay (0.2.0):</strong> selected subclauses only; consult the <a href="Database-Assurance.html">assessment method</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/implementation/relational/0.2.0/mapping.json">exact mapping</a> and <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/evaluation/relational/assessment/report.json.gz">executed receipt</a>. This does not expand the earlier owner acceptance or change either historical engine outcome.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/cq/report.json">evaluation/cq/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/hermit/report.json">evaluation/hermit/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/relational/history/report.json.gz">evaluation/relational/history/report.json.gz</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> H-C-01-IDENTITY-COUNTERMODEL</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-01">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-02">C-02 — No realization from description</h2>
+<p>A scenario, consequence statement, signal, plan or report alone must not create actual occurrences, outcomes, controls or effectiveness assertions.</p>
+<p><strong>OWL encoding:</strong> No description-to-occurrence realization property chain</p>
+<p><strong>OWL boundary:</strong> Verify prohibited inferences; source statements alone cannot certify absence in an open world.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0607</code> <strong>PASS</strong>; SHACL <code>SHACL-0608</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Documentary scenarios/source statements do not automatically assert actual occurrence or effect.</p>
+<p><strong>Remaining/excluded:</strong> No claim that every external inference/application obeys the boundary or that a missing graph assertion proves nonoccurrence.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/cq/report.json">evaluation/cq/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/hermit/report.json">evaluation/hermit/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/sources/cq0708/report.json.gz">evaluation/sources/cq0708/report.json.gz</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> H-C02-NO-REALIZATION</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-02">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-03">C-03 — Issued version immutability</h2>
+<p>Issued semantic content and effective dependency versions are immutable. Correction and supersession create lineage-preserving new versions.</p>
+<p><strong>OWL encoding:</strong> Version classes/links only; no immutable issued payload semantics</p>
+<p><strong>OWL boundary:</strong> Enforce immutable payloads and lineage in data governance/database.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0609</code> <strong>NOT_RUN</strong>; SHACL <code>SHACL-0610</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Executed SQLite profile 0.1.0 preserves sealed payload, provenance and version-owned dependency snapshots, creates new revisions and rejects specified mutations.</p>
+<p><strong>Remaining/excluded:</strong> No general native InformationContent/RX-007 admission, PostgreSQL/full private-schema migration or protection against administrative DDL/PRAGMA bypass.</p>
+<p><strong>Later SQL assessment overlay (0.2.0):</strong> selected subclauses only; consult the <a href="Database-Assurance.html">assessment method</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/implementation/relational/0.2.0/mapping.json">exact mapping</a> and <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/evaluation/relational/assessment/report.json.gz">executed receipt</a>. This does not expand the earlier owner acceptance or change either historical engine outcome.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/relational/history/report.json.gz">evaluation/relational/history/report.json.gz</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/sources/cq0708/report.json.gz">evaluation/sources/cq0708/report.json.gz</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> No executed case for this obligation.</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-03">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-04">C-04 — Assessment interpretation</h2>
+<p>Results retain method/scale version, dimension, basis, relevant context and time semantics. A score is not the risk, and estimated likelihood need not be numeric.</p>
+<p><strong>OWL encoding:</strong> Assessment classes, typed links and applicable end bounds</p>
+<p><strong>OWL boundary:</strong> Verify method, scale, dimension, basis, context and time joins in data rules.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0611</code> <strong>NOT_RUN</strong>; SHACL <code>SHACL-0612</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Selected comparison records require pinned interpretation metadata and matching declared context; equal score labels/numbers cannot authorize that named task.</p>
+<p><strong>Remaining/excluded:</strong> Not universal assessment readiness, full temporal semantics, all qualitative likelihood interpretations or reproduced version-specific method payload permissions.</p>
+<p><strong>Later SQL assessment overlay (0.2.0):</strong> selected subclauses only; consult the <a href="Database-Assurance.html">assessment method</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/implementation/relational/0.2.0/mapping.json">exact mapping</a> and <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/evaluation/relational/assessment/report.json.gz">executed receipt</a>. This does not expand the earlier owner acceptance or change either historical engine outcome.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/cq/report.json">evaluation/cq/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/comparison/report.json.gz">evaluation/shacl/comparison/report.json.gz</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> No executed case for this obligation.</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-04">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-05">C-05 — Temporal and administrative distinction</h2>
+<p>Recorded time, reference time and validity intervals are distinct. Workflow closure does not prove risk cessation or successful treatment.</p>
+<p><strong>OWL encoding:</strong> Distinct class/link vocabulary only</p>
+<p><strong>OWL boundary:</strong> Temporal interval and administrative-state rules require explicit data validation.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0613</code> <strong>NOT_RUN</strong>; SHACL <code>SHACL-0614</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Recorded/reference/validity time and administrative versus real-world status remain distinct design commitments; synthetic retrieval illustrates closure versus cessation.</p>
+<p><strong>Remaining/excluded:</strong> Interval ordering, timezone/unknown-endpoint policy, actual cessation and treatment-effectiveness adjudication or workflow execution are not implemented/accepted claims.</p>
+<p><strong>Later SQL assessment overlay (0.2.0):</strong> selected subclauses only; consult the <a href="Database-Assurance.html">assessment method</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/implementation/relational/0.2.0/mapping.json">exact mapping</a> and <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/evaluation/relational/assessment/report.json.gz">executed receipt</a>. This does not expand the earlier owner acceptance or change either historical engine outcome.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/cq/report.json">evaluation/cq/report.json</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> No executed case for this obligation.</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-05">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-06">C-06 — Relator participant distinctness</h2>
+<p>An asserted ResponsibilityRelator requires at least two distinct mediated individuals. If bearer and authority resolve to one actor and no further grounding exists, retain ResponsibilityAssignmentInformation without asserting the relator.</p>
+<p><strong>OWL encoding:</strong> Local end bounds and same-pair property disjointness for the two mediation roles</p>
+<p><strong>OWL boundary:</strong> Explicit distinct participants, identity resolution and assignment grounding still need an admission/profile check.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0615</code> <strong>PASS</strong>; SHACL <code>SHACL-0616</code> <strong>PASS</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Bounded OWL and explicit-data tests enforce declared participant distinctness and retain assignment information when no relator can be grounded.</p>
+<p><strong>Remaining/excluded:</strong> Explicit identity evidence is required; different names alone do not prove different individuals or actual mandate truth.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/hermit/report.json">evaluation/hermit/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/coverage-status.json">evaluation/shacl/coverage-status.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/endpoints/report.json">evaluation/shacl/endpoints/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/report.json">evaluation/shacl/report.json</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> H-C06-DISTINCT-PARTICIPANTS, H-C06-SAME-PARTICIPANT</p>
+<p><strong>SHACL cases:</strong> S-C06-DISTINCT, S-C06-SUBTYPE-BEARER, S-C06-WRONG-BEARER-TYPE, S-C06-WRONG-AUTHORITY-TYPE, S-C06-REVERSE-DIFFERENCE, S-C06-UNRESOLVED-NAMES, S-C06-SAME-ACTOR, S-C06-ALIASED-SAME-ACTOR, S-C06-ALIAS-CHAIN, S-C06-IDENTITY-CONFLICT, S-C06-RAW-IDENTITY-CONFLICT, S-C06-MISSING-BEARER, S-C06-MISSING-AUTHORITY, S-C06-EXCESS-BEARER, S-C06-EXCESS-AUTHORITY, S-C06-INFORMATION-ONLY, S-C06-RAW-INCOMPLETE, S-C06-MANAGED-INCOMPLETE</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-06">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-07">C-07 — Role-qualified ownership</h2>
+<p>ResponsibleAgentRole does not automatically mean Risk Owner. Ownership mapping requires recorded responsibility type, accountability, authority and applicable context.</p>
+<p><strong>OWL encoding:</strong> Responsible/authorizing roles stay separate; no automatic owner equivalence</p>
+<p><strong>OWL boundary:</strong> Ownership interpretation depends on mandate, scope and evidence review.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0617</code> <strong>PASS</strong>; SHACL <code>SHACL-0618</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> A responsibility role/assignment record is not automatically an actual mandate or Risk Owner.</p>
+<p><strong>Remaining/excluded:</strong> Automatic source-to-owner mapping with validated accountability/authority/scope is deferred; no automatic Risk Owner population.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/cq/report.json">evaluation/cq/report.json</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> H-C07-NO-AUTHORITY</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-07">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-08">C-08 — Threshold anchor</h2>
+<p>At least one of thresholdForIndicator or thresholdOnScale is present. If both are present, their scale/unit interpretation is compatible. Qualitative boundaries use scale semantics rather than invented numeric units.</p>
+<p><strong>OWL encoding:</strong> Threshold anchor union plus individual end bounds</p>
+<p><strong>OWL boundary:</strong> A named anchor and cross-field unit/scale compatibility require explicit-data validation.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0619</code> <strong>PASS</strong>; SHACL <code>SHACL-0620</code> <strong>PARTIAL</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Profile 0.6.0 checks declared numeric/qualitative metadata compatibility for its caller-selected dual-anchor threshold task.</p>
+<p><strong>Remaining/excluded:</strong> Global C-08 remains PARTIAL; no unit conversion, broad dimensional adequacy, numeric evaluation or full risk-record admission.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/compatibility/report.json.gz">evaluation/shacl/compatibility/report.json.gz</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/coverage-status.json">evaluation/shacl/coverage-status.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/endpoints/report.json">evaluation/shacl/endpoints/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/report.json">evaluation/shacl/report.json</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> H-C08-ANCHOR-UNION, H-C08-REMOVED-UNION, H-C08-SCALE-ONLY, H-C08-ANONYMOUS-ANCHOR, H-C08-DUAL-ANCHOR, H-C08-NO-FABRICATED-INDICATOR</p>
+<p><strong>SHACL cases:</strong> S-C08-INDICATOR-ONLY, S-C08-SCALE-ONLY, S-C08-DUAL-STRUCTURAL, S-C08-NO-ANCHOR, S-C08-RAW-NO-ANCHOR, S-C08-WRONG-INDICATOR-TYPE, S-C08-WRONG-SCALE-TYPE, S-C08-TWO-INDICATORS, S-C08-TWO-SCALES, S-C08-TASK-DUAL-UNKNOWN, S-C08-DELETED-ANCHOR-RULE</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-08">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-09">C-09 — Description aboutness</h2>
+<p>Every published RiskDescription has at least one case, pattern or scenario target. Multiple valid targets are permitted and require explicit interpretation.</p>
+<p><strong>OWL encoding:</strong> Aboutness links and individual end bounds; no global description existential</p>
+<p><strong>OWL boundary:</strong> A published-description profile needs an explicit publication focus and a validated aboutness alternative. Ordinary descriptions are not thereby rejected.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0621</code> <strong>NOT_RUN</strong>; SHACL <code>SHACL-0622</code> <strong>PASS</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Published-description SHACL checks explicit case/pattern/scenario aboutness and permits multiple declared targets.</p>
+<p><strong>Remaining/excluded:</strong> Not HermiT discharge, target truth, occurrence evidence or a single universal target interpretation.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/coverage-status.json">evaluation/shacl/coverage-status.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/endpoints/report.json">evaluation/shacl/endpoints/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/report.json">evaluation/shacl/report.json</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> No executed case for this obligation.</p>
+<p><strong>SHACL cases:</strong> S-C09-CASE, S-C09-PATTERN, S-C09-WRONG-PATTERN-TYPE, S-C09-SCENARIO, S-C09-WRONG-SCENARIO-TYPE, S-C09-MULTIPLE-TARGETS, S-C09-PUBLISHED-NO-TARGET, S-C09-ORDINARY-NO-TARGET, S-C09-UNTYPED-PUBLISHED, S-C09-WRONG-TARGET-TYPE, S-C09-DELETED-MINIMUM</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-09">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-10">C-10 — Framework-qualified tolerance</h2>
+<p>Tolerance statements retain source framework/version, original meaning and context. Permissible deviation is not automatically equivalent to readiness to bear remaining risk.</p>
+<p><strong>OWL encoding:</strong> Source-qualified tolerance vocabulary retained</p>
+<p><strong>OWL boundary:</strong> Framework/version meaning and applicability are not a universal OWL equivalence.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0623</code> <strong>NOT_RUN</strong>; SHACL <code>SHACL-0624</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Distinct source-qualified tolerance meanings are represented without global equivalence.</p>
+<p><strong>Remaining/excluded:</strong> Complete normative appetite/tolerance definitions and ISO/COBIT/Risk IT equivalence/crosswalk/compliance are unassessed and unclaimed.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/references/report.json">evaluation/references/report.json</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/references/corpus.json">references/corpus.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> No executed case for this obligation.</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-10">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-11">C-11 — Vocabulary resource identity</h2>
+<p>Vocabulary resources retain scheme-qualified identity. Labels are representations and are not OWL classes by default.</p>
+<p><strong>OWL encoding:</strong> Vocabulary resources are classes of resources, labels annotations</p>
+<p><strong>OWL boundary:</strong> Scheme-qualified identity and label governance require data checks.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0625</code> <strong>NOT_RUN</strong>; SHACL <code>SHACL-0626</code> <strong>PASS</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Vocabulary metadata is keyed by scheme/edition/code; label equality does not create classes or cross-scheme identity.</p>
+<p><strong>Remaining/excluded:</strong> Metadata key validation is not universal ontological identity adjudication or a HermiT PASS for this clause.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/qualification/report.json.gz">evaluation/shacl/qualification/report.json.gz</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> No executed case for this obligation.</p>
+<p><strong>SHACL cases:</strong> VOC-RKM-C006, VOC-RKM-C017, VOC-RKM-C019, VOC-RKM-C027, VOC-RKM-C028, VOC-RKM-C029, VOC-RKM-C038, VOC-RKM-C039, VOC-RKM-C040, VOC-RKM-C042, VOC-RKM-C046, VOC-RKM-C059, VOC-RKM-C060, VOC-RKM-C061, VOC-RAW-INCOMPLETE, VOC-MISSING-SCHEME, VOC-MISSING-EDITION, VOC-MISSING-CODE, VOC-MISSING-LABEL, VOC-BLANK-CODE, VOC-SCHEME-MISMATCH, VOC-DELETED-AGREEMENT, VOC-DUPLICATE-KEY, VOC-DELETED-UNIQUENESS, VOC-OTHER-SCHEME, VOC-OTHER-EDITION, VOC-ASSERTED-ALIAS, VOC-WRONG-CANDIDATE, VOC-INTEGRATED</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-11">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-12">C-12 — Evidence does not endorse</h2>
+<p>EvidenceReference states an evidential role such as support, challenge or context. Linking a source does not automatically prove the target claim.</p>
+<p><strong>OWL encoding:</strong> Evidence links carry types, no endorsement implication</p>
+<p><strong>OWL boundary:</strong> Evidential role and truth/endorsement require interpretation.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0627</code> <strong>NOT_RUN</strong>; SHACL <code>SHACL-0628</code> <strong>PASS</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Selected evidence records carry source/item/target and Support/Challenge/Context role; source-query provenance can be inspected.</p>
+<p><strong>Remaining/excluded:</strong> Conformance and source links do not establish truth, endorsement, evidential adequacy or independent corroboration.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/qualification/report.json.gz">evaluation/shacl/qualification/report.json.gz</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/sources/cq06/report.json.gz">evaluation/sources/cq06/report.json.gz</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/sources/cq0708/report.json.gz">evaluation/sources/cq0708/report.json.gz</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> No executed case for this obligation.</p>
+<p><strong>SHACL cases:</strong> EVIDENCE-SUPPORT, EVIDENCE-CHALLENGE, EVIDENCE-CONTEXT, EVIDENCE-RAW, EVIDENCE-MISSING-ROLE, EVIDENCE-MISSING-SOURCE, EVIDENCE-MISSING-ITEM, EVIDENCE-MISSING-TARGET, EVIDENCE-UNKNOWN-ROLE, EVIDENCE-LITERAL-SOURCE, EVIDENCE-MISSING-ITEM-PAIR, EVIDENCE-DELETED-ITEM-RULE, EVIDENCE-SUPPORT-WITHOUT-PAIR, EVIDENCE-DELETED-ROLE-RULE, EVIDENCE-CHALLENGE-WITH-SUPPORT-PAIR, EVIDENCE-OTHER-ITEM, EVIDENCE-OTHER-TARGET, EVIDENCE-INTEGRATED</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-12">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-13">C-13 — Scale and dimension compatibility</h2>
+<p>A selected level belongs to the selected scale version and dimension. Results on incompatible methods/scales are not ranked merely by equal labels or numeric codes.</p>
+<p><strong>OWL encoding:</strong> Scale/dimension classes and links</p>
+<p><strong>OWL boundary:</strong> Pinning, compatibility and numerical ordering require explicit data rules.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0629</code> <strong>NOT_RUN</strong>; SHACL <code>SHACL-0630</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Profile 0.7.0 checks selected level/scale-version/dimension joins for the declared comparison task.</p>
+<p><strong>Remaining/excluded:</strong> No general level ordering, numeric-code ranking, unit transformation or proof of scale meaning.</p>
+<p><strong>Later SQL assessment overlay (0.2.0):</strong> selected subclauses only; consult the <a href="Database-Assurance.html">assessment method</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/implementation/relational/0.2.0/mapping.json">exact mapping</a> and <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/evaluation/relational/assessment/report.json.gz">executed receipt</a>. This does not expand the earlier owner acceptance or change either historical engine outcome.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/comparison/report.json.gz">evaluation/shacl/comparison/report.json.gz</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> No executed case for this obligation.</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-13">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-14">C-14 — Heterogeneous boundaries</h2>
+<p>RiskSource, Consequence and RiskControl remain catalog notions and optional external boundaries, excluded from native formal-core class assertions. Source, outcome and control content is represented by RiskSourceReference, ConsequenceStatement and ControlReference.</p>
+<p><strong>OWL encoding:</strong> Three optional boundaries and seven bridges excluded from class/property export</p>
+<p><strong>OWL boundary:</strong> External alignment requires a separately reviewed import or bridge.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0631</code> <strong>NOT_RUN</strong>; SHACL <code>SHACL-0632</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Three optional heterogeneous boundaries and seven bridges are excluded from the typed core; documentary reference classes remain.</p>
+<p><strong>Remaining/excluded:</strong> Structural/boundary checks are not new HermiT runs or proof of external referent existence; external ontology import/mapping extension stays future work.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/c14-boundary-review.json">evaluation/c14-boundary-review.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/admission/report.json.gz">evaluation/shacl/admission/report.json.gz</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> No executed case for this obligation.</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-14">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-15">C-15 — Intrinsic vulnerability bearer</h2>
+<p>Every asserted intrinsic Vulnerability has exactly one substantial-endurant bearer. A reported hypothesis alone is information, not an actual mode.</p>
+<p><strong>OWL encoding:</strong> Characterization bearer relation has its reviewed exactly-one source-end restriction</p>
+<p><strong>OWL boundary:</strong> OWL can satisfy existence anonymously or merge named bearers; actual substantial bearer/admission needs separate evidence.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0633</code> <strong>PASS</strong>; SHACL <code>SHACL-0634</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Bounded OWL bearer dependence/cardinality supports the intrinsic-vulnerability design; reports remain documentary information.</p>
+<p><strong>Remaining/excluded:</strong> Full explicit-data bearer admission and real-world substantial-bearer/vulnerability grounding remain unexecuted/unaccepted; no automatic mode from a hypothesis.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/hermit/report.json">evaluation/hermit/report.json</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> H-C15-TWO-DISTINCT-BEARERS</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-15">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-16">C-16 — Admission profiles</h2>
+<p>Raw source content is retained in staging. Managed records require identity, subject, title and provenance. Analytical readiness additionally requires the pinned context, method, scale, basis, dimension and time required for the selected task.</p>
+<p><strong>OWL encoding:</strong> Typed managed profile is documented</p>
+<p><strong>OWL boundary:</strong> Raw, managed and task-ready admission are SHACL/application profiles, not inferred from absent triples.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0635</code> <strong>NOT_RUN</strong>; SHACL <code>SHACL-0636</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> CatalogInspection metadata admission and separately named compatibility/comparison/source/history tasks have explicit staging and task boundaries.</p>
+<p><strong>Remaining/excluded:</strong> No general complete RiskAssessment readiness or arbitrary multi-relation/conditional integration; only named executed profiles may be called supported.</p>
+<p><strong>Later SQL assessment overlay (0.2.0):</strong> selected subclauses only; consult the <a href="Database-Assurance.html">assessment method</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/implementation/relational/0.2.0/mapping.json">exact mapping</a> and <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/evaluation/relational/assessment/report.json.gz">executed receipt</a>. This does not expand the earlier owner acceptance or change either historical engine outcome.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/relational/history/report.json.gz">evaluation/relational/history/report.json.gz</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/admission/report.json.gz">evaluation/shacl/admission/report.json.gz</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/comparison/report.json.gz">evaluation/shacl/comparison/report.json.gz</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/compatibility/report.json.gz">evaluation/shacl/compatibility/report.json.gz</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/sources/cq06/report.json.gz">evaluation/sources/cq06/report.json.gz</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/sources/cq0708/report.json.gz">evaluation/sources/cq0708/report.json.gz</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> No executed case for this obligation.</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-16">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-17">C-17 — Multiple assertions</h2>
+<p>Multiple classifications, descriptions, actors and evidence assertions are retained with role, context, provenance and time. Scalar export requires an explicit selection rule when several values apply.</p>
+<p><strong>OWL encoding:</strong> No scalar collapse or forced functional property beyond stated end bounds</p>
+<p><strong>OWL boundary:</strong> Assertion-level provenance, context and export selection remain data obligations.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0637</code> <strong>NOT_RUN</strong>; SHACL <code>SHACL-0638</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Selected source-query/SQL fixtures retain conflicting assertions, original/reissued values and provenance without silently selecting or overwriting.</p>
+<p><strong>Remaining/excluded:</strong> A universal scalar-export selection policy across all contexts/times and complete multi-assertion admission is deferred.</p>
+<p><strong>Later SQL assessment overlay (0.2.0):</strong> selected subclauses only; consult the <a href="Database-Assurance.html">assessment method</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/implementation/relational/0.2.0/mapping.json">exact mapping</a> and <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/evaluation/relational/assessment/report.json.gz">executed receipt</a>. This does not expand the earlier owner acceptance or change either historical engine outcome.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/relational/history/report.json.gz">evaluation/relational/history/report.json.gz</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/sources/cq06/report.json.gz">evaluation/sources/cq06/report.json.gz</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/sources/cq0708/report.json.gz">evaluation/sources/cq0708/report.json.gz</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> No executed case for this obligation.</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-17">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-18">C-18 — Comparable assessments</h2>
+<p>Direct comparison requires matching pinned method, scale, dimension, basis and temporal context; a governed explicit transformation may enable a different comparison. Missing data is not zero. Reported scores do not imply a reproducible computation.</p>
+<p><strong>OWL encoding:</strong> Distinct pinned interpretation vocabulary</p>
+<p><strong>OWL boundary:</strong> Comparison and approved transformations need governed calculation rules.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0639</code> <strong>NOT_RUN</strong>; SHACL <code>SHACL-0640</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Profile 0.7.0 checks strict eligibility for direct comparison of two selected pairs under declared pinned interpretation; missing data is not zero.</p>
+<p><strong>Remaining/excluded:</strong> Governed transformations, ranking/calculation, general temporal interpretation and universal assessment comparability are not claimed.</p>
+<p><strong>Later SQL assessment overlay (0.2.0):</strong> selected subclauses only; consult the <a href="Database-Assurance.html">assessment method</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/implementation/relational/0.2.0/mapping.json">exact mapping</a> and <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/evaluation/relational/assessment/report.json.gz">executed receipt</a>. This does not expand the earlier owner acceptance or change either historical engine outcome.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/cq/report.json">evaluation/cq/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/comparison/report.json.gz">evaluation/shacl/comparison/report.json.gz</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> No executed case for this obligation.</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-18">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-19">C-19 — Workflow semantics</h2>
+<p>State labels are scheme/version qualified. Transition rules and authority are source-backed content. Missing rule means UNKNOWN; Closed does not imply ceased risk and Treated does not imply effectiveness.</p>
+<p><strong>OWL encoding:</strong> Workflow labels and state classes remain source-qualified</p>
+<p><strong>OWL boundary:</strong> Transitions, authorization and UNKNOWN handling need data/application rules.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0641</code> <strong>NOT_RUN</strong>; SHACL <code>SHACL-0642</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Workflow labels/rules/authority remain source-qualified design content; Closed/Treated alone cannot establish cessation/effectiveness.</p>
+<p><strong>Remaining/excluded:</strong> No executable transition authority engine, universal workflow scheme mapping or treatment-effectiveness acceptance is claimed.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/cq/report.json">evaluation/cq/report.json</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> No executed case for this obligation.</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-19">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-20">C-20 — Risk Item vocabulary</h2>
+<p>In the terminology adopted by this profile, Risk Item denotes the managed risk subject modeled as RiskCase. This context-qualified mapping does not equate RiskCase with RiskRegisterEntry, RiskScenarioSpecification, ISO risk or any global Risk Item class.</p>
+<p><strong>OWL encoding:</strong> Risk Item contextual synonym retained in requirements, no OWL equivalence</p>
+<p><strong>OWL boundary:</strong> Context-sensitive terminology needs human review.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0643</code> <strong>PASS</strong>; SHACL <code>SHACL-0644</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Risk Item is a local terminology convention for the managed RiskCase subject, distinct from entry/scenario/ISO risk.</p>
+<p><strong>Remaining/excluded:</strong> No global Risk Item equivalence, automatic label-based import/class alignment or universal terminology standard.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/hermit/report.json">evaluation/hermit/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/relational/history/report.json.gz">evaluation/relational/history/report.json.gz</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> H-C20-NO-CASE-ENTRY-EQUIVALENCE</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-20">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-21">C-21 — Reported and computed scores</h2>
+<p>A reported RiskScoreResult may have no derivedFrom links. A computed RiskScoreResult requires at least one linked DimensionAssessmentResult, a pinned method and adequate inputs. The score kind must be recorded.</p>
+<p><strong>OWL encoding:</strong> Score/result properties retain local bounds, no universal derivedFrom minimum</p>
+<p><strong>OWL boundary:</strong> Conditional reported-versus-computed dependency and arithmetic need data rules.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0645</code> <strong>NOT_RUN</strong>; SHACL <code>SHACL-0646</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Reported and computed score meanings/links are distinguished in the conceptual design.</p>
+<p><strong>Remaining/excluded:</strong> Complete current conditional computed-score admission, formula/input scalar schema and reproducible arithmetic engine are not executed public capabilities. Historical private calculation checks remain historical.</p>
+<p><strong>Later SQL assessment overlay (0.2.0):</strong> selected subclauses only; consult the <a href="Database-Assurance.html">assessment method</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/implementation/relational/0.2.0/mapping.json">exact mapping</a> and <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/evaluation/relational/assessment/report.json.gz">executed receipt</a>. This does not expand the earlier owner acceptance or change either historical engine outcome.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/cq/report.json">evaluation/cq/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/manuscript-review/ledger.json">evaluation/manuscript-review/ledger.json</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> No executed case for this obligation.</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-21">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-22">C-22 — Responsibility identity</h2>
+<p>Repeated mandates between the same participants are permitted when grounding assignment, responsibility scope or validity differs. Duplicate representations of the same grounded mandate must resolve to one relator identity; participant equality alone is not an identity key.</p>
+<p><strong>OWL encoding:</strong> No keys based solely on mediated participant pairs</p>
+<p><strong>OWL boundary:</strong> Mandate identity and duplicate adjudication depend on assignment, scope and validity.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0647</code> <strong>PASS</strong>; SHACL <code>SHACL-0648</code> <strong>NOT_RUN</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Bounded OWL countermodels avoid using participant pair alone as a mandate identity key.</p>
+<p><strong>Remaining/excluded:</strong> Actual assignment/scope/validity grounding and application deduplication of mandates are deferred; no new actual responsibility identities from names.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/cq/report.json">evaluation/cq/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/hermit/report.json">evaluation/hermit/report.json</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> H-C22-NO-PARTICIPANT-PAIR-KEY</p>
+<p><strong>SHACL cases:</strong> No executed case for this obligation.</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-22">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-23">C-23 — Context relation coherence</h2>
+<p>Every analyzedInContext link is also a hasContext link for the same RiskCase and RiskContextSpecification. The broader hasContext relation may include non-analysis context.</p>
+<p><strong>OWL encoding:</strong> The source-backed <code>analyzedInContext</code> to <code>hasContext</code> subproperty axiom is encoded</p>
+<p><strong>OWL boundary:</strong> Reverse implication is absent; same-pair implication needs a reasoner test.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0649</code> <strong>PASS</strong>; SHACL <code>SHACL-0650</code> <strong>PASS</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Current explicit graph coherence checks analyzedInContext as a subrelation of hasContext with the same pair; no reverse repair.</p>
+<p><strong>Remaining/excluded:</strong> Finite asserted-graph constraint checks, not all data or full task/semantic acceptance.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/hermit/report.json">evaluation/hermit/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/coherence/report.json">evaluation/shacl/coherence/report.json</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> H-C23-NO-REVERSE-CONTEXT, H-C23-ANALYZED-IMPLIES-CONTEXT</p>
+<p><strong>SHACL cases:</strong> C23-MATCH, C23-GENERAL-ONLY, C23-UNSPECIFIED, C23-MISSING-GENERAL, C23-DIFFERENT-GENERAL, C23-MULTIPLE, C23-MISSING-ONE, C23-UNTYPED-SUBJECT, C23-WRONG-CONTEXT-TYPE, C23-CONTEXT-ALIASES, C23-LABELS-NOT-IDENTITY, C23-RAW-INCOMPLETE, C23-DELETED-RULE, C23-REVERSED-RULE, C23-INTEGRATED-VALID, C23-INTEGRATED-MISSING</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-23">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-24">C-24 — Revision coherence</h2>
+<p>For each EntryRevision, revisionOf and inherited versionOf identify the same RiskRegisterEntry. previousRevision is irreflexive and acyclic and, when present, relates revisions of the same entry.</p>
+<p><strong>OWL encoding:</strong> The source-backed <code>revisionOf</code> to <code>versionOf</code> subproperty axiom is encoded</p>
+<p><strong>OWL boundary:</strong> Target coherence follows only for this relationship; irreflexivity, acyclicity and ordering still need reviewed data rules.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0651</code> <strong>PASS</strong>; SHACL <code>SHACL-0652</code> <strong>PASS</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Current graph coherence and SQLite history enforce selected same-entry revision/version targets and predecessor-cycle rules, including branches and tested long chains.</p>
+<p><strong>Remaining/excluded:</strong> Static graph evidence alone is not history; SQLite history is limited to declared profile and configured connection, not universal storage certification.</p>
+<p><strong>Later SQL assessment overlay (0.2.0):</strong> selected subclauses only; consult the <a href="Database-Assurance.html">assessment method</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/implementation/relational/0.2.0/mapping.json">exact mapping</a> and <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/evaluation/relational/assessment/report.json.gz">executed receipt</a>. This does not expand the earlier owner acceptance or change either historical engine outcome.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/hermit/report.json">evaluation/hermit/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/relational/history/report.json.gz">evaluation/relational/history/report.json.gz</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/coherence/report.json">evaluation/shacl/coherence/report.json</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> H-C-24-IDENTITY-COUNTERMODEL, H-C24-REVISION-IMPLIES-VERSION</p>
+<p><strong>SHACL cases:</strong> C24-CHAIN-1, C24-CHAIN-2, C24-CHAIN-3, C24-CHAIN-6, C24-CHAIN-12, C24-BRANCH, C24-SKIPPED-PREDECESSOR, C24-BLANK-NODES, C24-MISSING-REVISION-OF, C24-MISSING-VERSION-OF, C24-DIFFERENT-ENTRY-TARGETS, C24-DELETED-EQUALITY, C24-WRONG-ENTRY-TYPE, C24-UNTYPED-REVISION, C24-MULTIPLE-ENTRY-TARGETS, C24-CYCLE-1, C24-CYCLE-2, C24-CYCLE-3, C24-CYCLE-8, C24-CYCLE-17, C24-DELETED-CYCLE, C24-WEAKENED-CYCLE, C24-CROSS-ENTRY, C24-DELETED-LINEAGE, C24-TWO-PREDECESSORS, C24-RELAXED-PREDECESSORS, C24-ENTRY-ALIASES, C24-ALIASED-SELF-LOOP, C24-LABELS-NOT-IDENTITY, C24-RAW-CONFLICT, C24-INTEGRATED-VALID, C24-INTEGRATED-CROSS-ENTRY</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-24">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="C-25">C-25 — Version target coherence</h2>
+<p>usesContextVersion targets a version of RiskContextSpecification; usesMethodVersion a version of AssessmentMethodSpecification; usesScaleVersion a version of AssessmentScale; usesCriteriaVersion a version of RiskCriteria. Artifact-level references, when present, agree with versionOf.</p>
+<p><strong>OWL encoding:</strong> Four selected-version target-kind existential restrictions on their source classes</p>
+<p><strong>OWL boundary:</strong> Named <code>versionOf</code> and artifact-level reference agreement remain explicit-data joins; no wrong-kind contradiction follows without reviewed artifact-kind disjointness.</p>
+<p><strong>Historical outcomes:</strong> HermiT <code>HERMIT-0653</code> <strong>PASS</strong>; SHACL <code>SHACL-0654</code> <strong>PASS</strong>.</p>
+<p><strong>Accepted bounded claim:</strong> Bounded native version-target checks and selected explicit-data direct/version reference coherence have executed fixtures. SQL supplements version-owned target coherence only.</p>
+<p><strong>Remaining/excluded:</strong> SQL bindings do not replace native assessment subject/required-role admission; no full conditional multi-relation risk-record acceptance.</p>
+<p><strong>Later SQL assessment overlay (0.2.0):</strong> selected subclauses only; consult the <a href="Database-Assurance.html">assessment method</a>, <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/implementation/relational/0.2.0/mapping.json">exact mapping</a> and <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/evaluation/relational/assessment/report.json.gz">executed receipt</a>. This does not expand the earlier owner acceptance or change either historical engine outcome.</p>
+<p><strong>Evidence:</strong> <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/hermit/report.json">evaluation/hermit/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/relational/history/report.json.gz">evaluation/relational/history/report.json.gz</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/coverage-status.json">evaluation/shacl/coverage-status.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/endpoints/report.json">evaluation/shacl/endpoints/report.json</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/shacl/report.json">evaluation/shacl/report.json</a> · <a href="../downloads/riskium-model.json">ontology/riskium-model.json</a>.</p>
+<details>
+<p><summary>Original fixture identifiers and source route</summary></p>
+<p><strong>HermiT cases:</strong> H-C25-VERSION-TARGET-RX-014, H-C25-VERSION-TARGET-RX-015, H-C25-VERSION-TARGET-RX-016, H-C25-VERSION-TARGET-RX-013</p>
+<p><strong>SHACL cases:</strong> S-C25-Context-VALID, S-C25-Context-UNTYPED-VERSION, S-C25-Context-UNTYPED-SOURCE, S-C25-Context-MISSING-TARGET, S-C25-Context-WRONG-KIND, S-C25-Context-TWO-TARGETS, S-C25-Context-ALIASED-TARGET, S-C25-Context-DIRECT-MATCH, S-C25-Context-DIRECT-MISMATCH, S-C25-Context-DIRECT-ALIAS, S-C25-Method-VALID, S-C25-Method-UNTYPED-VERSION, S-C25-Method-UNTYPED-SOURCE, S-C25-Method-MISSING-TARGET, S-C25-Method-WRONG-KIND, S-C25-Method-TWO-TARGETS, S-C25-Method-ALIASED-TARGET, S-C25-Method-DIRECT-MATCH, S-C25-Method-DIRECT-MISMATCH, S-C25-Method-DIRECT-ALIAS, S-C25-Scale-VALID, S-C25-Scale-UNTYPED-VERSION, S-C25-Scale-UNTYPED-SOURCE, S-C25-Scale-MISSING-TARGET, S-C25-Scale-WRONG-KIND, S-C25-Scale-TWO-TARGETS, S-C25-Scale-ALIASED-TARGET, S-C25-Scale-DIRECT-MATCH, S-C25-Scale-DIRECT-MISMATCH, S-C25-Scale-DIRECT-ALIAS, S-C25-Criteria-VALID, S-C25-Criteria-UNTYPED-VERSION, S-C25-Criteria-UNTYPED-SOURCE, S-C25-Criteria-MISSING-TARGET, S-C25-Criteria-WRONG-KIND, S-C25-Criteria-TWO-TARGETS, S-C25-Criteria-ALIASED-TARGET</p>
+<p><a href="https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html#C-25">Conceptual clause</a> · <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/ontology/native/riskium.ontouml.json">Native exchange</a> · <a href="../widoco/ontology.ttl">OWL export</a></p>
+</details>
+<h2 id="source-and-review-record">Source and review record</h2>
+<p>Generated by <code>tools/build_formal_reference.py</code> from the conceptual source, reviewed OWL mapping, unchanged engine ledgers, <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/owner-review/accepted-scope.json">owner-accepted scope</a> and later SQL mapping. <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/evaluation/formal-reference/register.json">Machine-readable routes and digests</a> preserve the original rows. The register is a reading aid, not a new execution receipt. The full cross-document consistency gate is <a href="https://github.com/ArazSaieArasi3/riskium/issues/39">#39</a>, scheduled before the next stable freeze.</p><details class="source-record"><summary>Sources and equivalent Wiki guide</summary><p><a href="https://github.com/ArazSaieArasi3/riskium/wiki/Formalization">Equivalent Wiki guide</a> · Explanatory source: <a href="https://github.com/ArazSaieArasi3/riskium/blob/e574f19dea81f58a7112ded67fe02452ece2e8bd/docs/formal-method.md">docs/formal-method.md</a>. Source hashes are recorded in the documentation manifest; current engineering supplements are separate from the immutable source assets.</p></details></main><aside aria-label="On this page" class="toc"><h2>On this page</h2><ul><li><a href="#choose-the-question-first">Choose the question first</a></li><li><a href="#read-owl-results-under-its-assumptions">Read OWL results under its assumptions</a></li><li><a href="#validate-explicit-data-under-a-named-task">Validate explicit data under a named task</a></li><li><a href="#test-changes-over-time-in-the-application">Test changes over time in the application</a></li><li><a href="#reproduce-without-replacing-historical-evidence">Reproduce without replacing historical evidence</a></li><li><a href="#read-the-constraint-register">Read the constraint register</a></li><li><a href="#C-01">C-01 — Risk Case is not ISO Risk</a></li><li><a href="#C-02">C-02 — No realization from description</a></li><li><a href="#C-03">C-03 — Issued version immutability</a></li><li><a href="#C-04">C-04 — Assessment interpretation</a></li><li><a href="#C-05">C-05 — Temporal and administrative distinction</a></li><li><a href="#C-06">C-06 — Relator participant distinctness</a></li><li><a href="#C-07">C-07 — Role-qualified ownership</a></li><li><a href="#C-08">C-08 — Threshold anchor</a></li><li><a href="#C-09">C-09 — Description aboutness</a></li><li><a href="#C-10">C-10 — Framework-qualified tolerance</a></li><li><a href="#C-11">C-11 — Vocabulary resource identity</a></li><li><a href="#C-12">C-12 — Evidence does not endorse</a></li><li><a href="#C-13">C-13 — Scale and dimension compatibility</a></li><li><a href="#C-14">C-14 — Heterogeneous boundaries</a></li><li><a href="#C-15">C-15 — Intrinsic vulnerability bearer</a></li><li><a href="#C-16">C-16 — Admission profiles</a></li><li><a href="#C-17">C-17 — Multiple assertions</a></li><li><a href="#C-18">C-18 — Comparable assessments</a></li><li><a href="#C-19">C-19 — Workflow semantics</a></li><li><a href="#C-20">C-20 — Risk Item vocabulary</a></li><li><a href="#C-21">C-21 — Reported and computed scores</a></li><li><a href="#C-22">C-22 — Responsibility identity</a></li><li><a href="#C-23">C-23 — Context relation coherence</a></li><li><a href="#C-24">C-24 — Revision coherence</a></li><li><a href="#C-25">C-25 — Version target coherence</a></li><li><a href="#source-and-review-record">Source and review record</a></li></ul></aside></div><footer class="site-footer"><div><strong>Riskium</strong><p>An ontology for modeling enterprise risk knowledge.</p></div><div><a href="Citation.html">Citation and authors</a> · <a href="Limitations.html">Scope and limitations</a> · <a href="https://github.com/ArazSaieArasi3/riskium">Repository</a><p>Scientific content: CC BY 4.0 · Original software: MIT. Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi, for their respective contributions.</p></div></footer></body></html>
+

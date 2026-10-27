@@ -49,7 +49,7 @@ class SuccessorRelease(unittest.TestCase):
         self.assertEqual(len(dist.validate_distribution(self.frozen, p)['artifacts']), 20)
 
     def test_unregistered_and_unsafe_tags_are_rejected(self):
-        for tag in ['v0.3.3', '../v0.3.2', 'v0.3.2-rc.1', 'v0.3.2\npublish=true']:
+        for tag in ['v0.3.4', '../v0.3.2', 'v0.3.2-rc.1', 'v0.3.2\npublish=true']:
             with self.subTest(tag=tag), self.assertRaises(ValueError):
                 stable.profile_path(ROOT, tag)
 

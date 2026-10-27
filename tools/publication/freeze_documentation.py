@@ -13,7 +13,8 @@ def freeze(label, source, version):
         raise ValueError('Existing snapshot cannot be replaced')
     inputs = tree_files(ROOT, source, 'docs/current')
     m = json.loads(inputs['publication-manifest.json'])
-    if label != 'v' + m['model_version'] or m['semantic_source_commit'] != '8afe169968b5c1396c02834dbc499af691b894b4':
+    registered_successor = label == 'v0.3.3' and version == '0.2.0' and m['model_version'] == '0.3.1'
+    if (label != 'v' + m['model_version'] and not registered_successor) or m['semantic_source_commit'] != '8afe169968b5c1396c02834dbc499af691b894b4':
         raise ValueError('Unreviewed model/documentation compatibility')
     outputs = freeze_files(inputs, label, source, version)
     route = 'releases/' + label

@@ -1,0 +1,44 @@
+{
+  "configuration_sha256": "817b3e2711554cec4c303a73fa5b6bfd5eea772659c9b92cc68ec4a9fd10f62d",
+  "files_sha256": {
+    "index-en.html": "04d7e47486d5a9b7946c388aeb5a1b060631a77cb71e31e63c3e4b8e277a257a",
+    "ontology.jsonld": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+    "ontology.nt": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+    "ontology.owl": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+    "ontology.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+    "provenance/provenance-en.html": "2b103029420d6028874986c3fb9f07ef33b74ae8470f15efc8c1877d9f84cfc9",
+    "resources/extra.css": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+    "resources/owl.css": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+    "resources/primer.css": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+    "resources/rec.css": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+    "resources/riskium.css": "b6bda9ae35ba69dec80a60435f9720bfff2cc490ca66b1cd7f76899cb69a4d07",
+    "serialization-receipt.json": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d"
+  },
+  "frozen_presentation_projection": {
+    "note": "Only documentation banners and source/root-relative navigation changed; original generator and graph receipts remain identifiable.",
+    "original_output_hashes": {
+      "index-en.html": "eda66aaef73df7d9bb4f6bd348c0e99696e02c3e7f591329b3f6add3170b79c2",
+      "ontology.jsonld": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+      "ontology.nt": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+      "ontology.owl": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+      "ontology.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+      "provenance/provenance-en.html": "71a9eb639f3920576eb1b899649b6ea54be68f4092761c51dfa3d34a4e56f6b8",
+      "resources/extra.css": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+      "resources/owl.css": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+      "resources/primer.css": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+      "resources/rec.css": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+      "resources/riskium.css": "b6bda9ae35ba69dec80a60435f9720bfff2cc490ca66b1cd7f76899cb69a4d07",
+      "serialization-receipt.json": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d"
+    },
+    "original_tool_provenance_sha256": "7ce6bbbaed1fecbbcf2d0223ff0ffe21218c900370bdcb8b29852d8424cfa326",
+    "renderer": "tools/publication/site_registry.py",
+    "source_commit": "e574f19dea81f58a7112ded67fe02452ece2e8bd"
+  },
+  "jar_download": "https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar",
+  "jar_sha256": "be57a270fffb91e55810fa308717e704a44e2e7c027a3d68125a49da6c8b4e2b",
+  "postprocessor_sha256": "247f0f0033d5668ce9053b6b29de1896e7b391dbe3246c389b7d61e4b265fd49",
+  "runtime_network": "Only local text filtering. No remote active assets, uploads, storage or analytics. External hyperlinks load only when followed.",
+  "source_commit": "8afe169968b5c1396c02834dbc499af691b894b4",
+  "source_sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+  "widoco_version": "1.4.25"
+}

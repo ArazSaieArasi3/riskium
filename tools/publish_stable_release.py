@@ -64,6 +64,8 @@ def previous_releases(repo, target=TAG):
     tags = [f'v0.3.1-rc.{n}' for n in range(1, 8)]
     if target != TAG:
         tags.append(TAG)
+    if target == 'v0.3.3':
+        tags.append('v0.3.2')
     for tag in tags:
         release = api(repo, 'releases/tags/' + tag)
         rows.append({'tag': tag, 'commit': tag_commit(repo, tag), 'release_id': release['id'],
@@ -108,7 +110,8 @@ def validate_package(folder, source_commit):
             actual.append({'path': path, 'bytes': member.size, 'sha256': digest(blobs[path])})
     require(actual == manifest['files'] and len(actual) == manifest['file_count'], 'Downloaded source archive inventory mismatch')
     matrix = json.loads((folder / 'artifact-versions.json').read_text())
-    require(matrix['tag'] == tag and matrix['source_commit'] == source_commit and len(matrix['matrix']['artifacts']) == (10 if tag == TAG else 20), 'Frozen artifact matrix mismatch')
+    expected_components = {'v0.3.1': 10, 'v0.3.2': 20, 'v0.3.3': 24}
+    require(tag in expected_components and matrix['tag'] == tag and matrix['source_commit'] == source_commit and len(matrix['matrix']['artifacts']) == expected_components[tag], 'Frozen artifact matrix mismatch')
     indexed = {row['path']: row for row in actual}
     require(indexed[freeze.get('profile_path', 'releases/stable-profile-v0.3.1.json')]['sha256'] == freeze['profile_sha256'], 'Archived stable profile mismatch')
     require(indexed[freeze.get('critical_screen_path', 'evaluation/finalization/v0.3.1-review.json')]['sha256'] == freeze['critical_screen_sha256'], 'Archived critical screen mismatch')

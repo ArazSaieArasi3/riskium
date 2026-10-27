@@ -348,6 +348,11 @@
       "bytes": 4102
     },
     {
+      "path": "docs/release-v0.3.3.md",
+      "sha256": "d994a6b84814139e19377a312e71919cef694bbf1b34f5126f0a30887d8090bb",
+      "bytes": 3982
+    },
+    {
       "path": "docs/reproducibility.md",
       "sha256": "eb05fe63474c50ad5607c4b0d43f391f00c88b805f993489c09bc5075db7c251",
       "bytes": 16664
@@ -571,6 +576,11 @@
       "path": "evaluation/finalization/v0.3.2-review.json",
       "sha256": "341004848b73910bf9812d46b532923d4765ef66443813d41250009b6b1264b7",
       "bytes": 4483
+    },
+    {
+      "path": "evaluation/finalization/v0.3.3-review.json",
+      "sha256": "944dac7b0a77f5e4e12f9318a59396298ad13403a23db9b24cf9deb82f41a102",
+      "bytes": 5061
     },
     {
       "path": "evaluation/formal-reference/README.md",
@@ -1668,6 +1678,11 @@
       "bytes": 45839
     },
     {
+      "path": "releases/distribution-v0.3.3.json",
+      "sha256": "00c7c19dc3f751d65e1c071b6025c714447f8cfb93de1546c73aa4ba0ba0788d",
+      "bytes": 63489
+    },
+    {
       "path": "releases/stable-profile-v0.3.1.json",
       "sha256": "2d1a4e9e7530fa71eef6b9f21d9c4de09209c501bff980978c3069d4f26fb8d1",
       "bytes": 909
@@ -1678,9 +1693,14 @@
       "bytes": 1072
     },
     {
+      "path": "releases/stable-profile-v0.3.3.json",
+      "sha256": "fcadf833aa615a508bd97a08de83625edb5d866f89a6dc2ddfbe796f0f8425c8",
+      "bytes": 1113
+    },
+    {
       "path": "releases/stable-profiles.json",
-      "sha256": "e67d98ceb33ed7fbb37c2bd0428c053bf34ae52a97cb76d425d50288ba5a76ae",
-      "bytes": 180
+      "sha256": "8d0e1e48afa33fa0829d59885529a5ac55d7bb36b92f9e6d651588c359c0f393",
+      "bytes": 233
     },
     {
       "path": "releases/stable-request.json",
@@ -1938,6 +1958,11 @@
       "bytes": 2308
     },
     {
+      "path": "tests/test_release_v033.py",
+      "sha256": "a226a627c175017a8a1251b8ba271ff6ee3109586c04ae32f766b0f374d585eb",
+      "bytes": 4281
+    },
+    {
       "path": "tests/test_shacl_runner.py",
       "sha256": "5d5b9a611115d206b29a054c59b6fe46048056eb6654530449708040d9c9bf89",
       "bytes": 3051
@@ -1959,7 +1984,7 @@
     },
     {
       "path": "tests/test_successor_release.py",
-      "sha256": "5dfc3d51883ffe4872a0a31a0d69228021182071e6d9d1db6144abc24ca2876f",
+      "sha256": "0f55015572438648107ef7cbefa8a0cf90c58a5b9c666e1c07e3279939f55f97",
       "bytes": 9260
     },
     {
@@ -2189,8 +2214,8 @@
     },
     {
       "path": "tools/publication/freeze_documentation.py",
-      "sha256": "66037d01661d15a22b642cb2018182c52c297bc664858a21084f761096a7e6d1",
-      "bytes": 2316
+      "sha256": "3e5b11c6b3d518d155cbfc317d37514ab1c1b4850129e0de5a4d1013b088c8dc",
+      "bytes": 2449
     },
     {
       "path": "tools/publication/guide-registry.json",
@@ -2209,8 +2234,8 @@
     },
     {
       "path": "tools/publication/pages-registry.json",
-      "sha256": "eab947c80d46e04289ba2ee59f6726fbe0bec0eeb0cdc564255196d581c76df5",
-      "bytes": 11435
+      "sha256": "64e53847bff6916f8ad6724577d5e8c7febb092aa232f6d29625e922751f9cde",
+      "bytes": 18883
     },
     {
       "path": "tools/publication/portal.css",
@@ -2274,8 +2299,8 @@
     },
     {
       "path": "tools/publish_stable_release.py",
-      "sha256": "930b54c405531b31b72be22649361aefd30ddef2f3ad6fe5d1a545ec54b2727e",
-      "bytes": 13853
+      "sha256": "7f4e0c50c77432446ed1f1d2e7164e490cb2ebda7a58ac89f86804ee5cbcc62a",
+      "bytes": 14008
     },
     {
       "path": "tools/relational_assessment.py",
@@ -2329,8 +2354,8 @@
     },
     {
       "path": "tools/review_distribution.py",
-      "sha256": "3b713d87fcc95d59d8c87d3857dadbd39e660f1eb7d4c518d9f692a4baf938dd",
-      "bytes": 11060
+      "sha256": "a00e6283ff62f869b74adbc655813fddf4b6639c5d4ae456ecae6f76c7e5a81b",
+      "bytes": 15930
     },
     {
       "path": "tools/review_references.py",
@@ -2479,7 +2504,7 @@
     }
   ],
   "generated_outputs": "21 shared Wiki/Pages guides and registered frozen outputs are verified separately; HTTP/Wiki readbacks bind actual publication.",
-  "frozen_snapshots": 2,
+  "frozen_snapshots": 3,
   "external_article": "Actual author-facing binaries matched the approved receipt; binaries remain outside this repository.",
   "component_registers": [
     "releases/artifact-matrix.json",

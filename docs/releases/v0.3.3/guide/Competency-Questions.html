@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="Riskium enterprise risk ontology: conceptual definitions, bounded OWL reference, evaluation and reproducible sources." name="description"/><title>Competency questions — Riskium</title><link href="../assets/portal.css?v=0987488cda1a" rel="stylesheet"/></head><body class="reading-page" data-template="riskium-pages-1"><aside aria-label="Frozen documentation identity" class="publication-context">Frozen documentation <strong>0.2.0</strong> for model v0.3.1 · <a href="https://github.com/ArazSaieArasi3/riskium/commit/e574f19dea81f58a7112ded67fe02452ece2e8bd">source e574f19dea81</a> · <a href="../../../versions/index.html">Documentation versions</a></aside><a class="skip-link" href="#content">Skip to content</a><header class="site-header"><div class="brand-row"><a href="../index.html">Riskium</a><p>Enterprise risk knowledge</p><div class="header-tools"><a href="../reference/search.html">Find a term</a><a href="../../../versions/index.html">Versions</a></div></div><nav aria-label="Primary" class="primary-nav"><a href="../index.html">Overview</a><a href="../reference/native/index.html">Conceptual reference</a><a href="../widoco/index-en.html">OWL reference</a><a href="Evaluation.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../webvowl/index.html?v=38df5ef406a0">WebVOWL</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="publication-context">Frozen documentation 0.2.0 · published model v0.3.1 · explanatory source e574f19dea81</div><details class="mobile-navigation"><summary>Documentation and page contents</summary><div><h2>Understand</h2><ul><li><a href="Home.html">Home</a></li><li><a href="Scope.html">Scope</a></li><li><a href="Overview.html">Overview</a></li><li><a href="Decisions.html">Modeling decisions</a></li><li><a href="Using-the-Model.html">Using the model</a></li></ul><h2>Inspect and evaluate</h2><ul><li><a href="Requirements.html">Requirements</a></li><li><a aria-current="page" href="Competency-Questions.html">Competency questions</a></li><li><a href="Formalization.html">Formalization</a></li><li><a href="Evaluation.html">Evaluation</a></li><li><a href="Quality.html">Quality</a></li><li><a href="Traceability.html">Traceability</a></li><li><a href="Database-Assurance.html">Database assurance</a></li><li><a href="Reproduce.html">Reproduce</a></li></ul><h2>Sources and publication</h2><ul><li><a href="Visualization.html">Visualization</a></li><li><a href="References.html">References</a></li><li><a href="Citation.html">Citation</a></li><li><a href="Limitations.html">Limitations</a></li><li><a href="Artifact-Versions.html">Artifact versions</a></li><li><a href="Publication.html">Publication</a></li><li><a href="Publication-Comparison.html">Publication comparison</a></li><li><a href="Work-Plan.html">Work and release plan</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a term</a></li><li><a href="../reference/diagrams/index.html">Diagrams</a></li><li><a href="../publication-manifest.json">Source record</a></li><li><a href="../../../versions/index.html">Documentation versions</a></li><li><a href="https://github.com/ArazSaieArasi3/riskium/wiki">GitHub Wiki</a></li></ul><h2>On this page</h2><ul></ul></div></details><div class="layout"><aside aria-label="Documentation navigation" class="sidebar"><h2>Understand</h2><ul><li><a href="Home.html">Home</a></li><li><a href="Scope.html">Scope</a></li><li><a href="Overview.html">Overview</a></li><li><a href="Decisions.html">Modeling decisions</a></li><li><a href="Using-the-Model.html">Using the model</a></li></ul><h2>Inspect and evaluate</h2><ul><li><a href="Requirements.html">Requirements</a></li><li><a aria-current="page" href="Competency-Questions.html">Competency questions</a></li><li><a href="Formalization.html">Formalization</a></li><li><a href="Evaluation.html">Evaluation</a></li><li><a href="Quality.html">Quality</a></li><li><a href="Traceability.html">Traceability</a></li><li><a href="Database-Assurance.html">Database assurance</a></li><li><a href="Reproduce.html">Reproduce</a></li></ul><h2>Sources and publication</h2><ul><li><a href="Visualization.html">Visualization</a></li><li><a href="References.html">References</a></li><li><a href="Citation.html">Citation</a></li><li><a href="Limitations.html">Limitations</a></li><li><a href="Artifact-Versions.html">Artifact versions</a></li><li><a href="Publication.html">Publication</a></li><li><a href="Publication-Comparison.html">Publication comparison</a></li><li><a href="Work-Plan.html">Work and release plan</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a term</a></li><li><a href="../reference/diagrams/index.html">Diagrams</a></li><li><a href="../publication-manifest.json">Source record</a></li><li><a href="../../../versions/index.html">Documentation versions</a></li><li><a href="https://github.com/ArazSaieArasi3/riskium/wiki">GitHub Wiki</a></li></ul></aside><main id="content" tabindex="-1"><nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../index.html">Riskium</a><span aria-hidden="true">/</span><span>Competency questions</span></nav><h1 id="competency-question-execution-contracts">Competency-question execution contracts</h1>
+<blockquote>
+<p>These original task contracts retain their own population and source boundaries. Later finite source-backed CQ06–CQ08 supplements and owner acceptance do not retroactively make the original independent populations complete. Current scope and remaining case/meaning work are identified in the Work and release plan.</p>
+</blockquote>
+<p>These eight SELECT contracts supplement the unchanged public CQ planning snapshot in <code>../competency-questions.json</code>. They use conceptual design 0.3.1 and its exact released OWL mapping. The post-prerelease implementation is not part of the historical <code>v0.3.1-rc.1</code> archive.</p>
+<p>Each query has four separate named fixture graphs: positive, negative, incomplete and conflicting. The fixed expected binding rows in <code>contracts.json</code> were authored separately from execution; no answer is computed from the query and then installed as its own oracle. Each separate mutant query must run successfully on the unchanged positive graph and disagree with the unchanged expected rows. Parser/engine errors are errors, never successful mutation detection.</p>
+<table>
+<thead>
+<tr>
+<th>CQ</th>
+<th>Query representation</th>
+<th>Declared source-population status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CQ01: entries documenting one case</td>
+<td>Native <code>R-01</code>; explicit RDF resource links, no equal-label grouping</td>
+<td>Synthetic design task executed</td>
+</tr>
+<tr>
+<td>CQ02: scenarios about a case</td>
+<td>Native <code>R-36</code>; no scenario/case identity or occurrence inference</td>
+<td>Synthetic design task executed</td>
+</tr>
+<tr>
+<td>CQ03: equal scores with different pinned scales</td>
+<td>Native <code>R-18 derivedFrom</code>, <code>RX-016 usesScaleVersion</code>, <code>RX-006 versionOf</code>; supplementary numeric envelope field</td>
+<td>Synthetic design task executed within this explicit mixed profile; native-only scalar/comparability adequacy remains partial</td>
+</tr>
+<tr>
+<td>CQ04: assignment without actual mandate</td>
+<td>Native <code>R-10</code> and optional <code>R-55</code>; missing bindings stay unbound</td>
+<td>Synthetic design task executed</td>
+</tr>
+<tr>
+<td>CQ05: entry closure versus cessation</td>
+<td>Native revision/state/case links plus synthetic state identifiers</td>
+<td>Synthetic design task executed; no universal workflow meaning or OWL non-entailment result</td>
+</tr>
+<tr>
+<td>CQ06: source traceability</td>
+<td>Native evidence links plus supplementary locator/origin/source record metadata</td>
+<td>Synthetic controls executed; declared independently prepared evidence population NOT_RUN</td>
+</tr>
+<tr>
+<td>CQ07: correction lineage</td>
+<td>Native version-of links plus explicit supplementary PROV revision links between records</td>
+<td>Synthetic controls executed; declared independently prepared evidence population NOT_RUN</td>
+</tr>
+<tr>
+<td>CQ08: unasserted case identity</td>
+<td>Raw application record/candidate; optional native scenario-aboutness link; no promotion to a managed scenario</td>
+<td>Synthetic controls executed; declared independently prepared evidence population NOT_RUN</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/requirements/cq/profile.json">profile policy</a> distinguishes native elements from supplementary scalar, provenance and staging terms. No class, property or axiom is silently added to Riskium. The fixed TriG fixtures are entirely author-created examples, not extracted literature data. The runner queries one named graph at a time, with no imports, identity normalization, inference or remote service.</p>
+<p>Conflicting graphs deliberately preserve multiple answers and are not claimed conformant managed instances. An unbound value means no asserted match, not falsehood or an OWL negative assertion. These queries do not establish actual event occurrence, mandate authority, independent source corroboration, immutable history, verified arithmetic or standards compliance.</p>
+<p>The eight new synthetic contracts execute 40 queries (32 answer cases plus eight mutation controls). Only CQ01–CQ05 match the original planning snapshot's synthetic population; CQ06–CQ08 still need independent data preparation and acceptance in #13/#7. All 28 public requirement/scope/CQ identities, current evidence and gaps are in <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/evaluation/traceability/README.md">the traceability ledger</a>. Trace completeness does not imply that all requirements are accepted.</p>
+<pre><code class="language-sh">python3 -m venv .venv-owl
+.venv-owl/bin/pip install -r tools/requirements-owl.txt
+.venv-owl/bin/python tools/run_cq.py --check
+.venv-owl/bin/python tools/build_traceability.py --check
+.venv-owl/bin/python -m unittest discover -s tests -p test_cq.py -v
+</code></pre>
+<p>Run <code>--write</code> only after reviewing intentional changes to source, profile, query, fixture or expected answer. The 674-row planning baseline, eight supplementary scope rows and HermiT/SHACL outcomes retain their own denominators and actual provenance.</p><details class="source-record"><summary>Sources and equivalent Wiki guide</summary><p><a href="https://github.com/ArazSaieArasi3/riskium/wiki/Competency-Questions">Equivalent Wiki guide</a> · Explanatory source: <a href="https://github.com/ArazSaieArasi3/riskium/blob/8afe169968b5c1396c02834dbc499af691b894b4/requirements/cq/README.md">requirements/cq/README.md</a>. Source hashes are recorded in the documentation manifest; current engineering supplements are separate from the immutable source assets.</p></details></main><aside aria-label="On this page" class="toc"><h2>On this page</h2><ul></ul></aside></div><footer class="site-footer"><div><strong>Riskium</strong><p>An ontology for modeling enterprise risk knowledge.</p></div><div><a href="Citation.html">Citation and authors</a> · <a href="Limitations.html">Scope and limitations</a> · <a href="https://github.com/ArazSaieArasi3/riskium">Repository</a><p>Scientific content: CC BY 4.0 · Original software: MIT. Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi, for their respective contributions.</p></div></footer></body></html>
+

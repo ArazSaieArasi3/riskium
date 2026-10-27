@@ -40,6 +40,8 @@ def safe_path(path):
 
 def validate_matrix(matrix, blob):
     """Same hash/compatibility validation for a checkout and downloaded archive."""
+    if matrix.get('tag') == 'v0.3.3':
+        return validate_matrix_v033(matrix, blob)
     require(matrix['schema'] == 'riskium-successor-component-matrix-v1', 'Unknown distribution matrix')
     require(matrix['tag'] == 'v0.3.2' and matrix['model_version'] == '0.3.1', 'Unreviewed distribution/model pair')
     rows = matrix['artifacts']
@@ -80,9 +82,67 @@ def validate_matrix(matrix, blob):
     return matrix
 
 
+def validate_matrix_v033(matrix, blob):
+    """Explicit second successor; preserve the original v0.3.2 contract."""
+    require(matrix['schema'] == 'riskium-successor-component-matrix-v1' and
+            matrix['model_version'] == '0.3.1' and matrix['orsd_revision'] == '0.4.3' and
+            matrix['manuscript_version'] == '7.0.8', 'Unreviewed scientific versions')
+    require(matrix['new_owner_ratings'] == 0 and matrix['independent_validation_claimed'] is False,
+            'Unsupported review claim')
+    expected_ids = [r['id'] for r in json.loads(blob('releases/artifact-matrix.json'))['artifacts']]
+    expected_ids += [r['id'] for r in json.loads(blob('releases/development-components.json'))['components']]
+    expected_ids += ['ASSESSMENT_CORRECTION', 'WEBVOWL', 'FORMAL_REFERENCE', 'CONSISTENCY',
+                     'DOCUMENTATION', 'RIGHTS_AND_MODEL_CITATION']
+    rows = matrix['artifacts']
+    require([r['id'] for r in rows] == expected_ids and len(set(expected_ids)) == 24,
+            'Missing/duplicate selected component')
+    require(rows[:10] == json.loads(blob('releases/artifact-matrix.json'))['artifacts'] and
+            rows[10:18] == json.loads(blob('releases/development-components.json'))['components'],
+            'Accepted baseline/development selection changed')
+    correction = json.loads(blob('implementation/relational/0.3.0/component.json'))
+    require(rows[18]['files'] == [{'path': p, 'sha256': h} for p, h in correction['files_sha256'].items()] +
+            [{'path': 'implementation/relational/0.3.0/component.json',
+              'sha256': sha(blob('implementation/relational/0.3.0/component.json'))}], 'Correction selection mismatch')
+    require([r['version'] for r in rows[18:]] == ['0.3.0', '0.1.0', '0.1.0', '0.1.0', '0.2.0', 'model-0.3.1'],
+            'Unreviewed component versions')
+    for path, expected in matrix['source_registers_sha256'].items():
+        require(sha(blob(safe_path(path))) == expected, 'Selected component register drift: ' + path)
+    for row in rows:
+        require(row['compatible_model'] == '0.3.1', 'Incompatible selected component')
+        paths = [safe_path(f['path']) for f in row['files']]
+        require(paths and len(paths) == len(set(paths)), 'Empty/duplicate component files')
+        for item in row['files']:
+            require(sha(blob(item['path'])) == item['sha256'], 'Selected artifact byte drift: ' + item['path'])
+    docs = matrix['documentation']
+    registry = json.loads(blob('tools/publication/pages-registry.json'))
+    require(docs['snapshot'] == registry['releases']['v0.3.3'] and
+            docs['snapshot']['documentation_version'] == '0.2.0', 'Frozen documentation selection drift')
+    require(docs['frozen_snapshots'] == registry['releases'], 'Missing frozen snapshot preservation')
+    for snapshot in docs['frozen_snapshots'].values():
+        for name, expected in snapshot['files_sha256'].items():
+            path = safe_path(snapshot['route'] + '/' + name)
+            require(sha(blob('docs/' + path)) == expected, 'Frozen Pages source drift: ' + path)
+    require(docs['wiki_receipt'] == 'evaluation/consistency/wiki-readback.json', 'Unreviewed Wiki receipt')
+    wiki = json.loads(blob(docs['wiki_receipt']))
+    require(wiki['wiki_commit'] == docs['wiki_commit'] and len(wiki['files']) == 23, 'Wiki source mismatch')
+    require(docs['wiki_files_sha256'] == {r['page'] + '.md': r['sha256'] for r in wiki['files']},
+            'Wiki receipt inventory mismatch')
+    for name, expected in docs['wiki_files_sha256'].items():
+        require(sha(blob('docs/wiki/' + safe_path(name))) == expected, 'Stale Wiki projection: ' + name)
+    require(len(docs['current_files_sha256']) == 68, 'Incomplete current documentation inventory')
+    for name, expected in docs['current_files_sha256'].items():
+        require(sha(blob('docs/current/' + safe_path(name))) == expected, 'Current Pages source drift: ' + name)
+    audit = json.loads(blob('evaluation/consistency/completion.json'))
+    require(audit['status'] == 'COMPLETED' and audit['summary']['trace_rows'] == 423 and
+            audit['summary']['critical_unresolved'] == 0, 'Unfinished prerequisite consistency audit')
+    require(matrix['preserve_releases'] == ['v0.3.1-rc.' + str(i) for i in range(1, 8)] + ['v0.3.1', 'v0.3.2'],
+            'Prior release preservation scope missing')
+    return matrix
+
+
 def validate_distribution(root, profile):
     root = Path(root)
-    require(profile['tag'] == 'v0.3.2' and profile['profile'] == 'stable-bounded-research-artifact',
+    require(profile['tag'] in ('v0.3.2', 'v0.3.3') and profile['profile'] == 'stable-bounded-research-artifact',
             'Unreviewed successor profile')
     for key in ('publication_requires_clean_exact_head', 'publication_requires_all_checks',
                 'publication_requires_no_known_unresolved_critical_findings',
@@ -93,6 +153,7 @@ def validate_distribution(root, profile):
     require(profile['independent_validation_claimed'] is False and
             profile['full_original_requirement_acceptance_claimed'] is False, 'Unsupported successor claim')
     matrix = read(root, profile['artifact_matrix'])
+    require(matrix['tag'] == profile['tag'], 'Profile/matrix tag mismatch')
     validate_matrix(matrix, lambda path: (root / path).read_bytes())
     screen = read(root, profile['critical_screen'])
     require(screen['target'] == profile['tag'] and screen['known_unresolved_critical_findings'] == [] and
@@ -110,15 +171,24 @@ def validate_freshness(matrix, receipt, now=None):
             'Missing actual live publication readback')
     require(receipt['component_matrix_sha256'] == sha((json.dumps(matrix, indent=2) + '\n').encode()),
             'Live readback selected-component mismatch')
+    expected = selected_pages(matrix)
+    current_count = len(matrix['documentation']['current_files_sha256'])
     require(receipt['wiki_commit'] == matrix['documentation']['wiki_commit'] and
-            receipt['wiki_files'] == 23 and receipt['current_files'] == 53 and receipt['frozen_files'] == 53,
+            receipt['wiki_files'] == 23 and receipt['current_files'] == current_count and
+            receipt['frozen_files'] == len(expected) - current_count,
             'Incomplete live Wiki/Pages readback')
-    docs = matrix['documentation']
-    expected = {'current/' + p: h for p, h in docs['current_files_sha256'].items()}
-    expected.update({docs['snapshot']['route'] + '/' + p: h for p, h in docs['snapshot']['files_sha256'].items()})
     require(receipt['files_sha256'] == expected, 'Live Pages readback inventory mismatch')
     age = ((now or datetime.now(timezone.utc)) - datetime.fromisoformat(receipt['checked_at_utc'])).total_seconds()
     require(0 <= age < 86400, 'Stale or future live publication readback')
+
+
+def selected_pages(matrix):
+    docs = matrix['documentation']
+    expected = {'current/' + p: h for p, h in docs['current_files_sha256'].items()}
+    snapshots = docs.get('frozen_snapshots', {'selected': docs['snapshot']})
+    for row in snapshots.values():
+        expected.update({row['route'] + '/' + p: h for p, h in row['files_sha256'].items()})
+    return expected
 
 
 def live_readback(root, profile):
@@ -131,7 +201,8 @@ def live_readback(root, profile):
                        stdout=subprocess.DEVNULL, timeout=90)
         commit = subprocess.check_output(['git', '-C', folder, 'rev-parse', 'HEAD'], text=True).strip()
         actual = {p.name: sha(p.read_bytes()) for p in Path(folder).glob('*.md')}
-        require(commit == docs['wiki_commit'] and actual == wiki_receipt['wiki_files_sha256'],
+        selected_wiki = docs.get('wiki_files_sha256', wiki_receipt.get('wiki_files_sha256'))
+        require(commit == docs['wiki_commit'] and actual == selected_wiki,
                 'Actual native Wiki differs from selected registry/source/projection')
     def fetch(path):
         safe_path(path)
@@ -143,8 +214,7 @@ def live_readback(root, profile):
     require(re.fullmatch('[0-9a-f]{40}', manifest['current_source_commit']), 'Invalid deployed source identity')
     require(subprocess.run(['git', 'merge-base', '--is-ancestor', manifest['current_source_commit'], 'HEAD'],
                            cwd=root).returncode == 0, 'Deployed Pages source is not a release ancestor')
-    expected = {'current/' + p: h for p, h in docs['current_files_sha256'].items()}
-    expected.update({docs['snapshot']['route'] + '/' + p: h for p, h in docs['snapshot']['files_sha256'].items()})
+    expected = selected_pages(matrix)
     from concurrent.futures import ThreadPoolExecutor
     def check(item):
         path, expected_sha = item
@@ -154,7 +224,8 @@ def live_readback(root, profile):
         list(pool.map(check, expected.items()))
     receipt = dict(schema='riskium-successor-live-readback-v1', checked_at_utc=datetime.now(timezone.utc).isoformat(),
                    component_matrix_sha256=sha((root / profile['artifact_matrix']).read_bytes()),
-                   wiki_commit=commit, wiki_files=len(actual), current_files=53, frozen_files=53,
+                   wiki_commit=commit, wiki_files=len(actual), current_files=len(docs['current_files_sha256']),
+                   frozen_files=len(expected)-len(docs['current_files_sha256']),
                    pages_source_commit=manifest['current_source_commit'], pages_manifest_sha256=sha(manifest_bytes),
                    files_sha256=expected, all_bytes_match=True,
                    scope='Fresh native Git clone and actual HTTPS bytes; no new browser or semantic review.')
