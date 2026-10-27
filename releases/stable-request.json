@@ -1,6 +1,6 @@
 {
   "profile": "stable-bounded-research-artifact",
-  "tag": "v0.3.2",
+  "tag": "v0.3.3",
   "publish": true,
-  "reason": "Explicit user-authorized bounded successor release #34. Hosted dry-run workflow 40194813369 on 63b5e2bc6d28b81584bef35561a0855efab6f9ac passed all 25 gates and complete six-asset staging; the identical local source passed 198 regressions and fresh Wiki/106 Pages file checks. Final source adds reviewed official Node 24 action pins, exact-HEAD stability and readback-job dependency guards with 30 boundary tests passed. This exact new request commit must pass the complete freeze, live readback and staged-package gates again before any publication."
+  "reason": "Explicit user authorization to complete #41 on 27 October 2026. The 24-component selection, documentation 0.2.0 snapshot and original scientific boundaries are registered at 20ea744dc819fd2db9e3e76cf82c7457e81fcbc8 (same tree as locally checked 480b9ff). All 28 local aggregate gates and 233 software regressions passed; hosted documentation, requirements/CQ, quality and integration checks passed, and actual publication readback is verified before activating this request. This exact request/source must again pass all 28 freeze gates, fresh Wiki/current/all-frozen HTTPS checks, staged six-asset verification and Draft download before final/latest publication. A separate final-download job must verify all assets, tag and preservation of all nine prior releases."
 }

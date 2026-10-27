@@ -1704,8 +1704,8 @@
     },
     {
       "path": "releases/stable-request.json",
-      "sha256": "d1bc929e8f57df2ea83661dd07bfc4b36b85e7d839f6a695d8a7b00b04dcfa01",
-      "bytes": 655
+      "sha256": "39daa6b6e38e0f36a8349d201ce6487da32c98cfa0306a061cf82b4505d3a86e",
+      "bytes": 872
     },
     {
       "path": "requirements/competency-questions.json",
