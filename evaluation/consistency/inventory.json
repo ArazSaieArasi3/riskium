@@ -99,8 +99,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "e0bbf0fc9a2e79332275fb0023e5d112727badd2eb74de3508a92afe583e4b54",
-      "bytes": 16324
+      "sha256": "7f4b57bc339ee71ffdca61575aa1903476cd49ee856099b3261cb9755b8ea50b",
+      "bytes": 17685
     },
     {
       "path": "RIGHTS.md",
@@ -346,6 +346,11 @@
       "path": "docs/release-v0.3.2.md",
       "sha256": "d5b462ce90a4402d6afcc2e0558468f1f75e1980dffe9cc718b26f1348cfd863",
       "bytes": 4102
+    },
+    {
+      "path": "docs/release-v0.3.3-publication.md",
+      "sha256": "0a44f40eef4e8e42eccc197b4cdec9637d98ac8e3c49c3977643fcabfebb4f24",
+      "bytes": 4353
     },
     {
       "path": "docs/release-v0.3.3.md",
@@ -1066,6 +1071,21 @@
       "path": "evaluation/releases/v0.3.2-publication.json",
       "sha256": "169b63ea873fc884d44dd45abc24fbecdb4a3887789cd9299cebdcac4e27ea1e",
       "bytes": 14165
+    },
+    {
+      "path": "evaluation/releases/v0.3.3-completion.json",
+      "sha256": "d54cbbbf9c8acce8d49d2eb3a04526a33ccca75fe74e403bf5a095cbe63514ed",
+      "bytes": 1992
+    },
+    {
+      "path": "evaluation/releases/v0.3.3-independent-readback.json",
+      "sha256": "21230015de2a1a94be9d6b62ca7cd3353bdb9ade6428f6be038a2dbd9e41386a",
+      "bytes": 32591
+    },
+    {
+      "path": "evaluation/releases/v0.3.3-publication.json",
+      "sha256": "8e1bb37e11941e88cb5b7afd46533cdbf8f195ab36f76fb59492c3147894de57",
+      "bytes": 14160
     },
     {
       "path": "evaluation/semantic-assurance-plan.md",

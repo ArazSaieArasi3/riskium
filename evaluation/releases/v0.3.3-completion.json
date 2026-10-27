@@ -1,0 +1,49 @@
+{
+  "schema": "riskium-stable-successor-completion-v1",
+  "issue": 41,
+  "completed_at": "2026-10-27T12:27:01.648399+03:30",
+  "tag": "v0.3.3",
+  "source_commit": "3380b6b31f4830417946105e17f023118c7be6ee",
+  "release_id": 425211772,
+  "workflow_run": 40475182607,
+  "status": "COMPLETED",
+  "components": 24,
+  "aggregate_gates": 28,
+  "software_regressions": 233,
+  "assets": 6,
+  "source_files": 779,
+  "model_version": "0.3.1",
+  "orsd_revision": "0.4.3",
+  "manuscript_version": "7.0.8",
+  "documentation_version": "0.2.0",
+  "selected_documentation_source": "e574f19dea81f58a7112ded67fe02452ece2e8bd",
+  "post_publication_wiki_files": 23,
+  "post_publication_http_documents": 243,
+  "previous_releases_preserved": 9,
+  "latest_verified": true,
+  "independent_semantic_validation": false,
+  "new_owner_responses_generated": 0,
+  "evidence_sha256": {
+    "evaluation/releases/v0.3.3-publication.json": "8e1bb37e11941e88cb5b7afd46533cdbf8f195ab36f76fb59492c3147894de57",
+    "evaluation/releases/v0.3.3-independent-readback.json": "21230015de2a1a94be9d6b62ca7cd3353bdb9ade6428f6be038a2dbd9e41386a",
+    "releases/distribution-v0.3.3.json": "00c7c19dc3f751d65e1c071b6025c714447f8cfb93de1546c73aa4ba0ba0788d",
+    "tools/publication/pages-registry.json": "64e53847bff6916f8ad6724577d5e8c7febb092aa232f6d29625e922751f9cde"
+  },
+  "remaining_open_issues": [
+    4,
+    5,
+    12,
+    13,
+    23,
+    35,
+    36,
+    37
+  ],
+  "next_issue": 35,
+  "limits": [
+    "Selected documentation deliberately retains the dated audited pre-publication checkpoint; this later record identifies the actual publication outcome.",
+    "The .nojekyll deployment marker is not an HTTP document; source/archive inventory verifies its bytes separately.",
+    "All original scientific, SQL-omission, withheld-admission and independent-review boundaries remain unchanged.",
+    "The evidence-only completion commit does not replace or modify the published tag, assets or selected current/frozen/Wiki bytes."
+  ]
+}
