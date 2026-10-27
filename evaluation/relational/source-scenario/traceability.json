@@ -1,0 +1,267 @@
+{
+  "schema": "riskium-source-scenario-requirement-trace-v1",
+  "profile": "0.4.0",
+  "execution_issue": 42,
+  "parent_issues": [
+    35,
+    12
+  ],
+  "original_drsd": "0.1.0 unchanged; SSC-01..06 are an explicit derived supplement",
+  "requirements": [
+    {
+      "requirement": {
+        "id": "SSC-01",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-11"
+        ],
+        "constraints": [
+          "C-03"
+        ],
+        "accept": "Populated migration 4 to 5 preserves every old row, issued graph and ledger entry; idempotence and failed-upgrade rollback execute."
+      },
+      "cqs": [
+        "RQ-CQ02",
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "POPULATED_UPGRADE",
+        "IDEMPOTENT_UPGRADE",
+        "FAILED_UPGRADE",
+        "LEGACY_GRAPH_PRESERVED"
+      ],
+      "implementation": [
+        "005_source_scenario.sql",
+        "relational_source_scenario.py",
+        "queries/by_case.sql",
+        "queries/provenance.sql"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Original ORSD/DRSD and engine/independent acceptance remain distinct; not full native class/rule completeness."
+    },
+    {
+      "requirement": {
+        "id": "SSC-02",
+        "source_requirements": [
+          "RKRS-06",
+          "RKRS-11"
+        ],
+        "constraints": [
+          "C-02",
+          "C-16"
+        ],
+        "accept": "Explicit scenario/source-reference admission uses existing case identities and an issued snapshot. Raw/incomplete source records do not become managed cases or native knowledge artifacts."
+      },
+      "cqs": [
+        "RQ-CQ02",
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "NO_CASE",
+        "MISSING_CASE",
+        "RAW_EXCLUSION",
+        "WRONG_CONTEXT_KIND",
+        "UNISSUED_CONTEXT",
+        "CONTEXT_OWNER_MISMATCH",
+        "REFERENCE_MULTI_CONTEXT",
+        "MIXED_CLASS",
+        "UNISSUED_EXCLUDED"
+      ],
+      "implementation": [
+        "005_source_scenario.sql",
+        "relational_source_scenario.py",
+        "queries/by_case.sql",
+        "queries/provenance.sql"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Original ORSD/DRSD and engine/independent acceptance remain distinct; not full native class/rule completeness."
+    },
+    {
+      "requirement": {
+        "id": "SSC-03",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-06"
+        ],
+        "constraints": [
+          "C-03",
+          "C-12"
+        ],
+        "accept": "Per-version source, locator, interpretation and narrative are immutable; exact context versions are pinned when explicitly supplied, and unknown context stays unasserted."
+      },
+      "cqs": [
+        "RQ-CQ02",
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "PROVENANCE_EXACT",
+        "OLD_VERSION_CONTEXT",
+        "UNKNOWN_CONTEXT",
+        "MISSING_SOURCE",
+        "FORGED_SOURCE",
+        "EMPTY_PROVENANCE",
+        "BAD_CALENDAR",
+        "PAYLOAD_DRIFT",
+        "OWNER_DRIFT",
+        "IMMUTABLE_SNAPSHOT",
+        "IMMUTABLE_CASE",
+        "IMMUTABLE_CONTEXT",
+        "REPLACE_SNAPSHOT",
+        "REPLACE_CASE",
+        "REPLACE_CONTEXT",
+        "DUPLICATE_CASE",
+        "DUPLICATE_CONTEXT",
+        "DUPLICATE_VERSION",
+        "ATOMIC_BUNDLE_FAILURE"
+      ],
+      "implementation": [
+        "005_source_scenario.sql",
+        "relational_source_scenario.py",
+        "queries/by_case.sql",
+        "queries/provenance.sql"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Original ORSD/DRSD and engine/independent acceptance remain distinct; not full native class/rule completeness."
+    },
+    {
+      "requirement": {
+        "id": "SSC-04",
+        "source_requirements": [
+          "RKRS-06",
+          "RKRS-11"
+        ],
+        "constraints": [
+          "C-02",
+          "C-12",
+          "C-17"
+        ],
+        "accept": "Preserve multiple identities, cases, versions, documentary sources and disagreements. Query and native RDF answer fixed independent oracles; no current/authoritative/occurrence/causation/endorsement inference."
+      },
+      "cqs": [
+        "RQ-CQ02",
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "CASE1_HISTORY",
+        "CASE2_HISTORY",
+        "EQUAL_LABEL_IDENTITIES",
+        "NO_OCCURRENCE_CAUSATION",
+        "NO_GENERAL_CORRECTION",
+        "BOUND_PARAMETER",
+        "NATIVE_SCENARIO_A1",
+        "NATIVE_SCENARIO_A2",
+        "NATIVE_SCENARIO_B1",
+        "NATIVE_REFERENCE_A1",
+        "NATIVE_REFERENCE_A2",
+        "NATIVE_REFERENCE_B1",
+        "MUTANT_DIRECTION_EXPOSED"
+      ],
+      "implementation": [
+        "005_source_scenario.sql",
+        "relational_source_scenario.py",
+        "queries/by_case.sql",
+        "queries/provenance.sql"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Original ORSD/DRSD and engine/independent acceptance remain distinct; not full native class/rule completeness."
+    },
+    {
+      "requirement": {
+        "id": "SSC-05",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-12"
+        ],
+        "constraints": [
+          "C-03"
+        ],
+        "accept": "Schema/ledger/hash/FK/payload and semantic audits reject drift and tampered restore; reopen, backup and dump restoration preserve original graphs and branch history."
+      },
+      "cqs": [
+        "RQ-CQ02",
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "BACKUP_REOPEN",
+        "FILE_REOPEN",
+        "DUMP_RESTORE",
+        "RESTORE_TAMPER",
+        "CONFIGURATION_OFF",
+        "LEDGER_DRIFT",
+        "SCHEMA_DRIFT",
+        "MUTANT_CARDINALITY_EXPOSED",
+        "MUTANT_FROZEN_LINK_EXPOSED"
+      ],
+      "implementation": [
+        "005_source_scenario.sql",
+        "relational_source_scenario.py",
+        "queries/by_case.sql",
+        "queries/provenance.sql"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Original ORSD/DRSD and engine/independent acceptance remain distinct; not full native class/rule completeness."
+    },
+    {
+      "requirement": {
+        "id": "SSC-06",
+        "source_requirements": [
+          "RKRS-11",
+          "RKRS-12"
+        ],
+        "constraints": [
+          "C-16"
+        ],
+        "accept": "Account for all 306 native elements with bounded support and explicit omissions; preserve historical 250 incomplete mappings, 11 external elements and all 11 original WITHHELD admissions."
+      },
+      "cqs": [
+        "RQ-CQ02",
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "RAW_EXCLUSION",
+        "NO_OCCURRENCE_CAUSATION",
+        "NO_GENERAL_CORRECTION"
+      ],
+      "implementation": [
+        "005_source_scenario.sql",
+        "relational_source_scenario.py",
+        "queries/by_case.sql",
+        "queries/provenance.sql"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Original ORSD/DRSD and engine/independent acceptance remain distinct; not full native class/rule completeness."
+    }
+  ],
+  "inputs_sha256": {
+    "evaluation/relational/correction/mapping-accounting.json": "01f8ae4709ce156239b1e4cde4f9c931b4400c25da06ce0096f9dde8ed1d6232",
+    "evaluation/relational/source-scenario/README.md": "6597d47bd3c166e410c6d254e55e4f65c67add207648e7b1f54937ab1d794daa",
+    "evaluation/relational/source-scenario/report.json": "2f795efc38233e30f39ba69a2d272913faef8bfa99b1ba7e6480679aa91e84d7",
+    "evaluation/sources/cq0708/cohort.json": "525c6f69cff592baf705ec48ee52b629d2b0f61e93adcbedf9535b5993843127",
+    "evaluation/sources/cq0708/report.json.gz": "da8ec348280e788f2490b0dd053c0901f175fb969de8d73ca8959c2cec8a1612",
+    "implementation/relational/0.3.0/component.json": "f0a98955dfa36782b1c9dfda30aca48080e310dc2ed68d5a8765ca790fac79a5",
+    "implementation/relational/0.3.0/contract.json": "02524445f500966f62e9f8647f43c9b8084db82ffa7d7e6ce3ce235d468b6f4e",
+    "implementation/relational/0.4.0/005_source_scenario.sql": "0ce74ce7d6a7ba4d46390054ca6a6e375d69d21c9c69edb4eff890bac311a5f5",
+    "implementation/relational/0.4.0/README.md": "6fae69443dacd8725e86daa91f35c037d4ab1c6e03aa8692685d9078d9cffab6",
+    "implementation/relational/0.4.0/contract.json": "defb5b7dd66fd0083f3ff913bd467a1b72ebd7d4c946083f8f3d5c8c4d6809db",
+    "implementation/relational/0.4.0/fixtures.json": "bfba7e6e220987abee2f070125c70cd9c60e5975a7bc8b1b6f209691f15edf97",
+    "implementation/relational/0.4.0/queries/by_case.sql": "3da01d2ebb9239b9d74e70b3950d0a068e29354373e82c45fe23eddbd843ace1",
+    "implementation/relational/0.4.0/queries/provenance.sql": "c71818df51b7c780703e2f9d8906d679a869010d1f3163d64d671c492f7c1571",
+    "implementation/relational/0.4.0/schema-dictionary.md": "957d626d214eef9bf119cc69fe387bdc20725c69e632dbbb137fefd34b8c047c",
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "tests/test_source_scenario.py": "eb0ba35f00d441414fbeeb769e6674a81db2d22dd95b79c6f1ea6040e3bc8a2d",
+    "tools/build_source_scenario_inventory.py": "9ffe63f96a05a7dd45113daac84edc3056636776b0710af9c1c37fabaa2ae142",
+    "tools/relational_correction.py": "f350cf25c8206fc2d299678d12833b54978ddb133b42be5c6ac1a0364b0d6ed4",
+    "tools/relational_source_scenario.py": "ca62c59d9ea31352c3b92a8a0f1e28a82a498faa49a7d2cd2137478db09a2191",
+    "tools/run_relational_source_scenario.py": "334c54c1a016460ba3e2309b144a8ab5830acd2265e647e6e1fb06bd4ed6d1b5"
+  },
+  "original_organizational_admissions": "All 11 WITHHELD; no new real-data admission executed"
+}

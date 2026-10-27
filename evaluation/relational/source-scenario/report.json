@@ -1,0 +1,789 @@
+{
+  "schema": "riskium-source-scenario-execution-v1",
+  "profile": "0.4.0",
+  "schema_version": 5,
+  "runtime": {
+    "sqlite": "3.53.1",
+    "scope": "Actual local engine; CI replays print their actual runtime separately."
+  },
+  "inputs_sha256": {
+    "implementation/relational/0.4.0/contract.json": "defb5b7dd66fd0083f3ff913bd467a1b72ebd7d4c946083f8f3d5c8c4d6809db",
+    "implementation/relational/0.4.0/fixtures.json": "bfba7e6e220987abee2f070125c70cd9c60e5975a7bc8b1b6f209691f15edf97",
+    "implementation/relational/0.4.0/005_source_scenario.sql": "0ce74ce7d6a7ba4d46390054ca6a6e375d69d21c9c69edb4eff890bac311a5f5",
+    "implementation/relational/0.4.0/queries/by_case.sql": "3da01d2ebb9239b9d74e70b3950d0a068e29354373e82c45fe23eddbd843ace1",
+    "implementation/relational/0.4.0/queries/provenance.sql": "c71818df51b7c780703e2f9d8906d679a869010d1f3163d64d671c492f7c1571",
+    "tools/relational_source_scenario.py": "ca62c59d9ea31352c3b92a8a0f1e28a82a498faa49a7d2cd2137478db09a2191",
+    "tools/run_relational_source_scenario.py": "334c54c1a016460ba3e2309b144a8ab5830acd2265e647e6e1fb06bd4ed6d1b5"
+  },
+  "summary": {
+    "cases": 54,
+    "outcomes": {
+      "PASS": 54
+    },
+    "kinds": {
+      "negative": 28,
+      "positive": 23,
+      "mutation": 3
+    }
+  },
+  "cases": [
+    {
+      "id": "ATOMIC_BUNDLE_FAILURE",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-CASE",
+      "observed": "R-KNOWLEDGE-CASE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "BACKUP_REOPEN",
+      "kind": "positive",
+      "expected": "ba5246ac414ee4d311bbd00816769286d643712059888dfb1efe299860a4fcc5",
+      "observed": "ba5246ac414ee4d311bbd00816769286d643712059888dfb1efe299860a4fcc5",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "BAD_CALENDAR",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-TIME",
+      "observed": "R-KNOWLEDGE-TIME",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "BOUND_PARAMETER",
+      "kind": "positive",
+      "expected": [],
+      "observed": [],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "CASE1_HISTORY",
+      "kind": "positive",
+      "expected": [
+        [
+          "urn:riskium:knowledge:reference-a-v1",
+          "RKM-X06",
+          "urn:riskium:knowledge:reference-a",
+          "urn:riskium:knowledge:document-a",
+          "synthetic/A#r1"
+        ],
+        [
+          "urn:riskium:knowledge:reference-a-v2",
+          "RKM-X06",
+          "urn:riskium:knowledge:reference-a",
+          "urn:riskium:knowledge:document-b",
+          "synthetic/B#r1"
+        ],
+        [
+          "urn:riskium:knowledge:reference-b-v1",
+          "RKM-X06",
+          "urn:riskium:knowledge:reference-b",
+          "urn:riskium:knowledge:document-b",
+          "synthetic/B#r2"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v1",
+          "RKM-C003",
+          "urn:riskium:knowledge:scenario-a",
+          "urn:riskium:knowledge:document-a",
+          "synthetic/A#s1"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v2",
+          "RKM-C003",
+          "urn:riskium:knowledge:scenario-a",
+          "urn:riskium:knowledge:document-b",
+          "synthetic/B#s1"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-b-v1",
+          "RKM-C003",
+          "urn:riskium:knowledge:scenario-b",
+          "urn:riskium:knowledge:document-b",
+          "synthetic/B#s2"
+        ]
+      ],
+      "observed": [
+        [
+          "urn:riskium:knowledge:reference-a-v1",
+          "RKM-X06",
+          "urn:riskium:knowledge:reference-a",
+          "urn:riskium:knowledge:document-a",
+          "synthetic/A#r1"
+        ],
+        [
+          "urn:riskium:knowledge:reference-a-v2",
+          "RKM-X06",
+          "urn:riskium:knowledge:reference-a",
+          "urn:riskium:knowledge:document-b",
+          "synthetic/B#r1"
+        ],
+        [
+          "urn:riskium:knowledge:reference-b-v1",
+          "RKM-X06",
+          "urn:riskium:knowledge:reference-b",
+          "urn:riskium:knowledge:document-b",
+          "synthetic/B#r2"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v1",
+          "RKM-C003",
+          "urn:riskium:knowledge:scenario-a",
+          "urn:riskium:knowledge:document-a",
+          "synthetic/A#s1"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v2",
+          "RKM-C003",
+          "urn:riskium:knowledge:scenario-a",
+          "urn:riskium:knowledge:document-b",
+          "synthetic/B#s1"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-b-v1",
+          "RKM-C003",
+          "urn:riskium:knowledge:scenario-b",
+          "urn:riskium:knowledge:document-b",
+          "synthetic/B#s2"
+        ]
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "CASE2_HISTORY",
+      "kind": "positive",
+      "expected": [
+        [
+          "urn:riskium:knowledge:reference-b-v1",
+          "RKM-X06",
+          "urn:riskium:knowledge:reference-b",
+          "urn:riskium:knowledge:document-b",
+          "synthetic/B#r2"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v2",
+          "RKM-C003",
+          "urn:riskium:knowledge:scenario-a",
+          "urn:riskium:knowledge:document-b",
+          "synthetic/B#s1"
+        ]
+      ],
+      "observed": [
+        [
+          "urn:riskium:knowledge:reference-b-v1",
+          "RKM-X06",
+          "urn:riskium:knowledge:reference-b",
+          "urn:riskium:knowledge:document-b",
+          "synthetic/B#r2"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v2",
+          "RKM-C003",
+          "urn:riskium:knowledge:scenario-a",
+          "urn:riskium:knowledge:document-b",
+          "synthetic/B#s1"
+        ]
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "CONFIGURATION_OFF",
+      "kind": "negative",
+      "expected": "R-CONNECTION-POLICY",
+      "observed": "R-CONNECTION-POLICY",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "CONTEXT_OWNER_MISMATCH",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-CONTEXT",
+      "observed": "R-KNOWLEDGE-CONTEXT",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "DUMP_RESTORE",
+      "kind": "positive",
+      "expected": "ba5246ac414ee4d311bbd00816769286d643712059888dfb1efe299860a4fcc5",
+      "observed": "ba5246ac414ee4d311bbd00816769286d643712059888dfb1efe299860a4fcc5",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "DUPLICATE_CASE",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-DUPLICATE",
+      "observed": "R-KNOWLEDGE-DUPLICATE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "DUPLICATE_CONTEXT",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-DUPLICATE",
+      "observed": "R-KNOWLEDGE-DUPLICATE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "DUPLICATE_VERSION",
+      "kind": "negative",
+      "expected": "R-VERSION-DUPLICATE",
+      "observed": "R-VERSION-DUPLICATE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "EMPTY_PROVENANCE",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-PROVENANCE",
+      "observed": "R-KNOWLEDGE-PROVENANCE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "EQUAL_LABEL_IDENTITIES",
+      "kind": "positive",
+      "expected": 4,
+      "observed": 4,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "FAILED_UPGRADE",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "FILE_REOPEN",
+      "kind": "positive",
+      "expected": "ba5246ac414ee4d311bbd00816769286d643712059888dfb1efe299860a4fcc5",
+      "observed": "ba5246ac414ee4d311bbd00816769286d643712059888dfb1efe299860a4fcc5",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "FORGED_SOURCE",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-OWNER-SOURCE",
+      "observed": "R-KNOWLEDGE-OWNER-SOURCE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "IDEMPOTENT_UPGRADE",
+      "kind": "positive",
+      "expected": "0d0fc6172a9b59ec59a02333faca687a60c8ffa83c75d45a37fcff4bbfb79f89",
+      "observed": "0d0fc6172a9b59ec59a02333faca687a60c8ffa83c75d45a37fcff4bbfb79f89",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "IMMUTABLE_CASE",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-IMMUTABLE",
+      "observed": "R-KNOWLEDGE-IMMUTABLE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "IMMUTABLE_CONTEXT",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-IMMUTABLE",
+      "observed": "R-KNOWLEDGE-IMMUTABLE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "IMMUTABLE_SNAPSHOT",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-IMMUTABLE",
+      "observed": "R-KNOWLEDGE-IMMUTABLE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "LEDGER_DRIFT",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-LEDGER",
+      "observed": "R-KNOWLEDGE-LEDGER",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "LEGACY_GRAPH_PRESERVED",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "MISSING_CASE",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-CASE",
+      "observed": "R-KNOWLEDGE-CASE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "MISSING_SOURCE",
+      "kind": "negative",
+      "expected": "FOREIGN KEY constraint failed",
+      "observed": "FOREIGN KEY constraint failed",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "MIXED_CLASS",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-TYPE",
+      "observed": "R-KNOWLEDGE-TYPE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "MUTANT_CARDINALITY_EXPOSED",
+      "kind": "mutation",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "MUTANT_DIRECTION_EXPOSED",
+      "kind": "mutation",
+      "expected": false,
+      "observed": false,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "MUTANT_FROZEN_LINK_EXPOSED",
+      "kind": "mutation",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "NATIVE_REFERENCE_A1",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": {
+        "expected_nt": [
+          "<urn:riskium:knowledge:reference-a-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:knowledge:reference-a-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-a> .",
+          "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> .",
+          "<urn:riskium:knowledge:reference-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-003> <urn:riskium:sql:context> .",
+          "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+          "<urn:riskium:sql:case1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-a> .",
+          "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> ."
+        ],
+        "observed_nt": [
+          "<urn:riskium:knowledge:reference-a-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:knowledge:reference-a-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-a> .",
+          "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> .",
+          "<urn:riskium:knowledge:reference-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-003> <urn:riskium:sql:context> .",
+          "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+          "<urn:riskium:sql:case1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-a> .",
+          "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> ."
+        ]
+      }
+    },
+    {
+      "id": "NATIVE_REFERENCE_A2",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": {
+        "expected_nt": [
+          "<urn:riskium:knowledge:reference-a-v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:knowledge:reference-a-v2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-a> .",
+          "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> .",
+          "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+          "<urn:riskium:sql:case1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-a> ."
+        ],
+        "observed_nt": [
+          "<urn:riskium:knowledge:reference-a-v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:knowledge:reference-a-v2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-a> .",
+          "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> .",
+          "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+          "<urn:riskium:sql:case1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-a> ."
+        ]
+      }
+    },
+    {
+      "id": "NATIVE_REFERENCE_B1",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": {
+        "expected_nt": [
+          "<urn:riskium:knowledge:reference-b-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:knowledge:reference-b-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-b> .",
+          "<urn:riskium:knowledge:reference-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:knowledge:reference-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> .",
+          "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+          "<urn:riskium:sql:case1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-b> .",
+          "<urn:riskium:sql:case2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+          "<urn:riskium:sql:case2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-b> ."
+        ],
+        "observed_nt": [
+          "<urn:riskium:knowledge:reference-b-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:knowledge:reference-b-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-b> .",
+          "<urn:riskium:knowledge:reference-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:knowledge:reference-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> .",
+          "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+          "<urn:riskium:sql:case1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-b> .",
+          "<urn:riskium:sql:case2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+          "<urn:riskium:sql:case2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-b> ."
+        ]
+      }
+    },
+    {
+      "id": "NATIVE_SCENARIO_A1",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": {
+        "expected_nt": [
+          "<urn:riskium:knowledge:scenario-a-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:knowledge:scenario-a-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-a> .",
+          "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+          "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case1> .",
+          "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-010> <urn:riskium:sql:context> .",
+          "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+          "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> ."
+        ],
+        "observed_nt": [
+          "<urn:riskium:knowledge:scenario-a-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:knowledge:scenario-a-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-a> .",
+          "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+          "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case1> .",
+          "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-010> <urn:riskium:sql:context> .",
+          "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+          "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+          "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> ."
+        ]
+      }
+    },
+    {
+      "id": "NATIVE_SCENARIO_A2",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": {
+        "expected_nt": [
+          "<urn:riskium:knowledge:scenario-a-v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:knowledge:scenario-a-v2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-a> .",
+          "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+          "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case1> .",
+          "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case2> .",
+          "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+          "<urn:riskium:sql:case2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> ."
+        ],
+        "observed_nt": [
+          "<urn:riskium:knowledge:scenario-a-v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:knowledge:scenario-a-v2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-a> .",
+          "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+          "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case1> .",
+          "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case2> .",
+          "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+          "<urn:riskium:sql:case2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> ."
+        ]
+      }
+    },
+    {
+      "id": "NATIVE_SCENARIO_B1",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": {
+        "expected_nt": [
+          "<urn:riskium:knowledge:scenario-b-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:knowledge:scenario-b-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-b> .",
+          "<urn:riskium:knowledge:scenario-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+          "<urn:riskium:knowledge:scenario-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:knowledge:scenario-b> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case1> .",
+          "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> ."
+        ],
+        "observed_nt": [
+          "<urn:riskium:knowledge:scenario-b-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+          "<urn:riskium:knowledge:scenario-b-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-b> .",
+          "<urn:riskium:knowledge:scenario-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+          "<urn:riskium:knowledge:scenario-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+          "<urn:riskium:knowledge:scenario-b> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case1> .",
+          "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> ."
+        ]
+      }
+    },
+    {
+      "id": "NO_CASE",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-CARDINALITY",
+      "observed": "R-KNOWLEDGE-CARDINALITY",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "NO_GENERAL_CORRECTION",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "NO_OCCURRENCE_CAUSATION",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "OLD_VERSION_CONTEXT",
+      "kind": "positive",
+      "expected": [
+        [
+          "urn:riskium:sql:context",
+          "urn:riskium:sql:context-v1"
+        ]
+      ],
+      "observed": [
+        [
+          "urn:riskium:sql:context",
+          "urn:riskium:sql:context-v1"
+        ]
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "OWNER_DRIFT",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-OWNER-SOURCE",
+      "observed": "R-KNOWLEDGE-OWNER-SOURCE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "PAYLOAD_DRIFT",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-PAYLOAD",
+      "observed": "R-KNOWLEDGE-PAYLOAD",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "POPULATED_UPGRADE",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "PROVENANCE_EXACT",
+      "kind": "positive",
+      "expected": [
+        "urn:riskium:knowledge:scenario-a-v1",
+        "urn:riskium:knowledge:document-a",
+        "{\"synthetic\":true,\"claim\":\"possible delay\",\"actual_occurrence\":null,\"zero\":\"0\"}",
+        "synthetic/A#s1",
+        "Deterministic synthetic fixture; not source evidence",
+        "Possible supplier delay"
+      ],
+      "observed": [
+        "urn:riskium:knowledge:scenario-a-v1",
+        "urn:riskium:knowledge:document-a",
+        "{\"synthetic\":true,\"claim\":\"possible delay\",\"actual_occurrence\":null,\"zero\":\"0\"}",
+        "synthetic/A#s1",
+        "Deterministic synthetic fixture; not source evidence",
+        "Possible supplier delay"
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "RAW_EXCLUSION",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "REFERENCE_MULTI_CONTEXT",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-CONTEXT-CARDINALITY",
+      "observed": "R-KNOWLEDGE-CONTEXT-CARDINALITY",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "REPLACE_CASE",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-DUPLICATE",
+      "observed": "R-KNOWLEDGE-DUPLICATE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "REPLACE_CONTEXT",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-DUPLICATE",
+      "observed": "R-KNOWLEDGE-DUPLICATE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "REPLACE_SNAPSHOT",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-DUPLICATE",
+      "observed": "R-KNOWLEDGE-DUPLICATE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "RESTORE_TAMPER",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-DATA-CARDINALITY",
+      "observed": "R-KNOWLEDGE-DATA-CARDINALITY",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "SCHEMA_DRIFT",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-SCHEMA",
+      "observed": "R-KNOWLEDGE-SCHEMA",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "UNISSUED_CONTEXT",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-CONTEXT",
+      "observed": "R-KNOWLEDGE-CONTEXT",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "UNISSUED_EXCLUDED",
+      "kind": "positive",
+      "expected": [],
+      "observed": [],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "UNKNOWN_CONTEXT",
+      "kind": "positive",
+      "expected": [],
+      "observed": [],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "WRONG_CONTEXT_KIND",
+      "kind": "negative",
+      "expected": "R-KNOWLEDGE-CONTEXT",
+      "observed": "R-KNOWLEDGE-CONTEXT",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    }
+  ],
+  "independent_semantic_validation": false,
+  "stable_distribution_changed": false
+}
