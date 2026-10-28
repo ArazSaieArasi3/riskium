@@ -1,0 +1,629 @@
+{
+  "schema": "riskium-qualified-evidence-fixed-oracles-v1",
+  "version": "0.6.0",
+  "population": "Controlled synthetic inputs and literal manually specified query/native expectations, committed before implementation. No runtime output generated an oracle.",
+  "sources": [
+    [
+      "urn:riskium:evidence:document-a",
+      "{\"synthetic\":true,\"claim\":\"initial evidence\",\"value\":\"0\",\"endorsed\":null}"
+    ],
+    [
+      "urn:riskium:evidence:document-b",
+      "{\"synthetic\":true,\"claim\":\"different evidence interpretation\",\"endorsed\":null}"
+    ],
+    [
+      "urn:riskium:evidence:raw-document",
+      "{\"synthetic\":true,\"unknown_target\":null,\"admission\":\"WITHHELD\"}"
+    ]
+  ],
+  "items": [
+    {
+      "artifact_id": "urn:riskium:evidence:item-a",
+      "version_id": "urn:riskium:evidence:item-a-v1",
+      "label": "Same label",
+      "source_record_id": "urn:riskium:evidence:document-a",
+      "payload": {
+        "document": "Synthetic inspection A",
+        "value": "0"
+      }
+    },
+    {
+      "artifact_id": "urn:riskium:evidence:item-a",
+      "version_id": "urn:riskium:evidence:item-a-v2",
+      "label": "Same label",
+      "source_record_id": "urn:riskium:evidence:document-b",
+      "payload": {
+        "document": "Synthetic revised inspection A",
+        "value": null
+      }
+    },
+    {
+      "artifact_id": "urn:riskium:evidence:item-b",
+      "version_id": "urn:riskium:evidence:item-b-v1",
+      "label": "Same label",
+      "source_record_id": "urn:riskium:evidence:document-b",
+      "payload": {
+        "document": "Synthetic inspection B"
+      }
+    }
+  ],
+  "records": [
+    {
+      "artifact_id": "urn:riskium:evidence:ref-a",
+      "version_id": "urn:riskium:evidence:ref-a-v1",
+      "label": "Same label",
+      "statement": "Source presented as support",
+      "item_version_id": "urn:riskium:evidence:item-a-v1",
+      "evidential_role": "support",
+      "source_record_id": "urn:riskium:evidence:document-a",
+      "source_locator": "synthetic/evidence#ref-a-v1",
+      "interpretation_origin": "Deterministic synthetic qualification; not independent source validation",
+      "recorded_at": "2026-10-28T00:00:00Z",
+      "target_version_ids": [
+        "urn:riskium:knowledge:scenario-a-v1"
+      ]
+    },
+    {
+      "artifact_id": "urn:riskium:evidence:ref-a",
+      "version_id": "urn:riskium:evidence:ref-a-v2",
+      "label": "Same label",
+      "statement": "Revised source challenges the recorded claim",
+      "item_version_id": "urn:riskium:evidence:item-a-v2",
+      "evidential_role": "challenge",
+      "source_record_id": "urn:riskium:evidence:document-b",
+      "source_locator": "synthetic/evidence#ref-a-v2",
+      "interpretation_origin": "Deterministic synthetic qualification; not independent source validation",
+      "recorded_at": "2026-10-28T00:00:00Z",
+      "target_version_ids": [
+        "urn:riskium:knowledge:scenario-a-v2"
+      ]
+    },
+    {
+      "artifact_id": "urn:riskium:evidence:ref-b",
+      "version_id": "urn:riskium:evidence:ref-b-v1",
+      "label": "Same label",
+      "statement": "Source supplied as context",
+      "item_version_id": "urn:riskium:evidence:item-a-v1",
+      "evidential_role": "context",
+      "source_record_id": "urn:riskium:evidence:document-b",
+      "source_locator": "synthetic/evidence#ref-b-v1",
+      "interpretation_origin": "Deterministic synthetic qualification; not independent source validation",
+      "recorded_at": "2026-10-28T00:00:00Z",
+      "target_version_ids": [
+        "urn:riskium:knowledge:scenario-a-v1",
+        "urn:riskium:knowledge:scenario-b-v1"
+      ]
+    },
+    {
+      "artifact_id": "urn:riskium:evidence:ref-c",
+      "version_id": "urn:riskium:evidence:ref-c-v1",
+      "label": "Same label",
+      "statement": "Alternate source challenges contributor interpretation",
+      "item_version_id": "urn:riskium:evidence:item-b-v1",
+      "evidential_role": "challenge",
+      "source_record_id": "urn:riskium:evidence:document-a",
+      "source_locator": "synthetic/evidence#ref-c-v1",
+      "interpretation_origin": "Deterministic synthetic qualification; not independent source validation",
+      "recorded_at": "2026-10-28T00:00:00Z",
+      "target_version_ids": [
+        "urn:riskium:knowledge:reference-a-v1"
+      ]
+    }
+  ],
+  "target_columns": [
+    "version_id",
+    "artifact_id",
+    "evidential_role",
+    "item_id",
+    "item_version_id",
+    "statement",
+    "source_record_id",
+    "reference_original_json",
+    "source_locator",
+    "interpretation_origin",
+    "recorded_at",
+    "item_source_record_id",
+    "item_original_json",
+    "target_version_ids"
+  ],
+  "answers": {
+    "scenario-a-v1": [
+      [
+        "urn:riskium:evidence:ref-a-v1",
+        "urn:riskium:evidence:ref-a",
+        "support",
+        "urn:riskium:evidence:item-a",
+        "urn:riskium:evidence:item-a-v1",
+        "Source presented as support",
+        "urn:riskium:evidence:document-a",
+        "{\"synthetic\":true,\"claim\":\"initial evidence\",\"value\":\"0\",\"endorsed\":null}",
+        "synthetic/evidence#ref-a-v1",
+        "Deterministic synthetic qualification; not independent source validation",
+        "2026-10-28T00:00:00Z",
+        "urn:riskium:evidence:document-a",
+        "{\"synthetic\":true,\"claim\":\"initial evidence\",\"value\":\"0\",\"endorsed\":null}",
+        [
+          "urn:riskium:knowledge:scenario-a-v1"
+        ]
+      ],
+      [
+        "urn:riskium:evidence:ref-b-v1",
+        "urn:riskium:evidence:ref-b",
+        "context",
+        "urn:riskium:evidence:item-a",
+        "urn:riskium:evidence:item-a-v1",
+        "Source supplied as context",
+        "urn:riskium:evidence:document-b",
+        "{\"synthetic\":true,\"claim\":\"different evidence interpretation\",\"endorsed\":null}",
+        "synthetic/evidence#ref-b-v1",
+        "Deterministic synthetic qualification; not independent source validation",
+        "2026-10-28T00:00:00Z",
+        "urn:riskium:evidence:document-a",
+        "{\"synthetic\":true,\"claim\":\"initial evidence\",\"value\":\"0\",\"endorsed\":null}",
+        [
+          "urn:riskium:knowledge:scenario-a-v1",
+          "urn:riskium:knowledge:scenario-b-v1"
+        ]
+      ]
+    ],
+    "scenario-a-v2": [
+      [
+        "urn:riskium:evidence:ref-a-v2",
+        "urn:riskium:evidence:ref-a",
+        "challenge",
+        "urn:riskium:evidence:item-a",
+        "urn:riskium:evidence:item-a-v2",
+        "Revised source challenges the recorded claim",
+        "urn:riskium:evidence:document-b",
+        "{\"synthetic\":true,\"claim\":\"different evidence interpretation\",\"endorsed\":null}",
+        "synthetic/evidence#ref-a-v2",
+        "Deterministic synthetic qualification; not independent source validation",
+        "2026-10-28T00:00:00Z",
+        "urn:riskium:evidence:document-b",
+        "{\"synthetic\":true,\"claim\":\"different evidence interpretation\",\"endorsed\":null}",
+        [
+          "urn:riskium:knowledge:scenario-a-v2"
+        ]
+      ]
+    ],
+    "scenario-b-v1": [
+      [
+        "urn:riskium:evidence:ref-b-v1",
+        "urn:riskium:evidence:ref-b",
+        "context",
+        "urn:riskium:evidence:item-a",
+        "urn:riskium:evidence:item-a-v1",
+        "Source supplied as context",
+        "urn:riskium:evidence:document-b",
+        "{\"synthetic\":true,\"claim\":\"different evidence interpretation\",\"endorsed\":null}",
+        "synthetic/evidence#ref-b-v1",
+        "Deterministic synthetic qualification; not independent source validation",
+        "2026-10-28T00:00:00Z",
+        "urn:riskium:evidence:document-a",
+        "{\"synthetic\":true,\"claim\":\"initial evidence\",\"value\":\"0\",\"endorsed\":null}",
+        [
+          "urn:riskium:knowledge:scenario-a-v1",
+          "urn:riskium:knowledge:scenario-b-v1"
+        ]
+      ]
+    ],
+    "reference-a-v1": [
+      [
+        "urn:riskium:evidence:ref-c-v1",
+        "urn:riskium:evidence:ref-c",
+        "challenge",
+        "urn:riskium:evidence:item-b",
+        "urn:riskium:evidence:item-b-v1",
+        "Alternate source challenges contributor interpretation",
+        "urn:riskium:evidence:document-a",
+        "{\"synthetic\":true,\"claim\":\"initial evidence\",\"value\":\"0\",\"endorsed\":null}",
+        "synthetic/evidence#ref-c-v1",
+        "Deterministic synthetic qualification; not independent source validation",
+        "2026-10-28T00:00:00Z",
+        "urn:riskium:evidence:document-b",
+        "{\"synthetic\":true,\"claim\":\"different evidence interpretation\",\"endorsed\":null}",
+        [
+          "urn:riskium:knowledge:reference-a-v1"
+        ]
+      ]
+    ],
+    "missing": []
+  },
+  "graphs": {
+    "urn:riskium:evidence:ref-a-v1": {
+      "types": [
+        [
+          "urn:riskium:evidence:ref-a",
+          "RKM-C065"
+        ],
+        [
+          "urn:riskium:evidence:ref-a",
+          "RKM-C014"
+        ],
+        [
+          "urn:riskium:evidence:ref-a-v1",
+          "RKM-C015"
+        ],
+        [
+          "urn:riskium:evidence:item-a",
+          "RKM-C066"
+        ],
+        [
+          "urn:riskium:evidence:item-a",
+          "RKM-C014"
+        ],
+        [
+          "urn:riskium:evidence:item-a-v1",
+          "RKM-C015"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C014"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v1",
+          "RKM-C015"
+        ]
+      ],
+      "edges": [
+        [
+          "urn:riskium:evidence:ref-a-v1",
+          "RX-006",
+          "urn:riskium:evidence:ref-a"
+        ],
+        [
+          "urn:riskium:evidence:item-a-v1",
+          "RX-006",
+          "urn:riskium:evidence:item-a"
+        ],
+        [
+          "urn:riskium:evidence:ref-a",
+          "RX-021",
+          "urn:riskium:evidence:item-a"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v1",
+          "RX-006",
+          "urn:riskium:knowledge:scenario-a"
+        ],
+        [
+          "urn:riskium:evidence:ref-a",
+          "R-68",
+          "urn:riskium:knowledge:scenario-a"
+        ]
+      ]
+    },
+    "urn:riskium:evidence:ref-a-v2": {
+      "types": [
+        [
+          "urn:riskium:evidence:ref-a",
+          "RKM-C065"
+        ],
+        [
+          "urn:riskium:evidence:ref-a",
+          "RKM-C014"
+        ],
+        [
+          "urn:riskium:evidence:ref-a-v2",
+          "RKM-C015"
+        ],
+        [
+          "urn:riskium:evidence:item-a",
+          "RKM-C066"
+        ],
+        [
+          "urn:riskium:evidence:item-a",
+          "RKM-C014"
+        ],
+        [
+          "urn:riskium:evidence:item-a-v2",
+          "RKM-C015"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C014"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v2",
+          "RKM-C015"
+        ]
+      ],
+      "edges": [
+        [
+          "urn:riskium:evidence:ref-a-v2",
+          "RX-006",
+          "urn:riskium:evidence:ref-a"
+        ],
+        [
+          "urn:riskium:evidence:item-a-v2",
+          "RX-006",
+          "urn:riskium:evidence:item-a"
+        ],
+        [
+          "urn:riskium:evidence:ref-a",
+          "RX-021",
+          "urn:riskium:evidence:item-a"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v2",
+          "RX-006",
+          "urn:riskium:knowledge:scenario-a"
+        ],
+        [
+          "urn:riskium:evidence:ref-a",
+          "R-68",
+          "urn:riskium:knowledge:scenario-a"
+        ]
+      ]
+    },
+    "urn:riskium:evidence:ref-b-v1": {
+      "types": [
+        [
+          "urn:riskium:evidence:ref-b",
+          "RKM-C065"
+        ],
+        [
+          "urn:riskium:evidence:ref-b",
+          "RKM-C014"
+        ],
+        [
+          "urn:riskium:evidence:ref-b-v1",
+          "RKM-C015"
+        ],
+        [
+          "urn:riskium:evidence:item-a",
+          "RKM-C066"
+        ],
+        [
+          "urn:riskium:evidence:item-a",
+          "RKM-C014"
+        ],
+        [
+          "urn:riskium:evidence:item-a-v1",
+          "RKM-C015"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C014"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v1",
+          "RKM-C015"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-b",
+          "RKM-C014"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-b-v1",
+          "RKM-C015"
+        ]
+      ],
+      "edges": [
+        [
+          "urn:riskium:evidence:ref-b-v1",
+          "RX-006",
+          "urn:riskium:evidence:ref-b"
+        ],
+        [
+          "urn:riskium:evidence:item-a-v1",
+          "RX-006",
+          "urn:riskium:evidence:item-a"
+        ],
+        [
+          "urn:riskium:evidence:ref-b",
+          "RX-021",
+          "urn:riskium:evidence:item-a"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v1",
+          "RX-006",
+          "urn:riskium:knowledge:scenario-a"
+        ],
+        [
+          "urn:riskium:evidence:ref-b",
+          "R-68",
+          "urn:riskium:knowledge:scenario-a"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-b-v1",
+          "RX-006",
+          "urn:riskium:knowledge:scenario-b"
+        ],
+        [
+          "urn:riskium:evidence:ref-b",
+          "R-68",
+          "urn:riskium:knowledge:scenario-b"
+        ]
+      ]
+    },
+    "urn:riskium:evidence:ref-c-v1": {
+      "types": [
+        [
+          "urn:riskium:evidence:ref-c",
+          "RKM-C065"
+        ],
+        [
+          "urn:riskium:evidence:ref-c",
+          "RKM-C014"
+        ],
+        [
+          "urn:riskium:evidence:ref-c-v1",
+          "RKM-C015"
+        ],
+        [
+          "urn:riskium:evidence:item-b",
+          "RKM-C066"
+        ],
+        [
+          "urn:riskium:evidence:item-b",
+          "RKM-C014"
+        ],
+        [
+          "urn:riskium:evidence:item-b-v1",
+          "RKM-C015"
+        ],
+        [
+          "urn:riskium:knowledge:reference-a",
+          "RKM-C014"
+        ],
+        [
+          "urn:riskium:knowledge:reference-a-v1",
+          "RKM-C015"
+        ]
+      ],
+      "edges": [
+        [
+          "urn:riskium:evidence:ref-c-v1",
+          "RX-006",
+          "urn:riskium:evidence:ref-c"
+        ],
+        [
+          "urn:riskium:evidence:item-b-v1",
+          "RX-006",
+          "urn:riskium:evidence:item-b"
+        ],
+        [
+          "urn:riskium:evidence:ref-c",
+          "RX-021",
+          "urn:riskium:evidence:item-b"
+        ],
+        [
+          "urn:riskium:knowledge:reference-a-v1",
+          "RX-006",
+          "urn:riskium:knowledge:reference-a"
+        ],
+        [
+          "urn:riskium:evidence:ref-c",
+          "R-68",
+          "urn:riskium:knowledge:reference-a"
+        ]
+      ]
+    }
+  },
+  "positive_case_ids": [
+    "POPULATED_UPGRADE",
+    "LEGACY_GRAPHS_PRESERVED",
+    "LINEAGE_PRESERVED",
+    "IDEMPOTENT_UPGRADE",
+    "TARGET_OLD",
+    "TARGET_NEW",
+    "MULTIPLE_TARGETS",
+    "PROVENANCE_EXACT",
+    "ITEM_OLD_PIN",
+    "ROLE_CONTEXTUAL",
+    "NO_IMPLICIT_ENDORSEMENT",
+    "RAW_EXCLUSION",
+    "DUPLICATE_LABEL_IDENTITIES",
+    "NATIVE_REFERENCE_A1",
+    "NATIVE_REFERENCE_A2",
+    "NATIVE_REFERENCE_B1",
+    "NATIVE_REFERENCE_C1",
+    "BOUND_PARAMETER",
+    "BACKUP_REOPEN",
+    "FILE_REOPEN",
+    "DUMP_RESTORE",
+    "UNISSUED_EXCLUDED"
+  ],
+  "rejection_diagnostics": {
+    "NO_TARGET": "R-EVIDENCE-CARDINALITY",
+    "MISSING_TARGET": "R-EVIDENCE-TARGET",
+    "UNISSUED_TARGET": "R-EVIDENCE-TARGET",
+    "TARGET_OWNER_MISMATCH": "R-EVIDENCE-TARGET",
+    "DUPLICATE_TARGET": "R-EVIDENCE-DUPLICATE",
+    "TWO_VERSIONS_ONE_TARGET": "R-EVIDENCE-DUPLICATE",
+    "MISSING_ITEM": "R-EVIDENCE-ITEM",
+    "UNISSUED_ITEM": "R-EVIDENCE-ITEM",
+    "ITEM_OWNER_MISMATCH": "R-EVIDENCE-ITEM",
+    "WRONG_REF_KIND": "R-EVIDENCE-TYPE",
+    "CONFLICTING_TYPING": "R-EVIDENCE-TYPE",
+    "MISSING_SOURCE": "R-EVIDENCE-SOURCE",
+    "EMPTY_PROVENANCE": "R-EVIDENCE-PROVENANCE",
+    "BAD_CALENDAR": "R-EVIDENCE-TIME",
+    "SOURCE_MISMATCH": "R-EVIDENCE-OWNER-SOURCE",
+    "OWNER_MISMATCH": "R-EVIDENCE-OWNER-SOURCE",
+    "PAYLOAD_DRIFT": "R-EVIDENCE-PAYLOAD",
+    "SEAL_SMUGGLE": "R-EVIDENCE-PAYLOAD",
+    "DUPLICATE_VERSION": "R-VERSION-DUPLICATE",
+    "UPDATE_SNAPSHOT": "R-EVIDENCE-IMMUTABLE",
+    "DELETE_SNAPSHOT": "R-EVIDENCE-IMMUTABLE",
+    "REPLACE_SNAPSHOT": "R-EVIDENCE-DUPLICATE",
+    "UPDATE_TARGET": "R-EVIDENCE-IMMUTABLE",
+    "DELETE_TARGET": "R-EVIDENCE-IMMUTABLE",
+    "REPLACE_TARGET": "R-EVIDENCE-DUPLICATE",
+    "LATE_TARGET": "R-EVIDENCE-FROZEN",
+    "INVALID_ROLE": "R-EVIDENCE-ROLE",
+    "CONFIGURATION_OFF": "R-CONNECTION-POLICY",
+    "LEDGER_DRIFT": "R-EVIDENCE-LEDGER",
+    "SCHEMA_DRIFT": "R-EVIDENCE-SCHEMA",
+    "ATOMIC_BUNDLE_FAILURE": "R-EVIDENCE-TARGET",
+    "RESTORE_PAYLOAD_TAMPER": "R-EVIDENCE-DATA-PAYLOAD",
+    "RESTORE_ITEM_TAMPER": "R-EVIDENCE-DATA-ITEM",
+    "RESTORE_ROLE_TAMPER": "R-EVIDENCE-DATA-ROLE",
+    "NONTEXT_INPUT": "R-EVIDENCE-INPUT"
+  },
+  "case_ids": [
+    "POPULATED_UPGRADE",
+    "LEGACY_GRAPHS_PRESERVED",
+    "LINEAGE_PRESERVED",
+    "IDEMPOTENT_UPGRADE",
+    "TARGET_OLD",
+    "TARGET_NEW",
+    "MULTIPLE_TARGETS",
+    "PROVENANCE_EXACT",
+    "ITEM_OLD_PIN",
+    "ROLE_CONTEXTUAL",
+    "NO_IMPLICIT_ENDORSEMENT",
+    "RAW_EXCLUSION",
+    "DUPLICATE_LABEL_IDENTITIES",
+    "NATIVE_REFERENCE_A1",
+    "NATIVE_REFERENCE_A2",
+    "NATIVE_REFERENCE_B1",
+    "NATIVE_REFERENCE_C1",
+    "BOUND_PARAMETER",
+    "BACKUP_REOPEN",
+    "FILE_REOPEN",
+    "DUMP_RESTORE",
+    "UNISSUED_EXCLUDED",
+    "NO_TARGET",
+    "MISSING_TARGET",
+    "UNISSUED_TARGET",
+    "TARGET_OWNER_MISMATCH",
+    "DUPLICATE_TARGET",
+    "TWO_VERSIONS_ONE_TARGET",
+    "MISSING_ITEM",
+    "UNISSUED_ITEM",
+    "ITEM_OWNER_MISMATCH",
+    "WRONG_REF_KIND",
+    "CONFLICTING_TYPING",
+    "MISSING_SOURCE",
+    "EMPTY_PROVENANCE",
+    "BAD_CALENDAR",
+    "SOURCE_MISMATCH",
+    "OWNER_MISMATCH",
+    "PAYLOAD_DRIFT",
+    "SEAL_SMUGGLE",
+    "DUPLICATE_VERSION",
+    "UPDATE_SNAPSHOT",
+    "DELETE_SNAPSHOT",
+    "REPLACE_SNAPSHOT",
+    "UPDATE_TARGET",
+    "DELETE_TARGET",
+    "REPLACE_TARGET",
+    "LATE_TARGET",
+    "INVALID_ROLE",
+    "CONFIGURATION_OFF",
+    "LEDGER_DRIFT",
+    "SCHEMA_DRIFT",
+    "ATOMIC_BUNDLE_FAILURE",
+    "RESTORE_PAYLOAD_TAMPER",
+    "RESTORE_ITEM_TAMPER",
+    "RESTORE_ROLE_TAMPER",
+    "NONTEXT_INPUT",
+    "FAILED_UPGRADE",
+    "MUTANT_CARDINALITY_EXPOSED",
+    "MUTANT_IMMUTABILITY_EXPOSED",
+    "MUTANT_SOURCE_JOIN_EXPOSED",
+    "MUTANT_DIRECTION_EXPOSED"
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "schema": "riskium-qualified-evidence-contract-v1",
+  "version": "0.6.0",
+  "schema_version": 7,
+  "execution_issue": 44,
+  "parent_issues": [
+    35,
+    12
+  ],
+  "baseline_commit": "8340be8f16d505cd8f5dde0bddc42063f8aaa198",
+  "source_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "implementation/relational/0.5.0/contract.json": "b4519adb907a4867cb2668489cd7d70963a83709f0b7880d881b415a4d041ac1",
+    "implementation/relational/0.5.0/component.json": "d43226ec189ee922474804fa9edf9232f8678ba9db63295940e08038d25f17b8",
+    "evaluation/relational/source-scenario-lineage/mapping-accounting.json": "50dd4fad66adde680c28b0e7f8c4131e064fc6b2e2deda6a74cb7638368db257",
+    "tools/relational_source_scenario_lineage.py": "0fddac0d97c9bbf2eb7d0947c0f989978e9f6b0e2b2ce94b160983035ecd3d36"
+  },
+  "requirements": [
+    {
+      "id": "EQR-01",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-11"
+      ],
+      "constraints": [
+        "C-03"
+      ],
+      "accept": "Populated v6->v7 preserves every previous row, ledger, issued graph and correction branch; repeat and failed migration execute atomically."
+    },
+    {
+      "id": "EQR-02",
+      "source_requirements": [
+        "RKRS-06",
+        "RKRS-11"
+      ],
+      "constraints": [
+        "C-12",
+        "C-16"
+      ],
+      "accept": "An issued EvidenceReference points to exactly one pinned issued EvidenceItem version and >=1 pinned issued recorded-artifact target versions. The item role is contextual in the selected reference graph, not a global or identity-supplying class."
+    },
+    {
+      "id": "EQR-03",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "constraints": [
+        "C-03",
+        "C-12"
+      ],
+      "accept": "Keep explicit support/challenge/context, statement and source JSON/locator/interpretation/time immutable and independently attributable to reference and item versions; payload and normalized pins agree."
+    },
+    {
+      "id": "EQR-04",
+      "source_requirements": [
+        "RKRS-06",
+        "RKRS-11"
+      ],
+      "constraints": [
+        "C-12",
+        "C-17"
+      ],
+      "accept": "Exact target-version queries preserve all explicit references, sources, historical item/target pins and equal-label distinct identities; native graphs match literal directions and infer no endorsement, occurrence or independent corroboration."
+    },
+    {
+      "id": "EQR-05",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-12"
+      ],
+      "constraints": [
+        "C-03"
+      ],
+      "accept": "Actual atomic seal/rollback, schema/hash/FK/configuration and semantic audits, backup/reopen/dump/tamper controls retain every prior audit."
+    },
+    {
+      "id": "EQR-06",
+      "source_requirements": [
+        "RKRS-11",
+        "RKRS-12"
+      ],
+      "constraints": [
+        "C-16"
+      ],
+      "accept": "Account for all 306 native elements and six newly partial routes with original dispositions retained; original scientific receipts and all 11 WITHHELD organizational admissions remain unchanged."
+    }
+  ],
+  "native_classes": [
+    "RKM-C065",
+    "RKM-C066"
+  ],
+  "native_relations": [
+    "R-68",
+    "RX-021"
+  ],
+  "generalizations": [
+    "G-18",
+    "GX-053"
+  ],
+  "policy": {
+    "reference": "C065 is a documentary subkind using existing InformationArtifact identity and a separate version-owned evidence snapshot.",
+    "item": "C066 is a contextual role on an existing issued InformationArtifact version. No global artifact_typing/knowledge_type membership or new bearer identity is created. It appears only in the selected reference-version graph.",
+    "targets": "R-68 requires >=1 explicit existing issued InformationArtifact versions. At most one pinned version per target artifact per reference is a bounded application policy; unknown identity remains raw, no fabricated target.",
+    "item_cardinality": "RX-021 has exactly one evidence-item version pin; target has at least this one reference in the selected graph. Multiple references to the same bearer are not independent corroboration.",
+    "qualification": "support/challenge/context are supplementary application values implementing selected C-12 interpretation. The native predicate supportsRecordedArtifact does not assert truth or endorsement, including when qualification is challenge/context.",
+    "provenance": "Reference source and evidence-item version source remain separate. Later version source may differ from artifact origin. Raw source_record is documentary provenance, not automatic EvidenceItem admission.",
+    "versioning": "All source/statement/role/pins are sealed with payload; native graph and target query selected by exact issued version, no historical union/latest/authority policy. General correction for evidence references is deferred.",
+    "native_projection": "C065, contextual C066, inherited C014, C015/RX-006, R-68 and RX-021 only. R-69..R-72 occurrence/agent/activity links are deferred; no occurrence/causation inferred.",
+    "typing": "Bounded storage selects a separate C065 representation on a generic C014 artifact, separate from assessment/knowledge typing. This storage restriction is not native disjointness.",
+    "publication": "Development component for PLANNED v0.3.4; stable v0.3.3, model 0.3.1, ORSD 0.4.3, DRSD 0.1.0 and article 7.0.8 unchanged.",
+    "unimplemented": [
+      "General evidence/assertion correction and retraction",
+      "Authoritative branch or truth selection",
+      "R-69..R-72 and remaining native mappings",
+      "Workflow/formulas/intervals",
+      "PostgreSQL/private migration and operational acceptance",
+      "Independent semantic validation"
+    ]
+  }
+}
