@@ -5,7 +5,7 @@
   "baseline_main": "3646ff0dd138a1ecc6f56fd50341a67635a85488",
   "current_published_release": "v0.3.4",
   "target_release": "v0.3.5",
-  "release_state": "DECLARED_NOT_IMPLEMENTED",
+  "release_state": "COMPONENT_IMPLEMENTED_NOT_FROZEN",
   "submission_state": "NOT_YET_ESTABLISHED",
   "venue": null,
   "track": null,
@@ -34,17 +34,26 @@
       "WITHHELD": 11
     },
     "manuscript_baseline": "7.0.8",
-    "new_full_manuscript_readback": false
+    "new_full_manuscript_readback": false,
+    "lifecycle_development": {
+      "profile": "0.7.0",
+      "schema_version": 8,
+      "execution_issue": 53,
+      "actual_fixed_controls": 43,
+      "local_focused_regressions": 20,
+      "report": "evaluation/relational/evidence-lifecycle/report.json",
+      "hosted_and_full_source_closure": "GitHub issue #53; not independent semantic validation"
+    }
   },
   "release_gates": [
     {
       "id": "R1",
-      "state": "DECLARED_PENDING_EXACT_COMMIT_VALIDATION",
+      "state": "COMPLETED_DECLARATION_52",
       "criterion": "Contract, literal expected controls and bindings precede implementation"
     },
     {
       "id": "R2",
-      "state": "NOT_RUN",
+      "state": "IMPLEMENTED_ACTUAL_EVIDENCE_IN_53",
       "criterion": "Actual lifecycle/migration/query/native/recovery and mutation controls"
     },
     {
@@ -125,8 +134,8 @@
     },
     {
       "id": "DEF-GAP-03",
-      "state": "NOT_EXECUTED",
-      "finding": "No lifecycle 0.7.0 implementation or observed result exists."
+      "state": "BOUNDED_COMPONENT_IMPLEMENTED",
+      "finding": "C065 lifecycle 0.7.0 has actual fixed-control evidence under #53. Broader assertion mapping and release R3–R6 remain open."
     },
     {
       "id": "DEF-GAP-04",

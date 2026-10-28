@@ -1,13 +1,25 @@
-# Evidence-reference lifecycle 0.7.0 — declaration only
+# Evidence-reference lifecycle 0.7.0 — executed development component
 
-**DECLARED_NOT_IMPLEMENTED.** Release parent [#51](https://github.com/ArazSaieArasi3/riskium/issues/51), declaration [#52](https://github.com/ArazSaieArasi3/riskium/issues/52), broader parents #35/#12. No migration 8, API, query execution, result receipt or native mapping completion is supplied by this declaration.
+Implementation [#53](https://github.com/ArazSaieArasi3/riskium/issues/53) executes the frozen [#52](https://github.com/ArazSaieArasi3/riskium/issues/52) declaration under release #51 and broader #35/#12. It supplies additive migration 8, an audited internal Python API and actual SQLite evidence. Source distribution v0.3.5 is not frozen or published.
 
-The [contract](contract.json) freezes nine derived ELC requirements and the [43 literal engineering expectations](fixtures.json) before implementation. They address only existing issued C065 EvidenceReference versions: explicit same-artifact correction branches, documentary context-specific withdrawal/selection, an explicit as-of ledger boundary, immutable provenance and unchanged named native graphs. Context/decision fields are application supplements and do not establish authority or truth.
+An existing issued C065 EvidenceReference can have explicit same-artifact correction branches and documentary, context-specific SELECT/WITHDRAW/CLEAR events. Selection requires an exact artifact/context/as-of ledger bound. WITHDRAWN returns a null selected pointer with its former version/history retained; another context and earlier as-of retrieval remain separate. Native item/target/version pins and all four literal v7 graph oracles are preserved.
 
-A populated validated v7 database must upgrade additively, preserving migrations 1–7, original payloads/item/target pins, old graphs and all prior audits. Selection requires an explicit artifact/context/as-of sequence; no implicit newest branch or fallback. A withdrawn selected version yields WITHDRAWN and a null selected pointer in that context; earlier historical retrieval remains available. Reinstatement and notice-level correction remain deferred.
+The original nine-requirement [contract](contract.json) and [43 prospective expectations](fixtures.json) remain unchanged declaration-time files, including their historical NOT_RUN fields. [Current actual results](../../../evaluation/relational/evidence-lifecycle/report.json) record execution. [Design](design.json) and [concrete synthetic inputs](execution-fixture.json) precede implementation in Git history.
 
-The original four EQR 0.6.0 literal graph oracles are reused by exact file hash. ref-A@3/@4 are lineage/selection fixtures with no invented native graph identity. The declared engine interface and diagnostics may only be amended with reasons in a separate prior commit, never by substituting observed output.
+## Internal Python API
 
-All expected outcomes are **NOT_RUN**. Future implementation must record actual input/code/runtime hashes, expected versus observed SQL/native results, populated migration/rollback/recovery and real weakened-rule controls. Passing JSON/source checks of this declaration does not execute any lifecycle behavior.
+| Entry point | Result and reason |
+| --- | --- |
+| migrate / connect / health | Upgrade a populated valid v7 database or audit v8, retaining old rows/schema/semantic checks. |
+| append | Atomically record a complete attributed CORRECT/SELECT/WITHDRAW/CLEAR event; return its database-assigned sequence. |
+| issue / issue_corrected | Seal a plain version, or atomically seal it with an explicit correction; preserve caller transactions on failure. |
+| selection | Return NO_SELECTION, SELECTED or WITHDRAWN for an explicit context and ledger bound. |
+| family / ledger | Retrieve every declared branch and immutable event with separate source provenance. |
+| native_graph / by_target | Read unchanged exact version graphs and target pins. |
+| restore_dump | Restore then audit all current/prior schema/data/allocator invariants before committing. |
 
-[Release definition](../../../plans/v0.3.5.md) and [conference-readiness gates](../../../docs/conference-readiness.md) keep mechanical trace accounting, scoped implementation and independent scientific adequacy separate. Native model 0.3.1, ORSD 0.4.3, original DRSD 0.1.0, manuscript 7.0.8, all eleven WITHHELD admissions and zero independent ratings remain unchanged.
+This API is a local Python function interface over SQLite. Callers provide every required source/identity/context field; fixtures expand common test inputs explicitly, while the runtime supplies no missing-source/context repair. Actor attribution is documentary metadata, not a native authority or verified access-control decision.
+
+[Schema dictionary and index/transaction review](schema-dictionary.md) explains all columns/keys and recovery. [Execution and trace](../../../evaluation/relational/evidence-lifecycle/README.md) retain actual expected/observed results and limits. No full arbitrary assertion mapping, reinstatement, R-69..R-72, production deployment, independent semantic acceptance or new organizational admission is claimed.
+
+Native model 0.3.1, ORSD 0.4.3, original DRSD 0.1.0, manuscript 7.0.8, old component bytes and all eleven WITHHELD/zero independent-rating decisions remain unchanged.

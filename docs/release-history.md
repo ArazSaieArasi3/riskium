@@ -18,6 +18,6 @@ Actual GitHub metadata and all tag targets were read on 28 October 2026. There a
 
 The sequence is public packaging → bounded formal/application checks → source and history preservation → stable accepted scope → richer SQL/integration → current evidence and documentation. Distribution increments are not new ontology-model versions or new independent scientific acceptances.
 
-**Next planned: [v0.3.5](../plans/v0.3.5.md)**, evidence-reference lifecycle 0.7.0 and current artifact traceability. It is declared, not implemented/frozen/tagged/published, and is excluded from the 11-release count.
+**Next planned: [v0.3.5](../plans/v0.3.5.md)**, evidence-reference lifecycle 0.7.0 and current artifact traceability. The bounded lifecycle component is now implemented under #53; the source distribution is not frozen/tagged/published and is excluded from the 11-release count.
 
 [Exact release/tag/asset baseline](../evaluation/releases/v0.3.5-definition/published-baseline.json) records every published source target, release ID, asset ID/size/digest and publication timestamp. This metadata read is not another independent download of every old asset.

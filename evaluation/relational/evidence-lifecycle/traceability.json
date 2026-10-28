@@ -1,0 +1,411 @@
+{
+  "schema": "riskium-evidence-lifecycle-trace-v1",
+  "execution_issue": 53,
+  "release_issue": 51,
+  "profile": "0.7.0",
+  "original_drsd": "0.1.0 unchanged; ELC-01..09 derived supplement",
+  "declaration_commit": "cb996241553fc8ae858acb38622009ed3a08f450",
+  "requirements": [
+    {
+      "requirement": {
+        "id": "ELC-01",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-11"
+        ],
+        "constraints": [
+          "C-03"
+        ],
+        "accept": "Actual populated v7->v8 upgrade preserves every earlier row, migration hash, issued payload and named native graph. Repeated upgrade and failed upgrade have explicit atomic outcomes.",
+        "cases": [
+          "ELC-F01",
+          "ELC-F02",
+          "ELC-F03",
+          "ELC-F31"
+        ]
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ07",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "ELC-F01",
+        "ELC-F02",
+        "ELC-F03",
+        "ELC-F31"
+      ],
+      "implementation": [
+        "implementation/relational/0.7.0/008_evidence_lifecycle.sql",
+        "implementation/relational/0.7.0/queries/family.sql",
+        "implementation/relational/0.7.0/queries/selection.sql",
+        "tools/relational_evidence_lifecycle.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "retained_claim": "Actual populated v7->v8 upgrade preserves every earlier row, migration hash, issued payload and named native graph. Repeated upgrade and failed upgrade have explicit atomic outcomes.",
+      "limit": "C065 documentary/application lifecycle only; no global authority, truth or whole-model/independent acceptance."
+    },
+    {
+      "requirement": {
+        "id": "ELC-02",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-06"
+        ],
+        "constraints": [
+          "C-03",
+          "C-17"
+        ],
+        "accept": "Explicit correction declarations connect only issued C065 EvidenceReference versions of the same artifact. One immutable parent per child, multiple branches, no self/cycle/cross-artifact edge; plain issuance adds no correction.",
+        "cases": [
+          "ELC-F04",
+          "ELC-F05",
+          "ELC-F06",
+          "ELC-F07",
+          "ELC-F08",
+          "ELC-F09",
+          "ELC-F10",
+          "ELC-F11"
+        ]
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ07",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "ELC-F04",
+        "ELC-F05",
+        "ELC-F06",
+        "ELC-F07",
+        "ELC-F08",
+        "ELC-F09",
+        "ELC-F10",
+        "ELC-F11"
+      ],
+      "implementation": [
+        "implementation/relational/0.7.0/008_evidence_lifecycle.sql",
+        "implementation/relational/0.7.0/queries/family.sql",
+        "implementation/relational/0.7.0/queries/selection.sql",
+        "tools/relational_evidence_lifecycle.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "retained_claim": "Explicit correction declarations connect only issued C065 EvidenceReference versions of the same artifact. One immutable parent per child, multiple branches, no self/cycle/cross-artifact edge; plain issuance adds no correction.",
+      "limit": "C065 documentary/application lifecycle only; no global authority, truth or whole-model/independent acceptance."
+    },
+    {
+      "requirement": {
+        "id": "ELC-03",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-06"
+        ],
+        "constraints": [
+          "C-03",
+          "C-12"
+        ],
+        "accept": "Correction and decision rows preserve their own actor attribution, reason, documentary source/locator, interpretation, recorded UTC and database-assigned sequence independently of immutable endpoint sources. Update/delete/replace fail.",
+        "cases": [
+          "ELC-F22",
+          "ELC-F28",
+          "ELC-F29",
+          "ELC-F30",
+          "ELC-F38",
+          "ELC-F40",
+          "ELC-F42"
+        ]
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ07",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "ELC-F22",
+        "ELC-F28",
+        "ELC-F29",
+        "ELC-F30",
+        "ELC-F38",
+        "ELC-F40",
+        "ELC-F42"
+      ],
+      "implementation": [
+        "implementation/relational/0.7.0/008_evidence_lifecycle.sql",
+        "implementation/relational/0.7.0/queries/family.sql",
+        "implementation/relational/0.7.0/queries/selection.sql",
+        "tools/relational_evidence_lifecycle.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "retained_claim": "Correction and decision rows preserve their own actor attribution, reason, documentary source/locator, interpretation, recorded UTC and database-assigned sequence independently of immutable endpoint sources. Update/delete/replace fail.",
+      "limit": "C065 documentary/application lifecycle only; no global authority, truth or whole-model/independent acceptance."
+    },
+    {
+      "requirement": {
+        "id": "ELC-04",
+        "source_requirements": [
+          "RKRS-06",
+          "RKRS-11"
+        ],
+        "constraints": [
+          "C-12",
+          "C-16"
+        ],
+        "accept": "Selection queries require exact artifact, named application context and as_of_sequence. A context selects an explicit issued version, not the newest timestamp, label, branch or truth. Missing selection yields NO_SELECTION; CLEAR removes a context's selected pointer without deleting history.",
+        "cases": [
+          "ELC-F12",
+          "ELC-F13",
+          "ELC-F14",
+          "ELC-F15",
+          "ELC-F19",
+          "ELC-F20",
+          "ELC-F21",
+          "ELC-F33",
+          "ELC-F39",
+          "ELC-F43"
+        ]
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ07",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "ELC-F12",
+        "ELC-F13",
+        "ELC-F14",
+        "ELC-F15",
+        "ELC-F19",
+        "ELC-F20",
+        "ELC-F21",
+        "ELC-F33",
+        "ELC-F39",
+        "ELC-F43"
+      ],
+      "implementation": [
+        "implementation/relational/0.7.0/008_evidence_lifecycle.sql",
+        "implementation/relational/0.7.0/queries/family.sql",
+        "implementation/relational/0.7.0/queries/selection.sql",
+        "tools/relational_evidence_lifecycle.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "retained_claim": "Selection queries require exact artifact, named application context and as_of_sequence. A context selects an explicit issued version, not the newest timestamp, label, branch or truth. Missing selection yields NO_SELECTION; CLEAR removes a context's selected pointer without deleting history.",
+      "limit": "C065 documentary/application lifecycle only; no global authority, truth or whole-model/independent acceptance."
+    },
+    {
+      "requirement": {
+        "id": "ELC-05",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-06"
+        ],
+        "constraints": [
+          "C-03",
+          "C-17"
+        ],
+        "accept": "Append-only WITHDRAW notices are context-specific documentary decisions about an exact issued version. At/after withdrawal an already selected version yields WITHDRAWN with null selected_version, never fallback. Earlier as-of queries and all graphs/edges/sources remain unchanged.",
+        "cases": [
+          "ELC-F16",
+          "ELC-F17",
+          "ELC-F18",
+          "ELC-F19",
+          "ELC-F21"
+        ]
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ07",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "ELC-F16",
+        "ELC-F17",
+        "ELC-F18",
+        "ELC-F19",
+        "ELC-F21"
+      ],
+      "implementation": [
+        "implementation/relational/0.7.0/008_evidence_lifecycle.sql",
+        "implementation/relational/0.7.0/queries/family.sql",
+        "implementation/relational/0.7.0/queries/selection.sql",
+        "tools/relational_evidence_lifecycle.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "retained_claim": "Append-only WITHDRAW notices are context-specific documentary decisions about an exact issued version. At/after withdrawal an already selected version yields WITHDRAWN with null selected_version, never fallback. Earlier as-of queries and all graphs/edges/sources remain unchanged.",
+      "limit": "C065 documentary/application lifecycle only; no global authority, truth or whole-model/independent acceptance."
+    },
+    {
+      "requirement": {
+        "id": "ELC-06",
+        "source_requirements": [
+          "RKRS-06",
+          "RKRS-09"
+        ],
+        "constraints": [
+          "C-12",
+          "C-14"
+        ],
+        "accept": "Keep C065/C066, R-68/RX-021 and version/item/target pins in their original named graphs. C066 remains contextual. Correction/withdrawal/selection are supplementary metadata, with no native authority/correction/occurrence predicate or inferred independent corroboration.",
+        "cases": [
+          "ELC-F23",
+          "ELC-F25",
+          "ELC-F26",
+          "ELC-F27",
+          "ELC-F34"
+        ]
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ07",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "ELC-F23",
+        "ELC-F25",
+        "ELC-F26",
+        "ELC-F27",
+        "ELC-F34"
+      ],
+      "implementation": [
+        "implementation/relational/0.7.0/008_evidence_lifecycle.sql",
+        "implementation/relational/0.7.0/queries/family.sql",
+        "implementation/relational/0.7.0/queries/selection.sql",
+        "tools/relational_evidence_lifecycle.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "retained_claim": "Keep C065/C066, R-68/RX-021 and version/item/target pins in their original named graphs. C066 remains contextual. Correction/withdrawal/selection are supplementary metadata, with no native authority/correction/occurrence predicate or inferred independent corroboration.",
+      "limit": "C065 documentary/application lifecycle only; no global authority, truth or whole-model/independent acceptance."
+    },
+    {
+      "requirement": {
+        "id": "ELC-07",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-11"
+        ],
+        "constraints": [
+          "C-03",
+          "C-16"
+        ],
+        "accept": "Reject unknown/unissued/mismatched targets, missing context/provenance and invalid event envelopes without partial writes. Preserve raw unknown identities. Validate current schema/FKs/configuration and refuse v8 with an old exact-schema reader. Execute nested rollback and backup/reopen/dump recovery.",
+        "cases": [
+          "ELC-F06",
+          "ELC-F24",
+          "ELC-F28",
+          "ELC-F30",
+          "ELC-F31",
+          "ELC-F35",
+          "ELC-F38",
+          "ELC-F39",
+          "ELC-F40",
+          "ELC-F41",
+          "ELC-F42",
+          "ELC-F43"
+        ]
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ07",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "ELC-F06",
+        "ELC-F24",
+        "ELC-F28",
+        "ELC-F30",
+        "ELC-F31",
+        "ELC-F35",
+        "ELC-F38",
+        "ELC-F39",
+        "ELC-F40",
+        "ELC-F41",
+        "ELC-F42",
+        "ELC-F43"
+      ],
+      "implementation": [
+        "implementation/relational/0.7.0/008_evidence_lifecycle.sql",
+        "implementation/relational/0.7.0/queries/family.sql",
+        "implementation/relational/0.7.0/queries/selection.sql",
+        "tools/relational_evidence_lifecycle.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "retained_claim": "Reject unknown/unissued/mismatched targets, missing context/provenance and invalid event envelopes without partial writes. Preserve raw unknown identities. Validate current schema/FKs/configuration and refuse v8 with an old exact-schema reader. Execute nested rollback and backup/reopen/dump recovery.",
+      "limit": "C065 documentary/application lifecycle only; no global authority, truth or whole-model/independent acceptance."
+    },
+    {
+      "requirement": {
+        "id": "ELC-08",
+        "source_requirements": [
+          "RKRS-11",
+          "RKRS-12"
+        ],
+        "constraints": [
+          "C-16"
+        ],
+        "accept": "Reconcile all 306 native dispositions and every ELC requirement to fixed inputs, expected/observed SQL/native outcomes, exact code/component and retained claim/limit. Keep 423 historical rows, original source/requirement priorities, eleven WITHHELD admissions and zero independent ratings unchanged.",
+        "cases": [
+          "ELC-F34",
+          "ELC-F36"
+        ]
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ07",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "ELC-F34",
+        "ELC-F36"
+      ],
+      "implementation": [
+        "implementation/relational/0.7.0/008_evidence_lifecycle.sql",
+        "implementation/relational/0.7.0/queries/family.sql",
+        "implementation/relational/0.7.0/queries/selection.sql",
+        "tools/relational_evidence_lifecycle.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "retained_claim": "Reconcile all 306 native dispositions and every ELC requirement to fixed inputs, expected/observed SQL/native outcomes, exact code/component and retained claim/limit. Keep 423 historical rows, original source/requirement priorities, eleven WITHHELD admissions and zero independent ratings unchanged.",
+      "limit": "C065 documentary/application lifecycle only; no global authority, truth or whole-model/independent acceptance."
+    },
+    {
+      "requirement": {
+        "id": "ELC-09",
+        "source_requirements": [
+          "RKRS-06",
+          "RKRS-12"
+        ],
+        "constraints": [
+          "C-12",
+          "C-17"
+        ],
+        "accept": "Use frozen literal expectations independent of the implementation. Deliberately wrong newest-version, missing-context and cross-version-pin mutations must be detected. Software/source accounting never counts as independent semantic ratings.",
+        "cases": [
+          "ELC-F32",
+          "ELC-F33",
+          "ELC-F37"
+        ]
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ07",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "ELC-F32",
+        "ELC-F33",
+        "ELC-F37"
+      ],
+      "implementation": [
+        "implementation/relational/0.7.0/008_evidence_lifecycle.sql",
+        "implementation/relational/0.7.0/queries/family.sql",
+        "implementation/relational/0.7.0/queries/selection.sql",
+        "tools/relational_evidence_lifecycle.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "retained_claim": "Use frozen literal expectations independent of the implementation. Deliberately wrong newest-version, missing-context and cross-version-pin mutations must be detected. Software/source accounting never counts as independent semantic ratings.",
+      "limit": "C065 documentary/application lifecycle only; no global authority, truth or whole-model/independent acceptance."
+    }
+  ],
+  "scope": "New ELC claims only; release R3/current whole-manuscript reconciliation remains open.",
+  "independent_ratings": 0,
+  "organizational_admissions": "All eleven WITHHELD"
+}

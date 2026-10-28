@@ -1,0 +1,1710 @@
+{
+  "schema": "riskium-evidence-lifecycle-execution-v1",
+  "profile": "0.7.0",
+  "schema_version": 8,
+  "execution_issue": 53,
+  "declaration_commit": "cb996241553fc8ae858acb38622009ed3a08f450",
+  "runtime": {
+    "sqlite": "3.53.1",
+    "scope": "Actual engine; hosted replay records its own version."
+  },
+  "inputs_sha256": {
+    "implementation/relational/0.7.0/contract.json": "1b67d8e0b446a97bfed632b6d26c2b58c668a51229377cc45e492f6b1dc5b533",
+    "implementation/relational/0.7.0/fixtures.json": "d309553c187e3208ee093f7994badd5724e66a8563b0503544dcca49e762ca0d",
+    "implementation/relational/0.7.0/execution-fixture.json": "4422f0fd09b072c9012573ef016c6c79908108b4a2ab5f70b17b28ccb41e3eaa",
+    "implementation/relational/0.7.0/design.json": "1beed055a6b7e152a0397ab849c3c9a86384eda5f9f01f2bd7e9e54307ee6525",
+    "implementation/relational/0.7.0/008_evidence_lifecycle.sql": "500ede3fc496fdf1bd6e8fb626867bae4707f720e4b9341767527b3cdac664af",
+    "implementation/relational/0.7.0/queries/selection.sql": "789953e2673fc073fb790d4fd9dc049c96dffb571ce28ab0f831a344bf6d7362",
+    "implementation/relational/0.7.0/queries/family.sql": "e3fe640c7197c1f23ee22bff58eaa316cc267f81d998da8ec954291d5326be88",
+    "tools/relational_evidence_lifecycle.py": "111551343ba6aee1af09b800e445d790fb432e45297e88834f1c9ed453512c10",
+    "tools/run_relational_evidence_lifecycle.py": "9db89b85710d27524114a4cbe0da18ab6dfb30486010d6046b84e59cfe8f427c"
+  },
+  "summary": {
+    "cases": 43,
+    "outcomes": {
+      "PASS": 43
+    },
+    "categories": {
+      "migration": 2,
+      "rollback": 2,
+      "positive": 1,
+      "rejection": 13,
+      "query": 11,
+      "provenance": 2,
+      "negative-inference": 1,
+      "native": 3,
+      "immutability": 1,
+      "reader": 1,
+      "mutation": 3,
+      "preservation": 1,
+      "recovery": 1,
+      "traceability": 1
+    },
+    "inherited_native_oracles": 4,
+    "fixed_query_mutations": 3,
+    "supplementary_weakened_rule_controls": 1
+  },
+  "cases": [
+    {
+      "id": "ELC-F01",
+      "category": "migration",
+      "expected": {
+        "status": "UPGRADED",
+        "prior_rows": "byte-equivalent logical values",
+        "migration_1_to_7_hashes": "UNCHANGED",
+        "all_prior_named_graphs": "UNCHANGED"
+      },
+      "observed": {
+        "status": "UPGRADED",
+        "prior_rows": "byte-equivalent logical values",
+        "migration_1_to_7_hashes": "UNCHANGED",
+        "all_prior_named_graphs": "UNCHANGED"
+      },
+      "status": "PASS",
+      "evidence": {
+        "old_tables": 25,
+        "prior_logical_rows": 268,
+        "prior_quad_count": 82,
+        "literal_graph_oracles_match": true
+      }
+    },
+    {
+      "id": "ELC-F02",
+      "category": "rollback",
+      "expected": {
+        "status": "ROLLED_BACK",
+        "source_schema_version": 7,
+        "new_schema_objects": 0,
+        "all_source_rows": "UNCHANGED"
+      },
+      "observed": {
+        "status": "ROLLED_BACK",
+        "source_schema_version": 7,
+        "new_schema_objects": 0,
+        "all_source_rows": "UNCHANGED"
+      },
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "id": "ELC-F03",
+      "category": "migration",
+      "expected": {
+        "status": "ALREADY_CURRENT",
+        "new_rows": 0,
+        "prior_rows": "UNCHANGED"
+      },
+      "observed": {
+        "status": "ALREADY_CURRENT",
+        "new_rows": 0,
+        "prior_rows": "UNCHANGED"
+      },
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "id": "ELC-F04",
+      "category": "positive",
+      "expected": {
+        "status": "ACCEPTED",
+        "family": [
+          "ref-A@1",
+          "ref-A@2"
+        ],
+        "native_new_triples": 0
+      },
+      "observed": {
+        "status": "ACCEPTED",
+        "family": [
+          "ref-A@1",
+          "ref-A@2"
+        ],
+        "native_new_triples": 0
+      },
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "id": "ELC-F05",
+      "category": "rejection",
+      "expected": {
+        "diagnostic": "CROSS_ARTIFACT",
+        "writes": 0
+      },
+      "observed": {
+        "diagnostic": "CROSS_ARTIFACT",
+        "writes": 0
+      },
+      "status": "PASS",
+      "evidence": {
+        "full_input": {
+          "actor_id": "urn:fixture:reviewer-X",
+          "reason": "fixed synthetic declaration",
+          "source_record_id": "urn:fixture:notice",
+          "source_locator": "section 1",
+          "interpretation_origin": "synthetic fixture author",
+          "recorded_at": "2026-10-01T12:00:00Z",
+          "event_id": "event-test",
+          "kind": "CORRECT",
+          "artifact_id": "urn:riskium:evidence:ref-a",
+          "context_id": null,
+          "version_id": "urn:riskium:evidence:ref-b-v1",
+          "prior_version_id": "urn:riskium:evidence:ref-a-v1"
+        }
+      }
+    },
+    {
+      "id": "ELC-F06",
+      "category": "rejection",
+      "expected": {
+        "diagnostic": "UNISSUED_ENDPOINT",
+        "writes": 0
+      },
+      "observed": {
+        "diagnostic": "UNISSUED_ENDPOINT",
+        "writes": 0
+      },
+      "status": "PASS",
+      "evidence": {
+        "full_input": {
+          "actor_id": "urn:fixture:reviewer-X",
+          "reason": "fixed synthetic declaration",
+          "source_record_id": "urn:fixture:notice",
+          "source_locator": "section 1",
+          "interpretation_origin": "synthetic fixture author",
+          "recorded_at": "2026-10-01T12:00:00Z",
+          "event_id": "event-test",
+          "kind": "CORRECT",
+          "artifact_id": "urn:riskium:evidence:ref-a",
+          "context_id": null,
+          "version_id": "urn:riskium:evidence:ref-a-draft",
+          "prior_version_id": "urn:riskium:evidence:ref-a-v1"
+        }
+      }
+    },
+    {
+      "id": "ELC-F07",
+      "category": "rejection",
+      "expected": {
+        "diagnostic": "SELF_CORRECTION",
+        "writes": 0
+      },
+      "observed": {
+        "diagnostic": "SELF_CORRECTION",
+        "writes": 0
+      },
+      "status": "PASS",
+      "evidence": {
+        "full_input": {
+          "actor_id": "urn:fixture:reviewer-X",
+          "reason": "fixed synthetic declaration",
+          "source_record_id": "urn:fixture:notice",
+          "source_locator": "section 1",
+          "interpretation_origin": "synthetic fixture author",
+          "recorded_at": "2026-10-01T12:00:00Z",
+          "event_id": "event-test",
+          "kind": "CORRECT",
+          "artifact_id": "urn:riskium:evidence:ref-a",
+          "context_id": null,
+          "version_id": "urn:riskium:evidence:ref-a-v1",
+          "prior_version_id": "urn:riskium:evidence:ref-a-v1"
+        }
+      }
+    },
+    {
+      "id": "ELC-F08",
+      "category": "rejection",
+      "expected": {
+        "diagnostic": "CYCLE",
+        "writes": 0
+      },
+      "observed": {
+        "diagnostic": "CYCLE",
+        "writes": 0
+      },
+      "status": "PASS",
+      "evidence": {
+        "full_input": {
+          "actor_id": "urn:fixture:reviewer-X",
+          "reason": "fixed synthetic declaration",
+          "source_record_id": "urn:fixture:notice",
+          "source_locator": "section 1",
+          "interpretation_origin": "synthetic fixture author",
+          "recorded_at": "2026-10-01T12:00:00Z",
+          "event_id": "event-test",
+          "kind": "CORRECT",
+          "artifact_id": "urn:riskium:evidence:ref-a",
+          "context_id": null,
+          "version_id": "urn:riskium:evidence:ref-a-v1",
+          "prior_version_id": "urn:riskium:evidence:ref-a-v4"
+        }
+      }
+    },
+    {
+      "id": "ELC-F09",
+      "category": "rejection",
+      "expected": {
+        "diagnostic": "PARENT_ALREADY_DECLARED",
+        "writes": 0
+      },
+      "observed": {
+        "diagnostic": "PARENT_ALREADY_DECLARED",
+        "writes": 0
+      },
+      "status": "PASS",
+      "evidence": {
+        "full_input": {
+          "actor_id": "urn:fixture:reviewer-X",
+          "reason": "fixed synthetic declaration",
+          "source_record_id": "urn:fixture:notice",
+          "source_locator": "section 1",
+          "interpretation_origin": "synthetic fixture author",
+          "recorded_at": "2026-10-01T12:00:00Z",
+          "event_id": "event-test",
+          "kind": "CORRECT",
+          "artifact_id": "urn:riskium:evidence:ref-a",
+          "context_id": null,
+          "version_id": "urn:riskium:evidence:ref-a-v2",
+          "prior_version_id": "urn:riskium:evidence:ref-a-v3"
+        }
+      }
+    },
+    {
+      "id": "ELC-F10",
+      "category": "query",
+      "expected": {
+        "version_ids": [
+          "ref-A@1",
+          "ref-A@2",
+          "ref-A@3",
+          "ref-A@4"
+        ],
+        "parent_edges": [
+          [
+            "ref-A@2",
+            "ref-A@1"
+          ],
+          [
+            "ref-A@3",
+            "ref-A@1"
+          ],
+          [
+            "ref-A@4",
+            "ref-A@2"
+          ]
+        ],
+        "independent_source_count_inferred": false
+      },
+      "observed": {
+        "version_ids": [
+          "ref-A@1",
+          "ref-A@2",
+          "ref-A@3",
+          "ref-A@4"
+        ],
+        "parent_edges": [
+          [
+            "ref-A@2",
+            "ref-A@1"
+          ],
+          [
+            "ref-A@3",
+            "ref-A@1"
+          ],
+          [
+            "ref-A@4",
+            "ref-A@2"
+          ]
+        ],
+        "independent_source_count_inferred": false
+      },
+      "status": "PASS",
+      "evidence": {
+        "rows": [
+          {
+            "version_id": "urn:riskium:evidence:ref-a-v1",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "statement": "Source presented as support",
+            "version_source": "urn:riskium:evidence:document-a",
+            "version_source_json": {
+              "synthetic": true,
+              "claim": "initial evidence",
+              "value": "0",
+              "endorsed": null
+            },
+            "item_version_id": "urn:riskium:evidence:item-a-v1",
+            "prior_version_id": null,
+            "event_id": null,
+            "declaration_source": null,
+            "declaration_source_json": null,
+            "actor_id": null,
+            "reason": null,
+            "recorded_at": null,
+            "source_locator": null,
+            "interpretation_origin": null
+          },
+          {
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "statement": "Revised source challenges the recorded claim",
+            "version_source": "urn:riskium:evidence:document-b",
+            "version_source_json": {
+              "synthetic": true,
+              "claim": "different evidence interpretation",
+              "endorsed": null
+            },
+            "item_version_id": "urn:riskium:evidence:item-a-v2",
+            "prior_version_id": "urn:riskium:evidence:ref-a-v1",
+            "event_id": "cor-1",
+            "declaration_source": "urn:fixture:notice",
+            "declaration_source_json": {
+              "identity": "urn:fixture:notice",
+              "synthetic": true
+            },
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "version_id": "urn:riskium:evidence:ref-a-v3",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "statement": "Synthetic branch 3 of the same evidence reference",
+            "version_source": "urn:riskium:lifecycle:branch-source",
+            "version_source_json": {
+              "identity": "urn:riskium:lifecycle:branch-source",
+              "synthetic": true
+            },
+            "item_version_id": "urn:riskium:evidence:item-a-v2",
+            "prior_version_id": "urn:riskium:evidence:ref-a-v1",
+            "event_id": "cor-2",
+            "declaration_source": "urn:fixture:notice",
+            "declaration_source_json": {
+              "identity": "urn:fixture:notice",
+              "synthetic": true
+            },
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "version_id": "urn:riskium:evidence:ref-a-v4",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "statement": "Synthetic branch 4 of the same evidence reference",
+            "version_source": "urn:riskium:lifecycle:later-source",
+            "version_source_json": {
+              "identity": "urn:riskium:lifecycle:later-source",
+              "synthetic": true
+            },
+            "item_version_id": "urn:riskium:evidence:item-a-v2",
+            "prior_version_id": "urn:riskium:evidence:ref-a-v2",
+            "event_id": "cor-3",
+            "declaration_source": "urn:fixture:notice",
+            "declaration_source_json": {
+              "identity": "urn:fixture:notice",
+              "synthetic": true
+            },
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ELC-F11",
+      "category": "query",
+      "expected": {
+        "version_ids": [
+          "ref-A@1"
+        ],
+        "implicit_edges": 0,
+        "selected_version": null
+      },
+      "observed": {
+        "version_ids": [
+          "ref-A@1"
+        ],
+        "implicit_edges": 0,
+        "selected_version": null
+      },
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "id": "ELC-F12",
+      "category": "query",
+      "expected": {
+        "status": "NO_SELECTION",
+        "selected_version": null,
+        "last_selected_version": null
+      },
+      "observed": {
+        "status": "NO_SELECTION",
+        "selected_version": null,
+        "last_selected_version": null
+      },
+      "status": "PASS",
+      "evidence": {
+        "ledger": []
+      }
+    },
+    {
+      "id": "ELC-F13",
+      "category": "query",
+      "expected": {
+        "status": "SELECTED",
+        "selected_version": "ref-A@2",
+        "last_selected_version": "ref-A@2"
+      },
+      "observed": {
+        "status": "SELECTED",
+        "selected_version": "ref-A@2",
+        "last_selected_version": "ref-A@2"
+      },
+      "status": "PASS",
+      "evidence": {
+        "ledger": [
+          {
+            "sequence": 10,
+            "event_id": "decision-10",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-1",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 20,
+            "event_id": "decision-20",
+            "kind": "WITHDRAW",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:withdrawal-notice",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 30,
+            "event_id": "decision-30",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v3",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-2",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 40,
+            "event_id": "decision-40",
+            "kind": "CLEAR",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": null,
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-3",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ELC-F14",
+      "category": "query",
+      "expected": {
+        "status": "NO_SELECTION",
+        "selected_version": null,
+        "last_selected_version": null
+      },
+      "observed": {
+        "status": "NO_SELECTION",
+        "selected_version": null,
+        "last_selected_version": null
+      },
+      "status": "PASS",
+      "evidence": {
+        "ledger": [
+          {
+            "sequence": 10,
+            "event_id": "decision-10",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-1",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 20,
+            "event_id": "decision-20",
+            "kind": "WITHDRAW",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:withdrawal-notice",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 30,
+            "event_id": "decision-30",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v3",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-2",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 40,
+            "event_id": "decision-40",
+            "kind": "CLEAR",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": null,
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-3",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ELC-F15",
+      "category": "query",
+      "expected": {
+        "status": "NO_SELECTION",
+        "selected_version": null,
+        "last_selected_version": null
+      },
+      "observed": {
+        "status": "NO_SELECTION",
+        "selected_version": null,
+        "last_selected_version": null
+      },
+      "status": "PASS",
+      "evidence": {
+        "ledger": [
+          {
+            "sequence": 10,
+            "event_id": "decision-10",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-1",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 20,
+            "event_id": "decision-20",
+            "kind": "WITHDRAW",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:withdrawal-notice",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 30,
+            "event_id": "decision-30",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v3",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-2",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 40,
+            "event_id": "decision-40",
+            "kind": "CLEAR",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": null,
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-3",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ELC-F16",
+      "category": "query",
+      "expected": {
+        "status": "WITHDRAWN",
+        "selected_version": null,
+        "last_selected_version": "ref-A@2"
+      },
+      "observed": {
+        "status": "WITHDRAWN",
+        "selected_version": null,
+        "last_selected_version": "ref-A@2"
+      },
+      "status": "PASS",
+      "evidence": {
+        "ledger": [
+          {
+            "sequence": 10,
+            "event_id": "decision-10",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-1",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 20,
+            "event_id": "decision-20",
+            "kind": "WITHDRAW",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:withdrawal-notice",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 30,
+            "event_id": "decision-30",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v3",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-2",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 40,
+            "event_id": "decision-40",
+            "kind": "CLEAR",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": null,
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-3",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ELC-F17",
+      "category": "query",
+      "expected": {
+        "status": "WITHDRAWN",
+        "selected_version": null,
+        "last_selected_version": "ref-A@2",
+        "fallback_allowed": false
+      },
+      "observed": {
+        "status": "WITHDRAWN",
+        "selected_version": null,
+        "last_selected_version": "ref-A@2",
+        "fallback_allowed": false
+      },
+      "status": "PASS",
+      "evidence": {
+        "ledger": [
+          {
+            "sequence": 10,
+            "event_id": "decision-10",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-1",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 20,
+            "event_id": "decision-20",
+            "kind": "WITHDRAW",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:withdrawal-notice",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 30,
+            "event_id": "decision-30",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v3",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-2",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 40,
+            "event_id": "decision-40",
+            "kind": "CLEAR",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": null,
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-3",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ELC-F18",
+      "category": "rejection",
+      "expected": {
+        "diagnostic": "WITHDRAWN_IN_CONTEXT",
+        "writes": 0
+      },
+      "observed": {
+        "diagnostic": "WITHDRAWN_IN_CONTEXT",
+        "writes": 0
+      },
+      "status": "PASS",
+      "evidence": {
+        "full_input": {
+          "actor_id": "urn:fixture:reviewer-X",
+          "reason": "fixed synthetic declaration",
+          "source_record_id": "urn:fixture:notice",
+          "source_locator": "section 1",
+          "interpretation_origin": "synthetic fixture author",
+          "recorded_at": "2026-10-01T12:00:00Z",
+          "event_id": "selected-again",
+          "kind": "SELECT",
+          "artifact_id": "urn:riskium:evidence:ref-a",
+          "context_id": "review-X",
+          "version_id": "urn:riskium:evidence:ref-a-v2",
+          "prior_version_id": null
+        }
+      }
+    },
+    {
+      "id": "ELC-F19",
+      "category": "query",
+      "expected": {
+        "status": "SELECTED",
+        "selected_version": "ref-A@3",
+        "last_selected_version": "ref-A@3"
+      },
+      "observed": {
+        "status": "SELECTED",
+        "selected_version": "ref-A@3",
+        "last_selected_version": "ref-A@3"
+      },
+      "status": "PASS",
+      "evidence": {
+        "ledger": [
+          {
+            "sequence": 10,
+            "event_id": "decision-10",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-1",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 20,
+            "event_id": "decision-20",
+            "kind": "WITHDRAW",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:withdrawal-notice",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 30,
+            "event_id": "decision-30",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v3",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-2",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 40,
+            "event_id": "decision-40",
+            "kind": "CLEAR",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": null,
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-3",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ELC-F20",
+      "category": "query",
+      "expected": {
+        "status": "NO_SELECTION",
+        "selected_version": null,
+        "last_selected_version": null
+      },
+      "observed": {
+        "status": "NO_SELECTION",
+        "selected_version": null,
+        "last_selected_version": null
+      },
+      "status": "PASS",
+      "evidence": {
+        "ledger": [
+          {
+            "sequence": 10,
+            "event_id": "decision-10",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-1",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 20,
+            "event_id": "decision-20",
+            "kind": "WITHDRAW",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:withdrawal-notice",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 30,
+            "event_id": "decision-30",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v3",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-2",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 40,
+            "event_id": "decision-40",
+            "kind": "CLEAR",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": null,
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-3",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ELC-F21",
+      "category": "query",
+      "expected": {
+        "status": "SELECTED",
+        "selected_version": "ref-A@2",
+        "last_selected_version": "ref-A@2"
+      },
+      "observed": {
+        "status": "SELECTED",
+        "selected_version": "ref-A@2",
+        "last_selected_version": "ref-A@2"
+      },
+      "status": "PASS",
+      "evidence": {
+        "ledger": [
+          {
+            "sequence": 10,
+            "event_id": "decision-10",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-1",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 20,
+            "event_id": "decision-20",
+            "kind": "WITHDRAW",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v2",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:withdrawal-notice",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 30,
+            "event_id": "decision-30",
+            "kind": "SELECT",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": "urn:riskium:evidence:ref-a-v3",
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-2",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          },
+          {
+            "sequence": 40,
+            "event_id": "decision-40",
+            "kind": "CLEAR",
+            "artifact_id": "urn:riskium:evidence:ref-a",
+            "context_id": "review-X",
+            "version_id": null,
+            "prior_version_id": null,
+            "actor_id": "urn:fixture:reviewer-X",
+            "reason": "fixed synthetic declaration",
+            "recorded_at": "2026-10-01T12:00:00Z",
+            "source_record_id": "urn:riskium:lifecycle:decision-source-3",
+            "source_locator": "section 1",
+            "interpretation_origin": "synthetic fixture author"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ELC-F22",
+      "category": "provenance",
+      "expected": {
+        "order": [
+          10,
+          20
+        ],
+        "real_world_authority_inferred": false,
+        "rewritable_sequences": false
+      },
+      "observed": {
+        "order": [
+          10,
+          20
+        ],
+        "real_world_authority_inferred": false,
+        "rewritable_sequences": false
+      },
+      "status": "PASS",
+      "evidence": {
+        "recorded_times": [
+          "2026-10-01T12:00:00Z",
+          "2026-10-01T12:00:00Z"
+        ],
+        "same_time": true
+      }
+    },
+    {
+      "id": "ELC-F23",
+      "category": "negative-inference",
+      "expected": {
+        "additional_independent_studies_inferred": 0,
+        "endorsement_inferred": false
+      },
+      "observed": {
+        "additional_independent_studies_inferred": 0,
+        "endorsement_inferred": false
+      },
+      "status": "PASS",
+      "evidence": {
+        "reference_versions": [
+          "urn:riskium:evidence:ref-a-v1",
+          "urn:riskium:evidence:ref-b-v1"
+        ],
+        "item_versions": [
+          "urn:riskium:evidence:item-a-v1",
+          "urn:riskium:evidence:item-a-v1"
+        ]
+      }
+    },
+    {
+      "id": "ELC-F24",
+      "category": "rejection",
+      "expected": {
+        "diagnostic": "UNKNOWN_ENDPOINT",
+        "managed_writes": 0,
+        "raw_source": "UNCHANGED"
+      },
+      "observed": {
+        "diagnostic": "UNKNOWN_ENDPOINT",
+        "managed_writes": 0,
+        "raw_source": "UNCHANGED"
+      },
+      "status": "PASS",
+      "evidence": {
+        "full_input": {
+          "actor_id": "urn:fixture:reviewer-X",
+          "reason": "fixed synthetic declaration",
+          "source_record_id": "urn:fixture:notice",
+          "source_locator": "section 1",
+          "interpretation_origin": "synthetic fixture author",
+          "recorded_at": "2026-10-01T12:00:00Z",
+          "event_id": "unknown-selection",
+          "kind": "SELECT",
+          "artifact_id": "unknown-ref",
+          "context_id": "review-X",
+          "version_id": "unknown-ref@1",
+          "prior_version_id": null
+        }
+      }
+    },
+    {
+      "id": "ELC-F25",
+      "category": "native",
+      "expected": {
+        "exact_inherited_graph": "urn:riskium:evidence:ref-a-v1",
+        "new_native_predicates": [],
+        "issued_source": "source-original"
+      },
+      "observed": {
+        "exact_inherited_graph": "urn:riskium:evidence:ref-a-v1",
+        "new_native_predicates": [],
+        "issued_source": "source-original"
+      },
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "id": "ELC-F26",
+      "category": "native",
+      "expected": {
+        "exact_inherited_graph": "urn:riskium:evidence:ref-a-v2",
+        "global_C066_membership": false,
+        "historical_graph_union": false
+      },
+      "observed": {
+        "exact_inherited_graph": "urn:riskium:evidence:ref-a-v2",
+        "global_C066_membership": false,
+        "historical_graph_union": false
+      },
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "id": "ELC-F27",
+      "category": "native",
+      "expected": {
+        "added_triples": [],
+        "new_correction_authority_or_occurrence_predicates": []
+      },
+      "observed": {
+        "added_triples": [],
+        "new_correction_authority_or_occurrence_predicates": []
+      },
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "id": "ELC-F28",
+      "category": "immutability",
+      "expected": {
+        "each_rejected": true,
+        "all_rows": "UNCHANGED"
+      },
+      "observed": {
+        "each_rejected": true,
+        "all_rows": "UNCHANGED"
+      },
+      "status": "PASS",
+      "evidence": {
+        "actual_errors": [
+          {
+            "diagnostic": "IMMUTABLE",
+            "writes": 0
+          },
+          {
+            "diagnostic": "IMMUTABLE",
+            "writes": 0
+          },
+          {
+            "diagnostic": "DUPLICATE_EVENT_ID",
+            "writes": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "ELC-F29",
+      "category": "provenance",
+      "expected": {
+        "parent_source": "source-original",
+        "child_source": "source-correction",
+        "decision_source": "decision-source-1",
+        "merged_source": false
+      },
+      "observed": {
+        "parent_source": "source-original",
+        "child_source": "source-correction",
+        "decision_source": "decision-source-1",
+        "merged_source": false
+      },
+      "status": "PASS",
+      "evidence": {
+        "actual_child_and_declaration": {
+          "version_id": "urn:riskium:evidence:ref-a-v2",
+          "artifact_id": "urn:riskium:evidence:ref-a",
+          "statement": "Revised source challenges the recorded claim",
+          "version_source": "urn:riskium:evidence:document-b",
+          "version_source_json": {
+            "synthetic": true,
+            "claim": "different evidence interpretation",
+            "endorsed": null
+          },
+          "item_version_id": "urn:riskium:evidence:item-a-v2",
+          "prior_version_id": "urn:riskium:evidence:ref-a-v1",
+          "event_id": "event-test",
+          "declaration_source": "urn:riskium:lifecycle:decision-source-1",
+          "declaration_source_json": {
+            "identity": "urn:riskium:lifecycle:decision-source-1",
+            "synthetic": true
+          },
+          "actor_id": "urn:fixture:reviewer-X",
+          "reason": "fixed synthetic declaration",
+          "recorded_at": "2026-10-01T12:00:00Z",
+          "source_locator": "section 1",
+          "interpretation_origin": "synthetic fixture author"
+        }
+      }
+    },
+    {
+      "id": "ELC-F30",
+      "category": "rollback",
+      "expected": {
+        "status": "ROLLED_BACK",
+        "new_version_exists": false,
+        "new_declaration_exists": false,
+        "outer_prior_writes": "PRESERVED"
+      },
+      "observed": {
+        "status": "ROLLED_BACK",
+        "new_version_exists": false,
+        "new_declaration_exists": false,
+        "outer_prior_writes": "PRESERVED"
+      },
+      "status": "PASS",
+      "evidence": {
+        "actual_error": "UNKNOWN_ENDPOINT"
+      }
+    },
+    {
+      "id": "ELC-F31",
+      "category": "reader",
+      "expected": {
+        "diagnostic": "UNSUPPORTED_SCHEMA_VERSION",
+        "database_writes": 0
+      },
+      "observed": {
+        "diagnostic": "UNSUPPORTED_SCHEMA_VERSION",
+        "database_writes": 0
+      },
+      "status": "PASS",
+      "evidence": {
+        "legacy_error": "R-EVIDENCE-LEDGER"
+      }
+    },
+    {
+      "id": "ELC-F32",
+      "category": "mutation",
+      "expected": {
+        "incorrect_selected_version": "ref-A@4",
+        "oracle_selected_version": null,
+        "must_detect_difference": true
+      },
+      "observed": {
+        "incorrect_selected_version": "ref-A@4",
+        "oracle_selected_version": null,
+        "must_detect_difference": true
+      },
+      "status": "PASS",
+      "evidence": {
+        "mutant": "Actual newest-version SQL query with no selection event"
+      }
+    },
+    {
+      "id": "ELC-F33",
+      "category": "mutation",
+      "expected": {
+        "diagnostic": "INVALID_CONTEXT",
+        "must_detect_difference": true
+      },
+      "observed": {
+        "diagnostic": "INVALID_CONTEXT",
+        "must_detect_difference": true
+      },
+      "status": "PASS",
+      "evidence": {
+        "mutant_default_context_result": [
+          "SELECTED",
+          "urn:riskium:evidence:ref-a-v2",
+          "urn:riskium:evidence:ref-a-v2"
+        ]
+      }
+    },
+    {
+      "id": "ELC-F34",
+      "category": "preservation",
+      "expected": {
+        "all_organizational_admissions": "WITHHELD",
+        "independent_ratings": 0,
+        "source_elements": 306,
+        "full_mapping_completed": false
+      },
+      "observed": {
+        "all_organizational_admissions": "WITHHELD",
+        "independent_ratings": 0,
+        "source_elements": 306,
+        "full_mapping_completed": false
+      },
+      "status": "PASS",
+      "evidence": {}
+    },
+    {
+      "id": "ELC-F35",
+      "category": "recovery",
+      "expected": {
+        "valid_roundtrips": "exact row/query/graph equivalence",
+        "tampered_restore": "REJECTED",
+        "all_previous_audits": "RETAINED"
+      },
+      "observed": {
+        "valid_roundtrips": "exact row/query/graph equivalence",
+        "tampered_restore": "REJECTED",
+        "all_previous_audits": "RETAINED"
+      },
+      "status": "PASS",
+      "evidence": {
+        "tamper_error": "R-EVIDENCE-DATA-PAYLOAD"
+      }
+    },
+    {
+      "id": "ELC-F36",
+      "category": "traceability",
+      "expected": {
+        "requirements_without_fixed_cases": 0,
+        "unaccounted_native_ids": 0,
+        "historical_row_semantics": "UNCHANGED",
+        "unexplained_retained_claims": 0
+      },
+      "observed": {
+        "requirements_without_fixed_cases": 0,
+        "unaccounted_native_ids": 0,
+        "historical_row_semantics": "UNCHANGED",
+        "unexplained_retained_claims": 0
+      },
+      "status": "PASS",
+      "evidence": {
+        "scope": "ELC-01..09 engineering claims only; this is not release R3/current whole-manuscript reconciliation."
+      }
+    },
+    {
+      "id": "ELC-F37",
+      "category": "mutation",
+      "expected": {
+        "must_detect_difference": true,
+        "expected_graph": "urn:riskium:evidence:ref-a-v1",
+        "forbidden_graph": "urn:riskium:evidence:ref-a-v2"
+      },
+      "observed": {
+        "must_detect_difference": true,
+        "expected_graph": "urn:riskium:evidence:ref-a-v1",
+        "forbidden_graph": "urn:riskium:evidence:ref-a-v2"
+      },
+      "status": "PASS",
+      "evidence": {
+        "mutant_triples": [
+          [
+            "urn:riskium:evidence:item-a",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014"
+          ],
+          [
+            "urn:riskium:evidence:item-a",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C066"
+          ],
+          [
+            "urn:riskium:evidence:item-a-v2",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015"
+          ],
+          [
+            "urn:riskium:evidence:item-a-v2",
+            "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006",
+            "urn:riskium:evidence:item-a"
+          ],
+          [
+            "urn:riskium:evidence:ref-a",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014"
+          ],
+          [
+            "urn:riskium:evidence:ref-a",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C065"
+          ],
+          [
+            "urn:riskium:evidence:ref-a",
+            "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-68",
+            "urn:riskium:knowledge:scenario-a"
+          ],
+          [
+            "urn:riskium:evidence:ref-a",
+            "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-021",
+            "urn:riskium:evidence:item-a"
+          ],
+          [
+            "urn:riskium:evidence:ref-a-v1",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015"
+          ],
+          [
+            "urn:riskium:evidence:ref-a-v1",
+            "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006",
+            "urn:riskium:evidence:ref-a"
+          ],
+          [
+            "urn:riskium:knowledge:scenario-a",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014"
+          ],
+          [
+            "urn:riskium:knowledge:scenario-a-v2",
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015"
+          ],
+          [
+            "urn:riskium:knowledge:scenario-a-v2",
+            "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006",
+            "urn:riskium:knowledge:scenario-a"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ELC-F38",
+      "category": "rejection",
+      "expected": {
+        "diagnostic": "DUPLICATE_EVENT_ID",
+        "writes": 0,
+        "original": "UNCHANGED"
+      },
+      "observed": {
+        "diagnostic": "DUPLICATE_EVENT_ID",
+        "writes": 0,
+        "original": "UNCHANGED"
+      },
+      "status": "PASS",
+      "evidence": {
+        "full_input": {
+          "actor_id": "urn:fixture:reviewer-X",
+          "reason": "fixed synthetic declaration",
+          "source_record_id": "urn:fixture:notice",
+          "source_locator": "section 1",
+          "interpretation_origin": "synthetic fixture author",
+          "recorded_at": "2026-10-01T12:00:00Z",
+          "event_id": "event-original",
+          "kind": "SELECT",
+          "artifact_id": "urn:riskium:evidence:ref-a",
+          "context_id": "review-X",
+          "version_id": "urn:riskium:evidence:ref-a-v3",
+          "prior_version_id": null
+        }
+      }
+    },
+    {
+      "id": "ELC-F39",
+      "category": "rejection",
+      "expected": {
+        "diagnostic": "CROSS_ARTIFACT",
+        "writes": 0
+      },
+      "observed": {
+        "diagnostic": "CROSS_ARTIFACT",
+        "writes": 0
+      },
+      "status": "PASS",
+      "evidence": {
+        "full_input": {
+          "actor_id": "urn:fixture:reviewer-X",
+          "reason": "fixed synthetic declaration",
+          "source_record_id": "urn:fixture:notice",
+          "source_locator": "section 1",
+          "interpretation_origin": "synthetic fixture author",
+          "recorded_at": "2026-10-01T12:00:00Z",
+          "event_id": "event-test",
+          "kind": "SELECT",
+          "artifact_id": "urn:riskium:evidence:ref-a",
+          "context_id": "review-X",
+          "version_id": "urn:riskium:evidence:ref-b-v1",
+          "prior_version_id": null
+        }
+      }
+    },
+    {
+      "id": "ELC-F40",
+      "category": "rejection",
+      "expected": {
+        "diagnostic": "INVALID_RECORDED_TIME",
+        "writes": 0
+      },
+      "observed": {
+        "diagnostic": "INVALID_RECORDED_TIME",
+        "writes": 0
+      },
+      "status": "PASS",
+      "evidence": {
+        "full_input": {
+          "actor_id": "urn:fixture:reviewer-X",
+          "reason": "fixed synthetic declaration",
+          "source_record_id": "urn:fixture:notice",
+          "source_locator": "section 1",
+          "interpretation_origin": "synthetic fixture author",
+          "recorded_at": "2026-02-30T12:00:00Z",
+          "event_id": "event-test",
+          "kind": "CORRECT",
+          "artifact_id": "urn:riskium:evidence:ref-a",
+          "context_id": null,
+          "version_id": "urn:riskium:evidence:ref-a-v2",
+          "prior_version_id": "urn:riskium:evidence:ref-a-v1"
+        }
+      }
+    },
+    {
+      "id": "ELC-F41",
+      "category": "rejection",
+      "expected": {
+        "diagnostic": "UNSUPPORTED_ENDPOINT_FAMILY",
+        "writes": 0,
+        "note": "Family check precedes same-artifact check for this control."
+      },
+      "observed": {
+        "diagnostic": "UNSUPPORTED_ENDPOINT_FAMILY",
+        "writes": 0,
+        "note": "Family check precedes same-artifact check for this control."
+      },
+      "status": "PASS",
+      "evidence": {
+        "full_input": {
+          "actor_id": "urn:fixture:reviewer-X",
+          "reason": "fixed synthetic declaration",
+          "source_record_id": "urn:fixture:notice",
+          "source_locator": "section 1",
+          "interpretation_origin": "synthetic fixture author",
+          "recorded_at": "2026-10-01T12:00:00Z",
+          "event_id": "event-test",
+          "kind": "CORRECT",
+          "artifact_id": "urn:riskium:evidence:ref-a",
+          "context_id": null,
+          "version_id": "urn:riskium:knowledge:scenario-a-v1",
+          "prior_version_id": "urn:riskium:evidence:ref-a-v1"
+        }
+      }
+    },
+    {
+      "id": "ELC-F42",
+      "category": "rejection",
+      "expected": {
+        "diagnostic": "MISSING_PROVENANCE",
+        "writes": 0
+      },
+      "observed": {
+        "diagnostic": "MISSING_PROVENANCE",
+        "writes": 0
+      },
+      "status": "PASS",
+      "evidence": {
+        "full_input": {
+          "actor_id": "urn:fixture:reviewer-X",
+          "reason": "fixed synthetic declaration",
+          "source_record_id": "urn:fixture:notice",
+          "source_locator": null,
+          "interpretation_origin": "synthetic fixture author",
+          "recorded_at": "2026-10-01T12:00:00Z",
+          "event_id": "event-test",
+          "kind": "CORRECT",
+          "artifact_id": "urn:riskium:evidence:ref-a",
+          "context_id": null,
+          "version_id": "urn:riskium:evidence:ref-a-v2",
+          "prior_version_id": "urn:riskium:evidence:ref-a-v1"
+        }
+      }
+    },
+    {
+      "id": "ELC-F43",
+      "category": "rejection",
+      "expected": {
+        "diagnostic": "INVALID_AS_OF_SEQUENCE",
+        "selected_version": null
+      },
+      "observed": {
+        "diagnostic": "INVALID_AS_OF_SEQUENCE",
+        "selected_version": null
+      },
+      "status": "PASS",
+      "evidence": {}
+    }
+  ],
+  "supplementary_controls": [
+    {
+      "id": "ELC-MUT-WITHDRAW-GUARD",
+      "kind": "actual_weakened_rule_control",
+      "forbidden_row_inserted": true,
+      "data_violation_detected": true,
+      "exact_schema_reader_rejects": true,
+      "status": "PASS"
+    }
+  ],
+  "independent_semantic_validation": false,
+  "publication_executed": false
+}

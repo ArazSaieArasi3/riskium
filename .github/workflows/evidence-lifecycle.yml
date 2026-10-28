@@ -1,0 +1,33 @@
+name: Evidence-reference lifecycle and preserved source
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lifecycle:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements-shacl.txt
+      - name: Replay frozen lifecycle, populated migration, native graph and real mutation controls
+        run: python tools/run_relational_evidence_lifecycle.py --check
+      - name: Check original 306 dispositions, derived requirements and component bindings
+        run: python tools/build_evidence_lifecycle_inventory.py --check
+      - name: Exercise API, raw SQL, historical/context and recovery boundaries
+        run: python -m unittest discover -s tests -p test_evidence_lifecycle.py -v
+      - name: Preserve the frozen declaration, published selection and all previous source contracts
+        run: |
+          python tools/build_prepared_distribution.py --check
+          python tools/audit_consistency.py --check
+          git diff cb996241553fc8ae858acb38622009ed3a08f450 --exit-code -- implementation/relational/0.7.0/contract.json implementation/relational/0.7.0/fixtures.json
+          git diff --exit-code

@@ -1,0 +1,25 @@
+{
+  "schema": "riskium-evidence-lifecycle-focused-tests-v1",
+  "execution_issue": 53,
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_evidence_lifecycle.py",
+    "-v"
+  ],
+  "tests": 20,
+  "seconds": 23.941,
+  "result": "PASS",
+  "log_sha256": "e7cda8f7e7e343de508a5aa3da4fd636184b90390096e5b3677bdfea6bd9fe8a",
+  "source_sha256": {
+    "tools/relational_evidence_lifecycle.py": "111551343ba6aee1af09b800e445d790fb432e45297e88834f1c9ed453512c10",
+    "tools/run_relational_evidence_lifecycle.py": "9db89b85710d27524114a4cbe0da18ab6dfb30486010d6046b84e59cfe8f427c",
+    "tests/test_evidence_lifecycle.py": "5858151dde8b1ba6e064ec88c7b0eb556349e9d559516226095a3237fe6a582b"
+  },
+  "scope": "Actual local focused tests; full clean-source/hosted completion is separately recorded in issue #53. No independent semantic validation."
+}
