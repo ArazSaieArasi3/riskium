@@ -1,0 +1,155 @@
+{
+  "schema": "riskium-documentation-snapshot-completion-v1",
+  "issue": 48,
+  "parent_issue": 45,
+  "status": "COMPLETED",
+  "completed_at": "2026-10-28T15:12:23.766290+03:30",
+  "initial_implementation_source": "f190c3920eec75147985eedbe8dd279cf9791d62",
+  "implementation_source": "42ccf0a13710cb0a06e6c7dd5afc9bcf4df25706",
+  "implementation_tree": "e6903802ae7c790d4d18c10508352fb9fc5ede93",
+  "snapshot_source": "868dd543538857bb5c9ffbdfde458c4323981d01",
+  "snapshot_source_tree": "efbb44909652a4a0df5bb5bfe167df78dcc93785",
+  "documentation_version": "0.3.0",
+  "model_version": "0.3.1",
+  "component_id": "DOCUMENTATION_SNAPSHOT",
+  "component_version": "0.1.0",
+  "snapshot_files": 68,
+  "original_snapshots_preserved": 3,
+  "deployed_snapshots": 4,
+  "full_software_tests": 334,
+  "focused_snapshot_tests": 19,
+  "successful_hosted_workflows": 7,
+  "candidate_gates": 28,
+  "candidate_inventory_verified": true,
+  "actual_http_bodies": 311,
+  "new_snapshot_http_bodies": 68,
+  "native_wiki_files": 23,
+  "all_channel_bytes_match": true,
+  "source_links_frozen": true,
+  "rdf_serializations_preserved_byte_for_byte": 4,
+  "generated_versions_index_sha256": "d9ab45f829945001e30a6df8ad19d3fa5f115699ef7052dc9ff82e83898440ad",
+  "versions_index_uses_live_latest": true,
+  "versions_index_distinguishes_documentation_snapshot_from_source_publication": true,
+  "protected_roots_unchanged": [
+    "ontology",
+    "requirements",
+    "implementation",
+    "releases",
+    "docs/current",
+    "docs/wiki",
+    "docs/releases/v0.3.1-rc.1",
+    "docs/releases/v0.3.1",
+    "docs/releases/v0.3.3",
+    "evaluation/hermit",
+    "evaluation/shacl",
+    "evaluation/sources",
+    "evaluation/owner-review",
+    "evaluation/manuscript-review",
+    "evaluation/documentation/current-0.3.0",
+    "evaluation/releases/v0.3.4-selection"
+  ],
+  "changed_protected_files": [],
+  "preserved_checkpoint_files_sha256": {
+    "evaluation/documentation/current-0.3.0/completion.json": "39a336e3b16297a1a8c2b5c91c2615ddf1eec1dbf542203c09491d4bbceeacf5",
+    "evaluation/documentation/current-0.3.0/component.json": "2242bdd2c8403bcfdf6144145536606296564ccb5bbf6869a5cbfccd183fdd44",
+    "evaluation/releases/v0.3.4-selection/completion.json": "d8a68a9182454c26bda49ec33dbe15b718afb80aa0ed217635730bb21922d0a5",
+    "releases/development-components-v0.3.4.json": "321b6cb07b206beaeab26e2137db2d19af45ad918de7bdd5853c1481ddb353e9",
+    "releases/selection-policy-v0.3.4.json": "033ea88e38f6671bebb6a3785dc41232bfb710f62c59e06c61c04dfe85abdb6a",
+    "releases/selection-v0.3.4.json": "e9914305de9228c8af9d5b09975edb79c7dcfdd0f022c0f3233f9649fb1077d4",
+    "tests/test_release_selection.py": "88258d0db7f31fbc157d830600ac4a987a81df01e152ead37569094d2be82c4d",
+    "tools/build_release_selection.py": "8b91be1a5c25bf8382aca68b8d1af6afd663266623e73c4dae80287be5d0c45b",
+    "tools/publication/pages-registry.json": "64e53847bff6916f8ad6724577d5e8c7febb092aa232f6d29625e922751f9cde"
+  },
+  "evidence_sha256": {
+    "tools/publication/snapshot-policy-v0.3.4.json": "2406797b1251103d31cd2b0c9872785974b5ba6ca088e132534d56ba7476b55a",
+    "tools/publication/snapshot-additions-v0.3.4.json": "8b284513ca136f56d94fe0d71ad8d60ed8cc4ff40d89f0976a52767b6a9af7f1",
+    "evaluation/documentation/v0.3.4-snapshot/component.json": "6ee88c855117b16b4067a985ae186e6edd774152fc0d2c87f531bb1b60ea6b0c",
+    "evaluation/documentation/v0.3.4-snapshot/hosted-checks.json": "c7b00a8eaa7aa8a894671fb7e8efbf9b2286939ffb9bb13be3e6947260fb4f6d",
+    "evaluation/documentation/v0.3.4-snapshot/http-readback.json": "f2828dabd98663f5eef04336f06da7515cab24a21e28e24bed292157056e5d70",
+    "evaluation/documentation/v0.3.4-snapshot/wiki-readback.json": "19bc67447ac6466dda5a7fbab3f9341e49838f473e4083f2fcf58fb9aff4ec2d",
+    "evaluation/documentation/v0.3.4-snapshot/software-tests.json": "0e73802612b3a0d821cb673efbeee02680238201474e8611b53ab8b3573913c9",
+    "evaluation/documentation/v0.3.4-snapshot/software-tests.log": "c415ba3c84e7ee0b5794cc36c53f82e83b07bef41c79d8c9c4c90b925babc19c"
+  },
+  "selection_checkpoint_components": 27,
+  "selection_checkpoint_files_unchanged": 286,
+  "selection_refresh_required": true,
+  "stable_source_release": "v0.3.3",
+  "stable_release_readback": {
+    "tag": "v0.3.3",
+    "id": 425211772,
+    "assets": [
+      {
+        "id": 680997953,
+        "name": "artifact-versions.json",
+        "size": 65905,
+        "digest": "sha256:43652995eb9039f25bfad707145f46c79b2adff906946fd14d63a040e9ce893d"
+      },
+      {
+        "id": 680997954,
+        "name": "freeze-receipt.json",
+        "size": 82735,
+        "digest": "sha256:f1552953214f4c5f44029582e7956b58670c7364fbe048ad22e7990a6e2302f2"
+      },
+      {
+        "id": 680997955,
+        "name": "release-notes.md",
+        "size": 4056,
+        "digest": "sha256:cc64e1e795900ae3f88583ab65c7922d220f81ae32e5127c1e2a33dbfacd26d8"
+      },
+      {
+        "id": 680997958,
+        "name": "riskium-v0.3.3-source.tar.gz",
+        "size": 10343736,
+        "digest": "sha256:9bb43bd2e190fda01bb83156134146345f6d55fb7674c8b06100eb34566eb907"
+      },
+      {
+        "id": 680997956,
+        "name": "SHA256SUMS.txt",
+        "size": 440,
+        "digest": "sha256:5dc28c5266ee9c1ecee10cde20b7bcc3f147711e568994e39b9b552ca32b9b18"
+      },
+      {
+        "id": 680997979,
+        "name": "source-manifest.json",
+        "size": 135028,
+        "digest": "sha256:0414bfde75ed923c2c653b3efeb16f03b017de1df159c450faf575796eb30d96"
+      }
+    ],
+    "unchanged_ids_sizes_digests": true,
+    "method": "Fresh GitHub metadata readback; prior source-release asset bodies were not downloaded in this snapshot task."
+  },
+  "source_distribution_frozen": false,
+  "stable_profile_registered": false,
+  "publication_requested": false,
+  "source_distribution_published": false,
+  "orsd_revision": "0.4.3",
+  "drsd_revision": "0.1.0 unchanged plus retained supplements",
+  "manuscript_version": "7.0.8",
+  "organizational_admissions": "11 WITHHELD unchanged",
+  "independent_ratings": 0,
+  "expected_remaining_open_issues_after_child_closure": [
+    4,
+    5,
+    12,
+    13,
+    23,
+    35,
+    36,
+    37,
+    45
+  ],
+  "next_steps": [
+    "#45: explicitly refresh the successor selection to include DOCUMENTATION_SNAPSHOT 0.1.0 and exact deployment/tooling hashes, preserving the original #47 checkpoint.",
+    "#45: run exact final-source checks/fresh channel evidence and freeze the reviewed source distribution.",
+    "#45: publish v0.3.4, independently download/verify actual tag/assets/Latest and all prior-release preservation, then close #45."
+  ],
+  "limits": [
+    "This completes immutable documentation-snapshot registration/publication only, not a v0.3.4 stable source-distribution freeze, profile, request, tag or assets.",
+    "Original documentation 0.3.0, initial #47 selection, old registrations/snapshots and scientific/owner inputs are unchanged dated checkpoints. New snapshot state is explicit in a separate addition/component.",
+    "Snapshot checks validate the archived exact source, permitting later current-documentation/source-intent changes without rewriting frozen bytes.",
+    "The original three-snapshot assembly remains reproducible; actual Pages/Documentation workflows require the additive four-snapshot assembly.",
+    "Stable release/asset IDs/sizes/digests were freshly read back; this task does not re-download every previous source-release asset.",
+    "Exact generated/third-party whitespace is preserved in frozen bytes. Handwritten changed files pass git diff --check.",
+    "Completion receipts, raw logs, root navigation, release-plan progress and refreshed inventory do not alter tested implementation/component/snapshot bytes."
+  ]
+}

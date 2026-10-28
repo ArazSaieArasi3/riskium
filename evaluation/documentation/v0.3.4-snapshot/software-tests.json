@@ -1,0 +1,13 @@
+{
+  "schema": "riskium-documentation-snapshot-software-tests-v1",
+  "source_commit": "42ccf0a13710cb0a06e6c7dd5afc9bcf4df25706",
+  "command": "python -m unittest discover -s tests -v",
+  "tests": 334,
+  "seconds": 180.94,
+  "outcome": "PASS",
+  "log": "evaluation/documentation/v0.3.4-snapshot/software-tests.log",
+  "log_sha256": "c415ba3c84e7ee0b5794cc36c53f82e83b07bef41c79d8c9c4c90b925babc19c",
+  "focused_snapshot_tests": 19,
+  "focused_execution": "All 19 are included in the exact-source local full suite and separately passed in the exact-source hosted Documentation integrity job.",
+  "limits": "Engineering/dependency/source/projection controls, not independent scientific/domain acceptance."
+}

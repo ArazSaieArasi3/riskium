@@ -99,8 +99,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "ddfdea92d7019be0ee3d86581851a4238e0122b173b41c0df5b38e24c0064bab",
-      "bytes": 21983
+      "sha256": "6cd4b6d162484bfda5d0e7ccea8026f1a3be2b7389cfec47aeb6a5aced6d8a93",
+      "bytes": 22351
     },
     {
       "path": "RIGHTS.md",
@@ -509,13 +509,43 @@
     },
     {
       "path": "evaluation/documentation/v0.3.4-snapshot/README.md",
-      "sha256": "5b271ba00b555087ef03636516715145866c21495206f66926f88b6788e12eb2",
-      "bytes": 3171
+      "sha256": "31079649056805b1d2d285a02e78c2b2cd929b6400ef68e90f62da50db1d7270",
+      "bytes": 3678
+    },
+    {
+      "path": "evaluation/documentation/v0.3.4-snapshot/completion.json",
+      "sha256": "8996017ef38218c1c02f1b3c024ea2f144723e1c1130b7da95fb503b099f0f99",
+      "bytes": 7713
     },
     {
       "path": "evaluation/documentation/v0.3.4-snapshot/component.json",
       "sha256": "6ee88c855117b16b4067a985ae186e6edd774152fc0d2c87f531bb1b60ea6b0c",
       "bytes": 10428
+    },
+    {
+      "path": "evaluation/documentation/v0.3.4-snapshot/hosted-checks.json",
+      "sha256": "c7b00a8eaa7aa8a894671fb7e8efbf9b2286939ffb9bb13be3e6947260fb4f6d",
+      "bytes": 5744
+    },
+    {
+      "path": "evaluation/documentation/v0.3.4-snapshot/http-readback.json",
+      "sha256": "f2828dabd98663f5eef04336f06da7515cab24a21e28e24bed292157056e5d70",
+      "bytes": 60594
+    },
+    {
+      "path": "evaluation/documentation/v0.3.4-snapshot/software-tests.json",
+      "sha256": "0e73802612b3a0d821cb673efbeee02680238201474e8611b53ab8b3573913c9",
+      "bytes": 705
+    },
+    {
+      "path": "evaluation/documentation/v0.3.4-snapshot/software-tests.log",
+      "sha256": "c415ba3c84e7ee0b5794cc36c53f82e83b07bef41c79d8c9c4c90b925babc19c",
+      "bytes": 55029
+    },
+    {
+      "path": "evaluation/documentation/v0.3.4-snapshot/wiki-readback.json",
+      "sha256": "19bc67447ac6466dda5a7fbab3f9341e49838f473e4083f2fcf58fb9aff4ec2d",
+      "bytes": 2609
     },
     {
       "path": "evaluation/documentation/versioned-0.1.0/README.md",
@@ -1974,8 +2004,8 @@
     },
     {
       "path": "plans/v0.3.4.md",
-      "sha256": "f763379b7dae36da1686ba947839b379451432e24d5ec434c7e4c2b592f11591",
-      "bytes": 7831
+      "sha256": "fd55c43df0a37b22fc5889d03675b31c2c5ee5792bd25418848a0154f14c8c6b",
+      "bytes": 8456
     },
     {
       "path": "references/README.md",
