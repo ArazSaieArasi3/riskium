@@ -99,8 +99,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "34f9579fd5f2d2353cab987d20b5f68e84d4d9e84b4ae74adfa14462386d962e",
-      "bytes": 23100
+      "sha256": "4acfee26d8f84c106350cb7f4f8e19f425e3306833ac945c0a23b04c182d6da0",
+      "bytes": 23566
     },
     {
       "path": "RIGHTS.md",
@@ -1279,13 +1279,33 @@
     },
     {
       "path": "evaluation/releases/v0.3.4-preparation/README.md",
-      "sha256": "5a76b7830ebea99e3d1622d991a9461966d635df38bd30677a87a8652093a272",
-      "bytes": 2884
+      "sha256": "0b6ba32057ead57674308ee172333e23ef1f438d83ab677b87ec34535ecff736",
+      "bytes": 3406
+    },
+    {
+      "path": "evaluation/releases/v0.3.4-preparation/completion.json",
+      "sha256": "a370fd1d324d192bbacccb071d4c28b46e7262a64ccd5f532a5e7356af53927c",
+      "bytes": 9405
     },
     {
       "path": "evaluation/releases/v0.3.4-preparation/components.md",
       "sha256": "7f8c3b0500338f98bf4e9bbbc9c741e14e63b61ea3815932b66dc29a2c8d1193",
       "bytes": 4048
+    },
+    {
+      "path": "evaluation/releases/v0.3.4-preparation/hosted-checks.json",
+      "sha256": "39cdebfc605e247729787e1dab1f0aaafbcc81b9572baecf64927afbfcff6702",
+      "bytes": 5867
+    },
+    {
+      "path": "evaluation/releases/v0.3.4-preparation/software-tests.json",
+      "sha256": "22e837c502a53545e0c7c81dd0cb3ccffda422c821893891b3e014a1faaef531",
+      "bytes": 692
+    },
+    {
+      "path": "evaluation/releases/v0.3.4-preparation/software-tests.log",
+      "sha256": "a934c00fb4b76e24f3b485882453e1166136559f3df889dab27f76dfc308d7e0",
+      "bytes": 59101
     },
     {
       "path": "evaluation/releases/v0.3.4-selection/README.md",
@@ -2014,8 +2034,8 @@
     },
     {
       "path": "plans/v0.3.4.md",
-      "sha256": "e59c4410a66e8a8dcafc955c18f3408cf1c705c61c12bf20f6ec5d3845f2a539",
-      "bytes": 9577
+      "sha256": "4bbef5c7a0a4ab791375d209ce6a970000bcd435dca4608f5ac259d55cbabfc1",
+      "bytes": 10210
     },
     {
       "path": "references/README.md",

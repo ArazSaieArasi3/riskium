@@ -1,0 +1,13 @@
+{
+  "schema": "riskium-prepared-distribution-software-tests-v1",
+  "source_commit": "a4b89f277a994b9a95d84eb919988b94b361a2a2",
+  "command": "python -m unittest discover -s tests -v",
+  "tests": 356,
+  "seconds": 196.32,
+  "outcome": "PASS",
+  "log": "evaluation/releases/v0.3.4-preparation/software-tests.log",
+  "log_sha256": "a934c00fb4b76e24f3b485882453e1166136559f3df889dab27f76dfc308d7e0",
+  "focused_preparation_tests": 22,
+  "focused_execution": "Included in the exact-source full suite and independently run in the exact-source hosted integration job.",
+  "limits": "Component/source/dependency/evidence controls and regressions; no new domain or independent semantic acceptance."
+}

@@ -1,0 +1,181 @@
+{
+  "schema": "riskium-prepared-distribution-completion-v1",
+  "issue": 49,
+  "parent_issue": 45,
+  "status": "COMPLETED",
+  "completed_at": "2026-10-28T15:47:36.891823+03:30",
+  "implementation_source": "a4b89f277a994b9a95d84eb919988b94b361a2a2",
+  "implementation_tree": "5980d710968796eb93a0cddcfb0a2c0122b11900",
+  "approved_baseline": "70803db8ecf8dd1c16af1c688f08ffacc30d8937",
+  "target": "v0.3.4",
+  "stage": "COMPONENTS_PREPARED_NOT_FROZEN",
+  "summary": {
+    "components": 28,
+    "retained_from_initial": 27,
+    "added_from_initial": 1,
+    "overlay_components": 6,
+    "dependency_edges": 61,
+    "unique_selected_files": 380,
+    "documentation_snapshots": 4
+  },
+  "evidence_sha256": {
+    "releases/preparation-policy-v0.3.4.json": "a05d0be68dc357cda67484e389550c61692e9354390ab807a1f90262fc4cfe38",
+    "releases/distribution-v0.3.4.json": "a5f0a645dac4998862a99ca76564f705f72f61c03b7f40e89385c7ca4edca4ac",
+    "releases/prepared-components-v0.3.4.json": "88ece33af34bb88f01be0235017186535043270d1bd7f0d9f99aa76b3a0ab462",
+    "evaluation/releases/v0.3.4-preparation/components.md": "7f8c3b0500338f98bf4e9bbbc9c741e14e63b61ea3815932b66dc29a2c8d1193",
+    "evaluation/releases/v0.3.4-preparation/hosted-checks.json": "39cdebfc605e247729787e1dab1f0aaafbcc81b9572baecf64927afbfcff6702",
+    "evaluation/releases/v0.3.4-preparation/software-tests.json": "22e837c502a53545e0c7c81dd0cb3ccffda422c821893891b3e014a1faaef531",
+    "evaluation/releases/v0.3.4-preparation/software-tests.log": "a934c00fb4b76e24f3b485882453e1166136559f3df889dab27f76dfc308d7e0"
+  },
+  "source_registers_sha256": {
+    "releases/selection-policy-v0.3.4.json": "033ea88e38f6671bebb6a3785dc41232bfb710f62c59e06c61c04dfe85abdb6a",
+    "releases/selection-v0.3.4.json": "e9914305de9228c8af9d5b09975edb79c7dcfdd0f022c0f3233f9649fb1077d4",
+    "releases/development-components-v0.3.4.json": "321b6cb07b206beaeab26e2137db2d19af45ad918de7bdd5853c1481ddb353e9",
+    "tools/build_release_selection.py": "8b91be1a5c25bf8382aca68b8d1af6afd663266623e73c4dae80287be5d0c45b",
+    "tests/test_release_selection.py": "88258d0db7f31fbc157d830600ac4a987a81df01e152ead37569094d2be82c4d",
+    "evaluation/releases/v0.3.4-selection/completion.json": "d8a68a9182454c26bda49ec33dbe15b718afb80aa0ed217635730bb21922d0a5",
+    "evaluation/documentation/current-0.3.0/component.json": "2242bdd2c8403bcfdf6144145536606296564ccb5bbf6869a5cbfccd183fdd44",
+    "tools/publication/snapshot-policy-v0.3.4.json": "2406797b1251103d31cd2b0c9872785974b5ba6ca088e132534d56ba7476b55a",
+    "tools/publication/snapshot-additions-v0.3.4.json": "8b284513ca136f56d94fe0d71ad8d60ed8cc4ff40d89f0976a52767b6a9af7f1",
+    "evaluation/documentation/v0.3.4-snapshot/component.json": "6ee88c855117b16b4067a985ae186e6edd774152fc0d2c87f531bb1b60ea6b0c",
+    "evaluation/documentation/v0.3.4-snapshot/completion.json": "8996017ef38218c1c02f1b3c024ea2f144723e1c1130b7da95fb503b099f0f99"
+  },
+  "full_software_tests": 356,
+  "focused_preparation_tests": 22,
+  "successful_hosted_workflows": 7,
+  "candidate_gates": 28,
+  "candidate_inventory_verified": true,
+  "publication_executed": false,
+  "original_component_rows_preserved": 27,
+  "original_release_registers_preserved_sha256": {
+    "releases/artifact-matrix.json": "ef01f0408718d3b366daf145b482bb95fa4fbc73b219c9e15b650262fa05e012",
+    "releases/development-components-v0.3.4.json": "321b6cb07b206beaeab26e2137db2d19af45ad918de7bdd5853c1481ddb353e9",
+    "releases/development-components.json": "f5c0cbb86f4089c79b7b76495510c3680cd521a670e0951984303bbdd33f2066",
+    "releases/development-request.json": "543829689995488eb547bc4c220f03e7a21a4d30f0534d2dd9b7549e3b282c9e",
+    "releases/distribution-v0.3.2.json": "7cb1e07814fb1c2363adfb9c59b644dee322c13abd1316c9edbfb16965e74a1a",
+    "releases/distribution-v0.3.3.json": "00c7c19dc3f751d65e1c071b6025c714447f8cfb93de1546c73aa4ba0ba0788d",
+    "releases/selection-policy-v0.3.4.json": "033ea88e38f6671bebb6a3785dc41232bfb710f62c59e06c61c04dfe85abdb6a",
+    "releases/selection-v0.3.4.json": "e9914305de9228c8af9d5b09975edb79c7dcfdd0f022c0f3233f9649fb1077d4",
+    "releases/stable-profile-v0.3.1.json": "2d1a4e9e7530fa71eef6b9f21d9c4de09209c501bff980978c3069d4f26fb8d1",
+    "releases/stable-profile-v0.3.2.json": "9710df8a93ebd081ce15b614d773c335e7d3a7cd59722da7e09abfdb23353088",
+    "releases/stable-profile-v0.3.3.json": "fcadf833aa615a508bd97a08de83625edb5d866f89a6dc2ddfbe796f0f8425c8",
+    "releases/stable-profiles.json": "8d0e1e48afa33fa0829d59885529a5ac55d7bb36b92f9e6d651588c359c0f393",
+    "releases/stable-request.json": "39daa6b6e38e0f36a8349d201ce6487da32c98cfa0306a061cf82b4505d3a86e"
+  },
+  "protected_roots_unchanged": [
+    "ontology",
+    "requirements",
+    "implementation",
+    "docs",
+    "evaluation/documentation/current-0.3.0",
+    "evaluation/documentation/v0.3.4-snapshot",
+    "evaluation/releases/v0.3.4-selection",
+    "evaluation/hermit",
+    "evaluation/shacl",
+    "evaluation/sources",
+    "evaluation/owner-review",
+    "evaluation/manuscript-review"
+  ],
+  "changed_protected_files": [],
+  "new_component": {
+    "id": "DOCUMENTATION_SNAPSHOT",
+    "version": "0.1.0",
+    "selected_files": 82
+  },
+  "documentation_version": "0.3.0",
+  "model_version": "0.3.1",
+  "orsd_revision": "0.4.3",
+  "drsd_revision": "0.1.0 unchanged plus retained supplements",
+  "manuscript_version": "7.0.8",
+  "preserved_documentation_snapshots": 4,
+  "publication_support_sources": 5,
+  "retained_http_files": 311,
+  "retained_wiki_files": 23,
+  "channel_evidence": "Unchanged #48 source-bound receipts; no new live HTTP/Wiki readback was performed in this component-selection task. Fresh final-source readback remains required.",
+  "stable_release_readback": {
+    "tag": "v0.3.3",
+    "id": 425211772,
+    "assets": [
+      {
+        "id": 680997953,
+        "name": "artifact-versions.json",
+        "size": 65905,
+        "digest": "sha256:43652995eb9039f25bfad707145f46c79b2adff906946fd14d63a040e9ce893d"
+      },
+      {
+        "id": 680997954,
+        "name": "freeze-receipt.json",
+        "size": 82735,
+        "digest": "sha256:f1552953214f4c5f44029582e7956b58670c7364fbe048ad22e7990a6e2302f2"
+      },
+      {
+        "id": 680997955,
+        "name": "release-notes.md",
+        "size": 4056,
+        "digest": "sha256:cc64e1e795900ae3f88583ab65c7922d220f81ae32e5127c1e2a33dbfacd26d8"
+      },
+      {
+        "id": 680997958,
+        "name": "riskium-v0.3.3-source.tar.gz",
+        "size": 10343736,
+        "digest": "sha256:9bb43bd2e190fda01bb83156134146345f6d55fb7674c8b06100eb34566eb907"
+      },
+      {
+        "id": 680997956,
+        "name": "SHA256SUMS.txt",
+        "size": 440,
+        "digest": "sha256:5dc28c5266ee9c1ecee10cde20b7bcc3f147711e568994e39b9b552ca32b9b18"
+      },
+      {
+        "id": 680997979,
+        "name": "source-manifest.json",
+        "size": 135028,
+        "digest": "sha256:0414bfde75ed923c2c653b3efeb16f03b017de1df159c450faf575796eb30d96"
+      }
+    ],
+    "unchanged_ids_sizes_digests": true,
+    "method": "Fresh GitHub metadata readback; no source-release asset-body download in this component-preparation task."
+  },
+  "stable_release": "v0.3.3",
+  "stable_profile_added_by_this_step": false,
+  "source_distribution_frozen_by_this_step": false,
+  "publication_requested_by_this_step": false,
+  "organizational_admissions": "11 WITHHELD unchanged",
+  "independent_ratings": 0,
+  "prior_release_preservation_contract": [
+    "v0.3.1-rc.1",
+    "v0.3.1-rc.2",
+    "v0.3.1-rc.3",
+    "v0.3.1-rc.4",
+    "v0.3.1-rc.5",
+    "v0.3.1-rc.6",
+    "v0.3.1-rc.7",
+    "v0.3.1",
+    "v0.3.2",
+    "v0.3.3"
+  ],
+  "expected_remaining_open_issues_after_child_closure": [
+    4,
+    5,
+    12,
+    13,
+    23,
+    35,
+    36,
+    37,
+    45
+  ],
+  "next_steps": [
+    "Integrate the reviewed v0.3.4 profile, critical screen, notes and this matrix into the exact-source freeze path; run final-source checks and fresh Wiki/Pages readback, then freeze a clean reviewed source.",
+    "Publish only after a successful exact freeze and explicit release intent; independently download/verify tag/assets/manifest/Latest and all prior-release preservation before closing #45."
+  ],
+  "limits": [
+    "This completes distribution component preparation only, not a stable profile, source freeze, release intent, tag or assets.",
+    "The original published-profile validator supports v0.3.2/v0.3.3. The next gate must explicitly integrate the new matrix/validator/four-snapshot inventory with the reviewed v0.3.4 profile, critical screen, notes and exact-source freeze path.",
+    "All 27 initial rows and #47/#48 packets are unchanged; historical checkpoint validation reads the exact archived source and does not certify later mutable release intent.",
+    "The 380-file selection and 61 declared prerequisite edges are accounting/compatibility evidence, not exhaustive runtime dependencies or ontology correctness.",
+    "Four snapshots, current/Wiki/Pages source bytes, all eleven WITHHELD admissions and zero independent ratings are unchanged; retained channel receipts are not final-source freshness.",
+    "Prior source-release asset IDs/sizes/digests were read back unchanged; fresh downloads of all prior assets remain publication-verification work.",
+    "Final receipts, raw full-test log, navigation/plan progress and refreshed inventory do not alter tested component/selection/tooling bytes."
+  ]
+}
