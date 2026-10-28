@@ -1,5 +1,8 @@
 # Riskium
 
+**Latest source distribution: [v0.3.4](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.4) — published and independently verified.** Exact source `cc02e4574999`, six assets, 28 selected components, 373 software tests, 28 core plus ten release checks. [Publication record](docs/release-v0.3.4-publication.md). Native model remains 0.3.1; current documentation 0.3.0 and frozen snapshot checkpoints retain their declared source identities.
+
+
 Riskium is a conceptual ontology for organizing risk knowledge. It distinguishes a managed risk case from its register entries, scenario specifications, assessment results and supporting evidence.
 
 The model supports the interpretation and traceability of risk information. It does not prescribe a complete risk-management process or establish regulatory compliance.

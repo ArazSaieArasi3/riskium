@@ -1,0 +1,102 @@
+{
+  "schema": "riskium-v034-actual-freeze-summary-v1",
+  "tag": "v0.3.4",
+  "source_commit": "cc02e45749995b8710802822ae709d49e0a83993",
+  "source_files": 966,
+  "profile_path": "releases/stable-profile-v0.3.4.json",
+  "profile_sha256": "da66c5327a88ff89a90783128f9a085909b70f2588e17d6ec25d8dee8d7b8a81",
+  "component_matrix_sha256": "a5f0a645dac4998862a99ca76564f705f72f61c03b7f40e89385c7ca4edca4ac",
+  "core_checks": 28,
+  "release_specific_checks": [
+    {
+      "command": [
+        "python",
+        "tools/build_prepared_distribution.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "tools/publication/snapshot_registry.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "tools/publication/build_snapshot_site.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "tools/prepare_release_v034.py",
+        "--check-profile"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "tools/run_relational_source_scenario.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "tools/build_source_scenario_inventory.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "tools/run_relational_source_scenario_lineage.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "tools/build_source_scenario_lineage_inventory.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "tools/run_relational_evidence.py",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "tools/build_evidence_inventory.py",
+        "--check"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "selected_components": 28,
+  "documentation_snapshots": 4,
+  "clean_exact_head": true,
+  "archive_inventory_verified": true,
+  "wiki_files": 23,
+  "pages_files": 311,
+  "pages_source_commit": "7e22cc76db108b4db014b13d5d3a08270d0a339e",
+  "checked_at_utc": "2026-10-28T13:17:30.304682+00:00",
+  "downloaded_package_hashes_match_actual_published_receipt": true,
+  "package_download_method": "All six actual public GitHub release URLs independently downloaded again in the workspace, SHA-256 compared to actual GitHub metadata and verified runner receipt, then complete package validated."
+}

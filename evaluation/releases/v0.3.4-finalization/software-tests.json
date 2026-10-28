@@ -1,0 +1,23 @@
+{
+  "schema": "riskium-v034-final-source-software-tests-v1",
+  "source_commit": "cc02e45749995b8710802822ae709d49e0a83993",
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "tests": 373,
+  "seconds": 263.5,
+  "outcome": "PASS",
+  "log_sha256": "f8e243f744ade381ac264746d26038ffb079defab4ce6af0286d7e35b914477d",
+  "release_focused_tests_in_full_suite": 17,
+  "core_freeze_checks": 28,
+  "release_specific_checks": 10,
+  "method": "Actual verified published freeze receipt, not a synthetic unit-test fixture.",
+  "local_reviewed_implementation": "7e22cc76db108b4db014b13d5d3a08270d0a339e",
+  "limits": "Software/source/hash/replay controls; no independent semantic review or full original MUST acceptance."
+}

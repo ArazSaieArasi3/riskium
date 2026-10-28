@@ -22,3 +22,7 @@ python tools/prepare_release_v034.py --output /absolute/path/outside-the-source-
 The initial new request is `publish: false`. After a successful reviewed dry freeze and hosted source checks, explicit publication intent names that reviewed implementation source and permits only request/inventory changes before the publication source. The release workflow freezes that exact new source again; it does not reuse a stale package. No synthetic unit-test check/freshness record is retained as real freeze evidence.
 
 Model 0.3.1, ORSD 0.4.3, original DRSD 0.1.0, manuscript 7.0.8, all eleven WITHHELD admissions and zero independent ratings remain unchanged. Current documentation 0.3.0 and frozen source/snapshot checkpoints remain distinct from source-distribution publication. Broad research/application parents stay open under their own criteria.
+
+## Verified publication complete
+
+[Completion](completion.json) and [actual publication receipt](../v0.3.4-publication.json) bind source `cc02e45749995b8710802822ae709d49e0a83993`, release 426704771, six verified actual assets and all ten unchanged previous release inventories. The source passed 373 software tests, 28 core/ten release checks and seven hosted workflows. Source tag/assets are immutable; completion/navigation receipts do not move them. #45/#50 close, while eight broader research/application issues remain open.

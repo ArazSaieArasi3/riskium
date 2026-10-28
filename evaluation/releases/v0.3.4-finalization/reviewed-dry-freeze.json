@@ -1,0 +1,17 @@
+{
+  "schema": "riskium-reviewed-dry-freeze-download-v1",
+  "source_commit": "7e22cc76db108b4db014b13d5d3a08270d0a339e",
+  "artifact_id": 12819315196,
+  "artifact_sha256": "7eb70fcd4260470a5701b31368d778ac0bebe7d9b19e3f897826d6329809c3ad",
+  "assets": 6,
+  "source_files": 966,
+  "core_checks": 28,
+  "release_checks": 10,
+  "software_tests": 373,
+  "wiki_files": 23,
+  "pages_files": 311,
+  "checked_at_utc": "2026-10-28T13:01:38.751101+00:00",
+  "pages_source_commit": "24c0323d4b731baf6d4d6c9a079cf66628ca4f39",
+  "all_downloaded_package_gates_pass": true,
+  "publication_executed": false
+}

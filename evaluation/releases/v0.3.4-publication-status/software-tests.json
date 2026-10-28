@@ -1,0 +1,11 @@
+{
+  "schema": "riskium-post-publication-status-tests-v1",
+  "tests": 2,
+  "outcome": "PASS",
+  "basis_source_publication": "cc02e45749995b8710802822ae709d49e0a83993",
+  "release_id": 426704771,
+  "projected_headers": 31,
+  "tested_renderer_sha256": "d5902b1c8cfbb7515635e19b82f034b41ce4f6cc02fe0c0f55a215c6fd588094",
+  "log_sha256": "2eba61b3ea79f498d65b01ebca710011f11ae201f4ae23613b80b8ce6acf22e5",
+  "scope": "Post-publication status/navigation maintenance; original source tag/assets and all frozen snapshots remain unchanged."
+}
