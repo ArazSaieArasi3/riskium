@@ -1,0 +1,80 @@
+{
+  "schema": "riskium-source-scenario-lineage-hosted-checks-v1",
+  "source_commit": "04bfa1f69511c402335a1d50445ed8fb4fa12cf7",
+  "workflows": [
+    {
+      "id": 40648434884,
+      "name": "Publish versioned documentation",
+      "head_sha": "04bfa1f69511c402335a1d50445ed8fb4fa12cf7",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40648434884"
+    },
+    {
+      "id": 40648359461,
+      "name": "Stable research artifact release",
+      "head_sha": "04bfa1f69511c402335a1d50445ed8fb4fa12cf7",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40648359461"
+    },
+    {
+      "id": 40648359338,
+      "name": "Requirement and CQ evidence",
+      "head_sha": "04bfa1f69511c402335a1d50445ed8fb4fa12cf7",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40648359338"
+    },
+    {
+      "id": 40648359611,
+      "name": "Post-release integration and scope",
+      "head_sha": "04bfa1f69511c402335a1d50445ed8fb4fa12cf7",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40648359611"
+    },
+    {
+      "id": 40648359460,
+      "name": "Claim-based quality integrity",
+      "head_sha": "04bfa1f69511c402335a1d50445ed8fb4fa12cf7",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40648359460"
+    },
+    {
+      "id": 40648359562,
+      "name": "Documentation integrity",
+      "head_sha": "04bfa1f69511c402335a1d50445ed8fb4fa12cf7",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40648359562"
+    },
+    {
+      "id": 40648359354,
+      "name": "Incremental release candidate",
+      "head_sha": "04bfa1f69511c402335a1d50445ed8fb4fa12cf7",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40648359354"
+    }
+  ],
+  "sqlite": "3.45.1",
+  "integration": {
+    "run_id": 40648359611,
+    "job_id": 122682357061,
+    "fixed_cases": 54,
+    "outcomes": {
+      "PASS": 54
+    },
+    "native_graph_oracles": 10,
+    "focused_tests": 15
+  },
+  "candidate": {
+    "run_id": 40648359354,
+    "job_id": 122682356229,
+    "passed_checks": 28,
+    "inventory_verified": true,
+    "publication_executed": false
+  }
+}

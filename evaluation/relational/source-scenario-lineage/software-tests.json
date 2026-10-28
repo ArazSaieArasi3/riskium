@@ -1,0 +1,14 @@
+{
+  "schema": "riskium-source-scenario-lineage-software-tests-v1",
+  "source_commit": "04bfa1f69511c402335a1d50445ed8fb4fa12cf7",
+  "command": "python -m unittest discover -s tests -v",
+  "tests": 264,
+  "seconds": 111.586,
+  "outcome": "PASS",
+  "sqlite": "3.53.1",
+  "log_sha256": "ad043269b927f72bea0af5db9ff287585608403608158f4cc2299f5e09ca0f95",
+  "focused_tests": 15,
+  "fixed_controls": 54,
+  "native_graph_oracles": 10,
+  "limit": "Software and controlled synthetic engineering evidence; no independent semantic acceptance."
+}
