@@ -13,7 +13,7 @@
     "evaluation/consistency/current-0.3.0/README.md": "f320d7bafb3185339b24fd6fa567736e163a598c987a1720521f98132450682f",
     "evaluation/consistency/current-0.3.0/manuscript-readback.json": "d6e4e2e5e6d1be3c59c80d664dcea6680a851ec271143d9e3a3daf5bfa4b8ca2",
     "evaluation/consistency/current-0.3.0/policy.json": "91890135060daff575b53edd57653c0d6152088f13227c83321f9d542fab2f37",
-    "evaluation/consistency/current-0.3.0/report.json": "4dcafa0d861b5b52410ddc6e1bfd9921fce16e8d589c58e1a52a0404fdd176c6",
+    "evaluation/consistency/current-0.3.0/report.json": "ab316cce7dd9aa5c424e646c4dc6446a9e4d2a3086e665c603b94296c6005c88",
     "evaluation/consistency/current-0.3.0/traceability.csv": "db0864197537f832667fea9ca2b2f20bf1fd54c5f9a26898e243381dbcc41770",
     "evaluation/consistency/current-0.3.0/traceability.json": "8d71a4a78bc62aa3596d218911a777bc00e6bac47a9e9beb55078b999f6d21c8",
     "tests/test_current_alignment.py": "a4bbde5ee2697d47a421fff19fd675a999c1bfd4bbb6c84e03bbb877ced6709a",

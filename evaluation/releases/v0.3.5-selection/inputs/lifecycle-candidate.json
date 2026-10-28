@@ -1,0 +1,13 @@
+{
+  "schema": "riskium-lifecycle-final-candidate-readback-v1",
+  "source_commit": "9a92ac92b29a127b1c38e6d0c052f8dc230dcb47",
+  "artifact_id": 12831701057,
+  "zip_sha256": "64ed3ddfaf7b2c533780c97fd14b5267970a250beb2735248d15dfb83495c8c5",
+  "all_asset_sums_match": true,
+  "all_archive_files_match_manifest_and_git": true,
+  "archived_source_files": 1009,
+  "aggregate_checks": 28,
+  "actual_full_software_tests": 395,
+  "actual_full_software_seconds": 213.736,
+  "publication_executed": false
+}

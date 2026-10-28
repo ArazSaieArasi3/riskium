@@ -5,7 +5,7 @@
   "baseline_main": "3646ff0dd138a1ecc6f56fd50341a67635a85488",
   "current_published_release": "v0.3.4",
   "target_release": "v0.3.5",
-  "release_state": "DOCUMENTATION_COMPONENT_IMPLEMENTED_NOT_FROZEN",
+  "release_state": "COMPONENT_SELECTION_NOT_FROZEN",
   "submission_state": "NOT_YET_ESTABLISHED",
   "venue": null,
   "track": null,
@@ -68,6 +68,19 @@
       "component": "evaluation/documentation/current-0.4.0/component.json",
       "actual_channel_completion_evidence": "GitHub issue #55; distinct exact-source hosted deployment and native Wiki/HTTP readbacks",
       "source_release_published": false
+    },
+    "component_selection": {
+      "issue": 56,
+      "target": "v0.3.5",
+      "current_components": 29,
+      "retained": 26,
+      "replaced": 2,
+      "added": 1,
+      "matrix": "releases/selection-v0.3.5.json",
+      "policy": "releases/selection-policy-v0.3.5.json",
+      "historical_snapshot_generation_preserved": true,
+      "final_source_freeze_executed": false,
+      "source_release_published": false
     }
   },
   "release_gates": [
@@ -93,12 +106,12 @@
     },
     {
       "id": "R5",
-      "state": "DOCUMENTATION_040_IMPLEMENTED_ACTUAL_CHANNEL_CLOSURE_IN_55",
+      "state": "COMPLETED_ACTUAL_23_WIKI_FILES_AND_312_HTTP_RESPONSES_IN_55",
       "criterion": "New current documentation and actual Wiki/Pages body readback; old snapshots unchanged"
     },
     {
       "id": "R6",
-      "state": "NOT_RUN",
+      "state": "COMPONENT_SELECTION_56_FINAL_FREEZE_AND_PUBLICATION_NOT_RUN",
       "criterion": "Exact-source publication, independently downloaded package, Latest and prior preservation"
     }
   ],

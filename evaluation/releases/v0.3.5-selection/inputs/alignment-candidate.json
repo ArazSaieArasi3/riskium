@@ -1,0 +1,14 @@
+{
+  "status": "DOWNLOADED_CANDIDATE_EXACT_SOURCE_PASS",
+  "source_commit": "ccc89a184a618ccc2c107ccbf27a15232060557e",
+  "artifact_id": 12835639783,
+  "zip_sha256": "3fe2ffff805f63647ca0fa43c42523452d35fc4ddd2f5ebee3258152c671aed5",
+  "checksum_entries": 4,
+  "archived_source_files": 1020,
+  "all_git_blobs_equal": true,
+  "candidate_gates": 28,
+  "full_software_tests": 409,
+  "full_tests_seconds": 334.772,
+  "publication_executed": false,
+  "independent_semantic_acceptance": "NOT_ESTABLISHED"
+}

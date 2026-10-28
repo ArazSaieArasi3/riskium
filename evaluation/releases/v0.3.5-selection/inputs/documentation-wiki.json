@@ -1,0 +1,133 @@
+{
+  "schema": "riskium-current-documentation-040-wiki-readback-v1",
+  "issue": 55,
+  "source_commit": "1f8610657b3d9ab3c50589d3d76be7cffd8c7099",
+  "guide_source_commit": "2c4b0c46f22c90a3a5782e7c918e79f791aa4816",
+  "checked_at_utc": "2026-10-28T18:43:31.618052+00:00",
+  "method": "Independent fresh Git clone after actual signed-in native Wiki editor writes, exact full file inventory and byte/SHA-256 comparison against committed 0.4.0 projections.",
+  "wiki_commit": "94ecb0ca433029e53c5ea30b66f639945b5feb3b",
+  "files": 23,
+  "all_bytes_match": true,
+  "documentation_version": "0.4.0",
+  "published_source": "v0.3.4",
+  "target_source": "v0.3.5",
+  "source_release_published": false,
+  "independent_semantic_acceptance": false,
+  "checks": [
+    {
+      "file": "Artifact-Versions.md",
+      "sha256": "7dc8d626e7836caaf08548c776725d284291f1c46c83aee54895dd1460e6c065",
+      "exact_match": true
+    },
+    {
+      "file": "Citation.md",
+      "sha256": "6b61e6b944033fb53386a8b21d2076570e7b7d5c7547c86e40c8031b6ea83c2d",
+      "exact_match": true
+    },
+    {
+      "file": "Competency-Questions.md",
+      "sha256": "709d5ea9d778710f1522276306dfcf2285db2d8900ed2feec3090ce11cacdd89",
+      "exact_match": true
+    },
+    {
+      "file": "Database-Assurance.md",
+      "sha256": "4b095252797398239319ccf64dcd1cdd8221415efed786b6cd8dbe4be21f118f",
+      "exact_match": true
+    },
+    {
+      "file": "Evaluation.md",
+      "sha256": "e588f7dbb5e76be30109690c17b90d9d643a4d19aead096610ceb24b9abd3e9e",
+      "exact_match": true
+    },
+    {
+      "file": "Formalization.md",
+      "sha256": "9837f6ba4a4c02f0d2c04a33d8e8cc83b43d37aefcfbf17630245c217e4bacbd",
+      "exact_match": true
+    },
+    {
+      "file": "Home.md",
+      "sha256": "46f5eb22a02a3ab871074270d8b287f0aec4be75118cf3ff32b464e4c2d9c41b",
+      "exact_match": true
+    },
+    {
+      "file": "Limitations.md",
+      "sha256": "2b890071f1263ec66a6ea5397e8e356ea9ffa128508075da64409ff0c77c65d7",
+      "exact_match": true
+    },
+    {
+      "file": "Modeling-Decisions.md",
+      "sha256": "194406a8d9ac03b2eb63f8621586d6bc1cec26c5d42fc260256df87ab9279846",
+      "exact_match": true
+    },
+    {
+      "file": "Overview.md",
+      "sha256": "838fd813090211f31e045f75bf38cbaf15421d7f23d30f36938a6fc1fbaa8363",
+      "exact_match": true
+    },
+    {
+      "file": "Publication-Comparison.md",
+      "sha256": "68857d5a47e84ee06f636c9a4367de7af1d526fe2ec9e70164fbe3b616c198ca",
+      "exact_match": true
+    },
+    {
+      "file": "Publication.md",
+      "sha256": "b34180a3ba9c3f158a8069bf4757a8c6765595f8f8c2af39fbf0c0e4c84e2e33",
+      "exact_match": true
+    },
+    {
+      "file": "Quality.md",
+      "sha256": "db7e641ce479c3b8a6114f9b24d051a358bb4b174ee52c7cab1fc2b800baea6e",
+      "exact_match": true
+    },
+    {
+      "file": "References.md",
+      "sha256": "9f9f2999a70457cb65982d91ee36e27ce8f589654f331d0c688fd28cbd1e02f4",
+      "exact_match": true
+    },
+    {
+      "file": "Reproduce.md",
+      "sha256": "8291b6a3a64f125b744f8e729aee2ee318e327729c0750ef308cd9b8e664d93b",
+      "exact_match": true
+    },
+    {
+      "file": "Requirements.md",
+      "sha256": "c93cf05ce0ef1add15291174843ed295b2c2abaeb28e101db13f0a75262b6e23",
+      "exact_match": true
+    },
+    {
+      "file": "Scope.md",
+      "sha256": "43827e844b147bad04c79e47e73c6b235869bbd7880d6613e83dc2ea213b35c7",
+      "exact_match": true
+    },
+    {
+      "file": "Traceability.md",
+      "sha256": "f4f2669a8619e503e53170e1a314b203df41caf56a203034a3696148375de5ff",
+      "exact_match": true
+    },
+    {
+      "file": "Using-the-Model.md",
+      "sha256": "b04d2fb83ad55b9ac67df6e9bdab785052edd2e8cf1eafc4cc9c22303507af42",
+      "exact_match": true
+    },
+    {
+      "file": "Visualization.md",
+      "sha256": "1cd60a646b2c29d59910652d722922dadd7dea78db36d56a9f4da765c6921af8",
+      "exact_match": true
+    },
+    {
+      "file": "Work-Plan.md",
+      "sha256": "b9371ebac0649fc2ce0e6ca0bfa0f0d3d8cbcbd923983414e9e6442c46c465fd",
+      "exact_match": true
+    },
+    {
+      "file": "_Footer.md",
+      "sha256": "8229c9d3889e5d657e71098e6a1a781c747f2c5ce2b02d13ccb027fc0f7d411a",
+      "exact_match": true
+    },
+    {
+      "file": "_Sidebar.md",
+      "sha256": "982a8b85dcdb140e32617fa7c16ffb2d91f15e83cfe3311924b5c1ea24853b94",
+      "exact_match": true
+    }
+  ]
+}
