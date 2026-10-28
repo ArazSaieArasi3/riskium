@@ -26,7 +26,7 @@ class CurrentAlignment(unittest.TestCase):
         self.assertEqual(report['summary']['native_ids'], 306)
         self.assertEqual(sum(r['cases'] for r in report['engineering_populations']), 213)
         self.assertFalse(report['submission_ready'])
-        self.assertEqual(report['current_channel_alignment'], 'PENDING_R5_DOCUMENTATION_0.4.0_AND_ACTUAL_CHANNEL_READBACK')
+        self.assertEqual(report['current_channel_alignment'], 'DOCUMENTATION_040_IMPLEMENTED_ACTUAL_CHANNEL_CLOSURE_IN_55')
 
     def test_missing_current_claim_rejected(self):
         self.mutate(audit.OUT + '/policy.json', lambda d: d['current_claims'].pop(), 'Lost/duplicate current retained claim')

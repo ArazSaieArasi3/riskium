@@ -1,0 +1,8 @@
+{
+  "schema": "riskium-current-documentation-source-selection-v1",
+  "documentation_version": "0.4.0",
+  "guide_source_commit": "2c4b0c46f22c90a3a5782e7c918e79f791aa4816",
+  "guide_source_tree": "6b4b9efd7e444e416e27fbf4ef44d9b87ef46d3b",
+  "baseline_source": "ccc89a184a618ccc2c107ccbf27a15232060557e",
+  "new_source_distribution_published": false
+}

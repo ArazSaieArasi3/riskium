@@ -10,14 +10,14 @@
   "independent_acceptance": false,
   "files_sha256": {
     ".github/workflows/current-alignment.yml": "d3febc2bafa1ab20687efce63f5399e8552133c9a4bab30d414343e9916c378e",
-    "evaluation/consistency/current-0.3.0/README.md": "95c9276cab3fb49ba4e0409866e63541a5674052899ebf51e8d4a15c2afcd9d9",
+    "evaluation/consistency/current-0.3.0/README.md": "f320d7bafb3185339b24fd6fa567736e163a598c987a1720521f98132450682f",
     "evaluation/consistency/current-0.3.0/manuscript-readback.json": "d6e4e2e5e6d1be3c59c80d664dcea6680a851ec271143d9e3a3daf5bfa4b8ca2",
-    "evaluation/consistency/current-0.3.0/policy.json": "f3b2a07dc885358956c12932e1da94dbd5352c8a629304ffb3285362f117ad5b",
-    "evaluation/consistency/current-0.3.0/report.json": "58575c15913148c4ec6dda7210f11657e2e7a99452b01926ec9e66898e395202",
+    "evaluation/consistency/current-0.3.0/policy.json": "91890135060daff575b53edd57653c0d6152088f13227c83321f9d542fab2f37",
+    "evaluation/consistency/current-0.3.0/report.json": "4dcafa0d861b5b52410ddc6e1bfd9921fce16e8d589c58e1a52a0404fdd176c6",
     "evaluation/consistency/current-0.3.0/traceability.csv": "db0864197537f832667fea9ca2b2f20bf1fd54c5f9a26898e243381dbcc41770",
     "evaluation/consistency/current-0.3.0/traceability.json": "8d71a4a78bc62aa3596d218911a777bc00e6bac47a9e9beb55078b999f6d21c8",
-    "tests/test_current_alignment.py": "22044ae74509ce82959700a9948ae9ae3a7d5dbc1a4ea630db7a6435d1ee7cbe",
-    "tools/audit_current_alignment.py": "55cf1732b14b74556162c795ddd58349c2dbf11e66dc783c665fa3d6f2870d81",
+    "tests/test_current_alignment.py": "a4bbde5ee2697d47a421fff19fd675a999c1bfd4bbb6c84e03bbb877ced6709a",
+    "tools/audit_current_alignment.py": "24b68573d15339bc3f2fd876294f88f30de2c6c5ccf15b8efbf6cb0fbb0c34e0",
     "tools/read_current_manuscript.py": "37262c0c132d5dec065ff9572dbe0a6308097ee39d4798ebc5d3293ff7a5e730"
   },
   "scope": "Version-bound accounting and actual approved-paper readback. Live channels and final v0.3.5 selection/freeze remain separate gates."

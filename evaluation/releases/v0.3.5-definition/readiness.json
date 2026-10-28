@@ -5,7 +5,7 @@
   "baseline_main": "3646ff0dd138a1ecc6f56fd50341a67635a85488",
   "current_published_release": "v0.3.4",
   "target_release": "v0.3.5",
-  "release_state": "SOURCE_AND_PAPER_BASELINE_CHECKED_NOT_FROZEN",
+  "release_state": "DOCUMENTATION_COMPONENT_IMPLEMENTED_NOT_FROZEN",
   "submission_state": "NOT_YET_ESTABLISHED",
   "venue": null,
   "track": null,
@@ -56,6 +56,18 @@
       "report": "evaluation/consistency/current-0.3.0/report.json",
       "manuscript_readback": "evaluation/consistency/current-0.3.0/manuscript-readback.json",
       "final_selection_recheck_required": true
+    },
+    "documentation_successor": {
+      "version": "0.4.0",
+      "execution_issue": 55,
+      "guide_source_commit": "2c4b0c46f22c90a3a5782e7c918e79f791aa4816",
+      "shared_guides": 21,
+      "native_wiki_files": 23,
+      "maintained_html_headers": 31,
+      "frozen_snapshots_preserved": 4,
+      "component": "evaluation/documentation/current-0.4.0/component.json",
+      "actual_channel_completion_evidence": "GitHub issue #55; distinct exact-source hosted deployment and native Wiki/HTTP readbacks",
+      "source_release_published": false
     }
   },
   "release_gates": [
@@ -81,7 +93,7 @@
     },
     {
       "id": "R5",
-      "state": "NOT_RUN",
+      "state": "DOCUMENTATION_040_IMPLEMENTED_ACTUAL_CHANNEL_CLOSURE_IN_55",
       "criterion": "New current documentation and actual Wiki/Pages body readback; old snapshots unchanged"
     },
     {
@@ -137,8 +149,8 @@
   "known_gaps": [
     {
       "id": "DEF-GAP-01",
-      "state": "OPEN_FOR_DOCUMENTATION_SUCCESSOR",
-      "finding": "Pinned documentation 0.3.0 work-plan/traceability bodies still contain dated pre-publication wording; the maintained status component changed headers only."
+      "state": "DOCUMENTATION_040_IMPLEMENTED_CHANNEL_PROOF_IN_55",
+      "finding": "Separately reviewed 0.4.0 guide bodies replace active dated preparation text in maintained projections. Original 0.3.0 bytes remain historical. Actual source/hosted/native Wiki/HTTP closure is separately recorded in #55."
     },
     {
       "id": "DEF-GAP-02",

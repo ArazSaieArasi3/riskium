@@ -1,0 +1,65 @@
+name: Publish current documentation 0.4.0
+on:
+  workflow_run:
+    workflows: [Publish verified source release status]
+    types: [completed]
+    branches: [main]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: current-documentation-040
+  cancel-in-progress: true
+jobs:
+  deploy:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main' &&
+      github.event.workflow_run.head_repository.full_name == github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          ref: ${{ github.event.workflow_run.head_sha }}
+      - name: Require the current reviewed main and unchanged published release identity
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git fetch --no-tags origin main
+          test "$(git rev-parse HEAD)" = "$(git rev-parse FETCH_HEAD)"
+          python - <<'PY'
+          import json,os,subprocess
+          repo=os.environ['GITHUB_REPOSITORY']
+          def api(path):return json.loads(subprocess.check_output(['gh','api','repos/'+repo+'/'+path]))
+          latest=api('releases/latest')
+          assert latest['tag_name']=='v0.3.4' and latest['id']==426704771
+          target=api('git/ref/tags/v0.3.4')['object']
+          assert target['type']=='commit' and target['sha']=='cc02e45749995b8710802822ae709d49e0a83993'
+          PY
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/publication/requirements.txt
+      - name: Validate current source, projection failure boundaries and earlier inventories
+        run: |
+          python tools/publication/current_documentation.py --check
+          python -m unittest discover -s tests -p test_current_documentation.py -v
+          python tools/audit_current_alignment.py --check
+          python tools/build_prepared_distribution.py --check
+          git diff --exit-code
+      - name: Build final maintained bodies after the preserved predecessor deployments
+        run: python tools/publication/current_documentation.py --output build/current-site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: build/current-site
+      - name: Deploy current documentation with all four frozen snapshots preserved
+        id: deployment
+        uses: actions/deploy-pages@v4

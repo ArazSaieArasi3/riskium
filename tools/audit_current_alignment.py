@@ -224,7 +224,7 @@ def build(root=ROOT, overrides=None):
                                preserved_published_file_bindings=380, independent_ratings=0, organizational_admissions=admissions,
                                orphan_routes=0, orphan_derived_controls=0, unexplained_in_scope_version_mismatches=0),
                   engineering_populations=pools, manuscript_readback=OUT + '/manuscript-readback.json',
-                  current_channel_alignment='PENDING_R5_DOCUMENTATION_0.4.0_AND_ACTUAL_CHANNEL_READBACK',
+                  current_channel_alignment='DOCUMENTATION_040_IMPLEMENTED_ACTUAL_CHANNEL_CLOSURE_IN_55',
                   final_release_alignment='PENDING_R6_FINAL_SELECTION_FREEZE_AND_INDEPENDENT_ASSET_VERIFICATION',
                   submission_ready=False, fresh_scientific_engine_runs=0,
                   limits=policy['limits'], input_sha256=dict(sorted(src.bindings.items())))
@@ -262,7 +262,7 @@ def main():
             path.write_text(value)
     print(json.dumps(dict(status='CURRENT_SOURCE_AND_PAPER_BASELINE_ACCOUNTING_PASS', routes=450, historical_rows=423,
                           derived_requirements=27, declared_current_claim_routes=39, native_ids=306, remaining_deferred=236,
-                          live_channels='R5_PENDING', publication_executed=False)))
+                          live_channels='DOCUMENTATION_040_CLOSURE_IN_55', publication_executed=False)))
 
 
 if __name__ == '__main__':
