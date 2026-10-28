@@ -1,0 +1,55 @@
+{
+  "schema": "riskium-source-scenario-lineage-component-v1",
+  "id": "SOURCE_SCENARIO_LINEAGE",
+  "version": "0.5.0",
+  "schema_version": 6,
+  "compatible_model": "0.3.1",
+  "baseline_sql_profile": "0.4.0",
+  "status": "DEVELOPMENT_COMPONENT_NOT_SELECTED_BY_STABLE_DISTRIBUTION",
+  "stable_distribution_unchanged": "v0.3.3",
+  "summary": {
+    "cases": 54,
+    "outcomes": {
+      "PASS": 54
+    },
+    "kinds": {
+      "positive": 20,
+      "negative": 31,
+      "mutation": 3
+    },
+    "native_graph_oracles": 10
+  },
+  "native_support": {
+    "new_classes": 0,
+    "new_properties": 0,
+    "new_mapping_routes": 0,
+    "full_mapping_completed": false
+  },
+  "files_sha256": {
+    "evaluation/relational/source-scenario-lineage/README.md": "eba2cdfeaa22ea07195f8a1a0fba2cb3e385917dd9444a024310cbb44a0aa10a",
+    "evaluation/relational/source-scenario-lineage/report.json": "cfa43582588a47f5a05a6fdb21def6a43ae5403913520af0775b0b89c5ce248d",
+    "evaluation/relational/source-scenario/mapping-accounting.json": "ec2df64496dcf3a088c7493328d52c95e141a0604750fac73ea8056821ea65a2",
+    "evaluation/sources/cq0708/cohort.json": "525c6f69cff592baf705ec48ee52b629d2b0f61e93adcbedf9535b5993843127",
+    "evaluation/sources/cq0708/report.json.gz": "da8ec348280e788f2490b0dd053c0901f175fb969de8d73ca8959c2cec8a1612",
+    "implementation/relational/0.4.0/component.json": "49afaf2c02ed831107330e64f113dc543346cd79b1a4e82aff54f15185d966d2",
+    "implementation/relational/0.4.0/contract.json": "defb5b7dd66fd0083f3ff913bd467a1b72ebd7d4c946083f8f3d5c8c4d6809db",
+    "implementation/relational/0.4.0/fixtures.json": "bfba7e6e220987abee2f070125c70cd9c60e5975a7bc8b1b6f209691f15edf97",
+    "implementation/relational/0.5.0/006_source_scenario_lineage.sql": "873928959d4bc0f5b040c9d1d1b583db37b8f6d3d706c7f8a3ef3349f55ad03d",
+    "implementation/relational/0.5.0/README.md": "ddccebbf7e975c1d8aa310c8728a63a61a005f2e74f21e7f6c2e0438a8a900ff",
+    "implementation/relational/0.5.0/contract.json": "b4519adb907a4867cb2668489cd7d70963a83709f0b7880d881b415a4d041ac1",
+    "implementation/relational/0.5.0/fixtures.json": "d978aee25c59526b56f1f1a6dd94544aba9772a9ee24a477c1e35e87e316217c",
+    "implementation/relational/0.5.0/queries/family.sql": "b7c653c80fab728dcf371926a4bbe52966890b9ae32448954918b85f49a55cf1",
+    "implementation/relational/0.5.0/schema-dictionary.md": "5387fd061dd0620dd9e96ff22a86efd8392a09a74e154b9b0cc894e9ed4e9c82",
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "tests/test_source_scenario_lineage.py": "071a220b9aeb42668047231ed730392fdc816c877d356c4ed4e74d094a9bd569",
+    "tools/build_source_scenario_lineage_inventory.py": "0862802673da5eaad443e53c940fa38b70784dd92630184aba50f3ba40cc78d9",
+    "tools/relational_source_scenario.py": "ca62c59d9ea31352c3b92a8a0f1e28a82a498faa49a7d2cd2137478db09a2191",
+    "tools/relational_source_scenario_lineage.py": "0fddac0d97c9bbf2eb7d0947c0f989978e9f6b0e2b2ce94b160983035ecd3d36",
+    "tools/run_relational_source_scenario_lineage.py": "795b69d2c3dd0ac52e360c3c956e5f896196a2631412f9af8b3960f3e3bc146d",
+    "evaluation/relational/source-scenario-lineage/mapping-accounting.json": "50dd4fad66adde680c28b0e7f8c4131e064fc6b2e2deda6a74cb7638368db257",
+    "evaluation/relational/source-scenario-lineage/traceability.json": "c8e9938209a6c0cfbc7e4e5990bdd652bbc97252a16d850ef3da432a59575c71"
+  }
+}

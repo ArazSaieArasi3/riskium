@@ -1,0 +1,260 @@
+{
+  "schema": "riskium-source-scenario-lineage-requirement-trace-v1",
+  "profile": "0.5.0",
+  "execution_issue": 43,
+  "parent_issues": [
+    35,
+    12
+  ],
+  "original_drsd": "0.1.0 unchanged; SCL-01..06 are an explicit derived supplement",
+  "requirements": [
+    {
+      "requirement": {
+        "id": "SCL-01",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-11"
+        ],
+        "constraints": [
+          "C-03"
+        ],
+        "accept": "Populated v5->v6 preserves every prior row, ledger hash and issued native graph; repeat and failed upgrade are atomic."
+      },
+      "cqs": [
+        "RQ-CQ02",
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "POPULATED_UPGRADE",
+        "LEGACY_NATIVE_PRESERVED",
+        "IDEMPOTENT_UPGRADE",
+        "FAILED_UPGRADE"
+      ],
+      "implementation": [
+        "006_source_scenario_lineage.sql",
+        "queries/family.sql",
+        "relational_source_scenario_lineage.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Selected application correction for two issued knowledge classes; no general native correction, complete original fulfillment or independent semantic acceptance."
+    },
+    {
+      "requirement": {
+        "id": "SCL-02",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-06"
+        ],
+        "constraints": [
+          "C-03",
+          "C-17"
+        ],
+        "accept": "Only explicit correction declarations connect two issued knowledge versions of the same artifact/class; one immutable parent per child, multiple branches, no self or cycle."
+      },
+      "cqs": [
+        "RQ-CQ02",
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "DUPLICATE_PARENT",
+        "REPLACE_PARENT",
+        "SELF_PARENT",
+        "CYCLE",
+        "CROSS_ARTIFACT",
+        "CROSS_CLASS",
+        "MISSING_CHILD",
+        "MISSING_PARENT",
+        "UNISSUED_CHILD",
+        "UNISSUED_PARENT",
+        "NONKNOWLEDGE_PARENT",
+        "RAW_PARENT",
+        "MUTANT_OWNER_GUARD_EXPOSED"
+      ],
+      "implementation": [
+        "006_source_scenario_lineage.sql",
+        "queries/family.sql",
+        "relational_source_scenario_lineage.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Selected application correction for two issued knowledge classes; no general native correction, complete original fulfillment or independent semantic acceptance."
+    },
+    {
+      "requirement": {
+        "id": "SCL-03",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-06"
+        ],
+        "constraints": [
+          "C-03",
+          "C-12"
+        ],
+        "accept": "Immutable declaration reason, documentary source, locator, interpretation and real canonical UTC time remain separate from both immutable endpoint provenances and pinned contexts."
+      },
+      "cqs": [
+        "RQ-CQ02",
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "PROVENANCE_SEPARATE",
+        "ORIGINAL_CONTEXT_PIN",
+        "UNKNOWN_CONTEXT_RETAINED",
+        "MISSING_DECLARATION_SOURCE",
+        "EMPTY_REASON",
+        "EMPTY_LOCATOR",
+        "EMPTY_INTERPRETATION",
+        "BAD_CALENDAR",
+        "NONCANONICAL_TIME",
+        "EARLY_DECLARATION",
+        "UPDATE_DECLARATION",
+        "DELETE_DECLARATION",
+        "MUTANT_IMMUTABILITY_EXPOSED"
+      ],
+      "implementation": [
+        "006_source_scenario_lineage.sql",
+        "queries/family.sql",
+        "relational_source_scenario_lineage.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Selected application correction for two issued knowledge classes; no general native correction, complete original fulfillment or independent semantic acceptance."
+    },
+    {
+      "requirement": {
+        "id": "SCL-04",
+        "source_requirements": [
+          "RKRS-06",
+          "RKRS-11"
+        ],
+        "constraints": [
+          "C-02",
+          "C-12",
+          "C-17"
+        ],
+        "accept": "Bound root-descendant queries preserve all branches and fixed original/new values; no implicit edge, latest/authority/corroboration/occurrence inference or native correction property."
+      },
+      "cqs": [
+        "RQ-CQ02",
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "SCENARIO_BRANCHES",
+        "REFERENCE_BRANCHES",
+        "DESCENDANT_ROOT",
+        "EQUAL_LABEL_SINGLETON",
+        "PLAIN_VERSION_UNLINKED",
+        "UNKNOWN_ROOT",
+        "ALL_NATIVE_ORACLES",
+        "OLD_GRAPHS_UNCHANGED",
+        "NO_NATIVE_CORRECTION",
+        "NO_ADMISSION_OR_OCCURRENCE",
+        "BOUND_PARAMETER",
+        "MUTANT_SOURCE_JOIN_EXPOSED"
+      ],
+      "implementation": [
+        "006_source_scenario_lineage.sql",
+        "queries/family.sql",
+        "relational_source_scenario_lineage.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Selected application correction for two issued knowledge classes; no general native correction, complete original fulfillment or independent semantic acceptance."
+    },
+    {
+      "requirement": {
+        "id": "SCL-05",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-12"
+        ],
+        "constraints": [
+          "C-03"
+        ],
+        "accept": "Atomic issue-plus-declaration, nested rollback, exact schema/ledger/data/config checks and reopen/backup/dump/tamper controls execute on the actual engine."
+      },
+      "cqs": [
+        "RQ-CQ02",
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "BACKUP_REOPEN",
+        "FILE_REOPEN",
+        "DUMP_RESTORE",
+        "ATOMIC_ISSUE_FAILURE",
+        "NONTEXT_INPUT",
+        "CONFIGURATION_OFF",
+        "LEDGER_DRIFT",
+        "SCHEMA_DRIFT",
+        "RESTORE_OWNER_TAMPER",
+        "RESTORE_TIME_TAMPER",
+        "RESTORE_CYCLE_TAMPER",
+        "RESTORE_PROVENANCE_TAMPER"
+      ],
+      "implementation": [
+        "006_source_scenario_lineage.sql",
+        "queries/family.sql",
+        "relational_source_scenario_lineage.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Selected application correction for two issued knowledge classes; no general native correction, complete original fulfillment or independent semantic acceptance."
+    },
+    {
+      "requirement": {
+        "id": "SCL-06",
+        "source_requirements": [
+          "RKRS-11",
+          "RKRS-12"
+        ],
+        "constraints": [
+          "C-16"
+        ],
+        "accept": "Retain all 306 native identities/dispositions, 242 deferred and eight existing partial routes, original scientific receipts and all 11 WITHHELD admissions with separately bound derived requirement evidence."
+      },
+      "cqs": [
+        "RQ-CQ02",
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "NO_ADMISSION_OR_OCCURRENCE",
+        "NO_NATIVE_CORRECTION"
+      ],
+      "implementation": [
+        "006_source_scenario_lineage.sql",
+        "queries/family.sql",
+        "relational_source_scenario_lineage.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Selected application correction for two issued knowledge classes; no general native correction, complete original fulfillment or independent semantic acceptance."
+    }
+  ],
+  "inputs_sha256": {
+    "evaluation/relational/source-scenario-lineage/README.md": "eba2cdfeaa22ea07195f8a1a0fba2cb3e385917dd9444a024310cbb44a0aa10a",
+    "evaluation/relational/source-scenario-lineage/report.json": "cfa43582588a47f5a05a6fdb21def6a43ae5403913520af0775b0b89c5ce248d",
+    "evaluation/relational/source-scenario/mapping-accounting.json": "ec2df64496dcf3a088c7493328d52c95e141a0604750fac73ea8056821ea65a2",
+    "evaluation/sources/cq0708/cohort.json": "525c6f69cff592baf705ec48ee52b629d2b0f61e93adcbedf9535b5993843127",
+    "evaluation/sources/cq0708/report.json.gz": "da8ec348280e788f2490b0dd053c0901f175fb969de8d73ca8959c2cec8a1612",
+    "implementation/relational/0.4.0/component.json": "49afaf2c02ed831107330e64f113dc543346cd79b1a4e82aff54f15185d966d2",
+    "implementation/relational/0.4.0/contract.json": "defb5b7dd66fd0083f3ff913bd467a1b72ebd7d4c946083f8f3d5c8c4d6809db",
+    "implementation/relational/0.4.0/fixtures.json": "bfba7e6e220987abee2f070125c70cd9c60e5975a7bc8b1b6f209691f15edf97",
+    "implementation/relational/0.5.0/006_source_scenario_lineage.sql": "873928959d4bc0f5b040c9d1d1b583db37b8f6d3d706c7f8a3ef3349f55ad03d",
+    "implementation/relational/0.5.0/README.md": "ddccebbf7e975c1d8aa310c8728a63a61a005f2e74f21e7f6c2e0438a8a900ff",
+    "implementation/relational/0.5.0/contract.json": "b4519adb907a4867cb2668489cd7d70963a83709f0b7880d881b415a4d041ac1",
+    "implementation/relational/0.5.0/fixtures.json": "d978aee25c59526b56f1f1a6dd94544aba9772a9ee24a477c1e35e87e316217c",
+    "implementation/relational/0.5.0/queries/family.sql": "b7c653c80fab728dcf371926a4bbe52966890b9ae32448954918b85f49a55cf1",
+    "implementation/relational/0.5.0/schema-dictionary.md": "5387fd061dd0620dd9e96ff22a86efd8392a09a74e154b9b0cc894e9ed4e9c82",
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "tests/test_source_scenario_lineage.py": "071a220b9aeb42668047231ed730392fdc816c877d356c4ed4e74d094a9bd569",
+    "tools/build_source_scenario_lineage_inventory.py": "0862802673da5eaad443e53c940fa38b70784dd92630184aba50f3ba40cc78d9",
+    "tools/relational_source_scenario.py": "ca62c59d9ea31352c3b92a8a0f1e28a82a498faa49a7d2cd2137478db09a2191",
+    "tools/relational_source_scenario_lineage.py": "0fddac0d97c9bbf2eb7d0947c0f989978e9f6b0e2b2ce94b160983035ecd3d36",
+    "tools/run_relational_source_scenario_lineage.py": "795b69d2c3dd0ac52e360c3c956e5f896196a2631412f9af8b3960f3e3bc146d"
+  },
+  "original_organizational_admissions": "All 11 WITHHELD; no new admission or independent rating"
+}

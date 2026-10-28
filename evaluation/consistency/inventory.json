@@ -19,8 +19,8 @@
     },
     {
       "path": ".github/workflows/post-release-validation.yml",
-      "sha256": "fc206263d7f365fc9d8667841f11db0bbfc03d3fae664cd8e586473b2471e015",
-      "bytes": 2654
+      "sha256": "546c6296e7db50002570af0d80d2d175f98c13acc00f9ee2a3829be941a1ed4a",
+      "bytes": 2992
     },
     {
       "path": ".github/workflows/quality.yml",
@@ -1028,6 +1028,26 @@
       "bytes": 6483
     },
     {
+      "path": "evaluation/relational/source-scenario-lineage/README.md",
+      "sha256": "eba2cdfeaa22ea07195f8a1a0fba2cb3e385917dd9444a024310cbb44a0aa10a",
+      "bytes": 2921
+    },
+    {
+      "path": "evaluation/relational/source-scenario-lineage/mapping-accounting.json",
+      "sha256": "50dd4fad66adde680c28b0e7f8c4131e064fc6b2e2deda6a74cb7638368db257",
+      "bytes": 292353
+    },
+    {
+      "path": "evaluation/relational/source-scenario-lineage/report.json",
+      "sha256": "cfa43582588a47f5a05a6fdb21def6a43ae5403913520af0775b0b89c5ce248d",
+      "bytes": 62896
+    },
+    {
+      "path": "evaluation/relational/source-scenario-lineage/traceability.json",
+      "sha256": "c8e9938209a6c0cfbc7e4e5990bdd652bbc97252a16d850ef3da432a59575c71",
+      "bytes": 10200
+    },
+    {
       "path": "evaluation/relational/source-scenario/README.md",
       "sha256": "6597d47bd3c166e410c6d254e55e4f65c67add207648e7b1f54937ab1d794daa",
       "bytes": 3279
@@ -1628,6 +1648,41 @@
       "bytes": 3291
     },
     {
+      "path": "implementation/relational/0.5.0/006_source_scenario_lineage.sql",
+      "sha256": "873928959d4bc0f5b040c9d1d1b583db37b8f6d3d706c7f8a3ef3349f55ad03d",
+      "bytes": 5740
+    },
+    {
+      "path": "implementation/relational/0.5.0/README.md",
+      "sha256": "ddccebbf7e975c1d8aa310c8728a63a61a005f2e74f21e7f6c2e0438a8a900ff",
+      "bytes": 4892
+    },
+    {
+      "path": "implementation/relational/0.5.0/component.json",
+      "sha256": "d43226ec189ee922474804fa9edf9232f8678ba9db63295940e08038d25f17b8",
+      "bytes": 3746
+    },
+    {
+      "path": "implementation/relational/0.5.0/contract.json",
+      "sha256": "b4519adb907a4867cb2668489cd7d70963a83709f0b7880d881b415a4d041ac1",
+      "bytes": 5754
+    },
+    {
+      "path": "implementation/relational/0.5.0/fixtures.json",
+      "sha256": "d978aee25c59526b56f1f1a6dd94544aba9772a9ee24a477c1e35e87e316217c",
+      "bytes": 25062
+    },
+    {
+      "path": "implementation/relational/0.5.0/queries/family.sql",
+      "sha256": "b7c653c80fab728dcf371926a4bbe52966890b9ae32448954918b85f49a55cf1",
+      "bytes": 1247
+    },
+    {
+      "path": "implementation/relational/0.5.0/schema-dictionary.md",
+      "sha256": "5387fd061dd0620dd9e96ff22a86efd8392a09a74e154b9b0cc894e9ed4e9c82",
+      "bytes": 4071
+    },
+    {
       "path": "implementation/validation/0.1.0/README.md",
       "sha256": "aa1a49c52dcae87ff2728889974ec60f38f27b822fc40944ed3bc6b6d6a0e792",
       "bytes": 2970
@@ -2078,6 +2133,11 @@
       "bytes": 7536
     },
     {
+      "path": "tests/test_source_scenario_lineage.py",
+      "sha256": "071a220b9aeb42668047231ed730392fdc816c877d356c4ed4e74d094a9bd569",
+      "bytes": 7623
+    },
+    {
       "path": "tests/test_stable_release.py",
       "sha256": "95dc0874084531d68eb84ca10d0f2a52d6aba79341d28e00c16dda6aa4743b51",
       "bytes": 6616
@@ -2211,6 +2271,11 @@
       "path": "tools/build_source_scenario_inventory.py",
       "sha256": "9ffe63f96a05a7dd45113daac84edc3056636776b0710af9c1c37fabaa2ae142",
       "bytes": 6670
+    },
+    {
+      "path": "tools/build_source_scenario_lineage_inventory.py",
+      "sha256": "0862802673da5eaad443e53c940fa38b70784dd92630184aba50f3ba40cc78d9",
+      "bytes": 7615
     },
     {
       "path": "tools/build_traceability.py",
@@ -2428,6 +2493,11 @@
       "bytes": 8257
     },
     {
+      "path": "tools/relational_source_scenario_lineage.py",
+      "sha256": "0fddac0d97c9bbf2eb7d0947c0f989978e9f6b0e2b2ce94b160983035ecd3d36",
+      "bytes": 7653
+    },
+    {
       "path": "tools/requirements-hermit.txt",
       "sha256": "26404db80a1bccb5897ec8df189aad04160c9bc511eb929fd5aa3fde4eb8d2ea",
       "bytes": 30
@@ -2536,6 +2606,11 @@
       "path": "tools/run_relational_source_scenario.py",
       "sha256": "334c54c1a016460ba3e2309b144a8ab5830acd2265e647e6e1fb06bd4ed6d1b5",
       "bytes": 14676
+    },
+    {
+      "path": "tools/run_relational_source_scenario_lineage.py",
+      "sha256": "795b69d2c3dd0ac52e360c3c956e5f896196a2631412f9af8b3960f3e3bc146d",
+      "bytes": 16265
     },
     {
       "path": "tools/run_shacl.py",

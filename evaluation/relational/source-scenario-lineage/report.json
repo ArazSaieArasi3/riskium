@@ -1,0 +1,1376 @@
+{
+  "schema": "riskium-source-scenario-lineage-execution-v1",
+  "profile": "0.5.0",
+  "schema_version": 6,
+  "runtime": {
+    "sqlite": "3.53.1",
+    "scope": "Actual local engine; hosted replay reports its own runtime."
+  },
+  "inputs_sha256": {
+    "implementation/relational/0.5.0/contract.json": "b4519adb907a4867cb2668489cd7d70963a83709f0b7880d881b415a4d041ac1",
+    "implementation/relational/0.5.0/fixtures.json": "d978aee25c59526b56f1f1a6dd94544aba9772a9ee24a477c1e35e87e316217c",
+    "implementation/relational/0.5.0/006_source_scenario_lineage.sql": "873928959d4bc0f5b040c9d1d1b583db37b8f6d3d706c7f8a3ef3349f55ad03d",
+    "implementation/relational/0.5.0/queries/family.sql": "b7c653c80fab728dcf371926a4bbe52966890b9ae32448954918b85f49a55cf1",
+    "tools/relational_source_scenario_lineage.py": "0fddac0d97c9bbf2eb7d0947c0f989978e9f6b0e2b2ce94b160983035ecd3d36",
+    "tools/run_relational_source_scenario_lineage.py": "795b69d2c3dd0ac52e360c3c956e5f896196a2631412f9af8b3960f3e3bc146d"
+  },
+  "summary": {
+    "cases": 54,
+    "outcomes": {
+      "PASS": 54
+    },
+    "kinds": {
+      "positive": 20,
+      "negative": 31,
+      "mutation": 3
+    },
+    "native_graph_oracles": 10
+  },
+  "cases": [
+    {
+      "id": "ALL_NATIVE_ORACLES",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": [
+        {
+          "version_id": "urn:riskium:knowledge:scenario-a-v1",
+          "matches": true,
+          "expected_nt": [
+            "<urn:riskium:knowledge:scenario-a-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:scenario-a-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-a> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case1> .",
+            "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-010> <urn:riskium:sql:context> .",
+            "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+            "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+            "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> ."
+          ],
+          "observed_nt": [
+            "<urn:riskium:knowledge:scenario-a-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:scenario-a-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-a> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case1> .",
+            "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-010> <urn:riskium:sql:context> .",
+            "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+            "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+            "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> ."
+          ]
+        },
+        {
+          "version_id": "urn:riskium:knowledge:scenario-a-v2",
+          "matches": true,
+          "expected_nt": [
+            "<urn:riskium:knowledge:scenario-a-v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:scenario-a-v2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-a> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case1> .",
+            "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case2> .",
+            "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:case2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> ."
+          ],
+          "observed_nt": [
+            "<urn:riskium:knowledge:scenario-a-v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:scenario-a-v2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-a> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case1> .",
+            "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case2> .",
+            "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:case2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> ."
+          ]
+        },
+        {
+          "version_id": "urn:riskium:knowledge:scenario-b-v1",
+          "matches": true,
+          "expected_nt": [
+            "<urn:riskium:knowledge:scenario-b-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:scenario-b-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-b> .",
+            "<urn:riskium:knowledge:scenario-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+            "<urn:riskium:knowledge:scenario-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:scenario-b> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case1> .",
+            "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> ."
+          ],
+          "observed_nt": [
+            "<urn:riskium:knowledge:scenario-b-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:scenario-b-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-b> .",
+            "<urn:riskium:knowledge:scenario-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+            "<urn:riskium:knowledge:scenario-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:scenario-b> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case1> .",
+            "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> ."
+          ]
+        },
+        {
+          "version_id": "urn:riskium:knowledge:reference-a-v1",
+          "matches": true,
+          "expected_nt": [
+            "<urn:riskium:knowledge:reference-a-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:reference-a-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-a> .",
+            "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> .",
+            "<urn:riskium:knowledge:reference-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-003> <urn:riskium:sql:context> .",
+            "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:case1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-a> .",
+            "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+            "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+            "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> ."
+          ],
+          "observed_nt": [
+            "<urn:riskium:knowledge:reference-a-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:reference-a-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-a> .",
+            "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> .",
+            "<urn:riskium:knowledge:reference-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-003> <urn:riskium:sql:context> .",
+            "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:case1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-a> .",
+            "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+            "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+            "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> ."
+          ]
+        },
+        {
+          "version_id": "urn:riskium:knowledge:reference-a-v2",
+          "matches": true,
+          "expected_nt": [
+            "<urn:riskium:knowledge:reference-a-v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:reference-a-v2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-a> .",
+            "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> .",
+            "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:case1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-a> ."
+          ],
+          "observed_nt": [
+            "<urn:riskium:knowledge:reference-a-v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:reference-a-v2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-a> .",
+            "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> .",
+            "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:case1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-a> ."
+          ]
+        },
+        {
+          "version_id": "urn:riskium:knowledge:reference-b-v1",
+          "matches": true,
+          "expected_nt": [
+            "<urn:riskium:knowledge:reference-b-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:reference-b-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-b> .",
+            "<urn:riskium:knowledge:reference-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:reference-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> .",
+            "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:case1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-b> .",
+            "<urn:riskium:sql:case2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:case2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-b> ."
+          ],
+          "observed_nt": [
+            "<urn:riskium:knowledge:reference-b-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:reference-b-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-b> .",
+            "<urn:riskium:knowledge:reference-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:reference-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> .",
+            "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:case1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-b> .",
+            "<urn:riskium:sql:case2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:case2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-b> ."
+          ]
+        },
+        {
+          "version_id": "urn:riskium:knowledge:scenario-a-v3",
+          "matches": true,
+          "expected_nt": [
+            "<urn:riskium:knowledge:scenario-a-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:scenario-a-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-a> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case1> .",
+            "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-010> <urn:riskium:sql:context> .",
+            "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+            "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+            "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> ."
+          ],
+          "observed_nt": [
+            "<urn:riskium:knowledge:scenario-a-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:scenario-a-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-a> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case1> .",
+            "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK2-010> <urn:riskium:sql:context> .",
+            "<urn:riskium:sql:case1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:context-v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:sql:context-v1> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:sql:context> .",
+            "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C002> .",
+            "<urn:riskium:sql:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> ."
+          ]
+        },
+        {
+          "version_id": "urn:riskium:knowledge:scenario-a-v4",
+          "matches": true,
+          "expected_nt": [
+            "<urn:riskium:knowledge:scenario-a-v4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:scenario-a-v4> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-a> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case2> .",
+            "<urn:riskium:sql:case2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> ."
+          ],
+          "observed_nt": [
+            "<urn:riskium:knowledge:scenario-a-v4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:scenario-a-v4> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:scenario-a> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C003> .",
+            "<urn:riskium:knowledge:scenario-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:scenario-a> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#R-36> <urn:riskium:sql:case2> .",
+            "<urn:riskium:sql:case2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> ."
+          ]
+        },
+        {
+          "version_id": "urn:riskium:knowledge:reference-a-v3",
+          "matches": true,
+          "expected_nt": [
+            "<urn:riskium:knowledge:reference-a-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:reference-a-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-a> .",
+            "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> .",
+            "<urn:riskium:sql:case2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:case2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-a> ."
+          ],
+          "observed_nt": [
+            "<urn:riskium:knowledge:reference-a-v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:reference-a-v3> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-a> .",
+            "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:reference-a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> .",
+            "<urn:riskium:sql:case2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01> .",
+            "<urn:riskium:sql:case2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RK3-001> <urn:riskium:knowledge:reference-a> ."
+          ]
+        },
+        {
+          "version_id": "urn:riskium:knowledge:reference-b-v2",
+          "matches": true,
+          "expected_nt": [
+            "<urn:riskium:knowledge:reference-b-v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:reference-b-v2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-b> .",
+            "<urn:riskium:knowledge:reference-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:reference-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> ."
+          ],
+          "observed_nt": [
+            "<urn:riskium:knowledge:reference-b-v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C015> .",
+            "<urn:riskium:knowledge:reference-b-v2> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RX-006> <urn:riskium:knowledge:reference-b> .",
+            "<urn:riskium:knowledge:reference-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014> .",
+            "<urn:riskium:knowledge:reference-b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X06> ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ATOMIC_ISSUE_FAILURE",
+      "kind": "negative",
+      "expected": "R-LINEAGE-OWNER",
+      "observed": "R-LINEAGE-OWNER",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "BACKUP_REOPEN",
+      "kind": "positive",
+      "expected": "aee5e6576f7f9a956e58d83483e028f41a49b3c26e31c8baea46aa6c8e750635",
+      "observed": "aee5e6576f7f9a956e58d83483e028f41a49b3c26e31c8baea46aa6c8e750635",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "BAD_CALENDAR",
+      "kind": "negative",
+      "expected": "R-LINEAGE-TIME",
+      "observed": "R-LINEAGE-TIME",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "BOUND_PARAMETER",
+      "kind": "positive",
+      "expected": [],
+      "observed": [],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "CONFIGURATION_OFF",
+      "kind": "negative",
+      "expected": "R-CONNECTION-POLICY",
+      "observed": "R-CONNECTION-POLICY",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "CROSS_ARTIFACT",
+      "kind": "negative",
+      "expected": "R-LINEAGE-OWNER",
+      "observed": "R-LINEAGE-OWNER",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "CROSS_CLASS",
+      "kind": "negative",
+      "expected": "R-LINEAGE-OWNER",
+      "observed": "R-LINEAGE-OWNER",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "CYCLE",
+      "kind": "negative",
+      "expected": "R-LINEAGE-CYCLE",
+      "observed": "R-LINEAGE-CYCLE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "DELETE_DECLARATION",
+      "kind": "negative",
+      "expected": "R-LINEAGE-IMMUTABLE",
+      "observed": "R-LINEAGE-IMMUTABLE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "DESCENDANT_ROOT",
+      "kind": "positive",
+      "expected": [
+        [
+          "urn:riskium:knowledge:scenario-a-v2",
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C003",
+          "Revised possible supplier delay",
+          "urn:riskium:knowledge:document-b",
+          "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+          "synthetic/B#s1",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-27T00:00:00Z",
+          [
+            "urn:riskium:sql:case1",
+            "urn:riskium:sql:case2"
+          ],
+          [],
+          "urn:riskium:knowledge:scenario-a-v1",
+          "Revise scenario interpretation",
+          "2026-10-28T00:00:00Z",
+          "urn:riskium:knowledge:declaration-document",
+          "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+          "synthetic/corrections#scenario-a-v2",
+          "Fixture curator declaration; not independent corroboration"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v4",
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C003",
+          "Further revised possible development",
+          "urn:riskium:knowledge:document-b",
+          "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+          "synthetic/B#s4",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-28T01:00:00Z",
+          [
+            "urn:riskium:sql:case2"
+          ],
+          [],
+          "urn:riskium:knowledge:scenario-a-v2",
+          "Refine revised branch",
+          "2026-10-28T02:00:00Z",
+          "urn:riskium:knowledge:declaration-document",
+          "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+          "synthetic/corrections#scenario-a-v4",
+          "Fixture curator declaration; not independent corroboration"
+        ]
+      ],
+      "observed": [
+        [
+          "urn:riskium:knowledge:scenario-a-v2",
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C003",
+          "Revised possible supplier delay",
+          "urn:riskium:knowledge:document-b",
+          "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+          "synthetic/B#s1",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-27T00:00:00Z",
+          [
+            "urn:riskium:sql:case1",
+            "urn:riskium:sql:case2"
+          ],
+          [],
+          "urn:riskium:knowledge:scenario-a-v1",
+          "Revise scenario interpretation",
+          "2026-10-28T00:00:00Z",
+          "urn:riskium:knowledge:declaration-document",
+          "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+          "synthetic/corrections#scenario-a-v2",
+          "Fixture curator declaration; not independent corroboration"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v4",
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C003",
+          "Further revised possible development",
+          "urn:riskium:knowledge:document-b",
+          "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+          "synthetic/B#s4",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-28T01:00:00Z",
+          [
+            "urn:riskium:sql:case2"
+          ],
+          [],
+          "urn:riskium:knowledge:scenario-a-v2",
+          "Refine revised branch",
+          "2026-10-28T02:00:00Z",
+          "urn:riskium:knowledge:declaration-document",
+          "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+          "synthetic/corrections#scenario-a-v4",
+          "Fixture curator declaration; not independent corroboration"
+        ]
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "DUMP_RESTORE",
+      "kind": "positive",
+      "expected": "aee5e6576f7f9a956e58d83483e028f41a49b3c26e31c8baea46aa6c8e750635",
+      "observed": "aee5e6576f7f9a956e58d83483e028f41a49b3c26e31c8baea46aa6c8e750635",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "DUPLICATE_PARENT",
+      "kind": "negative",
+      "expected": "R-LINEAGE-DUPLICATE",
+      "observed": "R-LINEAGE-DUPLICATE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "EARLY_DECLARATION",
+      "kind": "negative",
+      "expected": "R-LINEAGE-TIME",
+      "observed": "R-LINEAGE-TIME",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "EMPTY_INTERPRETATION",
+      "kind": "negative",
+      "expected": "R-LINEAGE-PROVENANCE",
+      "observed": "R-LINEAGE-PROVENANCE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "EMPTY_LOCATOR",
+      "kind": "negative",
+      "expected": "R-LINEAGE-PROVENANCE",
+      "observed": "R-LINEAGE-PROVENANCE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "EMPTY_REASON",
+      "kind": "negative",
+      "expected": "R-LINEAGE-PROVENANCE",
+      "observed": "R-LINEAGE-PROVENANCE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "EQUAL_LABEL_SINGLETON",
+      "kind": "positive",
+      "expected": [
+        [
+          "urn:riskium:knowledge:scenario-b-v1",
+          "urn:riskium:knowledge:scenario-b",
+          "RKM-C003",
+          "Different possible development",
+          "urn:riskium:knowledge:document-b",
+          "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+          "synthetic/B#s2",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-27T00:00:00Z",
+          [
+            "urn:riskium:sql:case1"
+          ],
+          [],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "observed": [
+        [
+          "urn:riskium:knowledge:scenario-b-v1",
+          "urn:riskium:knowledge:scenario-b",
+          "RKM-C003",
+          "Different possible development",
+          "urn:riskium:knowledge:document-b",
+          "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+          "synthetic/B#s2",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-27T00:00:00Z",
+          [
+            "urn:riskium:sql:case1"
+          ],
+          [],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "FAILED_UPGRADE",
+      "kind": "negative",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "FILE_REOPEN",
+      "kind": "positive",
+      "expected": "aee5e6576f7f9a956e58d83483e028f41a49b3c26e31c8baea46aa6c8e750635",
+      "observed": "aee5e6576f7f9a956e58d83483e028f41a49b3c26e31c8baea46aa6c8e750635",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "IDEMPOTENT_UPGRADE",
+      "kind": "positive",
+      "expected": "75586e58d5fb81f3508a7b153974b00d248d07797199c3abb26022e4686db48e",
+      "observed": "75586e58d5fb81f3508a7b153974b00d248d07797199c3abb26022e4686db48e",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "LEDGER_DRIFT",
+      "kind": "negative",
+      "expected": "R-LINEAGE-LEDGER",
+      "observed": "R-LINEAGE-LEDGER",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "LEGACY_NATIVE_PRESERVED",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "MISSING_CHILD",
+      "kind": "negative",
+      "expected": "R-LINEAGE-ENDPOINT",
+      "observed": "R-LINEAGE-ENDPOINT",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "MISSING_DECLARATION_SOURCE",
+      "kind": "negative",
+      "expected": "R-LINEAGE-SOURCE",
+      "observed": "R-LINEAGE-SOURCE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "MISSING_PARENT",
+      "kind": "negative",
+      "expected": "R-LINEAGE-ENDPOINT",
+      "observed": "R-LINEAGE-ENDPOINT",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "MUTANT_IMMUTABILITY_EXPOSED",
+      "kind": "mutation",
+      "expected": false,
+      "observed": false,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "MUTANT_OWNER_GUARD_EXPOSED",
+      "kind": "mutation",
+      "expected": [
+        [
+          "OWNER"
+        ]
+      ],
+      "observed": [
+        [
+          "OWNER"
+        ]
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "MUTANT_SOURCE_JOIN_EXPOSED",
+      "kind": "mutation",
+      "expected": false,
+      "observed": false,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "NONCANONICAL_TIME",
+      "kind": "negative",
+      "expected": "R-LINEAGE-TIME",
+      "observed": "R-LINEAGE-TIME",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "NONKNOWLEDGE_PARENT",
+      "kind": "negative",
+      "expected": "R-LINEAGE-ENDPOINT",
+      "observed": "R-LINEAGE-ENDPOINT",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "NONTEXT_INPUT",
+      "kind": "negative",
+      "expected": "R-LINEAGE-INPUT",
+      "observed": "R-LINEAGE-INPUT",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "NO_ADMISSION_OR_OCCURRENCE",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "NO_NATIVE_CORRECTION",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "OLD_GRAPHS_UNCHANGED",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "ORIGINAL_CONTEXT_PIN",
+      "kind": "positive",
+      "expected": [
+        "urn:riskium:sql:context-v1"
+      ],
+      "observed": [
+        "urn:riskium:sql:context-v1"
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "PLAIN_VERSION_UNLINKED",
+      "kind": "positive",
+      "expected": [
+        [
+          [
+            "urn:riskium:knowledge:reference-b-v1",
+            "urn:riskium:knowledge:reference-b",
+            "RKM-X06",
+            "Another alleged contributor",
+            "urn:riskium:knowledge:document-b",
+            "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+            "synthetic/B#r2",
+            "Deterministic synthetic fixture; not source evidence",
+            "2026-10-27T00:00:00Z",
+            [
+              "urn:riskium:sql:case1",
+              "urn:riskium:sql:case2"
+            ],
+            [],
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          [
+            "urn:riskium:knowledge:reference-b-v2",
+            "urn:riskium:knowledge:reference-b",
+            "RKM-X06",
+            "Separate version without declared correction",
+            "urn:riskium:knowledge:document-b",
+            "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+            "synthetic/B#r4",
+            "Deterministic synthetic fixture; not source evidence",
+            "2026-10-28T01:00:00Z",
+            [],
+            [],
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ]
+      ],
+      "observed": [
+        [
+          [
+            "urn:riskium:knowledge:reference-b-v1",
+            "urn:riskium:knowledge:reference-b",
+            "RKM-X06",
+            "Another alleged contributor",
+            "urn:riskium:knowledge:document-b",
+            "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+            "synthetic/B#r2",
+            "Deterministic synthetic fixture; not source evidence",
+            "2026-10-27T00:00:00Z",
+            [
+              "urn:riskium:sql:case1",
+              "urn:riskium:sql:case2"
+            ],
+            [],
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          [
+            "urn:riskium:knowledge:reference-b-v2",
+            "urn:riskium:knowledge:reference-b",
+            "RKM-X06",
+            "Separate version without declared correction",
+            "urn:riskium:knowledge:document-b",
+            "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+            "synthetic/B#r4",
+            "Deterministic synthetic fixture; not source evidence",
+            "2026-10-28T01:00:00Z",
+            [],
+            [],
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ]
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "POPULATED_UPGRADE",
+      "kind": "positive",
+      "expected": true,
+      "observed": true,
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "PROVENANCE_SEPARATE",
+      "kind": "positive",
+      "expected": [
+        "urn:riskium:knowledge:scenario-a-v2",
+        "urn:riskium:knowledge:scenario-a",
+        "RKM-C003",
+        "Revised possible supplier delay",
+        "urn:riskium:knowledge:document-b",
+        "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+        "synthetic/B#s1",
+        "Deterministic synthetic fixture; not source evidence",
+        "2026-10-27T00:00:00Z",
+        [
+          "urn:riskium:sql:case1",
+          "urn:riskium:sql:case2"
+        ],
+        [],
+        "urn:riskium:knowledge:scenario-a-v1",
+        "Revise scenario interpretation",
+        "2026-10-28T00:00:00Z",
+        "urn:riskium:knowledge:declaration-document",
+        "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+        "synthetic/corrections#scenario-a-v2",
+        "Fixture curator declaration; not independent corroboration"
+      ],
+      "observed": [
+        "urn:riskium:knowledge:scenario-a-v2",
+        "urn:riskium:knowledge:scenario-a",
+        "RKM-C003",
+        "Revised possible supplier delay",
+        "urn:riskium:knowledge:document-b",
+        "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+        "synthetic/B#s1",
+        "Deterministic synthetic fixture; not source evidence",
+        "2026-10-27T00:00:00Z",
+        [
+          "urn:riskium:sql:case1",
+          "urn:riskium:sql:case2"
+        ],
+        [],
+        "urn:riskium:knowledge:scenario-a-v1",
+        "Revise scenario interpretation",
+        "2026-10-28T00:00:00Z",
+        "urn:riskium:knowledge:declaration-document",
+        "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+        "synthetic/corrections#scenario-a-v2",
+        "Fixture curator declaration; not independent corroboration"
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "RAW_PARENT",
+      "kind": "negative",
+      "expected": "R-LINEAGE-ENDPOINT",
+      "observed": "R-LINEAGE-ENDPOINT",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "REFERENCE_BRANCHES",
+      "kind": "positive",
+      "expected": [
+        [
+          "urn:riskium:knowledge:reference-a-v1",
+          "urn:riskium:knowledge:reference-a",
+          "RKM-X06",
+          "Alleged contributor",
+          "urn:riskium:knowledge:document-a",
+          "{\"synthetic\":true,\"claim\":\"possible delay\",\"actual_occurrence\":null,\"zero\":\"0\"}",
+          "synthetic/A#r1",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-27T00:00:00Z",
+          [
+            "urn:riskium:sql:case1"
+          ],
+          [
+            "urn:riskium:sql:context-v1"
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "urn:riskium:knowledge:reference-a-v2",
+          "urn:riskium:knowledge:reference-a",
+          "RKM-X06",
+          "Unresolved alleged contributor",
+          "urn:riskium:knowledge:document-b",
+          "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+          "synthetic/B#r1",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-27T00:00:00Z",
+          [
+            "urn:riskium:sql:case1"
+          ],
+          [],
+          "urn:riskium:knowledge:reference-a-v1",
+          "Revise alleged contributor",
+          "2026-10-28T00:00:00Z",
+          "urn:riskium:knowledge:declaration-document",
+          "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+          "synthetic/corrections#reference-a-v2",
+          "Fixture curator declaration; not independent corroboration"
+        ],
+        [
+          "urn:riskium:knowledge:reference-a-v3",
+          "urn:riskium:knowledge:reference-a",
+          "RKM-X06",
+          "Alternative alleged contributor",
+          "urn:riskium:knowledge:document-a",
+          "{\"synthetic\":true,\"claim\":\"possible delay\",\"actual_occurrence\":null,\"zero\":\"0\"}",
+          "synthetic/A#r3",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-28T00:00:00Z",
+          [
+            "urn:riskium:sql:case2"
+          ],
+          [],
+          "urn:riskium:knowledge:reference-a-v1",
+          "Record alternate reference branch",
+          "2026-10-28T01:00:00Z",
+          "urn:riskium:knowledge:declaration-document",
+          "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+          "synthetic/corrections#reference-a-v3",
+          "Fixture curator declaration; not independent corroboration"
+        ]
+      ],
+      "observed": [
+        [
+          "urn:riskium:knowledge:reference-a-v1",
+          "urn:riskium:knowledge:reference-a",
+          "RKM-X06",
+          "Alleged contributor",
+          "urn:riskium:knowledge:document-a",
+          "{\"synthetic\":true,\"claim\":\"possible delay\",\"actual_occurrence\":null,\"zero\":\"0\"}",
+          "synthetic/A#r1",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-27T00:00:00Z",
+          [
+            "urn:riskium:sql:case1"
+          ],
+          [
+            "urn:riskium:sql:context-v1"
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "urn:riskium:knowledge:reference-a-v2",
+          "urn:riskium:knowledge:reference-a",
+          "RKM-X06",
+          "Unresolved alleged contributor",
+          "urn:riskium:knowledge:document-b",
+          "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+          "synthetic/B#r1",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-27T00:00:00Z",
+          [
+            "urn:riskium:sql:case1"
+          ],
+          [],
+          "urn:riskium:knowledge:reference-a-v1",
+          "Revise alleged contributor",
+          "2026-10-28T00:00:00Z",
+          "urn:riskium:knowledge:declaration-document",
+          "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+          "synthetic/corrections#reference-a-v2",
+          "Fixture curator declaration; not independent corroboration"
+        ],
+        [
+          "urn:riskium:knowledge:reference-a-v3",
+          "urn:riskium:knowledge:reference-a",
+          "RKM-X06",
+          "Alternative alleged contributor",
+          "urn:riskium:knowledge:document-a",
+          "{\"synthetic\":true,\"claim\":\"possible delay\",\"actual_occurrence\":null,\"zero\":\"0\"}",
+          "synthetic/A#r3",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-28T00:00:00Z",
+          [
+            "urn:riskium:sql:case2"
+          ],
+          [],
+          "urn:riskium:knowledge:reference-a-v1",
+          "Record alternate reference branch",
+          "2026-10-28T01:00:00Z",
+          "urn:riskium:knowledge:declaration-document",
+          "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+          "synthetic/corrections#reference-a-v3",
+          "Fixture curator declaration; not independent corroboration"
+        ]
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "REPLACE_PARENT",
+      "kind": "negative",
+      "expected": "R-LINEAGE-DUPLICATE",
+      "observed": "R-LINEAGE-DUPLICATE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "RESTORE_CYCLE_TAMPER",
+      "kind": "negative",
+      "expected": "R-LINEAGE-DATA-CYCLE",
+      "observed": "R-LINEAGE-DATA-CYCLE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "RESTORE_OWNER_TAMPER",
+      "kind": "negative",
+      "expected": "R-LINEAGE-DATA-OWNER",
+      "observed": "R-LINEAGE-DATA-OWNER",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "RESTORE_PROVENANCE_TAMPER",
+      "kind": "negative",
+      "expected": "R-LINEAGE-DATA-PROVENANCE",
+      "observed": "R-LINEAGE-DATA-PROVENANCE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "RESTORE_TIME_TAMPER",
+      "kind": "negative",
+      "expected": "R-LINEAGE-DATA-TIME",
+      "observed": "R-LINEAGE-DATA-TIME",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "SCENARIO_BRANCHES",
+      "kind": "positive",
+      "expected": [
+        [
+          "urn:riskium:knowledge:scenario-a-v1",
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C003",
+          "Possible supplier delay",
+          "urn:riskium:knowledge:document-a",
+          "{\"synthetic\":true,\"claim\":\"possible delay\",\"actual_occurrence\":null,\"zero\":\"0\"}",
+          "synthetic/A#s1",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-27T00:00:00Z",
+          [
+            "urn:riskium:sql:case1"
+          ],
+          [
+            "urn:riskium:sql:context-v1"
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v2",
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C003",
+          "Revised possible supplier delay",
+          "urn:riskium:knowledge:document-b",
+          "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+          "synthetic/B#s1",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-27T00:00:00Z",
+          [
+            "urn:riskium:sql:case1",
+            "urn:riskium:sql:case2"
+          ],
+          [],
+          "urn:riskium:knowledge:scenario-a-v1",
+          "Revise scenario interpretation",
+          "2026-10-28T00:00:00Z",
+          "urn:riskium:knowledge:declaration-document",
+          "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+          "synthetic/corrections#scenario-a-v2",
+          "Fixture curator declaration; not independent corroboration"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v3",
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C003",
+          "Alternative possible supplier delay",
+          "urn:riskium:knowledge:document-a",
+          "{\"synthetic\":true,\"claim\":\"possible delay\",\"actual_occurrence\":null,\"zero\":\"0\"}",
+          "synthetic/A#s3",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-28T00:00:00Z",
+          [
+            "urn:riskium:sql:case1"
+          ],
+          [
+            "urn:riskium:sql:context-v1"
+          ],
+          "urn:riskium:knowledge:scenario-a-v1",
+          "Record alternate scenario branch",
+          "2026-10-28T01:00:00Z",
+          "urn:riskium:knowledge:declaration-document",
+          "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+          "synthetic/corrections#scenario-a-v3",
+          "Fixture curator declaration; not independent corroboration"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v4",
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C003",
+          "Further revised possible development",
+          "urn:riskium:knowledge:document-b",
+          "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+          "synthetic/B#s4",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-28T01:00:00Z",
+          [
+            "urn:riskium:sql:case2"
+          ],
+          [],
+          "urn:riskium:knowledge:scenario-a-v2",
+          "Refine revised branch",
+          "2026-10-28T02:00:00Z",
+          "urn:riskium:knowledge:declaration-document",
+          "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+          "synthetic/corrections#scenario-a-v4",
+          "Fixture curator declaration; not independent corroboration"
+        ]
+      ],
+      "observed": [
+        [
+          "urn:riskium:knowledge:scenario-a-v1",
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C003",
+          "Possible supplier delay",
+          "urn:riskium:knowledge:document-a",
+          "{\"synthetic\":true,\"claim\":\"possible delay\",\"actual_occurrence\":null,\"zero\":\"0\"}",
+          "synthetic/A#s1",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-27T00:00:00Z",
+          [
+            "urn:riskium:sql:case1"
+          ],
+          [
+            "urn:riskium:sql:context-v1"
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v2",
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C003",
+          "Revised possible supplier delay",
+          "urn:riskium:knowledge:document-b",
+          "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+          "synthetic/B#s1",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-27T00:00:00Z",
+          [
+            "urn:riskium:sql:case1",
+            "urn:riskium:sql:case2"
+          ],
+          [],
+          "urn:riskium:knowledge:scenario-a-v1",
+          "Revise scenario interpretation",
+          "2026-10-28T00:00:00Z",
+          "urn:riskium:knowledge:declaration-document",
+          "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+          "synthetic/corrections#scenario-a-v2",
+          "Fixture curator declaration; not independent corroboration"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v3",
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C003",
+          "Alternative possible supplier delay",
+          "urn:riskium:knowledge:document-a",
+          "{\"synthetic\":true,\"claim\":\"possible delay\",\"actual_occurrence\":null,\"zero\":\"0\"}",
+          "synthetic/A#s3",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-28T00:00:00Z",
+          [
+            "urn:riskium:sql:case1"
+          ],
+          [
+            "urn:riskium:sql:context-v1"
+          ],
+          "urn:riskium:knowledge:scenario-a-v1",
+          "Record alternate scenario branch",
+          "2026-10-28T01:00:00Z",
+          "urn:riskium:knowledge:declaration-document",
+          "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+          "synthetic/corrections#scenario-a-v3",
+          "Fixture curator declaration; not independent corroboration"
+        ],
+        [
+          "urn:riskium:knowledge:scenario-a-v4",
+          "urn:riskium:knowledge:scenario-a",
+          "RKM-C003",
+          "Further revised possible development",
+          "urn:riskium:knowledge:document-b",
+          "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+          "synthetic/B#s4",
+          "Deterministic synthetic fixture; not source evidence",
+          "2026-10-28T01:00:00Z",
+          [
+            "urn:riskium:sql:case2"
+          ],
+          [],
+          "urn:riskium:knowledge:scenario-a-v2",
+          "Refine revised branch",
+          "2026-10-28T02:00:00Z",
+          "urn:riskium:knowledge:declaration-document",
+          "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+          "synthetic/corrections#scenario-a-v4",
+          "Fixture curator declaration; not independent corroboration"
+        ]
+      ],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "SCHEMA_DRIFT",
+      "kind": "negative",
+      "expected": "R-LINEAGE-SCHEMA",
+      "observed": "R-LINEAGE-SCHEMA",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "SELF_PARENT",
+      "kind": "negative",
+      "expected": "R-LINEAGE-SELF",
+      "observed": "R-LINEAGE-SELF",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "UNISSUED_CHILD",
+      "kind": "negative",
+      "expected": "R-LINEAGE-ENDPOINT",
+      "observed": "R-LINEAGE-ENDPOINT",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "UNISSUED_PARENT",
+      "kind": "negative",
+      "expected": "R-LINEAGE-ENDPOINT",
+      "observed": "R-LINEAGE-ENDPOINT",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    },
+    {
+      "id": "UNKNOWN_CONTEXT_RETAINED",
+      "kind": "positive",
+      "expected": [],
+      "observed": [],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "UNKNOWN_ROOT",
+      "kind": "positive",
+      "expected": [],
+      "observed": [],
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "id": "UPDATE_DECLARATION",
+      "kind": "negative",
+      "expected": "R-LINEAGE-IMMUTABLE",
+      "observed": "R-LINEAGE-IMMUTABLE",
+      "status": "PASS",
+      "detail": {
+        "rollback_preserved": true
+      }
+    }
+  ],
+  "independent_semantic_validation": false,
+  "stable_distribution_changed": false
+}
