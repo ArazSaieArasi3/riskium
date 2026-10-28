@@ -2144,8 +2144,8 @@
     },
     {
       "path": "releases/stable-request-v0.3.4.json",
-      "sha256": "ec997b5951c5094b5f8e8e12bd4e1e4fcfbb56c1d0e8806bfcb659352af352d9",
-      "bytes": 293
+      "sha256": "203da5c89bd1d57bd3716fb8beefffc797501df80def97d49a48099ca35899fb",
+      "bytes": 1131
     },
     {
       "path": "releases/stable-request.json",

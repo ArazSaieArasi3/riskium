@@ -2,7 +2,11 @@
   "schema": "riskium-reviewed-successor-request-v1",
   "profile": "stable-bounded-research-artifact",
   "tag": "v0.3.4",
-  "publish": false,
-  "reviewed_source_commit": null,
-  "authority": "Dry freeze preparation only; explicit publication intent follows successful exact-source review."
+  "publish": true,
+  "reviewed_source_commit": "7e22cc76db108b4db014b13d5d3a08270d0a339e",
+  "authority": "Explicit user request to complete the next step toward publication on 28 October 2026; the concrete reviewed source passed all gates before activating this new-release intent.",
+  "reviewed_freeze_run_id": 40692674365,
+  "reviewed_freeze_artifact_id": 12819315196,
+  "reviewed_freeze_artifact_sha256": "7eb70fcd4260470a5701b31368d778ac0bebe7d9b19e3f897826d6329809c3ad",
+  "reason": "All seven hosted workflows, 373 local/full hosted regressions, 17 dedicated release tests, 28 actual core and ten actual release freeze checks passed. Actual 23-file Wiki/311-body Pages freshness and the independently downloaded six-asset/966-file staged package were verified for this reviewed source. Only request/inventory metadata changes here; the workflow must freeze and independently verify this exact publication source again. No new owner/independent rating or broadened scientific/production acceptance."
 }
