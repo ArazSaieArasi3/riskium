@@ -3,6 +3,11 @@
   "baseline_commit": "caf58628a6b6a02508c644dbcb53d7e298b9b5a7",
   "source_files": [
     {
+      "path": ".github/workflows/current-alignment.yml",
+      "sha256": "d3febc2bafa1ab20687efce63f5399e8552133c9a4bab30d414343e9916c378e",
+      "bytes": 1705
+    },
+    {
       "path": ".github/workflows/documentation.yml",
       "sha256": "50169cf46025120394a68b45272167a0ee1bab5c5c952d2c228be8599ca2b0cd",
       "bytes": 2331
@@ -109,8 +114,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "00fa578aee86b995a9c84f08309a2c614b7dba7d5ec5370762b10f6eca55d46f",
-      "bytes": 25471
+      "sha256": "6e9662983d511562ed9077012e63c54f05a16b37e164127e847f3ebc3231a844",
+      "bytes": 25668
     },
     {
       "path": "RIGHTS.md",
@@ -154,8 +159,8 @@
     },
     {
       "path": "docs/conference-readiness.md",
-      "sha256": "2a58fc5781f59b85c5799ecc169a7f7fcbe13f84feca24d4322aed082c123269",
-      "bytes": 6879
+      "sha256": "4347f65f112027f4ac40c700dac04bb99436ffb3adc32b425ba976be488031f8",
+      "bytes": 7545
     },
     {
       "path": "docs/documentation-policy.md",
@@ -1484,8 +1489,8 @@
     },
     {
       "path": "evaluation/releases/v0.3.5-definition/readiness.json",
-      "sha256": "3920e55e8b21f73611bec38a05418d3938ae8ceb0ccdab86e704c115f0565305",
-      "bytes": 5487
+      "sha256": "bd47e0696dc29562448def15fd920c7091a66f354fb468a0cb5f26b2953a7e5f",
+      "bytes": 6222
     },
     {
       "path": "evaluation/semantic-assurance-plan.md",
@@ -2234,8 +2239,8 @@
     },
     {
       "path": "plans/v0.3.5.md",
-      "sha256": "aa33e17a51e8fa53a339f78ccc3682703cc45f4015ae7afd9ba711f29e523676",
-      "bytes": 13275
+      "sha256": "6639ecea4793617763185ce3951b75133a6a80757c21fb25af5d06b0aecbef93",
+      "bytes": 14006
     },
     {
       "path": "references/README.md",
@@ -2523,6 +2528,11 @@
       "bytes": 4613
     },
     {
+      "path": "tests/test_current_alignment.py",
+      "sha256": "22044ae74509ce82959700a9948ae9ae3a7d5dbc1a4ea630db7a6435d1ee7cbe",
+      "bytes": 5162
+    },
+    {
       "path": "tests/test_documentation_component.py",
       "sha256": "62e6f3a5c15424048535024be26418c758114d8d511315f95bea22f63b582b63",
       "bytes": 3012
@@ -2691,6 +2701,11 @@
       "path": "tools/audit_consistency.py",
       "sha256": "74c5606b8ffd6f03739f87cf4705532e4ced7f165d1fddf47868b1224cb93350",
       "bytes": 19611
+    },
+    {
+      "path": "tools/audit_current_alignment.py",
+      "sha256": "55cf1732b14b74556162c795ddd58349c2dbf11e66dc783c665fa3d6f2870d81",
+      "bytes": 19189
     },
     {
       "path": "tools/audit_relational_design.py",
@@ -3056,6 +3071,11 @@
       "path": "tools/publish_stable_release.py",
       "sha256": "195fbc8b8ace98e50cd54471b6d4c1fad67853a502fefc073a6bfea89e0ffc2f",
       "bytes": 14799
+    },
+    {
+      "path": "tools/read_current_manuscript.py",
+      "sha256": "37262c0c132d5dec065ff9572dbe0a6308097ee39d4798ebc5d3293ff7a5e730",
+      "bytes": 9181
     },
     {
       "path": "tools/relational_assessment.py",

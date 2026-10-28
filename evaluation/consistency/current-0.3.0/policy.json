@@ -1,0 +1,1193 @@
+{
+  "schema": "riskium-current-alignment-policy-v1",
+  "version": "0.3.0",
+  "source_baseline": "9a92ac92b29a127b1c38e6d0c052f8dc230dcb47",
+  "execution_issue": 54,
+  "release_issue": 51,
+  "model": "0.3.1",
+  "orsd": "0.4.3",
+  "original_drsd": "0.1.0",
+  "manuscript": "7.0.8",
+  "preserved_sha256": {
+    "evaluation/consistency/traceability.json": "7dd56b8cbfad61b5617609702a8fb1609966e13d480b0c9f44d01806266b22c6",
+    "evaluation/consistency/traceability.csv": "befcba3e48efdb023326f3419771dac676058fc8994fd3262fef17e2549bd095",
+    "evaluation/consistency/current-0.2.0/component.json": "97c3ee06c000e0934771d418ef5214f41c134f0bbf71f083f0a663af2933b8a0",
+    "docs/traceability.md": "699b1cc9c1316814717df58659125676ee23009e8a4641ea080c012eee0a92f5",
+    "tools/audit_consistency.py": "74c5606b8ffd6f03739f87cf4705532e4ced7f165d1fddf47868b1224cb93350",
+    "implementation/relational/0.7.0/contract.json": "1b67d8e0b446a97bfed632b6d26c2b58c668a51229377cc45e492f6b1dc5b533",
+    "implementation/relational/0.7.0/fixtures.json": "d309553c187e3208ee093f7994badd5724e66a8563b0503544dcca49e762ca0d"
+  },
+  "required_current_claim_routes": [
+    "RETAINED_CLAIM:FC-01",
+    "RETAINED_CLAIM:FC-02",
+    "RETAINED_CLAIM:FC-03",
+    "RETAINED_CLAIM:FC-04",
+    "RETAINED_CLAIM:FC-05",
+    "RETAINED_CLAIM:FC-06",
+    "RETAINED_CLAIM:FC-07",
+    "RETAINED_CLAIM:FC-08",
+    "RETAINED_CLAIM:FC-09",
+    "RETAINED_CLAIM:FC-10",
+    "RETAINED_CLAIM:FC-11",
+    "RETAINED_CLAIM:FC-12",
+    "DERIVED:SSC-01",
+    "DERIVED:SSC-02",
+    "DERIVED:SSC-03",
+    "DERIVED:SSC-04",
+    "DERIVED:SSC-05",
+    "DERIVED:SSC-06",
+    "DERIVED:SCL-01",
+    "DERIVED:SCL-02",
+    "DERIVED:SCL-03",
+    "DERIVED:SCL-04",
+    "DERIVED:SCL-05",
+    "DERIVED:SCL-06",
+    "DERIVED:EQR-01",
+    "DERIVED:EQR-02",
+    "DERIVED:EQR-03",
+    "DERIVED:EQR-04",
+    "DERIVED:EQR-05",
+    "DERIVED:EQR-06",
+    "DERIVED:ELC-01",
+    "DERIVED:ELC-02",
+    "DERIVED:ELC-03",
+    "DERIVED:ELC-04",
+    "DERIVED:ELC-05",
+    "DERIVED:ELC-06",
+    "DERIVED:ELC-07",
+    "DERIVED:ELC-08",
+    "DERIVED:ELC-09"
+  ],
+  "current_claims": [
+    {
+      "id": "FC-01",
+      "claim": "80 concepts; 77 typed-core plus one separate local anchor in OWL; 134 associations/bridges with 127 core object properties; 25 interpretation constraints.",
+      "limit": "Risk knowledge representation, not a risk process or improved decisions; full native language/semantic certification not claimed.",
+      "paper_disposition": {
+        "version": "7.0.8",
+        "word_paragraphs": [
+          51,
+          63
+        ],
+        "state": "BOUNDED_PAPER_BASELINE",
+        "limits": "Exact paper claims and locators are separately bound in manuscript-readback.json; historical FC prose is retained unchanged."
+      },
+      "evidence_paths": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/final-review/report.json"
+      ]
+    },
+    {
+      "id": "FC-02",
+      "claim": "Source-bound schema/SDK exchange and reviewed bounded OWL export.",
+      "limit": "Exchange/round-trip validation is not full OntoUML language validation or native-editor import; optional boundaries/bridges stay excluded.",
+      "paper_disposition": {
+        "version": "7.0.8",
+        "word_paragraphs": [
+          73,
+          74
+        ],
+        "state": "BOUNDED_PAPER_BASELINE",
+        "limits": "Exact paper claims and locators are separately bound in manuscript-readback.json; historical FC prose is retained unchanged."
+      },
+      "evidence_paths": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/final-review/report.json"
+      ]
+    },
+    {
+      "id": "FC-03",
+      "claim": "693 matching executed cases; 281 PASS and 14 NOT_RUN obligations out of 295.",
+      "limit": "Finite bounded OWL consequences, not ontology-wide semantic correctness or a fresh HermiT run by this preparation.",
+      "paper_disposition": {
+        "version": "7.0.8",
+        "word_paragraphs": [
+          87
+        ],
+        "state": "BOUNDED_PAPER_BASELINE",
+        "limits": "Exact paper claims and locators are separately bound in manuscript-readback.json; historical FC prose is retained unchanged."
+      },
+      "evidence_paths": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/final-review/report.json"
+      ]
+    },
+    {
+      "id": "FC-04",
+      "claim": "Historical ledger: 341 scoped PASS, one PARTIAL, 17 NOT_RUN out of 359. Later C-08/C-13/C-18 supplements have their own exact cohorts.",
+      "limit": "No rewritten historical denominator or arbitrary full risk-record admission; scenarios, preflight rejects and actual engine runs remain separate.",
+      "paper_disposition": {
+        "version": "7.0.8",
+        "word_paragraphs": [
+          88,
+          89
+        ],
+        "state": "BOUNDED_PAPER_BASELINE",
+        "limits": "Exact paper claims and locators are separately bound in manuscript-readback.json; historical FC prose is retained unchanged."
+      },
+      "evidence_paths": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/final-review/report.json"
+      ]
+    },
+    {
+      "id": "FC-05",
+      "claim": "Bounded public identity/history, assessment, correction, source/scenario, qualified-evidence and C065 lifecycle profiles remain separately versioned. Actual SQL fixed controls and per-version native oracles support their declared finite tasks, with exact source pins.",
+      "limit": "Private 128-table schema/859 old checks are not fresh public-model execution; PostgreSQL, formulas, workloads and full InformationContent mapping unclaimed.",
+      "paper_disposition": {
+        "version": "7.0.8",
+        "word_paragraphs": [
+          73,
+          77,
+          87,
+          105
+        ],
+        "state": "APPROVED_BASELINE_ONLY_LATER_ENGINEERING_NOT_CLAIMED",
+        "limits": "Exact paper claims and locators are separately bound in manuscript-readback.json; historical FC prose is retained unchanged."
+      },
+      "evidence_paths": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/final-review/report.json",
+        "evaluation/relational/evidence-lifecycle/report.json",
+        "evaluation/relational/evidence-lifecycle/mapping-accounting.json",
+        "implementation/relational/0.7.0/component.json"
+      ]
+    },
+    {
+      "id": "FC-06",
+      "claim": "28 trace identities; old 40 synthetic executions remain 32 answers plus eight mutants. Current CQ06 and CQ07/08 supplements separately bind finite primary-source cohorts.",
+      "limit": "Trace accounting and successful query/control outcomes are not full original requirement/source-population acceptance or independent validation.",
+      "paper_disposition": {
+        "version": "7.0.8",
+        "word_paragraphs": [
+          94
+        ],
+        "state": "BOUNDED_PAPER_BASELINE",
+        "limits": "Exact paper claims and locators are separately bound in manuscript-readback.json; historical FC prose is retained unchanged."
+      },
+      "evidence_paths": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/final-review/report.json"
+      ]
+    },
+    {
+      "id": "FC-07",
+      "claim": "11 selected sources, 13 inspected-portion interpretation rows and explicit limits.",
+      "limit": "No full normative crosswalk/compliance, exhaustive literature search or head-to-head superiority claim.",
+      "paper_disposition": {
+        "version": "7.0.8",
+        "word_paragraphs": [
+          98,
+          99
+        ],
+        "state": "BOUNDED_PAPER_BASELINE",
+        "limits": "Exact paper claims and locators are separately bound in manuscript-readback.json; historical FC prose is retained unchanged."
+      },
+      "evidence_paths": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/final-review/report.json"
+      ]
+    },
+    {
+      "id": "FC-08",
+      "claim": "Historical dataset/application numbers retain their archived source/version; current source-backed supplements separately inspect 13 statements, five cell pairs and 11 withheld candidates.",
+      "limit": "No independently validated RiskCases, incidents, complete extraction accuracy, held-out generalization, clinical probability recomputation or organizational benefit.",
+      "paper_disposition": {
+        "version": "7.0.8",
+        "word_paragraphs": [
+          109,
+          110,
+          111,
+          112,
+          113
+        ],
+        "state": "BOUNDED_PAPER_BASELINE",
+        "limits": "Exact paper claims and locators are separately bound in manuscript-readback.json; historical FC prose is retained unchanged."
+      },
+      "evidence_paths": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/final-review/report.json"
+      ]
+    },
+    {
+      "id": "FC-09",
+      "claim": "Bounded graph connectivity/count observations and original source-bound qualitative design review.",
+      "limit": "No full semantic COH/COP, unsupported historical equations or overall domain/ontology quality ranking.",
+      "paper_disposition": {
+        "version": "7.0.8",
+        "word_paragraphs": [
+          101,
+          103
+        ],
+        "state": "BOUNDED_PAPER_BASELINE",
+        "limits": "Exact paper claims and locators are separately bound in manuscript-readback.json; historical FC prose is retained unchanged."
+      },
+      "evidence_paths": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/final-review/report.json"
+      ]
+    },
+    {
+      "id": "FC-10",
+      "claim": "Owner/author-led acceptance of the bounded release scope with assistant support is recorded. Independent semantic ratings remain zero.",
+      "limit": "Bounded owner acceptance is not independent semantic review, statistical agreement or full original requirement fulfillment.",
+      "paper_disposition": {
+        "version": "7.0.8",
+        "word_paragraphs": [
+          107
+        ],
+        "state": "BOUNDED_PAPER_BASELINE",
+        "limits": "Exact paper claims and locators are separately bound in manuscript-readback.json; historical FC prose is retained unchanged."
+      },
+      "evidence_paths": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/final-review/report.json",
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/independent-review/responses.json"
+      ]
+    },
+    {
+      "id": "FC-11",
+      "claim": "Stable source distribution v0.3.4 is published with its exact source and six separately verified assets. v0.3.5 is under preparation; the approved article keeps its historical development-publication statement.",
+      "limit": "Prerelease publication/readback is not final freeze or independent replication; private article/database bytes remain separate.",
+      "paper_disposition": {
+        "version": "7.0.8",
+        "word_paragraphs": [
+          107
+        ],
+        "state": "APPROVED_BASELINE_ONLY_LATER_ENGINEERING_NOT_CLAIMED",
+        "limits": "Exact paper claims and locators are separately bound in manuscript-readback.json; historical FC prose is retained unchanged."
+      },
+      "evidence_paths": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/final-review/report.json",
+        "evaluation/releases/v0.3.5-definition/published-baseline.json",
+        "releases/distribution-v0.3.4.json"
+      ]
+    },
+    {
+      "id": "FC-12",
+      "claim": "Retain conceptual commitments while explicitly narrowing current executable task claims for review.",
+      "limit": "No current computed-score engine, full temporal/workflow authority/admission, transformations, full private-schema migration, future extensions or universal standards compliance.",
+      "paper_disposition": {
+        "version": "7.0.8",
+        "word_paragraphs": [
+          130,
+          131,
+          132,
+          133
+        ],
+        "state": "BOUNDED_PAPER_BASELINE",
+        "limits": "Exact paper claims and locators are separately bound in manuscript-readback.json; historical FC prose is retained unchanged."
+      },
+      "evidence_paths": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/final-review/report.json"
+      ]
+    }
+  ],
+  "manuscript_locators": {
+    "MC-001": {
+      "word": [
+        {
+          "location": "P51",
+          "fragment": "80 catalog concepts"
+        }
+      ],
+      "pdf_fragments": [
+        "80 catalog concepts"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-002": {
+      "word": [
+        {
+          "location": "P51",
+          "fragment": "77 form the typed core"
+        }
+      ],
+      "pdf_fragments": [
+        "77 form the typed core"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-003": {
+      "word": [
+        {
+          "location": "P51",
+          "fragment": "three are optional boundary notions"
+        }
+      ],
+      "pdf_fragments": [
+        "three are optional boundary notions"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-004": {
+      "word": [
+        {
+          "location": "P51",
+          "fragment": "One imported abstract ExternalObject type"
+        }
+      ],
+      "pdf_fragments": [
+        "One imported abstract ExternalObject type"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-005": {
+      "word": [
+        {
+          "location": "P51",
+          "fragment": "11 domains"
+        }
+      ],
+      "pdf_fragments": [
+        "11 domains"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-006": {
+      "word": [
+        {
+          "location": "P51",
+          "fragment": "134 associations and bridges"
+        }
+      ],
+      "pdf_fragments": [
+        "134 associations and bridges"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-007": {
+      "word": [
+        {
+          "location": "P51",
+          "fragment": "127 core associations"
+        }
+      ],
+      "pdf_fragments": [
+        "127 core associations"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-008": {
+      "word": [
+        {
+          "location": "P51",
+          "fragment": "66 generalizations"
+        }
+      ],
+      "pdf_fragments": [
+        "66 generalizations"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-009": {
+      "word": [
+        {
+          "location": "P51",
+          "fragment": "25 interpretation constraints"
+        }
+      ],
+      "pdf_fragments": [
+        "25 interpretation constraints"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-010": {
+      "word": [
+        {
+          "location": "P63",
+          "fragment": "28 concepts"
+        }
+      ],
+      "pdf_fragments": [
+        "28 concepts"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-011": {
+      "word": [
+        {
+          "location": "P63",
+          "fragment": "31 associations"
+        }
+      ],
+      "pdf_fragments": [
+        "31 associations"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-012": {
+      "word": [
+        {
+          "location": "P63",
+          "fragment": "10 generalizations"
+        }
+      ],
+      "pdf_fragments": [
+        "10 generalizations"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-013": {
+      "word": [
+        {
+          "location": "P73",
+          "fragment": "schema 1.0.2"
+        }
+      ],
+      "pdf_fragments": [
+        "schema 1.0.2"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-014": {
+      "word": [
+        {
+          "location": "P73",
+          "fragment": "ontouml-js 1.0.0"
+        }
+      ],
+      "pdf_fragments": [
+        "ontouml-js 1.0.0"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-015": {
+      "word": [
+        {
+          "location": "P73",
+          "fragment": "585 elements"
+        }
+      ],
+      "pdf_fragments": [
+        "585 elements"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-016": {
+      "word": [
+        {
+          "location": "P73",
+          "fragment": "78 classes"
+        }
+      ],
+      "pdf_fragments": [
+        "78 classes"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-017": {
+      "word": [
+        {
+          "location": "P92",
+          "fragment": "Ten incomplete generalization sets"
+        }
+      ],
+      "pdf_fragments": [
+        "Ten incomplete generalization sets"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-018": {
+      "word": [
+        {
+          "location": "P87",
+          "fragment": "693 executed cases"
+        }
+      ],
+      "pdf_fragments": [
+        "693 executed cases"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-019": {
+      "word": [
+        {
+          "location": "P87",
+          "fragment": "281 pass"
+        }
+      ],
+      "pdf_fragments": [
+        "281 pass"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-020": {
+      "word": [
+        {
+          "location": "P87",
+          "fragment": "295 predeclared obligations"
+        }
+      ],
+      "pdf_fragments": [
+        "295 predeclared obligations"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-021": {
+      "word": [
+        {
+          "location": "P87",
+          "fragment": "14 remain NOT_RUN"
+        }
+      ],
+      "pdf_fragments": [
+        "14 remain NOT_RUN"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-022": {
+      "word": [
+        {
+          "location": "P87",
+          "fragment": "95.25%"
+        }
+      ],
+      "pdf_fragments": [
+        "95.25%"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-023": {
+      "word": [
+        {
+          "location": "P89",
+          "fragment": "341 scoped PASS"
+        }
+      ],
+      "pdf_fragments": [
+        "341 scoped PASS"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-024": {
+      "word": [
+        {
+          "location": "P89",
+          "fragment": "359 obligations"
+        }
+      ],
+      "pdf_fragments": [
+        "359 obligations"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-025": {
+      "word": [
+        {
+          "location": "P89",
+          "fragment": "one PARTIAL (C-08)"
+        }
+      ],
+      "pdf_fragments": [
+        "one PARTIAL (C-08)"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-026": {
+      "word": [
+        {
+          "location": "P89",
+          "fragment": "17 NOT_RUN"
+        }
+      ],
+      "pdf_fragments": [
+        "17 NOT_RUN"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-027": {
+      "word": [
+        {
+          "location": "P89",
+          "fragment": "94.99%"
+        }
+      ],
+      "pdf_fragments": [
+        "94.99%"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-028": {
+      "word": [
+        {
+          "location": "P88",
+          "fragment": "77, 1,878, 2,012, 48 and 47 actual SHACL validations"
+        }
+      ],
+      "pdf_fragments": [
+        "77, 1,878, 2,012, 48 and 47 actual SHACL validations"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-029": {
+      "word": [
+        {
+          "location": "P88",
+          "fragment": "77, 1,878, 2,012, 48 and 47 actual SHACL validations"
+        }
+      ],
+      "pdf_fragments": [
+        "77, 1,878, 2,012, 48 and 47 actual SHACL validations"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-030": {
+      "word": [
+        {
+          "location": "P88",
+          "fragment": "77, 1,878, 2,012, 48 and 47 actual SHACL validations"
+        }
+      ],
+      "pdf_fragments": [
+        "77, 1,878, 2,012, 48 and 47 actual SHACL validations"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-031": {
+      "word": [
+        {
+          "location": "P88",
+          "fragment": "77, 1,878, 2,012, 48 and 47 actual SHACL validations"
+        }
+      ],
+      "pdf_fragments": [
+        "77, 1,878, 2,012, 48 and 47 actual SHACL validations"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-032": {
+      "word": [
+        {
+          "location": "P88",
+          "fragment": "77, 1,878, 2,012, 48 and 47 actual SHACL validations"
+        }
+      ],
+      "pdf_fragments": [
+        "77, 1,878, 2,012, 48 and 47 actual SHACL validations"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-033": {
+      "word": [
+        {
+          "location": "P94",
+          "fragment": "32 fixed-answer cases"
+        }
+      ],
+      "pdf_fragments": [
+        "32 fixed-answer cases"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-034": {
+      "word": [
+        {
+          "location": "P94",
+          "fragment": "eight query mutants"
+        }
+      ],
+      "pdf_fragments": [
+        "eight query mutants"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-035": {
+      "word": [
+        {
+          "location": "P94",
+          "fragment": "five of eight original population contracts"
+        }
+      ],
+      "pdf_fragments": [
+        "five of eight original population contracts"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-036": {
+      "word": [
+        {
+          "location": "P94",
+          "fragment": "all eight contracts"
+        }
+      ],
+      "pdf_fragments": [
+        "all eight contracts"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-037": {
+      "word": [
+        {
+          "location": "P94",
+          "fragment": "28 rows"
+        }
+      ],
+      "pdf_fragments": [
+        "28 rows"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-038": {
+      "word": [
+        {
+          "location": "P94",
+          "fragment": "12 requirements"
+        }
+      ],
+      "pdf_fragments": [
+        "12 requirements"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-039": {
+      "word": [
+        {
+          "location": "P94",
+          "fragment": "eight scope statements"
+        }
+      ],
+      "pdf_fragments": [
+        "eight scope statements"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-040": {
+      "word": [
+        {
+          "location": "P94",
+          "fragment": "eight CQ contracts"
+        }
+      ],
+      "pdf_fragments": [
+        "eight CQ contracts"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-041": {
+      "word": [
+        {
+          "location": "P99",
+          "fragment": "11 selected sources"
+        }
+      ],
+      "pdf_fragments": [
+        "11 selected sources"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-042": {
+      "word": [
+        {
+          "location": "P99",
+          "fragment": "13 interpretation rows"
+        }
+      ],
+      "pdf_fragments": [
+        "13 interpretation rows"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-043": {
+      "word": [
+        {
+          "location": "P101",
+          "fragment": "one connected component with no isolated node"
+        }
+      ],
+      "pdf_fragments": [
+        "one connected component with no isolated node"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "The prose reports connectivity, not every numeric node count. 81=80 catalog+one import and 78=77 core+one import are source-receipt metadata; the full checked dictionary is not asserted verbatim in the paper."
+    },
+    "MC-044": {
+      "word": [
+        {
+          "location": "P101",
+          "fragment": "one connected component with no isolated node"
+        }
+      ],
+      "pdf_fragments": [
+        "one connected component with no isolated node"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "The prose reports connectivity, not every numeric node count. 81=80 catalog+one import and 78=77 core+one import are source-receipt metadata; the full checked dictionary is not asserted verbatim in the paper."
+    },
+    "MC-045": {
+      "word": [
+        {
+          "location": "P101",
+          "fragment": "Association-only analysis leaves seven nodes isolated"
+        }
+      ],
+      "pdf_fragments": [
+        "Association-only analysis leaves seven nodes isolated"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "The prose reports connectivity, not every numeric node count. 81=80 catalog+one import and 78=77 core+one import are source-receipt metadata; the full checked dictionary is not asserted verbatim in the paper."
+    },
+    "MC-046": {
+      "word": [
+        {
+          "location": "P101",
+          "fragment": "nine domains are connected"
+        }
+      ],
+      "pdf_fragments": [
+        "nine domains are connected"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-047": {
+      "word": [
+        {
+          "location": "P101",
+          "fragment": "each have two components"
+        }
+      ],
+      "pdf_fragments": [
+        "each have two components"
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution."
+    },
+    "MC-048": {
+      "word": [
+        {
+          "location": "P105",
+          "fragment": "454/454 finite checks"
+        }
+      ],
+      "pdf_fragments": [
+        "454/454 finite checks"
+      ],
+      "disposition": "RETAINED_HISTORICAL_COMPANION_ONLY",
+      "qualification": "Explicitly archived SQLite companion; private source/version retained in the historical ledger, not rerun as the public current model."
+    },
+    "MC-049": {
+      "word": [
+        {
+          "location": "P105",
+          "fragment": "454/454 finite checks"
+        }
+      ],
+      "pdf_fragments": [
+        "454/454 finite checks"
+      ],
+      "disposition": "RETAINED_HISTORICAL_COMPANION_ONLY",
+      "qualification": "Explicitly archived SQLite companion; private source/version retained in the historical ledger, not rerun as the public current model."
+    },
+    "MC-050": {
+      "word": [
+        {
+          "location": "P105",
+          "fragment": "157 rejected mutations"
+        }
+      ],
+      "pdf_fragments": [
+        "157 rejected mutations"
+      ],
+      "disposition": "RETAINED_HISTORICAL_COMPANION_ONLY",
+      "qualification": "Explicitly archived SQLite companion; private source/version retained in the historical ledger, not rerun as the public current model."
+    },
+    "MC-051": {
+      "word": [
+        {
+          "location": "P112",
+          "fragment": "67/67 source-preservation and loading checks"
+        }
+      ],
+      "pdf_fragments": [
+        "67/67 source-preservation and loading checks"
+      ],
+      "disposition": "RETAINED_HISTORICAL_COMPANION_ONLY",
+      "qualification": "Historical archived pharmaceutical execution; separate from ontology CQ, software and independent-review populations."
+    },
+    "MC-052": {
+      "word": [
+        {
+          "location": "P112",
+          "fragment": "14/14 adjudication-integrity checks"
+        }
+      ],
+      "pdf_fragments": [
+        "14/14 adjudication-integrity checks"
+      ],
+      "disposition": "RETAINED_HISTORICAL_COMPANION_ONLY",
+      "qualification": "Historical archived pharmaceutical execution; separate from ontology CQ, software and independent-review populations."
+    },
+    "MC-053": {
+      "word": [
+        {
+          "location": "P109",
+          "fragment": "30 journal articles"
+        }
+      ],
+      "pdf_fragments": [
+        "30 journal articles"
+      ],
+      "disposition": "RETAINED_HISTORICAL_DATASET_ONLY",
+      "qualification": "Dataset v0.6 population, not incidents, current independent case validation or a fresh public extraction run."
+    },
+    "MC-054": {
+      "word": [
+        {
+          "location": "P109",
+          "fragment": "one corrigendum"
+        }
+      ],
+      "pdf_fragments": [
+        "one corrigendum"
+      ],
+      "disposition": "RETAINED_HISTORICAL_DATASET_ONLY",
+      "qualification": "Dataset v0.6 population, not incidents, current independent case validation or a fresh public extraction run."
+    },
+    "MC-055": {
+      "word": [
+        {
+          "location": "P109",
+          "fragment": "883 consolidated items"
+        }
+      ],
+      "pdf_fragments": [
+        "883 consolidated items"
+      ],
+      "disposition": "RETAINED_HISTORICAL_DATASET_ONLY",
+      "qualification": "Dataset v0.6 population, not incidents, current independent case validation or a fresh public extraction run."
+    },
+    "MC-056": {
+      "word": [
+        {
+          "location": "P109",
+          "fragment": "1,011 active source records"
+        }
+      ],
+      "pdf_fragments": [
+        "1,011 active source records"
+      ],
+      "disposition": "RETAINED_HISTORICAL_DATASET_ONLY",
+      "qualification": "Dataset v0.6 population, not incidents, current independent case validation or a fresh public extraction run."
+    },
+    "MC-057": {
+      "word": [
+        {
+          "location": "P109",
+          "fragment": "1,695 reported values"
+        }
+      ],
+      "pdf_fragments": [
+        "1,695 reported values"
+      ],
+      "disposition": "RETAINED_HISTORICAL_DATASET_ONLY",
+      "qualification": "Dataset v0.6 population, not incidents, current independent case validation or a fresh public extraction run."
+    },
+    "MC-058": {
+      "word": [
+        {
+          "location": "P110",
+          "fragment": "84 traceable components"
+        }
+      ],
+      "pdf_fragments": [
+        "84 traceable components"
+      ],
+      "disposition": "RETAINED_HISTORICAL_DATASET_ONLY",
+      "qualification": "Original eleven source-local scenarios and their components; source/version preserved."
+    },
+    "MC-059": {
+      "word": [
+        {
+          "location": "P112",
+          "fragment": "All eleven source-local case admissions are withheld, leaving zero enterprise RiskCases."
+        }
+      ],
+      "pdf_fragments": [
+        "All eleven source-local case admissions are withheld, leaving zero enterprise RiskCases."
+      ],
+      "disposition": "RETAINED_WITHHELD_NOT_ADMITTED",
+      "qualification": "No organizational case admitted by current engineering."
+    },
+    "MC-060": {
+      "word": [
+        {
+          "location": "P112",
+          "fragment": "all eleven recorded risk-priority numbers agree"
+        }
+      ],
+      "pdf_fragments": [
+        "all eleven recorded risk-priority numbers agree"
+      ],
+      "disposition": "RETAINED_SOURCE_ARITHMETIC_ONLY",
+      "qualification": "Source arithmetic fidelity, not formula engine, calibrated prediction or case validation."
+    },
+    "MC-061": {
+      "word": [
+        {
+          "location": "P107",
+          "fragment": "this review is not independent validation"
+        }
+      ],
+      "pdf_fragments": [
+        "this review is not independent validation"
+      ],
+      "disposition": "ZERO_INDEPENDENT_RATINGS",
+      "qualification": "Author-led bounded owner-scope review is distinct from independent semantic adjudication."
+    },
+    "MC-062": {
+      "word": [
+        {
+          "location": "P89",
+          "fragment": "no overall semantic-correctness percentage is estimated"
+        }
+      ],
+      "pdf_fragments": [
+        "no overall semantic-correctness percentage is estimated"
+      ],
+      "disposition": "NO_AGGREGATE_SEMANTIC_PERCENT",
+      "qualification": "Structural/control counts do not establish scientific correctness."
+    },
+    "MC-063": {
+      "word": [
+        {
+          "location": "P103",
+          "fragment": "Full semantic COH and COP are not computed here."
+        }
+      ],
+      "pdf_fragments": [
+        "Full semantic COH and COP are not computed here."
+      ],
+      "disposition": "WITHDRAWN_NOT_REINTRODUCED",
+      "qualification": "Old 0.1557/0.2597 assertions absent; current paper retains connectivity only."
+    },
+    "MC-064": {
+      "word": [
+        {
+          "location": "P112",
+          "fragment": "the latter are not query tests"
+        }
+      ],
+      "pdf_fragments": [
+        "the latter are not query tests"
+      ],
+      "disposition": "WITHDRAWN_NOT_REINTRODUCED",
+      "qualification": "Unsupported former Table V contract/query totals absent; retained 14/14 is explicitly a separate adjudication-integrity population."
+    },
+    "MC-065": {
+      "word": [
+        {
+          "location": "P92",
+          "fragment": "No complete anti-pattern certification is claimed."
+        }
+      ],
+      "pdf_fragments": [
+        "No complete anti-pattern certification is claimed."
+      ],
+      "disposition": "WITHDRAWN_NOT_REINTRODUCED",
+      "qualification": "Unsupported 8 candidates/7 justified/1 open counts absent; bounded pattern discussion remains."
+    }
+  },
+  "later_engineering_absent_from_paper": [
+    "ELC-01",
+    "SSC-01",
+    "SCL-01",
+    "EQR-01",
+    "0.7.0",
+    "evidence_lifecycle_event",
+    "SELECT/WITHDRAW/CLEAR",
+    "0.1557",
+    "0.2597",
+    "13/13",
+    "35/35",
+    "18/18",
+    "127/127"
+  ],
+  "artifact_paths": [
+    "ontology/riskium-model.json",
+    "ontology/native/riskium.ontouml.json",
+    "ontology/derived/riskium.owl.ttl",
+    "requirements/ontology-requirements.md",
+    "requirements/relational-requirements.json",
+    "requirements/release-scope-v0.3.1.json",
+    "requirements/traceability-plan.json",
+    "diagrams/manifest.json",
+    "diagrams/selected-view.svg",
+    "diagrams/complete-view.svg",
+    "evaluation/native-stage-receipt.json",
+    "evaluation/native-exchange-checks.json",
+    "evaluation/native-roundtrip-checks.json",
+    "evaluation/owl-mapping-receipt.json",
+    "evaluation/formal-reference/register.json",
+    "evaluation/cq/report.json",
+    "evaluation/sources/cq06/cohort.json",
+    "evaluation/sources/cq0708/cohort.json",
+    "releases/artifact-matrix.json",
+    "releases/development-components-v0.3.4.json",
+    "releases/prepared-components-v0.3.4.json",
+    "releases/distribution-v0.3.4.json",
+    "evaluation/releases/v0.3.5-definition/published-baseline.json",
+    "tools/publication/guide-registry.json",
+    "references/corpus.json",
+    "evaluation/references/report.json",
+    "tools/publication/pages-registry.json",
+    "README.md",
+    "plans/v0.3.5.md",
+    "docs/conference-readiness.md",
+    "evaluation/releases/v0.3.5-definition/readiness.json"
+  ],
+  "limits": [
+    "450 routes are version-bound accounting, not 450 successful scientific tests or complete native mapping.",
+    "39 declared current retained claim routes are the 12 bounded release claim groups plus 27 later derived requirements. Original 65 paper dispositions, seven amendments and five older correction requirements stay separately accounted.",
+    "213 four-profile SQL controls retain their separate denominators; one ELC weakened-rule experiment is separately counted. No new HermiT/SHACL execution or independent semantic rating.",
+    "Historical/private evidence is bound to its original archive/version and is not a current public reexecution.",
+    "Actual approved 7.0.8 Word/PDF bytes and locators are checked; later SSC/SCL/EQR/ELC engineering is not silently added to the article.",
+    "Current documentation bodies/native Wiki/actual Pages alignment remain R5. Final selected v0.3.5 matrix, freeze, tag/assets/Latest and independent download remain R6.",
+    "Traceability does not establish exhaustive related work, independent reviewer adequacy, organizational benefits, full original MUST fulfillment or conference submission readiness."
+  ]
+}

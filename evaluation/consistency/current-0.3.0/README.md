@@ -1,0 +1,23 @@
+# Current source and approved-paper alignment 0.3.0
+
+This checkpoint joins **450 accounting routes**: all 423 historical rows, byte-preserved in their original JSON/CSV, plus 27 SSC/SCL/EQR/ELC derived requirements. It accounts for all **306 native IDs**, including **236 deferred** mappings. The 39 declared current retained claim routes are the twelve bounded release claim groups and 27 derived requirements. Accounting is not complete implementation, scientific correctness or independent acceptance.
+
+[Current JSON routes](traceability.json) · [CSV](traceability.csv) · [Actual checks and input hashes](report.json) · [Declared scope, claim limits and paper locators](policy.json) · [Actual Word/PDF readback](manuscript-readback.json) · [Component](component.json). Parent [#51](https://github.com/ArazSaieArasi3/riskium/issues/51); execution [#54](https://github.com/ArazSaieArasi3/riskium/issues/54).
+
+Each historical route references its unchanged row by exact JSON pointer and canonical row hash. Native routes add the current disposition from the complete lifecycle accounting. Derived routes bind original requirements/CQs, source-native clauses or declared supplementary behavior, exact SQL/API/query, fixed fixtures, actual report cases/runtime, retained claim, exclusion and **NOT_CLAIMED_IN_PAPER** disposition. The report's shared SHA-256 input registry binds every referenced public path. All four current SQL populations are covered in both directions: 54, 54, 62 and 43 controls; these 213 outcomes are not a pooled scientific success rate. The ELC weakened-rule experiment remains separately counted.
+
+## Actual article baseline
+
+Actual approved **7.0.8** Word and PDF bytes were freshly read and matched the approved delivery SHA-256 and sizes. All 65 historical claim dispositions have actual Word node hashes and PDF page locations. All seven full amended paragraphs match Word and extracted PDF text. The five Word tables (including author affiliations), sole figure/media and its bounded 28/31/10 caption are inventoried. All nine delivered PDF pages were rendered and visually inspected; this does not claim a new Word render, article edit or fresh scientific execution.
+
+Three withdrawn assertions stay withdrawn. Historical pharmaceutical/private relational populations retain their original archive/version and are not presented as current public reruns. Connectivity node counts derived from catalog inventories are identified as source-receipt metadata when the paper gives only the corresponding prose. The newer SQL behavior remains outside the evaluated article baseline; conceptual lineage commitments in the paper do not establish those later executions. This preserves the approved paper without manufacturing a 7.0.9 revision.
+
+The readback script accepts actual private files through `--directory`; those files and their author contact data are not copied into this public repository. Public CI checks the hash-bound receipt and source correspondence. It cannot freshly reread private binaries in a public runner. A later manuscript-byte change requires a new authorized paper receipt and affected alignment replay.
+
+## Remaining gates
+
+This is **current source and chosen-paper-baseline accounting**, checked before final release selection. R5 still requires separately versioned documentation 0.4.0, updated current guide bodies, native Wiki and actual served Pages comparison. Four frozen snapshots and the 380 v0.3.4 selected file bindings remain unchanged. R6 still requires a final v0.3.5 compatible-component selection, clean-source freeze, new release intent/tag/six assets, independent download and Latest/prior-inventory verification. The stable release remains **v0.3.4**.
+
+All eleven organizational admissions remain WITHHELD, independent semantic ratings remain zero, and the historical HermiT/SHACL denominators remain 295/359. Related-work/source adequacy, actual independent review, current venue/track/deadline/policies and coauthor decisions retain their separate research/submission gates. No SUBMISSION_READY decision is made.
+
+Run `python tools/audit_current_alignment.py --check` and `python -m unittest discover -s tests -p test_current_alignment.py -v`. Run `python tools/read_current_manuscript.py --directory /path/to/approved/files --check` only where the actual approved author files are available. The dedicated workflow separately replays all four actual SQL control populations and the published-selection/historical-preservation checks.

@@ -5,7 +5,7 @@
   "baseline_main": "3646ff0dd138a1ecc6f56fd50341a67635a85488",
   "current_published_release": "v0.3.4",
   "target_release": "v0.3.5",
-  "release_state": "COMPONENT_IMPLEMENTED_NOT_FROZEN",
+  "release_state": "SOURCE_AND_PAPER_BASELINE_CHECKED_NOT_FROZEN",
   "submission_state": "NOT_YET_ESTABLISHED",
   "venue": null,
   "track": null,
@@ -34,7 +34,7 @@
       "WITHHELD": 11
     },
     "manuscript_baseline": "7.0.8",
-    "new_full_manuscript_readback": false,
+    "new_full_manuscript_readback": true,
     "lifecycle_development": {
       "profile": "0.7.0",
       "schema_version": 8,
@@ -43,6 +43,19 @@
       "local_focused_regressions": 20,
       "report": "evaluation/relational/evidence-lifecycle/report.json",
       "hosted_and_full_source_closure": "GitHub issue #53; not independent semantic validation"
+    },
+    "current_alignment": {
+      "component": "CONSISTENCY 0.3.0",
+      "execution_issue": 54,
+      "routes": 450,
+      "declared_current_claim_routes": 39,
+      "native_ids": 306,
+      "approved_paper": "7.0.8",
+      "paper_claim_dispositions": 65,
+      "amendments": 7,
+      "report": "evaluation/consistency/current-0.3.0/report.json",
+      "manuscript_readback": "evaluation/consistency/current-0.3.0/manuscript-readback.json",
+      "final_selection_recheck_required": true
     }
   },
   "release_gates": [
@@ -58,12 +71,12 @@
     },
     {
       "id": "R3",
-      "state": "NOT_RUN",
+      "state": "SOURCE_ACCOUNTING_CHECKED_54_FINAL_SELECTION_RECHECK_REQUIRED",
       "criterion": "All current retained claims have exact evidence routes; zero orphan/unexplained/critical in-scope findings"
     },
     {
       "id": "R4",
-      "state": "NOT_RUN",
+      "state": "ACTUAL_APPROVED_7_0_8_BASELINE_CHECKED_54",
       "criterion": "Actual chosen manuscript bytes and claims reconciled"
     },
     {
@@ -129,13 +142,13 @@
     },
     {
       "id": "DEF-GAP-02",
-      "state": "OPEN_FOR_CURRENT_ALIGNMENT",
-      "finding": "423 historical rows and SSC/SCL/EQR supplements have separate scopes; no single current full claim-to-manuscript alignment result is asserted."
+      "state": "SOURCE_AND_PAPER_BASELINE_CHECKED_FINAL_SELECTION_PENDING",
+      "finding": "Consistency 0.3.0 joins the 423 historical rows and 27 derived routes with exact current evidence and actual 7.0.8 paper dispositions. Current documentation/live channels and final selected candidate still require R5/R6 and affected-binding recheck."
     },
     {
       "id": "DEF-GAP-03",
       "state": "BOUNDED_COMPONENT_IMPLEMENTED",
-      "finding": "C065 lifecycle 0.7.0 has actual fixed-control evidence under #53. Broader assertion mapping and release R3–R6 remain open."
+      "finding": "C065 lifecycle 0.7.0 has actual fixed-control evidence under #53. Broader assertion mapping and release R3\u2013R6 remain open."
     },
     {
       "id": "DEF-GAP-04",
