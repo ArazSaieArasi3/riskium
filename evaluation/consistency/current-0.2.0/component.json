@@ -1,0 +1,20 @@
+{
+  "schema": "riskium-current-consistency-component-v1",
+  "id": "CONSISTENCY",
+  "version": "0.2.0",
+  "compatible_model": "0.3.1",
+  "replaces_version": "0.1.0",
+  "historical_rows": 423,
+  "row_semantics_changed": false,
+  "scientific_or_owner_versions_changed": false,
+  "files_sha256": {
+    "evaluation/consistency/completion.json": "effee3ebca708852918392a338ab0b5f51c136c3f5173326ff876ca1982defad",
+    "evaluation/consistency/findings.json": "db661cf730602b31879e760b136c6a8a6639bac7410d8bc7cad88fa0c021949f",
+    "evaluation/consistency/traceability.json": "7dd56b8cbfad61b5617609702a8fb1609966e13d480b0c9f44d01806266b22c6",
+    "evaluation/consistency/traceability.csv": "befcba3e48efdb023326f3419771dac676058fc8994fd3262fef17e2549bd095",
+    "docs/traceability.md": "699b1cc9c1316814717df58659125676ee23009e8a4641ea080c012eee0a92f5",
+    "tools/audit_consistency.py": "74c5606b8ffd6f03739f87cf4705532e4ced7f165d1fddf47868b1224cb93350",
+    "evaluation/consistency/current-0.2.0/source-comparison.json": "4931a265242efcb69ecde8693122cdcbc6cd4ce84076ee4058daf0e603ff8bc7"
+  },
+  "scope": "Current metadata/source binding over the unchanged 423-row historical trace; original #39 completion is retained historical evidence, not a new semantic acceptance."
+}

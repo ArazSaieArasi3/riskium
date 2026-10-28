@@ -1,0 +1,21 @@
+{
+  "schema": "riskium-consistency-metadata-comparison-v1",
+  "version": "0.2.0",
+  "original_source": "3380b6b31f4830417946105e17f023118c7be6ee",
+  "current_source": "6909d530f0efd9efe4c28e625d3632ae2c5a6a8d",
+  "old_trace_sha256": "53b9cc81ac4f4f85fc71a2bb752acc5b47aabcc114debfcf3db7497703ad2cf9",
+  "current_trace_sha256": "7dd56b8cbfad61b5617609702a8fb1609966e13d480b0c9f44d01806266b22c6",
+  "historical_rows": 423,
+  "rows_identical": true,
+  "historical_csv_bytes_identical": true,
+  "changed_top_level_keys": [
+    "current_documentation",
+    "input_sha256",
+    "latest_published_distribution",
+    "planned_distribution"
+  ],
+  "historical_summary_unchanged": true,
+  "new_scientific_executions": 0,
+  "independent_acceptance_claimed": false,
+  "limit": "Original row semantics/populations unchanged; only current routing and input-binding metadata advance."
+}

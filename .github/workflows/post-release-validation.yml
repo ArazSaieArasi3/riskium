@@ -68,6 +68,10 @@ jobs:
         run: |
           python tools/run_source_cq06.py --check
           python tools/run_source_cq0708.py --check
+      - name: Validate the provisional v0.3.4 selection and dependency trust boundaries
+        run: |
+          python tools/build_release_selection.py --check
+          python -m unittest discover -s tests -p test_release_selection.py -v
       - name: Preserve published component bindings and source files
         run: |
           python tools/check_release_alignment.py
