@@ -19,8 +19,8 @@
     },
     {
       "path": ".github/workflows/post-release-validation.yml",
-      "sha256": "d8ccfdc7281e8097ec7331bf6a853dcacb2fb8d30f69debd93c58371e0a48c10",
-      "bytes": 3534
+      "sha256": "8d564882e1a0edb484885a41ff323b3133d5a837a416ee61a71c337e7708d287",
+      "bytes": 3784
     },
     {
       "path": ".github/workflows/quality.yml",
@@ -99,8 +99,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "6cd4b6d162484bfda5d0e7ccea8026f1a3be2b7389cfec47aeb6a5aced6d8a93",
-      "bytes": 22351
+      "sha256": "34f9579fd5f2d2353cab987d20b5f68e84d4d9e84b4ae74adfa14462386d962e",
+      "bytes": 23100
     },
     {
       "path": "RIGHTS.md",
@@ -1278,6 +1278,16 @@
       "bytes": 14160
     },
     {
+      "path": "evaluation/releases/v0.3.4-preparation/README.md",
+      "sha256": "5a76b7830ebea99e3d1622d991a9461966d635df38bd30677a87a8652093a272",
+      "bytes": 2884
+    },
+    {
+      "path": "evaluation/releases/v0.3.4-preparation/components.md",
+      "sha256": "7f8c3b0500338f98bf4e9bbbc9c741e14e63b61ea3815932b66dc29a2c8d1193",
+      "bytes": 4048
+    },
+    {
       "path": "evaluation/releases/v0.3.4-selection/README.md",
       "sha256": "67bcd61e0a78e0113685ae5ce9dccdae5abe9762f22b49dd7a6b558393a5d043",
       "bytes": 3934
@@ -2004,8 +2014,8 @@
     },
     {
       "path": "plans/v0.3.4.md",
-      "sha256": "fd55c43df0a37b22fc5889d03675b31c2c5ee5792bd25418848a0154f14c8c6b",
-      "bytes": 8456
+      "sha256": "e59c4410a66e8a8dcafc955c18f3408cf1c705c61c12bf20f6ec5d3845f2a539",
+      "bytes": 9577
     },
     {
       "path": "references/README.md",
@@ -2046,6 +2056,21 @@
       "path": "releases/distribution-v0.3.3.json",
       "sha256": "00c7c19dc3f751d65e1c071b6025c714447f8cfb93de1546c73aa4ba0ba0788d",
       "bytes": 63489
+    },
+    {
+      "path": "releases/distribution-v0.3.4.json",
+      "sha256": "a5f0a645dac4998862a99ca76564f705f72f61c03b7f40e89385c7ca4edca4ac",
+      "bytes": 252114
+    },
+    {
+      "path": "releases/preparation-policy-v0.3.4.json",
+      "sha256": "a05d0be68dc357cda67484e389550c61692e9354390ab807a1f90262fc4cfe38",
+      "bytes": 2949
+    },
+    {
+      "path": "releases/prepared-components-v0.3.4.json",
+      "sha256": "88ece33af34bb88f01be0235017186535043270d1bd7f0d9f99aa76b3a0ab462",
+      "bytes": 58613
     },
     {
       "path": "releases/selection-policy-v0.3.4.json",
@@ -2318,6 +2343,11 @@
       "bytes": 3085
     },
     {
+      "path": "tests/test_prepared_distribution.py",
+      "sha256": "dfead4361dd936459d145c4cda2a434a6a591fe7f8c4306ca288cdc03a62ab55",
+      "bytes": 10433
+    },
+    {
       "path": "tests/test_qualification_shacl.py",
       "sha256": "101712a565ad2fe928df599ffc8980f046c8b466a6c8c920b6c85879a0e4556b",
       "bytes": 4264
@@ -2471,6 +2501,11 @@
       "path": "tools/build_owl.py",
       "sha256": "c596e1ca582c2202225f574e96cba5d1416842076a1cf5272820f0e494be6bd6",
       "bytes": 14961
+    },
+    {
+      "path": "tools/build_prepared_distribution.py",
+      "sha256": "5e9d04d7470b99c9138132e7453ba83d4496511c433a2f1419a11317a35b4b1f",
+      "bytes": 18434
     },
     {
       "path": "tools/build_qualification_shapes.py",

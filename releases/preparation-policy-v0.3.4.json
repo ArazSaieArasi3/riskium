@@ -1,0 +1,50 @@
+{
+  "schema": "riskium-prepared-distribution-policy-v1",
+  "version": "0.1.0",
+  "issue": 49,
+  "parent_issue": 45,
+  "target": "v0.3.4",
+  "approved_source": "70803db8ecf8dd1c16af1c688f08ffacc30d8937",
+  "initial_selection": "releases/selection-v0.3.4.json",
+  "initial_overlay": "releases/development-components-v0.3.4.json",
+  "preserved_inputs_sha256": {
+    "releases/selection-policy-v0.3.4.json": "033ea88e38f6671bebb6a3785dc41232bfb710f62c59e06c61c04dfe85abdb6a",
+    "releases/selection-v0.3.4.json": "e9914305de9228c8af9d5b09975edb79c7dcfdd0f022c0f3233f9649fb1077d4",
+    "releases/development-components-v0.3.4.json": "321b6cb07b206beaeab26e2137db2d19af45ad918de7bdd5853c1481ddb353e9",
+    "tools/build_release_selection.py": "8b91be1a5c25bf8382aca68b8d1af6afd663266623e73c4dae80287be5d0c45b",
+    "tests/test_release_selection.py": "88258d0db7f31fbc157d830600ac4a987a81df01e152ead37569094d2be82c4d",
+    "evaluation/releases/v0.3.4-selection/completion.json": "d8a68a9182454c26bda49ec33dbe15b718afb80aa0ed217635730bb21922d0a5",
+    "evaluation/documentation/current-0.3.0/component.json": "2242bdd2c8403bcfdf6144145536606296564ccb5bbf6869a5cbfccd183fdd44",
+    "tools/publication/snapshot-policy-v0.3.4.json": "2406797b1251103d31cd2b0c9872785974b5ba6ca088e132534d56ba7476b55a",
+    "tools/publication/snapshot-additions-v0.3.4.json": "8b284513ca136f56d94fe0d71ad8d60ed8cc4ff40d89f0976a52767b6a9af7f1",
+    "evaluation/documentation/v0.3.4-snapshot/component.json": "6ee88c855117b16b4067a985ae186e6edd774152fc0d2c87f531bb1b60ea6b0c",
+    "evaluation/documentation/v0.3.4-snapshot/completion.json": "8996017ef38218c1c02f1b3c024ea2f144723e1c1130b7da95fb503b099f0f99"
+  },
+  "snapshot": {
+    "id": "DOCUMENTATION_SNAPSHOT",
+    "version": "0.1.0",
+    "descriptor": "evaluation/documentation/v0.3.4-snapshot/component.json",
+    "descriptor_sha256": "6ee88c855117b16b4067a985ae186e6edd774152fc0d2c87f531bb1b60ea6b0c",
+    "completion": "evaluation/documentation/v0.3.4-snapshot/completion.json",
+    "completion_sha256": "8996017ef38218c1c02f1b3c024ea2f144723e1c1130b7da95fb503b099f0f99",
+    "receipts": [
+      "evaluation/documentation/v0.3.4-snapshot/completion.json",
+      "evaluation/documentation/v0.3.4-snapshot/hosted-checks.json",
+      "evaluation/documentation/v0.3.4-snapshot/software-tests.json",
+      "evaluation/documentation/v0.3.4-snapshot/software-tests.log",
+      "evaluation/documentation/v0.3.4-snapshot/http-readback.json",
+      "evaluation/documentation/v0.3.4-snapshot/wiki-readback.json"
+    ],
+    "depends_on": [
+      {
+        "id": "MODEL",
+        "version": "0.3.1"
+      },
+      {
+        "id": "DOCUMENTATION",
+        "version": "0.3.0"
+      }
+    ]
+  },
+  "scope": "Add exactly one completed snapshot component to the preserved #47 rows; prepare source-bound deployment/component hashes for final-source release engineering. Not a freeze, tag, publication request or new scientific acceptance."
+}

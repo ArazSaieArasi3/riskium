@@ -72,6 +72,10 @@ jobs:
         run: |
           python tools/build_release_selection.py --check
           python -m unittest discover -s tests -p test_release_selection.py -v
+      - name: Validate the prepared 28-component v0.3.4 distribution and snapshot closure
+        run: |
+          python tools/build_prepared_distribution.py --check
+          python -m unittest discover -s tests -p test_prepared_distribution.py -v
       - name: Preserve published component bindings and source files
         run: |
           python tools/check_release_alignment.py
