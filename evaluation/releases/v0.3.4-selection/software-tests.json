@@ -1,0 +1,22 @@
+{
+  "schema": "riskium-successor-selection-software-tests-v1",
+  "source_commit": "31503dadf577a6cf8a35d37ecbf4e8a05840fb01",
+  "outcome": "PASS",
+  "full": {
+    "command": "python -m unittest discover -s tests -v",
+    "tests": 315,
+    "seconds": 129.255,
+    "outcome": "PASS",
+    "log": "evaluation/releases/v0.3.4-selection/software-tests.log",
+    "log_sha256": "85b92781dbecede09ccf6fbc06c09eff3e5f2c93684094d54273b5c492a0b2b8"
+  },
+  "focused_selection": {
+    "command": "python -m unittest discover -s tests -p test_release_selection.py -v",
+    "tests": 28,
+    "seconds": 1.586,
+    "outcome": "PASS",
+    "log": "evaluation/releases/v0.3.4-selection/focused-tests.log",
+    "log_sha256": "076b549690d3e7f1fdd278fb6f747105755dd096d4d838293a14da87c93b66d3"
+  },
+  "limits": "Software selection, serialization, dependency and regression controls; no new scientific engine result, independent semantic rating or original MUST acceptance."
+}

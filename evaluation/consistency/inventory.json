@@ -99,8 +99,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "6629f430d7fb01023954257af49f65c4508fa40721e25f60c0d52d9976f574cf",
-      "bytes": 20951
+      "sha256": "c61b3ab43ee85b1b4f469fcfd250a9c2dcfcdd9223020d63acd4fa03bb98d284",
+      "bytes": 21437
     },
     {
       "path": "RIGHTS.md",
@@ -1239,13 +1239,38 @@
     },
     {
       "path": "evaluation/releases/v0.3.4-selection/README.md",
-      "sha256": "8192d28f953deb2b8ee08a828878ba65d4998c3b416049e0d34a7d76060df312",
-      "bytes": 3182
+      "sha256": "67bcd61e0a78e0113685ae5ce9dccdae5abe9762f22b49dd7a6b558393a5d043",
+      "bytes": 3934
+    },
+    {
+      "path": "evaluation/releases/v0.3.4-selection/completion.json",
+      "sha256": "d8a68a9182454c26bda49ec33dbe15b718afb80aa0ed217635730bb21922d0a5",
+      "bytes": 8092
     },
     {
       "path": "evaluation/releases/v0.3.4-selection/components.md",
       "sha256": "2e513268580f548085375656f2b95de2a9c0fb7942222100b9027df48fe325b1",
       "bytes": 4882
+    },
+    {
+      "path": "evaluation/releases/v0.3.4-selection/focused-tests.log",
+      "sha256": "076b549690d3e7f1fdd278fb6f747105755dd096d4d838293a14da87c93b66d3",
+      "bytes": 4735
+    },
+    {
+      "path": "evaluation/releases/v0.3.4-selection/hosted-checks.json",
+      "sha256": "8488659c19e99c3571ffc6ef2a7cc8d8ba07985be6633a7a8d50c772b279805f",
+      "bytes": 5388
+    },
+    {
+      "path": "evaluation/releases/v0.3.4-selection/software-tests.json",
+      "sha256": "b7df4744339bf8e483e0db464e9dcd941e0ee58cae60f789506fee2e80ac6df9",
+      "bytes": 952
+    },
+    {
+      "path": "evaluation/releases/v0.3.4-selection/software-tests.log",
+      "sha256": "85b92781dbecede09ccf6fbc06c09eff3e5f2c93684094d54273b5c492a0b2b8",
+      "bytes": 51562
     },
     {
       "path": "evaluation/semantic-assurance-plan.md",
@@ -1939,8 +1964,8 @@
     },
     {
       "path": "plans/v0.3.4.md",
-      "sha256": "0495bedd3a4fff12b85ebf3d16efdbae0d81b5a6090539a13789b090cb3d7a2e",
-      "bytes": 6221
+      "sha256": "5ab5d30faedaaeb49ea65e2e439e0a97417b75b3500e4b60eeda6fce1a786322",
+      "bytes": 6711
     },
     {
       "path": "references/README.md",
