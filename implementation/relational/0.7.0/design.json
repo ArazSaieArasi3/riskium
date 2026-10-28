@@ -1,0 +1,14 @@
+{
+  "schema": "riskium-evidence-lifecycle-design-v1",
+  "implementation_issue": 53,
+  "declaration_commit": "cb996241553fc8ae858acb38622009ed3a08f450",
+  "decision": "One append-only supplementary event table for CORRECT/SELECT/WITHDRAW/CLEAR. C065 endpoints and all prior native views remain unchanged.",
+  "sequence": "An AUTOINCREMENT ordinal is assigned by SQLite; the ledger view exposes sequence=ordinal*10. A post-insert guard requires contiguous positive ordinals. Ten-unit spacing realizes the predeclared inclusive 9/10/19/20/29/30/40 boundary vectors without fabricated filler rows. The same ledger covers correction and decision events; full-base fixture decisions are inserted before retrospective correction declarations.",
+  "provenance": "Required supplied UTC is documentary metadata, validated for syntax/calendar but not authenticated wall-clock or world-validity time. Database order, actor attribution and native authority are distinct. The old common fixture envelope is preserved literally.",
+  "projection": "Exact existing named graphs, including all four literal EQR oracles. ref-A@3/4 are lineage/selection inputs, not aliases of ref-A@2's native graph identity.",
+  "migration": "Additive v8 from an actually populated and healthy v7 source; all old hashes/rows/graphs audited, new exact-schema reader, atomic rollback/recovery.",
+  "immutability": "Duplicate event identities, replacement, update/delete, cross-artifact/unissued/non-C065 endpoints, cycles/alternate parents and selection of withdrawn versions are rejected by SQL guards and the API.",
+  "contract_amended": false,
+  "fixtures_amended": false,
+  "scope": "Engineering implementation choice consistent with frozen ELC-01..09; no implementation or expected-output generation has executed at this checkpoint."
+}

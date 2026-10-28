@@ -1,0 +1,67 @@
+{
+  "schema": "riskium-evidence-lifecycle-materialized-input-v1",
+  "declaration_source": "cb996241553fc8ae858acb38622009ed3a08f450",
+  "scope": "Explicit expansion of the fixed logical aliases/envelope; independent input prepared before API/SQL implementation. No expected vector is calculated from program output.",
+  "aliases": {
+    "ref-A": "urn:riskium:evidence:ref-a",
+    "ref-B": "urn:riskium:evidence:ref-b",
+    "ref-A@1": "urn:riskium:evidence:ref-a-v1",
+    "ref-A@2": "urn:riskium:evidence:ref-a-v2",
+    "ref-A@3": "urn:riskium:evidence:ref-a-v3",
+    "ref-A@4": "urn:riskium:evidence:ref-a-v4",
+    "ref-A@5": "urn:riskium:evidence:ref-a-v5",
+    "ref-A@draft": "urn:riskium:evidence:ref-a-draft",
+    "ref-B@1": "urn:riskium:evidence:ref-b-v1",
+    "scenario-A@1": "urn:riskium:knowledge:scenario-a-v1",
+    "source-original": "urn:riskium:evidence:document-a",
+    "source-correction": "urn:riskium:evidence:document-b",
+    "source-branch": "urn:riskium:lifecycle:branch-source",
+    "source-later": "urn:riskium:lifecycle:later-source",
+    "decision-source-1": "urn:riskium:lifecycle:decision-source-1",
+    "decision-source-2": "urn:riskium:lifecycle:decision-source-2",
+    "decision-source-3": "urn:riskium:lifecycle:decision-source-3",
+    "withdrawal-notice": "urn:riskium:lifecycle:withdrawal-notice",
+    "notice-1": "urn:riskium:lifecycle:notice-1"
+  },
+  "common_event": {
+    "actor_id": "urn:fixture:reviewer-X",
+    "reason": "fixed synthetic declaration",
+    "source_record_id": "urn:fixture:notice",
+    "source_locator": "section 1",
+    "interpretation_origin": "synthetic fixture author",
+    "recorded_at": "2026-10-01T12:00:00Z"
+  },
+  "extra_reference_versions": [
+    {
+      "artifact_id": "urn:riskium:evidence:ref-a",
+      "version_id": "urn:riskium:evidence:ref-a-v3",
+      "label": "Same label",
+      "statement": "Synthetic branch 3 of the same evidence reference",
+      "item_version_id": "urn:riskium:evidence:item-a-v2",
+      "evidential_role": "challenge",
+      "source_record_id": "urn:riskium:lifecycle:branch-source",
+      "source_locator": "synthetic/lifecycle#ref-a-v3",
+      "interpretation_origin": "Deterministic synthetic qualification; not independent source validation",
+      "recorded_at": "2026-10-28T00:00:00Z",
+      "target_version_ids": [
+        "urn:riskium:knowledge:scenario-a-v2"
+      ]
+    },
+    {
+      "artifact_id": "urn:riskium:evidence:ref-a",
+      "version_id": "urn:riskium:evidence:ref-a-v4",
+      "label": "Same label",
+      "statement": "Synthetic branch 4 of the same evidence reference",
+      "item_version_id": "urn:riskium:evidence:item-a-v2",
+      "evidential_role": "challenge",
+      "source_record_id": "urn:riskium:lifecycle:later-source",
+      "source_locator": "synthetic/lifecycle#ref-a-v4",
+      "interpretation_origin": "Deterministic synthetic qualification; not independent source validation",
+      "recorded_at": "2026-10-28T00:00:00Z",
+      "target_version_ids": [
+        "urn:riskium:knowledge:scenario-a-v2"
+      ]
+    }
+  ],
+  "common_expansion_policy": "The runner writes these complete synthetic inputs explicitly; the runtime API supplies no missing-source/context/identity defaults."
+}
