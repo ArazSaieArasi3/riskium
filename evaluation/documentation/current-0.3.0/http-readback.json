@@ -1,0 +1,1810 @@
+{
+  "schema": "riskium-current-documentation-pages-readback-v1",
+  "documentation_version": "0.3.0",
+  "issue": 46,
+  "source_commit": "ec9a8b06c5da7d2157c644af32628dc4e6b3186e",
+  "checked_at_utc": "2026-10-28T09:26:20.692047+00:00",
+  "base_url": "https://arazsaiearasi3.github.io/riskium/",
+  "manifest_sha256": "adbfe3ab1aaa55e9782a74dd3fc709d296136bb6e1b9a7065f4d9d2b028765f9",
+  "method": "Actual HTTPS bodies for all manifest publication files except deployment-control .nojekyll, matched against manifest and exact local source outputs",
+  "files": 243,
+  "all_bytes_match": true,
+  "current_headers_checked": 30,
+  "frozen_snapshots": 3,
+  "semantic_model": "0.3.1",
+  "new_stable_release_published": false,
+  "independent_semantic_acceptance": false,
+  "checks": [
+    {
+      "path": "THIRD-PARTY-DOCUMENTATION.txt",
+      "status": 200,
+      "sha256": "757ad3a1219a88aa2341cc83f0dc1d0d8884b72ce684e2d6e8714dff073b9ca8",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "WIDOCO-Apache-2.0.txt",
+      "status": 200,
+      "sha256": "f6bde110648aedc2ddf28bb2ddd7d110ffd02cfd36f64e55f7de7938b3d02287",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/assets/complete-model.svg",
+      "status": 200,
+      "sha256": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/assets/filter.js",
+      "status": 200,
+      "sha256": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/assets/portal.css",
+      "status": 200,
+      "sha256": "0987488cda1aae98c68e6d330325f43f8a14f9bd8e1ce33d852b5a01fd4ed54c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/assets/selected-model.svg",
+      "status": 200,
+      "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/downloads/CC-BY-4.0.txt",
+      "status": 200,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/downloads/CITATION.cff",
+      "status": 200,
+      "sha256": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/downloads/LICENSE",
+      "status": 200,
+      "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/downloads/MIT.txt",
+      "status": 200,
+      "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/downloads/NOTICE.md",
+      "status": 200,
+      "sha256": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/downloads/RIGHTS.md",
+      "status": 200,
+      "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/downloads/SHA256SUMS.txt",
+      "status": 200,
+      "sha256": "27c5a9fc39869adf953d681e6dc29144be384fe2603b7f3c68e55ea143fcc960",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/downloads/index.html",
+      "status": 200,
+      "sha256": "48e58c5ad7736adedadbf491a9619959d68dd6686b2e5c27d5bcf3c88523f7e1",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/downloads/riskium-model.json",
+      "status": 200,
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/downloads/riskium.ontouml.json",
+      "status": 200,
+      "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/downloads/typed-core.json",
+      "status": 200,
+      "sha256": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/explore/graph.json",
+      "status": 200,
+      "sha256": "865ec4717967315793851766f6a32ff99206b8c402b2afd249327413ed045f7c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/explore/index.html",
+      "status": 200,
+      "sha256": "487904f084c43a694c59bf1aea2969f1753b38ba36a7f5f702371dbb7ebed207",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Artifact-Versions.html",
+      "status": 200,
+      "sha256": "898e1cc73b5cfb14624b542397515bc29841d5fe9955df55a3110c9dafe3d73e",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Citation.html",
+      "status": 200,
+      "sha256": "9ccf67bea130f727a87601d1def3592c83cd6bff8386162c51ed74fea2ce2a24",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Competency-Questions.html",
+      "status": 200,
+      "sha256": "5f254a33347b815d1102352d23f5d0ebf83d9d30d274fe8fe152bb1f08459453",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Database-Assurance.html",
+      "status": 200,
+      "sha256": "eb4901b6aa5354c6fb814572995818998112fdf12b98101cb88ea6c10c13653c",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Decisions.html",
+      "status": 200,
+      "sha256": "d86db1ff5cfe7389272dff5bedfc594fe503ef3219169ceda451c9fbf1b23009",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Evaluation.html",
+      "status": 200,
+      "sha256": "9a6b62aeeb3a22fe9b1e0465952b23b9f4a7252b700cf7294c6d92e0190298d1",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Formalization.html",
+      "status": 200,
+      "sha256": "f1c149436247038dc1190c500f712f94c07d68e079c26cfc796b6498180b96b1",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Home.html",
+      "status": 200,
+      "sha256": "9b0b2f78fa81ce1cd0af7aa919bcdbc60867f72850e155dbf5a6ccf93c027717",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Limitations.html",
+      "status": 200,
+      "sha256": "dccddc511207e3c9c8a097ba62a76b5da72a30e1e82543c37643d7410fd50ee8",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Overview.html",
+      "status": 200,
+      "sha256": "f7fcb55b859b0cd6c0fcb3fc00ff3bf1a13260ec516d479faaa0991744e83e12",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Publication-Comparison.html",
+      "status": 200,
+      "sha256": "6743c352e9117754b78ef99c87226dbf9affa60eb43e9610880bfc998a1bb7bf",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Publication.html",
+      "status": 200,
+      "sha256": "c223ffeabc9418b3ff32d7bc954ec7ad5bb107a216e33e1554c364723fa22adc",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Quality.html",
+      "status": 200,
+      "sha256": "6445d3a6cea819fa5112e90ece1dd24fa57a4e77b78d673e01f88954afce1bb0",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/References.html",
+      "status": 200,
+      "sha256": "5d550cc33da6ba7dabd07d1d1b14905aca115262a7ac7302da7681796fed4a9d",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Reproduce.html",
+      "status": 200,
+      "sha256": "c73b76bbbf164b3354e607e337934c05afcc70ecb92b0e807003f1325b9a8229",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Requirements.html",
+      "status": 200,
+      "sha256": "08bedc140a81536715174d7c6efb332a2aa7595ea9d3d19154b24a2d0086d356",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Scope.html",
+      "status": 200,
+      "sha256": "8c0da700b8ef97c86082a17ea0bd99f4194c72b176b24ae4c77416cc46d0ce05",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Traceability.html",
+      "status": 200,
+      "sha256": "f31c70e7f630e40c9c731d7f90e6d75dd31382323b495d73bd8f7c02e5001155",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Using-the-Model.html",
+      "status": 200,
+      "sha256": "45aef8fc63fd360415dc07a2525ed4d00c874122d3f92d490bf4e1c471438d02",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Visualization.html",
+      "status": 200,
+      "sha256": "a9501566112c322423c43783b408377590f4e963ea5d90a0c494239b3a77b47e",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/guide/Work-Plan.html",
+      "status": 200,
+      "sha256": "9cc894b9992d38d7d2d192d841b0ab45d7b297df9471dfca9be20083fd32447f",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/index.html",
+      "status": 200,
+      "sha256": "1e5405c93de6a92d7a7bc7e381982fe166c20e015af2d827fd6fef7a05007616",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/publication-manifest.json",
+      "status": 200,
+      "sha256": "f7124a7d609e1b396c19939623e9b56f4248955fcd00e9b0050b02930a1fdca3",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/reference/diagrams/index.html",
+      "status": 200,
+      "sha256": "76bc873a42b4584dd71cf15f398c2dce6df14ef96c4b9258141092361584a5d1",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/reference/native/index.html",
+      "status": 200,
+      "sha256": "9361717ce71bd6d78b5b6b0100fd195753947f3bfceff5b74b0098eaef4852a4",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/reference/search.html",
+      "status": 200,
+      "sha256": "1d2f3660d011914dc339c36b94c13fcbcdb2186d3fd8b5dbd386fbcd0351a0b3",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/webvowl/coverage.json",
+      "status": 200,
+      "sha256": "bebe79ba85ad4f3d6c920b101046dbee84a3121b48ae0f395461220a8ec3ae31",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/webvowl/data/riskium.json",
+      "status": 200,
+      "sha256": "4b96dfd769858256a13aedf760e32bb64aa740437d9dc5cfc278787ae41fbdc2",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/webvowl/index.html",
+      "status": 200,
+      "sha256": "94e3cb7a25351d2fa359fc08b35d828fec71436bf3c437e83100a534ee2eac9f",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/webvowl/vendor/D3-BSD.txt",
+      "status": 200,
+      "sha256": "e4796bd1fdc09e06a3683957a177d59b38aec4143df81b2d25472438f5763482",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/webvowl/vendor/Lodash-MIT.txt",
+      "status": 200,
+      "sha256": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/webvowl/vendor/WebVOWL-MIT.txt",
+      "status": 200,
+      "sha256": "d07986d8f3441f0a563f237aa3778489c763def2e151911e1774a18deff89cde",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/webvowl/vendor/d3.min.js",
+      "status": 200,
+      "sha256": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/webvowl/vendor/provenance.json",
+      "status": 200,
+      "sha256": "bcbb184bfec22d57732baffd3e812dbf5eda8997c2f754c80be7c38316ab1704",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/webvowl/vendor/webvowl.css",
+      "status": 200,
+      "sha256": "067bb2fe6dfb69a4ef4be734a7b3788335f4c3cd419ce3e42d86c3cf302c49f8",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/webvowl/vendor/webvowl.js",
+      "status": 200,
+      "sha256": "a46d5a71e0d8d05aad6fd3ea4ed4e2cc66ba738958a04aa2dc7568f31f2c2006",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/webvowl/viewer.css",
+      "status": 200,
+      "sha256": "9c764071adcbca0664fd9bc4431e0e1752f83092a869f1e65c70b2b4f13e43d7",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/webvowl/viewer.js",
+      "status": 200,
+      "sha256": "fab10c32e3ce34c48d8eb8bda7e05bb4e703d6681260cf26a9411ed2bf301869",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/widoco/index-en.html",
+      "status": 200,
+      "sha256": "d7a44c03ece7ae47796e808832fcf61161d84b63942d1409de0bdea0ae7337db",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/widoco/ontology.jsonld",
+      "status": 200,
+      "sha256": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/widoco/ontology.nt",
+      "status": 200,
+      "sha256": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/widoco/ontology.owl",
+      "status": 200,
+      "sha256": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/widoco/ontology.ttl",
+      "status": 200,
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/widoco/provenance/provenance-en.html",
+      "status": 200,
+      "sha256": "bea70a523e2ce2ce592e081a8eec05ca2efa9a7d29d33bde5f8abf57af607908",
+      "matches_source_and_manifest": true,
+      "current_header": {
+        "documentation": "0.3.0",
+        "live_latest_link": true
+      }
+    },
+    {
+      "path": "current/widoco/resources/extra.css",
+      "status": 200,
+      "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/widoco/resources/owl.css",
+      "status": 200,
+      "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/widoco/resources/primer.css",
+      "status": 200,
+      "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/widoco/resources/rec.css",
+      "status": 200,
+      "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/widoco/resources/riskium.css",
+      "status": 200,
+      "sha256": "b6bda9ae35ba69dec80a60435f9720bfff2cc490ca66b1cd7f76899cb69a4d07",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/widoco/serialization-receipt.json",
+      "status": 200,
+      "sha256": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "current/widoco/tool-provenance.json",
+      "status": 200,
+      "sha256": "b1f2d98546d02e4f4fbc3eae7efc986711a2e83b1b34eb36309ac850972c023a",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "9774dde5d2f1d7464f99be2dec394c1d086afbba76d7518a689b075b4ec99fdc",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "interface-review.html",
+      "status": 200,
+      "sha256": "26d47996a29bf0d47d135edf5a331d4cca7e4b07ca9bb7d8e92d377024c59aee",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/assets/complete-model.svg",
+      "status": 200,
+      "sha256": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/assets/filter.js",
+      "status": 200,
+      "sha256": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/assets/portal.css",
+      "status": 200,
+      "sha256": "8769420abcb7cb9470dbae07e6d2bd78679dcc6f0d138dd09bd16188d9b6aaaf",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/assets/selected-model.svg",
+      "status": 200,
+      "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/CC-BY-4.0.txt",
+      "status": 200,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/CITATION.cff",
+      "status": 200,
+      "sha256": "32d61999936e92161f1f36a80843f8c4de43658cfddf1e6c9419d8097b8357db",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/LICENSE",
+      "status": 200,
+      "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/MIT.txt",
+      "status": 200,
+      "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/NOTICE.md",
+      "status": 200,
+      "sha256": "92a19f4d4025128c5d3d534d0df1888c768148aa5fe0f25442a7049eb828a46f",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/RIGHTS.md",
+      "status": 200,
+      "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/SHA256SUMS.txt",
+      "status": 200,
+      "sha256": "9bdf3f0c2ac212ae33552405dfa7edd6b343ac9f569c15d12c216d61020bae16",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/index.html",
+      "status": 200,
+      "sha256": "732abd49e156e63176374b5b53ad4ea481497d3810ff2e90df419b265368ad6d",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/riskium-model.json",
+      "status": 200,
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/riskium.ontouml.json",
+      "status": 200,
+      "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/downloads/typed-core.json",
+      "status": 200,
+      "sha256": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/explore/graph.json",
+      "status": 200,
+      "sha256": "378989de1e45a53894dddccd50773c1251efe6b06634048ea5045b32466c4e80",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/explore/index.html",
+      "status": 200,
+      "sha256": "f5cac921eef3434b0fcb1b0020bd76d4ab09ab1b6aa14d00753bcdc1aab3e139",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Artifact-Versions.html",
+      "status": 200,
+      "sha256": "2b23f3dcd19ccddba60a1b39912fdd9820b171d84aad1a9822d78d5bfc4b8e50",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Citation.html",
+      "status": 200,
+      "sha256": "b1ce3fe5c0e7a4c819e40c85bdae9013ee6b2e0d02fc6c9d51f1382c5a7f7eb6",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Competency-Questions.html",
+      "status": 200,
+      "sha256": "2f72a07ba676c890c9356622a077a78b1c19be1ab2a4cd6db1b9db14a07f2136",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Database-Assurance.html",
+      "status": 200,
+      "sha256": "dc55465cb9e35995707c6023013525ceaaac92cd13bd31141fffd56a7f43941d",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Decisions.html",
+      "status": 200,
+      "sha256": "54e7e952cea66f465020206cf43471689a170c7bcc1b59f13a7eaab67e77ae7b",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Evaluation.html",
+      "status": 200,
+      "sha256": "757e039b353d83ba3cd77a84b77781f7c9b2df1ff4a8f33988a8df2fd66c745a",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Formalization.html",
+      "status": 200,
+      "sha256": "8148a90c0b4678eb1ac92a1b319ed95efa98e17172fb156fe8e6cf87e466452b",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Limitations.html",
+      "status": 200,
+      "sha256": "c7dfd8fa93a307df2f58cc12538886fcb85b024a9bb2edfb13fb980a0e6c1590",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Overview.html",
+      "status": 200,
+      "sha256": "7e958c0ba98f344e8db3ccee7cd5f29f313d1ef243108eaa8f22ac0fd18e3f59",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Publication-Comparison.html",
+      "status": 200,
+      "sha256": "5069a25fc877d9afda90f929d1d0417ab83033199441c6006871f1c3b1d3f1a1",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Quality.html",
+      "status": 200,
+      "sha256": "b18daffed638580d4c20d1657f5eb3b189eb4666c6d6b83221991973350b962d",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/References.html",
+      "status": 200,
+      "sha256": "46bc6ab9aa8a8c3d28787a7b6750e58ebd4b72e0dc38301de8d617ed418a3393",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Reproduce.html",
+      "status": 200,
+      "sha256": "ae61e61c283a98fefe4f9c3cae6c1d64eb26b8ae643eceb3226f3f67b86bdbb5",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Requirements.html",
+      "status": 200,
+      "sha256": "335285ac39a10e49c6a4594f9939c92567be22d9912bf24fcb3cef91b4eda670",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Traceability.html",
+      "status": 200,
+      "sha256": "703d631688fbe65c2ace0468ce6139357be5d9d8808463f7c8417f3ae2de6680",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/guide/Work-Plan.html",
+      "status": 200,
+      "sha256": "24357382b823c2bbfddf9e8039f5642f0439e4d878b576b6e736af604c4ddd47",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/index.html",
+      "status": 200,
+      "sha256": "91906ea1f8022742724840b5b8bced0a6d3c7f0c846703672c53acfaa49fccbf",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/publication-manifest.json",
+      "status": 200,
+      "sha256": "6fbf5db63b58ffe0c3765b646fb914c9c1784d14b0c532d9a37318ed0c901f75",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/reference/native/index.html",
+      "status": 200,
+      "sha256": "56b314eb86d8e6d2d50acb31b8fa08ac488f1b0ff0ca857ff8ed730e0d70b008",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/index-en.html",
+      "status": 200,
+      "sha256": "5b4f5e865a9cb6ce9d2c3a6ba250ca0182c3062624b6887e2f3c5bcaf6803c8d",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/ontology.jsonld",
+      "status": 200,
+      "sha256": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/ontology.nt",
+      "status": 200,
+      "sha256": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/ontology.owl",
+      "status": 200,
+      "sha256": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/ontology.ttl",
+      "status": 200,
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/provenance/provenance-en.html",
+      "status": 200,
+      "sha256": "dda12e87fceab815516f560415acc2b32c7ac3443257f48f669e140af9e4da30",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/resources/extra.css",
+      "status": 200,
+      "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/resources/owl.css",
+      "status": 200,
+      "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/resources/primer.css",
+      "status": 200,
+      "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/resources/rec.css",
+      "status": 200,
+      "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/serialization-receipt.json",
+      "status": 200,
+      "sha256": "641813c62cf1bd72630db02269068cd1e998faf387a0c9c4edfbd5df4556820f",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1-rc.1/widoco/tool-provenance.json",
+      "status": 200,
+      "sha256": "80fe09df88eb2adb751b225b20e093c36b7be4c5fbd5f23073b630810efd53b8",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/assets/complete-model.svg",
+      "status": 200,
+      "sha256": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/assets/filter.js",
+      "status": 200,
+      "sha256": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/assets/portal.css",
+      "status": 200,
+      "sha256": "8769420abcb7cb9470dbae07e6d2bd78679dcc6f0d138dd09bd16188d9b6aaaf",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/assets/selected-model.svg",
+      "status": 200,
+      "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/downloads/CC-BY-4.0.txt",
+      "status": 200,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/downloads/CITATION.cff",
+      "status": 200,
+      "sha256": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/downloads/LICENSE",
+      "status": 200,
+      "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/downloads/MIT.txt",
+      "status": 200,
+      "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/downloads/NOTICE.md",
+      "status": 200,
+      "sha256": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/downloads/RIGHTS.md",
+      "status": 200,
+      "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/downloads/SHA256SUMS.txt",
+      "status": 200,
+      "sha256": "27c5a9fc39869adf953d681e6dc29144be384fe2603b7f3c68e55ea143fcc960",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/downloads/index.html",
+      "status": 200,
+      "sha256": "51f345aa9aa4e88c1b97c5fcc9535440baf8c9b6056dfdd5da3a30cdb8c7827c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/downloads/riskium-model.json",
+      "status": 200,
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/downloads/riskium.ontouml.json",
+      "status": 200,
+      "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/downloads/typed-core.json",
+      "status": 200,
+      "sha256": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/explore/graph.json",
+      "status": 200,
+      "sha256": "865ec4717967315793851766f6a32ff99206b8c402b2afd249327413ed045f7c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/explore/index.html",
+      "status": 200,
+      "sha256": "ca77f68aa40bd62f197159701bd1fb1e12addb3a4c1edb66e9e5e64fe7704b3d",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Artifact-Versions.html",
+      "status": 200,
+      "sha256": "9bd60375d35b9d0e3aa809f886617ad89dbba87d95403dcf3035c2ac263ad364",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Citation.html",
+      "status": 200,
+      "sha256": "626b9e3037a786db523a5ec5b39e64abd061e47d94afffcb47e985505699307d",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Competency-Questions.html",
+      "status": 200,
+      "sha256": "aef373d2dbb548d179778f368547d54749e9bf0caec4a274224d855bd5f1726e",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Database-Assurance.html",
+      "status": 200,
+      "sha256": "c92491062b05df9000fa76f8d0c055e4c7afb3011acb23561a394698dc248d4b",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Decisions.html",
+      "status": 200,
+      "sha256": "9c516713f1bc4015f208cff69e8e5974ee375402e4bc35c854061365519cafb7",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Evaluation.html",
+      "status": 200,
+      "sha256": "8241129e6206d4aaee0a44f516ebf1448493deaec61da5e2a57fbcb2f79eec0b",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Formalization.html",
+      "status": 200,
+      "sha256": "432e3277a5292763877b19cc1c41068f298c0a80a65b2de7429f32d0c2ff4008",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Home.html",
+      "status": 200,
+      "sha256": "dbf30abc4ad788e6091b0f099bfb33abdcf142e6a0c9bb2d9ad974eccc1e8a19",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Limitations.html",
+      "status": 200,
+      "sha256": "b6f34580f69f826f5ef5f30221267cdd2dda2b717d63323f147cdd8db5073dc2",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Overview.html",
+      "status": 200,
+      "sha256": "aa74c8d47c272387a4e6b8f3cc1ad542177c06d35b9ab859b342631aba983939",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Publication-Comparison.html",
+      "status": 200,
+      "sha256": "6e40631bdcae9238962dae0ff618c1e02fc19b787196294366223671b204e8ae",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Publication.html",
+      "status": 200,
+      "sha256": "b64588f951d75420e07edeba9552a5275ac70a06e94803b0342503921046beca",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Quality.html",
+      "status": 200,
+      "sha256": "f10575edb61efaffb5a5862091c123d143235b27758afc6f3d784848fc0fd015",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/References.html",
+      "status": 200,
+      "sha256": "de693edd736339cc0f4499b87f907e0457c2df233c97cdce9f7f1a0cfa73e196",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Reproduce.html",
+      "status": 200,
+      "sha256": "33aa9d582b4cef5b029a7fd7fe0919f65350df7ee4b3e42eec1bdf1d7bac748c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Requirements.html",
+      "status": 200,
+      "sha256": "15ddb773c3d33920e2941c67cdccfd6679a7d7b57af619d461790d804d7183cb",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Scope.html",
+      "status": 200,
+      "sha256": "da2e85b389f39be43a9184c3fcf68541256ad401ca412e126142a01f27e8a135",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Traceability.html",
+      "status": 200,
+      "sha256": "dfa3a9b6bcd8c3fb2bd45c0e13dd0a0fca20f8c1b8f4dd99ddfd318198a205a6",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Using-the-Model.html",
+      "status": 200,
+      "sha256": "d3b2ba2a9a3e3ae2fbdd6201e4bb9eaddfdf0dde1fb3919ab53066ee8fedaf91",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Visualization.html",
+      "status": 200,
+      "sha256": "ffed628591da7e60f00fbf27831e3c760262d95158f35c0e3c08794f3137fe5c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/guide/Work-Plan.html",
+      "status": 200,
+      "sha256": "9689789eaccffe72c04faa7ae57b0a0deb840001cabb62d6d0ef4c1c5ed96549",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/index.html",
+      "status": 200,
+      "sha256": "0b2d812c3ea39ac2064c8fef44936799ed9571359c383b4d4db9d85878c2c01d",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/publication-manifest.json",
+      "status": 200,
+      "sha256": "480e4e19921b352a6900f34226192dc968a304dce1565056e97a2511ec0abbb3",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/reference/native/index.html",
+      "status": 200,
+      "sha256": "6b1c2cec42b5595671dffd91a6c83295802e3e04edd7d19d77cc7927d55ba1bf",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/widoco/index-en.html",
+      "status": 200,
+      "sha256": "59b32e6a24ec6e67c1dc2ce590fccc672e90e442b76fd3e281e2d04528c28e6d",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/widoco/ontology.jsonld",
+      "status": 200,
+      "sha256": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/widoco/ontology.nt",
+      "status": 200,
+      "sha256": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/widoco/ontology.owl",
+      "status": 200,
+      "sha256": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/widoco/ontology.ttl",
+      "status": 200,
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/widoco/provenance/provenance-en.html",
+      "status": 200,
+      "sha256": "d58739bb51b6da79b49e7825c3d3e92a27e9288529181bac132e745b02699d2e",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/widoco/resources/extra.css",
+      "status": 200,
+      "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/widoco/resources/owl.css",
+      "status": 200,
+      "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/widoco/resources/primer.css",
+      "status": 200,
+      "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/widoco/resources/rec.css",
+      "status": 200,
+      "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/widoco/serialization-receipt.json",
+      "status": 200,
+      "sha256": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.1/widoco/tool-provenance.json",
+      "status": 200,
+      "sha256": "243f6a56902007570c43e9f3a85e1e36ae510fc7a9dfc2fcae945e8f7d211b4e",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/assets/complete-model.svg",
+      "status": 200,
+      "sha256": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/assets/filter.js",
+      "status": 200,
+      "sha256": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/assets/portal.css",
+      "status": 200,
+      "sha256": "0987488cda1aae98c68e6d330325f43f8a14f9bd8e1ce33d852b5a01fd4ed54c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/assets/selected-model.svg",
+      "status": 200,
+      "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/downloads/CC-BY-4.0.txt",
+      "status": 200,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/downloads/CITATION.cff",
+      "status": 200,
+      "sha256": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/downloads/LICENSE",
+      "status": 200,
+      "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/downloads/MIT.txt",
+      "status": 200,
+      "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/downloads/NOTICE.md",
+      "status": 200,
+      "sha256": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/downloads/RIGHTS.md",
+      "status": 200,
+      "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/downloads/SHA256SUMS.txt",
+      "status": 200,
+      "sha256": "27c5a9fc39869adf953d681e6dc29144be384fe2603b7f3c68e55ea143fcc960",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/downloads/index.html",
+      "status": 200,
+      "sha256": "1728d494c4ea2a2614bf88504056ce51ee8356f3f331728130b543692f66bfb1",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/downloads/riskium-model.json",
+      "status": 200,
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/downloads/riskium.ontouml.json",
+      "status": 200,
+      "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/downloads/typed-core.json",
+      "status": 200,
+      "sha256": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/explore/graph.json",
+      "status": 200,
+      "sha256": "865ec4717967315793851766f6a32ff99206b8c402b2afd249327413ed045f7c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/explore/index.html",
+      "status": 200,
+      "sha256": "a89906fba270107c6d34c0c0d0a204f4c268a10aec3272b5b4f9b0d4396e6c78",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Artifact-Versions.html",
+      "status": 200,
+      "sha256": "5b57e27470bfeb806ae97212bd81dea63aa766ef595732f2c10d6589501f0616",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Citation.html",
+      "status": 200,
+      "sha256": "968af1fba423806a7e8eef5dc4b42245050318e3a5e0921edef85d072e274fe9",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Competency-Questions.html",
+      "status": 200,
+      "sha256": "d1f83a94b8d48b93efa4c79593827fc2fcdff157341a64176d1c5acf344b8d4c",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Database-Assurance.html",
+      "status": 200,
+      "sha256": "52415fadda1480d5f976d1cc380fe5234b9c8e3fa642f7f2e476d50b634fab56",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Decisions.html",
+      "status": 200,
+      "sha256": "bcdb7fa31abec01e4a02cff92445d288cf58941fadd7a807e6a1e0272a18c0b8",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Evaluation.html",
+      "status": 200,
+      "sha256": "5b3b69269b5995d0c98478b8ddbab82795d91b426600cdb54e6352d1b6e6e5a2",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Formalization.html",
+      "status": 200,
+      "sha256": "1d5e26a64b741122cf4f54f454573166f7d15d4826eef8755c46d6bcc470d0cb",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Home.html",
+      "status": 200,
+      "sha256": "6a9e26c44024f8ad3d84576eb4d5c994a5aef63ad0f23fa1ccac404359f5c154",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Limitations.html",
+      "status": 200,
+      "sha256": "fb685f6854a3126373ec46ebeb105765722c35f90d3f3cb073972f7b4917cf03",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Overview.html",
+      "status": 200,
+      "sha256": "f5485a182a065466e2766d1d0c001de4cb3962a12fc6324c4129270fc9b60da2",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Publication-Comparison.html",
+      "status": 200,
+      "sha256": "23adb98a3187a6d44748180ec73677e6b317eb1ffb53b824b7b0be519812c9bc",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Publication.html",
+      "status": 200,
+      "sha256": "a3c09db68d462405357fdf3374e1fbfdc773597901c40056a064d4035adb37e7",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Quality.html",
+      "status": 200,
+      "sha256": "fa2e9481b6402a405d5727949b767d94021e0996a6aa1c62eb7e9e4a776d236b",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/References.html",
+      "status": 200,
+      "sha256": "d2319f95d6ea10001b2f25b907c5c26d332eeb37f2a60bfaa2f26d4582c89d7a",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Reproduce.html",
+      "status": 200,
+      "sha256": "99eebb8d51522192360750b57e484c6a7914383b6afb6f03deb1adc6a28c6559",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Requirements.html",
+      "status": 200,
+      "sha256": "71f19a475b5bde99fc8bb8a5359b69a2b21bea284ad50c3f42da0690467d5f3a",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Scope.html",
+      "status": 200,
+      "sha256": "2a2d69b7470d9ee97a4fadf0200197795e262508b1d22e62f677604ea5ee6fea",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Traceability.html",
+      "status": 200,
+      "sha256": "b5c960a58ef2ff33132be11b189ce51331a62fa025538e98dde7a9693591efd2",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Using-the-Model.html",
+      "status": 200,
+      "sha256": "0bd265c6365ba60e1c8af7cc9cb8e1a174cabe6494fdb5aff0a8ba29f197d103",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Visualization.html",
+      "status": 200,
+      "sha256": "8933ca45ea7f696ae077724859c460e0c66f5fea96152ae572db64d59fb9d168",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/guide/Work-Plan.html",
+      "status": 200,
+      "sha256": "efe5a961a5794d1ddb870c487f63cd5540c7d2bf8dcb43b291b7c95887df291f",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/index.html",
+      "status": 200,
+      "sha256": "fc66f95ff6361126c990930dd82b6d9e58d14974e052dad037dbf5648fd34bc1",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/publication-manifest.json",
+      "status": 200,
+      "sha256": "9b3fc79496d6fe3651f3d62f5fb668c650f8747aa8482f4faf513514ba7dc835",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/reference/diagrams/index.html",
+      "status": 200,
+      "sha256": "e2dc0e178fde08144fb9e2ab00f19ce81c0ce361a819f976a33b2ef57ea4ced5",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/reference/native/index.html",
+      "status": 200,
+      "sha256": "fd4145e7ffa86696ca83e4a33b335018063285d8ed28e5bde3b44d0ec7d780b2",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/reference/search.html",
+      "status": 200,
+      "sha256": "e5da050b3829e071c7415677f7b7a348985cabd1524c539ea18a15af0d6b94a7",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/webvowl/coverage.json",
+      "status": 200,
+      "sha256": "bebe79ba85ad4f3d6c920b101046dbee84a3121b48ae0f395461220a8ec3ae31",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/webvowl/data/riskium.json",
+      "status": 200,
+      "sha256": "4b96dfd769858256a13aedf760e32bb64aa740437d9dc5cfc278787ae41fbdc2",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/webvowl/index.html",
+      "status": 200,
+      "sha256": "adad4c5d2c0f4258d8abe4ab58ecedcc43419867d1f2c8b7178503475057e4fa",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/webvowl/vendor/D3-BSD.txt",
+      "status": 200,
+      "sha256": "e4796bd1fdc09e06a3683957a177d59b38aec4143df81b2d25472438f5763482",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/webvowl/vendor/Lodash-MIT.txt",
+      "status": 200,
+      "sha256": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/webvowl/vendor/WebVOWL-MIT.txt",
+      "status": 200,
+      "sha256": "d07986d8f3441f0a563f237aa3778489c763def2e151911e1774a18deff89cde",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/webvowl/vendor/d3.min.js",
+      "status": 200,
+      "sha256": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/webvowl/vendor/provenance.json",
+      "status": 200,
+      "sha256": "bcbb184bfec22d57732baffd3e812dbf5eda8997c2f754c80be7c38316ab1704",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/webvowl/vendor/webvowl.css",
+      "status": 200,
+      "sha256": "067bb2fe6dfb69a4ef4be734a7b3788335f4c3cd419ce3e42d86c3cf302c49f8",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/webvowl/vendor/webvowl.js",
+      "status": 200,
+      "sha256": "a46d5a71e0d8d05aad6fd3ea4ed4e2cc66ba738958a04aa2dc7568f31f2c2006",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/webvowl/viewer.css",
+      "status": 200,
+      "sha256": "9c764071adcbca0664fd9bc4431e0e1752f83092a869f1e65c70b2b4f13e43d7",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/webvowl/viewer.js",
+      "status": 200,
+      "sha256": "fab10c32e3ce34c48d8eb8bda7e05bb4e703d6681260cf26a9411ed2bf301869",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/widoco/index-en.html",
+      "status": 200,
+      "sha256": "04d7e47486d5a9b7946c388aeb5a1b060631a77cb71e31e63c3e4b8e277a257a",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/widoco/ontology.jsonld",
+      "status": 200,
+      "sha256": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/widoco/ontology.nt",
+      "status": 200,
+      "sha256": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/widoco/ontology.owl",
+      "status": 200,
+      "sha256": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/widoco/ontology.ttl",
+      "status": 200,
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/widoco/provenance/provenance-en.html",
+      "status": 200,
+      "sha256": "2b103029420d6028874986c3fb9f07ef33b74ae8470f15efc8c1877d9f84cfc9",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/widoco/resources/extra.css",
+      "status": 200,
+      "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/widoco/resources/owl.css",
+      "status": 200,
+      "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/widoco/resources/primer.css",
+      "status": 200,
+      "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/widoco/resources/rec.css",
+      "status": 200,
+      "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/widoco/resources/riskium.css",
+      "status": 200,
+      "sha256": "b6bda9ae35ba69dec80a60435f9720bfff2cc490ca66b1cd7f76899cb69a4d07",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/widoco/serialization-receipt.json",
+      "status": 200,
+      "sha256": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "releases/v0.3.3/widoco/tool-provenance.json",
+      "status": 200,
+      "sha256": "d9d6f1d00233edfa94294c6da2edf43618ba5a36e752fc44d1fe23ff05d904c5",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "site/index.html",
+      "status": 200,
+      "sha256": "d8f69c71e3d58d8eb7f2a2244b3c0308aa017af7a7ebf7625373a57d1bc02e0a",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    },
+    {
+      "path": "versions/index.html",
+      "status": 200,
+      "sha256": "a3b6b6d895838d8b96e11e825ee00486261b1726c40c18d5999a3971fac44795",
+      "matches_source_and_manifest": true,
+      "current_header": null
+    }
+  ]
+}

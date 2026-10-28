@@ -1,0 +1,121 @@
+{
+  "schema": "riskium-current-documentation-hosted-checks-v1",
+  "source_commit": "ec9a8b06c5da7d2157c644af32628dc4e6b3186e",
+  "workflows": [
+    {
+      "id": 40663066904,
+      "name": "Publish versioned documentation",
+      "head_sha": "ec9a8b06c5da7d2157c644af32628dc4e6b3186e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40663066904"
+    },
+    {
+      "id": 40662973156,
+      "name": "Claim-based quality integrity",
+      "head_sha": "ec9a8b06c5da7d2157c644af32628dc4e6b3186e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40662973156"
+    },
+    {
+      "id": 40662973064,
+      "name": "Stable research artifact release",
+      "head_sha": "ec9a8b06c5da7d2157c644af32628dc4e6b3186e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40662973064"
+    },
+    {
+      "id": 40662973038,
+      "name": "Requirement and CQ evidence",
+      "head_sha": "ec9a8b06c5da7d2157c644af32628dc4e6b3186e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40662973038"
+    },
+    {
+      "id": 40662973399,
+      "name": "Documentation integrity",
+      "head_sha": "ec9a8b06c5da7d2157c644af32628dc4e6b3186e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40662973399"
+    },
+    {
+      "id": 40662973130,
+      "name": "Post-release integration and scope",
+      "head_sha": "ec9a8b06c5da7d2157c644af32628dc4e6b3186e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40662973130"
+    },
+    {
+      "id": 40662973080,
+      "name": "Incremental release candidate",
+      "head_sha": "ec9a8b06c5da7d2157c644af32628dc4e6b3186e",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40662973080"
+    }
+  ],
+  "documentation": {
+    "run_id": 40662973399,
+    "job_id": 122730304205,
+    "component_version": "0.3.0",
+    "component_tests": 4,
+    "registered_snapshots": 3,
+    "actual_log_lines": [
+      "2026-10-28T09:16:56.8704893Z {\"status\": \"CURRENT_DOCUMENTATION_COMPONENT_PASS\", \"version\": \"0.3.0\", \"current_files\": 68, \"wiki_files\": 23, \"frozen_snapshots\": 3, \"source_release_published\": false}",
+      "2026-10-28T09:17:02.1860220Z Ran 4 tests in 4.893s",
+      "2026-10-28T09:17:13.4131152Z {\"status\": \"VERSIONED_DOCUMENTATION_PASS\", \"source_commit\": \"ec9a8b06c5da7d2157c644af32628dc4e6b3186e\", \"files\": 245, \"html_pages\": 113, \"local_links\": 21468, \"frozen_snapshots\": 3, \"browser_execution\": false, \"new_release_published\": false}"
+    ]
+  },
+  "candidate": {
+    "run_id": 40662973080,
+    "job_id": 122730304802,
+    "passed_checks": 28,
+    "inventory_verified": true,
+    "publication_executed": false,
+    "actual_log_lines": [
+      "2026-10-28T09:22:15.5062701Z {\"source_commit\": \"ec9a8b06c5da7d2157c644af32628dc4e6b3186e\", \"package_name\": \"candidate-ec9a8b06c5da\", \"passed_checks\": 28, \"inventory_verified\": true, \"publication_executed\": false}"
+    ]
+  },
+  "stable_release_readback": {
+    "tag": "v0.3.3",
+    "id": 425211772,
+    "assets": [
+      {
+        "id": 680997953,
+        "name": "artifact-versions.json",
+        "digest": "sha256:43652995eb9039f25bfad707145f46c79b2adff906946fd14d63a040e9ce893d"
+      },
+      {
+        "id": 680997954,
+        "name": "freeze-receipt.json",
+        "digest": "sha256:f1552953214f4c5f44029582e7956b58670c7364fbe048ad22e7990a6e2302f2"
+      },
+      {
+        "id": 680997955,
+        "name": "release-notes.md",
+        "digest": "sha256:cc64e1e795900ae3f88583ab65c7922d220f81ae32e5127c1e2a33dbfacd26d8"
+      },
+      {
+        "id": 680997958,
+        "name": "riskium-v0.3.3-source.tar.gz",
+        "digest": "sha256:9bb43bd2e190fda01bb83156134146345f6d55fb7674c8b06100eb34566eb907"
+      },
+      {
+        "id": 680997956,
+        "name": "SHA256SUMS.txt",
+        "digest": "sha256:5dc28c5266ee9c1ecee10cde20b7bcc3f147711e568994e39b9b552ca32b9b18"
+      },
+      {
+        "id": 680997979,
+        "name": "source-manifest.json",
+        "digest": "sha256:0414bfde75ed923c2c653b3efeb16f03b017de1df159c450faf575796eb30d96"
+      }
+    ],
+    "all_original_asset_ids_and_digests_unchanged": true
+  }
+}

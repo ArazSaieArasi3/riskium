@@ -1,0 +1,13 @@
+{
+  "schema": "riskium-current-documentation-software-tests-v1",
+  "source_commit": "ec9a8b06c5da7d2157c644af32628dc4e6b3186e",
+  "command": "python -m unittest discover -s tests -v",
+  "tests": 287,
+  "seconds": 133.918,
+  "outcome": "PASS",
+  "log_sha256": "5b67c99b07d5be2ef02a17ae00514c38eb9c32245e3834008bdbd1c492acbe9e",
+  "focused_documentation_tests": 16,
+  "focused_presentation_tests": 5,
+  "published_release_tests": 9,
+  "limits": "Software/serialization/documentation evidence, no new scientific engine run or independent semantic review."
+}

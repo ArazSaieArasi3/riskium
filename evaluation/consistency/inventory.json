@@ -99,8 +99,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "0fde17b7e687e50d1635a72839ae4d82ea6cc1c658519317377ae2c5ab74cd50",
-      "bytes": 19921
+      "sha256": "5ac171cc306fad76f22da615276b563e9ab4260e315e53bcc8f3c9c9aa056a82",
+      "bytes": 20249
     },
     {
       "path": "RIGHTS.md",
@@ -463,9 +463,39 @@
       "bytes": 3620
     },
     {
+      "path": "evaluation/documentation/current-0.3.0/README.md",
+      "sha256": "24792701b36acd413db5d6b4cd430c9de740e807ed6dcfc3a562e30073fb0723",
+      "bytes": 2384
+    },
+    {
+      "path": "evaluation/documentation/current-0.3.0/completion.json",
+      "sha256": "39a336e3b16297a1a8c2b5c91c2615ddf1eec1dbf542203c09491d4bbceeacf5",
+      "bytes": 18923
+    },
+    {
       "path": "evaluation/documentation/current-0.3.0/component.json",
       "sha256": "2242bdd2c8403bcfdf6144145536606296564ccb5bbf6869a5cbfccd183fdd44",
       "bytes": 34667
+    },
+    {
+      "path": "evaluation/documentation/current-0.3.0/hosted-checks.json",
+      "sha256": "b3d5d17bdf6f863cf389f64511454f1e2ce4b30d2548fba8cf3a5b00e6c10160",
+      "bytes": 4595
+    },
+    {
+      "path": "evaluation/documentation/current-0.3.0/http-readback.json",
+      "sha256": "9e4c9b3daddbf9c0cb7f16e852ecabf686a51da62218e680a8aef3ae025d50d7",
+      "bytes": 62492
+    },
+    {
+      "path": "evaluation/documentation/current-0.3.0/software-tests.json",
+      "sha256": "a6e70e4c7df307c210efbc35e9732bda6d1f91416e03c84cf631226b713feb7a",
+      "bytes": 555
+    },
+    {
+      "path": "evaluation/documentation/current-0.3.0/wiki-readback.json",
+      "sha256": "8b33ef98761a1d25da09fcef18d3f3b1d17c23c462efdec2cd3b7c8a69881327",
+      "bytes": 2774
     },
     {
       "path": "evaluation/documentation/http-readback.json",
@@ -1899,8 +1929,8 @@
     },
     {
       "path": "plans/v0.3.4.md",
-      "sha256": "eb41d6aa2316feacd0f0b38ef9991ff027b4c570341bd5e0dcf71b0539334615",
-      "bytes": 4450
+      "sha256": "d467ac56fb9f557accc65dc2146904e8a06c2354cce0e90a13e85a53b3c7c469",
+      "bytes": 5264
     },
     {
       "path": "references/README.md",
