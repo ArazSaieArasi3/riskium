@@ -1,6 +1,7 @@
 """Add the reviewed v0.3.4 snapshot without rewriting the #46/#47 checkpoints."""
 import argparse
 import copy
+from functools import lru_cache
 import html
 import json
 from pathlib import Path
@@ -43,7 +44,13 @@ def read(root, path):
     return target.read_bytes()
 
 
-def review(root=ROOT):
+@lru_cache(maxsize=1024)
+def archived(root, path):
+    original.safe_path(path)
+    return original.git(root, 'show', SOURCE + ':' + path)
+
+
+def review(root=ROOT, require_current=False):
     policy = json.loads(read(root, POLICY))
     require(policy['schema'] == 'riskium-documentation-snapshot-policy-v1'
             and policy['version'] == '0.1.0' and policy['issue'] == 48 and policy['parent_issue'] == 45,
@@ -59,17 +66,22 @@ def review(root=ROOT):
     require(set(policy['preserved_files_sha256']) == PRESERVED, 'Preserved checkpoint binding omitted')
     for path, digest in policy['preserved_files_sha256'].items():
         require(original.sha(read(root, path)) == digest, 'Preserved checkpoint changed: ' + path)
-        require(read(root, path) == original.git(root, 'show', SOURCE + ':' + path), 'Checkpoint source differs: ' + path)
+        require(read(root, path) == archived(root, path), 'Checkpoint source differs: ' + path)
     selection = json.loads(read(root, 'releases/selection-v0.3.4.json'))
     for path, digest in selection['selected_files_sha256'].items():
-        require(original.sha(read(root, path)) == digest, 'Selected checkpoint file changed: ' + path)
+        require(original.sha(archived(root, path)) == digest, 'Archived selected checkpoint file changed: ' + path)
+        if require_current:
+            require(original.sha(read(root, path)) == digest, 'Selected checkpoint file changed: ' + path)
     selection_policy = json.loads(read(root, selection['policy_path']))
     for path, digest in selection_policy['preserved_registers_sha256'].items():
-        require(original.sha(read(root, path)) == digest, 'Original release register changed: ' + path)
+        require(original.sha(archived(root, path)) == digest, 'Archived release register changed: ' + path)
+        if require_current:
+            require(original.sha(read(root, path)) == digest, 'Original release register changed: ' + path)
     tree = original.git(root, 'rev-parse', SOURCE + ':docs/current').decode().strip()
     require(tree == policy['source_tree'], 'Reviewed snapshot source tree differs')
     inputs = original.tree_files(root, SOURCE, 'docs/current')
-    require(original.file_map(root / 'docs/current') == inputs, 'Current documentation differs from reviewed source')
+    if require_current:
+        require(original.file_map(root / 'docs/current') == inputs, 'Current documentation differs from reviewed source')
     require(original.sha(inputs['publication-manifest.json']) == policy['source_manifest_sha256'], 'Reviewed source manifest differs')
     manifest = json.loads(inputs['publication-manifest.json'])
     require(manifest['model_version'] == '0.3.1' and manifest['documentation_version'] == VERSION
@@ -117,7 +129,7 @@ def check_additions(root=ROOT, previous_ref='HEAD'):
 
 def register(label, source, version, root=ROOT):
     require((label, source, version) == (LABEL, SOURCE, VERSION), 'Unreviewed snapshot request')
-    policy, inputs = review(root)
+    policy, inputs = review(root, require_current=True)
     original.check_registry(root)
     require(not (root / ADDITIONS).exists() and not (root / 'docs' / ROUTE).exists(), 'Snapshot addition/route already exists')
     target = root / 'docs' / ROUTE

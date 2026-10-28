@@ -91,7 +91,14 @@ class DocumentationSnapshot(unittest.TestCase):
         with patch.object(snapshots.original, 'file_map', side_effect=lambda p:
                           altered if p == ROOT / 'docs/current' else original(p)):
             with self.assertRaisesRegex(ValueError, 'Current documentation differs'):
-                snapshots.review()
+                snapshots.review(require_current=True)
+
+    def test_later_current_documentation_does_not_change_the_frozen_snapshot_source(self):
+        original = snapshots.original.file_map
+        with patch.object(snapshots.original, 'file_map', side_effect=lambda p:
+                {'index.html': b'later current documentation'} if p == ROOT / 'docs/current' else original(p)):
+            combined = snapshots.check_additions()
+            self.assertEqual(combined['releases']['v0.3.4']['source_commit'], snapshots.SOURCE)
 
     def test_the_source_tree_must_be_the_reviewed_commit_tree(self):
         policy = copy.deepcopy(self.policy)

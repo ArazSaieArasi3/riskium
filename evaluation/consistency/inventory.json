@@ -509,12 +509,12 @@
     },
     {
       "path": "evaluation/documentation/v0.3.4-snapshot/README.md",
-      "sha256": "8708d88e5cf81d6b905e2ee025cc8c8d1547d863bafd709887bf4269cdf06ee9",
-      "bytes": 2990
+      "sha256": "5b271ba00b555087ef03636516715145866c21495206f66926f88b6788e12eb2",
+      "bytes": 3171
     },
     {
       "path": "evaluation/documentation/v0.3.4-snapshot/component.json",
-      "sha256": "3f9b35c9fbfe46ddb325c5f4b0abe660c8ac91241ad860605caa646af9886843",
+      "sha256": "6ee88c855117b16b4067a985ae186e6edd774152fc0d2c87f531bb1b60ea6b0c",
       "bytes": 10428
     },
     {
@@ -2244,8 +2244,8 @@
     },
     {
       "path": "tests/test_documentation_snapshot.py",
-      "sha256": "0e8e07bd96bc6c9372342c9747858beab030fa6bb40e6cc2b8355ab15d9497af",
-      "bytes": 10230
+      "sha256": "3e1d16f5cf7d7d81f88827de9f5374fc0a5b696fcae2e39db5994bc5a044f833",
+      "bytes": 10728
     },
     {
       "path": "tests/test_endpoint_shacl.py",
@@ -2684,8 +2684,8 @@
     },
     {
       "path": "tools/publication/snapshot_registry.py",
-      "sha256": "e78c1964f490dee60da8aa388cd5d271b5e86e0cebc57f4f50265083f60ba59e",
-      "bytes": 12255
+      "sha256": "a0fe17e7341ecf20c565dd04f6d6c31a7e34852bb411bbba65d36ecc9c9093c3",
+      "bytes": 12762
     },
     {
       "path": "tools/publication/webvowl/index.html",

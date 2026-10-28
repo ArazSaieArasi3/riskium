@@ -86,11 +86,11 @@
     "docs/releases/v0.3.4/widoco/resources/riskium.css": "b6bda9ae35ba69dec80a60435f9720bfff2cc490ca66b1cd7f76899cb69a4d07",
     "docs/releases/v0.3.4/widoco/serialization-receipt.json": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d",
     "docs/releases/v0.3.4/widoco/tool-provenance.json": "e25e3d8066c106938a8ee10d8a6b1895d6b3c7496a1009cf4423c80425001d03",
-    "tests/test_documentation_snapshot.py": "0e8e07bd96bc6c9372342c9747858beab030fa6bb40e6cc2b8355ab15d9497af",
+    "tests/test_documentation_snapshot.py": "3e1d16f5cf7d7d81f88827de9f5374fc0a5b696fcae2e39db5994bc5a044f833",
     "tools/publication/build_snapshot_site.py": "bb07e4188b6fb92319a157e052822eddc513564d1bd34ec363adfc54e3898367",
     "tools/publication/snapshot-additions-v0.3.4.json": "8b284513ca136f56d94fe0d71ad8d60ed8cc4ff40d89f0976a52767b6a9af7f1",
     "tools/publication/snapshot-policy-v0.3.4.json": "2406797b1251103d31cd2b0c9872785974b5ba6ca088e132534d56ba7476b55a",
-    "tools/publication/snapshot_registry.py": "e78c1964f490dee60da8aa388cd5d271b5e86e0cebc57f4f50265083f60ba59e"
+    "tools/publication/snapshot_registry.py": "a0fe17e7341ecf20c565dd04f6d6c31a7e34852bb411bbba65d36ecc9c9093c3"
   },
   "generated_versions_index_sha256": "d9ab45f829945001e30a6df8ad19d3fa5f115699ef7052dc9ff82e83898440ad",
   "deployment_entrypoint": "tools/publication/build_snapshot_site.py",
