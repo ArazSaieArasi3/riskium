@@ -57,6 +57,11 @@ jobs:
           python tools/run_relational_source_scenario_lineage.py --check
           python tools/build_source_scenario_lineage_inventory.py --check
           python -m unittest discover -s tests -p test_source_scenario_lineage.py -v
+      - name: Replay qualified evidence, contextual roles and exact target/source oracles
+        run: |
+          python tools/run_relational_evidence.py --check
+          python tools/build_evidence_inventory.py --check
+          python -m unittest discover -s tests -p test_qualified_evidence.py -v
       - name: Replay existing SQLite migration and history expectations
         run: python tools/run_relational_history.py --check
       - name: Replay the frozen source and correction/withheld-identity cohorts

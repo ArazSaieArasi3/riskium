@@ -19,8 +19,8 @@
     },
     {
       "path": ".github/workflows/post-release-validation.yml",
-      "sha256": "546c6296e7db50002570af0d80d2d175f98c13acc00f9ee2a3829be941a1ed4a",
-      "bytes": 2992
+      "sha256": "246b2ad592c5aad17734f2319e3ee81ebb78e02031cbac48397b93d044b3f234",
+      "bytes": 3294
     },
     {
       "path": ".github/workflows/quality.yml",
@@ -401,6 +401,11 @@
       "path": "evaluation/c14-boundary-review.md",
       "sha256": "59f6f1ed057e2123ae00fca373f47f3943ad5c604dcff23d663c7288f602c110",
       "bytes": 1876
+    },
+    {
+      "path": "evaluation/channels/2026-10-28.json",
+      "sha256": "a9a69c1c9b2b433593d56b309220c7daf3ce967e08814da59bd914e469f79706",
+      "bytes": 79707
     },
     {
       "path": "evaluation/coverage-contract.json",
@@ -1026,6 +1031,26 @@
       "path": "evaluation/relational/history/report.md",
       "sha256": "9196a059a173f6f84e801a1f35bb1aa188e100232c21bf2fd3aa1a60ddec0f40",
       "bytes": 6483
+    },
+    {
+      "path": "evaluation/relational/qualified-evidence/README.md",
+      "sha256": "1ef72d0e6cf34a55d31da0da030a528f85b4ddd7fc3b1835f5133d2e42d5e9d3",
+      "bytes": 3106
+    },
+    {
+      "path": "evaluation/relational/qualified-evidence/mapping-accounting.json",
+      "sha256": "78376e6911505de592c83e870ed2e28bb89b46de130e040bf378197d45a75a1b",
+      "bytes": 334614
+    },
+    {
+      "path": "evaluation/relational/qualified-evidence/report.json",
+      "sha256": "8e67f479a6c5831511add633617c47dee071228de0f80b41f5ad8470cafe915a",
+      "bytes": 48674
+    },
+    {
+      "path": "evaluation/relational/qualified-evidence/traceability.json",
+      "sha256": "cada2946642fc23047d3397dff1d2369265a4f72ccd7655d0be9b8977e485297",
+      "bytes": 10279
     },
     {
       "path": "evaluation/relational/source-scenario-lineage/README.md",
@@ -1698,6 +1723,41 @@
       "bytes": 4071
     },
     {
+      "path": "implementation/relational/0.6.0/007_qualified_evidence.sql",
+      "sha256": "91881f135036e6879845ad1faee94c6ff14a373d2861e2287c4f3c3749cf0990",
+      "bytes": 12605
+    },
+    {
+      "path": "implementation/relational/0.6.0/README.md",
+      "sha256": "146575c05090c611116a82506fcd160e8ee11577a6f3b0d0a48ef09543d6bd5a",
+      "bytes": 4362
+    },
+    {
+      "path": "implementation/relational/0.6.0/component.json",
+      "sha256": "b83973b5c00a939de25d463d10eb4e055237d4ab1aca9d9a5734bd96673759a1",
+      "bytes": 3702
+    },
+    {
+      "path": "implementation/relational/0.6.0/contract.json",
+      "sha256": "c088cea95940a1efdf49d24a586d1acd5a1c765ff4f733011a4f3b0f4ae6a88c",
+      "bytes": 6113
+    },
+    {
+      "path": "implementation/relational/0.6.0/fixtures.json",
+      "sha256": "9b7d6c0ef35f71c89558d65f439ba9fa7b2b9113d7f3fc0f5b3128c71767ccf8",
+      "bytes": 18443
+    },
+    {
+      "path": "implementation/relational/0.6.0/queries/by_target.sql",
+      "sha256": "8cd55903336b9d8fc392c1c12ada3a566cfe7cb8fd3fa57fdc1eae36706511a4",
+      "bytes": 857
+    },
+    {
+      "path": "implementation/relational/0.6.0/schema-dictionary.md",
+      "sha256": "5df07f3a031035db50f67f6dc81d094e4ae10f0edf07542bdc5f9a9af6591164",
+      "bytes": 4551
+    },
+    {
       "path": "implementation/validation/0.1.0/README.md",
       "sha256": "aa1a49c52dcae87ff2728889974ec60f38f27b822fc40944ed3bc6b6d6a0e792",
       "bytes": 2970
@@ -1811,6 +1871,11 @@
       "path": "ontology/shacl/0.7.0/receipt.json",
       "sha256": "983b126e373907a51ea156377f8825ebf6a455877a4dd833d3b02feca5522585",
       "bytes": 6737
+    },
+    {
+      "path": "plans/v0.3.4.md",
+      "sha256": "a2223f272898ee2700c8d96ca2af3ac7df50a7033c35c7862b1070cfdd907d02",
+      "bytes": 4204
     },
     {
       "path": "references/README.md",
@@ -2103,6 +2168,11 @@
       "bytes": 4264
     },
     {
+      "path": "tests/test_qualified_evidence.py",
+      "sha256": "9f8f670fb47791e72862f0887f7b59c0b30b5f6b86470e9c72f24a8095c7a9cb",
+      "bytes": 8419
+    },
+    {
       "path": "tests/test_quality.py",
       "sha256": "1465532c7b4db3681f64b2b209c1418eb3bd812ea312c4ada19ed9c87e4363a9",
       "bytes": 3517
@@ -2216,6 +2286,11 @@
       "path": "tools/build_endpoint_shapes.py",
       "sha256": "f7b61d395ac9033484a1009690c604e293b14f89caeacbf32681620804dd11ee",
       "bytes": 3248
+    },
+    {
+      "path": "tools/build_evidence_inventory.py",
+      "sha256": "504ac2c0d4c92304278df15cb46bb066848ec8739e9f7efb866304f033979d51",
+      "bytes": 8652
     },
     {
       "path": "tools/build_final_review.py",
@@ -2498,6 +2573,11 @@
       "bytes": 6154
     },
     {
+      "path": "tools/relational_evidence.py",
+      "sha256": "3eac2b197739f5166e25d4ad292a6842af8232ed56922caa7181ebe044e2e0d2",
+      "bytes": 8930
+    },
+    {
       "path": "tools/relational_history.py",
       "sha256": "098abac5e8b17c4754b0879d18b2030814d74a71d4694f50127f8deefe9d0182",
       "bytes": 8746
@@ -2611,6 +2691,11 @@
       "path": "tools/run_relational_correction.py",
       "sha256": "157f00980b30b7b9c0464b74c488d23ab843e1a05ec165d55d0723e8329a594c",
       "bytes": 13032
+    },
+    {
+      "path": "tools/run_relational_evidence.py",
+      "sha256": "fb1c4a5bbfc0b4c9ba7b198ab1c20f993afa7b4f90d4cc2429f7fe0573780196",
+      "bytes": 18680
     },
     {
       "path": "tools/run_relational_history.py",

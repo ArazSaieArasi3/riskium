@@ -1,0 +1,56 @@
+{
+  "schema": "riskium-qualified-evidence-component-v1",
+  "id": "QUALIFIED_EVIDENCE",
+  "version": "0.6.0",
+  "schema_version": 7,
+  "compatible_model": "0.3.1",
+  "baseline_sql_profile": "0.5.0",
+  "status": "DEVELOPMENT_COMPONENT_NOT_SELECTED_BY_STABLE_DISTRIBUTION",
+  "stable_distribution_unchanged": "v0.3.3",
+  "proposed_successor": "v0.3.4 PLANNED; selection/freeze/publication not executed",
+  "summary": {
+    "cases": 62,
+    "outcomes": {
+      "PASS": 62
+    },
+    "kinds": {
+      "negative": 36,
+      "positive": 22,
+      "mutation": 4
+    },
+    "native_graph_oracles": 4
+  },
+  "native_support": {
+    "reference_representations": 1,
+    "contextual_item_role_routes": 1,
+    "relation_exports": 2,
+    "inherited_typing_routes": 2,
+    "full_mapping_completed": false
+  },
+  "files_sha256": {
+    "evaluation/relational/qualified-evidence/README.md": "1ef72d0e6cf34a55d31da0da030a528f85b4ddd7fc3b1835f5133d2e42d5e9d3",
+    "evaluation/relational/qualified-evidence/report.json": "8e67f479a6c5831511add633617c47dee071228de0f80b41f5ad8470cafe915a",
+    "evaluation/relational/source-scenario-lineage/mapping-accounting.json": "50dd4fad66adde680c28b0e7f8c4131e064fc6b2e2deda6a74cb7638368db257",
+    "evaluation/sources/cq0708/cohort.json": "525c6f69cff592baf705ec48ee52b629d2b0f61e93adcbedf9535b5993843127",
+    "evaluation/sources/cq0708/report.json.gz": "da8ec348280e788f2490b0dd053c0901f175fb969de8d73ca8959c2cec8a1612",
+    "implementation/relational/0.5.0/component.json": "d43226ec189ee922474804fa9edf9232f8678ba9db63295940e08038d25f17b8",
+    "implementation/relational/0.5.0/contract.json": "b4519adb907a4867cb2668489cd7d70963a83709f0b7880d881b415a4d041ac1",
+    "implementation/relational/0.6.0/007_qualified_evidence.sql": "91881f135036e6879845ad1faee94c6ff14a373d2861e2287c4f3c3749cf0990",
+    "implementation/relational/0.6.0/README.md": "146575c05090c611116a82506fcd160e8ee11577a6f3b0d0a48ef09543d6bd5a",
+    "implementation/relational/0.6.0/contract.json": "c088cea95940a1efdf49d24a586d1acd5a1c765ff4f733011a4f3b0f4ae6a88c",
+    "implementation/relational/0.6.0/fixtures.json": "9b7d6c0ef35f71c89558d65f439ba9fa7b2b9113d7f3fc0f5b3128c71767ccf8",
+    "implementation/relational/0.6.0/queries/by_target.sql": "8cd55903336b9d8fc392c1c12ada3a566cfe7cb8fd3fa57fdc1eae36706511a4",
+    "implementation/relational/0.6.0/schema-dictionary.md": "5df07f3a031035db50f67f6dc81d094e4ae10f0edf07542bdc5f9a9af6591164",
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "tests/test_qualified_evidence.py": "9f8f670fb47791e72862f0887f7b59c0b30b5f6b86470e9c72f24a8095c7a9cb",
+    "tools/build_evidence_inventory.py": "504ac2c0d4c92304278df15cb46bb066848ec8739e9f7efb866304f033979d51",
+    "tools/relational_evidence.py": "3eac2b197739f5166e25d4ad292a6842af8232ed56922caa7181ebe044e2e0d2",
+    "tools/relational_source_scenario_lineage.py": "0fddac0d97c9bbf2eb7d0947c0f989978e9f6b0e2b2ce94b160983035ecd3d36",
+    "tools/run_relational_evidence.py": "fb1c4a5bbfc0b4c9ba7b198ab1c20f993afa7b4f90d4cc2429f7fe0573780196",
+    "evaluation/relational/qualified-evidence/mapping-accounting.json": "78376e6911505de592c83e870ed2e28bb89b46de130e040bf378197d45a75a1b",
+    "evaluation/relational/qualified-evidence/traceability.json": "cada2946642fc23047d3397dff1d2369265a4f72ccd7655d0be9b8977e485297"
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "schema": "riskium-qualified-evidence-requirement-trace-v1",
+  "profile": "0.6.0",
+  "execution_issue": 44,
+  "parent_issues": [
+    35,
+    12
+  ],
+  "original_drsd": "0.1.0 unchanged; EQR-01..06 explicit derived supplement",
+  "requirements": [
+    {
+      "requirement": {
+        "id": "EQR-01",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-11"
+        ],
+        "constraints": [
+          "C-03"
+        ],
+        "accept": "Populated v6->v7 preserves every previous row, ledger, issued graph and correction branch; repeat and failed migration execute atomically."
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "POPULATED_UPGRADE",
+        "LEGACY_GRAPHS_PRESERVED",
+        "LINEAGE_PRESERVED",
+        "IDEMPOTENT_UPGRADE",
+        "FAILED_UPGRADE"
+      ],
+      "implementation": [
+        "implementation/relational/0.6.0/007_qualified_evidence.sql",
+        "implementation/relational/0.6.0/queries/by_target.sql",
+        "tools/relational_evidence.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Bounded qualified references/contextual role projection; no complete original/native semantic or independent acceptance."
+    },
+    {
+      "requirement": {
+        "id": "EQR-02",
+        "source_requirements": [
+          "RKRS-06",
+          "RKRS-11"
+        ],
+        "constraints": [
+          "C-12",
+          "C-16"
+        ],
+        "accept": "An issued EvidenceReference points to exactly one pinned issued EvidenceItem version and >=1 pinned issued recorded-artifact target versions. The item role is contextual in the selected reference graph, not a global or identity-supplying class."
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "NO_TARGET",
+        "MISSING_TARGET",
+        "UNISSUED_TARGET",
+        "TARGET_OWNER_MISMATCH",
+        "DUPLICATE_TARGET",
+        "TWO_VERSIONS_ONE_TARGET",
+        "MISSING_ITEM",
+        "UNISSUED_ITEM",
+        "ITEM_OWNER_MISMATCH",
+        "WRONG_REF_KIND",
+        "CONFLICTING_TYPING",
+        "UNISSUED_EXCLUDED",
+        "ROLE_CONTEXTUAL",
+        "RAW_EXCLUSION"
+      ],
+      "implementation": [
+        "implementation/relational/0.6.0/007_qualified_evidence.sql",
+        "implementation/relational/0.6.0/queries/by_target.sql",
+        "tools/relational_evidence.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Bounded qualified references/contextual role projection; no complete original/native semantic or independent acceptance."
+    },
+    {
+      "requirement": {
+        "id": "EQR-03",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-06"
+        ],
+        "constraints": [
+          "C-03",
+          "C-12"
+        ],
+        "accept": "Keep explicit support/challenge/context, statement and source JSON/locator/interpretation/time immutable and independently attributable to reference and item versions; payload and normalized pins agree."
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "PROVENANCE_EXACT",
+        "ITEM_OLD_PIN",
+        "MISSING_SOURCE",
+        "EMPTY_PROVENANCE",
+        "BAD_CALENDAR",
+        "SOURCE_MISMATCH",
+        "OWNER_MISMATCH",
+        "PAYLOAD_DRIFT",
+        "SEAL_SMUGGLE",
+        "DUPLICATE_VERSION",
+        "UPDATE_SNAPSHOT",
+        "DELETE_SNAPSHOT",
+        "REPLACE_SNAPSHOT",
+        "UPDATE_TARGET",
+        "DELETE_TARGET",
+        "REPLACE_TARGET",
+        "LATE_TARGET",
+        "INVALID_ROLE",
+        "NONTEXT_INPUT"
+      ],
+      "implementation": [
+        "implementation/relational/0.6.0/007_qualified_evidence.sql",
+        "implementation/relational/0.6.0/queries/by_target.sql",
+        "tools/relational_evidence.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Bounded qualified references/contextual role projection; no complete original/native semantic or independent acceptance."
+    },
+    {
+      "requirement": {
+        "id": "EQR-04",
+        "source_requirements": [
+          "RKRS-06",
+          "RKRS-11"
+        ],
+        "constraints": [
+          "C-12",
+          "C-17"
+        ],
+        "accept": "Exact target-version queries preserve all explicit references, sources, historical item/target pins and equal-label distinct identities; native graphs match literal directions and infer no endorsement, occurrence or independent corroboration."
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "TARGET_OLD",
+        "TARGET_NEW",
+        "MULTIPLE_TARGETS",
+        "NO_IMPLICIT_ENDORSEMENT",
+        "DUPLICATE_LABEL_IDENTITIES",
+        "NATIVE_REFERENCE_A1",
+        "NATIVE_REFERENCE_A2",
+        "NATIVE_REFERENCE_B1",
+        "NATIVE_REFERENCE_C1",
+        "BOUND_PARAMETER",
+        "MUTANT_SOURCE_JOIN_EXPOSED",
+        "MUTANT_DIRECTION_EXPOSED"
+      ],
+      "implementation": [
+        "implementation/relational/0.6.0/007_qualified_evidence.sql",
+        "implementation/relational/0.6.0/queries/by_target.sql",
+        "tools/relational_evidence.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Bounded qualified references/contextual role projection; no complete original/native semantic or independent acceptance."
+    },
+    {
+      "requirement": {
+        "id": "EQR-05",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-12"
+        ],
+        "constraints": [
+          "C-03"
+        ],
+        "accept": "Actual atomic seal/rollback, schema/hash/FK/configuration and semantic audits, backup/reopen/dump/tamper controls retain every prior audit."
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "BACKUP_REOPEN",
+        "FILE_REOPEN",
+        "DUMP_RESTORE",
+        "CONFIGURATION_OFF",
+        "LEDGER_DRIFT",
+        "SCHEMA_DRIFT",
+        "ATOMIC_BUNDLE_FAILURE",
+        "RESTORE_PAYLOAD_TAMPER",
+        "RESTORE_ITEM_TAMPER",
+        "RESTORE_ROLE_TAMPER",
+        "MUTANT_CARDINALITY_EXPOSED",
+        "MUTANT_IMMUTABILITY_EXPOSED"
+      ],
+      "implementation": [
+        "implementation/relational/0.6.0/007_qualified_evidence.sql",
+        "implementation/relational/0.6.0/queries/by_target.sql",
+        "tools/relational_evidence.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Bounded qualified references/contextual role projection; no complete original/native semantic or independent acceptance."
+    },
+    {
+      "requirement": {
+        "id": "EQR-06",
+        "source_requirements": [
+          "RKRS-11",
+          "RKRS-12"
+        ],
+        "constraints": [
+          "C-16"
+        ],
+        "accept": "Account for all 306 native elements and six newly partial routes with original dispositions retained; original scientific receipts and all 11 WITHHELD organizational admissions remain unchanged."
+      },
+      "cqs": [
+        "RQ-CQ06",
+        "RQ-CQ08"
+      ],
+      "case_ids": [
+        "RAW_EXCLUSION",
+        "NO_IMPLICIT_ENDORSEMENT"
+      ],
+      "implementation": [
+        "implementation/relational/0.6.0/007_qualified_evidence.sql",
+        "implementation/relational/0.6.0/queries/by_target.sql",
+        "tools/relational_evidence.py"
+      ],
+      "status": "SCOPED_EXECUTED_ENGINEERING",
+      "limit": "Bounded qualified references/contextual role projection; no complete original/native semantic or independent acceptance."
+    }
+  ],
+  "inputs_sha256": {
+    "evaluation/relational/qualified-evidence/README.md": "1ef72d0e6cf34a55d31da0da030a528f85b4ddd7fc3b1835f5133d2e42d5e9d3",
+    "evaluation/relational/qualified-evidence/report.json": "8e67f479a6c5831511add633617c47dee071228de0f80b41f5ad8470cafe915a",
+    "evaluation/relational/source-scenario-lineage/mapping-accounting.json": "50dd4fad66adde680c28b0e7f8c4131e064fc6b2e2deda6a74cb7638368db257",
+    "evaluation/sources/cq0708/cohort.json": "525c6f69cff592baf705ec48ee52b629d2b0f61e93adcbedf9535b5993843127",
+    "evaluation/sources/cq0708/report.json.gz": "da8ec348280e788f2490b0dd053c0901f175fb969de8d73ca8959c2cec8a1612",
+    "implementation/relational/0.5.0/component.json": "d43226ec189ee922474804fa9edf9232f8678ba9db63295940e08038d25f17b8",
+    "implementation/relational/0.5.0/contract.json": "b4519adb907a4867cb2668489cd7d70963a83709f0b7880d881b415a4d041ac1",
+    "implementation/relational/0.6.0/007_qualified_evidence.sql": "91881f135036e6879845ad1faee94c6ff14a373d2861e2287c4f3c3749cf0990",
+    "implementation/relational/0.6.0/README.md": "146575c05090c611116a82506fcd160e8ee11577a6f3b0d0a48ef09543d6bd5a",
+    "implementation/relational/0.6.0/contract.json": "c088cea95940a1efdf49d24a586d1acd5a1c765ff4f733011a4f3b0f4ae6a88c",
+    "implementation/relational/0.6.0/fixtures.json": "9b7d6c0ef35f71c89558d65f439ba9fa7b2b9113d7f3fc0f5b3128c71767ccf8",
+    "implementation/relational/0.6.0/queries/by_target.sql": "8cd55903336b9d8fc392c1c12ada3a566cfe7cb8fd3fa57fdc1eae36706511a4",
+    "implementation/relational/0.6.0/schema-dictionary.md": "5df07f3a031035db50f67f6dc81d094e4ae10f0edf07542bdc5f9a9af6591164",
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "tests/test_qualified_evidence.py": "9f8f670fb47791e72862f0887f7b59c0b30b5f6b86470e9c72f24a8095c7a9cb",
+    "tools/build_evidence_inventory.py": "504ac2c0d4c92304278df15cb46bb066848ec8739e9f7efb866304f033979d51",
+    "tools/relational_evidence.py": "3eac2b197739f5166e25d4ad292a6842af8232ed56922caa7181ebe044e2e0d2",
+    "tools/relational_source_scenario_lineage.py": "0fddac0d97c9bbf2eb7d0947c0f989978e9f6b0e2b2ce94b160983035ecd3d36",
+    "tools/run_relational_evidence.py": "fb1c4a5bbfc0b4c9ba7b198ab1c20f993afa7b4f90d4cc2429f7fe0573780196"
+  },
+  "original_organizational_admissions": "All 11 WITHHELD; zero new independent semantic ratings"
+}
