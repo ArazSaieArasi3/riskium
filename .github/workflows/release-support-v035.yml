@@ -1,0 +1,32 @@
+name: v0.3.5 offline release support
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  support:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
+      - name: Validate prospective unregistered profile and required source/tooling closure
+        run: python -B tools/prepare_release_v035.py --check-profile
+      - name: Verify actual unpacked source without Git or network and reject damaged packages
+        run: python -B -m unittest discover -s tests -p test_release_v035.py -v
+      - name: Preserve the exact selection and current source/documentation checkpoints
+        run: |
+          python tools/select_release_v035.py --check
+          python tools/audit_current_alignment.py --check
+          python tools/publication/current_documentation.py --check
+          python tools/audit_consistency.py --check
+          git diff --exit-code

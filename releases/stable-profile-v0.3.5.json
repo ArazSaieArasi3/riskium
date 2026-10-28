@@ -1,0 +1,43 @@
+{
+  "schema": "riskium-v035-prospective-release-profile-v1",
+  "stage": "RELEASE_SUPPORT_NOT_FROZEN",
+  "tag": "v0.3.5",
+  "baseline_release": "v0.3.4",
+  "selection_source_commit": "f8e99423fd1e27f315269c8dab17576ab4779455",
+  "issue": 57,
+  "parent_issue": 51,
+  "registered_for_publication": false,
+  "publication_executed": false,
+  "source_freeze_executed": false,
+  "model_version": "0.3.1",
+  "orsd_revision": "0.4.3",
+  "manuscript_version": "7.0.8",
+  "scientific_versions": {
+    "model": "0.3.1",
+    "orsd": "0.4.3",
+    "original_drsd": "0.1.0",
+    "manuscript": "7.0.8"
+  },
+  "reviewed_scope_commit": "3afa861b5296addefc98ce401767c7ab7d025d2c",
+  "accepted_scope": "evaluation/owner-review/accepted-scope.json",
+  "artifact_matrix": "releases/selection-v0.3.5.json",
+  "artifact_matrix_sha256": "99405668004b7b11e9b59dec0df93a94f890b4abb7ba22d5ac4b8914e8bcec32",
+  "critical_screen": "evaluation/finalization/v0.3.5-review.json",
+  "notes": "docs/release-v0.3.5.md",
+  "notes_sha256": "0b94219d5a2bb8986c63ccb51b93acd7ed906e42e53dbf4dd4491a3740f2f64e",
+  "release_tooling_sha256": {
+    "tools/release_v035.py": "002a121da2dd9af75b5aa5c134716d494f5c7faaa174084eb69aacbcf5a12af4",
+    "tools/prepare_release_v035.py": "aa565dddaec9269552233ad16c667191e397034685370f254ea67760684583bd",
+    "tests/test_release_v035.py": "3b893dbdf968ca3eed600cfe59b109ae48b4f54c8e9231359d13eef527781a15",
+    ".github/workflows/release-support-v035.yml": "deb5c29d21eac25544c840c7bf55f8cea23f3f7107559bdd3a4bed3f3d0bcf90"
+  },
+  "independent_validation_claimed": false,
+  "full_original_requirement_acceptance_claimed": false,
+  "publication_requires_clean_exact_head": true,
+  "publication_requires_all_checks": true,
+  "publication_requires_no_known_unresolved_critical_findings": true,
+  "publication_requires_new_tag_and_release": true,
+  "readback_required": true,
+  "package_requires_offline_validation": true,
+  "final_source_channel_readback_required": true
+}

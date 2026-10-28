@@ -1,0 +1,126 @@
+{
+  "schema": "riskium-v035-release-support-screen-v1",
+  "target": "v0.3.5",
+  "stage": "RELEASE_SUPPORT_NOT_FROZEN",
+  "date_local": "2026-10-28",
+  "issue": 57,
+  "parent_issue": 51,
+  "selection_source_commit": "f8e99423fd1e27f315269c8dab17576ab4779455",
+  "review_kind": "Assistant-supported bounded release-support engineering screen; not a new owner or independent scientific judgment.",
+  "component_matrix_sha256": "99405668004b7b11e9b59dec0df93a94f890b4abb7ba22d5ac4b8914e8bcec32",
+  "release_tooling_sha256": {
+    "tools/release_v035.py": "002a121da2dd9af75b5aa5c134716d494f5c7faaa174084eb69aacbcf5a12af4",
+    "tools/prepare_release_v035.py": "aa565dddaec9269552233ad16c667191e397034685370f254ea67760684583bd",
+    "tests/test_release_v035.py": "3b893dbdf968ca3eed600cfe59b109ae48b4f54c8e9231359d13eef527781a15",
+    ".github/workflows/release-support-v035.yml": "deb5c29d21eac25544c840c7bf55f8cea23f3f7107559bdd3a4bed3f3d0bcf90"
+  },
+  "notes_sha256": "0b94219d5a2bb8986c63ccb51b93acd7ed906e42e53dbf4dd4491a3740f2f64e",
+  "known_unresolved_critical_findings": [],
+  "new_owner_responses_generated": 0,
+  "independent_semantic_review_claimed": false,
+  "universal_zero_defect_claimed": false,
+  "material_scientific_change_since_owner_acceptance": false,
+  "source_freeze_executed": false,
+  "publication_executed": false,
+  "reviewed_risks": [
+    {
+      "id": "selection-closure",
+      "risk": "Missing or coherently rewritten component, version, prerequisite or payload inventory",
+      "retained_evidence": [
+        "releases/selection-v0.3.5.json",
+        "releases/selection-policy-v0.3.5.json"
+      ],
+      "fresh_gate": "Anchored #56 matrix/policy/overlay, complete 687 selected payload hashes and required support closure; damaged-package regressions."
+    },
+    {
+      "id": "migration-history",
+      "risk": "Lifecycle schema8 or endpoint/version/as-of history diverges from the bounded contract",
+      "retained_evidence": [
+        "implementation/relational/0.7.0/component.json",
+        "evaluation/relational/evidence-lifecycle/report.json"
+      ],
+      "fresh_gate": "Current lifecycle/inventory replay plus original migration/source bindings and full software checks before freeze."
+    },
+    {
+      "id": "historical-generation",
+      "risk": "Frozen snapshot generation silently rebound to current documentation/consistency",
+      "retained_evidence": [
+        "releases/distribution-v0.3.4.json",
+        "releases/selection-v0.3.5.json"
+      ],
+      "fresh_gate": "Separate historical-generation rows/edges, all 380 old selected bindings and 237 frozen source files must remain exact."
+    },
+    {
+      "id": "offline-package",
+      "risk": "Downloaded source needs hidden Git history/network or accepts omitted tooling",
+      "retained_evidence": [
+        "evaluation/releases/v0.3.5-selection/components.md"
+      ],
+      "fresh_gate": "Actual temporary source archive, no .git, Git or network; exact complete-manifest comparison and recomputed-omission negative controls."
+    },
+    {
+      "id": "publication-activation",
+      "risk": "Prospective support inadvertently enables or mutates publication intent",
+      "retained_evidence": [
+        "releases/successor-profiles.json",
+        "releases/stable-request-v0.3.4.json"
+      ],
+      "fresh_gate": "Code-owned hashes preserve old registries/requests/tools/workflows; v0.3.5 remains unregistered with no request."
+    },
+    {
+      "id": "channel-freshness",
+      "risk": "Old successful deployment receipts mistaken for fresh final-source readback",
+      "retained_evidence": [
+        "evaluation/releases/v0.3.5-selection/inputs/documentation-wiki.json",
+        "evaluation/releases/v0.3.5-selection/inputs/documentation-http.json"
+      ],
+      "fresh_gate": "Future actual final-source native Wiki and every served Pages body, root manifest, timestamps and source checks; preserve four frozen snapshots."
+    },
+    {
+      "id": "scientific-scope",
+      "risk": "Engineering passes inflate scientific outcomes, manuscript claims or independent acceptance",
+      "retained_evidence": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/consistency/current-0.3.0/report.json"
+      ],
+      "fresh_gate": "Preserved accepted source/model/paper scope, all 306 IDs/236 deferred, historical engine populations, zero new ratings and 11 WITHHELD admissions."
+    },
+    {
+      "id": "manifest-inventory",
+      "risk": "Self-recomputed manifest drops, duplicates, adds or traverses source paths",
+      "retained_evidence": [
+        "releases/selection-v0.3.5.json"
+      ],
+      "fresh_gate": "Require exact unique safe full filesystem inventory, sizes/hashes, regular files and additional anchored required closure; externally trusted final digest remains separate."
+    },
+    {
+      "id": "source-freeze",
+      "risk": "Dirty/changed source or skipped/failed checks accepted as final release evidence",
+      "retained_evidence": [
+        "evaluation/releases/v0.3.5-selection/inputs/completed-checkpoints.json"
+      ],
+      "fresh_gate": "Future clean exact HEAD plus actual final candidate checks and six staged assets; support validation performs no freeze."
+    },
+    {
+      "id": "prior-publication",
+      "risk": "New release overwrites existing tag/assets or reports the wrong Latest",
+      "retained_evidence": [
+        "evaluation/releases/v0.3.5-definition/published-baseline.json"
+      ],
+      "fresh_gate": "Future only-new tag/release and independent six-asset public downloads/Latest with all eleven prior release inventories unchanged."
+    }
+  ],
+  "future_freeze_gates": [
+    "Clean exact source HEAD and complete affected source/full software checks.",
+    "Fresh actual documentation 0.4.0 Wiki (23 files) and Pages (311 served files plus root manifest) readback at the final source; preserve four frozen snapshots.",
+    "Dry freeze and independent validation of all six staged release assets.",
+    "Explicit publication activation only after successful reviewed freeze.",
+    "Independent actual public downloads, tag/Latest and all eleven prior release/asset inventories."
+  ],
+  "limits": [
+    "The current screen covers release-support preparation; final clean-source/channel/freeze/publication gates remain unexecuted.",
+    "No known unresolved critical support finding is not a universal zero-defect guarantee.",
+    "Offline integrity is not publisher authentication; independent source/digest/readback verification remains mandatory.",
+    "All broad scientific/application/deployment and conference requirements retain their separate criteria."
+  ]
+}
