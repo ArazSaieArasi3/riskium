@@ -1,0 +1,115 @@
+{
+  "schema": "riskium-source-scenario-lineage-contract-v1",
+  "version": "0.5.0",
+  "schema_version": 6,
+  "execution_issue": 43,
+  "parent_issues": [
+    35,
+    12
+  ],
+  "baseline_commit": "803e99c1412ba10b9e159f822b723b116f9c4379",
+  "source_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "implementation/relational/0.4.0/contract.json": "defb5b7dd66fd0083f3ff913bd467a1b72ebd7d4c946083f8f3d5c8c4d6809db",
+    "implementation/relational/0.4.0/fixtures.json": "bfba7e6e220987abee2f070125c70cd9c60e5975a7bc8b1b6f209691f15edf97",
+    "implementation/relational/0.4.0/component.json": "49afaf2c02ed831107330e64f113dc543346cd79b1a4e82aff54f15185d966d2",
+    "tools/relational_source_scenario.py": "ca62c59d9ea31352c3b92a8a0f1e28a82a498faa49a7d2cd2137478db09a2191"
+  },
+  "requirements": [
+    {
+      "id": "SCL-01",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-11"
+      ],
+      "constraints": [
+        "C-03"
+      ],
+      "accept": "Populated v5->v6 preserves every prior row, ledger hash and issued native graph; repeat and failed upgrade are atomic."
+    },
+    {
+      "id": "SCL-02",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "constraints": [
+        "C-03",
+        "C-17"
+      ],
+      "accept": "Only explicit correction declarations connect two issued knowledge versions of the same artifact/class; one immutable parent per child, multiple branches, no self or cycle."
+    },
+    {
+      "id": "SCL-03",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "constraints": [
+        "C-03",
+        "C-12"
+      ],
+      "accept": "Immutable declaration reason, documentary source, locator, interpretation and real canonical UTC time remain separate from both immutable endpoint provenances and pinned contexts."
+    },
+    {
+      "id": "SCL-04",
+      "source_requirements": [
+        "RKRS-06",
+        "RKRS-11"
+      ],
+      "constraints": [
+        "C-02",
+        "C-12",
+        "C-17"
+      ],
+      "accept": "Bound root-descendant queries preserve all branches and fixed original/new values; no implicit edge, latest/authority/corroboration/occurrence inference or native correction property."
+    },
+    {
+      "id": "SCL-05",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-12"
+      ],
+      "constraints": [
+        "C-03"
+      ],
+      "accept": "Atomic issue-plus-declaration, nested rollback, exact schema/ledger/data/config checks and reopen/backup/dump/tamper controls execute on the actual engine."
+    },
+    {
+      "id": "SCL-06",
+      "source_requirements": [
+        "RKRS-11",
+        "RKRS-12"
+      ],
+      "constraints": [
+        "C-16"
+      ],
+      "accept": "Retain all 306 native identities/dispositions, 242 deferred and eight existing partial routes, original scientific receipts and all 11 WITHHELD admissions with separately bound derived requirement evidence."
+    }
+  ],
+  "native_classes_added": [],
+  "native_relations_added": [],
+  "policy": {
+    "endpoints": "Both exact versions must be issued knowledge snapshots of the same artifact; single knowledge class is inherited from 0.4.0. No cross-artifact merge.",
+    "cardinality": "One declared prior per corrected version; any number of distinct children. Self and all directed cycles rejected, including equal timestamps.",
+    "time": "Declaration recorded_at must be canonical real UTC seconds and not precede either endpoint recorded_at or issued_at. No endpoint order or latest-wins authority is inferred.",
+    "provenance": "Declaration documentary source need not equal either endpoint source; preserve raw JSON plus separate reason, source locator and interpretation. A correction is not independent corroboration.",
+    "issuance": "Existing issued endpoints can receive an explicit immutable retrospective declaration. Atomic API also stages/issues a new endpoint then declares in the same transaction. Plain issuance adds no correction edge.",
+    "query": "Exact root plus all explicitly declared descendants, once each, sorted by version ID. Siblings are returned only from their common ancestor. Existing parent metadata is shown even if outside the selected subtree. Unknown/unissued root gives no rows.",
+    "immutability": "No update/delete/replacement of a declaration; endpoint payload/context/source remain unchanged. A mistaken declaration cannot be retracted in this profile; reviewed retraction/selection policy is deferred.",
+    "native": "No correction predicate or native type added. Native graphs are the unchanged per-version 0.4.0 projection, not a union of conflicting versions.",
+    "security": "Configured SQLite API and guards; an administrator rewriting a semantically valid entire database is not cryptographically detected. No user role, deployment or real workload acceptance.",
+    "publication": "Development component after stable v0.3.3; prior profiles, native model, ORSD/DRSD, article and release selections remain unchanged.",
+    "unimplemented": [
+      "General EvidenceReference/assertion correction beyond these two classes",
+      "Cross-artifact equivalence/merge",
+      "Retraction or authoritative branch selection",
+      "Formulas/workflow/interval engines",
+      "PostgreSQL/private migration",
+      "Independent semantic or production acceptance"
+    ]
+  }
+}

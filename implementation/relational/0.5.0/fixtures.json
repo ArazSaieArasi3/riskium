@@ -1,0 +1,933 @@
+{
+  "schema": "riskium-source-scenario-lineage-fixed-oracles-v1",
+  "version": "0.5.0",
+  "population": "Controlled synthetic; literal expected rows/graphs committed before implementation, never captured from SQL output.",
+  "baseline_fixture": "implementation/relational/0.4.0/fixtures.json",
+  "baseline_fixture_sha256": "bfba7e6e220987abee2f070125c70cd9c60e5975a7bc8b1b6f209691f15edf97",
+  "declaration_source": [
+    "urn:riskium:knowledge:declaration-document",
+    "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}"
+  ],
+  "new_records": [
+    {
+      "artifact_id": "urn:riskium:knowledge:scenario-a",
+      "version_id": "urn:riskium:knowledge:scenario-a-v3",
+      "native_class": "RKM-C003",
+      "label": "Same label",
+      "narrative": "Alternative possible supplier delay",
+      "source_record_id": "urn:riskium:knowledge:document-a",
+      "source_locator": "synthetic/A#s3",
+      "interpretation_origin": "Deterministic synthetic fixture; not source evidence",
+      "recorded_at": "2026-10-28T00:00:00Z",
+      "case_ids": [
+        "urn:riskium:sql:case1"
+      ],
+      "context_version_ids": [
+        "urn:riskium:sql:context-v1"
+      ]
+    },
+    {
+      "artifact_id": "urn:riskium:knowledge:scenario-a",
+      "version_id": "urn:riskium:knowledge:scenario-a-v4",
+      "native_class": "RKM-C003",
+      "label": "Same label",
+      "narrative": "Further revised possible development",
+      "source_record_id": "urn:riskium:knowledge:document-b",
+      "source_locator": "synthetic/B#s4",
+      "interpretation_origin": "Deterministic synthetic fixture; not source evidence",
+      "recorded_at": "2026-10-28T01:00:00Z",
+      "case_ids": [
+        "urn:riskium:sql:case2"
+      ],
+      "context_version_ids": []
+    },
+    {
+      "artifact_id": "urn:riskium:knowledge:reference-a",
+      "version_id": "urn:riskium:knowledge:reference-a-v3",
+      "native_class": "RKM-X06",
+      "label": "Same label",
+      "narrative": "Alternative alleged contributor",
+      "source_record_id": "urn:riskium:knowledge:document-a",
+      "source_locator": "synthetic/A#r3",
+      "interpretation_origin": "Deterministic synthetic fixture; not source evidence",
+      "recorded_at": "2026-10-28T00:00:00Z",
+      "case_ids": [
+        "urn:riskium:sql:case2"
+      ],
+      "context_version_ids": []
+    },
+    {
+      "artifact_id": "urn:riskium:knowledge:reference-b",
+      "version_id": "urn:riskium:knowledge:reference-b-v2",
+      "native_class": "RKM-X06",
+      "label": "Same label",
+      "narrative": "Separate version without declared correction",
+      "source_record_id": "urn:riskium:knowledge:document-b",
+      "source_locator": "synthetic/B#r4",
+      "interpretation_origin": "Deterministic synthetic fixture; not source evidence",
+      "recorded_at": "2026-10-28T01:00:00Z",
+      "case_ids": [],
+      "context_version_ids": []
+    }
+  ],
+  "declared_edges": [
+    {
+      "corrected_version_id": "urn:riskium:knowledge:scenario-a-v2",
+      "prior_version_id": "urn:riskium:knowledge:scenario-a-v1",
+      "reason": "Revise scenario interpretation",
+      "recorded_at": "2026-10-28T00:00:00Z",
+      "source_record_id": "urn:riskium:knowledge:declaration-document",
+      "source_locator": "synthetic/corrections#scenario-a-v2",
+      "interpretation_origin": "Fixture curator declaration; not independent corroboration"
+    },
+    {
+      "corrected_version_id": "urn:riskium:knowledge:scenario-a-v3",
+      "prior_version_id": "urn:riskium:knowledge:scenario-a-v1",
+      "reason": "Record alternate scenario branch",
+      "recorded_at": "2026-10-28T01:00:00Z",
+      "source_record_id": "urn:riskium:knowledge:declaration-document",
+      "source_locator": "synthetic/corrections#scenario-a-v3",
+      "interpretation_origin": "Fixture curator declaration; not independent corroboration"
+    },
+    {
+      "corrected_version_id": "urn:riskium:knowledge:scenario-a-v4",
+      "prior_version_id": "urn:riskium:knowledge:scenario-a-v2",
+      "reason": "Refine revised branch",
+      "recorded_at": "2026-10-28T02:00:00Z",
+      "source_record_id": "urn:riskium:knowledge:declaration-document",
+      "source_locator": "synthetic/corrections#scenario-a-v4",
+      "interpretation_origin": "Fixture curator declaration; not independent corroboration"
+    },
+    {
+      "corrected_version_id": "urn:riskium:knowledge:reference-a-v2",
+      "prior_version_id": "urn:riskium:knowledge:reference-a-v1",
+      "reason": "Revise alleged contributor",
+      "recorded_at": "2026-10-28T00:00:00Z",
+      "source_record_id": "urn:riskium:knowledge:declaration-document",
+      "source_locator": "synthetic/corrections#reference-a-v2",
+      "interpretation_origin": "Fixture curator declaration; not independent corroboration"
+    },
+    {
+      "corrected_version_id": "urn:riskium:knowledge:reference-a-v3",
+      "prior_version_id": "urn:riskium:knowledge:reference-a-v1",
+      "reason": "Record alternate reference branch",
+      "recorded_at": "2026-10-28T01:00:00Z",
+      "source_record_id": "urn:riskium:knowledge:declaration-document",
+      "source_locator": "synthetic/corrections#reference-a-v3",
+      "interpretation_origin": "Fixture curator declaration; not independent corroboration"
+    }
+  ],
+  "family_columns": [
+    "version_id",
+    "artifact_id",
+    "native_class",
+    "narrative",
+    "source_record_id",
+    "original_json",
+    "source_locator",
+    "interpretation_origin",
+    "recorded_at",
+    "case_ids",
+    "context_version_ids",
+    "prior_version_id",
+    "correction_reason",
+    "correction_recorded_at",
+    "declaration_source_record_id",
+    "declaration_original_json",
+    "declaration_source_locator",
+    "declaration_interpretation_origin"
+  ],
+  "families": {
+    "scenario-a-v1": [
+      [
+        "urn:riskium:knowledge:scenario-a-v1",
+        "urn:riskium:knowledge:scenario-a",
+        "RKM-C003",
+        "Possible supplier delay",
+        "urn:riskium:knowledge:document-a",
+        "{\"synthetic\":true,\"claim\":\"possible delay\",\"actual_occurrence\":null,\"zero\":\"0\"}",
+        "synthetic/A#s1",
+        "Deterministic synthetic fixture; not source evidence",
+        "2026-10-27T00:00:00Z",
+        [
+          "urn:riskium:sql:case1"
+        ],
+        [
+          "urn:riskium:sql:context-v1"
+        ],
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "urn:riskium:knowledge:scenario-a-v2",
+        "urn:riskium:knowledge:scenario-a",
+        "RKM-C003",
+        "Revised possible supplier delay",
+        "urn:riskium:knowledge:document-b",
+        "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+        "synthetic/B#s1",
+        "Deterministic synthetic fixture; not source evidence",
+        "2026-10-27T00:00:00Z",
+        [
+          "urn:riskium:sql:case1",
+          "urn:riskium:sql:case2"
+        ],
+        [],
+        "urn:riskium:knowledge:scenario-a-v1",
+        "Revise scenario interpretation",
+        "2026-10-28T00:00:00Z",
+        "urn:riskium:knowledge:declaration-document",
+        "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+        "synthetic/corrections#scenario-a-v2",
+        "Fixture curator declaration; not independent corroboration"
+      ],
+      [
+        "urn:riskium:knowledge:scenario-a-v3",
+        "urn:riskium:knowledge:scenario-a",
+        "RKM-C003",
+        "Alternative possible supplier delay",
+        "urn:riskium:knowledge:document-a",
+        "{\"synthetic\":true,\"claim\":\"possible delay\",\"actual_occurrence\":null,\"zero\":\"0\"}",
+        "synthetic/A#s3",
+        "Deterministic synthetic fixture; not source evidence",
+        "2026-10-28T00:00:00Z",
+        [
+          "urn:riskium:sql:case1"
+        ],
+        [
+          "urn:riskium:sql:context-v1"
+        ],
+        "urn:riskium:knowledge:scenario-a-v1",
+        "Record alternate scenario branch",
+        "2026-10-28T01:00:00Z",
+        "urn:riskium:knowledge:declaration-document",
+        "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+        "synthetic/corrections#scenario-a-v3",
+        "Fixture curator declaration; not independent corroboration"
+      ],
+      [
+        "urn:riskium:knowledge:scenario-a-v4",
+        "urn:riskium:knowledge:scenario-a",
+        "RKM-C003",
+        "Further revised possible development",
+        "urn:riskium:knowledge:document-b",
+        "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+        "synthetic/B#s4",
+        "Deterministic synthetic fixture; not source evidence",
+        "2026-10-28T01:00:00Z",
+        [
+          "urn:riskium:sql:case2"
+        ],
+        [],
+        "urn:riskium:knowledge:scenario-a-v2",
+        "Refine revised branch",
+        "2026-10-28T02:00:00Z",
+        "urn:riskium:knowledge:declaration-document",
+        "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+        "synthetic/corrections#scenario-a-v4",
+        "Fixture curator declaration; not independent corroboration"
+      ]
+    ],
+    "reference-a-v1": [
+      [
+        "urn:riskium:knowledge:reference-a-v1",
+        "urn:riskium:knowledge:reference-a",
+        "RKM-X06",
+        "Alleged contributor",
+        "urn:riskium:knowledge:document-a",
+        "{\"synthetic\":true,\"claim\":\"possible delay\",\"actual_occurrence\":null,\"zero\":\"0\"}",
+        "synthetic/A#r1",
+        "Deterministic synthetic fixture; not source evidence",
+        "2026-10-27T00:00:00Z",
+        [
+          "urn:riskium:sql:case1"
+        ],
+        [
+          "urn:riskium:sql:context-v1"
+        ],
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "urn:riskium:knowledge:reference-a-v2",
+        "urn:riskium:knowledge:reference-a",
+        "RKM-X06",
+        "Unresolved alleged contributor",
+        "urn:riskium:knowledge:document-b",
+        "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+        "synthetic/B#r1",
+        "Deterministic synthetic fixture; not source evidence",
+        "2026-10-27T00:00:00Z",
+        [
+          "urn:riskium:sql:case1"
+        ],
+        [],
+        "urn:riskium:knowledge:reference-a-v1",
+        "Revise alleged contributor",
+        "2026-10-28T00:00:00Z",
+        "urn:riskium:knowledge:declaration-document",
+        "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+        "synthetic/corrections#reference-a-v2",
+        "Fixture curator declaration; not independent corroboration"
+      ],
+      [
+        "urn:riskium:knowledge:reference-a-v3",
+        "urn:riskium:knowledge:reference-a",
+        "RKM-X06",
+        "Alternative alleged contributor",
+        "urn:riskium:knowledge:document-a",
+        "{\"synthetic\":true,\"claim\":\"possible delay\",\"actual_occurrence\":null,\"zero\":\"0\"}",
+        "synthetic/A#r3",
+        "Deterministic synthetic fixture; not source evidence",
+        "2026-10-28T00:00:00Z",
+        [
+          "urn:riskium:sql:case2"
+        ],
+        [],
+        "urn:riskium:knowledge:reference-a-v1",
+        "Record alternate reference branch",
+        "2026-10-28T01:00:00Z",
+        "urn:riskium:knowledge:declaration-document",
+        "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+        "synthetic/corrections#reference-a-v3",
+        "Fixture curator declaration; not independent corroboration"
+      ]
+    ],
+    "scenario-a-v2": [
+      [
+        "urn:riskium:knowledge:scenario-a-v2",
+        "urn:riskium:knowledge:scenario-a",
+        "RKM-C003",
+        "Revised possible supplier delay",
+        "urn:riskium:knowledge:document-b",
+        "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+        "synthetic/B#s1",
+        "Deterministic synthetic fixture; not source evidence",
+        "2026-10-27T00:00:00Z",
+        [
+          "urn:riskium:sql:case1",
+          "urn:riskium:sql:case2"
+        ],
+        [],
+        "urn:riskium:knowledge:scenario-a-v1",
+        "Revise scenario interpretation",
+        "2026-10-28T00:00:00Z",
+        "urn:riskium:knowledge:declaration-document",
+        "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+        "synthetic/corrections#scenario-a-v2",
+        "Fixture curator declaration; not independent corroboration"
+      ],
+      [
+        "urn:riskium:knowledge:scenario-a-v4",
+        "urn:riskium:knowledge:scenario-a",
+        "RKM-C003",
+        "Further revised possible development",
+        "urn:riskium:knowledge:document-b",
+        "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+        "synthetic/B#s4",
+        "Deterministic synthetic fixture; not source evidence",
+        "2026-10-28T01:00:00Z",
+        [
+          "urn:riskium:sql:case2"
+        ],
+        [],
+        "urn:riskium:knowledge:scenario-a-v2",
+        "Refine revised branch",
+        "2026-10-28T02:00:00Z",
+        "urn:riskium:knowledge:declaration-document",
+        "{\"synthetic\":true,\"type\":\"correction log\",\"endorsement\":null}",
+        "synthetic/corrections#scenario-a-v4",
+        "Fixture curator declaration; not independent corroboration"
+      ]
+    ],
+    "scenario-b-v1": [
+      [
+        "urn:riskium:knowledge:scenario-b-v1",
+        "urn:riskium:knowledge:scenario-b",
+        "RKM-C003",
+        "Different possible development",
+        "urn:riskium:knowledge:document-b",
+        "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+        "synthetic/B#s2",
+        "Deterministic synthetic fixture; not source evidence",
+        "2026-10-27T00:00:00Z",
+        [
+          "urn:riskium:sql:case1"
+        ],
+        [],
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    ],
+    "reference-b-v1": [
+      [
+        "urn:riskium:knowledge:reference-b-v1",
+        "urn:riskium:knowledge:reference-b",
+        "RKM-X06",
+        "Another alleged contributor",
+        "urn:riskium:knowledge:document-b",
+        "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+        "synthetic/B#r2",
+        "Deterministic synthetic fixture; not source evidence",
+        "2026-10-27T00:00:00Z",
+        [
+          "urn:riskium:sql:case1",
+          "urn:riskium:sql:case2"
+        ],
+        [],
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    ],
+    "reference-b-v2": [
+      [
+        "urn:riskium:knowledge:reference-b-v2",
+        "urn:riskium:knowledge:reference-b",
+        "RKM-X06",
+        "Separate version without declared correction",
+        "urn:riskium:knowledge:document-b",
+        "{\"synthetic\":true,\"claim\":\"different interpretation\",\"actual_occurrence\":null}",
+        "synthetic/B#r4",
+        "Deterministic synthetic fixture; not source evidence",
+        "2026-10-28T01:00:00Z",
+        [],
+        [],
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    ],
+    "missing": []
+  },
+  "graphs": {
+    "scenario-a-v1": {
+      "types": [
+        [
+          "scenario-a",
+          "RKM-C003"
+        ],
+        [
+          "scenario-a",
+          "RKM-C014"
+        ],
+        [
+          "scenario-a-v1",
+          "RKM-C015"
+        ],
+        [
+          "@case1",
+          "RKM-X01"
+        ],
+        [
+          "@context",
+          "RKM-C002"
+        ],
+        [
+          "@context",
+          "RKM-C014"
+        ],
+        [
+          "@context-v1",
+          "RKM-C015"
+        ]
+      ],
+      "edges": [
+        [
+          "scenario-a-v1",
+          "RX-006",
+          "scenario-a"
+        ],
+        [
+          "scenario-a",
+          "R-36",
+          "@case1"
+        ],
+        [
+          "scenario-a",
+          "RK2-010",
+          "@context"
+        ],
+        [
+          "@context-v1",
+          "RX-006",
+          "@context"
+        ]
+      ]
+    },
+    "scenario-a-v2": {
+      "types": [
+        [
+          "scenario-a",
+          "RKM-C003"
+        ],
+        [
+          "scenario-a",
+          "RKM-C014"
+        ],
+        [
+          "scenario-a-v2",
+          "RKM-C015"
+        ],
+        [
+          "@case1",
+          "RKM-X01"
+        ],
+        [
+          "@case2",
+          "RKM-X01"
+        ]
+      ],
+      "edges": [
+        [
+          "scenario-a-v2",
+          "RX-006",
+          "scenario-a"
+        ],
+        [
+          "scenario-a",
+          "R-36",
+          "@case1"
+        ],
+        [
+          "scenario-a",
+          "R-36",
+          "@case2"
+        ]
+      ]
+    },
+    "scenario-b-v1": {
+      "types": [
+        [
+          "scenario-b",
+          "RKM-C003"
+        ],
+        [
+          "scenario-b",
+          "RKM-C014"
+        ],
+        [
+          "scenario-b-v1",
+          "RKM-C015"
+        ],
+        [
+          "@case1",
+          "RKM-X01"
+        ]
+      ],
+      "edges": [
+        [
+          "scenario-b-v1",
+          "RX-006",
+          "scenario-b"
+        ],
+        [
+          "scenario-b",
+          "R-36",
+          "@case1"
+        ]
+      ]
+    },
+    "reference-a-v1": {
+      "types": [
+        [
+          "reference-a",
+          "RKM-X06"
+        ],
+        [
+          "reference-a",
+          "RKM-C014"
+        ],
+        [
+          "reference-a-v1",
+          "RKM-C015"
+        ],
+        [
+          "@case1",
+          "RKM-X01"
+        ],
+        [
+          "@context",
+          "RKM-C002"
+        ],
+        [
+          "@context",
+          "RKM-C014"
+        ],
+        [
+          "@context-v1",
+          "RKM-C015"
+        ]
+      ],
+      "edges": [
+        [
+          "reference-a-v1",
+          "RX-006",
+          "reference-a"
+        ],
+        [
+          "@case1",
+          "RK3-001",
+          "reference-a"
+        ],
+        [
+          "reference-a",
+          "RK3-003",
+          "@context"
+        ],
+        [
+          "@context-v1",
+          "RX-006",
+          "@context"
+        ]
+      ]
+    },
+    "reference-a-v2": {
+      "types": [
+        [
+          "reference-a",
+          "RKM-X06"
+        ],
+        [
+          "reference-a",
+          "RKM-C014"
+        ],
+        [
+          "reference-a-v2",
+          "RKM-C015"
+        ],
+        [
+          "@case1",
+          "RKM-X01"
+        ]
+      ],
+      "edges": [
+        [
+          "reference-a-v2",
+          "RX-006",
+          "reference-a"
+        ],
+        [
+          "@case1",
+          "RK3-001",
+          "reference-a"
+        ]
+      ]
+    },
+    "reference-b-v1": {
+      "types": [
+        [
+          "reference-b",
+          "RKM-X06"
+        ],
+        [
+          "reference-b",
+          "RKM-C014"
+        ],
+        [
+          "reference-b-v1",
+          "RKM-C015"
+        ],
+        [
+          "@case1",
+          "RKM-X01"
+        ],
+        [
+          "@case2",
+          "RKM-X01"
+        ]
+      ],
+      "edges": [
+        [
+          "reference-b-v1",
+          "RX-006",
+          "reference-b"
+        ],
+        [
+          "@case1",
+          "RK3-001",
+          "reference-b"
+        ],
+        [
+          "@case2",
+          "RK3-001",
+          "reference-b"
+        ]
+      ]
+    },
+    "scenario-a-v3": {
+      "types": [
+        [
+          "scenario-a",
+          "RKM-C003"
+        ],
+        [
+          "scenario-a",
+          "RKM-C014"
+        ],
+        [
+          "scenario-a-v3",
+          "RKM-C015"
+        ],
+        [
+          "@case1",
+          "RKM-X01"
+        ],
+        [
+          "@context",
+          "RKM-C002"
+        ],
+        [
+          "@context",
+          "RKM-C014"
+        ],
+        [
+          "@context-v1",
+          "RKM-C015"
+        ]
+      ],
+      "edges": [
+        [
+          "scenario-a-v3",
+          "RX-006",
+          "scenario-a"
+        ],
+        [
+          "scenario-a",
+          "R-36",
+          "@case1"
+        ],
+        [
+          "scenario-a",
+          "RK2-010",
+          "@context"
+        ],
+        [
+          "@context-v1",
+          "RX-006",
+          "@context"
+        ]
+      ]
+    },
+    "scenario-a-v4": {
+      "types": [
+        [
+          "scenario-a",
+          "RKM-C003"
+        ],
+        [
+          "scenario-a",
+          "RKM-C014"
+        ],
+        [
+          "scenario-a-v4",
+          "RKM-C015"
+        ],
+        [
+          "@case2",
+          "RKM-X01"
+        ]
+      ],
+      "edges": [
+        [
+          "scenario-a-v4",
+          "RX-006",
+          "scenario-a"
+        ],
+        [
+          "scenario-a",
+          "R-36",
+          "@case2"
+        ]
+      ]
+    },
+    "reference-a-v3": {
+      "types": [
+        [
+          "reference-a",
+          "RKM-X06"
+        ],
+        [
+          "reference-a",
+          "RKM-C014"
+        ],
+        [
+          "reference-a-v3",
+          "RKM-C015"
+        ],
+        [
+          "@case2",
+          "RKM-X01"
+        ]
+      ],
+      "edges": [
+        [
+          "reference-a-v3",
+          "RX-006",
+          "reference-a"
+        ],
+        [
+          "@case2",
+          "RK3-001",
+          "reference-a"
+        ]
+      ]
+    },
+    "reference-b-v2": {
+      "types": [
+        [
+          "reference-b",
+          "RKM-X06"
+        ],
+        [
+          "reference-b",
+          "RKM-C014"
+        ],
+        [
+          "reference-b-v2",
+          "RKM-C015"
+        ]
+      ],
+      "edges": [
+        [
+          "reference-b-v2",
+          "RX-006",
+          "reference-b"
+        ]
+      ]
+    }
+  },
+  "positive_case_ids": [
+    "POPULATED_UPGRADE",
+    "LEGACY_NATIVE_PRESERVED",
+    "IDEMPOTENT_UPGRADE",
+    "SCENARIO_BRANCHES",
+    "REFERENCE_BRANCHES",
+    "DESCENDANT_ROOT",
+    "EQUAL_LABEL_SINGLETON",
+    "PLAIN_VERSION_UNLINKED",
+    "UNKNOWN_ROOT",
+    "PROVENANCE_SEPARATE",
+    "ORIGINAL_CONTEXT_PIN",
+    "UNKNOWN_CONTEXT_RETAINED",
+    "ALL_NATIVE_ORACLES",
+    "OLD_GRAPHS_UNCHANGED",
+    "NO_NATIVE_CORRECTION",
+    "NO_ADMISSION_OR_OCCURRENCE",
+    "BOUND_PARAMETER",
+    "BACKUP_REOPEN",
+    "FILE_REOPEN",
+    "DUMP_RESTORE"
+  ],
+  "rejection_diagnostics": {
+    "DUPLICATE_PARENT": "R-LINEAGE-DUPLICATE",
+    "REPLACE_PARENT": "R-LINEAGE-DUPLICATE",
+    "SELF_PARENT": "R-LINEAGE-SELF",
+    "CYCLE": "R-LINEAGE-CYCLE",
+    "CROSS_ARTIFACT": "R-LINEAGE-OWNER",
+    "CROSS_CLASS": "R-LINEAGE-OWNER",
+    "MISSING_CHILD": "R-LINEAGE-ENDPOINT",
+    "MISSING_PARENT": "R-LINEAGE-ENDPOINT",
+    "UNISSUED_CHILD": "R-LINEAGE-ENDPOINT",
+    "UNISSUED_PARENT": "R-LINEAGE-ENDPOINT",
+    "NONKNOWLEDGE_PARENT": "R-LINEAGE-ENDPOINT",
+    "RAW_PARENT": "R-LINEAGE-ENDPOINT",
+    "MISSING_DECLARATION_SOURCE": "R-LINEAGE-SOURCE",
+    "EMPTY_REASON": "R-LINEAGE-PROVENANCE",
+    "EMPTY_LOCATOR": "R-LINEAGE-PROVENANCE",
+    "EMPTY_INTERPRETATION": "R-LINEAGE-PROVENANCE",
+    "BAD_CALENDAR": "R-LINEAGE-TIME",
+    "NONCANONICAL_TIME": "R-LINEAGE-TIME",
+    "EARLY_DECLARATION": "R-LINEAGE-TIME",
+    "UPDATE_DECLARATION": "R-LINEAGE-IMMUTABLE",
+    "DELETE_DECLARATION": "R-LINEAGE-IMMUTABLE",
+    "ATOMIC_ISSUE_FAILURE": "R-LINEAGE-OWNER",
+    "NONTEXT_INPUT": "R-LINEAGE-INPUT",
+    "CONFIGURATION_OFF": "R-CONNECTION-POLICY",
+    "LEDGER_DRIFT": "R-LINEAGE-LEDGER",
+    "SCHEMA_DRIFT": "R-LINEAGE-SCHEMA",
+    "RESTORE_OWNER_TAMPER": "R-LINEAGE-DATA-OWNER",
+    "RESTORE_TIME_TAMPER": "R-LINEAGE-DATA-TIME",
+    "RESTORE_CYCLE_TAMPER": "R-LINEAGE-DATA-CYCLE",
+    "RESTORE_PROVENANCE_TAMPER": "R-LINEAGE-DATA-PROVENANCE"
+  },
+  "case_ids": [
+    "POPULATED_UPGRADE",
+    "LEGACY_NATIVE_PRESERVED",
+    "IDEMPOTENT_UPGRADE",
+    "SCENARIO_BRANCHES",
+    "REFERENCE_BRANCHES",
+    "DESCENDANT_ROOT",
+    "EQUAL_LABEL_SINGLETON",
+    "PLAIN_VERSION_UNLINKED",
+    "UNKNOWN_ROOT",
+    "PROVENANCE_SEPARATE",
+    "ORIGINAL_CONTEXT_PIN",
+    "UNKNOWN_CONTEXT_RETAINED",
+    "ALL_NATIVE_ORACLES",
+    "OLD_GRAPHS_UNCHANGED",
+    "NO_NATIVE_CORRECTION",
+    "NO_ADMISSION_OR_OCCURRENCE",
+    "BOUND_PARAMETER",
+    "BACKUP_REOPEN",
+    "FILE_REOPEN",
+    "DUMP_RESTORE",
+    "DUPLICATE_PARENT",
+    "REPLACE_PARENT",
+    "SELF_PARENT",
+    "CYCLE",
+    "CROSS_ARTIFACT",
+    "CROSS_CLASS",
+    "MISSING_CHILD",
+    "MISSING_PARENT",
+    "UNISSUED_CHILD",
+    "UNISSUED_PARENT",
+    "NONKNOWLEDGE_PARENT",
+    "RAW_PARENT",
+    "MISSING_DECLARATION_SOURCE",
+    "EMPTY_REASON",
+    "EMPTY_LOCATOR",
+    "EMPTY_INTERPRETATION",
+    "BAD_CALENDAR",
+    "NONCANONICAL_TIME",
+    "EARLY_DECLARATION",
+    "UPDATE_DECLARATION",
+    "DELETE_DECLARATION",
+    "ATOMIC_ISSUE_FAILURE",
+    "NONTEXT_INPUT",
+    "CONFIGURATION_OFF",
+    "LEDGER_DRIFT",
+    "SCHEMA_DRIFT",
+    "RESTORE_OWNER_TAMPER",
+    "RESTORE_TIME_TAMPER",
+    "RESTORE_CYCLE_TAMPER",
+    "RESTORE_PROVENANCE_TAMPER",
+    "FAILED_UPGRADE",
+    "MUTANT_OWNER_GUARD_EXPOSED",
+    "MUTANT_IMMUTABILITY_EXPOSED",
+    "MUTANT_SOURCE_JOIN_EXPOSED"
+  ]
+}
