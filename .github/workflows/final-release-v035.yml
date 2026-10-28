@@ -1,0 +1,110 @@
+name: v0.3.5 exact-source dry freeze
+on:
+  workflow_run:
+    workflows: [Incremental release candidate]
+    types: [completed]
+    branches: [main]
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: v035-dry-freeze-${{ github.event.workflow_run.head_sha }}
+  cancel-in-progress: false
+jobs:
+  freeze:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main' &&
+      github.event.workflow_run.head_repository.full_name == github.repository &&
+      (github.event.workflow_run.event == 'push' || github.event.workflow_run.event == 'workflow_dispatch')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
+      - name: Authenticate the exact successful core run and download its original ZIP
+        id: core
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          SOURCE_SHA: ${{ github.event.workflow_run.head_sha }}
+          CORE_RUN_ID: ${{ github.event.workflow_run.id }}
+        run: |
+          python - <<'PY'
+          import hashlib,json,os,pathlib,re,stat,subprocess,time,zipfile
+          repo=os.environ['GH_REPO']; source=os.environ['SOURCE_SHA']; run_id=int(os.environ['CORE_RUN_ID'])
+          assert re.fullmatch('[a-f0-9]{40}',source)
+          def api(path): return json.loads(subprocess.check_output(['gh','api','repos/'+repo+'/'+path]))
+          run=api('actions/runs/'+str(run_id))
+          assert run['name']=='Incremental release candidate' and run['path']=='.github/workflows/incremental-release.yml'
+          assert run['status']=='completed' and run['conclusion']=='success' and run['head_sha']==source
+          assert run['head_branch']=='main' and run['head_repository']['full_name']==repo
+          assert run['event'] in ('push','workflow_dispatch')
+          assert api('git/ref/heads/main')['object']['sha']==source
+          rows=api('actions/runs/'+str(run_id)+'/artifacts?per_page=100')['artifacts']
+          selected=[a for a in rows if a['name']=='riskium-candidate-'+source and not a['expired']]
+          assert len(selected)==1
+          artifact=selected[0]; expected=artifact['digest'].removeprefix('sha256:')
+          assert re.fullmatch('[a-f0-9]{64}',expected) and artifact['workflow_run']['id']==run_id
+          assert artifact['workflow_run']['head_sha']==source
+          base=pathlib.Path(os.environ['RUNNER_TEMP']); archive=base/'v035-core.zip'; folder=base/'v035-core'
+          assert not archive.exists() and not folder.exists()
+          with archive.open('wb') as out:
+              subprocess.run(['gh','api','repos/'+repo+'/actions/artifacts/'+str(artifact['id'])+'/zip'],stdout=out,check=True)
+          assert archive.stat().st_size==artifact['size_in_bytes']
+          assert hashlib.sha256(archive.read_bytes()).hexdigest()==expected
+          names={'candidate-receipt.json','source-manifest.json','release-notes.md','SHA256SUMS.txt','riskium-candidate-'+source[:12]+'-source.tar.gz'}
+          with zipfile.ZipFile(archive) as z:
+              infos=z.infolist()
+              assert len(infos)==len(names) and {i.filename for i in infos}==names
+              assert all(not i.is_dir() and not stat.S_ISLNK(i.external_attr>>16) for i in infos)
+              folder.mkdir()
+              for info in infos: (folder/info.filename).write_bytes(z.read(info))
+          for attempt in range(13):
+              runs=api('actions/runs?head_sha='+source+'&per_page=100')['workflow_runs']
+              docs=[r for r in runs if r['name']=='Publish current documentation 0.4.0' and r['head_sha']==source]
+              if any(r['status']=='completed' and r['conclusion']=='success' for r in docs): break
+              assert not any(r['status']=='completed' and r['conclusion'] not in ('success','skipped') for r in docs), 'Current documentation deployment failed'
+              assert attempt<12, 'Exact-source documentation deployment has not completed'
+              time.sleep(15)
+          assert api('git/ref/heads/main')['object']['sha']==source
+          with open(os.environ['GITHUB_OUTPUT'],'a') as output:
+              output.write('artifact_id='+str(artifact['id'])+'\nartifact_sha256='+expected+'\n')
+          print(json.dumps(dict(source_commit=source,core_run_id=run_id,artifact_id=artifact['id'],original_zip_digest_verified=True,exact_source_documentation_deployed=True)))
+          PY
+      - name: Replay affected gates, read actual channels and freeze six exact-source assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          SOURCE_SHA: ${{ github.event.workflow_run.head_sha }}
+          CORE_RUN_ID: ${{ github.event.workflow_run.id }}
+          CORE_ARTIFACT_ID: ${{ steps.core.outputs.artifact_id }}
+          CORE_ARTIFACT_SHA256: ${{ steps.core.outputs.artifact_sha256 }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$SOURCE_SHA"
+          python -B tools/prepare_release_v035_final.py --output "$RUNNER_TEMP/v035-freeze" --candidate-folder "$RUNNER_TEMP/v035-core" --candidate-zip "$RUNNER_TEMP/v035-core.zip" --candidate-run-id "$CORE_RUN_ID" --candidate-artifact-id "$CORE_ARTIFACT_ID" --candidate-artifact-sha256 "$CORE_ARTIFACT_SHA256"
+          git diff --exit-code
+      - name: Recheck that main still names the exact frozen source
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          SOURCE_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          python - <<'PY'
+          import json,os,subprocess
+          main=json.loads(subprocess.check_output(['gh','api','repos/'+os.environ['GH_REPO']+'/git/ref/heads/main']))
+          assert main['object']['sha']==os.environ['SOURCE_SHA']
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: riskium-v0.3.5-freeze-${{ github.event.workflow_run.head_sha }}
+          path: ${{ runner.temp }}/v035-freeze/*
+          if-no-files-found: error
+          retention-days: 30

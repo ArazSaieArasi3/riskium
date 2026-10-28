@@ -1,0 +1,7 @@
+{
+  "schema": "riskium-v035-finalization-registry-v1",
+  "profiles": {
+    "v0.3.5": "releases/final-profile-v0.3.5.json"
+  },
+  "scope": "Additive dry-freeze protocol; existing published/prospective registries remain unchanged."
+}

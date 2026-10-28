@@ -1,0 +1,7 @@
+{
+  "schema": "riskium-v035-finalization-request-v1",
+  "tag": "v0.3.5",
+  "profile": "releases/final-profile-v0.3.5.json",
+  "dry_freeze": true,
+  "publish": false
+}

@@ -28,6 +28,11 @@
       "bytes": 1461
     },
     {
+      "path": ".github/workflows/final-release-v035.yml",
+      "sha256": "2e9907bd8ed013439b560e2bca34dfb0007533142e0451e54621f381a3fb7785",
+      "bytes": 6381
+    },
+    {
       "path": ".github/workflows/incremental-release.yml",
       "sha256": "b87d98fea2a6b14244e1a47f1e29ff6ef618a3285e4b40d6dc7b878d29997d93",
       "bytes": 5806
@@ -196,6 +201,11 @@
       "path": "docs/extensions-and-bridges.md",
       "sha256": "7ea4775cf7b3cbb5ba0479588ad4f8375b76e260856218289803f857f9877d61",
       "bytes": 3514
+    },
+    {
+      "path": "docs/final-release-v0.3.5.md",
+      "sha256": "e40a88c1c7339449c9f1315f1c2cd81ba9c983ee9ef8ffb7f9beaba418016eb3",
+      "bytes": 4681
     },
     {
       "path": "docs/first-release-profile.md",
@@ -981,6 +991,11 @@
       "path": "evaluation/finalization/v0.3.4-review.json",
       "sha256": "37b28bcb01554b779bf5914d64bacbfbe47c2ec824b90125819ef62e7137fb89",
       "bytes": 4997
+    },
+    {
+      "path": "evaluation/finalization/v0.3.5-freeze-review.json",
+      "sha256": "e01d2cbee573528bd0eaea0d71cb39ed4a891f7b629bd999a0d85015538f25bd",
+      "bytes": 8773
     },
     {
       "path": "evaluation/finalization/v0.3.5-review.json",
@@ -2603,6 +2618,26 @@
       "bytes": 252114
     },
     {
+      "path": "releases/distribution-v0.3.5.json",
+      "sha256": "e30e411bbcd8961e3333f2489b694926ee159136154a7d07b237c3864f81136c",
+      "bytes": 39809
+    },
+    {
+      "path": "releases/final-profile-v0.3.5.json",
+      "sha256": "f54615eb406af51f1eab61c5e8f69f804f2eab23af959f8b8e92e01cb25c2c11",
+      "bytes": 1441
+    },
+    {
+      "path": "releases/finalization-profiles.json",
+      "sha256": "909baf17c0265776277f459e6b815d5d814a9b9b5fc64322bbf884090992c714",
+      "bytes": 232
+    },
+    {
+      "path": "releases/finalization-request-v0.3.5.json",
+      "sha256": "47edeec67681459051bc8afc073c5732a25c6fcb6eb7960646ba7b2f028a0a8e",
+      "bytes": 167
+    },
+    {
       "path": "releases/preparation-policy-v0.3.4.json",
       "sha256": "a05d0be68dc357cda67484e389550c61692e9354390ab807a1f90262fc4cfe38",
       "bytes": 2949
@@ -2988,6 +3023,11 @@
       "bytes": 13941
     },
     {
+      "path": "tests/test_release_v035_final.py",
+      "sha256": "6f4818f45454263b589b132f13da97a577aa9a30b35416a7b5c6059ec853be9a",
+      "bytes": 30295
+    },
+    {
       "path": "tests/test_release_v035_selection.py",
       "sha256": "9bb9439a6757827eaa040b332a22a1f7fbdf64275c203255775e92f1eb21870e",
       "bytes": 10704
@@ -3243,6 +3283,11 @@
       "bytes": 1348
     },
     {
+      "path": "tools/prepare_release_v035_final.py",
+      "sha256": "2eeee3d04c291a0affee5f5d7d8b6e5f3b8fdc3da4de23ef161d8172c837cd03",
+      "bytes": 21527
+    },
+    {
       "path": "tools/prepare_stable_release.py",
       "sha256": "05ccf8a87b91fee50103bfdb549c3006497bbd992c025c6310597ebb7cd14f63",
       "bytes": 13775
@@ -3476,6 +3521,11 @@
       "path": "tools/release_v035.py",
       "sha256": "002a121da2dd9af75b5aa5c134716d494f5c7faaa174084eb69aacbcf5a12af4",
       "bytes": 18140
+    },
+    {
+      "path": "tools/release_v035_final.py",
+      "sha256": "2c648c90e30cbad858b75873b7f3e92b7deb36d65c37847ba6244d1d72790a6a",
+      "bytes": 23283
     },
     {
       "path": "tools/requirements-hermit.txt",

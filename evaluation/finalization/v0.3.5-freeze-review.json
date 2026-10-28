@@ -1,0 +1,322 @@
+{
+  "schema": "riskium-v035-freeze-screen-v1",
+  "target": "v0.3.5",
+  "stage": "FINALIZATION_DECLARED_NOT_FROZEN",
+  "issue": 58,
+  "parent_issue": 51,
+  "date_local": "2026-10-28",
+  "component_matrix_sha256": "e30e411bbcd8961e3333f2489b694926ee159136154a7d07b237c3864f81136c",
+  "release_tooling_sha256": {
+    "tools/release_v035_final.py": "2c648c90e30cbad858b75873b7f3e92b7deb36d65c37847ba6244d1d72790a6a",
+    "tools/prepare_release_v035_final.py": "2eeee3d04c291a0affee5f5d7d8b6e5f3b8fdc3da4de23ef161d8172c837cd03",
+    "tests/test_release_v035_final.py": "6f4818f45454263b589b132f13da97a577aa9a30b35416a7b5c6059ec853be9a",
+    ".github/workflows/final-release-v035.yml": "2e9907bd8ed013439b560e2bca34dfb0007533142e0451e54621f381a3fb7785"
+  },
+  "required_core_checks": [
+    [
+      "python",
+      "tools/validate_model.py"
+    ],
+    [
+      "python",
+      "tools/build_native.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/build_owl.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/review_coverage.py"
+    ],
+    [
+      "python",
+      "tools/review_references.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/build_quality_report.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/run_cq.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/build_traceability.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/build_reference.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/publication/audit_portal.py"
+    ],
+    [
+      "python",
+      "tools/publication/build_versioned_site.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/run_compatibility_shacl.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/run_comparison_shacl.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/run_relational_history.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/run_source_cq06.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/run_source_cq0708.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/build_final_review.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/check_release_alignment.py"
+    ],
+    [
+      "python",
+      "tools/run_integrated_validation.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/build_relational_assessment.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/run_relational_assessment.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/check_database_assurance.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/run_relational_correction.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/build_correction_inventory.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/audit_consistency.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/check_research_backlog.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/review_distribution.py"
+    ],
+    [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ]
+  ],
+  "required_release_checks": [
+    [
+      "python",
+      "tools/select_release_v035.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/prepare_release_v035.py",
+      "--check-profile"
+    ],
+    [
+      "python",
+      "tools/prepare_release_v035_final.py",
+      "--check-profile"
+    ],
+    [
+      "python",
+      "tools/run_relational_source_scenario.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/build_source_scenario_inventory.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/run_relational_source_scenario_lineage.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/build_source_scenario_lineage_inventory.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/run_relational_evidence.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/build_evidence_inventory.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/run_relational_evidence_lifecycle.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/build_evidence_lifecycle_inventory.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/audit_current_alignment.py",
+      "--check"
+    ],
+    [
+      "python",
+      "tools/publication/current_documentation.py",
+      "--check"
+    ]
+  ],
+  "known_unresolved_critical_findings": [],
+  "new_owner_responses_generated": 0,
+  "independent_semantic_review_claimed": false,
+  "material_scientific_change_since_owner_acceptance": false,
+  "universal_zero_defect_claimed": false,
+  "source_freeze_executed": false,
+  "publication_executed": false,
+  "reviewed_risks": [
+    {
+      "id": "source-identity",
+      "risk": "Dirty or changed HEAD, wrong CI source or unrelated artifact",
+      "retained_evidence": [
+        "releases/selection-v0.3.5.json"
+      ],
+      "fresh_gate": "Authenticate actual same-main run/source/ZIP digest; compare all committed Git blobs and recheck main."
+    },
+    {
+      "id": "check-inventory",
+      "risk": "A receipt substitutes count-only or missing/failed core/release gates",
+      "retained_evidence": [
+        "tools/prepare_incremental_release.py"
+      ],
+      "fresh_gate": "Exact ordered28 core and13 affected release command inventories and zero actual exit codes."
+    },
+    {
+      "id": "offline-package",
+      "risk": "A complete-looking manifest omits selected or finalization tooling",
+      "retained_evidence": [
+        "releases/stable-profile-v0.3.5.json"
+      ],
+      "fresh_gate": "Offline six-asset validator and coherently recomputed omission tests against actual archived bytes."
+    },
+    {
+      "id": "fresh-channels",
+      "risk": "Older source-bound #55 receipts relabeled as fresh exact-source readback",
+      "retained_evidence": [
+        "evaluation/releases/v0.3.5-selection/inputs/documentation-http.json",
+        "evaluation/releases/v0.3.5-selection/inputs/documentation-wiki.json"
+      ],
+      "fresh_gate": "Fresh clone23 Wiki files plus actual exact-source root manifest and311 served bodies, with timestamps."
+    },
+    {
+      "id": "historical-provenance",
+      "risk": "Frozen generation dependencies or four snapshots rebound or rebuilt",
+      "retained_evidence": [
+        "releases/selection-v0.3.5.json",
+        "releases/distribution-v0.3.4.json"
+      ],
+      "fresh_gate": "Preserve all687 selected bytes,380 oldbindings,237 frozenfiles and original generation rows/edges."
+    },
+    {
+      "id": "migration-scope",
+      "risk": "Lifecycle claims exceed represented versions or migration chain",
+      "retained_evidence": [
+        "implementation/relational/0.7.0/component.json",
+        "evaluation/relational/evidence-lifecycle/report.json"
+      ],
+      "fresh_gate": "Fresh declared lifecycle/SSC/SCL/EQR replays and inventories; retain original schema history."
+    },
+    {
+      "id": "scientific-claims",
+      "risk": "Engineering results promoted to scientific/owner/independent acceptance",
+      "retained_evidence": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/consistency/current-0.3.0/report.json"
+      ],
+      "fresh_gate": "Retain model/ORSD/DRSD/manuscript, historical populations,306 IDs/236 deferred,11 WITHHELD and zero ratings."
+    },
+    {
+      "id": "phase-activation",
+      "risk": "Dry freeze mutates old publication controls or publishes on ordinary push",
+      "retained_evidence": [
+        "releases/successor-profiles.json",
+        "releases/stable-request-v0.3.4.json"
+      ],
+      "fresh_gate": "Preserve old registries/requests/tools; separate dry-freeze-only namespace and contents/actions read workflow."
+    },
+    {
+      "id": "archive-safety",
+      "risk": "Tar traversal, duplicate/link/nonregular entries or extra/missing assets accepted",
+      "retained_evidence": [
+        "releases/stable-profile-v0.3.5.json"
+      ],
+      "fresh_gate": "Exact six assets and safe regular complete archive with unique manifest paths, hashes and source-bound receipts."
+    },
+    {
+      "id": "public-readback",
+      "risk": "Staged assets mistaken for published verified release",
+      "retained_evidence": [
+        "evaluation/releases/v0.3.5-definition/published-baseline.json"
+      ],
+      "fresh_gate": "This packet stops at independently downloaded dry freeze; new-only publication and11 previous inventories remain next gates."
+    }
+  ],
+  "limits": [
+    "Bounded engineering screen, not a universal zero-defect guarantee or new independent scientific review.",
+    "Only actual exact-source runtime execution and independently downloaded readback may establish successful dry freeze.",
+    "No public tag/release/assets or publication is created by this dry-freeze protocol."
+  ]
+}
