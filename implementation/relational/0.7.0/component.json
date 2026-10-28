@@ -38,7 +38,7 @@
   "full_mapping_completed": false,
   "independent_semantic_validation": false,
   "files_sha256": {
-    ".github/workflows/evidence-lifecycle.yml": "8ba56b93305949b82cfd2d873f8e843a577dcfe17a312958772d8bcdc9af857d",
+    ".github/workflows/evidence-lifecycle.yml": "5ba26e13badb298162c0fa29f17f6e6b97f84e62779c27272845a2e88bc50a9f",
     "evaluation/consistency/traceability.csv": "befcba3e48efdb023326f3419771dac676058fc8994fd3262fef17e2549bd095",
     "evaluation/consistency/traceability.json": "7dd56b8cbfad61b5617609702a8fb1609966e13d480b0c9f44d01806266b22c6",
     "evaluation/independent-review/protocol.json": "acddb088c01b1f3594a8242c4ddc5e7a36bad661623bb76da64338c9955cc524",

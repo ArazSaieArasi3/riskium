@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/workflows/evidence-lifecycle.yml",
-      "sha256": "8ba56b93305949b82cfd2d873f8e843a577dcfe17a312958772d8bcdc9af857d",
-      "bytes": 1423
+      "sha256": "5ba26e13badb298162c0fa29f17f6e6b97f84e62779c27272845a2e88bc50a9f",
+      "bytes": 1461
     },
     {
       "path": ".github/workflows/incremental-release.yml",
@@ -2074,7 +2074,7 @@
     },
     {
       "path": "implementation/relational/0.7.0/component.json",
-      "sha256": "2ec15809ac9ef53be7692e3969105d092501acb0e0930b6d9d196b49fce82ef3",
+      "sha256": "b1920b3c38b26612d21a89336037c9f0c3f63f86f0958588d186a614b2a419fc",
       "bytes": 5555
     },
     {

@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install -r tools/requirements-shacl.txt
+      - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
       - name: Replay frozen lifecycle, populated migration, native graph and real mutation controls
         run: python tools/run_relational_evidence_lifecycle.py --check
       - name: Check original 306 dispositions, derived requirements and component bindings
