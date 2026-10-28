@@ -1,0 +1,942 @@
+{
+  "schema": "riskium-evidence-reference-lifecycle-oracles-v1",
+  "version": "0.7.0",
+  "status": "FROZEN_EXPECTATIONS_NOT_EXECUTED",
+  "population": "Fixed synthetic engineering controls authored before implementation; no real-world occurrence, independent review or semantic accuracy denominator.",
+  "independent_expectations": "Literal result vectors and explicit diagnostics below are prospective expectations. No SQL/API/runner has produced them. Four inherited EQR graph oracles remain original manually declared literal graphs, identified by exact file hash.",
+  "base": {
+    "versions": [
+      {
+        "id": "ref-A@1",
+        "artifact": "ref-A",
+        "family": "RKM-C065",
+        "state": "ISSUED",
+        "source": "source-original",
+        "graph_oracle": "urn:riskium:evidence:ref-a-v1"
+      },
+      {
+        "id": "ref-A@2",
+        "artifact": "ref-A",
+        "family": "RKM-C065",
+        "state": "ISSUED",
+        "source": "source-correction",
+        "graph_oracle": "urn:riskium:evidence:ref-a-v2"
+      },
+      {
+        "id": "ref-A@3",
+        "artifact": "ref-A",
+        "family": "RKM-C065",
+        "state": "ISSUED",
+        "source": "source-branch"
+      },
+      {
+        "id": "ref-A@4",
+        "artifact": "ref-A",
+        "family": "RKM-C065",
+        "state": "ISSUED",
+        "source": "source-later"
+      },
+      {
+        "id": "ref-B@1",
+        "artifact": "ref-B",
+        "family": "RKM-C065",
+        "state": "ISSUED",
+        "source": "source-original",
+        "same_label_as": "ref-A",
+        "graph_oracle": "urn:riskium:evidence:ref-b-v1"
+      },
+      {
+        "id": "ref-A@draft",
+        "artifact": "ref-A",
+        "family": "RKM-C065",
+        "state": "RAW"
+      },
+      {
+        "id": "scenario-A@1",
+        "artifact": "scenario-A",
+        "family": "OUTSIDE_C065_SCOPE",
+        "state": "ISSUED"
+      }
+    ],
+    "correction_tree": [
+      {
+        "id": "cor-1",
+        "parent": "ref-A@1",
+        "child": "ref-A@2"
+      },
+      {
+        "id": "cor-2",
+        "parent": "ref-A@1",
+        "child": "ref-A@3"
+      },
+      {
+        "id": "cor-3",
+        "parent": "ref-A@2",
+        "child": "ref-A@4"
+      }
+    ],
+    "decision_ledger": [
+      {
+        "sequence": 10,
+        "context": "review-X",
+        "artifact": "ref-A",
+        "kind": "SELECT",
+        "version": "ref-A@2",
+        "source": "decision-source-1"
+      },
+      {
+        "sequence": 20,
+        "context": "review-X",
+        "artifact": "ref-A",
+        "kind": "WITHDRAW",
+        "version": "ref-A@2",
+        "source": "withdrawal-notice"
+      },
+      {
+        "sequence": 30,
+        "context": "review-X",
+        "artifact": "ref-A",
+        "kind": "SELECT",
+        "version": "ref-A@3",
+        "source": "decision-source-2"
+      },
+      {
+        "sequence": 40,
+        "context": "review-X",
+        "artifact": "ref-A",
+        "kind": "CLEAR",
+        "version": null,
+        "source": "decision-source-3"
+      }
+    ],
+    "inherited_native_oracles": {
+      "path": "implementation/relational/0.6.0/fixtures.json",
+      "sha256": "9b7d6c0ef35f71c89558d65f439ba9fa7b2b9113d7f3fc0f5b3128c71767ccf8",
+      "keys": [
+        "urn:riskium:evidence:ref-a-v1",
+        "urn:riskium:evidence:ref-a-v2",
+        "urn:riskium:evidence:ref-b-v1",
+        "urn:riskium:evidence:ref-c-v1"
+      ],
+      "policy": "Aliases ref-A@1 and ref-A@2 bind the corresponding original graph IDs; ref-A@3/ref-A@4 are selection/lineage-only fixtures and must not be exported as duplicated ref-A@2 graph identities."
+    }
+  },
+  "cases": [
+    {
+      "id": "ELC-F01",
+      "category": "migration",
+      "given": {
+        "source": "actually populated validated v7"
+      },
+      "operation": "upgrade to v8",
+      "expected": {
+        "status": "UPGRADED",
+        "prior_rows": "byte-equivalent logical values",
+        "migration_1_to_7_hashes": "UNCHANGED",
+        "all_prior_named_graphs": "UNCHANGED"
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F02",
+      "category": "rollback",
+      "given": {
+        "source": "populated v7",
+        "inject_failure": "after first new DDL/table write"
+      },
+      "operation": "upgrade to v8",
+      "expected": {
+        "status": "ROLLED_BACK",
+        "source_schema_version": 7,
+        "new_schema_objects": 0,
+        "all_source_rows": "UNCHANGED"
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F03",
+      "category": "migration",
+      "given": {
+        "source": "validated v8"
+      },
+      "operation": "repeat upgrade",
+      "expected": {
+        "status": "ALREADY_CURRENT",
+        "new_rows": 0,
+        "prior_rows": "UNCHANGED"
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F04",
+      "category": "positive",
+      "given": {
+        "corrections": []
+      },
+      "operation": {
+        "declare": {
+          "parent": "ref-A@1",
+          "child": "ref-A@2",
+          "source": "notice-1"
+        }
+      },
+      "expected": {
+        "status": "ACCEPTED",
+        "family": [
+          "ref-A@1",
+          "ref-A@2"
+        ],
+        "native_new_triples": 0
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F05",
+      "category": "rejection",
+      "given": {
+        "corrections": []
+      },
+      "operation": {
+        "declare": {
+          "parent": "ref-A@1",
+          "child": "ref-B@1"
+        }
+      },
+      "expected": {
+        "diagnostic": "CROSS_ARTIFACT",
+        "writes": 0
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F06",
+      "category": "rejection",
+      "given": {},
+      "operation": {
+        "declare": {
+          "parent": "ref-A@1",
+          "child": "ref-A@draft"
+        }
+      },
+      "expected": {
+        "diagnostic": "UNISSUED_ENDPOINT",
+        "writes": 0
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F07",
+      "category": "rejection",
+      "given": {},
+      "operation": {
+        "declare": {
+          "parent": "ref-A@1",
+          "child": "ref-A@1"
+        }
+      },
+      "expected": {
+        "diagnostic": "SELF_CORRECTION",
+        "writes": 0
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F08",
+      "category": "rejection",
+      "given": {
+        "corrections": "base.correction_tree"
+      },
+      "operation": {
+        "declare": {
+          "parent": "ref-A@4",
+          "child": "ref-A@1"
+        }
+      },
+      "expected": {
+        "diagnostic": "CYCLE",
+        "writes": 0
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F09",
+      "category": "rejection",
+      "given": {
+        "corrections": "base.correction_tree"
+      },
+      "operation": {
+        "declare": {
+          "parent": "ref-A@3",
+          "child": "ref-A@2"
+        }
+      },
+      "expected": {
+        "diagnostic": "PARENT_ALREADY_DECLARED",
+        "writes": 0
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F10",
+      "category": "query",
+      "given": {
+        "corrections": "base.correction_tree"
+      },
+      "operation": {
+        "family": {
+          "root": "ref-A@1"
+        }
+      },
+      "expected": {
+        "version_ids": [
+          "ref-A@1",
+          "ref-A@2",
+          "ref-A@3",
+          "ref-A@4"
+        ],
+        "parent_edges": [
+          [
+            "ref-A@2",
+            "ref-A@1"
+          ],
+          [
+            "ref-A@3",
+            "ref-A@1"
+          ],
+          [
+            "ref-A@4",
+            "ref-A@2"
+          ]
+        ],
+        "independent_source_count_inferred": false
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F11",
+      "category": "query",
+      "given": {
+        "corrections": [],
+        "decisions": []
+      },
+      "operation": {
+        "family": {
+          "root": "ref-A@1"
+        }
+      },
+      "expected": {
+        "version_ids": [
+          "ref-A@1"
+        ],
+        "implicit_edges": 0,
+        "selected_version": null
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F12",
+      "category": "query",
+      "given": {
+        "decisions": []
+      },
+      "operation": {
+        "selection": {
+          "context": "review-X",
+          "artifact": "ref-A",
+          "as_of_sequence": 999
+        }
+      },
+      "expected": {
+        "status": "NO_SELECTION",
+        "selected_version": null,
+        "last_selected_version": null
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F13",
+      "category": "query",
+      "given": {
+        "decisions": "base.decision_ledger"
+      },
+      "operation": {
+        "selection": {
+          "context": "review-X",
+          "artifact": "ref-A",
+          "as_of_sequence": 10
+        }
+      },
+      "expected": {
+        "status": "SELECTED",
+        "selected_version": "ref-A@2",
+        "last_selected_version": "ref-A@2"
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F14",
+      "category": "query",
+      "given": {
+        "decisions": "base.decision_ledger"
+      },
+      "operation": {
+        "selection": {
+          "context": "review-Y",
+          "artifact": "ref-A",
+          "as_of_sequence": 99
+        }
+      },
+      "expected": {
+        "status": "NO_SELECTION",
+        "selected_version": null,
+        "last_selected_version": null
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F15",
+      "category": "query",
+      "given": {
+        "decisions": "base.decision_ledger"
+      },
+      "operation": {
+        "selection": {
+          "context": "review-X",
+          "artifact": "ref-A",
+          "as_of_sequence": 9
+        }
+      },
+      "expected": {
+        "status": "NO_SELECTION",
+        "selected_version": null,
+        "last_selected_version": null
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F16",
+      "category": "query",
+      "given": {
+        "decisions": "base.decision_ledger"
+      },
+      "operation": {
+        "selection": {
+          "context": "review-X",
+          "artifact": "ref-A",
+          "as_of_sequence": 20
+        }
+      },
+      "expected": {
+        "status": "WITHDRAWN",
+        "selected_version": null,
+        "last_selected_version": "ref-A@2"
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F17",
+      "category": "query",
+      "given": {
+        "decisions": "base.decision_ledger",
+        "newest_issued": "ref-A@4"
+      },
+      "operation": {
+        "selection": {
+          "context": "review-X",
+          "artifact": "ref-A",
+          "as_of_sequence": 29
+        }
+      },
+      "expected": {
+        "status": "WITHDRAWN",
+        "selected_version": null,
+        "last_selected_version": "ref-A@2",
+        "fallback_allowed": false
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F18",
+      "category": "rejection",
+      "given": {
+        "decisions": "base.decision_ledger through sequence 20"
+      },
+      "operation": {
+        "append": {
+          "context": "review-X",
+          "artifact": "ref-A",
+          "kind": "SELECT",
+          "version": "ref-A@2"
+        }
+      },
+      "expected": {
+        "diagnostic": "WITHDRAWN_IN_CONTEXT",
+        "writes": 0
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F19",
+      "category": "query",
+      "given": {
+        "decisions": "base.decision_ledger"
+      },
+      "operation": {
+        "selection": {
+          "context": "review-X",
+          "artifact": "ref-A",
+          "as_of_sequence": 30
+        }
+      },
+      "expected": {
+        "status": "SELECTED",
+        "selected_version": "ref-A@3",
+        "last_selected_version": "ref-A@3"
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F20",
+      "category": "query",
+      "given": {
+        "decisions": "base.decision_ledger"
+      },
+      "operation": {
+        "selection": {
+          "context": "review-X",
+          "artifact": "ref-A",
+          "as_of_sequence": 40
+        }
+      },
+      "expected": {
+        "status": "NO_SELECTION",
+        "selected_version": null,
+        "last_selected_version": null
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F21",
+      "category": "query",
+      "given": {
+        "decisions": "base.decision_ledger"
+      },
+      "operation": {
+        "selection": {
+          "context": "review-X",
+          "artifact": "ref-A",
+          "as_of_sequence": 19
+        }
+      },
+      "expected": {
+        "status": "SELECTED",
+        "selected_version": "ref-A@2",
+        "last_selected_version": "ref-A@2"
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F22",
+      "category": "provenance",
+      "given": {
+        "two_events_same_recorded_utc": true,
+        "assigned_sequences": [
+          10,
+          20
+        ]
+      },
+      "operation": "read ordered ledger",
+      "expected": {
+        "order": [
+          10,
+          20
+        ],
+        "real_world_authority_inferred": false,
+        "rewritable_sequences": false
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F23",
+      "category": "negative-inference",
+      "given": {
+        "same_item_referenced_by": [
+          "ref-A@1",
+          "ref-B@1"
+        ]
+      },
+      "operation": "read independent corroboration meaning",
+      "expected": {
+        "additional_independent_studies_inferred": 0,
+        "endorsement_inferred": false
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F24",
+      "category": "rejection",
+      "given": {
+        "raw_unknown_target": "unknown-ref",
+        "raw_source": "unchanged input"
+      },
+      "operation": {
+        "append": {
+          "context": "review-X",
+          "artifact": "unknown-ref",
+          "kind": "SELECT",
+          "version": "unknown-ref@1"
+        }
+      },
+      "expected": {
+        "diagnostic": "UNKNOWN_ENDPOINT",
+        "managed_writes": 0,
+        "raw_source": "UNCHANGED"
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F25",
+      "category": "native",
+      "given": {
+        "decisions": "base.decision_ledger",
+        "corrections": "base.correction_tree"
+      },
+      "operation": {
+        "export_native": {
+          "version": "ref-A@1"
+        }
+      },
+      "expected": {
+        "exact_inherited_graph": "urn:riskium:evidence:ref-a-v1",
+        "new_native_predicates": [],
+        "issued_source": "source-original"
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F26",
+      "category": "native",
+      "given": {
+        "decisions": "base.decision_ledger"
+      },
+      "operation": {
+        "export_native": {
+          "version": "ref-A@2"
+        }
+      },
+      "expected": {
+        "exact_inherited_graph": "urn:riskium:evidence:ref-a-v2",
+        "global_C066_membership": false,
+        "historical_graph_union": false
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F27",
+      "category": "native",
+      "given": {
+        "decisions": "base.decision_ledger"
+      },
+      "operation": "project lifecycle metadata into native graph",
+      "expected": {
+        "added_triples": [],
+        "new_correction_authority_or_occurrence_predicates": []
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F28",
+      "category": "immutability",
+      "given": {
+        "rows": "committed correction and decision rows"
+      },
+      "operation": "attempt UPDATE, DELETE and REPLACE separately",
+      "expected": {
+        "each_rejected": true,
+        "all_rows": "UNCHANGED"
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F29",
+      "category": "provenance",
+      "given": {
+        "parent_source": "source-original",
+        "child_source": "source-correction",
+        "decision_source": "decision-source-1"
+      },
+      "operation": "read sources",
+      "expected": {
+        "parent_source": "source-original",
+        "child_source": "source-correction",
+        "decision_source": "decision-source-1",
+        "merged_source": false
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F30",
+      "category": "rollback",
+      "given": {
+        "outer_transaction": "active",
+        "new_version": "ref-A@5",
+        "inject_failure": "after issuance before decision seal"
+      },
+      "operation": "atomic issue-and-declare",
+      "expected": {
+        "status": "ROLLED_BACK",
+        "new_version_exists": false,
+        "new_declaration_exists": false,
+        "outer_prior_writes": "PRESERVED"
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F31",
+      "category": "reader",
+      "given": {
+        "database_schema_version": 8
+      },
+      "operation": "open with old v7 exact-schema reader",
+      "expected": {
+        "diagnostic": "UNSUPPORTED_SCHEMA_VERSION",
+        "database_writes": 0
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F32",
+      "category": "mutation",
+      "given": {
+        "wrong_algorithm": "choose max issued version ID when no SELECT"
+      },
+      "operation": "replay ELC-F12",
+      "expected": {
+        "incorrect_selected_version": "ref-A@4",
+        "oracle_selected_version": null,
+        "must_detect_difference": true
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F33",
+      "category": "mutation",
+      "given": {
+        "wrong_algorithm": "default missing context to review-X"
+      },
+      "operation": "query selection without context",
+      "expected": {
+        "diagnostic": "INVALID_CONTEXT",
+        "must_detect_difference": true
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F34",
+      "category": "preservation",
+      "given": {
+        "organizational_admissions": 11,
+        "independent_ratings": 0,
+        "source_elements": 306
+      },
+      "operation": "complete profile and accounting",
+      "expected": {
+        "all_organizational_admissions": "WITHHELD",
+        "independent_ratings": 0,
+        "source_elements": 306,
+        "full_mapping_completed": false
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F35",
+      "category": "recovery",
+      "given": {
+        "database": "populated v8 with full base ledger"
+      },
+      "operation": "backup/reopen and SQL dump/restore; separately tamper owned source/pins",
+      "expected": {
+        "valid_roundtrips": "exact row/query/graph equivalence",
+        "tampered_restore": "REJECTED",
+        "all_previous_audits": "RETAINED"
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F36",
+      "category": "traceability",
+      "given": {
+        "requirements": "ELC-01..ELC-09",
+        "source_elements": 306,
+        "historical_rows": 423
+      },
+      "operation": "build current successor trace",
+      "expected": {
+        "requirements_without_fixed_cases": 0,
+        "unaccounted_native_ids": 0,
+        "historical_row_semantics": "UNCHANGED",
+        "unexplained_retained_claims": 0
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F37",
+      "category": "mutation",
+      "given": {
+        "wrong_algorithm": "export ref-A@1 using latest item/target pins"
+      },
+      "operation": "replay ELC-F25",
+      "expected": {
+        "must_detect_difference": true,
+        "expected_graph": "urn:riskium:evidence:ref-a-v1",
+        "forbidden_graph": "urn:riskium:evidence:ref-a-v2"
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F38",
+      "category": "rejection",
+      "given": {
+        "event_id": "event-original",
+        "committed": true
+      },
+      "operation": "insert replacement event with same request/event identity",
+      "expected": {
+        "diagnostic": "DUPLICATE_EVENT_ID",
+        "writes": 0,
+        "original": "UNCHANGED"
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F39",
+      "category": "rejection",
+      "given": {},
+      "operation": {
+        "append": {
+          "context": "review-X",
+          "artifact": "ref-A",
+          "kind": "SELECT",
+          "version": "ref-B@1"
+        }
+      },
+      "expected": {
+        "diagnostic": "CROSS_ARTIFACT",
+        "writes": 0
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F40",
+      "category": "rejection",
+      "given": {
+        "recorded_utc": "2026-02-30T12:00:00Z"
+      },
+      "operation": "append a lifecycle row",
+      "expected": {
+        "diagnostic": "INVALID_RECORDED_TIME",
+        "writes": 0
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F41",
+      "category": "rejection",
+      "given": {},
+      "operation": {
+        "declare": {
+          "parent": "ref-A@1",
+          "child": "scenario-A@1"
+        }
+      },
+      "expected": {
+        "diagnostic": "UNSUPPORTED_ENDPOINT_FAMILY",
+        "writes": 0,
+        "note": "Family check precedes same-artifact check for this control."
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F42",
+      "category": "rejection",
+      "given": {
+        "source_locator": null
+      },
+      "operation": "append a lifecycle row",
+      "expected": {
+        "diagnostic": "MISSING_PROVENANCE",
+        "writes": 0
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "ELC-F43",
+      "category": "rejection",
+      "given": {},
+      "operation": {
+        "selection": {
+          "context": "review-X",
+          "artifact": "ref-A",
+          "as_of_sequence": null
+        }
+      },
+      "expected": {
+        "diagnostic": "INVALID_AS_OF_SEQUENCE",
+        "selected_version": null
+      },
+      "observed": null,
+      "execution_status": "NOT_RUN"
+    }
+  ],
+  "valid_case_envelope": {
+    "actor_id": "urn:fixture:reviewer-X",
+    "reason": "fixed synthetic declaration",
+    "source_identity": "urn:fixture:notice",
+    "source_locator": "section 1",
+    "interpretation_origin": "synthetic fixture author",
+    "recorded_utc": "2026-10-01T12:00:00Z",
+    "note": "Literal common fixture inputs for fields not varied by a case, not runtime repair/default behavior. Future execution must explicitly expand and record each full input."
+  }
+}

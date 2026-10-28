@@ -1,0 +1,257 @@
+{
+  "schema": "riskium-evidence-reference-lifecycle-contract-v1",
+  "version": "0.7.0",
+  "schema_version": 8,
+  "status": "DECLARED_NOT_IMPLEMENTED",
+  "declaration_issue": 52,
+  "release_issue": 51,
+  "parent_issues": [
+    35,
+    12
+  ],
+  "baseline_commit": "3646ff0dd138a1ecc6f56fd50341a67635a85488",
+  "published_baseline": "v0.3.4",
+  "source_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "implementation/relational/0.6.0/contract.json": "c088cea95940a1efdf49d24a586d1acd5a1c765ff4f733011a4f3b0f4ae6a88c",
+    "implementation/relational/0.6.0/fixtures.json": "9b7d6c0ef35f71c89558d65f439ba9fa7b2b9113d7f3fc0f5b3128c71767ccf8",
+    "implementation/relational/0.6.0/component.json": "b83973b5c00a939de25d463d10eb4e055237d4ab1aca9d9a5734bd96673759a1",
+    "evaluation/relational/qualified-evidence/mapping-accounting.json": "78376e6911505de592c83e870ed2e28bb89b46de130e040bf378197d45a75a1b",
+    "evaluation/consistency/traceability.json": "7dd56b8cbfad61b5617609702a8fb1609966e13d480b0c9f44d01806266b22c6",
+    "evaluation/consistency/traceability.csv": "befcba3e48efdb023326f3419771dac676058fc8994fd3262fef17e2549bd095",
+    "evaluation/manuscript-review/ledger.json": "d581667afba9823285639c6c1f57a30cc737f2a0aa915f15645f81d5568ab81d",
+    "evaluation/manuscript-review/v7.0.8/receipt.json": "5c32310eb1e5b689ed188e16a2b7d69af0c27454316defa661da53deefe2f634",
+    "evaluation/independent-review/protocol.json": "acddb088c01b1f3594a8242c4ddc5e7a36bad661623bb76da64338c9955cc524",
+    "evaluation/independent-review/responses.json": "3896793de4db0d1b5b0d0f96f2f9ce8ffd1dd31c738d0f22400d88b5f3e8b00f",
+    "releases/distribution-v0.3.4.json": "a5f0a645dac4998862a99ca76564f705f72f61c03b7f40e89385c7ca4edca4ac",
+    "releases/stable-profile-v0.3.4.json": "da66c5327a88ff89a90783128f9a085909b70f2588e17d6ec25d8dee8d7b8a81",
+    "releases/stable-request-v0.3.4.json": "203da5c89bd1d57bd3716fb8beefffc797501df80def97d49a48099ca35899fb"
+  },
+  "original_requirements_unchanged": true,
+  "requirements": [
+    {
+      "id": "ELC-01",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-11"
+      ],
+      "constraints": [
+        "C-03"
+      ],
+      "accept": "Actual populated v7->v8 upgrade preserves every earlier row, migration hash, issued payload and named native graph. Repeated upgrade and failed upgrade have explicit atomic outcomes.",
+      "cases": [
+        "ELC-F01",
+        "ELC-F02",
+        "ELC-F03",
+        "ELC-F31"
+      ]
+    },
+    {
+      "id": "ELC-02",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "constraints": [
+        "C-03",
+        "C-17"
+      ],
+      "accept": "Explicit correction declarations connect only issued C065 EvidenceReference versions of the same artifact. One immutable parent per child, multiple branches, no self/cycle/cross-artifact edge; plain issuance adds no correction.",
+      "cases": [
+        "ELC-F04",
+        "ELC-F05",
+        "ELC-F06",
+        "ELC-F07",
+        "ELC-F08",
+        "ELC-F09",
+        "ELC-F10",
+        "ELC-F11"
+      ]
+    },
+    {
+      "id": "ELC-03",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "constraints": [
+        "C-03",
+        "C-12"
+      ],
+      "accept": "Correction and decision rows preserve their own actor attribution, reason, documentary source/locator, interpretation, recorded UTC and database-assigned sequence independently of immutable endpoint sources. Update/delete/replace fail.",
+      "cases": [
+        "ELC-F22",
+        "ELC-F28",
+        "ELC-F29",
+        "ELC-F30",
+        "ELC-F38",
+        "ELC-F40",
+        "ELC-F42"
+      ]
+    },
+    {
+      "id": "ELC-04",
+      "source_requirements": [
+        "RKRS-06",
+        "RKRS-11"
+      ],
+      "constraints": [
+        "C-12",
+        "C-16"
+      ],
+      "accept": "Selection queries require exact artifact, named application context and as_of_sequence. A context selects an explicit issued version, not the newest timestamp, label, branch or truth. Missing selection yields NO_SELECTION; CLEAR removes a context's selected pointer without deleting history.",
+      "cases": [
+        "ELC-F12",
+        "ELC-F13",
+        "ELC-F14",
+        "ELC-F15",
+        "ELC-F19",
+        "ELC-F20",
+        "ELC-F21",
+        "ELC-F33",
+        "ELC-F39",
+        "ELC-F43"
+      ]
+    },
+    {
+      "id": "ELC-05",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "constraints": [
+        "C-03",
+        "C-17"
+      ],
+      "accept": "Append-only WITHDRAW notices are context-specific documentary decisions about an exact issued version. At/after withdrawal an already selected version yields WITHDRAWN with null selected_version, never fallback. Earlier as-of queries and all graphs/edges/sources remain unchanged.",
+      "cases": [
+        "ELC-F16",
+        "ELC-F17",
+        "ELC-F18",
+        "ELC-F19",
+        "ELC-F21"
+      ]
+    },
+    {
+      "id": "ELC-06",
+      "source_requirements": [
+        "RKRS-06",
+        "RKRS-09"
+      ],
+      "constraints": [
+        "C-12",
+        "C-14"
+      ],
+      "accept": "Keep C065/C066, R-68/RX-021 and version/item/target pins in their original named graphs. C066 remains contextual. Correction/withdrawal/selection are supplementary metadata, with no native authority/correction/occurrence predicate or inferred independent corroboration.",
+      "cases": [
+        "ELC-F23",
+        "ELC-F25",
+        "ELC-F26",
+        "ELC-F27",
+        "ELC-F34"
+      ]
+    },
+    {
+      "id": "ELC-07",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-11"
+      ],
+      "constraints": [
+        "C-03",
+        "C-16"
+      ],
+      "accept": "Reject unknown/unissued/mismatched targets, missing context/provenance and invalid event envelopes without partial writes. Preserve raw unknown identities. Validate current schema/FKs/configuration and refuse v8 with an old exact-schema reader. Execute nested rollback and backup/reopen/dump recovery.",
+      "cases": [
+        "ELC-F06",
+        "ELC-F24",
+        "ELC-F28",
+        "ELC-F30",
+        "ELC-F31",
+        "ELC-F35",
+        "ELC-F38",
+        "ELC-F39",
+        "ELC-F40",
+        "ELC-F41",
+        "ELC-F42",
+        "ELC-F43"
+      ]
+    },
+    {
+      "id": "ELC-08",
+      "source_requirements": [
+        "RKRS-11",
+        "RKRS-12"
+      ],
+      "constraints": [
+        "C-16"
+      ],
+      "accept": "Reconcile all 306 native dispositions and every ELC requirement to fixed inputs, expected/observed SQL/native outcomes, exact code/component and retained claim/limit. Keep 423 historical rows, original source/requirement priorities, eleven WITHHELD admissions and zero independent ratings unchanged.",
+      "cases": [
+        "ELC-F34",
+        "ELC-F36"
+      ]
+    },
+    {
+      "id": "ELC-09",
+      "source_requirements": [
+        "RKRS-06",
+        "RKRS-12"
+      ],
+      "constraints": [
+        "C-12",
+        "C-17"
+      ],
+      "accept": "Use frozen literal expectations independent of the implementation. Deliberately wrong newest-version, missing-context and cross-version-pin mutations must be detected. Software/source accounting never counts as independent semantic ratings.",
+      "cases": [
+        "ELC-F32",
+        "ELC-F33",
+        "ELC-F37"
+      ]
+    }
+  ],
+  "native_scope": {
+    "already_represented_classes": [
+      "RKM-C065",
+      "RKM-C066",
+      "RKM-C014",
+      "RKM-C015"
+    ],
+    "already_projected_relations": [
+      "R-68",
+      "RX-021",
+      "RX-006"
+    ],
+    "new_native_classes": [],
+    "new_native_predicates": [],
+    "additional_native_mapping_completion_claimed": false
+  },
+  "policy": {
+    "endpoints": "Only the existing issued C065 EvidenceReference family; no arbitrary native assertion, assessment, scenario or source-reference lifecycle is implemented by this new slice. Their previous profiles remain available unchanged.",
+    "corrections": "Immutable explicit child->parent metadata, same artifact and C065 family, acyclic, single parent per child. Query the selected root and declared descendants once, preserving all branches. No automatic new edge from issuing a version. Diagnostic precedence is envelope/provenance, endpoint existence/issuance/family, same-artifact, self/parent/cycle; controls for a later rule satisfy earlier rules.",
+    "decisions": "SELECT, WITHDRAW and CLEAR are attributed application decisions scoped to (context_id, artifact_id). Context is a supplementary caller policy identifier, not a new native actor, mandate, authorization or authoritative branch.",
+    "sequencing": "Database assigns a positive append-only ledger sequence atomically. Selection queries require an explicit as_of_sequence high-water mark and include rows <= it. Sequence records local knowledge order; UTC recorded/source-effective times stay distinct and do not establish real-world validity. Timestamp ties cannot choose a winner; sequence is explicit. Deterministic fixture sequences are expected data, not evidence of an actual run. Omitted/negative/noninteger as-of boundaries are INVALID_AS_OF_SEQUENCE. New event/request IDs are unique and cannot replace committed events.",
+    "selection": "Within a context and as-of bound, the last SELECT/CLEAR decides the pointer. No SELECT means NO_SELECTION. CLEAR means NO_SELECTION. A selected version withdrawn in that context by that bound means WITHDRAWN with selected_version=null and last_selected_version retained. Otherwise SELECTED returns that exact version. Newest issued version, corrections or another context never supply a fallback.",
+    "withdrawal": "WITHDRAW references an exact existing issued C065 version and remains documentary/application-scoped. It never erases payload, source, correction edge, native graph or another context's decision. A withdrawn version cannot be newly selected in the same context. Reinstatement of an erroneous withdrawal and notice-level correction are deferred; a future reviewed supplement must preserve the original notice rather than mutate it.",
+    "provenance": "Keep artifact-origin, endpoint-version and correction/decision-source attribution separate. Actor identifiers are documentary attribution, not verified access control or native authority. Mandatory source identity/locator, interpretation and reason are explicit; unconfirmed facts remain unknown/raw. Real-calendar UTC syntax and mandatory attribution fields are validated; invalid/missing values cause no writes.",
+    "raw_managed": "An unknown artifact/item/target is retained as raw input and cannot receive an issued lifecycle decision. No invented target or organizational case identity.",
+    "native_projection": "Reuse the four literal EQR 0.6.0 named-graph oracles unchanged. New correction/decision rows contribute no new native triples. Old/new version graphs remain distinct; no historical union.",
+    "migration": "Additive migration 8 over an actually populated, validated v7 source; do not change migration 1..7 files or pre-existing rows. Preserve raw/managed separation and all prior schema/payload/hash audits. Old exact-schema readers reject v8.",
+    "missingness": "Absent source/identity/context/selection is not zero, false, endorsement, nonexistence or truth. Unknown policy context produces NO_SELECTION; omitted context is INVALID_CONTEXT.",
+    "out_of_scope": [
+      "Complete general native assertion mapping",
+      "R-69..R-72",
+      "Global authority, truth, endorsement or independent corroboration",
+      "Reinstatement/notice-level correction",
+      "Responsibility/mandate, generic workflow/time/formula/scale-conversion engines",
+      "PostgreSQL/private 128-table migration and production acceptance",
+      "New model/ORSD semantics or independent scientific validation"
+    ],
+    "implementation_change_control": "If actual schema/API design cannot satisfy these fixed expectations, record a reasoned contract/oracle amendment in a new commit before implementation continues; never replace expected answers with observed output."
+  },
+  "oracle_path": "implementation/relational/0.7.0/fixtures.json",
+  "expected_execution_state": "NOT_RUN"
+}

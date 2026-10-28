@@ -1,0 +1,149 @@
+{
+  "schema": "riskium-release-and-submission-readiness-v1",
+  "defined_on": "2026-10-28",
+  "timezone": "Asia/Tehran",
+  "baseline_main": "3646ff0dd138a1ecc6f56fd50341a67635a85488",
+  "current_published_release": "v0.3.4",
+  "target_release": "v0.3.5",
+  "release_state": "DECLARED_NOT_IMPLEMENTED",
+  "submission_state": "NOT_YET_ESTABLISHED",
+  "venue": null,
+  "track": null,
+  "submission_deadline": null,
+  "calendar_readiness_date": null,
+  "declaration_issue": 52,
+  "release_issue": 51,
+  "chosen_scope": "C065 EvidenceReference lifecycle 0.7.0 plus current traceability/consistency and separately versioned documentation",
+  "confidence_claim": "Finite scope and falsifiable exit criteria defined; no global optimality, scientific correctness or acceptance guarantee.",
+  "current_evidence": {
+    "published_release_id": 426704771,
+    "published_source": "cc02e45749995b8710802822ae709d49e0a83993",
+    "published_assets": 6,
+    "published_source_files": 966,
+    "selected_components": 28,
+    "selected_file_bindings": 380,
+    "published_source_software_tests": 373,
+    "freeze_core_checks": 28,
+    "freeze_extra_checks": 10,
+    "historical_trace_rows": 423,
+    "native_source_elements": 306,
+    "latest_deferred_native_elements": 236,
+    "latest_partial_source_scenario_evidence_routes": 14,
+    "independent_ratings": 0,
+    "organizational_admissions": {
+      "WITHHELD": 11
+    },
+    "manuscript_baseline": "7.0.8",
+    "new_full_manuscript_readback": false
+  },
+  "release_gates": [
+    {
+      "id": "R1",
+      "state": "DECLARED_PENDING_EXACT_COMMIT_VALIDATION",
+      "criterion": "Contract, literal expected controls and bindings precede implementation"
+    },
+    {
+      "id": "R2",
+      "state": "NOT_RUN",
+      "criterion": "Actual lifecycle/migration/query/native/recovery and mutation controls"
+    },
+    {
+      "id": "R3",
+      "state": "NOT_RUN",
+      "criterion": "All current retained claims have exact evidence routes; zero orphan/unexplained/critical in-scope findings"
+    },
+    {
+      "id": "R4",
+      "state": "NOT_RUN",
+      "criterion": "Actual chosen manuscript bytes and claims reconciled"
+    },
+    {
+      "id": "R5",
+      "state": "NOT_RUN",
+      "criterion": "New current documentation and actual Wiki/Pages body readback; old snapshots unchanged"
+    },
+    {
+      "id": "R6",
+      "state": "NOT_RUN",
+      "criterion": "Exact-source publication, independently downloaded package, Latest and prior preservation"
+    }
+  ],
+  "submission_gates": [
+    {
+      "id": "P1",
+      "state": "OPEN",
+      "criterion": "Bounded contribution and legitimate related-work/source adequacy",
+      "issues": [
+        37
+      ]
+    },
+    {
+      "id": "P2",
+      "state": "NOT_RUN_FOR_CURRENT_SUBMISSION",
+      "criterion": "Exact paper claims/figures/tables/source/evidence alignment"
+    },
+    {
+      "id": "P3",
+      "state": "OPEN_WITH_BOUNDED_EXISTING_EVIDENCE",
+      "criterion": "Actual claimed evaluation/case populations with justified limits",
+      "issues": [
+        4,
+        5,
+        13
+      ]
+    },
+    {
+      "id": "P4",
+      "state": "OPEN_ZERO_ACTUAL_RATINGS",
+      "criterion": "Actual qualified independent semantic scrutiny under declared protocol",
+      "issues": [
+        23
+      ],
+      "policy_origin": "Project recommendation; not a universal conference rule"
+    },
+    {
+      "id": "P5",
+      "state": "NOT_RUN_FOR_CURRENT_SUBMISSION",
+      "criterion": "Final manuscript QA and cited-artifact reproduction"
+    },
+    {
+      "id": "P6",
+      "state": "VENUE_UNSPECIFIED",
+      "criterion": "Current venue/track/deadline/format/anonymity/policies and coauthor final approval"
+    }
+  ],
+  "known_gaps": [
+    {
+      "id": "DEF-GAP-01",
+      "state": "OPEN_FOR_DOCUMENTATION_SUCCESSOR",
+      "finding": "Pinned documentation 0.3.0 work-plan/traceability bodies still contain dated pre-publication wording; the maintained status component changed headers only."
+    },
+    {
+      "id": "DEF-GAP-02",
+      "state": "OPEN_FOR_CURRENT_ALIGNMENT",
+      "finding": "423 historical rows and SSC/SCL/EQR supplements have separate scopes; no single current full claim-to-manuscript alignment result is asserted."
+    },
+    {
+      "id": "DEF-GAP-03",
+      "state": "NOT_EXECUTED",
+      "finding": "No lifecycle 0.7.0 implementation or observed result exists."
+    },
+    {
+      "id": "DEF-GAP-04",
+      "state": "OPEN",
+      "finding": "No actual independent semantic responses or selected conference target are established."
+    }
+  ],
+  "invariants": {
+    "model": "0.3.1",
+    "orsd": "0.4.3",
+    "original_drsd": "0.1.0",
+    "manuscript": "7.0.8",
+    "prior_releases": 11,
+    "frozen_snapshots": 4,
+    "scientific_inputs_changed": false,
+    "independent_ratings_invented": false,
+    "full_original_MUST_completion_claimed": false
+  },
+  "trigger_rule": "Invalidate and rerun affected alignment/results after any relevant artifact or claim changes; freeze before asserting current agreement."
+}
