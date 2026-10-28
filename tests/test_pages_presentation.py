@@ -24,7 +24,7 @@ class PagesPresentation(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             target=Path(temp);(target/'webvowl').mkdir()
             for name in ['index.html','viewer.js','viewer.css']:(target/'webvowl'/name).write_bytes((presentation.HERE/'webvowl'/name).read_bytes())
-            for name in ['portal.css','presentation.py']:(target/name).write_bytes((presentation.HERE/name).read_bytes())
+            for name in ['portal.css','presentation.py','current-status.json']:(target/name).write_bytes((presentation.HERE/name).read_bytes())
             (target/'portal.css').write_text((target/'portal.css').read_text()+'\n/* presentation changed */\n')
             with patch.object(presentation,'HERE',target):self.assertNotEqual(first,presentation.graph_route())
 

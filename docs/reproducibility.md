@@ -1,8 +1,8 @@
 # Reproduce the current checks
 
-The latest published source distribution is **[v0.3.2](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.2)**, frozen at `67ebe1e9bd8b2e82649ed4ff43bfb1620c13bd48`. Its [publication receipt](../evaluation/releases/v0.3.2-publication.json) records 25 final checks, 200 software regressions and independent downloaded verification. These are packaging and scoped engineering results, not independent semantic review.
+Use [Latest published source release](https://github.com/ArazSaieArasi3/riskium/releases/latest) for live routing. **28 October 2026 checkpoint:** published **v0.3.3**, source `3380b6b31f4830417946105e17f023118c7be6ee`, has [28 final gates, 233 software regressions and six independently verified assets](../evaluation/releases/v0.3.3-publication.json). The newer SQL 0.4.0/0.5.0/0.6.0 development and maintained documentation 0.3.0 have their own inputs and receipts. v0.3.4 is planned under #45.
 
-To reproduce that package, use a clean checkout of its exact tag with the pinned requirements and run `python tools/prepare_stable_release.py --output /absolute/empty/path/out` outside the checkout. To inspect the maintained documentation, use a current checkout and the documentation commands below. These tasks have different source identities; do not reproduce the historical release from later current pages.
+To reproduce historical source checks, use a clean checkout of the exact v0.3.3 tag and install its pinned requirements. Run its source-bound checks and compare archived manifests/receipts; do not attempt to reissue the published tag or demand that current live Wiki matches old bytes. `python tools/review_distribution.py` verifies published v0.3.2/v0.3.3 selections at their exact tagged sources. To inspect current development, use current main and the commands below. A future v0.3.4 freeze needs new final-source and actual channel evidence.
 
 Use Python 3.12 or a compatible Python 3 installation. The conceptual-model and coverage builders use the standard library. The documentation portal uses pinned RDFLib, Markdown and Beautiful Soup packages. The OWL syntax and mapping regression tests require the pinned RDFLib package.
 
@@ -163,4 +163,21 @@ After the earlier assessment checks, run `python tools/run_relational_correction
 
 ## Cross-document reconciliation
 
-Run `python tools/audit_consistency.py --check` for the [423-row joined source/claim table](traceability.md), source inventory, exact model/claim IDs and preserved historical denominators. This generates no new scientific results. Actual author-file, Wiki and deployed Pages readbacks are recorded separately in `evaluation/consistency/`. Recheck affected rows and the final component/source selection under #41 before another stable release.
+Run `python tools/audit_consistency.py --check` for the [423-row joined source/claim table](traceability.md), source inventory, exact model/claim IDs and preserved historical denominators. This generates no new scientific results. Actual author-file, Wiki and deployed Pages readbacks are recorded separately in `evaluation/consistency/`. Recheck affected rows and the final component/source selection under #45 before v0.3.4.
+
+## Current source/scenario and evidence development
+
+Install both pinned SHACL and publication requirements, then reproduce each separate bounded component:
+
+```sh
+python tools/run_relational_source_scenario.py --check
+python tools/build_source_scenario_inventory.py --check
+python tools/run_relational_source_scenario_lineage.py --check
+python tools/build_source_scenario_lineage_inventory.py --check
+python tools/run_relational_evidence.py --check
+python tools/build_evidence_inventory.py --check
+```
+
+Their [54-control storage](../evaluation/relational/source-scenario/completion.json), [54-control correction](../evaluation/relational/source-scenario-lineage/completion.json) and [62-control evidence](../evaluation/relational/qualified-evidence/completion.json) receipts retain different populations. The evidence implementation source passed 280 full software tests and seven hosted workflows; that is a dated engineering result, not a count inherited by future code or the original scientific suite. The v7 reader requires a validated populated v6 database; older exact-schema readers intentionally reject newer profiles. No private database is required for synthetic replay.
+
+For maintained documentation 0.3.0, regenerate/check the shared reference, verify its [component](../evaluation/documentation/current-0.3.0/component.json) with `python tools/publication/build_documentation_component.py --check`, assemble the site and run the documentation audit. Live Wiki/Pages publication and byte readback remain separate from local source parity. No new v0.3.4 snapshot or source release is created by these commands.

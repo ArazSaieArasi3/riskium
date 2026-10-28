@@ -2,7 +2,7 @@
 
 The published **v0.3.1** remains the first owner-reviewed bounded research artifact. Its tag, six assets, 371-file source archive, accepted component matrix and earlier prereleases remain immutable. The new work below is development on main after that release; it is not a newly published release or a new owner/independent scientific judgment.
 
-Use the [ordered work plan](work-plan.md) for the current eleven open issues, dependencies and small stable-release sequence. The [publication comparison](publication-comparison.md) adds shared Wiki/Pages maintenance, stable/current/frozen routing, graphical WebVOWL, formal-reference navigation and a successor release mechanism. Shared guides and versioned publication #30/#31 are complete; WebVOWL, reference enhancement and the successor distribution mechanism remain #32–#34; the next SQL slice, actual deployment acceptance and deferred source interpretation are #35–#37. The existing WIDOCO and accessible OWL explorer remain implemented.
+Use the [ordered work plan](work-plan.md) for current status. The following table retains the earlier first-final development checkpoint. Later #41 published v0.3.3; #42/#43/#44 completed SQL 0.4.0/0.5.0/0.6.0. #45 now prepares v0.3.4 and #46 refreshes current documentation 0.3.0/Wiki/Pages. See their separate component/completion records rather than treating the older task list below as current.
 
 | Workstream | Completed development | Remaining acceptance |
 | --- | --- | --- |

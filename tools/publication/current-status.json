@@ -1,0 +1,17 @@
+{
+  "schema": "riskium-current-documentation-status-v1",
+  "documentation_version": "0.3.0",
+  "model_version": "0.3.1",
+  "as_of": "2026-10-28",
+  "published_checkpoint": {
+    "tag": "v0.3.3",
+    "source_commit": "3380b6b31f4830417946105e17f023118c7be6ee",
+    "publication_receipt": "evaluation/releases/v0.3.3-publication.json"
+  },
+  "latest_release_url": "https://github.com/ArazSaieArasi3/riskium/releases/latest",
+  "planned_distribution": "v0.3.4",
+  "release_issue": 45,
+  "documentation_issue": 46,
+  "freeze_registered": false,
+  "limit": "Current documentation component, not a new ontology/source release, independent review or scientific execution."
+}

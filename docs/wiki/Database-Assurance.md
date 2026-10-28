@@ -1,6 +1,6 @@
 # Relational mapping and database assurance
 
-> This source retains the original assessment-profile 0.2.0 assurance checkpoint. Later [assessment-correction overlay 0.3.0](https://github.com/ArazSaieArasi3/riskium/blob/main/implementation/relational/0.3.0/README.md) adds migration 4, immutable correction branches and a separate executed receipt; it does not change the earlier profile or its evidence. The Work plan identifies broader source/scenario mapping and the next cross-document consistency gate.
+> This source retains the original public assessment/DRSD 0.2.0/0.1.0 checkpoint. Completed overlays add assessment correction 0.3.0, source/scenario storage 0.4.0, correction lineage 0.5.0 and qualified evidence 0.6.0/migration 7. Each has separately bound requirements, fixtures, dictionary and completion evidence; the original assurance populations are not relabeled. Latest accounting has 236 deferred and fourteen partial routes. Work plan links the exact components and planned v0.3.4 under #45.
 
 
 The ontology owns domain meaning. The database implements selected storage and task policies under a separately versioned contract. Mapping confidence needs semantic trace, actual SQL behavior and useful task evidence together; class/table counts or passing synthetic tests alone cannot establish universal correctness or production usefulness.

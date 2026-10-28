@@ -17,3 +17,5 @@ The Pages upgrade updates the shared guide sources and generated Markdown in thi
 Formal reference task #33 projects the same method and all 25 clause routes into `Formalization.md` and Pages. This records source parity only; a new native Wiki publish/readback is not included in that receipt. Gate #39 explicitly verifies the live channel before the next stable freeze.
 
 The consistency audit #39 records the subsequent live synchronization and independent source readback in [evaluation/consistency](../../evaluation/consistency/). The older readbacks above retain their dates; only that new record can establish current live parity.
+
+Current documentation 0.3.0 refresh #46, under #45, updates the shared current descriptions for stable v0.3.3 and planned v0.3.4. Its native Wiki synchronization and subsequent Git/HTTP readbacks are recorded separately in `evaluation/documentation/current-0.3.0/`; generating these source files alone is not live publication. Earlier dated records above remain unchanged.

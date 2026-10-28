@@ -1,34 +1,36 @@
 # Publication surfaces and versions
 
-The repository owns the conceptual model, requirements, implementation and evidence. Wiki explains those sources; Pages exposes the explanations alongside the generated ontology reference. A [shared guide registry](https://github.com/ArazSaieArasi3/riskium/blob/main/tools/publication/guide-registry.json) produces equivalent Wiki Markdown and Pages HTML from one source per subject.
+The repository owns the conceptual model, requirements, implementation and evidence. Wiki explains those sources; Pages exposes the same explanations alongside the ontology reference. A [shared guide registry](https://github.com/ArazSaieArasi3/riskium/blob/main/tools/publication/guide-registry.json) projects one explanatory source per subject to native Wiki Markdown and Pages HTML.
 
 ## Model, distribution and documentation
 
-These versions identify different artifacts:
+Use [Latest published source release](https://github.com/ArazSaieArasi3/riskium/releases/latest) for the live release destination. The following is an explicit **28 October 2026** checkpoint, not a promise that a frozen page will always identify Latest.
 
-| Identity | Current record | Meaning |
+| Identity | Record | Meaning |
 | --- | --- | --- |
-| Ontology model | 0.3.1 | Conceptual, native and derived OWL definitions |
-| Latest source distribution | [v0.3.2](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.2) | Published package selecting 20 independently versioned components |
-| Frozen documentation | 0.1.0 for model 0.3.1 | Registered exact presentation and explanatory source |
-| Current Pages | Mutable current route | Maintained explanations and interface, including the later WebVOWL view and Pages upgrade |
+| Ontology model | 0.3.1 | Unchanged conceptual/native/derived OWL definitions |
+| Published source distribution | [v0.3.3](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.3) | 24 selected components and six verified release assets |
+| Next source distribution | v0.3.4, planned under #45 | Component selection, new documentation snapshot, freeze and publication remain separate gates |
+| Frozen documentation | 0.2.0 at releases/v0.3.3, plus earlier registered snapshots | Exact historical explanatory source, renderer and file bytes |
+| Current documentation | 0.3.0, mutable current route | Refreshed descriptions of #41/#42/#43/#44 and v0.3.4 preparation; not a new source release or registered snapshot |
+| Development SQLite | 0.4.0 / 0.5.0 / 0.6.0, migrations 5 / 6 / 7 | Separately hashed scenario/source, correction-lineage and qualified-evidence components proposed for v0.3.4 |
 
-The v0.3.2 [publication receipt](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/releases/v0.3.2-publication.json) binds its exact source and downloaded assets. The current conceptual and OWL downloads still preserve model source `8afe169968b5c1396c02834dbc499af691b894b4`, published with v0.3.1. Later interface changes are not retroactively inserted into either source release.
+[The v0.3.3 publication receipt](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/releases/v0.3.3-publication.json) binds exact source `3380b6b31f4830417946105e17f023118c7be6ee` and downloaded assets. Current model/RDF downloads preserve semantic source `8afe169968b5c1396c02834dbc499af691b894b4`, published with v0.3.1. Current descriptions do not replace either package's original selection or invent newer article/owner acceptance.
 
 ## Current pages and frozen snapshots
 
-Use the [current portal](https://arazsaiearasi3.github.io/riskium/current/index.html) for the maintained reading experience. The [version index](https://arazsaiearasi3.github.io/riskium/versions/index.html) identifies frozen snapshots, exact sources and model identities. Their older layouts remain part of their historical record.
+Use the [current portal](https://arazsaiearasi3.github.io/riskium/current/index.html) for maintained explanations and the [version index](https://arazsaiearasi3.github.io/riskium/versions/index.html) for registered frozen snapshots. Documentation 0.2.0 deliberately retains pre-publication #41/v0.3.2 wording under its explicit historical banner. Current 0.3.0 descriptions supersede that current-status wording without rewriting the snapshot. Legacy rc.1 and documentation 0.1.0 likewise retain exact registered bytes.
 
-The legacy rc.1 route preserves the complete website as observed at source `3f332ea56cb27263d2435fa0ae20afb7a5d5f432`. It does not imply that all earlier guides had always been immutable. Registered snapshots cannot be replaced silently. Model versions, source-distribution tags and documentation versions must not be treated as interchangeable.
+This refresh does not register a v0.3.4 snapshot. The [release plan](https://github.com/ArazSaieArasi3/riskium/blob/main/plans/v0.3.4.md) requires an exact committed documentation source, explicit component selection and successful final-source gates before freezing/publishing v0.3.4. Model, source-distribution and documentation versions are different identities.
 
 ## Verify a publication
 
-Documentation deployment follows successful CI for the same main-branch source. The root deployment manifest identifies that source and every deployed file hash. Generation, CI, deployment, HTTPS readback and browser interaction checks provide different evidence; each is recorded separately.
+Pages deployment follows successful documentation CI for the same main-branch source; its root manifest identifies that source and deployed file hashes. Generation, tests, CI, deployment, actual HTTPS bodies and browser interactions are separate evidence. Passing a build is not a live readback.
 
-The repository's Wiki projections can be checked against the shared guides. Publishing them to the live Wiki requires a separate write and readback; generating Markdown alone is not live publication. The [artifact register](Artifact-Versions) and [current work plan](Work-Plan) identify the scientific and implementation boundaries that remain after documentation publication.
+Native Wiki requires its own write and a fresh Git readback against the generated projection. Markdown in the repository alone does not establish live synchronization. The [work plan](Work-Plan) and [artifact register](Artifact-Versions) distinguish current and historical results. No new HermiT/SHACL outcome, independent semantic rating, organizational admission or production acceptance follows from this documentation publication.
 
 ---
 
 [Equivalent Pages guide](https://arazsaiearasi3.github.io/riskium/current/guide/Publication.html) · [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) · [OWL explorer](https://arazsaiearasi3.github.io/riskium/current/explore/index.html) · [Published v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1).
 
-Explanatory source: [docs/guides/Publication.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/guides/Publication.md). Source SHA-256: `49508373d062b1cef4ded403bfe1bedde4a25131a6bb1799c613e9e44a9e4596`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.
+Explanatory source: [docs/guides/Publication.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/guides/Publication.md). Source SHA-256: `a3590219262c00d21e4119c457067619ac712425d0ce7d25df9622dda0651ce6`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.

@@ -12,7 +12,9 @@ For implementation, begin with [database assurance](Database-Assurance), then th
 
 ## Which version am I reading?
 
-The latest published source distribution is **[v0.3.2](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.2)**. The ontology model remains **0.3.1**; the distribution includes independently versioned engineering and documentation components. The conceptual and OWL reference downloads preserve the original model source. [Publication and versions](Publication) explains current pages, frozen snapshots and source releases.
+Use [Latest published source release](https://github.com/ArazSaieArasi3/riskium/releases/latest) for current release routing. At the **28 October 2026** checkpoint, **v0.3.3 is published** and **v0.3.4 is planned** under [#45](https://github.com/ArazSaieArasi3/riskium/issues/45). The ontology remains **0.3.1**; this current documentation component is **0.3.0**. Frozen documentation 0.2.0 retains its dated v0.3.3 pre-publication checkpoint. [Publication and versions](Publication) explains these identities.
+
+Completed development after v0.3.3 includes source/scenario storage **0.4.0**, correction lineage **0.5.0** and qualified evidence **0.6.0 / migration 7**. [The current work plan](Work-Plan) links their exact evidence and the remaining v0.3.4 selection, snapshot, freeze and publication steps. These SQL component versions are separate from the ontology model and source-distribution tag.
 
 The published scope received owner review with assistant support. Independent semantic review has no recorded responses, and the software is a bounded research implementation. Read [evaluation](Evaluation) and [limitations](Limitations) when deciding what the artifact supports.
 
@@ -24,4 +26,4 @@ Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi are listed in manuscript ord
 
 [Equivalent Pages guide](https://arazsaiearasi3.github.io/riskium/current/guide/Home.html) · [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) · [OWL explorer](https://arazsaiearasi3.github.io/riskium/current/explore/index.html) · [Published v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1).
 
-Explanatory source: [docs/guides/Home.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/guides/Home.md). Source SHA-256: `579f8a4b16a3f9c1f237e1df9d09439d5c1cf2a587c65039e43edd3e124d5b22`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.
+Explanatory source: [docs/guides/Home.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/guides/Home.md). Source SHA-256: `8238640159f7dd44b07a59feb42ce652b19b556beb4abf9c6997324eb7c69ae9`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.

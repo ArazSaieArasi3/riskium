@@ -4,8 +4,8 @@
   "source_files": [
     {
       "path": ".github/workflows/documentation.yml",
-      "sha256": "2e16c4456391e5d7b20636708132fb4544f5360cc2962cc8ae921d4d5e74df84",
-      "bytes": 1910
+      "sha256": "d1fd52c985cc503d0185d1a3726b1e1b8781dff6ace44f0ab3739e53354b89b1",
+      "bytes": 2077
     },
     {
       "path": ".github/workflows/incremental-release.yml",
@@ -99,8 +99,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "1d7a1d318475424036bcc1782227fd0d8b38b2a3b90dd3f2d39901728b0c3b0b",
-      "bytes": 19437
+      "sha256": "0fde17b7e687e50d1635a72839ae4d82ea6cc1c658519317377ae2c5ab74cd50",
+      "bytes": 19921
     },
     {
       "path": "RIGHTS.md",
@@ -139,8 +139,8 @@
     },
     {
       "path": "docs/artifact-versions.md",
-      "sha256": "656b0f86e7faa7d3c4f3a88285d1753e46c0e432f07ef9a5f8712be140ce6315",
-      "bytes": 7751
+      "sha256": "ad9463cf692424346612cc6df0a6a48fc117afc62711454d5c418325e8f3caf9",
+      "bytes": 8186
     },
     {
       "path": "docs/documentation-policy.md",
@@ -169,18 +169,18 @@
     },
     {
       "path": "docs/guides/Evaluation.md",
-      "sha256": "7b4ebb2bb495b08a11febf07613a3e53cc21c73a51bd0b77c101923d54179e38",
-      "bytes": 3170
+      "sha256": "0a10319527d3bac704b8884342c099f11b32c5c885bdbe15f42238736eda0567",
+      "bytes": 3759
     },
     {
       "path": "docs/guides/Home.md",
-      "sha256": "579f8a4b16a3f9c1f237e1df9d09439d5c1cf2a587c65039e43edd3e124d5b22",
-      "bytes": 2377
+      "sha256": "8238640159f7dd44b07a59feb42ce652b19b556beb4abf9c6997324eb7c69ae9",
+      "bytes": 2852
     },
     {
       "path": "docs/guides/Publication.md",
-      "sha256": "49508373d062b1cef4ded403bfe1bedde4a25131a6bb1799c613e9e44a9e4596",
-      "bytes": 2789
+      "sha256": "a3590219262c00d21e4119c457067619ac712425d0ce7d25df9622dda0651ce6",
+      "bytes": 3682
     },
     {
       "path": "docs/guides/Scope.md",
@@ -209,7 +209,7 @@
     },
     {
       "path": "docs/interface-review.html",
-      "sha256": "bded8471cca37daba648042d0280b6e1f9d3db9b731c60511b47b07d4de551fd",
+      "sha256": "26d47996a29bf0d47d135edf5a331d4cca7e4b07ca9bb7d8e92d377024c59aee",
       "bytes": 3648
     },
     {
@@ -269,8 +269,8 @@
     },
     {
       "path": "docs/post-release-work.md",
-      "sha256": "3cff2dfecb56ec0aef928317b7e65ccfd16bd3b408ba2efba1185b8ff47dcecd",
-      "bytes": 5759
+      "sha256": "d671eebe1c21ddf827790275a46ae78c849fd6251f7278cd80e558c486cbac2f",
+      "bytes": 5509
     },
     {
       "path": "docs/prerelease-v0.3.1-rc.1.md",
@@ -359,8 +359,8 @@
     },
     {
       "path": "docs/reproducibility.md",
-      "sha256": "eb05fe63474c50ad5607c4b0d43f391f00c88b805f993489c09bc5075db7c251",
-      "bytes": 16664
+      "sha256": "e12f098d2d4c90f410186f4fcadfb73359ee77800f6568ec8fa8bdca2730dd64",
+      "bytes": 18480
     },
     {
       "path": "docs/roadmap.md",
@@ -384,8 +384,8 @@
     },
     {
       "path": "docs/work-plan.md",
-      "sha256": "f9292ec13a2d72ec306ed857e199982475f92c8f354688e830fedbb780dea0f9",
-      "bytes": 5754
+      "sha256": "0a9cea1203d52500dc39be902117b6ba3ae480a41d7165d3320a87ac746c8a76",
+      "bytes": 5850
     },
     {
       "path": "evaluation/README.md",
@@ -461,6 +461,11 @@
       "path": "evaluation/documentation/browser-readback.json",
       "sha256": "e1d572217e75109692faf88b94b2b8e3427ba502f3bd57e7ef02e814582f0c2e",
       "bytes": 3620
+    },
+    {
+      "path": "evaluation/documentation/current-0.3.0/component.json",
+      "sha256": "2242bdd2c8403bcfdf6144145536606296564ccb5bbf6869a5cbfccd183fdd44",
+      "bytes": 34667
     },
     {
       "path": "evaluation/documentation/http-readback.json",
@@ -1894,8 +1899,8 @@
     },
     {
       "path": "plans/v0.3.4.md",
-      "sha256": "0fd60486fffaab1b6a8d639e65749b4ea446b2d9ff38637790c0c888df759bb1",
-      "bytes": 4396
+      "sha256": "eb41d6aa2316feacd0f0b38ef9991ff027b4c570341bd5e0dcf71b0539334615",
+      "bytes": 4450
     },
     {
       "path": "references/README.md",
@@ -2138,6 +2143,11 @@
       "bytes": 4613
     },
     {
+      "path": "tests/test_documentation_component.py",
+      "sha256": "62e6f3a5c15424048535024be26418c758114d8d511315f95bea22f63b582b63",
+      "bytes": 3012
+    },
+    {
       "path": "tests/test_documentation_routes.py",
       "sha256": "ec7ab50027d290cfc2b30c706a9b03477e9da9dd60e5aa8194e1bb9582dd2e1e",
       "bytes": 7280
@@ -2179,8 +2189,8 @@
     },
     {
       "path": "tests/test_pages_presentation.py",
-      "sha256": "72d2fa7a9b62cbeb6f78e31704ba692ecd55b6113da273950f97c1648ee6a5df",
-      "bytes": 3063
+      "sha256": "98f68db02629d5845de5891359d9d53a91a673a14949a3e676baa33d759c1aa5",
+      "bytes": 3085
     },
     {
       "path": "tests/test_qualification_shacl.py",
@@ -2214,8 +2224,8 @@
     },
     {
       "path": "tests/test_release_v033.py",
-      "sha256": "a226a627c175017a8a1251b8ba271ff6ee3109586c04ae32f766b0f374d585eb",
-      "bytes": 4281
+      "sha256": "c9faeb595c975d0e2600e158508e049f2dd6adc2d6a62dcb4f007a6896b1e92e",
+      "bytes": 6090
     },
     {
       "path": "tests/test_shacl_runner.py",
@@ -2269,8 +2279,8 @@
     },
     {
       "path": "tools/audit_consistency.py",
-      "sha256": "6c71da4f6d5ec0784fa710de8dfebc2febe58f6878a68ea41b56e009feb143a7",
-      "bytes": 18880
+      "sha256": "74c5606b8ffd6f03739f87cf4705532e4ced7f165d1fddf47868b1224cb93350",
+      "bytes": 19611
     },
     {
       "path": "tools/audit_relational_design.py",
@@ -2444,8 +2454,8 @@
     },
     {
       "path": "tools/publication/README.md",
-      "sha256": "575334ac5bbb92bd70926dabe8b401c1b40eea94b22c8f18afa4f5364e943265",
-      "bytes": 5477
+      "sha256": "262164303d2639a8895a78cec3ea6c77f07dc3fccdf66abff33856a9fcb2db13",
+      "bytes": 6042
     },
     {
       "path": "tools/publication/audit_portal.py",
@@ -2463,9 +2473,14 @@
       "bytes": 3716
     },
     {
+      "path": "tools/publication/build_documentation_component.py",
+      "sha256": "2907e1ebcaadc8bc3e615b6593789c5dc7ba97a18af06fe4c41ae20a6565a233",
+      "bytes": 5592
+    },
+    {
       "path": "tools/publication/build_portal.py",
-      "sha256": "246adeab805e96182ce8fa1dd19fda934688dd606992bb8310dac5f46a550900",
-      "bytes": 23567
+      "sha256": "8cb7916054f1e49176f4b8b915ba5c4a862f694e6345aa1e1d110b85953df132",
+      "bytes": 24034
     },
     {
       "path": "tools/publication/build_versioned_site.py",
@@ -2481,6 +2496,11 @@
       "path": "tools/publication/build_wiki.py",
       "sha256": "95c5a7df570439972d0200d525cefb2138f8d31606a06f7c01e966b6b1cb1e46",
       "bytes": 476
+    },
+    {
+      "path": "tools/publication/current-status.json",
+      "sha256": "912190a1ca01d55de0cb88f631a749faba2184b3be8b414c06d98f879f38e6e0",
+      "bytes": 668
     },
     {
       "path": "tools/publication/filter.js",
@@ -2499,8 +2519,8 @@
     },
     {
       "path": "tools/publication/guide-registry.json",
-      "sha256": "1c09e7951f4eced92855d61cac3b112d8b2eafb67d327da190aa62f4c7c87063",
-      "bytes": 5213
+      "sha256": "012b45942e9c3fad6a56227978933a00689cc9be5b1459e7dfdead02ad5845d4",
+      "bytes": 5224
     },
     {
       "path": "tools/publication/guides.py",
@@ -2509,8 +2529,8 @@
     },
     {
       "path": "tools/publication/home.md",
-      "sha256": "59f947a8c629af9abee413a84d6408be1d117ce1aee07696e1ff6c8a1eec624b",
-      "bytes": 3873
+      "sha256": "206ed677f99cb0e37e5e8a2cc312fa6ef9a04d65eb6709328b79d91eb9248838",
+      "bytes": 4600
     },
     {
       "path": "tools/publication/pages-registry.json",
@@ -2524,8 +2544,8 @@
     },
     {
       "path": "tools/publication/presentation.py",
-      "sha256": "08eafdec50bc754d247584f66e9a317ab1f2bfd8f62a4e15eac977c850eae850",
-      "bytes": 5193
+      "sha256": "7b34ac9c278fd05c67f35d3cfc273ca7ed552acc220b7f9c103bbe33c7cc30ad",
+      "bytes": 5432
     },
     {
       "path": "tools/publication/requirements.txt",
@@ -2649,8 +2669,8 @@
     },
     {
       "path": "tools/review_distribution.py",
-      "sha256": "a00e6283ff62f869b74adbc655813fddf4b6639c5d4ae456ecae6f76c7e5a81b",
-      "bytes": 15930
+      "sha256": "e3520ee06efbf9f24c96bc25deadeb5dc78ddfe37ea1398fdaa0255db7871389",
+      "bytes": 16969
     },
     {
       "path": "tools/review_references.py",

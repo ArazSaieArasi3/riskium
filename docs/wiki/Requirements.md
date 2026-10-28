@@ -1,6 +1,6 @@
 # Ontology requirements specification
 
-> Dated ontology requirements revision 0.4.3 and owner-approved scope, 24 October 2026. Its pending final-freeze statement describes that checkpoint: source releases v0.3.1 and v0.3.2 were subsequently published and independently downloaded/verified. Original priorities, acceptance criteria and definitions remain unchanged; Publication and the current Work plan identify the later state.
+> Dated ORSD 0.4.3/owner checkpoint, 24 October 2026. Stable source distributions through v0.3.3 were subsequently published and verified; v0.3.4 is planned under #45. Original priorities, source definitions and acceptance criteria remain unchanged. Publication and Work plan identify the dated current state.
 
 
 Documentation revision **0.4.3**; conceptual design **0.3.1**; owner-approved release scope, **24 October 2026**. Previous documentation revision 0.4.2 remains in Git history at commit `193dc7209bc762f11e5e12e19e5aae42cee22cb3`.

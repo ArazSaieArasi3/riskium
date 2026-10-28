@@ -140,8 +140,10 @@ def validate_matrix_v033(matrix, blob):
     return matrix
 
 
-def validate_distribution(root, profile):
+def validate_distribution(root, profile, *, source_blob=None):
     root = Path(root)
+    data = lambda path: source_blob(safe_path(path)) if source_blob else (root / safe_path(path)).read_bytes()
+    read_json = lambda path: json.loads(data(path)) if source_blob else read(root, path)
     require(profile['tag'] in ('v0.3.2', 'v0.3.3') and profile['profile'] == 'stable-bounded-research-artifact',
             'Unreviewed successor profile')
     for key in ('publication_requires_clean_exact_head', 'publication_requires_all_checks',
@@ -152,17 +154,17 @@ def validate_distribution(root, profile):
             profile['manuscript_version'] == '7.0.8', 'Unreviewed successor scientific versions')
     require(profile['independent_validation_claimed'] is False and
             profile['full_original_requirement_acceptance_claimed'] is False, 'Unsupported successor claim')
-    matrix = read(root, profile['artifact_matrix'])
+    matrix = read_json(profile['artifact_matrix'])
     require(matrix['tag'] == profile['tag'], 'Profile/matrix tag mismatch')
-    validate_matrix(matrix, lambda path: (root / path).read_bytes())
-    screen = read(root, profile['critical_screen'])
+    validate_matrix(matrix, data)
+    screen = read_json(profile['critical_screen'])
     require(screen['target'] == profile['tag'] and screen['known_unresolved_critical_findings'] == [] and
             screen['material_scientific_change_since_owner_acceptance'] is False and
             screen['new_owner_responses_generated'] == 0 and screen['independent_semantic_review_claimed'] is False and
             screen['universal_zero_defect_claimed'] is False, 'Invalid successor critical screen')
-    require(screen['component_matrix_sha256'] == sha((root / profile['artifact_matrix']).read_bytes()),
+    require(screen['component_matrix_sha256'] == sha(data(profile['artifact_matrix'])),
             'Critical screen not bound to selected matrix')
-    require((root / profile['notes']).is_file(), 'Missing successor notes')
+    require(bool(data(profile['notes'])) if source_blob else (root / profile['notes']).is_file(), 'Missing successor notes')
     return matrix
 
 
@@ -233,24 +235,41 @@ def live_readback(root, profile):
     return receipt
 
 
+def validate_published_distribution(root, tag):
+    """Check a published selection at its witnessed tag; current prose may evolve.
+
+    This read-only path cannot freeze or publish a package. A new freeze still
+    uses validate_distribution against its clean current checkout by default.
+    """
+    root = Path(root)
+    require(tag in ('v0.3.2', 'v0.3.3'), 'Unreviewed published distribution')
+    receipt = read(root, 'evaluation/releases/' + tag + '-publication.json')
+    require(receipt['tag'] == tag and receipt['publication_state'] ==
+            'PUBLISHED_AND_INDEPENDENTLY_DOWNLOADED_VERIFIED', 'Unverified published distribution')
+    source = receipt['source_commit']
+    require(re.fullmatch('[0-9a-f]{40}', source), 'Invalid published source')
+    require(subprocess.check_output(['git', 'rev-parse', tag + '^{commit}'], cwd=root, text=True).strip() == source,
+            'Published distribution tag moved')
+    def blob(path):
+        return subprocess.check_output(['git', 'show', source + ':' + safe_path(path)], cwd=root)
+    profile_path = 'releases/stable-profile-' + tag + '.json'
+    require((root / profile_path).read_bytes() == blob(profile_path), 'Published profile changed')
+    profile = json.loads(blob(profile_path))
+    require(profile['tag'] == tag, 'Published profile/tag mismatch')
+    require((root / profile['artifact_matrix']).read_bytes() == blob(profile['artifact_matrix']),
+            'Published selection matrix changed')
+    return validate_distribution(root, profile, source_blob=blob)
+
+
 if __name__ == '__main__':
-    p = read(ROOT, 'releases/stable-profile-v0.3.2.json')
-    receipt = ROOT/'evaluation/releases/v0.3.2-publication.json'
-    if receipt.is_file():
-        # Current documentation may evolve after a published distribution. Its
-        # immutable selection is checked at the recorded/tagged source, not
-        # silently rebound to later current-page bytes.
-        released = json.loads(receipt.read_bytes())
-        commit = released['source_commit']
-        require(released['publication_state'] == 'PUBLISHED_AND_INDEPENDENTLY_DOWNLOADED_VERIFIED', 'Unverified published distribution')
-        require(subprocess.check_output(['git','rev-parse','v0.3.2^{commit}'],cwd=ROOT,text=True).strip() == commit, 'Published distribution tag moved')
-        def blob(path):
-            return subprocess.check_output(['git','show',commit+':'+safe_path(path)],cwd=ROOT)
-        require((ROOT/p['artifact_matrix']).read_bytes() == blob(p['artifact_matrix']), 'Published selection matrix changed')
-        m = json.loads(blob(p['artifact_matrix']))
-        validate_matrix(m, blob)
-        status = 'PUBLISHED_DISTRIBUTION_EXACT_SOURCE_PASS'
-    else:
-        m = validate_distribution(ROOT, p)
-        status = 'SUCCESSOR_COMPONENT_SELECTION_PASS'
-    print(json.dumps({'status': status, 'tag': m['tag'], 'components': len(m['artifacts'])}))
+    for tag in ('v0.3.2', 'v0.3.3'):
+        path = ROOT / ('releases/stable-profile-' + tag + '.json')
+        if not path.is_file():
+            continue
+        if (ROOT / ('evaluation/releases/' + tag + '-publication.json')).is_file():
+            matrix = validate_published_distribution(ROOT, tag)
+            status = 'PUBLISHED_DISTRIBUTION_EXACT_SOURCE_PASS'
+        else:
+            matrix = validate_distribution(ROOT, json.loads(path.read_bytes()))
+            status = 'SUCCESSOR_COMPONENT_SELECTION_PASS'
+        print(json.dumps(dict(status=status, tag=matrix['tag'], components=len(matrix['artifacts']))))

@@ -6,7 +6,7 @@ This guide joins the existing source-bound ledgers for the audited public Riskiu
 
 ## Versions and evidence boundaries
 
-The ontology remains 0.3.1, ORSD 0.4.3 and approved article 7.0.8. The latest published source distribution is v0.3.2. Later SQL correction 0.3.0/migration 4 and current Pages explanations are separately identified development artifacts; they have not replaced immutable source assets. Next publication #41 must select and freeze its exact component set.
+The ontology remains 0.3.1, ORSD 0.4.3 and approved article 7.0.8. At the 28 October 2026 checkpoint, source distribution v0.3.3 is published. Use the GitHub releases/latest destination for live routing. Later SQL 0.4.0/0.5.0/0.6.0 and current documentation 0.3.0 have separate component hashes; they do not replace immutable v0.3.3 assets. Next publication #45 must select and freeze v0.3.4; no new snapshot/tag/assets are claimed by the current documentation refresh.
 
 Original HermiT outcomes remain 281 PASS / 14 NOT_RUN of 295 obligations. Historical SHACL outcomes remain 341 scoped PASS / one PARTIAL / 17 NOT_RUN of 359. Original CQ populations, three withdrawn article claims and zero independent ratings remain visible. Owner acceptance is bounded and does not complete original MUST requirements. Later correction, comparison and source receipts supplement rather than relabel those populations.
 
@@ -51,7 +51,7 @@ The original [28-row ledger](../evaluation/traceability/README.md), [formal-meth
 
 ## Native and application coverage
 
-All 306 source elements retain their exact identities and source hashes. The SQL register still records 250 incomplete core mappings and 11 external elements. Correction 0.3.0 adds application history for selected C-03/C-17 subclauses and no new native classes/predicates. All 25 constraint sections in the Formalization guide retain original engine outcomes, bounded claims and exclusions.
+All 306 source elements retain their exact identities and source hashes. The historical SQL correction register below retains its original 250 incomplete mappings and 11 external elements. The latest [qualified-evidence overlay](../evaluation/relational/qualified-evidence/mapping-accounting.json) separately records 236 deferred and fourteen partial source/scenario/evidence routes. SSC/SCL/EQR derived requirement supplements have their own traces; they are not silently added to the 423-row historical population. Correction 0.3.0 adds selected C-03/C-17 application history; later scoped native exports and contextual evidence roles do not establish full semantic mapping. All 25 constraint sections in the Formalization guide retain original engine outcomes, bounded claims and exclusions.
 
 | Correction requirement | Original requirements | Constraints | Executed case links |
 | --- | --- | --- | ---: |
@@ -67,6 +67,6 @@ The 65-row 7.0.7 claim baseline is retained with the seven approved 7.0.8 paragr
 
 ## Publication and next release
 
-The audit report records source/generated parity separately from actual Wiki/Pages publication. Historical readbacks stay dated. The completion record binds the final corrected source, deployed file bodies and fresh Wiki commit. After any further change, #41 must rerun affected checks before its final stable freeze and independently verify its new assets after publication. Broader source/scenario mapping, formal/application policies, source adequacy, independent review and deployment remain open in the [work plan](work-plan.md).
+The audit report records source/generated parity separately from actual Wiki/Pages publication. Historical readbacks stay dated. The completion record binds the final corrected source, deployed file bodies and fresh Wiki commit. After current changes, #45 must rerun affected checks before the v0.3.4 freeze and independently verify its assets after publication. The #39/#41 completion and channel receipts remain historical; #46 separately binds the current 0.3.0 documentation publication/readback. Broader source/scenario mapping, formal/application policies, source adequacy, independent review and deployment remain open in the [work plan](work-plan.md).
 
 Run `python tools/audit_consistency.py --check` and the documentation builders to reject missing rows, stale hashes or changed historical denominators. This check executes no new HermiT/SHACL test and produces no ontology correctness percentage.

@@ -4,7 +4,9 @@
   "model_version": "0.3.1",
   "orsd_revision": "0.4.3",
   "manuscript_version": "7.0.8",
-  "latest_published_distribution": "v0.3.2",
+  "latest_published_distribution": "v0.3.3",
+  "planned_distribution": "v0.3.4",
+  "current_documentation": "0.3.0",
   "correction_profile": "0.3.0",
   "rows": [
     {
@@ -32000,8 +32002,8 @@
     "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
     "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
     "requirements/scope-requirements.json": "7090abec35d8dca2c2034c9cefaeccbe3f4ecd547d28b78a56eb5662e401d2f8",
-    "tools/audit_consistency.py": "6c71da4f6d5ec0784fa710de8dfebc2febe58f6878a68ea41b56e009feb143a7",
-    "tools/publication/guide-registry.json": "1c09e7951f4eced92855d61cac3b112d8b2eafb67d327da190aa62f4c7c87063"
+    "tools/audit_consistency.py": "74c5606b8ffd6f03739f87cf4705532e4ced7f165d1fddf47868b1224cb93350",
+    "tools/publication/guide-registry.json": "012b45942e9c3fad6a56227978933a00689cc9be5b1459e7dfdead02ad5845d4"
   },
   "limits": [
     "Trace completeness is accounting, not original MUST fulfillment or semantic accuracy.",

@@ -30,7 +30,7 @@
       "wiki_slug": "Requirements",
       "title": "Requirements",
       "source": "requirements/ontology-requirements.md",
-      "context_note": "Dated ontology requirements revision 0.4.3 and owner-approved scope, 24 October 2026. Its pending final-freeze statement describes that checkpoint: source releases v0.3.1 and v0.3.2 were subsequently published and independently downloaded/verified. Original priorities, acceptance criteria and definitions remain unchanged; Publication and the current Work plan identify the later state."
+      "context_note": "Dated ORSD 0.4.3/owner checkpoint, 24 October 2026. Stable source distributions through v0.3.3 were subsequently published and verified; v0.3.4 is planned under #45. Original priorities, source definitions and acceptance criteria remain unchanged. Publication and Work plan identify the dated current state."
     },
     {
       "slug": "Artifact-Versions",
@@ -43,7 +43,7 @@
       "wiki_slug": "Database-Assurance",
       "title": "Database assurance",
       "source": "docs/relational-assurance.md",
-      "context_note": "This source retains the original assessment-profile 0.2.0 assurance checkpoint. Later [assessment-correction overlay 0.3.0](../implementation/relational/0.3.0/README.md) adds migration 4, immutable correction branches and a separate executed receipt; it does not change the earlier profile or its evidence. The Work plan identifies broader source/scenario mapping and the next cross-document consistency gate."
+      "context_note": "This source retains the original public assessment/DRSD 0.2.0/0.1.0 checkpoint. Completed overlays add assessment correction 0.3.0, source/scenario storage 0.4.0, correction lineage 0.5.0 and qualified evidence 0.6.0/migration 7. Each has separately bound requirements, fixtures, dictionary and completion evidence; the original assurance populations are not relabeled. Latest accounting has 236 deferred and fourteen partial routes. Work plan links the exact components and planned v0.3.4 under #45."
     },
     {
       "slug": "Work-Plan",

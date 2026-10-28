@@ -1,16 +1,22 @@
 # Artifact versions and compatibility
 
-The latest source distribution is **[v0.3.2](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.2)**. Its [distribution matrix](https://github.com/ArazSaieArasi3/riskium/blob/main/releases/distribution-v0.3.2.json) selects 20 components; the model remains 0.3.1, ORSD 0.4.3 and manuscript 7.0.8. The [publication receipt](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/releases/v0.3.2-publication.json) verifies the actual package. Current Pages/WebVOWL presentation changes postdate that package and do not replace its frozen documentation component.
+Use [Latest published source release](https://github.com/ArazSaieArasi3/riskium/releases/latest) for live routing. At the **28 October 2026** checkpoint, **v0.3.3** is published: [24-component selection](https://github.com/ArazSaieArasi3/riskium/blob/main/releases/distribution-v0.3.3.json), [verified source/assets](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/releases/v0.3.3-publication.json). The model remains **0.3.1**, ORSD **0.4.3**, original DRSD **0.1.0** and manuscript **7.0.8**. [v0.3.4 is planned](https://github.com/ArazSaieArasi3/riskium/blob/main/plans/v0.3.4.md), not frozen or published.
 
-## Post-release documentation register
+## Current and published components
 
-Documentation publication **0.1.0** is independently versioned for model **0.3.1**. Its frozen source is `609c7cd0fd07053262fffe5720ff0b2605062778`; current explanations may advance. [The route registry](https://github.com/ArazSaieArasi3/riskium/blob/main/tools/publication/pages-registry.json) binds the exact source tree and output hashes for both the new stable-model documentation and the preserved legacy rc.1 snapshot. [Publication/readback evidence](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/documentation/versioned-0.1.0/README.md) links actual Wiki, HTTPS, browser and candidate-package checks.
-
-| Artifact | Version / compatible model | Source and lifecycle |
+| Artifact | Own version | Lifecycle and compatible model |
 | --- | --- | --- |
-| Shared Wiki/Pages publication | Documentation 0.1.0 / model 0.3.1 | Registry-bound frozen snapshot plus mutable current route; one explanatory source per subject; exact source/file hashes in the deployment manifest |
+| Published source distribution | v0.3.3 | Frozen 24-component source; six original assets; model 0.3.1 |
+| Published documentation snapshot | 0.2.0 | Exact audited source at releases/v0.3.3; prior 0.1.0/legacy snapshots preserved |
+| Maintained documentation | 0.3.0 | Current shared Wiki/Pages descriptions under #46; separately hashed, not yet a v0.3.4 snapshot |
+| Scenario/source-reference SQL | 0.4.0 / migration 5 | #42 complete; [component](https://github.com/ArazSaieArasi3/riskium/blob/main/implementation/relational/0.4.0/component.json) and [evidence](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/relational/source-scenario/completion.json) |
+| Scenario/source correction SQL | 0.5.0 / migration 6 | #43 complete; [component](https://github.com/ArazSaieArasi3/riskium/blob/main/implementation/relational/0.5.0/component.json) and [evidence](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/relational/source-scenario-lineage/completion.json) |
+| Qualified evidence SQL | 0.6.0 / migration 7 | #44 complete; [component](https://github.com/ArazSaieArasi3/riskium/blob/main/implementation/relational/0.6.0/component.json) and [evidence](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/relational/qualified-evidence/completion.json) |
+| Derived requirement supplements | SSC / SCL / EQR, six each | Explicit versioned supplements; original DRSD 0.1.0 and original acceptance priorities unchanged |
 
-This is a post-release documentation component, outside the unchanged accepted v0.3.1 source/assets and the eight engineering supplements in the existing development overlay. Successor distribution v0.3.2 explicitly selects that documentation snapshot alongside independently versioned model, ORSD/article, SQL/DRSD and evidence components. It must not rewrite the first release's compatibility matrix.
+The new SQL components are development after v0.3.3 and are proposed for #45's v0.3.4 selection. Their numbers are not ontology-model or source-release versions. All 306 native IDs remain accounted for; latest selected coverage is partial, with 236 deferred and fourteen partial routes. No complete semantic acceptance or new article claim is inferred.
+
+## Retained first stable baseline
 
 This lightweight compatibility record implements the owner's 24 October 2026 request to keep the paper, ontology requirements, model and database coordinated. [The machine-readable matrix](https://github.com/ArazSaieArasi3/riskium/blob/main/releases/artifact-matrix.json) pins exact component hashes. **[v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1) is published and independently downloaded/verified**, source `8afe169968b5c1396c02834dbc499af691b894b4`. Current coordination matrix revision is 0.1.1; the release asset retains frozen matrix 0.1.0. [Publication receipt](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/releases/v0.3.1-publication.json) closes #28.
 
@@ -44,12 +50,12 @@ The archived pharmaceutical dataset v0.6 and private SQLite v0.3.0-rc.1 retain t
 
 Check synchronization with `python tools/check_release_alignment.py`. This validates source/document bindings and recorded artifact relations; CI does not freshly render author-facing Word/PDF files or perform independent semantic review.
 
-## Current correction development component
+## Retained assessment-correction component
 
-[SQL assessment-correction overlay 0.3.0](https://github.com/ArazSaieArasi3/riskium/blob/main/implementation/relational/0.3.0/component.json), schema migration 4, is a separately hashed post-release component for model 0.3.1 and base SQL 0.2.0. Its own contract and requirement/source trace supplement the unchanged DRSD 0.1.0 and earlier development overlay 0.2.0. It has not been inserted into immutable v0.3.2 assets or manuscript 7.0.8. [Scope and executed evidence](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/relational/correction/README.md) remain distinct from the source/scenario/general-correction and deployment work still open. #39 must reconcile the candidate component selection before another stable freeze.
+[SQL assessment-correction overlay 0.3.0](https://github.com/ArazSaieArasi3/riskium/blob/main/implementation/relational/0.3.0/component.json), schema migration 4, is a separately hashed post-release component for model 0.3.1 and base SQL 0.2.0. Its own contract and requirement/source trace supplement the unchanged DRSD 0.1.0 and earlier development overlay 0.2.0. It has not been inserted into immutable v0.3.2 assets or manuscript 7.0.8. [Scope and executed evidence](https://github.com/ArazSaieArasi3/riskium/blob/main/evaluation/relational/correction/README.md) remain distinct from the source/scenario/general-correction and deployment work still open. #45 must select compatible exact components and rerun affected final-source gates before v0.3.4; historical #39/#41 are complete.
 
 ---
 
 [Equivalent Pages guide](https://arazsaiearasi3.github.io/riskium/current/guide/Artifact-Versions.html) · [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) · [OWL explorer](https://arazsaiearasi3.github.io/riskium/current/explore/index.html) · [Published v0.3.1](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.1).
 
-Explanatory source: [docs/artifact-versions.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/artifact-versions.md). Source SHA-256: `656b0f86e7faa7d3c4f3a88285d1753e46c0e432f07ef9a5f8712be140ce6315`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.
+Explanatory source: [docs/artifact-versions.md](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/artifact-versions.md). Source SHA-256: `ad9463cf692424346612cc6df0a6a48fc117afc62711454d5c418325e8f3caf9`. This current explanation and later development evidence are separate from the immutable v0.3.1 source assets.

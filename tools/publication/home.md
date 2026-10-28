@@ -28,6 +28,8 @@ These populations answer different questions. They do not yield an overall ontol
 
 ## Use the sources
 
-The latest source distribution is **[v0.3.2](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.2)**. It includes separately versioned engineering and documentation components; the ontology model remains **0.3.1**. The conceptual and OWL downloads here preserve the model source published with v0.3.1. [Version policy](guide/Publication.html) explains that distinction.
+Use [Latest published source release](https://github.com/ArazSaieArasi3/riskium/releases/latest) for the live source-distribution destination. At the **28 October 2026** checkpoint, **v0.3.3** is published and **v0.3.4** is being prepared under [#45](https://github.com/ArazSaieArasi3/riskium/issues/45). The ontology model remains **0.3.1**; this maintained documentation component is **0.3.0**. The conceptual and OWL downloads preserve the original model source. [Version policy](guide/Publication.html) separates those identities.
+
+Development after v0.3.3 adds source/scenario storage **0.4.0**, correction lineage **0.5.0** and qualified evidence **0.6.0 / migration 7**. Their bounded completion records retain exact old values, sources and contextual evidence roles; they are proposed components of v0.3.4. The checked evidence implementation has **62 fixed controls and 280 full software tests**; those are engineering results, not new HermiT/SHACL outcomes. [The work plan](guide/Work-Plan.html) identifies the remaining component selection, documentation snapshot, freeze and publication gates.
 
 [Download the model and RDF](downloads/index.html) · [Reproduce the finite checks](guide/Reproduce.html) · [Authors and citation](guide/Citation.html) · [Scope and limitations](guide/Limitations.html)
