@@ -41,7 +41,7 @@ jobs:
         run: |
           python tools/build_reference.py --check
           python tools/publication/audit_portal.py
-          python tools/publication/build_versioned_site.py --output build/site --previous-ref HEAD^
+          python tools/publication/build_snapshot_site.py --output build/site --previous-ref HEAD^
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

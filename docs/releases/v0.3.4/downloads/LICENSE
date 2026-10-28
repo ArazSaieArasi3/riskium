@@ -1,0 +1,26 @@
+Riskium licensing
+=================
+
+Copyright (c) 2026 Araz Saie Arasi, Hassan Haghighi, and Hossein Azgomi,
+for their respective original contributions.
+
+Original scientific content is licensed under Creative Commons Attribution
+4.0 International (SPDX: CC-BY-4.0). This includes ontology/, requirements/,
+diagrams/, docs/, evaluation/, references/ and root documentation/metadata,
+except third-party material with its own notice.
+
+Original software in tools/ and tests/, and repository build configuration,
+is licensed under the MIT License (SPDX: MIT).
+
+The licenses apply to distinct artifact scopes, not as alternative licenses
+for the same file. A generated scientific artifact remains CC-BY-4.0 even
+when its generator is MIT-licensed. Embedded code excerpts retain their
+software license. Dependencies, third-party material and any separately
+published manuscript retain their own terms.
+
+Full license texts: LICENSES/CC-BY-4.0.txt and LICENSES/MIT.txt.
+Scope, exclusions and attribution: RIGHTS.md and NOTICE.md.
+Authors and affiliations: AUTHORS.md. Citation metadata: CITATION.cff.
+
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+MIT: https://opensource.org/license/mit

@@ -4,8 +4,8 @@
   "source_files": [
     {
       "path": ".github/workflows/documentation.yml",
-      "sha256": "d1fd52c985cc503d0185d1a3726b1e1b8781dff6ace44f0ab3739e53354b89b1",
-      "bytes": 2077
+      "sha256": "50169cf46025120394a68b45272167a0ee1bab5c5c952d2c228be8599ca2b0cd",
+      "bytes": 2331
     },
     {
       "path": ".github/workflows/incremental-release.yml",
@@ -14,8 +14,8 @@
     },
     {
       "path": ".github/workflows/pages.yml",
-      "sha256": "11ae5725741f0bc351cb452185096a822dbfd9a5fb9f0fdf4b95601e31829c92",
-      "bytes": 1857
+      "sha256": "3ddf7604e1f4021e989abecc2dc0769fc4b466825574da609cad4d97df052258",
+      "bytes": 1856
     },
     {
       "path": ".github/workflows/post-release-validation.yml",
@@ -99,8 +99,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "c61b3ab43ee85b1b4f469fcfd250a9c2dcfcdd9223020d63acd4fa03bb98d284",
-      "bytes": 21437
+      "sha256": "ddfdea92d7019be0ee3d86581851a4238e0122b173b41c0df5b38e24c0064bab",
+      "bytes": 21983
     },
     {
       "path": "RIGHTS.md",
@@ -506,6 +506,16 @@
       "path": "evaluation/documentation/portal-desktop.jpg",
       "sha256": "1e2787d0a946a721755a0310b8d73d28720cbeb8f742bc9b044fb47c42cbce86",
       "bytes": 121930
+    },
+    {
+      "path": "evaluation/documentation/v0.3.4-snapshot/README.md",
+      "sha256": "8708d88e5cf81d6b905e2ee025cc8c8d1547d863bafd709887bf4269cdf06ee9",
+      "bytes": 2990
+    },
+    {
+      "path": "evaluation/documentation/v0.3.4-snapshot/component.json",
+      "sha256": "3f9b35c9fbfe46ddb325c5f4b0abe660c8ac91241ad860605caa646af9886843",
+      "bytes": 10428
     },
     {
       "path": "evaluation/documentation/versioned-0.1.0/README.md",
@@ -1964,8 +1974,8 @@
     },
     {
       "path": "plans/v0.3.4.md",
-      "sha256": "5ab5d30faedaaeb49ea65e2e439e0a97417b75b3500e4b60eeda6fce1a786322",
-      "bytes": 6711
+      "sha256": "f763379b7dae36da1686ba947839b379451432e24d5ec434c7e4c2b592f11591",
+      "bytes": 7831
     },
     {
       "path": "references/README.md",
@@ -2231,6 +2241,11 @@
       "path": "tests/test_documentation_routes.py",
       "sha256": "ec7ab50027d290cfc2b30c706a9b03477e9da9dd60e5aa8194e1bb9582dd2e1e",
       "bytes": 7280
+    },
+    {
+      "path": "tests/test_documentation_snapshot.py",
+      "sha256": "0e8e07bd96bc6c9372342c9747858beab030fa6bb40e6cc2b8355ab15d9497af",
+      "bytes": 10230
     },
     {
       "path": "tests/test_endpoint_shacl.py",
@@ -2573,6 +2588,11 @@
       "bytes": 24034
     },
     {
+      "path": "tools/publication/build_snapshot_site.py",
+      "sha256": "bb07e4188b6fb92319a157e052822eddc513564d1bd34ec363adfc54e3898367",
+      "bytes": 2196
+    },
+    {
       "path": "tools/publication/build_versioned_site.py",
       "sha256": "77037b5d7b91472f4e61669bd7ca381e327b5fb033522232665992e9855a3d94",
       "bytes": 2633
@@ -2651,6 +2671,21 @@
       "path": "tools/publication/site_registry.py",
       "sha256": "6526e1fec37ea79b8de6707cce3c3e0fa0ba9989519b6f13cc9db20007f11718",
       "bytes": 9770
+    },
+    {
+      "path": "tools/publication/snapshot-additions-v0.3.4.json",
+      "sha256": "8b284513ca136f56d94fe0d71ad8d60ed8cc4ff40d89f0976a52767b6a9af7f1",
+      "bytes": 7996
+    },
+    {
+      "path": "tools/publication/snapshot-policy-v0.3.4.json",
+      "sha256": "2406797b1251103d31cd2b0c9872785974b5ba6ca088e132534d56ba7476b55a",
+      "bytes": 2405
+    },
+    {
+      "path": "tools/publication/snapshot_registry.py",
+      "sha256": "e78c1964f490dee60da8aa388cd5d271b5e86e0cebc57f4f50265083f60ba59e",
+      "bytes": 12255
     },
     {
       "path": "tools/publication/webvowl/index.html",

@@ -1,0 +1,39 @@
+{
+  "schema": "riskium-documentation-snapshot-policy-v1",
+  "version": "0.1.0",
+  "issue": 48,
+  "parent_issue": 45,
+  "label": "v0.3.4",
+  "documentation_version": "0.3.0",
+  "model_version": "0.3.1",
+  "semantic_source_commit": "8afe169968b5c1396c02834dbc499af691b894b4",
+  "source_commit": "868dd543538857bb5c9ffbdfde458c4323981d01",
+  "source_path": "docs/current",
+  "source_tree": "efbb44909652a4a0df5bb5bfe167df78dcc93785",
+  "source_manifest_sha256": "f7124a7d609e1b396c19939623e9b56f4248955fcd00e9b0050b02930a1fdca3",
+  "rendering": "FROZEN_GUIDE_REFS_V1",
+  "preserved_files_sha256": {
+    "evaluation/documentation/current-0.3.0/completion.json": "39a336e3b16297a1a8c2b5c91c2615ddf1eec1dbf542203c09491d4bbceeacf5",
+    "evaluation/documentation/current-0.3.0/component.json": "2242bdd2c8403bcfdf6144145536606296564ccb5bbf6869a5cbfccd183fdd44",
+    "evaluation/releases/v0.3.4-selection/completion.json": "d8a68a9182454c26bda49ec33dbe15b718afb80aa0ed217635730bb21922d0a5",
+    "releases/development-components-v0.3.4.json": "321b6cb07b206beaeab26e2137db2d19af45ad918de7bdd5853c1481ddb353e9",
+    "releases/selection-policy-v0.3.4.json": "033ea88e38f6671bebb6a3785dc41232bfb710f62c59e06c61c04dfe85abdb6a",
+    "releases/selection-v0.3.4.json": "e9914305de9228c8af9d5b09975edb79c7dcfdd0f022c0f3233f9649fb1077d4",
+    "tests/test_release_selection.py": "88258d0db7f31fbc157d830600ac4a987a81df01e152ead37569094d2be82c4d",
+    "tools/build_release_selection.py": "8b91be1a5c25bf8382aca68b8d1af6afd663266623e73c4dae80287be5d0c45b",
+    "tools/publication/pages-registry.json": "64e53847bff6916f8ad6724577d5e8c7febb092aa232f6d29625e922751f9cde"
+  },
+  "boundaries": {
+    "source_distribution_published": false,
+    "stable_profile_registered": false,
+    "selection_refresh_required": true,
+    "independent_acceptance_claimed": false,
+    "new_scientific_executions": 0
+  },
+  "review": "Exact documentation 0.3.0/model 0.3.1 bytes, completed #46 receipt and #47 selected checkpoint reviewed for this additive snapshot only under #48; no new human/domain acceptance.",
+  "limits": [
+    "Original pages-registry and component/selection packets remain unchanged dated checkpoints.",
+    "Additive snapshot tooling/output is a separate component; the next #45 gate must explicitly refresh selection.",
+    "Documentation snapshot registration does not freeze or publish the source distribution."
+  ]
+}

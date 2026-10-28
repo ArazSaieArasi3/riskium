@@ -14,6 +14,8 @@ on:
       - 'evaluation/consistency/manuscript-readback.json'
       - 'tools/publication/**'
       - 'tests/test_documentation_routes.py'
+      - 'tests/test_documentation_snapshot.py'
+      - 'evaluation/documentation/v0.3.4-snapshot/**'
       - 'requirements/ontology-requirements.md'
       - 'requirements/cq/**'
       - 'evaluation/traceability/**'
@@ -50,5 +52,7 @@ jobs:
       - run: python tools/publication/build_documentation_component.py --check
       - run: python -m unittest discover -s tests -p test_documentation_component.py -v
       - run: python -m unittest discover -s tests -p test_documentation_routes.py -v
-      - run: python tools/publication/build_versioned_site.py --check --previous-ref HEAD^
+      - run: python tools/publication/snapshot_registry.py --check
+      - run: python -m unittest discover -s tests -p test_documentation_snapshot.py -v
+      - run: python tools/publication/build_snapshot_site.py --check --previous-ref HEAD^
       - run: git diff --exit-code -- docs evaluation/documentation-audit.json

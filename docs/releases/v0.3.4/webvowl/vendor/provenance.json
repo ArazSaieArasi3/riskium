@@ -1,0 +1,39 @@
+{
+  "schema": "riskium-webvowl-runtime-v1",
+  "upstream_repository": "https://github.com/VisualDataWeb/WebVOWL",
+  "upstream_tag": "v1.1.7",
+  "upstream_commit": "28e7dd9540622e8cb723dc000824b5eef5ae775f",
+  "upstream_source_license": "MIT",
+  "build_command": "npm ci --ignore-scripts --no-audit --no-fund; ./node_modules/.bin/grunt release",
+  "node_version": "v24.22.1",
+  "package_lock_sha256": "82b42809132b0fc52fa4e3bfb1f8dbf1d467f763296efe89c9059bd2e3744975",
+  "patch_sha256": "33063ee93820f28a9ebebc1974dbd308fda92d97e5e3e18ee812291b7bbd200b",
+  "modifications": [
+    "Core editing defaults false; editorMode setter refuses enabling editing.",
+    "Original Riskium shell replaces upstream application; no upload, remote ontology, converter or editing UI/application bundle."
+  ],
+  "runtime_dependencies": [
+    {
+      "name": "d3",
+      "version": "3.5.17",
+      "license": "BSD-3-Clause",
+      "bundling": "separate local script"
+    },
+    {
+      "name": "lodash/core",
+      "version": "4.18.1",
+      "license": "MIT",
+      "bundling": "bundled inside WebVOWL core"
+    }
+  ],
+  "assets_sha256": {
+    "D3-BSD.txt": "e4796bd1fdc09e06a3683957a177d59b38aec4143df81b2d25472438f5763482",
+    "Lodash-MIT.txt": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc",
+    "WebVOWL-MIT.txt": "d07986d8f3441f0a563f237aa3778489c763def2e151911e1774a18deff89cde",
+    "d3.min.js": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7",
+    "webvowl.css": "067bb2fe6dfb69a4ef4be734a7b3788335f4c3cd419ce3e42d86c3cf302c49f8",
+    "webvowl.js": "a46d5a71e0d8d05aad6fd3ea4ed4e2cc66ba738958a04aa2dc7568f31f2c2006"
+  },
+  "network_storage_policy": "Fixed same-origin graph JSON fetch and local runtime/CSS only. CSP blocks other active origins, forms and objects; no shell persistent storage/analytics. External links are user-directed navigation.",
+  "build_dependencies": "Full exact build dependency closure/integrity is in tools/publication/webvowl/package-lock.json. Legacy build uses --ignore-scripts; PhantomJS, servers and converter are not run or bundled."
+}
