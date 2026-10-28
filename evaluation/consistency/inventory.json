@@ -99,8 +99,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "a37a64ea23b0545dd15c0bdecf9c5243c6042a606aba8d67f8ffc266c3818c83",
-      "bytes": 18810
+      "sha256": "1d7a1d318475424036bcc1782227fd0d8b38b2a3b90dd3f2d39901728b0c3b0b",
+      "bytes": 19437
     },
     {
       "path": "RIGHTS.md",
@@ -401,6 +401,11 @@
       "path": "evaluation/c14-boundary-review.md",
       "sha256": "59f6f1ed057e2123ae00fca373f47f3943ad5c604dcff23d663c7288f602c110",
       "bytes": 1876
+    },
+    {
+      "path": "evaluation/channels/2026-10-28-followup.json",
+      "sha256": "b7b541ec5ddffd1802b89a830c546d6045fefeaed20ef802ece786051c46bd05",
+      "bytes": 1270
     },
     {
       "path": "evaluation/channels/2026-10-28.json",
@@ -1038,6 +1043,16 @@
       "bytes": 3106
     },
     {
+      "path": "evaluation/relational/qualified-evidence/completion.json",
+      "sha256": "a3b0f38b8e5db587c674d08fdadae3721e0b497c8dc3f62109dcea2f4fd739e9",
+      "bytes": 4361
+    },
+    {
+      "path": "evaluation/relational/qualified-evidence/hosted-checks.json",
+      "sha256": "f9a1474cda4d6e5e67d174d07acb7b55858074430924627baabec03306366648",
+      "bytes": 3329
+    },
+    {
       "path": "evaluation/relational/qualified-evidence/mapping-accounting.json",
       "sha256": "78376e6911505de592c83e870ed2e28bb89b46de130e040bf378197d45a75a1b",
       "bytes": 334614
@@ -1046,6 +1061,11 @@
       "path": "evaluation/relational/qualified-evidence/report.json",
       "sha256": "8e67f479a6c5831511add633617c47dee071228de0f80b41f5ad8470cafe915a",
       "bytes": 48674
+    },
+    {
+      "path": "evaluation/relational/qualified-evidence/software-tests.json",
+      "sha256": "46929a87978d3b685d27db9da3ac5df2b5db23fb96421d183ed555f0a795a138",
+      "bytes": 538
     },
     {
       "path": "evaluation/relational/qualified-evidence/traceability.json",
@@ -1874,8 +1894,8 @@
     },
     {
       "path": "plans/v0.3.4.md",
-      "sha256": "a2223f272898ee2700c8d96ca2af3ac7df50a7033c35c7862b1070cfdd907d02",
-      "bytes": 4204
+      "sha256": "0fd60486fffaab1b6a8d639e65749b4ea446b2d9ff38637790c0c888df759bb1",
+      "bytes": 4396
     },
     {
       "path": "references/README.md",

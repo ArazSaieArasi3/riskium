@@ -1,0 +1,14 @@
+{
+  "schema": "riskium-qualified-evidence-software-tests-v1",
+  "source_commit": "5feced7e7aa2e40cfd3e5d815c13757da43c0164",
+  "command": "python -m unittest discover -s tests -v",
+  "tests": 280,
+  "seconds": 128.745,
+  "outcome": "PASS",
+  "sqlite": "3.53.1",
+  "log_sha256": "4029bb3559013c679fe4b723f9a2aa5ab937a0c32a57f58c5c36825b1fc5a885",
+  "focused_tests_included": 16,
+  "fixed_controls": 62,
+  "native_graph_oracles": 4,
+  "limit": "Software and controlled synthetic engineering evidence; no independent semantic acceptance."
+}

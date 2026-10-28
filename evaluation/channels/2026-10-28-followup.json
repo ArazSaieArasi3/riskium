@@ -1,0 +1,16 @@
+{
+  "schema": "riskium-channel-deployment-followup-v1",
+  "observed_at": "2026-10-28T08:15:39.932449+00:00",
+  "deployed_source": "5feced7e7aa2e40cfd3e5d815c13757da43c0164",
+  "http_status": 200,
+  "manifest_sha256": "0313ffd038e3d267f61f0f77a656cd6c338f641158bcb6a7567105f7cd2a8f31",
+  "same_public_file_inventory_as_actual_243_body_readback": true,
+  "prior_body_readback": "evaluation/channels/2026-10-28.json",
+  "public_files": 243,
+  "homepage_actual_current_statement": "The latest source distribution is v0.3.2 . It includes separately versioned engineering and documentation components; the ontology model remains 0.3.1 . The conceptual and OWL downloads here preserve the model source published with v0.3.1. Version policy explains that distinction.",
+  "wiki_actual_readback_commit": "8f2192c1a3a92c2767c622171922b8b49a0ee7cd",
+  "wiki_actual_files": 23,
+  "wiki_matches_repository_projection": true,
+  "next_action": "Release #45: update current shared prose and separately version docs 0.3.0, synchronize Wiki/Pages, freeze and verify source distribution v0.3.4.",
+  "limit": "This new manifest readback is not a second replay of all file bodies. Documentation source/output bytes are unchanged; the earlier 243-body checks remain individually recorded."
+}

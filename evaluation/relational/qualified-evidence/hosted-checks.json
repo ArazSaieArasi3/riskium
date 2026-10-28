@@ -1,0 +1,89 @@
+{
+  "schema": "riskium-qualified-evidence-hosted-checks-v1",
+  "source_commit": "5feced7e7aa2e40cfd3e5d815c13757da43c0164",
+  "workflows": [
+    {
+      "id": 40655244569,
+      "name": "Publish versioned documentation",
+      "head_sha": "5feced7e7aa2e40cfd3e5d815c13757da43c0164",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40655244569"
+    },
+    {
+      "id": 40655172524,
+      "name": "Documentation integrity",
+      "head_sha": "5feced7e7aa2e40cfd3e5d815c13757da43c0164",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40655172524"
+    },
+    {
+      "id": 40655172628,
+      "name": "Post-release integration and scope",
+      "head_sha": "5feced7e7aa2e40cfd3e5d815c13757da43c0164",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40655172628"
+    },
+    {
+      "id": 40655172521,
+      "name": "Claim-based quality integrity",
+      "head_sha": "5feced7e7aa2e40cfd3e5d815c13757da43c0164",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40655172521"
+    },
+    {
+      "id": 40655172686,
+      "name": "Stable research artifact release",
+      "head_sha": "5feced7e7aa2e40cfd3e5d815c13757da43c0164",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40655172686"
+    },
+    {
+      "id": 40655172635,
+      "name": "Requirement and CQ evidence",
+      "head_sha": "5feced7e7aa2e40cfd3e5d815c13757da43c0164",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40655172635"
+    },
+    {
+      "id": 40655172553,
+      "name": "Incremental release candidate",
+      "head_sha": "5feced7e7aa2e40cfd3e5d815c13757da43c0164",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/40655172553"
+    }
+  ],
+  "sqlite": "3.45.1",
+  "integration": {
+    "run_id": 40655172628,
+    "job_id": 122704342723,
+    "fixed_cases": 62,
+    "outcomes": {
+      "PASS": 62
+    },
+    "native_graph_oracles": 4,
+    "focused_tests": 16,
+    "actual_log_lines": [
+      "2026-10-28T08:14:50.4162168Z Ran 16 tests in 3.046s",
+      "2026-10-28T08:15:43.7674388Z {\"status\": \"QUALIFIED_EVIDENCE_EXECUTION_PASS\", \"sqlite\": \"3.45.1\", \"cases\": 62, \"outcomes\": {\"PASS\": 62}, \"kinds\": {\"negative\": 36, \"positive\": 22, \"mutation\": 4}, \"native_graph_oracles\": 4}",
+      "2026-10-28T08:15:43.8332303Z   \"status\": \"QUALIFIED_EVIDENCE_ACCOUNTING_PASS\",",
+      "2026-10-28T08:15:53.9651948Z Ran 16 tests in 10.006s"
+    ]
+  },
+  "candidate": {
+    "run_id": 40655172553,
+    "job_id": 122704343119,
+    "passed_checks": 28,
+    "inventory_verified": true,
+    "publication_executed": false,
+    "actual_log_lines": [
+      "2026-10-28T08:21:56.3046560Z {\"source_commit\": \"5feced7e7aa2e40cfd3e5d815c13757da43c0164\", \"package_name\": \"candidate-5feced7e7aa2\", \"passed_checks\": 28, \"inventory_verified\": true, \"publication_executed\": false}"
+    ]
+  }
+}
