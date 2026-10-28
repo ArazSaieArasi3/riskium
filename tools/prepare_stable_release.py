@@ -124,19 +124,22 @@ def resolve_intent(root, event, ref, before, after, inputs=None):
     return {'publish': True, 'release_tag': request['tag']}
 
 
-def package(root, output, profile, checks, freshness=None):
+def package(root, output, profile, checks, freshness=None, *, profile_resolver=None, freshness_validator=None):
     root, output = Path(root), Path(output)
     ensure_clean(root)
     validate_checks(checks)
     if profile['tag'] != 'v0.3.1':
-        from review_distribution import validate_freshness
+        if freshness_validator is None:
+            from review_distribution import validate_freshness
+            freshness_validator = validate_freshness
         require(freshness is not None, 'Successor freeze requires live publication readback')
-        validate_freshness(read(root, profile['artifact_matrix']), freshness)
+        freshness_validator(read(root, profile['artifact_matrix']), freshness)
     require(not output.resolve().is_relative_to(root.resolve()), 'Keep stable package outside the source checkout')
     output.mkdir(parents=True, exist_ok=True)
     require(not any(output.iterdir()), 'Never overwrite an existing stable package')
     commit = git(root, 'rev-parse', 'HEAD').decode().strip()
     tag = profile['tag']
+    selected_profile_path = (profile_resolver or profile_path)(root, tag)
     files, entries = [], []
     for record in git(root, 'ls-tree', '-r', '-z', commit).split(b'\0'):
         if not record:
@@ -166,8 +169,8 @@ def package(root, output, profile, checks, freshness=None):
                                               'matrix_sha256': sha((root / profile['artifact_matrix']).read_bytes()), 'matrix': matrix})
     freeze = {'schema': 'riskium-stable-freeze-v1', 'tag': tag, 'source_commit': commit,
               'model_version': profile['model_version'], 'maturity': profile['profile'], 'clean_exact_head': True,
-              'profile_path': profile_path(root, tag),
-              'profile_sha256': sha((root / profile_path(root, tag)).read_bytes()),
+              'profile_path': selected_profile_path,
+              'profile_sha256': sha((root / selected_profile_path).read_bytes()),
               'critical_screen_path': profile['critical_screen'],
               'artifact_matrix_path': profile['artifact_matrix'],
               'critical_screen_sha256': sha((root / profile['critical_screen']).read_bytes()),

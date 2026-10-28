@@ -66,6 +66,8 @@ def previous_releases(repo, target=TAG):
         tags.append(TAG)
     if target == 'v0.3.3':
         tags.append('v0.3.2')
+    if target == 'v0.3.4':
+        tags += ['v0.3.2', 'v0.3.3']
     for tag in tags:
         release = api(repo, 'releases/tags/' + tag)
         rows.append({'tag': tag, 'commit': tag_commit(repo, tag), 'release_id': release['id'],
@@ -110,21 +112,29 @@ def validate_package(folder, source_commit):
             actual.append({'path': path, 'bytes': member.size, 'sha256': digest(blobs[path])})
     require(actual == manifest['files'] and len(actual) == manifest['file_count'], 'Downloaded source archive inventory mismatch')
     matrix = json.loads((folder / 'artifact-versions.json').read_text())
-    expected_components = {'v0.3.1': 10, 'v0.3.2': 20, 'v0.3.3': 24}
+    expected_components = {'v0.3.1': 10, 'v0.3.2': 20, 'v0.3.3': 24, 'v0.3.4': 28}
     require(tag in expected_components and matrix['tag'] == tag and matrix['source_commit'] == source_commit and len(matrix['matrix']['artifacts']) == expected_components[tag], 'Frozen artifact matrix mismatch')
     indexed = {row['path']: row for row in actual}
     require(indexed[freeze.get('profile_path', 'releases/stable-profile-v0.3.1.json')]['sha256'] == freeze['profile_sha256'], 'Archived stable profile mismatch')
     require(indexed[freeze.get('critical_screen_path', 'evaluation/finalization/v0.3.1-review.json')]['sha256'] == freeze['critical_screen_sha256'], 'Archived critical screen mismatch')
     require(indexed[freeze.get('artifact_matrix_path', 'releases/artifact-matrix.json')]['sha256'] == matrix['matrix_sha256'], 'Artifact matrix not bound to archived source')
     require(digest((json.dumps(matrix['matrix'], indent=2, ensure_ascii=False) + '\n').encode()) == matrix['matrix_sha256'], 'Frozen matrix content changed')
-    registry = json.loads(blobs['releases/stable-profiles.json'])
+    registry = json.loads(blobs['releases/successor-profiles.json' if tag == 'v0.3.4' else 'releases/stable-profiles.json'])
     require(registry['profiles'].get(tag) == freeze['profile_path'], 'Unregistered frozen stable profile')
     profile = json.loads(blobs[freeze['profile_path']])
     require(profile['tag'] == tag and profile['artifact_matrix'] == freeze['artifact_matrix_path'] and
             profile['critical_screen'] == freeze['critical_screen_path'], 'Frozen profile route mismatch')
     require(blobs[freeze['artifact_matrix_path']] == (json.dumps(matrix['matrix'], indent=2, ensure_ascii=False) + '\n').encode(), 'Archived/asset matrix mismatch')
     if tag != TAG:
-        from review_distribution import validate_matrix, validate_freshness
+        if tag == 'v0.3.4':
+            from release_v034 import validate_matrix, validate_freshness, validate_profile_blob, validate_release_checks
+            validate_profile_blob(profile, blobs.__getitem__)
+            validate_release_checks(freeze.get('release_specific_checks', []))
+            require(freeze.get('release_tooling_sha256') == profile['release_tooling_sha256']
+                    and freeze.get('selected_components') == 28 and freeze.get('selected_documentation_snapshots') == 4
+                    and freeze.get('preserve_releases') == matrix['matrix']['preserve_releases'], 'Incomplete v0.3.4 freeze scope')
+        else:
+            from review_distribution import validate_matrix, validate_freshness
         validate_matrix(matrix['matrix'], blobs.__getitem__)
         validate_freshness(matrix['matrix'], freeze['publication_freshness'])
         screen = json.loads(blobs[freeze['critical_screen_path']])

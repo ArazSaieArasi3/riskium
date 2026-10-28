@@ -1,0 +1,8 @@
+{
+  "schema": "riskium-reviewed-successor-request-v1",
+  "profile": "stable-bounded-research-artifact",
+  "tag": "v0.3.4",
+  "publish": false,
+  "reviewed_source_commit": null,
+  "authority": "Dry freeze preparation only; explicit publication intent follows successful exact-source review."
+}

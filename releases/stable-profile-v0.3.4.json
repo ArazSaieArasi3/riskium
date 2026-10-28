@@ -1,0 +1,32 @@
+{
+  "schema": "riskium-stable-profile-v2",
+  "profile": "stable-bounded-research-artifact",
+  "tag": "v0.3.4",
+  "model_version": "0.3.1",
+  "orsd_revision": "0.4.3",
+  "manuscript_version": "7.0.8",
+  "reviewed_scope_commit": "3afa861b5296addefc98ce401767c7ab7d025d2c",
+  "accepted_scope": "evaluation/owner-review/accepted-scope.json",
+  "artifact_matrix": "releases/distribution-v0.3.4.json",
+  "artifact_matrix_sha256": "a5f0a645dac4998862a99ca76564f705f72f61c03b7f40e89385c7ca4edca4ac",
+  "critical_screen": "evaluation/finalization/v0.3.4-review.json",
+  "notes": "docs/release-v0.3.4.md",
+  "release_tooling_sha256": {
+    "tools/release_v034.py": "85e55a263e846c9ac5e8bb6e2bd006f49edb8cc9834490b2aa14ef60e51f2d4b",
+    "tools/prepare_release_v034.py": "8c688097a778567ae0ae4b1d64ac8162deca2618bd120a3c0aa9a891fa0913eb",
+    "tools/prepare_stable_release.py": "05ccf8a87b91fee50103bfdb549c3006497bbd992c025c6310597ebb7cd14f63",
+    "tools/publish_stable_release.py": "195fbc8b8ace98e50cd54471b6d4c1fad67853a502fefc073a6bfea89e0ffc2f",
+    "tests/test_release_v034.py": "5cd859ebd6b94a88da23398f687b3290f2171b089d3ec381fa7bc682d42c2606",
+    ".github/workflows/stable-release.yml": "e3f353895b966c8066faf6718a803c0272c7727c46830b891683427c07f3f23b"
+  },
+  "owner_review_kind": "PRESERVED_OWNER_SCIENTIFIC_SCOPE_WITH_BOUNDED_ENGINEERING_CHECKS",
+  "independent_validation_claimed": false,
+  "full_original_requirement_acceptance_claimed": false,
+  "publication_requires_clean_exact_head": true,
+  "publication_requires_all_checks": true,
+  "publication_requires_no_known_unresolved_critical_findings": true,
+  "publication_requires_new_tag_and_release": true,
+  "readback_required": true,
+  "baseline_release": "v0.3.3",
+  "release_authority": "User request on 28 October 2026 to execute the next step toward source release, continuing the accepted v0.3.4 plan; publication only after concrete successful final freeze and readback gates."
+}

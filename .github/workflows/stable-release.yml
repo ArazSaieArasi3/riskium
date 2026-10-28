@@ -35,13 +35,15 @@ jobs:
           python - <<'PY'
           import json,os,sys
           sys.path.insert(0,'tools')
-          from prepare_stable_release import resolve_intent,git
+          from prepare_stable_release import git
+          from release_v034 import resolve_intent,TOOLING,PROFILE,REGISTRY,REQUEST,SCREEN,NOTES
           event=json.load(open(os.environ['GITHUB_EVENT_PATH']))
           value=resolve_intent('.',os.environ['GITHUB_EVENT_NAME'],os.environ['GITHUB_REF'],event.get('before',''),os.environ['GITHUB_SHA'],event.get('inputs'))
           paths=[]
           if os.environ['GITHUB_EVENT_NAME']=='push' and event.get('before'):
               paths=git('.', 'diff','--name-only',event['before'],os.environ['GITHUB_SHA']).decode().splitlines()
           tracked=['releases/stable-request.json','releases/stable-profile-v0.3.1.json','evaluation/finalization/v0.3.1-review.json','tools/prepare_stable_release.py','tools/publish_stable_release.py','tests/test_stable_release.py','tests/test_successor_release.py','tools/review_distribution.py','.github/workflows/stable-release.yml']
+          tracked += list(TOOLING)+[PROFILE,REGISTRY,REQUEST,SCREEN,NOTES]
           prepare=value['publish'] or os.environ['GITHUB_EVENT_NAME']=='workflow_dispatch' or any(p in tracked or p.startswith('releases/stable-profile') or p.startswith('releases/distribution-') or p.startswith('evaluation/finalization/') for p in paths)
           selected=value['release_tag'] or json.load(open('releases/stable-request.json'))['tag']
           import subprocess
@@ -70,7 +72,12 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
       - name: Validate accepted profile and freeze exact clean source
-        run: python tools/prepare_stable_release.py --tag "${{ needs.intent.outputs.release_tag }}" --output "$RUNNER_TEMP/riskium-stable"
+        run: |
+          if [ "${{ needs.intent.outputs.release_tag }}" = "v0.3.4" ]; then
+            python tools/prepare_release_v034.py --output "$RUNNER_TEMP/riskium-stable"
+          else
+            python tools/prepare_stable_release.py --tag "${{ needs.intent.outputs.release_tag }}" --output "$RUNNER_TEMP/riskium-stable"
+          fi
       - name: Verify the complete staged stable package before publication is possible
         run: |
           python - <<'PY'

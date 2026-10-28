@@ -1,0 +1,101 @@
+{
+  "schema": "riskium-final-technical-screen-v1",
+  "target": "v0.3.4",
+  "date_local": "2026-10-28",
+  "reviewed_scope_commit": "3afa861b5296addefc98ce401767c7ab7d025d2c",
+  "review_kind": "Assistant-supported bounded engineering review of preserved accepted scientific scope and the prepared 28-component successor; not a new human or independent judgment.",
+  "known_unresolved_critical_findings": [],
+  "new_owner_responses_generated": 0,
+  "universal_zero_defect_claimed": false,
+  "independent_semantic_review_claimed": false,
+  "material_scientific_change_since_owner_acceptance": false,
+  "component_matrix_sha256": "a5f0a645dac4998862a99ca76564f705f72f61c03b7f40e89385c7ca4edca4ac",
+  "release_tooling_sha256": {
+    "tools/release_v034.py": "85e55a263e846c9ac5e8bb6e2bd006f49edb8cc9834490b2aa14ef60e51f2d4b",
+    "tools/prepare_release_v034.py": "8c688097a778567ae0ae4b1d64ac8162deca2618bd120a3c0aa9a891fa0913eb",
+    "tools/prepare_stable_release.py": "05ccf8a87b91fee50103bfdb549c3006497bbd992c025c6310597ebb7cd14f63",
+    "tools/publish_stable_release.py": "195fbc8b8ace98e50cd54471b6d4c1fad67853a502fefc073a6bfea89e0ffc2f",
+    "tests/test_release_v034.py": "5cd859ebd6b94a88da23398f687b3290f2171b089d3ec381fa7bc682d42c2606",
+    ".github/workflows/stable-release.yml": "e3f353895b966c8066faf6718a803c0272c7727c46830b891683427c07f3f23b"
+  },
+  "reviewed_risks": [
+    {
+      "risk": "Native identities/history collapsed by labels or revisions",
+      "retained_evidence": [
+        "evaluation/relational/history/report.json.gz"
+      ],
+      "fresh_gate": "tools/run_relational_history.py --check"
+    },
+    {
+      "risk": "Wrong source/scenario version or correction lineage accepted",
+      "retained_evidence": [
+        "evaluation/relational/source-scenario/completion.json",
+        "evaluation/relational/source-scenario-lineage/completion.json"
+      ],
+      "fresh_gate": "ten release checks: source/scenario and lineage replay/inventory"
+    },
+    {
+      "risk": "Contextual evidence role promoted to global typing or corroboration",
+      "retained_evidence": [
+        "evaluation/relational/qualified-evidence/completion.json"
+      ],
+      "fresh_gate": "ten release checks: qualified evidence replay/inventory and full software tests"
+    },
+    {
+      "risk": "Component hashes/dependencies/receipt closure or snapshot version differs",
+      "retained_evidence": [
+        "releases/distribution-v0.3.4.json",
+        "evaluation/releases/v0.3.4-preparation/completion.json"
+      ],
+      "fresh_gate": "tools/build_prepared_distribution.py --check plus snapshot/build checks"
+    },
+    {
+      "risk": "Current/frozen/system Pages or native Wiki stale or missing",
+      "retained_evidence": [
+        "evaluation/documentation/v0.3.4-snapshot/completion.json"
+      ],
+      "fresh_gate": "fresh actual 311-body HTTPS and 23-file native Wiki clone; exact source ancestry and age gate"
+    },
+    {
+      "risk": "Publication intent inferred from old persistent request or unreviewed code",
+      "retained_evidence": [
+        "releases/stable-request.json"
+      ],
+      "fresh_gate": "tests/test_release_v034.py; explicit new request with reviewed-source metadata-only delta"
+    },
+    {
+      "risk": "Dirty or changed HEAD, missing checks or incomplete archive accepted",
+      "retained_evidence": [
+        "evaluation/releases/v0.3.4-preparation/completion.json"
+      ],
+      "fresh_gate": "exact clean HEAD, 28 actual core checks + ten actual release checks and six-asset staged validation"
+    },
+    {
+      "risk": "Downloaded package requires hidden Git history or accepts forged missing gates",
+      "retained_evidence": [
+        "evaluation/releases/v0.3.4-preparation/completion.json"
+      ],
+      "fresh_gate": "self-contained archive validator and real temporary archive negative controls; independent downloaded bodies"
+    },
+    {
+      "risk": "Accepted scientific/owner scope or original MUST claims inflated",
+      "retained_evidence": [
+        "evaluation/owner-review/accepted-scope.json",
+        "evaluation/owner-review/register.json"
+      ],
+      "fresh_gate": "original v0.3.1 scientific profile validation, source alignment and no-new-rating/science fields"
+    },
+    {
+      "risk": "Existing tag/release/assets overwritten or wrong Latest published",
+      "retained_evidence": [
+        "evaluation/releases/v0.3.3-publication.json"
+      ],
+      "fresh_gate": "assert new tag/release, validate draft downloaded bodies, publish Latest, independent separate runner readback and ten prior release inventories"
+    }
+  ],
+  "limits": [
+    "Zero known unresolved critical findings is scoped to this engineering release review, not a universal zero-defect assertion.",
+    "All final checks and actual fresh channel/readback gates must still pass on the exact source before publication.",
+    "Broad #4/#5/#12/#13/#23/#35/#36/#37 remain open; eleven admissions WITHHELD and independent ratings zero."
+  ]
+}

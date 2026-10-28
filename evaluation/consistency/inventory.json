@@ -39,8 +39,8 @@
     },
     {
       "path": ".github/workflows/stable-release.yml",
-      "sha256": "ebba6648c8853aa47865ecaaeb21086f6983b8b968ddeb6879dd4c28b6b735a0",
-      "bytes": 7244
+      "sha256": "e3f353895b966c8066faf6718a803c0272c7727c46830b891683427c07f3f23b",
+      "bytes": 7606
     },
     {
       "path": ".gitignore",
@@ -99,8 +99,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "4acfee26d8f84c106350cb7f4f8e19f425e3306833ac945c0a23b04c182d6da0",
-      "bytes": 23566
+      "sha256": "fc99bc83a8f27905df9cbdacfadb775c7c9eca5e69dd7c24945b7127a1faabbf",
+      "bytes": 24119
     },
     {
       "path": "RIGHTS.md",
@@ -356,6 +356,11 @@
       "path": "docs/release-v0.3.3.md",
       "sha256": "d994a6b84814139e19377a312e71919cef694bbf1b34f5126f0a30887d8090bb",
       "bytes": 3982
+    },
+    {
+      "path": "docs/release-v0.3.4.md",
+      "sha256": "31360b7a3cef7071b847c22cd531282edc83c9449fe995d0d699f5958ac10960",
+      "bytes": 3325
     },
     {
       "path": "docs/reproducibility.md",
@@ -671,6 +676,11 @@
       "path": "evaluation/finalization/v0.3.3-review.json",
       "sha256": "944dac7b0a77f5e4e12f9318a59396298ad13403a23db9b24cf9deb82f41a102",
       "bytes": 5061
+    },
+    {
+      "path": "evaluation/finalization/v0.3.4-review.json",
+      "sha256": "37b28bcb01554b779bf5914d64bacbfbe47c2ec824b90125819ef62e7137fb89",
+      "bytes": 4997
     },
     {
       "path": "evaluation/formal-reference/README.md",
@@ -1276,6 +1286,11 @@
       "path": "evaluation/releases/v0.3.3-publication.json",
       "sha256": "8e1bb37e11941e88cb5b7afd46533cdbf8f195ab36f76fb59492c3147894de57",
       "bytes": 14160
+    },
+    {
+      "path": "evaluation/releases/v0.3.4-finalization/README.md",
+      "sha256": "d80f1a07a1ea51df0ff511f7c04a435cedbee85a306589924080577b25af9cdc",
+      "bytes": 2711
     },
     {
       "path": "evaluation/releases/v0.3.4-preparation/README.md",
@@ -2034,8 +2049,8 @@
     },
     {
       "path": "plans/v0.3.4.md",
-      "sha256": "4bbef5c7a0a4ab791375d209ce6a970000bcd435dca4608f5ac259d55cbabfc1",
-      "bytes": 10210
+      "sha256": "fc2b354f3baaa06ebc4d046302db1e8b74faf117bd9cbe01e796804ff8d4ae90",
+      "bytes": 10936
     },
     {
       "path": "references/README.md",
@@ -2118,14 +2133,29 @@
       "bytes": 1113
     },
     {
+      "path": "releases/stable-profile-v0.3.4.json",
+      "sha256": "da66c5327a88ff89a90783128f9a085909b70f2588e17d6ec25d8dee8d7b8a81",
+      "bytes": 1946
+    },
+    {
       "path": "releases/stable-profiles.json",
       "sha256": "8d0e1e48afa33fa0829d59885529a5ac55d7bb36b92f9e6d651588c359c0f393",
       "bytes": 233
     },
     {
+      "path": "releases/stable-request-v0.3.4.json",
+      "sha256": "ec997b5951c5094b5f8e8e12bd4e1e4fcfbb56c1d0e8806bfcb659352af352d9",
+      "bytes": 293
+    },
+    {
       "path": "releases/stable-request.json",
       "sha256": "39daa6b6e38e0f36a8349d201ce6487da32c98cfa0306a061cf82b4505d3a86e",
       "bytes": 872
+    },
+    {
+      "path": "releases/successor-profiles.json",
+      "sha256": "9d443a595eea67a347b47faef3f8a183a50fa359ab8abb64ff1ce2a36fe276f9",
+      "bytes": 296
     },
     {
       "path": "requirements/competency-questions.json",
@@ -2408,6 +2438,11 @@
       "bytes": 6090
     },
     {
+      "path": "tests/test_release_v034.py",
+      "sha256": "5cd859ebd6b94a88da23398f687b3290f2171b089d3ec381fa7bc682d42c2606",
+      "bytes": 11795
+    },
+    {
       "path": "tests/test_shacl_runner.py",
       "sha256": "5d5b9a611115d206b29a054c59b6fe46048056eb6654530449708040d9c9bf89",
       "bytes": 3051
@@ -2638,9 +2673,14 @@
       "bytes": 8658
     },
     {
+      "path": "tools/prepare_release_v034.py",
+      "sha256": "8c688097a778567ae0ae4b1d64ac8162deca2618bd120a3c0aa9a891fa0913eb",
+      "bytes": 3143
+    },
+    {
       "path": "tools/prepare_stable_release.py",
-      "sha256": "e59bf9d0ba6b97a18d117f41732d9ba68d46e65f8c63c4c606931389b4451f53",
-      "bytes": 13555
+      "sha256": "05ccf8a87b91fee50103bfdb549c3006497bbd992c025c6310597ebb7cd14f63",
+      "bytes": 13775
     },
     {
       "path": "tools/publication/README.md",
@@ -2809,8 +2849,8 @@
     },
     {
       "path": "tools/publish_stable_release.py",
-      "sha256": "7f4e0c50c77432446ed1f1d2e7164e490cb2ebda7a58ac89f86804ee5cbcc62a",
-      "bytes": 14008
+      "sha256": "195fbc8b8ace98e50cd54471b6d4c1fad67853a502fefc073a6bfea89e0ffc2f",
+      "bytes": 14799
     },
     {
       "path": "tools/relational_assessment.py",
@@ -2841,6 +2881,11 @@
       "path": "tools/relational_source_scenario_lineage.py",
       "sha256": "0fddac0d97c9bbf2eb7d0947c0f989978e9f6b0e2b2ce94b160983035ecd3d36",
       "bytes": 7653
+    },
+    {
+      "path": "tools/release_v034.py",
+      "sha256": "85e55a263e846c9ac5e8bb6e2bd006f49edb8cc9834490b2aa14ef60e51f2d4b",
+      "bytes": 15665
     },
     {
       "path": "tools/requirements-hermit.txt",

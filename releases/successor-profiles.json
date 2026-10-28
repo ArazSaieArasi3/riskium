@@ -1,0 +1,8 @@
+{
+  "schema": "riskium-reviewed-successor-profiles-v1",
+  "profiles": {
+    "v0.3.4": "releases/stable-profile-v0.3.4.json"
+  },
+  "predecessor": "releases/stable-profiles.json",
+  "scope": "Explicit additive successor profile; original three published profile registry entries are unchanged."
+}
