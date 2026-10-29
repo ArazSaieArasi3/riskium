@@ -29,7 +29,12 @@ NOTES = 'docs/final-release-v0.3.5.md'
 SUPPORT_SOURCE = '7c0dc160c869a5f29742b3e0d8d056c48725e8ff'
 GUIDE_SOURCE = '2c4b0c46f22c90a3a5782e7c918e79f791aa4816'
 TOOLING = ('tools/release_v035_final.py', 'tools/prepare_release_v035_final.py',
-           'tests/test_release_v035_final.py', '.github/workflows/final-release-v035.yml')
+           'tests/test_release_v035_final.py', '.github/workflows/final-release-v035.yml',
+           'tools/publish_release_v035.py', 'tests/test_publish_release_v035.py',
+           'releases/publication-profile-v0.3.5.json', 'releases/publication-request-v0.3.5.json')
+PUBLICATION_PROFILE = 'releases/publication-profile-v0.3.5.json'
+PUBLICATION_REQUEST = 'releases/publication-request-v0.3.5.json'
+PRIOR_FREEZE_SOURCE = '3928b8ef9005d8cf65bb711a1799fdfb79cd850f'
 SUPPORT_ANCHORS = {
     'releases/stable-profile-v0.3.5.json': 'd9222df4cd74015b2741aed43578e097f0012409dd4a8865de633545be5f6efd',
     'evaluation/finalization/v0.3.5-review.json': '6b9d35847519ef2a2799a802df5d1b36a87fbec30394dde8ec9dc45510ef1134',
@@ -209,7 +214,44 @@ def validate_profile_blob(profile, blob):
         require(risk['id'] and risk['fresh_gate'] and risk['retained_evidence'], 'V035-FINAL-RISK-GATE')
         for path in risk['retained_evidence']:
             require(bool(read_blob(blob, path)), 'V035-FINAL-RISK-EVIDENCE')
+    validate_publication_config(blob)
     return envelope
+
+
+def validate_publication_config(blob):
+    """Offline scope of the one-shot publisher; source authorization is runtime."""
+    config = loads(read_blob(blob, PUBLICATION_PROFILE))
+    request = loads(read_blob(blob, PUBLICATION_REQUEST))
+    require(config['schema'] == 'riskium-v035-publication-profile-v1'
+            and config['tag'] == TAG and config['repository'] == 'ArazSaieArasi3/riskium'
+            and config['request'] == PUBLICATION_REQUEST
+            and config['final_profile'] == PROFILE
+            and config['prior_dry_freeze_source'] == PRIOR_FREEZE_SOURCE,
+            'V035-PUBLICATION-CONFIG')
+    baseline = 'evaluation/releases/v0.3.5-definition/published-baseline.json'
+    require(config['published_baseline'] == baseline
+            and config['published_baseline_sha256'] == support.PRESERVED_INPUTS[baseline],
+            'V035-PUBLICATION-BASELINE')
+    for flag in ('one_shot_authority_required', 'exact_main_required', 'new_tag_release_required',
+                 'separate_staged_verification_required', 'draft_download_required',
+                 'separate_public_readback_required', 'preserve_all_prior_inventories'):
+        require(config.get(flag) is True, 'V035-PUBLICATION-MISSING-GATE: ' + flag)
+    require(config['independent_semantic_validation_claimed'] is False
+            and config['new_owner_responses_generated'] == 0
+            and config['retire_legacy_workflows'] == [
+                '.github/workflows/pages.yml', '.github/workflows/publication-status.yml',
+                '.github/workflows/current-documentation-pages.yml'],
+            'V035-PUBLICATION-SCOPE')
+    require(request['schema'] == 'riskium-v035-publication-request-v1'
+            and request['tag'] == TAG and request['profile'] == PUBLICATION_PROFILE
+            and request['publish'] is True
+            and request['prior_dry_freeze_source'] == PRIOR_FREEZE_SOURCE
+            and isinstance(request['activation_id'], str)
+            and re.fullmatch('[a-f0-9]{32}', request['activation_id'])
+            and isinstance(request['expected_parent'], str)
+            and re.fullmatch('[a-f0-9]{40}', request['expected_parent']),
+            'V035-PUBLICATION-REQUEST')
+    return config, request
 
 
 def validate_profile(root=ROOT):

@@ -1,0 +1,27 @@
+{
+  "schema": "riskium-v035-publication-profile-v1",
+  "tag": "v0.3.5",
+  "repository": "ArazSaieArasi3/riskium",
+  "issue": 59,
+  "parent_issue": 51,
+  "request": "releases/publication-request-v0.3.5.json",
+  "final_profile": "releases/final-profile-v0.3.5.json",
+  "prior_dry_freeze_source": "3928b8ef9005d8cf65bb711a1799fdfb79cd850f",
+  "published_baseline": "evaluation/releases/v0.3.5-definition/published-baseline.json",
+  "published_baseline_sha256": "e153ff2e7a54d2f921523e7a5d7f52668386a38f709fb3c6f8894223787810bb",
+  "one_shot_authority_required": true,
+  "exact_main_required": true,
+  "new_tag_release_required": true,
+  "separate_staged_verification_required": true,
+  "draft_download_required": true,
+  "separate_public_readback_required": true,
+  "preserve_all_prior_inventories": true,
+  "independent_semantic_validation_claimed": false,
+  "new_owner_responses_generated": 0,
+  "retire_legacy_workflows": [
+    ".github/workflows/pages.yml",
+    ".github/workflows/publication-status.yml",
+    ".github/workflows/current-documentation-pages.yml"
+  ],
+  "current_status_followup_issue": 60
+}

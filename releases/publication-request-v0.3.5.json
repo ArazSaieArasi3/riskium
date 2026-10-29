@@ -1,0 +1,10 @@
+{
+  "schema": "riskium-v035-publication-request-v1",
+  "tag": "v0.3.5",
+  "profile": "releases/publication-profile-v0.3.5.json",
+  "publish": true,
+  "activation_id": "f2c8fe9ad71f4c4bae602d712a7a6515",
+  "expected_parent": "3928b8ef9005d8cf65bb711a1799fdfb79cd850f",
+  "prior_dry_freeze_source": "3928b8ef9005d8cf65bb711a1799fdfb79cd850f",
+  "authority": "Owner continuation request on29October2026 to execute the next release step; publish only after exact-source candidate, fresh freeze and independent staged verification."
+}

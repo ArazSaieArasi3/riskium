@@ -2,7 +2,7 @@
   "schema": "riskium-v035-final-distribution-v1",
   "target": "v0.3.5",
   "stage": "FINALIZATION_DECLARED_NOT_FROZEN",
-  "issue": 58,
+  "issue": 59,
   "parent_issue": 51,
   "selection_path": "releases/selection-v0.3.5.json",
   "selection_sha256": "99405668004b7b11e9b59dec0df93a94f890b4abb7ba22d5ac4b8914e8bcec32",
@@ -21,10 +21,14 @@
     "dependency_edges": 68
   },
   "finalization_tooling_sha256": {
-    "tools/release_v035_final.py": "2c648c90e30cbad858b75873b7f3e92b7deb36d65c37847ba6244d1d72790a6a",
+    "tools/release_v035_final.py": "84f42e0bdec195359ad3caafd6bd26ef3ecc979db560428fb93599e8e2e24125",
     "tools/prepare_release_v035_final.py": "2eeee3d04c291a0affee5f5d7d8b6e5f3b8fdc3da4de23ef161d8172c837cd03",
     "tests/test_release_v035_final.py": "6f4818f45454263b589b132f13da97a577aa9a30b35416a7b5c6059ec853be9a",
-    ".github/workflows/final-release-v035.yml": "2e9907bd8ed013439b560e2bca34dfb0007533142e0451e54621f381a3fb7785"
+    ".github/workflows/final-release-v035.yml": "bb1c14ff4b362826c39abe9445c6858059882e2fcb132c2638aec9a674cfca19",
+    "tools/publish_release_v035.py": "90c4873c6a20b7128b26552e80784f9eda752a8f7f72df6e408918fed1051ffd",
+    "tests/test_publish_release_v035.py": "6db27eed35519e131563c33de904a99782a6973cc6959ac92301bad4ca96bae9",
+    "releases/publication-profile-v0.3.5.json": "f20826fddd90977c77087fac1417254ab72b91a68f6eb49935946ed18e6c0278",
+    "releases/publication-request-v0.3.5.json": "dd483d68ce262bf20f561a93e28cd23393a8f8fc26e6c15a4657b4e54cc5443c"
   },
   "preserve_releases": [
     "v0.3.1-rc.1",

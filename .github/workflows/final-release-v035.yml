@@ -1,4 +1,4 @@
-name: v0.3.5 exact-source dry freeze
+name: v0.3.5 verified source publication
 on:
   workflow_run:
     workflows: [Incremental release candidate]
@@ -11,12 +11,35 @@ concurrency:
   group: v035-dry-freeze-${{ github.event.workflow_run.head_sha }}
   cancel-in-progress: false
 jobs:
-  freeze:
+  intent:
     if: >-
       github.event.workflow_run.conclusion == 'success' &&
       github.event.workflow_run.head_branch == 'main' &&
       github.event.workflow_run.head_repository.full_name == github.repository &&
       (github.event.workflow_run.event == 'push' || github.event.workflow_run.event == 'workflow_dispatch')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      publish: ${{ steps.authority.outputs.publish }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Resolve authority belonging only to this exact source commit
+        id: authority
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          SOURCE_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: python -B tools/publish_release_v035.py intent --source-commit "$SOURCE_SHA"
+  freeze:
+    needs: intent
+    if: needs.intent.outputs.publish == 'true'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
@@ -103,8 +126,131 @@ jobs:
           assert main['object']['sha']==os.environ['SOURCE_SHA']
           PY
       - uses: actions/upload-artifact@v4
+        id: frozen_artifact
         with:
           name: riskium-v0.3.5-freeze-${{ github.event.workflow_run.head_sha }}
           path: ${{ runner.temp }}/v035-freeze/*
           if-no-files-found: error
           retention-days: 30
+  staged:
+    needs: [intent, freeze]
+    if: needs.intent.outputs.publish == 'true' && needs.freeze.result == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    outputs:
+      artifact_id: ${{ steps.checked.outputs.artifact_id }}
+      artifact_sha256: ${{ steps.checked.outputs.artifact_sha256 }}
+    env:
+      SOURCE_SHA: ${{ github.event.workflow_run.head_sha }}
+      PUBLISH_RUN_ID: ${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Independently download authenticated freeze ZIP and verify every source byte
+        id: checked
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -B tools/publish_release_v035.py stage --source-commit "$SOURCE_SHA" --run-id "$PUBLISH_RUN_ID" --record "$RUNNER_TEMP/v035-staged.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: riskium-v0.3.5-staged-readback-${{ github.event.workflow_run.head_sha }}
+          path: ${{ runner.temp }}/v035-staged.json
+          if-no-files-found: error
+  publish:
+    needs: [intent, freeze, staged]
+    if: needs.intent.outputs.publish == 'true' && needs.staged.result == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: read
+    env:
+      SOURCE_SHA: ${{ github.event.workflow_run.head_sha }}
+      PUBLISH_RUN_ID: ${{ github.run_id }}
+      FREEZE_ARTIFACT_ID: ${{ needs.staged.outputs.artifact_id }}
+      FREEZE_ARTIFACT_SHA256: ${{ needs.staged.outputs.artifact_sha256 }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Create only a new draft, verify its six downloads, then publish stable Latest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -B tools/publish_release_v035.py publish --source-commit "$SOURCE_SHA" --run-id "$PUBLISH_RUN_ID" --artifact-id "$FREEZE_ARTIFACT_ID" --artifact-sha256 "$FREEZE_ARTIFACT_SHA256" --record "$RUNNER_TEMP/v035-attempt.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: riskium-v0.3.5-publication-attempt-${{ github.event.workflow_run.head_sha }}
+          path: ${{ runner.temp }}/v035-attempt.json
+          if-no-files-found: warn
+  verify:
+    needs: [intent, staged, publish]
+    if: needs.publish.result == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      actions: read
+    env:
+      SOURCE_SHA: ${{ github.event.workflow_run.head_sha }}
+      PUBLISH_RUN_ID: ${{ github.run_id }}
+      FREEZE_ARTIFACT_ID: ${{ needs.staged.outputs.artifact_id }}
+      FREEZE_ARTIFACT_SHA256: ${{ needs.staged.outputs.artifact_sha256 }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Freshly download six public assets and verify tag, Latest and all eleven prior releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -B tools/publish_release_v035.py verify --source-commit "$SOURCE_SHA" --run-id "$PUBLISH_RUN_ID" --artifact-id "$FREEZE_ARTIFACT_ID" --artifact-sha256 "$FREEZE_ARTIFACT_SHA256" --record "$RUNNER_TEMP/v035-publication.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: riskium-v0.3.5-public-readback-${{ github.event.workflow_run.head_sha }}
+          path: ${{ runner.temp }}/v035-publication.json
+          if-no-files-found: error
+  retire:
+    needs: [intent, publish, verify]
+    if: needs.verify.result == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: write
+    env:
+      SOURCE_SHA: ${{ github.event.workflow_run.head_sha }}
+      PUBLISH_RUN_ID: ${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Retire only obsolete Latest-v0.3.4 deployment automation after verified publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -B tools/publish_release_v035.py retire --source-commit "$SOURCE_SHA" --run-id "$PUBLISH_RUN_ID" --record "$RUNNER_TEMP/v035-transition.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: riskium-v0.3.5-deployment-transition-${{ github.event.workflow_run.head_sha }}
+          path: ${{ runner.temp }}/v035-transition.json
+          if-no-files-found: error

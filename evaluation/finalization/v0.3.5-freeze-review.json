@@ -2,15 +2,19 @@
   "schema": "riskium-v035-freeze-screen-v1",
   "target": "v0.3.5",
   "stage": "FINALIZATION_DECLARED_NOT_FROZEN",
-  "issue": 58,
+  "issue": 59,
   "parent_issue": 51,
-  "date_local": "2026-10-28",
-  "component_matrix_sha256": "e30e411bbcd8961e3333f2489b694926ee159136154a7d07b237c3864f81136c",
+  "date_local": "2026-10-29",
+  "component_matrix_sha256": "a9d4145e818eba9ad35fdc6de3a7b4e7308b618db59c2e7c014472fc9381db70",
   "release_tooling_sha256": {
-    "tools/release_v035_final.py": "2c648c90e30cbad858b75873b7f3e92b7deb36d65c37847ba6244d1d72790a6a",
+    "tools/release_v035_final.py": "84f42e0bdec195359ad3caafd6bd26ef3ecc979db560428fb93599e8e2e24125",
     "tools/prepare_release_v035_final.py": "2eeee3d04c291a0affee5f5d7d8b6e5f3b8fdc3da4de23ef161d8172c837cd03",
     "tests/test_release_v035_final.py": "6f4818f45454263b589b132f13da97a577aa9a30b35416a7b5c6059ec853be9a",
-    ".github/workflows/final-release-v035.yml": "2e9907bd8ed013439b560e2bca34dfb0007533142e0451e54621f381a3fb7785"
+    ".github/workflows/final-release-v035.yml": "bb1c14ff4b362826c39abe9445c6858059882e2fcb132c2638aec9a674cfca19",
+    "tools/publish_release_v035.py": "90c4873c6a20b7128b26552e80784f9eda752a8f7f72df6e408918fed1051ffd",
+    "tests/test_publish_release_v035.py": "6db27eed35519e131563c33de904a99782a6973cc6959ac92301bad4ca96bae9",
+    "releases/publication-profile-v0.3.5.json": "f20826fddd90977c77087fac1417254ab72b91a68f6eb49935946ed18e6c0278",
+    "releases/publication-request-v0.3.5.json": "dd483d68ce262bf20f561a93e28cd23393a8f8fc26e6c15a4657b4e54cc5443c"
   },
   "required_core_checks": [
     [
@@ -295,7 +299,7 @@
         "releases/successor-profiles.json",
         "releases/stable-request-v0.3.4.json"
       ],
-      "fresh_gate": "Preserve old registries/requests/tools; separate dry-freeze-only namespace and contents/actions read workflow."
+      "fresh_gate": "Preserve old controls; one-shot publication follows verified freeze/staged jobs with isolated permissions."
     },
     {
       "id": "archive-safety",
@@ -311,7 +315,32 @@
       "retained_evidence": [
         "evaluation/releases/v0.3.5-definition/published-baseline.json"
       ],
-      "fresh_gate": "This packet stops at independently downloaded dry freeze; new-only publication and11 previous inventories remain next gates."
+      "fresh_gate": "Independent public six-asset downloads, new tag/Latest and11 prior inventories; legacy deployment retirement follows verification."
+    },
+    {
+      "id": "one-shot-authority",
+      "risk": "A retained publish request or later ordinary push reuses an old approval",
+      "retained_evidence": [
+        "releases/publication-request-v0.3.5.json",
+        "releases/publication-profile-v0.3.5.json"
+      ],
+      "fresh_gate": "Exact request-changing commit, expected parent, permitted delta, current main and successful staged job required."
+    },
+    {
+      "id": "independent-public-download",
+      "risk": "Draft upload or public metadata substituted for real independent asset downloads",
+      "retained_evidence": [
+        "releases/publication-profile-v0.3.5.json"
+      ],
+      "fresh_gate": "Download six draft assets before publish; separate read-only runner downloads six public assets and checks tag/Latest/all11 prior inventories."
+    },
+    {
+      "id": "legacy-deployment-transition",
+      "risk": "Obsolete Latest-v0.3.4 deployment jobs fail after publication",
+      "retained_evidence": [
+        "releases/publication-profile-v0.3.5.json"
+      ],
+      "fresh_gate": "Retire only three declared deployment workflows after verified publication; preserve their files and track new current projection in#60."
     }
   ],
   "limits": [
