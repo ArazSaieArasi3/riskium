@@ -1,0 +1,65 @@
+name: v0.3.6 candidate reader on main
+on:
+  pull_request:
+    paths:
+      - 'documentation/0.4.2/**'
+      - 'tools/publication/assessment_documentation.py'
+      - '.github/workflows/assessment-reader-main.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: riskium-reader-main
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/publication/requirements.txt
+      - name: Check source and build candidate reader
+        run: |
+          python tools/publication/review_assessment_reader.py
+          python -m unittest discover -s tests -p test_assessment_documentation.py -v
+          python tools/publication/assessment_documentation.py --output build/assessment-site --wiki-output build/assessment-wiki --receipt build/assessment-reader.json
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: assessment-main-reader-${{ github.sha }}
+          path: |
+            build/assessment-reader.json
+            build/assessment-wiki/
+          if-no-files-found: error
+      - uses: actions/upload-pages-artifact@v4
+        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
+        with:
+          path: build/assessment-site
+  deploy:
+    needs: build
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Reject stale deployment
+        run: |
+          git fetch --no-tags origin main
+          test "$(git rev-parse HEAD)" = "$(git rev-parse FETCH_HEAD)"
+      - uses: actions/configure-pages@v5
+      - id: deployment
+        uses: actions/deploy-pages@v4
