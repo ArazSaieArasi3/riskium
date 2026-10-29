@@ -1,0 +1,22 @@
+{
+  "schema": "riskium-repository-landing-v1",
+  "landing_revision": "0.4.3",
+  "release": "v0.3.6",
+  "source_commit": "58ff468ec4e8f3500ace6869601a25ea263c3d9f",
+  "scope": "LANDING_ONLY_WIKI_PAGES_PENDING",
+  "tracking_issue": 63,
+  "completion_record": "https://github.com/ArazSaieArasi3/riskium/issues/61#issuecomment-6507087968",
+  "completion_receipt_sha256": "8accb12e931cdbd2bede6608e07d32e97e3436e613141d869e810c500887ef43",
+  "mutable_entrypoint": ".github/README.md",
+  "prior_entrypoint_preserved_at": "documentation/0.4.1/Repository.md",
+  "next_issues": [
+    64,
+    65,
+    66
+  ],
+  "files_sha256": {
+    "documentation/0.4.3/Repository.md": "b1bef92b27f4f01d8b24dc18e201d0230373e128926e911fa1350e73c4608233",
+    "documentation/0.4.3/publication.json": "cc1896acf35ac078308e0f4df8c79ef00485ef828870c5eecd0e81d92c635cdf",
+    "plans/post-v0.3.6.md": "f966ee614412fd2074b560eaaa4d64178acdc97e1c5f7808bfee3405339d531b"
+  }
+}

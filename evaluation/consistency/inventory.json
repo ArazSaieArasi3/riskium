@@ -4,8 +4,8 @@
   "source_files": [
     {
       "path": ".github/README.md",
-      "sha256": "8cf68d6004ea1a57fa09f8e1b5fc7ebc47e4b2bc691ec76a64fb9c314a7994b7",
-      "bytes": 5604
+      "sha256": "b1bef92b27f4f01d8b24dc18e201d0230373e128926e911fa1350e73c4608233",
+      "bytes": 7073
     },
     {
       "path": ".github/workflows/assessment-alignment.yml",
@@ -124,8 +124,8 @@
     },
     {
       "path": ".github/workflows/v036-versioned-suite.yml",
-      "sha256": "1f59cb548bac5ea5903afc6f4d4b9d816cdc86f73374428f7761da07ff75103e",
-      "bytes": 1039
+      "sha256": "c6dcf303a8bc3ab2a2903e5deaaf5aa2da855e6c118366d60f7cb6c96c8ee16f",
+      "bytes": 1112
     },
     {
       "path": ".gitignore",
@@ -1026,6 +1026,21 @@
       "path": "documentation/0.4.2/review-plan.json",
       "sha256": "56b69fb2fcad3672040518f53cb4ce988b935789301e34597939a20d4a239f29",
       "bytes": 5855
+    },
+    {
+      "path": "documentation/0.4.3/Repository.md",
+      "sha256": "b1bef92b27f4f01d8b24dc18e201d0230373e128926e911fa1350e73c4608233",
+      "bytes": 7073
+    },
+    {
+      "path": "documentation/0.4.3/landing.json",
+      "sha256": "3ec9ccf8ff8cd911db4c41c17ae6b7a6c4c84a60b8704385da067ced1beba5c6",
+      "bytes": 941
+    },
+    {
+      "path": "documentation/0.4.3/publication.json",
+      "sha256": "cc1896acf35ac078308e0f4df8c79ef00485ef828870c5eecd0e81d92c635cdf",
+      "bytes": 2946
     },
     {
       "path": "evaluation/README.md",
@@ -3073,6 +3088,11 @@
       "bytes": 6737
     },
     {
+      "path": "plans/post-v0.3.6.md",
+      "sha256": "f966ee614412fd2074b560eaaa4d64178acdc97e1c5f7808bfee3405339d531b",
+      "bytes": 5374
+    },
+    {
       "path": "plans/v0.3.4.md",
       "sha256": "c5bb47035bfe0e38dfc8d8bca03fe94a7242981ad5f10a7bda178a1171122110",
       "bytes": 11439
@@ -4008,6 +4028,11 @@
       "bytes": 4592
     },
     {
+      "path": "tools/publication/review_repository_landing.py",
+      "sha256": "a1c9e32ca3007960c71699481ecbfc2aafb7ac99ee5d1ad25aece2c0753a37bf",
+      "bytes": 5144
+    },
+    {
       "path": "tools/publication/run_widoco.py",
       "sha256": "247f0f0033d5668ce9053b6b29de1896e7b391dbe3246c389b7d61e4b265fd49",
       "bytes": 13418
@@ -4289,8 +4314,8 @@
     },
     {
       "path": "tools/run_v036_versioned_suite.py",
-      "sha256": "11b8f091de29c5ffcc6732b84cf0f4868d9f2011036a2b4a54afe423a9259d3c",
-      "bytes": 4091
+      "sha256": "6e55d24e0fcadb49c439545cae5b32efac765ed7940ce1cf3113891a17dcd4e0",
+      "bytes": 4517
     },
     {
       "path": "tools/select_release_v035.py",

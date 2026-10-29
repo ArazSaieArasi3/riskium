@@ -1,0 +1,77 @@
+{
+  "id": 428331704,
+  "url": "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.6",
+  "source": "58ff468ec4e8f3500ace6869601a25ea263c3d9f",
+  "published_at": "2026-10-29T20:01:51Z",
+  "assets": [
+    {
+      "name": "artifact-versions.json",
+      "id": 689733403,
+      "bytes": 327594,
+      "sha256": "55580ed6c894c001900b33b190f12636191117d752ec892ff9d2302fc16d8003",
+      "http_status": 200,
+      "public_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.6/artifact-versions.json",
+      "matches_authenticated_freeze": true
+    },
+    {
+      "name": "freeze-receipt.json",
+      "id": 689733423,
+      "bytes": 208876,
+      "sha256": "d13211fd0f29ea9263c7b071388431afb214180a7bb6a2500b956ddeb19fe1f0",
+      "http_status": 200,
+      "public_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.6/freeze-receipt.json",
+      "matches_authenticated_freeze": true
+    },
+    {
+      "name": "release-notes.md",
+      "id": 689733430,
+      "bytes": 3287,
+      "sha256": "6ef7e59ba9c324c1c22444d3acd842e9c8ba15d8dae2be2996018ea9c4c21e01",
+      "http_status": 200,
+      "public_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.6/release-notes.md",
+      "matches_authenticated_freeze": true
+    },
+    {
+      "name": "riskium-v0.3.6-source.tar.gz",
+      "id": 689733440,
+      "bytes": 14523364,
+      "sha256": "6a27367fc01856e79becfcd279d8710e5b6813654ce0a72f12b446696ccab13d",
+      "http_status": 200,
+      "public_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.6/riskium-v0.3.6-source.tar.gz",
+      "matches_authenticated_freeze": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "id": 689733381,
+      "bytes": 440,
+      "sha256": "effc3c86e48fa02c48045df2f094626b39cb8a0825497e2ec75e40ec219c5b4c",
+      "http_status": 200,
+      "public_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.6/SHA256SUMS.txt",
+      "matches_authenticated_freeze": true
+    },
+    {
+      "name": "source-manifest.json",
+      "id": 689733490,
+      "bytes": 223138,
+      "sha256": "7a90c6446d259bd6cb4950f697b371d3043da1b7c309acaacb741e60bc410a03",
+      "http_status": 200,
+      "public_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.6/source-manifest.json",
+      "matches_authenticated_freeze": true
+    }
+  ],
+  "phase": "PUBLISHED_PUBLIC_DOWNLOADS_VERIFIED",
+  "verified_at": "2026-10-29T20:02:55.831160+00:00",
+  "no_authorization_header": true,
+  "exactly_six_uploaded_assets": true,
+  "extracted_public_archive_no_git_verifier": {
+    "status": "V036_SIX_ASSET_OFFLINE_PASS",
+    "tag": "v0.3.6",
+    "source_commit": "58ff468ec4e8f3500ace6869601a25ea263c3d9f",
+    "source_files": 1234,
+    "selected_components": 30,
+    "preserved_previous_files": 687,
+    "external_authenticity_required": true,
+    "publication_executed": false
+  },
+  "public_archive_no_git_passed": true
+}

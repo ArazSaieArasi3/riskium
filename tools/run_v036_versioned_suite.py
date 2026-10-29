@@ -1,4 +1,4 @@
-"""Run candidate tests here and the unchanged published-reader suite at its pinned main source."""
+"""Run current tests here and unchanged historical readers at their reviewed sources."""
 import argparse
 import hashlib
 import json
@@ -11,6 +11,10 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 PUBLISHED_READER = '41caeaa78c7a152787d1070540e20ae0c6a2395a'
 HISTORICAL_TEST = 'tests/test_published_documentation.py'
+HISTORICAL_SUITES = (
+    (PUBLISHED_READER, HISTORICAL_TEST, 10),
+    ('58ff468ec4e8f3500ace6869601a25ea263c3d9f', 'tests/test_assessment_documentation.py', 2),
+)
 
 
 def git(*args):
@@ -18,13 +22,16 @@ def git(*args):
 
 
 def historical_identity():
-    source = git('show', PUBLISHED_READER + ':' + HISTORICAL_TEST)
-    current = (ROOT / HISTORICAL_TEST).read_bytes()
-    if source != current:
-        raise ValueError('The historical reader test must remain unchanged')
-    if git('merge-base', PUBLISHED_READER, 'HEAD').decode().strip() != PUBLISHED_READER:
-        raise ValueError('Candidate does not descend from reviewed published reader source')
-    return hashlib.sha256(source).hexdigest()
+    identities = []
+    for commit, path, count in HISTORICAL_SUITES:
+        source = git('show', commit + ':' + path)
+        if source != (ROOT / path).read_bytes():
+            raise ValueError('Historical reader test changed: ' + path)
+        if git('merge-base', commit, 'HEAD').decode().strip() != commit:
+            raise ValueError('Current source does not descend from reviewed reader: ' + commit)
+        identities.append(dict(source=commit, path=path, tests=count,
+                               sha256=hashlib.sha256(source).hexdigest()))
+    return identities
 
 
 def candidate_tests():
@@ -36,33 +43,37 @@ def candidate_tests():
         for item in tests:
             if isinstance(item, unittest.TestSuite):
                 retained.addTests(split(item))
-            elif item.id().startswith('test_published_documentation.'):
+            elif any(item.id().startswith(Path(path).stem + '.') for _, path, _ in HISTORICAL_SUITES):
                 published.append(item.id())
             else:
                 retained.addTest(item)
         return retained
 
     current = split(suite)
-    if len(published) != 10 or len(set(published)) != 10 or current.countTestCases() < 500:
+    expected = sum(count for _, _, count in HISTORICAL_SUITES)
+    if len(published) != expected or len(set(published)) != expected or current.countTestCases() < 500:
         raise ValueError('Lost candidate or historical test during source split')
     return current, published
 
 
 def run_historical():
-    with tempfile.TemporaryDirectory() as tmp:
-        target = Path(tmp) / 'published-source'
-        subprocess.run(['git', 'worktree', 'add', '--detach', str(target), PUBLISHED_READER], cwd=ROOT,
-                       check=True, capture_output=True)
-        try:
-            result = subprocess.run([sys.executable, '-m', 'unittest', 'discover', '-s', 'tests',
-                                     '-p', 'test_published_documentation.py', '-v'], cwd=target,
-                                    capture_output=True, text=True)
-            if result.returncode or 'Ran 10 tests' not in result.stderr or 'OK' not in result.stderr:
-                raise ValueError('Published-source reader suite failed:\n' + result.stdout + result.stderr)
-        finally:
-            subprocess.run(['git', 'worktree', 'remove', '--force', str(target)], cwd=ROOT,
+    total = 0
+    for commit, path, count in HISTORICAL_SUITES:
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / 'reader-source'
+            subprocess.run(['git', 'worktree', 'add', '--detach', str(target), commit], cwd=ROOT,
                            check=True, capture_output=True)
-    return 10
+            try:
+                result = subprocess.run([sys.executable, '-m', 'unittest', 'discover', '-s', 'tests',
+                                         '-p', Path(path).name, '-v'], cwd=target,
+                                        capture_output=True, text=True)
+                if result.returncode or f'Ran {count} tests' not in result.stderr or 'OK' not in result.stderr:
+                    raise ValueError('Historical reader failed at ' + commit + ':\n' + result.stdout + result.stderr)
+            finally:
+                subprocess.run(['git', 'worktree', 'remove', '--force', str(target)], cwd=ROOT,
+                               check=True, capture_output=True)
+        total += count
+    return total
 
 
 def main():
@@ -74,16 +85,15 @@ def main():
     current, old = candidate_tests()
     if args.list:
         print(json.dumps(dict(status='VERSIONED_SUITE_DECLARED', candidate_tests=current.countTestCases(),
-                              historical_tests=len(old), historical_source=PUBLISHED_READER,
-                              historical_test_sha256=digest)))
+                              historical_tests=len(old), historical_suites=digest)))
         return
     historical = run_historical()
     result = unittest.TextTestRunner(verbosity=1).run(current)
     if not result.wasSuccessful() or result.skipped:
         raise ValueError('Candidate suite failed or unexpectedly skipped tests')
     receipt = dict(status='VERSIONED_SUITE_PASS', source_commit=git('rev-parse', 'HEAD').decode().strip(), candidate_tests=result.testsRun,
-                          published_reader_tests=historical, historical_source=PUBLISHED_READER,
-                          historical_test_sha256=digest)
+                          published_reader_tests=10, historical_reader_tests=historical,
+                          historical_suites=digest)
     if args.receipt:
         args.receipt.parent.mkdir(parents=True, exist_ok=True)
         args.receipt.write_text(json.dumps(receipt, indent=2) + '\n')
