@@ -19,8 +19,8 @@
     },
     {
       "path": ".github/workflows/assessment-reader-main.yml",
-      "sha256": "91accf1626ca89e4ae1a441f92fa9de4adfcfcaabff0e82e03b74155eeab98ce",
-      "bytes": 3477
+      "sha256": "ec512ee55ac589ca2e45907ca6091198e9f27b70d95e82f50bb7ddb3a7538eaa",
+      "bytes": 4561
     },
     {
       "path": ".github/workflows/assessment-reader-projection.yml",

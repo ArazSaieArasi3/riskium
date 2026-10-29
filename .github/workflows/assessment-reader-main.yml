@@ -86,3 +86,29 @@ jobs:
       - uses: actions/configure-pages@v5
       - id: deployment
         uses: actions/deploy-pages@v4
+  readback:
+    needs: deploy
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/publication/requirements.txt
+      - name: Independently download Wiki and all served Pages bytes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git clone https://github.com/ArazSaieArasi3/riskium.wiki.git build/actual-wiki
+          python tools/publication/assessment_documentation.py --live-release --verify-channels build/actual-wiki --receipt build/actual-reader-channels.json
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: assessment-actual-channels-${{ github.event.workflow_run.head_sha || github.sha }}
+          path: build/actual-reader-channels.json
+          if-no-files-found: error
