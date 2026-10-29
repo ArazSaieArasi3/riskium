@@ -1,0 +1,282 @@
+{
+  "schema": "riskium-assessment-selection-trace-v1",
+  "rows": [
+    {
+      "id": "ASL-01",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-11"
+      ],
+      "database_requirements": [
+        "DBR-05",
+        "DBR-11"
+      ],
+      "clauses": [
+        "C-03"
+      ],
+      "fixed_controls": [
+        "ASL-F01",
+        "ASL-F02",
+        "ASL-F03"
+      ],
+      "reader_criteria": [],
+      "runtime_evidence": "report.json#/controls",
+      "reader_status": "PENDING_R4",
+      "manuscript_disposition": "NOT_CLAIMED_IN_PAPER"
+    },
+    {
+      "id": "ASL-02",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "database_requirements": [
+        "DBR-05",
+        "DBR-07"
+      ],
+      "clauses": [
+        "C-03",
+        "C-17"
+      ],
+      "fixed_controls": [
+        "ASL-F04",
+        "ASL-F17",
+        "ASL-F33"
+      ],
+      "reader_criteria": [],
+      "runtime_evidence": "report.json#/controls",
+      "reader_status": "PENDING_R4",
+      "manuscript_disposition": "NOT_CLAIMED_IN_PAPER"
+    },
+    {
+      "id": "ASL-03",
+      "source_requirements": [
+        "RKRS-04",
+        "RKRS-06"
+      ],
+      "database_requirements": [
+        "DBR-04",
+        "DBR-18"
+      ],
+      "clauses": [
+        "C-04",
+        "C-17",
+        "C-18"
+      ],
+      "fixed_controls": [
+        "ASL-F04",
+        "ASL-F05",
+        "ASL-F06",
+        "ASL-F07",
+        "ASL-F08",
+        "ASL-F09",
+        "ASL-F17",
+        "ASL-F18",
+        "ASL-F19",
+        "ASL-F20",
+        "ASL-F21",
+        "ASL-F22",
+        "ASL-F24",
+        "ASL-F27",
+        "ASL-F29",
+        "ASL-F40"
+      ],
+      "reader_criteria": [],
+      "runtime_evidence": "report.json#/controls",
+      "reader_status": "PENDING_R4",
+      "manuscript_disposition": "NOT_CLAIMED_IN_PAPER"
+    },
+    {
+      "id": "ASL-04",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "database_requirements": [
+        "DBR-05",
+        "DBR-07"
+      ],
+      "clauses": [
+        "C-03",
+        "C-17"
+      ],
+      "fixed_controls": [
+        "ASL-F10",
+        "ASL-F11",
+        "ASL-F12",
+        "ASL-F13",
+        "ASL-F14",
+        "ASL-F15",
+        "ASL-F16",
+        "ASL-F43",
+        "ASL-F44"
+      ],
+      "reader_criteria": [],
+      "runtime_evidence": "report.json#/controls",
+      "reader_status": "PENDING_R4",
+      "manuscript_disposition": "NOT_CLAIMED_IN_PAPER"
+    },
+    {
+      "id": "ASL-05",
+      "source_requirements": [
+        "RKRS-06",
+        "RKRS-11"
+      ],
+      "database_requirements": [
+        "DBR-07",
+        "DBR-18"
+      ],
+      "clauses": [
+        "C-12",
+        "C-16",
+        "C-17"
+      ],
+      "fixed_controls": [
+        "ASL-F22",
+        "ASL-F23",
+        "ASL-F25",
+        "ASL-F26",
+        "ASL-F28"
+      ],
+      "reader_criteria": [],
+      "runtime_evidence": "report.json#/controls",
+      "reader_status": "PENDING_R4",
+      "manuscript_disposition": "NOT_CLAIMED_IN_PAPER"
+    },
+    {
+      "id": "ASL-06",
+      "source_requirements": [
+        "RKRS-04",
+        "RKRS-11"
+      ],
+      "database_requirements": [
+        "DBR-04",
+        "DBR-18"
+      ],
+      "clauses": [
+        "C-16",
+        "C-18",
+        "C-25"
+      ],
+      "fixed_controls": [
+        "ASL-F09",
+        "ASL-F29",
+        "ASL-F30",
+        "ASL-F31",
+        "ASL-F40"
+      ],
+      "reader_criteria": [],
+      "runtime_evidence": "report.json#/controls",
+      "reader_status": "PENDING_R4",
+      "manuscript_disposition": "NOT_CLAIMED_IN_PAPER"
+    },
+    {
+      "id": "ASL-07",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-11"
+      ],
+      "database_requirements": [
+        "DBR-05",
+        "DBR-11",
+        "DBR-22"
+      ],
+      "clauses": [
+        "C-03"
+      ],
+      "fixed_controls": [
+        "ASL-F03",
+        "ASL-F18",
+        "ASL-F19",
+        "ASL-F20",
+        "ASL-F21",
+        "ASL-F26",
+        "ASL-F27",
+        "ASL-F34",
+        "ASL-F35",
+        "ASL-F36",
+        "ASL-F37",
+        "ASL-F38",
+        "ASL-F39",
+        "ASL-F41"
+      ],
+      "reader_criteria": [],
+      "runtime_evidence": "report.json#/controls",
+      "reader_status": "PENDING_R4",
+      "manuscript_disposition": "NOT_CLAIMED_IN_PAPER"
+    },
+    {
+      "id": "ASL-08",
+      "source_requirements": [
+        "RKRS-06",
+        "RKRS-09"
+      ],
+      "database_requirements": [
+        "DBR-03",
+        "DBR-07"
+      ],
+      "clauses": [
+        "C-12",
+        "C-14"
+      ],
+      "fixed_controls": [
+        "ASL-F32",
+        "ASL-F33"
+      ],
+      "reader_criteria": [],
+      "runtime_evidence": "report.json#/controls",
+      "reader_status": "PENDING_R4",
+      "manuscript_disposition": "NOT_CLAIMED_IN_PAPER"
+    },
+    {
+      "id": "ASL-09",
+      "source_requirements": [
+        "RKRS-11",
+        "RKRS-12"
+      ],
+      "database_requirements": [
+        "DBR-01",
+        "DBR-23",
+        "DBR-24"
+      ],
+      "clauses": [
+        "C-16"
+      ],
+      "fixed_controls": [
+        "ASL-F40",
+        "ASL-F41",
+        "ASL-F42"
+      ],
+      "reader_criteria": [],
+      "runtime_evidence": "report.json#/controls",
+      "reader_status": "PENDING_R4",
+      "manuscript_disposition": "NOT_CLAIMED_IN_PAPER"
+    },
+    {
+      "id": "ASL-10",
+      "source_requirements": [
+        "RKRS-12"
+      ],
+      "database_requirements": [
+        "DBR-14",
+        "DBR-18",
+        "DBR-23"
+      ],
+      "clauses": [],
+      "fixed_controls": [],
+      "reader_criteria": [
+        "ASL-Q01",
+        "ASL-Q02",
+        "ASL-Q03",
+        "ASL-Q04",
+        "ASL-Q05",
+        "ASL-Q06"
+      ],
+      "runtime_evidence": "report.json#/controls",
+      "reader_status": "PENDING_R4",
+      "manuscript_disposition": "NOT_CLAIMED_IN_PAPER"
+    }
+  ],
+  "full_current_trace_overlay": "PENDING_R3",
+  "original_dispositions_changed": false
+}
