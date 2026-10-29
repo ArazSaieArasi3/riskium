@@ -1,0 +1,97 @@
+{
+  "schema": "riskium-risk-nature-prior-population-v1",
+  "scope": "ACTUAL_EXISTING_SCHEMA9_BASELINE_ONLY_NO_NEW_RUNTIME",
+  "source_commit": "765cb4507d925037cf82c1dc42bdea0a52bf9dca",
+  "loader": {
+    "module": "tools/run_assessment_selection.py",
+    "calls": [
+      "fresh()",
+      "timeline(db, through=6)",
+      "relational_assessment_selection.health(db)"
+    ]
+  },
+  "schema_version": 9,
+  "table_counts": {
+    "artifact_typing": 21,
+    "assessment_correction": 4,
+    "assessment_selection_event": 6,
+    "assessment_snapshot": 11,
+    "draft_dependency": 0,
+    "evidence_lifecycle_event": 4,
+    "evidence_reference_type": 3,
+    "evidence_snapshot": 7,
+    "evidence_target": 8,
+    "identity_registry": 100,
+    "information_artifact": 40,
+    "knowledge_case": 11,
+    "knowledge_context": 3,
+    "knowledge_correction": 5,
+    "knowledge_snapshot": 10,
+    "knowledge_type": 4,
+    "method_scope": 1,
+    "register_entry": 3,
+    "result_snapshot": 12,
+    "risk_case": 2,
+    "scale_level": 2,
+    "scale_snapshot": 2,
+    "schema_migration": 9,
+    "source_record": 25,
+    "sqlite_sequence": 2,
+    "version_dependency": 3,
+    "version_snapshot": 58,
+    "working_draft": 0
+  },
+  "logical_state_sha256": "b3da35112d8fc24de2461b1cbec5ed58a325e4e4650c5e8645a8b7d4420e03f4",
+  "native_views": {
+    "v_assessment_quads": {
+      "rows": 515,
+      "sha256": "0a2d9b6c08b353d80861dcfdaca7ae0d446bd68cea3affa5d5e17e517dbf95c8"
+    },
+    "v_evidence_quads": {
+      "rows": 82,
+      "sha256": "df5353fb94472dba9a5ae20f8b520ac60c5780777df8ccad794a7d20582b4134"
+    },
+    "v_knowledge_quads": {
+      "rows": 77,
+      "sha256": "afe835cc0d43f4c84c97e77242564b800a28673153dd030c6b6664239128ea68"
+    },
+    "v_native_facts": {
+      "rows": 178,
+      "sha256": "15f4b42b3f8d2de4d66dcd3277a5a60d31ce23c7d4238fdfe4ec3474831685ab"
+    }
+  },
+  "literal_query_rows": {
+    "X@1": {
+      "state": "SELECTED",
+      "assessment_version": "A-v1",
+      "result_bundle": "exact owned bundle: A-v1",
+      "automatic_comparability": false
+    },
+    "X@2": {
+      "state": "SELECTED",
+      "assessment_version": "A-v2",
+      "result_bundle": "exact owned bundle: A-v2",
+      "automatic_comparability": false
+    },
+    "X@4": {
+      "state": "WITHDRAWN",
+      "assessment_version": null,
+      "results": []
+    },
+    "X@6": {
+      "state": "NO_SELECTION",
+      "assessment_version": null,
+      "results": []
+    },
+    "Y@6": {
+      "state": "SELECTED",
+      "assessment_version": "A-v3",
+      "result_bundle": "exact owned bundle: A-v3",
+      "automatic_comparability": false
+    }
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "sqlite": "3.53.1"
+  }
+}

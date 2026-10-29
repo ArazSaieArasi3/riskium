@@ -1,0 +1,1178 @@
+{
+  "schema": "riskium-risk-nature-fixed-controls-v1",
+  "version": "0.9.0",
+  "status": "DECLARED_NOT_EXECUTED",
+  "declared_before_runtime_implementation": true,
+  "controls": 60,
+  "observed_runtime_results": 0,
+  "independent_semantic_ratings": 0,
+  "baseline": "prior-population.json",
+  "input": "execution-fixture.json",
+  "query_oracles": "query-oracles.json",
+  "native_oracles": "native-oracles.trig",
+  "cases": [
+    {
+      "id": "NRA-F01",
+      "title": "Populated schema-9 upgrade",
+      "category": "migration",
+      "requirements": [
+        "NRA-07"
+      ],
+      "setup": "prior-population.json exact loader and timeline",
+      "operation": "migrate to schema 10",
+      "expected": {
+        "schema_version": 10,
+        "old_rows_payloads_ledgers_and_named_graphs_equal": true,
+        "old_schema_objects_unchanged": true,
+        "invented_native_or_backfilled_rows": 0
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F02",
+      "title": "Repeat migration",
+      "category": "migration",
+      "requirements": [
+        "NRA-07"
+      ],
+      "setup": "verified populated schema 10 before new writes",
+      "operation": "migrate again",
+      "expected": {
+        "outcome": "ALREADY_CURRENT",
+        "exact_state_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F03",
+      "title": "Failed upgrade",
+      "category": "migration",
+      "requirements": [
+        "NRA-07"
+      ],
+      "setup": "verified populated schema 9",
+      "operation": "inject INSERT INTO absent_nature_table at end of migration 10",
+      "expected": {
+        "rejected": true,
+        "exact_state_equal": true,
+        "schema_version": 9
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F04",
+      "title": "Global identity families",
+      "category": "identity",
+      "requirements": [
+        "NRA-01",
+        "NRA-07"
+      ],
+      "setup": "fresh new fixture identities",
+      "operation": "attempt case/artifact/version ID collision for each of the three families",
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-IDENTITY",
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F05",
+      "title": "Duplicate labels retain distinct cases",
+      "category": "query",
+      "requirements": [
+        "NRA-01",
+        "NRA-08"
+      ],
+      "setup": "complete initial fixture",
+      "operation": {
+        "by_case": "urn:riskium:nature37:case-2"
+      },
+      "expected": {
+        "version_ids": [
+          "urn:riskium:nature37:C-v1"
+        ],
+        "other_equal_label_case_included": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F06",
+      "title": "Same term code and label in distinct schemes",
+      "category": "identity",
+      "requirements": [
+        "NRA-01",
+        "NRA-05"
+      ],
+      "setup": "complete initial fixture",
+      "operation": "get A-v1 and B-v1",
+      "expected": {
+        "terms": [
+          "urn:riskium:nature37:negative",
+          "urn:riskium:nature37:other-negative"
+        ],
+        "schemes": [
+          "urn:riskium:nature37:scheme-I",
+          "urn:riskium:nature37:scheme-II"
+        ],
+        "code": "NEG",
+        "label": "Unfavorable",
+        "merged": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F07",
+      "title": "Bare label is not a nature term",
+      "category": "negative",
+      "requirements": [
+        "NRA-01"
+      ],
+      "setup": "copy A-v4 bundle with term_version_id=\"Unfavorable\"",
+      "operation": "issue bundle",
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-TERM_VERSION",
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F08",
+      "title": "Only issued nature-term versions",
+      "category": "negative",
+      "requirements": [
+        "NRA-01",
+        "NRA-02"
+      ],
+      "setup": "copy A-v4; replace term_version_id with missing, draft, objective-v1 or scheme-I-v1",
+      "operation": "issue each variant",
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-TERM_VERSION",
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F09",
+      "title": "Duplicate immutable identities and versions",
+      "category": "negative",
+      "requirements": [
+        "NRA-01",
+        "NRA-03",
+        "NRA-07"
+      ],
+      "setup": "complete initial fixture",
+      "operation": "SQL INSERT OR IGNORE/REPLACE duplicate membership, support snapshot, assertion snapshot, entry link and correction; API duplicate issue",
+      "expected": {
+        "each_variant_rejected": true,
+        "exact_state_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F10",
+      "title": "Original exact retrieval",
+      "category": "query",
+      "requirements": [
+        "NRA-02",
+        "NRA-03",
+        "NRA-08"
+      ],
+      "setup": "complete initial fixture",
+      "operation": {
+        "get": "urn:riskium:nature37:A-v1"
+      },
+      "expected": {
+        "exact_row_ref": "query-oracles.json#/get/urn:riskium:nature37:A-v1"
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F11",
+      "title": "Correction has its own context and objective version",
+      "category": "query",
+      "requirements": [
+        "NRA-02",
+        "NRA-05",
+        "NRA-08"
+      ],
+      "setup": "complete initial fixture",
+      "operation": {
+        "get": "urn:riskium:nature37:A-v2"
+      },
+      "expected": {
+        "exact_row_ref": "query-oracles.json#/get/urn:riskium:nature37:A-v2"
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F12",
+      "title": "Alternative correction retains old context",
+      "category": "query",
+      "requirements": [
+        "NRA-02",
+        "NRA-03",
+        "NRA-05"
+      ],
+      "setup": "complete initial fixture",
+      "operation": {
+        "get": "urn:riskium:nature37:A-v3"
+      },
+      "expected": {
+        "exact_row_ref": "query-oracles.json#/get/urn:riskium:nature37:A-v3"
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F13",
+      "title": "Plain later issue is not a correction",
+      "category": "history",
+      "requirements": [
+        "NRA-02",
+        "NRA-05"
+      ],
+      "setup": "initial fixture then later_unlinked_bundle",
+      "operation": "family A-v1 and get A-v1",
+      "expected": {
+        "family_ref": "query-oracles.json#/family/urn:riskium:nature37:A-v1",
+        "get_ref": "query-oracles.json#/get/urn:riskium:nature37:A-v1",
+        "A_v4_in_family": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F14",
+      "title": "Exact optional context pin",
+      "category": "negative",
+      "requirements": [
+        "NRA-02",
+        "NRA-04"
+      ],
+      "setup": "copy A-v4; context version is missing, draft or term; separately issue a new context with a non-context artifact owner",
+      "operation": "issue each malformed pin/owner variant",
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CONTEXT_VERSION",
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F15",
+      "title": "Context-owned objective pin validation",
+      "category": "negative",
+      "requirements": [
+        "NRA-02",
+        "NRA-04"
+      ],
+      "setup": "new context version with objective version missing, draft, term, repeated, or two competing versions of one objective artifact",
+      "operation": "issue each malformed context",
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-OBJECTIVE_VERSION",
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F16",
+      "title": "Pinned term and scheme versions survive revision",
+      "category": "query",
+      "requirements": [
+        "NRA-01",
+        "NRA-02"
+      ],
+      "setup": "initial fixture then later_unlinked_bundle",
+      "operation": "get A-v2 and A-v4",
+      "expected": {
+        "A_v2": [
+          "urn:riskium:nature37:positive-v1",
+          "urn:riskium:nature37:scheme-I-v1"
+        ],
+        "A_v4": [
+          "urn:riskium:nature37:positive-v2",
+          "urn:riskium:nature37:scheme-I-v2"
+        ],
+        "earlier_row_ref": "query-oracles.json#/get/urn:riskium:nature37:A-v2"
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F17",
+      "title": "No late objective attachment to an issued context",
+      "category": "negative",
+      "requirements": [
+        "NRA-02",
+        "NRA-03"
+      ],
+      "setup": "context-v1 issued with objective-v1",
+      "operation": "insert/update/delete/replace objective bindings or context payload after issuance",
+      "expected": {
+        "each_variant_rejected": true,
+        "exact_state_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F18",
+      "title": "Original sources and declaration provenance stay separate",
+      "category": "provenance",
+      "requirements": [
+        "NRA-03",
+        "NRA-05"
+      ],
+      "setup": "complete initial fixture",
+      "operation": "get A-v2 including all source rows and its correction declaration",
+      "expected": {
+        "assertion_source": "urn:riskium:nature37:source-A-correction",
+        "term_source": "urn:riskium:nature37:source-vocabulary",
+        "context_source": "urn:riskium:nature37:source-context",
+        "objective_source": "urn:riskium:nature37:source-objective",
+        "correction_source": "urn:riskium:nature37:source-correction",
+        "exact_original_json_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F19",
+      "title": "Required provenance",
+      "category": "negative",
+      "requirements": [
+        "NRA-03"
+      ],
+      "setup": "copies of later bundle or correction: missing/nonexistent source; null/empty/whitespace locator, interpretation origin, narrative, actor or reason where required",
+      "operation": "issue or declare each applicable variant",
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F20",
+      "title": "Issued content and links are immutable",
+      "category": "negative",
+      "requirements": [
+        "NRA-02",
+        "NRA-03",
+        "NRA-07"
+      ],
+      "setup": "complete initial fixture",
+      "operation": "SQL/API update/delete snapshot/payload/source/term/context/objective/entry/correction, including same-value UPDATE",
+      "expected": {
+        "each_variant_rejected": true,
+        "exact_state_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F21",
+      "title": "Source bytes cannot be replaced",
+      "category": "negative",
+      "requirements": [
+        "NRA-03",
+        "NRA-07"
+      ],
+      "setup": "source-A exists",
+      "operation": "UPDATE/DELETE or INSERT OR REPLACE/IGNORE that source record",
+      "expected": {
+        "each_variant_rejected": true,
+        "exact_state_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F22",
+      "title": "Canonical times and dependency order",
+      "category": "negative",
+      "requirements": [
+        "NRA-02",
+        "NRA-03",
+        "NRA-07"
+      ],
+      "setup": "copies of later bundle and correction",
+      "operation": "invalid calendar, timezone offset, blank timestamp, owner before dependency, or correction before either endpoint",
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-TIME",
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F23",
+      "title": "Missing case stays raw",
+      "category": "staging",
+      "requirements": [
+        "NRA-01",
+        "NRA-04"
+      ],
+      "setup": "raw-incomplete source is retained, proposed case absent",
+      "operation": "attempt issue without justified case",
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CASE",
+        "raw_source_retained": true,
+        "fabricated_cases": 0,
+        "partial_managed_rows": 0
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F24",
+      "title": "Missing nature stays raw",
+      "category": "staging",
+      "requirements": [
+        "NRA-01",
+        "NRA-04"
+      ],
+      "setup": "raw-incomplete source is retained, no nature term",
+      "operation": "attempt issue with term_version_id null",
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-TERM_VERSION",
+        "raw_source_retained": true,
+        "synthesized_terms": 0,
+        "partial_managed_rows": 0
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F25",
+      "title": "Context unknown remains null",
+      "category": "query",
+      "requirements": [
+        "NRA-02",
+        "NRA-04",
+        "NRA-08"
+      ],
+      "setup": "complete initial fixture",
+      "operation": {
+        "get": "urn:riskium:nature37:U-v1"
+      },
+      "expected": {
+        "exact_row_ref": "query-oracles.json#/get/urn:riskium:nature37:U-v1"
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F26",
+      "title": "Context without objective is not analytically ready",
+      "category": "query",
+      "requirements": [
+        "NRA-02",
+        "NRA-04",
+        "NRA-08"
+      ],
+      "setup": "complete initial fixture",
+      "operation": {
+        "get": "urn:riskium:nature37:Z-v1"
+      },
+      "expected": {
+        "exact_row_ref": "query-oracles.json#/get/urn:riskium:nature37:Z-v1"
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F27",
+      "title": "Unknown does not become a value",
+      "category": "staging",
+      "requirements": [
+        "NRA-04",
+        "NRA-06"
+      ],
+      "setup": "raw-incomplete plus U-v1 and Z-v1",
+      "operation": "inspect raw text and exact managed rows/graphs",
+      "expected": {
+        "raw_text": "Possibly unfavorable",
+        "native_unknown_terms": 0,
+        "fabricated_objectives": 0,
+        "numeric_defaults": 0,
+        "ready_rows": [
+          false,
+          false
+        ]
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F28",
+      "title": "Two correction branches",
+      "category": "history",
+      "requirements": [
+        "NRA-05",
+        "NRA-08"
+      ],
+      "setup": "complete initial fixture",
+      "operation": {
+        "family": "urn:riskium:nature37:A-v1"
+      },
+      "expected": {
+        "exact_rows_ref": "query-oracles.json#/family/urn:riskium:nature37:A-v1",
+        "independent_corroboration": "NOT_ASSESSED"
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F29",
+      "title": "Cross-assertion correction",
+      "category": "negative",
+      "requirements": [
+        "NRA-05"
+      ],
+      "setup": "B-v1 is another artifact",
+      "operation": "declare A-v2 correcting B-v1 in fresh variant without prior correction",
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CORRECTION",
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F30",
+      "title": "No self edge or cycle",
+      "category": "negative",
+      "requirements": [
+        "NRA-05",
+        "NRA-07"
+      ],
+      "setup": "complete initial fixture",
+      "operation": "self correction; or attempt A-v1 correcting descendant A-v2",
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CORRECTION",
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F31",
+      "title": "Correction requires issued endpoints",
+      "category": "negative",
+      "requirements": [
+        "NRA-05"
+      ],
+      "setup": "draft and missing prior/corrected versions in disposable variants",
+      "operation": "declare correction for each missing/unissued endpoint",
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CORRECTION",
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F32",
+      "title": "One predecessor per corrected version",
+      "category": "negative",
+      "requirements": [
+        "NRA-05"
+      ],
+      "setup": "A-v2 already corrects A-v1",
+      "operation": "declare second predecessor for A-v2, including duplicate INSERT OR IGNORE/REPLACE",
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CORRECTION",
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F33",
+      "title": "Correction attribution is mandatory",
+      "category": "negative",
+      "requirements": [
+        "NRA-03",
+        "NRA-05"
+      ],
+      "setup": "copies of a not-yet-recorded correction",
+      "operation": "null/blank actor, reason, locator, origin or nonexistent declaration source",
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F34",
+      "title": "Correction is application metadata",
+      "category": "native",
+      "requirements": [
+        "NRA-05",
+        "NRA-06"
+      ],
+      "setup": "complete initial fixture",
+      "operation": "inspect all eight declared native graphs, family envelope and correction rows",
+      "expected": {
+        "native_correction_triples": 0,
+        "automatic_selection": false,
+        "independent_corroboration": "NOT_ASSESSED",
+        "factual_correctness": "NOT_ASSESSED"
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F35",
+      "title": "Failed corrected issue rolls back entire bundle",
+      "category": "transaction",
+      "requirements": [
+        "NRA-05",
+        "NRA-07"
+      ],
+      "setup": "later bundle with a new version and all recording revisions plus invalid cross-artifact correction",
+      "operation": "atomic issue bundle with correction",
+      "expected": {
+        "rejected": true,
+        "all_preoperation_state_preserved": true,
+        "partial_identities_versions_entry_links_or_edges": 0
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F36",
+      "title": "Family root is explicit",
+      "category": "query",
+      "requirements": [
+        "NRA-05",
+        "NRA-08"
+      ],
+      "setup": "complete initial fixture",
+      "operation": {
+        "family": "urn:riskium:nature37:A-v2"
+      },
+      "expected": {
+        "exact_rows_ref": "query-oracles.json#/family/urn:riskium:nature37:A-v2"
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F37",
+      "title": "Literal original named graph",
+      "category": "native",
+      "requirements": [
+        "NRA-02",
+        "NRA-06"
+      ],
+      "setup": "complete initial fixture",
+      "operation": {
+        "native_graph": "urn:riskium:nature37:A-v1"
+      },
+      "expected": {
+        "graph_ref": "native-oracles.trig#urn:riskium:nature37:A-v1",
+        "rdf_rows_ref": "query-oracles.json#/rdf_rows/urn:riskium:nature37:A-v1",
+        "exact_triples_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F38",
+      "title": "Literal alternative version graphs",
+      "category": "native",
+      "requirements": [
+        "NRA-02",
+        "NRA-05",
+        "NRA-06"
+      ],
+      "setup": "complete initial fixture",
+      "operation": "native_graph A-v2 and A-v3",
+      "expected": {
+        "graph_ids": [
+          "urn:riskium:nature37:A-v2",
+          "urn:riskium:nature37:A-v3"
+        ],
+        "exact_triples_equal": true,
+        "expected_dataset": "native-oracles.trig"
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F39",
+      "title": "Literal competing, duplicate-case and incomplete graphs",
+      "category": "native",
+      "requirements": [
+        "NRA-01",
+        "NRA-04",
+        "NRA-06"
+      ],
+      "setup": "complete initial fixture",
+      "operation": "native_graph B-v1 C-v1 U-v1 Z-v1",
+      "expected": {
+        "graph_ids": [
+          "urn:riskium:nature37:B-v1",
+          "urn:riskium:nature37:C-v1",
+          "urn:riskium:nature37:U-v1",
+          "urn:riskium:nature37:Z-v1"
+        ],
+        "exact_triples_equal": true,
+        "expected_dataset": "native-oracles.trig"
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F40",
+      "title": "SQL/RDF answers normalize to fixed literal rows",
+      "category": "native",
+      "requirements": [
+        "NRA-06",
+        "NRA-08"
+      ],
+      "setup": "initial fixture then later_unlinked_bundle",
+      "operation": "run native-query.rq separately in every explicit graph and normalize the SQL exact-version pins to its declared columns",
+      "expected": {
+        "expected_rows": "query-oracles.json#/rdf_rows",
+        "graphs": 8,
+        "historical_union": false,
+        "comparison_passes": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F41",
+      "title": "No extra native meanings",
+      "category": "native",
+      "requirements": [
+        "NRA-04",
+        "NRA-06"
+      ],
+      "setup": "all native outputs including later bundle",
+      "operation": "check predicate allowlist, subject types and forbidden implications",
+      "expected": {
+        "new_native_ids": 0,
+        "C005_typed_versions": 0,
+        "direct_assertion_objective_or_usesContextVersion": 0,
+        "occurrences": 0,
+        "owl_sameAs": 0,
+        "source_records_as_RiskSource": 0
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F42",
+      "title": "Old and earlier new graphs are preserved",
+      "category": "preservation",
+      "requirements": [
+        "NRA-02",
+        "NRA-06",
+        "NRA-07"
+      ],
+      "setup": "take old views and initial seven nature graphs before later issue",
+      "operation": "issue later_unlinked_bundle",
+      "expected": {
+        "old_named_graphs_equal": true,
+        "prior_nature_graphs_equal": true,
+        "earlier_base_native_facts_retained": true,
+        "new_graph_ref": "native-oracles.trig#urn:riskium:nature37:A-v4"
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F43",
+      "title": "Recording revision owns its binding",
+      "category": "negative",
+      "requirements": [
+        "NRA-02",
+        "NRA-06",
+        "NRA-07"
+      ],
+      "setup": "copies of later bundle",
+      "operation": "no recording revision; wrong-case entry; unissued/missing previous entry revision; retrofit link/payload onto an already-issued entry or nature version",
+      "expected": {
+        "each_variant_rejected": true,
+        "exact_state_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F44",
+      "title": "Old exact-schema reader fails closed",
+      "category": "compatibility",
+      "requirements": [
+        "NRA-07"
+      ],
+      "setup": "populated schema 10",
+      "operation": "call original relational_assessment_selection.health without modifying that reader",
+      "expected": {
+        "rejected": true,
+        "reader_source_unchanged": true,
+        "schema_version": 10
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F45",
+      "title": "Schema, ledger and configured-connection health",
+      "category": "assurance",
+      "requirements": [
+        "NRA-07"
+      ],
+      "setup": "separate disposable schema-9 or schema-10 copies",
+      "operation": "alter trigger/schema/migration hash; disable foreign_keys or recursive_triggers; insert invalid old data; request unsupported schema",
+      "expected": {
+        "each_variant_rejected": true,
+        "honest_schema_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F46",
+      "title": "SQL bypass sensitivity",
+      "category": "assurance",
+      "requirements": [
+        "NRA-07",
+        "NRA-09"
+      ],
+      "setup": "normal database and disposable copy with one new semantic guard removed",
+      "operation": "attempt forbidden same-issued-version pin substitution through SQL",
+      "expected": {
+        "normal_write_rejected": true,
+        "mutant_forbidden_write_observed": true,
+        "semantic_audit_rejects_mutant": true,
+        "normal_state_unchanged": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F47",
+      "title": "Caller-owned transaction",
+      "category": "transaction",
+      "requirements": [
+        "NRA-07"
+      ],
+      "setup": "BEGIN; insert caller marker source",
+      "operation": "successful inner nature write followed by failing inner write inside one savepoint; then caller rollback",
+      "expected": {
+        "caller_marker_retained_after_inner_failure": true,
+        "no_partial_inner_writes": true,
+        "caller_can_rollback": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F48",
+      "title": "Backup, actual close and reopen",
+      "category": "recovery",
+      "requirements": [
+        "NRA-07"
+      ],
+      "setup": "initial fixture then later bundle and both correction branches",
+      "operation": "backup to file, close all handles, reopen through schema-10 reader",
+      "expected": {
+        "exact_logical_state_equal": true,
+        "all_literal_query_and_graph_answers_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F49",
+      "title": "Logical restoration with trusted external digest",
+      "category": "recovery",
+      "requirements": [
+        "NRA-03",
+        "NRA-07"
+      ],
+      "setup": "complete populated schema 10; retain trusted logical-state digest separately",
+      "operation": "restore valid dump; separately tamper source, context pin or correction and retry with original digest; reject external ATTACH statements",
+      "expected": {
+        "valid_restore_equal": true,
+        "each_tampered_restore_rejected_atomically": true,
+        "external_database_statements_rejected": true,
+        "exact_literal_answers_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F50",
+      "title": "Two configured connections",
+      "category": "transaction",
+      "requirements": [
+        "NRA-07"
+      ],
+      "setup": "temporary file; declared journal/busy policy",
+      "operation": "hold a writer transaction containing a complete bundle, read from another connection, attempt second writer then explicitly retry after first commit",
+      "expected": {
+        "uncommitted_rows_visible": false,
+        "half_bundle_visible": false,
+        "writer_conflict_observed": true,
+        "explicit_retry_succeeds_once": true,
+        "postcommit_literal_answer_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F51",
+      "title": "Measured bounded query workload",
+      "category": "assurance",
+      "requirements": [
+        "NRA-07",
+        "NRA-08"
+      ],
+      "setup": "seed 17: 200 copies, seed 29: 400 copies; one distinct assertion and recording revision per copy; round-robin four case IDs; template A-v1 dependencies",
+      "operation": "record construction digest, sizes, 5 warmups, 31 repetitions, median/p95 and EXPLAIN QUERY PLAN for case/exact-version/family queries",
+      "expected": {
+        "case_row_counts_seed17": [
+          50,
+          50,
+          50,
+          50
+        ],
+        "case_row_counts_seed29": [
+          100,
+          100,
+          100,
+          100
+        ],
+        "duplicates_or_cross_case_leaks": 0,
+        "query_and_index_rationale_recorded": true,
+        "production_SLO_claimed": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F52",
+      "title": "Unknown and known-empty queries differ",
+      "category": "query",
+      "requirements": [
+        "NRA-04",
+        "NRA-08"
+      ],
+      "setup": "complete initial fixture",
+      "operation": "get missing version; family missing version; by_case missing case; by_case case-empty",
+      "expected": {
+        "unknown_version": "NRA-UNKNOWN_VERSION",
+        "unknown_family": "NRA-UNKNOWN_VERSION",
+        "unknown_case": "NRA-UNKNOWN_CASE",
+        "known_empty": []
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F53",
+      "title": "Bound query parameters",
+      "category": "negative",
+      "requirements": [
+        "NRA-07",
+        "NRA-08"
+      ],
+      "setup": "complete initial fixture",
+      "operation": "get and by_case with literal ID \"'; DROP TABLE nature_snapshot;--\"",
+      "expected": {
+        "rejected_as_unknown": true,
+        "SQL_executed_from_input": false,
+        "exact_state_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F54",
+      "title": "No omitted-version or implicit latest query",
+      "category": "negative",
+      "requirements": [
+        "NRA-05",
+        "NRA-08"
+      ],
+      "setup": "initial fixture then later bundle",
+      "operation": "omit exact version argument or pass artifact A to exact-version retrieval",
+      "expected": {
+        "missing_argument_rejected": true,
+        "artifact_as_version": "NRA-UNKNOWN_VERSION",
+        "automatic_latest_selected": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F55",
+      "title": "All explicit versions, no scalar resolution",
+      "category": "query",
+      "requirements": [
+        "NRA-04",
+        "NRA-05",
+        "NRA-08"
+      ],
+      "setup": "complete initial fixture",
+      "operation": {
+        "by_case": "urn:riskium:nature37:case-1"
+      },
+      "expected": {
+        "exact_version_ids_ref": "query-oracles.json#/by_case/urn:riskium:nature37:case-1",
+        "rows_use_literal_get_oracles": true,
+        "envelope_ref": "query-oracles.json#/envelope"
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F56",
+      "title": "Latest dependency mutant differs",
+      "category": "sensitivity",
+      "requirements": [
+        "NRA-02",
+        "NRA-09"
+      ],
+      "setup": "initial fixture then later bundle",
+      "operation": "mutate context/objective joins for A-v1 and term/scheme joins for A-v2 to use artifact latest instead of the owner pin",
+      "expected": {
+        "each_mutant_differs_from_fixed_oracle": true,
+        "A_v1_expected_pins": [
+          "urn:riskium:nature37:context-v1",
+          "urn:riskium:nature37:objective-v1",
+          "urn:riskium:nature37:negative-v1",
+          "urn:riskium:nature37:scheme-I-v1"
+        ],
+        "A_v2_expected_term_scheme": [
+          "urn:riskium:nature37:positive-v1",
+          "urn:riskium:nature37:scheme-I-v1"
+        ]
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F57",
+      "title": "Dropped case filter and correction edges differ",
+      "category": "sensitivity",
+      "requirements": [
+        "NRA-05",
+        "NRA-08",
+        "NRA-09"
+      ],
+      "setup": "complete initial fixture then later unlinked bundle",
+      "operation": "omit case filter, infer edge from entry previousRevision, or treat every A version as a descendant",
+      "expected": {
+        "each_mutant_differs_from_fixed_oracle": true,
+        "correct_case2_ids": [
+          "urn:riskium:nature37:C-v1"
+        ],
+        "correct_A_root_family_ids": [
+          "urn:riskium:nature37:A-v1",
+          "urn:riskium:nature37:A-v2",
+          "urn:riskium:nature37:A-v3"
+        ]
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F58",
+      "title": "Historical graph union is not a selected answer",
+      "category": "sensitivity",
+      "requirements": [
+        "NRA-02",
+        "NRA-06",
+        "NRA-09"
+      ],
+      "setup": "A-v1 A-v2 A-v3 named graphs",
+      "operation": "mutate reader to union graphs and treat it as one nature assignment",
+      "expected": {
+        "correct_graph_term_counts": [
+          1,
+          1,
+          1
+        ],
+        "union_distinct_terms": 3,
+        "union_matches_single_version_oracle": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F59",
+      "title": "Preserved scientific and release inputs",
+      "category": "preservation",
+      "requirements": [
+        "NRA-09"
+      ],
+      "setup": "source-bound declaration and implementation",
+      "operation": "verify all 306 native source IDs, 236 still-deferred historical mapping rows, eleven WITHHELD admissions, zero independent ratings and protected prior component bytes",
+      "expected": {
+        "native_elements": 306,
+        "historical_deferred": 236,
+        "withheld_admissions": 11,
+        "independent_ratings": 0,
+        "preserved_v036_inputs_except_live_README": 779,
+        "preserved_v035_selected_inputs": 687,
+        "native_model_changed": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "NRA-F60",
+      "title": "Separate actual evidence from fixed expectations",
+      "category": "trace",
+      "requirements": [
+        "NRA-09",
+        "NRA-10"
+      ],
+      "setup": "this committed declaration and later runtime receipt",
+      "operation": "compare declaration bytes to pinned commit and join every control to actual source/input/runtime/answer plus independently downloaded hosted receipt",
+      "expected": {
+        "fixed_controls": 60,
+        "expected_files_unchanged": true,
+        "missing_or_skipped_controls": 0,
+        "independent_download_matches": true,
+        "no_runtime_pass_in_declaration": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    }
+  ]
+}

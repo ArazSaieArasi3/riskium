@@ -1,7 +1,7 @@
 name: Post-v0.3.6 source-qualified full suite
 on:
   push:
-    branches: [main, plan/v0.3.6-assessment-selection]
+    branches: [main, plan/v0.3.6-assessment-selection, plan/v0.3.7-risk-nature-assertion]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -26,8 +26,13 @@ jobs:
           python tools/run_v036_versioned_suite.py --list
           python tools/run_v036_versioned_suite.py --receipt build/versioned-suite.json
           git diff --exit-code
+      - name: Record the checked risk-nature declaration separately from runtime results
+        if: hashFiles('implementation/relational/0.9.0/contract.json') != ''
+        run: python tools/check_risk_nature_declaration.py --receipt build/risk-nature-declaration.json
       - uses: actions/upload-artifact@v4
         with:
           name: v036-source-suite-${{ github.sha }}
-          path: build/versioned-suite.json
+          path: |
+            build/versioned-suite.json
+            build/risk-nature-declaration.json
           if-no-files-found: error

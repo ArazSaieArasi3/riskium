@@ -1,0 +1,870 @@
+{
+  "schema": "riskium-risk-nature-fixed-negative-inputs-v1",
+  "status": "PREIMPLEMENTATION_INPUTS_AND_EXPECTED_REJECTIONS",
+  "policy": "Each case starts from a separate initial fixture. Preparation overrides that initial state when stated. base paths select literal execution-fixture.json values; dotted/indexed paths are literal replacements on a deep copy, with no runtime-derived values. No preparation has an expected PASS claim here.",
+  "variants": [
+    {
+      "id": "bare-term",
+      "control": "NRA-F07",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.term_version_id": "Unfavorable"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-TERM_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "term-missing",
+      "control": "NRA-F08",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.term_version_id": "urn:riskium:nature37:term-absent"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-TERM_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "term-draft",
+      "control": "NRA-F08",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.term_version_id": "urn:riskium:nature37:negative-draft"
+      },
+      "preparation": [
+        {
+          "operation": "stage_support_without_sealing",
+          "base": "support_versions[3]",
+          "set": {
+            "version_id": "urn:riskium:nature37:negative-draft"
+          }
+        }
+      ],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-TERM_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "term-objective",
+      "control": "NRA-F08",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.term_version_id": "urn:riskium:nature37:objective-v1"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-TERM_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "term-scheme",
+      "control": "NRA-F08",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.term_version_id": "urn:riskium:nature37:scheme-I-v1"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-TERM_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "context-missing",
+      "control": "NRA-F14",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.context_version_id": "urn:riskium:nature37:context-absent"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CONTEXT_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "context-draft",
+      "control": "NRA-F14",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.context_version_id": "urn:riskium:nature37:context-draft"
+      },
+      "preparation": [
+        {
+          "operation": "stage_context_without_sealing",
+          "base": "context_versions[0]",
+          "set": {
+            "version_id": "urn:riskium:nature37:context-draft"
+          }
+        }
+      ],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CONTEXT_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "context-term",
+      "control": "NRA-F14",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.context_version_id": "urn:riskium:nature37:negative-v1"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CONTEXT_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "context-wrong-artifact-kind",
+      "control": "NRA-F14",
+      "operation": "issue_context",
+      "base": "context_versions[0]",
+      "set": {
+        "version_id": "urn:riskium:nature37:context-invalid",
+        "artifact_id": "urn:riskium:nature37:scheme-I"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CONTEXT_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "objective-missing",
+      "control": "NRA-F15",
+      "operation": "issue_context",
+      "base": "context_versions[0]",
+      "set": {
+        "version_id": "urn:riskium:nature37:context-invalid",
+        "objective_version_ids": [
+          "urn:riskium:nature37:objective-absent"
+        ]
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-OBJECTIVE_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "objective-draft",
+      "control": "NRA-F15",
+      "operation": "issue_context",
+      "base": "context_versions[0]",
+      "set": {
+        "version_id": "urn:riskium:nature37:context-invalid",
+        "objective_version_ids": [
+          "urn:riskium:nature37:objective-draft"
+        ]
+      },
+      "preparation": [
+        {
+          "operation": "stage_support_without_sealing",
+          "base": "support_versions[8]",
+          "set": {
+            "version_id": "urn:riskium:nature37:objective-draft"
+          }
+        }
+      ],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-OBJECTIVE_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "objective-term",
+      "control": "NRA-F15",
+      "operation": "issue_context",
+      "base": "context_versions[0]",
+      "set": {
+        "version_id": "urn:riskium:nature37:context-invalid",
+        "objective_version_ids": [
+          "urn:riskium:nature37:negative-v1"
+        ]
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-OBJECTIVE_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "objective-duplicate-pin",
+      "control": "NRA-F15",
+      "operation": "issue_context",
+      "base": "context_versions[0]",
+      "set": {
+        "version_id": "urn:riskium:nature37:context-invalid",
+        "objective_version_ids": [
+          "urn:riskium:nature37:objective-v1",
+          "urn:riskium:nature37:objective-v1"
+        ]
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-OBJECTIVE_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "objective-competing-pins",
+      "control": "NRA-F15",
+      "operation": "issue_context",
+      "base": "context_versions[0]",
+      "set": {
+        "version_id": "urn:riskium:nature37:context-invalid",
+        "objective_version_ids": [
+          "urn:riskium:nature37:objective-v1",
+          "urn:riskium:nature37:objective-v2"
+        ]
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-OBJECTIVE_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "duplicate-scheme-code",
+      "control": "NRA-F04",
+      "operation": "issue_support",
+      "base": "support_versions[3]",
+      "set": {
+        "version_id": "urn:riskium:nature37:negative-twin-v1",
+        "artifact_id": "urn:riskium:nature37:negative-twin"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-IDENTITY",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "assertion-source_locator-null",
+      "control": "NRA-F19",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.source_locator": null
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "assertion-source_locator-empty",
+      "control": "NRA-F19",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.source_locator": ""
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "assertion-source_locator-whitespace",
+      "control": "NRA-F19",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.source_locator": "\t \n"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "assertion-interpretation_origin-null",
+      "control": "NRA-F19",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.interpretation_origin": null
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "assertion-interpretation_origin-empty",
+      "control": "NRA-F19",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.interpretation_origin": ""
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "assertion-interpretation_origin-whitespace",
+      "control": "NRA-F19",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.interpretation_origin": "\t \n"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "assertion-narrative-null",
+      "control": "NRA-F19",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.narrative": null
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "assertion-narrative-empty",
+      "control": "NRA-F19",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.narrative": ""
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "assertion-narrative-whitespace",
+      "control": "NRA-F19",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.narrative": "\t \n"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "missing-source",
+      "control": "NRA-F19",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.source_record_id": "urn:riskium:nature37:source-absent"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "time-calendar",
+      "control": "NRA-F22",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.recorded_at": "2026-02-30T08:00:00Z"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-TIME",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "time-offset",
+      "control": "NRA-F22",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.recorded_at": "2026-10-30T08:00:00+00:00"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-TIME",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "time-before-dependencies",
+      "control": "NRA-F22",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.recorded_at": "2026-10-30T06:00:00Z"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-TIME",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "missing-case",
+      "control": "NRA-F23",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.case_id": null
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CASE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "missing-term",
+      "control": "NRA-F24",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "assertion.term_version_id": null
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-TERM_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "cross-artifact-correction",
+      "control": "NRA-F29",
+      "operation": "declare_correction",
+      "base": "corrections[0]",
+      "set": {
+        "prior_version_id": "urn:riskium:nature37:B-v1"
+      },
+      "preparation": [
+        {
+          "operation": "load_initial_without_corrections"
+        }
+      ],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CORRECTION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "self-correction",
+      "control": "NRA-F30",
+      "operation": "declare_correction",
+      "base": "corrections[0]",
+      "set": {
+        "prior_version_id": "urn:riskium:nature37:A-v2"
+      },
+      "preparation": [
+        {
+          "operation": "load_initial_without_corrections"
+        }
+      ],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CORRECTION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "correction-cycle",
+      "control": "NRA-F30",
+      "operation": "declare_correction",
+      "base": "corrections[0]",
+      "set": {
+        "corrected_version_id": "urn:riskium:nature37:A-v1",
+        "prior_version_id": "urn:riskium:nature37:A-v2"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CORRECTION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "missing-correction-endpoint",
+      "control": "NRA-F31",
+      "operation": "declare_correction",
+      "base": "corrections[0]",
+      "set": {
+        "prior_version_id": "urn:riskium:nature37:A-absent"
+      },
+      "preparation": [
+        {
+          "operation": "load_initial_without_corrections"
+        }
+      ],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CORRECTION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "draft-correction-endpoint",
+      "control": "NRA-F31",
+      "operation": "declare_correction",
+      "base": "corrections[0]",
+      "set": {
+        "prior_version_id": "urn:riskium:nature37:A-draft"
+      },
+      "preparation": [
+        {
+          "operation": "load_initial_without_corrections"
+        },
+        {
+          "operation": "stage_bundle_without_sealing",
+          "base": "later_unlinked_bundle",
+          "set": {
+            "assertion.version_id": "urn:riskium:nature37:A-draft",
+            "recording_revisions[0].nature_version_ids": [
+              "urn:riskium:nature37:A-draft"
+            ]
+          }
+        }
+      ],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CORRECTION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "second-predecessor",
+      "control": "NRA-F32",
+      "operation": "declare_correction",
+      "base": "corrections[0]",
+      "set": {
+        "prior_version_id": "urn:riskium:nature37:A-v3"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CORRECTION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "correction-blank-actor",
+      "control": "NRA-F33",
+      "operation": "declare_correction",
+      "base": "corrections[0]",
+      "set": {
+        "actor": "\t \n"
+      },
+      "preparation": [
+        {
+          "operation": "load_initial_without_corrections"
+        }
+      ],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "correction-blank-reason",
+      "control": "NRA-F33",
+      "operation": "declare_correction",
+      "base": "corrections[0]",
+      "set": {
+        "reason": "\t \n"
+      },
+      "preparation": [
+        {
+          "operation": "load_initial_without_corrections"
+        }
+      ],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "correction-blank-source_locator",
+      "control": "NRA-F33",
+      "operation": "declare_correction",
+      "base": "corrections[0]",
+      "set": {
+        "source_locator": "\t \n"
+      },
+      "preparation": [
+        {
+          "operation": "load_initial_without_corrections"
+        }
+      ],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "correction-blank-interpretation_origin",
+      "control": "NRA-F33",
+      "operation": "declare_correction",
+      "base": "corrections[0]",
+      "set": {
+        "interpretation_origin": "\t \n"
+      },
+      "preparation": [
+        {
+          "operation": "load_initial_without_corrections"
+        }
+      ],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-PROVENANCE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "atomic-bad-correction",
+      "control": "NRA-F35",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "correction": {
+          "corrected_version_id": "urn:riskium:nature37:A-v4",
+          "prior_version_id": "urn:riskium:nature37:B-v1",
+          "actor": "synthetic-curator",
+          "reason": "Alternative documentary correction of the original report.",
+          "source_record_id": "urn:riskium:nature37:source-correction",
+          "source_locator": "fixture/correction/A-v4",
+          "interpretation_origin": "AGENT_AUTHORED_CORRECTION_DECLARATION",
+          "recorded_at": "2026-10-30T08:05:00Z"
+        }
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-CORRECTION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "no-recorders",
+      "control": "NRA-F43",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "recording_revisions": []
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-RECORDING",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "wrong-case-recorder",
+      "control": "NRA-F43",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "recording_revisions[0].entry_id": "urn:riskium:nature37:entry-2",
+        "recording_revisions[0].previous_version_id": "urn:riskium:nature37:entry-2-r1"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-RECORDING",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "missing-recorder-predecessor",
+      "control": "NRA-F43",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "recording_revisions[0].previous_version_id": "urn:riskium:nature37:entry-absent"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-RECORDING",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "retrofit-issued-entry",
+      "control": "NRA-F43",
+      "operation": "issue_bundle",
+      "base": "later_unlinked_bundle",
+      "set": {
+        "recording_revisions[0].version_id": "urn:riskium:nature37:entry-1-r1",
+        "recording_revisions[0].previous_version_id": null
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-RECORDING",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "get-unknown",
+      "control": "NRA-F52",
+      "operation": "get",
+      "base": null,
+      "set": {
+        "version_id": "urn:riskium:nature37:version-absent"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-UNKNOWN_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "family-unknown",
+      "control": "NRA-F52",
+      "operation": "family",
+      "base": null,
+      "set": {
+        "version_id": "urn:riskium:nature37:version-absent"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-UNKNOWN_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "case-unknown",
+      "control": "NRA-F52",
+      "operation": "by_case",
+      "base": null,
+      "set": {
+        "case_id": "urn:riskium:nature37:case-absent"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-UNKNOWN_CASE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "injection-version",
+      "control": "NRA-F53",
+      "operation": "get",
+      "base": null,
+      "set": {
+        "version_id": "'; DROP TABLE nature_snapshot;--"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-UNKNOWN_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "injection-case",
+      "control": "NRA-F53",
+      "operation": "by_case",
+      "base": null,
+      "set": {
+        "case_id": "'; DROP TABLE nature_snapshot;--"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-UNKNOWN_CASE",
+        "all_preoperation_state_preserved": true
+      }
+    },
+    {
+      "id": "artifact-is-not-version",
+      "control": "NRA-F54",
+      "operation": "get",
+      "base": null,
+      "set": {
+        "version_id": "urn:riskium:nature37:A"
+      },
+      "preparation": [],
+      "expected": {
+        "rejected": true,
+        "diagnostic_family": "NRA-UNKNOWN_VERSION",
+        "all_preoperation_state_preserved": true
+      }
+    }
+  ],
+  "variant_count": 51
+}

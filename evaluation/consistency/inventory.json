@@ -129,8 +129,8 @@
     },
     {
       "path": ".github/workflows/v036-versioned-suite.yml",
-      "sha256": "c6dcf303a8bc3ab2a2903e5deaaf5aa2da855e6c118366d60f7cb6c96c8ee16f",
-      "bytes": 1112
+      "sha256": "4f4f4e6081018e52f35f5f8283d3e67cc0b9c3c06392fd84ab0e0f562697556d",
+      "bytes": 1478
     },
     {
       "path": ".gitignore",
@@ -1154,12 +1154,12 @@
     },
     {
       "path": "documentation/0.4.3/landing.json",
-      "sha256": "5b6cdf61850240ba836da24e80e806f5e114f5311fef38dfa9de3f230d445db2",
+      "sha256": "ee453e1977163bacc960f139999ee1e2a2648f3a1d23aa8122be735e051b6db1",
       "bytes": 956
     },
     {
       "path": "documentation/0.4.3/policy.json",
-      "sha256": "c8902b8d201578506bac53d9e840524623b74e15ccc99bbe3a5c40d2692056ad",
+      "sha256": "4817e50f6a7e9fd42ed030bff0faa006b2b1f2116907eaff1e7c1c562a551544",
       "bytes": 3596
     },
     {
@@ -3108,6 +3108,61 @@
       "bytes": 3699
     },
     {
+      "path": "implementation/relational/0.9.0/README.md",
+      "sha256": "bd7da14d926b7aaf917e9ba290c8ef600630a71afc2e85f04166142c5aadd6d1",
+      "bytes": 5736
+    },
+    {
+      "path": "implementation/relational/0.9.0/contract.json",
+      "sha256": "4daa76a14090bfd3348fc4c6bfafcd134523a11f4e686080e9dd9a4f1a71fe07",
+      "bytes": 61846
+    },
+    {
+      "path": "implementation/relational/0.9.0/declaration-manifest.json",
+      "sha256": "29f274634feffcce8f3fd5852917b32ee085bdb6f3ccbfe81f02d2025a06d1b4",
+      "bytes": 2109
+    },
+    {
+      "path": "implementation/relational/0.9.0/execution-fixture.json",
+      "sha256": "40d2c9af84f6a14988de02e100a6f0612e8ecf26292547a26b37f8b2078bba90",
+      "bytes": 22924
+    },
+    {
+      "path": "implementation/relational/0.9.0/fixtures.json",
+      "sha256": "e541b68de6e9f0b3ddfb848bb69e05fd2e871d374e602504faa12454e7e53480",
+      "bytes": 35323
+    },
+    {
+      "path": "implementation/relational/0.9.0/native-oracles.trig",
+      "sha256": "629a1521a312f6cf0627ff4333adac47a215d173993f57483f3e9221203ca33b",
+      "bytes": 6841
+    },
+    {
+      "path": "implementation/relational/0.9.0/native-query.rq",
+      "sha256": "1d489cf29942423a562a72baaff5c3297ab3a40372970f6fe4dad693a72f1f64",
+      "bytes": 934
+    },
+    {
+      "path": "implementation/relational/0.9.0/negative-inputs.json",
+      "sha256": "976f8a92b1c5115649b4ab72dcb223f7914b707680a7837f1389ef38a8bb3e0b",
+      "bytes": 24118
+    },
+    {
+      "path": "implementation/relational/0.9.0/prior-population.json",
+      "sha256": "a7535123e79864c33ce19ad377fafa16d9cbbfea380d92d5317bd05b18ac38e6",
+      "bytes": 2688
+    },
+    {
+      "path": "implementation/relational/0.9.0/proposed-design.md",
+      "sha256": "dda242c45d145a0907a687109769a9d9fea991002d40826773fa64f985373ca4",
+      "bytes": 13620
+    },
+    {
+      "path": "implementation/relational/0.9.0/query-oracles.json",
+      "sha256": "78c1ff2ceeba99626ed797c98880dbe546bd3c7e10752c8ec949cb4faff109e8",
+      "bytes": 15013
+    },
+    {
       "path": "implementation/validation/0.1.0/README.md",
       "sha256": "aa1a49c52dcae87ff2728889974ec60f38f27b822fc40944ed3bc6b6d6a0e792",
       "bytes": 2970
@@ -3224,8 +3279,8 @@
     },
     {
       "path": "plans/post-v0.3.6.md",
-      "sha256": "edab6e9008416c6abad18aaa5a739e2f9c5ff3f7cf67aab76bb26cc3d5ec6447",
-      "bytes": 5465
+      "sha256": "0e4851a554a4a14509896b28cfae2a0197406f1625a04e7cd93deaa442bc3db8",
+      "bytes": 5823
     },
     {
       "path": "plans/v0.3.4.md",
@@ -3241,6 +3296,11 @@
       "path": "plans/v0.3.6.md",
       "sha256": "7035c0314812ff071ea187706c9ca36359ff2f79be9d89426df870d4d4cc4e0d",
       "bytes": 6428
+    },
+    {
+      "path": "plans/v0.3.7.md",
+      "sha256": "1b6eb182726cadf5478957e43c810faa5a551e59c52118e9b94c546eed1d4992",
+      "bytes": 5259
     },
     {
       "path": "references/README.md",
@@ -3763,6 +3823,11 @@
       "bytes": 5185
     },
     {
+      "path": "tests/test_risk_nature_declaration.py",
+      "sha256": "82169115fd461f889677bd48bcf0caf7e2bbe80e952e3fc69a151dd81f0b5692",
+      "bytes": 3930
+    },
+    {
       "path": "tests/test_shacl_runner.py",
       "sha256": "5d5b9a611115d206b29a054c59b6fe46048056eb6654530449708040d9c9bf89",
       "bytes": 3051
@@ -3986,6 +4051,11 @@
       "path": "tools/check_research_backlog.py",
       "sha256": "c6f02fc92002b26e9be852a217e08f7e3b687a693a59c9e1cd195a32425ae2e1",
       "bytes": 19881
+    },
+    {
+      "path": "tools/check_risk_nature_declaration.py",
+      "sha256": "534978f9cdcb88dd28b89d0f882fe5e5f8ac5914b1bf16297316065c332ce580",
+      "bytes": 19480
     },
     {
       "path": "tools/native-sdk/package-lock.json",

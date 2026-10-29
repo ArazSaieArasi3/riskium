@@ -1,0 +1,24 @@
+PREFIX r: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+
+# Bind ?graph to one exact issued assertion version. No union/default graph.
+SELECT ?graph ?assertion ?case ?term ?termVersion ?scheme ?schemeVersion
+       ?context ?contextVersion ?objective ?objectiveVersion ?entryRevision
+WHERE {
+  GRAPH ?graph {
+    ?graph a r:RKM-C015 ; r:RX-006 ?assertion .
+    ?assertion a r:RKM-C005 ; r:R-41 ?case ; r:R-42 ?term .
+    ?term a r:RKM-C006 ; r:R-05 ?scheme .
+    ?termVersion a r:RKM-C015 ; r:RX-006 ?term .
+    ?schemeVersion a r:RKM-C015 ; r:RX-006 ?scheme .
+    ?entryRevision a r:RKM-C023 ; r:R-44 ?assertion .
+    OPTIONAL {
+      ?assertion r:R-43 ?context .
+      ?contextVersion a r:RKM-C015 ; r:RX-006 ?context .
+      OPTIONAL {
+        ?context r:RK2-011 ?objective .
+        ?objectiveVersion a r:RKM-C015 ; r:RX-006 ?objective .
+      }
+    }
+  }
+}
+ORDER BY ?graph ?entryRevision ?objectiveVersion

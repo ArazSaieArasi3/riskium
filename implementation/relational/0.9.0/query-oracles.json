@@ -1,0 +1,411 @@
+{
+  "schema": "riskium-risk-nature-literal-query-oracles-v1",
+  "status": "EXPECTED_NOT_OBSERVED",
+  "authorship": "Literal values authored before SQL/API implementation; no runtime output used. No independent reviewer rating is implied.",
+  "get": {
+    "urn:riskium:nature37:A-v1": {
+      "version_id": "urn:riskium:nature37:A-v1",
+      "artifact_id": "urn:riskium:nature37:A",
+      "case_id": "urn:riskium:nature37:case-1",
+      "term_id": "urn:riskium:nature37:negative",
+      "term_version_id": "urn:riskium:nature37:negative-v1",
+      "scheme_id": "urn:riskium:nature37:scheme-I",
+      "scheme_version_id": "urn:riskium:nature37:scheme-I-v1",
+      "context_id": "urn:riskium:nature37:context",
+      "context_version_id": "urn:riskium:nature37:context-v1",
+      "objective_version_ids": [
+        "urn:riskium:nature37:objective-v1"
+      ],
+      "recording_entry_version_ids": [
+        "urn:riskium:nature37:entry-1-r1",
+        "urn:riskium:nature37:entry-extra-r1"
+      ],
+      "source_record_id": "urn:riskium:nature37:source-A",
+      "source_locator": "fixture/A-v1",
+      "interpretation_origin": "AGENT_AUTHORED_SYNTHETIC_RECORD",
+      "recorded_at": "2026-10-30T08:00:00Z",
+      "narrative": "Reported unfavorable effect.",
+      "readiness": "READY_FOR_DECLARED_RETRIEVAL"
+    },
+    "urn:riskium:nature37:A-v2": {
+      "version_id": "urn:riskium:nature37:A-v2",
+      "artifact_id": "urn:riskium:nature37:A",
+      "case_id": "urn:riskium:nature37:case-1",
+      "term_id": "urn:riskium:nature37:positive",
+      "term_version_id": "urn:riskium:nature37:positive-v1",
+      "scheme_id": "urn:riskium:nature37:scheme-I",
+      "scheme_version_id": "urn:riskium:nature37:scheme-I-v1",
+      "context_id": "urn:riskium:nature37:context",
+      "context_version_id": "urn:riskium:nature37:context-v2",
+      "objective_version_ids": [
+        "urn:riskium:nature37:objective-v2"
+      ],
+      "recording_entry_version_ids": [
+        "urn:riskium:nature37:entry-1-r2"
+      ],
+      "source_record_id": "urn:riskium:nature37:source-A-correction",
+      "source_locator": "fixture/A-v2",
+      "interpretation_origin": "AGENT_AUTHORED_SYNTHETIC_RECORD",
+      "recorded_at": "2026-10-30T08:00:00Z",
+      "narrative": "Corrected favorable report.",
+      "readiness": "READY_FOR_DECLARED_RETRIEVAL"
+    },
+    "urn:riskium:nature37:A-v3": {
+      "version_id": "urn:riskium:nature37:A-v3",
+      "artifact_id": "urn:riskium:nature37:A",
+      "case_id": "urn:riskium:nature37:case-1",
+      "term_id": "urn:riskium:nature37:mixed",
+      "term_version_id": "urn:riskium:nature37:mixed-v1",
+      "scheme_id": "urn:riskium:nature37:scheme-I",
+      "scheme_version_id": "urn:riskium:nature37:scheme-I-v1",
+      "context_id": "urn:riskium:nature37:context",
+      "context_version_id": "urn:riskium:nature37:context-v1",
+      "objective_version_ids": [
+        "urn:riskium:nature37:objective-v1"
+      ],
+      "recording_entry_version_ids": [
+        "urn:riskium:nature37:entry-1-r3"
+      ],
+      "source_record_id": "urn:riskium:nature37:source-C",
+      "source_locator": "fixture/A-v3",
+      "interpretation_origin": "AGENT_AUTHORED_SYNTHETIC_RECORD",
+      "recorded_at": "2026-10-30T08:00:00Z",
+      "narrative": "Alternative mixed correction.",
+      "readiness": "READY_FOR_DECLARED_RETRIEVAL"
+    },
+    "urn:riskium:nature37:B-v1": {
+      "version_id": "urn:riskium:nature37:B-v1",
+      "artifact_id": "urn:riskium:nature37:B",
+      "case_id": "urn:riskium:nature37:case-1",
+      "term_id": "urn:riskium:nature37:other-negative",
+      "term_version_id": "urn:riskium:nature37:other-negative-v1",
+      "scheme_id": "urn:riskium:nature37:scheme-II",
+      "scheme_version_id": "urn:riskium:nature37:scheme-II-v1",
+      "context_id": "urn:riskium:nature37:context",
+      "context_version_id": "urn:riskium:nature37:context-v1",
+      "objective_version_ids": [
+        "urn:riskium:nature37:objective-v1"
+      ],
+      "recording_entry_version_ids": [
+        "urn:riskium:nature37:entry-1-rB"
+      ],
+      "source_record_id": "urn:riskium:nature37:source-B",
+      "source_locator": "fixture/B-v1",
+      "interpretation_origin": "AGENT_AUTHORED_SYNTHETIC_RECORD",
+      "recorded_at": "2026-10-30T08:00:00Z",
+      "narrative": "Competing source report.",
+      "readiness": "READY_FOR_DECLARED_RETRIEVAL"
+    },
+    "urn:riskium:nature37:U-v1": {
+      "version_id": "urn:riskium:nature37:U-v1",
+      "artifact_id": "urn:riskium:nature37:U",
+      "case_id": "urn:riskium:nature37:case-1",
+      "term_id": "urn:riskium:nature37:negative",
+      "term_version_id": "urn:riskium:nature37:negative-v1",
+      "scheme_id": "urn:riskium:nature37:scheme-I",
+      "scheme_version_id": "urn:riskium:nature37:scheme-I-v1",
+      "context_id": null,
+      "context_version_id": null,
+      "objective_version_ids": [],
+      "recording_entry_version_ids": [
+        "urn:riskium:nature37:entry-1-rU"
+      ],
+      "source_record_id": "urn:riskium:nature37:source-A",
+      "source_locator": "fixture/U-v1",
+      "interpretation_origin": "AGENT_AUTHORED_SYNTHETIC_RECORD",
+      "recorded_at": "2026-10-30T08:00:00Z",
+      "narrative": "Context was not supplied.",
+      "readiness": "NOT_READY_CONTEXT_UNRECORDED"
+    },
+    "urn:riskium:nature37:Z-v1": {
+      "version_id": "urn:riskium:nature37:Z-v1",
+      "artifact_id": "urn:riskium:nature37:Z",
+      "case_id": "urn:riskium:nature37:case-1",
+      "term_id": "urn:riskium:nature37:negative",
+      "term_version_id": "urn:riskium:nature37:negative-v1",
+      "scheme_id": "urn:riskium:nature37:scheme-I",
+      "scheme_version_id": "urn:riskium:nature37:scheme-I-v1",
+      "context_id": "urn:riskium:nature37:context",
+      "context_version_id": "urn:riskium:nature37:context-empty-v1",
+      "objective_version_ids": [],
+      "recording_entry_version_ids": [
+        "urn:riskium:nature37:entry-1-rZ"
+      ],
+      "source_record_id": "urn:riskium:nature37:source-A",
+      "source_locator": "fixture/Z-v1",
+      "interpretation_origin": "AGENT_AUTHORED_SYNTHETIC_RECORD",
+      "recorded_at": "2026-10-30T08:00:00Z",
+      "narrative": "Context records no objectives.",
+      "readiness": "NOT_READY_OBJECTIVES_UNRECORDED"
+    },
+    "urn:riskium:nature37:C-v1": {
+      "version_id": "urn:riskium:nature37:C-v1",
+      "artifact_id": "urn:riskium:nature37:C",
+      "case_id": "urn:riskium:nature37:case-2",
+      "term_id": "urn:riskium:nature37:negative",
+      "term_version_id": "urn:riskium:nature37:negative-v1",
+      "scheme_id": "urn:riskium:nature37:scheme-I",
+      "scheme_version_id": "urn:riskium:nature37:scheme-I-v1",
+      "context_id": "urn:riskium:nature37:context",
+      "context_version_id": "urn:riskium:nature37:context-v1",
+      "objective_version_ids": [
+        "urn:riskium:nature37:objective-v1"
+      ],
+      "recording_entry_version_ids": [
+        "urn:riskium:nature37:entry-2-r1"
+      ],
+      "source_record_id": "urn:riskium:nature37:source-B",
+      "source_locator": "fixture/C-v1",
+      "interpretation_origin": "AGENT_AUTHORED_SYNTHETIC_RECORD",
+      "recorded_at": "2026-10-30T08:00:00Z",
+      "narrative": "Same case label, distinct case identity.",
+      "readiness": "READY_FOR_DECLARED_RETRIEVAL"
+    },
+    "urn:riskium:nature37:A-v4": {
+      "version_id": "urn:riskium:nature37:A-v4",
+      "artifact_id": "urn:riskium:nature37:A",
+      "case_id": "urn:riskium:nature37:case-1",
+      "term_id": "urn:riskium:nature37:positive",
+      "term_version_id": "urn:riskium:nature37:positive-v2",
+      "scheme_id": "urn:riskium:nature37:scheme-I",
+      "scheme_version_id": "urn:riskium:nature37:scheme-I-v2",
+      "context_id": "urn:riskium:nature37:context",
+      "context_version_id": "urn:riskium:nature37:context-v2",
+      "objective_version_ids": [
+        "urn:riskium:nature37:objective-v2"
+      ],
+      "recording_entry_version_ids": [
+        "urn:riskium:nature37:entry-1-r4"
+      ],
+      "source_record_id": "urn:riskium:nature37:source-A-correction",
+      "source_locator": "fixture/A-v4",
+      "interpretation_origin": "AGENT_AUTHORED_SYNTHETIC_RECORD",
+      "recorded_at": "2026-10-30T08:00:00Z",
+      "narrative": "A later issued report without a declared correction edge.",
+      "readiness": "READY_FOR_DECLARED_RETRIEVAL"
+    }
+  },
+  "by_case": {
+    "urn:riskium:nature37:case-1": [
+      "urn:riskium:nature37:A-v1",
+      "urn:riskium:nature37:A-v2",
+      "urn:riskium:nature37:A-v3",
+      "urn:riskium:nature37:B-v1",
+      "urn:riskium:nature37:U-v1",
+      "urn:riskium:nature37:Z-v1"
+    ],
+    "urn:riskium:nature37:case-2": [
+      "urn:riskium:nature37:C-v1"
+    ],
+    "urn:riskium:nature37:case-empty": []
+  },
+  "after_later_by_case": {
+    "urn:riskium:nature37:case-1": [
+      "urn:riskium:nature37:A-v1",
+      "urn:riskium:nature37:A-v2",
+      "urn:riskium:nature37:A-v3",
+      "urn:riskium:nature37:A-v4",
+      "urn:riskium:nature37:B-v1",
+      "urn:riskium:nature37:U-v1",
+      "urn:riskium:nature37:Z-v1"
+    ]
+  },
+  "family": {
+    "urn:riskium:nature37:A-v1": [
+      [
+        "urn:riskium:nature37:A-v1",
+        0,
+        null
+      ],
+      [
+        "urn:riskium:nature37:A-v2",
+        1,
+        "urn:riskium:nature37:A-v1"
+      ],
+      [
+        "urn:riskium:nature37:A-v3",
+        1,
+        "urn:riskium:nature37:A-v1"
+      ]
+    ],
+    "urn:riskium:nature37:A-v2": [
+      [
+        "urn:riskium:nature37:A-v2",
+        0,
+        "urn:riskium:nature37:A-v1"
+      ]
+    ],
+    "urn:riskium:nature37:A-v4": [
+      [
+        "urn:riskium:nature37:A-v4",
+        0,
+        null
+      ]
+    ]
+  },
+  "envelope": {
+    "selection": "ALL_EXPLICIT_ISSUED_VERSIONS",
+    "independent_corroboration": "NOT_ASSESSED",
+    "factual_correctness": "NOT_ASSESSED",
+    "occurrence": "NOT_INFERRED"
+  },
+  "rdf_columns": [
+    "graph",
+    "assertion",
+    "case",
+    "term",
+    "termVersion",
+    "scheme",
+    "schemeVersion",
+    "context",
+    "contextVersion",
+    "objective",
+    "objectiveVersion",
+    "entryRevision"
+  ],
+  "rdf_rows": {
+    "urn:riskium:nature37:A-v1": [
+      [
+        "urn:riskium:nature37:A-v1",
+        "urn:riskium:nature37:A",
+        "urn:riskium:nature37:case-1",
+        "urn:riskium:nature37:negative",
+        "urn:riskium:nature37:negative-v1",
+        "urn:riskium:nature37:scheme-I",
+        "urn:riskium:nature37:scheme-I-v1",
+        "urn:riskium:nature37:context",
+        "urn:riskium:nature37:context-v1",
+        "urn:riskium:nature37:objective",
+        "urn:riskium:nature37:objective-v1",
+        "urn:riskium:nature37:entry-1-r1"
+      ],
+      [
+        "urn:riskium:nature37:A-v1",
+        "urn:riskium:nature37:A",
+        "urn:riskium:nature37:case-1",
+        "urn:riskium:nature37:negative",
+        "urn:riskium:nature37:negative-v1",
+        "urn:riskium:nature37:scheme-I",
+        "urn:riskium:nature37:scheme-I-v1",
+        "urn:riskium:nature37:context",
+        "urn:riskium:nature37:context-v1",
+        "urn:riskium:nature37:objective",
+        "urn:riskium:nature37:objective-v1",
+        "urn:riskium:nature37:entry-extra-r1"
+      ]
+    ],
+    "urn:riskium:nature37:A-v2": [
+      [
+        "urn:riskium:nature37:A-v2",
+        "urn:riskium:nature37:A",
+        "urn:riskium:nature37:case-1",
+        "urn:riskium:nature37:positive",
+        "urn:riskium:nature37:positive-v1",
+        "urn:riskium:nature37:scheme-I",
+        "urn:riskium:nature37:scheme-I-v1",
+        "urn:riskium:nature37:context",
+        "urn:riskium:nature37:context-v2",
+        "urn:riskium:nature37:objective",
+        "urn:riskium:nature37:objective-v2",
+        "urn:riskium:nature37:entry-1-r2"
+      ]
+    ],
+    "urn:riskium:nature37:A-v3": [
+      [
+        "urn:riskium:nature37:A-v3",
+        "urn:riskium:nature37:A",
+        "urn:riskium:nature37:case-1",
+        "urn:riskium:nature37:mixed",
+        "urn:riskium:nature37:mixed-v1",
+        "urn:riskium:nature37:scheme-I",
+        "urn:riskium:nature37:scheme-I-v1",
+        "urn:riskium:nature37:context",
+        "urn:riskium:nature37:context-v1",
+        "urn:riskium:nature37:objective",
+        "urn:riskium:nature37:objective-v1",
+        "urn:riskium:nature37:entry-1-r3"
+      ]
+    ],
+    "urn:riskium:nature37:B-v1": [
+      [
+        "urn:riskium:nature37:B-v1",
+        "urn:riskium:nature37:B",
+        "urn:riskium:nature37:case-1",
+        "urn:riskium:nature37:other-negative",
+        "urn:riskium:nature37:other-negative-v1",
+        "urn:riskium:nature37:scheme-II",
+        "urn:riskium:nature37:scheme-II-v1",
+        "urn:riskium:nature37:context",
+        "urn:riskium:nature37:context-v1",
+        "urn:riskium:nature37:objective",
+        "urn:riskium:nature37:objective-v1",
+        "urn:riskium:nature37:entry-1-rB"
+      ]
+    ],
+    "urn:riskium:nature37:C-v1": [
+      [
+        "urn:riskium:nature37:C-v1",
+        "urn:riskium:nature37:C",
+        "urn:riskium:nature37:case-2",
+        "urn:riskium:nature37:negative",
+        "urn:riskium:nature37:negative-v1",
+        "urn:riskium:nature37:scheme-I",
+        "urn:riskium:nature37:scheme-I-v1",
+        "urn:riskium:nature37:context",
+        "urn:riskium:nature37:context-v1",
+        "urn:riskium:nature37:objective",
+        "urn:riskium:nature37:objective-v1",
+        "urn:riskium:nature37:entry-2-r1"
+      ]
+    ],
+    "urn:riskium:nature37:U-v1": [
+      [
+        "urn:riskium:nature37:U-v1",
+        "urn:riskium:nature37:U",
+        "urn:riskium:nature37:case-1",
+        "urn:riskium:nature37:negative",
+        "urn:riskium:nature37:negative-v1",
+        "urn:riskium:nature37:scheme-I",
+        "urn:riskium:nature37:scheme-I-v1",
+        null,
+        null,
+        null,
+        null,
+        "urn:riskium:nature37:entry-1-rU"
+      ]
+    ],
+    "urn:riskium:nature37:Z-v1": [
+      [
+        "urn:riskium:nature37:Z-v1",
+        "urn:riskium:nature37:Z",
+        "urn:riskium:nature37:case-1",
+        "urn:riskium:nature37:negative",
+        "urn:riskium:nature37:negative-v1",
+        "urn:riskium:nature37:scheme-I",
+        "urn:riskium:nature37:scheme-I-v1",
+        "urn:riskium:nature37:context",
+        "urn:riskium:nature37:context-empty-v1",
+        null,
+        null,
+        "urn:riskium:nature37:entry-1-rZ"
+      ]
+    ],
+    "urn:riskium:nature37:A-v4": [
+      [
+        "urn:riskium:nature37:A-v4",
+        "urn:riskium:nature37:A",
+        "urn:riskium:nature37:case-1",
+        "urn:riskium:nature37:positive",
+        "urn:riskium:nature37:positive-v2",
+        "urn:riskium:nature37:scheme-I",
+        "urn:riskium:nature37:scheme-I-v2",
+        "urn:riskium:nature37:context",
+        "urn:riskium:nature37:context-v2",
+        "urn:riskium:nature37:objective",
+        "urn:riskium:nature37:objective-v2",
+        "urn:riskium:nature37:entry-1-r4"
+      ]
+    ]
+  },
+  "ordering": "get lists and by_case IDs use lexical identifier order; family uses (depth, version_id). Order is presentation only, never recency, truth or selection."
+}

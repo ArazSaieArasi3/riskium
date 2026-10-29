@@ -1,0 +1,26 @@
+{
+  "schema": "riskium-risk-nature-declaration-manifest-v1",
+  "status": "PREIMPLEMENTATION_SOURCE_BINDINGS",
+  "baseline_commit": "765cb4507d925037cf82c1dc42bdea0a52bf9dca",
+  "issue": 64,
+  "prospective_distribution": "v0.3.7",
+  "source_files": 13,
+  "files_sha256": {
+    "implementation/relational/0.9.0/README.md": "bd7da14d926b7aaf917e9ba290c8ef600630a71afc2e85f04166142c5aadd6d1",
+    "implementation/relational/0.9.0/contract.json": "4daa76a14090bfd3348fc4c6bfafcd134523a11f4e686080e9dd9a4f1a71fe07",
+    "implementation/relational/0.9.0/execution-fixture.json": "40d2c9af84f6a14988de02e100a6f0612e8ecf26292547a26b37f8b2078bba90",
+    "implementation/relational/0.9.0/fixtures.json": "e541b68de6e9f0b3ddfb848bb69e05fd2e871d374e602504faa12454e7e53480",
+    "implementation/relational/0.9.0/native-oracles.trig": "629a1521a312f6cf0627ff4333adac47a215d173993f57483f3e9221203ca33b",
+    "implementation/relational/0.9.0/native-query.rq": "1d489cf29942423a562a72baaff5c3297ab3a40372970f6fe4dad693a72f1f64",
+    "implementation/relational/0.9.0/negative-inputs.json": "976f8a92b1c5115649b4ab72dcb223f7914b707680a7837f1389ef38a8bb3e0b",
+    "implementation/relational/0.9.0/prior-population.json": "a7535123e79864c33ce19ad377fafa16d9cbbfea380d92d5317bd05b18ac38e6",
+    "implementation/relational/0.9.0/proposed-design.md": "dda242c45d145a0907a687109769a9d9fea991002d40826773fa64f985373ca4",
+    "implementation/relational/0.9.0/query-oracles.json": "78c1ff2ceeba99626ed797c98880dbe546bd3c7e10752c8ec949cb4faff109e8",
+    "plans/v0.3.7.md": "1b6eb182726cadf5478957e43c810faa5a551e59c52118e9b94c546eed1d4992",
+    "tests/test_risk_nature_declaration.py": "82169115fd461f889677bd48bcf0caf7e2bbe80e952e3fc69a151dd81f0b5692",
+    "tools/check_risk_nature_declaration.py": "534978f9cdcb88dd28b89d0f882fe5e5f8ac5914b1bf16297316065c332ce580"
+  },
+  "runtime_controls_executed": 0,
+  "expected_observations_remain_null": true,
+  "readback": "Exact committed declaration source and independently fetched byte/digest equality are recorded separately in issue 64; this manifest has no self-referential commit hash."
+}

@@ -1,0 +1,1284 @@
+{
+  "schema": "riskium-risk-nature-contract-v1",
+  "version": "0.9.0",
+  "proposed_schema_version": 10,
+  "status": "DECLARED_NOT_IMPLEMENTED",
+  "execution_issue": 64,
+  "implementation_issue": 65,
+  "integration_issue": 66,
+  "parent_issues": [
+    35,
+    12
+  ],
+  "baseline_commit": "765cb4507d925037cf82c1dc42bdea0a52bf9dca",
+  "published_baseline": "v0.3.6",
+  "published_source_commit": "58ff468ec4e8f3500ace6869601a25ea263c3d9f",
+  "prospective_distribution": "v0.3.7",
+  "native_model_version": "0.3.1",
+  "native_model_revision_required": false,
+  "task": "Retrieve exactly what a source-qualified risk-nature assertion version recorded about one case, its local nature term and pinned context/objective references; retain conflicting reports and explicit correction branches.",
+  "source_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "implementation/relational/0.1.0/mapping.json": "11c55fcc7bf7dc47c1f6a5acddf0fd7f5ceac8027ff62ff55816f7d500fc50f7",
+    "implementation/relational/0.2.0/policy.json": "cdb55a25a369a5f608a0fa76d46a12fe5473c636f7dde85fcd5444e894d02ebb",
+    "implementation/relational/0.8.0/contract.json": "d5832966057d304ee2467d8546f2849a4f8c3d0d2b95e72182df9b456e2bf306",
+    "implementation/relational/0.8.0/component.json": "aa6f76fd7b49bb535e9f64f8bf27d51c713ffa78d69fd2ee3d1bef439563c283",
+    "implementation/relational/0.8.0/fixtures.json": "04f6d66bc57df46d92e9ea2a282c122b2d35ce0f6a1e99d4a6e47f29a0d70a67",
+    "implementation/relational/0.8.0/execution-fixture.json": "eab7528a46add5b37afc0048f42e0433d6cb01fde5e9cfc21b6cd3835f11ca3e",
+    "tools/relational_history.py": "098abac5e8b17c4754b0879d18b2030814d74a71d4694f50127f8deefe9d0182",
+    "tools/relational_assessment_selection.py": "bd5a5d335e9edf6ce5b3f360f2757f6da487c0b4fb8fb0c1457323ead345468b",
+    "tools/run_assessment_selection.py": "d7f5ec3f06dff958adff7e5b8a97bdcb988910eff89b77557ef5b6c4324b0b1e",
+    "evaluation/relational/evidence-lifecycle/mapping-accounting.json": "1e6f028ae0e08e831eba94eb26e49962a3b5a24bffdb8e441017db85c5a8b249",
+    "evaluation/consistency/current-0.3.0/report.json": "ab316cce7dd9aa5c424e646c4dc6446a9e4d2a3086e665c603b94296c6005c88",
+    "evaluation/independent-review/responses.json": "3896793de4db0d1b5b0d0f96f2f9ce8ffd1dd31c738d0f22400d88b5f3e8b00f",
+    "releases/selection-v0.3.5.json": "99405668004b7b11e9b59dec0df93a94f890b4abb7ba22d5ac4b8914e8bcec32",
+    "releases/selection-v0.3.6.json": "c4b57867eaed416a3995ce3702b0c6669d0bcd3025ca2fe41eeb779d72aee325",
+    "documentation/0.4.3/policy.json": "4817e50f6a7e9fd42ed030bff0faa006b2b1f2116907eaff1e7c1c562a551544",
+    "evaluation/consistency/current-0.3.0/traceability.json": "8d71a4a78bc62aa3596d218911a777bc00e6bac47a9e9beb55078b999f6d21c8",
+    "evaluation/manuscript-review/v7.0.8/receipt.json": "5c32310eb1e5b689ed188e16a2b7d69af0c27454316defa661da53deefe2f634"
+  },
+  "native_routes": [
+    {
+      "id": "RKM-C005",
+      "source_structure": {
+        "id": "RKM-C005",
+        "title": "RiskNatureAssertion",
+        "display_title": "Risk Nature Assertion",
+        "domain": "Risk Phenomena",
+        "domain_id": "D01",
+        "definition": "A source-qualified information assertion that possible or reported effects are favorable, unfavorable or mixed relative to identified objectives and context.",
+        "ontouml_stereotype": "subkind",
+        "stereotype_display": "«subkind»",
+        "is_abstract": false,
+        "identity_supplier": "RKM-C014",
+        "identity_basis": "Inherits documentary identity from InformationArtifact, or version identity from ArtifactVersion through an explicit generalization path.",
+        "typing_rationale": "Essential documentary specialization in the bounded risk-knowledge profile; label equality does not establish identity.",
+        "scope_layer": "FORMAL_CORE",
+        "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending",
+        "aliases": []
+      },
+      "sha256": "f2568f54a24692bacd417bc8c126343484535059f89da41b6aaae18a6fe17de8",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RKM-C006",
+      "source_structure": {
+        "id": "RKM-C006",
+        "title": "NatureTerm",
+        "display_title": "Nature Term",
+        "domain": "Risk Phenomena",
+        "domain_id": "D01",
+        "definition": "A controlled value used to qualify the nature of effects relative to objectives; it does not classify risk independently of context. This is a managed vocabulary resource with scheme-qualified identity, not a bare string.",
+        "ontouml_stereotype": "subkind",
+        "stereotype_display": "«subkind»",
+        "is_abstract": false,
+        "identity_supplier": "RKM-C014",
+        "identity_basis": "Inherits documentary identity from InformationArtifact, or version identity from ArtifactVersion through an explicit generalization path.",
+        "typing_rationale": "Essential documentary specialization in the bounded risk-knowledge profile; label equality does not establish identity.",
+        "scope_layer": "FORMAL_CORE",
+        "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending",
+        "aliases": []
+      },
+      "sha256": "826fa4627b959aae58e57cde5b366457dc8fb4efeca62628bc227b9f6947fdec",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RKM-C017",
+      "source_structure": {
+        "id": "RKM-C017",
+        "title": "VocabularyConcept",
+        "display_title": "Vocabulary Concept",
+        "domain": "Risk Classification",
+        "domain_id": "D03",
+        "definition": "A managed terminological information artifact that identifies a vocabulary meaning independently of its labels. It is a vocabulary resource, not automatically a domain universal or the real-world entity denoted.",
+        "ontouml_stereotype": "subkind",
+        "stereotype_display": "«subkind»",
+        "is_abstract": false,
+        "identity_supplier": "RKM-C014",
+        "identity_basis": "Inherits documentary identity from InformationArtifact, or version identity from ArtifactVersion through an explicit generalization path.",
+        "typing_rationale": "Essential documentary specialization in the bounded risk-knowledge profile; label equality does not establish identity.",
+        "scope_layer": "FORMAL_CORE",
+        "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending",
+        "aliases": []
+      },
+      "sha256": "82e5cbe41e1d0a95e20d1dd8521e7a4ce9030ef1ef35414be47382ac472a9ae5",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RKM-C018",
+      "source_structure": {
+        "id": "RKM-C018",
+        "title": "ClassificationScheme",
+        "display_title": "Classification Scheme",
+        "domain": "Risk Classification",
+        "domain_id": "D03",
+        "definition": "A governed organization of classification concepts with an identified scope and version policy.",
+        "ontouml_stereotype": "subkind",
+        "stereotype_display": "«subkind»",
+        "is_abstract": false,
+        "identity_supplier": "RKM-C014",
+        "identity_basis": "Inherits documentary identity from InformationArtifact, or version identity from ArtifactVersion through an explicit generalization path.",
+        "typing_rationale": "Essential documentary specialization in the bounded risk-knowledge profile; label equality does not establish identity.",
+        "scope_layer": "FORMAL_CORE",
+        "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending",
+        "aliases": []
+      },
+      "sha256": "88fffea2784bd8d57e200a59c7d29f16317d5209ed82b2dadc79d27e4ac5a4b3",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RKM-C019",
+      "source_structure": {
+        "id": "RKM-C019",
+        "title": "ClassificationTerm",
+        "display_title": "Classification Term",
+        "domain": "Risk Classification",
+        "domain_id": "D03",
+        "definition": "A managed vocabulary item expressing a controlled classification value within an identified scheme. Scheme membership and version context constrain its interpretation. This is a managed vocabulary resource with scheme-qualified identity, not a bare string.",
+        "ontouml_stereotype": "subkind",
+        "stereotype_display": "«subkind»",
+        "is_abstract": false,
+        "identity_supplier": "RKM-C014",
+        "identity_basis": "Inherits documentary identity from InformationArtifact, or version identity from ArtifactVersion through an explicit generalization path.",
+        "typing_rationale": "Essential documentary specialization in the bounded risk-knowledge profile; label equality does not establish identity.",
+        "scope_layer": "FORMAL_CORE",
+        "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending",
+        "aliases": []
+      },
+      "sha256": "1072b087d1637d3fd2c538fac7fedbb377ca51c90db55cb28dd96b7d01a7fe0e",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RKM-X02",
+      "source_structure": {
+        "id": "RKM-X02",
+        "title": "ObjectiveReference",
+        "display_title": "Objective Reference",
+        "domain": "Risk Policy",
+        "domain_id": "D11",
+        "definition": "A managed information item identifying an objective in its source context, without asserting that the information item is the objective.",
+        "ontouml_stereotype": "subkind",
+        "stereotype_display": "«subkind»",
+        "is_abstract": false,
+        "identity_supplier": "RKM-C014",
+        "identity_basis": "Inherits documentary identity from InformationArtifact, or version identity from ArtifactVersion through an explicit generalization path.",
+        "typing_rationale": "Essential documentary specialization in the bounded risk-knowledge profile; label equality does not establish identity.",
+        "scope_layer": "FORMAL_CORE",
+        "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending",
+        "aliases": []
+      },
+      "sha256": "51e7a2be926320b66e1596747abd03493968c444c3bd13a3dbd34fff4345bb2d",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RKM-C002",
+      "source_structure": {
+        "id": "RKM-C002",
+        "title": "RiskContextSpecification",
+        "display_title": "Risk Context Specification",
+        "domain": "Risk Phenomena",
+        "domain_id": "D01",
+        "definition": "A versioned information specification of analysis boundaries, circumstances, time horizon and objective references under which risk statements and results are interpreted.",
+        "ontouml_stereotype": "subkind",
+        "stereotype_display": "«subkind»",
+        "is_abstract": false,
+        "identity_supplier": "RKM-C014",
+        "identity_basis": "Inherits documentary identity from InformationArtifact, or version identity from ArtifactVersion through an explicit generalization path.",
+        "typing_rationale": "Essential documentary specialization in the bounded risk-knowledge profile; label equality does not establish identity.",
+        "scope_layer": "FORMAL_CORE",
+        "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending",
+        "aliases": []
+      },
+      "sha256": "7aa413a3a89eb3d28fcee0406acada2b2fc6478a0290d87c78f27d931201018b",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RKM-C014",
+      "source_structure": {
+        "id": "RKM-C014",
+        "title": "InformationArtifact",
+        "display_title": "Information Artifact",
+        "domain": "Risk Information",
+        "domain_id": "D02",
+        "definition": "A managed documentary object with an instituted identity that persists across its descriptions and issued versions. Artifact identity is distinct from a file path, a storage row and semantic content.",
+        "ontouml_stereotype": "kind",
+        "stereotype_display": "«kind»",
+        "is_abstract": false,
+        "identity_supplier": "RKM-C014",
+        "identity_basis": "Provides an explicitly governed individuation principle within the declared profile; surrogate keys are identifiers of that policy, not independent ontological proof.",
+        "typing_rationale": "Proposed identity-supplying sortal; external Person/Organization and instituted case identities require their owning-domain commitments.",
+        "scope_layer": "FORMAL_CORE",
+        "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending",
+        "aliases": []
+      },
+      "sha256": "0367006ebabd6231ebf3cc0ab62ba9ce658d951b713d9d0a14cbda7ff1f96303",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RKM-C015",
+      "source_structure": {
+        "id": "RKM-C015",
+        "title": "ArtifactVersion",
+        "display_title": "Artifact Version",
+        "domain": "Risk Information",
+        "domain_id": "D02",
+        "definition": "An identifiable issued documentary version of a managed information artifact. Its issued semantic content and effective dependency versions are immutable; revisions receive distinct version identities.",
+        "ontouml_stereotype": "kind",
+        "stereotype_display": "«kind»",
+        "is_abstract": false,
+        "identity_supplier": "RKM-C015",
+        "identity_basis": "Provides an explicitly governed individuation principle within the declared profile; surrogate keys are identifiers of that policy, not independent ontological proof.",
+        "typing_rationale": "Proposed identity-supplying sortal; external Person/Organization and instituted case identities require their owning-domain commitments.",
+        "scope_layer": "FORMAL_CORE",
+        "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending",
+        "aliases": []
+      },
+      "sha256": "b1dbaed057ae1cf755522db7aee439a215c05d09f4e4f01b04ba86d07ea254a7",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RKM-C022",
+      "source_structure": {
+        "id": "RKM-C022",
+        "title": "RiskRegisterEntry",
+        "display_title": "Risk Register Entry",
+        "domain": "Risk Registration",
+        "domain_id": "D04",
+        "definition": "A managed register record about exactly one RiskCase in this profile. Distinct entries, source systems or registers can record the same case. A software record is an implementation record, not an additional risk subject.",
+        "ontouml_stereotype": "subkind",
+        "stereotype_display": "«subkind»",
+        "is_abstract": false,
+        "identity_supplier": "RKM-C014",
+        "identity_basis": "Inherits documentary identity from InformationArtifact, or version identity from ArtifactVersion through an explicit generalization path.",
+        "typing_rationale": "Essential documentary specialization in the bounded risk-knowledge profile; label equality does not establish identity.",
+        "scope_layer": "FORMAL_CORE",
+        "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending",
+        "aliases": []
+      },
+      "sha256": "8200af4dcd2b231daa060da01aa16b7733ee5f473eb46113b692abfd30dda376",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RKM-C023",
+      "source_structure": {
+        "id": "RKM-C023",
+        "title": "EntryRevision",
+        "display_title": "Entry Revision",
+        "domain": "Risk Registration",
+        "domain_id": "D04",
+        "definition": "An identifiable version of a register entry, preserving the content and qualified links effective at its issue.",
+        "ontouml_stereotype": "subkind",
+        "stereotype_display": "«subkind»",
+        "is_abstract": false,
+        "identity_supplier": "RKM-C015",
+        "identity_basis": "Inherits documentary identity from InformationArtifact, or version identity from ArtifactVersion through an explicit generalization path.",
+        "typing_rationale": "Essential documentary specialization in the bounded risk-knowledge profile; label equality does not establish identity.",
+        "scope_layer": "FORMAL_CORE",
+        "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending",
+        "aliases": []
+      },
+      "sha256": "0fdc2e188242d076f496e9e64b72495d266a9bc42e853f624c483e1e31808a41",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RKM-C030",
+      "source_structure": {
+        "id": "RKM-C030",
+        "title": "RiskRegister",
+        "display_title": "Risk Register",
+        "domain": "Risk Registration",
+        "domain_id": "D04",
+        "definition": "A managed informational register that organizes risk-entry records for a stated organizational scope and purpose. Its documentary identity does not make it an OntoUML collective or physical aggregate.",
+        "ontouml_stereotype": "subkind",
+        "stereotype_display": "«subkind»",
+        "is_abstract": false,
+        "identity_supplier": "RKM-C014",
+        "identity_basis": "Inherits documentary identity from InformationArtifact, or version identity from ArtifactVersion through an explicit generalization path.",
+        "typing_rationale": "Essential documentary specialization in the bounded risk-knowledge profile; label equality does not establish identity.",
+        "scope_layer": "FORMAL_CORE",
+        "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending",
+        "aliases": []
+      },
+      "sha256": "04f2c34608c1c0377063532371ccbec334821f9314147255c8c9a7234d5b0a4a",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RKM-X01",
+      "source_structure": {
+        "id": "RKM-X01",
+        "title": "RiskCase",
+        "display_title": "Risk Case",
+        "domain": "Risk Phenomena",
+        "domain_id": "D01",
+        "definition": "An instituted, identifiable subject of enterprise-risk analysis and tracking. It persists across its descriptions, reassessments, responsibilities and administrative record states under a governed identity policy. It is neither its register entry nor a scenario specification nor an actual occurrence.",
+        "ontouml_stereotype": "kind",
+        "stereotype_display": "«kind»",
+        "is_abstract": false,
+        "identity_supplier": "RKM-X01",
+        "identity_basis": "Stable case identifier in a governed namespace. Text similarity never automatically merges cases. Change of objective or context triggers a documented identity review; split/merge decisions preserve original identifiers and evidence.",
+        "typing_rationale": "Proposed identity-supplying sortal; external Person/Organization and instituted case identities require their owning-domain commitments.",
+        "scope_layer": "FORMAL_CORE",
+        "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending",
+        "aliases": [
+          {
+            "label": "Risk Item",
+            "language": "en",
+            "scope": "Context-qualified terminology in this design profile; not a global synonym.",
+            "relation": "local synonym for managed risk subject",
+            "mapping_status": "INTERPRETATION_OF_USER_DESCRIPTION; not global terminology equivalence"
+          }
+        ]
+      },
+      "sha256": "ac07e39a26476df3c3149daa3854c60645392b8afcc69b2d15748ecbd64c1653",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "R-41",
+      "source_structure": {
+        "id": "R-41",
+        "source": "RKM-C005",
+        "source_end_cardinality": "0..*",
+        "predicate": "natureOf",
+        "relation_stereotype": "None — ordinary association",
+        "target_end_cardinality": "1",
+        "target": "RKM-X01",
+        "basis": "Explicit S3 design support; not an independently evidenced historical requirement.",
+        "status": "APPROVED_DESIGN_EXECUTION_PENDING",
+        "stereotype": null,
+        "multiplicity_scope": "Managed Riskium profile; raw received material remains import/staging content until it meets class admission requirements. Multiplicities do not claim universal ISO constraints.",
+        "rationale": "Explicit S3 design support; not an independently evidenced historical requirement.",
+        "arrow_shape": "Solid line; no navigability arrowhead",
+        "semantic_direction": "First concept to second concept; semantic reading direction",
+        "notation_basis": "Named association; reading direction is not a navigability-arrow claim.",
+        "notation_line": "Solid line; no navigability arrowhead",
+        "reading_direction": "First concept to second concept; reading direction only",
+        "scope_layer": "FORMAL_CORE",
+        "source_title": "Risk Nature Assertion",
+        "target_title": "Risk Case",
+        "source_stereotype": "«subkind»",
+        "target_stereotype": "«kind»"
+      },
+      "sha256": "4fe06bc250de981764a91b6bb59a1ba1c2c05dc5051e1b5f3ab4ca2bd2d418a1",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "R-42",
+      "source_structure": {
+        "id": "R-42",
+        "source": "RKM-C005",
+        "source_end_cardinality": "0..*",
+        "predicate": "declaresNature",
+        "relation_stereotype": "None — ordinary association",
+        "target_end_cardinality": "1",
+        "target": "RKM-C006",
+        "basis": "Explicit S3 design support; not an independently evidenced historical requirement.",
+        "status": "APPROVED_DESIGN_EXECUTION_PENDING",
+        "stereotype": null,
+        "multiplicity_scope": "Managed Riskium profile; raw received material remains import/staging content until it meets class admission requirements. Multiplicities do not claim universal ISO constraints.",
+        "rationale": "Explicit S3 design support; not an independently evidenced historical requirement.",
+        "arrow_shape": "Solid line; no navigability arrowhead",
+        "semantic_direction": "First concept to second concept; semantic reading direction",
+        "notation_basis": "Named association; reading direction is not a navigability-arrow claim.",
+        "notation_line": "Solid line; no navigability arrowhead",
+        "reading_direction": "First concept to second concept; reading direction only",
+        "scope_layer": "FORMAL_CORE",
+        "source_title": "Risk Nature Assertion",
+        "target_title": "Nature Term",
+        "source_stereotype": "«subkind»",
+        "target_stereotype": "«subkind»"
+      },
+      "sha256": "1b300cf1772d15c98e53136293675cdb9f5aea7e58dab4738a40e6712b09d13f",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "R-43",
+      "source_structure": {
+        "id": "R-43",
+        "source": "RKM-C005",
+        "source_end_cardinality": "0..*",
+        "predicate": "natureInContext",
+        "relation_stereotype": "None — ordinary association",
+        "target_end_cardinality": "0..1",
+        "target": "RKM-C002",
+        "basis": "Explicit S3 design support; not an independently evidenced historical requirement.",
+        "status": "APPROVED_DESIGN_EXECUTION_PENDING",
+        "stereotype": null,
+        "multiplicity_scope": "Managed Riskium profile; raw received material remains import/staging content until it meets class admission requirements. Multiplicities do not claim universal ISO constraints.",
+        "rationale": "Explicit S3 design support; not an independently evidenced historical requirement.",
+        "arrow_shape": "Solid line; no navigability arrowhead",
+        "semantic_direction": "First concept to second concept; semantic reading direction",
+        "notation_basis": "Named association; reading direction is not a navigability-arrow claim.",
+        "notation_line": "Solid line; no navigability arrowhead",
+        "reading_direction": "First concept to second concept; reading direction only",
+        "scope_layer": "FORMAL_CORE",
+        "source_title": "Risk Nature Assertion",
+        "target_title": "Risk Context Specification",
+        "source_stereotype": "«subkind»",
+        "target_stereotype": "«subkind»"
+      },
+      "sha256": "913b1e20bf9bb431ce2adcd3873a465ddbd082d91addd89d0901ac75e5d9884f",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "R-44",
+      "source_structure": {
+        "id": "R-44",
+        "source": "RKM-C023",
+        "source_end_cardinality": "1..*",
+        "predicate": "recordsNature",
+        "relation_stereotype": "None — ordinary association",
+        "target_end_cardinality": "0..*",
+        "target": "RKM-C005",
+        "basis": "Explicit S3 design support; not an independently evidenced historical requirement.",
+        "status": "APPROVED_DESIGN_EXECUTION_PENDING",
+        "stereotype": null,
+        "multiplicity_scope": "Managed Riskium profile; raw received material remains import/staging content until it meets class admission requirements. Multiplicities do not claim universal ISO constraints.",
+        "rationale": "Explicit S3 design support; not an independently evidenced historical requirement.",
+        "arrow_shape": "Solid line; no navigability arrowhead",
+        "semantic_direction": "First concept to second concept; semantic reading direction",
+        "notation_basis": "Named association; reading direction is not a navigability-arrow claim.",
+        "notation_line": "Solid line; no navigability arrowhead",
+        "reading_direction": "First concept to second concept; reading direction only",
+        "scope_layer": "FORMAL_CORE",
+        "source_title": "Entry Revision",
+        "target_title": "Risk Nature Assertion",
+        "source_stereotype": "«subkind»",
+        "target_stereotype": "«subkind»"
+      },
+      "sha256": "106da6a0a4c59210c6632e4373dabf51ff952be2da9d1855e4c8e290d39e1af1",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "R-05",
+      "source_structure": {
+        "id": "R-05",
+        "source": "RKM-C019",
+        "source_end_cardinality": "0..*",
+        "predicate": "belongsToScheme",
+        "relation_stereotype": "None — ordinary association",
+        "target_end_cardinality": "1",
+        "target": "RKM-C018",
+        "basis": "A category is local to a scheme; correspondence between schemes is a separate relation.",
+        "status": "APPROVED_DESIGN_EXECUTION_PENDING",
+        "stereotype": null,
+        "multiplicity_scope": "Managed Riskium profile; raw received material remains import/staging content until it meets class admission requirements. Multiplicities do not claim universal ISO constraints.",
+        "rationale": "A category is local to a scheme; correspondence between schemes is a separate relation.",
+        "arrow_shape": "Solid line; no navigability arrowhead",
+        "semantic_direction": "First concept to second concept; semantic reading direction",
+        "notation_basis": "Named association; reading direction is not a navigability-arrow claim.",
+        "notation_line": "Solid line; no navigability arrowhead",
+        "reading_direction": "First concept to second concept; reading direction only",
+        "scope_layer": "FORMAL_CORE",
+        "source_title": "Classification Term",
+        "target_title": "Classification Scheme",
+        "source_stereotype": "«subkind»",
+        "target_stereotype": "«subkind»"
+      },
+      "sha256": "5142f0d0f9272069e1c3b3e33e94b2eb20e61294aeb64733d3221bcbb7835b4d",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RK2-011",
+      "source_structure": {
+        "id": "RK2-011",
+        "source": "RKM-C002",
+        "target": "RKM-X02",
+        "predicate": "referencesObjective",
+        "source_end_cardinality": "0..*",
+        "target_end_cardinality": "0..*",
+        "stereotype": null,
+        "status": "APPROVED_DESIGN_EXECUTION_PENDING",
+        "rationale": "Objectives are referenced as information, not silently redefined as reference artifacts.",
+        "multiplicity_scope": "Managed Riskium profile; raw received material remains import/staging content until it meets class admission requirements. Multiplicities do not claim universal ISO constraints.",
+        "relation_stereotype": "None — ordinary association",
+        "arrow_shape": "Solid line; no navigability arrowhead",
+        "semantic_direction": "First concept to second concept; semantic reading direction",
+        "notation_basis": "Named association; reading direction is not a navigability-arrow claim.",
+        "notation_line": "Solid line; no navigability arrowhead",
+        "reading_direction": "First concept to second concept; reading direction only",
+        "scope_layer": "FORMAL_CORE",
+        "source_title": "Risk Context Specification",
+        "target_title": "Objective Reference",
+        "source_stereotype": "«subkind»",
+        "target_stereotype": "«subkind»"
+      },
+      "sha256": "8bb2167c3c597522767fbdfb60807ba523ab159a631b35127b98c6588b77815d",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RX-006",
+      "source_structure": {
+        "id": "RX-006",
+        "source": "RKM-C015",
+        "source_end_cardinality": "0..*",
+        "predicate": "versionOf",
+        "relation_stereotype": "None — ordinary association",
+        "target_end_cardinality": "1",
+        "target": "RKM-C014",
+        "basis": "Make the catalog definition operational. Multiplicity is a proposed accepted-record profile and does not authorize fabricated values for incomplete source data.",
+        "status": "APPROVED_DESIGN_EXECUTION_PENDING",
+        "stereotype": null,
+        "multiplicity_scope": "Managed Riskium profile; raw received material remains import/staging content until it meets class admission requirements. Multiplicities do not claim universal ISO constraints.",
+        "rationale": "Make the catalog definition operational. Multiplicity is a proposed accepted-record profile and does not authorize fabricated values for incomplete source data.",
+        "arrow_shape": "Solid line; no navigability arrowhead",
+        "semantic_direction": "First concept to second concept; semantic reading direction",
+        "notation_basis": "Named association; reading direction is not a navigability-arrow claim.",
+        "notation_line": "Solid line; no navigability arrowhead",
+        "reading_direction": "First concept to second concept; reading direction only",
+        "scope_layer": "FORMAL_CORE",
+        "source_title": "Artifact Version",
+        "target_title": "Information Artifact",
+        "source_stereotype": "«kind»",
+        "target_stereotype": "«kind»"
+      },
+      "sha256": "88bd6fa17bea7dc2477e1fa95f016f71aca9d7393fc2f513d122a9bfab58cfe1",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "R-33",
+      "source_structure": {
+        "id": "R-33",
+        "source": "RKM-C023",
+        "source_end_cardinality": "0..*",
+        "predicate": "revisionOf",
+        "relation_stereotype": "None — ordinary association",
+        "target_end_cardinality": "1",
+        "target": "RKM-C022",
+        "basis": "Explicit S3 design support; not an independently evidenced historical requirement.",
+        "status": "APPROVED_DESIGN_EXECUTION_PENDING",
+        "stereotype": null,
+        "multiplicity_scope": "Managed Riskium profile; raw received material remains import/staging content until it meets class admission requirements. Multiplicities do not claim universal ISO constraints.",
+        "rationale": "Explicit S3 design support; not an independently evidenced historical requirement.",
+        "arrow_shape": "Solid line; no navigability arrowhead",
+        "semantic_direction": "First concept to second concept; semantic reading direction",
+        "notation_basis": "Named association; reading direction is not a navigability-arrow claim.",
+        "notation_line": "Solid line; no navigability arrowhead",
+        "reading_direction": "First concept to second concept; reading direction only",
+        "scope_layer": "FORMAL_CORE",
+        "source_title": "Entry Revision",
+        "target_title": "Risk Register Entry",
+        "source_stereotype": "«subkind»",
+        "target_stereotype": "«subkind»"
+      },
+      "sha256": "398037b6a91abf6a00dc330dda0ad2b0670e43f27d439e81767da11da719c80f",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "R-01",
+      "source_structure": {
+        "id": "R-01",
+        "source": "RKM-C022",
+        "source_end_cardinality": "0..*",
+        "predicate": "recordsAbout",
+        "relation_stereotype": "None — ordinary association",
+        "target_end_cardinality": "1",
+        "target": "RKM-X01",
+        "basis": "Proposed identity contract: each entry in this profile concerns one risk case; one case may have several entries.",
+        "status": "APPROVED_DESIGN_EXECUTION_PENDING",
+        "stereotype": null,
+        "multiplicity_scope": "Managed Riskium profile; raw received material remains import/staging content until it meets class admission requirements. Multiplicities do not claim universal ISO constraints.",
+        "rationale": "Proposed identity contract: each entry in this profile concerns one risk case; one case may have several entries.",
+        "arrow_shape": "Solid line; no navigability arrowhead",
+        "semantic_direction": "First concept to second concept; semantic reading direction",
+        "notation_basis": "Named association; reading direction is not a navigability-arrow claim.",
+        "notation_line": "Solid line; no navigability arrowhead",
+        "reading_direction": "First concept to second concept; reading direction only",
+        "scope_layer": "FORMAL_CORE",
+        "source_title": "Risk Register Entry",
+        "target_title": "Risk Case",
+        "source_stereotype": "«subkind»",
+        "target_stereotype": "«kind»"
+      },
+      "sha256": "c22155c304b587350704ee0838538204fdb6ab3df0bb22b179d0391185532b2c",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "RX-008",
+      "source_structure": {
+        "id": "RX-008",
+        "source": "RKM-C022",
+        "source_end_cardinality": "0..*",
+        "predicate": "memberOfRegister",
+        "relation_stereotype": "None — ordinary association",
+        "target_end_cardinality": "1",
+        "target": "RKM-C030",
+        "basis": "Make the catalog definition operational. Multiplicity is a proposed accepted-record profile and does not authorize fabricated values for incomplete source data.",
+        "status": "APPROVED_DESIGN_EXECUTION_PENDING",
+        "stereotype": null,
+        "multiplicity_scope": "Managed Riskium profile; raw received material remains import/staging content until it meets class admission requirements. Multiplicities do not claim universal ISO constraints.",
+        "rationale": "Make the catalog definition operational. Multiplicity is a proposed accepted-record profile and does not authorize fabricated values for incomplete source data.",
+        "arrow_shape": "Solid line; no navigability arrowhead",
+        "semantic_direction": "First concept to second concept; semantic reading direction",
+        "notation_basis": "Named association; reading direction is not a navigability-arrow claim.",
+        "notation_line": "Solid line; no navigability arrowhead",
+        "reading_direction": "First concept to second concept; reading direction only",
+        "scope_layer": "FORMAL_CORE",
+        "source_title": "Risk Register Entry",
+        "target_title": "Risk Register",
+        "source_stereotype": "«subkind»",
+        "target_stereotype": "«subkind»"
+      },
+      "sha256": "9993f5c23566912462faa6028ec07ad910304682a7fcd04619198ff36707a14b",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "G-07",
+      "source_structure": {
+        "id": "G-07",
+        "specific": "RKM-C005",
+        "general": "RKM-C014",
+        "status": "DESIGN_REVIEWED_NOT_FORMALLY_CERTIFIED",
+        "first_concept": "Risk Nature Assertion",
+        "first_stereotype": "«subkind»",
+        "second_concept": "Information Artifact",
+        "second_stereotype": "«kind»",
+        "relation": "is a",
+        "relation_stereotype": "None — generalization",
+        "first_cardinality": "Not applicable",
+        "second_cardinality": "Not applicable",
+        "arrow_shape": "Solid line with hollow triangular head at the general concept",
+        "direction": "Specific to general"
+      },
+      "sha256": "d5279589aa4b85fbc042896a8c90a14b59e0ece7adbad90ffeb63b64629ca3c8",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "G2-050",
+      "source_structure": {
+        "id": "G2-050",
+        "specific": "RKM-C006",
+        "general": "RKM-C019",
+        "status": "DESIGN_REVIEWED_NOT_FORMALLY_CERTIFIED",
+        "first_concept": "Nature Term",
+        "first_stereotype": "«subkind»",
+        "second_concept": "Classification Term",
+        "second_stereotype": "«subkind»",
+        "relation": "is a",
+        "relation_stereotype": "None — generalization",
+        "first_cardinality": "Not applicable",
+        "second_cardinality": "Not applicable",
+        "arrow_shape": "Solid line with hollow triangular head at the general concept",
+        "direction": "Specific to general"
+      },
+      "sha256": "05f8a1841dcf34d59bb57195bb44ef05de713c58e643547ed7290562ed6c2d5e",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "G2-053",
+      "source_structure": {
+        "id": "G2-053",
+        "specific": "RKM-C019",
+        "general": "RKM-C017",
+        "status": "DESIGN_REVIEWED_NOT_FORMALLY_CERTIFIED",
+        "first_concept": "Classification Term",
+        "first_stereotype": "«subkind»",
+        "second_concept": "Vocabulary Concept",
+        "second_stereotype": "«subkind»",
+        "relation": "is a",
+        "relation_stereotype": "None — generalization",
+        "first_cardinality": "Not applicable",
+        "second_cardinality": "Not applicable",
+        "arrow_shape": "Solid line with hollow triangular head at the general concept",
+        "direction": "Specific to general"
+      },
+      "sha256": "32ae0794381438540a75ebc33d7aa27e5da6ed89152b6a0f7ec064ff6ccaaa02",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "G2-052",
+      "source_structure": {
+        "id": "G2-052",
+        "specific": "RKM-C017",
+        "general": "RKM-C014",
+        "status": "DESIGN_REVIEWED_NOT_FORMALLY_CERTIFIED",
+        "first_concept": "Vocabulary Concept",
+        "first_stereotype": "«subkind»",
+        "second_concept": "Information Artifact",
+        "second_stereotype": "«kind»",
+        "relation": "is a",
+        "relation_stereotype": "None — generalization",
+        "first_cardinality": "Not applicable",
+        "second_cardinality": "Not applicable",
+        "arrow_shape": "Solid line with hollow triangular head at the general concept",
+        "direction": "Specific to general"
+      },
+      "sha256": "da05fb3f80befaf4beaddff9cfaf1d4fe33fa535d17eb2fbcde141f6d9ac118a",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "GX-049",
+      "source_structure": {
+        "id": "GX-049",
+        "specific": "RKM-C018",
+        "general": "RKM-C014",
+        "status": "DESIGN_REVIEWED_NOT_FORMALLY_CERTIFIED",
+        "first_concept": "Classification Scheme",
+        "first_stereotype": "«subkind»",
+        "second_concept": "Information Artifact",
+        "second_stereotype": "«kind»",
+        "relation": "is a",
+        "relation_stereotype": "None — generalization",
+        "first_cardinality": "Not applicable",
+        "second_cardinality": "Not applicable",
+        "arrow_shape": "Solid line with hollow triangular head at the general concept",
+        "direction": "Specific to general"
+      },
+      "sha256": "70ec6f8998c71b7cb215b54eb829a72c10c4c50ee69a3dd53b835fd7934a977d",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "GX-061",
+      "source_structure": {
+        "id": "GX-061",
+        "specific": "RKM-X02",
+        "general": "RKM-C014",
+        "status": "DESIGN_REVIEWED_NOT_FORMALLY_CERTIFIED",
+        "first_concept": "Objective Reference",
+        "first_stereotype": "«subkind»",
+        "second_concept": "Information Artifact",
+        "second_stereotype": "«kind»",
+        "relation": "is a",
+        "relation_stereotype": "None — generalization",
+        "first_cardinality": "Not applicable",
+        "second_cardinality": "Not applicable",
+        "arrow_shape": "Solid line with hollow triangular head at the general concept",
+        "direction": "Specific to general"
+      },
+      "sha256": "2897da8ea52be18a351fd3437fd4367ba3ee1d745e27964975d9821c918a0d78",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "GX-047",
+      "source_structure": {
+        "id": "GX-047",
+        "specific": "RKM-C002",
+        "general": "RKM-C014",
+        "status": "DESIGN_REVIEWED_NOT_FORMALLY_CERTIFIED",
+        "first_concept": "Risk Context Specification",
+        "first_stereotype": "«subkind»",
+        "second_concept": "Information Artifact",
+        "second_stereotype": "«kind»",
+        "relation": "is a",
+        "relation_stereotype": "None — generalization",
+        "first_cardinality": "Not applicable",
+        "second_cardinality": "Not applicable",
+        "arrow_shape": "Solid line with hollow triangular head at the general concept",
+        "direction": "Specific to general"
+      },
+      "sha256": "5c27f77aa3fcc380147ad4278beaa5e9f96621abef17e38db6f374b8160ca1b1",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    },
+    {
+      "id": "G-19",
+      "source_structure": {
+        "id": "G-19",
+        "specific": "RKM-C023",
+        "general": "RKM-C015",
+        "status": "DESIGN_REVIEWED_NOT_FORMALLY_CERTIFIED",
+        "first_concept": "Entry Revision",
+        "first_stereotype": "«subkind»",
+        "second_concept": "Artifact Version",
+        "second_stereotype": "«kind»",
+        "relation": "is a",
+        "relation_stereotype": "None — generalization",
+        "first_cardinality": "Not applicable",
+        "second_cardinality": "Not applicable",
+        "arrow_shape": "Solid line with hollow triangular head at the general concept",
+        "direction": "Specific to general"
+      },
+      "sha256": "fc3d25a431f7b150505d8305194f43bb949ab1c16bd634ada533d3ad634661c6",
+      "disposition": "PROSPECTIVE_SCOPED_ROUTE_NOT_EXECUTED"
+    }
+  ],
+  "source_cqs": [
+    "RQ-CQ06",
+    "RQ-CQ07",
+    "RQ-CQ08"
+  ],
+  "source_cq_limits": {
+    "RQ-CQ06": "Source identity, locator and interpretation origin only; source truth remains unassessed.",
+    "RQ-CQ07": "Declared correction lineage, never independent corroboration.",
+    "RQ-CQ08": "Reuse the no-invented-case principle for raw nature input; the original scenario population is not reclassified or passed."
+  },
+  "derived_task_questions": [
+    {
+      "id": "NRA-CQ01",
+      "question": "What exact nature, source, context and objective versions did this issued documentary version retain?"
+    },
+    {
+      "id": "NRA-CQ02",
+      "question": "Which original and explicitly corrected branches remain retrievable without choosing a true or latest report?"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "NRA-01",
+      "title": "Governed documentary and vocabulary identity",
+      "source_requirements": [
+        "RKRS-02",
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "database_requirements": [
+        "DBR-02",
+        "DBR-06",
+        "DBR-09"
+      ],
+      "clauses": [
+        "C-01",
+        "C-11"
+      ],
+      "accept": "RiskNatureAssertion is an InformationArtifact; its issued versions have separate ArtifactVersion identity. NatureTerm keeps its inherited ClassificationTerm/VocabularyConcept types and exactly one scheme-qualified code. Equal labels never merge cases, assertions, terms or schemes.",
+      "fixed_cases": [
+        "NRA-F04",
+        "NRA-F05",
+        "NRA-F06",
+        "NRA-F07",
+        "NRA-F08",
+        "NRA-F09",
+        "NRA-F16",
+        "NRA-F23",
+        "NRA-F24",
+        "NRA-F39"
+      ]
+    },
+    {
+      "id": "NRA-02",
+      "title": "Immutable version-owned interpretation",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "database_requirements": [
+        "DBR-03",
+        "DBR-05",
+        "DBR-09",
+        "DBR-18"
+      ],
+      "clauses": [
+        "C-03",
+        "C-25"
+      ],
+      "accept": "Each assertion version owns one case and exact issued term/scheme pins, plus zero or one issued context pin. Objective version pins belong to that exact context version. Recording entry revisions own their assertion-version binding before issue. All effective pins survive later versions; C-25 is reused as an engineering pattern, not a new native usesContextVersion relation on C005.",
+      "fixed_cases": [
+        "NRA-F08",
+        "NRA-F10",
+        "NRA-F11",
+        "NRA-F12",
+        "NRA-F13",
+        "NRA-F14",
+        "NRA-F15",
+        "NRA-F16",
+        "NRA-F17",
+        "NRA-F20",
+        "NRA-F22",
+        "NRA-F25",
+        "NRA-F26",
+        "NRA-F37",
+        "NRA-F38",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F56",
+        "NRA-F58"
+      ]
+    },
+    {
+      "id": "NRA-03",
+      "title": "Source bytes and qualified declarations",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06",
+        "RKRS-08"
+      ],
+      "database_requirements": [
+        "DBR-05",
+        "DBR-07",
+        "DBR-12"
+      ],
+      "clauses": [
+        "C-03",
+        "C-12"
+      ],
+      "accept": "Keep original source JSON, source identity, locator, interpretation origin, narrative and canonical recorded UTC separately for each version and correction declaration. Attribution is documentary, not verified organizational authority or factual correctness.",
+      "fixed_cases": [
+        "NRA-F09",
+        "NRA-F10",
+        "NRA-F12",
+        "NRA-F17",
+        "NRA-F18",
+        "NRA-F19",
+        "NRA-F20",
+        "NRA-F21",
+        "NRA-F22",
+        "NRA-F33",
+        "NRA-F49"
+      ]
+    },
+    {
+      "id": "NRA-04",
+      "title": "Raw, managed and finite retrieval readiness",
+      "source_requirements": [
+        "RKRS-06",
+        "RKRS-11"
+      ],
+      "database_requirements": [
+        "DBR-06",
+        "DBR-18",
+        "DBR-24"
+      ],
+      "clauses": [
+        "C-16",
+        "C-17"
+      ],
+      "accept": "Missing mandatory case/term/source is retained raw without fabricated identity and is not issued. Context may be null under R-43. A complete exact context pin with at least one explicit objective reference is READY_FOR_DECLARED_RETRIEVAL; missing context/objectives yields the fixed NOT_READY reason without zero, false or guessed values. Readiness is only this documentary retrieval task.",
+      "fixed_cases": [
+        "NRA-F14",
+        "NRA-F15",
+        "NRA-F23",
+        "NRA-F24",
+        "NRA-F25",
+        "NRA-F26",
+        "NRA-F27",
+        "NRA-F39",
+        "NRA-F41",
+        "NRA-F52",
+        "NRA-F55"
+      ]
+    },
+    {
+      "id": "NRA-05",
+      "title": "Explicit correction branches without truth selection",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "database_requirements": [
+        "DBR-05",
+        "DBR-06",
+        "DBR-07",
+        "DBR-18"
+      ],
+      "clauses": [
+        "C-03",
+        "C-12",
+        "C-17"
+      ],
+      "accept": "Store immutable correction declarations between issued versions of the same assertion artifact and same case; one predecessor per child, branches permitted, no cycle. An issue or an entry previousRevision does not imply a correction. Queries retain all exact versions; no scalar selection, corroboration or endorsement is inferred.",
+      "fixed_cases": [
+        "NRA-F06",
+        "NRA-F11",
+        "NRA-F12",
+        "NRA-F13",
+        "NRA-F18",
+        "NRA-F28",
+        "NRA-F29",
+        "NRA-F30",
+        "NRA-F31",
+        "NRA-F32",
+        "NRA-F33",
+        "NRA-F34",
+        "NRA-F35",
+        "NRA-F36",
+        "NRA-F38",
+        "NRA-F54",
+        "NRA-F55",
+        "NRA-F57"
+      ]
+    },
+    {
+      "id": "NRA-06",
+      "title": "Scoped native projection and differential oracle",
+      "source_requirements": [
+        "RKRS-01",
+        "RKRS-06",
+        "RKRS-11"
+      ],
+      "database_requirements": [
+        "DBR-03",
+        "DBR-17"
+      ],
+      "clauses": [
+        "C-02",
+        "C-11",
+        "C-12"
+      ],
+      "accept": "Use the unchanged model IDs and inherited types in a separate named graph for each issued assertion version. Project R-41/42/43/44, term R-05 and context RK2-011 with supporting identities. No assertion-to-objective predicate, native correction edge, source-as-RiskSource, actual occurrence or universal adequacy is introduced.",
+      "fixed_cases": [
+        "NRA-F27",
+        "NRA-F34",
+        "NRA-F37",
+        "NRA-F38",
+        "NRA-F39",
+        "NRA-F40",
+        "NRA-F41",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F58"
+      ]
+    },
+    {
+      "id": "NRA-07",
+      "title": "Additive migration and database assurance",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-11"
+      ],
+      "database_requirements": [
+        "DBR-09",
+        "DBR-10",
+        "DBR-11",
+        "DBR-12",
+        "DBR-19",
+        "DBR-20",
+        "DBR-21",
+        "DBR-22"
+      ],
+      "clauses": [
+        "C-03",
+        "C-16"
+      ],
+      "accept": "Validate populated schema 9 and apply migration 10 additively. Preserve every old row/schema object/ledger/native graph. Enforce sealed content through SQL and API, check exact schema/configuration/old and new data, roll back failures atomically, and execute nested transactions, real reopen, trusted-digest restore and bounded two-connection checks. Record actual engine/runtime and measured synthetic workload.",
+      "fixed_cases": [
+        "NRA-F01",
+        "NRA-F02",
+        "NRA-F03",
+        "NRA-F04",
+        "NRA-F09",
+        "NRA-F20",
+        "NRA-F21",
+        "NRA-F22",
+        "NRA-F30",
+        "NRA-F35",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F44",
+        "NRA-F45",
+        "NRA-F46",
+        "NRA-F47",
+        "NRA-F48",
+        "NRA-F49",
+        "NRA-F50",
+        "NRA-F51",
+        "NRA-F53"
+      ]
+    },
+    {
+      "id": "NRA-08",
+      "title": "Usable explicit retrieval contract",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06",
+        "RKRS-12"
+      ],
+      "database_requirements": [
+        "DBR-14",
+        "DBR-18"
+      ],
+      "clauses": [
+        "C-17"
+      ],
+      "accept": "Provide exact-version get, all-issued by-case and explicit-root correction-family queries with parameter binding and deterministic presentation order. Return the complete literal source/pin/readiness row and explicit non-endorsement envelope, without hidden latest/selection defaults. Explain prerequisites and expected example answers before implementation details.",
+      "fixed_cases": [
+        "NRA-F05",
+        "NRA-F10",
+        "NRA-F11",
+        "NRA-F25",
+        "NRA-F26",
+        "NRA-F28",
+        "NRA-F36",
+        "NRA-F40",
+        "NRA-F51",
+        "NRA-F52",
+        "NRA-F53",
+        "NRA-F54",
+        "NRA-F55",
+        "NRA-F57"
+      ]
+    },
+    {
+      "id": "NRA-09",
+      "title": "Trace, sensitivity and source preservation",
+      "source_requirements": [
+        "RKRS-11",
+        "RKRS-12"
+      ],
+      "database_requirements": [
+        "DBR-01",
+        "DBR-13",
+        "DBR-15",
+        "DBR-16",
+        "DBR-23",
+        "DBR-24"
+      ],
+      "clauses": [
+        "C-16"
+      ],
+      "accept": "Retain original populations and all protected published input bytes. Bind every derived requirement/control/input/query/oracle to its exact source and separate actual observations. Demonstrate that latest-join, missing-filter, inferred-lineage and union mutants differ. Declaration validation and synthetic runtime agreement are not independent semantic ratings.",
+      "fixed_cases": [
+        "NRA-F46",
+        "NRA-F56",
+        "NRA-F57",
+        "NRA-F58",
+        "NRA-F59",
+        "NRA-F60"
+      ]
+    },
+    {
+      "id": "NRA-10",
+      "title": "Reader and source-distribution gates",
+      "source_requirements": [
+        "RKRS-12"
+      ],
+      "database_requirements": [
+        "DBR-14",
+        "DBR-23",
+        "DBR-24"
+      ],
+      "clauses": [],
+      "accept": "Only after R2 actual evidence, reconcile all native dispositions and manuscript claims, review three audience paths, update the shared reader and independently check actual Wiki/Pages. Then select exact components and freeze/verify all six public assets, tag/Latest and prior releases. R1 alone is neither a source release nor a runtime result.",
+      "fixed_cases": [
+        "NRA-F60"
+      ]
+    }
+  ],
+  "fixed_controls": 60,
+  "query_contract": {
+    "get": "Require an exact issued nature version ID; return the complete query-oracles.json get row plus exact original source records for the assertion, term, scheme, context, objectives and correction declaration. Source records are keyed by role and ID; the literal JSON bytes must equal execution-fixture.json.",
+    "by_case": "Known case ID -> all and only issued versions of that case, each full get row and the fixed envelope. Empty known case returns []; unknown case is an error. No scalar nature or hidden current selection.",
+    "family": "Require an exact issued root version; return root and descendants following only explicit same-artifact correction edges, with depth and recorded predecessor, even for a root whose predecessor lies outside the returned subtree. Include original full get rows, full correction declarations and the fixed envelope.",
+    "native_graph": "Require exact issued nature version ID; return the scoped identity/native relation projection in native-oracles.trig. No historical union is a task answer.",
+    "ordering": "Lexical version IDs for by_case; (depth, version_id) for family; sorted unique dependency/recording lists. No order has semantic authority.",
+    "errors": [
+      "NRA-UNKNOWN_VERSION",
+      "NRA-UNKNOWN_CASE"
+    ],
+    "input_binding": "Bound SQL parameters, no dynamic identifier construction from user input."
+  },
+  "identity_policy": {
+    "assertion": "RKM-C005 artifact -> G-07 -> RKM-C014; issued version is RKM-C015 via RX-006, never a C005 instance.",
+    "term": "RKM-C006 -> G2-050 C019 -> G2-053 C017 -> G2-052 C014. Stable scheme artifact plus stable code is the local governed term key; each version pins one issued scheme version. No label keys or cross-scheme equivalence.",
+    "context_objectives": "C005 --R-43--> C002 --RK2-011--> X02. Exact context/objective version pins are supplementary immutable bindings. There is no direct C005 objective predicate.",
+    "recording": "C023 --R-44--> C005. Every issued nature version has one or more recording revisions, all staged and issued in its atomic bundle. Each recording revision payload owns the exact nature-version list before it seals. No retrofitting links onto issued nature or entry versions.",
+    "correction": "Separate application declaration with both issued endpoint IDs, actor, reason, source, locator, interpretation origin and recorded UTC; same assertion artifact and same case; one predecessor per corrected version; branches retained."
+  },
+  "scope_limits": [
+    "No ClassificationAssertion RKM-C020 or RecordStateAssertion RKM-C062 implementation.",
+    "Supporting NatureTerm/ClassificationScheme/ObjectiveReference membership and chosen native routes are bounded to this task, not a general taxonomy/translation/objective-management system.",
+    "An R-43 null is permitted. R-41/R-42 required targets and inverse R-44 recording minimum are not filled by guesses; incomplete mandatory targets remain raw.",
+    "One case per assertion version, one optional context; no multidimensional scalar assessment, automatic selection, unknown-term fabrication, ranking, scoring, formulas or validity-interval inference.",
+    "No native model revision, factual correctness, actual risk occurrence, authority, organizational admission, independent reviewer rating, private/PostgreSQL migration or deployment acceptance.",
+    "All 306 historical dispositions and original HermiT/SHACL denominators remain dated; prospective routes do not reduce the 236 deferred rows. Actual re-accounting belongs to #66.",
+    "No claim about a native InformationContent instance from serialized payload JSON and no copy of RX-014 usesContextVersion onto RiskNatureAssertion.",
+    "R1 does not freeze, publish or select v0.3.7 components."
+  ],
+  "database_assurance": {
+    "affected": [
+      "DBR-01",
+      "DBR-02",
+      "DBR-03",
+      "DBR-05",
+      "DBR-06",
+      "DBR-07",
+      "DBR-09",
+      "DBR-10",
+      "DBR-11",
+      "DBR-12",
+      "DBR-13",
+      "DBR-14",
+      "DBR-15",
+      "DBR-16",
+      "DBR-17",
+      "DBR-18",
+      "DBR-19",
+      "DBR-20",
+      "DBR-21",
+      "DBR-22",
+      "DBR-23",
+      "DBR-24"
+    ],
+    "inherited_no_new_claim": {
+      "DBR-04": "Earlier assessment interpretation remains unchanged; nature context/objective bindings have their own derived requirements.",
+      "DBR-08": "No new reported/computed score behavior; original controls retained."
+    },
+    "deferred": {
+      "DBR-25": "No PostgreSQL execution.",
+      "DBR-26": "No authorized private full-schema migration.",
+      "DBR-27": "No general formula/interval/workflow engine.",
+      "DBR-28": "No production or intended-user acceptance."
+    },
+    "required_dictionary": "Every proposed field/key/functional dependency/index/transaction/trust-boundary needs final SQL/API rationale and affected legacy regression evidence before R2 completion."
+  },
+  "reader_acceptance": [
+    {
+      "id": "NRA-Q01",
+      "criterion": "An opening example explains what two conflicting source reports and a correction mean before database or release mechanics.",
+      "status": "NOT_REVIEWED",
+      "observed": null
+    },
+    {
+      "id": "NRA-Q02",
+      "criterion": "A domain reader can distinguish raw input, issued documentary content, task readiness and factual correctness, including unknown context/objectives.",
+      "status": "NOT_REVIEWED",
+      "observed": null
+    },
+    {
+      "id": "NRA-Q03",
+      "criterion": "A reviewer can follow exact RKRS/CQ/native route, input, literal expected answer and separate actual result without combining historical graphs.",
+      "status": "NOT_REVIEWED",
+      "observed": null
+    },
+    {
+      "id": "NRA-Q04",
+      "criterion": "An integrator can reproduce original, branch and later-version answers from explicit IDs, with prerequisites, source pins and expected output.",
+      "status": "NOT_REVIEWED",
+      "observed": null
+    },
+    {
+      "id": "NRA-Q05",
+      "criterion": "Repository, Wiki and actual served Pages identify the published distribution and development component separately, with current source-bound routes.",
+      "status": "NOT_REVIEWED",
+      "observed": null
+    },
+    {
+      "id": "NRA-Q06",
+      "criterion": "All three audience paths have understandable wording, usable navigation and visible unresolved research/deployment limits; actual rendered observations are recorded separately.",
+      "status": "NOT_REVIEWED",
+      "observed": null
+    }
+  ],
+  "release_gates": [
+    {
+      "id": "R1",
+      "issue": 64,
+      "output": "Committed finite declaration, concrete inputs, literal query/RDF oracles and independent source-byte readback.",
+      "status": "PENDING_READBACK"
+    },
+    {
+      "id": "R2",
+      "issue": 65,
+      "output": "Versioned migration/API/dictionary plus actual fixed controls, preservation, negative/sensitivity/recovery and independently downloaded hosted evidence.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "R3",
+      "issue": 66,
+      "output": "Reconcile 306 native dispositions, derived trace, current reader and every affected manuscript claim with actual results.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "R4",
+      "issue": 66,
+      "output": "Review qualitative criteria and three audience paths, then actual source-bound Wiki/Pages byte readback.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "R5",
+      "issue": 66,
+      "output": "Select exact closure, freeze full-source six assets and independently verify downloads/tag/Latest plus every prior published inventory.",
+      "status": "NOT_RUN"
+    }
+  ]
+}

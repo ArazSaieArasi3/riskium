@@ -1,0 +1,138 @@
+# Literal synthetic expectations authored before any risk-nature SQL/API.
+# These are selected native projections, not full organizational admission.
+# Version pins, source qualifiers and corrections remain supplementary data.
+@prefix n: <urn:riskium:nature37:> .
+@prefix r: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#> .
+
+n:A-v1 {
+  n:A a r:RKM-C005, r:RKM-C014 ; r:R-41 n:case-1 ; r:R-42 n:negative ; r:R-43 n:context .
+  n:A-v1 a r:RKM-C015 ; r:RX-006 n:A .
+  n:case-1 a r:RKM-X01 .
+  n:negative a r:RKM-C006, r:RKM-C019, r:RKM-C017, r:RKM-C014 ; r:R-05 n:scheme-I .
+  n:negative-v1 a r:RKM-C015 ; r:RX-006 n:negative .
+  n:scheme-I a r:RKM-C018, r:RKM-C014 .
+  n:scheme-I-v1 a r:RKM-C015 ; r:RX-006 n:scheme-I .
+  n:context a r:RKM-C002, r:RKM-C014 ; r:RK2-011 n:objective .
+  n:context-v1 a r:RKM-C015 ; r:RX-006 n:context .
+  n:objective a r:RKM-X02, r:RKM-C014 .
+  n:objective-v1 a r:RKM-C015 ; r:RX-006 n:objective .
+  n:entry-1-r1 a r:RKM-C023, r:RKM-C015 ; r:R-44 n:A ; r:R-33 n:entry-1 ; r:RX-006 n:entry-1 .
+  n:entry-extra-r1 a r:RKM-C023, r:RKM-C015 ; r:R-44 n:A ; r:R-33 n:entry-extra ; r:RX-006 n:entry-extra .
+  n:entry-1 a r:RKM-C022, r:RKM-C014 ; r:R-01 n:case-1 ; r:RX-008 n:register .
+  n:entry-extra a r:RKM-C022, r:RKM-C014 ; r:R-01 n:case-1 ; r:RX-008 n:register .
+  n:register a r:RKM-C030, r:RKM-C014 .
+}
+
+n:A-v2 {
+  n:A a r:RKM-C005, r:RKM-C014 ; r:R-41 n:case-1 ; r:R-42 n:positive ; r:R-43 n:context .
+  n:A-v2 a r:RKM-C015 ; r:RX-006 n:A .
+  n:case-1 a r:RKM-X01 .
+  n:positive a r:RKM-C006, r:RKM-C019, r:RKM-C017, r:RKM-C014 ; r:R-05 n:scheme-I .
+  n:positive-v1 a r:RKM-C015 ; r:RX-006 n:positive .
+  n:scheme-I a r:RKM-C018, r:RKM-C014 .
+  n:scheme-I-v1 a r:RKM-C015 ; r:RX-006 n:scheme-I .
+  n:context a r:RKM-C002, r:RKM-C014 ; r:RK2-011 n:objective .
+  n:context-v2 a r:RKM-C015 ; r:RX-006 n:context .
+  n:objective a r:RKM-X02, r:RKM-C014 .
+  n:objective-v2 a r:RKM-C015 ; r:RX-006 n:objective .
+  n:entry-1-r2 a r:RKM-C023, r:RKM-C015 ; r:R-44 n:A ; r:R-33 n:entry-1 ; r:RX-006 n:entry-1 .
+  n:entry-1 a r:RKM-C022, r:RKM-C014 ; r:R-01 n:case-1 ; r:RX-008 n:register .
+  n:register a r:RKM-C030, r:RKM-C014 .
+}
+
+n:A-v3 {
+  n:A a r:RKM-C005, r:RKM-C014 ; r:R-41 n:case-1 ; r:R-42 n:mixed ; r:R-43 n:context .
+  n:A-v3 a r:RKM-C015 ; r:RX-006 n:A .
+  n:case-1 a r:RKM-X01 .
+  n:mixed a r:RKM-C006, r:RKM-C019, r:RKM-C017, r:RKM-C014 ; r:R-05 n:scheme-I .
+  n:mixed-v1 a r:RKM-C015 ; r:RX-006 n:mixed .
+  n:scheme-I a r:RKM-C018, r:RKM-C014 .
+  n:scheme-I-v1 a r:RKM-C015 ; r:RX-006 n:scheme-I .
+  n:context a r:RKM-C002, r:RKM-C014 ; r:RK2-011 n:objective .
+  n:context-v1 a r:RKM-C015 ; r:RX-006 n:context .
+  n:objective a r:RKM-X02, r:RKM-C014 .
+  n:objective-v1 a r:RKM-C015 ; r:RX-006 n:objective .
+  n:entry-1-r3 a r:RKM-C023, r:RKM-C015 ; r:R-44 n:A ; r:R-33 n:entry-1 ; r:RX-006 n:entry-1 .
+  n:entry-1 a r:RKM-C022, r:RKM-C014 ; r:R-01 n:case-1 ; r:RX-008 n:register .
+  n:register a r:RKM-C030, r:RKM-C014 .
+}
+
+n:B-v1 {
+  n:B a r:RKM-C005, r:RKM-C014 ; r:R-41 n:case-1 ; r:R-42 n:other-negative ; r:R-43 n:context .
+  n:B-v1 a r:RKM-C015 ; r:RX-006 n:B .
+  n:case-1 a r:RKM-X01 .
+  n:other-negative a r:RKM-C006, r:RKM-C019, r:RKM-C017, r:RKM-C014 ; r:R-05 n:scheme-II .
+  n:other-negative-v1 a r:RKM-C015 ; r:RX-006 n:other-negative .
+  n:scheme-II a r:RKM-C018, r:RKM-C014 .
+  n:scheme-II-v1 a r:RKM-C015 ; r:RX-006 n:scheme-II .
+  n:context a r:RKM-C002, r:RKM-C014 ; r:RK2-011 n:objective .
+  n:context-v1 a r:RKM-C015 ; r:RX-006 n:context .
+  n:objective a r:RKM-X02, r:RKM-C014 .
+  n:objective-v1 a r:RKM-C015 ; r:RX-006 n:objective .
+  n:entry-1-rB a r:RKM-C023, r:RKM-C015 ; r:R-44 n:B ; r:R-33 n:entry-1 ; r:RX-006 n:entry-1 .
+  n:entry-1 a r:RKM-C022, r:RKM-C014 ; r:R-01 n:case-1 ; r:RX-008 n:register .
+  n:register a r:RKM-C030, r:RKM-C014 .
+}
+
+n:U-v1 {
+  n:U a r:RKM-C005, r:RKM-C014 ; r:R-41 n:case-1 ; r:R-42 n:negative .
+  n:U-v1 a r:RKM-C015 ; r:RX-006 n:U .
+  n:case-1 a r:RKM-X01 .
+  n:negative a r:RKM-C006, r:RKM-C019, r:RKM-C017, r:RKM-C014 ; r:R-05 n:scheme-I .
+  n:negative-v1 a r:RKM-C015 ; r:RX-006 n:negative .
+  n:scheme-I a r:RKM-C018, r:RKM-C014 .
+  n:scheme-I-v1 a r:RKM-C015 ; r:RX-006 n:scheme-I .
+  n:entry-1-rU a r:RKM-C023, r:RKM-C015 ; r:R-44 n:U ; r:R-33 n:entry-1 ; r:RX-006 n:entry-1 .
+  n:entry-1 a r:RKM-C022, r:RKM-C014 ; r:R-01 n:case-1 ; r:RX-008 n:register .
+  n:register a r:RKM-C030, r:RKM-C014 .
+}
+
+n:Z-v1 {
+  n:Z a r:RKM-C005, r:RKM-C014 ; r:R-41 n:case-1 ; r:R-42 n:negative ; r:R-43 n:context .
+  n:Z-v1 a r:RKM-C015 ; r:RX-006 n:Z .
+  n:case-1 a r:RKM-X01 .
+  n:negative a r:RKM-C006, r:RKM-C019, r:RKM-C017, r:RKM-C014 ; r:R-05 n:scheme-I .
+  n:negative-v1 a r:RKM-C015 ; r:RX-006 n:negative .
+  n:scheme-I a r:RKM-C018, r:RKM-C014 .
+  n:scheme-I-v1 a r:RKM-C015 ; r:RX-006 n:scheme-I .
+  n:context a r:RKM-C002, r:RKM-C014 .
+  n:context-empty-v1 a r:RKM-C015 ; r:RX-006 n:context .
+  n:entry-1-rZ a r:RKM-C023, r:RKM-C015 ; r:R-44 n:Z ; r:R-33 n:entry-1 ; r:RX-006 n:entry-1 .
+  n:entry-1 a r:RKM-C022, r:RKM-C014 ; r:R-01 n:case-1 ; r:RX-008 n:register .
+  n:register a r:RKM-C030, r:RKM-C014 .
+}
+
+n:C-v1 {
+  n:C a r:RKM-C005, r:RKM-C014 ; r:R-41 n:case-2 ; r:R-42 n:negative ; r:R-43 n:context .
+  n:C-v1 a r:RKM-C015 ; r:RX-006 n:C .
+  n:case-2 a r:RKM-X01 .
+  n:negative a r:RKM-C006, r:RKM-C019, r:RKM-C017, r:RKM-C014 ; r:R-05 n:scheme-I .
+  n:negative-v1 a r:RKM-C015 ; r:RX-006 n:negative .
+  n:scheme-I a r:RKM-C018, r:RKM-C014 .
+  n:scheme-I-v1 a r:RKM-C015 ; r:RX-006 n:scheme-I .
+  n:context a r:RKM-C002, r:RKM-C014 ; r:RK2-011 n:objective .
+  n:context-v1 a r:RKM-C015 ; r:RX-006 n:context .
+  n:objective a r:RKM-X02, r:RKM-C014 .
+  n:objective-v1 a r:RKM-C015 ; r:RX-006 n:objective .
+  n:entry-2-r1 a r:RKM-C023, r:RKM-C015 ; r:R-44 n:C ; r:R-33 n:entry-2 ; r:RX-006 n:entry-2 .
+  n:entry-2 a r:RKM-C022, r:RKM-C014 ; r:R-01 n:case-2 ; r:RX-008 n:register .
+  n:register a r:RKM-C030, r:RKM-C014 .
+}
+
+# Later issuance has its own graph and is absent from the correction family.
+n:A-v4 {
+  n:A a r:RKM-C005, r:RKM-C014 ; r:R-41 n:case-1 ; r:R-42 n:positive ; r:R-43 n:context .
+  n:A-v4 a r:RKM-C015 ; r:RX-006 n:A .
+  n:case-1 a r:RKM-X01 .
+  n:positive a r:RKM-C006, r:RKM-C019, r:RKM-C017, r:RKM-C014 ; r:R-05 n:scheme-I .
+  n:positive-v2 a r:RKM-C015 ; r:RX-006 n:positive .
+  n:scheme-I a r:RKM-C018, r:RKM-C014 .
+  n:scheme-I-v2 a r:RKM-C015 ; r:RX-006 n:scheme-I .
+  n:context a r:RKM-C002, r:RKM-C014 ; r:RK2-011 n:objective .
+  n:context-v2 a r:RKM-C015 ; r:RX-006 n:context .
+  n:objective a r:RKM-X02, r:RKM-C014 .
+  n:objective-v2 a r:RKM-C015 ; r:RX-006 n:objective .
+  n:entry-1-r4 a r:RKM-C023, r:RKM-C015 ; r:R-44 n:A ; r:R-33 n:entry-1 ; r:RX-006 n:entry-1 .
+  n:entry-1 a r:RKM-C022, r:RKM-C014 ; r:R-01 n:case-1 ; r:RX-008 n:register .
+  n:register a r:RKM-C030, r:RKM-C014 .
+}
