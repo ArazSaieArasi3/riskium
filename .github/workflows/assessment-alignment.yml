@@ -1,0 +1,48 @@
+name: Assessment selection current alignment
+on:
+  push:
+    branches: [plan/v0.3.6-assessment-selection]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  alignment:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
+      - name: Replay the original current and approved-paper baseline
+        run: python tools/audit_current_alignment.py --check
+      - name: Check 460 candidate routes and separate 44 ASL controls
+        run: |
+          python tools/audit_assessment_alignment.py --check
+          python -m unittest discover -s tests -p test_assessment_alignment.py -v
+      - name: Protect published reader source and negative publication boundary
+        run: |
+          python tools/publication/check_development_boundary.py
+          python - <<'PY'
+          import sys
+          sys.path.insert(0, 'tools/publication')
+          import published_documentation as old
+          try:
+              old.preserved_inputs()
+          except ValueError as exc:
+              assert 'Outside additive documentation scope' in str(exc), str(exc)
+          else:
+              raise AssertionError('Candidate source accepted by the v0.3.5 publisher')
+          PY
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: assessment-alignment-${{ github.sha }}
+          path: |
+            evaluation/consistency/current-0.4.0/report.json
+            evaluation/consistency/current-0.4.0/component.json
+          if-no-files-found: error

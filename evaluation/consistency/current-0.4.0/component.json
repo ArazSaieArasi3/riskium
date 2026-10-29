@@ -1,0 +1,22 @@
+{
+  "schema": "riskium-current-consistency-component-v3",
+  "id": "CONSISTENCY",
+  "version": "0.4.0",
+  "compatible_model": "0.3.1",
+  "predecessor": "0.3.0",
+  "status": "DEVELOPMENT_ALIGNED_NOT_PUBLISHED",
+  "routes": 460,
+  "paper_version": "7.0.8",
+  "independent_acceptance": false,
+  "files_sha256": {
+    ".github/workflows/assessment-alignment.yml": "59e7543bd7d8c602a4f8186eb702068077cf12f7a3cfcbed09e09f57be6e7ad2",
+    "evaluation/consistency/current-0.4.0/README.md": "5d4e3ed9bc962b79ac5f2551a59930c35f55267e7f68c525e9e71bec557db32a",
+    "evaluation/consistency/current-0.4.0/policy.json": "739c5ce81ff6c052dbf18b1956ecfc32574858e95f6fe3e304abde448160f4c8",
+    "evaluation/consistency/current-0.4.0/report.json": "69aa85d6a1ead4437250fa3d0f078d43627e9733a3bc9a237f895164d88ce636",
+    "evaluation/consistency/current-0.4.0/traceability.csv": "8eeca704da10f4da875bd25ae92ecf8d248f5cf1e94db1ca3172ee8e93fcf1b3",
+    "evaluation/consistency/current-0.4.0/traceability.json": "d6b3cbe2a0a2b28b551cc7c79c954ab238373bc90170ebb8f0f1a089c0e61731",
+    "tests/test_assessment_alignment.py": "46fa39184e3d93b224d5958b6465b7343e14076850ca7c61650fb80a5e6d6c4d",
+    "tools/audit_assessment_alignment.py": "4a4e8317a7de0d5b70267373d4355f3172e87eda09b1087b63ddd42f6d58c67a",
+    "tools/publication/check_development_boundary.py": "6052363b6324acfb157e3e08a5a876c252760ce70274b3092c57c3653fac17d7"
+  }
+}
