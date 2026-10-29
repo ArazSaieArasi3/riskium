@@ -37,7 +37,7 @@ The model, software, manuscript and source distribution have separate versions. 
 
 ## Current status and next work
 
-**Reader status:** this landing page reflects published v0.3.6. Wiki and Pages still serve documentation 0.4.2, the reviewed prepublication checkpoint. Its dated labels describe v0.3.5 as published and v0.3.6 as a candidate. Their status refresh is open in [#63](https://github.com/ArazSaieArasi3/riskium/issues/63). Use the v0.3.6 release notes and exact-source links above for the current distribution.
+**Reader status:** documentation **0.4.3** is the shared maintained guide source for Wiki and Pages over published v0.3.6. The [channel verification record](https://github.com/ArazSaieArasi3/riskium/issues/63) identifies the reviewed source and actual served outputs. The release itself retains its documentation 0.4.2 checkpoint; use its release notes and `artifact-versions.json` for the selected distribution.
 
 The [ordered plan after v0.3.6](https://github.com/ArazSaieArasi3/riskium/blob/main/plans/post-v0.3.6.md) separates immediate maintenance, proposed v0.3.7 work and later research/deployment outcomes. The next proposed source package focuses on **RiskNatureAssertion**: [declare the contract](https://github.com/ArazSaieArasi3/riskium/issues/64) → [implement and verify](https://github.com/ArazSaieArasi3/riskium/issues/65) → [reconcile and publish](https://github.com/ArazSaieArasi3/riskium/issues/66). It is planned, not implemented or released.
 
@@ -50,6 +50,6 @@ Research content is **CC BY 4.0**; original software is **MIT**, subject to [rig
 <details>
 <summary>Publication and documentation history</summary>
 
-The v0.3.6 tag and six assets remain frozen at source `58ff468ec4e8f3500ace6869601a25ea263c3d9f`. This live landing update is not a new source distribution or completed Wiki/Pages synchronization. The previous landing remains in documentation 0.4.1 and the v0.3.6 archive. Documentation 0.4.2 and all four frozen snapshots remain preserved. [Release history](https://github.com/ArazSaieArasi3/riskium/releases) · [Version index](https://arazsaiearasi3.github.io/riskium/versions/index.html).
+The v0.3.6 tag and six assets remain frozen at source `58ff468ec4e8f3500ace6869601a25ea263c3d9f`. This live landing update is not a new source distribution or a semantic/model revision. Actual Wiki/Pages verification is recorded separately in [#63](https://github.com/ArazSaieArasi3/riskium/issues/63). The previous landing remains in documentation 0.4.1 and the v0.3.6 archive. Documentation 0.4.2 and all four frozen snapshots remain preserved. [Release history](https://github.com/ArazSaieArasi3/riskium/releases) · [Version index](https://arazsaiearasi3.github.io/riskium/versions/index.html).
 
 </details>

@@ -1,0 +1,162 @@
+{
+  "schema": "riskium-reader-review-plan-v1",
+  "documentation_version": "0.4.3",
+  "issue": 63,
+  "method": "Agent editorial source comparison plus actual rendered/keyboard journey inspection and machine integrity checks. Not an independent expert rating or user study.",
+  "baseline": {
+    "source_release": "v0.3.6",
+    "source_commit": "58ff468ec4e8f3500ace6869601a25ea263c3d9f",
+    "documentation": "0.4.2",
+    "documentation_source_commit": "d2ed1b1fbbadbbafaba847b4bfe724f1a2c256eb"
+  },
+  "references": [
+    {
+      "repository": "ArazSaieArasi3/OGCM-RF",
+      "visibility": "private",
+      "commit": "40d39d87973b05f7a65756b88ca38350ce01fd7a",
+      "paths": [
+        "framework/documentation/editorial-integrity-standard.md",
+        "framework/documentation/documentation-quality-model.md",
+        "framework/documentation/documentation-surface-allocation-standard.md",
+        "framework/reader-navigation-standard.md"
+      ],
+      "use": "Adapt reader orientation, prose, progressive disclosure, fidelity, surface authority, evidence boundaries and role journeys. No full-profile conformance or numeric score claimed."
+    },
+    {
+      "repository": "ArazSaieArasi3/araz-research-portfolio",
+      "commit": "6af47a4f145ba2b09ed7541e5548370b8ca3b391",
+      "paths": [
+        "methods/public-content/public-content-quality-gate.md",
+        "methods/repository-onboarding/readme-public-docs-procedure.md",
+        "templates/repository/reading-guide.md"
+      ],
+      "use": "Adapt source/claim integrity, readable structure, canonical version and self-contained onboarding."
+    }
+  ],
+  "qualitative_criteria": [
+    {
+      "id": "R01",
+      "name": "Orientation",
+      "acceptance": "Opening identifies Riskium, its problem and published status before process details.",
+      "status": "NOT_RUN_AT_DECLARATION"
+    },
+    {
+      "id": "R02",
+      "name": "Role journeys",
+      "acceptance": "Reviewer, domain specialist and integrator have ordered paths to relevant evidence and limitations.",
+      "status": "NOT_RUN_AT_DECLARATION"
+    },
+    {
+      "id": "R03",
+      "name": "Natural technical prose",
+      "acceptance": "Sentences explain the subject; internal issue/stage labels do not dominate the main narrative.",
+      "status": "NOT_RUN_AT_DECLARATION"
+    },
+    {
+      "id": "R04",
+      "name": "Progressive disclosure",
+      "acceptance": "Exact commits/hashes and process history remain available below the explanation in source records.",
+      "status": "NOT_RUN_AT_DECLARATION"
+    },
+    {
+      "id": "R05",
+      "name": "Evidence fidelity",
+      "acceptance": "Historical results, partial/unexecuted scope, withdrawn claims, withheld cases and zero independent ratings remain distinct.",
+      "status": "NOT_RUN_AT_DECLARATION"
+    },
+    {
+      "id": "R06",
+      "name": "Version intelligibility",
+      "acceptance": "Published source v0.3.6, native model 0.3.1, maintained documentation 0.4.3 and manuscript 7.0.8 have explicit different roles.",
+      "status": "NOT_RUN_AT_DECLARATION"
+    },
+    {
+      "id": "R07",
+      "name": "Source authority",
+      "acceptance": "Wiki explains, Pages adds generated reference, and both lead to exact governed sources; four snapshots remain immutable.",
+      "status": "NOT_RUN_AT_DECLARATION"
+    },
+    {
+      "id": "R08",
+      "name": "Reproduction usefulness",
+      "acceptance": "Reader can identify prerequisites, exact source, commands, expected outcomes and private-file/Git-history boundaries.",
+      "status": "NOT_RUN_AT_DECLARATION"
+    },
+    {
+      "id": "R09",
+      "name": "Visual and keyboard reading",
+      "acceptance": "Inspect rendered entry, evaluation, reference and limits; headings, spacing, table overflow and keyboard access remain usable in the inspected environment.",
+      "status": "NOT_RUN_AT_DECLARATION"
+    },
+    {
+      "id": "R10",
+      "name": "Cross-surface consistency",
+      "acceptance": "Actual active GitHub README, Wiki and Pages show the same released state and equivalent shared guide content.",
+      "status": "NOT_RUN_AT_DECLARATION"
+    }
+  ],
+  "audience_paths": {
+    "reviewer": [
+      "Home",
+      "Overview",
+      "Decisions",
+      "Formalization",
+      "Evaluation",
+      "Limitations",
+      "Reproduce",
+      "Publication"
+    ],
+    "domain": [
+      "Home",
+      "Scope",
+      "Using-the-Model",
+      "Competency-Questions",
+      "References",
+      "Limitations"
+    ],
+    "integrator": [
+      "Home",
+      "Visualization",
+      "Database-Assurance",
+      "Traceability",
+      "Reproduce",
+      "Publication"
+    ]
+  },
+  "protected_evidence": {
+    "native_ids": 306,
+    "deferred_mappings": 236,
+    "partial_source_scenario_evidence_routes": 14,
+    "trace_routes": 460,
+    "historical_trace_routes": 423,
+    "current_claim_routes": 49,
+    "hermit_obligations": {
+      "PASS": 281,
+      "NOT_RUN": 14
+    },
+    "shacl_obligations": {
+      "PASS": 341,
+      "PARTIAL": 1,
+      "NOT_RUN": 17
+    },
+    "sql_controls": [
+      54,
+      54,
+      62,
+      43,
+      44
+    ],
+    "organizational_admissions": {
+      "WITHHELD": 11
+    },
+    "independent_semantic_ratings": 0
+  },
+  "limits": [
+    "No full WCAG certification.",
+    "No controlled user study, independent human usability rating or semantic expert adjudication.",
+    "No unverified mobile or assistive-technology claim.",
+    "No submission readiness or new source-release scope inferred."
+  ],
+  "status": "DECLARED_BEFORE_CHANNEL_VERIFICATION",
+  "prior_reader_review": "https://github.com/ArazSaieArasi3/riskium/issues/61#issuecomment-6505377948"
+}

@@ -29,11 +29,12 @@ def verify(live=False):
     body = (ROOT / '.github/README.md').read_text()
     require(body == (ROOT / NS / 'Repository.md').read_text(), 'Live README differs from reviewed landing')
     require(policy['source_commit'] == SOURCE and policy['release'] == 'v0.3.6', 'Wrong source release')
-    require(policy['scope'] == 'LANDING_ONLY_WIKI_PAGES_PENDING', 'Unverified channel completion')
+    require(policy['scope'] == 'SHARED_READER_SOURCE_CHANNEL_EVIDENCE_SEPARATE', 'Wrong reader source role')
     for label in ('Start with your task', 'What v0.3.6 adds', 'Artifacts and versions',
                   'Current status and next work', 'Evidence, citation and reuse'):
         require('## ' + label in body, 'Missing reader route: ' + label)
-    require('Wiki and Pages still serve documentation 0.4.2' in body, 'Missing live channel boundary')
+    require('shared maintained guide source for Wiki and Pages' in body
+            and 'channel verification record' in body, 'Missing source and actual-channel distinction')
     prior_count = 0
     for tag, expected_count in [('v0.3.5', 687), ('v0.3.6', 780)]:
         path = 'releases/selection-' + tag + '.json'
@@ -79,7 +80,7 @@ def verify(live=False):
     return dict(status='REPOSITORY_LANDING_PASS', release='v0.3.6', source_commit=SOURCE,
                 links=len(urls), live_links=checked, preserved_v035_files=687,
                 preserved_other_v036_files=prior_count, mutable_entrypoint='.github/README.md',
-                wiki_pages='0.4.2_PREPUBLICATION_CHECKPOINT_PENDING_63', next_proposed_release='v0.3.7')
+                wiki_pages='0.4.3_SHARED_SOURCE_ACTUAL_VERIFICATION_IN_63', next_proposed_release='v0.3.7')
 
 
 if __name__ == '__main__':

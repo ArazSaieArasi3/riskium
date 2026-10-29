@@ -1,0 +1,132 @@
+{
+  "schema": "riskium-reader-documentation-registry-v1",
+  "documentation_version": "0.4.3",
+  "guides": [
+    {
+      "slug": "Home",
+      "wiki_slug": "Home",
+      "title": "Home",
+      "source": "documentation/0.4.3/guides/Home.md"
+    },
+    {
+      "slug": "Scope",
+      "wiki_slug": "Scope",
+      "title": "Scope",
+      "source": "documentation/0.4.3/guides/Scope.md"
+    },
+    {
+      "slug": "Overview",
+      "wiki_slug": "Overview",
+      "title": "Overview",
+      "source": "documentation/0.4.3/guides/Overview.md"
+    },
+    {
+      "slug": "Decisions",
+      "wiki_slug": "Modeling-Decisions",
+      "title": "Modeling decisions",
+      "source": "documentation/0.4.3/guides/Decisions.md"
+    },
+    {
+      "slug": "Requirements",
+      "wiki_slug": "Requirements",
+      "title": "Requirements",
+      "source": "documentation/0.4.3/guides/Requirements.md"
+    },
+    {
+      "slug": "Artifact-Versions",
+      "wiki_slug": "Artifact-Versions",
+      "title": "Artifact versions",
+      "source": "documentation/0.4.3/guides/Artifact-Versions.md"
+    },
+    {
+      "slug": "Database-Assurance",
+      "wiki_slug": "Database-Assurance",
+      "title": "Database assurance",
+      "source": "documentation/0.4.3/guides/Database-Assurance.md"
+    },
+    {
+      "slug": "Work-Plan",
+      "wiki_slug": "Work-Plan",
+      "title": "Work and release plan",
+      "source": "documentation/0.4.3/guides/Work-Plan.md"
+    },
+    {
+      "slug": "Publication-Comparison",
+      "wiki_slug": "Publication-Comparison",
+      "title": "Publication comparison",
+      "source": "documentation/0.4.3/guides/Publication-Comparison.md"
+    },
+    {
+      "slug": "Competency-Questions",
+      "wiki_slug": "Competency-Questions",
+      "title": "Competency questions",
+      "source": "documentation/0.4.3/guides/Competency-Questions.md"
+    },
+    {
+      "slug": "Traceability",
+      "wiki_slug": "Traceability",
+      "title": "Traceability",
+      "source": "documentation/0.4.3/guides/Traceability.md"
+    },
+    {
+      "slug": "References",
+      "wiki_slug": "References",
+      "title": "References",
+      "source": "documentation/0.4.3/guides/References.md"
+    },
+    {
+      "slug": "Quality",
+      "wiki_slug": "Quality",
+      "title": "Quality",
+      "source": "documentation/0.4.3/guides/Quality.md"
+    },
+    {
+      "slug": "Formalization",
+      "wiki_slug": "Formalization",
+      "title": "Formalization",
+      "source": "documentation/0.4.3/guides/Formalization.md"
+    },
+    {
+      "slug": "Evaluation",
+      "wiki_slug": "Evaluation",
+      "title": "Evaluation",
+      "source": "documentation/0.4.3/guides/Evaluation.md"
+    },
+    {
+      "slug": "Reproduce",
+      "wiki_slug": "Reproduce",
+      "title": "Reproduce",
+      "source": "documentation/0.4.3/guides/Reproduce.md"
+    },
+    {
+      "slug": "Citation",
+      "wiki_slug": "Citation",
+      "title": "Citation",
+      "source": "documentation/0.4.3/guides/Citation.md"
+    },
+    {
+      "slug": "Limitations",
+      "wiki_slug": "Limitations",
+      "title": "Limitations",
+      "source": "documentation/0.4.3/guides/Limitations.md"
+    },
+    {
+      "slug": "Using-the-Model",
+      "wiki_slug": "Using-the-Model",
+      "title": "Using the model",
+      "source": "documentation/0.4.3/guides/Using-the-Model.md"
+    },
+    {
+      "slug": "Visualization",
+      "wiki_slug": "Visualization",
+      "title": "Visualization",
+      "source": "documentation/0.4.3/guides/Visualization.md"
+    },
+    {
+      "slug": "Publication",
+      "wiki_slug": "Publication",
+      "title": "Publication",
+      "source": "documentation/0.4.3/guides/Publication.md"
+    }
+  ]
+}
