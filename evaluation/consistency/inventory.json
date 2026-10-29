@@ -884,8 +884,8 @@
     },
     {
       "path": "documentation/0.4.2/Repository.md",
-      "sha256": "31dbfe4dbcc569840c6f2d7b7a12f50c7d331a85ca5224196e166fd408463890",
-      "bytes": 6048
+      "sha256": "a71e6ff71351523f6906d3162dc63b356434750f0f37f819aa313da7f80241cb",
+      "bytes": 6199
     },
     {
       "path": "documentation/0.4.2/guide-registry.json",
@@ -894,8 +894,8 @@
     },
     {
       "path": "documentation/0.4.2/guides/Artifact-Versions.md",
-      "sha256": "806f84f724f26684e02a0ccd27a2f238cba10dfb23a69bd66c3661b65b9bcd08",
-      "bytes": 2752
+      "sha256": "ffe4206676eace09ba4832c7761b35025e0d2242c24678c8ad311fb6bef9fe58",
+      "bytes": 3041
     },
     {
       "path": "documentation/0.4.2/guides/Citation.md",
@@ -929,12 +929,12 @@
     },
     {
       "path": "documentation/0.4.2/guides/Home.md",
-      "sha256": "6d3356041d6ffe2c1f77ed4275c5f3648a73e4eff8c80a5532e6bb924da3ecf1",
-      "bytes": 2962
+      "sha256": "2b5e4ea89e7c09ab714b79275787b097eb4694c4c90b27c59234537e906da512",
+      "bytes": 2975
     },
     {
       "path": "documentation/0.4.2/guides/Limitations.md",
-      "sha256": "21fb3ba9d898b9067bcef6bd9f9b63fa208f27aec6151bed0bf627859e868ac9",
+      "sha256": "7e46f92642a66b6ea2d176d924c31bac92d78aeccc09ae9b28fa8a20d04c88cb",
       "bytes": 2968
     },
     {
@@ -944,12 +944,12 @@
     },
     {
       "path": "documentation/0.4.2/guides/Publication-Comparison.md",
-      "sha256": "75ba76acf28751c0165361e5089e8ac2d5c6b9d2cc726ce3ddaf0aa53c260a52",
+      "sha256": "52e07948b4befd9b6a9b86d9b164a57c09e0803517454002f4cf1c530dee9f18",
       "bytes": 1597
     },
     {
       "path": "documentation/0.4.2/guides/Publication.md",
-      "sha256": "12f9911f289142fe1809a94fd04b547b2a17fdb7c4add7c7e79963b0ebcecd45",
+      "sha256": "5969a5419c6974155af74d76e412b32e460e6de8ae0433c4722c9993d52af07f",
       "bytes": 3669
     },
     {
@@ -964,8 +964,8 @@
     },
     {
       "path": "documentation/0.4.2/guides/Reproduce.md",
-      "sha256": "dc63700e399193224b8d8363483bdae911311ebb97ff8653e72ac9845a353d8e",
-      "bytes": 4495
+      "sha256": "dd8eb2fb5caa3a03bd26dbf3623ef70e5c94dc0eed7e3b25032cdfc5315857ce",
+      "bytes": 5646
     },
     {
       "path": "documentation/0.4.2/guides/Requirements.md",
@@ -979,7 +979,7 @@
     },
     {
       "path": "documentation/0.4.2/guides/Traceability.md",
-      "sha256": "0220ae87bd4955b0dd21540a94bed66f4e3c89e5aa179e475b06c41e21ea920f",
+      "sha256": "3214695134c85a70f34552c79155e63ef7805cee729e2633ef7573c894cc9536",
       "bytes": 5038
     },
     {
@@ -994,12 +994,12 @@
     },
     {
       "path": "documentation/0.4.2/guides/Work-Plan.md",
-      "sha256": "56fdb97ab79083dd440e6a01368306840cbb2c2a97e3f9ddb127b360e03fd993",
-      "bytes": 4477
+      "sha256": "1c1c370f0d1c9304de2b3d49cff13999724cd96f76566371b8a19f77c6c5305b",
+      "bytes": 4590
     },
     {
       "path": "documentation/0.4.2/policy.json",
-      "sha256": "560f975061f13c0ccea24cf8f5cbc4f3e3634fccb6e2f5024dbb87cfd5a1dae1",
+      "sha256": "1464943dfc20b6ec1f2eb73c4305603401c37cca18cbac1b4df449a1ba216355",
       "bytes": 3718
     },
     {

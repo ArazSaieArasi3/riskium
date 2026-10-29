@@ -1,6 +1,6 @@
 # Development and research priorities
 
-**[v0.3.5](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.5) is published.** Its completed scope is evidence-reference lifecycle behavior and current artifact traceability, with model 0.3.1, ORSD 0.4.3, original DRSD 0.1.0 and approved manuscript 7.0.8 unchanged. Documentation 0.4.1 maintains the explanation of that release.
+**[v0.3.5](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.5) is published.** Its completed scope is evidence-reference lifecycle behavior and current artifact traceability, with model 0.3.1, ORSD 0.4.3, original DRSD 0.1.0 and approved manuscript 7.0.8 unchanged. Documentation 0.4.2 maintains the explanation of that release.
 
 ## What the release added
 
@@ -25,7 +25,7 @@ The maintained view aligns the released status, reader paths and common Wiki/Pag
 | Strengthen research evidence | Adequate sources and supported case claims, with actual independent scrutiny | Close the relevant source/case gaps and collect real independent assessments |
 | Prepare a conference submission | Venue-specific manuscript and reproducibility package with author approval | Choose venue/track, resolve retained-claim evidence, reproduce the final paper package and obtain coauthor approval |
 
-The next source-release number, scope and deadline have not been fixed. A clean documentation surface does not establish a submission-ready paper or a submission date.
+The selected next release is **v0.3.6**, with assessment selection as its bounded scope. Publication follows completed reader review and verified source assets; no deadline is claimed. A clean documentation surface does not establish a submission-ready paper or a submission date.
 
 ## Remaining scope
 

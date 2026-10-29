@@ -4,7 +4,7 @@ Riskium is a conceptual ontology for organizing enterprise risk knowledge. It di
 
 **[v0.3.5 is published](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.5).** The source package contains 29 selected components and six independently verified assets. The conceptual model remains **0.3.1**. [Current documentation](https://arazsaiearasi3.github.io/riskium/current/index.html) explains the released artifacts and their limits.
 
-Assessment selection for a named decision context is being prepared for **v0.3.6** on a [development branch](https://github.com/ArazSaieArasi3/riskium/tree/plan/v0.3.6-assessment-selection). [Its exact engineering source](https://github.com/ArazSaieArasi3/riskium/blob/12fb2011801fe47f3245f3f7367952bc0e749448/implementation/relational/0.8.0/README.md) is available for review; the public release and current Wiki/Pages still describe v0.3.5.
+Assessment selection for a named decision context is being prepared for **v0.3.6** on a [development branch](https://github.com/ArazSaieArasi3/riskium/tree/plan/v0.3.6-assessment-selection). [Its exact engineering source](https://github.com/ArazSaieArasi3/riskium/blob/12fb2011801fe47f3245f3f7367952bc0e749448/implementation/relational/0.8.0/README.md) is available for review; v0.3.5 remains the published source distribution.
 
 ## Start with your task
 
@@ -25,7 +25,7 @@ The release adds explicit documentary evidence-reference lifecycle behavior, cur
 
 Riskium supports selected conceptual, formal and software contracts. It does not prescribe a complete risk-management process or establish production readiness, calibrated prediction or regulatory compliance. All eleven organizational case admissions remain withheld; independent semantic ratings remain zero. [Limitations](https://arazsaiearasi3.github.io/riskium/current/guide/Limitations.html) and [evaluation](https://arazsaiearasi3.github.io/riskium/current/guide/Evaluation.html) explain the evidence boundaries.
 
-The approved manuscript baseline is **7.0.8**. Later engineering executions are not silently added to its evaluated claims. A venue, final supported-claim package and coauthor approval are still needed for submission. The [work plan](https://arazsaiearasi3.github.io/riskium/current/guide/Work-Plan.html) identifies remaining work; the next source-release scope and version have not been selected.
+The approved manuscript baseline is **7.0.8**. Later engineering executions are not silently added to its evaluated claims. A venue, final supported-claim package and coauthor approval are still needed for submission. The [work plan](https://arazsaiearasi3.github.io/riskium/current/guide/Work-Plan.html) identifies remaining work; the next source release is v0.3.6, covering contextual assessment selection; its final source freeze and publication are pending #61.
 
 ## Reuse and contribute
 
@@ -36,6 +36,6 @@ For a proposed change, open an [issue](https://github.com/ArazSaieArasi3/riskium
 <details>
 <summary>Source and documentation history</summary>
 
-The active repository landing page is generated from the maintained documentation. Documentation **0.4.1** is an editorial/status maintenance view of published source **v0.3.5**, exact commit `8a9a95bba17327d04c5560879819b2e61b48ff19`. It does not publish a new source distribution. The release's root README and documentation 0.4.0 remain preserved as historical source inputs. [Version index and four frozen snapshots](https://arazsaiearasi3.github.io/riskium/versions/index.html) · [Documentation maintenance record](https://github.com/ArazSaieArasi3/riskium/issues/60).
+This is the proposed repository landing text for documentation 0.4.2. The active landing source remains pinned to the published 0.4.1 checkpoint until its own versioned transition. Documentation **0.4.2** is an editorial/status maintenance view of published source **v0.3.5**, exact commit `8a9a95bba17327d04c5560879819b2e61b48ff19`. It does not publish a new source distribution. The release's root README and documentation 0.4.0 remain preserved as historical source inputs. [Version index and four frozen snapshots](https://arazsaiearasi3.github.io/riskium/versions/index.html) · [Documentation maintenance record](https://github.com/ArazSaieArasi3/riskium/issues/60).
 
 </details>

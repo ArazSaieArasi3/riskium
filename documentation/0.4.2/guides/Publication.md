@@ -7,12 +7,12 @@
 | Need | Use |
 | --- | --- |
 | Cite or reproduce the released software/artifacts | [Exact v0.3.5 release](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.5) and its checksums/source manifest |
-| Read the maintained explanation | This documentation **0.4.1**, on [Wiki](https://github.com/ArazSaieArasi3/riskium/wiki) or [Pages](https://arazsaiearasi3.github.io/riskium/current/index.html) |
+| Read the maintained explanation | This documentation **0.4.2**, on [Wiki](https://github.com/ArazSaieArasi3/riskium/wiki) or [Pages](https://arazsaiearasi3.github.io/riskium/current/index.html) |
 | Inspect conceptual or formal meaning | Model **0.3.1**, its [conceptual source](https://github.com/ArazSaieArasi3/riskium/blob/8a9a95bba17327d04c5560879819b2e61b48ff19/ontology/riskium-model.json) and [bounded OWL mapping](https://github.com/ArazSaieArasi3/riskium/blob/8a9a95bba17327d04c5560879819b2e61b48ff19/evaluation/owl-mapping-review.md) |
 | Compare an older documentation checkpoint | [Four frozen snapshots](https://arazsaiearasi3.github.io/riskium/versions/index.html) |
 | Identify the approved paper baseline | Manuscript **7.0.8**; see [paper alignment](Traceability.md) |
 
-Documentation 0.4.1 corrects published status, improves reader paths and organizes explanations. It is a documentation maintenance version, with no new source-distribution release, model revision or manuscript revision. The released 0.4.0 sources and all four frozen snapshots keep their original bytes and dated statements.
+Documentation 0.4.2 corrects published status, improves reader paths and organizes explanations. It is a documentation maintenance version, with no new source-distribution release, model revision or manuscript revision. The released 0.4.0 sources and all four frozen snapshots keep their original bytes and dated statements.
 
 ## Download and verify
 

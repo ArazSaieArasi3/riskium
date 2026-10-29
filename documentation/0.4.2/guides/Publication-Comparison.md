@@ -4,7 +4,7 @@ The [dated OntoSPK comparison](https://github.com/ArazSaieArasi3/riskium/blob/8a
 
 ## Current reading surfaces
 
-The current explanation is shared between native Wiki and Pages. Pages also exposes the conceptual reference, bounded OWL/WIDOCO reference, graph tools, downloads and four frozen documentation snapshots. Source **v0.3.5** is published; documentation **0.4.1** maintains its reader-facing explanation.
+The current explanation is shared between native Wiki and Pages. Pages also exposes the conceptual reference, bounded OWL/WIDOCO reference, graph tools, downloads and four frozen documentation snapshots. Source **v0.3.5** is published; documentation **0.4.2** maintains its reader-facing explanation.
 
 The Wiki provides curated explanations and reader navigation. Pages adds generated references and interactive exploration. Both point to the same governed sources rather than defining separate models. [Visualization](Visualization.md) explains the roles of each reference tool.
 

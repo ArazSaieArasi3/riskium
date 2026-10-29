@@ -20,6 +20,6 @@ The approved manuscript **7.0.8** has been checked against its actual Word/PDF b
 
 ## Documentation and future work
 
-Documentation **0.4.1** updates status and reading paths for the existing release. Four frozen snapshots and all prior source-release assets remain unchanged. Current Wiki and Pages are maintained conveniences; cite an exact release or commit for reproducibility.
+Documentation **0.4.2** updates status and reading paths for the existing release. Four frozen snapshots and all prior source-release assets remain unchanged. Current Wiki and Pages are maintained conveniences; cite an exact release or commit for reproducibility.
 
 Research/submission readiness still needs adequate source and related-work evidence, supported cases and independent scrutiny, a final manuscript/reproduction package, and venue/coauthor decisions. [The work plan](Work-Plan.md) explains these priorities without assigning a submission date.

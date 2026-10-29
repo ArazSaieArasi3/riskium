@@ -20,7 +20,7 @@ The actual approved **7.0.8 Word/PDF** bytes matched delivery hashes and sizes. 
 
 ## Publication and acceptance
 
-The published [v0.3.5 package](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.5) includes the selected consistency sources. Its freeze repeated affected alignment and channel checks, and its six public assets were independently verified. Documentation 0.4.1 clarifies reading paths and published status while preserving the released sources.
+The published [v0.3.5 package](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.5) includes the selected consistency sources. Its freeze repeated affected alignment and channel checks, and its six public assets were independently verified. Documentation 0.4.2 clarifies reading paths and published status while preserving the released sources.
 
 Trace accounting and channel agreement do not establish complete native mapping, original MUST fulfillment, semantic correctness or submission readiness. [Evaluation](Evaluation.md) separates the evidence populations; [the work plan](Work-Plan.md) identifies the remaining decisions.
 

@@ -35,18 +35,51 @@ python -m unittest discover -s tests -v
 
 An extracted source archive supports its documented offline checks; commands that inspect Git history need a full checkout. [The formal-method guide](Formalization.md) identifies reasoner/SHACL prerequisites and commands separately. Running this software sequence does not repeat every historical engine experiment.
 
-## Rebuild the maintained documentation
+## Synthetic two-context example
 
-To inspect the unreleased assessment selection work, check out the [exact development commit](https://github.com/ArazSaieArasi3/riskium/commit/12fb2011801fe47f3245f3f7367952bc0e749448) in a separate full clone. With the Python dependencies installed, run `python tools/run_assessment_selection.py --output build/asl-report.json`, `python tools/audit_assessment_alignment.py --check`, and `python -m unittest discover -s tests -p test_assessment_alignment.py -v`. The first command should report **44 PASS, zero FAIL and zero ERROR**; the alignment check should report **460 routes**. These are development results on synthetic fixtures. They do not alter the exact v0.3.5 release checks below.
-
-Documentation 0.4.1 lives after the source-release checkpoint. Use a full checkout of the documentation commit named in the page's source record, install `tools/publication/requirements.txt`, then run:
+At candidate source `e80a263cbb4f2d2021fdca18a9b3fcde4093add4`, with the dependencies above installed, run this from the repository root. The helper creates disposable synthetic data; use the managed-ID API in [Database assurance](Database-Assurance.md) for application integration.
 
 ```bash
-python tools/publication/published_documentation.py --check
-python tools/publication/published_documentation.py --output build/published-site
+python - <<'PYEXAMPLE'
+import sys
+sys.path.insert(0, "tools")
+import run_assessment_selection as demo
+import relational_assessment_selection as api
+
+db = demo.fresh()
+demo.timeline(db, through=4)
+for context, boundary in (("X", 1), ("X", 2), ("X", 4), ("Y", 4)):
+    answer = api.selection(db, demo.U("A"), context, boundary)
+    version = answer["assessment_version"]
+    short = version.removeprefix(demo.U("")) if version else None
+    print(context, boundary, answer["state"], short)
+db.close()
+PYEXAMPLE
 ```
 
-Expected result: local guide, link, source-binding and frozen-snapshot checks pass, and a static site appears under `build/published-site`. This builds a local package. Live publication agreement requires separate actual Wiki/HTTP readback.
+Expected output:
+
+```text
+X 1 SELECTED A-v1
+X 2 SELECTED A-v2
+X 4 WITHDRAWN None
+Y 4 SELECTED A-v3
+```
+
+X's withdrawal preserves both earlier answers. Y keeps its separate selected bundle. A correction alone does not select a replacement. These are explicit ledger boundaries, not wall-clock inference.
+
+## Rebuild the maintained documentation
+
+To inspect the unreleased assessment selection work, check out the [exact development commit](https://github.com/ArazSaieArasi3/riskium/commit/12fb2011801fe47f3245f3f7367952bc0e749448) in a separate full clone. With the Python dependencies installed, run `python tools/run_assessment_selection.py --output build/asl-report.json`, `python tools/audit_assessment_alignment.py --check`, and `python -m unittest discover -s tests -p test_assessment_alignment.py -v`. The first command should report **44 PASS, zero FAIL and zero ERROR**; the alignment check should report **460 routes**. These are development results on synthetic fixtures. The exact v0.3.5 checks above retain their original source.
+
+Documentation 0.4.2 lives after the source-release checkpoint. Use a full checkout of the documentation commit named in the page's source record, install `tools/publication/requirements.txt`, then run:
+
+```bash
+python tools/publication/assessment_documentation.py --check
+python tools/publication/assessment_documentation.py --output build/assessment-site
+```
+
+Expected result: local guide, link, source-binding and frozen-snapshot checks pass, and a static site appears under `build/assessment-site`. This builds a local package. Live publication agreement requires separate actual Wiki/HTTP readback.
 
 ## Private files and troubleshooting
 

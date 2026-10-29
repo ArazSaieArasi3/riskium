@@ -4,7 +4,7 @@ Riskium is a conceptual ontology for organizing enterprise risk information. It 
 
 **[Source release v0.3.5](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.5) is published.** This documentation explains model **0.3.1** and the bounded engineering included in that release. The [version guide](Artifact-Versions.md) distinguishes the model, source package, documentation and manuscript.
 
-The next source release, **v0.3.6**, is being prepared. Its assessment selection feature is available only on the [development branch](https://github.com/ArazSaieArasi3/riskium/tree/plan/v0.3.6-assessment-selection). It has not been merged into the published package. [Assessment selection](Database-Assurance.md#assessment-selection-in-development) explains the proposed behavior and what its checks establish.
+The next source release, **v0.3.6**, is being prepared. Its assessment selection feature can be inspected at the [exact candidate source](https://github.com/ArazSaieArasi3/riskium/commit/e80a263cbb4f2d2021fdca18a9b3fcde4093add4). It is outside the immutable v0.3.5 source package. [Assessment selection](Database-Assurance.md#assessment-selection-in-development) explains the proposed behavior and what its checks establish.
 
 ## Choose a reading path
 
