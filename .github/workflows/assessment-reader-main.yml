@@ -5,6 +5,12 @@ on:
       - 'documentation/0.4.2/**'
       - 'tools/publication/assessment_documentation.py'
       - '.github/workflows/assessment-reader-main.yml'
+      - 'tools/publication/assessment_main_gate.py'
+      - 'tests/test_assessment_main_gate.py'
+  workflow_run:
+    workflows: [v0.3.6 source versioned full suite]
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
@@ -13,6 +19,12 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.event == 'push' &&
+       github.event.workflow_run.head_branch == 'main' &&
+       github.event.workflow_run.head_repository.full_name == github.repository)
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
@@ -20,6 +32,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -28,24 +41,25 @@ jobs:
         run: |
           python tools/publication/review_assessment_reader.py
           python -m unittest discover -s tests -p test_assessment_documentation.py -v
+          python -m unittest discover -s tests -p test_assessment_main_gate.py -v
           python tools/publication/assessment_documentation.py --output build/assessment-site --wiki-output build/assessment-wiki --receipt build/assessment-reader.json
           git diff --exit-code
       - uses: actions/upload-artifact@v4
         with:
-          name: assessment-main-reader-${{ github.sha }}
+          name: assessment-main-reader-${{ github.event.workflow_run.head_sha || github.sha }}
           path: |
             build/assessment-reader.json
             build/assessment-wiki/
           if-no-files-found: error
       - uses: actions/upload-pages-artifact@v4
-        if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
+        if: github.event_name == 'workflow_run' || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
         with:
           path: build/assessment-site
   deploy:
     needs: build
-    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'workflow_run' || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 20
     permissions:
       pages: write
       id-token: write
@@ -55,11 +69,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           persist-credentials: false
-      - name: Reject stale deployment
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/publication/requirements.txt
+      - name: Require live release identity and settled predecessor deployments
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+          READER_RUN_ID: ${{ github.run_id }}
         run: |
-          git fetch --no-tags origin main
-          test "$(git rev-parse HEAD)" = "$(git rev-parse FETCH_HEAD)"
+          python tools/publication/assessment_main_gate.py --source "$SOURCE_SHA" --run-id "$READER_RUN_ID" --wait-seconds 900
       - uses: actions/configure-pages@v5
       - id: deployment
         uses: actions/deploy-pages@v4

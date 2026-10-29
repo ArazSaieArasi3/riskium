@@ -1,7 +1,9 @@
 name: v0.3.6 source versioned full suite
 on:
   push:
-    branches: [plan/v0.3.6-assessment-selection]
+    branches: [main, plan/v0.3.6-assessment-selection]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read

@@ -1,0 +1,96 @@
+"""Gate the 0.4.2 deployment after source-qualified CI and historical publishers."""
+import argparse
+import json
+import os
+import subprocess
+import time
+
+import assessment_documentation as reader
+import published_documentation as historical
+
+
+DOCUMENTATION = 'Documentation integrity'
+INCREMENTAL = 'Incremental release candidate'
+PAGES = 'Publish versioned documentation'
+STATUS = 'Publish verified source release status'
+CURRENT = 'Publish current documentation 0.4.0'
+PUBLISHED = 'Published v0.3.5 reader documentation'
+SUITE = 'v0.3.6 source versioned full suite'
+NAMES = {DOCUMENTATION, INCREMENTAL, PAGES, STATUS, CURRENT, PUBLISHED, SUITE}
+
+
+def settled(runs, source, run_id):
+    """Require terminal predecessor attempts, including descendants yet to be queued."""
+    grouped = {}
+    for run in runs:
+        if (run['head_sha'] == source and run['head_branch'] == 'main'
+                and run['event'] in ('push', 'workflow_run')
+                and run['id'] != run_id and run['name'] in NAMES):
+            grouped.setdefault(run['name'], []).append(run)
+    pending = []
+    for name in (DOCUMENTATION, INCREMENTAL, SUITE):
+        if name not in grouped:
+            pending.append('Not yet observed: ' + name)
+    for name, attempts in grouped.items():
+        if any(run['status'] != 'completed' for run in attempts):
+            pending.append('Running: ' + name)
+    # These workflows are queued after predecessor completion, not with the push.
+    for parent, child in ((DOCUMENTATION, PAGES), (PAGES, STATUS), (STATUS, CURRENT)):
+        if any(run['status'] == 'completed' and run['conclusion'] == 'success'
+               for run in grouped.get(parent, [])) and child not in grouped:
+            pending.append('Awaiting triggered successor: ' + child)
+    if INCREMENTAL in grouped and PUBLISHED not in grouped:
+        pending.append('Awaiting old reader boundary run')
+    suite = grouped.get(SUITE, [])
+    reader.require(not suite or all(run['status'] != 'completed' or run['conclusion'] == 'success'
+                                   for run in suite), 'Source-qualified suite failed')
+    return pending
+
+
+def run_inventory(getter=reader.api):
+    runs = []
+    for page in range(1, 11):
+        data = getter('actions/runs?per_page=100&page=' + str(page))['workflow_runs']
+        runs.extend(data)
+        if len(data) < 100:
+            break
+    return runs
+
+
+def verify_source(source):
+    reader.require(reader.git(reader.ROOT, 'rev-parse', 'HEAD') == source, 'Wrong checkout')
+    reader.require(not reader.git(reader.ROOT, 'status', '--porcelain'), 'Dirty deployment source')
+    publication = json.loads(reader.read(reader.ROOT, reader.NS + '/publication.json'))
+    reader.verify_live_release(publication, source)
+    reader.preserved_inputs()
+    try:
+        historical.preserved_inputs()
+    except ValueError as exc:
+        reader.require('Outside additive documentation scope' in str(exc),
+                       'Unexpected old publisher failure: ' + str(exc))
+    else:
+        raise ValueError('Old reader publisher accepts candidate; competing deployment possible')
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--source', required=True)
+    parser.add_argument('--run-id', required=True, type=int)
+    parser.add_argument('--wait-seconds', type=int, default=0)
+    args = parser.parse_args()
+    deadline = time.monotonic() + args.wait_seconds
+    while True:
+        verify_source(args.source)
+        pending = settled(run_inventory(), args.source, args.run_id)
+        if not pending:
+            break
+        reader.require(time.monotonic() < deadline, 'Predecessor deployments unsettled: ' + '; '.join(pending))
+        print(json.dumps({'pending': pending}), flush=True)
+        time.sleep(15)
+    print(json.dumps(dict(status='SOURCE_QUALIFIED_MAIN_DEPLOYMENT_GATE_PASS',
+                         source=args.source, prior_selected_files=687,
+                         old_reader_rejects_candidate=True, predecessor_deployments_settled=True)))
+
+
+if __name__ == '__main__':
+    main()
