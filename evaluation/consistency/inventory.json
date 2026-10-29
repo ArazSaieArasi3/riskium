@@ -129,8 +129,8 @@
     },
     {
       "path": ".github/workflows/v036-versioned-suite.yml",
-      "sha256": "628597e9dc0d912d31c43ec4fe96d3df33a784ee003f742b361bb78bd6e824b2",
-      "bytes": 1744
+      "sha256": "d593c1494449c40cbfdc99b80db96cac2f3e112c8ff76814b7fc9200e2bd0db5",
+      "bytes": 2092
     },
     {
       "path": ".gitignore",
@@ -1686,6 +1686,21 @@
       "path": "evaluation/integration/report.json.gz",
       "sha256": "4d3db19a427d4fc624be04c8cde1962c124144fb1a292c0b811129a30dc264bc",
       "bytes": 285519
+    },
+    {
+      "path": "evaluation/integration/v0.3.7/README.md",
+      "sha256": "e7b5bce8e50c4ff7280e5d7fe6765d083a7d8ba4ce10b78b14b7c667da627904",
+      "bytes": 2558
+    },
+    {
+      "path": "evaluation/integration/v0.3.7/inputs/r2-completion.json",
+      "sha256": "cb01769bcf4d2e5f9d4bf7baeeb5ad0fe5313ac987c8c215ce086766ea02b268",
+      "bytes": 317022
+    },
+    {
+      "path": "evaluation/integration/v0.3.7/next-steps.md",
+      "sha256": "c7b509a847578ae684a4df31806346c386b6c0e43108ac71eba4425465954b50",
+      "bytes": 2585
     },
     {
       "path": "evaluation/manuscript-review/README.md",
@@ -3873,6 +3888,11 @@
       "bytes": 4178
     },
     {
+      "path": "tests/test_risk_nature_alignment.py",
+      "sha256": "e71b27866171e60ca6238e69d89d736bf8279fcf8e40f0dfa79231641233a3fb",
+      "bytes": 4695
+    },
+    {
       "path": "tests/test_risk_nature_declaration.py",
       "sha256": "82169115fd461f889677bd48bcf0caf7e2bbe80e952e3fc69a151dd81f0b5692",
       "bytes": 3930
@@ -3946,6 +3966,11 @@
       "path": "tools/audit_relational_design.py",
       "sha256": "a25625e463eed97ec7eae7170fa655f0299c8b3e1c70d7948023564c2099e843",
       "bytes": 11300
+    },
+    {
+      "path": "tools/audit_risk_nature_alignment.py",
+      "sha256": "c1e04b565ef4be4d2604e41ae97e2765da8f18c21970562f1e8b9626b4c9b2a4",
+      "bytes": 24187
     },
     {
       "path": "tools/build_admission_shapes.py",

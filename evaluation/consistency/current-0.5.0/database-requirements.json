@@ -1,0 +1,1196 @@
+{
+  "original_drsd_version": "0.1.0",
+  "rows": [
+    {
+      "id": "DBR-01",
+      "original_definition": {
+        "id": "DBR-01",
+        "title": "Scope and source inventory",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-01",
+          "RKRS-11",
+          "RKRS-12"
+        ],
+        "constraint_ids": [
+          "C-02",
+          "C-14"
+        ],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Account for all 306 elements with implemented, partial, external or unimplemented dispositions; allocation is not implementation coverage.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "cb7e07e8b1e76c0d58388ca6aec9cf20ab31e270baacbcc4f932c71377cc0e62",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-09"
+      ],
+      "fixed_controls": [
+        "NRA-F46",
+        "NRA-F56",
+        "NRA-F57",
+        "NRA-F58",
+        "NRA-F59",
+        "NRA-F60"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-02",
+      "original_definition": {
+        "id": "DBR-02",
+        "title": "Governed identity and subtype strategy",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-02",
+          "RKRS-03"
+        ],
+        "constraint_ids": [
+          "C-01"
+        ],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Keep artifact/version/result identities and labels separate; review inheritance strategy explicitly, without one table per class as a default.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "fd8df686f8f0599c9bfd6e0b22e2761b8ad3a80b85c9af9511c5cea740ef08c3",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-01"
+      ],
+      "fixed_controls": [
+        "NRA-F04",
+        "NRA-F05",
+        "NRA-F06",
+        "NRA-F07",
+        "NRA-F08",
+        "NRA-F09",
+        "NRA-F16",
+        "NRA-F23",
+        "NRA-F24",
+        "NRA-F39"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-03",
+      "original_definition": {
+        "id": "DBR-03",
+        "title": "Native relations and loss register",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-04",
+          "RKRS-11"
+        ],
+        "constraint_ids": [
+          "C-04",
+          "C-25"
+        ],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Document every selected predicate, direction, optionality, storage/derivation and unimplemented subclause; retain source hashes.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "94b26b27f60edc59f75b74438281e5fcb07ef2aa63a81a4305e9ed48add18f52",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-02",
+        "NRA-06"
+      ],
+      "fixed_controls": [
+        "NRA-F08",
+        "NRA-F10",
+        "NRA-F11",
+        "NRA-F12",
+        "NRA-F13",
+        "NRA-F14",
+        "NRA-F15",
+        "NRA-F16",
+        "NRA-F17",
+        "NRA-F20",
+        "NRA-F22",
+        "NRA-F25",
+        "NRA-F26",
+        "NRA-F27",
+        "NRA-F34",
+        "NRA-F37",
+        "NRA-F38",
+        "NRA-F39",
+        "NRA-F40",
+        "NRA-F41",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F56",
+        "NRA-F58"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-04",
+      "original_definition": {
+        "id": "DBR-04",
+        "title": "Assessment interpretation pins",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-04"
+        ],
+        "constraint_ids": [
+          "C-04",
+          "C-13",
+          "C-18",
+          "C-25"
+        ],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Persist exact issued context/method/basis/scale versions and selected dimension/level; validate target kind and optional direct-target agreement.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "9404090a12423e4d7af8ed2d4db86c2cb25886c39ed912e81809ed59aaf7c573",
+      "disposition": "INHERITED_NO_NEW_CLAIM",
+      "derived_routes": [],
+      "fixed_controls": [],
+      "reason": "Earlier assessment interpretation remains unchanged; nature context/objective bindings have their own derived requirements.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-05",
+      "original_definition": {
+        "id": "DBR-05",
+        "title": "Immutable issued history",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-03"
+        ],
+        "constraint_ids": [
+          "C-03",
+          "C-24"
+        ],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Stage relational payload and metadata together; sealing blocks update/delete/replace and late dependent metadata; preserve old versions.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "5d5d7fd36793884b94c631a3885452fac48327fb883a39bfd554cf0e3263f7d0",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-02",
+        "NRA-03",
+        "NRA-05"
+      ],
+      "fixed_controls": [
+        "NRA-F06",
+        "NRA-F08",
+        "NRA-F09",
+        "NRA-F10",
+        "NRA-F11",
+        "NRA-F12",
+        "NRA-F13",
+        "NRA-F14",
+        "NRA-F15",
+        "NRA-F16",
+        "NRA-F17",
+        "NRA-F18",
+        "NRA-F19",
+        "NRA-F20",
+        "NRA-F21",
+        "NRA-F22",
+        "NRA-F25",
+        "NRA-F26",
+        "NRA-F28",
+        "NRA-F29",
+        "NRA-F30",
+        "NRA-F31",
+        "NRA-F32",
+        "NRA-F33",
+        "NRA-F34",
+        "NRA-F35",
+        "NRA-F36",
+        "NRA-F37",
+        "NRA-F38",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F49",
+        "NRA-F54",
+        "NRA-F55",
+        "NRA-F56",
+        "NRA-F57",
+        "NRA-F58"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-06",
+      "original_definition": {
+        "id": "DBR-06",
+        "title": "Multiple values and missingness",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-04",
+          "RKRS-06"
+        ],
+        "constraint_ids": [
+          "C-17"
+        ],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Preserve distinct qualified result records, null/unknown and lexical zero without collapse or invented one-value selection.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "7d963a824f82156620abb542dcca4de2ce28cef36e7b0b5f19ac6b5176e93194",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-01",
+        "NRA-04",
+        "NRA-05"
+      ],
+      "fixed_controls": [
+        "NRA-F04",
+        "NRA-F05",
+        "NRA-F06",
+        "NRA-F07",
+        "NRA-F08",
+        "NRA-F09",
+        "NRA-F11",
+        "NRA-F12",
+        "NRA-F13",
+        "NRA-F14",
+        "NRA-F15",
+        "NRA-F16",
+        "NRA-F18",
+        "NRA-F23",
+        "NRA-F24",
+        "NRA-F25",
+        "NRA-F26",
+        "NRA-F27",
+        "NRA-F28",
+        "NRA-F29",
+        "NRA-F30",
+        "NRA-F31",
+        "NRA-F32",
+        "NRA-F33",
+        "NRA-F34",
+        "NRA-F35",
+        "NRA-F36",
+        "NRA-F38",
+        "NRA-F39",
+        "NRA-F41",
+        "NRA-F52",
+        "NRA-F54",
+        "NRA-F55",
+        "NRA-F57"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-07",
+      "original_definition": {
+        "id": "DBR-07",
+        "title": "Source and interpretation provenance",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-06"
+        ],
+        "constraint_ids": [
+          "C-02",
+          "C-12",
+          "C-17"
+        ],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Retain exact raw JSON and per-result source record, locator and interpretation origin; no scenario/occurrence admission is inferred.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "fa8b0e90f263fe049b844806a78be49e1d96eaa2f3515ef962a6ec1d9043e1c6",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-03",
+        "NRA-05"
+      ],
+      "fixed_controls": [
+        "NRA-F06",
+        "NRA-F09",
+        "NRA-F10",
+        "NRA-F11",
+        "NRA-F12",
+        "NRA-F13",
+        "NRA-F17",
+        "NRA-F18",
+        "NRA-F19",
+        "NRA-F20",
+        "NRA-F21",
+        "NRA-F22",
+        "NRA-F28",
+        "NRA-F29",
+        "NRA-F30",
+        "NRA-F31",
+        "NRA-F32",
+        "NRA-F33",
+        "NRA-F34",
+        "NRA-F35",
+        "NRA-F36",
+        "NRA-F38",
+        "NRA-F49",
+        "NRA-F54",
+        "NRA-F55",
+        "NRA-F57"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-08",
+      "original_definition": {
+        "id": "DBR-08",
+        "title": "Reported versus computed values",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-05"
+        ],
+        "constraint_ids": [
+          "C-21"
+        ],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Retain a supplied lexical value as reported; unknown has SQL NULL; reject computed claims because this profile has no justified formula engine.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "04cbe1d81af3b2f6f5ff99151d76edb65833f713a0e5c489f789830c0e5e8225",
+      "disposition": "INHERITED_NO_NEW_CLAIM",
+      "derived_routes": [],
+      "fixed_controls": [],
+      "reason": "No new reported/computed score behavior; original controls retained.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-09",
+      "original_definition": {
+        "id": "DBR-09",
+        "title": "Relational integrity and types",
+        "priority": "MUST",
+        "derived_from_orsd": [],
+        "constraint_ids": [],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Exercise primary/candidate/foreign keys, nullability, checks and STRICT types with exact negative errors, including configuration-off rejection.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "35995332b02dbee936e7c9e1c69dffe12c1f226c992caa0d4d3350d0a333bc5a",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-01",
+        "NRA-02",
+        "NRA-07"
+      ],
+      "fixed_controls": [
+        "NRA-F01",
+        "NRA-F02",
+        "NRA-F03",
+        "NRA-F04",
+        "NRA-F05",
+        "NRA-F06",
+        "NRA-F07",
+        "NRA-F08",
+        "NRA-F09",
+        "NRA-F10",
+        "NRA-F11",
+        "NRA-F12",
+        "NRA-F13",
+        "NRA-F14",
+        "NRA-F15",
+        "NRA-F16",
+        "NRA-F17",
+        "NRA-F20",
+        "NRA-F21",
+        "NRA-F22",
+        "NRA-F23",
+        "NRA-F24",
+        "NRA-F25",
+        "NRA-F26",
+        "NRA-F30",
+        "NRA-F35",
+        "NRA-F37",
+        "NRA-F38",
+        "NRA-F39",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F44",
+        "NRA-F45",
+        "NRA-F46",
+        "NRA-F47",
+        "NRA-F48",
+        "NRA-F49",
+        "NRA-F50",
+        "NRA-F51",
+        "NRA-F53",
+        "NRA-F56",
+        "NRA-F58"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-10",
+      "original_definition": {
+        "id": "DBR-10",
+        "title": "Atomic writes and migrations",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-03"
+        ],
+        "constraint_ids": [
+          "C-03"
+        ],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Execute populated additive migration 3, idempotence and transaction rollback, preserving existing base rows and hashes; reject ledger/schema drift.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "5ea739e5198dc81023883856655011bec2cbbd105245aabc8348148a5be6622c",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-07"
+      ],
+      "fixed_controls": [
+        "NRA-F01",
+        "NRA-F02",
+        "NRA-F03",
+        "NRA-F04",
+        "NRA-F09",
+        "NRA-F20",
+        "NRA-F21",
+        "NRA-F22",
+        "NRA-F30",
+        "NRA-F35",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F44",
+        "NRA-F45",
+        "NRA-F46",
+        "NRA-F47",
+        "NRA-F48",
+        "NRA-F49",
+        "NRA-F50",
+        "NRA-F51",
+        "NRA-F53"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-11",
+      "original_definition": {
+        "id": "DBR-11",
+        "title": "Backup and recovery",
+        "priority": "MUST",
+        "derived_from_orsd": [],
+        "constraint_ids": [],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Execute close/reopen, SQLite backup and logical dump/restore with exact logical rows, history, pins and declared queries.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "200c1b7d3df25cff00cd8a33e6907d655f7bcdad9f345d975527f87c226bdcff",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-07"
+      ],
+      "fixed_controls": [
+        "NRA-F01",
+        "NRA-F02",
+        "NRA-F03",
+        "NRA-F04",
+        "NRA-F09",
+        "NRA-F20",
+        "NRA-F21",
+        "NRA-F22",
+        "NRA-F30",
+        "NRA-F35",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F44",
+        "NRA-F45",
+        "NRA-F46",
+        "NRA-F47",
+        "NRA-F48",
+        "NRA-F49",
+        "NRA-F50",
+        "NRA-F51",
+        "NRA-F53"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-12",
+      "original_definition": {
+        "id": "DBR-12",
+        "title": "Explicit time fields",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-08"
+        ],
+        "constraint_ids": [
+          "C-05"
+        ],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Keep recorded/reference/validity fields distinct; validate canonical UTC calendar strings and interval endpoint order only; unknown stays null.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "8236b9746b9755b074d432a3d6b58983d76a2e46840269d6b5c1e07f1c40eb43",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-03",
+        "NRA-07"
+      ],
+      "fixed_controls": [
+        "NRA-F01",
+        "NRA-F02",
+        "NRA-F03",
+        "NRA-F04",
+        "NRA-F09",
+        "NRA-F10",
+        "NRA-F12",
+        "NRA-F17",
+        "NRA-F18",
+        "NRA-F19",
+        "NRA-F20",
+        "NRA-F21",
+        "NRA-F22",
+        "NRA-F30",
+        "NRA-F33",
+        "NRA-F35",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F44",
+        "NRA-F45",
+        "NRA-F46",
+        "NRA-F47",
+        "NRA-F48",
+        "NRA-F49",
+        "NRA-F50",
+        "NRA-F51",
+        "NRA-F53"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-13",
+      "original_definition": {
+        "id": "DBR-13",
+        "title": "Purpose and dependency review",
+        "priority": "MUST",
+        "derived_from_orsd": [],
+        "constraint_ids": [],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Each table has a purpose, key and declared functional dependencies; flag unexplained one-column/key-only tables; justified subtype membership is allowed.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "76861858eb0fe9e6c32e1ea2655d3543c40001b616397e5905aab437ff1ef32f",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-09"
+      ],
+      "fixed_controls": [
+        "NRA-F46",
+        "NRA-F56",
+        "NRA-F57",
+        "NRA-F58",
+        "NRA-F59",
+        "NRA-F60"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-14",
+      "original_definition": {
+        "id": "DBR-14",
+        "title": "Complete schema dictionary",
+        "priority": "MUST",
+        "derived_from_orsd": [],
+        "constraint_ids": [],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Document every actual table/column/key/FK/index and its purpose, native/supplementary role and source requirement; no generic unnamed columns.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "a79d245b4d15b6c73f2ab2679b3bd1bf058c959af27ad181cf65614be25880a5",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-08",
+        "NRA-10"
+      ],
+      "fixed_controls": [
+        "NRA-F05",
+        "NRA-F10",
+        "NRA-F11",
+        "NRA-F25",
+        "NRA-F26",
+        "NRA-F28",
+        "NRA-F36",
+        "NRA-F40",
+        "NRA-F51",
+        "NRA-F52",
+        "NRA-F53",
+        "NRA-F54",
+        "NRA-F55",
+        "NRA-F57",
+        "NRA-F60"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-15",
+      "original_definition": {
+        "id": "DBR-15",
+        "title": "Reproducible synthetic exploration",
+        "priority": "MUST",
+        "derived_from_orsd": [],
+        "constraint_ids": [],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Freeze seed, generated inputs, fixed answer vectors and metamorphic properties before execution; separate them from real data and external validity.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "e459cdbb6e023fd14d3378ed9660706e42014c0e09f8beab1dd9fc5ccd725cf1",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-09"
+      ],
+      "fixed_controls": [
+        "NRA-F46",
+        "NRA-F56",
+        "NRA-F57",
+        "NRA-F58",
+        "NRA-F59",
+        "NRA-F60"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-16",
+      "original_definition": {
+        "id": "DBR-16",
+        "title": "Sensitivity and exact failure oracles",
+        "priority": "MUST",
+        "derived_from_orsd": [],
+        "constraint_ids": [],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Delete selected guards deliberately and show the intended invalid operation becomes possible; unrelated engine errors never count as successful rejection.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "e0c677b122535f3ea2006e920238baecae0d72a0a1f77f0fe26c9ae2964406cc",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-09"
+      ],
+      "fixed_controls": [
+        "NRA-F46",
+        "NRA-F56",
+        "NRA-F57",
+        "NRA-F58",
+        "NRA-F59",
+        "NRA-F60"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-17",
+      "original_definition": {
+        "id": "DBR-17",
+        "title": "SQL/RDF differential checks",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-04",
+          "RKRS-11"
+        ],
+        "constraint_ids": [
+          "C-04",
+          "C-13",
+          "C-18"
+        ],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Compare selected native facts, SQL answers and SHACL task eligibility against frozen expected answers; keep historical named graphs separate.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "3b245168d3d22aea28810f94ac1e120a4ee435b7fa19b354e12bdab05f1151ff",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-06"
+      ],
+      "fixed_controls": [
+        "NRA-F27",
+        "NRA-F34",
+        "NRA-F37",
+        "NRA-F38",
+        "NRA-F39",
+        "NRA-F40",
+        "NRA-F41",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F58"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-18",
+      "original_definition": {
+        "id": "DBR-18",
+        "title": "Query usability and historical retrieval",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-03",
+          "RKRS-04"
+        ],
+        "constraint_ids": [
+          "C-03",
+          "C-04"
+        ],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Provide executable version-pinned lookup, lineage and comparison examples with exact answers and missing/not-ready outcomes.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "f0cd94f353096e0a67845c4dbb09b3d6f5284724840c0699ac51ccc5a59f6f6b",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-02",
+        "NRA-04",
+        "NRA-05",
+        "NRA-08"
+      ],
+      "fixed_controls": [
+        "NRA-F05",
+        "NRA-F06",
+        "NRA-F08",
+        "NRA-F10",
+        "NRA-F11",
+        "NRA-F12",
+        "NRA-F13",
+        "NRA-F14",
+        "NRA-F15",
+        "NRA-F16",
+        "NRA-F17",
+        "NRA-F18",
+        "NRA-F20",
+        "NRA-F22",
+        "NRA-F23",
+        "NRA-F24",
+        "NRA-F25",
+        "NRA-F26",
+        "NRA-F27",
+        "NRA-F28",
+        "NRA-F29",
+        "NRA-F30",
+        "NRA-F31",
+        "NRA-F32",
+        "NRA-F33",
+        "NRA-F34",
+        "NRA-F35",
+        "NRA-F36",
+        "NRA-F37",
+        "NRA-F38",
+        "NRA-F39",
+        "NRA-F40",
+        "NRA-F41",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F51",
+        "NRA-F52",
+        "NRA-F53",
+        "NRA-F54",
+        "NRA-F55",
+        "NRA-F56",
+        "NRA-F57",
+        "NRA-F58"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-19",
+      "original_definition": {
+        "id": "DBR-19",
+        "title": "Measured workload and index evidence",
+        "priority": "MUST",
+        "derived_from_orsd": [],
+        "constraint_ids": [],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Measure declared seeded synthetic workload sizes, median/p95 and query plans; verify answers and index rationale; no unapproved production SLO claim.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "b97fe2a83621f7ede4d71993f4ffff42cc7494bd2bbea10b0c3a946c2544fed4",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-07"
+      ],
+      "fixed_controls": [
+        "NRA-F01",
+        "NRA-F02",
+        "NRA-F03",
+        "NRA-F04",
+        "NRA-F09",
+        "NRA-F20",
+        "NRA-F21",
+        "NRA-F22",
+        "NRA-F30",
+        "NRA-F35",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F44",
+        "NRA-F45",
+        "NRA-F46",
+        "NRA-F47",
+        "NRA-F48",
+        "NRA-F49",
+        "NRA-F50",
+        "NRA-F51",
+        "NRA-F53"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-20",
+      "original_definition": {
+        "id": "DBR-20",
+        "title": "Bounded concurrent transactions",
+        "priority": "MUST",
+        "derived_from_orsd": [],
+        "constraint_ids": [],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Execute two-connection read visibility and writer conflict/retry on a temporary file with recorded journal mode and busy policy.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "5395d2a4cd19ba6e8df30f0ff7717a6582c0aeb4142bcb1c67b0a191e8a73647",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-07"
+      ],
+      "fixed_controls": [
+        "NRA-F01",
+        "NRA-F02",
+        "NRA-F03",
+        "NRA-F04",
+        "NRA-F09",
+        "NRA-F20",
+        "NRA-F21",
+        "NRA-F22",
+        "NRA-F30",
+        "NRA-F35",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F44",
+        "NRA-F45",
+        "NRA-F46",
+        "NRA-F47",
+        "NRA-F48",
+        "NRA-F49",
+        "NRA-F50",
+        "NRA-F51",
+        "NRA-F53"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-21",
+      "original_definition": {
+        "id": "DBR-21",
+        "title": "Configured trust boundaries",
+        "priority": "MUST",
+        "derived_from_orsd": [],
+        "constraint_ids": [],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Use bound parameters; detect altered schema/guards and disabled FK/recursive triggers. Administrator DDL and file privileges remain outside logical guard guarantees.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "deb640b62e0cb0bbd8171f824deb11644885154aae6903f010da82010616a061",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-07"
+      ],
+      "fixed_controls": [
+        "NRA-F01",
+        "NRA-F02",
+        "NRA-F03",
+        "NRA-F04",
+        "NRA-F09",
+        "NRA-F20",
+        "NRA-F21",
+        "NRA-F22",
+        "NRA-F30",
+        "NRA-F35",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F44",
+        "NRA-F45",
+        "NRA-F46",
+        "NRA-F47",
+        "NRA-F48",
+        "NRA-F49",
+        "NRA-F50",
+        "NRA-F51",
+        "NRA-F53"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-22",
+      "original_definition": {
+        "id": "DBR-22",
+        "title": "Engine/runtime evidence",
+        "priority": "MUST",
+        "derived_from_orsd": [],
+        "constraint_ids": [],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Record actual SQLite/Python versions and configuration; test only declared engines; SQLite success does not establish PostgreSQL portability.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "a330f3856c33d7fed25fb72ea5ac7769f120e229d3e46a3db172c9581c7bf9b6",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-07"
+      ],
+      "fixed_controls": [
+        "NRA-F01",
+        "NRA-F02",
+        "NRA-F03",
+        "NRA-F04",
+        "NRA-F09",
+        "NRA-F20",
+        "NRA-F21",
+        "NRA-F22",
+        "NRA-F30",
+        "NRA-F35",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F44",
+        "NRA-F45",
+        "NRA-F46",
+        "NRA-F47",
+        "NRA-F48",
+        "NRA-F49",
+        "NRA-F50",
+        "NRA-F51",
+        "NRA-F53"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-23",
+      "original_definition": {
+        "id": "DBR-23",
+        "title": "Artifact versions and trace integrity",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-12"
+        ],
+        "constraint_ids": [],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "Trace ORSD/CQs -> database requirements -> mapping/schema/query -> fixed case/oracle -> receipt, with independently versioned artifacts and fail-closed stale links.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "c35f97d8eb16eeeb3c07b3139d5c6cdea3567dd7ada9d3ed080aa0895faafcc2",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-09",
+        "NRA-10"
+      ],
+      "fixed_controls": [
+        "NRA-F46",
+        "NRA-F56",
+        "NRA-F57",
+        "NRA-F58",
+        "NRA-F59",
+        "NRA-F60"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-24",
+      "original_definition": {
+        "id": "DBR-24",
+        "title": "Scoped release readiness",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-11",
+          "RKRS-12"
+        ],
+        "constraint_ids": [
+          "C-16"
+        ],
+        "applies_to_current_profile": true,
+        "acceptance_criterion": "All retained database requirements need matching evidence; missing, deferred, failed and not-applicable are distinct; no overall correctness percentage.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "PUBLIC_SQLITE_0.2.0",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "be8d030328590394cc285efec53142ef9895cf9b4e41540417542726754d1b0b",
+      "disposition": "SCOPED_ADDITIONAL_ENGINEERING",
+      "derived_routes": [
+        "NRA-04",
+        "NRA-09",
+        "NRA-10"
+      ],
+      "fixed_controls": [
+        "NRA-F14",
+        "NRA-F15",
+        "NRA-F23",
+        "NRA-F24",
+        "NRA-F25",
+        "NRA-F26",
+        "NRA-F27",
+        "NRA-F39",
+        "NRA-F41",
+        "NRA-F46",
+        "NRA-F52",
+        "NRA-F55",
+        "NRA-F56",
+        "NRA-F57",
+        "NRA-F58",
+        "NRA-F59",
+        "NRA-F60"
+      ],
+      "reason": "Only the linked finite nature-task evidence. Original DRSD acceptance is unchanged.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-25",
+      "original_definition": {
+        "id": "DBR-25",
+        "title": "PostgreSQL implementation",
+        "priority": "MUST",
+        "derived_from_orsd": [],
+        "constraint_ids": [],
+        "applies_to_current_profile": false,
+        "acceptance_criterion": "Declare PostgreSQL schema, datatypes and transaction policies and execute its own migration/query tests before claiming portability.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "FUTURE_NOT_EXECUTED",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "3496d67ef1d3f392fa139ab3db2979a92e42242b020f109dd49830d2667544b7",
+      "disposition": "DEFERRED",
+      "derived_routes": [],
+      "fixed_controls": [],
+      "reason": "No PostgreSQL execution.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-26",
+      "original_definition": {
+        "id": "DBR-26",
+        "title": "Private full-schema migration",
+        "priority": "MUST",
+        "derived_from_orsd": [],
+        "constraint_ids": [],
+        "applies_to_current_profile": false,
+        "acceptance_criterion": "Inspect exact authorized private source, map all relevant tables/fields, migrate actual data and reconcile loss; the public slice is not the private 128-table database.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "FUTURE_NOT_EXECUTED",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "7b1402ba07f1ee4449e2578c89b770ba83893fecac03b7ef15427065ae3b4bef",
+      "disposition": "DEFERRED",
+      "derived_routes": [],
+      "fixed_controls": [],
+      "reason": "No authorized private full-schema migration.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-27",
+      "original_definition": {
+        "id": "DBR-27",
+        "title": "General formulas, intervals and workflow",
+        "priority": "MUST",
+        "derived_from_orsd": [
+          "RKRS-05",
+          "RKRS-08"
+        ],
+        "constraint_ids": [
+          "C-05",
+          "C-19",
+          "C-21"
+        ],
+        "applies_to_current_profile": false,
+        "acceptance_criterion": "Adopt justified formula inputs, interval semantics and workflow rules before implementing and validating their broader operational outcomes.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "FUTURE_NOT_EXECUTED",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "a4e7da9a3626fce1a4b05b1f6a064ea512b27da7633d3d58a920b74c907604b1",
+      "disposition": "DEFERRED",
+      "derived_routes": [],
+      "fixed_controls": [],
+      "reason": "No general formula/interval/workflow engine.",
+      "original_acceptance_changed": false
+    },
+    {
+      "id": "DBR-28",
+      "original_definition": {
+        "id": "DBR-28",
+        "title": "Deployment and user acceptance",
+        "priority": "MUST",
+        "derived_from_orsd": [],
+        "constraint_ids": [],
+        "applies_to_current_profile": false,
+        "acceptance_criterion": "Declare actual roles/privacy/threat model, recovery objectives, real workload SLOs and user tasks; execute real user/deployment acceptance before production claims.",
+        "negative_acceptance_criterion": "Reject unsupported completion or a mismatching case/oracle/input binding; preserve unknown and deferred statuses.",
+        "scope": "FUTURE_NOT_EXECUTED",
+        "status": "DECLARED_NOT_YET_EXECUTED"
+      },
+      "original_definition_sha256": "305f4ee93a071e5ce1b12c8a1deb71215a030f914516a12b96fe547c508b49ed",
+      "disposition": "DEFERRED",
+      "derived_routes": [],
+      "fixed_controls": [],
+      "reason": "No production or intended-user acceptance.",
+      "original_acceptance_changed": false
+    }
+  ]
+}

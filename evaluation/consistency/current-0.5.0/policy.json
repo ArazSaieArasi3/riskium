@@ -1,0 +1,34 @@
+{
+  "schema": "riskium-nature-current-policy-v1",
+  "version": "0.5.0",
+  "predecessor": "evaluation/consistency/current-0.4.0",
+  "published_release": "v0.3.6",
+  "candidate_release": "v0.3.7",
+  "manuscript_version": "7.0.8",
+  "new_manuscript_disposition": "NOT_CLAIMED_IN_PAPER",
+  "reader": "PENDING_R4",
+  "distribution": "PENDING_R5",
+  "derived_routes": ["NRA-01", "NRA-02", "NRA-03", "NRA-04", "NRA-05", "NRA-06", "NRA-07", "NRA-08", "NRA-09", "NRA-10"],
+  "affected_retained_claim_groups": ["FC-05", "FC-06", "FC-10", "FC-12"],
+  "supported_engineering_wording": {
+    "NRA-01": "The finite SQLite fixture distinguishes assertion artifact identity, issued version identity and scheme-qualified nature terms, including equal-label counterexamples.",
+    "NRA-02": "Exact retrieval preserves recorded case, nature term, context, objective and entry-version references through additive updates in the declared fixture.",
+    "NRA-03": "Eight executed exact-version answers retain the original synthetic source JSON and documentary provenance separately for each role.",
+    "NRA-04": "The declared retrieval task preserves raw incomplete input and distinguishes missing context or objective pins from ready documentary retrieval; readiness does not establish factual correctness.",
+    "NRA-05": "Explicit correction declarations preserve the two branches from A-v1; the competing B report and unlinked later A-v4 do not become corrections or corroboration.",
+    "NRA-06": "Eight actual named graphs match all 306 literal RDF quads and nine fixed query rows using unchanged model 0.3.1 identifiers; this is finite projection agreement.",
+    "NRA-07": "The recorded synthetic SQLite execution covers populated schema-9 migration, schema-10 guards, rollback, reopen, trusted-digest restore and bounded concurrency/workload controls on its stated engines.",
+    "NRA-08": "Exact-version, all-issued by-case and explicit-root family queries pass their finite literal oracles without an implicit latest or truth choice; reader acceptance remains pending R4.",
+    "NRA-09": "All 60 declared controls, 51 negative variants and ten derived routes are source-bound to the completed R2 evidence; new mapping witnesses retain all historical populations and scientific limits.",
+    "NRA-10": "R3 reconciles the completed engineering evidence and source roles. Shared reader acceptance R4 and exact-source freeze, six public assets and release verification R5 remain pending."
+  },
+  "limits": [
+    "R2 observations belong to source 7f3f8440b22690d28cea750bd441dde78b1e0337; integration checks do not relabel their executed source.",
+    "All 306 native element dispositions and the historical 236 deferred rows are retained. Thirty-one selected native routes have additional finite documentary witnesses; none establishes complete native or semantic acceptance.",
+    "The 306 RDF quads and 306 native identifiers are different populations.",
+    "All 65 original paper claim dispositions remain unchanged. Later engineering wording is not a claim in manuscript 7.0.8.",
+    "HermiT 281 PASS/14 NOT_RUN of 295 and SHACL 341 PASS/1 PARTIAL/17 NOT_RUN of 359 are historical scientific results; no fresh scientific replay is claimed.",
+    "Eleven organizational admissions remain WITHHELD; independent semantic ratings remain zero.",
+    "The published package is v0.3.6 and model/OWL remain 0.3.1. Proposed v0.3.7 is pending R4 and R5."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "riskium-current-consistency-component-v4",
+  "id": "CONSISTENCY",
+  "version": "0.5.0",
+  "compatible_model": "0.3.1",
+  "predecessor": "0.4.0",
+  "status": "DEVELOPMENT_ALIGNED_NOT_PUBLISHED",
+  "routes": 470,
+  "paper_version": "7.0.8",
+  "independent_acceptance": false,
+  "files_sha256": {
+    "evaluation/consistency/current-0.5.0/README.md": "bd43595365099e89c27ea82dc24a37d7ad69f2d33f7bea4cf6ea4551ab4b2eb5",
+    "evaluation/consistency/current-0.5.0/database-requirements.json": "68b861db82d046b4e29fa02aa9372cbaf3de186c0f2a131477b1b93e20e5dbcf",
+    "evaluation/consistency/current-0.5.0/manuscript-dispositions.json": "464050b9b251e13db3d27cd1df6365d861c0d541b4a30663521a9d45809effa4",
+    "evaluation/consistency/current-0.5.0/native-accounting.json": "928fe2c81871f2e2b9e579c71d758ddc6aa3dbc6a4778cbeda108ffecbcd0322",
+    "evaluation/consistency/current-0.5.0/policy.json": "6acd926ad2f6eb01f0645ac4851f725dd3b869810998fbf3a88efbefa742e1d3",
+    "evaluation/consistency/current-0.5.0/report.json": "dde92752cf6dfb57ec8dcc888f366c39bd948b0bd454ebd132873d939151ffe2",
+    "evaluation/consistency/current-0.5.0/traceability.csv": "cef30bb49b3d14e649a26b20cfe41493c4ce7e30f7c33c0288e8e44987b4081d",
+    "evaluation/consistency/current-0.5.0/traceability.json": "6f515a75918f78a29c0d9eac69d588ada929400eec94a0c7e27332d23f513b39",
+    "evaluation/integration/v0.3.7/README.md": "e7b5bce8e50c4ff7280e5d7fe6765d083a7d8ba4ce10b78b14b7c667da627904",
+    "evaluation/integration/v0.3.7/next-steps.md": "c7b509a847578ae684a4df31806346c386b6c0e43108ac71eba4425465954b50",
+    "tests/test_risk_nature_alignment.py": "e71b27866171e60ca6238e69d89d736bf8279fcf8e40f0dfa79231641233a3fb",
+    "tools/audit_risk_nature_alignment.py": "c1e04b565ef4be4d2604e41ae97e2765da8f18c21970562f1e8b9626b4c9b2a4"
+  }
+}

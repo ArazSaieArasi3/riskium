@@ -32,6 +32,11 @@ jobs:
       - name: Execute the declared risk-nature runtime controls
         if: hashFiles('tools/relational_risk_nature.py') != ''
         run: python tools/run_relational_risk_nature.py --output build/risk-nature-runtime.json
+      - name: Check the separate risk-nature integration evidence and pending gates
+        if: hashFiles('tools/audit_risk_nature_alignment.py') != ''
+        run: |
+          python tools/audit_risk_nature_alignment.py --check --receipt build/risk-nature-alignment.json
+          git diff --exit-code
       - uses: actions/upload-artifact@v4
         with:
           name: v036-source-suite-${{ github.sha }}
@@ -39,4 +44,5 @@ jobs:
             build/versioned-suite.json
             build/risk-nature-declaration.json
             build/risk-nature-runtime.json
+            build/risk-nature-alignment.json
           if-no-files-found: error

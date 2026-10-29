@@ -1,0 +1,1578 @@
+{
+  "schema": "riskium-nature-manuscript-dispositions-v1",
+  "manuscript_version": "7.0.8",
+  "edited": false,
+  "approved_original_receipt": "evaluation/consistency/current-0.3.0/manuscript-readback.json",
+  "original_claim_dispositions": [
+    {
+      "id": "MC-001",
+      "claim": "catalog concepts",
+      "checked_value": 80,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P51",
+          "node_text_sha256": "977409e885a0537cfd5d0c1848ff877f0861d95437f0f8b2eadfe053c64c5e9c",
+          "fragment_sha256": "174082683a8dd5e5491970def71b33c01425429e51f88535599843b3c34884a2"
+        }
+      ],
+      "pdf_pages": [
+        3
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-002",
+      "claim": "typed core",
+      "checked_value": 77,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P51",
+          "node_text_sha256": "977409e885a0537cfd5d0c1848ff877f0861d95437f0f8b2eadfe053c64c5e9c",
+          "fragment_sha256": "5a4f28ef82e231d485d11adb2f8d2ac7975a0b8d644dac783d604ea18b0ddd16"
+        }
+      ],
+      "pdf_pages": [
+        3
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-003",
+      "claim": "optional boundaries",
+      "checked_value": 3,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P51",
+          "node_text_sha256": "977409e885a0537cfd5d0c1848ff877f0861d95437f0f8b2eadfe053c64c5e9c",
+          "fragment_sha256": "cb4d8af24d3ae4565c6e10e1ffce20a60b45b5edebeca3609c2441ad1095fa15"
+        }
+      ],
+      "pdf_pages": [
+        3
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-004",
+      "claim": "imported anchor, separate",
+      "checked_value": 1,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P51",
+          "node_text_sha256": "977409e885a0537cfd5d0c1848ff877f0861d95437f0f8b2eadfe053c64c5e9c",
+          "fragment_sha256": "6d052ff24ed0e3cc47b4af32131aee960d7fb5fea8179680e13c0689894053fb"
+        }
+      ],
+      "pdf_pages": [
+        3
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-005",
+      "claim": "domains",
+      "checked_value": 11,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P51",
+          "node_text_sha256": "977409e885a0537cfd5d0c1848ff877f0861d95437f0f8b2eadfe053c64c5e9c",
+          "fragment_sha256": "08b1c68320581df85e778b0f69cde003231b8aa286f5b0567ee7a8e2f8e02a47"
+        }
+      ],
+      "pdf_pages": [
+        3
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-006",
+      "claim": "associations and optional bridges",
+      "checked_value": 134,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P51",
+          "node_text_sha256": "977409e885a0537cfd5d0c1848ff877f0861d95437f0f8b2eadfe053c64c5e9c",
+          "fragment_sha256": "d71b137abfacac213f67861a937c034077bdef4faa0b14b9c4a8adfa47294ee6"
+        }
+      ],
+      "pdf_pages": [
+        3
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-007",
+      "claim": "core associations",
+      "checked_value": 127,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P51",
+          "node_text_sha256": "977409e885a0537cfd5d0c1848ff877f0861d95437f0f8b2eadfe053c64c5e9c",
+          "fragment_sha256": "16028b16bfed62ec7c359e122bc7af4765b30f55ae6cff0e3de868a51d65ccc4"
+        }
+      ],
+      "pdf_pages": [
+        3
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-008",
+      "claim": "generalizations",
+      "checked_value": 66,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P51",
+          "node_text_sha256": "977409e885a0537cfd5d0c1848ff877f0861d95437f0f8b2eadfe053c64c5e9c",
+          "fragment_sha256": "5a75b73316fbb5e49c2630a99c803c3a49ee11996427cba98995f701ab871f40"
+        }
+      ],
+      "pdf_pages": [
+        3,
+        7
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-009",
+      "claim": "interpretation constraints",
+      "checked_value": 25,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P51",
+          "node_text_sha256": "977409e885a0537cfd5d0c1848ff877f0861d95437f0f8b2eadfe053c64c5e9c",
+          "fragment_sha256": "2ddef0f5ef931ed140f221e754394387fbc85dc54b204e3c488564d61fada3d0"
+        }
+      ],
+      "pdf_pages": [
+        3,
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-010",
+      "claim": "selected concepts",
+      "checked_value": 28,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P63",
+          "node_text_sha256": "bf40f7cd033d9d52bafddfd2152c54692a4b390ef4fcc3743f2fa071226613a1",
+          "fragment_sha256": "52eb2fcc3226dc5ac5d59a2135ff1b53a165df1c21169a82ba76787c9eff2378"
+        }
+      ],
+      "pdf_pages": [
+        4
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-011",
+      "claim": "selected associations",
+      "checked_value": 31,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P63",
+          "node_text_sha256": "bf40f7cd033d9d52bafddfd2152c54692a4b390ef4fcc3743f2fa071226613a1",
+          "fragment_sha256": "5a2af100cde0167784b0961b011bdef62a47d0dc470202a5d0c8f40a72b815fc"
+        }
+      ],
+      "pdf_pages": [
+        4
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-012",
+      "claim": "selected generalizations",
+      "checked_value": 10,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P63",
+          "node_text_sha256": "bf40f7cd033d9d52bafddfd2152c54692a4b390ef4fcc3743f2fa071226613a1",
+          "fragment_sha256": "c3e63b73362f3cee457d713e128b620c3218353d96af433f1e87f95201e825dd"
+        }
+      ],
+      "pdf_pages": [
+        4
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-013",
+      "claim": "native schema",
+      "checked_value": "https://w3id.org/ontouml/schema/v1.0.2",
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P73",
+          "node_text_sha256": "ddcf20c617a6dc8a446cbc8ac54c62f057e743334e7515db021bc40761d68164",
+          "fragment_sha256": "ba06c56bebc6313c5881ced5441a00e5574031b644111bb866cd71228a7cf63c"
+        }
+      ],
+      "pdf_pages": [
+        5,
+        7
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-014",
+      "claim": "SDK version",
+      "checked_value": "1.0.0",
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P73",
+          "node_text_sha256": "ddcf20c617a6dc8a446cbc8ac54c62f057e743334e7515db021bc40761d68164",
+          "fragment_sha256": "76b470fb6753944a0ee97c5fbc645225726303ae972a4c3e4dbd7870f8f770ad"
+        }
+      ],
+      "pdf_pages": [
+        5
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-015",
+      "claim": "serialization elements",
+      "checked_value": 585,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P73",
+          "node_text_sha256": "ddcf20c617a6dc8a446cbc8ac54c62f057e743334e7515db021bc40761d68164",
+          "fragment_sha256": "8225f586657f3157bccd4a1ccdf475d9b2a473f791fb9c0d18215990d9c637d4"
+        }
+      ],
+      "pdf_pages": [
+        5
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-016",
+      "claim": "native classes including local anchor",
+      "checked_value": 78,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P73",
+          "node_text_sha256": "ddcf20c617a6dc8a446cbc8ac54c62f057e743334e7515db021bc40761d68164",
+          "fragment_sha256": "1988a1affbee209fa50f032fe6885f871db65b284b4b420ddca710242d901f44"
+        }
+      ],
+      "pdf_pages": [
+        5
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-017",
+      "claim": "incomplete generalization sets",
+      "checked_value": 10,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P92",
+          "node_text_sha256": "e47051b8978cb8cfcd8309285c807a78589d875d94f0b02810491b8f155a3829",
+          "fragment_sha256": "712157d66ffaad1e4645d8bafb75cbdf1eb6951ad362e7af675637ac4b0e540a"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-018",
+      "claim": "HermiT cases",
+      "checked_value": 693,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P87",
+          "node_text_sha256": "edae7462d527d68b350f8e90e57dbc90946cf71992149217189f03357d32317c",
+          "fragment_sha256": "78d073394731fbb47f1c209e54ffa2076ad7965985fec167c635c16abf998d2e"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-019",
+      "claim": "HermiT PASS obligations",
+      "checked_value": 281,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P87",
+          "node_text_sha256": "edae7462d527d68b350f8e90e57dbc90946cf71992149217189f03357d32317c",
+          "fragment_sha256": "5585728ef2dca165e9decff9a5816eb4052c8fcc498a2b8740366bd42b91e645"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-020",
+      "claim": "HermiT baseline",
+      "checked_value": 295,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P87",
+          "node_text_sha256": "edae7462d527d68b350f8e90e57dbc90946cf71992149217189f03357d32317c",
+          "fragment_sha256": "3ad357f560ede5019bd12f6f9c6f9dfb2c708ac306d27b60a19d26287be30710"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-021",
+      "claim": "HermiT NOT_RUN",
+      "checked_value": 14,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P87",
+          "node_text_sha256": "edae7462d527d68b350f8e90e57dbc90946cf71992149217189f03357d32317c",
+          "fragment_sha256": "da81bc16ed477f2abaf6bbc6e5e723506297e8e557e2341bffd8ec3a234d0a89"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-022",
+      "claim": "HermiT PASS coverage percent",
+      "checked_value": 95.25,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P87",
+          "node_text_sha256": "edae7462d527d68b350f8e90e57dbc90946cf71992149217189f03357d32317c",
+          "fragment_sha256": "92551027fb45bda0f7d46079a750a0ebfd2bc7a4c706bc5cf80fabe253ad0ef2"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-023",
+      "claim": "SHACL scoped PASS obligations",
+      "checked_value": 341,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P89",
+          "node_text_sha256": "4f8cdf53ee6aa7f2993e196cee467a0d848eada9c6bba6f5f7a09658434bd0b4",
+          "fragment_sha256": "3471fa58cacb820187d301b58d50c15a2da9bfbfc625a4f6e9d5828ecc0b2664"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-024",
+      "claim": "SHACL baseline",
+      "checked_value": 359,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P89",
+          "node_text_sha256": "4f8cdf53ee6aa7f2993e196cee467a0d848eada9c6bba6f5f7a09658434bd0b4",
+          "fragment_sha256": "6d508bf39c38629f13977426e6d264ee8c7a14e8acce5c5dd0ba87fe45b0b68e"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-025",
+      "claim": "SHACL PARTIAL",
+      "checked_value": 1,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P89",
+          "node_text_sha256": "4f8cdf53ee6aa7f2993e196cee467a0d848eada9c6bba6f5f7a09658434bd0b4",
+          "fragment_sha256": "cef6e87faf8e481bd9d2007680190b33349e8e754d2f9eb4b9f5b5b950fcf8c0"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-026",
+      "claim": "SHACL NOT_RUN",
+      "checked_value": 17,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P89",
+          "node_text_sha256": "4f8cdf53ee6aa7f2993e196cee467a0d848eada9c6bba6f5f7a09658434bd0b4",
+          "fragment_sha256": "2cb8f3ca3282d3324618c064b9485f51b6e36322be4bbdf2606a2af30c928e34"
+        }
+      ],
+      "pdf_pages": [
+        6,
+        7
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-027",
+      "claim": "SHACL scoped PASS coverage percent",
+      "checked_value": 94.99,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P89",
+          "node_text_sha256": "4f8cdf53ee6aa7f2993e196cee467a0d848eada9c6bba6f5f7a09658434bd0b4",
+          "fragment_sha256": "cd9a8b0e454819393eaf3f351ae9cf11fe74657fb24f9efa28a7b6641aae5619"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-028",
+      "claim": "SHACL module engine validations",
+      "checked_value": 77,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P88",
+          "node_text_sha256": "f0da0a7b927fedba1df37d4fb9c53925c73a49e9c9e7fc4471c8d9bf398af998",
+          "fragment_sha256": "3140ecd25f076b961d7a71c80b87f5830944069412747edba8f81d91134260ee"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-029",
+      "claim": "SHACL module engine validations",
+      "checked_value": 1878,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P88",
+          "node_text_sha256": "f0da0a7b927fedba1df37d4fb9c53925c73a49e9c9e7fc4471c8d9bf398af998",
+          "fragment_sha256": "3140ecd25f076b961d7a71c80b87f5830944069412747edba8f81d91134260ee"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-030",
+      "claim": "SHACL module engine validations",
+      "checked_value": 2012,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P88",
+          "node_text_sha256": "f0da0a7b927fedba1df37d4fb9c53925c73a49e9c9e7fc4471c8d9bf398af998",
+          "fragment_sha256": "3140ecd25f076b961d7a71c80b87f5830944069412747edba8f81d91134260ee"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-031",
+      "claim": "SHACL module engine validations",
+      "checked_value": 48,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P88",
+          "node_text_sha256": "f0da0a7b927fedba1df37d4fb9c53925c73a49e9c9e7fc4471c8d9bf398af998",
+          "fragment_sha256": "3140ecd25f076b961d7a71c80b87f5830944069412747edba8f81d91134260ee"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-032",
+      "claim": "SHACL module engine validations",
+      "checked_value": 47,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P88",
+          "node_text_sha256": "f0da0a7b927fedba1df37d4fb9c53925c73a49e9c9e7fc4471c8d9bf398af998",
+          "fragment_sha256": "3140ecd25f076b961d7a71c80b87f5830944069412747edba8f81d91134260ee"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-033",
+      "claim": "fixed synthetic CQ answer cases",
+      "checked_value": 32,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P94",
+          "node_text_sha256": "3a738bdfe2dedd4289145f2c8ce19d724ed13f99c9d8f03e917743187ca224ce",
+          "fragment_sha256": "1d3c331aad4855de95286f9de8c7fbd05edf1675cced5ac4f92641919016ac36"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-034",
+      "claim": "detected CQ mutants",
+      "checked_value": 8,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P94",
+          "node_text_sha256": "3a738bdfe2dedd4289145f2c8ce19d724ed13f99c9d8f03e917743187ca224ce",
+          "fragment_sha256": "c6d56595bbe9fefe44cf618bfb568dc9645dabe8edaaf19ade63bdb6b34814aa"
+        }
+      ],
+      "pdf_pages": [
+        6,
+        7
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-035",
+      "claim": "original populations with bounded execution",
+      "checked_value": 5,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P94",
+          "node_text_sha256": "3a738bdfe2dedd4289145f2c8ce19d724ed13f99c9d8f03e917743187ca224ce",
+          "fragment_sha256": "29c0c5277b2105c92da14c1421c7705060f5b0f3f65ee55c68f25bf07b4ecabd"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-036",
+      "claim": "original CQ contract population denominator",
+      "checked_value": 8,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P94",
+          "node_text_sha256": "3a738bdfe2dedd4289145f2c8ce19d724ed13f99c9d8f03e917743187ca224ce",
+          "fragment_sha256": "28b9b48d2c1a14f040f821943e59d3a8aabf41a61be35ed47002d91bc921b0db"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-037",
+      "claim": "trace rows",
+      "checked_value": 28,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P94",
+          "node_text_sha256": "3a738bdfe2dedd4289145f2c8ce19d724ed13f99c9d8f03e917743187ca224ce",
+          "fragment_sha256": "e07b69b2666f31ddd4f2ee390aa596b7222d4d5940c02cd7eafe7019d403916f"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-038",
+      "claim": "trace cohort RKRS-",
+      "checked_value": 12,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P94",
+          "node_text_sha256": "3a738bdfe2dedd4289145f2c8ce19d724ed13f99c9d8f03e917743187ca224ce",
+          "fragment_sha256": "bf1114f2134ffe67ac00b9bbcda97d784efbbb76d3201c94ba0d6e5483fac500"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-039",
+      "claim": "trace cohort RKM-SCOPE-",
+      "checked_value": 8,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P94",
+          "node_text_sha256": "3a738bdfe2dedd4289145f2c8ce19d724ed13f99c9d8f03e917743187ca224ce",
+          "fragment_sha256": "54912a0653fc629458c4c2bc3ba742f9c368ea090d8437110c1cdcaf27729622"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-040",
+      "claim": "trace cohort RQ-CQ",
+      "checked_value": 8,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P94",
+          "node_text_sha256": "3a738bdfe2dedd4289145f2c8ce19d724ed13f99c9d8f03e917743187ca224ce",
+          "fragment_sha256": "16452c43c5d63fd8a8fd3e7f752321dca531b2c9f725863178dad5b15750fa3a"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-041",
+      "claim": "source register sources",
+      "checked_value": 11,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P99",
+          "node_text_sha256": "8ff8ef4346ad42b854f388566c8db9433d9a4fa629b2588a223aa08a9bfeb830",
+          "fragment_sha256": "3701efd86cd180fe85cdc8311cc19704143a210eb4c49f42d741e8e8261ba41d"
+        }
+      ],
+      "pdf_pages": [
+        6,
+        8
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-042",
+      "claim": "source register interpretations",
+      "checked_value": 13,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P99",
+          "node_text_sha256": "8ff8ef4346ad42b854f388566c8db9433d9a4fa629b2588a223aa08a9bfeb830",
+          "fragment_sha256": "794a41e73d46edb151cae7cd191db66295b6a09f5b99711623408e2486c4e5fa"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-043",
+      "claim": "connectivity full_with_inheritance",
+      "checked_value": {
+        "nodes": 81,
+        "components": 1,
+        "isolated": 0
+      },
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P101",
+          "node_text_sha256": "7a3d33a110c52582013564d170d7e53afa6454306280cecfdcac2b925db65c3d",
+          "fragment_sha256": "e3d87c561f1d8cc08ef2ca6925dc95bc7aa1d570188a57f0eef248c47a748d95"
+        }
+      ],
+      "pdf_pages": [
+        6,
+        7
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "The prose reports connectivity, not every numeric node count. 81=80 catalog+one import and 78=77 core+one import are source-receipt metadata; the full checked dictionary is not asserted verbatim in the paper.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-044",
+      "claim": "connectivity core_with_import_and_inheritance",
+      "checked_value": {
+        "nodes": 78,
+        "components": 1,
+        "isolated": 0
+      },
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P101",
+          "node_text_sha256": "7a3d33a110c52582013564d170d7e53afa6454306280cecfdcac2b925db65c3d",
+          "fragment_sha256": "e3d87c561f1d8cc08ef2ca6925dc95bc7aa1d570188a57f0eef248c47a748d95"
+        }
+      ],
+      "pdf_pages": [
+        6,
+        7
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "The prose reports connectivity, not every numeric node count. 81=80 catalog+one import and 78=77 core+one import are source-receipt metadata; the full checked dictionary is not asserted verbatim in the paper.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-045",
+      "claim": "connectivity full_associations_only",
+      "checked_value": {
+        "nodes": 81,
+        "components": 8,
+        "isolated": 7
+      },
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P101",
+          "node_text_sha256": "7a3d33a110c52582013564d170d7e53afa6454306280cecfdcac2b925db65c3d",
+          "fragment_sha256": "f718eeffae7131495d106ef886826f4a10358898eabfb2943a4d93573debce09"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "The prose reports connectivity, not every numeric node count. 81=80 catalog+one import and 78=77 core+one import are source-receipt metadata; the full checked dictionary is not asserted verbatim in the paper.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-046",
+      "claim": "internally connected domains",
+      "checked_value": 9,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P101",
+          "node_text_sha256": "7a3d33a110c52582013564d170d7e53afa6454306280cecfdcac2b925db65c3d",
+          "fragment_sha256": "04bc15c89985d401ded5c03b95104fef15b49e68207de99e24bbb520e0fc21ed"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-047",
+      "claim": "domains with two internal components",
+      "checked_value": 2,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P101",
+          "node_text_sha256": "7a3d33a110c52582013564d170d7e53afa6454306280cecfdcac2b925db65c3d",
+          "fragment_sha256": "477164428b0e3133820142b88285094723f031dbdb1b1ec4adf98e9b123f29ff"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_APPROVED_BASELINE",
+      "qualification": "Literal passage located in both files; value checked against its unchanged source-bound receipt, not a fresh scientific engine execution.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-048",
+      "claim": "historical core checks",
+      "checked_value": 454,
+      "historical_disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "word_locations": [
+        {
+          "location": "P105",
+          "node_text_sha256": "62e411f2e377a6667e857613869c7dfbbe54c2885e6843d4fd9ee6361e0c464b",
+          "fragment_sha256": "eaf812f6ffbd714eb24eaa9913d188bc627934ecec3c89da76767ddbb20cecbc"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_HISTORICAL_COMPANION_ONLY",
+      "qualification": "Explicitly archived SQLite companion; private source/version retained in the historical ledger, not rerun as the public current model.",
+      "historical_evidence_status": "HISTORICAL_ARCHIVED_NOT_FRESH_REEXECUTED"
+    },
+    {
+      "id": "MC-049",
+      "claim": "historical core passes",
+      "checked_value": 454,
+      "historical_disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "word_locations": [
+        {
+          "location": "P105",
+          "node_text_sha256": "62e411f2e377a6667e857613869c7dfbbe54c2885e6843d4fd9ee6361e0c464b",
+          "fragment_sha256": "eaf812f6ffbd714eb24eaa9913d188bc627934ecec3c89da76767ddbb20cecbc"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_HISTORICAL_COMPANION_ONLY",
+      "qualification": "Explicitly archived SQLite companion; private source/version retained in the historical ledger, not rerun as the public current model.",
+      "historical_evidence_status": "HISTORICAL_ARCHIVED_NOT_FRESH_REEXECUTED"
+    },
+    {
+      "id": "MC-050",
+      "claim": "historical rejected mutations",
+      "checked_value": 157,
+      "historical_disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "word_locations": [
+        {
+          "location": "P105",
+          "node_text_sha256": "62e411f2e377a6667e857613869c7dfbbe54c2885e6843d4fd9ee6361e0c464b",
+          "fragment_sha256": "22dbd7f9730a81ee9336925dac1fa6ab879be4a15e0b99cd60b3b70cfb72e340"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_HISTORICAL_COMPANION_ONLY",
+      "qualification": "Explicitly archived SQLite companion; private source/version retained in the historical ledger, not rerun as the public current model.",
+      "historical_evidence_status": "HISTORICAL_ARCHIVED_NOT_FRESH_REEXECUTED"
+    },
+    {
+      "id": "MC-051",
+      "claim": "source/loading checks",
+      "checked_value": 67,
+      "historical_disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "word_locations": [
+        {
+          "location": "P112",
+          "node_text_sha256": "8c7e51a5133ad9c1b4a0caf9e20e5d530c86188f75660e282fc0eef7eae03bc0",
+          "fragment_sha256": "d16b4dcef2dc04eafde92f3bb99c6e8c7ba45c9c1a61e972122b752689572ddf"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_HISTORICAL_COMPANION_ONLY",
+      "qualification": "Historical archived pharmaceutical execution; separate from ontology CQ, software and independent-review populations.",
+      "historical_evidence_status": "HISTORICAL_ARCHIVED_NOT_FRESH_REEXECUTED"
+    },
+    {
+      "id": "MC-052",
+      "claim": "adjudication integrity checks",
+      "checked_value": 14,
+      "historical_disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "word_locations": [
+        {
+          "location": "P112",
+          "node_text_sha256": "8c7e51a5133ad9c1b4a0caf9e20e5d530c86188f75660e282fc0eef7eae03bc0",
+          "fragment_sha256": "f78a0d76ac61a7626efd84a0fdc7ccad2511be74e315961adf7643773d5b0e38"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_HISTORICAL_COMPANION_ONLY",
+      "qualification": "Historical archived pharmaceutical execution; separate from ontology CQ, software and independent-review populations.",
+      "historical_evidence_status": "HISTORICAL_ARCHIVED_NOT_FRESH_REEXECUTED"
+    },
+    {
+      "id": "MC-053",
+      "claim": "journal articles",
+      "checked_value": 30,
+      "historical_disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "word_locations": [
+        {
+          "location": "P109",
+          "node_text_sha256": "74aede1cd32f176925d972ecb03e774829b215127e8b1aba05ac0506b6d2b51f",
+          "fragment_sha256": "559d4ff8390e2f2d59a54157f27d12db1c5023669e96065c128e44c3b76f0545"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_HISTORICAL_DATASET_ONLY",
+      "qualification": "Dataset v0.6 population, not incidents, current independent case validation or a fresh public extraction run.",
+      "historical_evidence_status": "HISTORICAL_ARCHIVED_NOT_FRESH_REEXECUTED"
+    },
+    {
+      "id": "MC-054",
+      "claim": "corrigenda",
+      "checked_value": 1,
+      "historical_disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "word_locations": [
+        {
+          "location": "P109",
+          "node_text_sha256": "74aede1cd32f176925d972ecb03e774829b215127e8b1aba05ac0506b6d2b51f",
+          "fragment_sha256": "79133f17fdca46d3c06e653f082b13d5cafb2e430da7bdb8bf6a31663195761d"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_HISTORICAL_DATASET_ONLY",
+      "qualification": "Dataset v0.6 population, not incidents, current independent case validation or a fresh public extraction run.",
+      "historical_evidence_status": "HISTORICAL_ARCHIVED_NOT_FRESH_REEXECUTED"
+    },
+    {
+      "id": "MC-055",
+      "claim": "consolidated items",
+      "checked_value": 883,
+      "historical_disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "word_locations": [
+        {
+          "location": "P109",
+          "node_text_sha256": "74aede1cd32f176925d972ecb03e774829b215127e8b1aba05ac0506b6d2b51f",
+          "fragment_sha256": "19b9c84875fa9bae05a1efc6aab98de0abb8df7836b929fcef881cd4a5850db3"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_HISTORICAL_DATASET_ONLY",
+      "qualification": "Dataset v0.6 population, not incidents, current independent case validation or a fresh public extraction run.",
+      "historical_evidence_status": "HISTORICAL_ARCHIVED_NOT_FRESH_REEXECUTED"
+    },
+    {
+      "id": "MC-056",
+      "claim": "active source records",
+      "checked_value": 1011,
+      "historical_disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "word_locations": [
+        {
+          "location": "P109",
+          "node_text_sha256": "74aede1cd32f176925d972ecb03e774829b215127e8b1aba05ac0506b6d2b51f",
+          "fragment_sha256": "e0b2a22d8b0e4ed507e608a76e0e24bd88c82a39b1277ae9bc456ef6cd287f88"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_HISTORICAL_DATASET_ONLY",
+      "qualification": "Dataset v0.6 population, not incidents, current independent case validation or a fresh public extraction run.",
+      "historical_evidence_status": "HISTORICAL_ARCHIVED_NOT_FRESH_REEXECUTED"
+    },
+    {
+      "id": "MC-057",
+      "claim": "reported values",
+      "checked_value": 1695,
+      "historical_disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "word_locations": [
+        {
+          "location": "P109",
+          "node_text_sha256": "74aede1cd32f176925d972ecb03e774829b215127e8b1aba05ac0506b6d2b51f",
+          "fragment_sha256": "1a073725e2167c02fd13c7840ae4723df6eee51640fbc038074c46825da5a915"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_HISTORICAL_DATASET_ONLY",
+      "qualification": "Dataset v0.6 population, not incidents, current independent case validation or a fresh public extraction run.",
+      "historical_evidence_status": "HISTORICAL_ARCHIVED_NOT_FRESH_REEXECUTED"
+    },
+    {
+      "id": "MC-058",
+      "claim": "scenario components",
+      "checked_value": 84,
+      "historical_disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "word_locations": [
+        {
+          "location": "P110",
+          "node_text_sha256": "15fd0b618ee7bab3a272ae84c8a8c3f05969a0c4e7fe278150927807d7b6844b",
+          "fragment_sha256": "fb2e445ce05d206126a43dee44dcdae6beae25bf9771a2334672d20a37fc777b"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_HISTORICAL_DATASET_ONLY",
+      "qualification": "Original eleven source-local scenarios and their components; source/version preserved.",
+      "historical_evidence_status": "HISTORICAL_ARCHIVED_NOT_FRESH_REEXECUTED"
+    },
+    {
+      "id": "MC-059",
+      "claim": "source scenarios/components/admitted RiskCases",
+      "checked_value": [
+        11,
+        84,
+        0
+      ],
+      "historical_disposition": "RETAINED_HISTORICAL_VERSION_ONLY",
+      "word_locations": [
+        {
+          "location": "P112",
+          "node_text_sha256": "8c7e51a5133ad9c1b4a0caf9e20e5d530c86188f75660e282fc0eef7eae03bc0",
+          "fragment_sha256": "0da0ad59aed32ee485caaa97eef8cd3aa96a5fef90861ffe4c59759b2cde7769"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_WITHHELD_NOT_ADMITTED",
+      "qualification": "No organizational case admitted by current engineering.",
+      "historical_evidence_status": "HISTORICAL_ARCHIVED_NOT_FRESH_REEXECUTED"
+    },
+    {
+      "id": "MC-060",
+      "claim": "source FMECA arithmetic matches",
+      "checked_value": 11,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P112",
+          "node_text_sha256": "8c7e51a5133ad9c1b4a0caf9e20e5d530c86188f75660e282fc0eef7eae03bc0",
+          "fragment_sha256": "2cd75484a7a79908a73b766f4db2236415f166d8185d122acc5c892424f1b3b3"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "RETAINED_SOURCE_ARITHMETIC_ONLY",
+      "qualification": "Source arithmetic fidelity, not formula engine, calibrated prediction or case validation.",
+      "historical_evidence_status": "HISTORICAL_ARCHIVED_NOT_FRESH_REEXECUTED"
+    },
+    {
+      "id": "MC-061",
+      "claim": "independent adjudications",
+      "checked_value": 0,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P107",
+          "node_text_sha256": "bfc5132ecbc62cf870bd5b1d8103e005eeb57a729add14fdf2a2d26749c690c7",
+          "fragment_sha256": "ba643f842257d13794b3653ef51a80137fe1f56cb8155d3ca07dacd9da40cb3b"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "ZERO_INDEPENDENT_RATINGS",
+      "qualification": "Author-led bounded owner-scope review is distinct from independent semantic adjudication.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-062",
+      "claim": "overall semantic correctness percent",
+      "checked_value": null,
+      "historical_disposition": "MATCHED_WITHIN_SCOPE",
+      "word_locations": [
+        {
+          "location": "P89",
+          "node_text_sha256": "4f8cdf53ee6aa7f2993e196cee467a0d848eada9c6bba6f5f7a09658434bd0b4",
+          "fragment_sha256": "3a6696f3cf7e1fbcb2f75a9b18fc3d78ae47185aec9b4cf91726afd057b1e72a"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "NO_AGGREGATE_SEMANTIC_PERCENT",
+      "qualification": "Structural/control counts do not establish scientific correctness.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-063",
+      "claim": "Taxonomy COH/COP values 0.1557/0.2597, domain table, exhaustive oracle and printed-equation correction",
+      "checked_value": null,
+      "historical_disposition": "WITHDRAWN_NO_MATCHED_VERSION_BOUND_RECEIPT",
+      "word_locations": [
+        {
+          "location": "P103",
+          "node_text_sha256": "ee9f89bb0ea438478c21e63fae770f2541e9013acb2fdf93e3db4d8bf80c7a44",
+          "fragment_sha256": "c6ead8492ed49cb2958b18e8a9c201490dce487bc1945f520eeeae92af7cd62e"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "WITHDRAWN_NOT_REINTRODUCED",
+      "qualification": "Old 0.1557/0.2597 assertions absent; current paper retains connectivity only.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-064",
+      "claim": "13/13 mutation, 35/35 contract, 18/18 additional and 127/127 including 14/14 query assertions",
+      "checked_value": null,
+      "historical_disposition": "WITHDRAWN_NO_MATCHED_VERSION_BOUND_RECEIPT",
+      "word_locations": [
+        {
+          "location": "P112",
+          "node_text_sha256": "8c7e51a5133ad9c1b4a0caf9e20e5d530c86188f75660e282fc0eef7eae03bc0",
+          "fragment_sha256": "8876f472251eda454ca3e648ac8f34cb340a02effbec1360797433cb2ce5cde2"
+        }
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "disposition": "WITHDRAWN_NOT_REINTRODUCED",
+      "qualification": "Unsupported former Table V contract/query totals absent; retained 14/14 is explicitly a separate adjudication-integrity population.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    },
+    {
+      "id": "MC-065",
+      "claim": "8 abstraction candidates / 7 justified / 1 open historical counts",
+      "checked_value": null,
+      "historical_disposition": "WITHDRAWN_NO_MATCHED_VERSION_BOUND_RECEIPT",
+      "word_locations": [
+        {
+          "location": "P92",
+          "node_text_sha256": "e47051b8978cb8cfcd8309285c807a78589d875d94f0b02810491b8f155a3829",
+          "fragment_sha256": "5f8f7ecfc7c5e180f8c695470ba4acf7e85f17cf13fa24c9b49e2dfaee1951ef"
+        }
+      ],
+      "pdf_pages": [
+        6
+      ],
+      "disposition": "WITHDRAWN_NOT_REINTRODUCED",
+      "qualification": "Unsupported 8 candidates/7 justified/1 open counts absent; bounded pattern discussion remains.",
+      "historical_evidence_status": "UNCHANGED_PUBLIC_SOURCE_BOUND_RECEIPT"
+    }
+  ],
+  "affected_retained_groups": [
+    {
+      "original": {
+        "id": "FC-05",
+        "state": "APPROVED_BASELINE_ONLY_LATER_ENGINEERING_NOT_CLAIMED",
+        "word_locations": [
+          {
+            "location": "P73",
+            "node_text_sha256": "ddcf20c617a6dc8a446cbc8ac54c62f057e743334e7515db021bc40761d68164"
+          },
+          {
+            "location": "P77",
+            "node_text_sha256": "22d7c3738a506c36ebb8d83952c1c33ebc662a87beefc669234a4242fdd09f9f"
+          },
+          {
+            "location": "P87",
+            "node_text_sha256": "edae7462d527d68b350f8e90e57dbc90946cf71992149217189f03357d32317c"
+          },
+          {
+            "location": "P105",
+            "node_text_sha256": "62e411f2e377a6667e857613869c7dfbbe54c2885e6843d4fd9ee6361e0c464b"
+          }
+        ],
+        "pdf_pages": [
+          5,
+          6,
+          7
+        ]
+      },
+      "additional_engineering": "NOT_CLAIMED_IN_PAPER",
+      "reason": "Nature retrieval is later supplementary engineering; original paragraph and PDF locations retain their approved meaning."
+    },
+    {
+      "original": {
+        "id": "FC-06",
+        "state": "BOUNDED_PAPER_BASELINE",
+        "word_locations": [
+          {
+            "location": "P94",
+            "node_text_sha256": "3a738bdfe2dedd4289145f2c8ce19d724ed13f99c9d8f03e917743187ca224ce"
+          }
+        ],
+        "pdf_pages": [
+          6
+        ]
+      },
+      "additional_engineering": "NOT_CLAIMED_IN_PAPER",
+      "reason": "Nature retrieval is later supplementary engineering; original paragraph and PDF locations retain their approved meaning."
+    },
+    {
+      "original": {
+        "id": "FC-10",
+        "state": "BOUNDED_PAPER_BASELINE",
+        "word_locations": [
+          {
+            "location": "P107",
+            "node_text_sha256": "bfc5132ecbc62cf870bd5b1d8103e005eeb57a729add14fdf2a2d26749c690c7"
+          }
+        ],
+        "pdf_pages": [
+          7
+        ]
+      },
+      "additional_engineering": "NOT_CLAIMED_IN_PAPER",
+      "reason": "Nature retrieval is later supplementary engineering; original paragraph and PDF locations retain their approved meaning."
+    },
+    {
+      "original": {
+        "id": "FC-12",
+        "state": "BOUNDED_PAPER_BASELINE",
+        "word_locations": [
+          {
+            "location": "P130",
+            "node_text_sha256": "265708201f17eab9bba8d7285cc628339ad65780dba9abbd5fa62fa0054b66a1"
+          },
+          {
+            "location": "P131",
+            "node_text_sha256": "2593071b0c16be0de7d8797e689fbb904d3264d6e6722d7c035accd4895990ae"
+          },
+          {
+            "location": "P132",
+            "node_text_sha256": "f84febb0a39bb2af8c4da3dae2172606f563664c259d8a6c282aa20b441065d0"
+          },
+          {
+            "location": "P133",
+            "node_text_sha256": "04f123721965f6372d7700d3be83ba362efed5bebb7cee2b9863d247ee4a7130"
+          }
+        ],
+        "pdf_pages": [
+          8
+        ]
+      },
+      "additional_engineering": "NOT_CLAIMED_IN_PAPER",
+      "reason": "Nature retrieval is later supplementary engineering; original paragraph and PDF locations retain their approved meaning."
+    }
+  ],
+  "derived_dispositions": [
+    {
+      "id": "NRA-01",
+      "state": "NOT_CLAIMED_IN_PAPER",
+      "supported_engineering_wording": "The finite SQLite fixture distinguishes assertion artifact identity, issued version identity and scheme-qualified nature terms, including equal-label counterexamples.",
+      "actual_receipt": "evaluation/integration/v0.3.7/inputs/r2-completion.json",
+      "fixed_controls": [
+        "NRA-F04",
+        "NRA-F05",
+        "NRA-F06",
+        "NRA-F07",
+        "NRA-F08",
+        "NRA-F09",
+        "NRA-F16",
+        "NRA-F23",
+        "NRA-F24",
+        "NRA-F39"
+      ],
+      "future_manuscript_change": "Requires a separately reviewed amendment and exact document readback."
+    },
+    {
+      "id": "NRA-02",
+      "state": "NOT_CLAIMED_IN_PAPER",
+      "supported_engineering_wording": "Exact retrieval preserves recorded case, nature term, context, objective and entry-version references through additive updates in the declared fixture.",
+      "actual_receipt": "evaluation/integration/v0.3.7/inputs/r2-completion.json",
+      "fixed_controls": [
+        "NRA-F08",
+        "NRA-F10",
+        "NRA-F11",
+        "NRA-F12",
+        "NRA-F13",
+        "NRA-F14",
+        "NRA-F15",
+        "NRA-F16",
+        "NRA-F17",
+        "NRA-F20",
+        "NRA-F22",
+        "NRA-F25",
+        "NRA-F26",
+        "NRA-F37",
+        "NRA-F38",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F56",
+        "NRA-F58"
+      ],
+      "future_manuscript_change": "Requires a separately reviewed amendment and exact document readback."
+    },
+    {
+      "id": "NRA-03",
+      "state": "NOT_CLAIMED_IN_PAPER",
+      "supported_engineering_wording": "Eight executed exact-version answers retain the original synthetic source JSON and documentary provenance separately for each role.",
+      "actual_receipt": "evaluation/integration/v0.3.7/inputs/r2-completion.json",
+      "fixed_controls": [
+        "NRA-F09",
+        "NRA-F10",
+        "NRA-F12",
+        "NRA-F17",
+        "NRA-F18",
+        "NRA-F19",
+        "NRA-F20",
+        "NRA-F21",
+        "NRA-F22",
+        "NRA-F33",
+        "NRA-F49"
+      ],
+      "future_manuscript_change": "Requires a separately reviewed amendment and exact document readback."
+    },
+    {
+      "id": "NRA-04",
+      "state": "NOT_CLAIMED_IN_PAPER",
+      "supported_engineering_wording": "The declared retrieval task preserves raw incomplete input and distinguishes missing context or objective pins from ready documentary retrieval; readiness does not establish factual correctness.",
+      "actual_receipt": "evaluation/integration/v0.3.7/inputs/r2-completion.json",
+      "fixed_controls": [
+        "NRA-F14",
+        "NRA-F15",
+        "NRA-F23",
+        "NRA-F24",
+        "NRA-F25",
+        "NRA-F26",
+        "NRA-F27",
+        "NRA-F39",
+        "NRA-F41",
+        "NRA-F52",
+        "NRA-F55"
+      ],
+      "future_manuscript_change": "Requires a separately reviewed amendment and exact document readback."
+    },
+    {
+      "id": "NRA-05",
+      "state": "NOT_CLAIMED_IN_PAPER",
+      "supported_engineering_wording": "Explicit correction declarations preserve the two branches from A-v1; the competing B report and unlinked later A-v4 do not become corrections or corroboration.",
+      "actual_receipt": "evaluation/integration/v0.3.7/inputs/r2-completion.json",
+      "fixed_controls": [
+        "NRA-F06",
+        "NRA-F11",
+        "NRA-F12",
+        "NRA-F13",
+        "NRA-F18",
+        "NRA-F28",
+        "NRA-F29",
+        "NRA-F30",
+        "NRA-F31",
+        "NRA-F32",
+        "NRA-F33",
+        "NRA-F34",
+        "NRA-F35",
+        "NRA-F36",
+        "NRA-F38",
+        "NRA-F54",
+        "NRA-F55",
+        "NRA-F57"
+      ],
+      "future_manuscript_change": "Requires a separately reviewed amendment and exact document readback."
+    },
+    {
+      "id": "NRA-06",
+      "state": "NOT_CLAIMED_IN_PAPER",
+      "supported_engineering_wording": "Eight actual named graphs match all 306 literal RDF quads and nine fixed query rows using unchanged model 0.3.1 identifiers; this is finite projection agreement.",
+      "actual_receipt": "evaluation/integration/v0.3.7/inputs/r2-completion.json",
+      "fixed_controls": [
+        "NRA-F27",
+        "NRA-F34",
+        "NRA-F37",
+        "NRA-F38",
+        "NRA-F39",
+        "NRA-F40",
+        "NRA-F41",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F58"
+      ],
+      "future_manuscript_change": "Requires a separately reviewed amendment and exact document readback."
+    },
+    {
+      "id": "NRA-07",
+      "state": "NOT_CLAIMED_IN_PAPER",
+      "supported_engineering_wording": "The recorded synthetic SQLite execution covers populated schema-9 migration, schema-10 guards, rollback, reopen, trusted-digest restore and bounded concurrency/workload controls on its stated engines.",
+      "actual_receipt": "evaluation/integration/v0.3.7/inputs/r2-completion.json",
+      "fixed_controls": [
+        "NRA-F01",
+        "NRA-F02",
+        "NRA-F03",
+        "NRA-F04",
+        "NRA-F09",
+        "NRA-F20",
+        "NRA-F21",
+        "NRA-F22",
+        "NRA-F30",
+        "NRA-F35",
+        "NRA-F42",
+        "NRA-F43",
+        "NRA-F44",
+        "NRA-F45",
+        "NRA-F46",
+        "NRA-F47",
+        "NRA-F48",
+        "NRA-F49",
+        "NRA-F50",
+        "NRA-F51",
+        "NRA-F53"
+      ],
+      "future_manuscript_change": "Requires a separately reviewed amendment and exact document readback."
+    },
+    {
+      "id": "NRA-08",
+      "state": "NOT_CLAIMED_IN_PAPER",
+      "supported_engineering_wording": "Exact-version, all-issued by-case and explicit-root family queries pass their finite literal oracles without an implicit latest or truth choice; reader acceptance remains pending R4.",
+      "actual_receipt": "evaluation/integration/v0.3.7/inputs/r2-completion.json",
+      "fixed_controls": [
+        "NRA-F05",
+        "NRA-F10",
+        "NRA-F11",
+        "NRA-F25",
+        "NRA-F26",
+        "NRA-F28",
+        "NRA-F36",
+        "NRA-F40",
+        "NRA-F51",
+        "NRA-F52",
+        "NRA-F53",
+        "NRA-F54",
+        "NRA-F55",
+        "NRA-F57"
+      ],
+      "future_manuscript_change": "Requires a separately reviewed amendment and exact document readback."
+    },
+    {
+      "id": "NRA-09",
+      "state": "NOT_CLAIMED_IN_PAPER",
+      "supported_engineering_wording": "All 60 declared controls, 51 negative variants and ten derived routes are source-bound to the completed R2 evidence; new mapping witnesses retain all historical populations and scientific limits.",
+      "actual_receipt": "evaluation/integration/v0.3.7/inputs/r2-completion.json",
+      "fixed_controls": [
+        "NRA-F46",
+        "NRA-F56",
+        "NRA-F57",
+        "NRA-F58",
+        "NRA-F59",
+        "NRA-F60"
+      ],
+      "future_manuscript_change": "Requires a separately reviewed amendment and exact document readback."
+    },
+    {
+      "id": "NRA-10",
+      "state": "NOT_CLAIMED_IN_PAPER",
+      "supported_engineering_wording": "R3 reconciles the completed engineering evidence and source roles. Shared reader acceptance R4 and exact-source freeze, six public assets and release verification R5 remain pending.",
+      "actual_receipt": "evaluation/integration/v0.3.7/inputs/r2-completion.json",
+      "fixed_controls": [
+        "NRA-F60"
+      ],
+      "future_manuscript_change": "Requires a separately reviewed amendment and exact document readback."
+    }
+  ],
+  "submission_ready": false,
+  "independent_semantic_ratings": 0
+}
