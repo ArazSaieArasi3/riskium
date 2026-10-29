@@ -22,6 +22,14 @@ class DeploymentOrdering(unittest.TestCase):
         runs = [r for r in self.runs() if r['name'] != gate.STATUS]
         self.assertTrue(any(gate.STATUS in p for p in gate.settled(runs, 'candidate', 99)))
 
+    def test_service_retired_publishers_are_not_awaited_but_existing_attempts_are(self):
+        retired = {gate.PAGES, gate.STATUS, gate.CURRENT}
+        runs = [r for r in self.runs() if r['name'] not in retired]
+        self.assertEqual(gate.settled(runs, 'candidate', 99, retired), [])
+        pending = self.runs()
+        next(r for r in pending if r['name'] == gate.PAGES)['status'] = 'in_progress'
+        self.assertTrue(gate.settled(pending, 'candidate', 99, retired))
+
     def test_running_old_attempt_and_stale_source_cannot_be_treated_as_settled(self):
         runs = self.runs()
         runs[-1]['status'] = 'in_progress'

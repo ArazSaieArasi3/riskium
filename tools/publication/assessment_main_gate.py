@@ -1,8 +1,6 @@
 """Gate the 0.4.2 deployment after source-qualified CI and historical publishers."""
 import argparse
 import json
-import os
-import subprocess
 import time
 
 import assessment_documentation as reader
@@ -17,9 +15,13 @@ CURRENT = 'Publish current documentation 0.4.0'
 PUBLISHED = 'Published v0.3.5 reader documentation'
 SUITE = 'v0.3.6 source versioned full suite'
 NAMES = {DOCUMENTATION, INCREMENTAL, PAGES, STATUS, CURRENT, PUBLISHED, SUITE}
+WORKFLOWS = {DOCUMENTATION: 'documentation.yml', INCREMENTAL: 'incremental-release.yml',
+             PAGES: 'pages.yml', STATUS: 'publication-status.yml',
+             CURRENT: 'current-documentation-pages.yml', PUBLISHED: 'published-documentation.yml',
+             SUITE: 'v036-versioned-suite.yml'}
 
 
-def settled(runs, source, run_id):
+def settled(runs, source, run_id, disabled=frozenset()):
     """Require terminal predecessor attempts, including descendants yet to be queued."""
     grouped = {}
     for run in runs:
@@ -37,7 +39,7 @@ def settled(runs, source, run_id):
     # These workflows are queued after predecessor completion, not with the push.
     for parent, child in ((DOCUMENTATION, PAGES), (PAGES, STATUS), (STATUS, CURRENT)):
         if any(run['status'] == 'completed' and run['conclusion'] == 'success'
-               for run in grouped.get(parent, [])) and child not in grouped:
+               for run in grouped.get(parent, [])) and child not in grouped and child not in disabled:
             pending.append('Awaiting triggered successor: ' + child)
     if INCREMENTAL in grouped and PUBLISHED not in grouped:
         pending.append('Awaiting old reader boundary run')
@@ -47,10 +49,24 @@ def settled(runs, source, run_id):
     return pending
 
 
-def run_inventory(getter=reader.api):
+def workflow_states(getter=reader.api):
+    workflows = getter('actions/workflows?per_page=100')['workflows']
+    disabled = set()
+    for name, filename in WORKFLOWS.items():
+        matches = [w for w in workflows if w['path'] == '.github/workflows/' + filename]
+        reader.require(len(matches) == 1 and matches[0]['name'] == name, 'Missing or renamed workflow: ' + name)
+        state = matches[0]['state']
+        reader.require(state in ('active', 'disabled_manually'), 'Unexpected workflow state: ' + name)
+        if state != 'active':
+            reader.require(name in (PAGES, STATUS, CURRENT), 'Required source gate is disabled: ' + name)
+            disabled.add(name)
+    return disabled
+
+
+def run_inventory(source, getter=reader.api):
     runs = []
     for page in range(1, 11):
-        data = getter('actions/runs?per_page=100&page=' + str(page))['workflow_runs']
+        data = getter('actions/runs?head_sha=' + source + '&per_page=100&page=' + str(page))['workflow_runs']
         runs.extend(data)
         if len(data) < 100:
             break
@@ -81,7 +97,8 @@ def main():
     deadline = time.monotonic() + args.wait_seconds
     while True:
         verify_source(args.source)
-        pending = settled(run_inventory(), args.source, args.run_id)
+        disabled = workflow_states()
+        pending = settled(run_inventory(args.source), args.source, args.run_id, disabled)
         if not pending:
             break
         reader.require(time.monotonic() < deadline, 'Predecessor deployments unsettled: ' + '; '.join(pending))
@@ -89,6 +106,7 @@ def main():
         time.sleep(15)
     print(json.dumps(dict(status='SOURCE_QUALIFIED_MAIN_DEPLOYMENT_GATE_PASS',
                          source=args.source, prior_selected_files=687,
+                         retired_predecessor_workflows=sorted(disabled),
                          old_reader_rejects_candidate=True, predecessor_deployments_settled=True)))
 
 

@@ -3379,8 +3379,8 @@
     },
     {
       "path": "tests/test_assessment_main_gate.py",
-      "sha256": "85740ee89e2492aee2f45ad3ee28e1dfc078334d309de99666d3559dc2e8442f",
-      "bytes": 1877
+      "sha256": "dada384ec4c88e1fe338915c8e03e262b2081d0493f3bd3356bc6d11aaf6817e",
+      "bytes": 2357
     },
     {
       "path": "tests/test_assessment_selection.py",
@@ -3844,8 +3844,8 @@
     },
     {
       "path": "tools/publication/assessment_main_gate.py",
-      "sha256": "c3cf5730b84aece8035c881692d8b73ed71b85cf7f1731e7cd2fa1287e1076af",
-      "bytes": 4096
+      "sha256": "d8caf502c965f8b245524c98ef309dde72242d46fed75ed9408e16c20aec46cc",
+      "bytes": 5288
     },
     {
       "path": "tools/publication/audit_portal.py",
