@@ -1,0 +1,427 @@
+{
+  "schema": "riskium-assessment-selection-contract-v1",
+  "version": "0.8.0",
+  "schema_version": 9,
+  "status": "DECLARED_NOT_IMPLEMENTED",
+  "release_issue": 61,
+  "parent_issues": [
+    35,
+    12
+  ],
+  "baseline_commit": "41caeaa78c7a152787d1070540e20ae0c6a2395a",
+  "published_baseline": "v0.3.5",
+  "published_source_commit": "8a9a95bba17327d04c5560879819b2e61b48ff19",
+  "prospective_distribution": "v0.3.6",
+  "source_sha256": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "requirements/requirements.json": "129d2937c7c9a64d511070cbbed2ef686f604c2769da7bed7bc819ec6204d845",
+    "requirements/competency-questions.json": "4dd5bf88adc51621a5dd172d02f6ab93dcff4b2818db219b78bfcdc472243024",
+    "requirements/relational-requirements.json": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00",
+    "implementation/relational/0.2.0/policy.json": "cdb55a25a369a5f608a0fa76d46a12fe5473c636f7dde85fcd5444e894d02ebb",
+    "implementation/relational/0.2.0/mapping.json": "81ecb3954057021b3e135fee041723ca59234de8324c81254b33a6f4d03984da",
+    "implementation/relational/0.2.0/fixtures.json": "f6059dc460fc11d30793fd73f30316d086a3551e3bed414ae518edce75786dfa",
+    "implementation/relational/0.3.0/contract.json": "02524445f500966f62e9f8647f43c9b8084db82ffa7d7e6ce3ce235d468b6f4e",
+    "implementation/relational/0.3.0/fixtures.json": "1709378f9462d1cb46309f97fc54e7d4eb48ea9beed1ccebb45f6088a23865cf",
+    "implementation/relational/0.7.0/contract.json": "1b67d8e0b446a97bfed632b6d26c2b58c668a51229377cc45e492f6b1dc5b533",
+    "implementation/relational/0.7.0/fixtures.json": "d309553c187e3208ee093f7994badd5724e66a8563b0503544dcca49e762ca0d",
+    "implementation/relational/0.7.0/component.json": "b1920b3c38b26612d21a89336037c9f0c3f63f86f0958588d186a614b2a419fc",
+    "tools/run_relational_assessment.py": "47cdfd931a0e90fd3fa0f2c95d8cafde5d6f5ae9b27e33d8ca378fea04110d73",
+    "evaluation/relational/evidence-lifecycle/mapping-accounting.json": "1e6f028ae0e08e831eba94eb26e49962a3b5a24bffdb8e441017db85c5a8b249",
+    "evaluation/consistency/current-0.3.0/traceability.json": "8d71a4a78bc62aa3596d218911a777bc00e6bac47a9e9beb55078b999f6d21c8",
+    "evaluation/consistency/current-0.3.0/policy.json": "91890135060daff575b53edd57653c0d6152088f13227c83321f9d542fab2f37",
+    "evaluation/manuscript-review/v7.0.8/receipt.json": "5c32310eb1e5b689ed188e16a2b7d69af0c27454316defa661da53deefe2f634",
+    "evaluation/independent-review/responses.json": "3896793de4db0d1b5b0d0f96f2f9ce8ffd1dd31c738d0f22400d88b5f3e8b00f",
+    "releases/selection-v0.3.5.json": "99405668004b7b11e9b59dec0df93a94f890b4abb7ba22d5ac4b8914e8bcec32",
+    "documentation/0.4.1/policy.json": "19efb7aacc69e8b2047f39579b9086003dd24e612ab183ad7e721683b965000e",
+    "tools/publication/published_documentation.py": "c9cd38e15890f05153953f32762f41b28bd1d3789d04de4b32f01bc658dc3c80",
+    ".github/workflows/published-documentation.yml": "c60bfcf0a6c390269dc2aeef30456d3fac25513d25e90d8561d36943f250e0e6"
+  },
+  "fixtures_sha256": "04f6d66bc57df46d92e9ea2a282c122b2d35ce0f6a1e99d4a6e47f29a0d70a67",
+  "fixed_controls": 44,
+  "source_requirements_unchanged": true,
+  "requirements": [
+    {
+      "id": "ASL-01",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-11"
+      ],
+      "database_requirements": [
+        "DBR-05",
+        "DBR-11"
+      ],
+      "clauses": [
+        "C-03"
+      ],
+      "accept": "Upgrade a verified populated v8 to v9 additively; preserve every old row, migration hash, issued payload, correction edge and named native graph. Repeat and failed upgrades have explicit atomic outcomes.",
+      "fixed_cases": [
+        "ASL-F01",
+        "ASL-F02",
+        "ASL-F03"
+      ],
+      "reader_criteria": []
+    },
+    {
+      "id": "ASL-02",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "database_requirements": [
+        "DBR-05",
+        "DBR-07"
+      ],
+      "clauses": [
+        "C-03",
+        "C-17"
+      ],
+      "accept": "Reuse existing same-assessment correction branches without relabeling them as selections or independent support. Plain issuance does not imply correction or selection.",
+      "fixed_cases": [
+        "ASL-F04",
+        "ASL-F17",
+        "ASL-F33"
+      ],
+      "reader_criteria": []
+    },
+    {
+      "id": "ASL-03",
+      "source_requirements": [
+        "RKRS-04",
+        "RKRS-06"
+      ],
+      "database_requirements": [
+        "DBR-04",
+        "DBR-18"
+      ],
+      "clauses": [
+        "C-04",
+        "C-17",
+        "C-18"
+      ],
+      "accept": "Selection requires a known assessment identity, explicit application decision context and integer as-of sequence. Select one issued assessment version as a whole bundle, retaining all its owned result versions and exact context/method/basis/scale/dimension/time pins.",
+      "fixed_cases": [
+        "ASL-F04",
+        "ASL-F05",
+        "ASL-F06",
+        "ASL-F07",
+        "ASL-F08",
+        "ASL-F09",
+        "ASL-F17",
+        "ASL-F18",
+        "ASL-F19",
+        "ASL-F20",
+        "ASL-F21",
+        "ASL-F22",
+        "ASL-F24",
+        "ASL-F27",
+        "ASL-F29",
+        "ASL-F40"
+      ],
+      "reader_criteria": []
+    },
+    {
+      "id": "ASL-04",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-06"
+      ],
+      "database_requirements": [
+        "DBR-05",
+        "DBR-07"
+      ],
+      "clauses": [
+        "C-03",
+        "C-17"
+      ],
+      "accept": "Append documentary SELECT, WITHDRAW and CLEAR decisions. A context withdrawal of an exact version is sticky in that context; no reselect or reinstatement of that version. An explicit selection of a different non-withdrawn version is allowed. CLEAR removes the selected pointer and preserves every withdrawal notice and prior answer.",
+      "fixed_cases": [
+        "ASL-F10",
+        "ASL-F11",
+        "ASL-F12",
+        "ASL-F13",
+        "ASL-F14",
+        "ASL-F15",
+        "ASL-F16",
+        "ASL-F43",
+        "ASL-F44"
+      ],
+      "reader_criteria": []
+    },
+    {
+      "id": "ASL-05",
+      "source_requirements": [
+        "RKRS-06",
+        "RKRS-11"
+      ],
+      "database_requirements": [
+        "DBR-07",
+        "DBR-18"
+      ],
+      "clauses": [
+        "C-12",
+        "C-16",
+        "C-17"
+      ],
+      "accept": "Keep endpoint sources and declaration provenance separate. Require actor attribution, reason, source record, locator, interpretation origin and canonical recorded UTC. Database-assigned order determines as-of state; attribution is not verified authority.",
+      "fixed_cases": [
+        "ASL-F22",
+        "ASL-F23",
+        "ASL-F25",
+        "ASL-F26",
+        "ASL-F28"
+      ],
+      "reader_criteria": []
+    },
+    {
+      "id": "ASL-06",
+      "source_requirements": [
+        "RKRS-04",
+        "RKRS-11"
+      ],
+      "database_requirements": [
+        "DBR-04",
+        "DBR-18"
+      ],
+      "clauses": [
+        "C-16",
+        "C-18",
+        "C-25"
+      ],
+      "accept": "Preserve UNKNOWN/null and conflicting result rows. Selection alone does not make a task ready, compute a score or authorize comparison. No result, source or interpretation pin may leak from another assessment version or application decision context.",
+      "fixed_cases": [
+        "ASL-F09",
+        "ASL-F29",
+        "ASL-F30",
+        "ASL-F31",
+        "ASL-F40"
+      ],
+      "reader_criteria": []
+    },
+    {
+      "id": "ASL-07",
+      "source_requirements": [
+        "RKRS-03",
+        "RKRS-11"
+      ],
+      "database_requirements": [
+        "DBR-05",
+        "DBR-11",
+        "DBR-22"
+      ],
+      "clauses": [
+        "C-03"
+      ],
+      "accept": "Validate exact schema/ledger/configuration and existing data; enforce required references and immutable events through SQL and API. Execute caller-owned rollback, backup/reopen and logical dump/restore; reject tampering and old exact-schema readers.",
+      "fixed_cases": [
+        "ASL-F03",
+        "ASL-F18",
+        "ASL-F19",
+        "ASL-F20",
+        "ASL-F21",
+        "ASL-F26",
+        "ASL-F27",
+        "ASL-F34",
+        "ASL-F35",
+        "ASL-F36",
+        "ASL-F37",
+        "ASL-F38",
+        "ASL-F39",
+        "ASL-F41"
+      ],
+      "reader_criteria": []
+    },
+    {
+      "id": "ASL-08",
+      "source_requirements": [
+        "RKRS-06",
+        "RKRS-09"
+      ],
+      "database_requirements": [
+        "DBR-03",
+        "DBR-07"
+      ],
+      "clauses": [
+        "C-12",
+        "C-14"
+      ],
+      "accept": "Keep every selected native graph unchanged and separate. All new lifecycle decisions are application metadata, with no new native class or predicate and no automatic occurrence, mandate, truth or corroboration.",
+      "fixed_cases": [
+        "ASL-F32",
+        "ASL-F33"
+      ],
+      "reader_criteria": []
+    },
+    {
+      "id": "ASL-09",
+      "source_requirements": [
+        "RKRS-11",
+        "RKRS-12"
+      ],
+      "database_requirements": [
+        "DBR-01",
+        "DBR-23",
+        "DBR-24"
+      ],
+      "clauses": [
+        "C-16"
+      ],
+      "accept": "Bind every fixed control to requirements, setup, literal expected answer and a separate actual execution receipt. Preserve all 306 native dispositions, 236 deferred elements, eleven WITHHELD admissions and zero independent ratings unless a separately justified reviewed scope changes them.",
+      "fixed_cases": [
+        "ASL-F40",
+        "ASL-F41",
+        "ASL-F42"
+      ],
+      "reader_criteria": []
+    },
+    {
+      "id": "ASL-10",
+      "source_requirements": [
+        "RKRS-12"
+      ],
+      "database_requirements": [
+        "DBR-14",
+        "DBR-18",
+        "DBR-23"
+      ],
+      "clauses": [],
+      "accept": "Publish a complete schema/key/index rationale and executable example with understandable expected answers. Review the researcher/reviewer, domain and integrator reading paths; bind current channels and exact release components after implementation, without rewriting earlier snapshots.",
+      "fixed_cases": [],
+      "reader_criteria": [
+        "ASL-Q01",
+        "ASL-Q02",
+        "ASL-Q03",
+        "ASL-Q04",
+        "ASL-Q05",
+        "ASL-Q06"
+      ]
+    }
+  ],
+  "source_cqs": [
+    "RQ-CQ03",
+    "RQ-CQ06",
+    "RQ-CQ07"
+  ],
+  "derived_task_questions": [
+    {
+      "id": "ASL-CQ01",
+      "question": "Which whole assessment bundle was explicitly selected in this decision context at this ledger boundary?"
+    },
+    {
+      "id": "ASL-CQ02",
+      "question": "Can the original and every declared correction remain retrievable after selection, withdrawal and clear?"
+    }
+  ],
+  "event_shape": {
+    "required": [
+      "assessment_id",
+      "decision_context_id",
+      "kind",
+      "actor",
+      "reason",
+      "source_record_id",
+      "source_locator",
+      "interpretation_origin",
+      "recorded_at"
+    ],
+    "target": "Exact issued assessment version for SELECT/WITHDRAW; NULL for CLEAR.",
+    "sequence": "Positive database-assigned monotonic order. Callers cannot supply it; audit/restore verify order and state transitions."
+  },
+  "query_contract": {
+    "required": [
+      "assessment_id",
+      "decision_context_id",
+      "as_of_sequence"
+    ],
+    "as_of": "Integer 0..current durable ledger head, excluding bool; 0 denotes before all decisions.",
+    "output": "state, selected assessment version or null, exact owned result bundle, decision provenance and ledger boundary; no scalar value chosen from conflicting results.",
+    "missing": "Unknown assessment is an error; a known assessment with no context decision is NO_SELECTION.",
+    "ordering": "Use only database event sequence, never timestamp, display label, issue order or correction depth."
+  },
+  "ownership": {
+    "native": "Existing RKM-C032 assessment and RKM-C034 result/version/pin mappings only.",
+    "supplementary": "Decision context, actor attribution and SELECT/WITHDRAW/CLEAR ledger.",
+    "result_policy": "No independent result selection or correction edge is introduced; all returned results belong to the selected assessment version."
+  },
+  "reader_acceptance": [
+    {
+      "id": "ASL-Q01",
+      "requirements": [
+        "ASL-10"
+      ],
+      "criterion": "The opening example explains the user task before identifiers, checksums or process gates.",
+      "status": "NOT_REVIEWED",
+      "observed": null
+    },
+    {
+      "id": "ASL-Q02",
+      "requirements": [
+        "ASL-10"
+      ],
+      "criterion": "A reviewer can follow requirement, selected version, source, expected answer and actual result without combining incompatible dated evidence.",
+      "status": "NOT_REVIEWED",
+      "observed": null
+    },
+    {
+      "id": "ASL-Q03",
+      "requirements": [
+        "ASL-10"
+      ],
+      "criterion": "A domain reader can distinguish correction, selection, withdrawal, unknown and competing results in plain technical English.",
+      "status": "NOT_REVIEWED",
+      "observed": null
+    },
+    {
+      "id": "ASL-Q04",
+      "requirements": [
+        "ASL-10"
+      ],
+      "criterion": "An integrator gets prerequisites, bound example commands and exact expected answers for two contexts and historical retrieval.",
+      "status": "NOT_REVIEWED",
+      "observed": null
+    },
+    {
+      "id": "ASL-Q05",
+      "requirements": [
+        "ASL-10"
+      ],
+      "criterion": "The text separates decision context from native assessment context and explains what selection establishes.",
+      "status": "NOT_REVIEWED",
+      "observed": null
+    },
+    {
+      "id": "ASL-Q06",
+      "requirements": [
+        "ASL-10"
+      ],
+      "criterion": "Tables and links remain readable; current source, model, SQL, documentation and paper versions have explicit roles.",
+      "status": "NOT_REVIEWED",
+      "observed": null
+    }
+  ],
+  "actual_results_destination": "evaluation/relational/assessment-selection/ (future; not created by this declaration)",
+  "release_integration_requirement": "Before main integration, explicitly version the development/publication boundary. The current v0.3.5 reader publisher intentionally rejects non-documentation changes. Preserve all 687 selected hashes, four snapshots and current published reader source; do not broaden its allowlist silently or relabel prospective files as executed components.",
+  "excluded": [
+    "general native assertion mapping",
+    "new native correction/selection predicates",
+    "per-result independent selection",
+    "withdrawal reinstatement",
+    "R-69..R-72",
+    "formula engine",
+    "workflow/authority enforcement",
+    "general interval reasoning",
+    "PostgreSQL/private migration",
+    "new organizational admission",
+    "independent semantic acceptance",
+    "conference submission"
+  ],
+  "fixed_limits": {
+    "model": "0.3.1",
+    "orsd": "0.4.3",
+    "original_drsd": "0.1.0",
+    "manuscript": "7.0.8",
+    "native_elements": 306,
+    "deferred": 236,
+    "withheld_admissions": 11,
+    "independent_ratings": 0
+  }
+}

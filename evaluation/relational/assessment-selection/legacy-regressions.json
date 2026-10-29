@@ -1,0 +1,14 @@
+{
+  "patterns": [
+    "test_relational*.py",
+    "test_evidence_lifecycle.py",
+    "test_qualified_evidence.py",
+    "test_source_scenario*.py"
+  ],
+  "tests": 97,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 44.259,
+  "success": true
+}

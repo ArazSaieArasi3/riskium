@@ -1,0 +1,21 @@
+{
+  "schema": "riskium-assessment-selection-current-policy-v1",
+  "version": "0.4.0",
+  "release_issue": 61,
+  "predecessor": "evaluation/consistency/current-0.3.0",
+  "derived_routes": ["ASL-01", "ASL-02", "ASL-03", "ASL-04", "ASL-05", "ASL-06", "ASL-07", "ASL-08", "ASL-09", "ASL-10"],
+  "affected_retained_claim_groups": ["FC-05", "FC-06", "FC-10", "FC-12"],
+  "manuscript_version": "7.0.8",
+  "new_manuscript_disposition": "NOT_CLAIMED_IN_PAPER",
+  "published_release": "v0.3.5",
+  "candidate_release": "v0.3.6",
+  "development_reader_boundary": "PUBLISHED_041_SOURCE_FROZEN; CANDIDATE_BRANCH_ONLY; NO_LIVE_WIKI_OR_PAGES_REPLACEMENT_BEFORE_R4",
+  "limits": [
+    "Selection and historical retrieval are supplementary application/SQL operations over already issued assessment bundles, not a new native predicate or a scientific validation result.",
+    "All ten new requirement routes have a retained scoped engineering claim and explicit original requirement, database requirement, native clause, fixed-control or reader-criterion bindings.",
+    "The 44 synthetic controls are a distinct engineering population; ASL-10 has six pending qualitative criteria, not a passed software control.",
+    "The approved Word/PDF manuscript 7.0.8 remains the original bound baseline; no later SQL claim or paper revision is inferred.",
+    "The 306 native IDs, 236 deferred mappings, eleven WITHHELD organizational admissions, and zero independent semantic ratings remain unchanged.",
+    "The published v0.3.5 documentation 0.4.1 is checked at its own source. Candidate branch files must not be served as current Wiki or Pages before a reviewed successor is ready."
+  ]
+}

@@ -1,0 +1,40 @@
+name: Assessment selection development
+on:
+  push:
+    branches: [plan/v0.3.6-assessment-selection]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  assessment:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements-shacl.txt
+      - name: Execute immutable 44 controls on populated SQLite
+        run: python tools/run_assessment_selection.py --output build/asl-report.json
+      - name: Exercise additional API and restoration boundaries
+        run: python -m unittest discover -s tests -p test_assessment_selection.py -v
+      - name: Recheck preserved relational and evidence suites
+        run: |
+          python -m unittest discover -s tests -p 'test_relational*.py' -v
+          python -m unittest discover -s tests -p test_evidence_lifecycle.py -v
+          python -m unittest discover -s tests -p test_qualified_evidence.py -v
+          python -m unittest discover -s tests -p 'test_source_scenario*.py' -v
+      - name: Preserve original declaration and selected release source
+        run: |
+          git diff 071b948dd46881f7456f0b501a55eafd963d2cce --exit-code -- implementation/relational/0.8.0/contract.json implementation/relational/0.8.0/fixtures.json plans/v0.3.6.md
+          git diff 753309d6a8e21d585b35a61968beb894027e4ff1 --exit-code -- implementation/relational/0.8.0/execution-fixture.json
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: assessment-selection-${{ github.sha }}
+          path: build/asl-report.json
+          if-no-files-found: error

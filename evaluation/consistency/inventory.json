@@ -8,6 +8,31 @@
       "bytes": 5604
     },
     {
+      "path": ".github/workflows/assessment-alignment.yml",
+      "sha256": "59e7543bd7d8c602a4f8186eb702068077cf12f7a3cfcbed09e09f57be6e7ad2",
+      "bytes": 1807
+    },
+    {
+      "path": ".github/workflows/assessment-reader-draft.yml",
+      "sha256": "9f96fee0e8644d2ddb59c24740b61c08ff22ec5069a5ef85ebc78a61bd85ae42",
+      "bytes": 765
+    },
+    {
+      "path": ".github/workflows/assessment-reader-main.yml",
+      "sha256": "ec512ee55ac589ca2e45907ca6091198e9f27b70d95e82f50bb7ddb3a7538eaa",
+      "bytes": 4561
+    },
+    {
+      "path": ".github/workflows/assessment-reader-projection.yml",
+      "sha256": "5bd85db4a83e654289f35522ce3944ca21fbf25805f78623f3ca3002298ad817",
+      "bytes": 1166
+    },
+    {
+      "path": ".github/workflows/assessment-selection.yml",
+      "sha256": "bd98e8e9295f447ee51995b4810f4f1c0e94b822d5d328e33eb2ee2097db14eb",
+      "bytes": 1800
+    },
+    {
       "path": ".github/workflows/current-alignment.yml",
       "sha256": "d3febc2bafa1ab20687efce63f5399e8552133c9a4bab30d414343e9916c378e",
       "bytes": 1705
@@ -91,6 +116,11 @@
       "path": ".github/workflows/stable-release.yml",
       "sha256": "e3f353895b966c8066faf6718a803c0272c7727c46830b891683427c07f3f23b",
       "bytes": 7606
+    },
+    {
+      "path": ".github/workflows/v036-versioned-suite.yml",
+      "sha256": "8be1df323694614a270c99b6803758b214242fd7e38fb3b27c22a72716c8e92d",
+      "bytes": 817
     },
     {
       "path": ".gitignore",
@@ -848,6 +878,146 @@
       "bytes": 5037
     },
     {
+      "path": "documentation/0.4.2/README.md",
+      "sha256": "5f0696357b26f9bd91744f46e5669a01d95c7c309924e08fac08180fe4d37c59",
+      "bytes": 1495
+    },
+    {
+      "path": "documentation/0.4.2/Repository.md",
+      "sha256": "a71e6ff71351523f6906d3162dc63b356434750f0f37f819aa313da7f80241cb",
+      "bytes": 6199
+    },
+    {
+      "path": "documentation/0.4.2/guide-registry.json",
+      "sha256": "9c7031a5b729dac859874bf584f3893049cdb19d4f9062fbc74272563185170b",
+      "bytes": 3677
+    },
+    {
+      "path": "documentation/0.4.2/guides/Artifact-Versions.md",
+      "sha256": "ffe4206676eace09ba4832c7761b35025e0d2242c24678c8ad311fb6bef9fe58",
+      "bytes": 3041
+    },
+    {
+      "path": "documentation/0.4.2/guides/Citation.md",
+      "sha256": "e09498072cc3029a698ef53f81e21a3f401fc377c19b0dc18b41b658b73e4493",
+      "bytes": 1754
+    },
+    {
+      "path": "documentation/0.4.2/guides/Competency-Questions.md",
+      "sha256": "78212f42bb5a04aa81a71a9983481bd3290679939733c82077eef061853f5b30",
+      "bytes": 1931
+    },
+    {
+      "path": "documentation/0.4.2/guides/Database-Assurance.md",
+      "sha256": "e583290192fa07b7d5fb70eb7bd983087f06daff17bc3748040b49404120da10",
+      "bytes": 5509
+    },
+    {
+      "path": "documentation/0.4.2/guides/Decisions.md",
+      "sha256": "89d8b3f842fc23880985d3192370fb784b223103254572135f84d551c60b39b6",
+      "bytes": 2257
+    },
+    {
+      "path": "documentation/0.4.2/guides/Evaluation.md",
+      "sha256": "e2137c0b7500e8a055fee271180af98e641851fb74579ebb7670fc68e3bfa9ec",
+      "bytes": 3366
+    },
+    {
+      "path": "documentation/0.4.2/guides/Formalization.md",
+      "sha256": "fe973f631aa188a302b8b338ed011c378b76e1276fc82218a2c1ce71a0fc5f74",
+      "bytes": 75620
+    },
+    {
+      "path": "documentation/0.4.2/guides/Home.md",
+      "sha256": "2b5e4ea89e7c09ab714b79275787b097eb4694c4c90b27c59234537e906da512",
+      "bytes": 2975
+    },
+    {
+      "path": "documentation/0.4.2/guides/Limitations.md",
+      "sha256": "7e46f92642a66b6ea2d176d924c31bac92d78aeccc09ae9b28fa8a20d04c88cb",
+      "bytes": 2968
+    },
+    {
+      "path": "documentation/0.4.2/guides/Overview.md",
+      "sha256": "8858527854cb13b2e18c7916c9b0065c9f412bd399bf9697409545250472e11b",
+      "bytes": 2160
+    },
+    {
+      "path": "documentation/0.4.2/guides/Publication-Comparison.md",
+      "sha256": "52e07948b4befd9b6a9b86d9b164a57c09e0803517454002f4cf1c530dee9f18",
+      "bytes": 1597
+    },
+    {
+      "path": "documentation/0.4.2/guides/Publication.md",
+      "sha256": "5969a5419c6974155af74d76e412b32e460e6de8ae0433c4722c9993d52af07f",
+      "bytes": 3669
+    },
+    {
+      "path": "documentation/0.4.2/guides/Quality.md",
+      "sha256": "af845ecef2a99abd0d6e1a9dab03b6d218e0eaa4360c93135860f2509bbdbb9c",
+      "bytes": 1968
+    },
+    {
+      "path": "documentation/0.4.2/guides/References.md",
+      "sha256": "03304b523d0d1732c6c2ce311b1ff8c309364022adf096b51ef2a50bee22a94b",
+      "bytes": 1858
+    },
+    {
+      "path": "documentation/0.4.2/guides/Reproduce.md",
+      "sha256": "dd8eb2fb5caa3a03bd26dbf3623ef70e5c94dc0eed7e3b25032cdfc5315857ce",
+      "bytes": 5646
+    },
+    {
+      "path": "documentation/0.4.2/guides/Requirements.md",
+      "sha256": "6d9367d685d63acb9446d140e473da60980c8b092c782782e2ebb7aa6562e2c5",
+      "bytes": 2135
+    },
+    {
+      "path": "documentation/0.4.2/guides/Scope.md",
+      "sha256": "44fffe84fa23fd1f93a4123c7cdf11b458e6051ff9f67455ac102523a1576241",
+      "bytes": 1804
+    },
+    {
+      "path": "documentation/0.4.2/guides/Traceability.md",
+      "sha256": "3214695134c85a70f34552c79155e63ef7805cee729e2633ef7573c894cc9536",
+      "bytes": 5038
+    },
+    {
+      "path": "documentation/0.4.2/guides/Using-the-Model.md",
+      "sha256": "b1912bdf48b7fe9da22d5ee98055b5c70548c6c8724077c62eeb8f92af14b442",
+      "bytes": 2870
+    },
+    {
+      "path": "documentation/0.4.2/guides/Visualization.md",
+      "sha256": "791010a7e15187915a3b6adfecc81049dda9d6366beab67bc49121f8afb65530",
+      "bytes": 2824
+    },
+    {
+      "path": "documentation/0.4.2/guides/Work-Plan.md",
+      "sha256": "1c1c370f0d1c9304de2b3d49cff13999724cd96f76566371b8a19f77c6c5305b",
+      "bytes": 4590
+    },
+    {
+      "path": "documentation/0.4.2/policy.json",
+      "sha256": "1464943dfc20b6ec1f2eb73c4305603401c37cca18cbac1b4df449a1ba216355",
+      "bytes": 3718
+    },
+    {
+      "path": "documentation/0.4.2/publication.json",
+      "sha256": "72e38e4f10bed8cbeb7c97a3f0c7006a4c7dc4edaae206090558496b8f8e6924",
+      "bytes": 2951
+    },
+    {
+      "path": "documentation/0.4.2/reader.css",
+      "sha256": "853031b625dabec89dd6e3d86ba4cacd3ac70b95c4ed663b6e04b0701c23ce24",
+      "bytes": 1197
+    },
+    {
+      "path": "documentation/0.4.2/review-plan.json",
+      "sha256": "56b69fb2fcad3672040518f53cb4ce988b935789301e34597939a20d4a239f29",
+      "bytes": 5855
+    },
+    {
       "path": "evaluation/README.md",
       "sha256": "8a7c3232d3eba97f6f2d21fb0f0fccbfe082dd534e6bd3ee633308b0612ae44e",
       "bytes": 7544
@@ -1601,6 +1771,31 @@
       "path": "evaluation/references/report.json",
       "sha256": "e32c593b16b1d7e227e1500243f3d951b7094f81173f018b86cf98794dc0cdce",
       "bytes": 2066
+    },
+    {
+      "path": "evaluation/relational/assessment-selection/README.md",
+      "sha256": "dbe3311b2c7dc950e25339d1adb54573fd043495fc5660c5ba768ccac917e0cc",
+      "bytes": 1817
+    },
+    {
+      "path": "evaluation/relational/assessment-selection/legacy-regressions.json",
+      "sha256": "3c72ad0b5af9f4fd1f9ffecc433406f69ffff5aec10a0a300a3cf011d6528f23",
+      "bytes": 253
+    },
+    {
+      "path": "evaluation/relational/assessment-selection/legacy-regressions.log",
+      "sha256": "877a0401ffcaa88536174201a4a877a0c1dbe5ad1d3cd27a10b04f6d84e492b5",
+      "bytes": 16971
+    },
+    {
+      "path": "evaluation/relational/assessment-selection/report.json",
+      "sha256": "31bcd3e1687d79a0dca26569d7064c04b98817fae93c74a3a1604215bb04e649",
+      "bytes": 97220
+    },
+    {
+      "path": "evaluation/relational/assessment-selection/traceability.json",
+      "sha256": "b3467f5e01b52e590341755e94f8daf254cdd6f686c44f4a4ad071b0b0a0295e",
+      "bytes": 5951
     },
     {
       "path": "evaluation/relational/assessment/README.md",
@@ -2698,6 +2893,46 @@
       "bytes": 5353
     },
     {
+      "path": "implementation/relational/0.8.0/009_assessment_selection.sql",
+      "sha256": "9a19adcaf65decff157b5998bf866cf4482d24b0373df1f9e7e29adb03f52365",
+      "bytes": 4994
+    },
+    {
+      "path": "implementation/relational/0.8.0/README.md",
+      "sha256": "ff41cfe860e339ae2889286519f3850a2f018e95757a6944216452f1995bc2cb",
+      "bytes": 5316
+    },
+    {
+      "path": "implementation/relational/0.8.0/component.json",
+      "sha256": "aa6f76fd7b49bb535e9f64f8bf27d51c713ffa78d69fd2ee3d1bef439563c283",
+      "bytes": 2600
+    },
+    {
+      "path": "implementation/relational/0.8.0/contract.json",
+      "sha256": "d5832966057d304ee2467d8546f2849a4f8c3d0d2b95e72182df9b456e2bf306",
+      "bytes": 15040
+    },
+    {
+      "path": "implementation/relational/0.8.0/execution-fixture.json",
+      "sha256": "eab7528a46add5b37afc0048f42e0433d6cb01fde5e9cfc21b6cd3835f11ca3e",
+      "bytes": 61662
+    },
+    {
+      "path": "implementation/relational/0.8.0/fixtures.json",
+      "sha256": "04f6d66bc57df46d92e9ea2a282c122b2d35ce0f6a1e99d4a6e47f29a0d70a67",
+      "bytes": 26560
+    },
+    {
+      "path": "implementation/relational/0.8.0/queries/selection.sql",
+      "sha256": "51918b5621caf12f747147aee19c4be00c44cd254ea24ef290f1fdef1df24f8f",
+      "bytes": 776
+    },
+    {
+      "path": "implementation/relational/0.8.0/schema-dictionary.md",
+      "sha256": "6be858582803d072b3eb970e837780f36a2107cfe8f4e9a04ec069676dacbb29",
+      "bytes": 3699
+    },
+    {
       "path": "implementation/validation/0.1.0/README.md",
       "sha256": "aa1a49c52dcae87ff2728889974ec60f38f27b822fc40944ed3bc6b6d6a0e792",
       "bytes": 2970
@@ -2821,6 +3056,11 @@
       "path": "plans/v0.3.5.md",
       "sha256": "e7aabedc0a4ad7a9239ab63e6ae3215f25e5ce10d4d3a1c55793b5f4f1bb73a1",
       "bytes": 15918
+    },
+    {
+      "path": "plans/v0.3.6.md",
+      "sha256": "7035c0314812ff071ea187706c9ca36359ff2f79be9d89426df870d4d4cc4e0d",
+      "bytes": 6428
     },
     {
       "path": "references/README.md",
@@ -3128,6 +3368,26 @@
       "bytes": 7105
     },
     {
+      "path": "tests/test_assessment_alignment.py",
+      "sha256": "46fa39184e3d93b224d5958b6465b7343e14076850ca7c61650fb80a5e6d6c4d",
+      "bytes": 3415
+    },
+    {
+      "path": "tests/test_assessment_documentation.py",
+      "sha256": "e745b210ffc680bf92eab492dc7c661a9672b0d8ae61f155fe8be094bc6ba8f1",
+      "bytes": 2350
+    },
+    {
+      "path": "tests/test_assessment_main_gate.py",
+      "sha256": "85740ee89e2492aee2f45ad3ee28e1dfc078334d309de99666d3559dc2e8442f",
+      "bytes": 1877
+    },
+    {
+      "path": "tests/test_assessment_selection.py",
+      "sha256": "c86b072b7bce42d5033079c0bd1c1d4b094953ae77b2424931da0d74294f0653",
+      "bytes": 5837
+    },
+    {
       "path": "tests/test_coherence_shacl.py",
       "sha256": "6ab6a1cbd58789456b8777bd4658d311d8dc5e372cedfc46891bd2321aeba25a",
       "bytes": 4626
@@ -3358,6 +3618,11 @@
       "bytes": 6647
     },
     {
+      "path": "tools/audit_assessment_alignment.py",
+      "sha256": "4a4e8317a7de0d5b70267373d4355f3172e87eda09b1087b63ddd42f6d58c67a",
+      "bytes": 13372
+    },
+    {
       "path": "tools/audit_consistency.py",
       "sha256": "74c5606b8ffd6f03739f87cf4705532e4ced7f165d1fddf47868b1224cb93350",
       "bytes": 19611
@@ -3573,6 +3838,16 @@
       "bytes": 6042
     },
     {
+      "path": "tools/publication/assessment_documentation.py",
+      "sha256": "4c02669dd510cce32cae6f8f02b0aca80be14c80c1eef136430f6656cd8bb1d5",
+      "bytes": 24974
+    },
+    {
+      "path": "tools/publication/assessment_main_gate.py",
+      "sha256": "c3cf5730b84aece8035c881692d8b73ed71b85cf7f1731e7cd2fa1287e1076af",
+      "bytes": 4096
+    },
+    {
       "path": "tools/publication/audit_portal.py",
       "sha256": "e0bd08b71862df17cc543e293c9265d90508563b5552029bede7c09dce8dcbc8",
       "bytes": 9412
@@ -3621,6 +3896,11 @@
       "path": "tools/publication/build_wiki.py",
       "sha256": "95c5a7df570439972d0200d525cefb2138f8d31606a06f7c01e966b6b1cb1e46",
       "bytes": 476
+    },
+    {
+      "path": "tools/publication/check_development_boundary.py",
+      "sha256": "6052363b6324acfb157e3e08a5a876c252760ce70274b3092c57c3653fac17d7",
+      "bytes": 2680
     },
     {
       "path": "tools/publication/current-status.json",
@@ -3686,6 +3966,11 @@
       "path": "tools/publication/requirements.txt",
       "sha256": "344ca850f1fa174f0a44f9ac4e18bb7079fa2b5d6edab63aff2b27dc590267d0",
       "bytes": 111
+    },
+    {
+      "path": "tools/publication/review_assessment_reader.py",
+      "sha256": "96e2d87e3a98cd61be0ceec1d98c81ffd806e9dfd6e5e99fd552d7bf4fef2dc5",
+      "bytes": 4592
     },
     {
       "path": "tools/publication/run_widoco.py",
@@ -3766,6 +4051,11 @@
       "path": "tools/relational_assessment.py",
       "sha256": "70dbcbbe72e53d4eb36dc37e3fff3acb6f502b5b15f9376a3eb85d9bb6d11038",
       "bytes": 15981
+    },
+    {
+      "path": "tools/relational_assessment_selection.py",
+      "sha256": "bd5a5d335e9edf6ce5b3f360f2757f6da487c0b4fb8fb0c1457323ead345468b",
+      "bytes": 11659
     },
     {
       "path": "tools/relational_correction.py",
@@ -3863,6 +4153,11 @@
       "bytes": 20302
     },
     {
+      "path": "tools/run_assessment_selection.py",
+      "sha256": "d7f5ec3f06dff958adff7e5b8a97bdcb988910eff89b77557ef5b6c4324b0b1e",
+      "bytes": 16062
+    },
+    {
       "path": "tools/run_coherence_shacl.py",
       "sha256": "ae6304eb0d3915a605346c5b36ad24f9710c81bea2130d3bfeb878afd56d5e22",
       "bytes": 17213
@@ -3951,6 +4246,11 @@
       "path": "tools/run_source_cq0708.py",
       "sha256": "a26822aa140d964fa004092bf18fb2ba5da5489b7af4bb8f3df692b4320c086b",
       "bytes": 27503
+    },
+    {
+      "path": "tools/run_v036_versioned_suite.py",
+      "sha256": "caeb729d27a7b1a4677cff36dc7b42f929fedf5d067af680f2abef8eed51185e",
+      "bytes": 3748
     },
     {
       "path": "tools/select_release_v035.py",

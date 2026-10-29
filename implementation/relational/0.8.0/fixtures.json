@@ -1,0 +1,937 @@
+{
+  "schema": "riskium-assessment-selection-fixed-oracles-v1",
+  "version": "0.8.0",
+  "status": "DECLARED_NOT_RUN",
+  "declared_before_runtime_implementation": true,
+  "baseline_commit": "41caeaa78c7a152787d1070540e20ae0c6a2395a",
+  "authorship": "Prospective literal task outcomes fixed before implementation; no observed SQL/API output used.",
+  "identity_policy": "A/B/M are distinct assessment artifact IDs; X/Y/Z are supplementary decision-context IDs, distinct from native assessment context/version pins.",
+  "bundles": {
+    "A-v1": {
+      "assessment_source": "S-assessment",
+      "result_version": "R-v1",
+      "score_kind": "REPORTED",
+      "reported_value": "0",
+      "result_source": "S-result-1"
+    },
+    "A-v2": {
+      "assessment_source": "S-assessment",
+      "result_version": "R-v2",
+      "score_kind": "REPORTED",
+      "reported_value": "0.25",
+      "result_source": "S-result-2"
+    },
+    "A-v3": {
+      "assessment_source": "S-assessment",
+      "result_version": "R-v3",
+      "score_kind": "UNKNOWN",
+      "reported_value": null,
+      "result_source": "S-result-3"
+    }
+  },
+  "timeline": [
+    {
+      "sequence": 1,
+      "kind": "SELECT",
+      "assessment": "A",
+      "decision_context": "X",
+      "target_version": "A-v1",
+      "actor": "documented-fixture-actor",
+      "reason": "synthetic declared decision",
+      "source": "S-decision",
+      "locator": "synthetic/assessment-selection/timeline/1",
+      "interpretation_origin": "prospective authored fixture; no real case",
+      "recorded_at": "2026-10-29T12:00:01Z"
+    },
+    {
+      "sequence": 2,
+      "kind": "SELECT",
+      "assessment": "A",
+      "decision_context": "X",
+      "target_version": "A-v2",
+      "actor": "documented-fixture-actor",
+      "reason": "synthetic declared decision",
+      "source": "S-decision",
+      "locator": "synthetic/assessment-selection/timeline/2",
+      "interpretation_origin": "prospective authored fixture; no real case",
+      "recorded_at": "2026-10-29T12:00:02Z"
+    },
+    {
+      "sequence": 3,
+      "kind": "SELECT",
+      "assessment": "A",
+      "decision_context": "Y",
+      "target_version": "A-v3",
+      "actor": "documented-fixture-actor",
+      "reason": "synthetic declared decision",
+      "source": "S-decision",
+      "locator": "synthetic/assessment-selection/timeline/3",
+      "interpretation_origin": "prospective authored fixture; no real case",
+      "recorded_at": "2026-10-29T12:00:03Z"
+    },
+    {
+      "sequence": 4,
+      "kind": "WITHDRAW",
+      "assessment": "A",
+      "decision_context": "X",
+      "target_version": "A-v2",
+      "actor": "documented-fixture-actor",
+      "reason": "synthetic declared decision",
+      "source": "S-decision",
+      "locator": "synthetic/assessment-selection/timeline/4",
+      "interpretation_origin": "prospective authored fixture; no real case",
+      "recorded_at": "2026-10-29T12:00:04Z"
+    },
+    {
+      "sequence": 5,
+      "kind": "SELECT",
+      "assessment": "A",
+      "decision_context": "X",
+      "target_version": "A-v3",
+      "actor": "documented-fixture-actor",
+      "reason": "synthetic declared decision",
+      "source": "S-decision",
+      "locator": "synthetic/assessment-selection/timeline/5",
+      "interpretation_origin": "prospective authored fixture; no real case",
+      "recorded_at": "2026-10-29T12:00:05Z"
+    },
+    {
+      "sequence": 6,
+      "kind": "CLEAR",
+      "assessment": "A",
+      "decision_context": "X",
+      "target_version": null,
+      "actor": "documented-fixture-actor",
+      "reason": "synthetic declared decision",
+      "source": "S-decision",
+      "locator": "synthetic/assessment-selection/timeline/6",
+      "interpretation_origin": "prospective authored fixture; no real case",
+      "recorded_at": "2026-10-29T12:00:06Z"
+    }
+  ],
+  "envelope_policy": "All endpoint versions are issued before timeline decisions. Resolve each named setup to explicit, source-preserving synthetic rows before implementation. Do not change this declaration to fit outputs.",
+  "native_oracles": {
+    "source": "implementation/relational/0.2.0/fixtures.json",
+    "source_sha256": "f6059dc460fc11d30793fd73f30316d086a3551e3bed414ae518edce75786dfa",
+    "literal_expected_edges": [
+      [
+        "urn:riskium:assessment:a1",
+        "R-12",
+        "urn:riskium:assessment:basis"
+      ],
+      [
+        "urn:riskium:assessment:a1",
+        "R-13",
+        "urn:riskium:assessment:r1"
+      ],
+      [
+        "urn:riskium:assessment:r1",
+        "R-48",
+        "urn:riskium:assessment:dimension"
+      ],
+      [
+        "urn:riskium:assessment:r1",
+        "RX-016",
+        "urn:riskium:assessment:scale-v3"
+      ],
+      [
+        "urn:riskium:assessment:a1",
+        "RX-014",
+        "urn:riskium:sql:context-v1"
+      ],
+      [
+        "urn:riskium:assessment:a1",
+        "RX-015",
+        "urn:riskium:assessment:method-v3"
+      ]
+    ],
+    "complete_graph_oracle_source": "tools/run_relational_assessment.py:expected_graph",
+    "complete_graph_source_sha256": "47cdfd931a0e90fd3fa0f2c95d8cafde5d6f5ae9b27e33d8ca378fea04110d73",
+    "policy": "Existing literal native graph expectations remain authoritative for their original inputs. Any new graph needs a separately committed literal oracle before runtime execution."
+  },
+  "cases": [
+    {
+      "id": "ASL-F01",
+      "title": "Populated upgrade",
+      "category": "migration",
+      "requirements": [
+        "ASL-01"
+      ],
+      "setup": "verified populated v8",
+      "operation": "migrate to v9",
+      "expected": {
+        "user_version": 9,
+        "old_rows_schema_ledger_payloads_and_graphs_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F02",
+      "title": "Repeated upgrade",
+      "category": "migration",
+      "requirements": [
+        "ASL-01"
+      ],
+      "setup": "valid populated v9",
+      "operation": "migrate again",
+      "expected": {
+        "exact_state_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F03",
+      "title": "Failed upgrade",
+      "category": "rollback",
+      "requirements": [
+        "ASL-01",
+        "ASL-07"
+      ],
+      "setup": "verified populated v8",
+      "operation": "inject failure after new DDL and before commit",
+      "expected": {
+        "rejected": true,
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F04",
+      "title": "Newer issue and branches do not select",
+      "category": "query",
+      "requirements": [
+        "ASL-02",
+        "ASL-03"
+      ],
+      "setup": "A-v1/A-v2/A-v3 issued; existing correction branches; no decisions",
+      "operation": "selection(A, X, 0)",
+      "expected": {
+        "state": "NO_SELECTION",
+        "assessment_version": null,
+        "results": []
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F05",
+      "title": "First explicit selection",
+      "category": "query",
+      "requirements": [
+        "ASL-03"
+      ],
+      "setup": "timeline through sequence 1",
+      "operation": "selection(A, X, 1)",
+      "expected": {
+        "state": "SELECTED",
+        "assessment_version": "A-v1",
+        "result_bundle": "exact owned bundle: A-v1",
+        "automatic_comparability": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F06",
+      "title": "Second explicit selection",
+      "category": "query",
+      "requirements": [
+        "ASL-03"
+      ],
+      "setup": "timeline through sequence 2",
+      "operation": "selection(A, X, 2)",
+      "expected": {
+        "state": "SELECTED",
+        "assessment_version": "A-v2",
+        "result_bundle": "exact owned bundle: A-v2",
+        "automatic_comparability": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F07",
+      "title": "Historical answer is unchanged",
+      "category": "query",
+      "requirements": [
+        "ASL-03"
+      ],
+      "setup": "complete timeline",
+      "operation": "selection(A, X, 1)",
+      "expected": {
+        "state": "SELECTED",
+        "assessment_version": "A-v1",
+        "result_bundle": "exact owned bundle: A-v1",
+        "automatic_comparability": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F08",
+      "title": "A different context has no inherited selection",
+      "category": "query",
+      "requirements": [
+        "ASL-03"
+      ],
+      "setup": "timeline through sequence 2",
+      "operation": "selection(A, Y, 2)",
+      "expected": {
+        "state": "NO_SELECTION",
+        "assessment_version": null,
+        "results": []
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F09",
+      "title": "Context-specific selections coexist",
+      "category": "query",
+      "requirements": [
+        "ASL-03",
+        "ASL-06"
+      ],
+      "setup": "timeline through sequence 3",
+      "operation": "selection(A, X, 3), selection(A, Y, 3)",
+      "expected": {
+        "X": {
+          "state": "SELECTED",
+          "assessment_version": "A-v2",
+          "result_bundle": "exact owned bundle: A-v2",
+          "automatic_comparability": false
+        },
+        "Y": {
+          "state": "SELECTED",
+          "assessment_version": "A-v3",
+          "result_bundle": "exact owned bundle: A-v3",
+          "automatic_comparability": false
+        }
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F10",
+      "title": "Withdrawing the selected version has no fallback",
+      "category": "query",
+      "requirements": [
+        "ASL-04"
+      ],
+      "setup": "timeline through sequence 4",
+      "operation": "selection(A, X, 4)",
+      "expected": {
+        "state": "WITHDRAWN",
+        "assessment_version": null,
+        "results": []
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F11",
+      "title": "Before withdrawal the pointer remains visible",
+      "category": "query",
+      "requirements": [
+        "ASL-04"
+      ],
+      "setup": "complete timeline",
+      "operation": "selection(A, X, 3)",
+      "expected": {
+        "state": "SELECTED",
+        "assessment_version": "A-v2",
+        "result_bundle": "exact owned bundle: A-v2",
+        "automatic_comparability": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F12",
+      "title": "Withdrawal does not cross contexts",
+      "category": "query",
+      "requirements": [
+        "ASL-04"
+      ],
+      "setup": "timeline through sequence 4",
+      "operation": "selection(A, Y, 4)",
+      "expected": {
+        "state": "SELECTED",
+        "assessment_version": "A-v3",
+        "result_bundle": "exact owned bundle: A-v3",
+        "automatic_comparability": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F13",
+      "title": "No implicit reinstatement",
+      "category": "rejection",
+      "requirements": [
+        "ASL-04"
+      ],
+      "setup": "timeline through sequence 4",
+      "operation": "append SELECT A-v2 in X",
+      "expected": {
+        "rejected": true,
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F14",
+      "title": "An explicit different version can be selected",
+      "category": "query",
+      "requirements": [
+        "ASL-04"
+      ],
+      "setup": "timeline through sequence 5",
+      "operation": "selection(A, X, 5)",
+      "expected": {
+        "state": "SELECTED",
+        "assessment_version": "A-v3",
+        "result_bundle": "exact owned bundle: A-v3",
+        "automatic_comparability": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F15",
+      "title": "Clear removes only the current pointer",
+      "category": "query",
+      "requirements": [
+        "ASL-04"
+      ],
+      "setup": "timeline through sequence 6",
+      "operation": "selection(A, X, 6)",
+      "expected": {
+        "state": "NO_SELECTION",
+        "assessment_version": null,
+        "results": []
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F16",
+      "title": "Clear preserves an earlier answer",
+      "category": "query",
+      "requirements": [
+        "ASL-04"
+      ],
+      "setup": "complete timeline",
+      "operation": "selection(A, X, 5)",
+      "expected": {
+        "state": "SELECTED",
+        "assessment_version": "A-v3",
+        "result_bundle": "exact owned bundle: A-v3",
+        "automatic_comparability": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F17",
+      "title": "Later issued correction never becomes current automatically",
+      "category": "query",
+      "requirements": [
+        "ASL-02",
+        "ASL-03"
+      ],
+      "setup": "timeline through sequence 5; issue A-v4",
+      "operation": "selection(A, X, 5)",
+      "expected": {
+        "state": "SELECTED",
+        "assessment_version": "A-v3",
+        "result_bundle": "exact owned bundle: A-v3",
+        "automatic_comparability": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F18",
+      "title": "Unknown target",
+      "category": "rejection",
+      "requirements": [
+        "ASL-03",
+        "ASL-07"
+      ],
+      "setup": "valid v9",
+      "operation": "append SELECT of absent version",
+      "expected": {
+        "rejected": true,
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F19",
+      "title": "Unissued target",
+      "category": "rejection",
+      "requirements": [
+        "ASL-03",
+        "ASL-07"
+      ],
+      "setup": "valid v9 and draft assessment",
+      "operation": "append SELECT of draft version",
+      "expected": {
+        "rejected": true,
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F20",
+      "title": "Wrong native target kind",
+      "category": "rejection",
+      "requirements": [
+        "ASL-03",
+        "ASL-07"
+      ],
+      "setup": "valid v9 with issued EvidenceReference",
+      "operation": "append SELECT of C065 version as assessment",
+      "expected": {
+        "rejected": true,
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F21",
+      "title": "Cross-assessment target",
+      "category": "rejection",
+      "requirements": [
+        "ASL-03",
+        "ASL-07"
+      ],
+      "setup": "A and B issued",
+      "operation": "append SELECT B-v1 with assessment identity A",
+      "expected": {
+        "rejected": true,
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F22",
+      "title": "Missing decision context",
+      "category": "rejection",
+      "requirements": [
+        "ASL-03",
+        "ASL-05"
+      ],
+      "setup": "valid v9",
+      "operation": "append/query with missing or blank decision context",
+      "expected": {
+        "rejected": true,
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F23",
+      "title": "Incomplete declaration provenance",
+      "category": "rejection",
+      "requirements": [
+        "ASL-05"
+      ],
+      "setup": "valid v9",
+      "operation": "independently omit/blank actor, reason, source, locator or origin",
+      "expected": {
+        "each_variant_rejected": true,
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F24",
+      "title": "Explicit valid ledger boundary",
+      "category": "rejection",
+      "requirements": [
+        "ASL-03"
+      ],
+      "setup": "complete timeline",
+      "operation": "query missing, null, bool, fractional, negative or above-head as-of value",
+      "expected": {
+        "each_variant_rejected": true,
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F25",
+      "title": "Invalid declaration time",
+      "category": "rejection",
+      "requirements": [
+        "ASL-05"
+      ],
+      "setup": "valid v9",
+      "operation": "append noncanonical UTC, invalid calendar date or recorded time before target issuance",
+      "expected": {
+        "each_variant_rejected": true,
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F26",
+      "title": "Immutable event envelope",
+      "category": "immutability",
+      "requirements": [
+        "ASL-05",
+        "ASL-07"
+      ],
+      "setup": "complete timeline",
+      "operation": "independently UPDATE, DELETE, duplicate/replace an existing event or supply its database sequence",
+      "expected": {
+        "each_variant_rejected": true,
+        "exact_state_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F27",
+      "title": "Query parameter binding",
+      "category": "rejection",
+      "requirements": [
+        "ASL-03",
+        "ASL-07"
+      ],
+      "setup": "valid v9",
+      "operation": "use an SQL-looking unknown assessment identity",
+      "expected": {
+        "rejected": true,
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F28",
+      "title": "Three distinct source roles",
+      "category": "provenance",
+      "requirements": [
+        "ASL-05"
+      ],
+      "setup": "A-v3 and timeline",
+      "operation": "retrieve assessment/result origin and decision event",
+      "expected": {
+        "assessment_source": "S-assessment",
+        "result_source": "S-result-3",
+        "decision_source": "S-decision",
+        "roles_remain_distinct": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F29",
+      "title": "Whole bundle retains multiple values",
+      "category": "query",
+      "requirements": [
+        "ASL-03",
+        "ASL-06"
+      ],
+      "setup": "multi-result assessment M-v1; two result rows share a display label and dimension",
+      "operation": "SELECT M-v1; retrieve selected bundle",
+      "expected": {
+        "result_versions": [
+          "MR-left-v1",
+          "MR-right-v1"
+        ],
+        "values": [
+          "0",
+          "0.25"
+        ],
+        "scalar_selected": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F30",
+      "title": "Selection does not authorize incompatible comparison",
+      "category": "query",
+      "requirements": [
+        "ASL-06"
+      ],
+      "setup": "two explicitly selected bundles with equal lexical values and different pinned scale versions",
+      "operation": "compare their result versions under unchanged exact-pin policy",
+      "expected": "NOT_ADMISSIBLE_BY_EXACT_PIN_POLICY",
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F31",
+      "title": "Unknown is not zero",
+      "category": "query",
+      "requirements": [
+        "ASL-06"
+      ],
+      "setup": "A-v3 selected",
+      "operation": "read exact original result fields",
+      "expected": {
+        "score_kind": "UNKNOWN",
+        "reported_value": null
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F32",
+      "title": "Native graph preservation",
+      "category": "native",
+      "requirements": [
+        "ASL-08"
+      ],
+      "setup": "old and new issued assessment bundles plus decisions",
+      "operation": "compare exact per-version native graphs with fixed inherited literal oracles",
+      "expected": {
+        "graphs_equal": true,
+        "new_lifecycle_native_triples": 0,
+        "historical_union": false
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F33",
+      "title": "Correction family is not corroboration",
+      "category": "negative-inference",
+      "requirements": [
+        "ASL-02",
+        "ASL-08"
+      ],
+      "setup": "A-v2 and A-v3 correct A-v1",
+      "operation": "retrieve family and declaration provenance",
+      "expected": {
+        "lineage": [
+          [
+            "A-v1",
+            0
+          ],
+          [
+            "A-v2",
+            1
+          ],
+          [
+            "A-v3",
+            1
+          ]
+        ],
+        "independent_corroboration": "NOT_ASSESSED"
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F34",
+      "title": "Caller transaction survives an inner failure",
+      "category": "rollback",
+      "requirements": [
+        "ASL-07"
+      ],
+      "setup": "outer transaction contains a caller marker",
+      "operation": "fail an atomic decision/issue operation inside savepoint",
+      "expected": {
+        "caller_marker_retained": true,
+        "no_partial_inner_writes": true,
+        "caller_can_rollback": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F35",
+      "title": "Direct SQL respects target guards",
+      "category": "rejection",
+      "requirements": [
+        "ASL-07"
+      ],
+      "setup": "valid v9",
+      "operation": "bypass API and insert wrong-kind/unissued/cross-assessment target",
+      "expected": {
+        "each_variant_rejected": true,
+        "exact_state_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F36",
+      "title": "Schema, ledger and configuration tamper",
+      "category": "rejection",
+      "requirements": [
+        "ASL-07"
+      ],
+      "setup": "separate copies of valid v9",
+      "operation": "independently alter a guard, migration hash or foreign-key configuration",
+      "expected": {
+        "each_variant_rejected_by_health": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F37",
+      "title": "Old exact-schema reader refuses v9",
+      "category": "reader",
+      "requirements": [
+        "ASL-07"
+      ],
+      "setup": "populated v9",
+      "operation": "open with original v8 reader",
+      "expected": {
+        "rejected": true,
+        "original_reader_bytes_unchanged": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F38",
+      "title": "Backup and real file reopen",
+      "category": "recovery",
+      "requirements": [
+        "ASL-07"
+      ],
+      "setup": "complete timeline and branches",
+      "operation": "SQLite backup, close, reopen, compare logical rows/pins/history/queries/graphs",
+      "expected": {
+        "exact_logical_state_equal": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F39",
+      "title": "Dump restore and tampered history",
+      "category": "recovery",
+      "requirements": [
+        "ASL-07"
+      ],
+      "setup": "complete timeline dump",
+      "operation": "restore valid dump; separately alter target/context/withdrawal history and restore",
+      "expected": {
+        "valid_restore_equal": true,
+        "each_tampered_restore_rejected_atomically": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F40",
+      "title": "Wrong query sensitivity",
+      "category": "mutation",
+      "requirements": [
+        "ASL-03",
+        "ASL-06",
+        "ASL-09"
+      ],
+      "setup": "fixed timeline and conflicting bundles",
+      "operation": "actually run latest-wins, no-context, no-as-of and mixed-result mutant queries",
+      "expected": {
+        "each_mutant_differs_from_its_fixed_oracle": true,
+        "normal_query_matches": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F41",
+      "title": "Actual weakened-guard sensitivity",
+      "category": "mutation",
+      "requirements": [
+        "ASL-07",
+        "ASL-09"
+      ],
+      "setup": "independent disposable database copy",
+      "operation": "actually remove one target guard, perform forbidden write and run current-data audit",
+      "expected": {
+        "forbidden_write_observed": true,
+        "audit_rejects": true,
+        "normal_database_untouched": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F42",
+      "title": "Preserved source accounting",
+      "category": "preservation",
+      "requirements": [
+        "ASL-09"
+      ],
+      "setup": "declaration-bound original inputs",
+      "operation": "compare all native IDs/dispositions and old release payloads",
+      "expected": {
+        "native_elements": 306,
+        "deferred": 236,
+        "withheld_admissions": 11,
+        "independent_ratings": 0,
+        "published_selected_inputs_unchanged": 687
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F43",
+      "title": "Withdrawal of an unselected branch",
+      "category": "query",
+      "requirements": [
+        "ASL-04"
+      ],
+      "setup": "select A-v1 in context Z; withdraw A-v2 in Z",
+      "operation": "query Z then attempt SELECT A-v2 in Z",
+      "expected": {
+        "current": {
+          "state": "SELECTED",
+          "assessment_version": "A-v1",
+          "result_bundle": "exact owned bundle: A-v1",
+          "automatic_comparability": false
+        },
+        "attempt": {
+          "rejected": true,
+          "all_preoperation_state_preserved": true
+        }
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ASL-F44",
+      "title": "Clear never erases a withdrawal",
+      "category": "rejection",
+      "requirements": [
+        "ASL-04"
+      ],
+      "setup": "timeline through sequence 6",
+      "operation": "attempt SELECT A-v2 in X after CLEAR",
+      "expected": {
+        "rejected": true,
+        "all_preoperation_state_preserved": true
+      },
+      "observed": null,
+      "status": "NOT_RUN"
+    }
+  ],
+  "software_tests_run": 0,
+  "semantic_tests_run": 0,
+  "independent_semantic_ratings": 0
+}
