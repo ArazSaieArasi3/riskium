@@ -1,0 +1,183 @@
+{
+  "schema": "riskium-reader-review-plan-v1",
+  "documentation_version": "0.4.2",
+  "issue": 61,
+  "method": "Agent editorial source comparison plus actual rendered/keyboard journey inspection and machine integrity checks. Not an independent expert rating or user study.",
+  "baseline": {
+    "source_release": "v0.3.5",
+    "source_commit": "8a9a95bba17327d04c5560879819b2e61b48ff19",
+    "documentation": "0.4.1",
+    "documentation_source_commit": "41caeaa78c7a152787d1070540e20ae0c6a2395a"
+  },
+  "references": [
+    {
+      "repository": "ArazSaieArasi3/OGCM-RF",
+      "visibility": "private",
+      "commit": "40d39d87973b05f7a65756b88ca38350ce01fd7a",
+      "paths": [
+        "framework/documentation/editorial-integrity-standard.md",
+        "framework/documentation/documentation-quality-model.md",
+        "framework/documentation/documentation-surface-allocation-standard.md",
+        "framework/reader-navigation-standard.md"
+      ],
+      "use": "Adapt reader orientation, prose, progressive disclosure, fidelity, surface authority, evidence boundaries and role journeys. No full-profile conformance or numeric score claimed."
+    },
+    {
+      "repository": "ArazSaieArasi3/araz-research-portfolio",
+      "commit": "6af47a4f145ba2b09ed7541e5548370b8ca3b391",
+      "paths": [
+        "methods/public-content/public-content-quality-gate.md",
+        "methods/repository-onboarding/readme-public-docs-procedure.md",
+        "templates/repository/reading-guide.md"
+      ],
+      "use": "Adapt source/claim integrity, readable structure, canonical version and self-contained onboarding."
+    }
+  ],
+  "qualitative_criteria": [
+    {
+      "id": "R01",
+      "name": "Orientation",
+      "acceptance": "Opening identifies Riskium, its problem and published status before process details."
+    },
+    {
+      "id": "R02",
+      "name": "Role journeys",
+      "acceptance": "Reviewer, domain specialist and integrator have ordered paths to relevant evidence and limitations."
+    },
+    {
+      "id": "R03",
+      "name": "Natural technical prose",
+      "acceptance": "Sentences explain the subject; internal issue/stage labels do not dominate the main narrative."
+    },
+    {
+      "id": "R04",
+      "name": "Progressive disclosure",
+      "acceptance": "Exact commits/hashes and process history remain available below the explanation in source records."
+    },
+    {
+      "id": "R05",
+      "name": "Evidence fidelity",
+      "acceptance": "Historical results, partial/unexecuted scope, withdrawn claims, withheld cases and zero independent ratings remain distinct."
+    },
+    {
+      "id": "R06",
+      "name": "Version intelligibility",
+      "acceptance": "Published source 0.3.5, semantic model 0.3.1, maintained documentation 0.4.1 and paper 7.0.8 have explicit different roles."
+    },
+    {
+      "id": "R07",
+      "name": "Source authority",
+      "acceptance": "Wiki explains, Pages adds generated reference, and both lead to exact governed sources; four snapshots remain immutable."
+    },
+    {
+      "id": "R08",
+      "name": "Reproduction usefulness",
+      "acceptance": "Reader can identify prerequisites, exact source, commands, expected outcomes and private-file/Git-history boundaries."
+    },
+    {
+      "id": "R09",
+      "name": "Visual and keyboard reading",
+      "acceptance": "Inspect rendered entry, evaluation, reference and limits; headings, spacing, table overflow and keyboard access remain usable in the inspected environment."
+    },
+    {
+      "id": "R10",
+      "name": "Cross-surface consistency",
+      "acceptance": "Actual active GitHub README, Wiki and Pages show the same released state and equivalent shared guide content."
+    }
+  ],
+  "audience_paths": {
+    "reviewer": [
+      "Home",
+      "Overview",
+      "Decisions",
+      "Formalization",
+      "Evaluation",
+      "Limitations",
+      "Reproduce",
+      "Publication"
+    ],
+    "domain": [
+      "Home",
+      "Scope",
+      "Using-the-Model",
+      "Competency-Questions",
+      "References",
+      "Limitations"
+    ],
+    "integrator": [
+      "Home",
+      "Visualization",
+      "Database-Assurance",
+      "Traceability",
+      "Reproduce",
+      "Publication"
+    ]
+  },
+  "protected_evidence": {
+    "native_ids": 306,
+    "deferred_mappings": 236,
+    "partial_source_scenario_evidence_routes": 14,
+    "trace_routes": 450,
+    "historical_trace_routes": 423,
+    "current_claim_routes": 39,
+    "hermit_obligations": {
+      "PASS": 281,
+      "NOT_RUN": 14
+    },
+    "shacl_obligations": {
+      "PASS": 341,
+      "PARTIAL": 1,
+      "NOT_RUN": 17
+    },
+    "sql_controls": [
+      54,
+      54,
+      62,
+      43
+    ],
+    "organizational_admissions": {
+      "WITHHELD": 11
+    },
+    "independent_semantic_ratings": 0
+  },
+  "limits": [
+    "No full WCAG certification.",
+    "No controlled user study, independent human usability rating or semantic expert adjudication.",
+    "No unverified mobile or assistive-technology claim.",
+    "No submission readiness or new source-release scope inferred."
+  ],
+  "status": "CANDIDATE_SOURCE_REVIEW_PENDING_ACTUAL_CHANNELS",
+  "candidate_reader_criteria": [
+    {
+      "id": "ASL-Q01",
+      "status": "PENDING_ACTUAL_CHANNEL_REVIEW"
+    },
+    {
+      "id": "ASL-Q02",
+      "status": "PENDING_ACTUAL_CHANNEL_REVIEW"
+    },
+    {
+      "id": "ASL-Q03",
+      "status": "PENDING_ACTUAL_CHANNEL_REVIEW"
+    },
+    {
+      "id": "ASL-Q04",
+      "status": "PENDING_ACTUAL_CHANNEL_REVIEW"
+    },
+    {
+      "id": "ASL-Q05",
+      "status": "PENDING_ACTUAL_CHANNEL_REVIEW"
+    },
+    {
+      "id": "ASL-Q06",
+      "status": "PENDING_ACTUAL_CHANNEL_REVIEW"
+    }
+  ],
+  "candidate_evidence": {
+    "current_routes": 460,
+    "current_claim_routes": 49,
+    "synthetic_controls": 44,
+    "reader_criteria_pending": 6,
+    "original_paper_claim_dispositions": 65
+  }
+}
