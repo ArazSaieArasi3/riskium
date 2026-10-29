@@ -3,6 +3,11 @@
   "baseline_commit": "caf58628a6b6a02508c644dbcb53d7e298b9b5a7",
   "source_files": [
     {
+      "path": ".github/README.md",
+      "sha256": "8cf68d6004ea1a57fa09f8e1b5fc7ebc47e4b2bc691ec76a64fb9c314a7994b7",
+      "bytes": 5604
+    },
+    {
       "path": ".github/workflows/current-alignment.yml",
       "sha256": "d3febc2bafa1ab20687efce63f5399e8552133c9a4bab30d414343e9916c378e",
       "bytes": 1705
@@ -51,6 +56,11 @@
       "path": ".github/workflows/publication-status.yml",
       "sha256": "e067a6ed85502b336853aca19f095458024670279939ffbb9b544e027b01b522",
       "bytes": 2360
+    },
+    {
+      "path": ".github/workflows/published-documentation.yml",
+      "sha256": "c60bfcf0a6c390269dc2aeef30456d3fac25513d25e90d8561d36943f250e0e6",
+      "bytes": 3377
     },
     {
       "path": ".github/workflows/quality.yml",
@@ -698,6 +708,146 @@
       "bytes": 718
     },
     {
+      "path": "documentation/0.4.1/README.md",
+      "sha256": "53f033b54ae9ca2c159932b0f4d4a1f6760e6a4c5a7d6e6de2cd89e16d4d4439",
+      "bytes": 1707
+    },
+    {
+      "path": "documentation/0.4.1/Repository.md",
+      "sha256": "8cf68d6004ea1a57fa09f8e1b5fc7ebc47e4b2bc691ec76a64fb9c314a7994b7",
+      "bytes": 5604
+    },
+    {
+      "path": "documentation/0.4.1/guide-registry.json",
+      "sha256": "7e4a80f332a70564f7b12686c2f8f23392237908c8bb90ad2a0aa5377e24196a",
+      "bytes": 3677
+    },
+    {
+      "path": "documentation/0.4.1/guides/Artifact-Versions.md",
+      "sha256": "1ca807b9c6ca85681dd3d7739ed27908640dddd8ba1eecfaa4e6a42aa701c71d",
+      "bytes": 2388
+    },
+    {
+      "path": "documentation/0.4.1/guides/Citation.md",
+      "sha256": "e09498072cc3029a698ef53f81e21a3f401fc377c19b0dc18b41b658b73e4493",
+      "bytes": 1754
+    },
+    {
+      "path": "documentation/0.4.1/guides/Competency-Questions.md",
+      "sha256": "78212f42bb5a04aa81a71a9983481bd3290679939733c82077eef061853f5b30",
+      "bytes": 1931
+    },
+    {
+      "path": "documentation/0.4.1/guides/Database-Assurance.md",
+      "sha256": "6190f844a3581183c5d7d03418ba1ecff4b7f900099211af4f01ba7b61209514",
+      "bytes": 3909
+    },
+    {
+      "path": "documentation/0.4.1/guides/Decisions.md",
+      "sha256": "89d8b3f842fc23880985d3192370fb784b223103254572135f84d551c60b39b6",
+      "bytes": 2257
+    },
+    {
+      "path": "documentation/0.4.1/guides/Evaluation.md",
+      "sha256": "e2137c0b7500e8a055fee271180af98e641851fb74579ebb7670fc68e3bfa9ec",
+      "bytes": 3366
+    },
+    {
+      "path": "documentation/0.4.1/guides/Formalization.md",
+      "sha256": "fe973f631aa188a302b8b338ed011c378b76e1276fc82218a2c1ce71a0fc5f74",
+      "bytes": 75620
+    },
+    {
+      "path": "documentation/0.4.1/guides/Home.md",
+      "sha256": "67073735b8c54691796d1cbaf10338b884c6a0405bd9743919436f13436c8bea",
+      "bytes": 2549
+    },
+    {
+      "path": "documentation/0.4.1/guides/Limitations.md",
+      "sha256": "f0e9c6d76eb5dd95af24a15453a92a1bfaef7c199ca3ffd228cb6efdcf055475",
+      "bytes": 2597
+    },
+    {
+      "path": "documentation/0.4.1/guides/Overview.md",
+      "sha256": "8858527854cb13b2e18c7916c9b0065c9f412bd399bf9697409545250472e11b",
+      "bytes": 2160
+    },
+    {
+      "path": "documentation/0.4.1/guides/Publication-Comparison.md",
+      "sha256": "75ba76acf28751c0165361e5089e8ac2d5c6b9d2cc726ce3ddaf0aa53c260a52",
+      "bytes": 1597
+    },
+    {
+      "path": "documentation/0.4.1/guides/Publication.md",
+      "sha256": "12f9911f289142fe1809a94fd04b547b2a17fdb7c4add7c7e79963b0ebcecd45",
+      "bytes": 3669
+    },
+    {
+      "path": "documentation/0.4.1/guides/Quality.md",
+      "sha256": "af845ecef2a99abd0d6e1a9dab03b6d218e0eaa4360c93135860f2509bbdbb9c",
+      "bytes": 1968
+    },
+    {
+      "path": "documentation/0.4.1/guides/References.md",
+      "sha256": "03304b523d0d1732c6c2ce311b1ff8c309364022adf096b51ef2a50bee22a94b",
+      "bytes": 1858
+    },
+    {
+      "path": "documentation/0.4.1/guides/Reproduce.md",
+      "sha256": "ad9a5855063d68c4ad3f05343d0ee5239ef9d2c3f30370ae26a78abfa9ba0cd5",
+      "bytes": 3800
+    },
+    {
+      "path": "documentation/0.4.1/guides/Requirements.md",
+      "sha256": "6d9367d685d63acb9446d140e473da60980c8b092c782782e2ebb7aa6562e2c5",
+      "bytes": 2135
+    },
+    {
+      "path": "documentation/0.4.1/guides/Scope.md",
+      "sha256": "44fffe84fa23fd1f93a4123c7cdf11b458e6051ff9f67455ac102523a1576241",
+      "bytes": 1804
+    },
+    {
+      "path": "documentation/0.4.1/guides/Traceability.md",
+      "sha256": "425224a01edc2f6a5edfe6139e04941655699515860a9dd20700ec3b97e8648c",
+      "bytes": 4277
+    },
+    {
+      "path": "documentation/0.4.1/guides/Using-the-Model.md",
+      "sha256": "b1912bdf48b7fe9da22d5ee98055b5c70548c6c8724077c62eeb8f92af14b442",
+      "bytes": 2870
+    },
+    {
+      "path": "documentation/0.4.1/guides/Visualization.md",
+      "sha256": "791010a7e15187915a3b6adfecc81049dda9d6366beab67bc49121f8afb65530",
+      "bytes": 2824
+    },
+    {
+      "path": "documentation/0.4.1/guides/Work-Plan.md",
+      "sha256": "56fdb97ab79083dd440e6a01368306840cbb2c2a97e3f9ddb127b360e03fd993",
+      "bytes": 4477
+    },
+    {
+      "path": "documentation/0.4.1/policy.json",
+      "sha256": "19efb7aacc69e8b2047f39579b9086003dd24e612ab183ad7e721683b965000e",
+      "bytes": 3442
+    },
+    {
+      "path": "documentation/0.4.1/publication.json",
+      "sha256": "72e38e4f10bed8cbeb7c97a3f0c7006a4c7dc4edaae206090558496b8f8e6924",
+      "bytes": 2951
+    },
+    {
+      "path": "documentation/0.4.1/reader.css",
+      "sha256": "853031b625dabec89dd6e3d86ba4cacd3ac70b95c4ed663b6e04b0701c23ce24",
+      "bytes": 1197
+    },
+    {
+      "path": "documentation/0.4.1/review-plan.json",
+      "sha256": "227897cc55a97bae21b0b78fabf3c25110070cefc420eea429719571d3af229d",
+      "bytes": 5037
+    },
+    {
       "path": "evaluation/README.md",
       "sha256": "8a7c3232d3eba97f6f2d21fb0f0fccbfe082dd534e6bd3ee633308b0612ae44e",
       "bytes": 7544
@@ -821,6 +971,26 @@
       "path": "evaluation/documentation/portal-desktop.jpg",
       "sha256": "1e2787d0a946a721755a0310b8d73d28720cbeb8f742bc9b044fb47c42cbce86",
       "bytes": 121930
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/01-wiki-before.jpg",
+      "sha256": "b0818de8d7e1deb9369772b758d2f1b46155d2cfa4f9edb229a476a1cbc57830",
+      "bytes": 159401
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/02-pages-before.jpg",
+      "sha256": "02cf0cb08dce2bd52be6b9cf64f4099b01a60a8ff9fca6e318088fe24b2259fc",
+      "bytes": 137689
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/03-evaluation-before.jpg",
+      "sha256": "8a99ec50083ee6622266937973d538fff268b7dcdfa55c80e0621061e4502849",
+      "bytes": 129111
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/README.md",
+      "sha256": "757ca59567327baea1cf0e4c55ff4cd85ae387e9fc2efe72df4e00f90b21dffb",
+      "bytes": 3342
     },
     {
       "path": "evaluation/documentation/v0.3.4-snapshot/README.md",
@@ -2988,6 +3158,11 @@
       "bytes": 19008
     },
     {
+      "path": "tests/test_published_documentation.py",
+      "sha256": "cc681f469bcd8a30418726433abc5bee3021b22c869ccd79c8990648c0773fc9",
+      "bytes": 7025
+    },
+    {
       "path": "tests/test_qualification_shacl.py",
       "sha256": "101712a565ad2fe928df599ffc8980f046c8b466a6c8c920b6c85879a0e4556b",
       "bytes": 4264
@@ -3416,6 +3591,11 @@
       "path": "tools/publication/presentation.py",
       "sha256": "7b34ac9c278fd05c67f35d3cfc273ca7ed552acc220b7f9c103bbe33c7cc30ad",
       "bytes": 5432
+    },
+    {
+      "path": "tools/publication/published_documentation.py",
+      "sha256": "6c11ffc38669084b4ce522c95d37176559a877629013d5ff7557a578a8060411",
+      "bytes": 24919
     },
     {
       "path": "tools/publication/requirements.txt",

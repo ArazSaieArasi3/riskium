@@ -1,0 +1,16 @@
+/* Editorial maintenance, scoped to current reading surfaces only. */
+.publication-context{font-size:.82rem}
+main>p,main>ul,main>ol,main>details{max-width:76ch}
+main>ul>li,main>ol>li{margin:.6rem 0}
+details.source-record{max-width:100%;font-size:.85rem}
+details.source-record summary{min-height:32px}
+details.constraint-record{border:1px solid var(--line);border-radius:6px;padding:.6rem 1rem;margin:.8rem 0;scroll-margin-top:1.5rem}
+details.constraint-record>summary{font-size:.95rem;line-height:1.55;padding:.3rem 0}
+details.constraint-record[open]>summary{border-bottom:1px solid var(--line);margin-bottom:1rem}
+details.constraint-record:target{border-color:var(--accent);box-shadow:0 0 0 2px #15596b22}
+table{max-width:100%;overscroll-behavior-inline:contain}
+th{line-height:1.5}
+.reading-page main{line-height:1.75}
+.toc:empty{display:none}
+@media(max-width:800px){.publication-context{font-size:.8rem}.mobile-navigation>div{display:block}.mobile-navigation summary{padding:.3rem 0}.mobile-navigation li a{min-height:36px}.primary-nav a{min-height:36px}details.constraint-record{padding:.5rem .75rem}}
+@media print{details.source-record{break-inside:avoid}.publication-context a{color:#111}}
