@@ -129,8 +129,8 @@
     },
     {
       "path": ".github/workflows/v036-versioned-suite.yml",
-      "sha256": "4f4f4e6081018e52f35f5f8283d3e67cc0b9c3c06392fd84ab0e0f562697556d",
-      "bytes": 1478
+      "sha256": "628597e9dc0d912d31c43ec4fe96d3df33a784ee003f742b361bb78bd6e824b2",
+      "bytes": 1744
     },
     {
       "path": ".gitignore",
@@ -2118,6 +2118,16 @@
       "bytes": 10279
     },
     {
+      "path": "evaluation/relational/risk-nature/README.md",
+      "sha256": "cfe5dd5d278be19738059db4020db515ab090f141615612c0ee938bb1f4e845f",
+      "bytes": 2193
+    },
+    {
+      "path": "evaluation/relational/risk-nature/traceability.json",
+      "sha256": "c708b415696614f3dcff254c375ad81f8870261fa6f16eca3304cb06cabb0050",
+      "bytes": 20744
+    },
+    {
       "path": "evaluation/relational/source-scenario-lineage/README.md",
       "sha256": "eba2cdfeaa22ea07195f8a1a0fba2cb3e385917dd9444a024310cbb44a0aa10a",
       "bytes": 2921
@@ -3108,9 +3118,24 @@
       "bytes": 3699
     },
     {
+      "path": "implementation/relational/0.9.0/010_risk_nature.sql",
+      "sha256": "b6f6373c5e2224fc6ccbcccd439d7b968226e7ef8278e0d3ed125a1a302848b3",
+      "bytes": 28659
+    },
+    {
       "path": "implementation/relational/0.9.0/README.md",
       "sha256": "bd7da14d926b7aaf917e9ba290c8ef600630a71afc2e85f04166142c5aadd6d1",
       "bytes": 5736
+    },
+    {
+      "path": "implementation/relational/0.9.0/README.runtime.md",
+      "sha256": "75d91c46ae23794e6512516c7d41aabe6d696fa4a1153af0eabc486791b413ad",
+      "bytes": 5000
+    },
+    {
+      "path": "implementation/relational/0.9.0/component.json",
+      "sha256": "fc8acf800d1aa45c81c49e8ae0a971120225fb9344acf6b01145161996ff1ae4",
+      "bytes": 2627
     },
     {
       "path": "implementation/relational/0.9.0/contract.json",
@@ -3158,9 +3183,29 @@
       "bytes": 13620
     },
     {
+      "path": "implementation/relational/0.9.0/queries/by_case.sql",
+      "sha256": "cdf5fea692ef15c0a36e48c796137c917b923d0d4ebc61d87a12602f9d007596",
+      "bytes": 148
+    },
+    {
+      "path": "implementation/relational/0.9.0/queries/exact_version.sql",
+      "sha256": "b8c101a24dff04d397053cbe227d206cdbc60d13904e8bb55bce2181165fed7b",
+      "bytes": 1114
+    },
+    {
+      "path": "implementation/relational/0.9.0/queries/family.sql",
+      "sha256": "28cd96fa1d6905af6cd404a97d2c5836592f871ad04528713d49a66bf576da1b",
+      "bytes": 349
+    },
+    {
       "path": "implementation/relational/0.9.0/query-oracles.json",
       "sha256": "78c1ff2ceeba99626ed797c98880dbe546bd3c7e10752c8ec949cb4faff109e8",
       "bytes": 15013
+    },
+    {
+      "path": "implementation/relational/0.9.0/schema-dictionary.md",
+      "sha256": "c96bf288987d6639dfb3f1940f1fafe45b545865c8eae69e5010505f1c080ddb",
+      "bytes": 7604
     },
     {
       "path": "implementation/validation/0.1.0/README.md",
@@ -3823,6 +3868,11 @@
       "bytes": 5185
     },
     {
+      "path": "tests/test_risk_nature.py",
+      "sha256": "6130d8c8cd3cb87edd424907707e533cea192c74f90b92b7515241b2fc021133",
+      "bytes": 4090
+    },
+    {
       "path": "tests/test_risk_nature_declaration.py",
       "sha256": "82169115fd461f889677bd48bcf0caf7e2bbe80e952e3fc69a151dd81f0b5692",
       "bytes": 3930
@@ -4003,6 +4053,16 @@
       "bytes": 23807
     },
     {
+      "path": "tools/build_risk_nature_component.py",
+      "sha256": "385a6fb81dfef2a9e9b9b6c0095f4748ac1d8ad94afa2dfd08c201a34ec415ab",
+      "bytes": 3869
+    },
+    {
+      "path": "tools/build_risk_nature_schema.py",
+      "sha256": "85908f428104cb0d26f9aaa2917f14b5ce509f459303ec47ced6ff2ec78bb5c1",
+      "bytes": 17480
+    },
+    {
       "path": "tools/build_semantic_register.py",
       "sha256": "1950fda6d41299b8953e56566c03e8d2b513d42358a15e2287fb2a0a05498ea5",
       "bytes": 3729
@@ -4056,6 +4116,11 @@
       "path": "tools/check_risk_nature_declaration.py",
       "sha256": "534978f9cdcb88dd28b89d0f882fe5e5f8ac5914b1bf16297316065c332ce580",
       "bytes": 19480
+    },
+    {
+      "path": "tools/complete_risk_nature_readback.py",
+      "sha256": "889f64b3b1cc9e3bf2a8e57b703dbdc31fa5d6e12a6eace602f16f5673d6f43a",
+      "bytes": 4324
     },
     {
       "path": "tools/native-sdk/package-lock.json",
@@ -4358,6 +4423,11 @@
       "bytes": 8746
     },
     {
+      "path": "tools/relational_risk_nature.py",
+      "sha256": "35a2406fec25e8d21244db701a0b39e9d0f9001b050ae9e4a77bcc690ac2de4e",
+      "bytes": 19859
+    },
+    {
       "path": "tools/relational_source_scenario.py",
       "sha256": "ca62c59d9ea31352c3b92a8a0f1e28a82a498faa49a7d2cd2137478db09a2191",
       "bytes": 8257
@@ -4506,6 +4576,11 @@
       "path": "tools/run_relational_history.py",
       "sha256": "b4f3bb383b522fda920518bee707866e49dd3f31145e75c26ddac7906acc402d",
       "bytes": 26046
+    },
+    {
+      "path": "tools/run_relational_risk_nature.py",
+      "sha256": "991b1caac9a4d5a83259bbec207a0da60110bdd25084efc721d2aec5f89fa711",
+      "bytes": 33135
     },
     {
       "path": "tools/run_relational_source_scenario.py",

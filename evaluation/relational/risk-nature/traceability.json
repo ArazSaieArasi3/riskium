@@ -1,0 +1,583 @@
+{
+  "schema": "riskium-risk-nature-derived-trace-v1",
+  "declaration_commit": "805b1edecff254f1e21131aa6fd098344affb398",
+  "native_model": "0.3.1",
+  "historical_native_dispositions_changed": false,
+  "requirements": [
+    {
+      "requirement": {
+        "id": "NRA-01",
+        "title": "Governed documentary and vocabulary identity",
+        "source_requirements": [
+          "RKRS-02",
+          "RKRS-03",
+          "RKRS-06"
+        ],
+        "database_requirements": [
+          "DBR-02",
+          "DBR-06",
+          "DBR-09"
+        ],
+        "clauses": [
+          "C-01",
+          "C-11"
+        ],
+        "accept": "RiskNatureAssertion is an InformationArtifact; its issued versions have separate ArtifactVersion identity. NatureTerm keeps its inherited ClassificationTerm/VocabularyConcept types and exactly one scheme-qualified code. Equal labels never merge cases, assertions, terms or schemes.",
+        "fixed_cases": [
+          "NRA-F04",
+          "NRA-F05",
+          "NRA-F06",
+          "NRA-F07",
+          "NRA-F08",
+          "NRA-F09",
+          "NRA-F16",
+          "NRA-F23",
+          "NRA-F24",
+          "NRA-F39"
+        ]
+      },
+      "selected_native_routes": [
+        "RKM-C005",
+        "G-07",
+        "RKM-C014",
+        "RKM-C015",
+        "RKM-C006",
+        "G2-050",
+        "G2-053",
+        "G2-052",
+        "R-05",
+        "RKM-C018"
+      ],
+      "runtime": "tools/relational_risk_nature.py",
+      "migration": "implementation/relational/0.9.0/010_risk_nature.sql",
+      "queries": [
+        "implementation/relational/0.9.0/queries/exact_version.sql",
+        "implementation/relational/0.9.0/queries/by_case.sql",
+        "implementation/relational/0.9.0/queries/family.sql"
+      ],
+      "original_oracles": [
+        "implementation/relational/0.9.0/fixtures.json",
+        "implementation/relational/0.9.0/query-oracles.json",
+        "implementation/relational/0.9.0/native-oracles.trig",
+        "implementation/relational/0.9.0/negative-inputs.json"
+      ],
+      "actual_evidence": "Exact-source hosted runtime receipt and independent completion under issue 65",
+      "current_outcome": "ACTUAL_OBSERVATIONS_RECORDED_SEPARATELY",
+      "full_native_acceptance": false
+    },
+    {
+      "requirement": {
+        "id": "NRA-02",
+        "title": "Immutable version-owned interpretation",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-06"
+        ],
+        "database_requirements": [
+          "DBR-03",
+          "DBR-05",
+          "DBR-09",
+          "DBR-18"
+        ],
+        "clauses": [
+          "C-03",
+          "C-25"
+        ],
+        "accept": "Each assertion version owns one case and exact issued term/scheme pins, plus zero or one issued context pin. Objective version pins belong to that exact context version. Recording entry revisions own their assertion-version binding before issue. All effective pins survive later versions; C-25 is reused as an engineering pattern, not a new native usesContextVersion relation on C005.",
+        "fixed_cases": [
+          "NRA-F08",
+          "NRA-F10",
+          "NRA-F11",
+          "NRA-F12",
+          "NRA-F13",
+          "NRA-F14",
+          "NRA-F15",
+          "NRA-F16",
+          "NRA-F17",
+          "NRA-F20",
+          "NRA-F22",
+          "NRA-F25",
+          "NRA-F26",
+          "NRA-F37",
+          "NRA-F38",
+          "NRA-F42",
+          "NRA-F43",
+          "NRA-F56",
+          "NRA-F58"
+        ]
+      },
+      "selected_native_routes": [
+        "R-41",
+        "R-42",
+        "R-43",
+        "R-44",
+        "RK2-011",
+        "RX-006"
+      ],
+      "runtime": "tools/relational_risk_nature.py",
+      "migration": "implementation/relational/0.9.0/010_risk_nature.sql",
+      "queries": [
+        "implementation/relational/0.9.0/queries/exact_version.sql",
+        "implementation/relational/0.9.0/queries/by_case.sql",
+        "implementation/relational/0.9.0/queries/family.sql"
+      ],
+      "original_oracles": [
+        "implementation/relational/0.9.0/fixtures.json",
+        "implementation/relational/0.9.0/query-oracles.json",
+        "implementation/relational/0.9.0/native-oracles.trig",
+        "implementation/relational/0.9.0/negative-inputs.json"
+      ],
+      "actual_evidence": "Exact-source hosted runtime receipt and independent completion under issue 65",
+      "current_outcome": "ACTUAL_OBSERVATIONS_RECORDED_SEPARATELY",
+      "full_native_acceptance": false
+    },
+    {
+      "requirement": {
+        "id": "NRA-03",
+        "title": "Source bytes and qualified declarations",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-06",
+          "RKRS-08"
+        ],
+        "database_requirements": [
+          "DBR-05",
+          "DBR-07",
+          "DBR-12"
+        ],
+        "clauses": [
+          "C-03",
+          "C-12"
+        ],
+        "accept": "Keep original source JSON, source identity, locator, interpretation origin, narrative and canonical recorded UTC separately for each version and correction declaration. Attribution is documentary, not verified organizational authority or factual correctness.",
+        "fixed_cases": [
+          "NRA-F09",
+          "NRA-F10",
+          "NRA-F12",
+          "NRA-F17",
+          "NRA-F18",
+          "NRA-F19",
+          "NRA-F20",
+          "NRA-F21",
+          "NRA-F22",
+          "NRA-F33",
+          "NRA-F49"
+        ]
+      },
+      "selected_native_routes": [
+        "RKM-C005",
+        "RKM-C014",
+        "RKM-C015"
+      ],
+      "runtime": "tools/relational_risk_nature.py",
+      "migration": "implementation/relational/0.9.0/010_risk_nature.sql",
+      "queries": [
+        "implementation/relational/0.9.0/queries/exact_version.sql",
+        "implementation/relational/0.9.0/queries/by_case.sql",
+        "implementation/relational/0.9.0/queries/family.sql"
+      ],
+      "original_oracles": [
+        "implementation/relational/0.9.0/fixtures.json",
+        "implementation/relational/0.9.0/query-oracles.json",
+        "implementation/relational/0.9.0/native-oracles.trig",
+        "implementation/relational/0.9.0/negative-inputs.json"
+      ],
+      "actual_evidence": "Exact-source hosted runtime receipt and independent completion under issue 65",
+      "current_outcome": "ACTUAL_OBSERVATIONS_RECORDED_SEPARATELY",
+      "full_native_acceptance": false
+    },
+    {
+      "requirement": {
+        "id": "NRA-04",
+        "title": "Raw, managed and finite retrieval readiness",
+        "source_requirements": [
+          "RKRS-06",
+          "RKRS-11"
+        ],
+        "database_requirements": [
+          "DBR-06",
+          "DBR-18",
+          "DBR-24"
+        ],
+        "clauses": [
+          "C-16",
+          "C-17"
+        ],
+        "accept": "Missing mandatory case/term/source is retained raw without fabricated identity and is not issued. Context may be null under R-43. A complete exact context pin with at least one explicit objective reference is READY_FOR_DECLARED_RETRIEVAL; missing context/objectives yields the fixed NOT_READY reason without zero, false or guessed values. Readiness is only this documentary retrieval task.",
+        "fixed_cases": [
+          "NRA-F14",
+          "NRA-F15",
+          "NRA-F23",
+          "NRA-F24",
+          "NRA-F25",
+          "NRA-F26",
+          "NRA-F27",
+          "NRA-F39",
+          "NRA-F41",
+          "NRA-F52",
+          "NRA-F55"
+        ]
+      },
+      "selected_native_routes": [
+        "R-41",
+        "R-42",
+        "R-43",
+        "RK2-011"
+      ],
+      "runtime": "tools/relational_risk_nature.py",
+      "migration": "implementation/relational/0.9.0/010_risk_nature.sql",
+      "queries": [
+        "implementation/relational/0.9.0/queries/exact_version.sql",
+        "implementation/relational/0.9.0/queries/by_case.sql",
+        "implementation/relational/0.9.0/queries/family.sql"
+      ],
+      "original_oracles": [
+        "implementation/relational/0.9.0/fixtures.json",
+        "implementation/relational/0.9.0/query-oracles.json",
+        "implementation/relational/0.9.0/native-oracles.trig",
+        "implementation/relational/0.9.0/negative-inputs.json"
+      ],
+      "actual_evidence": "Exact-source hosted runtime receipt and independent completion under issue 65",
+      "current_outcome": "ACTUAL_OBSERVATIONS_RECORDED_SEPARATELY",
+      "full_native_acceptance": false
+    },
+    {
+      "requirement": {
+        "id": "NRA-05",
+        "title": "Explicit correction branches without truth selection",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-06"
+        ],
+        "database_requirements": [
+          "DBR-05",
+          "DBR-06",
+          "DBR-07",
+          "DBR-18"
+        ],
+        "clauses": [
+          "C-03",
+          "C-12",
+          "C-17"
+        ],
+        "accept": "Store immutable correction declarations between issued versions of the same assertion artifact and same case; one predecessor per child, branches permitted, no cycle. An issue or an entry previousRevision does not imply a correction. Queries retain all exact versions; no scalar selection, corroboration or endorsement is inferred.",
+        "fixed_cases": [
+          "NRA-F06",
+          "NRA-F11",
+          "NRA-F12",
+          "NRA-F13",
+          "NRA-F18",
+          "NRA-F28",
+          "NRA-F29",
+          "NRA-F30",
+          "NRA-F31",
+          "NRA-F32",
+          "NRA-F33",
+          "NRA-F34",
+          "NRA-F35",
+          "NRA-F36",
+          "NRA-F38",
+          "NRA-F54",
+          "NRA-F55",
+          "NRA-F57"
+        ]
+      },
+      "selected_native_routes": [
+        "RKM-C005",
+        "RKM-C015"
+      ],
+      "runtime": "tools/relational_risk_nature.py",
+      "migration": "implementation/relational/0.9.0/010_risk_nature.sql",
+      "queries": [
+        "implementation/relational/0.9.0/queries/exact_version.sql",
+        "implementation/relational/0.9.0/queries/by_case.sql",
+        "implementation/relational/0.9.0/queries/family.sql"
+      ],
+      "original_oracles": [
+        "implementation/relational/0.9.0/fixtures.json",
+        "implementation/relational/0.9.0/query-oracles.json",
+        "implementation/relational/0.9.0/native-oracles.trig",
+        "implementation/relational/0.9.0/negative-inputs.json"
+      ],
+      "actual_evidence": "Exact-source hosted runtime receipt and independent completion under issue 65",
+      "current_outcome": "ACTUAL_OBSERVATIONS_RECORDED_SEPARATELY",
+      "full_native_acceptance": false
+    },
+    {
+      "requirement": {
+        "id": "NRA-06",
+        "title": "Scoped native projection and differential oracle",
+        "source_requirements": [
+          "RKRS-01",
+          "RKRS-06",
+          "RKRS-11"
+        ],
+        "database_requirements": [
+          "DBR-03",
+          "DBR-17"
+        ],
+        "clauses": [
+          "C-02",
+          "C-11",
+          "C-12"
+        ],
+        "accept": "Use the unchanged model IDs and inherited types in a separate named graph for each issued assertion version. Project R-41/42/43/44, term R-05 and context RK2-011 with supporting identities. No assertion-to-objective predicate, native correction edge, source-as-RiskSource, actual occurrence or universal adequacy is introduced.",
+        "fixed_cases": [
+          "NRA-F27",
+          "NRA-F34",
+          "NRA-F37",
+          "NRA-F38",
+          "NRA-F39",
+          "NRA-F40",
+          "NRA-F41",
+          "NRA-F42",
+          "NRA-F43",
+          "NRA-F58"
+        ]
+      },
+      "selected_native_routes": [
+        "R-41",
+        "R-42",
+        "R-43",
+        "R-44",
+        "RK2-011",
+        "R-05",
+        "RX-006",
+        "R-33",
+        "R-01",
+        "RX-008"
+      ],
+      "runtime": "tools/relational_risk_nature.py",
+      "migration": "implementation/relational/0.9.0/010_risk_nature.sql",
+      "queries": [
+        "implementation/relational/0.9.0/queries/exact_version.sql",
+        "implementation/relational/0.9.0/queries/by_case.sql",
+        "implementation/relational/0.9.0/queries/family.sql"
+      ],
+      "original_oracles": [
+        "implementation/relational/0.9.0/fixtures.json",
+        "implementation/relational/0.9.0/query-oracles.json",
+        "implementation/relational/0.9.0/native-oracles.trig",
+        "implementation/relational/0.9.0/negative-inputs.json"
+      ],
+      "actual_evidence": "Exact-source hosted runtime receipt and independent completion under issue 65",
+      "current_outcome": "ACTUAL_OBSERVATIONS_RECORDED_SEPARATELY",
+      "full_native_acceptance": false
+    },
+    {
+      "requirement": {
+        "id": "NRA-07",
+        "title": "Additive migration and database assurance",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-11"
+        ],
+        "database_requirements": [
+          "DBR-09",
+          "DBR-10",
+          "DBR-11",
+          "DBR-12",
+          "DBR-19",
+          "DBR-20",
+          "DBR-21",
+          "DBR-22"
+        ],
+        "clauses": [
+          "C-03",
+          "C-16"
+        ],
+        "accept": "Validate populated schema 9 and apply migration 10 additively. Preserve every old row/schema object/ledger/native graph. Enforce sealed content through SQL and API, check exact schema/configuration/old and new data, roll back failures atomically, and execute nested transactions, real reopen, trusted-digest restore and bounded two-connection checks. Record actual engine/runtime and measured synthetic workload.",
+        "fixed_cases": [
+          "NRA-F01",
+          "NRA-F02",
+          "NRA-F03",
+          "NRA-F04",
+          "NRA-F09",
+          "NRA-F20",
+          "NRA-F21",
+          "NRA-F22",
+          "NRA-F30",
+          "NRA-F35",
+          "NRA-F42",
+          "NRA-F43",
+          "NRA-F44",
+          "NRA-F45",
+          "NRA-F46",
+          "NRA-F47",
+          "NRA-F48",
+          "NRA-F49",
+          "NRA-F50",
+          "NRA-F51",
+          "NRA-F53"
+        ]
+      },
+      "selected_native_routes": [
+        "RKM-C014",
+        "RKM-C015"
+      ],
+      "runtime": "tools/relational_risk_nature.py",
+      "migration": "implementation/relational/0.9.0/010_risk_nature.sql",
+      "queries": [
+        "implementation/relational/0.9.0/queries/exact_version.sql",
+        "implementation/relational/0.9.0/queries/by_case.sql",
+        "implementation/relational/0.9.0/queries/family.sql"
+      ],
+      "original_oracles": [
+        "implementation/relational/0.9.0/fixtures.json",
+        "implementation/relational/0.9.0/query-oracles.json",
+        "implementation/relational/0.9.0/native-oracles.trig",
+        "implementation/relational/0.9.0/negative-inputs.json"
+      ],
+      "actual_evidence": "Exact-source hosted runtime receipt and independent completion under issue 65",
+      "current_outcome": "ACTUAL_OBSERVATIONS_RECORDED_SEPARATELY",
+      "full_native_acceptance": false
+    },
+    {
+      "requirement": {
+        "id": "NRA-08",
+        "title": "Usable explicit retrieval contract",
+        "source_requirements": [
+          "RKRS-03",
+          "RKRS-06",
+          "RKRS-12"
+        ],
+        "database_requirements": [
+          "DBR-14",
+          "DBR-18"
+        ],
+        "clauses": [
+          "C-17"
+        ],
+        "accept": "Provide exact-version get, all-issued by-case and explicit-root correction-family queries with parameter binding and deterministic presentation order. Return the complete literal source/pin/readiness row and explicit non-endorsement envelope, without hidden latest/selection defaults. Explain prerequisites and expected example answers before implementation details.",
+        "fixed_cases": [
+          "NRA-F05",
+          "NRA-F10",
+          "NRA-F11",
+          "NRA-F25",
+          "NRA-F26",
+          "NRA-F28",
+          "NRA-F36",
+          "NRA-F40",
+          "NRA-F51",
+          "NRA-F52",
+          "NRA-F53",
+          "NRA-F54",
+          "NRA-F55",
+          "NRA-F57"
+        ]
+      },
+      "selected_native_routes": [
+        "RKM-C005",
+        "R-41",
+        "R-42",
+        "R-43",
+        "R-44",
+        "RK2-011"
+      ],
+      "runtime": "tools/relational_risk_nature.py",
+      "migration": "implementation/relational/0.9.0/010_risk_nature.sql",
+      "queries": [
+        "implementation/relational/0.9.0/queries/exact_version.sql",
+        "implementation/relational/0.9.0/queries/by_case.sql",
+        "implementation/relational/0.9.0/queries/family.sql"
+      ],
+      "original_oracles": [
+        "implementation/relational/0.9.0/fixtures.json",
+        "implementation/relational/0.9.0/query-oracles.json",
+        "implementation/relational/0.9.0/native-oracles.trig",
+        "implementation/relational/0.9.0/negative-inputs.json"
+      ],
+      "actual_evidence": "Exact-source hosted runtime receipt and independent completion under issue 65",
+      "current_outcome": "ACTUAL_OBSERVATIONS_RECORDED_SEPARATELY",
+      "full_native_acceptance": false
+    },
+    {
+      "requirement": {
+        "id": "NRA-09",
+        "title": "Trace, sensitivity and source preservation",
+        "source_requirements": [
+          "RKRS-11",
+          "RKRS-12"
+        ],
+        "database_requirements": [
+          "DBR-01",
+          "DBR-13",
+          "DBR-15",
+          "DBR-16",
+          "DBR-23",
+          "DBR-24"
+        ],
+        "clauses": [
+          "C-16"
+        ],
+        "accept": "Retain original populations and all protected published input bytes. Bind every derived requirement/control/input/query/oracle to its exact source and separate actual observations. Demonstrate that latest-join, missing-filter, inferred-lineage and union mutants differ. Declaration validation and synthetic runtime agreement are not independent semantic ratings.",
+        "fixed_cases": [
+          "NRA-F46",
+          "NRA-F56",
+          "NRA-F57",
+          "NRA-F58",
+          "NRA-F59",
+          "NRA-F60"
+        ]
+      },
+      "selected_native_routes": [],
+      "runtime": "tools/relational_risk_nature.py",
+      "migration": "implementation/relational/0.9.0/010_risk_nature.sql",
+      "queries": [
+        "implementation/relational/0.9.0/queries/exact_version.sql",
+        "implementation/relational/0.9.0/queries/by_case.sql",
+        "implementation/relational/0.9.0/queries/family.sql"
+      ],
+      "original_oracles": [
+        "implementation/relational/0.9.0/fixtures.json",
+        "implementation/relational/0.9.0/query-oracles.json",
+        "implementation/relational/0.9.0/native-oracles.trig",
+        "implementation/relational/0.9.0/negative-inputs.json"
+      ],
+      "actual_evidence": "Exact-source hosted runtime receipt and independent completion under issue 65",
+      "current_outcome": "ACTUAL_OBSERVATIONS_RECORDED_SEPARATELY",
+      "full_native_acceptance": false
+    },
+    {
+      "requirement": {
+        "id": "NRA-10",
+        "title": "Reader and source-distribution gates",
+        "source_requirements": [
+          "RKRS-12"
+        ],
+        "database_requirements": [
+          "DBR-14",
+          "DBR-23",
+          "DBR-24"
+        ],
+        "clauses": [],
+        "accept": "Only after R2 actual evidence, reconcile all native dispositions and manuscript claims, review three audience paths, update the shared reader and independently check actual Wiki/Pages. Then select exact components and freeze/verify all six public assets, tag/Latest and prior releases. R1 alone is neither a source release nor a runtime result.",
+        "fixed_cases": [
+          "NRA-F60"
+        ]
+      },
+      "selected_native_routes": [],
+      "runtime": "tools/relational_risk_nature.py",
+      "migration": "implementation/relational/0.9.0/010_risk_nature.sql",
+      "queries": [
+        "implementation/relational/0.9.0/queries/exact_version.sql",
+        "implementation/relational/0.9.0/queries/by_case.sql",
+        "implementation/relational/0.9.0/queries/family.sql"
+      ],
+      "original_oracles": [
+        "implementation/relational/0.9.0/fixtures.json",
+        "implementation/relational/0.9.0/query-oracles.json",
+        "implementation/relational/0.9.0/native-oracles.trig",
+        "implementation/relational/0.9.0/negative-inputs.json"
+      ],
+      "actual_evidence": "Exact-source hosted runtime receipt and independent completion under issue 65",
+      "current_outcome": "ACTUAL_OBSERVATIONS_RECORDED_SEPARATELY",
+      "full_native_acceptance": false
+    }
+  ],
+  "boundaries": [
+    "All 306 native dispositions retain their historical source-bound meanings; issue 66 reconciles the new bounded mapping routes.",
+    "No new manuscript 7.0.8 claim, organizational admission or independent semantic rating.",
+    "Reader and distribution acceptance remain issue 66 gates."
+  ]
+}

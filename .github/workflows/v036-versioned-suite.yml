@@ -29,10 +29,14 @@ jobs:
       - name: Record the checked risk-nature declaration separately from runtime results
         if: hashFiles('implementation/relational/0.9.0/contract.json') != ''
         run: python tools/check_risk_nature_declaration.py --receipt build/risk-nature-declaration.json
+      - name: Execute the declared risk-nature runtime controls
+        if: hashFiles('tools/relational_risk_nature.py') != ''
+        run: python tools/run_relational_risk_nature.py --output build/risk-nature-runtime.json
       - uses: actions/upload-artifact@v4
         with:
           name: v036-source-suite-${{ github.sha }}
           path: |
             build/versioned-suite.json
             build/risk-nature-declaration.json
+            build/risk-nature-runtime.json
           if-no-files-found: error
