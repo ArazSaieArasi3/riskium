@@ -1,0 +1,33 @@
+name: Assessment selection reader projection
+on:
+  push:
+    branches: [plan/v0.3.6-assessment-selection]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/publication/requirements.txt
+      - name: Check candidate source and build 0.4.2 preview
+        run: |
+          python tools/publication/review_assessment_reader.py
+          python tools/publication/assessment_documentation.py --output build/assessment-site --wiki-output build/assessment-wiki --receipt build/reader-preview.json
+          python -m unittest discover -s tests -p test_assessment_documentation.py -v
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: assessment-reader-preview-${{ github.sha }}
+          path: |
+            build/reader-preview.json
+            build/assessment-wiki/
+          if-no-files-found: error

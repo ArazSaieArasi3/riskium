@@ -7,7 +7,7 @@
   "issue": 61,
   "scope": "Development reader draft for v0.3.6; published source v0.3.5 and four historical snapshots unchanged; no live Wiki/Pages claim.",
   "files_sha256": {
-    "documentation/0.4.2/README.md": "da30b796208e442b83d9dc0940fafc3972b70d00ae18dd027afdaae42708d985",
+    "documentation/0.4.2/README.md": "5f0696357b26f9bd91744f46e5669a01d95c7c309924e08fac08180fe4d37c59",
     "documentation/0.4.2/Repository.md": "31dbfe4dbcc569840c6f2d7b7a12f50c7d331a85ca5224196e166fd408463890",
     "documentation/0.4.2/guide-registry.json": "9c7031a5b729dac859874bf584f3893049cdb19d4f9062fbc74272563185170b",
     "documentation/0.4.2/guides/Artifact-Versions.md": "806f84f724f26684e02a0ccd27a2f238cba10dfb23a69bd66c3661b65b9bcd08",
