@@ -108,6 +108,11 @@
       "bytes": 1217
     },
     {
+      "path": ".github/workflows/release-v036.yml",
+      "sha256": "f0e8ddec4651e65e9fac902bc382dedceade0c168e144b461ab809613cb5aee1",
+      "bytes": 1906
+    },
+    {
       "path": ".github/workflows/requirements.yml",
       "sha256": "eec498caa873e4e7642a2e39d28bd63ba5ff26308ea6b22dc3590480ca376e89",
       "bytes": 951
@@ -119,8 +124,8 @@
     },
     {
       "path": ".github/workflows/v036-versioned-suite.yml",
-      "sha256": "8be1df323694614a270c99b6803758b214242fd7e38fb3b27c22a72716c8e92d",
-      "bytes": 817
+      "sha256": "1f59cb548bac5ea5903afc6f4d4b9d816cdc86f73374428f7761da07ff75103e",
+      "bytes": 1039
     },
     {
       "path": ".gitignore",
@@ -466,6 +471,11 @@
       "path": "docs/release-v0.3.5.md",
       "sha256": "0b94219d5a2bb8986c63ccb51b93acd7ed906e42e53dbf4dd4491a3740f2f64e",
       "bytes": 5164
+    },
+    {
+      "path": "docs/release-v0.3.6.md",
+      "sha256": "6ef7e59ba9c324c1c22444d3acd842e9c8ba15d8dae2be2996018ea9c4c21e01",
+      "bytes": 3287
     },
     {
       "path": "docs/reproducibility.md",
@@ -2268,6 +2278,21 @@
       "bytes": 497
     },
     {
+      "path": "evaluation/releases/v0.3.6/r4-channels.json",
+      "sha256": "e0e35b56e382cacd50a128c56843661235eacd0864b046c2e64b20f20ecb1f7c",
+      "bytes": 69814
+    },
+    {
+      "path": "evaluation/releases/v0.3.6/r4-provenance.json",
+      "sha256": "1299f06c7cf375837f1c468c154407212e3ad011fe451384b9ef28303d3a4a97",
+      "bytes": 711
+    },
+    {
+      "path": "evaluation/releases/v0.3.6/r4-reader-review.json",
+      "sha256": "f6863952624fcd2bebbde961317f248cf7f1c50002745dbfe7a0635e3a32099b",
+      "bytes": 19263
+    },
+    {
       "path": "evaluation/semantic-assurance-plan.md",
       "sha256": "0fdc562eb1fbf697d4f3cf44f76bcd22afa69eff73d52b3cd4e0001d8dbb620d",
       "bytes": 12704
@@ -3173,6 +3198,11 @@
       "bytes": 433995
     },
     {
+      "path": "releases/selection-v0.3.6.json",
+      "sha256": "c4b57867eaed416a3995ce3702b0c6669d0bcd3025ca2fe41eeb779d72aee325",
+      "bytes": 315007
+    },
+    {
       "path": "releases/stable-profile-v0.3.1.json",
       "sha256": "2d1a4e9e7530fa71eef6b9f21d9c4de09209c501bff980978c3069d4f26fb8d1",
       "bytes": 909
@@ -3566,6 +3596,11 @@
       "path": "tests/test_release_v035_selection.py",
       "sha256": "9bb9439a6757827eaa040b332a22a1f7fbdf64275c203255775e92f1eb21870e",
       "bytes": 10704
+    },
+    {
+      "path": "tests/test_release_v036.py",
+      "sha256": "8c75e2affa2cf8095d4c61baa1d16f8b90c323b90523fb88e7f81cf0d04ebeab",
+      "bytes": 5931
     },
     {
       "path": "tests/test_shacl_runner.py",
@@ -4103,6 +4138,11 @@
       "bytes": 25927
     },
     {
+      "path": "tools/release_v036.py",
+      "sha256": "0096c22e3533dc74956b49e773cfb349aa0cb19916ebbc73ce3cb4efe3a79d1a",
+      "bytes": 23955
+    },
+    {
       "path": "tools/requirements-hermit.txt",
       "sha256": "26404db80a1bccb5897ec8df189aad04160c9bc511eb929fd5aa3fde4eb8d2ea",
       "bytes": 30
@@ -4249,8 +4289,8 @@
     },
     {
       "path": "tools/run_v036_versioned_suite.py",
-      "sha256": "caeb729d27a7b1a4677cff36dc7b42f929fedf5d067af680f2abef8eed51185e",
-      "bytes": 3748
+      "sha256": "11b8f091de29c5ffcc6732b84cf0f4868d9f2011036a2b4a54afe423a9259d3c",
+      "bytes": 4091
     },
     {
       "path": "tools/select_release_v035.py",

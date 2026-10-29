@@ -23,5 +23,10 @@ jobs:
       - name: Run unchanged old reader tests on their source and all candidate tests here
         run: |
           python tools/run_v036_versioned_suite.py --list
-          python tools/run_v036_versioned_suite.py
+          python tools/run_v036_versioned_suite.py --receipt build/versioned-suite.json
           git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v036-source-suite-${{ github.sha }}
+          path: build/versioned-suite.json
+          if-no-files-found: error

@@ -1,0 +1,50 @@
+name: v0.3.6 source package freeze
+on:
+  workflow_run:
+    workflows: [v0.3.6 candidate reader on main]
+    types: [completed]
+    branches: [main]
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: v036-source-freeze
+  cancel-in-progress: false
+jobs:
+  freeze:
+    if: >-
+      github.event_name == 'workflow_run' &&
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main' &&
+      github.event.workflow_run.head_repository.full_name == github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          ref: ${{ github.event.workflow_run.head_sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
+      - name: Freeze exact-source components and authenticate final-source evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ github.event.workflow_run.head_sha }}
+          READER_RUN: ${{ github.event.workflow_run.id }}
+        run: |
+          python tools/release_v036.py select --check
+          python tools/release_v036.py freeze --folder build/release036 --source "$SOURCE_SHA" --reader-run "$READER_RUN"
+          git diff --exit-code
+      - name: Verify six assets independently of package creation
+        env:
+          SOURCE_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: python tools/release_v036.py verify --folder build/release036 --source "$SOURCE_SHA"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: riskium-v036-six-assets-${{ github.event.workflow_run.head_sha }}
+          path: build/release036/*
+          if-no-files-found: error
+          retention-days: 90

@@ -1,0 +1,594 @@
+{
+  "source_commit": "d2ed1b1fbbadbbafaba847b4bfe724f1a2c256eb",
+  "guide_source_commit": "7eb0283dccff76aed9f00cd50afb680dfcd777b9",
+  "method": "Agent editorial and rendered-page inspection, 20 role-route visits per channel, keyboard navigation, and executed synthetic example. No user study or independent scientific validation.",
+  "criteria": [
+    {
+      "id": "ASL-Q01",
+      "status": "PASS",
+      "observed": "Home and database example explain the assessment task before detailed provenance."
+    },
+    {
+      "id": "ASL-Q02",
+      "status": "PASS",
+      "observed": "Reviewer route links exact declaration, expected/actual controls, trace, limits and separate paper disposition."
+    },
+    {
+      "id": "ASL-Q03",
+      "status": "PASS",
+      "observed": "Database guide and linked exact API source distinguish correction, selection, withdrawal, absent selection, unknown values and retained competing rows."
+    },
+    {
+      "id": "ASL-Q04",
+      "status": "PASS",
+      "observed": "Reproduce provides prerequisites and source-qualified executable X/Y example. Actual four printed answers equal expected answers."
+    },
+    {
+      "id": "ASL-Q05",
+      "status": "PASS",
+      "observed": "Decision context is explicitly application metadata, distinct from native assessment context; selection does not establish truth or comparability."
+    },
+    {
+      "id": "ASL-Q06",
+      "status": "PASS",
+      "observed": "Version roles and tables are readable on actual PC view. Keyboard Tab/Enter reaches Reproduce in both channels; Wiki/Pages source bytes agree."
+    }
+  ],
+  "independent_download": {
+    "artifact_id": 12923496575,
+    "zip_sha256": "d7792d9860ddb5e3ae91134195fdc9b3771610549fdc6065cb1a7e2573141aae",
+    "pages_response_hashes_matched_local": 314,
+    "wiki_hashes_matched_local": 23
+  },
+  "boundaries": "The original prospective criteria/fixtures and R2/R3 checkpoint receipts are retained. This is the later R4 observation. Source release v0.3.6 remains unpublished.",
+  "wiki_journeys": [
+    {
+      "role": "reviewer",
+      "slug": "Home",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki",
+      "headings": [
+        "Repository navigation",
+        "Home",
+        "Riskium: enterprise risk knowledge",
+        "Choose a reading path",
+        "Inspect an artifact",
+        "What the evidence supports",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "reviewer",
+      "slug": "Overview",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Overview",
+      "headings": [
+        "Repository navigation",
+        "Overview",
+        "Problem, approach and contribution",
+        "What the model contributes",
+        "How the artifacts fit together",
+        "Where to continue",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "reviewer",
+      "slug": "Modeling-Decisions",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Modeling-Decisions",
+      "headings": [
+        "Repository navigation",
+        "Modeling Decisions",
+        "Modeling decisions",
+        "Cases, entries and scenarios",
+        "Documentary identity",
+        "Results and comparison",
+        "Responsibility and workflow",
+        "Boundaries and dependence",
+        "Current limits",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "reviewer",
+      "slug": "Formalization",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Formalization",
+      "headings": [
+        "Repository navigation",
+        "Formalization",
+        "How Riskium's formal checks fit together",
+        "Choose the question first",
+        "Read OWL results under its assumptions",
+        "Validate explicit data under a named task",
+        "Test changes over time in the application",
+        "Reproduce without replacing historical evidence",
+        "Read the constraint register",
+        "Detailed constraint records",
+        "Source and review record",
+        "Current engineering checkpoint",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "reviewer",
+      "slug": "Evaluation",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Evaluation",
+      "headings": [
+        "Repository navigation",
+        "Evaluation",
+        "Evaluation: results and their limits",
+        "Formal and data checks",
+        "Source, software and trace evidence",
+        "Follow a result to its evidence",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "reviewer",
+      "slug": "Limitations",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Limitations",
+      "headings": [
+        "Repository navigation",
+        "Limitations",
+        "Scope and limitations",
+        "Semantic and implementation limits",
+        "Empirical and paper limits",
+        "Documentation and future work",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "reviewer",
+      "slug": "Reproduce",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Reproduce",
+      "headings": [
+        "Repository navigation",
+        "Reproduce",
+        "Reproduce a specific result",
+        "Get and verify the release",
+        "Run the public software checks",
+        "Synthetic two-context example",
+        "Rebuild the maintained documentation",
+        "Private files and troubleshooting",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "reviewer",
+      "slug": "Publication",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Publication",
+      "headings": [
+        "Repository navigation",
+        "Publication",
+        "Release, documentation and citation",
+        "Choose the right version",
+        "Download and verify",
+        "Rights and scholarly status",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "domain",
+      "slug": "Home",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki",
+      "headings": [
+        "Repository navigation",
+        "Home",
+        "Riskium: enterprise risk knowledge",
+        "Choose a reading path",
+        "Inspect an artifact",
+        "What the evidence supports",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "domain",
+      "slug": "Scope",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Scope",
+      "headings": [
+        "Repository navigation",
+        "Scope",
+        "Purpose and scope",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "domain",
+      "slug": "Using-the-Model",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Using-the-Model",
+      "headings": [
+        "Repository navigation",
+        "Using the Model",
+        "Inspect and use the model",
+        "Keep the entities distinct",
+        "Choose the appropriate view",
+        "Before implementing a change",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "domain",
+      "slug": "Competency-Questions",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Competency-Questions",
+      "headings": [
+        "Repository navigation",
+        "Competency Questions",
+        "Competency questions and source populations",
+        "Later source-backed evidence",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "domain",
+      "slug": "References",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/References",
+      "headings": [
+        "Repository navigation",
+        "References",
+        "Sources and interpretation limits",
+        "Read the evidence at its declared strength",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "domain",
+      "slug": "Limitations",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Limitations",
+      "headings": [
+        "Repository navigation",
+        "Limitations",
+        "Scope and limitations",
+        "Semantic and implementation limits",
+        "Empirical and paper limits",
+        "Documentation and future work",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "integrator",
+      "slug": "Home",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki",
+      "headings": [
+        "Repository navigation",
+        "Home",
+        "Riskium: enterprise risk knowledge",
+        "Choose a reading path",
+        "Inspect an artifact",
+        "What the evidence supports",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "integrator",
+      "slug": "Visualization",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Visualization",
+      "headings": [
+        "Repository navigation",
+        "Visualization",
+        "Read the model through its different views",
+        "Conceptual diagrams and lookup",
+        "WIDOCO reference",
+        "WebVOWL and the text alternative",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "integrator",
+      "slug": "Database-Assurance",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Database-Assurance",
+      "headings": [
+        "Repository navigation",
+        "Database Assurance",
+        "Database assurance",
+        "Assessment selection in development",
+        "What the internal API does",
+        "What remains open",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "integrator",
+      "slug": "Traceability",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Traceability",
+      "headings": [
+        "Repository navigation",
+        "Traceability",
+        "Current traceability and paper alignment",
+        "Follow a route",
+        "Actual approved manuscript baseline",
+        "Publication and acceptance",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "integrator",
+      "slug": "Reproduce",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Reproduce",
+      "headings": [
+        "Repository navigation",
+        "Reproduce",
+        "Reproduce a specific result",
+        "Get and verify the release",
+        "Run the public software checks",
+        "Synthetic two-context example",
+        "Rebuild the maintained documentation",
+        "Private files and troubleshooting",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    },
+    {
+      "role": "integrator",
+      "slug": "Publication",
+      "url": "https://github.com/ArazSaieArasi3/riskium/wiki/Publication",
+      "headings": [
+        "Repository navigation",
+        "Publication",
+        "Release, documentation and citation",
+        "Choose the right version",
+        "Download and verify",
+        "Rights and scholarly status",
+        "\n        \n    \n\nWiki pages\n\n      Pages 21\n    ",
+        "Understand",
+        "Inspect and evaluate",
+        "Sources and publication",
+        "Reference tools",
+        "Clone this wiki locally",
+        "Footer",
+        "Footer navigation"
+      ]
+    }
+  ],
+  "pages_journeys": [
+    {
+      "role": "reviewer",
+      "slug": "Home",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Home.html",
+      "title": "Home \u2014 Riskium"
+    },
+    {
+      "role": "reviewer",
+      "slug": "Overview",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Overview.html",
+      "title": "Overview \u2014 Riskium"
+    },
+    {
+      "role": "reviewer",
+      "slug": "Decisions",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Decisions.html",
+      "title": "Modeling decisions \u2014 Riskium"
+    },
+    {
+      "role": "reviewer",
+      "slug": "Formalization",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Formalization.html",
+      "title": "Formalization \u2014 Riskium"
+    },
+    {
+      "role": "reviewer",
+      "slug": "Evaluation",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Evaluation.html",
+      "title": "Evaluation \u2014 Riskium"
+    },
+    {
+      "role": "reviewer",
+      "slug": "Limitations",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Limitations.html",
+      "title": "Limitations \u2014 Riskium"
+    },
+    {
+      "role": "reviewer",
+      "slug": "Reproduce",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Reproduce.html",
+      "title": "Reproduce \u2014 Riskium"
+    },
+    {
+      "role": "reviewer",
+      "slug": "Publication",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Publication.html",
+      "title": "Publication \u2014 Riskium"
+    },
+    {
+      "role": "domain",
+      "slug": "Home",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Home.html",
+      "title": "Home \u2014 Riskium"
+    },
+    {
+      "role": "domain",
+      "slug": "Scope",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Scope.html",
+      "title": "Scope \u2014 Riskium"
+    },
+    {
+      "role": "domain",
+      "slug": "Using-the-Model",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Using-the-Model.html",
+      "title": "Using the model \u2014 Riskium"
+    },
+    {
+      "role": "domain",
+      "slug": "Competency-Questions",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Competency-Questions.html",
+      "title": "Competency questions \u2014 Riskium"
+    },
+    {
+      "role": "domain",
+      "slug": "References",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/References.html",
+      "title": "References \u2014 Riskium"
+    },
+    {
+      "role": "domain",
+      "slug": "Limitations",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Limitations.html",
+      "title": "Limitations \u2014 Riskium"
+    },
+    {
+      "role": "integrator",
+      "slug": "Home",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Home.html",
+      "title": "Home \u2014 Riskium"
+    },
+    {
+      "role": "integrator",
+      "slug": "Visualization",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Visualization.html",
+      "title": "Visualization \u2014 Riskium"
+    },
+    {
+      "role": "integrator",
+      "slug": "Database-Assurance",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Database-Assurance.html",
+      "title": "Database assurance \u2014 Riskium"
+    },
+    {
+      "role": "integrator",
+      "slug": "Traceability",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Traceability.html",
+      "title": "Traceability \u2014 Riskium"
+    },
+    {
+      "role": "integrator",
+      "slug": "Reproduce",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Reproduce.html",
+      "title": "Reproduce \u2014 Riskium"
+    },
+    {
+      "role": "integrator",
+      "slug": "Publication",
+      "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Publication.html",
+      "title": "Publication \u2014 Riskium"
+    }
+  ]
+}

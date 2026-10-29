@@ -1,0 +1,13 @@
+{
+  "source_commit": "d2ed1b1fbbadbbafaba847b4bfe724f1a2c256eb",
+  "guide_source_commit": "7eb0283dccff76aed9f00cd50afb680dfcd777b9",
+  "workflow_run": 40932012231,
+  "artifact_id": 12923496575,
+  "artifact_zip_sha256": "d7792d9860ddb5e3ae91134195fdc9b3771610549fdc6065cb1a7e2573141aae",
+  "issue_record": "https://github.com/ArazSaieArasi3/riskium/issues/61#issuecomment-6505377948",
+  "independent_download_and_local_hash_comparison": true,
+  "files_sha256": {
+    "evaluation/releases/v0.3.6/r4-channels.json": "e0e35b56e382cacd50a128c56843661235eacd0864b046c2e64b20f20ecb1f7c",
+    "evaluation/releases/v0.3.6/r4-reader-review.json": "f6863952624fcd2bebbde961317f248cf7f1c50002745dbfe7a0635e3a32099b"
+  }
+}

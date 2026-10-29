@@ -68,6 +68,7 @@ def run_historical():
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--list', action='store_true', help='Inspect source split without executing suites')
+    parser.add_argument('--receipt', type=Path, help='Save the actual successful source-qualified execution')
     args = parser.parse_args()
     digest = historical_identity()
     current, old = candidate_tests()
@@ -80,9 +81,13 @@ def main():
     result = unittest.TextTestRunner(verbosity=1).run(current)
     if not result.wasSuccessful() or result.skipped:
         raise ValueError('Candidate suite failed or unexpectedly skipped tests')
-    print(json.dumps(dict(status='VERSIONED_SUITE_PASS', candidate_tests=result.testsRun,
+    receipt = dict(status='VERSIONED_SUITE_PASS', source_commit=git('rev-parse', 'HEAD').decode().strip(), candidate_tests=result.testsRun,
                           published_reader_tests=historical, historical_source=PUBLISHED_READER,
-                          historical_test_sha256=digest)))
+                          historical_test_sha256=digest)
+    if args.receipt:
+        args.receipt.parent.mkdir(parents=True, exist_ok=True)
+        args.receipt.write_text(json.dumps(receipt, indent=2) + '\n')
+    print(json.dumps(receipt))
 
 
 if __name__ == '__main__':
