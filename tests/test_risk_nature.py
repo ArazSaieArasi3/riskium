@@ -31,6 +31,7 @@ class RiskNatureTests(unittest.TestCase):
         for field,value,code in [('term_version_id',run.U('objective-v1'),'TERM_VERSION'),
                                   ('context_version_id',run.U('negative-v1'),'CONTEXT_VERSION'),
                                   ('source_locator','\t \n','PROVENANCE'),
+                                  ('source_locator','\u00a0\u2007\u202f','PROVENANCE'),
                                   ('recorded_at','2026-02-30T08:00:00Z','TIME')]:
             def corrupt(db,table,row):
                 return insert(db,table,dict(row,**{field:value}) if table=='nature_snapshot' else row)

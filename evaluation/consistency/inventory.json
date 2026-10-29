@@ -3119,8 +3119,8 @@
     },
     {
       "path": "implementation/relational/0.9.0/010_risk_nature.sql",
-      "sha256": "b6f6373c5e2224fc6ccbcccd439d7b968226e7ef8278e0d3ed125a1a302848b3",
-      "bytes": 28659
+      "sha256": "a2556bca756881885effadffa170c7acad963bb63cca48f29e6db60072b67918",
+      "bytes": 30291
     },
     {
       "path": "implementation/relational/0.9.0/README.md",
@@ -3134,7 +3134,7 @@
     },
     {
       "path": "implementation/relational/0.9.0/component.json",
-      "sha256": "fc8acf800d1aa45c81c49e8ae0a971120225fb9344acf6b01145161996ff1ae4",
+      "sha256": "de1d31e623187cb4b7018175abf3de149d795b7dcb817edf6b81f9fa1a1f3de0",
       "bytes": 2627
     },
     {
@@ -3204,8 +3204,8 @@
     },
     {
       "path": "implementation/relational/0.9.0/schema-dictionary.md",
-      "sha256": "c96bf288987d6639dfb3f1940f1fafe45b545865c8eae69e5010505f1c080ddb",
-      "bytes": 7604
+      "sha256": "14897d9688714e96134507b00e0b2e3b415df8d5a99cfad373493ae9abf7854f",
+      "bytes": 7634
     },
     {
       "path": "implementation/validation/0.1.0/README.md",
@@ -3869,8 +3869,8 @@
     },
     {
       "path": "tests/test_risk_nature.py",
-      "sha256": "6130d8c8cd3cb87edd424907707e533cea192c74f90b92b7515241b2fc021133",
-      "bytes": 4090
+      "sha256": "05b9d02321cad49dc26bf5f1d643161fac50e6cca5910ed0317e6cf7fb2c2411",
+      "bytes": 4178
     },
     {
       "path": "tests/test_risk_nature_declaration.py",
@@ -4059,8 +4059,8 @@
     },
     {
       "path": "tools/build_risk_nature_schema.py",
-      "sha256": "85908f428104cb0d26f9aaa2917f14b5ce509f459303ec47ced6ff2ec78bb5c1",
-      "bytes": 17480
+      "sha256": "77bac6a5a127b0fa277ab537071ff694c4a2bb3ea012abcb1d9797309b1234aa",
+      "bytes": 17782
     },
     {
       "path": "tools/build_semantic_register.py",

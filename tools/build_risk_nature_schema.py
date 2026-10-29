@@ -3,6 +3,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'implementation/relational/0.9.0/010_risk_nature.sql'
+# Match Python str.strip/isspace's complete Unicode whitespace set, including
+# NBSP and the C0 information separators. SQL and API share the same boundary.
+WHITESPACE = 'char('+','.join(str(v) for v in range(0x110000) if chr(v).isspace())+')'
 COMMON = dict(narrative='TEXT NOT NULL', source_record_id='TEXT NOT NULL REFERENCES source_record(record_id)',
               source_locator='TEXT NOT NULL', interpretation_origin='TEXT NOT NULL', recorded_at='TEXT NOT NULL')
 SCHEMAS = {
@@ -138,7 +141,7 @@ def build():
             'CREATE INDEX nature_by_artifact ON nature_snapshot(artifact_id,version_id);',
             'CREATE INDEX nature_children ON nature_correction(prior_version_id,corrected_version_id);',
             'CREATE INDEX nature_recorders ON nature_entry_link(nature_version_id,entry_version_id);']
-    return '\n\n'.join(sql)+'\n'
+    return ('\n\n'.join(sql)+'\n').replace("char(9)||char(10)||char(13)||' '", WHITESPACE)
 
 
 if __name__ == '__main__':

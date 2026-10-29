@@ -5,7 +5,7 @@ CREATE TABLE nature_membership (
  native_class TEXT NOT NULL CHECK(native_class IN ('RKM-C005','RKM-C006','RKM-C018','RKM-X02')),
  scheme_id TEXT REFERENCES nature_membership(artifact_id), code TEXT,
  UNIQUE(scheme_id,code),
- CHECK((native_class='RKM-C006' AND scheme_id IS NOT NULL AND code IS NOT NULL AND length(trim(code,char(9)||char(10)||char(13)||' '))>0)
+ CHECK((native_class='RKM-C006' AND scheme_id IS NOT NULL AND code IS NOT NULL AND length(trim(code,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))>0)
  OR (native_class<>'RKM-C006' AND scheme_id IS NULL AND code IS NULL))) STRICT;
 
 CREATE TABLE nature_support (
@@ -81,25 +81,25 @@ UNION ALL
 SELECT t.version_id,json_object('entry_id',t.entry_id,'interpretation_origin',t.interpretation_origin,'narrative',t.narrative,'nature_version_ids',json((SELECT json_group_array(nature_version_id) FROM (SELECT nature_version_id FROM nature_entry_link l WHERE l.entry_version_id=t.version_id ORDER BY nature_version_id))),'previous_version_id',t.previous_version_id,'recorded_at',t.recorded_at,'source_locator',t.source_locator,'source_record_id',t.source_record_id,'version_id',t.version_id) AS expected_payload FROM nature_entry t WHERE 1;
 
 CREATE VIEW v_nature_invalid AS
-SELECT t.version_id AS version_id,'PROVENANCE' AS code FROM nature_support t  WHERE length(trim(t.narrative,char(9)||char(10)||char(13)||' '))=0 OR length(trim(t.source_locator,char(9)||char(10)||char(13)||' '))=0 OR length(trim(t.interpretation_origin,char(9)||char(10)||char(13)||' '))=0
+SELECT t.version_id AS version_id,'PROVENANCE' AS code FROM nature_support t  WHERE length(trim(t.narrative,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0 OR length(trim(t.source_locator,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0 OR length(trim(t.interpretation_origin,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0
 UNION ALL
 SELECT t.version_id AS version_id,'TIME' AS code FROM nature_support t  WHERE length(t.recorded_at)<>20 OR substr(t.recorded_at,1,4)<'0001' OR t.recorded_at NOT GLOB '????-??-??T??:??:??Z' OR strftime('%Y-%m-%dT%H:%M:%SZ',t.recorded_at) IS NOT t.recorded_at OR date(t.recorded_at,'+0 days') IS NOT substr(t.recorded_at,1,10)
 UNION ALL
 SELECT t.version_id AS version_id,'OWNER' AS code FROM nature_support t JOIN version_snapshot v USING(version_id) WHERE t.artifact_id IS NOT v.artifact_id OR t.source_record_id IS NOT v.source_record_id OR (v.is_issued=1 AND t.recorded_at IS NOT v.issued_at)
 UNION ALL
-SELECT t.version_id AS version_id,'PROVENANCE' AS code FROM nature_context t  WHERE length(trim(t.narrative,char(9)||char(10)||char(13)||' '))=0 OR length(trim(t.source_locator,char(9)||char(10)||char(13)||' '))=0 OR length(trim(t.interpretation_origin,char(9)||char(10)||char(13)||' '))=0
+SELECT t.version_id AS version_id,'PROVENANCE' AS code FROM nature_context t  WHERE length(trim(t.narrative,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0 OR length(trim(t.source_locator,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0 OR length(trim(t.interpretation_origin,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0
 UNION ALL
 SELECT t.version_id AS version_id,'TIME' AS code FROM nature_context t  WHERE length(t.recorded_at)<>20 OR substr(t.recorded_at,1,4)<'0001' OR t.recorded_at NOT GLOB '????-??-??T??:??:??Z' OR strftime('%Y-%m-%dT%H:%M:%SZ',t.recorded_at) IS NOT t.recorded_at OR date(t.recorded_at,'+0 days') IS NOT substr(t.recorded_at,1,10)
 UNION ALL
 SELECT t.version_id AS version_id,'OWNER' AS code FROM nature_context t JOIN version_snapshot v USING(version_id) WHERE t.artifact_id IS NOT v.artifact_id OR t.source_record_id IS NOT v.source_record_id OR (v.is_issued=1 AND t.recorded_at IS NOT v.issued_at)
 UNION ALL
-SELECT t.version_id AS version_id,'PROVENANCE' AS code FROM nature_snapshot t  WHERE length(trim(t.narrative,char(9)||char(10)||char(13)||' '))=0 OR length(trim(t.source_locator,char(9)||char(10)||char(13)||' '))=0 OR length(trim(t.interpretation_origin,char(9)||char(10)||char(13)||' '))=0
+SELECT t.version_id AS version_id,'PROVENANCE' AS code FROM nature_snapshot t  WHERE length(trim(t.narrative,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0 OR length(trim(t.source_locator,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0 OR length(trim(t.interpretation_origin,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0
 UNION ALL
 SELECT t.version_id AS version_id,'TIME' AS code FROM nature_snapshot t  WHERE length(t.recorded_at)<>20 OR substr(t.recorded_at,1,4)<'0001' OR t.recorded_at NOT GLOB '????-??-??T??:??:??Z' OR strftime('%Y-%m-%dT%H:%M:%SZ',t.recorded_at) IS NOT t.recorded_at OR date(t.recorded_at,'+0 days') IS NOT substr(t.recorded_at,1,10)
 UNION ALL
 SELECT t.version_id AS version_id,'OWNER' AS code FROM nature_snapshot t JOIN version_snapshot v USING(version_id) WHERE t.artifact_id IS NOT v.artifact_id OR t.source_record_id IS NOT v.source_record_id OR (v.is_issued=1 AND t.recorded_at IS NOT v.issued_at)
 UNION ALL
-SELECT t.version_id AS version_id,'PROVENANCE' AS code FROM nature_entry t  WHERE length(trim(t.narrative,char(9)||char(10)||char(13)||' '))=0 OR length(trim(t.source_locator,char(9)||char(10)||char(13)||' '))=0 OR length(trim(t.interpretation_origin,char(9)||char(10)||char(13)||' '))=0
+SELECT t.version_id AS version_id,'PROVENANCE' AS code FROM nature_entry t  WHERE length(trim(t.narrative,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0 OR length(trim(t.source_locator,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0 OR length(trim(t.interpretation_origin,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0
 UNION ALL
 SELECT t.version_id AS version_id,'TIME' AS code FROM nature_entry t  WHERE length(t.recorded_at)<>20 OR substr(t.recorded_at,1,4)<'0001' OR t.recorded_at NOT GLOB '????-??-??T??:??:??Z' OR strftime('%Y-%m-%dT%H:%M:%SZ',t.recorded_at) IS NOT t.recorded_at OR date(t.recorded_at,'+0 days') IS NOT substr(t.recorded_at,1,10)
 UNION ALL
@@ -137,7 +137,7 @@ SELECT t.version_id AS version_id,'TIME' AS code FROM nature_entry t JOIN versio
 UNION ALL
 SELECT t.corrected_version_id AS version_id,'CORRECTION' AS code FROM nature_correction t JOIN nature_snapshot a ON a.version_id=t.corrected_version_id JOIN nature_snapshot p ON p.version_id=t.prior_version_id JOIN version_snapshot av ON av.version_id=a.version_id JOIN version_snapshot pv ON pv.version_id=p.version_id WHERE a.artifact_id<>p.artifact_id OR a.case_id<>p.case_id OR t.corrected_version_id=t.prior_version_id OR av.is_issued<>1 OR pv.is_issued<>1
 UNION ALL
-SELECT t.corrected_version_id AS version_id,'PROVENANCE' AS code FROM nature_correction t  WHERE length(trim(t.actor,char(9)||char(10)||char(13)||' '))=0 OR length(trim(t.reason,char(9)||char(10)||char(13)||' '))=0 OR length(trim(t.source_locator,char(9)||char(10)||char(13)||' '))=0 OR length(trim(t.interpretation_origin,char(9)||char(10)||char(13)||' '))=0
+SELECT t.corrected_version_id AS version_id,'PROVENANCE' AS code FROM nature_correction t  WHERE length(trim(t.actor,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0 OR length(trim(t.reason,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0 OR length(trim(t.source_locator,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0 OR length(trim(t.interpretation_origin,char(9,10,11,12,13,28,29,30,31,32,133,160,5760,8192,8193,8194,8195,8196,8197,8198,8199,8200,8201,8202,8232,8233,8239,8287,12288)))=0
 UNION ALL
 SELECT t.corrected_version_id AS version_id,'TIME' AS code FROM nature_correction t JOIN nature_snapshot a ON a.version_id=t.corrected_version_id JOIN nature_snapshot p ON p.version_id=t.prior_version_id WHERE length(t.recorded_at)<>20 OR t.recorded_at NOT GLOB '????-??-??T??:??:??Z' OR strftime('%Y-%m-%dT%H:%M:%SZ',t.recorded_at) IS NOT t.recorded_at OR date(t.recorded_at,'+0 days') IS NOT substr(t.recorded_at,1,10) OR t.recorded_at<a.recorded_at OR t.recorded_at<p.recorded_at;
 
