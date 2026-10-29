@@ -251,6 +251,16 @@ def build(output, root=ROOT):
         header.replace_with(published_context())
         css = os.path.relpath(output / 'current/assets/reader.css', path.parent).replace(os.sep, '/')
         soup.head.append(soup.new_tag('link', rel='stylesheet', href=css + '?v=' + sha(read(root, NS + '/reader.css'))[:12]))
+        toc = soup.select_one('aside.toc')
+        if toc is not None and not toc.select('a[href]'):
+            toc.decompose()
+        mobile = soup.select_one('details.mobile-navigation > div')
+        if mobile is not None:
+            for heading in mobile.find_all('h2', recursive=False):
+                following = heading.find_next_sibling()
+                if heading.get_text(strip=True) == 'On this page' and following is not None and not following.select('a[href]'):
+                    following.decompose()
+                    heading.decompose()
         for th in soup.select('th'):
             if not th.has_attr('scope'):
                 th['scope'] = 'col'

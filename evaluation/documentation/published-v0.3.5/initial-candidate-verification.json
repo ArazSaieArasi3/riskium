@@ -1,0 +1,15 @@
+{
+  "status": "INDEPENDENT_DOWNLOADED_CANDIDATE_PASS",
+  "source_commit": "49e70f2042afd76081e65293f23070f88b216f0e",
+  "workflow_run": 40837338830,
+  "artifact_id": 12881637472,
+  "artifact_sha256": "fd952de875fdf65c097038ad7b1fa07e06ad5e75ed2b52ab3f38e5e7a6c91d13",
+  "archived_source_files": 1143,
+  "all_source_bytes_and_modes_equal_git": true,
+  "all_manifest_rows_match": true,
+  "checks_passed": 28,
+  "software_tests": 505,
+  "software_tests_seconds": 443.26,
+  "publication_executed": false,
+  "independent_semantic_acceptance": false
+}

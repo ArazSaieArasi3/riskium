@@ -988,9 +988,94 @@
       "bytes": 129111
     },
     {
+      "path": "evaluation/documentation/published-v0.3.5/04-repository-after.jpg",
+      "sha256": "25b4159f2833692f2993ed409ddad80ef8b9917909f310d2be929ecbfa71399c",
+      "bytes": 145813
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/05-wiki-after.jpg",
+      "sha256": "14ea5ff7c7a757aa8f7bc587344074c451d8abd1dd833e9fac6965ca52e56794",
+      "bytes": 169546
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/06-pages-after.jpg",
+      "sha256": "b1d7bacbbd5daefd3c5f4341e8bf86862b4559d9731e7507257fc374416f803b",
+      "bytes": 123948
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/07-overview-after.jpg",
+      "sha256": "8748fab3607775dc01a1e44d8fabc6099bd7ef429ac323b37da7d0c0d627549a",
+      "bytes": 130834
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/08-evaluation-after.jpg",
+      "sha256": "5f1ce048f33f9f602a0bc3383b285f1fda236e66f47528c1488b8772f8caad5d",
+      "bytes": 122257
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/09-formal-clause-after.jpg",
+      "sha256": "610c42eaf0a6046586088fd6af6f83e3bf44a77220daad8eef2da4429a8383af",
+      "bytes": 132009
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/10-limitations-after.jpg",
+      "sha256": "480acef1e6f95d566a1e37acc1dca16f51089f8e3ceabc8acd0174041d3619c2",
+      "bytes": 138629
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/11-reproduce-after.jpg",
+      "sha256": "140e80f62d2e32f1fff76cfd884008b82709166144d867f43f04740ebd5f1031",
+      "bytes": 120642
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/12-versions-after.jpg",
+      "sha256": "57a9fd99060970f0e02d31036d26beb89075133fd6d0a54c1c0b141c248a9c1d",
+      "bytes": 102396
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/13-reference-after.jpg",
+      "sha256": "64e91834b1ebcb83e34f3757f47e53e279f5e9ca6590de3fe1e44b633c2d9d90",
+      "bytes": 133960
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/14-downloads-after.jpg",
+      "sha256": "d233203c33067e079edc6b4dccd16393f70ff355f9a4cc54d5df310313942268",
+      "bytes": 103544
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/15-wiki-clause-after.jpg",
+      "sha256": "e8910b850b45b94da2e1148dbe37bdcf50843f656dbcb74f5bfd8aa5c7afc7a8",
+      "bytes": 117019
+    },
+    {
       "path": "evaluation/documentation/published-v0.3.5/README.md",
-      "sha256": "757ca59567327baea1cf0e4c55ff4cd85ae387e9fc2efe72df4e00f90b21dffb",
-      "bytes": 3342
+      "sha256": "aa30a63ef9c20b6df106d362390d2091b8006c585da0d42a433640febada9d1c",
+      "bytes": 10095
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/editorial-review.json",
+      "sha256": "55c19c69e2c7f2002dfd6e1a8959bbf9b0e94d725df5dee5a00b51682c811cec",
+      "bytes": 20257
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/initial-candidate-verification.json",
+      "sha256": "f4742dc267c54741696abff910f2e0109695cef7044dd37ec46c4a8437c16e94",
+      "bytes": 546
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/initial-hosted-channel-readback.json",
+      "sha256": "8d5570feb909c5bfa456ad9e0e6a79026b08656c341a6421f5688d1dc3ab7e5e",
+      "bytes": 69814
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/initial-independent-channel-readback.json",
+      "sha256": "5511c66f8125403431cc750cbb62229a17819f5a526585d14242b04369486b00",
+      "bytes": 69814
+    },
+    {
+      "path": "evaluation/documentation/published-v0.3.5/wiki-readback.json",
+      "sha256": "a11a3383527233a1d26ca12a42d0c87ba7259786dbbb905175d8ed01544c6c54",
+      "bytes": 2351
     },
     {
       "path": "evaluation/documentation/v0.3.4-snapshot/README.md",
@@ -3594,8 +3679,8 @@
     },
     {
       "path": "tools/publication/published_documentation.py",
-      "sha256": "6c11ffc38669084b4ce522c95d37176559a877629013d5ff7557a578a8060411",
-      "bytes": 24919
+      "sha256": "c9cd38e15890f05153953f32762f41b28bd1d3789d04de4b32f01bc658dc3c80",
+      "bytes": 25481
     },
     {
       "path": "tools/publication/requirements.txt",

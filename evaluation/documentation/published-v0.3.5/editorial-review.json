@@ -1,0 +1,473 @@
+{
+  "schema": "riskium-reader-editorial-review-v1",
+  "documentation": "0.4.1",
+  "published_source": "v0.3.5",
+  "initial_documentation_source_commit": "49e70f2042afd76081e65293f23070f88b216f0e",
+  "criteria_plan": "documentation/0.4.1/review-plan.json",
+  "verdict": "Suitable for the declared reading/orientation tasks on the inspected desktop surfaces.",
+  "method": "Agent editorial source comparison, actual rendered journeys, scoped keyboard interaction and independent mechanical/readback checks.",
+  "no_numeric_or_full_framework_conformance_score": true,
+  "qualitative_criteria": [
+    {
+      "id": "R01",
+      "criterion": "Orientation",
+      "disposition": "PASS_FOR_DECLARED_AGENT_REVIEW_SCOPE",
+      "evidence": "Steps 1\u20134: subject and current released state precede process metadata."
+    },
+    {
+      "id": "R02",
+      "criterion": "Role journeys",
+      "disposition": "PASS_FOR_DECLARED_AGENT_REVIEW_SCOPE",
+      "evidence": "Steps 1\u20134 and shared Home source: reviewer, domain and integrator paths exist without separate competing definitions."
+    },
+    {
+      "id": "R03",
+      "criterion": "Natural technical prose",
+      "disposition": "PASS_FOR_DECLARED_AGENT_REVIEW_SCOPE",
+      "evidence": "All 21 guide sources reviewed; primary narrative has descriptive links rather than bare issue/stage labels."
+    },
+    {
+      "id": "R04",
+      "criterion": "Progressive disclosure",
+      "disposition": "PASS_FOR_DECLARED_AGENT_REVIEW_SCOPE",
+      "evidence": "Steps 2\u20136 and12: exact provenance retained in disclosures; 25 clauses have named summaries and stable anchors. Empty page-contents headings on short pages are removed in the follow-up renderer."
+    },
+    {
+      "id": "R05",
+      "criterion": "Evidence fidelity",
+      "disposition": "PASS_FOR_DECLARED_AGENT_REVIEW_SCOPE",
+      "evidence": "10 focused boundary tests, unchanged 687 selected inputs, exact 25-clause body comparison and retained caveats/denominators; no new semantic acceptance claim."
+    },
+    {
+      "id": "R06",
+      "criterion": "Version intelligibility",
+      "disposition": "PASS_FOR_DECLARED_AGENT_REVIEW_SCOPE",
+      "evidence": "Steps 1\u20133 and9: source 0.3.5/model 0.3.1/docs 0.4.1/paper 7.0.8 roles explained; next source version remains unset."
+    },
+    {
+      "id": "R07",
+      "criterion": "Source authority",
+      "disposition": "PASS_FOR_DECLARED_AGENT_REVIEW_SCOPE",
+      "evidence": "Steps 9\u201311, canonical source destinations and four-snapshot byte checks; no semantic authority moved to the Wiki or Pages."
+    },
+    {
+      "id": "R08",
+      "criterion": "Reproduction usefulness",
+      "disposition": "PASS_FOR_DECLARED_AGENT_REVIEW_SCOPE",
+      "evidence": "Step8: prerequisites/commands/expected results/Git and private boundaries checked against the actual source/release receipts; no new private or full engine rerun claimed."
+    },
+    {
+      "id": "R09",
+      "criterion": "Visual and keyboard reading",
+      "disposition": "PASS_FOR_DECLARED_AGENT_REVIEW_SCOPE",
+      "evidence": "Steps 1\u201312 inspected in the actual desktop browser; C-08 disclosures toggled with Enter on Wiki and Pages; visible Pages focus ring confirmed."
+    },
+    {
+      "id": "R10",
+      "criterion": "Cross-surface consistency",
+      "disposition": "PASS_FOR_DECLARED_AGENT_REVIEW_SCOPE",
+      "evidence": "Actual active README API/rendered body, fresh23-file Wiki clone and314 independent served HTTP responses at the initial published documentation source agree."
+    }
+  ],
+  "page_dispositions": [
+    {
+      "slug": "Home",
+      "source": "documentation/0.4.1/guides/Home.md",
+      "sha256": "67073735b8c54691796d1cbaf10338b884c6a0405bd9743919436f13436c8bea",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1",
+        "E4_VERIFIED_RESEARCH_STATE"
+      ],
+      "finding": "Subject-first introduction; three ordered audience paths; release/evidence limits visible.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Scope",
+      "source": "documentation/0.4.1/guides/Scope.md",
+      "sha256": "44fffe84fa23fd1f93a4123c7cdf11b458e6051ff9f67455ac102523a1576241",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1"
+      ],
+      "finding": "Concise purpose and non-goals retained; exact published semantic source linked.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Overview",
+      "source": "documentation/0.4.1/guides/Overview.md",
+      "sha256": "8858527854cb13b2e18c7916c9b0065c9f412bd399bf9697409545250472e11b",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1",
+        "E4_VERIFIED_RESEARCH_STATE"
+      ],
+      "finding": "Problem, bounded contribution, representation/evidence layers and next reading order made explicit.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Decisions",
+      "source": "documentation/0.4.1/guides/Decisions.md",
+      "sha256": "89d8b3f842fc23880985d3192370fb784b223103254572135f84d551c60b39b6",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1"
+      ],
+      "finding": "Canonical decisions retained; process metadata moved into the common source disclosure.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Requirements",
+      "source": "documentation/0.4.1/guides/Requirements.md",
+      "sha256": "6d9367d685d63acb9446d140e473da60980c8b092c782782e2ebb7aa6562e2c5",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1",
+        "E4_VERIFIED_RESEARCH_STATE"
+      ],
+      "finding": "Original MUST/SHOULD priorities and derived requirement populations retained; stale release status corrected.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Artifact-Versions",
+      "source": "documentation/0.4.1/guides/Artifact-Versions.md",
+      "sha256": "1ca807b9c6ca85681dd3d7739ed27908640dddd8ba1eecfaa4e6a42aa701c71d",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1",
+        "E4_VERIFIED_RESEARCH_STATE"
+      ],
+      "finding": "Published source, model, requirements, SQL, manuscript and maintained documentation roles separated.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Database-Assurance",
+      "source": "documentation/0.4.1/guides/Database-Assurance.md",
+      "sha256": "6190f844a3581183c5d7d03418ba1ecff4b7f900099211af4f01ba7b61209514",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1"
+      ],
+      "finding": "Actual internal API behavior distinguished from HTTP deployment, semantic authority and deferred mappings.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Work-Plan",
+      "source": "documentation/0.4.1/guides/Work-Plan.md",
+      "sha256": "56fdb97ab79083dd440e6a01368306840cbb2c2a97e3f9ddb127b360e03fd993",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1",
+        "E4_VERIFIED_RESEARCH_STATE"
+      ],
+      "finding": "Completed release results separated from future scope/evidence/submission decisions; ticket details disclosed below.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Publication-Comparison",
+      "source": "documentation/0.4.1/guides/Publication-Comparison.md",
+      "sha256": "75ba76acf28751c0165361e5089e8ac2d5c6b9d2cc726ce3ddaf0aa53c260a52",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1",
+        "E4_VERIFIED_RESEARCH_STATE"
+      ],
+      "finding": "Historical comparison separated from current reading routes and unperformed usability/semantic studies.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Competency-Questions",
+      "source": "documentation/0.4.1/guides/Competency-Questions.md",
+      "sha256": "78212f42bb5a04aa81a71a9983481bd3290679939733c82077eef061853f5b30",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1"
+      ],
+      "finding": "Synthetic and inspected-source populations remain distinct; descriptive research follow-up link replaces process labels.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Traceability",
+      "source": "documentation/0.4.1/guides/Traceability.md",
+      "sha256": "425224a01edc2f6a5edfe6139e04941655699515860a9dd20700ec3b97e8648c",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1",
+        "E4_VERIFIED_RESEARCH_STATE"
+      ],
+      "finding": "450 accounting routes and 39 claim routes remain accounting; manuscript dispositions and publication evidence stay source-bound.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "References",
+      "source": "documentation/0.4.1/guides/References.md",
+      "sha256": "03304b523d0d1732c6c2ce311b1ff8c309364022adf096b51ef2a50bee22a94b",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1"
+      ],
+      "finding": "Edition/portion/access limits remain explicit; related-work adequacy is not overstated.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Quality",
+      "source": "documentation/0.4.1/guides/Quality.md",
+      "sha256": "af845ecef2a99abd0d6e1a9dab03b6d218e0eaa4360c93135860f2509bbdbb9c",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1"
+      ],
+      "finding": "Separate engine, source, software and independent-judgment populations remain explicit; no overall accuracy score.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Formalization",
+      "source": "documentation/0.4.1/guides/Formalization.md",
+      "sha256": "fe973f631aa188a302b8b338ed011c378b76e1276fc82218a2c1ce71a0fc5f74",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1",
+        "E4_VERIFIED_RESEARCH_STATE"
+      ],
+      "finding": "All 25 detailed clause bodies retained verbatim inside anchored disclosures; source/fixture details remain available.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Evaluation",
+      "source": "documentation/0.4.1/guides/Evaluation.md",
+      "sha256": "e2137c0b7500e8a055fee271180af98e641851fb74579ebb7670fc68e3bfa9ec",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1",
+        "E4_VERIFIED_RESEARCH_STATE"
+      ],
+      "finding": "Formal/data evidence and source/software/trace evidence split into separate readable tables with interpretation limits.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Reproduce",
+      "source": "documentation/0.4.1/guides/Reproduce.md",
+      "sha256": "ad9a5855063d68c4ad3f05343d0ee5239ef9d2c3f30370ae26a78abfa9ba0cd5",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1",
+        "E4_VERIFIED_RESEARCH_STATE"
+      ],
+      "finding": "Exact artifact, prerequisites, commands, expected outcomes, Git-history needs and private-file boundaries explained.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Citation",
+      "source": "documentation/0.4.1/guides/Citation.md",
+      "sha256": "e09498072cc3029a698ef53f81e21a3f401fc377c19b0dc18b41b658b73e4493",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1",
+        "E4_VERIFIED_RESEARCH_STATE"
+      ],
+      "finding": "Preferred artifact title and ordered authors lead; approved attribution/licenses preserved.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Limitations",
+      "source": "documentation/0.4.1/guides/Limitations.md",
+      "sha256": "f0e9c6d76eb5dd95af24a15453a92a1bfaef7c199ca3ffd228cb6efdcf055475",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1",
+        "E4_VERIFIED_RESEARCH_STATE"
+      ],
+      "finding": "Semantic, implementation, empirical, paper and publication boundaries remain in primary reading.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Using-the-Model",
+      "source": "documentation/0.4.1/guides/Using-the-Model.md",
+      "sha256": "b1912bdf48b7fe9da22d5ee98055b5c70548c6c8724077c62eeb8f92af14b442",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1"
+      ],
+      "finding": "Concrete conditional inspection examples and task-to-view routes added without new semantic commitments.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Visualization",
+      "source": "documentation/0.4.1/guides/Visualization.md",
+      "sha256": "791010a7e15187915a3b6adfecc81049dda9d6366beab67bc49121f8afb65530",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1"
+      ],
+      "finding": "Conceptual, asserted OWL, graph and text alternatives retain their distinct scopes and omissions.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    },
+    {
+      "slug": "Publication",
+      "source": "documentation/0.4.1/guides/Publication.md",
+      "sha256": "12f9911f289142fe1809a94fd04b547b2a17fdb7c4add7c7e79963b0ebcecd45",
+      "disposition": "AGENT_EDITORIAL_SOURCE_REVIEW_COMPLETE",
+      "change_classes": [
+        "E0",
+        "E1",
+        "E4_VERIFIED_RESEARCH_STATE"
+      ],
+      "finding": "Actual v0.3.5 release, six assets, documentary maintenance version and frozen-source roles reconciled.",
+      "semantic_definition_change": false,
+      "independent_expert_approval": false
+    }
+  ],
+  "rendered_steps": [
+    {
+      "number": 1,
+      "name": "Repository entry",
+      "health": "PASS_FOR_INSPECTED_TASK",
+      "screenshot": "04-repository-after.jpg",
+      "observation": "The actual repository README identifies Riskium and published v0.3.5, then routes four reader tasks. The active README API selected the maintained landing file."
+    },
+    {
+      "number": 2,
+      "name": "Wiki entry and navigation",
+      "health": "PASS_FOR_INSPECTED_TASK",
+      "screenshot": "05-wiki-after.jpg",
+      "observation": "The live Wiki has the same released state, three audience paths and grouped navigation; source/hash details no longer dominate the explanation."
+    },
+    {
+      "number": 3,
+      "name": "Pages entry",
+      "health": "PASS_FOR_INSPECTED_TASK",
+      "screenshot": "06-pages-after.jpg",
+      "observation": "The published site shows documentation 0.4.1, model 0.3.1 and published source v0.3.5 with short paragraphs and ordered audience routes."
+    },
+    {
+      "number": 4,
+      "name": "Problem and method",
+      "health": "PASS_FOR_INSPECTED_TASK",
+      "screenshot": "07-overview-after.jpg",
+      "observation": "The reviewer route reaches a clear problem, bounded contribution and explanation of conceptual, formal, data and application evidence roles."
+    },
+    {
+      "number": 5,
+      "name": "Results and evidence",
+      "health": "PASS_FOR_INSPECTED_TASK",
+      "screenshot": "08-evaluation-after.jpg",
+      "observation": "Two short tables separate formal/data checks from source/software/trace evidence; unchanged partial/unexecuted and independent-review limits remain explicit."
+    },
+    {
+      "number": 6,
+      "name": "Formal clause inspection",
+      "health": "PASS_FOR_INSPECTED_TASK",
+      "screenshot": "09-formal-clause-after.jpg",
+      "observation": "The C-08 table link reaches its anchored disclosure. Enter opens it; the visible focus ring, original statement, historical PARTIAL and remaining obligations were inspected."
+    },
+    {
+      "number": 7,
+      "name": "Limitations",
+      "health": "PASS_FOR_INSPECTED_TASK",
+      "screenshot": "10-limitations-after.jpg",
+      "observation": "The primary text exposes deferred mappings, bounded implementation and semantic/empirical limits instead of hiding them in provenance."
+    },
+    {
+      "number": 8,
+      "name": "Reproduction",
+      "health": "PASS_FOR_INSPECTED_TASK",
+      "screenshot": "11-reproduce-after.jpg",
+      "observation": "The reader reaches exact release, five payload checksums, commands, expected output and separate Git/private-file requirements."
+    },
+    {
+      "number": 9,
+      "name": "Current versus frozen versions",
+      "health": "PASS_FOR_INSPECTED_TASK",
+      "screenshot": "12-versions-after.jpg",
+      "observation": "The version index explains the maintained view and all four immutable snapshots without presenting historical status as current Latest."
+    },
+    {
+      "number": 10,
+      "name": "Generated formal reference",
+      "health": "PASS_FOR_INSPECTED_TASK",
+      "screenshot": "13-reference-after.jpg",
+      "observation": "The generated reference remains linked to model 0.3.1, explains its bounded OWL meaning and retains source/exploration/download routes."
+    },
+    {
+      "number": 11,
+      "name": "Release downloads",
+      "health": "PASS_FOR_INSPECTED_TASK",
+      "screenshot": "14-downloads-after.jpg",
+      "observation": "All six v0.3.5 asset links are together; website-subset files/checksums and historical model citation metadata have separate roles."
+    },
+    {
+      "number": 12,
+      "name": "Equivalent native Wiki clause",
+      "health": "PASS_FOR_INSPECTED_TASK",
+      "screenshot": "15-wiki-clause-after.jpg",
+      "observation": "The corresponding Wiki clause exposes the same statement/outcomes/limits. Enter was tested to collapse and reopen the disclosure."
+    }
+  ],
+  "initial_actual_evidence": {
+    "native_wiki_commit": "7f75868592707d0a3395ef0ad68d25d50084482d",
+    "wiki_files": 23,
+    "pages_http_responses": 314,
+    "site_files_including_root_manifest_and_nojekyll": 315,
+    "html_pages": 143,
+    "local_links": 28108,
+    "frozen_snapshots": 4,
+    "selected_release_files_preserved": 687,
+    "source_candidate_files_independently_verified": 1143,
+    "software_tests": 505,
+    "software_test_seconds": 443.26,
+    "core_checks": 28,
+    "reader_boundary_tests": 10,
+    "workflow_run": 40838813479,
+    "hosted_readback_artifact": 12881762335,
+    "root_manifest_sha256": "03eca56b5df0ee1b1304c7cfb13405b77625109245cb12cbabae7b4c268c4212"
+  },
+  "followup": "Remove empty page-contents headings on short pages. The same21 guide sources and23 Wiki bytes remain fixed; final exact-source CI/deployment/readback identities are recorded in issue60, outside this self-referential source commit.",
+  "not_assessed": [
+    "Independent semantic expert adjudication",
+    "Controlled user study or comparative usability superiority",
+    "Full WCAG or assistive-technology certification",
+    "Real mobile-device rendering",
+    "Conference submission readiness"
+  ],
+  "source_claims_and_licenses_unchanged": true
+}
