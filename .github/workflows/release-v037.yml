@@ -1,7 +1,7 @@
 name: v0.3.7 packaging qualification
 on:
   push:
-    branches: [plan/v0.3.7-packaging]
+    branches: [main, plan/v0.3.7-packaging]
   workflow_dispatch:
 permissions:
   contents: read
@@ -24,6 +24,7 @@ jobs:
       - name: Check exact component closure and retained reader bindings
         run: |
           python tools/releases/v037/selection.py --check
+          python tools/releases/v037/routing.py --check
           python tools/publication/build_nature_reader_bindings.py --check
       - name: Qualify current tests and source-pinned historical reader suites
         run: python tools/releases/v037/qualify.py --receipt build/v037-qualified-suite.json

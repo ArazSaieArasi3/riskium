@@ -15,7 +15,9 @@ R4_SHA = 'c88b82b15de6017c281db21525b1829ea8cdb42604bbbfbafeac14ed2fb9471b'
 SCIENCE = dict(model='0.3.1', orsd='0.4.3', original_drsd='0.1.0', manuscript='7.0.8')
 SUPPORT = ('tools/releases/v037/selection.py', 'tools/releases/v037/qualify.py',
            'tests/test_release_v037_selection.py', '.github/workflows/release-v037.yml',
-           'plans/v0.3.7-packaging.md')
+           'plans/v0.3.7-packaging.md', 'tools/releases/v037/routing.py',
+           'tests/test_release_v037_routing.py', 'releases/routing-v0.3.7.json',
+           'docs/release-v0.3.7.md')
 
 
 def require(value, message):

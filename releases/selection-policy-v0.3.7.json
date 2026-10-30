@@ -146,13 +146,15 @@
     "tools/publication/review_repository_landing.py": "c236b449155c04439a379947163450441ac25123f4643dda4814e0daef9df6a1",
     "tools/relational_risk_nature.py": "35a2406fec25e8d21244db701a0b39e9d0f9001b050ae9e4a77bcc690ac2de4e",
     "tools/run_relational_risk_nature.py": "991b1caac9a4d5a83259bbec207a0da60110bdd25084efc721d2aec5f89fa711",
-    "tools/run_v036_versioned_suite.py": "2adc692c147d38d0a6050d8249ba517c1cc138bc16eaedbbba966fdab680fd50"
+    "tools/run_v036_versioned_suite.py": "2adc692c147d38d0a6050d8249ba517c1cc138bc16eaedbbba966fdab680fd50",
+    "evaluation/releases/v0.3.7/branch-qualification.json": "47666037a6bb970a23138beef3b0bfc61b1aa24d210ea1df89d1376bf0d92e10"
   },
   "routing": {
     "qualification_workflow": ".github/workflows/release-v037.yml",
-    "qualification_branch": "plan/v0.3.7-packaging",
+    "qualification_branch": "main and plan/v0.3.7-packaging",
     "legacy_main_candidate": "RETAINED_NOT_A_V037_GATE",
-    "legacy_retirement": "PENDING_HOSTED_SUCCESSOR_QUALIFICATION_AND_VERSIONED_READER_GATE",
-    "publication_enabled": false
+    "legacy_retirement": "DECIDED_RETAIN_IMMUTABLE_DIAGNOSTIC_REQUIRE_NEW_MAIN_QUALIFICATION",
+    "publication_enabled": false,
+    "main_routing_policy": "releases/routing-v0.3.7.json"
   }
 }

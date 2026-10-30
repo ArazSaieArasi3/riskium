@@ -1,0 +1,25 @@
+{
+  "schema": "riskium-v037-main-routing-v1",
+  "version": "0.1.0",
+  "legacy_role": "RETAINED_HISTORICAL_DIAGNOSTIC_NOT_A_V037_RELEASE_GATE",
+  "required_success": [
+    "qualification",
+    "suite",
+    "reader"
+  ],
+  "legacy_expected_errors": [
+    "Published README drift",
+    "Active README drift",
+    "test_assessment_documentation.CandidateReader",
+    "test_published_documentation.PublishedReaderDocumentation",
+    "test_released_documentation.PublishedReader"
+  ],
+  "preserved_sha256": {
+    ".github/workflows/incremental-release.yml": "b87d98fea2a6b14244e1a47f1e29ff6ef618a3285e4b40d6dc7b878d29997d93",
+    "tools/prepare_incremental_release.py": "e860c2f5250d548ecdc18694a207e642b25f8ee52a226f0ddb55c4b6918b301a",
+    "tools/publication/nature_main_gate.py": "460be166e34073f4133422dead2992399b1208d9bf2ff0477d78c8faa8a904c8",
+    ".github/workflows/released-reader-main.yml": "f15cf1773fcab3c0762e51d15dde56c8c77c50ce7971152173f6b098727fe145"
+  },
+  "decision": "Retain the legacy launch and unchanged reader predecessor-settlement gate. Require the new exact-main qualification separately before freeze. No workflow is disabled or weakened.",
+  "publication_authorized_by_this_policy": false
+}
