@@ -1,0 +1,8 @@
+{
+  "documentation_version": "0.4.5",
+  "published_release": "v0.3.7",
+  "proposed_distribution": null,
+  "issue": 66,
+  "mutable_entrypoint": ".github/README.md",
+  "prior_entrypoint": "documentation/0.4.4/Repository.md"
+}

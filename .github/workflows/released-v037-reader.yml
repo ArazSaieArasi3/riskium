@@ -1,0 +1,112 @@
+name: Released v0.3.7 reader documentation
+on:
+  pull_request:
+    paths:
+      - 'documentation/0.4.5/**'
+      - 'tools/publication/released_nature_documentation.py'
+      - '.github/workflows/released-v037-reader.yml'
+      - 'tools/publication/released_nature_main_gate.py'
+      - 'tests/test_released_nature_documentation.py'
+  workflow_run:
+    workflows: [Post-v0.3.7 source-qualified full suite]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: riskium-reader-main
+  cancel-in-progress: false
+jobs:
+  build:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.event == 'push' &&
+       github.event.workflow_run.head_branch == 'main' &&
+       github.event.workflow_run.head_repository.full_name == github.repository)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/publication/requirements.txt
+      - name: Build the source-bound maintained reader
+        run: |
+          python tools/publication/build_released_nature_bindings.py --check
+          python tools/publication/released_nature_documentation.py --output build/released-site --wiki-output build/released-wiki --receipt build/released-reader.json
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: released-v037-reader-${{ github.event.workflow_run.head_sha || github.sha }}
+          path: |
+            build/released-reader.json
+            build/released-wiki/
+          if-no-files-found: error
+      - uses: actions/upload-pages-artifact@v4
+        if: github.event_name == 'workflow_run' || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
+        with:
+          path: build/released-site
+  deploy:
+    needs: build
+    if: github.event_name == 'workflow_run' || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/publication/requirements.txt
+      - name: Require live release identity and settled predecessor deployments
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+          READER_RUN_ID: ${{ github.run_id }}
+        run: |
+          python tools/publication/released_nature_main_gate.py --source "$SOURCE_SHA" --run-id "$READER_RUN_ID" --wait-seconds 900
+      - uses: actions/configure-pages@v5
+      - id: deployment
+        uses: actions/deploy-pages@v4
+  readback:
+    needs: deploy
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/publication/requirements.txt
+      - name: Independently download Wiki and all served Pages bytes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git clone https://github.com/ArazSaieArasi3/riskium.wiki.git build/actual-wiki
+          python tools/publication/released_nature_documentation.py --live-release --verify-channels build/actual-wiki --receipt build/actual-released-channels.json
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: released-v037-actual-channels-${{ github.event.workflow_run.head_sha || github.sha }}
+          path: build/actual-released-channels.json
+          if-no-files-found: error

@@ -1,0 +1,14 @@
+{
+  "proposed_distribution": null,
+  "published": true,
+  "runtime_source": "7f3f8440b22690d28cea750bd441dde78b1e0337",
+  "alignment_source": "674886381b5520e0771b3a958919e735327572c2",
+  "sql_version": "0.9.0",
+  "schema_version": 10,
+  "trace_version": "0.5.0",
+  "fixed_controls": 60,
+  "negative_variants": 51,
+  "main_integration_and_channels": "ACTUAL_EVIDENCE_SEPARATE_IN_ISSUE_66",
+  "source_distribution": "v0.3.7",
+  "source_commit": "86accc6695e4738dd1337d5b9addd73b82c73c3d"
+}

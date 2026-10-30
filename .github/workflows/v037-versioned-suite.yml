@@ -1,0 +1,48 @@
+name: Post-v0.3.7 source-qualified full suite
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  suite:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
+      - name: Verify current landing and replay each unchanged reader suite at its own source
+        run: |
+          python tools/publication/build_released_nature_bindings.py --check
+          python tools/run_v037_versioned_suite.py --list
+          python tools/run_v037_versioned_suite.py --receipt build/versioned-suite.json
+          git diff --exit-code
+      - name: Record the checked risk-nature declaration separately from runtime results
+        if: hashFiles('implementation/relational/0.9.0/contract.json') != ''
+        run: python tools/check_risk_nature_declaration.py --receipt build/risk-nature-declaration.json
+      - name: Execute the declared risk-nature runtime controls
+        if: hashFiles('tools/relational_risk_nature.py') != ''
+        run: python tools/run_relational_risk_nature.py --output build/risk-nature-runtime.json
+      - name: Check the separate risk-nature integration evidence and pending gates
+        if: hashFiles('tools/audit_risk_nature_alignment.py') != ''
+        run: |
+          python tools/audit_risk_nature_alignment.py --check --receipt build/risk-nature-alignment.json
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v037-maintained-source-suite-${{ github.sha }}
+          path: |
+            build/versioned-suite.json
+            build/risk-nature-declaration.json
+            build/risk-nature-runtime.json
+            build/risk-nature-alignment.json
+          if-no-files-found: error

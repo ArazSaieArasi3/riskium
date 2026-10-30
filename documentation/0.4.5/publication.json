@@ -1,0 +1,56 @@
+{
+  "schema": "riskium-public-source-publication-v1",
+  "url": "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.7",
+  "release_id": 429036645,
+  "published_at": "2026-10-30T12:58:55Z",
+  "source_commit": "86accc6695e4738dd1337d5b9addd73b82c73c3d",
+  "tag": "v0.3.7",
+  "assets": [
+    {
+      "id": 692131799,
+      "name": "artifact-versions.json",
+      "bytes": 359729,
+      "sha256": "05183c56f34892cc2253275f9a3e2f23d425037f5af8a23f3b199a8ccc9e6943",
+      "public_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.7/artifact-versions.json"
+    },
+    {
+      "id": 692131849,
+      "name": "freeze-receipt.json",
+      "bytes": 396390,
+      "sha256": "e8d1a987bfe5f646bed067bf48be424aaf5ca1a12655f6903c886d00fa23ce83",
+      "public_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.7/freeze-receipt.json"
+    },
+    {
+      "id": 692131878,
+      "name": "release-notes.md",
+      "bytes": 5235,
+      "sha256": "2ec5a22ee81f49a8f535b273a0882ebf5e7a4c91c9f633b24b4d31d73cab3ff3",
+      "public_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.7/release-notes.md"
+    },
+    {
+      "id": 692131904,
+      "name": "riskium-v0.3.7-source.tar.gz",
+      "bytes": 15319284,
+      "sha256": "a7bc39fc2564d06a1df661245a93ad01256890a9975f665f4f4a962da267c513",
+      "public_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.7/riskium-v0.3.7-source.tar.gz"
+    },
+    {
+      "id": 692131772,
+      "name": "SHA256SUMS.txt",
+      "bytes": 440,
+      "sha256": "5cefbc220856e795a01cf094dff91345118a5ab0fef37226a393ce0410af88d5",
+      "public_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.7/SHA256SUMS.txt"
+    },
+    {
+      "id": 692131968,
+      "name": "source-manifest.json",
+      "bytes": 246870,
+      "sha256": "fc4786764b594cd8eb1efa17cde1c7b544d33ce5e9cc74e0f5c76c0b428e8cef",
+      "public_url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.7/source-manifest.json"
+    }
+  ],
+  "publication_run": 41059429349,
+  "actual_public_downloads_verified": true,
+  "prior_releases_unchanged": 13,
+  "prior_assets_unchanged": 70
+}
