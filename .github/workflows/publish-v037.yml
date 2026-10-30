@@ -1,0 +1,32 @@
+name: Publish exact frozen v0.3.7
+on:
+  push:
+    branches: [release/v0.3.7-publication]
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: riskium-v037-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Authenticate freeze, publish unchanged six assets and read actual public downloads
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/releases/publish_v037_frozen.py
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: v037-actual-publication-${{ github.run_id }}
+          path: build/v037-publication.json
+          if-no-files-found: error
