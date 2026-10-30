@@ -29,6 +29,9 @@ class SelectedClosure(unittest.TestCase):
                 self.assertEqual(matrix['selected_files_sha256'][p], h)
         self.assertEqual(matrix['predecessor_landing']['sha256'], prior['selected_files_sha256']['.github/README.md'])
         self.assertEqual(r.read(r.MATRIX), r.encoded(matrix))
+        routing = json.loads(r.read('releases/routing-v0.3.7.json'))
+        for path, digest in routing['preserved_sha256'].items():
+            self.assertEqual(matrix['selected_files_sha256'][path], digest)
 
     def test_changed_prior_payload_is_rejected(self):
         with self.altered('ontology/riskium-model.json', lambda d: d+b' '), self.assertRaisesRegex(ValueError, 'Source binding'):

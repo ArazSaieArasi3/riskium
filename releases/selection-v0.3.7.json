@@ -5833,6 +5833,7 @@
     ".github/workflows/current-documentation.yml": "c07acec9e62419c3699f4055d089fc86dae66a3c49b8cc9bcbbfcf3bdeae2ec5",
     ".github/workflows/documentation.yml": "50169cf46025120394a68b45272167a0ee1bab5c5c952d2c228be8599ca2b0cd",
     ".github/workflows/evidence-lifecycle.yml": "5ba26e13badb298162c0fa29f17f6e6b97f84e62779c27272845a2e88bc50a9f",
+    ".github/workflows/incremental-release.yml": "b87d98fea2a6b14244e1a47f1e29ff6ef618a3285e4b40d6dc7b878d29997d93",
     ".github/workflows/pages.yml": "3ddf7604e1f4021e989abecc2dc0769fc4b466825574da609cad4d97df052258",
     ".github/workflows/post-release-validation.yml": "8d564882e1a0edb484885a41ff323b3133d5a837a416ee61a71c337e7708d287",
     ".github/workflows/publication-status.yml": "e067a6ed85502b336853aca19f095458024670279939ffbb9b544e027b01b522",
@@ -6672,6 +6673,7 @@
     "tools/check_database_assurance.py": "4abd237246e3f241c162d2a40c37cc37c9e07f9c45d9470fcb160dad28610edd",
     "tools/check_risk_nature_declaration.py": "534978f9cdcb88dd28b89d0f882fe5e5f8ac5914b1bf16297316065c332ce580",
     "tools/complete_risk_nature_readback.py": "889f64b3b1cc9e3bf2a8e57b703dbdc31fa5d6e12a6eace602f16f5673d6f43a",
+    "tools/prepare_incremental_release.py": "e860c2f5250d548ecdc18694a207e642b25f8ee52a226f0ddb55c4b6918b301a",
     "tools/publication/README.md": "262164303d2639a8895a78cec3ea6c77f07dc3fccdf66abff33856a9fcb2db13",
     "tools/publication/assessment_documentation.py": "4c02669dd510cce32cae6f8f02b0aca80be14c80c1eef136430f6656cd8bb1d5",
     "tools/publication/assessment_main_gate.py": "d8caf502c965f8b245524c98ef309dde72242d46fed75ed9408e16c20aec46cc",
@@ -6728,9 +6730,9 @@
     "tools/validate_integrated.py": "5594df14536eb114f996677dd05c5b1d140cc39fa7b63ae6e4f69aed8b9e1696"
   },
   "delivery_support_sha256": {
-    "tools/releases/v037/selection.py": "9516159908df8e966fedc6e5260130f4231b4fe4d2a7d29d6bd1bd95e8400195",
+    "tools/releases/v037/selection.py": "c154d79f4c52f452ea22cc8830c9aa482f84576ab9eba25552d8a466ee88564c",
     "tools/releases/v037/qualify.py": "d5c8a0417b15be27b3efa3f73f43e05b77807168bf331cb96bbdd1836b59a1ea",
-    "tests/test_release_v037_selection.py": "5ec0abc4b2cd3bf149009b4069fa861c53be2b5ef58df65a4b3673eb7a7d3470",
+    "tests/test_release_v037_selection.py": "b50e28d942b4a7bb0c4e35c04e9b782ab3c1035533ac9abfa8866bde5fba175c",
     ".github/workflows/release-v037.yml": "ec05cc556e23d6ed2c309d056793153886bfcd262de306d282662c581994b0cd",
     "plans/v0.3.7-packaging.md": "319b1351daf22caba7712bb05acefa263448a3e695d7701b1e267e7430a7f947",
     "tools/releases/v037/routing.py": "fd2fb52fbceec44af15c34c98e4c7caacc2ae1bf99a43648d631f4de5a4b6ad8",
@@ -6744,7 +6746,7 @@
     "replaced": 2,
     "added": 1,
     "preserved_prior_files": 779,
-    "selected_files": 902,
+    "selected_files": 904,
     "dependency_edges": 82
   },
   "predecessor_landing": {

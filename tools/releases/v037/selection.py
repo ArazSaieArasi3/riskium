@@ -128,6 +128,10 @@ def selection(root=ROOT):
             merge(item['path'], item['sha256'])
     for p, h in policy['source_support_sha256'].items():
         merge(p, h)
+    # The retained legacy launch is an explicit routing dependency too.
+    routing = json.loads(read('releases/routing-v0.3.7.json', root))
+    for p, h in routing['preserved_sha256'].items():
+        merge(p, h)
     merge(PRIOR, PRIOR_SHA)
     merge(R4, R4_SHA)
     merge(POLICY, sha(read(POLICY, root)))
