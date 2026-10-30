@@ -13,6 +13,7 @@ PUBLISHED_READER = '41caeaa78c7a152787d1070540e20ae0c6a2395a'
 HISTORICAL_TEST = 'tests/test_published_documentation.py'
 HISTORICAL_SUITES = (
     (PUBLISHED_READER, HISTORICAL_TEST, 10),
+    ('765cb4507d925037cf82c1dc42bdea0a52bf9dca', 'tests/test_released_documentation.py', 4),
     ('58ff468ec4e8f3500ace6869601a25ea263c3d9f', 'tests/test_assessment_documentation.py', 2),
 )
 

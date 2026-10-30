@@ -1,0 +1,11 @@
+# Nature-task reader delivery
+
+Declared R4 source packet, 30 October 2026, under issue 66. Documentation 0.4.4 explains the actual nature-task development while keeping v0.3.6 as the published package and model/OWL 0.3.1 unchanged. The original documentation 0.4.3 inputs and their own exact-source tests remain preserved.
+
+The [review plan](../../../documentation/0.4.4/review-plan.json) declares six NRA reader criteria and ten retained editorial criteria before channel verification. It specifies reviewer, domain and integration paths. Actual editorial/rendered/keyboard observations and independently compared repository, native Wiki and HTTP bodies are recorded separately in [issue 66](https://github.com/ArazSaieArasi3/riskium/issues/66). Source generation is not actual channel delivery or an independent user study.
+
+The [complete published R3 receipt](inputs/r3-completion.json) is preserved losslessly from the actual #66 body: 295,383 bytes, SHA-256 `cb4b8766af09557e7f6801b9a53f9817ff64195da190caa1b7e37a2e13eee75a`. This keeps the preceding completed proof durable while allowing the live issue to present the subsequent R4 result concisely. Its executed source roles remain unchanged.
+
+Reproduce this packet with `python tools/publication/build_nature_reader_bindings.py --check`, `python -m unittest discover -s tests -p test_nature_documentation.py` and `python tools/publication/nature_documentation.py --output build/nature-site --wiki-output build/nature-wiki`. The builder reconstructs its predecessor at reviewed source `765cb4507d925037cf82c1dc42bdea0a52bf9dca`, then replaces only current explanatory views/status. It audits all local links and all four frozen snapshot inventories. The full software runner executes historical 0.4.3 reader tests unchanged at that source.
+
+After deliberate main integration and actual delivery, run `nature_documentation.py --live-release --verify-channels ACTUAL_WIKI_CLONE --receipt build/actual-nature-channels.json` from the clean exact main source. This independently fetches every served Pages body and compares all native Wiki files with the reviewed projection. Publication R5 still requires its own exact component selection, full-source/offline freeze and six independently verified public assets.
