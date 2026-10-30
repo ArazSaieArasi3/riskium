@@ -54,7 +54,9 @@ artifact-download observations are separate records.
 The risk-nature contract declares 60 fixed controls and 51 concrete negative
 variants. Actual source-qualified test counts, run identities and artifact hashes
 belong to the executed qualification and final freeze receipts. Raw runtime F60
-remains pending until an independent hosted-artifact download is checked.
+remains pending until an independent hosted-artifact download is checked. The
+qualification artifact contains six JSON reports, including the separate current
+source inventory; these are evidence inputs to the later six release assets.
 
 The planned six assets are the complete source archive, `source-manifest.json`,
 `artifact-versions.json`, `freeze-receipt.json`, `release-notes.md` and

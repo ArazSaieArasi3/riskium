@@ -36,7 +36,6 @@ jobs:
           python tools/check_risk_nature_declaration.py --receipt build/v037-declaration.json
           python tools/run_relational_risk_nature.py --output build/v037-runtime.json
           python tools/audit_risk_nature_alignment.py --check --receipt build/v037-alignment.json
-            build/v037-current-inventory.json
           git diff --exit-code
       - uses: actions/upload-artifact@v4
         with:
