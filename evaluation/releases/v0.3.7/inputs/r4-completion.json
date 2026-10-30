@@ -1,0 +1,2796 @@
+{
+  "schema": "riskium-v037-R4-completed-evidence-v1",
+  "status": "R4_COMPLETE_R5_READY_NOT_RELEASE_READY",
+  "observed_at_utc": "2026-10-30T07:34:27.764497+00:00",
+  "integration_source": "a09ff2d2a460db412ac1a505fef7eb330c0c341e",
+  "main_integrated": true,
+  "documentation_version": "0.4.4",
+  "published_distribution": "v0.3.6",
+  "proposed_distribution": "v0.3.7",
+  "model_OWL": "0.3.1",
+  "preceding_R3_evidence": {
+    "path": "evaluation/documentation/nature-v0.3.7/inputs/r3-completion.json",
+    "sha256": "cb4b8766af09557e7f6801b9a53f9817ff64195da190caa1b7e37a2e13eee75a",
+    "bytes": 295383
+  },
+  "source_readback": {
+    "method": "Fresh public main fetch followed by exact Git object / approved transport / local-byte comparison of all 42 R4 changed paths",
+    "files_sha256": {
+      ".github/README.md": "1dc949f20a3aaca862b5f7253ea9353a24091d5a377f3a0405a390809fd1cb80",
+      ".github/workflows/released-reader-main.yml": "f15cf1773fcab3c0762e51d15dde56c8c77c50ce7971152173f6b098727fe145",
+      ".github/workflows/v036-versioned-suite.yml": "65911d1c72e105739500538f0ca9dc81e0d2b4eff7fd8bff7c7a6938118457c0",
+      "documentation/0.4.4/README.md": "14ca41b26efef353cbeeb8ea0e5ee07eea863c0b7167dde2b61a20a545227994",
+      "documentation/0.4.4/Repository.md": "1dc949f20a3aaca862b5f7253ea9353a24091d5a377f3a0405a390809fd1cb80",
+      "documentation/0.4.4/component.json": "dbe3d39418797c991fe8547014c34fb2b92fa47d3ccdf25d33bdd4643600f73b",
+      "documentation/0.4.4/development.json": "21da97c3797b2b61ec7e4f5fe1d88e6eaa15cfe2c64f0b3319cd4b3b7f366515",
+      "documentation/0.4.4/guide-registry.json": "7781df13c1f16267132676535ffdc2d7560822eab68a4d0902b97d99ea1ec379",
+      "documentation/0.4.4/guides/Artifact-Versions.md": "98a58388c8fb8b59cdcda6a5b5e3ebfcbbf65524284dff9971aef7ccfd3fcff8",
+      "documentation/0.4.4/guides/Citation.md": "035b5f5136571cef218fbcb16abd6907e782f7212bba6c2d6a79ce34bea5f2e5",
+      "documentation/0.4.4/guides/Competency-Questions.md": "91b6e9d68dd00a8aad101a7e1cd4725030abe0a2f737498be3383e10e6446626",
+      "documentation/0.4.4/guides/Database-Assurance.md": "7cbdb881fc2b5a6bb2a0cc0f60d7cae514f59a78bcbb0d8b7191c37f5630196b",
+      "documentation/0.4.4/guides/Decisions.md": "e0296cd25d5c698b3b9a210b573e202815e47f33e733d1d93d28e1597050309d",
+      "documentation/0.4.4/guides/Evaluation.md": "6086276bd7f2e29c29fc2b7bf9018c1dddf6970dd25e92dc0f43cd7792b608ea",
+      "documentation/0.4.4/guides/Formalization.md": "d07964e190f5bfc1376ac3f9b8d58e7c194ae30f7dbb03dc19e27c1bdc8bf9d1",
+      "documentation/0.4.4/guides/Home.md": "6dc0bb3ef5e95b9db2d1b6dfc55ecd8d5e7a4de47be9bb4c585848cf51b9e48f",
+      "documentation/0.4.4/guides/Limitations.md": "331fdd40ee121191363c5bff419bcfdc208cee7428c08479d51d217c0c28df3f",
+      "documentation/0.4.4/guides/Overview.md": "cb0d8b99c9de9b242c62e3914cbbda9e1de80128e7320057904bee18821db88b",
+      "documentation/0.4.4/guides/Publication-Comparison.md": "d4e05821b582774984e6a989d5aa9ab58442f138fb5128dcee52451163bc3bc4",
+      "documentation/0.4.4/guides/Publication.md": "66bcf0df7a4971a45d306db6ca630367b24ba51befeee3c0a74750230a8f5c8a",
+      "documentation/0.4.4/guides/Quality.md": "b419313e34613975d1e7f94bb38259a28f5a08d2dfaeaa5a311c22f34b758350",
+      "documentation/0.4.4/guides/References.md": "8c8a3e684a0668c14d10d6b2f58cb1c99a7b1cd2c70b06e82c7c70958f381e47",
+      "documentation/0.4.4/guides/Reproduce.md": "6105d931386ec650c58ccdc662db0a515de524c6162e8ac2b084ce97de6d94a7",
+      "documentation/0.4.4/guides/Requirements.md": "69511aa98d0a7cd7c07c4a17ed0a9184199d0cb700334416fa9f5018a34535a2",
+      "documentation/0.4.4/guides/Scope.md": "87f1b3136a9c5bd5fe1a092eefe56fb7ca1971e41cb4a92fe7b6208806d87ce2",
+      "documentation/0.4.4/guides/Traceability.md": "798fc444517c0fd9c16aae1edd8d853042cc742ba1592639b8c59191bb23fbe2",
+      "documentation/0.4.4/guides/Using-the-Model.md": "b9676322c3daf51fa20b5e93fb0dc960faa386956a07d4d54317f155a578efe2",
+      "documentation/0.4.4/guides/Visualization.md": "791010a7e15187915a3b6adfecc81049dda9d6366beab67bc49121f8afb65530",
+      "documentation/0.4.4/guides/Work-Plan.md": "8863cfd7dc82789da6164ef98391dcaff7957d834ce874784ea1bacac91da28b",
+      "documentation/0.4.4/landing.json": "c6bfd5f7e66c842d7609ca08294a0b4adeab225f77551dd60f532858b5b7b2b5",
+      "documentation/0.4.4/policy.json": "dc84648b479470fd8e411a30877dc2c3fc52f0b4720b4bebf9ed79f3416b4178",
+      "documentation/0.4.4/publication.json": "cc1896acf35ac078308e0f4df8c79ef00485ef828870c5eecd0e81d92c635cdf",
+      "documentation/0.4.4/reader.css": "853031b625dabec89dd6e3d86ba4cacd3ac70b95c4ed663b6e04b0701c23ce24",
+      "documentation/0.4.4/review-plan.json": "cdab14ced97a84251dbc9b4d78424b16834eab6e77bbd371aa8ab2f4d32b32e4",
+      "evaluation/consistency/inventory.json": "0b3aa2a6c0fe11c7bf3254cbfe080fd9ef87b1e66a309eab86343a48fed47abf",
+      "evaluation/documentation/nature-v0.3.7/README.md": "27f779ab9539da5e9f5783245e16de88f54a049140396f473b2f87a6de8571e0",
+      "evaluation/documentation/nature-v0.3.7/inputs/r3-completion.json": "cb4b8766af09557e7f6801b9a53f9817ff64195da190caa1b7e37a2e13eee75a",
+      "tests/test_nature_documentation.py": "d084c0f5378de0b32763f39fa5d5ce4aabdf53c8d65eb92e2a87a2411977fe2a",
+      "tools/publication/build_nature_reader_bindings.py": "84c5d8a58c919f4d71fca74950e85efcf3014faac59362c9cd2bec8a5052e78c",
+      "tools/publication/nature_documentation.py": "91761d28f26bcb8dc6401a14875cee9b3a6343d93af303438d42081a55b5351b",
+      "tools/publication/nature_main_gate.py": "460be166e34073f4133422dead2992399b1208d9bf2ff0477d78c8faa8a904c8",
+      "tools/run_v036_versioned_suite.py": "2adc692c147d38d0a6050d8249ba517c1cc138bc16eaedbbba966fdab680fd50"
+    },
+    "clean_checkout": true,
+    "previous_043_namespace_unchanged_from_R3": true,
+    "previous_reader_rebuilt_at_its_reviewed_765_source": true
+  },
+  "software_and_artifact_evidence": {
+    "source": "a09ff2d2a460db412ac1a505fef7eb330c0c341e",
+    "suite_artifacts": [
+      {
+        "id": 12960571810,
+        "name": "v036-source-suite-a09ff2d2a460db412ac1a505fef7eb330c0c341e",
+        "bytes": 14073,
+        "sha256": "5dc8f4ea6e6e485ad721e59d00c88d7934b190c6f823c3d7d708c49c3c329fbb"
+      }
+    ],
+    "reader_artifacts": [
+      {
+        "id": 12961341118,
+        "name": "released-actual-channels-a09ff2d2a460db412ac1a505fef7eb330c0c341e",
+        "bytes": 12913,
+        "sha256": "1f43c5791b4ff5f35178410a25ff6fc0fe7c2cab32588b1cf93ed203485c2ecc"
+      },
+      {
+        "id": 12960642948,
+        "name": "released-main-reader-a09ff2d2a460db412ac1a505fef7eb330c0c341e",
+        "bytes": 56340,
+        "sha256": "7ab40372a2d1505140520e9be3f5a1e00090a314b21fe354dcdb9b071b2b2483"
+      },
+      {
+        "id": 12960483371,
+        "name": "github-pages",
+        "bytes": 4437428,
+        "sha256": "6e58d020c6f59cfe2b4ce3b12ba71347d765533e83465697df01f6a64b4e0846"
+      }
+    ],
+    "reader_run": {
+      "id": 41018791632,
+      "status": "completed",
+      "conclusion": "success",
+      "completed_at_utc": "2026-10-30T07:22:41Z"
+    },
+    "reader_jobs": [
+      {
+        "id": 123941093399,
+        "name": "build",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 123941404493,
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 123943609452,
+        "name": "readback",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "published": {
+      "tag": "v0.3.6",
+      "id": 428331704,
+      "assets": [
+        {
+          "id": 689733403,
+          "name": "artifact-versions.json",
+          "bytes": 327594,
+          "sha256": "55580ed6c894c001900b33b190f12636191117d752ec892ff9d2302fc16d8003"
+        },
+        {
+          "id": 689733423,
+          "name": "freeze-receipt.json",
+          "bytes": 208876,
+          "sha256": "d13211fd0f29ea9263c7b071388431afb214180a7bb6a2500b956ddeb19fe1f0"
+        },
+        {
+          "id": 689733430,
+          "name": "release-notes.md",
+          "bytes": 3287,
+          "sha256": "6ef7e59ba9c324c1c22444d3acd842e9c8ba15d8dae2be2996018ea9c4c21e01"
+        },
+        {
+          "id": 689733440,
+          "name": "riskium-v0.3.6-source.tar.gz",
+          "bytes": 14523364,
+          "sha256": "6a27367fc01856e79becfcd279d8710e5b6813654ce0a72f12b446696ccab13d"
+        },
+        {
+          "id": 689733381,
+          "name": "SHA256SUMS.txt",
+          "bytes": 440,
+          "sha256": "effc3c86e48fa02c48045df2f094626b39cb8a0825497e2ec75e40ec219c5b4c"
+        },
+        {
+          "id": 689733490,
+          "name": "source-manifest.json",
+          "bytes": 223138,
+          "sha256": "7a90c6446d259bd6cb4950f697b371d3043da1b7c309acaacb741e60bc410a03"
+        }
+      ]
+    },
+    "legacy": {
+      "run_id": 41018095099,
+      "job_id": 123938891852,
+      "conclusion": "failure",
+      "diagnostics": [
+        "test_assessment_documentation.CandidateReader: Published README drift",
+        "test_published_documentation.PublishedReaderDocumentation: Active README drift",
+        "test_released_documentation.PublishedReader: Active README drift"
+      ],
+      "cause": "The unchanged legacy preparer invokes unittest discovery on the current main tree, combining three reader contracts that require different historical READMEs. All 16 original reader tests pass unchanged at their own source commits in the modern full suite.",
+      "required_R5_action": "Use a versioned source-qualified v0.3.7 packaging/freeze route and deliberately retire or reroute the obsolete candidate launch after successor qualification; preserve all published script/workflow bytes.",
+      "not_a_release_candidate_pass": true
+    }
+  },
+  "actual_versioned_software_suite": {
+    "status": "VERSIONED_SUITE_PASS",
+    "source_commit": "a09ff2d2a460db412ac1a505fef7eb330c0c341e",
+    "candidate_tests": 560,
+    "published_reader_tests": 10,
+    "historical_reader_tests": 16,
+    "historical_suites": [
+      {
+        "source": "41caeaa78c7a152787d1070540e20ae0c6a2395a",
+        "path": "tests/test_published_documentation.py",
+        "tests": 10,
+        "sha256": "cc681f469bcd8a30418726433abc5bee3021b22c869ccd79c8990648c0773fc9"
+      },
+      {
+        "source": "765cb4507d925037cf82c1dc42bdea0a52bf9dca",
+        "path": "tests/test_released_documentation.py",
+        "tests": 4,
+        "sha256": "7e0a77e229bebea42b5a2b97981869c57b7eed56cacfa578171cc1a187375685"
+      },
+      {
+        "source": "58ff468ec4e8f3500ace6869601a25ea263c3d9f",
+        "path": "tests/test_assessment_documentation.py",
+        "tests": 2,
+        "sha256": "e745b210ffc680bf92eab492dc7c661a9672b0d8ae61f155fe8be094bc6ba8f1"
+      }
+    ]
+  },
+  "exact_downloaded_suite_archive_base64": "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",
+  "suite_archive_note": "The complete exact downloaded ZIP preserves all four original JSON members losslessly, including the unmodified pre-download runtime F60 phase.",
+  "actual_hosted_reader": {
+    "status": "PUBLISHED_READER_PROJECTION_PASS",
+    "source_commit": "a09ff2d2a460db412ac1a505fef7eb330c0c341e",
+    "files": 315,
+    "html_pages": 143,
+    "local_links": 28136,
+    "frozen_snapshots": 4,
+    "browser_execution": false,
+    "new_release_published": false,
+    "documentation": "0.4.4",
+    "source_release": "v0.3.6",
+    "shared_guides": 21,
+    "wiki_files": 23,
+    "preserved_selected_files": 779,
+    "maintained_html_pages": 31
+  },
+  "actual_channels": {
+    "status": "PUBLISHED_READER_PROJECTION_PASS",
+    "source_commit": "a09ff2d2a460db412ac1a505fef7eb330c0c341e",
+    "files": 315,
+    "html_pages": 143,
+    "local_links": 28136,
+    "frozen_snapshots": 4,
+    "browser_execution": false,
+    "new_release_published": false,
+    "documentation": "0.4.4",
+    "source_release": "v0.3.6",
+    "shared_guides": 21,
+    "wiki_files": 23,
+    "preserved_selected_files": 779,
+    "maintained_html_pages": 31,
+    "live_release": {
+      "status": "LIVE_PUBLISHED_SOURCE_IDENTITY_PASS",
+      "tag": "v0.3.6",
+      "release_id": 428331704,
+      "published_source_commit": "58ff468ec4e8f3500ace6869601a25ea263c3d9f",
+      "documentation_source_commit": "a09ff2d2a460db412ac1a505fef7eb330c0c341e",
+      "assets": 6
+    },
+    "actual_channels": {
+      "status": "ACTUAL_PUBLISHED_READER_CHANNELS_PASS",
+      "checked_at_utc": "2026-10-30T07:22:35.768456+00:00",
+      "documentation_source_commit": "a09ff2d2a460db412ac1a505fef7eb330c0c341e",
+      "source_release": "v0.3.6",
+      "published_source_commit": "58ff468ec4e8f3500ace6869601a25ea263c3d9f",
+      "root_manifest_sha256": "6f68e36a0a6e5f427e641999673b0e2e1f631db1b3e9abd08214bebf5a3dc3c4",
+      "wiki_commit": "156e68cd61eb2d1411a4a5f7bfa042f970ca60a5",
+      "wiki_files": 23,
+      "pages_http_responses": 314,
+      "responses": [
+        {
+          "path": "THIRD-PARTY-DOCUMENTATION.txt",
+          "bytes": 1089,
+          "sha256": "757ad3a1219a88aa2341cc83f0dc1d0d8884b72ce684e2d6e8714dff073b9ca8",
+          "http_status": 200
+        },
+        {
+          "path": "WIDOCO-Apache-2.0.txt",
+          "bytes": 11385,
+          "sha256": "f6bde110648aedc2ddf28bb2ddd7d110ffd02cfd36f64e55f7de7938b3d02287",
+          "http_status": 200
+        },
+        {
+          "path": "current/assets/complete-model.svg",
+          "bytes": 2315785,
+          "sha256": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+          "http_status": 200
+        },
+        {
+          "path": "current/assets/filter.js",
+          "bytes": 1086,
+          "sha256": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+          "http_status": 200
+        },
+        {
+          "path": "current/assets/portal.css",
+          "bytes": 9359,
+          "sha256": "0987488cda1aae98c68e6d330325f43f8a14f9bd8e1ce33d852b5a01fd4ed54c",
+          "http_status": 200
+        },
+        {
+          "path": "current/assets/reader.css",
+          "bytes": 1197,
+          "sha256": "853031b625dabec89dd6e3d86ba4cacd3ac70b95c4ed663b6e04b0701c23ce24",
+          "http_status": 200
+        },
+        {
+          "path": "current/assets/selected-model.svg",
+          "bytes": 736456,
+          "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+          "http_status": 200
+        },
+        {
+          "path": "current/downloads/CC-BY-4.0.txt",
+          "bytes": 17023,
+          "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+          "http_status": 200
+        },
+        {
+          "path": "current/downloads/CITATION.cff",
+          "bytes": 1633,
+          "sha256": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
+          "http_status": 200
+        },
+        {
+          "path": "current/downloads/LICENSE",
+          "bytes": 1191,
+          "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+          "http_status": 200
+        },
+        {
+          "path": "current/downloads/MIT.txt",
+          "bytes": 1155,
+          "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+          "http_status": 200
+        },
+        {
+          "path": "current/downloads/NOTICE.md",
+          "bytes": 2377,
+          "sha256": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce",
+          "http_status": 200
+        },
+        {
+          "path": "current/downloads/RIGHTS.md",
+          "bytes": 2834,
+          "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+          "http_status": 200
+        },
+        {
+          "path": "current/downloads/SHA256SUMS.txt",
+          "bytes": 713,
+          "sha256": "27c5a9fc39869adf953d681e6dc29144be384fe2603b7f3c68e55ea143fcc960",
+          "http_status": 200
+        },
+        {
+          "path": "current/downloads/index.html",
+          "bytes": 9317,
+          "sha256": "3d162aaf6e7b28c1dfa35c5a182ee711dcb1211ff9d2c3b2a4a87a109d5f77d1",
+          "http_status": 200
+        },
+        {
+          "path": "current/downloads/riskium-model.json",
+          "bytes": 328986,
+          "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+          "http_status": 200
+        },
+        {
+          "path": "current/downloads/riskium.ontouml.json",
+          "bytes": 434181,
+          "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+          "http_status": 200
+        },
+        {
+          "path": "current/downloads/typed-core.json",
+          "bytes": 315732,
+          "sha256": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+          "http_status": 200
+        },
+        {
+          "path": "current/explore/graph.json",
+          "bytes": 59421,
+          "sha256": "865ec4717967315793851766f6a32ff99206b8c402b2afd249327413ed045f7c",
+          "http_status": 200
+        },
+        {
+          "path": "current/explore/index.html",
+          "bytes": 172085,
+          "sha256": "a54e16850c8a21403e39a25a71aedabc9af8545e49be590c6fee0f87f724bf7c",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Artifact-Versions.html",
+          "bytes": 12437,
+          "sha256": "e941d993b8f7f669e41ecb99c4f7540c7e04de624d71a5cae307fe8d81909a2e",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Citation.html",
+          "bytes": 8446,
+          "sha256": "ddc9e2241a4d617f79db9e058eb73436378561f3a8e3f6a70c77bd9a94f01e16",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Competency-Questions.html",
+          "bytes": 9788,
+          "sha256": "2655c791389bd9ff18c95d4cabfd7fdb64f326e4648cbc05affd4e2b175406cd",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Database-Assurance.html",
+          "bytes": 16165,
+          "sha256": "db64723d04f806e7c344e1db1d70490cf72f5ba7c3ac494e3475482e205ad018",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Decisions.html",
+          "bytes": 9887,
+          "sha256": "e78dbc979c8da29dc0f9e1f0cf14e7986751691cd6033a2d1bdeb5ea73e834ca",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Evaluation.html",
+          "bytes": 14508,
+          "sha256": "de2847492bfe1f7b8fab0f35213bc2c0a9cb7caa88c5152670b118117fde5a60",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Formalization.html",
+          "bytes": 93204,
+          "sha256": "bdbabd6971780e70bfe7ca4f8c508b896e4cd6538306a18007bb1062f82dcfae",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Home.html",
+          "bytes": 10500,
+          "sha256": "81d26687c658f66f4e44aba92e050ad8b05a17a5837775feb123ea9878442647",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Limitations.html",
+          "bytes": 10464,
+          "sha256": "6b114825d36c4ebef9af2a70a69c46f06066e42e9203294c80cd7c860c0a3b9a",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Overview.html",
+          "bytes": 9405,
+          "sha256": "20c5b67af1c57f9d10f83318bece9a8b32b7e5749b6b9c49f3592fe804bb0c74",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Publication-Comparison.html",
+          "bytes": 8701,
+          "sha256": "757e5a9b198e8f1e8710e6764dd2af62e9968bf53e206818a30bb49889e50f9d",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Publication.html",
+          "bytes": 12435,
+          "sha256": "221ee88b02a6fef50faea84bbb0ec8abb8a0c1c5b951ab23eeae0f22b1f6fa9f",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Quality.html",
+          "bytes": 8966,
+          "sha256": "4512fbb3deac10a7bff879d89e90f64698a655ec6b264ee5174cc215be25c818",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/References.html",
+          "bytes": 8740,
+          "sha256": "cdb380f69fcb9c61bee40a2d3549e8abc2738dca6374cb70f4ee3310429e6d01",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Reproduce.html",
+          "bytes": 18136,
+          "sha256": "1c97ee658c5c8b633717006e16babe782dceb849b5d723d77bd857abb00cd883",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Requirements.html",
+          "bytes": 9575,
+          "sha256": "c4f056639778010d79a7e186af94a84a00060b819cc53eae9ee8ea6ac0e22ed4",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Scope.html",
+          "bytes": 8248,
+          "sha256": "811749a5902daabb358845cccb39a2816c3573630328a462f186bc57e7b6c83f",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Traceability.html",
+          "bytes": 15474,
+          "sha256": "551e3d104999a6067796401513f1a249d563eff6df86dab91ecb46aefd052b6a",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Using-the-Model.html",
+          "bytes": 13238,
+          "sha256": "f526334a897e1b86f2e9d2b422b0c9f2b59c05233822fd9b873223a9b1ba7a29",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Visualization.html",
+          "bytes": 9771,
+          "sha256": "eedf06962c281d6f674893da36df3d8fccd8cd62062cd48663aea8f44015ea17",
+          "http_status": 200
+        },
+        {
+          "path": "current/guide/Work-Plan.html",
+          "bytes": 9757,
+          "sha256": "fb6e24451a78addaf8cbe0e682bd50e20c04f022d84dcac3739f9b572c88d02e",
+          "http_status": 200
+        },
+        {
+          "path": "current/index.html",
+          "bytes": 10835,
+          "sha256": "4cf5d7f965daed10b98b392b29b1777bb3c054fdcdfd63b4a2078a7b602c8923",
+          "http_status": 200
+        },
+        {
+          "path": "current/publication-manifest.json",
+          "bytes": 13869,
+          "sha256": "b1cd17d825b7dd11f04c542d1f867ad467233ea237e9528dbf6bcadb2f67bb64",
+          "http_status": 200
+        },
+        {
+          "path": "current/published-status.json",
+          "bytes": 5472,
+          "sha256": "faafe5b7f435eb724db58257ce0f9868db96d1f7439267b088252ae106bb532d",
+          "http_status": 200
+        },
+        {
+          "path": "current/reference/diagrams/index.html",
+          "bytes": 8011,
+          "sha256": "d756bb3bd99940dd744fd29179c4106bfaf909964ecc9c73e28a6026d05dd00a",
+          "http_status": 200
+        },
+        {
+          "path": "current/reference/native/index.html",
+          "bytes": 99747,
+          "sha256": "6b12cc899dc94f7dd8ca5af92446dece22ccb67853cf3adc2954d7da5068b69f",
+          "http_status": 200
+        },
+        {
+          "path": "current/reference/search.html",
+          "bytes": 111482,
+          "sha256": "2d60226f4ee011bc439ba6d7c6aa7ab2e947e29bc42e6bbf842c4208d26468e0",
+          "http_status": 200
+        },
+        {
+          "path": "current/webvowl/coverage.json",
+          "bytes": 403378,
+          "sha256": "bebe79ba85ad4f3d6c920b101046dbee84a3121b48ae0f395461220a8ec3ae31",
+          "http_status": 200
+        },
+        {
+          "path": "current/webvowl/data/riskium.json",
+          "bytes": 162349,
+          "sha256": "4b96dfd769858256a13aedf760e32bb64aa740437d9dc5cfc278787ae41fbdc2",
+          "http_status": 200
+        },
+        {
+          "path": "current/webvowl/index.html",
+          "bytes": 10576,
+          "sha256": "856258ad209a83abb9f2e00629bd428145cb43d96c99c5bee61aca7c574980c9",
+          "http_status": 200
+        },
+        {
+          "path": "current/webvowl/vendor/D3-BSD.txt",
+          "bytes": 1429,
+          "sha256": "e4796bd1fdc09e06a3683957a177d59b38aec4143df81b2d25472438f5763482",
+          "http_status": 200
+        },
+        {
+          "path": "current/webvowl/vendor/Lodash-MIT.txt",
+          "bytes": 1952,
+          "sha256": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc",
+          "http_status": 200
+        },
+        {
+          "path": "current/webvowl/vendor/WebVOWL-MIT.txt",
+          "bytes": 1167,
+          "sha256": "d07986d8f3441f0a563f237aa3778489c763def2e151911e1774a18deff89cde",
+          "http_status": 200
+        },
+        {
+          "path": "current/webvowl/vendor/d3.min.js",
+          "bytes": 151725,
+          "sha256": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7",
+          "http_status": 200
+        },
+        {
+          "path": "current/webvowl/vendor/provenance.json",
+          "bytes": 2097,
+          "sha256": "bcbb184bfec22d57732baffd3e812dbf5eda8997c2f754c80be7c38316ab1704",
+          "http_status": 200
+        },
+        {
+          "path": "current/webvowl/vendor/webvowl.css",
+          "bytes": 5341,
+          "sha256": "067bb2fe6dfb69a4ef4be734a7b3788335f4c3cd419ce3e42d86c3cf302c49f8",
+          "http_status": 200
+        },
+        {
+          "path": "current/webvowl/vendor/webvowl.js",
+          "bytes": 751389,
+          "sha256": "a46d5a71e0d8d05aad6fd3ea4ed4e2cc66ba738958a04aa2dc7568f31f2c2006",
+          "http_status": 200
+        },
+        {
+          "path": "current/webvowl/viewer.css",
+          "bytes": 3629,
+          "sha256": "9c764071adcbca0664fd9bc4431e0e1752f83092a869f1e65c70b2b4f13e43d7",
+          "http_status": 200
+        },
+        {
+          "path": "current/webvowl/viewer.js",
+          "bytes": 10794,
+          "sha256": "fab10c32e3ce34c48d8eb8bda7e05bb4e703d6681260cf26a9411ed2bf301869",
+          "http_status": 200
+        },
+        {
+          "path": "current/widoco/index-en.html",
+          "bytes": 332128,
+          "sha256": "b34ad28bd740f517d303b95112524269169507ca8ca7a896a1458fec6d78ab25",
+          "http_status": 200
+        },
+        {
+          "path": "current/widoco/ontology.jsonld",
+          "bytes": 325242,
+          "sha256": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+          "http_status": 200
+        },
+        {
+          "path": "current/widoco/ontology.nt",
+          "bytes": 382810,
+          "sha256": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+          "http_status": 200
+        },
+        {
+          "path": "current/widoco/ontology.owl",
+          "bytes": 317036,
+          "sha256": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+          "http_status": 200
+        },
+        {
+          "path": "current/widoco/ontology.ttl",
+          "bytes": 82492,
+          "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+          "http_status": 200
+        },
+        {
+          "path": "current/widoco/provenance/provenance-en.html",
+          "bytes": 6910,
+          "sha256": "5bdae460b125906a820750c2cb95deabb6f831ce0b6f9193d2e21b80d047cee2",
+          "http_status": 200
+        },
+        {
+          "path": "current/widoco/resources/extra.css",
+          "bytes": 1846,
+          "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+          "http_status": 200
+        },
+        {
+          "path": "current/widoco/resources/owl.css",
+          "bytes": 4419,
+          "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+          "http_status": 200
+        },
+        {
+          "path": "current/widoco/resources/primer.css",
+          "bytes": 2496,
+          "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+          "http_status": 200
+        },
+        {
+          "path": "current/widoco/resources/rec.css",
+          "bytes": 2687,
+          "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+          "http_status": 200
+        },
+        {
+          "path": "current/widoco/resources/riskium.css",
+          "bytes": 2381,
+          "sha256": "b6bda9ae35ba69dec80a60435f9720bfff2cc490ca66b1cd7f76899cb69a4d07",
+          "http_status": 200
+        },
+        {
+          "path": "current/widoco/serialization-receipt.json",
+          "bytes": 645,
+          "sha256": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d",
+          "http_status": 200
+        },
+        {
+          "path": "current/widoco/tool-provenance.json",
+          "bytes": 2632,
+          "sha256": "265d2b3bdd4a1039a728637b15d0dbdfdefe87929f1ff633919342dc1fb35c5f",
+          "http_status": 200
+        },
+        {
+          "path": "index.html",
+          "bytes": 323,
+          "sha256": "9774dde5d2f1d7464f99be2dec394c1d086afbba76d7518a689b075b4ec99fdc",
+          "http_status": 200
+        },
+        {
+          "path": "interface-review.html",
+          "bytes": 3648,
+          "sha256": "26d47996a29bf0d47d135edf5a331d4cca7e4b07ca9bb7d8e92d377024c59aee",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/assets/complete-model.svg",
+          "bytes": 2315785,
+          "sha256": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/assets/filter.js",
+          "bytes": 1086,
+          "sha256": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/assets/portal.css",
+          "bytes": 3830,
+          "sha256": "8769420abcb7cb9470dbae07e6d2bd78679dcc6f0d138dd09bd16188d9b6aaaf",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/assets/selected-model.svg",
+          "bytes": 736456,
+          "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/downloads/CC-BY-4.0.txt",
+          "bytes": 17023,
+          "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/downloads/CITATION.cff",
+          "bytes": 1590,
+          "sha256": "32d61999936e92161f1f36a80843f8c4de43658cfddf1e6c9419d8097b8357db",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/downloads/LICENSE",
+          "bytes": 1191,
+          "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/downloads/MIT.txt",
+          "bytes": 1155,
+          "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/downloads/NOTICE.md",
+          "bytes": 1886,
+          "sha256": "92a19f4d4025128c5d3d534d0df1888c768148aa5fe0f25442a7049eb828a46f",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/downloads/RIGHTS.md",
+          "bytes": 2834,
+          "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/downloads/SHA256SUMS.txt",
+          "bytes": 713,
+          "sha256": "9bdf3f0c2ac212ae33552405dfa7edd6b343ac9f569c15d12c216d61020bae16",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/downloads/index.html",
+          "bytes": 5429,
+          "sha256": "732abd49e156e63176374b5b53ad4ea481497d3810ff2e90df419b265368ad6d",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/downloads/riskium-model.json",
+          "bytes": 328986,
+          "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/downloads/riskium.ontouml.json",
+          "bytes": 434181,
+          "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/downloads/typed-core.json",
+          "bytes": 315732,
+          "sha256": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/explore/graph.json",
+          "bytes": 59421,
+          "sha256": "378989de1e45a53894dddccd50773c1251efe6b06634048ea5045b32466c4e80",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/explore/index.html",
+          "bytes": 168812,
+          "sha256": "f5cac921eef3434b0fcb1b0020bd76d4ab09ab1b6aa14d00753bcdc1aab3e139",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Artifact-Versions.html",
+          "bytes": 9176,
+          "sha256": "2b23f3dcd19ccddba60a1b39912fdd9820b171d84aad1a9822d78d5bfc4b8e50",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Citation.html",
+          "bytes": 4813,
+          "sha256": "b1ce3fe5c0e7a4c819e40c85bdae9013ee6b2e0d02fc6c9d51f1382c5a7f7eb6",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Competency-Questions.html",
+          "bytes": 7631,
+          "sha256": "2f72a07ba676c890c9356622a077a78b1c19be1ab2a4cd6db1b9db14a07f2136",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Database-Assurance.html",
+          "bytes": 14388,
+          "sha256": "dc55465cb9e35995707c6023013525ceaaac92cd13bd31141fffd56a7f43941d",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Decisions.html",
+          "bytes": 5663,
+          "sha256": "54e7e952cea66f465020206cf43471689a170c7bcc1b59f13a7eaab67e77ae7b",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Evaluation.html",
+          "bytes": 13807,
+          "sha256": "757e039b353d83ba3cd77a84b77781f7c9b2df1ff4a8f33988a8df2fd66c745a",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Formalization.html",
+          "bytes": 15364,
+          "sha256": "8148a90c0b4678eb1ac92a1b319ed95efa98e17172fb156fe8e6cf87e466452b",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Limitations.html",
+          "bytes": 6721,
+          "sha256": "c7dfd8fa93a307df2f58cc12538886fcb85b024a9bb2edfb13fb980a0e6c1590",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Overview.html",
+          "bytes": 4900,
+          "sha256": "7e958c0ba98f344e8db3ccee7cd5f29f313d1ef243108eaa8f22ac0fd18e3f59",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Publication-Comparison.html",
+          "bytes": 10880,
+          "sha256": "5069a25fc877d9afda90f929d1d0417ab83033199441c6006871f1c3b1d3f1a1",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Quality.html",
+          "bytes": 34948,
+          "sha256": "b18daffed638580d4c20d1657f5eb3b189eb4666c6d6b83221991973350b962d",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/References.html",
+          "bytes": 32538,
+          "sha256": "46bc6ab9aa8a8c3d28787a7b6750e58ebd4b72e0dc38301de8d617ed418a3393",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Reproduce.html",
+          "bytes": 21192,
+          "sha256": "ae61e61c283a98fefe4f9c3cae6c1d64eb26b8ae643eceb3226f3f67b86bdbb5",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Requirements.html",
+          "bytes": 15736,
+          "sha256": "335285ac39a10e49c6a4594f9939c92567be22d9912bf24fcb3cef91b4eda670",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Traceability.html",
+          "bytes": 13416,
+          "sha256": "703d631688fbe65c2ace0468ce6139357be5d9d8808463f7c8417f3ae2de6680",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/guide/Work-Plan.html",
+          "bytes": 13872,
+          "sha256": "24357382b823c2bbfddf9e8039f5642f0439e4d878b576b6e736af604c4ddd47",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/index.html",
+          "bytes": 5798,
+          "sha256": "91906ea1f8022742724840b5b8bced0a6d3c7f0c846703672c53acfaa49fccbf",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/publication-manifest.json",
+          "bytes": 3596,
+          "sha256": "6fbf5db63b58ffe0c3765b646fb914c9c1784d14b0c532d9a37318ed0c901f75",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/reference/native/index.html",
+          "bytes": 93850,
+          "sha256": "56b314eb86d8e6d2d50acb31b8fa08ac488f1b0ff0ca857ff8ed730e0d70b008",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/widoco/index-en.html",
+          "bytes": 289278,
+          "sha256": "5b4f5e865a9cb6ce9d2c3a6ba250ca0182c3062624b6887e2f3c5bcaf6803c8d",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/widoco/ontology.jsonld",
+          "bytes": 325242,
+          "sha256": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/widoco/ontology.nt",
+          "bytes": 382810,
+          "sha256": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/widoco/ontology.owl",
+          "bytes": 317036,
+          "sha256": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/widoco/ontology.ttl",
+          "bytes": 82492,
+          "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/widoco/provenance/provenance-en.html",
+          "bytes": 785,
+          "sha256": "dda12e87fceab815516f560415acc2b32c7ac3443257f48f669e140af9e4da30",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/widoco/resources/extra.css",
+          "bytes": 1846,
+          "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/widoco/resources/owl.css",
+          "bytes": 4419,
+          "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/widoco/resources/primer.css",
+          "bytes": 2496,
+          "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/widoco/resources/rec.css",
+          "bytes": 2687,
+          "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/widoco/serialization-receipt.json",
+          "bytes": 645,
+          "sha256": "641813c62cf1bd72630db02269068cd1e998faf387a0c9c4edfbd5df4556820f",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1-rc.1/widoco/tool-provenance.json",
+          "bytes": 1788,
+          "sha256": "80fe09df88eb2adb751b225b20e093c36b7be4c5fbd5f23073b630810efd53b8",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/assets/complete-model.svg",
+          "bytes": 2315785,
+          "sha256": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/assets/filter.js",
+          "bytes": 1086,
+          "sha256": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/assets/portal.css",
+          "bytes": 3830,
+          "sha256": "8769420abcb7cb9470dbae07e6d2bd78679dcc6f0d138dd09bd16188d9b6aaaf",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/assets/selected-model.svg",
+          "bytes": 736456,
+          "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/downloads/CC-BY-4.0.txt",
+          "bytes": 17023,
+          "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/downloads/CITATION.cff",
+          "bytes": 1633,
+          "sha256": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/downloads/LICENSE",
+          "bytes": 1191,
+          "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/downloads/MIT.txt",
+          "bytes": 1155,
+          "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/downloads/NOTICE.md",
+          "bytes": 2377,
+          "sha256": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/downloads/RIGHTS.md",
+          "bytes": 2834,
+          "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/downloads/SHA256SUMS.txt",
+          "bytes": 713,
+          "sha256": "27c5a9fc39869adf953d681e6dc29144be384fe2603b7f3c68e55ea143fcc960",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/downloads/index.html",
+          "bytes": 5969,
+          "sha256": "51f345aa9aa4e88c1b97c5fcc9535440baf8c9b6056dfdd5da3a30cdb8c7827c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/downloads/riskium-model.json",
+          "bytes": 328986,
+          "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/downloads/riskium.ontouml.json",
+          "bytes": 434181,
+          "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/downloads/typed-core.json",
+          "bytes": 315732,
+          "sha256": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/explore/graph.json",
+          "bytes": 59421,
+          "sha256": "865ec4717967315793851766f6a32ff99206b8c402b2afd249327413ed045f7c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/explore/index.html",
+          "bytes": 169370,
+          "sha256": "ca77f68aa40bd62f197159701bd1fb1e12addb3a4c1edb66e9e5e64fe7704b3d",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Artifact-Versions.html",
+          "bytes": 10301,
+          "sha256": "9bd60375d35b9d0e3aa809f886617ad89dbba87d95403dcf3035c2ac263ad364",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Citation.html",
+          "bytes": 5719,
+          "sha256": "626b9e3037a786db523a5ec5b39e64abd061e47d94afffcb47e985505699307d",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Competency-Questions.html",
+          "bytes": 8615,
+          "sha256": "aef373d2dbb548d179778f368547d54749e9bf0caec4a274224d855bd5f1726e",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Database-Assurance.html",
+          "bytes": 15592,
+          "sha256": "c92491062b05df9000fa76f8d0c055e4c7afb3011acb23561a394698dc248d4b",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Decisions.html",
+          "bytes": 6656,
+          "sha256": "9c516713f1bc4015f208cff69e8e5974ee375402e4bc35c854061365519cafb7",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Evaluation.html",
+          "bytes": 7475,
+          "sha256": "8241129e6206d4aaee0a44f516ebf1448493deaec61da5e2a57fbcb2f79eec0b",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Formalization.html",
+          "bytes": 16319,
+          "sha256": "432e3277a5292763877b19cc1c41068f298c0a80a65b2de7429f32d0c2ff4008",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Home.html",
+          "bytes": 6106,
+          "sha256": "dbf30abc4ad788e6091b0f099bfb33abdcf142e6a0c9bb2d9ad974eccc1e8a19",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Limitations.html",
+          "bytes": 7872,
+          "sha256": "b6f34580f69f826f5ef5f30221267cdd2dda2b717d63323f147cdd8db5073dc2",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Overview.html",
+          "bytes": 5818,
+          "sha256": "aa74c8d47c272387a4e6b8f3cc1ad542177c06d35b9ab859b342631aba983939",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Publication-Comparison.html",
+          "bytes": 11876,
+          "sha256": "6e40631bdcae9238962dae0ff618c1e02fc19b787196294366223671b204e8ae",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Publication.html",
+          "bytes": 6064,
+          "sha256": "b64588f951d75420e07edeba9552a5275ac70a06e94803b0342503921046beca",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Quality.html",
+          "bytes": 35961,
+          "sha256": "f10575edb61efaffb5a5862091c123d143235b27758afc6f3d784848fc0fd015",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/References.html",
+          "bytes": 33538,
+          "sha256": "de693edd736339cc0f4499b87f907e0457c2df233c97cdce9f7f1a0cfa73e196",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Reproduce.html",
+          "bytes": 22269,
+          "sha256": "33aa9d582b4cef5b029a7fd7fe0919f65350df7ee4b3e42eec1bdf1d7bac748c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Requirements.html",
+          "bytes": 16772,
+          "sha256": "15ddb773c3d33920e2941c67cdccfd6679a7d7b57af619d461790d804d7183cb",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Scope.html",
+          "bytes": 5472,
+          "sha256": "da2e85b389f39be43a9184c3fcf68541256ad401ca412e126142a01f27e8a135",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Traceability.html",
+          "bytes": 14660,
+          "sha256": "dfa3a9b6bcd8c3fb2bd45c0e13dd0a0fca20f8c1b8f4dd99ddfd318198a205a6",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Using-the-Model.html",
+          "bytes": 5483,
+          "sha256": "d3b2ba2a9a3e3ae2fbdd6201e4bb9eaddfdf0dde1fb3919ab53066ee8fedaf91",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Visualization.html",
+          "bytes": 5282,
+          "sha256": "ffed628591da7e60f00fbf27831e3c760262d95158f35c0e3c08794f3137fe5c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/guide/Work-Plan.html",
+          "bytes": 14949,
+          "sha256": "9689789eaccffe72c04faa7ae57b0a0deb840001cabb62d6d0ef4c1c5ed96549",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/index.html",
+          "bytes": 6330,
+          "sha256": "0b2d812c3ea39ac2064c8fef44936799ed9571359c383b4d4db9d85878c2c01d",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/publication-manifest.json",
+          "bytes": 4369,
+          "sha256": "480e4e19921b352a6900f34226192dc968a304dce1565056e97a2511ec0abbb3",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/reference/native/index.html",
+          "bytes": 94426,
+          "sha256": "6b1c2cec42b5595671dffd91a6c83295802e3e04edd7d19d77cc7927d55ba1bf",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/widoco/index-en.html",
+          "bytes": 289610,
+          "sha256": "59b32e6a24ec6e67c1dc2ce590fccc672e90e442b76fd3e281e2d04528c28e6d",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/widoco/ontology.jsonld",
+          "bytes": 325242,
+          "sha256": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/widoco/ontology.nt",
+          "bytes": 382810,
+          "sha256": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/widoco/ontology.owl",
+          "bytes": 317036,
+          "sha256": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/widoco/ontology.ttl",
+          "bytes": 82492,
+          "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/widoco/provenance/provenance-en.html",
+          "bytes": 1134,
+          "sha256": "d58739bb51b6da79b49e7825c3d3e92a27e9288529181bac132e745b02699d2e",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/widoco/resources/extra.css",
+          "bytes": 1846,
+          "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/widoco/resources/owl.css",
+          "bytes": 4419,
+          "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/widoco/resources/primer.css",
+          "bytes": 2496,
+          "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/widoco/resources/rec.css",
+          "bytes": 2687,
+          "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/widoco/serialization-receipt.json",
+          "bytes": 645,
+          "sha256": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.1/widoco/tool-provenance.json",
+          "bytes": 3289,
+          "sha256": "243f6a56902007570c43e9f3a85e1e36ae510fc7a9dfc2fcae945e8f7d211b4e",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/assets/complete-model.svg",
+          "bytes": 2315785,
+          "sha256": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/assets/filter.js",
+          "bytes": 1086,
+          "sha256": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/assets/portal.css",
+          "bytes": 9359,
+          "sha256": "0987488cda1aae98c68e6d330325f43f8a14f9bd8e1ce33d852b5a01fd4ed54c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/assets/selected-model.svg",
+          "bytes": 736456,
+          "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/downloads/CC-BY-4.0.txt",
+          "bytes": 17023,
+          "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/downloads/CITATION.cff",
+          "bytes": 1633,
+          "sha256": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/downloads/LICENSE",
+          "bytes": 1191,
+          "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/downloads/MIT.txt",
+          "bytes": 1155,
+          "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/downloads/NOTICE.md",
+          "bytes": 2377,
+          "sha256": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/downloads/RIGHTS.md",
+          "bytes": 2834,
+          "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/downloads/SHA256SUMS.txt",
+          "bytes": 713,
+          "sha256": "27c5a9fc39869adf953d681e6dc29144be384fe2603b7f3c68e55ea143fcc960",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/downloads/index.html",
+          "bytes": 8764,
+          "sha256": "1728d494c4ea2a2614bf88504056ce51ee8356f3f331728130b543692f66bfb1",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/downloads/riskium-model.json",
+          "bytes": 328986,
+          "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/downloads/riskium.ontouml.json",
+          "bytes": 434181,
+          "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/downloads/typed-core.json",
+          "bytes": 315732,
+          "sha256": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/explore/graph.json",
+          "bytes": 59421,
+          "sha256": "865ec4717967315793851766f6a32ff99206b8c402b2afd249327413ed045f7c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/explore/index.html",
+          "bytes": 172178,
+          "sha256": "a89906fba270107c6d34c0c0d0a204f4c268a10aec3272b5b4f9b0d4396e6c78",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Artifact-Versions.html",
+          "bytes": 16649,
+          "sha256": "5b57e27470bfeb806ae97212bd81dea63aa766ef595732f2c10d6589501f0616",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Citation.html",
+          "bytes": 8314,
+          "sha256": "968af1fba423806a7e8eef5dc4b42245050318e3a5e0921edef85d072e274fe9",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Competency-Questions.html",
+          "bytes": 11677,
+          "sha256": "d1f83a94b8d48b93efa4c79593827fc2fcdff157341a64176d1c5acf344b8d4c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Database-Assurance.html",
+          "bytes": 19166,
+          "sha256": "52415fadda1480d5f976d1cc380fe5234b9c8e3fa642f7f2e476d50b634fab56",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Decisions.html",
+          "bytes": 9784,
+          "sha256": "bcdb7fa31abec01e4a02cff92445d288cf58941fadd7a807e6a1e0272a18c0b8",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Evaluation.html",
+          "bytes": 11128,
+          "sha256": "5b3b69269b5995d0c98478b8ddbab82795d91b426600cdb54e6352d1b6e6e5a2",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Formalization.html",
+          "bytes": 89560,
+          "sha256": "1d5e26a64b741122cf4f54f454573166f7d15d4826eef8755c46d6bcc470d0cb",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Home.html",
+          "bytes": 9656,
+          "sha256": "6a9e26c44024f8ad3d84576eb4d5c994a5aef63ad0f23fa1ccac404359f5c154",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Limitations.html",
+          "bytes": 10533,
+          "sha256": "fb685f6854a3126373ec46ebeb105765722c35f90d3f3cb073972f7b4917cf03",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Overview.html",
+          "bytes": 8470,
+          "sha256": "f5485a182a065466e2766d1d0c001de4cb3962a12fc6324c4129270fc9b60da2",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Publication-Comparison.html",
+          "bytes": 14597,
+          "sha256": "23adb98a3187a6d44748180ec73677e6b317eb1ffb53b824b7b0be519812c9bc",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Publication.html",
+          "bytes": 10321,
+          "sha256": "a3c09db68d462405357fdf3374e1fbfdc773597901c40056a064d4035adb37e7",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Quality.html",
+          "bytes": 39697,
+          "sha256": "fa2e9481b6402a405d5727949b767d94021e0996a6aa1c62eb7e9e4a776d236b",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/References.html",
+          "bytes": 36987,
+          "sha256": "d2319f95d6ea10001b2f25b907c5c26d332eeb37f2a60bfaa2f26d4582c89d7a",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Reproduce.html",
+          "bytes": 28244,
+          "sha256": "99eebb8d51522192360750b57e484c6a7914383b6afb6f03deb1adc6a28c6559",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Requirements.html",
+          "bytes": 20327,
+          "sha256": "71f19a475b5bde99fc8bb8a5359b69a2b21bea284ad50c3f42da0690467d5f3a",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Scope.html",
+          "bytes": 8166,
+          "sha256": "2a2d69b7470d9ee97a4fadf0200197795e262508b1d22e62f677604ea5ee6fea",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Traceability.html",
+          "bytes": 18359,
+          "sha256": "b5c960a58ef2ff33132be11b189ce51331a62fa025538e98dde7a9693591efd2",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Using-the-Model.html",
+          "bytes": 8082,
+          "sha256": "0bd265c6365ba60e1c8af7cc9cb8e1a174cabe6494fdb5aff0a8ba29f197d103",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Visualization.html",
+          "bytes": 9944,
+          "sha256": "8933ca45ea7f696ae077724859c460e0c66f5fea96152ae572db64d59fb9d168",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/guide/Work-Plan.html",
+          "bytes": 13686,
+          "sha256": "efe5a961a5794d1ddb870c487f63cd5540c7d2bf8dcb43b291b7c95887df291f",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/index.html",
+          "bytes": 10749,
+          "sha256": "fc66f95ff6361126c990930dd82b6d9e58d14974e052dad037dbf5648fd34bc1",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/publication-manifest.json",
+          "bytes": 4440,
+          "sha256": "9b3fc79496d6fe3651f3d62f5fb668c650f8747aa8482f4faf513514ba7dc835",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/reference/diagrams/index.html",
+          "bytes": 8104,
+          "sha256": "e2dc0e178fde08144fb9e2ab00f19ce81c0ce361a819f976a33b2ef57ea4ced5",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/reference/native/index.html",
+          "bytes": 99739,
+          "sha256": "fd4145e7ffa86696ca83e4a33b335018063285d8ed28e5bde3b44d0ec7d780b2",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/reference/search.html",
+          "bytes": 111575,
+          "sha256": "e5da050b3829e071c7415677f7b7a348985cabd1524c539ea18a15af0d6b94a7",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/webvowl/coverage.json",
+          "bytes": 403378,
+          "sha256": "bebe79ba85ad4f3d6c920b101046dbee84a3121b48ae0f395461220a8ec3ae31",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/webvowl/data/riskium.json",
+          "bytes": 162349,
+          "sha256": "4b96dfd769858256a13aedf760e32bb64aa740437d9dc5cfc278787ae41fbdc2",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/webvowl/index.html",
+          "bytes": 10669,
+          "sha256": "adad4c5d2c0f4258d8abe4ab58ecedcc43419867d1f2c8b7178503475057e4fa",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/webvowl/vendor/D3-BSD.txt",
+          "bytes": 1429,
+          "sha256": "e4796bd1fdc09e06a3683957a177d59b38aec4143df81b2d25472438f5763482",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/webvowl/vendor/Lodash-MIT.txt",
+          "bytes": 1952,
+          "sha256": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/webvowl/vendor/WebVOWL-MIT.txt",
+          "bytes": 1167,
+          "sha256": "d07986d8f3441f0a563f237aa3778489c763def2e151911e1774a18deff89cde",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/webvowl/vendor/d3.min.js",
+          "bytes": 151725,
+          "sha256": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/webvowl/vendor/provenance.json",
+          "bytes": 2097,
+          "sha256": "bcbb184bfec22d57732baffd3e812dbf5eda8997c2f754c80be7c38316ab1704",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/webvowl/vendor/webvowl.css",
+          "bytes": 5341,
+          "sha256": "067bb2fe6dfb69a4ef4be734a7b3788335f4c3cd419ce3e42d86c3cf302c49f8",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/webvowl/vendor/webvowl.js",
+          "bytes": 751389,
+          "sha256": "a46d5a71e0d8d05aad6fd3ea4ed4e2cc66ba738958a04aa2dc7568f31f2c2006",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/webvowl/viewer.css",
+          "bytes": 3629,
+          "sha256": "9c764071adcbca0664fd9bc4431e0e1752f83092a869f1e65c70b2b4f13e43d7",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/webvowl/viewer.js",
+          "bytes": 10794,
+          "sha256": "fab10c32e3ce34c48d8eb8bda7e05bb4e703d6681260cf26a9411ed2bf301869",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/widoco/index-en.html",
+          "bytes": 332134,
+          "sha256": "04d7e47486d5a9b7946c388aeb5a1b060631a77cb71e31e63c3e4b8e277a257a",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/widoco/ontology.jsonld",
+          "bytes": 325242,
+          "sha256": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/widoco/ontology.nt",
+          "bytes": 382810,
+          "sha256": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/widoco/ontology.owl",
+          "bytes": 317036,
+          "sha256": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/widoco/ontology.ttl",
+          "bytes": 82492,
+          "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/widoco/provenance/provenance-en.html",
+          "bytes": 7116,
+          "sha256": "2b103029420d6028874986c3fb9f07ef33b74ae8470f15efc8c1877d9f84cfc9",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/widoco/resources/extra.css",
+          "bytes": 1846,
+          "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/widoco/resources/owl.css",
+          "bytes": 4419,
+          "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/widoco/resources/primer.css",
+          "bytes": 2496,
+          "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/widoco/resources/rec.css",
+          "bytes": 2687,
+          "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/widoco/resources/riskium.css",
+          "bytes": 2381,
+          "sha256": "b6bda9ae35ba69dec80a60435f9720bfff2cc490ca66b1cd7f76899cb69a4d07",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/widoco/serialization-receipt.json",
+          "bytes": 645,
+          "sha256": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.3/widoco/tool-provenance.json",
+          "bytes": 3483,
+          "sha256": "d9d6f1d00233edfa94294c6da2edf43618ba5a36e752fc44d1fe23ff05d904c5",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/assets/complete-model.svg",
+          "bytes": 2315785,
+          "sha256": "6ebb124e285c91f2c6872c294bd15330791c40d45f97d0269460649cc9252853",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/assets/filter.js",
+          "bytes": 1086,
+          "sha256": "27eb5f7ef175999e7560067db4290fba38c7fbf52d5c46e5267326c5df76234c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/assets/portal.css",
+          "bytes": 9359,
+          "sha256": "0987488cda1aae98c68e6d330325f43f8a14f9bd8e1ce33d852b5a01fd4ed54c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/assets/selected-model.svg",
+          "bytes": 736456,
+          "sha256": "3355c4c1692263c3333cbfaa0996aef4053d2031cab53b856c69bece4bc04e88",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/downloads/CC-BY-4.0.txt",
+          "bytes": 17023,
+          "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/downloads/CITATION.cff",
+          "bytes": 1633,
+          "sha256": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/downloads/LICENSE",
+          "bytes": 1191,
+          "sha256": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/downloads/MIT.txt",
+          "bytes": 1155,
+          "sha256": "a41e6505eeecc045691793eedd9ca88e4f71683cc8189a5343f1c2d167ea4f6c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/downloads/NOTICE.md",
+          "bytes": 2377,
+          "sha256": "884fd7753630a831bbd27f4213e710f2cab38bee6e66eb3646fa919b885743ce",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/downloads/RIGHTS.md",
+          "bytes": 2834,
+          "sha256": "12e8575c5b2d2226848dd7e34fc9a2d4b69bd24e432c77c41a859040934aab47",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/downloads/SHA256SUMS.txt",
+          "bytes": 713,
+          "sha256": "27c5a9fc39869adf953d681e6dc29144be384fe2603b7f3c68e55ea143fcc960",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/downloads/index.html",
+          "bytes": 9089,
+          "sha256": "111e9660919a3d28d0e6d8d3c89faa7ea4ba9e73284458592dd504f81d45a2b9",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/downloads/riskium-model.json",
+          "bytes": 328986,
+          "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/downloads/riskium.ontouml.json",
+          "bytes": 434181,
+          "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/downloads/typed-core.json",
+          "bytes": 315732,
+          "sha256": "d2a796fcf4b3ee0a3b9e178550231b91fde4b907db6ccecfca98607c83f7b311",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/explore/graph.json",
+          "bytes": 59421,
+          "sha256": "865ec4717967315793851766f6a32ff99206b8c402b2afd249327413ed045f7c",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/explore/index.html",
+          "bytes": 172178,
+          "sha256": "5e8293724f4cf0d9d0f9c810aed38f9ff1de67db69f40299a921f5d71efde1c8",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Artifact-Versions.html",
+          "bytes": 17962,
+          "sha256": "c197769a1d7f6b0bcb50346982e9e3f275fce806fd0912b76ba7a1956a2d754d",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Citation.html",
+          "bytes": 8314,
+          "sha256": "ef16ce8cd4d9b779f0f5609989733e08cbfb6268b3474a2ace245297880a1cef",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Competency-Questions.html",
+          "bytes": 11677,
+          "sha256": "5e3f80408a1e1b9470f10d6ac0bc2577c2c2bcf4f8c5b942a4c92d153f11b57f",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Database-Assurance.html",
+          "bytes": 19161,
+          "sha256": "5cd528d5fecb63eb100de226aed967b3385c28f2a63fab16d98e9a4601a4cdef",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Decisions.html",
+          "bytes": 9784,
+          "sha256": "5d451f6b1926873c3e92b3edd7b006a6f00e93e9a1d04553cc4f36533f0ca5a6",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Evaluation.html",
+          "bytes": 11807,
+          "sha256": "a18ce8c5d16c2c83184d89c423e98e82026f5f524be576b2af04d6692270c595",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Formalization.html",
+          "bytes": 89560,
+          "sha256": "56b1e16dbb14bab0e51f7eace102b70cb7f2f5bd0e4cff3f181754d9f58b7bae",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Home.html",
+          "bytes": 10236,
+          "sha256": "a2be895a3965e176df8e4bacbf39b632da6e6c8b14ab0e0d7a951357f6200ac6",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Limitations.html",
+          "bytes": 10533,
+          "sha256": "348bb3043ac704491d9c8de38385f99e8060f67dd600f4e94f5745a46bfb437a",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Overview.html",
+          "bytes": 8470,
+          "sha256": "6d3f63b23a55aa1b22b45f896ff5ee530d4dce151ce2d3a47cb839f52c9f52c0",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Publication-Comparison.html",
+          "bytes": 14597,
+          "sha256": "bc90d503587e19063b5d85b41685fbe0517a6a61f9774e50cf704344d320449f",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Publication.html",
+          "bytes": 11391,
+          "sha256": "8ef999dc53c9d83b7b0eae8b238f5c886e8d7920dd43c2da5daed22c90d386e5",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Quality.html",
+          "bytes": 39697,
+          "sha256": "54422590fd065ffe5c05b6f82261f9eb4b9f18457caa45d4e097f8a76e7b0d30",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/References.html",
+          "bytes": 36987,
+          "sha256": "0e3c5d82e5e41f136e5144c979dbd1856cfdabbf2c82f3f036cfed53a230d2d8",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Reproduce.html",
+          "bytes": 30818,
+          "sha256": "093f1ea998ce9317b9ca73159d791c61117d1358bb008b5b80ffcd30c3c78142",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Requirements.html",
+          "bytes": 20247,
+          "sha256": "4240cb57ec661113b2b16d4dd1a2469f6725fdbd15e8c024e4ade3679558ad0a",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Scope.html",
+          "bytes": 8166,
+          "sha256": "2a956e462809f0904ca132e1537d1dfeb8a9c658823528e74814ac63d1ec3eb4",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Traceability.html",
+          "bytes": 19099,
+          "sha256": "69c65370057e784d2f85d9d3215c086d340caa06bb339c12ac6def2c8b5ba382",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Using-the-Model.html",
+          "bytes": 8082,
+          "sha256": "e22139c2141a0455ef6023e1092e30d237c38aafe27b1152e97164d67779ee19",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Visualization.html",
+          "bytes": 9944,
+          "sha256": "d3bbbbdccb88777a4ca644d6cd17f366db2367a3d76fc8840c72795a8a7ce456",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/guide/Work-Plan.html",
+          "bytes": 14648,
+          "sha256": "e641ed821d88572464c93b9f42fcfff113c6d7d4af06d8af8b13a3e28a68cd58",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/index.html",
+          "bytes": 11595,
+          "sha256": "4129fa95873a17a997adb474e498fc2da40e15d8ff1d8304c6497d8fe9f12c5f",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/publication-manifest.json",
+          "bytes": 4752,
+          "sha256": "34b5eff6a456c7f87c2d15bd2a04e466b1b5c814df376f746a7e49c2849ef1be",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/reference/diagrams/index.html",
+          "bytes": 8104,
+          "sha256": "fd5d775594bc1f6b3ec4d147891647d2aa1ebb34a2465e28b5be172a55b34dd5",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/reference/native/index.html",
+          "bytes": 99739,
+          "sha256": "c4b859d01763c5bcc99f6aba9f9a1b2a750ad725d12e9db0a6a2c98916e2f537",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/reference/search.html",
+          "bytes": 111575,
+          "sha256": "dd0d880df6c84d9a3d60ad43d82d93f557ebc0992a4560b9fd32375473016875",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/webvowl/coverage.json",
+          "bytes": 403378,
+          "sha256": "bebe79ba85ad4f3d6c920b101046dbee84a3121b48ae0f395461220a8ec3ae31",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/webvowl/data/riskium.json",
+          "bytes": 162349,
+          "sha256": "4b96dfd769858256a13aedf760e32bb64aa740437d9dc5cfc278787ae41fbdc2",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/webvowl/index.html",
+          "bytes": 10669,
+          "sha256": "df45bddbae8097a8d5fa8d36d28b7e849135a3e3503e8a3b533bb66b3bc7b80a",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/webvowl/vendor/D3-BSD.txt",
+          "bytes": 1429,
+          "sha256": "e4796bd1fdc09e06a3683957a177d59b38aec4143df81b2d25472438f5763482",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/webvowl/vendor/Lodash-MIT.txt",
+          "bytes": 1952,
+          "sha256": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/webvowl/vendor/WebVOWL-MIT.txt",
+          "bytes": 1167,
+          "sha256": "d07986d8f3441f0a563f237aa3778489c763def2e151911e1774a18deff89cde",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/webvowl/vendor/d3.min.js",
+          "bytes": 151725,
+          "sha256": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/webvowl/vendor/provenance.json",
+          "bytes": 2097,
+          "sha256": "bcbb184bfec22d57732baffd3e812dbf5eda8997c2f754c80be7c38316ab1704",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/webvowl/vendor/webvowl.css",
+          "bytes": 5341,
+          "sha256": "067bb2fe6dfb69a4ef4be734a7b3788335f4c3cd419ce3e42d86c3cf302c49f8",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/webvowl/vendor/webvowl.js",
+          "bytes": 751389,
+          "sha256": "a46d5a71e0d8d05aad6fd3ea4ed4e2cc66ba738958a04aa2dc7568f31f2c2006",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/webvowl/viewer.css",
+          "bytes": 3629,
+          "sha256": "9c764071adcbca0664fd9bc4431e0e1752f83092a869f1e65c70b2b4f13e43d7",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/webvowl/viewer.js",
+          "bytes": 10794,
+          "sha256": "fab10c32e3ce34c48d8eb8bda7e05bb4e703d6681260cf26a9411ed2bf301869",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/widoco/index-en.html",
+          "bytes": 332134,
+          "sha256": "982df1a8a1dbe71dc6cf072681a8bd48f6ac386898e33a97782c4df034a3d063",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/widoco/ontology.jsonld",
+          "bytes": 325242,
+          "sha256": "f94f2522509d4ab8dc07397d74672e035f0e47d92da07111837ca111e60e2a10",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/widoco/ontology.nt",
+          "bytes": 382810,
+          "sha256": "3af1308291dd82b68ebd301b421b946acececf4f46b362ddb97af595f9a738dd",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/widoco/ontology.owl",
+          "bytes": 317036,
+          "sha256": "724719b158329fb8bd629f077698e7cda1034e92a832868ecd9296aa60bc6875",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/widoco/ontology.ttl",
+          "bytes": 82492,
+          "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/widoco/provenance/provenance-en.html",
+          "bytes": 7116,
+          "sha256": "474539ad61f9a4edeb3c5fdb6f7e3473589f5daefb36de37ce49ba696f78b220",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/widoco/resources/extra.css",
+          "bytes": 1846,
+          "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/widoco/resources/owl.css",
+          "bytes": 4419,
+          "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/widoco/resources/primer.css",
+          "bytes": 2496,
+          "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/widoco/resources/rec.css",
+          "bytes": 2687,
+          "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/widoco/resources/riskium.css",
+          "bytes": 2381,
+          "sha256": "b6bda9ae35ba69dec80a60435f9720bfff2cc490ca66b1cd7f76899cb69a4d07",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/widoco/serialization-receipt.json",
+          "bytes": 645,
+          "sha256": "e94675b37831d1cc5a2d2d174b265400c22bf1f9930092bfba455bbdf7507a6d",
+          "http_status": 200
+        },
+        {
+          "path": "releases/v0.3.4/widoco/tool-provenance.json",
+          "bytes": 3483,
+          "sha256": "e25e3d8066c106938a8ee10d8a6b1895d6b3c7496a1009cf4423c80425001d03",
+          "http_status": 200
+        },
+        {
+          "path": "site/index.html",
+          "bytes": 385,
+          "sha256": "d8f69c71e3d58d8eb7f2a2244b3c0308aa017af7a7ebf7625373a57d1bc02e0a",
+          "http_status": 200
+        },
+        {
+          "path": "versions/index.html",
+          "bytes": 8420,
+          "sha256": "00e92af5c1f87aa4f7631f283501ed0c4c355b3f1ed6e30f74b01853cd448236",
+          "http_status": 200
+        },
+        {
+          "path": "publication-manifest.json",
+          "bytes": 75197,
+          "sha256": "6f68e36a0a6e5f427e641999673b0e2e1f631db1b3e9abd08214bebf5a3dc3c4",
+          "http_status": 200
+        }
+      ],
+      "frozen_snapshots": 4,
+      "wiki_files_sha256": {
+        "Home.md": "b02bdf990e25cd4d86e1b16dcc1ca89723be752e2e34849bb1db0a7cbc77d0ec",
+        "Scope.md": "3af3d218af34928ed91bef8001b6fa991cf835c1006e20f448d62599af48f74c",
+        "Overview.md": "73f5c22c16a859bb222bfa67fe601d6f3523aee9c49673cc9fb9c56f582a0a8e",
+        "Modeling-Decisions.md": "44e34dd792138e16e02e375e01c38386d867085cf2d1c16dbebf55b2abb32d15",
+        "Requirements.md": "806b25dba0597071b696543babfd316a5f006cc319677abb0d575793c2552e6b",
+        "Artifact-Versions.md": "9560e35eff0398dea2a1b7adf3b61c8dc6c5c421f6bf3437469673c8c8d86512",
+        "Database-Assurance.md": "ad4ebc08a785b82ca86e3a220c1db73926b13dbe389d0a1fa34840dbfc9b43a3",
+        "Work-Plan.md": "cdca83b9b04b090974f3ca83409602231aabb208e7e2fda0b2cb26afb9ffb1b8",
+        "Publication-Comparison.md": "0e3fabba506d85dc07006a7cab20755538336819ed388628d2f25b100250666a",
+        "Competency-Questions.md": "22f1f71e5d423b35e8d29b69ec18a33caddbf866754545f199ed51f40a5d8a1e",
+        "Traceability.md": "ba2466dc24a3d44ea299d56aff0c86832d70c7c09c1e0ab266da7ca900ccd91c",
+        "References.md": "76c6774f7b71db8312d30652ff07f7178538650f47f2b57ac597f0acdf4ca228",
+        "Quality.md": "e81875877137112faada991c98cc67aaff22c38ae5997299283aa3614ef2df24",
+        "Formalization.md": "808d5ba670979fce68228f523ea4e14f93f24f0a841a0959dd1bbff7e2d7b06d",
+        "Evaluation.md": "b00a8d504aaa1aa3acf6d31b0407e01097d42bac4fe2bc9c651fb3446138e6b9",
+        "Reproduce.md": "012d3321861d25c03ca2a690c92dbe535917ff6397620b43bdf147294eac0b25",
+        "Citation.md": "d2a4b1bd7b4220bcbd1488838a60458a30b24c5bc99a32750cb9778eb53183e1",
+        "Limitations.md": "707fe27d0e851128a8cc70b2b0d8e51b5fc769393a9a4a87d55d373875124151",
+        "Using-the-Model.md": "8edd3736ee1d1477eee486e26325b1c3fc191b1bc70cf9e741abb11011548e7d",
+        "Visualization.md": "46b79304175ed461ea050c7a802a4d9d2e41f4b166f6739f27a84f2e2e127a75",
+        "Publication.md": "84a7a85f79b055a0e2a1bf7927c651a80d03aaaa66087bc94be10baca7f40b74",
+        "_Sidebar.md": "ef69ea54cc3b054827caaf71b2d55057d2b847d585b0dc2b915ca0ad631ff777",
+        "_Footer.md": "714b8a687d02b8f54c43bd2cf622bab1030b4e99f297060a96d733e08942bbce"
+      },
+      "semantic_validation": false,
+      "user_study": false
+    }
+  },
+  "independent_actual_wiki": {
+    "status": "ACTUAL_23_WIKI_FILES_EXACT_MATCH",
+    "source": "a09ff2d2a460db412ac1a505fef7eb330c0c341e",
+    "wiki_commit": "156e68cd61eb2d1411a4a5f7bfa042f970ca60a5",
+    "files": [
+      {
+        "file": "Artifact-Versions.md",
+        "bytes": 4792,
+        "sha256": "9560e35eff0398dea2a1b7adf3b61c8dc6c5c421f6bf3437469673c8c8d86512"
+      },
+      {
+        "file": "Citation.md",
+        "bytes": 2384,
+        "sha256": "d2a4b1bd7b4220bcbd1488838a60458a30b24c5bc99a32750cb9778eb53183e1"
+      },
+      {
+        "file": "Competency-Questions.md",
+        "bytes": 3292,
+        "sha256": "22f1f71e5d423b35e8d29b69ec18a33caddbf866754545f199ed51f40a5d8a1e"
+      },
+      {
+        "file": "Database-Assurance.md",
+        "bytes": 8486,
+        "sha256": "ad4ebc08a785b82ca86e3a220c1db73926b13dbe389d0a1fa34840dbfc9b43a3"
+      },
+      {
+        "file": "Evaluation.md",
+        "bytes": 6354,
+        "sha256": "b00a8d504aaa1aa3acf6d31b0407e01097d42bac4fe2bc9c651fb3446138e6b9"
+      },
+      {
+        "file": "Formalization.md",
+        "bytes": 76585,
+        "sha256": "808d5ba670979fce68228f523ea4e14f93f24f0a841a0959dd1bbff7e2d7b06d"
+      },
+      {
+        "file": "Home.md",
+        "bytes": 3514,
+        "sha256": "b02bdf990e25cd4d86e1b16dcc1ca89723be752e2e34849bb1db0a7cbc77d0ec"
+      },
+      {
+        "file": "Limitations.md",
+        "bytes": 3739,
+        "sha256": "707fe27d0e851128a8cc70b2b0d8e51b5fc769393a9a4a87d55d373875124151"
+      },
+      {
+        "file": "Modeling-Decisions.md",
+        "bytes": 2889,
+        "sha256": "44e34dd792138e16e02e375e01c38386d867085cf2d1c16dbebf55b2abb32d15"
+      },
+      {
+        "file": "Overview.md",
+        "bytes": 2766,
+        "sha256": "73f5c22c16a859bb222bfa67fe601d6f3523aee9c49673cc9fb9c56f582a0a8e"
+      },
+      {
+        "file": "Publication-Comparison.md",
+        "bytes": 2246,
+        "sha256": "0e3fabba506d85dc07006a7cab20755538336819ed388628d2f25b100250666a"
+      },
+      {
+        "file": "Publication.md",
+        "bytes": 5255,
+        "sha256": "84a7a85f79b055a0e2a1bf7927c651a80d03aaaa66087bc94be10baca7f40b74"
+      },
+      {
+        "file": "Quality.md",
+        "bytes": 2584,
+        "sha256": "e81875877137112faada991c98cc67aaff22c38ae5997299283aa3614ef2df24"
+      },
+      {
+        "file": "References.md",
+        "bytes": 2486,
+        "sha256": "76c6774f7b71db8312d30652ff07f7178538650f47f2b57ac597f0acdf4ca228"
+      },
+      {
+        "file": "Reproduce.md",
+        "bytes": 10182,
+        "sha256": "012d3321861d25c03ca2a690c92dbe535917ff6397620b43bdf147294eac0b25"
+      },
+      {
+        "file": "Requirements.md",
+        "bytes": 2770,
+        "sha256": "806b25dba0597071b696543babfd316a5f006cc319677abb0d575793c2552e6b"
+      },
+      {
+        "file": "Scope.md",
+        "bytes": 2422,
+        "sha256": "3af3d218af34928ed91bef8001b6fa991cf835c1006e20f448d62599af48f74c"
+      },
+      {
+        "file": "Traceability.md",
+        "bytes": 8278,
+        "sha256": "ba2466dc24a3d44ea299d56aff0c86832d70c7c09c1e0ab266da7ca900ccd91c"
+      },
+      {
+        "file": "Using-the-Model.md",
+        "bytes": 5738,
+        "sha256": "8edd3736ee1d1477eee486e26325b1c3fc191b1bc70cf9e741abb11011548e7d"
+      },
+      {
+        "file": "Visualization.md",
+        "bytes": 3464,
+        "sha256": "46b79304175ed461ea050c7a802a4d9d2e41f4b166f6739f27a84f2e2e127a75"
+      },
+      {
+        "file": "Work-Plan.md",
+        "bytes": 3339,
+        "sha256": "cdca83b9b04b090974f3ca83409602231aabb208e7e2fda0b2cb26afb9ffb1b8"
+      },
+      {
+        "file": "_Footer.md",
+        "bytes": 251,
+        "sha256": "714b8a687d02b8f54c43bd2cf622bab1030b4e99f297060a96d733e08942bbce"
+      },
+      {
+        "file": "_Sidebar.md",
+        "bytes": 1125,
+        "sha256": "ef69ea54cc3b054827caaf71b2d55057d2b847d585b0dc2b915ca0ad631ff777"
+      }
+    ]
+  },
+  "fresh_final_boundary": {
+    "observed_at_utc": "2026-10-30T07:29:25.171126+00:00",
+    "url": "https://arazsaiearasi3.github.io/riskium/publication-manifest.json",
+    "http_status": 200,
+    "root_manifest_sha256": "6f68e36a0a6e5f427e641999673b0e2e1f631db1b3e9abd08214bebf5a3dc3c4",
+    "main": "a09ff2d2a460db412ac1a505fef7eb330c0c341e",
+    "documentation": "0.4.4",
+    "wiki_commit": "156e68cd61eb2d1411a4a5f7bfa042f970ca60a5",
+    "scope": "Fresh public root-manifest bytes and native Wiki ref, in addition to the complete independently downloaded CI channel audit"
+  },
+  "documented_example": {
+    "status": "DOCUMENTED_EXAMPLE_FULL_STDOUT_PASS",
+    "observed": "A-v1 negative-v1 context-v1 ['objective-v1'] READY_FOR_DECLARED_RETRIEVAL\nA-v2 positive-v1 context-v2 ['objective-v2'] READY_FOR_DECLARED_RETRIEVAL\nA-v3 mixed-v1 context-v1 ['objective-v1'] READY_FOR_DECLARED_RETRIEVAL\nB-v1 other-negative-v1 context-v1 ['objective-v1'] READY_FOR_DECLARED_RETRIEVAL\nA-v4 positive-v2 context-v2 ['objective-v2'] READY_FOR_DECLARED_RETRIEVAL\nU-v1 negative-v1 NONE [] NOT_READY_CONTEXT_UNRECORDED\nZ-v1 negative-v1 context-empty-v1 [] NOT_READY_OBJECTIVES_UNRECORDED\nfamily ['A-v1', 'A-v2', 'A-v3']\ncase-2 ['C-v1']\n",
+    "expected": "A-v1 negative-v1 context-v1 ['objective-v1'] READY_FOR_DECLARED_RETRIEVAL\nA-v2 positive-v1 context-v2 ['objective-v2'] READY_FOR_DECLARED_RETRIEVAL\nA-v3 mixed-v1 context-v1 ['objective-v1'] READY_FOR_DECLARED_RETRIEVAL\nB-v1 other-negative-v1 context-v1 ['objective-v1'] READY_FOR_DECLARED_RETRIEVAL\nA-v4 positive-v2 context-v2 ['objective-v2'] READY_FOR_DECLARED_RETRIEVAL\nU-v1 negative-v1 NONE [] NOT_READY_CONTEXT_UNRECORDED\nZ-v1 negative-v1 context-empty-v1 [] NOT_READY_OBJECTIVES_UNRECORDED\nfamily ['A-v1', 'A-v2', 'A-v3']\ncase-2 ['C-v1']\n",
+    "documentation_sha256": "6105d931386ec650c58ccdc662db0a515de524c6162e8ac2b084ce97de6d94a7",
+    "source": "a09ff2d2a460db412ac1a505fef7eb330c0c341e",
+    "clean": true,
+    "runtime": {
+      "python": "3.12.14",
+      "sqlite": "3.53.1"
+    }
+  },
+  "review": {
+    "actor": "Agent editorial and actual rendered/keyboard inspection; no controlled user study or independent semantic rating",
+    "nature_criteria": [
+      {
+        "id": "NRA-Q01",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "Home opens with the two-source / branching-correction story before database or release mechanics; the actual Pages home and native Wiki expose the same source text."
+      },
+      {
+        "id": "NRA-Q02",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "The domain path shows raw input, issued documentary identity and exact NOT_READY_CONTEXT_UNRECORDED / NOT_READY_OBJECTIVES_UNRECORDED outcomes separately from factual correctness."
+      },
+      {
+        "id": "NRA-Q03",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "The actual Traceability path identifies NRA-02, original RKRS/CQ/DBR/native routes, literal expected answers and the separately persisted full actual receipt; historical graphs are not unioned."
+      },
+      {
+        "id": "NRA-Q04",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "The integrator path supplies Python/SQLite prerequisites, pinned checkout, explicit IDs and complete expected stdout. Executing the documented Python block at the clean integration source produced exact stdout agreement."
+      },
+      {
+        "id": "NRA-Q05",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "Public main README bytes, all 23 actual native Wiki files and all 314 served HTTP bodies match the reviewed source; published v0.3.6 and executed v0.3.7 development have separate labels."
+      },
+      {
+        "id": "NRA-Q06",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "All planned reviewer/domain/integrator paths were traversed on actual served Pages. Desktop headings, prose, tables and source disclosure were inspected; keyboard skip, table focus and disclosure Enter worked. No mobile, controlled-user-study or independent semantic judgment is claimed."
+      }
+    ],
+    "editorial_criteria": [
+      {
+        "id": "R01",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "Subject, problem and example lead the current entry pages."
+      },
+      {
+        "id": "R02",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "All three declared audience paths were traversed using actual visible navigation."
+      },
+      {
+        "id": "R03",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "Opening prose explains reports, corrections and documentary meaning; stage/commit details are in work/source records."
+      },
+      {
+        "id": "R04",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "Exact source hashes are in a keyboard-operable source disclosure."
+      },
+      {
+        "id": "R05",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "Historical engines, later controls, withheld cases and zero independent ratings retain their separate meanings."
+      },
+      {
+        "id": "R06",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "Published package v0.3.6, proposed v0.3.7, model/OWL 0.3.1, current reader 0.4.4 and manuscript 7.0.8 are distinguished."
+      },
+      {
+        "id": "R07",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "Wiki and Pages share reviewed sources; native/OWL references and all four frozen snapshots preserve their roles."
+      },
+      {
+        "id": "R08",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "The documented nature example reproduced exact expected stdout; immutable v0.3.6 offline reproduction remains separately labeled."
+      },
+      {
+        "id": "R09",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "Actual desktop Pages, repository landing, evaluation, reference and limits were inspected; no document-level horizontal overflow was found in the traversed role paths."
+      },
+      {
+        "id": "R10",
+        "status": "PASS_AGENT_REVIEW",
+        "observed": "Actual repository/Wiki/Pages agreement was checked against exact source a09ff2d, including fresh public root-manifest bytes and native Wiki ref."
+      }
+    ],
+    "actual_browser_observations": {
+      "source": "a09ff2d2a460db412ac1a505fef7eb330c0c341e",
+      "method": "Agent inspection of actual rendered Pages and keyboard interactions; not a controlled user study or independent semantic rating",
+      "observations": [
+        {
+          "kind": "keyboard",
+          "page": "Home",
+          "action": "Enter on Skip to content",
+          "observed": {
+            "id": "content",
+            "tag": "MAIN"
+          },
+          "passed": true
+        },
+        {
+          "kind": "domain_path",
+          "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Using-the-Model.html#risk-nature-history",
+          "passed": true,
+          "captured_text_sha256": "19be29d1bd5bf112aa2e34fe5612625fb46022c4931340cd8ffac247025cdf05",
+          "captured_text_characters": 4384,
+          "observed_excerpt": "Riskium\n/\nUsing the model\nInspect and use the model\nRisk-nature history\n\nA source reports an unfavorable effect on a delivery objective. It later declares two alternative corrections: one favorable, one mixed. A second source retains its own unfavorable report. Riskium keeps each report, source and recorded context separately. It does not choose which report is true.\n\nExact version\tRecorded nature and pins\tRelationship\nA-v1\tUnfavorable; context-v1, objective-v1\tOriginal report; two recording revisions\nA-v2\tFavorable; context-v2, objective-v2\tExplicit correction of A-v1\nA-v3\tMixed; context-v1, objective-v1\tAlternative correction of A-v1\nB-v1\tUnfavorable in another local scheme; context-v1, objective-v1\tIndependent documentary report; corroboration unassessed\nA-v4\tFavorable with later term/scheme versions\tLater issue without a correction declaration; outside A-v1's correction family\n\nRetrieving A-v1 keeps its original values after A-v2 or A-v4 exists. The correction family rooted at A-v1 contains A-v1, A-v2 and A-v3. An entry's revision chain alone does not establish a correction. These records are an authored synthetic example.\n\nMissing information and readiness\n\nA record without a mandatory case, nature term or source stays raw. It does not acquire an invented case identity or become an issued assertion. An issued documentary version is sealed content that passed its declared storage contract. That status does not establish that its report is true.\n\nContext is optional in the native relation. An issued version without context is NOT_READY_CONTEXT_UNRECORDED for this retrieval task. A context without objective pins yields NOT_READY_OBJECTIVES_UNRECORDED. Both retain their actual missing values. A complete pinned context with explicit objective versions is READY_FOR_DECLARED_RETRIEVAL. This is task readiness, not factual correctness, decision approval or a risk score.\n\nUse an exact issued version identifier to ask what it recorded. Use a case query to inspect all issued reports for that case. Use an explicit root version to inspect declared correction branches. Reproduce shows exact IDs and expected answers.\n\nBegin with the scope, then choose a question: identify "
+        },
+        {
+          "kind": "keyboard",
+          "page": "Using-the-Model",
+          "action": "Focus table and ArrowRight",
+          "observed": {
+            "clientWidth": 834,
+            "scrollWidth": 834,
+            "tabindex": "0",
+            "tag": "TABLE"
+          },
+          "passed": true
+        },
+        {
+          "kind": "keyboard",
+          "page": "Using-the-Model",
+          "action": "Enter on source disclosure",
+          "observed": {
+            "open": true,
+            "text": "Sources and publication record\n\nExplanatory source · Equivalent Wiki guide · Published source v0.3.6.\n\nDocumentation 0.4.4 · model 0.3.1. Guide SHA-256: b9676322c3daf51fa20b5e93fb0dc960faa386956a07d4d54317f155a578efe2. Documentation review and channel verification."
+          },
+          "passed": true
+        },
+        {
+          "kind": "reviewer_path",
+          "visited": [
+            {
+              "label": "Home",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Home.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Riskium: organizational risk knowledge",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "646680720444800e1ccacfb5ad2c4d9e1d8a027d6ca597e79143f8a0f379acaf",
+              "captured_text_characters": 1924,
+              "observed_excerpt": "Riskium\n/\nHome\nRiskium: organizational risk knowledge\n\nRiskium is a conceptual ontology for organizing organizational risk knowledge. It connects a continuing risk case with its register entries, scenarios, objectives, assessments and evidence while preserving their identities, versions and sources.\n\nFollow a report through change\n\nA source reports an unfavorable effect on a delivery objective. It later declares two alternative corrections: one favorable, one mixed. A second source retains its own unfavorable report. Riskium keeps each report, source and recorded context separately. It does not choose which report is true.\n\nSee the version-by-version example → inspect the query contract → run it.\n\nPublished source v0.3.6 includes assessment selection using SQL 0.8.0/schema 9. Risk-nature retrieval is executed development for proposed v0.3.7, using SQL 0.9.0/schema 10. The model and OWL remain 0.3.1. Documentation 0.4.4 explains both source roles; artifact versions and the work plan show the release boundary.\n\nChoose a reading path\nResearcher or reviewer: scope and rationale → native commitments → source-to-result trace → evaluation → limitations.\nDomain specialist: scope → report a"
+            },
+            {
+              "label": "Modeling decisions",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Decisions.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Modeling decisions",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "f74aac4d496589ed2225179858c08355f01a5746442b0bcbddd502c1a22de938",
+              "captured_text_characters": 2047,
+              "observed_excerpt": "Riskium\n/\nModeling decisions\nModeling decisions\nCases, entries and scenarios\n\nCase identity persists across descriptions, reassessments and administrative record changes. Equal text or equal scores do not automatically merge cases. A change in subject or context may require an explicit identity review.\n\nEntries document cases. Scenario specifications describe possibilities. Occurrences refer to actual phenomena and require their own evidence. These distinctions are preserved even when one source uses a shared everyday label.\n\nDocumentary identity\n\nAn artifact, an issued version and expressed content have distinct identity roles. Issued payloads remain immutable; corrections create a new version and an explicit replacement relationship. Record time, reference time and validity time are different.\n\nResults and comparison\n\nA supplied score is retained as reported unless the calculation has justified inputs and a pinned method. Equal values do not authorize comparison across incompatible scales, dimensions, contexts or versions. Missing information remains unknown.\n\nResponsibility and workflow\n\nAssignment information can exist without an asserted actual mandate. Actual participants and"
+            },
+            {
+              "label": "Traceability",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Traceability.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Current traceability and paper alignment",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "50056f9d856072cec0eb460a93c36fd5d4597fc894f533bd4e264469796dda08",
+              "captured_text_characters": 4888,
+              "observed_excerpt": "Riskium\n/\nTraceability\nCurrent traceability and paper alignment\nExecuted nature-task alignment\n\nThe proposed v0.3.7 integration adds consistency 0.5.0: 470 routes retain all 460 predecessor rows and add ten nature requirements. All 306 native dispositions keep their original definitions and historical status, with separate finite witnesses for 31 selected routes. Twenty witnesses concern historically deferred identities; the original 236 deferred mappings remain 236. Projection evidence does not establish complete native mapping or identity semantics.\n\nA concrete reviewer route is NRA-02 in the contract: follow its original RKRS and DBR IDs and native clauses, its fixed controls, the declared expected rows, then the separate actual receipt. The receipt's actual_local_full_vectors preserves every complete query/source/dependency vector and all eight graph-specific triple sets. actual_hosted_and_independent_completion preserves controls, runtimes and the actual downloaded CI proof. Each version graph is inspected independently; combining A-v1/A-v2/A-v3 would introduce three distinct nature terms and is rejected by the differential oracle.\n\nManuscript dispositions retain all 65 approv"
+            },
+            {
+              "label": "Evaluation",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Evaluation.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Evaluation: results and their limits",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "9e907eece4634cd35938575f6f3e968622c935be48814ad188cee8da0fbc0a3b",
+              "captured_text_characters": 4448,
+              "observed_excerpt": "Riskium\n/\nEvaluation\nEvaluation: results and their limits\nNature-task engineering evidence\n\nThe completed development runtime has 60 fixed controls, 51 concrete malformed-request variants, eight full query vectors, eight named graphs / 306 RDF quads and nine RDF query rows. The 306 quads are a different population from the 306 native model identities.\n\nEvidence\tExact source and scope\nR2 runtime\t7f3f8440b22690d28cea750bd441dde78b1e0337; hosted Python 3.12.15 / SQLite 3.45.1; local full vectors Python 3.12.14 / SQLite 3.53.1\nR3 alignment\t674886381b5520e0771b3a958919e735327572c2; 560 current software tests plus 12 historical reader tests; all alignment and independently downloaded artifact checks passed\nNative/task routes\t31 bounded documentary projection witnesses, with historical mapping dispositions preserved\nReader delivery\tDocumentation 0.4.4; actual rendered/keyboard and cross-channel observations are recorded separately in #66\n\nThe complete actual R2 receipt and R3 completion preserve source roles. A raw hosted runtime report honestly retains F60 pending until its independent download. The completed receipt records that later phase. These are software and finite projection resu"
+            },
+            {
+              "label": "Limitations",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Limitations.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Scope and limitations",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "0972eb3035892855fe7c1a4719e2f6766ed789cf267cee1d777fee03c8e50609",
+              "captured_text_characters": 2867,
+              "observed_excerpt": "Riskium\n/\nLimitations\nScope and limitations\n\nAssessment selection is included in v0.3.6. Choosing a version records an application decision, not its validity, comparability or authority. The six original reader criteria were accepted in the R4 agent editorial/rendered review; that is not an independent expert study. This maintained reader's actual channel and rendering observations have their own verification record.\n\nRiskium's published v0.3.6 package supports a bounded conceptual model and selected formal, data and software checks. Successful software tests, source agreement and readable documentation do not establish whole-model semantic correctness or operational readiness.\n\nSemantic and implementation limits\n\nThe bounded OWL export excludes optional boundaries and their bridges and does not encode every native OntoUML rule. Native exchange/schema/SDK checks are not a full native-language or independent interpretation certificate. Historical HermiT and SHACL results retain their partial and unexecuted obligations.\n\nPublic SQL implements selected storage/native-export/subclause mappings and documentary lifecycle behavior. All 306 native IDs have recorded dispositions; 236 mappin"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "kind": "integrator_path",
+          "visited": [
+            {
+              "label": "Home",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Home.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Riskium: organizational risk knowledge",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "646680720444800e1ccacfb5ad2c4d9e1d8a027d6ca597e79143f8a0f379acaf",
+              "captured_text_characters": 1924,
+              "observed_excerpt": "Riskium\n/\nHome\nRiskium: organizational risk knowledge\n\nRiskium is a conceptual ontology for organizing organizational risk knowledge. It connects a continuing risk case with its register entries, scenarios, objectives, assessments and evidence while preserving their identities, versions and sources.\n\nFollow a report through change\n\nA source reports an unfavorable effect on a delivery objective. It later declares two alternative corrections: one favorable, one mixed. A second source retains its own unfavorable report. Riskium keeps each report, source and recorded context separately. It does not choose which report is true.\n\nSee the version-by-version example → inspect the query contract → run it.\n\nPublished source v0.3.6 includes assessment selection using SQL 0.8.0/schema 9. Risk-nature retrieval is executed development for proposed v0.3.7, using SQL 0.9.0/schema 10. The model and OWL remain 0.3.1. Documentation 0.4.4 explains both source roles; artifact versions and the work plan show the release boundary.\n\nChoose a reading path\nResearcher or reviewer: scope and rationale → native commitments → source-to-result trace → evaluation → limitations.\nDomain specialist: scope → report a"
+            },
+            {
+              "label": "Database assurance",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Database-Assurance.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Database assurance",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "6d467143a0d4af6eaaf02ad1058285d910a71d88f466b94c760731e7519d05cf",
+              "captured_text_characters": 5329,
+              "observed_excerpt": "Riskium\n/\nDatabase assurance\nDatabase assurance\nRisk-nature retrieval\n\nThe SQL 0.9.0/schema 10 development implementation retrieves a source-qualified nature assertion version and its exact term, local scheme, context, objective and recording-entry versions. It adds eight guarded tables to the populated schema-9 baseline; the existing published SQL 0.8.0/schema 9 distribution remains v0.3.6.\n\nOperation\tRequired identifier\tReturned meaning\nget(db, version)\tExact issued version, such as A-v1\tComplete literal row, original source JSON by role, pinned dependency rows and explicit non-endorsement envelope\nby_case(db, case)\tKnown case identity\tEvery issued report for that case; a known empty case returns an empty list, an unknown case is rejected\nfamily(db, root)\tExplicit issued root version\tOnly that root and declared correction descendants, including branches; no automatic latest or preferred report\nnative_graph(db, version)\tExact issued version\tSeparate named-graph projection using unchanged model 0.3.1 identifiers\n\nThe domain example explains the result before its implementation. The executable example supplies prerequisites, source pins and fixed expected answers. Schema dictionary "
+            },
+            {
+              "label": "Reproduce",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Reproduce.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Reproduce a specific result",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "222a77d35304648a9310a9a98b8540494052e38ee541ecb7c0660bb1e635ca32",
+              "captured_text_characters": 7000,
+              "observed_excerpt": "Riskium\n/\nReproduce\nReproduce a specific result\nRisk-nature example\n\nUse Python 3.12 with SQLite supporting STRICT tables. The recorded R2 runs used SQLite 3.45.1 on the host and 3.53.1 locally; they are finite engine-specific results. Start from an empty working folder with Git and network access for this public checkout and the pinned Python packages. The commands below use a separate virtual environment. No private file or credential is needed for the synthetic example.\n\ngit clone https://github.com/ArazSaieArasi3/riskium.git riskium\ncd riskium\n\n\nThe remaining commands run inside that folder:\n\ngit checkout --detach 674886381b5520e0771b3a958919e735327572c2\npython -m venv ../riskium-env\n../riskium-env/bin/python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt\n../riskium-env/bin/python - <<'PYEXAMPLE'\nimport sys\nsys.path.insert(0, 'tools')\nimport run_relational_risk_nature as fixture\nimport relational_risk_nature as api\nu = fixture.U\ndb = fixture.fresh()\nfixture.later(db)\nfor version in ('A-v1', 'A-v2', 'A-v3', 'B-v1', 'A-v4', 'U-v1', 'Z-v1'):\n    row = api.get(db, u(version))['row']\n    print(version, row['term_version_id'].split(':')[-1],\n    "
+            },
+            {
+              "label": "Traceability",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Traceability.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Current traceability and paper alignment",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "50056f9d856072cec0eb460a93c36fd5d4597fc894f533bd4e264469796dda08",
+              "captured_text_characters": 4888,
+              "observed_excerpt": "Riskium\n/\nTraceability\nCurrent traceability and paper alignment\nExecuted nature-task alignment\n\nThe proposed v0.3.7 integration adds consistency 0.5.0: 470 routes retain all 460 predecessor rows and add ten nature requirements. All 306 native dispositions keep their original definitions and historical status, with separate finite witnesses for 31 selected routes. Twenty witnesses concern historically deferred identities; the original 236 deferred mappings remain 236. Projection evidence does not establish complete native mapping or identity semantics.\n\nA concrete reviewer route is NRA-02 in the contract: follow its original RKRS and DBR IDs and native clauses, its fixed controls, the declared expected rows, then the separate actual receipt. The receipt's actual_local_full_vectors preserves every complete query/source/dependency vector and all eight graph-specific triple sets. actual_hosted_and_independent_completion preserves controls, runtimes and the actual downloaded CI proof. Each version graph is inspected independently; combining A-v1/A-v2/A-v3 would introduce three distinct nature terms and is rejected by the differential oracle.\n\nManuscript dispositions retain all 65 approv"
+            },
+            {
+              "label": "Publication",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Publication.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Release, documentation and citation",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "693f158ffdff8e16d1eeb7978f13dee224cd5de450843c4d23c29b1d24473518",
+              "captured_text_characters": 3069,
+              "observed_excerpt": "Riskium\n/\nPublication\nRelease, documentation and citation\nNext source distribution\n\nv0.3.7 is in preparation. Its nature-task SQL/API and trace are executed development, explained in this reader. The currently downloadable package is still v0.3.6. #66 records actual reader acceptance separately from the later exact-source freeze and publication. The next package must select exact component versions, pass final compatibility, freeze six assets, verify an extracted offline validator and independently verify its actual public downloads, tag/source/Latest and all previous inventories.\n\nUse the development reproduction to inspect the nature task now. Use the published package and checksums below to reproduce v0.3.6. Neither path silently changes the native model/OWL version 0.3.1.\n\nv0.3.6 is published. The distribution selects 30 components, including assessment selection 0.8.0, current consistency 0.4.0 and the reviewed documentation 0.4.2 checkpoint. All six uploaded assets were independently downloaded and verified against the authenticated freeze.\n\nChoose the right version\nNeed\tUse\nCite or reproduce the released artifacts\tExact v0.3.6 release, checksums, source manifest and artifact"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "kind": "domain_full_path",
+          "visited": [
+            {
+              "label": "Home",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Home.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Riskium: organizational risk knowledge",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "646680720444800e1ccacfb5ad2c4d9e1d8a027d6ca597e79143f8a0f379acaf",
+              "captured_text_characters": 1924,
+              "observed_excerpt": "Riskium\n/\nHome\nRiskium: organizational risk knowledge\n\nRiskium is a conceptual ontology for organizing organizational risk knowledge. It connects a continuing risk case with its register entries, scenarios, objectives, assessments and evidence while preserving their identities, versions and sources.\n\nFollow a report through change\n\nA source reports an unfavorable effect on a delivery objective. It later declares two alternative corrections: one favorable, one mixed. A second source retains its own unfavorable report. Riskium keeps each report, source and recorded context separately. It does not choose which report is true.\n\nSee the version-by-version example → inspect the query contract → run it.\n\nPublished source v0.3.6 includes assessment selection using SQL 0.8.0/schema 9. Risk-nature retrieval is executed development for proposed v0.3.7, using SQL 0.9.0/schema 10. The model and OWL remain 0.3.1. Documentation 0.4.4 explains both source roles; artifact versions and the work plan show the release boundary.\n\nChoose a reading path\nResearcher or reviewer: scope and rationale → native commitments → source-to-result trace → evaluation → limitations.\nDomain specialist: scope → report a"
+            },
+            {
+              "label": "Scope",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Scope.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Purpose and scope",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "73a3026b3b644e24140e5587776042950c39a0d199ef1b2fb34144ff9ce8fe9b",
+              "captured_text_characters": 1569,
+              "observed_excerpt": "Riskium\n/\nScope\nPurpose and scope\n\nRisk knowledge often mixes the subject under analysis with its records, possible scenarios, reported results and supporting sources. Riskium makes those subjects distinct so that information can be stored, interpreted and compared under declared conditions.\n\nA RiskCase is an identifiable subject of analysis and tracking. Several entries can record the same case, and several scenarios can concern it. An entry, a scenario specification and an actual occurrence are different entities. A description of a possible event does not establish its occurrence.\n\nThe model separates an information artifact, an issued version and its expressed content. An issued payload remains historical; a later correction does not silently replace it. Assessment information needs the method, scale, dimension, basis, context and time justified for the particular task. Recorded responsibility does not establish a mandate; administrative closure does not establish risk cessation; a reported score is not automatically reproducible computation.\n\nRiskium models risk knowledge. It does not prescribe a complete management lifecycle, establish regulatory compliance, predict losses or"
+            },
+            {
+              "label": "Using the model",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Using-the-Model.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Inspect and use the model",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "19be29d1bd5bf112aa2e34fe5612625fb46022c4931340cd8ffac247025cdf05",
+              "captured_text_characters": 4384,
+              "observed_excerpt": "Riskium\n/\nUsing the model\nInspect and use the model\nRisk-nature history\n\nA source reports an unfavorable effect on a delivery objective. It later declares two alternative corrections: one favorable, one mixed. A second source retains its own unfavorable report. Riskium keeps each report, source and recorded context separately. It does not choose which report is true.\n\nExact version\tRecorded nature and pins\tRelationship\nA-v1\tUnfavorable; context-v1, objective-v1\tOriginal report; two recording revisions\nA-v2\tFavorable; context-v2, objective-v2\tExplicit correction of A-v1\nA-v3\tMixed; context-v1, objective-v1\tAlternative correction of A-v1\nB-v1\tUnfavorable in another local scheme; context-v1, objective-v1\tIndependent documentary report; corroboration unassessed\nA-v4\tFavorable with later term/scheme versions\tLater issue without a correction declaration; outside A-v1's correction family\n\nRetrieving A-v1 keeps its original values after A-v2 or A-v4 exists. The correction family rooted at A-v1 contains A-v1, A-v2 and A-v3. An entry's revision chain alone does not establish a correction. These records are an authored synthetic example.\n\nMissing information and readiness\n\nA record without a "
+            },
+            {
+              "label": "Competency questions",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Competency-Questions.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Competency questions and source populations",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "f1054b422ca184e46cbaa699303cd72ed12fbd2244299682c72dc2a190f2a490",
+              "captured_text_characters": 1928,
+              "observed_excerpt": "Riskium\n/\nCompetency questions\nCompetency questions and source populations\nDerived nature-task questions\n\nTwo supplementary questions ask what an exact issued nature version recorded and which versions belong to an explicitly declared correction family. The NRA contract links them to original CQ06 provenance, CQ07 declared lineage and CQ08's no-invented-case principle. It does not reclassify or pass the original scenario populations, establish truth or independent corroboration. Follow the domain example, exact expected answers and source/result trace.\n\nEight original CQ contracts connect uses to expected answers. Five selected synthetic tasks concern shared case identity, scenarios, assessment comparability, assignments without asserted mandates and closure without cessation. Across all eight contracts, the baseline asserted-graph SPARQL suite has 32 fixed-answer cases and eight query mutants, including missing/conflicting-data controls.\n\nOriginal CQ contracts and definitions retain their source populations and original acceptance criteria. Synthetic tests are not independently prepared stakeholder/source populations; trace accounting does not complete those criteria.\n\nLater sourc"
+            },
+            {
+              "label": "References",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/References.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Sources and interpretation limits",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "915c769a90eb6333973dc6c41650baa63348cc100d27a3905809639e2adcfdd9",
+              "captured_text_characters": 1503,
+              "observed_excerpt": "Riskium\n/\nReferences\nSources and interpretation limits\n\nThe source register distinguishes eleven selected sources and thirteen inspected-portion interpretation rows by edition, inspected portion, correspondence, divergence and access limits. Standards supply selected semantic anchors; the register does not establish a comprehensive normative crosswalk, compliance or an exhaustive literature search.\n\nFull unchanged source register · machine-readable corpus · source review report. Historical follow-up links in the full register retain their dates. Normative/prior-art work, broader case/source adequacy and independent semantic adjudication remain open; the work plan links their current tracking records.\n\nRead the evidence at its declared strength\n\nA documentary source link preserves provenance; it does not establish truth, endorsement, occurrence, organizational authority or independent corroboration. Public ISO/ISACA overview descriptions support only their inspected comparisons. Exact normative definitions and conformance require legitimate corresponding sources and a declared comparison population.\n\nRelated-work comparisons describe inspected contributions and unassessed documentar"
+            },
+            {
+              "label": "Limitations",
+              "url": "https://arazsaiearasi3.github.io/riskium/current/guide/Limitations.html",
+              "shape": {
+                "bodyWidth": 1348,
+                "h1": "Scope and limitations",
+                "viewport": 1348
+              },
+              "captured_text_sha256": "0972eb3035892855fe7c1a4719e2f6766ed789cf267cee1d777fee03c8e50609",
+              "captured_text_characters": 2867,
+              "observed_excerpt": "Riskium\n/\nLimitations\nScope and limitations\n\nAssessment selection is included in v0.3.6. Choosing a version records an application decision, not its validity, comparability or authority. The six original reader criteria were accepted in the R4 agent editorial/rendered review; that is not an independent expert study. This maintained reader's actual channel and rendering observations have their own verification record.\n\nRiskium's published v0.3.6 package supports a bounded conceptual model and selected formal, data and software checks. Successful software tests, source agreement and readable documentation do not establish whole-model semantic correctness or operational readiness.\n\nSemantic and implementation limits\n\nThe bounded OWL export excludes optional boundaries and their bridges and does not encode every native OntoUML rule. Native exchange/schema/SDK checks are not a full native-language or independent interpretation certificate. Historical HermiT and SHACL results retain their partial and unexecuted obligations.\n\nPublic SQL implements selected storage/native-export/subclause mappings and documentary lifecycle behavior. All 306 native IDs have recorded dispositions; 236 mappin"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "kind": "reference_view",
+          "url": "https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html",
+          "passed": true,
+          "captured_text_sha256": "cda84bc1834243a68b2746bb67d8d4de859e529dc5e8e4e899518df1bd2ee6a1",
+          "captured_text_characters": 5000,
+          "observed_excerpt": "Riskium\n/\nConceptual reference\nConceptual reference\n\nConceptual design 0.3.1: 80 catalog concepts, including 77 typed concepts and three optional boundaries; one local external anchor is listed separately. There are 134 associations or bridges, 66 generalizations and 25 interpretation constraints. This full catalog is broader than the bounded OWL export.\n\nFilter by name, identifier or description\n\n305 of 305 entries shown\n\nDomains\nRisk Phenomena: Risk-related subjects, specifications and explicitly referenced occurrences or conditions.\nRisk Information: Managed information artifacts, their issued versions and the content they express.\nRisk Classification: Governed vocabulary items, schemes and source-qualified classification assertions.\nRisk Registration: Risk registers, entries, revisions, descriptions and recorded identification information.\nRisk Assessment: Information about assessments, their results, methods, scales, bases and uncertainty.\nRisk Treatment: Recorded treatment decisi"
+        }
+      ]
+    },
+    "supplementary_screenshot_records": [
+      {
+        "filename": "pages-home.jpg",
+        "bytes": 128612,
+        "sha256": "5d0ea466937c059a6d866d341a3e4235056a6c92116c722477e6883ef949af3a",
+        "observed_url": "https://arazsaiearasi3.github.io/riskium/current/index.html",
+        "scope": "Actual inspected desktop viewport; the image is a supplementary local proof, with complete textual/byte evidence retained here."
+      },
+      {
+        "filename": "repository-landing.jpg",
+        "bytes": 142938,
+        "sha256": "4c5fb56aafd04b0881b3c3ed3e710c5fe4ff343ea379695d17732d2a535bce59",
+        "observed_url": "https://github.com/ArazSaieArasi3/riskium#riskium--organizational-risk-knowledge",
+        "scope": "Actual inspected desktop viewport; the image is a supplementary local proof, with complete textual/byte evidence retained here."
+      }
+    ],
+    "ui_wiki_edits": [
+      {
+        "file": "Home.md",
+        "saved": true
+      },
+      {
+        "file": "Scope.md",
+        "saved": true,
+        "refreshed_form_after_conflict": true
+      },
+      {
+        "file": "Overview.md",
+        "saved": true
+      },
+      {
+        "file": "Modeling-Decisions.md",
+        "saved": true
+      },
+      {
+        "file": "Requirements.md",
+        "saved": true
+      },
+      {
+        "file": "Artifact-Versions.md",
+        "saved": true
+      },
+      {
+        "file": "Database-Assurance.md",
+        "saved": true
+      },
+      {
+        "file": "Work-Plan.md",
+        "saved": true
+      },
+      {
+        "file": "Publication-Comparison.md",
+        "saved": true
+      },
+      {
+        "file": "Competency-Questions.md",
+        "saved": true
+      },
+      {
+        "file": "Traceability.md",
+        "saved": true
+      },
+      {
+        "file": "References.md",
+        "saved": true
+      },
+      {
+        "file": "Quality.md",
+        "saved": true
+      },
+      {
+        "file": "Formalization.md",
+        "saved": true
+      },
+      {
+        "file": "Evaluation.md",
+        "saved": true
+      },
+      {
+        "file": "Reproduce.md",
+        "saved": true
+      },
+      {
+        "file": "Citation.md",
+        "saved": true
+      },
+      {
+        "file": "Limitations.md",
+        "saved": true
+      },
+      {
+        "file": "Using-the-Model.md",
+        "saved": true
+      },
+      {
+        "file": "Visualization.md",
+        "saved": true
+      },
+      {
+        "file": "Publication.md",
+        "saved": true
+      },
+      {
+        "file": "_Footer.md",
+        "saved": true
+      }
+    ]
+  },
+  "next_gate": {
+    "id": "R5",
+    "status": "READY_TO_EXECUTE_NOT_PASSED",
+    "issue": 66,
+    "ordered_tasks": [
+      "Declare a versioned v0.3.7 packaging/freeze route using the qualified current/historical suite and determine the obsolete candidate launch routing without rewriting published inputs.",
+      "Select exact component closure and pass final-source compatibility.",
+      "Freeze and verify all six assets, full-source manifest and extracted offline validator.",
+      "Publish only reviewed v0.3.7; independently verify every actual download, tag/source/Latest and all prior inventories; reconcile released reader state."
+    ]
+  },
+  "limits": {
+    "new_source_release_published": false,
+    "full_native_mapping_completed": false,
+    "fresh_scientific_engine_runs": 0,
+    "independent_semantic_ratings": 0,
+    "organizational_admissions": {
+      "WITHHELD": 11
+    },
+    "manuscript": "7.0.8 unchanged",
+    "legacy_unqualified_candidate_still_fails": true
+  }
+}

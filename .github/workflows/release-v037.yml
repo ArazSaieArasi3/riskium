@@ -1,0 +1,46 @@
+name: v0.3.7 packaging qualification
+on:
+  push:
+    branches: [plan/v0.3.7-packaging]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: v037-packaging-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  qualify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
+      - name: Check exact component closure and retained reader bindings
+        run: |
+          python tools/releases/v037/selection.py --check
+          python tools/publication/build_nature_reader_bindings.py --check
+      - name: Qualify current tests and source-pinned historical reader suites
+        run: python tools/releases/v037/qualify.py --receipt build/v037-qualified-suite.json
+      - name: Execute declaration, runtime and integration checks separately
+        run: |
+          python tools/check_risk_nature_declaration.py --receipt build/v037-declaration.json
+          python tools/run_relational_risk_nature.py --output build/v037-runtime.json
+          python tools/audit_risk_nature_alignment.py --check --receipt build/v037-alignment.json
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v037-packaging-qualification-${{ github.sha }}
+          path: |
+            releases/selection-v0.3.7.json
+            build/v037-qualified-suite.json
+            build/v037-declaration.json
+            build/v037-runtime.json
+            build/v037-alignment.json
+          if-no-files-found: error
+          retention-days: 90
