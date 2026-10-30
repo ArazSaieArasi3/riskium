@@ -27,7 +27,9 @@ history. A later unrelated version must not silently change a historical answer.
   landing and source-equivalent native Wiki and Pages guidance.
 - Add versioned source-package qualification on main. Current tests run on the
   current source; all 16 unchanged historical reader tests run at their reviewed
-  source commits. Immutable legacy diagnostics remain separate from v0.3.7 gates.
+  source commits. Immutable legacy diagnostics remain separate from v0.3.7 gates. The dated source
+  inventory is retained; a separate executed current-source inventory avoids a
+  self-referential hash cycle and verifies all other consistency outputs unchanged.
 
 | Artifact | Selected version |
 | --- | --- |

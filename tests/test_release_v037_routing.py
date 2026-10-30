@@ -16,10 +16,13 @@ class MainRouting(unittest.TestCase):
             path='.github/workflows/'+filename, repository=dict(full_name=r.REPO),
             head_repository=dict(full_name=r.REPO), event='workflow_run' if role=='reader' else 'push',
             status='completed', conclusion='failure' if role=='legacy' else 'success')
-            for role,filename in r.PATHS.items()}, legacy_job_log='\n'.join(r.ERRORS)+'\nFAILED (errors=3)')
+            for role,filename in r.PATHS.items()}, legacy_job_log='ValueError: '+r.ERRORS[0]+'\nValueError: '+r.ERRORS[1])
 
     def test_selected_legacy_and_reader_sources_remain_unchanged(self):
         self.assertEqual(r.check()['required_success'], ['qualification','suite','reader'])
+        inventory=r.current_inventory()
+        self.assertFalse(inventory['historical_inventory_rewritten'])
+        self.assertIn('tools/releases/v037/routing.py', [row['path'] for row in inventory['current_source_files']])
 
     def test_all_exact_main_gates_and_only_known_legacy_failure_are_required(self):
         self.assertEqual(r.validate_runs(self.evidence())['next_gate'],'FINAL_EXACT_SOURCE_FREEZE')
@@ -36,7 +39,7 @@ class MainRouting(unittest.TestCase):
     def test_other_legacy_errors_or_missing_gate_cannot_pass(self):
         evidence=self.evidence();evidence['legacy_job_log']='Unexpected error'
         with self.assertRaisesRegex(ValueError,'Unexpected legacy'):r.validate_runs(evidence)
-        evidence=self.evidence();evidence['legacy_job_log']+='\nFAILED (failures=1, errors=3)'
+        evidence=self.evidence();evidence['legacy_job_log']+='\nValueError: Candidate check failed: tools/validate_model.py'
         with self.assertRaisesRegex(ValueError,'additional'):r.validate_runs(evidence)
         evidence=self.evidence();evidence['runs'].pop('suite')
         with self.assertRaisesRegex(ValueError,'Missing'):r.validate_runs(evidence)

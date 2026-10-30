@@ -15,10 +15,8 @@ PRESERVED = {
     'tools/publication/nature_main_gate.py': '460be166e34073f4133422dead2992399b1208d9bf2ff0477d78c8faa8a904c8',
     '.github/workflows/released-reader-main.yml': 'f15cf1773fcab3c0762e51d15dde56c8c77c50ce7971152173f6b098727fe145',
 }
-ERRORS = ('Published README drift', 'Active README drift',
-          'test_assessment_documentation.CandidateReader',
-          'test_published_documentation.PublishedReaderDocumentation',
-          'test_released_documentation.PublishedReader')
+ERRORS = ('Candidate check failed: tools/audit_consistency.py --check',
+          'Stale consistency output: evaluation/consistency/inventory.json')
 
 
 def require(value, message):
@@ -58,9 +56,10 @@ def validate_runs(evidence):
         require(run['conclusion'] == ('failure' if role == 'legacy' else 'success'),
                 'Unexpected source gate result: ' + role)
     require(all(message in evidence['legacy_job_log'] for message in ERRORS), 'Unexpected legacy failure')
-    # Require the legacy failure to be exactly the three historical setup errors.
-    log = evidence['legacy_job_log']
-    require('FAILED (errors=3)' in log and 'FAILED (failures=' not in log,
+    failed_commands = [line.split('Candidate check failed: ', 1)[1].strip()
+                       for line in evidence['legacy_job_log'].splitlines()
+                       if 'ValueError: Candidate check failed: ' in line]
+    require(failed_commands == ['tools/audit_consistency.py --check'],
             'Legacy has additional failures')
     return dict(status='V037_MAIN_ROUTING_AND_QUALIFICATION_PASS', source_commit=source,
                 legacy_role='RETAINED_HISTORICAL_DIAGNOSTIC_NOT_A_V037_RELEASE_GATE',
@@ -68,14 +67,47 @@ def validate_runs(evidence):
                 frozen_or_published=False, next_gate='FINAL_EXACT_SOURCE_FREEZE')
 
 
+def current_inventory():
+    """Validate every retained consistency output and inventory current sources separately.
+
+    The original auditor inventories its own successors. Committing that inventory
+    into a successor selection that hashes it would create a hash cycle. Keep the
+    dated original and emit the new inventory only as an actual runtime receipt.
+    """
+    import sys
+    sys.path.insert(0, str(ROOT / 'tools'))
+    import audit_consistency as audit
+    outputs = audit.build()
+    historical = 'evaluation/consistency/inventory.json'
+    for path, text in outputs.items():
+        if path != historical:
+            require((ROOT / path).read_text() == text, 'Retained consistency output changed: ' + path)
+    require((ROOT / historical).read_text() != outputs[historical],
+            'Legacy inventory boundary unexpectedly changed')
+    inventory = json.loads(outputs[historical])
+    return dict(schema='riskium-v037-current-source-inventory-v1',
+                status='CURRENT_SOURCE_INVENTORY_AND_RETAINED_CONSISTENCY_PASS',
+                source_commit=audit.subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
+                retained_outputs_verified=sorted(p for p in outputs if p != historical),
+                historical_inventory=historical, historical_inventory_rewritten=False,
+                current_source_files=inventory['source_files'],
+                scope='Current regular source inputs; generated views and consistency outputs are separately bound. The final freeze must still inventory every tracked archive file.')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true')
     parser.add_argument('--evidence-json', type=Path)
     parser.add_argument('--receipt', type=Path)
+    parser.add_argument('--inventory-receipt', type=Path)
     args = parser.parse_args()
     check()
     result = dict(status='V037_MAIN_ROUTING_SOURCE_CHECK_PASS', actual_main_runs_verified=False)
+    if args.inventory_receipt:
+        inventory = current_inventory()
+        args.inventory_receipt.parent.mkdir(parents=True, exist_ok=True)
+        args.inventory_receipt.write_text(json.dumps(inventory, indent=2) + '\n')
+        result = dict(status=inventory['status'], source_commit=inventory['source_commit'], current_source_files=len(inventory['current_source_files']))
     if args.evidence_json:
         result = validate_runs(json.loads(args.evidence_json.read_bytes()))
     if args.receipt:

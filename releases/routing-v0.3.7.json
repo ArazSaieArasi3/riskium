@@ -8,11 +8,8 @@
     "reader"
   ],
   "legacy_expected_errors": [
-    "Published README drift",
-    "Active README drift",
-    "test_assessment_documentation.CandidateReader",
-    "test_published_documentation.PublishedReaderDocumentation",
-    "test_released_documentation.PublishedReader"
+    "Candidate check failed: tools/audit_consistency.py --check",
+    "Stale consistency output: evaluation/consistency/inventory.json"
   ],
   "preserved_sha256": {
     ".github/workflows/incremental-release.yml": "b87d98fea2a6b14244e1a47f1e29ff6ef618a3285e4b40d6dc7b878d29997d93",
@@ -20,6 +17,6 @@
     "tools/publication/nature_main_gate.py": "460be166e34073f4133422dead2992399b1208d9bf2ff0477d78c8faa8a904c8",
     ".github/workflows/released-reader-main.yml": "f15cf1773fcab3c0762e51d15dde56c8c77c50ce7971152173f6b098727fe145"
   },
-  "decision": "Retain the legacy launch and unchanged reader predecessor-settlement gate. Require the new exact-main qualification separately before freeze. No workflow is disabled or weakened.",
+  "decision": "Retain the immutable launch and dated source inventory as historical diagnostics. Require a separately emitted current inventory, all other unchanged consistency outputs, new exact-main qualification, full suite and unchanged reader settlement gate.",
   "publication_authorized_by_this_policy": false
 }

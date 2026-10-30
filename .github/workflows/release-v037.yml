@@ -25,6 +25,9 @@ jobs:
         run: |
           python tools/releases/v037/selection.py --check
           python tools/releases/v037/routing.py --check
+          python tools/releases/v037/routing.py --inventory-receipt build/v037-current-inventory.json
+          python tools/check_research_backlog.py --check
+          python tools/review_distribution.py
           python tools/publication/build_nature_reader_bindings.py --check
       - name: Qualify current tests and source-pinned historical reader suites
         run: python tools/releases/v037/qualify.py --receipt build/v037-qualified-suite.json
@@ -33,6 +36,7 @@ jobs:
           python tools/check_risk_nature_declaration.py --receipt build/v037-declaration.json
           python tools/run_relational_risk_nature.py --output build/v037-runtime.json
           python tools/audit_risk_nature_alignment.py --check --receipt build/v037-alignment.json
+            build/v037-current-inventory.json
           git diff --exit-code
       - uses: actions/upload-artifact@v4
         with:
@@ -43,5 +47,6 @@ jobs:
             build/v037-declaration.json
             build/v037-runtime.json
             build/v037-alignment.json
+            build/v037-current-inventory.json
           if-no-files-found: error
           retention-days: 90
