@@ -6,7 +6,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: v037-packaging-${{ github.ref }}
+  group: v037-packaging-${{ github.sha }}
   cancel-in-progress: false
 jobs:
   qualify:

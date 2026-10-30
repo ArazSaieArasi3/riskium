@@ -40,7 +40,9 @@ history. A later unrelated version must not silently change a historical answer.
 | Manuscript | 7.0.8 |
 
 The selection contains 31 components (28 retained, two replaced, one added) and
-preserves all 779 protected v0.3.6 source-file hashes. The prior repository landing
+preserves all 779 protected v0.3.6 source-file hashes. The current selected closure
+contains 904 files, including the retained launch dependencies; its complete
+914-file offline check also includes nine delivery-support files and the matrix. The prior repository landing
 is preserved at `documentation/0.4.1/Repository.md`. Original fixed expectations,
 NOT_RUN fields and dated evidence are retained; later execution and independent
 artifact-download observations are separate records.
@@ -56,7 +58,8 @@ The planned six assets are the complete source archive, `source-manifest.json`,
 `artifact-versions.json`, `freeze-receipt.json`, `release-notes.md` and
 `SHA256SUMS.txt`. Final-source qualification, complete inventory validation,
 extracted offline verification and actual public download/tag/Latest checks are
-required before publication is reported. This note does not claim those gates
+required before publication is reported. The final source includes this note so
+the retained documentation-integrity push route is also observed on that source. This note does not claim those gates
 have already passed. Preparation and completion are tracked in issue 66.
 
 ## Interpretation and limits

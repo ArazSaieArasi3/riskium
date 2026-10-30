@@ -6733,12 +6733,12 @@
     "tools/releases/v037/selection.py": "c154d79f4c52f452ea22cc8830c9aa482f84576ab9eba25552d8a466ee88564c",
     "tools/releases/v037/qualify.py": "d5c8a0417b15be27b3efa3f73f43e05b77807168bf331cb96bbdd1836b59a1ea",
     "tests/test_release_v037_selection.py": "b50e28d942b4a7bb0c4e35c04e9b782ab3c1035533ac9abfa8866bde5fba175c",
-    ".github/workflows/release-v037.yml": "ec05cc556e23d6ed2c309d056793153886bfcd262de306d282662c581994b0cd",
+    ".github/workflows/release-v037.yml": "48418a23c9b425739d243313936f094bc39c6dd3064c646af494bb14132cd5f7",
     "plans/v0.3.7-packaging.md": "319b1351daf22caba7712bb05acefa263448a3e695d7701b1e267e7430a7f947",
     "tools/releases/v037/routing.py": "fd2fb52fbceec44af15c34c98e4c7caacc2ae1bf99a43648d631f4de5a4b6ad8",
     "tests/test_release_v037_routing.py": "0fd64f6ac4a0b932e6a9bdaba26c62ecf51a4312f4cbf00551ab8af04d5048dd",
     "releases/routing-v0.3.7.json": "fd29105c8488b521d8a60deea6c88feadb14fec8218e20cf237c8aa5e4dfdfcf",
-    "docs/release-v0.3.7.md": "8662d1fb17e7fbdbfa49a094ec401e5700447193bf88a29b03856f58933c5599"
+    "docs/release-v0.3.7.md": "f60baa0aed0728f7ca88c5e695aad8b96fd86bb9b7eac4fa50a3b5b937030696"
   },
   "summary": {
     "components": 31,
