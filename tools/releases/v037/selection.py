@@ -17,7 +17,8 @@ SUPPORT = ('tools/releases/v037/selection.py', 'tools/releases/v037/qualify.py',
            'tests/test_release_v037_selection.py', '.github/workflows/release-v037.yml',
            'plans/v0.3.7-packaging.md', 'tools/releases/v037/routing.py',
            'tests/test_release_v037_routing.py', 'releases/routing-v0.3.7.json',
-           'docs/release-v0.3.7.md')
+           'docs/release-v0.3.7.md', 'tools/releases/v037/freeze.py',
+           'tests/test_release_v037_freeze.py', '.github/workflows/freeze-v037.yml')
 
 
 def require(value, message):

@@ -1,6 +1,6 @@
 # Riskium v0.3.7: source-qualified risk-nature assertions
 
-**Prepared release notes. This distribution is not yet frozen or published.**
+**Source-release notes. Freeze and publication are recorded separately in the receipts.**
 The published baseline remains v0.3.6 until the final release record says otherwise.
 
 ## Release goal
@@ -33,7 +33,7 @@ history. A later unrelated version must not silently change a historical answer.
 
 | Artifact | Selected version |
 | --- | --- |
-| Source distribution | v0.3.7 proposed |
+| Source distribution | v0.3.7; consult the freeze/publication receipts for its phase |
 | Risk-nature SQL profile | 0.9.0 / schema 10 |
 | Current consistency | 0.5.0 |
 | Maintained reader checkpoint | 0.4.4 |
@@ -44,7 +44,7 @@ history. A later unrelated version must not silently change a historical answer.
 The selection contains 31 components (28 retained, two replaced, one added) and
 preserves all 779 protected v0.3.6 source-file hashes. The current selected closure
 contains 904 files, including the retained launch dependencies; its complete
-914-file offline check also includes nine delivery-support files and the matrix. The prior repository landing
+917-file offline check also includes twelve delivery-support files and the matrix. The prior repository landing
 is preserved at `documentation/0.4.1/Repository.md`. Original fixed expectations,
 NOT_RUN fields and dated evidence are retained; later execution and independent
 artifact-download observations are separate records.
@@ -58,13 +58,27 @@ remains pending until an independent hosted-artifact download is checked. The
 qualification artifact contains six JSON reports, including the separate current
 source inventory; these are evidence inputs to the later six release assets.
 
-The planned six assets are the complete source archive, `source-manifest.json`,
+The six source-distribution assets are the complete source archive, `source-manifest.json`,
 `artifact-versions.json`, `freeze-receipt.json`, `release-notes.md` and
 `SHA256SUMS.txt`. Final-source qualification, complete inventory validation,
 extracted offline verification and actual public download/tag/Latest checks are
-required before publication is reported. The final source includes this note so
-the retained documentation-integrity push route is also observed on that source. This note does not claim those gates
-have already passed. Preparation and completion are tracked in issue 66.
+required before publication is reported. This source note does not itself claim publication.
+Preparation, freeze and actual publication completion are tracked in issue 66.
+
+Download all six assets together, run `sha256sum -c SHA256SUMS.txt`, and extract
+`riskium-v0.3.7-source.tar.gz`. From the extracted `v0.3.7/` directory, run:
+
+```sh
+python tools/releases/v037/freeze.py verify --folder /path/to/the/six/assets
+```
+
+The extracted verifier needs only the Python standard library, without Git or
+network access. It checks every archive file, component binding and retained
+evidence phase. Compare the six files with a trusted external artifact or public
+publication digest for authenticity. The source archive is deterministic for a
+given commit; receipt timestamps retain actual observation times. The freeze
+receipt remains FROZEN_NOT_PUBLISHED as its dated prepublication checkpoint even
+after a separate publication-completion record is added.
 
 ## Interpretation and limits
 
