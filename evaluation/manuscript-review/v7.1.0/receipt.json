@@ -1,0 +1,30 @@
+{
+  "schema": "riskium-manuscript-intake-1",
+  "manuscript_version": "7.1.0",
+  "status": "AUTHOR_HELD_NOT_PUBLIC_SOURCE_RELEASE",
+  "source_commit": "50f731aa5e065233c81fceeadaab8d87f5569de6",
+  "model_version": "0.3.1",
+  "model_json_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "artifacts": [
+    {"name": "Riskium_Manuscript_v7_1_0.docx", "sha256": "f9433f99dfe49c250b8a77117ec5fde14f041b619b8a6f747826687fdb2fd517", "public_repo_file": false},
+    {"name": "Riskium_Manuscript_v7_1_0.pdf", "sha256": "1bdc9ca2d08ec3abb17d10b5302d7f274e306fde702508656850a41edbf20a33", "public_repo_file": false},
+    {"name": "Riskium_Subdomain_Relationships_v7_1_0.svg", "sha256": "0c216a3edc745aca6dce841634e33fdfebf369f30834223e23fabb38ad37882d", "public_repo_file": false},
+    {"name": "Riskium_v7_1_0_Supplement.zip", "sha256": "6c46f33e84551acde2db94a4bc0d7686540527ea6ac9a54889880401e716ac86", "public_repo_file": false}
+  ],
+  "layout": {"pages": 10, "references": 34, "tables": 8, "figures": 2},
+  "new_bounded_results": {
+    "sql_sparql_matched": 14,
+    "sql_sparql_query_mutants_detected": 3,
+    "selected_anti_pattern_screens": 8,
+    "anti_pattern_catalogue_total": 20,
+    "detector_controls_passed": 6,
+    "independent_expert_ratings": 0
+  },
+  "limits": [
+    "No fresh HermiT or SHACL run is implied",
+    "No semantic COH/COP score was calculated",
+    "Structural candidates are not confirmed semantic defects",
+    "Supplementary scripts and binaries are author-held, not yet clone-reproducible",
+    "No organizational case or three-scale use acceptance is claimed"
+  ]
+}
