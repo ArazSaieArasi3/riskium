@@ -1,0 +1,50 @@
+{
+  "active_source_records": 1011,
+  "active_source_works": {
+    "Correction": 1,
+    "Journal article": 30
+  },
+  "active_works_with_active_records": {
+    "Correction": 1,
+    "Journal article": 30
+  },
+  "admitted_organizational_cases": "0",
+  "all_rows": {
+    "catalog_item": 883,
+    "evidence_passage": 875,
+    "item_record_link": 1011,
+    "reported_value": 1695,
+    "scenario_component": 84,
+    "source_record": 1023,
+    "source_work": 55
+  },
+  "checks": {
+    "foreign_key_violations": 0,
+    "item_link_missing_target": 0,
+    "record_evidence_source_mismatch": 0,
+    "scenario_evidence_source_mismatch": 0,
+    "source_records_without_evidence": 0,
+    "sqlite_integrity": "ok",
+    "value_evidence_source_mismatch": 0,
+    "value_record_source_mismatch": 0
+  },
+  "correction_lineage": [
+    {
+      "correction_id": "MAT-018",
+      "related_source_id": "NEW-PH-015",
+      "relationship": "Corrects Tables 1 and 2"
+    }
+  ],
+  "decision_rows": 11,
+  "input_sha256": {
+    "archive": "0a7abf11cd143f1b02027eb77f4f5bfcee613021d9eebb63bb7c46fa81f8d220",
+    "db": "b1f08a5b9464f1c0c06acd112324707ae91d97d28883b006ca12ff6c2ee7b780",
+    "decision_csv": "5cdb2697e5d245620bbfd06ef74d0d32979a73827cffe0839dea3d5f20ea88e6"
+  },
+  "out_of_scope_record_count": 12,
+  "out_of_scope_record_work": [
+    "PH-IEOM-2017"
+  ],
+  "scope_note": "Structural and preservation recount only; no independent source-truth, extraction accuracy, case identity or semantic validation.",
+  "withheld_decisions": 11
+}
