@@ -1,0 +1,92 @@
+{
+  "manuscript_version": "7.2.3",
+  "status": "AUTHOR_HELD_CANDIDATE_NOT_SUBMITTED",
+  "parent_word_sha256": "e4079b3a21945ae8ceb2dd4d35712c92b985801e9349a834d5365c23d5fb96c3",
+  "word_sha256": "caedac324551e4ba1e6458268908973c52f30dda48062e1ef280a8a9c85cdeee",
+  "pdf_sha256": "ca94a3f51192011b6e500724935a48b9e34350dcaccd08315362631a546cf658",
+  "source_model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "changed_prose_parent_paragraphs": [
+    42
+  ],
+  "new_reference_numbers": [
+    15,
+    16
+  ],
+  "citation_mapping": {
+    "15": 17,
+    "16": 18,
+    "17": 19,
+    "18": 20,
+    "19": 21,
+    "20": 22,
+    "21": 23,
+    "22": 24,
+    "23": 25,
+    "24": 26,
+    "25": 27,
+    "26": 28,
+    "27": 29,
+    "28": 30,
+    "29": 31,
+    "30": 32,
+    "31": 33,
+    "32": 34,
+    "33": 35,
+    "34": 36
+  },
+  "references": 36,
+  "all_six_author_papers_retained": [
+    17,
+    18,
+    29,
+    30,
+    32,
+    33
+  ],
+  "reference_first_use_order_verified": true,
+  "format_change": "Reference paragraph spacing after: 3 pt to 0 pt; font size remains 8 pt; body fonts/margins unchanged.",
+  "preservation": {
+    "all_media_and_figure_extents_identical": true,
+    "footnotes_identical": true,
+    "all_other_styles_identical": true,
+    "all_other_prose_and_table_content_unchanged_except_citation_numbers": true
+  },
+  "layout": {
+    "pages": 10,
+    "size": "A4",
+    "scientific_tables": 8,
+    "figures": 2,
+    "all_tables_bordered": true,
+    "all_paragraph_and_cell_text_in_pdf": true,
+    "all_words_in_bounds": true,
+    "visual_pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "source_input_sha256": {
+    "1.pdf": "eae869e4563899db658f8d7891ad56a9224a7185e5d5bd7791b8caf25f40d9e8",
+    "2.pdf": "b87f8c542de04afc3ec8a23c23134e67e60538842d75d35ae4d9c9e72be4a8f7"
+  },
+  "source_locators": {
+    "review_claim": "2.pdf, \u00a74.3.2, p.17",
+    "IROn_claim": "1.pdf, \u00a7\u00a74.1\u20134.3, pp.6\u201310; Figs.2\u20133 p.7",
+    "LLM_experiment_boundary": "1.pdf, \u00a74.4, p.10"
+  },
+  "literature_disposition": "references/full-pdf-update-2026-11-04.md supersedes earlier access-based omissions",
+  "claim_binding": "Prior 7.2.2/model and original scientific/evaluation/case evidence unchanged. New literature context only. No new ontology, DB, expert or organizational result.",
+  "limits": [
+    "IROn DOI not stated in supplied PDF; no DOI invented.",
+    "Review corpus of 93 studies not independently re-reviewed.",
+    "IROn five-model scores are source results, not independent human validation of Riskium."
+  ],
+  "source_disposition_commit": "c197ac14e545dacb0a954c591e3616be9cae029b"
+}
