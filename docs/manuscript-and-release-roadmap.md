@@ -9,7 +9,7 @@
 | Order | Work and evidence | Owner issue | Exit and dependency |
 | --- | --- | --- | --- |
 | 0 — completed | Register 7.1.0 inputs and reconcile the retained 7.2.0 claims, figures, tables and citations. No modifier-function expression remains. | [#67](https://github.com/ArazSaieArasi3/riskium/issues/67) | Exact 7.2.0 receipt and claim ledger; the archive remains author-held and is named by full digest. |
-| 1 — article evidence | Bounded pattern and finite source qualification completed; now reconcile 30+1 case-source adequacy and any withheld material. | [#68](https://github.com/ArazSaieArasi3/riskium/issues/68) and [#37](https://github.com/ArazSaieArasi3/riskium/issues/37) closed for scoped evidence; [#13](https://github.com/ArazSaieArasi3/riskium/issues/13) open | The current paper reports executed observations only. Independent candidate verdicts (#23), full normative adoption (#78) and modular COH/COP (#77) retain separate evidence gates. |
+| 1 — article evidence | Bounded pattern and finite source qualification completed. The exact archived 30+1 denominator, 1,011 active versus 12 outside-stage source records, and eleven withheld decisions were rechecked in [#80](../evaluation/manuscript-review/v7.2.0/case-source-audit.md). | #68, #37 and #80 closed for their scoped evidence; [#13](https://github.com/ArazSaieArasi3/riskium/issues/13) open | The current paper reports executed observations only. Independently prepared case populations (#13), independent judgments (#23), full normative adoption (#78) and modular COH/COP (#77) retain separate evidence gates. |
 | 2 — completed candidate | Revise and render/test exact Word/PDF within ten pages; verify six author citations, figures, evidence/claim agreement, references and abbreviations. | [#67](https://github.com/ArazSaieArasi3/riskium/issues/67) | Author-held **manuscript 7.2.0** with own digest and receipt. Coauthor approval and submission are separate gates. |
 | 2a — next manuscript | After #13, apply the source-qualified “risk item” wording fix and any justified case evidence correction; rerender and audit at most ten pages. | [#79](https://github.com/ArazSaieArasi3/riskium/issues/79) | New author-held Word/PDF candidate and exact claim ledger; no new version is asserted yet. |
 | 3 — next source package | Select and qualify a compatible source/documentation/evidence component set, reconcile current repo/Wiki/Pages and source release, freeze, publish and read back actual assets. | [#76](https://github.com/ArazSaieArasi3/riskium/issues/76), supported by #67/#69/#70 | **Proposed v0.3.8**, not frozen or released. Its exact scope and component versions must be declared before a release request. No implicit model 0.3.2 or SQL migration. The paper may precede it if all cited inputs are accessible and pinned. |
@@ -26,7 +26,7 @@ Editorial changes already implemented in author-held 7.1.0 — title, two email 
 | Outstanding comment family | Exact open owner(s) | Boundary |
 | --- | --- | --- |
 | Literature and standards source adequacy, diplomatic comparison | #37 scoped pass complete; #78 if exact normative adoption is later pursued | Finite primary-source overlay; no exhaustive novelty, exact ISO/Risk IT/COBIT crosswalk or equivalence. |
-| Case study population, source-to-dataset rewrite and admission | #13, #71; mapping #12/#35 | A documented article source is not by itself an admitted enterprise RiskCase. |
+| Case study population, source-to-dataset rewrite and admission | #80 completed exact archived denominator audit; #13 and #71 remain open; mapping #12/#35 | A documented article source is not by itself an admitted enterprise RiskCase. |
 | Pattern and anti-pattern review; subdomain design measures | #68 completed bounded audit; #23 and #77 open | Twenty names accounted for; 162 prompts await semantic review, while COH/COP has no defensible module denominator yet. |
 | Independent expert judgment and organizational applicability | #23, #72 | Prepared protocol and illustrative contexts are not observed ratings or success at three scales. |
 | Subdomain SVG, concept pages, documentation navigation | #69 | Reuse one authoritative catalog source and verify actual Wiki/Pages publication. |
@@ -34,7 +34,7 @@ Editorial changes already implemented in author-held 7.1.0 — title, two email 
 | Manuscript version/claim/format reconciliation and next paper | #67 complete for author-held 7.2.0; next candidate #79 | Repo's historical 7.0.8 component remains unchanged; no next binary yet. |
 | Product, microservices, dynamic risk and editorial policy | #73, #74 | Future work; private policy text stays out of the public repository. |
 
-The existing open parents #4, #5, #12, #13, #23, #35, #36 and #37 retain their original acceptance criteria. The new issues assign owners to previously untracked comments; this plan does not close those parents, reclassify historical NOT_RUN results, alter the model, or revise frozen release documents.
+The existing open parents #4, #5, #12, #13, #23, #35 and #36 retain their original acceptance criteria. #37 and #80 close only their bounded source-disposition and archived-denominator tasks; #78 retains full normative access. This plan does not reclassify historical NOT_RUN results, alter the model, or revise frozen release documents.
 
 ## Manuscript 7.2.0 stop/go
 
