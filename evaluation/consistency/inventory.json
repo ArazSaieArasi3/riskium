@@ -49,8 +49,8 @@
     },
     {
       "path": ".github/workflows/documentation.yml",
-      "sha256": "b8bb29905ab9bd6516c55b1121a43b3aa7c0378882d95a694de4470dee42ce99",
-      "bytes": 2460
+      "sha256": "50169cf46025120394a68b45272167a0ee1bab5c5c952d2c228be8599ca2b0cd",
+      "bytes": 2331
     },
     {
       "path": ".github/workflows/evidence-lifecycle.yml",
@@ -141,6 +141,11 @@
       "path": ".github/workflows/stable-release.yml",
       "sha256": "e3f353895b966c8066faf6718a803c0272c7727c46830b891683427c07f3f23b",
       "bytes": 7606
+    },
+    {
+      "path": ".github/workflows/subdomain-dictionary.yml",
+      "sha256": "eaf37cc465b247af8cd41f2a935c5729dd6bd5e148585061e91eae88af15969c",
+      "bytes": 1016
     },
     {
       "path": ".github/workflows/v036-versioned-suite.yml",
