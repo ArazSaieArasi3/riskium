@@ -14,6 +14,8 @@ ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'tools'))
 import build_concept_dictionary as dictionary
 VERSION='0.4.6'; BASELINE='50f731aa5e065233c81fceeadaab8d87f5569de6'
+# The published dictionary owns its content source independently of later audit-tool fixes.
+DICTIONARY_SOURCE='20b2983352d2a6491600fcdbd765259d3da456c2'
 REPO=prior.REPO;SITE=prior.SITE
 sha=lambda b:hashlib.sha256(b).hexdigest()
 encode=lambda d:json.dumps(d,indent=2,ensure_ascii=False)+'\n'
@@ -52,7 +54,8 @@ def upgrade(path,out):
     for t in s.select('main table'):t['tabindex']='0'
     path.write_text(str(s)+'\n')
 def build(out,wikiout):
-    source=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT).decode().strip()
+    source=DICTIONARY_SOURCE
+    subprocess.run(['git','diff','--exit-code',source,'--','ontology/riskium-model.json','documentation/concepts/0.3.1','tools/build_concept_dictionary.py','diagrams/subdomain-relationships.svg','diagrams/subdomain-relationships-matrix.svg'],cwd=ROOT,check=True,capture_output=True)
     with tempfile.TemporaryDirectory() as tmp:
         old=Path(tmp)/'reviewed';subprocess.run(['git','worktree','add','--detach',str(old),BASELINE],cwd=ROOT,check=True,capture_output=True)
         try:manifest,wiki,_=prior.build(out,root=old)
@@ -93,9 +96,11 @@ def verify_live(site,wikidir,receipt):
         with urlopen(Request(SITE+'/'+n,headers={'User-Agent':'Riskium-channel-verifier','Cache-Control':'no-cache'}),timeout=40) as f:data=f.read()
         if sha(data)!=sha(expected[n]):raise ValueError('Served byte mismatch: '+n)
         return n
-    with ThreadPoolExecutor(max_workers=8) as pool:checked=list(pool.map(read,expected))
+    # GitHub Pages consumes this zero-byte build marker but does not serve it.
+    public_paths=[n for n in expected if n!='.nojekyll']
+    with ThreadPoolExecutor(max_workers=8) as pool:checked=list(pool.map(read,public_paths))
     for n,digest in status['wiki_files_sha256'].items():
         if sha((wikidir/n).read_bytes())!=digest:raise ValueError('Native Wiki mismatch: '+n)
-    result=dict(status='LIVE_DICTIONARY_CHANNELS_PASS',documentation_version=VERSION,served_files=len(checked),native_wiki_files=len(status['wiki_files_sha256']),concept_pages=80,all_served_bytes_match=True,local_link_audit=audit(site));receipt.write_text(encode(result));return result
+    result=dict(status='LIVE_DICTIONARY_CHANNELS_PASS',documentation_version=VERSION,served_files=len(checked),build_markers_not_http_resources=['.nojekyll'],native_wiki_files=len(status['wiki_files_sha256']),concept_pages=80,all_served_bytes_match=True,local_link_audit=audit(site));receipt.write_text(encode(result));return result
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--wiki-output',type=Path,default=Path('build/wiki'));p.add_argument('--verify-wiki',type=Path);p.add_argument('--receipt',type=Path);a=p.parse_args();print(encode(verify_live(a.output,a.verify_wiki,a.receipt) if a.verify_wiki else build(a.output,a.wiki_output)))
