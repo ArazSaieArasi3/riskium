@@ -50,11 +50,16 @@ ADDITIVE_FILES = {
     'docs/experiment-and-flow-inventory.md', 'docs/manuscript-and-release-roadmap.md',
     'docs/publication-consistency-checklist.md', 'docs/source-transition-validation.md',
     'references/followup-2026-11-03.json', 'references/followup-2026-11-03.md',
+    'references/disposition-2026-11-04.md', 'references/full-pdf-update-2026-11-04.md',
+    'tools/publication/dictionary_documentation.py', '.github/workflows/dictionary-reader.yml',
+    'tests/test_dictionary_documentation.py',
 }
 ADDITIVE_PREFIXES = ('documentation/concepts/0.3.1/',
                      'evaluation/manuscript-review/v7.1.0/',
                      'evaluation/manuscript-review/v7.2.0/',
-                     'evaluation/manuscript-review/v7.2.1/')
+                     'evaluation/manuscript-review/v7.2.1/',
+                     'evaluation/manuscript-review/v7.2.2/', 'evaluation/manuscript-review/v7.2.3/',
+                     'documentation/0.4.6/', 'evaluation/documentation/dictionary-0.4.6/')
 
 
 def require(value, message):

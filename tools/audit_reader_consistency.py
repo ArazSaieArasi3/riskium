@@ -22,8 +22,8 @@ for target in re.findall(r"\]\(([^)]+)\)", readme):
 required = {
     "published source": r"Published source:.*v0\.3\.7",
     "model version": r"conceptual model and OWL:\*\* 0\.3\.1",
-    "reader version": r"published reader:\*\* 0\.4\.5",
-    "held paper": r"author-held article candidate:.*7\.2\.1",
+    "reader version": r"published reader:\*\* 0\.4\.6",
+    "held paper": r"author-held article candidate:.*7\.2\.3",
     "wiki": r"https://github\.com/ArazSaieArasi3/riskium/wiki",
     "pages": r"https://arazsaiearasi3\.github\.io/riskium/current/index\.html",
     "rights": r"\[RIGHTS\.md\]\(RIGHTS\.md\)",
@@ -32,10 +32,10 @@ for name, pattern in required.items():
     if not re.search(pattern, readme):
         errors.append(f"missing or inconsistent {name}")
 
-receipt = (ROOT / "evaluation/manuscript-review/v7.2.1/README.md").read_text(encoding="utf-8")
-for field in ("ten A4 pages", "Word SHA-256", "PDF SHA-256"):
-    if field not in receipt:
-        errors.append(f"missing paper receipt field: {field}")
+import json
+receipt = json.loads((ROOT / "evaluation/manuscript-review/v7.2.3/receipt.json").read_text())
+if receipt['layout']['pages'] != 10 or not receipt['word_sha256'] or not receipt['pdf_sha256']:
+    errors.append("missing current manuscript audit binding")
 
 if errors:
     print("FAIL source landing: " + "; ".join(errors), file=sys.stderr)
