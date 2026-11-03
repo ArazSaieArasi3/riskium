@@ -48,6 +48,11 @@
       "bytes": 1665
     },
     {
+      "path": ".github/workflows/dictionary-reader.yml",
+      "sha256": "6e5af2d463d1f0e06cd0a9c7f617b4e28302fe9d90455706bf5bfc91c46c56be",
+      "bytes": 2496
+    },
+    {
       "path": ".github/workflows/documentation.yml",
       "sha256": "5d6a5408991ac381f35b0eb4aff86481fb8270ed45b4bb63f0de69b440099518",
       "bytes": 3358
@@ -219,8 +224,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "8abdfcc4c11578ccc3b1220935b26fe26b82d9e52351c290840432444f1b9faa",
-      "bytes": 6017
+      "sha256": "3587a7201770d15c6440e3aa8899fcfb4759c67bb7ccdecc412912d7529fe734",
+      "bytes": 6111
     },
     {
       "path": "RIGHTS.md",
@@ -1553,6 +1558,11 @@
       "bytes": 7217
     },
     {
+      "path": "documentation/0.4.6/README.md",
+      "sha256": "ef57ba5133ff738e9bd029f5ea78c03c3b926569e5e217160dcff4e0c96c335e",
+      "bytes": 1943
+    },
+    {
       "path": "documentation/concepts/0.3.1/README.md",
       "sha256": "38db6e7efb4821c805a6ac0f41ece69deaf1cf25a66cbbc2c5e3ca9fc166f905",
       "bytes": 5350
@@ -2646,6 +2656,16 @@
       "path": "evaluation/manuscript-review/v7.2.1/receipt.json",
       "sha256": "dadc41a66ad7da9cd97b10006993370ee94df7b40f62a4d942f6c9e36e9a0ca9",
       "bytes": 1923
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.2/receipt.json",
+      "sha256": "84608946ca64e8474cecaa0ede4d55b8af6d0d52f5aa8d4046810fd22e93a5fe",
+      "bytes": 2865
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/receipt.json",
+      "sha256": "958559fcc223b155f7f0fe458bf0207dcbc8285e8271c47be4fdbabe21f51f58",
+      "bytes": 2725
     },
     {
       "path": "evaluation/migration-integrity.json",
@@ -4313,6 +4333,11 @@
       "bytes": 28541
     },
     {
+      "path": "references/disposition-2026-11-04.md",
+      "sha256": "80e3ad43689e14d0c6938e2b3a1bf3d101a47fe2dd28a04ec4a5ac55caee006c",
+      "bytes": 5418
+    },
+    {
       "path": "references/followup-2026-11-03.json",
       "sha256": "e3a13457d0f00d01396ef15c9d0bfa94566b6d4bfaf4c95b440519da54157165",
       "bytes": 10892
@@ -4321,6 +4346,11 @@
       "path": "references/followup-2026-11-03.md",
       "sha256": "778e4b6d5c04d40f95e33ba584d0d8818e5a86bd1c69515bddeeafbddf2af969",
       "bytes": 5505
+    },
+    {
+      "path": "references/full-pdf-update-2026-11-04.md",
+      "sha256": "f1465182cee2bf86f16d6835801f47baf2794e07a451f718745be794cc0c7d2c",
+      "bytes": 4938
     },
     {
       "path": "releases/artifact-matrix.json",
@@ -4698,6 +4728,11 @@
       "bytes": 4295
     },
     {
+      "path": "tests/test_dictionary_documentation.py",
+      "sha256": "6079bed3c792cd683b29148f7f04cdb9a6b3e4f661ddb18850a7fd2948a47228",
+      "bytes": 1854
+    },
+    {
       "path": "tests/test_documentation_component.py",
       "sha256": "62e6f3a5c15424048535024be26418c758114d8d511315f95bea22f63b582b63",
       "bytes": 3012
@@ -4959,8 +4994,8 @@
     },
     {
       "path": "tools/audit_reader_consistency.py",
-      "sha256": "bd646f4577f0baefd6c7e1c5b8d26d32a9744814a4dbb9aff7199c5a6b62bd49",
-      "bytes": 1786
+      "sha256": "7c385fd6d20425e89aac9536ada027a0b1da1dd967508d9bc27a6ad9c0a82aaf",
+      "bytes": 1801
     },
     {
       "path": "tools/audit_relational_design.py",
@@ -5154,8 +5189,8 @@
     },
     {
       "path": "tools/check_source_transition.py",
-      "sha256": "b728357ab3ccb1e6ac60becb6d73b7c6a86b0c08d5858541edd1cdf42e1ba4a3",
-      "bytes": 6656
+      "sha256": "6ab74f822612854871f984855d7d7cf93c0d78e11ae46cb3046cd51689cc17c7",
+      "bytes": 7078
     },
     {
       "path": "tools/complete_risk_nature_readback.py",
@@ -5291,6 +5326,11 @@
       "path": "tools/publication/current_documentation.py",
       "sha256": "5d344e7320febbc8adc3a8e7341ba059a5ecbc0e02b258cc3d63eefcd6e5e4c9",
       "bytes": 16474
+    },
+    {
+      "path": "tools/publication/dictionary_documentation.py",
+      "sha256": "65558638d09958ee7233e833b84c2c7a7ba991662c8558124e2e042c4af21f59",
+      "bytes": 10523
     },
     {
       "path": "tools/publication/filter.js",
