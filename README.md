@@ -2,9 +2,9 @@
 
 Riskium is a conceptual ontology for organizing organizational risk knowledge. It distinguishes a continuing **RiskCase** from its register entries, possible scenarios, occurrences, contextual assessments, decisions and evidence. The ontology's domain is general; the pharmaceutical literature corpus is a development case, not its defining domain or an independently validated organizational deployment.
 
-**Published source:** [v0.3.7](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.7) · **conceptual model and OWL:** 0.3.1 · **published reader:** 0.4.5 · **author-held article candidate:** [7.2.1 receipt](evaluation/manuscript-review/v7.2.1/README.md). The article's Word/PDF are supplied to the author separately; they are not assets of the published source distribution. [Artifact roles](docs/artifact-versions.md) and the [manuscript/release roadmap](docs/manuscript-and-release-roadmap.md) explain the distinct version numbers.
+**Published source:** [v0.3.7](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.7) · **conceptual model and OWL:** 0.3.1 · **published reader:** 0.4.6 · **author-held article candidate:** [7.2.3 receipt](evaluation/manuscript-review/v7.2.3/receipt.json). The article's Word/PDF are supplied to the author separately; they are not assets of the published source distribution. [Artifact roles](docs/artifact-versions.md) and the [manuscript/release roadmap](docs/manuscript-and-release-roadmap.md) explain the distinct version numbers.
 
-[Read the Pages guide](https://arazsaiearasi3.github.io/riskium/current/index.html) · [Open the Wiki](https://github.com/ArazSaieArasi3/riskium/wiki) · [Explore the conceptual reference](https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html) · [Download v0.3.7](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.7)
+[Read the Pages guide](https://arazsaiearasi3.github.io/riskium/current/index.html) · [Browse concepts](https://arazsaiearasi3.github.io/riskium/current/concepts/index.html) · [Open the Wiki](https://github.com/ArazSaieArasi3/riskium/wiki) · [Explore the conceptual reference](https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html) · [Download v0.3.7](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.7)
 
 ## Choose a path
 
