@@ -7,7 +7,7 @@
   "cross_subdomain_pairs": 23,
   "cross_subdomain_associations": 55,
   "pages_sha256": {
-    "README.md": "7dd5c135e32c4cc908d23afbe03817bd6823edde36bb87eb2a0ba942f211fab6",
+    "README.md": "38db6e7efb4821c805a6ac0f41ece69deaf1cf25a66cbbc2c5e3ca9fc166f905",
     "RKM-C001.md": "9c7af5f94b7e0ca46e3953a3713d509c20b4999fe906b54371d9d3dda43c1596",
     "RKM-C002.md": "80e1656f69a62c36ac8fc9ddb821a10e0de14294ca8505378850b136597ce298",
     "RKM-C003.md": "b7680a80ffc822eec71dff45e2a749f139d6ac0f6c5c4c803a55135898f7f436",
@@ -88,7 +88,7 @@
     "RKM-X04.md": "29310fb210f12c6efe8ed2c52f178e8d0c2f34d1a050312998ad494e08b435e3",
     "RKM-X05.md": "e56ba3878788a2a47b25e3d5360dc66856bd5d6ab499d73aa002e8f4e89c4917",
     "RKM-X06.md": "4c7ea1e64e5046d51bdb6e51932797d184b7eb051277d243c1bf63b65f348d69",
-    "Subdomains.md": "51b65d56cb37328781f65cef452d16a141b2d42ac7d54f204b3a1137fe8066f2"
+    "Subdomains.md": "211b67ca876400477f9a76c49a4721688b81ac5caf54225a8190a0f7c45c9b42"
   },
   "external_definition_status": "UNASSESSED_UNLESS_EXPLICITLY_SOURCED"
 }

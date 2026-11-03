@@ -1,0 +1,53 @@
+name: Current manuscript and reader source transition
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: source-transition-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+jobs:
+  current-source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
+      - name: Reject research source drift behind historical receipts
+        run: |
+          python tools/check_source_transition.py --historical-worktree build/reviewed-source --receipt build/current-source-boundary.json
+          python -m unittest discover -s tests -p test_source_transition.py -v
+      - name: Check the changed current reader and complete source inventory
+        run: |
+          python tools/audit_consistency.py --check
+          python tools/audit_reader_consistency.py
+          python tools/build_subdomain_relationships.py --check
+          python tools/build_concept_dictionary.py --check
+      - name: Replay the new manuscript experiments with their original oracles
+        run: |
+          mkdir -p build/reviewed-source/evaluation/manuscript-review
+          cp -R evaluation/manuscript-review/v7.1.0 build/reviewed-source/evaluation/manuscript-review/
+          python build/reviewed-source/evaluation/manuscript-review/v7.1.0/supplement/analyze_model.py build/manuscript-replay
+          python build/reviewed-source/evaluation/manuscript-review/v7.1.0/supplement/query_parity.py build/manuscript-replay
+          python build/reviewed-source/evaluation/manuscript-review/v7.1.0/supplement/verify_reports.py build/manuscript-replay
+          python evaluation/manuscript-review/v7.2.0/pattern_metric_followup.py build/pattern-metric-followup.json
+          cmp build/pattern-metric-followup.json evaluation/manuscript-review/v7.2.0/pattern-metric-followup.json
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: current-source-transition-${{ github.sha }}
+          path: |
+            build/current-source-boundary.json
+            build/manuscript-replay/
+            build/pattern-metric-followup.json
+          if-no-files-found: error

@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'diagrams/subdomain-relationships.svg'
+      - 'diagrams/subdomain-relationships-matrix.svg'
       - 'documentation/concepts/0.3.1/**'
       - 'tools/build_subdomain_relationships.py'
       - 'tools/build_concept_dictionary.py'
@@ -11,6 +12,7 @@ on:
     branches: [main]
     paths:
       - 'diagrams/subdomain-relationships.svg'
+      - 'diagrams/subdomain-relationships-matrix.svg'
       - 'documentation/concepts/0.3.1/**'
       - 'tools/build_subdomain_relationships.py'
       - 'tools/build_concept_dictionary.py'

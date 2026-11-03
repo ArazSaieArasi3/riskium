@@ -34,28 +34,28 @@
     },
     {
       "path": ".github/workflows/current-alignment.yml",
-      "sha256": "d3febc2bafa1ab20687efce63f5399e8552133c9a4bab30d414343e9916c378e",
-      "bytes": 1705
+      "sha256": "eed26e8935deda869af5c22d0171f1d2b57d8aec18f1b0ebf05f0ceeb76c8c46",
+      "bytes": 2236
     },
     {
       "path": ".github/workflows/current-documentation-pages.yml",
-      "sha256": "cf9bda061e159154c0e2e302da1a12ce9f530ea5c6b84e759038f88ee138d870",
-      "bytes": 2649
+      "sha256": "d8f341a530a83881c56263717b7b02bd7d0caaa07adea09e167c722d9f15a229",
+      "bytes": 2771
     },
     {
       "path": ".github/workflows/current-documentation.yml",
-      "sha256": "c07acec9e62419c3699f4055d089fc86dae66a3c49b8cc9bcbbfcf3bdeae2ec5",
-      "bytes": 1128
+      "sha256": "fee2637414234fbd15a2f5b0a38c4efe672a742ed492ed944b273606129e03c5",
+      "bytes": 1610
     },
     {
       "path": ".github/workflows/documentation.yml",
-      "sha256": "50169cf46025120394a68b45272167a0ee1bab5c5c952d2c228be8599ca2b0cd",
-      "bytes": 2331
+      "sha256": "9c0297c3b4aa36da2280ca0fd4da9d134e0d5d1e7199284a0c8b61f78de7b90c",
+      "bytes": 3303
     },
     {
       "path": ".github/workflows/evidence-lifecycle.yml",
-      "sha256": "5ba26e13badb298162c0fa29f17f6e6b97f84e62779c27272845a2e88bc50a9f",
-      "bytes": 1461
+      "sha256": "4f4f6d38e1b3d069febb799be8a8593aaf28ca8b006d88bbda67c77478165ee0",
+      "bytes": 1992
     },
     {
       "path": ".github/workflows/final-release-v035.yml",
@@ -69,48 +69,48 @@
     },
     {
       "path": ".github/workflows/incremental-release.yml",
-      "sha256": "b87d98fea2a6b14244e1a47f1e29ff6ef618a3285e4b40d6dc7b878d29997d93",
-      "bytes": 5806
+      "sha256": "5ca20d564f65b830fd8f780c335fc3aeeade74d85c10154865156a6be0ae637a",
+      "bytes": 5861
     },
     {
       "path": ".github/workflows/pages.yml",
-      "sha256": "3ddf7604e1f4021e989abecc2dc0769fc4b466825574da609cad4d97df052258",
-      "bytes": 1856
+      "sha256": "8273821e79bfc50fbca6515165a64f02f72707e54a80d9aacdedb4ebbcf9fc7e",
+      "bytes": 1978
     },
     {
       "path": ".github/workflows/post-release-validation.yml",
-      "sha256": "8d564882e1a0edb484885a41ff323b3133d5a837a416ee61a71c337e7708d287",
-      "bytes": 3784
+      "sha256": "21219dea86bd6f3f87f221fe883b59815dc9bb2357ae71251b7a13b69bf4eeb4",
+      "bytes": 4756
     },
     {
       "path": ".github/workflows/publication-status.yml",
-      "sha256": "e067a6ed85502b336853aca19f095458024670279939ffbb9b544e027b01b522",
-      "bytes": 2360
+      "sha256": "72a8e5bd02a3324841bc0b78b7c4ddbf99b043edf82b8b1e71069de611c20ce2",
+      "bytes": 2482
     },
     {
       "path": ".github/workflows/published-documentation.yml",
-      "sha256": "c60bfcf0a6c390269dc2aeef30456d3fac25513d25e90d8561d36943f250e0e6",
-      "bytes": 3377
+      "sha256": "c850eec51720d9bfb0cc8a68ef59ae6a54a2da4ae95aef425d7db46b92988592",
+      "bytes": 3499
     },
     {
       "path": ".github/workflows/quality.yml",
-      "sha256": "a011872ff274345834d2e35c862735552d31f5157f8dc7eb120d7fd8d995348e",
-      "bytes": 720
+      "sha256": "712c2df4e7e190f0e65e14fe37e49453ce14bf667e1f1749fa8b6ed29fc6c0d8",
+      "bytes": 1153
     },
     {
       "path": ".github/workflows/references.yml",
-      "sha256": "d7b302a9ae2117a0e49a2be55fc36f71cdf541bac786fd85223c8ca34f178101",
-      "bytes": 614
+      "sha256": "6468fb1ee3e86b6faff1dfad9e56275f9e68d7cae2a3c2adbfa4c436c53a3f28",
+      "bytes": 998
     },
     {
       "path": ".github/workflows/release-selection-v035.yml",
-      "sha256": "64cd63af78254573b32bff6d469c8f971f2c054bcf32ae7b57cb10fe0e3d1257",
-      "bytes": 1243
+      "sha256": "fc93d98c352d0beabaac0a7b34746cc8810b221942f9c00ce696d72df6068e16",
+      "bytes": 1725
     },
     {
       "path": ".github/workflows/release-support-v035.yml",
-      "sha256": "deb5c29d21eac25544c840c7bf55f8cea23f3f7107559bdd3a4bed3f3d0bcf90",
-      "bytes": 1217
+      "sha256": "d1fd775de89736aa82f0bf5257e271f1ca84183a5889f935f6bc46cce63da449",
+      "bytes": 1699
     },
     {
       "path": ".github/workflows/release-v036.yml",
@@ -119,43 +119,48 @@
     },
     {
       "path": ".github/workflows/release-v037.yml",
-      "sha256": "b3541eb2f7261971bb9eeb148a231a6871015e5aa7dea291e8991a84c5819e3f",
-      "bytes": 2107
+      "sha256": "c15cb6469599c9ecbe6cfd1242bace5976085d3c4223381b9cc607ad7d2e1632",
+      "bytes": 2192
     },
     {
       "path": ".github/workflows/released-reader-main.yml",
-      "sha256": "f15cf1773fcab3c0762e51d15dde56c8c77c50ce7971152173f6b098727fe145",
-      "bytes": 4384
+      "sha256": "a45c9e9cf1772999fdeabcdfbd31f8b0962e1b3905b50c556a075b28dd1aaeb4",
+      "bytes": 4506
     },
     {
       "path": ".github/workflows/released-v037-reader.yml",
-      "sha256": "5598442b3555716c67e3e8f4daad8933ebe98838ef5465b094c0afc8c65bc785",
-      "bytes": 4443
+      "sha256": "33969a5264a8fe0420efb55d6b7ce0f0b30d63f9280d3e57fe86e305b93392c3",
+      "bytes": 4565
     },
     {
       "path": ".github/workflows/requirements.yml",
-      "sha256": "eec498caa873e4e7642a2e39d28bd63ba5ff26308ea6b22dc3590480ca376e89",
-      "bytes": 951
+      "sha256": "6327731a30f162ca083a63eabfed47f24ce022cd3273a85297177a21454bb938",
+      "bytes": 1482
+    },
+    {
+      "path": ".github/workflows/source-transition.yml",
+      "sha256": "3e575bcbde2b0f287bb1dfc49a063b9adf31394bb89b19b95a57df743a64269e",
+      "bytes": 2494
     },
     {
       "path": ".github/workflows/stable-release.yml",
-      "sha256": "e3f353895b966c8066faf6718a803c0272c7727c46830b891683427c07f3f23b",
-      "bytes": 7606
+      "sha256": "5a9e95fc364f6661949d71571943dc6dbe70a160094f7884bd19ebbaeab794a9",
+      "bytes": 7663
     },
     {
       "path": ".github/workflows/subdomain-dictionary.yml",
-      "sha256": "eaf37cc465b247af8cd41f2a935c5729dd6bd5e148585061e91eae88af15969c",
-      "bytes": 1016
+      "sha256": "e94a68e3da7570a46057a9b2b73fd3f3ed36ba4190e71b8e6c6ef4ac089d5fc0",
+      "bytes": 1124
     },
     {
       "path": ".github/workflows/v036-versioned-suite.yml",
-      "sha256": "65911d1c72e105739500538f0ca9dc81e0d2b4eff7fd8bff7c7a6938118457c0",
-      "bytes": 2103
+      "sha256": "66f1106df82cdd867419bcb3b2ebbb38d6e634854cf76644a32c9831281710ab",
+      "bytes": 2761
     },
     {
       "path": ".github/workflows/v037-versioned-suite.yml",
-      "sha256": "61a66c66d472747e2a6b75a48caac6bbfeccfdf45e0b826bbe292d7167e1d77b",
-      "bytes": 2047
+      "sha256": "f3dd16c954a5d3a72e289ce1652c16909c4cdcaad748d50429c498746e75fdc5",
+      "bytes": 2705
     },
     {
       "path": ".gitignore",
@@ -214,8 +219,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "3499aecc6d1a4ce39814bc1e84147344ccae63fddebeaad2b6464427a398829d",
-      "bytes": 5893
+      "sha256": "8abdfcc4c11578ccc3b1220935b26fe26b82d9e52351c290840432444f1b9faa",
+      "bytes": 6017
     },
     {
       "path": "RIGHTS.md",
@@ -238,9 +243,14 @@
       "bytes": 736456
     },
     {
-      "path": "diagrams/subdomain-relationships.svg",
+      "path": "diagrams/subdomain-relationships-matrix.svg",
       "sha256": "811ab2de61c09327fc1f33617357a694ecfeb831928dfca226fa217842cd6317",
       "bytes": 19854
+    },
+    {
+      "path": "diagrams/subdomain-relationships.svg",
+      "sha256": "cdd96c5fa70fa9587c2e7956425914a1d85862c30a64894433be014ab0e90e58",
+      "bytes": 19016
     },
     {
       "path": "docs/.nojekyll",
@@ -546,6 +556,11 @@
       "path": "docs/site/index.html",
       "sha256": "d8f69c71e3d58d8eb7f2a2244b3c0308aa017af7a7ebf7625373a57d1bc02e0a",
       "bytes": 385
+    },
+    {
+      "path": "docs/source-transition-validation.md",
+      "sha256": "74c33804ee418a5d3cd4d93c0521d49a4d3a5a4893a976a415506723613dd122",
+      "bytes": 3471
     },
     {
       "path": "docs/stable-publication.md",
@@ -1539,8 +1554,8 @@
     },
     {
       "path": "documentation/concepts/0.3.1/README.md",
-      "sha256": "7dd5c135e32c4cc908d23afbe03817bd6823edde36bb87eb2a0ba942f211fab6",
-      "bytes": 5280
+      "sha256": "38db6e7efb4821c805a6ac0f41ece69deaf1cf25a66cbbc2c5e3ca9fc166f905",
+      "bytes": 5350
     },
     {
       "path": "documentation/concepts/0.3.1/RKM-C001.md",
@@ -1944,12 +1959,12 @@
     },
     {
       "path": "documentation/concepts/0.3.1/Subdomains.md",
-      "sha256": "51b65d56cb37328781f65cef452d16a141b2d42ac7d54f204b3a1137fe8066f2",
-      "bytes": 8412
+      "sha256": "211b67ca876400477f9a76c49a4721688b81ac5caf54225a8190a0f7c45c9b42",
+      "bytes": 8755
     },
     {
       "path": "documentation/concepts/0.3.1/manifest.json",
-      "sha256": "cc50a1acb83e517bc4e08640cc34b575087bab34f3b3b0ce960a22c238caf879",
+      "sha256": "b22580b4306c379c4c5152813eb5fd0e902fd11d727f3aa0e7786afd8b7cbdde",
       "bytes": 7498
     },
     {
@@ -2064,7 +2079,7 @@
     },
     {
       "path": "evaluation/documentation/current-0.4.0/component.json",
-      "sha256": "0d48783ed853f619031aa465b5b71a7d8e8dcfb090878c141b75c55c389a7d62",
+      "sha256": "b1020d29340142310cca8ad78d5e0558d30c9f24667b6845a137a8647bb7d25e",
       "bytes": 13723
     },
     {
@@ -4898,6 +4913,11 @@
       "bytes": 7623
     },
     {
+      "path": "tests/test_source_transition.py",
+      "sha256": "9cbf5b0706aca034765dd5c04c9125e80479831b5c3e3725bc777d21d86539e9",
+      "bytes": 2173
+    },
+    {
       "path": "tests/test_stable_release.py",
       "sha256": "95dc0874084531d68eb84ca10d0f2a52d6aba79341d28e00c16dda6aa4743b51",
       "bytes": 6616
@@ -4974,8 +4994,8 @@
     },
     {
       "path": "tools/build_concept_dictionary.py",
-      "sha256": "5c0fa3d44af240e4289384c973d6de44b9428b4242ba08a1e1397aecb63eb5cc",
-      "bytes": 10982
+      "sha256": "bebded20be9760345f9679db63663e9dca886ee064eb350f7ca21c07efedac15",
+      "bytes": 11443
     },
     {
       "path": "tools/build_correction_inventory.py",
@@ -5094,8 +5114,8 @@
     },
     {
       "path": "tools/build_subdomain_relationships.py",
-      "sha256": "8a47b44745cfc1ef8725200468044953a48af14264f8b5e38594f591ebf78cb5",
-      "bytes": 6397
+      "sha256": "fb95365506d6983367a11db98fceddf49337d1797209945a0b2c9f15767ce25b",
+      "bytes": 12456
     },
     {
       "path": "tools/build_traceability.py",
@@ -5131,6 +5151,11 @@
       "path": "tools/check_risk_nature_declaration.py",
       "sha256": "534978f9cdcb88dd28b89d0f882fe5e5f8ac5914b1bf16297316065c332ce580",
       "bytes": 19480
+    },
+    {
+      "path": "tools/check_source_transition.py",
+      "sha256": "c1d297529ba6e4053ecbd72d4b1501d199af780dc76292a745e3f26e28ff8ef8",
+      "bytes": 6386
     },
     {
       "path": "tools/complete_risk_nature_readback.py",

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a print-readable, exact cross-subdomain association matrix."""
+"""Build exact package and matrix views of cross-subdomain associations."""
 from collections import Counter
 from pathlib import Path
 import hashlib
@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MODEL = ROOT / 'ontology/riskium-model.json'
 REPORT = ROOT / 'evaluation/manuscript-review/v7.1.0/supplement/structural-report.json'
 TARGET = ROOT / 'diagrams/subdomain-relationships.svg'
+MATRIX = ROOT / 'diagrams/subdomain-relationships-matrix.svg'
 
 
 def build():
@@ -83,15 +84,91 @@ def build():
     return '\n'.join(out) + '\n'
 
 
+def package_view():
+    # The validated matrix builder checks the source model and all pair counts.
+    build()
+    model = json.loads(MODEL.read_text())
+    receipt = json.loads(REPORT.read_text())
+    positions = {'D01': (1350, 455), 'D02': (150, 945), 'D03': (950, 210),
+                 'D04': (950, 455), 'D05': (150, 700), 'D06': (550, 700),
+                 'D07': (950, 945), 'D08': (550, 455), 'D09': (550, 945),
+                 'D10': (550, 210), 'D11': (1350, 210)}
+    positions = {k: (x, 200 + (y - 210) * 220 / 245) for k, (x, y) in positions.items()}
+    pairs = receipt['association_pairs']
+    E = html.escape
+    out = ['<svg xmlns="http://www.w3.org/2000/svg" width="180mm" height="123.6mm" viewBox="0 0 1500 1030" role="img" aria-labelledby="title desc">',
+           '<title id="title">Riskium: relationships between its eleven subdomains</title>',
+           '<desc id="desc">Package overview of a single ontology domain. All 23 unordered cross-subdomain association pairs are shown, aggregating 55 concept-level associations. Edge labels greater than one count those associations; an unlabelled edge represents one. Lines do not imply process order, causation, import or dependency. Inheritance is excluded and optional boundary bridges are included.</desc>',
+           '<rect width="1500" height="1030" fill="white"/>',
+           '<rect x="16" y="16" width="1468" height="998" rx="14" fill="#fafcfd" stroke="#c7d4dd" stroke-width="2"/>',
+           '<text x="48" y="67" font-family="Arial,Helvetica,sans-serif" font-size="36" font-weight="700" fill="#143b52">Riskium</text>',
+           '<text x="215" y="67" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#34566a">Subdomain relationship map</text>',
+           '<text x="48" y="102" font-family="Arial,Helvetica,sans-serif" font-size="21" fill="#506979">One ontology domain · eleven subdomains · model-derived association links</text>',
+           '<path d="M48 126H1452" stroke="#d3dfe6" stroke-width="2"/>']
+    segments = []
+    for pair in pairs:
+        a, b, n = pair['source'], pair['target'], pair['relations']
+        x1, y1 = positions[a]; x2, y2 = positions[b]
+        dx, dy = x2 - x1, y2 - y1
+        scale = min(122 / abs(dx) if dx else float('inf'), 57 / abs(dy) if dy else float('inf'))
+        s = (x1 + dx * scale, y1 + dy * scale)
+        t = (x2 - dx * scale, y2 - dy * scale)
+        segments.append((a, b, n, s, t))
+    # White under-strokes make unavoidable crossings distinguishable in print.
+    for a, b, n, s, t in segments:
+        color = '#387e89' if a == 'D01' else '#738797'
+        width = 3.4 if n > 1 else 2.5
+        path = f'M{s[0]:.2f} {s[1]:.2f}L{t[0]:.2f} {t[1]:.2f}'
+        out += [f'<g id="edge-{a}-{b}" data-associations="{n}"><title>{a} and {b}: {n} concept-level association(s)</title>',
+                f'<path d="{path}" stroke="white" stroke-width="10" fill="none"/>',
+                f'<path d="{path}" stroke="{color}" stroke-width="{width}" fill="none" stroke-linecap="round"/></g>']
+    labels = []
+    for a, b, n, s, t in segments:
+        if n == 1:
+            continue
+        # Select a legible point clear of cards, edge crossings and other labels.
+        choices = []
+        for f in (.5, .35, .65, .25, .75):
+            x, y = s[0] + (t[0] - s[0]) * f, s[1] + (t[1] - s[1]) * f
+            clearance = min(((x - lx)**2 + (y - ly)**2)**.5 for lx, ly in labels) if labels else 1000
+            for aa, bb, nn, p, q in segments:
+                if (aa, bb) == (a, b):
+                    continue
+                vx, vy = q[0] - p[0], q[1] - p[1]
+                z = max(0, min(1, ((x - p[0]) * vx + (y - p[1]) * vy) / (vx * vx + vy * vy)))
+                clearance = min(clearance, ((x - p[0] - z * vx)**2 + (y - p[1] - z * vy)**2)**.5)
+            choices.append((clearance, x, y))
+        _, x, y = max(choices)
+        labels.append((x, y))
+        out += [f'<circle cx="{x:.2f}" cy="{y:.2f}" r="17" fill="white" stroke="#b7c9d4" stroke-width="1.5"/>',
+                f'<text x="{x:.2f}" y="{y+8:.2f}" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#24576c">{n}</text>']
+    for domain in model['domains']:
+        ident = domain['id']; x, y = positions[ident]
+        left, top = x - 120, y - 53
+        title = domain['title'].removeprefix('Risk ')
+        out += [f'<g id="subdomain-{ident}"><title>{E(domain["title"])}</title>',
+                f'<rect x="{left}" y="{top}" width="240" height="106" rx="9" fill="white" stroke="#52758b" stroke-width="2.2"/>',
+                f'<rect x="{left}" y="{top-17}" width="74" height="29" rx="5" fill="#24576c"/>',
+                f'<text x="{left+37}" y="{top+4}" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="white">{ident}</text>',
+                f'<text x="{x}" y="{y-7}" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#506979">Risk</text>',
+                f'<text x="{x}" y="{y+29}" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#173f55">{E(title)}</text></g>']
+    out += ['<path d="M48 946H1452" stroke="#d3dfe6" stroke-width="2"/>',
+            '<text x="48" y="977" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#415f72">Line = association pair · number = association count · unlabelled line = 1 · no implied direction</text>',
+            '<text x="48" y="1003" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#506979">All 23 pairs / 55 associations · optional boundary bridges included · inheritance excluded</text>',
+            '<metadata>All 23 pairs / 55 associations; inheritance excluded; optional boundary bridges included; model SHA-256: ' + receipt['model_sha256'] + '</metadata>',
+            '</svg>']
+    return '\n'.join(out) + '\n'
+
+
 def main():
-    content = build()
-    if '--check' in sys.argv:
-        if not TARGET.exists() or TARGET.read_text() != content:
-            raise SystemExit('Subdomain SVG is stale')
-        print('PASS: 11 subdomains, 23 pairs, 55 associations; SVG current')
-    else:
-        TARGET.write_text(content)
-        print('Wrote', TARGET)
+    outputs = {TARGET: package_view(), MATRIX: build()}
+    for path, content in outputs.items():
+        if '--check' in sys.argv:
+            if not path.exists() or path.read_text() != content:
+                raise SystemExit('Subdomain SVG is stale: ' + str(path))
+        else:
+            path.write_text(content)
+    print('PASS: 11 subdomains, 23 pairs, 55 associations; package and matrix SVGs current')
 
 
 if __name__ == '__main__':

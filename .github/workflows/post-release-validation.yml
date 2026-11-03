@@ -17,6 +17,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
 jobs:
   integration:
     runs-on: ubuntu-24.04
@@ -30,53 +33,68 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r tools/requirements-shacl.txt
+      - name: Verify candidate source identity and prepare the reviewed historical checkout
+        run: python tools/check_source_transition.py --historical-worktree build/reviewed-source --receipt build/source-boundary.json
       - name: Replay exact shared-graph source and result receipt
+        working-directory: build/reviewed-source
         run: python tools/run_integrated_validation.py --check
       - name: Check and replay assessment mapping, synthetic populations and measured workloads
+        working-directory: build/reviewed-source
         run: |
           python tools/build_relational_assessment.py --check
           python tools/run_relational_assessment.py --check
           python tools/check_database_assurance.py --check
           python -m unittest discover -s tests -p test_relational_assessment.py -v
       - name: Replay assessment correction and source/requirement accounting
+        working-directory: build/reviewed-source
         run: |
           python tools/run_relational_correction.py --check
           python tools/build_correction_inventory.py --check
           python -m unittest discover -s tests -p test_relational_correction.py -v
       - name: Check extension boundaries, unfilled reviewer responses and exhaustive SQL scope
+        working-directory: build/reviewed-source
         run: python tools/check_research_backlog.py --check
       - name: Replay version-owned source/scenario migration, fixed oracles and accounting
+        working-directory: build/reviewed-source
         run: |
           python tools/run_relational_source_scenario.py --check
           python tools/build_source_scenario_inventory.py --check
           python -m unittest discover -s tests -p test_source_scenario.py -v
       - name: Test integration trust boundaries
+        working-directory: build/reviewed-source
         run: python -m unittest discover -s tests -p test_integrated_validation.py -v
       - name: Replay source/scenario correction lineage, recovery and fixed branch oracles
+        working-directory: build/reviewed-source
         run: |
           python tools/run_relational_source_scenario_lineage.py --check
           python tools/build_source_scenario_lineage_inventory.py --check
           python -m unittest discover -s tests -p test_source_scenario_lineage.py -v
       - name: Replay qualified evidence, contextual roles and exact target/source oracles
+        working-directory: build/reviewed-source
         run: |
           python tools/run_relational_evidence.py --check
           python tools/build_evidence_inventory.py --check
           python -m unittest discover -s tests -p test_qualified_evidence.py -v
       - name: Replay existing SQLite migration and history expectations
+        working-directory: build/reviewed-source
         run: python tools/run_relational_history.py --check
       - name: Replay the frozen source and correction/withheld-identity cohorts
+        working-directory: build/reviewed-source
         run: |
           python tools/run_source_cq06.py --check
           python tools/run_source_cq0708.py --check
       - name: Validate the provisional v0.3.4 selection and dependency trust boundaries
+        working-directory: build/reviewed-source
         run: |
           python tools/build_release_selection.py --check
           python -m unittest discover -s tests -p test_release_selection.py -v
       - name: Validate the prepared 28-component v0.3.4 distribution and snapshot closure
+        working-directory: build/reviewed-source
         run: |
           python tools/build_prepared_distribution.py --check
           python -m unittest discover -s tests -p test_prepared_distribution.py -v
       - name: Preserve published component bindings and source files
+        working-directory: build/reviewed-source
         run: |
           python tools/check_release_alignment.py
           git diff --exit-code

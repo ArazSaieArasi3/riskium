@@ -1,211 +1,173 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="170mm" height="112mm" viewBox="0 0 940 620" role="img" aria-labelledby="title desc">
-<title id="title">Riskium subdomain relationships</title>
-<desc id="desc">Upper-triangular matrix of eleven catalog subdomains. Twenty-three colored cells enumerate all fifty-five cross-subdomain associations, collapsed by unordered domain pair. Inheritance is excluded; optional boundary bridges are included. The reading path is illustrative and does not assert direction for the associations.</desc>
-<rect width="940" height="620" fill="#ffffff"/>
-<rect x="24" y="22" width="892" height="576" rx="18" fill="#f7f9fb" stroke="#cfd9e2"/>
-<path d="M48 103H892" stroke="#d8e2e8"/>
-<text x="48" y="62" fill="#142f43" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700">Riskium · Subdomain relationships</text>
-<text x="48" y="88" fill="#456071" font-family="Arial,Helvetica,sans-serif" font-size="15">A single ontology domain organized into eleven catalog subdomains</text>
-<text x="48" y="132" fill="#203f55" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" letter-spacing="1">SUBDOMAIN</text>
-<text x="478" y="132" fill="#203f55" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" letter-spacing="1">ASSOCIATION PAIRS</text>
-<text x="502" y="151" text-anchor="middle" fill="#354e60" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">D01</text>
-<text x="534" y="151" text-anchor="middle" fill="#354e60" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">D02</text>
-<text x="566" y="151" text-anchor="middle" fill="#354e60" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">D03</text>
-<text x="598" y="151" text-anchor="middle" fill="#354e60" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">D04</text>
-<text x="630" y="151" text-anchor="middle" fill="#354e60" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">D05</text>
-<text x="662" y="151" text-anchor="middle" fill="#354e60" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">D06</text>
-<text x="694" y="151" text-anchor="middle" fill="#354e60" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">D07</text>
-<text x="726" y="151" text-anchor="middle" fill="#354e60" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">D08</text>
-<text x="758" y="151" text-anchor="middle" fill="#354e60" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">D09</text>
-<text x="790" y="151" text-anchor="middle" fill="#354e60" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">D10</text>
-<text x="822" y="151" text-anchor="middle" fill="#354e60" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">D11</text>
-<rect x="42" y="164" width="419" height="28" rx="7" fill="#dfeff0"/>
-<text x="54" y="183" fill="#17394c" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">D01</text>
-<text x="108" y="183" fill="#213d50" font-family="Arial,Helvetica,sans-serif" font-size="15">Risk Phenomena</text>
-<rect x="487" y="163" width="30" height="30" rx="5" fill="#254f63"/>
-<circle cx="502" cy="178" r="3" fill="#ffffff"/>
-<rect x="519" y="163" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="551" y="163" width="30" height="30" rx="5" fill="#cbe5e3" stroke="#ffffff"/>
-<text x="566" y="183" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">1</text>
-<rect x="583" y="163" width="30" height="30" rx="5" fill="#245c72" stroke="#ffffff"/>
-<text x="598" y="183" text-anchor="middle" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">10</text>
-<rect x="615" y="163" width="30" height="30" rx="5" fill="#4c969c" stroke="#ffffff"/>
-<text x="630" y="183" text-anchor="middle" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">5</text>
-<rect x="647" y="163" width="30" height="30" rx="5" fill="#91c8c6" stroke="#ffffff"/>
-<text x="662" y="183" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">3</text>
-<rect x="679" y="163" width="30" height="30" rx="5" fill="#91c8c6" stroke="#ffffff"/>
-<text x="694" y="183" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">2</text>
-<rect x="711" y="163" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="743" y="163" width="30" height="30" rx="5" fill="#cbe5e3" stroke="#ffffff"/>
-<text x="758" y="183" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">1</text>
-<rect x="775" y="163" width="30" height="30" rx="5" fill="#91c8c6" stroke="#ffffff"/>
-<text x="790" y="183" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">3</text>
-<rect x="807" y="163" width="30" height="30" rx="5" fill="#4c969c" stroke="#ffffff"/>
-<text x="822" y="183" text-anchor="middle" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">5</text>
-<rect x="42" y="196" width="419" height="28" rx="7" fill="#edf2f5"/>
-<text x="54" y="215" fill="#17394c" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">D02</text>
-<text x="108" y="215" fill="#213d50" font-family="Arial,Helvetica,sans-serif" font-size="15">Risk Information</text>
-<rect x="487" y="195" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="519" y="195" width="30" height="30" rx="5" fill="#254f63"/>
-<circle cx="534" cy="210" r="3" fill="#ffffff"/>
-<rect x="551" y="195" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="583" y="195" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="615" y="195" width="30" height="30" rx="5" fill="#4c969c" stroke="#ffffff"/>
-<text x="630" y="215" text-anchor="middle" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">4</text>
-<rect x="647" y="195" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="679" y="195" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="711" y="195" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="743" y="195" width="30" height="30" rx="5" fill="#cbe5e3" stroke="#ffffff"/>
-<text x="758" y="215" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">1</text>
-<rect x="775" y="195" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="807" y="195" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<text x="54" y="247" fill="#17394c" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">D03</text>
-<text x="108" y="247" fill="#213d50" font-family="Arial,Helvetica,sans-serif" font-size="15">Risk Classification</text>
-<rect x="487" y="227" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="519" y="227" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="551" y="227" width="30" height="30" rx="5" fill="#254f63"/>
-<circle cx="566" cy="242" r="3" fill="#ffffff"/>
-<rect x="583" y="227" width="30" height="30" rx="5" fill="#91c8c6" stroke="#ffffff"/>
-<text x="598" y="247" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">2</text>
-<rect x="615" y="227" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="647" y="227" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="679" y="227" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="711" y="227" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="743" y="227" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="775" y="227" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="807" y="227" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="42" y="260" width="419" height="28" rx="7" fill="#edf2f5"/>
-<text x="54" y="279" fill="#17394c" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">D04</text>
-<text x="108" y="279" fill="#213d50" font-family="Arial,Helvetica,sans-serif" font-size="15">Risk Registration</text>
-<rect x="487" y="259" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="519" y="259" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="551" y="259" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="583" y="259" width="30" height="30" rx="5" fill="#254f63"/>
-<circle cx="598" cy="274" r="3" fill="#ffffff"/>
-<rect x="615" y="259" width="30" height="30" rx="5" fill="#cbe5e3" stroke="#ffffff"/>
-<text x="630" y="279" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">1</text>
-<rect x="647" y="259" width="30" height="30" rx="5" fill="#91c8c6" stroke="#ffffff"/>
-<text x="662" y="279" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">3</text>
-<rect x="679" y="259" width="30" height="30" rx="5" fill="#91c8c6" stroke="#ffffff"/>
-<text x="694" y="279" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">2</text>
-<rect x="711" y="259" width="30" height="30" rx="5" fill="#91c8c6" stroke="#ffffff"/>
-<text x="726" y="279" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">2</text>
-<rect x="743" y="259" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="775" y="259" width="30" height="30" rx="5" fill="#cbe5e3" stroke="#ffffff"/>
-<text x="790" y="279" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">1</text>
-<rect x="807" y="259" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<text x="54" y="311" fill="#17394c" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">D05</text>
-<text x="108" y="311" fill="#213d50" font-family="Arial,Helvetica,sans-serif" font-size="15">Risk Assessment</text>
-<rect x="487" y="291" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="519" y="291" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="551" y="291" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="583" y="291" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="615" y="291" width="30" height="30" rx="5" fill="#254f63"/>
-<circle cx="630" cy="306" r="3" fill="#ffffff"/>
-<rect x="647" y="291" width="30" height="30" rx="5" fill="#91c8c6" stroke="#ffffff"/>
-<text x="662" y="311" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">3</text>
-<rect x="679" y="291" width="30" height="30" rx="5" fill="#cbe5e3" stroke="#ffffff"/>
-<text x="694" y="311" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">1</text>
-<rect x="711" y="291" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="743" y="291" width="30" height="30" rx="5" fill="#cbe5e3" stroke="#ffffff"/>
-<text x="758" y="311" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">1</text>
-<rect x="775" y="291" width="30" height="30" rx="5" fill="#cbe5e3" stroke="#ffffff"/>
-<text x="790" y="311" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">1</text>
-<rect x="807" y="291" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="42" y="324" width="419" height="28" rx="7" fill="#edf2f5"/>
-<text x="54" y="343" fill="#17394c" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">D06</text>
-<text x="108" y="343" fill="#213d50" font-family="Arial,Helvetica,sans-serif" font-size="15">Risk Treatment</text>
-<rect x="487" y="323" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="519" y="323" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="551" y="323" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="583" y="323" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="615" y="323" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="647" y="323" width="30" height="30" rx="5" fill="#254f63"/>
-<circle cx="662" cy="338" r="3" fill="#ffffff"/>
-<rect x="679" y="323" width="30" height="30" rx="5" fill="#cbe5e3" stroke="#ffffff"/>
-<text x="694" y="343" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">1</text>
-<rect x="711" y="323" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="743" y="323" width="30" height="30" rx="5" fill="#cbe5e3" stroke="#ffffff"/>
-<text x="758" y="343" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">1</text>
-<rect x="775" y="323" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="807" y="323" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<text x="54" y="375" fill="#17394c" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">D07</text>
-<text x="108" y="375" fill="#213d50" font-family="Arial,Helvetica,sans-serif" font-size="15">Risk Responsibility</text>
-<rect x="487" y="355" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="519" y="355" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="551" y="355" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="583" y="355" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="615" y="355" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="647" y="355" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="679" y="355" width="30" height="30" rx="5" fill="#254f63"/>
-<circle cx="694" cy="370" r="3" fill="#ffffff"/>
-<rect x="711" y="355" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="743" y="355" width="30" height="30" rx="5" fill="#cbe5e3" stroke="#ffffff"/>
-<text x="758" y="375" text-anchor="middle" fill="#153e4d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">1</text>
-<rect x="775" y="355" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="807" y="355" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="42" y="388" width="419" height="28" rx="7" fill="#edf2f5"/>
-<text x="54" y="407" fill="#17394c" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">D08</text>
-<text x="108" y="407" fill="#213d50" font-family="Arial,Helvetica,sans-serif" font-size="15">Risk Workflow</text>
-<rect x="487" y="387" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="519" y="387" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="551" y="387" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="583" y="387" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="615" y="387" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="647" y="387" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="679" y="387" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="711" y="387" width="30" height="30" rx="5" fill="#254f63"/>
-<circle cx="726" cy="402" r="3" fill="#ffffff"/>
-<rect x="743" y="387" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="775" y="387" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="807" y="387" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<text x="54" y="439" fill="#17394c" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">D09</text>
-<text x="108" y="439" fill="#213d50" font-family="Arial,Helvetica,sans-serif" font-size="15">Risk Evidence</text>
-<rect x="487" y="419" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="519" y="419" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="551" y="419" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="583" y="419" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="615" y="419" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="647" y="419" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="679" y="419" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="711" y="419" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="743" y="419" width="30" height="30" rx="5" fill="#254f63"/>
-<circle cx="758" cy="434" r="3" fill="#ffffff"/>
-<rect x="775" y="419" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="807" y="419" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<rect x="42" y="452" width="419" height="28" rx="7" fill="#edf2f5"/>
-<text x="54" y="471" fill="#17394c" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">D10</text>
-<text x="108" y="471" fill="#213d50" font-family="Arial,Helvetica,sans-serif" font-size="15">Risk Monitoring</text>
-<rect x="487" y="451" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="519" y="451" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="551" y="451" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="583" y="451" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="615" y="451" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="647" y="451" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="679" y="451" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="711" y="451" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="743" y="451" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="775" y="451" width="30" height="30" rx="5" fill="#254f63"/>
-<circle cx="790" cy="466" r="3" fill="#ffffff"/>
-<rect x="807" y="451" width="30" height="30" rx="5" fill="#e9eef1" stroke="#ffffff"/>
-<text x="54" y="503" fill="#17394c" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">D11</text>
-<text x="108" y="503" fill="#213d50" font-family="Arial,Helvetica,sans-serif" font-size="15">Risk Policy</text>
-<rect x="487" y="483" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="519" y="483" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="551" y="483" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="583" y="483" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="615" y="483" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="647" y="483" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="679" y="483" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="711" y="483" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="743" y="483" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="775" y="483" width="30" height="30" rx="5" fill="#f7f9fb"/>
-<rect x="807" y="483" width="30" height="30" rx="5" fill="#254f63"/>
-<circle cx="822" cy="498" r="3" fill="#ffffff"/>
-<path d="M48 527H892" stroke="#d8e2e8"/>
-<text x="48" y="552" fill="#203f55" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700">READING PATH</text>
-<text x="169" y="552" fill="#31566a" font-family="Arial,Helvetica,sans-serif" font-size="14">Phenomena · Registration · Assessment · Treatment</text>
-<text x="48" y="578" fill="#456071" font-family="Arial,Helvetica,sans-serif" font-size="12">Cell = number of distinct concept-level associations; 55 relations form 23 unordered pairs.</text>
-<text x="48" y="594" fill="#456071" font-family="Arial,Helvetica,sans-serif" font-size="12">Includes optional boundary bridges; excludes inheritance. Blank upper cell = no direct association in this model.</text>
-<text x="891" y="578" text-anchor="end" fill="#456071" font-family="Arial,Helvetica,sans-serif" font-size="12">Model 0.3.1</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="180mm" height="123.6mm" viewBox="0 0 1500 1030" role="img" aria-labelledby="title desc">
+<title id="title">Riskium: relationships between its eleven subdomains</title>
+<desc id="desc">Package overview of a single ontology domain. All 23 unordered cross-subdomain association pairs are shown, aggregating 55 concept-level associations. Edge labels greater than one count those associations; an unlabelled edge represents one. Lines do not imply process order, causation, import or dependency. Inheritance is excluded and optional boundary bridges are included.</desc>
+<rect width="1500" height="1030" fill="white"/>
+<rect x="16" y="16" width="1468" height="998" rx="14" fill="#fafcfd" stroke="#c7d4dd" stroke-width="2"/>
+<text x="48" y="67" font-family="Arial,Helvetica,sans-serif" font-size="36" font-weight="700" fill="#143b52">Riskium</text>
+<text x="215" y="67" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#34566a">Subdomain relationship map</text>
+<text x="48" y="102" font-family="Arial,Helvetica,sans-serif" font-size="21" fill="#506979">One ontology domain · eleven subdomains · model-derived association links</text>
+<path d="M48 126H1452" stroke="#d3dfe6" stroke-width="2"/>
+<g id="edge-D01-D03" data-associations="1"><title>D01 and D03: 1 concept-level association(s)</title>
+<path d="M1246.36 363.00L1053.64 257.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M1246.36 363.00L1053.64 257.00" stroke="#387e89" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D01-D04" data-associations="10"><title>D01 and D04: 10 concept-level association(s)</title>
+<path d="M1228.00 420.00L1072.00 420.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M1228.00 420.00L1072.00 420.00" stroke="#387e89" stroke-width="3.4" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D01-D05" data-associations="5"><title>D01 and D05: 5 concept-level association(s)</title>
+<path d="M1228.00 442.37L272.00 617.63" stroke="white" stroke-width="10" fill="none"/>
+<path d="M1228.00 442.37L272.00 617.63" stroke="#387e89" stroke-width="3.4" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D01-D06" data-associations="3"><title>D01 and D06: 3 concept-level association(s)</title>
+<path d="M1228.00 453.55L672.00 606.45" stroke="white" stroke-width="10" fill="none"/>
+<path d="M1228.00 453.55L672.00 606.45" stroke="#387e89" stroke-width="3.4" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D01-D07" data-associations="2"><title>D01 and D07: 2 concept-level association(s)</title>
+<path d="M1298.18 477.00L1001.82 803.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M1298.18 477.00L1001.82 803.00" stroke="#387e89" stroke-width="3.4" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D01-D09" data-associations="1"><title>D01 and D09: 1 concept-level association(s)</title>
+<path d="M1246.36 477.00L653.64 803.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M1246.36 477.00L653.64 803.00" stroke="#387e89" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D01-D10" data-associations="3"><title>D01 and D10: 3 concept-level association(s)</title>
+<path d="M1228.00 386.45L672.00 233.55" stroke="white" stroke-width="10" fill="none"/>
+<path d="M1228.00 386.45L672.00 233.55" stroke="#387e89" stroke-width="3.4" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D01-D11" data-associations="5"><title>D01 and D11: 5 concept-level association(s)</title>
+<path d="M1350.00 363.00L1350.00 257.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M1350.00 363.00L1350.00 257.00" stroke="#387e89" stroke-width="3.4" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D02-D05" data-associations="4"><title>D02 and D05: 4 concept-level association(s)</title>
+<path d="M150.00 803.00L150.00 697.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M150.00 803.00L150.00 697.00" stroke="#738797" stroke-width="3.4" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D02-D09" data-associations="1"><title>D02 and D09: 1 concept-level association(s)</title>
+<path d="M272.00 860.00L428.00 860.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M272.00 860.00L428.00 860.00" stroke="#738797" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D03-D04" data-associations="2"><title>D03 and D04: 2 concept-level association(s)</title>
+<path d="M950.00 257.00L950.00 363.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M950.00 257.00L950.00 363.00" stroke="#738797" stroke-width="3.4" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D04-D05" data-associations="1"><title>D04 and D05: 1 concept-level association(s)</title>
+<path d="M828.00 453.55L272.00 606.45" stroke="white" stroke-width="10" fill="none"/>
+<path d="M828.00 453.55L272.00 606.45" stroke="#738797" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D04-D06" data-associations="3"><title>D04 and D06: 3 concept-level association(s)</title>
+<path d="M846.36 477.00L653.64 583.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M846.36 477.00L653.64 583.00" stroke="#738797" stroke-width="3.4" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D04-D07" data-associations="2"><title>D04 and D07: 2 concept-level association(s)</title>
+<path d="M950.00 477.00L950.00 803.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M950.00 477.00L950.00 803.00" stroke="#738797" stroke-width="3.4" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D04-D08" data-associations="2"><title>D04 and D08: 2 concept-level association(s)</title>
+<path d="M828.00 420.00L672.00 420.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M828.00 420.00L672.00 420.00" stroke="#738797" stroke-width="3.4" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D04-D10" data-associations="1"><title>D04 and D10: 1 concept-level association(s)</title>
+<path d="M846.36 363.00L653.64 257.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M846.36 363.00L653.64 257.00" stroke="#738797" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D05-D06" data-associations="3"><title>D05 and D06: 3 concept-level association(s)</title>
+<path d="M272.00 640.00L428.00 640.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M272.00 640.00L428.00 640.00" stroke="#738797" stroke-width="3.4" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D05-D07" data-associations="1"><title>D05 and D07: 1 concept-level association(s)</title>
+<path d="M272.00 673.55L828.00 826.45" stroke="white" stroke-width="10" fill="none"/>
+<path d="M272.00 673.55L828.00 826.45" stroke="#738797" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D05-D09" data-associations="1"><title>D05 and D09: 1 concept-level association(s)</title>
+<path d="M253.64 697.00L446.36 803.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M253.64 697.00L446.36 803.00" stroke="#738797" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D05-D10" data-associations="1"><title>D05 and D10: 1 concept-level association(s)</title>
+<path d="M201.82 583.00L498.18 257.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M201.82 583.00L498.18 257.00" stroke="#738797" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D06-D07" data-associations="1"><title>D06 and D07: 1 concept-level association(s)</title>
+<path d="M653.64 697.00L846.36 803.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M653.64 697.00L846.36 803.00" stroke="#738797" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D06-D09" data-associations="1"><title>D06 and D09: 1 concept-level association(s)</title>
+<path d="M550.00 697.00L550.00 803.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M550.00 697.00L550.00 803.00" stroke="#738797" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<g id="edge-D07-D09" data-associations="1"><title>D07 and D09: 1 concept-level association(s)</title>
+<path d="M828.00 860.00L672.00 860.00" stroke="white" stroke-width="10" fill="none"/>
+<path d="M828.00 860.00L672.00 860.00" stroke="#738797" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<circle cx="1111.00" cy="420.00" r="17" fill="white" stroke="#b7c9d4" stroke-width="1.5"/>
+<text x="1111.00" y="428.00" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#24576c">10</text>
+<circle cx="893.40" cy="503.71" r="17" fill="white" stroke="#b7c9d4" stroke-width="1.5"/>
+<text x="893.40" y="511.71" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#24576c">5</text>
+<circle cx="811.00" cy="568.23" r="17" fill="white" stroke="#b7c9d4" stroke-width="1.5"/>
+<text x="811.00" y="576.23" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#24576c">3</text>
+<circle cx="1075.91" cy="721.50" r="17" fill="white" stroke="#b7c9d4" stroke-width="1.5"/>
+<text x="1075.91" y="729.50" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#24576c">2</text>
+<circle cx="1033.40" cy="332.94" r="17" fill="white" stroke="#b7c9d4" stroke-width="1.5"/>
+<text x="1033.40" y="340.94" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#24576c">3</text>
+<circle cx="1350.00" cy="283.50" r="17" fill="white" stroke="#b7c9d4" stroke-width="1.5"/>
+<text x="1350.00" y="291.50" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#24576c">5</text>
+<circle cx="150.00" cy="776.50" r="17" fill="white" stroke="#b7c9d4" stroke-width="1.5"/>
+<text x="150.00" y="784.50" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#24576c">4</text>
+<circle cx="950.00" cy="283.50" r="17" fill="white" stroke="#b7c9d4" stroke-width="1.5"/>
+<text x="950.00" y="291.50" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#24576c">2</text>
+<circle cx="798.18" cy="503.50" r="17" fill="white" stroke="#b7c9d4" stroke-width="1.5"/>
+<text x="798.18" y="511.50" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#24576c">3</text>
+<circle cx="950.00" cy="721.50" r="17" fill="white" stroke="#b7c9d4" stroke-width="1.5"/>
+<text x="950.00" y="729.50" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#24576c">2</text>
+<circle cx="711.00" cy="420.00" r="17" fill="white" stroke="#b7c9d4" stroke-width="1.5"/>
+<text x="711.00" y="428.00" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#24576c">2</text>
+<circle cx="389.00" cy="640.00" r="17" fill="white" stroke="#b7c9d4" stroke-width="1.5"/>
+<text x="389.00" y="648.00" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#24576c">3</text>
+<g id="subdomain-D01"><title>Risk Phenomena</title>
+<rect x="1230" y="367.0" width="240" height="106" rx="9" fill="white" stroke="#52758b" stroke-width="2.2"/>
+<rect x="1230" y="350.0" width="74" height="29" rx="5" fill="#24576c"/>
+<text x="1267" y="371.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="white">D01</text>
+<text x="1350" y="413.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#506979">Risk</text>
+<text x="1350" y="449.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#173f55">Phenomena</text></g>
+<g id="subdomain-D02"><title>Risk Information</title>
+<rect x="30" y="807.0" width="240" height="106" rx="9" fill="white" stroke="#52758b" stroke-width="2.2"/>
+<rect x="30" y="790.0" width="74" height="29" rx="5" fill="#24576c"/>
+<text x="67" y="811.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="white">D02</text>
+<text x="150" y="853.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#506979">Risk</text>
+<text x="150" y="889.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#173f55">Information</text></g>
+<g id="subdomain-D03"><title>Risk Classification</title>
+<rect x="830" y="147.0" width="240" height="106" rx="9" fill="white" stroke="#52758b" stroke-width="2.2"/>
+<rect x="830" y="130.0" width="74" height="29" rx="5" fill="#24576c"/>
+<text x="867" y="151.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="white">D03</text>
+<text x="950" y="193.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#506979">Risk</text>
+<text x="950" y="229.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#173f55">Classification</text></g>
+<g id="subdomain-D04"><title>Risk Registration</title>
+<rect x="830" y="367.0" width="240" height="106" rx="9" fill="white" stroke="#52758b" stroke-width="2.2"/>
+<rect x="830" y="350.0" width="74" height="29" rx="5" fill="#24576c"/>
+<text x="867" y="371.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="white">D04</text>
+<text x="950" y="413.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#506979">Risk</text>
+<text x="950" y="449.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#173f55">Registration</text></g>
+<g id="subdomain-D05"><title>Risk Assessment</title>
+<rect x="30" y="587.0" width="240" height="106" rx="9" fill="white" stroke="#52758b" stroke-width="2.2"/>
+<rect x="30" y="570.0" width="74" height="29" rx="5" fill="#24576c"/>
+<text x="67" y="591.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="white">D05</text>
+<text x="150" y="633.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#506979">Risk</text>
+<text x="150" y="669.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#173f55">Assessment</text></g>
+<g id="subdomain-D06"><title>Risk Treatment</title>
+<rect x="430" y="587.0" width="240" height="106" rx="9" fill="white" stroke="#52758b" stroke-width="2.2"/>
+<rect x="430" y="570.0" width="74" height="29" rx="5" fill="#24576c"/>
+<text x="467" y="591.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="white">D06</text>
+<text x="550" y="633.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#506979">Risk</text>
+<text x="550" y="669.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#173f55">Treatment</text></g>
+<g id="subdomain-D07"><title>Risk Responsibility</title>
+<rect x="830" y="807.0" width="240" height="106" rx="9" fill="white" stroke="#52758b" stroke-width="2.2"/>
+<rect x="830" y="790.0" width="74" height="29" rx="5" fill="#24576c"/>
+<text x="867" y="811.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="white">D07</text>
+<text x="950" y="853.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#506979">Risk</text>
+<text x="950" y="889.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#173f55">Responsibility</text></g>
+<g id="subdomain-D08"><title>Risk Workflow</title>
+<rect x="430" y="367.0" width="240" height="106" rx="9" fill="white" stroke="#52758b" stroke-width="2.2"/>
+<rect x="430" y="350.0" width="74" height="29" rx="5" fill="#24576c"/>
+<text x="467" y="371.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="white">D08</text>
+<text x="550" y="413.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#506979">Risk</text>
+<text x="550" y="449.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#173f55">Workflow</text></g>
+<g id="subdomain-D09"><title>Risk Evidence</title>
+<rect x="430" y="807.0" width="240" height="106" rx="9" fill="white" stroke="#52758b" stroke-width="2.2"/>
+<rect x="430" y="790.0" width="74" height="29" rx="5" fill="#24576c"/>
+<text x="467" y="811.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="white">D09</text>
+<text x="550" y="853.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#506979">Risk</text>
+<text x="550" y="889.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#173f55">Evidence</text></g>
+<g id="subdomain-D10"><title>Risk Monitoring</title>
+<rect x="430" y="147.0" width="240" height="106" rx="9" fill="white" stroke="#52758b" stroke-width="2.2"/>
+<rect x="430" y="130.0" width="74" height="29" rx="5" fill="#24576c"/>
+<text x="467" y="151.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="white">D10</text>
+<text x="550" y="193.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#506979">Risk</text>
+<text x="550" y="229.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#173f55">Monitoring</text></g>
+<g id="subdomain-D11"><title>Risk Policy</title>
+<rect x="1230" y="147.0" width="240" height="106" rx="9" fill="white" stroke="#52758b" stroke-width="2.2"/>
+<rect x="1230" y="130.0" width="74" height="29" rx="5" fill="#24576c"/>
+<text x="1267" y="151.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="white">D11</text>
+<text x="1350" y="193.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#506979">Risk</text>
+<text x="1350" y="229.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#173f55">Policy</text></g>
+<path d="M48 946H1452" stroke="#d3dfe6" stroke-width="2"/>
+<text x="48" y="977" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#415f72">Line = association pair · number = association count · unlabelled line = 1 · no implied direction</text>
+<text x="48" y="1003" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#506979">All 23 pairs / 55 associations · optional boundary bridges included · inheritance excluded</text>
+<metadata>All 23 pairs / 55 associations; inheritance excluded; optional boundary bridges included; model SHA-256: 4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59</metadata>
 </svg>

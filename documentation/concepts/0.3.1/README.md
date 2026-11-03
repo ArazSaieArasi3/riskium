@@ -2,7 +2,7 @@
 
 Model **0.3.1** · **80 catalog concepts** in **11 subdomains** of one general organizational risk-knowledge domain. The imported foundational anchor `EXT-OBJECT` is outside this count. Each page is generated from the authoritative [model catalog](../../../ontology/riskium-model.json); the pharmaceutical literature is a development case, not the ontology’s domain.
 
-[Subdomain purposes and relationships](Subdomains.md) · [Vector relationship matrix](../../../diagrams/subdomain-relationships.svg) · [Current reader](https://arazsaiearasi3.github.io/riskium/current/index.html) · [Wiki](https://github.com/ArazSaieArasi3/riskium/wiki)
+[Subdomain purposes and relationships](Subdomains.md) · [Package relationship map](../../../diagrams/subdomain-relationships.svg) · [Exact matrix](../../../diagrams/subdomain-relationships-matrix.svg) · [Current reader](https://arazsaiearasi3.github.io/riskium/current/index.html) · [Wiki](https://github.com/ArazSaieArasi3/riskium/wiki)
 
 Concept status: the source records an authored definition and bounded verification status. No term-specific external definition or standards equivalence is inferred merely from a general reference. [Source register](../../../references/README.md) and [evidence limits](../../../evaluation/quality/README.md) explain the inspected portions and unresolved validation.
 

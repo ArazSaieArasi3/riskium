@@ -60,7 +60,7 @@ def build():
              'The imported foundational anchor `EXT-OBJECT` is outside this count. '
              'Each page is generated from the authoritative [model catalog](../../../ontology/riskium-model.json); '
              'the pharmaceutical literature is a development case, not the ontology’s domain.', '',
-             '[Subdomain purposes and relationships](Subdomains.md) · [Vector relationship matrix](../../../diagrams/subdomain-relationships.svg) '
+             '[Subdomain purposes and relationships](Subdomains.md) · [Package relationship map](../../../diagrams/subdomain-relationships.svg) · [Exact matrix](../../../diagrams/subdomain-relationships-matrix.svg) '
              '· [Current reader](https://arazsaiearasi3.github.io/riskium/current/index.html) · [Wiki](https://github.com/ArazSaieArasi3/riskium/wiki)', '',
              'Concept status: the source records an authored definition and bounded verification status. '
              'No term-specific external definition or standards equivalence is inferred merely from a general reference. '
@@ -68,7 +68,7 @@ def build():
     sub = ['# Subdomains and their relationships', '',
            'Riskium has **one general domain** and eleven catalog **subdomains**. The table below is generated from model 0.3.1. '
            'Concept pages retain stable source identifiers and explicit membership.', '',
-           '[View the print-ready SVG](../../../diagrams/subdomain-relationships.svg) · [Concept index](README.md)', '',
+           '[Package map SVG](../../../diagrams/subdomain-relationships.svg) · [Matrix SVG](../../../diagrams/subdomain-relationships-matrix.svg) · [Concept index](README.md)', '',
            '| ID and subdomain | Purpose | Concepts | Direct neighbor subdomains |',
            '| --- | --- | --- | --- |']
     for d in model['domains']:
@@ -80,7 +80,10 @@ def build():
         sub.append('| ' + d['id'] + ' · ' + safe(d['title']) + ' | ' + safe(d['objective']) +
                    ' | ' + ', '.join(link(i) for i in ids) +
                    ' | ' + ', '.join('[' + q + '](#' + q.lower() + '--' + re.sub('[^a-z0-9-]','',domains[q]['title'].lower().replace(' ','-')) + ') (' + str(n) + ')' for q,n in adjacent) + ' |')
-    sub += ['', '## How to read the matrix', '',
+    sub += ['', '## How to read the package map and matrix', '',
+            'The package map shows one card per subdomain and a line for every directly associated pair. '
+            'An edge label counts concept-level associations; an unlabelled line means one. '
+            'Package notation organizes the catalog without claiming a formal module import or dependency.', '',
             'The upper triangle contains **23 unordered subdomain pairs** representing **55 distinct concept-level associations**. '
             'A number in a cell counts direct associations between concepts in that pair; the diagonal marks self-comparison. '
             'It does not count generalizations, rank importance, prescribe process order, or assign navigability. '

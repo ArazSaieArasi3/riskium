@@ -2,6 +2,9 @@ name: v0.3.7 packaging qualification
 on:
   push:
     branches: [main, plan/v0.3.7-packaging]
+    paths:
+      - 'releases/selection-v0.3.7.json'
+      - 'tools/releases/v037/**'
   workflow_dispatch:
 permissions:
   contents: read

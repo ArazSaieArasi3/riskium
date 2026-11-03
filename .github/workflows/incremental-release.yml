@@ -2,6 +2,8 @@ name: Incremental release candidate
 on:
   push:
     branches: [main]
+    paths:
+      - 'releases/development-request.json'
   workflow_dispatch:
     inputs:
       release_tag:

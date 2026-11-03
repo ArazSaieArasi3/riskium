@@ -2,6 +2,8 @@ name: Stable research artifact release
 on:
   push:
     branches: [main]
+    paths:
+      - 'releases/stable-request-v0.3.4.json'
   workflow_dispatch:
     inputs:
       release_tag:

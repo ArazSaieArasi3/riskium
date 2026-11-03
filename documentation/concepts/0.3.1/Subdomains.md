@@ -2,7 +2,7 @@
 
 Riskium has **one general domain** and eleven catalog **subdomains**. The table below is generated from model 0.3.1. Concept pages retain stable source identifiers and explicit membership.
 
-[View the print-ready SVG](../../../diagrams/subdomain-relationships.svg) · [Concept index](README.md)
+[Package map SVG](../../../diagrams/subdomain-relationships.svg) · [Matrix SVG](../../../diagrams/subdomain-relationships-matrix.svg) · [Concept index](README.md)
 
 | ID and subdomain | Purpose | Concepts | Direct neighbor subdomains |
 | --- | --- | --- | --- |
@@ -18,7 +18,9 @@ Riskium has **one general domain** and eleven catalog **subdomains**. The table 
 | D10 · Risk Monitoring | Represent monitoring content and interpretation without designing an organizational monitoring process. | [Observation Activity](RKM-C067.md), [Observation Result](RKM-C068.md), [Indicator](RKM-C069.md), [Threshold](RKM-C070.md), [Signal](RKM-C071.md) | [D01](#d01--risk-phenomena) (3), [D04](#d04--risk-registration) (1), [D05](#d05--risk-assessment) (1) |
 | D11 · Risk Policy | Preserve decision context and source-specific meanings without modeling a complete governance framework. | [Risk Criteria](RKM-C072.md), [Risk Appetite Statement](RKM-C073.md), [Risk Tolerance Statement](RKM-C074.md), [Objective Reference](RKM-X02.md) | [D01](#d01--risk-phenomena) (5) |
 
-## How to read the matrix
+## How to read the package map and matrix
+
+The package map shows one card per subdomain and a line for every directly associated pair. An edge label counts concept-level associations; an unlabelled line means one. Package notation organizes the catalog without claiming a formal module import or dependency.
 
 The upper triangle contains **23 unordered subdomain pairs** representing **55 distinct concept-level associations**. A number in a cell counts direct associations between concepts in that pair; the diagonal marks self-comparison. It does not count generalizations, rank importance, prescribe process order, or assign navigability. Optional catalog boundary bridges are included. Blank upper cells have no direct association in this catalog version; they do not prove that the topics are unrelated. The short reading path in the figure is explanatory, not a formal edge direction.
 
