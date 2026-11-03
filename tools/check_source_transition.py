@@ -12,6 +12,7 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 BASELINE = '50f731aa5e065233c81fceeadaab8d87f5569de6'
+PRE_PUBLICATION_SOURCE = '86accc6695e4738dd1337d5b9addd73b82c73c3d'
 CURRENT_DOCUMENTS = {
     'README.md', 'evaluation/consistency/inventory.json',
 }
@@ -117,16 +118,18 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true')
     parser.add_argument('--historical-worktree', type=Path)
+    parser.add_argument('--historical-source', choices=(BASELINE, PRE_PUBLICATION_SOURCE), default=BASELINE)
     parser.add_argument('--receipt', type=Path)
     args = parser.parse_args()
     receipt = check()
+    receipt['historical_replay_source'] = args.historical_source
     if args.historical_worktree:
         target = args.historical_worktree.resolve()
         require(not target.exists(), 'Historical destination already exists')
         target.parent.mkdir(parents=True, exist_ok=True)
-        subprocess.run(['git', 'worktree', 'add', '--detach', str(target), BASELINE],
+        subprocess.run(['git', 'worktree', 'add', '--detach', str(target), args.historical_source],
                        cwd=ROOT, check=True, capture_output=True)
-        require(git('rev-parse', 'HEAD', root=target).decode().strip() == BASELINE,
+        require(git('rev-parse', 'HEAD', root=target).decode().strip() == args.historical_source,
                 'Incorrect historical worktree')
         require(not git('status', '--porcelain', root=target).strip(), 'Dirty historical worktree')
     if args.receipt:

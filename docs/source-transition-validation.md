@@ -19,7 +19,7 @@ qualification; the old replay cannot approve it.
 
 The validation workflows and source-bound alignment/documentation checkpoints, v0.3.5 support/selection
 and v0.3.6/v0.3.7 suite workflows first enforce this
-boundary on the candidate, then create a detached worktree at the reviewed source
+boundary on the candidate, then create a detached worktree at the applicable reviewed source. The earlier v0.3.6 runner uses pre-publication source `86accc6695e4738dd1337d5b9addd73b82c73c3d`; the maintained v0.3.7 runner uses `50f731aa5e065233c81fceeadaab8d87f5569de6`, whose reader split also covers the later published reader. Each source has its own unchanged suite
 and execute their source-bound commands there. The v0.3.7 routing policy already declares that the original full-source inventory is historical: putting the successor selection into the inventory it hashes would create a hash cycle. Historical jobs therefore use its existing `routing.py --inventory-receipt` check, which verifies every retained consistency output and emits the actual inventory as a runtime receipt. The candidate workflow still requires its complete current inventory to match. The full suites still execute their
 tests, including mutation and restoration checks; no failure is ignored or
 converted to an expected success. Their receipts identify the historical source.

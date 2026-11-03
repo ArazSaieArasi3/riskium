@@ -154,8 +154,8 @@
     },
     {
       "path": ".github/workflows/v036-versioned-suite.yml",
-      "sha256": "66f1106df82cdd867419bcb3b2ebbb38d6e634854cf76644a32c9831281710ab",
-      "bytes": 2761
+      "sha256": "fa54eaf595bb896f21abbd84a1a9749b5987b87ab098250db8aecd640fd31b5b",
+      "bytes": 2822
     },
     {
       "path": ".github/workflows/v037-versioned-suite.yml",
@@ -559,8 +559,8 @@
     },
     {
       "path": "docs/source-transition-validation.md",
-      "sha256": "58842e88ce0d6288a780ba906de26218e5193c1c8e85e8c422d9aaddd213ef6a",
-      "bytes": 3925
+      "sha256": "f37a7f46b2a65e47959bd09cba8fc442655e8e14a386e034b73cebd3f22859d0",
+      "bytes": 4212
     },
     {
       "path": "docs/stable-publication.md",
@@ -5154,8 +5154,8 @@
     },
     {
       "path": "tools/check_source_transition.py",
-      "sha256": "c1d297529ba6e4053ecbd72d4b1501d199af780dc76292a745e3f26e28ff8ef8",
-      "bytes": 6386
+      "sha256": "b728357ab3ccb1e6ac60becb6d73b7c6a86b0c08d5858541edd1cdf42e1ba4a3",
+      "bytes": 6656
     },
     {
       "path": "tools/complete_risk_nature_readback.py",
