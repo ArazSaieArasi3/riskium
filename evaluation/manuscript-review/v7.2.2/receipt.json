@@ -1,0 +1,120 @@
+{
+  "manuscript_version": "7.2.2",
+  "status": "AUTHOR_HELD_CANDIDATE_NOT_SUBMITTED",
+  "parent_word_sha256": "988a879fa77b1b1f9863456dcbdf0f632d8c6f9ac8d6fd7b81dfdb164fb9f631",
+  "word_sha256": "e4079b3a21945ae8ceb2dd4d35712c92b985801e9349a834d5365c23d5fb96c3",
+  "pdf_sha256": "309941a6d0126dcc37ed10c2d85c17d4e21b57367baa0669b66795e402a2c2f7",
+  "model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "source_commit": "1f1ca36ab0eb87d4b7405374d42ffbc9c189f108",
+  "changed_paragraphs": [
+    65,
+    78
+  ],
+  "figure1_svg_sha256": "cdd96c5fa70fa9587c2e7956425914a1d85862c30a64894433be014ab0e90e58",
+  "figure1_png_sha256": "e8e2042d1e7af80038daf66aa7fcbaea5afd36466a8aec423439ba77e8f70d09",
+  "figure1_mm": [
+    170,
+    116.733
+  ],
+  "media": {
+    "word/media/image1.png": "5a69fff0275ba9541be53b1877968ba41b141bd0ca0f229374ea79ee6cabf4fe",
+    "word/media/image2.png": "644d8509aa7875fc6d77e2f4cfb2200cc7784d0a889ebc342d5c2ef5d5a2df2e",
+    "word/media/image3.png": "e8e2042d1e7af80038daf66aa7fcbaea5afd36466a8aec423439ba77e8f70d09"
+  },
+  "layout": {
+    "pages": 10,
+    "size": "A4",
+    "references": 34,
+    "figures": 2,
+    "scientific_tables": 8,
+    "all_tables_preserved": true,
+    "table_borders": true,
+    "all_paragraphs_and_cells_in_pdf": true,
+    "all_words_in_bounds": true,
+    "unchanged_page_text": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "visual_pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "citations": {
+    "first_use_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "mandatory_author_papers": [
+      15,
+      16,
+      27,
+      28,
+      30,
+      31
+    ],
+    "bibliography_preserved": true
+  },
+  "figure_source_check": {
+    "subdomains": 11,
+    "pairs": 23,
+    "associations": 55,
+    "optional_boundary_bridges_included": true,
+    "inheritance_excluded": true,
+    "pair_counts_match_model": true
+  },
+  "literature_disposition": "references/disposition-2026-11-04.md (#82); no speculative citation added",
+  "claim_binding": "Prior v7.2.1 audit and v7.2.0 claim ledger unchanged; only Figure 1 representation/caption and Figure 2 prose compressed. No new scientific result.",
+  "limits": [
+    "FOMI identity/full text unverified; excluded from findings.",
+    "Cybersecurity review accessed as partial publisher-origin indexed text, not full PDF.",
+    "No new expert judgments, ontology semantics, DB population or organizational validation."
+  ]
+}
