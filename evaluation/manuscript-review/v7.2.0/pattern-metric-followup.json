@@ -1,0 +1,2382 @@
+{
+  "schema": "riskium-pattern-metric-followup-v1",
+  "model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "model_version": "0.3.1",
+  "source_model_git_commit": "50f731aa5e065233c81fceeadaab8d87f5569de6",
+  "native_decisions_sha256": "38a09df7b9914be79001f94556267d624510957eae16c2e53a8da93afe219211",
+  "selected_report_sha256": "9107ad528ac86c53ca3b3060ee48b8f6e10751ef832d2dadbedfee45fefa392e",
+  "structural_report_sha256": "3afb332bdae63c176971756d7e535c8fca61b08cd27cef080c0c49eba6583ae9",
+  "catalogue": [
+    {
+      "name": "BinOver",
+      "status": "REPLAYED_SELECTED_TRIGGER",
+      "count": 61,
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html"
+    },
+    {
+      "name": "DecInt",
+      "status": "ADDITIONAL_BOUNDED_TRIGGER",
+      "count": 0,
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/DecInt/index.html",
+      "caveat": "Catalog-specific semantic conditions or complete native export may need further review."
+    },
+    {
+      "name": "DepPhase",
+      "status": "REPLAYED_SELECTED_TRIGGER",
+      "count": 0,
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/DepPhase/index.html"
+    },
+    {
+      "name": "FreeRole",
+      "status": "ADDITIONAL_BOUNDED_TRIGGER",
+      "count": 0,
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/FreeRole/index.html",
+      "caveat": "Catalog-specific semantic conditions or complete native export may need further review."
+    },
+    {
+      "name": "GSRig",
+      "status": "REPLAYED_SELECTED_TRIGGER",
+      "count": 2,
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/GSRig/index.html"
+    },
+    {
+      "name": "HetColl",
+      "status": "EXCLUDED_NO_REQUIRED_VOCABULARY",
+      "count": null,
+      "reason": "No memberOf meronymic relation in the pinned typed-core associations.",
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/HetColl/index.html"
+    },
+    {
+      "name": "HomoFunc",
+      "status": "EXCLUDED_NO_REQUIRED_VOCABULARY",
+      "count": null,
+      "reason": "No componentOf meronymic relation in the pinned typed-core associations.",
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/HomoFunc/index.html"
+    },
+    {
+      "name": "ImpAbs",
+      "status": "REPLAYED_SELECTED_TRIGGER",
+      "count": 8,
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/ImpAbs/index.html"
+    },
+    {
+      "name": "MixIden",
+      "status": "EXCLUDED_NO_REQUIRED_VOCABULARY",
+      "count": null,
+      "reason": "No mixin-stereotyped class in the pinned typed core; roleMixins do not satisfy this rule's mixin precondition.",
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/MixIden/index.html"
+    },
+    {
+      "name": "MixRig",
+      "status": "REPLAYED_SELECTED_TRIGGER",
+      "count": 0,
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/MixRig/index.html"
+    },
+    {
+      "name": "MultDep",
+      "status": "ADDITIONAL_BOUNDED_TRIGGER",
+      "count": 0,
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/MultDep/index.html",
+      "caveat": "Catalog-specific semantic conditions or complete native export may need further review."
+    },
+    {
+      "name": "PartOver",
+      "status": "EXCLUDED_NO_REQUIRED_VOCABULARY",
+      "count": null,
+      "reason": "No meronymic relation in the pinned typed-core associations.",
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/PartOver/index.html"
+    },
+    {
+      "name": "RelComp",
+      "status": "ADDITIONAL_BOUNDED_TRIGGER",
+      "count": 65,
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+      "caveat": "Catalog-specific semantic conditions or complete native export may need further review."
+    },
+    {
+      "name": "RelOver",
+      "status": "ADDITIONAL_BOUNDED_TRIGGER",
+      "count": 0,
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelOver/index.html",
+      "caveat": "Catalog-specific semantic conditions or complete native export may need further review."
+    },
+    {
+      "name": "RelRig",
+      "status": "REPLAYED_SELECTED_TRIGGER",
+      "count": 0,
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelRig/index.html"
+    },
+    {
+      "name": "RelSpec",
+      "status": "REPLAYED_SELECTED_TRIGGER",
+      "count": 25,
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html"
+    },
+    {
+      "name": "RepRel",
+      "status": "REPLAYED_SELECTED_TRIGGER",
+      "count": 1,
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RepRel/index.html"
+    },
+    {
+      "name": "UndefFormal",
+      "status": "EXCLUDED_NO_REQUIRED_VOCABULARY",
+      "count": null,
+      "reason": "No formal-stereotyped association in the pinned typed core; property/quality completeness is also unestablished.",
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/UndefFormal/index.html"
+    },
+    {
+      "name": "UndefPhase",
+      "status": "EXCLUDED_NO_REQUIRED_VOCABULARY",
+      "count": null,
+      "reason": "No phase-stereotyped class in the pinned typed core.",
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/UndefPhase/index.html"
+    },
+    {
+      "name": "WholeOver",
+      "status": "EXCLUDED_NO_REQUIRED_VOCABULARY",
+      "count": null,
+      "reason": "No meronymic relation in the pinned typed-core associations.",
+      "source": "https://ontouml.readthedocs.io/en/latest/anti-patterns/WholeOver/index.html"
+    }
+  ],
+  "selected_candidates": [
+    {
+      "family": "GSRig",
+      "ids": [
+        "GS-RKM-C014"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/GSRig/index.html",
+      "trigger_interpretation": "A generalization set contains both rigid and anti-rigid children under the selected trigger.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "GSRig",
+      "ids": [
+        "GS-RKM-C047"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/GSRig/index.html",
+      "trigger_interpretation": "A generalization set contains both rigid and anti-rigid children under the selected trigger.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RepRel",
+      "ids": [
+        "RKM-C052"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RepRel/index.html",
+      "trigger_interpretation": "A relator has two mediation paths with repeatable relator-end cardinality under the selected trigger.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "ImpAbs",
+      "ids": [
+        "R-05"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/ImpAbs/index.html",
+      "trigger_interpretation": "The selected association/cardinality and subtype structure may conceal an implicit abstraction.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "ImpAbs",
+      "ids": [
+        "R-06"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/ImpAbs/index.html",
+      "trigger_interpretation": "The selected association/cardinality and subtype structure may conceal an implicit abstraction.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "ImpAbs",
+      "ids": [
+        "R-51"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/ImpAbs/index.html",
+      "trigger_interpretation": "The selected association/cardinality and subtype structure may conceal an implicit abstraction.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "ImpAbs",
+      "ids": [
+        "R-65"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/ImpAbs/index.html",
+      "trigger_interpretation": "The selected association/cardinality and subtype structure may conceal an implicit abstraction.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "ImpAbs",
+      "ids": [
+        "R-68"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/ImpAbs/index.html",
+      "trigger_interpretation": "The selected association/cardinality and subtype structure may conceal an implicit abstraction.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "ImpAbs",
+      "ids": [
+        "R-70"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/ImpAbs/index.html",
+      "trigger_interpretation": "The selected association/cardinality and subtype structure may conceal an implicit abstraction.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "ImpAbs",
+      "ids": [
+        "RX-006"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/ImpAbs/index.html",
+      "trigger_interpretation": "The selected association/cardinality and subtype structure may conceal an implicit abstraction.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "ImpAbs",
+      "ids": [
+        "RX-007"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/ImpAbs/index.html",
+      "trigger_interpretation": "The selected association/cardinality and subtype structure may conceal an implicit abstraction.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-04"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-05"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-06"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-08"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-10"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-12"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-13"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-14"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-15"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-16"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-17"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-18"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-20"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-27"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-31"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-32"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-34"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-37"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-39"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-40"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-42"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-43"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-45"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-46"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-47"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-48"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-49"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-50"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-54"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-62"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-63"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "R-68"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RX-008"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RX-009"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RX-012"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RX-017"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RX-018"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RX-019"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RX-021"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RX-023"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RX-025"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RX-026"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RX-027"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-005"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-008"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-009"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-010"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-011"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-012"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-013"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-014"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-015"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-018"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-019"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-020"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-022"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-023"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-024"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-025"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK2-026"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "BinOver",
+      "ids": [
+        "RK3-003"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+      "trigger_interpretation": "The selected conservative overlap test found potentially overlapping endpoint types.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-02",
+        "RX-006"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-10",
+        "RK2-025"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-23",
+        "RX-006"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-24",
+        "RX-006"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-28",
+        "RX-006"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-28",
+        "RX-014"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-28",
+        "RX-015"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-29",
+        "RX-006"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-30",
+        "RX-006"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-33",
+        "RX-006"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-35",
+        "RX-001"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-38",
+        "RX-006"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-44",
+        "RX-006"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-52",
+        "RX-006"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-60",
+        "RX-006"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-61",
+        "RX-006"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "R-68",
+        "RX-021"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "RX-006",
+        "RX-013"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "RX-006",
+        "RX-014"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "RX-006",
+        "RX-015"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "RX-006",
+        "RX-016"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "RX-006",
+        "RK2-016"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "RX-006",
+        "RK2-017"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "RX-006",
+        "RK2-021"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    },
+    {
+      "family": "RelSpec",
+      "ids": [
+        "RX-014",
+        "RX-015"
+      ],
+      "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html",
+      "trigger_interpretation": "Endpoint specialization makes an association pair a potential relation-specialization review prompt.",
+      "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+      "reviewer": "Automated structural screen; no independent semantic reviewer",
+      "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+    }
+  ],
+  "additional_candidates": {
+    "DecInt": [],
+    "FreeRole": [],
+    "MultDep": [],
+    "RelOver": [],
+    "RelComp": [
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-28",
+          "R-34"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-29",
+          "R-34"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-30",
+          "R-34"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-44",
+          "R-34"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-52",
+          "R-34"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-60",
+          "R-34"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-61",
+          "R-34"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-04"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-05"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-06"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-08"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-10"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-12"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-13"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-14"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-15"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-16"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-17"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-18"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-20"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-27"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-31"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-32"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-37"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-39"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-40"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-42"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-43"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-45"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-46"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-47"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-48"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-49"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-50"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-54"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-62"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "R-63"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RX-008"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RX-009"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RX-012"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RX-017"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RX-018"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RX-019"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RX-021"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RX-023"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RX-025"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RX-026"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RX-027"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-008"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-009"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-010"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-011"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-012"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-013"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-014"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-015"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-018"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-019"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-020"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-022"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-023"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-024"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-025"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK2-026"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      },
+      {
+        "family": "RelComp",
+        "ids": [
+          "R-68",
+          "RK3-003"
+        ],
+        "rule_url": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelComp/index.html",
+        "trigger_interpretation": "The second association has both endpoints below one end of the first; a positive and plural bound holds at that end.",
+        "disposition": "SEMANTIC_ADJUDICATION_PENDING",
+        "reviewer": "Automated structural screen; no independent semantic reviewer",
+        "provenance": "pinned model and generated report; no assertion of a defect or model edit"
+      }
+    ]
+  },
+  "selected_controls": [
+    {
+      "id": "mixed-rigidity-positive",
+      "expected": [
+        "gs"
+      ],
+      "observed": [
+        "gs"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "repeatable-relator-positive",
+      "expected": [
+        "L"
+      ],
+      "observed": [
+        "L"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "inherited-overlap-positive",
+      "expected": [
+        "a1"
+      ],
+      "observed": [
+        "a1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "rigid-mediated-negative",
+      "expected": [],
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "id": "repeatable-relator-negative",
+      "expected": [],
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "id": "mixed-rigidity-negative",
+      "expected": [],
+      "observed": [],
+      "status": "PASS"
+    }
+  ],
+  "semantic_metric_method": {
+    "source": "https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/002/NR89158.PDF (chapter 7, definitions 7.3--7.10); Ensan and Du, Information Systems 38(5), 2013, doi:10.1016/j.is.2012.11.012",
+    "required": "Axiom and concept/role-symbol allocation to explicit modules, local/external signatures, interfaces and semantic strong/moderate dependency sets under the source definitions.",
+    "available": "Only catalog concept ownership and a derived single-ontology OWL graph; relations and axioms have not been allocated to executable modules with declared interfaces.",
+    "decision": "NOT_COMPUTED_INVALID_DENOMINATOR_AND_SEMANTIC_INPUT",
+    "rationale": "Even n(n-1) would count only local class names, omitting roles; association/generalization edges do not determine entailment-based strong/moderate dependencies. Inventing COH/COP would misattribute graph observations to Ensan--Du.",
+    "structural_columns": "n/e/k/i/x/b are distinct observations in the pinned structural report, not semantic scores.",
+    "weights": null,
+    "uncertainty": "Module partition and semantic dependence are undecided. No threshold or rank is justified.",
+    "by_subdomain": [
+      {
+        "subdomain": "D01",
+        "title": "Risk Phenomena",
+        "allocated_class_symbols": [
+          "RKM-C001",
+          "RKM-C002",
+          "RKM-C003",
+          "RKM-C004",
+          "RKM-C005",
+          "RKM-C006",
+          "RKM-C008",
+          "RKM-C009",
+          "RKM-C011",
+          "RKM-C012",
+          "RKM-C013",
+          "RKM-X01",
+          "RKM-X06"
+        ],
+        "allocated_property_symbols": null,
+        "allocated_axioms": null,
+        "strong_local_dependencies": null,
+        "moderate_local_dependencies": null,
+        "strong_external_dependencies": null,
+        "moderate_external_dependencies": null,
+        "NSLD": null,
+        "NMLD": null,
+        "NSED": null,
+        "NMED": null,
+        "COH": null,
+        "COP": null,
+        "reason": "Subdomain catalog membership is not a separately scoped ontology module with allocated axioms, properties and interfaces."
+      },
+      {
+        "subdomain": "D02",
+        "title": "Risk Information",
+        "allocated_class_symbols": [
+          "RKM-C014",
+          "RKM-C015",
+          "RKM-C016"
+        ],
+        "allocated_property_symbols": null,
+        "allocated_axioms": null,
+        "strong_local_dependencies": null,
+        "moderate_local_dependencies": null,
+        "strong_external_dependencies": null,
+        "moderate_external_dependencies": null,
+        "NSLD": null,
+        "NMLD": null,
+        "NSED": null,
+        "NMED": null,
+        "COH": null,
+        "COP": null,
+        "reason": "Subdomain catalog membership is not a separately scoped ontology module with allocated axioms, properties and interfaces."
+      },
+      {
+        "subdomain": "D03",
+        "title": "Risk Classification",
+        "allocated_class_symbols": [
+          "RKM-C017",
+          "RKM-C018",
+          "RKM-C019",
+          "RKM-C020",
+          "RKM-C021"
+        ],
+        "allocated_property_symbols": null,
+        "allocated_axioms": null,
+        "strong_local_dependencies": null,
+        "moderate_local_dependencies": null,
+        "strong_external_dependencies": null,
+        "moderate_external_dependencies": null,
+        "NSLD": null,
+        "NMLD": null,
+        "NSED": null,
+        "NMED": null,
+        "COH": null,
+        "COP": null,
+        "reason": "Subdomain catalog membership is not a separately scoped ontology module with allocated axioms, properties and interfaces."
+      },
+      {
+        "subdomain": "D04",
+        "title": "Risk Registration",
+        "allocated_class_symbols": [
+          "RKM-C022",
+          "RKM-C023",
+          "RKM-C024",
+          "RKM-C025",
+          "RKM-C026",
+          "RKM-C027",
+          "RKM-C028",
+          "RKM-C029",
+          "RKM-C030"
+        ],
+        "allocated_property_symbols": null,
+        "allocated_axioms": null,
+        "strong_local_dependencies": null,
+        "moderate_local_dependencies": null,
+        "strong_external_dependencies": null,
+        "moderate_external_dependencies": null,
+        "NSLD": null,
+        "NMLD": null,
+        "NSED": null,
+        "NMED": null,
+        "COH": null,
+        "COP": null,
+        "reason": "Subdomain catalog membership is not a separately scoped ontology module with allocated axioms, properties and interfaces."
+      },
+      {
+        "subdomain": "D05",
+        "title": "Risk Assessment",
+        "allocated_class_symbols": [
+          "RKM-C031",
+          "RKM-C032",
+          "RKM-C033",
+          "RKM-C034",
+          "RKM-C035",
+          "RKM-C036",
+          "RKM-C037",
+          "RKM-C038",
+          "RKM-C039",
+          "RKM-C040",
+          "RKM-X03",
+          "RKM-X04"
+        ],
+        "allocated_property_symbols": null,
+        "allocated_axioms": null,
+        "strong_local_dependencies": null,
+        "moderate_local_dependencies": null,
+        "strong_external_dependencies": null,
+        "moderate_external_dependencies": null,
+        "NSLD": null,
+        "NMLD": null,
+        "NSED": null,
+        "NMED": null,
+        "COH": null,
+        "COP": null,
+        "reason": "Subdomain catalog membership is not a separately scoped ontology module with allocated axioms, properties and interfaces."
+      },
+      {
+        "subdomain": "D06",
+        "title": "Risk Treatment",
+        "allocated_class_symbols": [
+          "RKM-C041",
+          "RKM-C042",
+          "RKM-C043",
+          "RKM-C044",
+          "RKM-C046",
+          "RKM-X05"
+        ],
+        "allocated_property_symbols": null,
+        "allocated_axioms": null,
+        "strong_local_dependencies": null,
+        "moderate_local_dependencies": null,
+        "strong_external_dependencies": null,
+        "moderate_external_dependencies": null,
+        "NSLD": null,
+        "NMLD": null,
+        "NSED": null,
+        "NMED": null,
+        "COH": null,
+        "COP": null,
+        "reason": "Subdomain catalog membership is not a separately scoped ontology module with allocated axioms, properties and interfaces."
+      },
+      {
+        "subdomain": "D07",
+        "title": "Risk Responsibility",
+        "allocated_class_symbols": [
+          "RKM-C047",
+          "RKM-C048",
+          "RKM-C049",
+          "RKM-C050",
+          "RKM-C051",
+          "RKM-C052",
+          "RKM-C053",
+          "RKM-C054",
+          "RKM-C055",
+          "RKM-C056",
+          "RKM-C057",
+          "RKM-C058",
+          "RKM-C059"
+        ],
+        "allocated_property_symbols": null,
+        "allocated_axioms": null,
+        "strong_local_dependencies": null,
+        "moderate_local_dependencies": null,
+        "strong_external_dependencies": null,
+        "moderate_external_dependencies": null,
+        "NSLD": null,
+        "NMLD": null,
+        "NSED": null,
+        "NMED": null,
+        "COH": null,
+        "COP": null,
+        "reason": "Subdomain catalog membership is not a separately scoped ontology module with allocated axioms, properties and interfaces."
+      },
+      {
+        "subdomain": "D08",
+        "title": "Risk Workflow",
+        "allocated_class_symbols": [
+          "RKM-C060",
+          "RKM-C061",
+          "RKM-C062",
+          "RKM-C063",
+          "RKM-C064"
+        ],
+        "allocated_property_symbols": null,
+        "allocated_axioms": null,
+        "strong_local_dependencies": null,
+        "moderate_local_dependencies": null,
+        "strong_external_dependencies": null,
+        "moderate_external_dependencies": null,
+        "NSLD": null,
+        "NMLD": null,
+        "NSED": null,
+        "NMED": null,
+        "COH": null,
+        "COP": null,
+        "reason": "Subdomain catalog membership is not a separately scoped ontology module with allocated axioms, properties and interfaces."
+      },
+      {
+        "subdomain": "D09",
+        "title": "Risk Evidence",
+        "allocated_class_symbols": [
+          "RKM-C065",
+          "RKM-C066"
+        ],
+        "allocated_property_symbols": null,
+        "allocated_axioms": null,
+        "strong_local_dependencies": null,
+        "moderate_local_dependencies": null,
+        "strong_external_dependencies": null,
+        "moderate_external_dependencies": null,
+        "NSLD": null,
+        "NMLD": null,
+        "NSED": null,
+        "NMED": null,
+        "COH": null,
+        "COP": null,
+        "reason": "Subdomain catalog membership is not a separately scoped ontology module with allocated axioms, properties and interfaces."
+      },
+      {
+        "subdomain": "D10",
+        "title": "Risk Monitoring",
+        "allocated_class_symbols": [
+          "RKM-C067",
+          "RKM-C068",
+          "RKM-C069",
+          "RKM-C070",
+          "RKM-C071"
+        ],
+        "allocated_property_symbols": null,
+        "allocated_axioms": null,
+        "strong_local_dependencies": null,
+        "moderate_local_dependencies": null,
+        "strong_external_dependencies": null,
+        "moderate_external_dependencies": null,
+        "NSLD": null,
+        "NMLD": null,
+        "NSED": null,
+        "NMED": null,
+        "COH": null,
+        "COP": null,
+        "reason": "Subdomain catalog membership is not a separately scoped ontology module with allocated axioms, properties and interfaces."
+      },
+      {
+        "subdomain": "D11",
+        "title": "Risk Policy",
+        "allocated_class_symbols": [
+          "RKM-C072",
+          "RKM-C073",
+          "RKM-C074",
+          "RKM-X02"
+        ],
+        "allocated_property_symbols": null,
+        "allocated_axioms": null,
+        "strong_local_dependencies": null,
+        "moderate_local_dependencies": null,
+        "strong_external_dependencies": null,
+        "moderate_external_dependencies": null,
+        "NSLD": null,
+        "NMLD": null,
+        "NSED": null,
+        "NMED": null,
+        "COH": null,
+        "COP": null,
+        "reason": "Subdomain catalog membership is not a separately scoped ontology module with allocated axioms, properties and interfaces."
+      }
+    ]
+  },
+  "decision": {
+    "model_changed": false,
+    "actual_defects_confirmed": 0,
+    "actual_defects_status": "UNKNOWN_NO_INDEPENDENT_SEMANTIC_ADJUDICATION",
+    "selected_trigger_occurrences": 97,
+    "additional_trigger_occurrences": 65,
+    "independent_reviewer": "NOT_OBTAINED",
+    "next_owner": "Issue #23 for independent interpretations; formal modularization is separate model/OWL compatibility work."
+  }
+}
