@@ -30,6 +30,8 @@ The source catalog is [ontology/riskium-model.json](ontology/riskium-model.json)
 
 For the [current Wiki Home](https://github.com/ArazSaieArasi3/riskium/wiki) and [Pages Home](https://arazsaiearasi3.github.io/riskium/current/index.html), use their navigation to switch among the model, evaluation, tools and version policy. [All releases](https://github.com/ArazSaieArasi3/riskium/releases) and [documentation versions](https://arazsaiearasi3.github.io/riskium/versions/index.html) are historical indexes, separate from the current reading route. Frozen tags and site snapshots retain their own dated claims.
 
+Historical implementation and publication decisions remain traceable through [#40](https://github.com/ArazSaieArasi3/riskium/issues/40), [#41](https://github.com/ArazSaieArasi3/riskium/issues/41), [#44](https://github.com/ArazSaieArasi3/riskium/issues/44) and [#45](https://github.com/ArazSaieArasi3/riskium/issues/45). Their source-bound results are not current release totals; follow the version index for their original artifacts.
+
 ## Citation, rights and status
 
 The authors are Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi; use [CITATION.cff](CITATION.cff) and [AUTHORS.md](AUTHORS.md) for exact attribution. Original research content uses CC BY 4.0 and original software uses MIT; [RIGHTS.md](RIGHTS.md) and [NOTICE.md](NOTICE.md) identify retained third-party terms. The repository does not redistribute the privately held literature PDFs or pharmaceutical case database.
