@@ -41,6 +41,6 @@ jobs:
         working-directory: build/reviewed-source
         run: |
           python tools/build_prepared_distribution.py --check
-          python tools/audit_consistency.py --check
+          python tools/releases/v037/routing.py --inventory-receipt build/historical-source-inventory.json
           git diff 9a92ac92b29a127b1c38e6d0c052f8dc230dcb47 --exit-code -- evaluation/consistency/traceability.json evaluation/consistency/traceability.csv docs/traceability.md implementation/relational/0.7.0/contract.json implementation/relational/0.7.0/fixtures.json
           git diff --exit-code

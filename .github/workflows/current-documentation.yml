@@ -35,5 +35,5 @@ jobs:
         run: |
           python tools/audit_current_alignment.py --check
           python tools/build_prepared_distribution.py --check
-          python tools/audit_consistency.py --check
+          python tools/releases/v037/routing.py --inventory-receipt build/historical-source-inventory.json
           git diff --exit-code
