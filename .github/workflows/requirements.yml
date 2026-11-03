@@ -15,6 +15,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
 jobs:
   traceability:
     runs-on: ubuntu-24.04
@@ -27,7 +30,13 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r tools/requirements-owl.txt
+      - name: Verify candidate source identity and prepare the reviewed historical checkout
+        run: python tools/check_source_transition.py --historical-worktree build/reviewed-source --receipt build/source-boundary.json
       - run: python tools/run_cq.py --check
+        working-directory: build/reviewed-source
       - run: python tools/build_traceability.py --check
+        working-directory: build/reviewed-source
       - run: python -m unittest discover -s tests -p test_cq.py -v
+        working-directory: build/reviewed-source
       - run: git diff --exit-code -- requirements evaluation/cq evaluation/traceability
+        working-directory: build/reviewed-source

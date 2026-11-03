@@ -1,0 +1,799 @@
+{
+  "repository_commit": "50f731aa5e065233c81fceeadaab8d87f5569de6",
+  "model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "python": "3.12.14",
+  "scope": "77 typed core concepts and one local foundational anchor; 127 typed relations; 66 generalizations; 10 reviewed generalization sets",
+  "method": "New author-implemented structural screening of eight selected documented catalogue triggers; no plugin-wide or complete catalogue conformance claim",
+  "sources": {
+    "GSRig": "https://ontouml.readthedocs.io/en/latest/anti-patterns/GSRig/index.html",
+    "DepPhase": "https://ontouml.readthedocs.io/en/latest/anti-patterns/DepPhase/index.html",
+    "MixRig": "https://ontouml.readthedocs.io/en/latest/anti-patterns/MixRig/index.html",
+    "RelRig": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelRig/index.html",
+    "RepRel": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RepRel/index.html",
+    "ImpAbs": "https://ontouml.readthedocs.io/en/latest/anti-patterns/ImpAbs/index.html",
+    "BinOver": "https://ontouml.readthedocs.io/en/latest/anti-patterns/BinOver/index.html",
+    "RelSpec": "https://ontouml.readthedocs.io/en/latest/anti-patterns/RelSpec/index.html"
+  },
+  "patterns": {
+    "identity": [
+      {
+        "id": "RKM-C001",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C002",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C003",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C005",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C006",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C014",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C015",
+        "suppliers": [
+          "RKM-C015"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C017",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C018",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C019",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C020",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C021",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C022",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C023",
+        "suppliers": [
+          "RKM-C015"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C024",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C025",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C026",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C027",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C028",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C029",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C030",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C032",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C033",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C034",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C035",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C036",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C037",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C038",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C039",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C040",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C041",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C042",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C043",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C046",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C048",
+        "suppliers": [
+          "RKM-C048"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C049",
+        "suppliers": [
+          "RKM-C049"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C050",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C051",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C055",
+        "suppliers": [
+          "RKM-C048"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C056",
+        "suppliers": [
+          "RKM-C049"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C057",
+        "suppliers": [
+          "RKM-C048"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C058",
+        "suppliers": [
+          "RKM-C049"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C059",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C060",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C061",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C062",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C063",
+        "suppliers": [
+          "RKM-C015"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C065",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C066",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C068",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C069",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C070",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C071",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C072",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C073",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-C074",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-X01",
+        "suppliers": [
+          "RKM-X01"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-X02",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-X03",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-X04",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-X05",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      },
+      {
+        "id": "RKM-X06",
+        "suppliers": [
+          "RKM-C014"
+        ],
+        "status": "SATISFIED"
+      }
+    ],
+    "role_dependence": [
+      {
+        "id": "RKM-C053",
+        "inherited_mediation": [
+          "RKM-C053"
+        ],
+        "status": "SUPPORTED_STRUCTURE"
+      },
+      {
+        "id": "RKM-C054",
+        "inherited_mediation": [
+          "RKM-C054"
+        ],
+        "status": "SUPPORTED_STRUCTURE"
+      },
+      {
+        "id": "RKM-C055",
+        "inherited_mediation": [
+          "RKM-C053"
+        ],
+        "status": "SUPPORTED_STRUCTURE"
+      },
+      {
+        "id": "RKM-C056",
+        "inherited_mediation": [
+          "RKM-C053"
+        ],
+        "status": "SUPPORTED_STRUCTURE"
+      },
+      {
+        "id": "RKM-C057",
+        "inherited_mediation": [
+          "RKM-C054"
+        ],
+        "status": "SUPPORTED_STRUCTURE"
+      },
+      {
+        "id": "RKM-C058",
+        "inherited_mediation": [
+          "RKM-C054"
+        ],
+        "status": "SUPPORTED_STRUCTURE"
+      },
+      {
+        "id": "RKM-C066",
+        "inherited_mediation": [],
+        "status": "REVIEW_DEPENDENCE_INTERPRETATION"
+      }
+    ],
+    "intrinsic_mode": [
+      {
+        "id": "RKM-C011",
+        "relations": [
+          "RK3-004"
+        ],
+        "status": "EXACTLY_ONE_BEARER"
+      }
+    ],
+    "relator": [
+      {
+        "id": "RKM-C052",
+        "mediations": [
+          "R-56",
+          "R-57"
+        ],
+        "minimum_declared_participants": 2
+      }
+    ]
+  },
+  "anti_patterns": {
+    "GSRig": {
+      "count": 2,
+      "candidates": [
+        "GS-RKM-C014",
+        "GS-RKM-C047"
+      ],
+      "status": "STRUCTURAL_CANDIDATES_REQUIRE_INTERPRETATION"
+    },
+    "DepPhase": {
+      "count": 0,
+      "candidates": [],
+      "status": "NO_CANDIDATE_UNDER_SELECTED_RULE"
+    },
+    "MixRig": {
+      "count": 0,
+      "candidates": [],
+      "status": "NO_CANDIDATE_UNDER_SELECTED_RULE"
+    },
+    "RelRig": {
+      "count": 0,
+      "candidates": [],
+      "status": "NO_CANDIDATE_UNDER_SELECTED_RULE"
+    },
+    "RepRel": {
+      "count": 1,
+      "candidates": [
+        "RKM-C052"
+      ],
+      "status": "STRUCTURAL_CANDIDATES_REQUIRE_INTERPRETATION"
+    },
+    "ImpAbs": {
+      "count": 8,
+      "candidates": [
+        "R-05",
+        "R-06",
+        "R-51",
+        "R-65",
+        "R-68",
+        "R-70",
+        "RX-006",
+        "RX-007"
+      ],
+      "status": "STRUCTURAL_CANDIDATES_REQUIRE_INTERPRETATION"
+    },
+    "BinOver": {
+      "count": 61,
+      "candidates": [
+        "R-04",
+        "R-05",
+        "R-06",
+        "R-08",
+        "R-10",
+        "R-12",
+        "R-13",
+        "R-14",
+        "R-15",
+        "R-16",
+        "R-17",
+        "R-18",
+        "R-20",
+        "R-27",
+        "R-31",
+        "R-32",
+        "R-34",
+        "R-37",
+        "R-39",
+        "R-40",
+        "R-42",
+        "R-43",
+        "R-45",
+        "R-46",
+        "R-47",
+        "R-48",
+        "R-49",
+        "R-50",
+        "R-54",
+        "R-62",
+        "R-63",
+        "R-68",
+        "RX-008",
+        "RX-009",
+        "RX-012",
+        "RX-017",
+        "RX-018",
+        "RX-019",
+        "RX-021",
+        "RX-023",
+        "RX-025",
+        "RX-026",
+        "RX-027",
+        "RK2-005",
+        "RK2-008",
+        "RK2-009",
+        "RK2-010",
+        "RK2-011",
+        "RK2-012",
+        "RK2-013",
+        "RK2-014",
+        "RK2-015",
+        "RK2-018",
+        "RK2-019",
+        "RK2-020",
+        "RK2-022",
+        "RK2-023",
+        "RK2-024",
+        "RK2-025",
+        "RK2-026",
+        "RK3-003"
+      ],
+      "status": "STRUCTURAL_CANDIDATES_REQUIRE_INTERPRETATION"
+    },
+    "RelSpec": {
+      "count": 25,
+      "candidates": [
+        [
+          "R-02",
+          "RX-006"
+        ],
+        [
+          "R-10",
+          "RK2-025"
+        ],
+        [
+          "R-23",
+          "RX-006"
+        ],
+        [
+          "R-24",
+          "RX-006"
+        ],
+        [
+          "R-28",
+          "RX-006"
+        ],
+        [
+          "R-28",
+          "RX-014"
+        ],
+        [
+          "R-28",
+          "RX-015"
+        ],
+        [
+          "R-29",
+          "RX-006"
+        ],
+        [
+          "R-30",
+          "RX-006"
+        ],
+        [
+          "R-33",
+          "RX-006"
+        ],
+        [
+          "R-35",
+          "RX-001"
+        ],
+        [
+          "R-38",
+          "RX-006"
+        ],
+        [
+          "R-44",
+          "RX-006"
+        ],
+        [
+          "R-52",
+          "RX-006"
+        ],
+        [
+          "R-60",
+          "RX-006"
+        ],
+        [
+          "R-61",
+          "RX-006"
+        ],
+        [
+          "R-68",
+          "RX-021"
+        ],
+        [
+          "RX-006",
+          "RX-013"
+        ],
+        [
+          "RX-006",
+          "RX-014"
+        ],
+        [
+          "RX-006",
+          "RX-015"
+        ],
+        [
+          "RX-006",
+          "RX-016"
+        ],
+        [
+          "RX-006",
+          "RK2-016"
+        ],
+        [
+          "RX-006",
+          "RK2-017"
+        ],
+        [
+          "RX-006",
+          "RK2-021"
+        ],
+        [
+          "RX-014",
+          "RX-015"
+        ]
+      ],
+      "status": "STRUCTURAL_CANDIDATES_REQUIRE_INTERPRETATION"
+    }
+  },
+  "exclusions": [
+    "FreeRole and full DecInt are not computed by this screen.",
+    "RelOver, full overlap metaproperties and instance-level restrictions are not covered.",
+    "Remaining catalogue families require their own declared detector and semantic adjudication.",
+    "No candidate count is a defect count or acceptance score."
+  ],
+  "controls": [
+    {
+      "id": "mixed-rigidity-positive",
+      "expected": [
+        "gs"
+      ],
+      "observed": [
+        "gs"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "repeatable-relator-positive",
+      "expected": [
+        "L"
+      ],
+      "observed": [
+        "L"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "inherited-overlap-positive",
+      "expected": [
+        "a1"
+      ],
+      "observed": [
+        "a1"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "rigid-mediated-negative",
+      "expected": [],
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "id": "repeatable-relator-negative",
+      "expected": [],
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "id": "mixed-rigidity-negative",
+      "expected": [],
+      "observed": [],
+      "status": "PASS"
+    }
+  ],
+  "model_changed": false
+}

@@ -1,0 +1,398 @@
+{
+  "schema": "riskium-reference-placement-1",
+  "manuscript": "7.1.0",
+  "manuscript_sha256": "f9433f99dfe49c250b8a77117ec5fde14f041b619b8a6f747826687fdb2fd517",
+  "bibliography_items": 34,
+  "cited_items": 34,
+  "first_mention_sequence": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "author_papers": {
+    "15": "CM4SLE",
+    "16": "CM4DI",
+    "27": "CM-PharmE conference",
+    "28": "CM-PharmE journal",
+    "30": "GenAI organizational model",
+    "31": "SME blockchain fundraising"
+  },
+  "rows": [
+    {
+      "number": 1,
+      "author_requested": null,
+      "bibliography": "International Organization for Standardization, Risk Management—Guidelines, ISO 31000:2018, 2018.",
+      "first_use_context": "context and the basis of comparison. ISO 31000 relates risk to uncertainty and objectives [1]. Modeling the knowledge used to interpret that risk therefore requires explicit links amo",
+      "in_text_mentions": 2,
+      "stated_doi": null,
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 2,
+      "author_requested": null,
+      "bibliography": "K. Peffers, T. Tuunanen, M. A. Rothenberger, and S. Chatterjee, “A design science research methodology for information systems research,” J. Manage. Inf. Syst., vol. 24, no. 3, pp. 45–77, 2007, doi: 10.2753/MIS0742-1222240302.",
+      "first_use_context": " Research (DSR) structures problem definition, construction, demonstration and evaluation [2]. Riskium developed iteratively from an earlier risk ontology and a source-derived dataset",
+      "in_text_mentions": 1,
+      "stated_doi": "10.2753/MIS0742-1222240302",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 3,
+      "author_requested": null,
+      "bibliography": "A. C. Tricco, E. V. Langlois, and S. E. Straus, Eds., Rapid Reviews to Strengthen Health Policy and Systems: A Practical Guide. Geneva, Switzerland: World Health Organization, 2017. [Online]. Available: https://iris.who.int/handle/10665/258698",
+      "first_use_context": "-informed scan examined risk ontologies, semantic risk-data models and selected standards [3]. Selection was purposive and directed by the representation problem. The inspected materi",
+      "in_text_mentions": 1,
+      "stated_doi": null,
+      "stated_url": "https://iris.who.int/handle/10665/258698",
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 4,
+      "author_requested": null,
+      "bibliography": "V. Braun and V. Clarke, “Using thematic analysis in psychology,” Qualitative Research in Psychology, vol. 3, no. 2, pp. 77–101, 2006, doi: 10.1191/1478088706qp063oa.",
+      "first_use_context": "nization of candidate statements by referent, information role and analytical consequence [4]. Theme 1 concerns risk knowledge representation; Theme 2 concerns semantic risk informati",
+      "in_text_mentions": 2,
+      "stated_doi": "10.1191/1478088706qp063oa",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 5,
+      "author_requested": null,
+      "bibliography": "R. de Almeida Falbo, “SABiO: Systematic approach for building ontologies,” in Proc. ONTO.COM/ODISE, CEUR Workshop Proceedings, vol. 1301, 2014. [Online]. Available: https://ceur-ws.org/Vol-1301/ontocomodise2014_2.pdf",
+      "first_use_context": "e and requirements, conceptual capture, formalization, design, implementation and testing [5]. These activities were adapted to an evolving vocabulary. Definitions and intended use go",
+      "in_text_mentions": 2,
+      "stated_doi": null,
+      "stated_url": "https://ceur-ws.org/Vol-1301/ontocomodise2014_2.pdf",
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 6,
+      "author_requested": null,
+      "bibliography": "M. C. Suárez-Figueroa, A. Gómez-Pérez, and B. Villazón-Terrazas, “How to write and use the Ontology Requirements Specification Document,” in OTM 2009, LNCS 5871, pp. 966–982, 2009, doi: 10.1007/978-3-642-05151-7_16.",
+      "first_use_context": "ecords purpose, scope, users, intended uses, priorities and acceptance evidence following [6]. It distinguishes source-supported requirements, reconstructed requirements and new desig",
+      "in_text_mentions": 1,
+      "stated_doi": "10.1007/978-3-642-05151-7_16",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 7,
+      "author_requested": null,
+      "bibliography": "P. C. Barbosa Fernandes, R. S. S. Guizzardi, and G. Guizzardi, “Using goal modeling to capture competency questions in ontology-based systems,” J. Inf. Data Manage., vol. 2, no. 3, pp. 527–540, 2011. [Online]. Available: https://periodicos.ufmg.br/index.php/jidm/article/view/124",
+      "first_use_context": "Competency questions (CQs) express expected uses and answers [7]. Their contracts identify inputs, relevant commitments and rejection conditions. Requirem",
+      "in_text_mentions": 1,
+      "stated_doi": null,
+      "stated_url": "https://periodicos.ufmg.br/index.php/jidm/article/view/124",
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 8,
+      "author_requested": null,
+      "bibliography": "A. Fernández-Izquierdo, “Ontology testing based on requirements formalization in collaborative development environments,” in Proc. ISWC 2017 Doctoral Consortium, CEUR Workshop Proc., vol. 1962, 2017. [Online]. Available: https://ceur-ws.org/Vol-1962/paper_8.pdf",
+      "first_use_context": "nts-based testing separates question formulation, executable queries and observed results [8]. A passing fixture therefore supports its declared task rather than the adequacy of every",
+      "in_text_mentions": 1,
+      "stated_doi": null,
+      "stated_url": "https://ceur-ws.org/Vol-1962/paper_8.pdf",
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 9,
+      "author_requested": null,
+      "bibliography": "G. Guizzardi, G. Wagner, J. P. A. Almeida, and R. S. S. Guizzardi, “Towards ontological foundations for conceptual modeling: The unified foundational ontology (UFO) story,” Applied Ontology, vol. 10, nos. 3–4, pp. 259–271, 2015, doi: 10.3233/AO-150157.",
+      "first_use_context": " (UFO) informs identity, dependence and distinctions among objects, events and situations [9]; OntoUML supplies the conceptual notation [10]. Definitions and relation endpoints were r",
+      "in_text_mentions": 2,
+      "stated_doi": "10.3233/AO-150157",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 10,
+      "author_requested": null,
+      "bibliography": "OntoUML, “OntoUML specification: Classes, relationships and anti-pattern catalogue.” Accessed: Oct. 18, 2026. [Online]. Available: https://ontouml.readthedocs.io/en/latest/",
+      "first_use_context": "ctions among objects, events and situations [9]; OntoUML supplies the conceptual notation [10]. Definitions and relation endpoints were reconciled before selecting stereotypes and mult",
+      "in_text_mentions": 3,
+      "stated_doi": null,
+      "stated_url": "https://ontouml.readthedocs.io/en/latest/",
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 11,
+      "author_requested": null,
+      "bibliography": "J. Venable, J. Pries-Heje, and R. Baskerville, “FEDS: A framework for evaluation in design science research,” Eur. J. Inf. Syst., vol. 25, no. 1, pp. 77–89, 2016, doi: 10.1057/ejis.2014.36.",
+      "first_use_context": "shes formative and summative purposes and artificial and naturalistic evaluation episodes [11]. The present study mainly reports artificial, development-oriented checks and a literatur",
+      "in_text_mentions": 2,
+      "stated_doi": "10.1057/ejis.2014.36",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 12,
+      "author_requested": null,
+      "bibliography": "A. Saie Arasi, H. Haghighi, and H. Azgomi, “Riskium research artifact and manuscript evidence index,” conceptual model 0.3.1, source distribution 0.3.7. Accessed: Nov. 2, 2026. [Online]. Available: https://github.com/ArazSaieArasi3/riskium",
+      "first_use_context": "t, the archived pharmaceutical dataset 0.6 and the historical SQLite 0.3.0-rc.1 companion [12]. The archived database agrees with the public baseline on catalog identities, endpoints, ",
+      "in_text_mentions": 7,
+      "stated_doi": null,
+      "stated_url": "https://github.com/ArazSaieArasi3/riskium",
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 13,
+      "author_requested": null,
+      "bibliography": "T. P. Sales, F. Baião, G. Guizzardi, J. P. A. Almeida, N. Guarino, and J. Mylopoulos, “The common ontology of value and risk,” in Conceptual Modeling, LNCS 11157, pp. 121–135, 2018, doi: 10.1007/978-3-030-00847-5_11.",
+      "first_use_context": "nd Risk (COVER) connects risk with value ascription and provides an OntoUML formalization [13]. The Reference Ontology for Security Engineering (ROSE) develops the risk-treatment persp",
+      "in_text_mentions": 3,
+      "stated_doi": "10.1007/978-3-030-00847-5_11",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 14,
+      "author_requested": null,
+      "bibliography": "Í. Oliveira, T. P. Sales, R. Baratella, M. Fumagalli, and G. Guizzardi, “An ontology of security from a risk treatment perspective,” in Conceptual Modeling, LNCS 13607, pp. 365–379, 2022, doi: 10.1007/978-3-031-17995-2_26.",
+      "first_use_context": "ineering (ROSE) develops the risk-treatment perspective and clarifies security mechanisms [14]. These contributions inform the interpretation of affected entities, events, vulnerabilit",
+      "in_text_mentions": 2,
+      "stated_doi": "10.1007/978-3-031-17995-2_26",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 15,
+      "author_requested": "CM4SLE",
+      "bibliography": "N. Seyedin Hashemi, A. Ziapour Sohi, A. Saie Arasi, A. Ziapour Sohi, and M. Neshati, “CM4SLE ver 1.0: Conceptualizing business architecture for blockchain-enabled organizational agility in software-led enterprises,” in Proc. 9th Iranian Conf. Advances in Enterprise Architecture (ICAEA), 2025, pp. 1–8, doi: 10.1109/ICAEA69058.2025.11301508.",
+      "first_use_context": "Model for Software-Led Enterprises (CM4SLE) organizes blockchain-enabled agility concerns [15], while the Conceptual Model for Digital Identity (CM4DI) separates contextual identity an",
+      "in_text_mentions": 1,
+      "stated_doi": "10.1109/ICAEA69058.2025.11301508",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 16,
+      "author_requested": "CM4DI",
+      "bibliography": "A. Saie Arasi, H. Haghighi, and H. Azgomi, “An ontology-driven conceptual model for digital identity with trust integration,” in Proc. 12th Int. Conf. Web Research (ICWR), 2026, pp. 464–472, doi: 10.1109/ICWR69602.2026.11513313.",
+      "first_use_context": "al Model for Digital Identity (CM4DI) separates contextual identity and trust integration [16]. These artifacts motivate explicit organizational and reference boundaries; their concept",
+      "in_text_mentions": 1,
+      "stated_doi": "10.1109/ICWR69602.2026.11513313",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 17,
+      "author_requested": null,
+      "bibliography": "A. Aghazadeh Ardebili, F. K. Flores, M. Zappatore, and A. Ficarella, “Data-driven decision support via semantic-aware risk data modeling: Operational intelligence platform for smart transport,” Oper. Res. Forum, vol. 7, Art. no. 79, 2026, doi: 10.1007/s43069-026-00666-7.",
+      "first_use_context": "semantic risk-data modeling, decision support and expert elicitation in railway transport [17]. IRISPortal models industrial risk cases within case studies and supports their managemen",
+      "in_text_mentions": 2,
+      "stated_doi": "10.1007/s43069-026-00666-7",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 18,
+      "author_requested": null,
+      "bibliography": "G. Meditskos, N. Bassiliades, D. Vrakas, and I. Vlahavas, “IRISPortal: A semantic portal for industrial risk cases management,” in Proc. 2nd Int. Conf. Web Intelligence, Mining and Semantics (WIMS), Art. no. 28, pp. 1–8, 2012, doi: 10.1145/2254129.2254164.",
+      "first_use_context": "trial risk cases within case studies and supports their management and semantic retrieval [18]. These works establish relevant precedents for organizing and using risk knowledge; Riski",
+      "in_text_mentions": 3,
+      "stated_doi": "10.1145/2254129.2254164",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 19,
+      "author_requested": null,
+      "bibliography": "P. Gorczyca et al., “Supporting risk management for medical devices via the RISKMAN ontology and shapes,” in Proc. SEMANTiCS, pp. 226–246, 2025, doi: 10.3233/SSW250023.",
+      "first_use_context": "ontology and the Shapes Constraint Language (SHACL) for medical-device risk documentation [19]. Its AnalyzedRisk relates hazards, a hazardous situation, harm, device context and an ini",
+      "in_text_mentions": 2,
+      "stated_doi": "10.3233/SSW250023",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 20,
+      "author_requested": null,
+      "bibliography": "K. Eberhardt, A. Schwärzel, F. K. Kaiser, S. Rosenberg, and F. Schultmann, “Leveraging knowledge graphs in pharmaceutical supply chains: Insights into key drivers of drug shortages,” Int. J. Prod. Res., vol. 63, no. 19, pp. 7129–7152, 2025, doi: 10.1080/00207543.2025.2496671.",
+      "first_use_context": "evel. MedSupplyKG supports pharmaceutical shortage analysis through integrated graph data [20]. These complementary scopes inform comparison without implying class equivalence.",
+      "in_text_mentions": 2,
+      "stated_doi": "10.1080/00207543.2025.2496671",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 21,
+      "author_requested": null,
+      "bibliography": "ISACA, The Risk IT Framework, 2nd ed. Schaumburg, IL, USA: ISACA, 2020.",
+      "first_use_context": " item” can denote the tracked case; ISACA Risk IT provides the enterprise IT-risk context [21]. In COVER, RiskSubject is an agent whose goals establish the judgment perspective, wherea",
+      "in_text_mentions": 2,
+      "stated_doi": null,
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 22,
+      "author_requested": null,
+      "bibliography": "G. L. Guidoni, J. P. A. Almeida, and G. Guizzardi, “Preserving conceptual model semantics in the forward engineering of relational schemas,” Front. Comput. Sci., vol. 4, Art. no. 1020168, 2022, doi: 10.3389/fcomp.2022.1020168.",
+      "first_use_context": "n conceptual typing and multiplicity, and how constraints can preserve selected semantics [22]. Their analysis informs this study’s mapping review. The historical reference implementat",
+      "in_text_mentions": 2,
+      "stated_doi": "10.3389/fcomp.2022.1020168",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 23,
+      "author_requested": null,
+      "bibliography": "S. Das, S. Sundara, and R. Cyganiak, Eds., “R2RML: RDB to RDF mapping language,” W3C Recommendation, Sep. 2012. [Online]. Available: https://www.w3.org/TR/r2rml/",
+      "first_use_context": "The RDB to RDF Mapping Language (R2RML) describes customized relational-to-RDF mappings [23]. It supports interoperability without establishing ontology-to-schema correctness. Sectio",
+      "in_text_mentions": 1,
+      "stated_doi": null,
+      "stated_url": "https://www.w3.org/TR/r2rml/",
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 24,
+      "author_requested": null,
+      "bibliography": "International Organization for Standardization, Risk Management—Vocabulary, ISO 31073:2022, 2022.",
+      "first_use_context": "ISO 31000 [1], ISO 31073 [24] and ISACA Risk IT [21] provide selected semantic anchors; COBIT 2019 supplies an addition",
+      "in_text_mentions": 1,
+      "stated_doi": null,
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 25,
+      "author_requested": null,
+      "bibliography": "ISACA, COBIT 2019 Framework: Governance and Management Objectives. Schaumburg, IL, USA: ISACA, 2018.",
+      "first_use_context": "provide selected semantic anchors; COBIT 2019 supplies an additional governance reference [25]. Source influence, explicit alignment, declared coverage and compliance are different cla",
+      "in_text_mentions": 1,
+      "stated_doi": null,
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 26,
+      "author_requested": null,
+      "bibliography": "F. Ensan and W. Du, “A semantic metrics suite for evaluating modular ontologies,” Inf. Syst., vol. 38, no. 5, pp. 745–770, 2013, doi: 10.1016/j.is.2012.11.012.",
+      "first_use_context": "and Du motivate cohesion and coupling as complementary aspects of modular ontology design [26]. Their suite distinguishes the number of strong local dependencies (NSLD), number of mode",
+      "in_text_mentions": 1,
+      "stated_doi": "10.1016/j.is.2012.11.012",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 27,
+      "author_requested": "CM-PharmE conference",
+      "bibliography": "A. Saie Arasi, H. Haghighi, and H. Azgomi, “CM-PharmE ver.1: Towards a conceptual model for pharmaceutical ecosystem with a business-architecture perspective,” in Proc. 9th Iranian Conf. Advances in Enterprise Architecture (ICAEA), 2025, doi: 10.1109/ICAEA69058.2025.11301544.",
+      "first_use_context": "be organized and retrieved through Riskium’s distinctions. The CM-PharmE conference model [27] and extended journal manuscript [28] provide the ecosystem context; risk statements and m",
+      "in_text_mentions": 1,
+      "stated_doi": "10.1109/ICAEA69058.2025.11301544",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 28,
+      "author_requested": "CM-PharmE journal",
+      "bibliography": "A. Saie Arasi, H. Haghighi, and H. Azgomi, “CM-PharmE 1.0: A business-architecture-informed and ontology-grounded conceptual model for pharmaceutical ecosystems,” journal manuscript. [Online]. Available: https://jicse.sbu.ac.ir/article_107649.html",
+      "first_use_context": "skium’s distinctions. The CM-PharmE conference model [27] and extended journal manuscript [28] provide the ecosystem context; risk statements and measurements originate in the source s",
+      "in_text_mentions": 1,
+      "stated_doi": null,
+      "stated_url": "https://jicse.sbu.ac.ir/article_107649.html",
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 29,
+      "author_requested": null,
+      "bibliography": "H. Elleuch, W. Hachicha, and H. Chabchoub, “A combined approach for supply chain risk management: Description and application to a real hospital pharmaceutical case study,” J. Risk Res., vol. 17, no. 5, pp. 641–663, 2014, doi: 10.1080/13669877.2013.815653.",
+      "first_use_context": "escribes possible medicine-quality failure, contributing conditions, effects and controls [29]. Its study-local descriptions can support scenario organization without establishing that",
+      "in_text_mentions": 1,
+      "stated_doi": "10.1080/13669877.2013.815653",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 30,
+      "author_requested": "GenAI organizational model",
+      "bibliography": "A. Ziapour Sohi, A. Saie Arasi, A. Ziapour Sohi, and N. Seyedin Hashemi, “Generative AI-driven business model innovation: Toward a tension-centric conceptual model in product-led organizational leadership,” SID archive. [Online]. Available: https://www.sid.ir/paper/1588416/en",
+      "first_use_context": " and treatment records across functions. Studies of generative-AI organizational tensions [30] and blockchain-enabled small-enterprise finance [31] illustrate relevant organizational c",
+      "in_text_mentions": 1,
+      "stated_doi": null,
+      "stated_url": "https://www.sid.ir/paper/1588416/en",
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 31,
+      "author_requested": "SME blockchain fundraising",
+      "bibliography": "N. Seyedin Hashemi, A. Ziapour Sohi, A. Saie Arasi, and A. Ziapour Sohi, “Blockchain-enabled fundraising for SMEs: A systematic literature review on emerging token-based financing models for small and medium-sized enterprises,” SID archive. [Online]. Available: https://www.sid.ir/paper/1588426/en",
+      "first_use_context": "enerative-AI organizational tensions [30] and blockchain-enabled small-enterprise finance [31] illustrate relevant organizational contexts. Riskium’s effect on decision quality remains",
+      "in_text_mentions": 1,
+      "stated_doi": null,
+      "stated_url": "https://www.sid.ir/paper/1588426/en",
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 32,
+      "author_requested": null,
+      "bibliography": "P. Vicente and M. Mira da Silva, “A conceptual model for integrated governance, risk and compliance,” in Advanced Information Systems Engineering, LNCS 6741, pp. 199–213, 2011, doi: 10.1007/978-3-642-21640-4_16.",
+      "first_use_context": "igations, controls and evidence, informed by governance, risk and compliance (GRC) models [32] and related ontologies [33], [34]. Architecture and application evaluation remain separat",
+      "in_text_mentions": 1,
+      "stated_doi": "10.1007/978-3-642-21640-4_16",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 33,
+      "author_requested": null,
+      "bibliography": "T. Butler and R. Brooks, “On the role of ontology-based regtech for managing risk and compliance reporting in the age of regulation,” J. Risk Manage. Financial Institutions, vol. 11, no. 1, pp. 19–33, 2018.",
+      "first_use_context": "nce, informed by governance, risk and compliance (GRC) models [32] and related ontologies [33], [34]. Architecture and application evaluation remain separate studies.",
+      "in_text_mentions": 1,
+      "stated_doi": null,
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    },
+    {
+      "number": 34,
+      "author_requested": null,
+      "bibliography": "A. Gehrmann and S. Ishizu, “Improving management system audits by knowledge sharing with ontologies,” J. Japan Soc. Manage. Inf., vol. 16, no. 4, pp. 51–65, 2008, doi: 10.11497/jjasmin.16.4_51.",
+      "first_use_context": "nformed by governance, risk and compliance (GRC) models [32] and related ontologies [33], [34]. Architecture and application evaluation remain separate studies.",
+      "in_text_mentions": 1,
+      "stated_doi": "10.11497/jjasmin.16.4_51",
+      "stated_url": null,
+      "external_metadata_status": "NOT_REVERIFIED_BY_THIS_SCRIPT"
+    }
+  ],
+  "limits": [
+    "Exact placement and transcription only; publication metadata needs source inspection.",
+    "Journal publication state for reference 28 requires an actual publisher record.",
+    "Six author papers are counted as citations, not independent validation."
+  ]
+}

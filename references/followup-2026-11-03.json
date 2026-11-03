@@ -1,0 +1,116 @@
+{
+  "schema": "riskium-finite-source-followup-1",
+  "date": "2026-11-03",
+  "base_corpus": "references/corpus.json (2026-10-23); historical rows unchanged",
+  "model_version": "0.3.1",
+  "model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "reviewer": "author-assisted source inspection; no independent qualified semantic adjudication",
+  "review_questions": [
+    "Does a reference ontology's risk subject, treatment mechanism or assessment denote a continuing managed RiskCase?",
+    "What is actually represented or computed by each related work, and what cannot be inferred about Riskium?",
+    "Can a source-edition-qualified appetite, tolerance or owner claim be made from legally readable primary material?",
+    "Which newer candidate merits a later article citation without an exhaustive novelty or superiority claim?"
+  ],
+  "sources": [
+    {
+      "id": "REF-ROSE-2026-FOLLOWUP",
+      "identity": "Oliveira et al., An Ontology of Security from a Risk Treatment Perspective, ER 2022, doi:10.1007/978-3-031-17995-2_26",
+      "url": "https://ris.utwente.nl/ws/portalfiles/portal/300281323/978_3_031_17995_2_26.pdf",
+      "access": "University-hosted full published-version PDF readable; inspected introduction, §§4.2, 5, 7 and repository erratum; no native equivalence mapping executed",
+      "locator": "printed pp. 365–379, especially pp. 373–377; https://github.com/unibz-core/security-ontology README erratum",
+      "finding": "ROSE builds on COVER and prevention; distinguishes designer, protected subject, security mechanism, control capability and protection events. Its treatment account and selected case evaluation are substantive, not merely an abstract-level security mention.",
+      "model_targets": ["RKM-C041", "RKM-C045", "RKM-X01", "C-14"],
+      "counterexample": "A recorded Riskium control reference or treatment plan must not entail the existence, operation or effectiveness of a ROSE Security Mechanism.",
+      "decision": "COMPLEMENTARY_SCOPE_NO_CLASS_EQUIVALENCE",
+      "limit": "No OWL import, class-by-class alignment, performance comparison, or claim that ROSE omits documentary history. The repository corrects a cardinality in the ER paper; do not silently copy the paper's cardinality."
+    },
+    {
+      "id": "REF-WATCHDOG-2026-FOLLOWUP",
+      "identity": "Nicoletti et al., WATCHDOG, CAiSE 2025, LNCS 15702 pp. 314–331, doi:10.1007/978-3-031-94571-7_18; arXiv 2412.13964v2",
+      "url": "https://arxiv.org/html/2412.13964v2",
+      "access": "Full author v2 HTML readable on arXiv; inspected §§3, 5, 6, 8 and 9. University record verified related CAiSE 2025 DOI; its PDF returned 403. This is not a replication of its formal or empirical claims.",
+      "locator": "arXiv:2412.13964v2 §§3 (DOG), 5 (query examples), 6 (semantics), 8 (evaluation plans), 9 (conclusion); university CAiSE record",
+      "finding": "The paper defines DOGs that combine attack/fault trees, an object graph and a knowledge base; DOGLog/DOGLang enable example queries and formal risk computations. Section 8 describes later requirement elicitation, user studies and scalability algorithms as plans, not completed empirical validation in that version.",
+      "model_targets": ["RKM-C035", "RKM-C037", "C-18", "C-21"],
+      "counterexample": "A retrieved Riskium score or matched SQL–SPARQL row is not a probabilistic propagation computation or a WATCHDOG benchmark.",
+      "decision": "SELECTED_FULL_TEXT_COMPLEMENTARY_COMPUTATION",
+      "limit": "No implementation, common dataset, comparative performance test or class equivalence with Riskium. This inspection did not independently validate DOGLog or its computations."
+    },
+    {
+      "id": "REF-ATTACKTREES-2026-FOLLOWUP",
+      "identity": "Oliveira et al., An ontological lens on attack trees: Toward adequacy and interoperability, arXiv:2506.23841v1 (2025)",
+      "url": "https://ris.utwente.nl/ws/portalfiles/portal/499496475/2506.23841v1.pdf",
+      "access": "University-hosted author full PDF readable; inspected abstract, §§4.2 and 5, not a Riskium benchmark",
+      "locator": "PDF abstract, §§4.2 and 5, version v1",
+      "finding": "The paper analyzes overloaded attack-tree elements, missing domain constructs and interoperability, grounding its analysis in COVER and proposing complementary ontological and formal-method support.",
+      "model_targets": ["RKM-X01", "RKM-C035", "C-18"],
+      "counterexample": "Successful graph retrieval or a consistent OWL model does not establish the conceptual adequacy of every security-risk diagram.",
+      "decision": "METHOD_CONTEXT_NO_DIRECT_MODEL_ALIGNMENT",
+      "limit": "Its shortcomings concern attack-tree formalism, not an established defect in Riskium. No shared benchmark or general superiority claim."
+    },
+    {
+      "id": "REF-RISKIT-PUBLIC-DEFINITION",
+      "identity": "ISACA, Risk IT Framework, 2nd ed. (2020), as explicitly attributed in ISACA Now (2022)",
+      "url": "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2022/risk-appetite-vs-risk-tolerance-what-is-the-difference",
+      "access": "Official ISACA explanatory article inspected; full 2020 Framework not obtained",
+      "locator": "What is Risk Appetite? and What is Risk Tolerance? sections",
+      "finding": "The article attributes a permissible-deviation interpretation of tolerance to the second edition and distinguishes it from the amount of risk an organization is willing to accept for objectives.",
+      "model_targets": ["RKM-C073", "RKM-C074", "C-10"],
+      "counterexample": "Two statements carrying the label tolerance under different source vocabularies are not equivalent merely because their labels match.",
+      "decision": "EDITION_ATTRIBUTED_PUBLIC_EXCERPT_ONLY",
+      "limit": "No full-framework clause number, universal definition, framework conformance or crosswalk to ISO 31073 is claimed."
+    },
+    {
+      "id": "REF-ISACA-GLOSSARY-2026",
+      "identity": "ISACA Interactive Glossary, mutable online page, accessed 2026-11-03",
+      "url": "https://www.isaca.org/resources/glossary",
+      "access": "Official current glossary entries inspected; no stable edition/version attribution to 2020 Risk IT",
+      "locator": "Risk owner, risk register, risk scenario entries",
+      "finding": "The glossary associates a risk owner with entrusted authority and accountability for decisions; it describes a register as a list of identified, analyzed and prioritized scenarios. This is not evidence that Risk IT 2020 defines a Risk Item equivalent to Riskium RiskCase.",
+      "model_targets": ["RKM-C052", "RKM-X01", "C-06", "C-22"],
+      "counterexample": "An owner name in a register does not by itself establish a grounded authority/mandate relator or the identity of a continuing RiskCase.",
+      "decision": "CONTEXTUAL_VOCABULARY_NO_RISK_ITEM_EQUIVALENCE",
+      "limit": "Mutable glossary, unspecified edition for each entry; no direct class equivalence or mandatory participant multiplicity is inferred."
+    },
+    {
+      "id": "REF-ISO31073-ACCESS-CHECK",
+      "identity": "ISO 31073:2022 edition 1, official ISO catalog and TC 262 summary",
+      "url": "https://www.iso.org/standard/79637.html",
+      "access": "Edition metadata and public committee summary readable; actual normative vocabulary entries and exact clauses not read",
+      "locator": "Catalog edition/date and TC 262 public vocabulary summary",
+      "finding": "The standard is a generic vocabulary for organizational risk and allows application-specific terminology qualification; this does not establish a Riskium term crosswalk.",
+      "model_targets": ["RKM-C073", "RKM-C074", "C-10"],
+      "counterexample": "An ISACA blog excerpt cannot be presented as ISO 31073's own definition of tolerance.",
+      "decision": "NORMATIVE_CROSSWALK_NOT_ASSESSED",
+      "limit": "Legitimate full text and qualified terminology review needed before exact ISO term attribution or equivalence."
+    },
+    {
+      "id": "CANDIDATE-2026-CYBER-REVIEW",
+      "identity": "Toward a Unified View of Cybersecurity Ontologies: A Systematic Review and Conceptual Consolidation, Applied Sciences 16(12) (2026), publisher candidate",
+      "url": "https://www.mdpi.com/2076-3417/16/12/6185",
+      "access": "Search discovery only; publisher full page returned 429 at review time; not counted as an inspected full source",
+      "locator": "Publisher title/abstract in search discovery, pending direct source readback",
+      "finding": "No content conclusion admitted into the article at this stage.",
+      "model_targets": [],
+      "counterexample": "A search result's reported coverage of cybersecurity ontologies is not a novelty proof about organizational risk knowledge.",
+      "decision": "DISCOVERY_ONLY_DEFER",
+      "limit": "Read the primary paper and verify its population before inclusion."
+    }
+  ],
+  "claim_overlays": [
+    {"target": "manuscript 7.2.0, III-A and Table I", "decision": "KEEP_BOUNDED", "reason": "ROSE full text strengthens treatment comparison; no equivalence or superiority asserted. Consider one clause in a later revision only if ten-page space allows."},
+    {"target": "manuscript 7.2.0, IV-D risk item sentence", "decision": "EDIT_NEXT_VERSION", "reason": "The official public Risk IT overview supplies context but does not substantiate Risk Item as an exact framework term or its identity equivalence. Keep the expression expressly local or remove it; retain the Risk IT citation for its enterprise IT risk context only."},
+    {"target": "RKM-C073/RKM-C074 and C-10", "decision": "RETAIN_SOURCE_QUALIFIED_SEPARATION", "reason": "ISACA's edition-attributed public excerpt supports one tolerance reading; no ISO 31073 crosswalk or full framework compliance is proven."},
+    {"target": "C-06/C-22", "decision": "RETAIN_LOCAL_GROUNDING_POLICY", "reason": "The mutable ISACA owner entry is contextual support for authority/accountability but does not prove local relator identity or cardinality."},
+    {"target": "LIM-03 and manuscript discussion", "decision": "KEEP_FINITE_NONCOMPETITIVE_COMPARISON", "reason": "ROSE and attack-tree analysis were inspected at stated sections; WATCHDOG remains abstract level. No feature-absence or first-ever ontology claim follows."}
+  ],
+  "outstanding": [
+    "Actual independent ontology/standards adjudication remains #23 and zero observed ratings.",
+    "Full ISO 31073/Risk IT/COBIT clause-by-clause interpretation remains unassessed; no exact crosswalk is published.",
+    "The 2026 candidate and FOMI candidate full text remain uninspected; any detailed mapping requires legitimate reading.",
+    "A later manuscript edit and model/OWL/DB compatibility route are required for any new adopted claim."
+  ],
+  "historical_artifacts_changed": false,
+  "manuscript_7_2_0_changed": false,
+  "model_changed": false
+}

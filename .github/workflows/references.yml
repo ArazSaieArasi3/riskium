@@ -12,6 +12,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
 jobs:
   references:
     runs-on: ubuntu-24.04
@@ -23,4 +26,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Verify candidate source identity and prepare the reviewed historical checkout
+        run: python tools/check_source_transition.py --historical-worktree build/reviewed-source --receipt build/source-boundary.json
       - run: python tools/review_references.py --check
+        working-directory: build/reviewed-source

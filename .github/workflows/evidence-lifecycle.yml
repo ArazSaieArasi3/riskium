@@ -6,6 +6,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
 jobs:
   lifecycle:
     runs-on: ubuntu-24.04
@@ -19,15 +22,21 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
+      - name: Verify candidate source identity and prepare the reviewed historical checkout
+        run: python tools/check_source_transition.py --historical-worktree build/reviewed-source --receipt build/source-boundary.json
       - name: Replay frozen lifecycle, populated migration, native graph and real mutation controls
+        working-directory: build/reviewed-source
         run: python tools/run_relational_evidence_lifecycle.py --check
       - name: Check original 306 dispositions, derived requirements and component bindings
+        working-directory: build/reviewed-source
         run: python tools/build_evidence_lifecycle_inventory.py --check
       - name: Exercise API, raw SQL, historical/context and recovery boundaries
+        working-directory: build/reviewed-source
         run: python -m unittest discover -s tests -p test_evidence_lifecycle.py -v
       - name: Preserve the frozen declaration, published selection and all previous source contracts
+        working-directory: build/reviewed-source
         run: |
           python tools/build_prepared_distribution.py --check
-          python tools/audit_consistency.py --check
+          python tools/releases/v037/routing.py --inventory-receipt build/historical-source-inventory.json
           git diff cb996241553fc8ae858acb38622009ed3a08f450 --exit-code -- implementation/relational/0.7.0/contract.json implementation/relational/0.7.0/fixtures.json
           git diff --exit-code

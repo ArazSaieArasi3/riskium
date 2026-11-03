@@ -1,0 +1,472 @@
+{
+  "repository_commit": "50f731aa5e065233c81fceeadaab8d87f5569de6",
+  "model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "python": "3.12.14",
+  "unit": "catalog subdomain; undirected associations plus generalizations; parallel internal pairs collapsed; cross relations counted individually; anchor excluded from neighbor count",
+  "metrics": {
+    "n": "local catalog concepts",
+    "e": "distinct internal unordered links",
+    "k": "internal connected components",
+    "i": "internally isolated concepts",
+    "x": "incident cross-boundary relations including the external anchor",
+    "b": "distinct other Riskium subdomains"
+  },
+  "rows": [
+    {
+      "id": "D01",
+      "title": "Risk Phenomena",
+      "n": 15,
+      "e": 18,
+      "k": 1,
+      "i": 0,
+      "x": 37,
+      "b": 9,
+      "components": [
+        [
+          "RKM-C001",
+          "RKM-C002",
+          "RKM-C003",
+          "RKM-C004",
+          "RKM-C005",
+          "RKM-C006",
+          "RKM-C007",
+          "RKM-C008",
+          "RKM-C009",
+          "RKM-C010",
+          "RKM-C011",
+          "RKM-C012",
+          "RKM-C013",
+          "RKM-X01",
+          "RKM-X06"
+        ]
+      ],
+      "explanation": "Internal connections are present."
+    },
+    {
+      "id": "D02",
+      "title": "Risk Information",
+      "n": 3,
+      "e": 2,
+      "k": 1,
+      "i": 0,
+      "x": 45,
+      "b": 10,
+      "components": [
+        [
+          "RKM-C014",
+          "RKM-C015",
+          "RKM-C016"
+        ]
+      ],
+      "explanation": "Internal connections are present."
+    },
+    {
+      "id": "D03",
+      "title": "Risk Classification",
+      "n": 5,
+      "e": 3,
+      "k": 2,
+      "i": 1,
+      "x": 19,
+      "b": 7,
+      "components": [
+        [
+          "RKM-C017",
+          "RKM-C018",
+          "RKM-C019",
+          "RKM-C020"
+        ],
+        [
+          "RKM-C021"
+        ]
+      ],
+      "explanation": "One concept reaches the design through another subdomain; inspect the intended boundary."
+    },
+    {
+      "id": "D04",
+      "title": "Risk Registration",
+      "n": 9,
+      "e": 8,
+      "k": 1,
+      "i": 0,
+      "x": 30,
+      "b": 8,
+      "components": [
+        [
+          "RKM-C022",
+          "RKM-C023",
+          "RKM-C024",
+          "RKM-C025",
+          "RKM-C026",
+          "RKM-C027",
+          "RKM-C028",
+          "RKM-C029",
+          "RKM-C030"
+        ]
+      ],
+      "explanation": "Internal connections are present."
+    },
+    {
+      "id": "D05",
+      "title": "Risk Assessment",
+      "n": 12,
+      "e": 17,
+      "k": 1,
+      "i": 0,
+      "x": 27,
+      "b": 8,
+      "components": [
+        [
+          "RKM-C031",
+          "RKM-C032",
+          "RKM-C033",
+          "RKM-C034",
+          "RKM-C035",
+          "RKM-C036",
+          "RKM-C037",
+          "RKM-C038",
+          "RKM-C039",
+          "RKM-C040",
+          "RKM-X03",
+          "RKM-X04"
+        ]
+      ],
+      "explanation": "Internal connections are present."
+    },
+    {
+      "id": "D06",
+      "title": "Risk Treatment",
+      "n": 7,
+      "e": 6,
+      "k": 1,
+      "i": 0,
+      "x": 16,
+      "b": 7,
+      "components": [
+        [
+          "RKM-C041",
+          "RKM-C042",
+          "RKM-C043",
+          "RKM-C044",
+          "RKM-C045",
+          "RKM-C046",
+          "RKM-X05"
+        ]
+      ],
+      "explanation": "Internal connections are present."
+    },
+    {
+      "id": "D07",
+      "title": "Risk Responsibility",
+      "n": 13,
+      "e": 19,
+      "k": 1,
+      "i": 0,
+      "x": 10,
+      "b": 7,
+      "components": [
+        [
+          "RKM-C047",
+          "RKM-C048",
+          "RKM-C049",
+          "RKM-C050",
+          "RKM-C051",
+          "RKM-C052",
+          "RKM-C053",
+          "RKM-C054",
+          "RKM-C055",
+          "RKM-C056",
+          "RKM-C057",
+          "RKM-C058",
+          "RKM-C059"
+        ]
+      ],
+      "explanation": "Internal connections are present."
+    },
+    {
+      "id": "D08",
+      "title": "Risk Workflow",
+      "n": 5,
+      "e": 6,
+      "k": 1,
+      "i": 0,
+      "x": 6,
+      "b": 3,
+      "components": [
+        [
+          "RKM-C060",
+          "RKM-C061",
+          "RKM-C062",
+          "RKM-C063",
+          "RKM-C064"
+        ]
+      ],
+      "explanation": "Internal connections are present."
+    },
+    {
+      "id": "D09",
+      "title": "Risk Evidence",
+      "n": 2,
+      "e": 1,
+      "k": 1,
+      "i": 0,
+      "x": 7,
+      "b": 5,
+      "components": [
+        [
+          "RKM-C065",
+          "RKM-C066"
+        ]
+      ],
+      "explanation": "Internal connections are present."
+    },
+    {
+      "id": "D10",
+      "title": "Risk Monitoring",
+      "n": 5,
+      "e": 5,
+      "k": 1,
+      "i": 0,
+      "x": 9,
+      "b": 4,
+      "components": [
+        [
+          "RKM-C067",
+          "RKM-C068",
+          "RKM-C069",
+          "RKM-C070",
+          "RKM-C071"
+        ]
+      ],
+      "explanation": "Internal connections are present."
+    },
+    {
+      "id": "D11",
+      "title": "Risk Policy",
+      "n": 4,
+      "e": 2,
+      "k": 2,
+      "i": 1,
+      "x": 9,
+      "b": 2,
+      "components": [
+        [
+          "RKM-C072",
+          "RKM-C073",
+          "RKM-C074"
+        ],
+        [
+          "RKM-X02"
+        ]
+      ],
+      "explanation": "One concept reaches the design through another subdomain; inspect the intended boundary."
+    }
+  ],
+  "whole": {
+    "nodes": 81,
+    "components": 1,
+    "isolated": 0,
+    "association_components": 8,
+    "association_isolated": 7
+  },
+  "association_pairs": [
+    {
+      "source": "D01",
+      "target": "D03",
+      "relations": 1
+    },
+    {
+      "source": "D01",
+      "target": "D04",
+      "relations": 10
+    },
+    {
+      "source": "D01",
+      "target": "D05",
+      "relations": 5
+    },
+    {
+      "source": "D01",
+      "target": "D06",
+      "relations": 3
+    },
+    {
+      "source": "D01",
+      "target": "D07",
+      "relations": 2
+    },
+    {
+      "source": "D01",
+      "target": "D09",
+      "relations": 1
+    },
+    {
+      "source": "D01",
+      "target": "D10",
+      "relations": 3
+    },
+    {
+      "source": "D01",
+      "target": "D11",
+      "relations": 5
+    },
+    {
+      "source": "D02",
+      "target": "D05",
+      "relations": 4
+    },
+    {
+      "source": "D02",
+      "target": "D09",
+      "relations": 1
+    },
+    {
+      "source": "D03",
+      "target": "D04",
+      "relations": 2
+    },
+    {
+      "source": "D04",
+      "target": "D05",
+      "relations": 1
+    },
+    {
+      "source": "D04",
+      "target": "D06",
+      "relations": 3
+    },
+    {
+      "source": "D04",
+      "target": "D07",
+      "relations": 2
+    },
+    {
+      "source": "D04",
+      "target": "D08",
+      "relations": 2
+    },
+    {
+      "source": "D04",
+      "target": "D10",
+      "relations": 1
+    },
+    {
+      "source": "D05",
+      "target": "D06",
+      "relations": 3
+    },
+    {
+      "source": "D05",
+      "target": "D07",
+      "relations": 1
+    },
+    {
+      "source": "D05",
+      "target": "D09",
+      "relations": 1
+    },
+    {
+      "source": "D05",
+      "target": "D10",
+      "relations": 1
+    },
+    {
+      "source": "D06",
+      "target": "D07",
+      "relations": 1
+    },
+    {
+      "source": "D06",
+      "target": "D09",
+      "relations": 1
+    },
+    {
+      "source": "D07",
+      "target": "D09",
+      "relations": 1
+    }
+  ],
+  "generalization_pairs": [
+    {
+      "source": "D01",
+      "target": "D02",
+      "relations": 5
+    },
+    {
+      "source": "D01",
+      "target": "D03",
+      "relations": 1
+    },
+    {
+      "source": "D02",
+      "target": "D03",
+      "relations": 4
+    },
+    {
+      "source": "D02",
+      "target": "D04",
+      "relations": 6
+    },
+    {
+      "source": "D02",
+      "target": "D05",
+      "relations": 8
+    },
+    {
+      "source": "D02",
+      "target": "D06",
+      "relations": 3
+    },
+    {
+      "source": "D02",
+      "target": "D07",
+      "relations": 2
+    },
+    {
+      "source": "D02",
+      "target": "D08",
+      "relations": 2
+    },
+    {
+      "source": "D02",
+      "target": "D09",
+      "relations": 2
+    },
+    {
+      "source": "D02",
+      "target": "D10",
+      "relations": 4
+    },
+    {
+      "source": "D02",
+      "target": "D11",
+      "relations": 4
+    },
+    {
+      "source": "D03",
+      "target": "D04",
+      "relations": 3
+    },
+    {
+      "source": "D03",
+      "target": "D05",
+      "relations": 3
+    },
+    {
+      "source": "D03",
+      "target": "D06",
+      "relations": 2
+    },
+    {
+      "source": "D03",
+      "target": "D07",
+      "relations": 1
+    },
+    {
+      "source": "D03",
+      "target": "D08",
+      "relations": 2
+    }
+  ],
+  "semantic_COH_COP": "NOT_COMPUTED: these graph observations do not implement semantic dependency metrics"
+}

@@ -1,0 +1,66 @@
+{
+  "manuscript_version": "7.2.1",
+  "status": "AUTHOR_HELD_CANDIDATE_NOT_SUBMITTED",
+  "parent_word_sha256": "e6d7176abe44a7960fe67db65accef3ec4a317eae7d2b47694fa5f38d110a46a",
+  "word_sha256": "988a879fa77b1b1f9863456dcbdf0f632d8c6f9ac8d6fd7b81dfdb164fb9f631",
+  "pdf_sha256": "d4a8880cf8bc877e499f12af3a2dac60962d2ea0de5c63fd9d456fc35b8fce9d",
+  "changed_paragraphs": [
+    72,
+    130
+  ],
+  "source_model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "archived_case_db_sha256": "b1f08a5b9464f1c0c06acd112324707ae91d97d28883b006ca12ff6c2ee7b780",
+  "archive_sha256": "0a7abf11cd143f1b02027eb77f4f5bfcee613021d9eebb63bb7c46fa81f8d220",
+  "layout": {
+    "pages": 10,
+    "page_size": "A4",
+    "references": 34,
+    "scientific_tables": 8,
+    "figures": 2,
+    "bordered_scientific_tables": 8,
+    "all_paragraphs_and_cells_in_pdf": true,
+    "all_page_words_in_bounds": true,
+    "visual_pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "citation_placement": {
+    "first_use_order": true,
+    "author_paper_numbers": [
+      15,
+      16,
+      27,
+      28,
+      30,
+      31
+    ]
+  },
+  "preserved": {
+    "all_tables_byte_identical": true,
+    "embedded_media_byte_identical": true,
+    "styles_and_footnotes_byte_identical": true
+  },
+  "case_source_disposition": {
+    "active_journal_articles": 30,
+    "corrigenda": 1,
+    "active_source_records": 1011,
+    "outside_stage_records": 12,
+    "withheld_candidates": 11,
+    "admitted_cases": 0
+  },
+  "limits": [
+    "The private archived corpus was not independently adjudicated in this revision.",
+    "The full normative Risk IT text and an exact term equivalence were not verified.",
+    "No new model, OWL, SQL, expert judgments or organizational use evaluation.",
+    "Coauthor review, source release and submission are separate decisions."
+  ]
+}

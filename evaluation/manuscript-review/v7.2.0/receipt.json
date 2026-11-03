@@ -1,0 +1,129 @@
+{
+  "manuscript_version": "7.2.0",
+  "status": "AUTHOR_HELD_CANDIDATE_NOT_SUBMITTED",
+  "source_commit": "50f731aa5e065233c81fceeadaab8d87f5569de6",
+  "published_source_distribution": "v0.3.7",
+  "model_version": "0.3.1",
+  "orsd_revision": "0.4.3",
+  "archived_case_dataset": "0.6",
+  "archived_relational_version": "0.3.0-rc.1",
+  "model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "source_document_sha256": "f9433f99dfe49c250b8a77117ec5fde14f041b619b8a6f747826687fdb2fd517",
+  "word_sha256": "e6d7176abe44a7960fe67db65accef3ec4a317eae7d2b47694fa5f38d110a46a",
+  "pdf_sha256": "049dc0cce57f0ad06e74f88727fb34e0cd16ce1423399c6d9defadc279440fdd",
+  "archive_sha256": "0a7abf11cd143f1b02027eb77f4f5bfcee613021d9eebb63bb7c46fa81f8d220",
+  "case_db_sha256": "b1f08a5b9464f1c0c06acd112324707ae91d97d28883b006ca12ff6c2ee7b780",
+  "archive_members": {
+    "core_verification": {
+      "name": "Riskium_v0.3.0-rc.1_integrated_review/reports/core_verification_console.json",
+      "sha256": "b49bb51c97876563b16a16db2a5ce189613effbcfaf2dfc991dc0756c3bd0cc6"
+    },
+    "case_verification": {
+      "name": "Riskium_v0.3.0-rc.1_integrated_review/reports/verification_case.json",
+      "sha256": "dc6634a1d1a4d6d62c565b1bb51501f4d4aae7b48393b42b54d549197afb0edd"
+    },
+    "adjudication": {
+      "name": "Riskium_v0.3.0-rc.1_integrated_review/adjudication/Adjudication_Verification_Receipt.json",
+      "sha256": "92038fea2e2669df206bfb1af209c3d31cf211ea6c1eba1986177f1b9eb08f7f"
+    }
+  },
+  "case_adjudication_csv": {
+    "name": "Riskium_v0.3.0-rc.1_integrated_review/adjudication/Case_Adjudication_11.csv",
+    "sha256": "5cdb2697e5d245620bbfd06ef74d0d32979a73827cffe0839dea3d5f20ea88e6",
+    "rows": 11,
+    "all_withheld": true
+  },
+  "layout": {
+    "pages": 10,
+    "bibliography_items": 34,
+    "scientific_tables": 8,
+    "figures": 2,
+    "bordered_tables": 8,
+    "all_paragraphs_and_cells_in_pdf": true,
+    "page_word_bounds_checked": true,
+    "visual_pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "citation_placement": {
+    "all_cited_in_first_mention_order": true,
+    "author_paper_numbers": [
+      15,
+      16,
+      27,
+      28,
+      30,
+      31
+    ],
+    "external_publisher_metadata": "NOT_INDEPENDENTLY_VERIFIED"
+  },
+  "case_population": {
+    "active_source_works": {
+      "Correction": 1,
+      "Journal article": 30
+    },
+    "catalog_item": 883,
+    "item_record_link": 1011,
+    "reported_value": 1695,
+    "scenario_component": 84,
+    "candidate_scenarios": 11,
+    "admitted_organizational_cases": 0
+  },
+  "selected_experiments": {
+    "pattern_screens": 8,
+    "controls_pass": 6,
+    "sql_sparql_matched": 14,
+    "query_mutants_detected": 3,
+    "semantic_COH_COP": "NOT_COMPUTED",
+    "independent_ratings": 0
+  },
+  "figure_1": {
+    "subdomains": 11,
+    "collapsed_association_pairs": 23,
+    "source_svg_sha256": "0c216a3edc745aca6dce841634e33fdfebf369f30834223e23fabb38ad37882d"
+  },
+  "historical_counts": {
+    "hermit": {
+      "pass": 281,
+      "not_run": 14,
+      "total": 295
+    },
+    "shacl": {
+      "pass": 341,
+      "partial": 1,
+      "not_run": 17,
+      "total": 359
+    },
+    "relational": {
+      "pass": 454,
+      "negative": 157
+    },
+    "case_load": 67,
+    "adjudication": 14,
+    "cq_answers": 32,
+    "cq_mutants": 8,
+    "traces": 28
+  },
+  "changed_paragraphs": [
+    38,
+    128,
+    132
+  ],
+  "limits": [
+    "The source case archive is author-held; the reference ledger identifies its full hashes and locators.",
+    "No new HermiT or SHACL run or new model version.",
+    "Selected structural candidates are unadjudicated and do not prove full OntoUML conformance.",
+    "Matched queries cover three explicit named-graph retrieval families, not general SQL/RDF parity.",
+    "The six author-paper citation placements were checked, but publication metadata remained access-limited.",
+    "Independent semantic review and organizational use have not been observed."
+  ]
+}

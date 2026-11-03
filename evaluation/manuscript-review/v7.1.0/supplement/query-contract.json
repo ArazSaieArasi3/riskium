@@ -1,0 +1,195 @@
+{
+  "policy": {
+    "scope": "Three bounded retrieval families on schema 10 and existing synthetic fixture. No inference; all graph names explicit; URI values only except unbound variables.",
+    "comparison": "SQL SELECT DISTINCT and SPARQL SELECT DISTINCT; sorted sets of tuples; SQL NULL and SPARQL unbound normalize to null; no default-graph union; no OWL imports, sameAs reasoning, score-literal or correction-edge mapping.",
+    "independence": "SQL queries use domain tables/views; SPARQL queries use public RDF projections. Literal expected answers above are hand-authored independently of both query outputs.",
+    "nonclaims": [
+      "No numeric score comparison.",
+      "No general correction-lineage export.",
+      "No production performance or independently specified real-case validation."
+    ]
+  },
+  "cases": [
+    {
+      "id": "CE-multiple",
+      "task": "case_entries",
+      "focus": "urn:riskium:nature37:case-1",
+      "expected": [
+        [
+          "urn:riskium:nature37:entry-1",
+          "urn:riskium:nature37:register"
+        ],
+        [
+          "urn:riskium:nature37:entry-extra",
+          "urn:riskium:nature37:register"
+        ]
+      ]
+    },
+    {
+      "id": "CE-distinct-equal-label",
+      "task": "case_entries",
+      "focus": "urn:riskium:nature37:case-2",
+      "expected": [
+        [
+          "urn:riskium:nature37:entry-2",
+          "urn:riskium:nature37:register"
+        ]
+      ]
+    },
+    {
+      "id": "CE-empty",
+      "task": "case_entries",
+      "focus": "urn:riskium:nature37:case-empty",
+      "expected": []
+    },
+    {
+      "id": "CE-absent",
+      "task": "case_entries",
+      "focus": "urn:riskium:nature37:not-in-fixture",
+      "expected": []
+    },
+    {
+      "id": "AF-original",
+      "task": "assessment_frame",
+      "focus": "urn:riskium:assessment:a1-v1",
+      "expected": [
+        [
+          "urn:riskium:assessment:r1",
+          "urn:riskium:sql:context-v1",
+          "urn:riskium:assessment:method-v3",
+          "urn:riskium:assessment:basis-v1",
+          "urn:riskium:assessment:scale-v3",
+          "urn:riskium:assessment:dimension"
+        ]
+      ]
+    },
+    {
+      "id": "AF-two-results",
+      "task": "assessment_frame",
+      "focus": "urn:riskium:assessment-selection:M-v1",
+      "expected": [
+        [
+          "urn:riskium:assessment-selection:MR-left",
+          "urn:riskium:sql:context-v1",
+          "urn:riskium:assessment:method-v3",
+          "urn:riskium:assessment:basis-v1",
+          "urn:riskium:assessment:scale-v3",
+          "urn:riskium:assessment:dimension"
+        ],
+        [
+          "urn:riskium:assessment-selection:MR-right",
+          "urn:riskium:sql:context-v1",
+          "urn:riskium:assessment:method-v3",
+          "urn:riskium:assessment:basis-v1",
+          "urn:riskium:assessment:scale-v3",
+          "urn:riskium:assessment:dimension"
+        ]
+      ]
+    },
+    {
+      "id": "AF-other-scale",
+      "task": "assessment_frame",
+      "focus": "urn:riskium:assessment-selection:N-v1",
+      "expected": [
+        [
+          "urn:riskium:assessment-selection:NR",
+          "urn:riskium:sql:context-v1",
+          "urn:riskium:assessment:method-v3",
+          "urn:riskium:assessment:basis-v1",
+          "urn:riskium:assessment:scale-v4",
+          "urn:riskium:assessment:dimension"
+        ]
+      ]
+    },
+    {
+      "id": "AF-absent",
+      "task": "assessment_frame",
+      "focus": "urn:riskium:assessment:absent",
+      "expected": []
+    },
+    {
+      "id": "NV-original",
+      "task": "issued_nature",
+      "focus": "urn:riskium:nature37:A-v1",
+      "expected": [
+        [
+          "urn:riskium:nature37:case-1",
+          "urn:riskium:nature37:negative-v1",
+          "urn:riskium:nature37:context-v1",
+          "urn:riskium:nature37:scheme-I-v1",
+          "urn:riskium:nature37:objective-v1"
+        ]
+      ]
+    },
+    {
+      "id": "NV-corrected-content",
+      "task": "issued_nature",
+      "focus": "urn:riskium:nature37:A-v2",
+      "expected": [
+        [
+          "urn:riskium:nature37:case-1",
+          "urn:riskium:nature37:positive-v1",
+          "urn:riskium:nature37:context-v2",
+          "urn:riskium:nature37:scheme-I-v1",
+          "urn:riskium:nature37:objective-v2"
+        ]
+      ]
+    },
+    {
+      "id": "NV-later-independent",
+      "task": "issued_nature",
+      "focus": "urn:riskium:nature37:A-v4",
+      "expected": [
+        [
+          "urn:riskium:nature37:case-1",
+          "urn:riskium:nature37:positive-v2",
+          "urn:riskium:nature37:context-v2",
+          "urn:riskium:nature37:scheme-I-v2",
+          "urn:riskium:nature37:objective-v2"
+        ]
+      ]
+    },
+    {
+      "id": "NV-other-source-vocabulary",
+      "task": "issued_nature",
+      "focus": "urn:riskium:nature37:B-v1",
+      "expected": [
+        [
+          "urn:riskium:nature37:case-1",
+          "urn:riskium:nature37:other-negative-v1",
+          "urn:riskium:nature37:context-v1",
+          "urn:riskium:nature37:scheme-II-v1",
+          "urn:riskium:nature37:objective-v1"
+        ]
+      ]
+    },
+    {
+      "id": "NV-missing-context",
+      "task": "issued_nature",
+      "focus": "urn:riskium:nature37:U-v1",
+      "expected": [
+        [
+          "urn:riskium:nature37:case-1",
+          "urn:riskium:nature37:negative-v1",
+          null,
+          "urn:riskium:nature37:scheme-I-v1",
+          null
+        ]
+      ]
+    },
+    {
+      "id": "NV-empty-objectives",
+      "task": "issued_nature",
+      "focus": "urn:riskium:nature37:Z-v1",
+      "expected": [
+        [
+          "urn:riskium:nature37:case-1",
+          "urn:riskium:nature37:negative-v1",
+          "urn:riskium:nature37:context-empty-v1",
+          "urn:riskium:nature37:scheme-I-v1",
+          null
+        ]
+      ]
+    }
+  ]
+}

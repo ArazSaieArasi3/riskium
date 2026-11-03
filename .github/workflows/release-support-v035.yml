@@ -6,6 +6,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
 jobs:
   support:
     runs-on: ubuntu-24.04
@@ -19,14 +22,19 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
+      - name: Verify candidate source identity and prepare the reviewed historical checkout
+        run: python tools/check_source_transition.py --historical-worktree build/reviewed-source --receipt build/source-boundary.json
       - name: Validate prospective unregistered profile and required source/tooling closure
+        working-directory: build/reviewed-source
         run: python -B tools/prepare_release_v035.py --check-profile
       - name: Verify actual unpacked source without Git or network and reject damaged packages
+        working-directory: build/reviewed-source
         run: python -B -m unittest discover -s tests -p test_release_v035.py -v
       - name: Preserve the exact selection and current source/documentation checkpoints
+        working-directory: build/reviewed-source
         run: |
           python tools/select_release_v035.py --check
           python tools/audit_current_alignment.py --check
           python tools/publication/current_documentation.py --check
-          python tools/audit_consistency.py --check
+          python tools/releases/v037/routing.py --inventory-receipt build/historical-source-inventory.json
           git diff --exit-code
