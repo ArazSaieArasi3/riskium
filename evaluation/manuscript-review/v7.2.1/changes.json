@@ -1,0 +1,12 @@
+[
+  {
+    "paragraph": 72,
+    "before": "A risk case, register entry, scenario and occurrence answer distinct questions: what is being tracked, where it is recorded, what might happen and what happened. The local expression “risk item” can denote the tracked case; ISACA Risk IT provides the enterprise IT-risk context [21]. In COVER, RiskSubject is an agent whose goals establish the judgment perspective, whereas RiskExperience concerns envisioned events [13]. Neither is asserted equivalent to RiskCase. IRISPortal’s RiskCase organizes risks within one case study [18]; Riskium specifies its own continuity and documentary identity conditions.",
+    "after": "A risk case, register entry, scenario and occurrence answer distinct questions: what is tracked, where it is recorded, what might happen and what happened. Here “risk item” is only an informal label for the tracked case; Risk IT supplies enterprise IT-risk context, not a class equivalence [21]. In COVER, RiskSubject is an agent whose goals establish the judgment perspective, whereas RiskExperience concerns envisioned events [13]. Neither is asserted equivalent to RiskCase. IRISPortal’s RiskCase organizes risks within one case study [18]; Riskium specifies its own continuity and documentary identity conditions."
+  },
+  {
+    "paragraph": 130,
+    "before": "The case examines how a literature-derived pharmaceutical corpus can be organized and retrieved through Riskium’s distinctions. The CM-PharmE conference model [27] and extended journal manuscript [28] provide the ecosystem context; risk statements and measurements originate in the source studies. Table VII describes the archived documentary population.",
+    "after": "The pharmaceutical case examines the organization and retrieval of literature-derived risk knowledge through Riskium. CM-PharmE [27] and its extended journal manuscript [28] provide ecosystem context; risk statements and measurements come from source studies. Older supplement records are outside the active population, and its corrigendum revises one study rather than corroborating it. Table VII records the archived population."
+  }
+]
