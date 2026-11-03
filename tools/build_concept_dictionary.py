@@ -140,6 +140,13 @@ def main():
             raise SystemExit('Dictionary inventory mismatch')
         for name,value in files.items():
             if (OUT/name).read_text()!=value: raise SystemExit('Stale dictionary page: '+name)
+            if name.endswith('.md'):
+                for target in re.findall(r'\]\(([^)]+)\)', value):
+                    if target.startswith(('https://', 'http://', '#')):
+                        continue
+                    path = target.split('#', 1)[0]
+                    if not (OUT/path).resolve().is_relative_to(ROOT) or not (OUT/path).exists():
+                        raise SystemExit('Broken dictionary link: ' + name + ' → ' + target)
         print('PASS: 80 concept dossiers, 11 subdomains, 23 relationship pairs')
     else:
         OUT.mkdir(parents=True, exist_ok=True)

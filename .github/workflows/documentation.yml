@@ -44,6 +44,8 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r tools/publication/requirements.txt
       - run: python tools/audit_consistency.py --check
+      - run: python tools/build_subdomain_relationships.py --check
+      - run: python tools/build_concept_dictionary.py --check
       - run: python tools/build_reference.py --check
       - run: python tools/review_references.py --check
       - run: python tools/build_quality_report.py --check
