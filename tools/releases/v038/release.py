@@ -16,6 +16,7 @@ PRIOR='releases/selection-v0.3.7.json';NOTES='docs/release-v0.3.8.md'
 BASELINE='evaluation/releases/v0.3.8/predecessor-publications.json'
 DESCRIPTORS={'DOCUMENTATION':'documentation/0.4.7/component.json','MANUSCRIPT_REVIEW':'evaluation/manuscript-review/v7.2.3/component.json'}
 ASSETS={'riskium-v0.3.8-source.tar.gz','source-manifest.json','artifact-versions.json','freeze-receipt.json','release-notes.md','SHA256SUMS.txt'}
+CI_PACKETS=[('current','source-transition.yml','current-source-transition-'),('v036','v036-versioned-suite.yml','v036-source-suite-'),('v037','v037-versioned-suite.yml','v037-maintained-source-suite-')]
 def require(v,m):
     if not v:raise ValueError(m)
 def sha(b):return hashlib.sha256(b).hexdigest()
@@ -149,7 +150,7 @@ def ci_evidence(source):
         if len(chosen)==len(wanted) and all(r['conclusion']=='success' for r in chosen):break
         require(time.monotonic()<deadline,'Qualification timed out');print('Awaiting exact-main CI',len(chosen),flush=True);time.sleep(15)
     packets={}
-    for role,path,prefix in [('current','source-transition.yml','current-source-transition-'),('v036','v036-versioned-suite.yml','v036-maintained-source-suite-'),('v037','v037-versioned-suite.yml','v037-maintained-source-suite-')]:
+    for role,path,prefix in CI_PACKETS:
         run=next(r for r in chosen if r['path'].endswith('/'+path));arts=api('actions/runs/'+str(run['id'])+'/artifacts?per_page=100')['artifacts'];found=[a for a in arts if a['name']==prefix+source and not a['expired']];require(len(found)==1,'Exact-source artifact missing');a=found[0];b=api('actions/artifacts/'+str(a['id'])+'/zip',binary=True);packets[role]={'artifact':a,'zip_base64':base64.b64encode(b).decode()}
     e=dict(required_runs=chosen,downloaded_artifacts=packets,previous_releases=inventory());evidence_check(e,source,ROOT);return e
 def write_assets(folder,source,entries,matrix,evidence,commit_object=None):

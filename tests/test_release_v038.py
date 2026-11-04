@@ -4,6 +4,9 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('r038',ROOT/'tools/releases/v038/release.py');r=importlib.util.module_from_spec(spec);spec.loader.exec_module(r)
 class Release038(unittest.TestCase):
+    def test_consumed_evidence_names_match_actual_producer_workflows(self):
+        for role,path,prefix in r.CI_PACKETS:
+            self.assertIn('name: '+prefix+'${{ github.sha }}',(ROOT/'.github/workflows'/path).read_text(),role)
     def test_git_object_identity_and_path_conflict(self):
         self.assertEqual(r.object_id(b'blob',b'hello\n'),'ce013625030ba8dba906f756967f9e9ca394464a')
         with self.assertRaisesRegex(ValueError,'Conflicting'):r.tree_id({'a':b'file','a/b':b'child'},{'a':0o644,'a/b':0o644})
