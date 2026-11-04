@@ -1,55 +1,41 @@
-# Riskium — Organizational Risk Knowledge
+# Riskium
 
-Riskium is a conceptual ontology for representing organizational risk knowledge. It connects a continuing risk case with its scenarios, objectives, assessments, register entries and evidence while preserving their identities, versions and sources.
+Riskium is a conceptual ontology for organizing organizational risk knowledge. It distinguishes a continuing **RiskCase** from its register entries, possible scenarios, occurrences, contextual assessments, decisions and evidence. The ontology's domain is general; the pharmaceutical literature corpus is a development case, not its defining domain or an independently validated organizational deployment.
 
-A report may describe an unfavorable effect, another source may disagree, and a later correction may change the stated nature or context. Riskium retains these documentary versions and their explicit relationships so a reader can recover what each source actually recorded.
+**Published source:** [v0.3.7](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.7) · **conceptual model and OWL:** 0.3.1 · **published reader:** 0.4.6 · **author-held article candidate:** [7.2.3 receipt](evaluation/manuscript-review/v7.2.3/receipt.json). The article's Word/PDF are supplied to the author separately; they are not assets of the published source distribution. [Artifact roles](docs/artifact-versions.md) and the [manuscript/release roadmap](docs/manuscript-and-release-roadmap.md) explain the distinct version numbers.
 
-**[Published source v0.3.7](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.7)** · **Model and OWL 0.3.1** · **[Release notes](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.7)**
+[Read the Pages guide](https://arazsaiearasi3.github.io/riskium/current/index.html) · [Browse concepts](https://arazsaiearasi3.github.io/riskium/current/concepts/index.html) · [Open the Wiki](https://github.com/ArazSaieArasi3/riskium/wiki) · [Explore the conceptual reference](https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html) · [Download v0.3.7](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.7)
 
-[Read the guides](https://arazsaiearasi3.github.io/riskium/current/index.html) · [Browse the Wiki](https://github.com/ArazSaieArasi3/riskium/wiki) · [Explore WebVOWL](https://arazsaiearasi3.github.io/riskium/current/webvowl/index.html) · [Download the published package](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.7)
+**Selected next package:** v0.3.8, 32 component families and reader 0.4.7; qualification, freeze and actual publication remain separate gates under [#76](https://github.com/ArazSaieArasi3/riskium/issues/76). The existing public release/reader shown above remain the published baseline until actual readback.
 
-## Start with your task
+## Choose a path
 
-| Your goal | Recommended path |
+| Goal | Start here | Continue with |
+| --- | --- | --- |
+| Understand the research | [Scope](docs/guides/Scope.md) and [modeling decisions](docs/modeling-decisions.md) | [Requirements](requirements/ontology-requirements.md), [competency questions](requirements/cq/README.md), [evaluation and limits](evaluation/quality/README.md) |
+| Inspect or reuse the model | [Selected view](diagrams/selected-view.svg), [subdomain package map](diagrams/subdomain-relationships.svg), [relationship matrix](diagrams/subdomain-relationships-matrix.svg) and [concept dictionary](documentation/concepts/0.3.1/README.md) | [Catalog search](https://arazsaiearasi3.github.io/riskium/current/reference/search.html), [WIDOCO](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html), [WebVOWL](https://arazsaiearasi3.github.io/riskium/current/webvowl/index.html), [bounded OWL mapping](evaluation/owl-mapping-review.md) |
+| Reproduce and assess results | [Reproduction guide](docs/reproducibility.md), [source-aware CI policy](docs/source-transition-validation.md) | [Experiments and workflow inventory](docs/experiment-and-flow-inventory.md), [claim-based quality report](evaluation/quality/README.md), [release/channel checklist](docs/publication-consistency-checklist.md) |
+| Use the relational companion | [Database assurance](docs/relational-assurance.md) | [Risk-nature SQL profile](implementation/relational/0.9.0/README.md) and [traceability](docs/traceability.md) |
+
+The source catalog is [ontology/riskium-model.json](ontology/riskium-model.json). Its eleven subdomains organize one overall domain. The [native OntoUML exchange](ontology/native/riskium.ontouml.json), [typed OWL projection](ontology/derived/riskium.owl.ttl), [requirements](requirements/ontology-requirements.md) and [evidence](evaluation/README.md) have different roles. Passing a structural, reasoning, SHACL or SQL check does not establish an overall semantic-correctness percentage. Independent semantic review is tracked in [#23](https://github.com/ArazSaieArasi3/riskium/issues/23), and independently prepared literature case populations remain [#13](https://github.com/ArazSaieArasi3/riskium/issues/13).
+
+## Repository map
+
+| Folder | Purpose |
 | --- | --- |
-| Understand the domain | [Scope](https://arazsaiearasi3.github.io/riskium/current/guide/Scope.html) → [report and correction example](https://arazsaiearasi3.github.io/riskium/current/guide/Using-the-Model.html#risk-nature-history) → [conceptual reference](https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html) |
-| Review the research | [Rationale](https://arazsaiearasi3.github.io/riskium/current/guide/Decisions.html) → [source-to-result trace](https://arazsaiearasi3.github.io/riskium/current/guide/Traceability.html) → [evaluation](https://arazsaiearasi3.github.io/riskium/current/guide/Evaluation.html) → [limitations](https://arazsaiearasi3.github.io/riskium/current/guide/Limitations.html) |
-| Integrate the SQL/API | [Query contract](https://arazsaiearasi3.github.io/riskium/current/guide/Database-Assurance.html#risk-nature-retrieval) → [executable example](https://arazsaiearasi3.github.io/riskium/current/guide/Reproduce.html#risk-nature-example) → [distribution status](https://arazsaiearasi3.github.io/riskium/current/guide/Publication.html) |
-| Inspect the model | [Selected and complete diagrams](https://arazsaiearasi3.github.io/riskium/current/reference/diagrams/index.html), [WebVOWL](https://arazsaiearasi3.github.io/riskium/current/webvowl/index.html) and [bounded OWL reference](https://arazsaiearasi3.github.io/riskium/current/widoco/index-en.html) |
+| [`ontology/`](ontology/) and [`diagrams/`](diagrams/) | Source catalog, projections and selected visual views |
+| [`requirements/`](requirements/) | ORSD, competency questions and declared contracts |
+| [`evaluation/`](evaluation/) | Executed receipts, limits and separately scoped populations |
+| [`implementation/`](implementation/) and [`tools/`](tools/) | Relational companion, transformations and reproducible checks |
+| [`docs/`](docs/) and [`documentation/`](documentation/) | Reading guides, current and versioned publication sources |
+| [`releases/`](releases/) and [`plans/`](plans/) | Component selection, source distribution and prospective work |
 
-## Risk-nature history
+For the [current Wiki Home](https://github.com/ArazSaieArasi3/riskium/wiki) and [Pages Home](https://arazsaiearasi3.github.io/riskium/current/index.html), use their navigation to switch among the model, evaluation, tools and version policy. [All releases](https://github.com/ArazSaieArasi3/riskium/releases) and [documentation versions](https://arazsaiearasi3.github.io/riskium/versions/index.html) are historical indexes, separate from the current reading route. Frozen tags and site snapshots retain their own dated claims.
 
-The released nature task retains an original unfavorable report **A-v1**, two explicit correction branches **A-v2/A-v3** and a separate source's report **B-v1**. A later **A-v4** without a correction declaration stays outside the A-v1 correction family. Exact retrieval preserves each version's term, scheme, context, objective references and original source JSON. It makes no implicit latest or truth choice.
+Historical implementation and publication decisions remain traceable through [#40](https://github.com/ArazSaieArasi3/riskium/issues/40), [#41](https://github.com/ArazSaieArasi3/riskium/issues/41), [#44](https://github.com/ArazSaieArasi3/riskium/issues/44) and [#45](https://github.com/ArazSaieArasi3/riskium/issues/45). Their source-bound results are not current release totals; follow the version index for their original artifacts.
 
-[Version-by-version explanation](https://arazsaiearasi3.github.io/riskium/current/guide/Using-the-Model.html#risk-nature-history) · [exact expected answers](https://arazsaiearasi3.github.io/riskium/current/guide/Reproduce.html#risk-nature-example) · [runtime and schema dictionary](https://github.com/ArazSaieArasi3/riskium/blob/7f3f8440b22690d28cea750bd441dde78b1e0337/implementation/relational/0.9.0/README.runtime.md).
+## Citation, rights and status
 
-## Artifacts and versions
+The authors are Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi; use [CITATION.cff](CITATION.cff) and [AUTHORS.md](AUTHORS.md) for exact attribution. Original research content uses CC BY 4.0 and original software uses MIT; [RIGHTS.md](RIGHTS.md) and [NOTICE.md](NOTICE.md) identify retained third-party terms. The repository does not redistribute the privately held literature PDFs or pharmaceutical case database.
 
-| Artifact | Current role |
-| --- | --- |
-| Source distribution v0.3.7 | Published; 31 components and six verified assets |
-| Prior source v0.3.6 | Preserved historical release; assessment selection 0.8.0/schema 9 |
-| SQL 0.9.0/schema 10 | Released nature retrieval: 60 controls and 51 malformed-request variants |
-| Consistency 0.5.0 | 470 routes; all 306 native dispositions retained, with 31 bounded nature-task witnesses |
-| Native model / OWL | 0.3.1; distinct from the package and software versions |
-| ORSD / original DRSD / manuscript | 0.4.3 / 0.1.0 / 7.0.8 |
-| Maintained documentation | 0.4.5; shared guide source for Wiki and Pages |
-
-## Current status and next work
-
-The [actual channel verification record](https://github.com/ArazSaieArasi3/riskium/issues/66) identifies the exact reviewed repository source, native Wiki files and served Pages. Documentation sources and actual channel delivery have separate evidence. The [publication record](https://github.com/ArazSaieArasi3/riskium/issues/66) links the authenticated freeze, six actual public downloads and final channel observations. The [ordered work plan](https://arazsaiearasi3.github.io/riskium/current/guide/Work-Plan.html) continues with #37, then #13, before supported manuscript and evaluation consolidation. Later release numbers remain unallocated.
-
-## Evidence, citation and reuse
-
-[Actual R2 evidence](https://github.com/ArazSaieArasi3/riskium/blob/674886381b5520e0771b3a958919e735327572c2/evaluation/integration/v0.3.7/inputs/r2-completion.json) · [R3 reconciliation](https://github.com/ArazSaieArasi3/riskium/blob/674886381b5520e0771b3a958919e735327572c2/evaluation/consistency/current-0.5.0/README.md) · [reproduction](https://arazsaiearasi3.github.io/riskium/current/guide/Reproduce.html) · [publication and citation](https://arazsaiearasi3.github.io/riskium/current/guide/Publication.html).
-
-The exact released source passed **577 current software tests plus 16 unchanged historical tests**. These are engineering results, separate from original HermiT/SHACL populations and semantic review. All eleven organizational admissions remain **WITHHELD**; independent semantic ratings remain **zero**. Historical deferred mappings remain **236**. Later engineering is not silently added to manuscript 7.0.8's claims.
-
-Research content is **CC BY 4.0**; original software is **MIT**, subject to [rights and third-party notices](https://github.com/ArazSaieArasi3/riskium/blob/58ff468ec4e8f3500ace6869601a25ea263c3d9f/NOTICE.md). Credit Araz Saie Arasi, Hassan Haghighi and Hossein Azgomi for their respective contributions; see [citation and attribution](https://arazsaiearasi3.github.io/riskium/current/guide/Citation.html).
-
-<details>
-<summary>Exact source and publication history</summary>
-
-Published v0.3.7 is at `86accc6695e4738dd1337d5b9addd73b82c73c3d`, with six independently verified assets. Its reviewed documentation 0.4.4 remains a dated prepublication checkpoint. Published v0.3.6 remains at `58ff468ec4e8f3500ace6869601a25ea263c3d9f` with its original assets. The nature runtime was executed at `7f3f8440b22690d28cea750bd441dde78b1e0337`; its integration trace is `674886381b5520e0771b3a958919e735327572c2`. Documentation 0.4.3 and v0.3.6's 0.4.2 checkpoint remain preserved, together with all four frozen website snapshots. [Release history](https://github.com/ArazSaieArasi3/riskium/releases) · [Documentation versions](https://arazsaiearasi3.github.io/riskium/versions/index.html).
-
-</details>
+The [next source-release plan](docs/manuscript-and-release-roadmap.md) targets a qualified component set for a proposed v0.3.8. No newer stable release, full native-to-SQL mapping, independent expert rating or general enterprise/holding/ecosystem use validation is asserted here. [Open issues](https://github.com/ArazSaieArasi3/riskium/issues) record the remaining work.

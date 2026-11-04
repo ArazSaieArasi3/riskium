@@ -19,10 +19,17 @@ for target in re.findall(r"\]\(([^)]+)\)", readme):
     if not destination.is_relative_to(ROOT) or not destination.exists():
         errors.append(f"broken or escaping relative link: {target}")
 
+import json
+publication = ROOT / 'evaluation/releases/v0.3.8/publication.json'
+promoted = publication.exists()
+if promoted:
+    record=json.loads(publication.read_text())
+    if record['status']!='INDEPENDENT_PUBLIC_DOWNLOADS_PASS' or record['tag']!='v0.3.8':errors.append('Invalid source publication record')
+    if (ROOT/'.github/README.md').read_text()!=readme:errors.append('Root and GitHub landing differ after promotion')
 required = {
-    "published source": r"Published source:.*v0\.3\.7",
+    "published source": r"Published source:.*v0\.3\.8" if promoted else r"Published source:.*v0\.3\.7",
     "model version": r"conceptual model and OWL:\*\* 0\.3\.1",
-    "reader version": r"published reader:\*\* 0\.4\.6",
+    "reader version": r"published reader:\*\* 0\.4\.7" if promoted else r"published reader:\*\* 0\.4\.6",
     "held paper": r"author-held article candidate:.*7\.2\.3",
     "wiki": r"https://github\.com/ArazSaieArasi3/riskium/wiki",
     "pages": r"https://arazsaiearasi3\.github\.io/riskium/current/index\.html",

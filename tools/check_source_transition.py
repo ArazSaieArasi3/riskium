@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BASELINE = '50f731aa5e065233c81fceeadaab8d87f5569de6'
 PRE_PUBLICATION_SOURCE = '86accc6695e4738dd1337d5b9addd73b82c73c3d'
 CURRENT_DOCUMENTS = {
-    'README.md', 'evaluation/consistency/inventory.json',
+    'README.md', '.github/README.md', 'evaluation/consistency/inventory.json',
 }
 SCHEDULERS = {
     '.github/workflows/documentation.yml',
@@ -53,13 +53,18 @@ ADDITIVE_FILES = {
     'references/disposition-2026-11-04.md', 'references/full-pdf-update-2026-11-04.md',
     'tools/publication/dictionary_documentation.py', '.github/workflows/dictionary-reader.yml',
     'tests/test_dictionary_documentation.py',
+    'plans/v0.3.8.md', 'docs/release-v0.3.8.md',
+    'releases/selection-policy-v0.3.8.json', 'releases/selection-v0.3.8.json',
+    'tests/test_release_v038.py', 'tools/publication/v038_documentation.py',
+    '.github/workflows/release-v038.yml', '.github/workflows/reader-v038.yml',
 }
 ADDITIVE_PREFIXES = ('documentation/concepts/0.3.1/',
                      'evaluation/manuscript-review/v7.1.0/',
                      'evaluation/manuscript-review/v7.2.0/',
                      'evaluation/manuscript-review/v7.2.1/',
                      'evaluation/manuscript-review/v7.2.2/', 'evaluation/manuscript-review/v7.2.3/',
-                     'documentation/0.4.6/', 'evaluation/documentation/dictionary-0.4.6/')
+                     'documentation/0.4.6/', 'evaluation/documentation/dictionary-0.4.6/',
+                     'documentation/0.4.7/', 'tools/releases/v038/', 'evaluation/releases/v0.3.8/')
 
 
 def require(value, message):

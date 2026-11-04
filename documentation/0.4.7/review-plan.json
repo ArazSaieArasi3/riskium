@@ -1,0 +1,57 @@
+{
+  "status": "DECLARED_BEFORE_CHANNEL_VERIFICATION",
+  "reader_version": "0.4.7",
+  "criteria": [
+    {
+      "id": "V038-Q01",
+      "criterion": "Find all 80 concepts and the eleven-subdomain purpose/map view",
+      "observation": null
+    },
+    {
+      "id": "V038-Q02",
+      "criterion": "Traverse repository, Wiki, Pages and model tools in both directions",
+      "observation": null
+    },
+    {
+      "id": "V038-Q03",
+      "criterion": "Distinguish source/model/SQL/reader/article versions and publication phase",
+      "observation": null
+    },
+    {
+      "id": "V038-Q04",
+      "criterion": "Keep current article receipt separate from historical scientific populations",
+      "observation": null
+    },
+    {
+      "id": "V038-Q05",
+      "criterion": "Preserve four frozen snapshots and earlier release inventories",
+      "observation": null
+    },
+    {
+      "id": "V038-Q06",
+      "criterion": "Keep external definitions and semantic acceptance visibly bounded",
+      "observation": null
+    }
+  ],
+  "audience_paths": {
+    "reviewer": [
+      "Home",
+      "Scope",
+      "Requirements",
+      "Quality",
+      "Limitations"
+    ],
+    "domain": [
+      "Home",
+      "Using-the-Model",
+      "Competency-Questions",
+      "References"
+    ],
+    "integrator": [
+      "Home",
+      "Database-Assurance",
+      "Reproduce",
+      "Traceability"
+    ]
+  }
+}

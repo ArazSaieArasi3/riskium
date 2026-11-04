@@ -1,0 +1,60 @@
+name: Publish verified source release status
+on:
+  workflow_run:
+    workflows: [Publish versioned documentation]
+    types: [completed]
+    branches: [main]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: publication-status
+  cancel-in-progress: true
+jobs:
+  deploy:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main' &&
+      github.event.workflow_run.head_repository.full_name == github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          ref: ${{ github.event.workflow_run.head_sha }}
+      - name: Require exact current main and actual published source identity
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git fetch --no-tags origin main
+          test "$(git rev-parse HEAD)" = "$(git rev-parse FETCH_HEAD)"
+          python - <<'PY'
+          import json,os,subprocess
+          receipt=json.load(open('evaluation/releases/v0.3.4-publication.json'))
+          repo=os.environ['GITHUB_REPOSITORY']
+          def api(path):return json.loads(subprocess.check_output(['gh','api','repos/'+repo+'/'+path]))
+          latest=api('releases/latest')
+          assert latest['id']==receipt['release_id'] and latest['tag_name']=='v0.3.4'
+          target=api('git/ref/tags/v0.3.4')['object']
+          assert target['type']=='commit' and target['sha']==receipt['source_commit']
+          PY
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/publication/requirements.txt
+      - run: python tools/publication/build_publication_status.py --check
+      - run: python -m unittest discover -s tests -p test_publication_status.py -v
+      - run: python tools/publication/build_publication_status.py --output build/published-site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: build/published-site
+      - name: Deploy maintained publication status with immutable snapshots
+        id: deployment
+        uses: actions/deploy-pages@v4

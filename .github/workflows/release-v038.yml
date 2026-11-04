@@ -1,0 +1,78 @@
+name: Qualify and publish v0.3.8
+on:
+  push:
+    branches: [main]
+    paths: ['releases/selection-v0.3.8.json', 'tools/releases/v038/**', '.github/workflows/release-v038.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: riskium-source-v038
+  cancel-in-progress: false
+jobs:
+  qualify-freeze:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    outputs:
+      freeze: ${{ steps.phase.outputs.freeze }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - id: phase
+        name: Keep published source immutable on later maintenance runs
+        run: |
+          if test -f evaluation/releases/v0.3.8/publication.json; then echo 'freeze=false' >> "$GITHUB_OUTPUT"; else echo 'freeze=true' >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
+      - name: Check declared component closure and failure boundaries
+        run: |
+          python tools/releases/v038/release.py check
+          python -m unittest discover -s tests -p test_release_v038.py -v
+          git diff --exit-code
+      - name: Authenticate exact main qualification, download receipts and freeze six assets
+        if: steps.phase.outputs.freeze == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/releases/v038/release.py freeze --source "$GITHUB_SHA" --folder build/v038-assets
+      - uses: actions/upload-artifact@v4
+        if: steps.phase.outputs.freeze == 'true'
+        with:
+          name: source-v038-${{ github.sha }}
+          path: build/v038-assets/*
+          if-no-files-found: error
+          retention-days: 90
+  publish:
+    needs: qualify-freeze
+    if: needs.qualify-freeze.outputs.freeze == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: source-v038-${{ github.sha }}
+          path: build/v038-assets
+      - name: Verify draft, publish and independently read all public assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/releases/v038/release.py publish --folder build/v038-assets --source "$GITHUB_SHA" --output build/publication-v038.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: publication-v038-${{ github.sha }}
+          path: build/publication-v038.json
+          if-no-files-found: error
+          retention-days: 90

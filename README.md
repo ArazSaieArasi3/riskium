@@ -6,6 +6,8 @@ Riskium is a conceptual ontology for organizing organizational risk knowledge. I
 
 [Read the Pages guide](https://arazsaiearasi3.github.io/riskium/current/index.html) · [Browse concepts](https://arazsaiearasi3.github.io/riskium/current/concepts/index.html) · [Open the Wiki](https://github.com/ArazSaieArasi3/riskium/wiki) · [Explore the conceptual reference](https://arazsaiearasi3.github.io/riskium/current/reference/native/index.html) · [Download v0.3.7](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.7)
 
+**Selected next package:** v0.3.8, 32 component families and reader 0.4.7; qualification, freeze and actual publication remain separate gates under [#76](https://github.com/ArazSaieArasi3/riskium/issues/76). The existing public release/reader shown above remain the published baseline until actual readback.
+
 ## Choose a path
 
 | Goal | Start here | Continue with |

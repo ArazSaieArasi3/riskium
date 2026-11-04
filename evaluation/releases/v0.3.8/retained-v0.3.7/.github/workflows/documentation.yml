@@ -1,0 +1,58 @@
+name: Documentation integrity
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'tools/build_reference.py'
+      - 'tools/audit_consistency.py'
+      - 'tests/test_consistency_audit.py'
+      - 'evaluation/consistency/traceability.json'
+      - 'evaluation/consistency/traceability.csv'
+      - 'evaluation/consistency/inventory.json'
+      - 'evaluation/consistency/findings.json'
+      - 'evaluation/consistency/manuscript-readback.json'
+      - 'tools/publication/**'
+      - 'tests/test_documentation_routes.py'
+      - 'tests/test_documentation_snapshot.py'
+      - 'evaluation/documentation/v0.3.4-snapshot/**'
+      - 'requirements/ontology-requirements.md'
+      - 'requirements/cq/**'
+      - 'evaluation/traceability/**'
+      - 'references/**'
+      - 'evaluation/README.md'
+      - 'evaluation/quality/**'
+      - 'evaluation/owl-mapping-review.md'
+      - 'evaluation/documentation-audit.json'
+      - 'AUTHORS.md'
+      - '.github/workflows/documentation.yml'
+      - '.github/workflows/pages.yml'
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  documentation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/publication/requirements.txt
+      - run: python tools/audit_consistency.py --check
+      - run: python tools/build_reference.py --check
+      - run: python tools/review_references.py --check
+      - run: python tools/build_quality_report.py --check
+      - run: python tools/publication/audit_portal.py --write
+      - run: python tools/publication/build_wiki.py --check
+      - run: python tools/publication/build_documentation_component.py --check
+      - run: python -m unittest discover -s tests -p test_documentation_component.py -v
+      - run: python -m unittest discover -s tests -p test_documentation_routes.py -v
+      - run: python tools/publication/snapshot_registry.py --check
+      - run: python -m unittest discover -s tests -p test_documentation_snapshot.py -v
+      - run: python tools/publication/build_snapshot_site.py --check --previous-ref HEAD^
+      - run: git diff --exit-code -- docs evaluation/documentation-audit.json

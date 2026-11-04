@@ -1,0 +1,668 @@
+[
+  {
+    "id": 422793950,
+    "tag": "v0.3.1",
+    "draft": false,
+    "prerelease": false,
+    "published_at": "2026-10-24T14:54:32Z",
+    "body_sha256": "a91573cee3a4f4ceaa3033ecde7f9be738d7f74eea799babc8c11f1e1c8830a1",
+    "tag_object": {
+      "sha": "8afe169968b5c1396c02834dbc499af691b894b4",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/git/commits/8afe169968b5c1396c02834dbc499af691b894b4"
+    },
+    "assets": [
+      {
+        "id": 672531373,
+        "name": "artifact-versions.json",
+        "bytes": 9648,
+        "digest": "sha256:37a6465e90561a49fae27853f869ca708ed8907981671564d1a4228c270356e9"
+      },
+      {
+        "id": 672531375,
+        "name": "freeze-receipt.json",
+        "bytes": 35223,
+        "digest": "sha256:ca0fb093f6ed4eb504e34c1066ea5a26599ef60c941672aee50ad165aad2cca5"
+      },
+      {
+        "id": 672531371,
+        "name": "release-notes.md",
+        "bytes": 4276,
+        "digest": "sha256:a91573cee3a4f4ceaa3033ecde7f9be738d7f74eea799babc8c11f1e1c8830a1"
+      },
+      {
+        "id": 672531369,
+        "name": "riskium-v0.3.1-source.tar.gz",
+        "bytes": 4181111,
+        "digest": "sha256:47243d1d75a6704e9b51fff2cb4cc410c04d9f6939e2770fbaf94a04f67e02b7"
+      },
+      {
+        "id": 672531370,
+        "name": "SHA256SUMS.txt",
+        "bytes": 440,
+        "digest": "sha256:01be1d73c2aa958262ae0a3c0752184316d27954d0a18b9215644fcaee5acec6"
+      },
+      {
+        "id": 672531396,
+        "name": "source-manifest.json",
+        "bytes": 63224,
+        "digest": "sha256:10116685bcad4a36a99191d12d38079f05409234c4b60ff9a6e89fcaa58eae56"
+      }
+    ]
+  },
+  {
+    "id": 421068963,
+    "tag": "v0.3.1-rc.1",
+    "draft": false,
+    "prerelease": true,
+    "published_at": "2026-10-22T18:56:09Z",
+    "body_sha256": "2746dd3e94787451fd85f7b6dea4f8237c001142feb6e75323b2a4b8d4a90413",
+    "tag_object": {
+      "sha": "cfb85905ab37549c7090f00a41ca62cdd3364ab5",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/git/commits/cfb85905ab37549c7090f00a41ca62cdd3364ab5"
+    },
+    "assets": [
+      {
+        "id": 666769950,
+        "name": "riskium-v0.3.1-rc.1-freeze-evidence.tar.gz",
+        "bytes": 2090629,
+        "digest": "sha256:128bf37768e7f80fc7af4f62d6386a320cd9dc03adc4fd44371a625576de5879"
+      },
+      {
+        "id": 666727548,
+        "name": "riskium-v0.3.1-rc.1-source.tar.gz",
+        "bytes": 2770410,
+        "digest": "sha256:3ad85dacfccb67719dd7f16a8c7d69ed035e209f171162883ea08ae1dccb8181"
+      },
+      {
+        "id": 666769990,
+        "name": "SHA256SUMS.txt",
+        "bytes": 296,
+        "digest": "sha256:9f965918eebb3c944206e4c43bb636c984a664358cd284b7d8ae317f991e172f"
+      },
+      {
+        "id": 666727509,
+        "name": "source-manifest.json",
+        "bytes": 24807,
+        "digest": "sha256:f5e0f3db56bb3b721e62bf17778d67df6684c5add1dcec638b6157662da3088a"
+      }
+    ]
+  },
+  {
+    "id": 421791603,
+    "tag": "v0.3.1-rc.2",
+    "draft": false,
+    "prerelease": true,
+    "published_at": "2026-10-23T12:01:33Z",
+    "body_sha256": "821425d13891a9dc2b1483d236452371dc38e924bb6fcbbaea5c9ad060bdea4f",
+    "tag_object": {
+      "sha": "5f10ad103af5818cb99331a9d71e8b5f518e93de",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/git/commits/5f10ad103af5818cb99331a9d71e8b5f518e93de"
+    },
+    "assets": [
+      {
+        "id": 668994904,
+        "name": "candidate-receipt.json",
+        "bytes": 22067,
+        "digest": "sha256:17201352dd35c87119af8e4e35ae0abc183b165cdef5483b8504b8ee215550d5"
+      },
+      {
+        "id": 668994909,
+        "name": "release-notes.md",
+        "bytes": 3741,
+        "digest": "sha256:821425d13891a9dc2b1483d236452371dc38e924bb6fcbbaea5c9ad060bdea4f"
+      },
+      {
+        "id": 668994903,
+        "name": "riskium-v0.3.1-rc.2-source.tar.gz",
+        "bytes": 3710362,
+        "digest": "sha256:8c7bc08ca953d9badee27917458790c7af7c08148ef9c1729d48232e296daa79"
+      },
+      {
+        "id": 668994908,
+        "name": "SHA256SUMS.txt",
+        "bytes": 359,
+        "digest": "sha256:df4c87497ddc1d01e1c75a76d3334baf9f52b705ba45428f176194c49880ea79"
+      },
+      {
+        "id": 668994905,
+        "name": "source-manifest.json",
+        "bytes": 44576,
+        "digest": "sha256:6d38b95c17bf4913c1a979f28d1d3371829744c553afde94c1c0e9d30b282ffc"
+      }
+    ]
+  },
+  {
+    "id": 421829168,
+    "tag": "v0.3.1-rc.3",
+    "draft": false,
+    "prerelease": true,
+    "published_at": "2026-10-23T12:41:50Z",
+    "body_sha256": "dfcbcc741f28b8b57d18755b5eb2137c08dc4d97b28e6fb37a634d6b0e4e79ea",
+    "tag_object": {
+      "sha": "679ff6745bbacbbce802fb6ef78a51e53dba7e39",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/git/commits/679ff6745bbacbbce802fb6ef78a51e53dba7e39"
+    },
+    "assets": [
+      {
+        "id": 669092263,
+        "name": "candidate-receipt.json",
+        "bytes": 23859,
+        "digest": "sha256:b1014b75054f23d55431ea4d85929d67cea9f21bd1bdbc50fcb1758d24e4df9c"
+      },
+      {
+        "id": 669092262,
+        "name": "release-notes.md",
+        "bytes": 5313,
+        "digest": "sha256:dfcbcc741f28b8b57d18755b5eb2137c08dc4d97b28e6fb37a634d6b0e4e79ea"
+      },
+      {
+        "id": 669092260,
+        "name": "riskium-v0.3.1-rc.3-source.tar.gz",
+        "bytes": 3794488,
+        "digest": "sha256:a23995f9b81086acdce5ca79502da48d4a5744897f5ecadce79d7236ffe5f4d9"
+      },
+      {
+        "id": 669092264,
+        "name": "SHA256SUMS.txt",
+        "bytes": 359,
+        "digest": "sha256:7aecaee1df3e0f103c09fc7dae2c43b98a7f624b10ac6cf3cd736e9091c4402a"
+      },
+      {
+        "id": 669092265,
+        "name": "source-manifest.json",
+        "bytes": 46994,
+        "digest": "sha256:88a2d4fc07a8c4f0f04b2ce3fa69cd327e9b47f44334797b6dc90f1835f666eb"
+      }
+    ]
+  },
+  {
+    "id": 421883152,
+    "tag": "v0.3.1-rc.4",
+    "draft": false,
+    "prerelease": true,
+    "published_at": "2026-10-23T13:35:10Z",
+    "body_sha256": "10c4bd4759bc8f89c36ba838a02e50dc93992cc6d7f0aab430810ab368222497",
+    "tag_object": {
+      "sha": "dfa9674bfef9c0ca8d4b15015c677cd122bed29c",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/git/commits/dfa9674bfef9c0ca8d4b15015c677cd122bed29c"
+    },
+    "assets": [
+      {
+        "id": 669231735,
+        "name": "candidate-receipt.json",
+        "bytes": 25724,
+        "digest": "sha256:a213bd31cc7fe843911fd083818752f55dbd4f7fd71999318eaacce8cecae0fd"
+      },
+      {
+        "id": 669231739,
+        "name": "release-notes.md",
+        "bytes": 5558,
+        "digest": "sha256:10c4bd4759bc8f89c36ba838a02e50dc93992cc6d7f0aab430810ab368222497"
+      },
+      {
+        "id": 669231736,
+        "name": "riskium-v0.3.1-rc.4-source.tar.gz",
+        "bytes": 3928726,
+        "digest": "sha256:a0d2ff8542896d4d6ddd13e26bcf687dc98e633085990e57130e3e40424dd085"
+      },
+      {
+        "id": 669231732,
+        "name": "SHA256SUMS.txt",
+        "bytes": 359,
+        "digest": "sha256:62a4a21e61447d361d800a222dcda7f3fc52a77799f780d3f164663821237d40"
+      },
+      {
+        "id": 669231734,
+        "name": "source-manifest.json",
+        "bytes": 49398,
+        "digest": "sha256:6208b053f142f4cedbdb3227d23c2a44f13799d9abd09b441716a32d03912725"
+      }
+    ]
+  },
+  {
+    "id": 421994904,
+    "tag": "v0.3.1-rc.5",
+    "draft": false,
+    "prerelease": true,
+    "published_at": "2026-10-23T15:17:53Z",
+    "body_sha256": "afe8ddf7a68feedeb05a8832feef4679f09c81fd264ea7dd62a9f569053963ea",
+    "tag_object": {
+      "sha": "a945beb8839228d007796c95745a89ce7457e7fe",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/git/commits/a945beb8839228d007796c95745a89ce7457e7fe"
+    },
+    "assets": [
+      {
+        "id": 669513376,
+        "name": "candidate-receipt.json",
+        "bytes": 27348,
+        "digest": "sha256:f723ccdac5564137e2339547bc62fb51788c98a3e20c1d15c8340eb534ff843b"
+      },
+      {
+        "id": 669513379,
+        "name": "release-notes.md",
+        "bytes": 5516,
+        "digest": "sha256:afe8ddf7a68feedeb05a8832feef4679f09c81fd264ea7dd62a9f569053963ea"
+      },
+      {
+        "id": 669513380,
+        "name": "riskium-v0.3.1-rc.5-source.tar.gz",
+        "bytes": 3977287,
+        "digest": "sha256:dd7c3291e364fd217e4125fe9f6366d026701f1d8724a5f43285b30987c9cfe5"
+      },
+      {
+        "id": 669513378,
+        "name": "SHA256SUMS.txt",
+        "bytes": 359,
+        "digest": "sha256:6c57130d8ae61612fbc7ff780368bf9d1c68ab9cc15081cd12e3b733e8ffb40c"
+      },
+      {
+        "id": 669513390,
+        "name": "source-manifest.json",
+        "bytes": 52004,
+        "digest": "sha256:e7302447b8384a6b1c85ae86ab384cf54ab31955f2a807e50363ffb3df16efad"
+      }
+    ]
+  },
+  {
+    "id": 422271735,
+    "tag": "v0.3.1-rc.6",
+    "draft": false,
+    "prerelease": true,
+    "published_at": "2026-10-23T20:16:15Z",
+    "body_sha256": "d6591fe85872704f9f6a46110a8c9bbd1d9f887e8d7483e4263294361f8b4afb",
+    "tag_object": {
+      "sha": "94ec64838a46b56b0da1a7b82bb926226b18d788",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/git/commits/94ec64838a46b56b0da1a7b82bb926226b18d788"
+    },
+    "assets": [
+      {
+        "id": 670283529,
+        "name": "candidate-receipt.json",
+        "bytes": 29185,
+        "digest": "sha256:f591c1b943ad8b18cf01fdc3263c2aee899301b937d4f34c53c7a6b5a347bef1"
+      },
+      {
+        "id": 670283531,
+        "name": "release-notes.md",
+        "bytes": 7131,
+        "digest": "sha256:d6591fe85872704f9f6a46110a8c9bbd1d9f887e8d7483e4263294361f8b4afb"
+      },
+      {
+        "id": 670283534,
+        "name": "riskium-v0.3.1-rc.6-source.tar.gz",
+        "bytes": 4012062,
+        "digest": "sha256:85a6f33b4f04bb10c9eaa732b8544fedad3616583a1f4b9b6712449edd9e6941"
+      },
+      {
+        "id": 670283533,
+        "name": "SHA256SUMS.txt",
+        "bytes": 359,
+        "digest": "sha256:040cd73a22a2912f44d58c1498438a5aa9176a12d8cd47b9765146bc0dddda1c"
+      },
+      {
+        "id": 670283530,
+        "name": "source-manifest.json",
+        "bytes": 54752,
+        "digest": "sha256:4622dbecef98ca45958b7a7f29d473982798ac8a6a52dade7455d5d3893081c6"
+      }
+    ]
+  },
+  {
+    "id": 422538932,
+    "tag": "v0.3.1-rc.7",
+    "draft": false,
+    "prerelease": true,
+    "published_at": "2026-10-24T05:32:40Z",
+    "body_sha256": "eca75c455dbe417fcded69eeef41ae87031cd100acfa7ab347f46c69f90f67f5",
+    "tag_object": {
+      "sha": "6ec9ffc7f10f6495db1b226864bb3835233a2dc1",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/git/commits/6ec9ffc7f10f6495db1b226864bb3835233a2dc1"
+    },
+    "assets": [
+      {
+        "id": 671379800,
+        "name": "candidate-receipt.json",
+        "bytes": 31551,
+        "digest": "sha256:e9aab345e8a6a8d4f98aa41a0ba118578547b6e4b12c2f287c17986f477e0c35"
+      },
+      {
+        "id": 671379805,
+        "name": "release-notes.md",
+        "bytes": 8687,
+        "digest": "sha256:eca75c455dbe417fcded69eeef41ae87031cd100acfa7ab347f46c69f90f67f5"
+      },
+      {
+        "id": 671379807,
+        "name": "riskium-v0.3.1-rc.7-source.tar.gz",
+        "bytes": 4054494,
+        "digest": "sha256:9c15efa1aa55bc4e7c814a92a11422578956b8dcb1444491da2307b55e11356b"
+      },
+      {
+        "id": 671379806,
+        "name": "SHA256SUMS.txt",
+        "bytes": 359,
+        "digest": "sha256:f521eef1542ec81537d4ca3525714d136b97fbe183882b4abf26f2d739f4318a"
+      },
+      {
+        "id": 671379803,
+        "name": "source-manifest.json",
+        "bytes": 57884,
+        "digest": "sha256:19da413e8c3498c011654d661e01f20f83acdab35522fb1c5bfdbfa8ec427a90"
+      }
+    ]
+  },
+  {
+    "id": 423408761,
+    "tag": "v0.3.2",
+    "draft": false,
+    "prerelease": false,
+    "published_at": "2026-10-25T13:05:50Z",
+    "body_sha256": "e6d93c4b39cf1cd0a6151195bc66617d7165afa65939b05caed6f4cac2bb6295",
+    "tag_object": {
+      "sha": "67ebe1e9bd8b2e82649ed4ff43bfb1620c13bd48",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/git/commits/67ebe1e9bd8b2e82649ed4ff43bfb1620c13bd48"
+    },
+    "assets": [
+      {
+        "id": 675067228,
+        "name": "artifact-versions.json",
+        "bytes": 48093,
+        "digest": "sha256:f1aedb567baed53664e7dc1e79e2f35383a77dee414d26bb17afcfb8a383d450"
+      },
+      {
+        "id": 675067225,
+        "name": "freeze-receipt.json",
+        "bytes": 61223,
+        "digest": "sha256:de71abe8707403c811459db44ebd0009fd242565e88fc73a57c846b6224e744c"
+      },
+      {
+        "id": 675067226,
+        "name": "release-notes.md",
+        "bytes": 4176,
+        "digest": "sha256:e6d93c4b39cf1cd0a6151195bc66617d7165afa65939b05caed6f4cac2bb6295"
+      },
+      {
+        "id": 675067227,
+        "name": "riskium-v0.3.2-source.tar.gz",
+        "bytes": 6396130,
+        "digest": "sha256:4fbbc6981ccc5f1d3890eb85885ddf3159077b852710652fc5eb6e8ac6c9db25"
+      },
+      {
+        "id": 675067229,
+        "name": "SHA256SUMS.txt",
+        "bytes": 440,
+        "digest": "sha256:f7d1c3ddf8425f440e42a4c1936173c4bc9ce83c28bbc2dda5cb1a5c699b2da3"
+      },
+      {
+        "id": 675067241,
+        "name": "source-manifest.json",
+        "bytes": 100708,
+        "digest": "sha256:2fe3f06e92984b2c118f481953e3c41e58f9f5aefd3aa0e56ff81d313922ffc8"
+      }
+    ]
+  },
+  {
+    "id": 425211772,
+    "tag": "v0.3.3",
+    "draft": false,
+    "prerelease": false,
+    "published_at": "2026-10-27T08:50:29Z",
+    "body_sha256": "cc64e1e795900ae3f88583ab65c7922d220f81ae32e5127c1e2a33dbfacd26d8",
+    "tag_object": {
+      "sha": "3380b6b31f4830417946105e17f023118c7be6ee",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/git/commits/3380b6b31f4830417946105e17f023118c7be6ee"
+    },
+    "assets": [
+      {
+        "id": 680997953,
+        "name": "artifact-versions.json",
+        "bytes": 65905,
+        "digest": "sha256:43652995eb9039f25bfad707145f46c79b2adff906946fd14d63a040e9ce893d"
+      },
+      {
+        "id": 680997954,
+        "name": "freeze-receipt.json",
+        "bytes": 82735,
+        "digest": "sha256:f1552953214f4c5f44029582e7956b58670c7364fbe048ad22e7990a6e2302f2"
+      },
+      {
+        "id": 680997955,
+        "name": "release-notes.md",
+        "bytes": 4056,
+        "digest": "sha256:cc64e1e795900ae3f88583ab65c7922d220f81ae32e5127c1e2a33dbfacd26d8"
+      },
+      {
+        "id": 680997958,
+        "name": "riskium-v0.3.3-source.tar.gz",
+        "bytes": 10343736,
+        "digest": "sha256:9bb43bd2e190fda01bb83156134146345f6d55fb7674c8b06100eb34566eb907"
+      },
+      {
+        "id": 680997956,
+        "name": "SHA256SUMS.txt",
+        "bytes": 440,
+        "digest": "sha256:5dc28c5266ee9c1ecee10cde20b7bcc3f147711e568994e39b9b552ca32b9b18"
+      },
+      {
+        "id": 680997979,
+        "name": "source-manifest.json",
+        "bytes": 135028,
+        "digest": "sha256:0414bfde75ed923c2c653b3efeb16f03b017de1df159c450faf575796eb30d96"
+      }
+    ]
+  },
+  {
+    "id": 426704771,
+    "tag": "v0.3.4",
+    "draft": false,
+    "prerelease": false,
+    "published_at": "2026-10-28T13:28:57Z",
+    "body_sha256": "f729d44664d317244faf20ea4ac0483bdac71f76dc919febab90d97583f6fd17",
+    "tag_object": {
+      "sha": "cc02e45749995b8710802822ae709d49e0a83993",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/git/commits/cc02e45749995b8710802822ae709d49e0a83993"
+    },
+    "assets": [
+      {
+        "id": 685089107,
+        "name": "artifact-versions.json",
+        "bytes": 262000,
+        "digest": "sha256:5279d70767322e7856397b1efcf05b93cc7d657b9e4cca9a8553a4487a04ace9"
+      },
+      {
+        "id": 685089110,
+        "name": "freeze-receipt.json",
+        "bytes": 121267,
+        "digest": "sha256:230826e93dabda39db5aba9d70419d94e25c908d95885093a0bae450f32eff89"
+      },
+      {
+        "id": 685089108,
+        "name": "release-notes.md",
+        "bytes": 3399,
+        "digest": "sha256:f729d44664d317244faf20ea4ac0483bdac71f76dc919febab90d97583f6fd17"
+      },
+      {
+        "id": 685089112,
+        "name": "riskium-v0.3.4-source.tar.gz",
+        "bytes": 11784749,
+        "digest": "sha256:d198f87d958c5bb842a0bc1eef5cf2bffc5bfbccf34a9a7aa13675a9d505e4ab"
+      },
+      {
+        "id": 685089109,
+        "name": "SHA256SUMS.txt",
+        "bytes": 440,
+        "digest": "sha256:c0e56345a179ec74194e6e3c0999170eb343a31d72015ee84430374da82e0e1f"
+      },
+      {
+        "id": 685089146,
+        "name": "source-manifest.json",
+        "bytes": 168961,
+        "digest": "sha256:1b4fb5f40f3bbbdde60795a00954353a08d6634464d743124dce2bc8684a2e65"
+      }
+    ]
+  },
+  {
+    "id": 427544469,
+    "tag": "v0.3.5",
+    "draft": false,
+    "prerelease": false,
+    "published_at": "2026-10-29T06:50:45Z",
+    "body_sha256": "a28ee2f4a26ca82090659b96b1a0f0b5d91dba49a32ce0e465dded3e9ba666b2",
+    "tag_object": {
+      "sha": "8a9a95bba17327d04c5560879819b2e61b48ff19",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/git/commits/8a9a95bba17327d04c5560879819b2e61b48ff19"
+    },
+    "assets": [
+      {
+        "id": 687644798,
+        "name": "artifact-versions.json",
+        "bytes": 41273,
+        "digest": "sha256:1276af4cee6a5287d78fb974aa3babc1ebe7d72ae160beedf88c04a8cbe32471"
+      },
+      {
+        "id": 687644801,
+        "name": "freeze-receipt.json",
+        "bytes": 283385,
+        "digest": "sha256:22d3b3231ffd1caf4d5fb65e86a16bb6e4b6f84a264d3b598e89c12dd16bfb58"
+      },
+      {
+        "id": 687644797,
+        "name": "release-notes.md",
+        "bytes": 4755,
+        "digest": "sha256:a28ee2f4a26ca82090659b96b1a0f0b5d91dba49a32ce0e465dded3e9ba666b2"
+      },
+      {
+        "id": 687644799,
+        "name": "riskium-v0.3.5-source.tar.gz",
+        "bytes": 12369863,
+        "digest": "sha256:374fd9a7f6e8a07515e72e0e04c9edc940578b2d696d19e84b3ad662e5ade734"
+      },
+      {
+        "id": 687644802,
+        "name": "SHA256SUMS.txt",
+        "bytes": 440,
+        "digest": "sha256:9e8e104f6196b3a14ca71790b1f8e5c14ccfb499b2b8c0d781bab1876fef69ba"
+      },
+      {
+        "id": 687644837,
+        "name": "source-manifest.json",
+        "bytes": 194151,
+        "digest": "sha256:06ffa38eb6bc53afd0455b0e5813e10d99288367b5f06ea7d6e7595610b2bb9a"
+      }
+    ]
+  },
+  {
+    "id": 428331704,
+    "tag": "v0.3.6",
+    "draft": false,
+    "prerelease": false,
+    "published_at": "2026-10-29T20:01:51Z",
+    "body_sha256": "48df960c35ecba0c236dc863b6c26fd7653d01bd5a4bc1fd6b0ba66eeb46a94c",
+    "tag_object": {
+      "sha": "58ff468ec4e8f3500ace6869601a25ea263c3d9f",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/git/commits/58ff468ec4e8f3500ace6869601a25ea263c3d9f"
+    },
+    "assets": [
+      {
+        "id": 689733403,
+        "name": "artifact-versions.json",
+        "bytes": 327594,
+        "digest": "sha256:55580ed6c894c001900b33b190f12636191117d752ec892ff9d2302fc16d8003"
+      },
+      {
+        "id": 689733423,
+        "name": "freeze-receipt.json",
+        "bytes": 208876,
+        "digest": "sha256:d13211fd0f29ea9263c7b071388431afb214180a7bb6a2500b956ddeb19fe1f0"
+      },
+      {
+        "id": 689733430,
+        "name": "release-notes.md",
+        "bytes": 3287,
+        "digest": "sha256:6ef7e59ba9c324c1c22444d3acd842e9c8ba15d8dae2be2996018ea9c4c21e01"
+      },
+      {
+        "id": 689733440,
+        "name": "riskium-v0.3.6-source.tar.gz",
+        "bytes": 14523364,
+        "digest": "sha256:6a27367fc01856e79becfcd279d8710e5b6813654ce0a72f12b446696ccab13d"
+      },
+      {
+        "id": 689733381,
+        "name": "SHA256SUMS.txt",
+        "bytes": 440,
+        "digest": "sha256:effc3c86e48fa02c48045df2f094626b39cb8a0825497e2ec75e40ec219c5b4c"
+      },
+      {
+        "id": 689733490,
+        "name": "source-manifest.json",
+        "bytes": 223138,
+        "digest": "sha256:7a90c6446d259bd6cb4950f697b371d3043da1b7c309acaacb741e60bc410a03"
+      }
+    ]
+  },
+  {
+    "id": 429036645,
+    "tag": "v0.3.7",
+    "draft": false,
+    "prerelease": false,
+    "published_at": "2026-10-30T12:58:55Z",
+    "body_sha256": "dad07b82e5402bdbd31b9f94a9aebc49b9ffeeee6aa0572fa1a5896bca4cc3a5",
+    "tag_object": {
+      "sha": "86accc6695e4738dd1337d5b9addd73b82c73c3d",
+      "type": "commit",
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/git/commits/86accc6695e4738dd1337d5b9addd73b82c73c3d"
+    },
+    "assets": [
+      {
+        "id": 692131799,
+        "name": "artifact-versions.json",
+        "bytes": 359729,
+        "digest": "sha256:05183c56f34892cc2253275f9a3e2f23d425037f5af8a23f3b199a8ccc9e6943"
+      },
+      {
+        "id": 692131849,
+        "name": "freeze-receipt.json",
+        "bytes": 396390,
+        "digest": "sha256:e8d1a987bfe5f646bed067bf48be424aaf5ca1a12655f6903c886d00fa23ce83"
+      },
+      {
+        "id": 692131878,
+        "name": "release-notes.md",
+        "bytes": 5235,
+        "digest": "sha256:2ec5a22ee81f49a8f535b273a0882ebf5e7a4c91c9f633b24b4d31d73cab3ff3"
+      },
+      {
+        "id": 692131904,
+        "name": "riskium-v0.3.7-source.tar.gz",
+        "bytes": 15319284,
+        "digest": "sha256:a7bc39fc2564d06a1df661245a93ad01256890a9975f665f4f4a962da267c513"
+      },
+      {
+        "id": 692131772,
+        "name": "SHA256SUMS.txt",
+        "bytes": 440,
+        "digest": "sha256:5cefbc220856e795a01cf094dff91345118a5ab0fef37226a393ce0410af88d5"
+      },
+      {
+        "id": 692131968,
+        "name": "source-manifest.json",
+        "bytes": 246870,
+        "digest": "sha256:fc4786764b594cd8eb1efa17cde1c7b544d33ce5e9cc74e0f5c76c0b428e8cef"
+      }
+    ]
+  }
+]

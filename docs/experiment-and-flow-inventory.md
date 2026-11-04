@@ -38,3 +38,7 @@ The YAML files below define procedures; their presence alone is **not** an execu
 | [#4](https://github.com/ArazSaieArasi3/riskium/issues/4), [#5](https://github.com/ArazSaieArasi3/riskium/issues/5) | HermiT and SHACL rows | NOT_RUN/PARTIAL scope stays open. |
 | [#12](https://github.com/ArazSaieArasi3/riskium/issues/12), [#13](https://github.com/ArazSaieArasi3/riskium/issues/13) | SQL and source case rows | Full mapping and independent organizational population stay open. |
 | [#23](https://github.com/ArazSaieArasi3/riskium/issues/23) | Semantic review row | Independent adjudication not completed. |
+
+## v0.3.8 delivery flow
+
+The source-release flow declares the 32-component closure, qualifies exact main against source-aware CI, downloads the actual qualification artifacts, freezes six assets, verifies an extracted no-Git package, verifies the draft assets, publishes and independently downloads the public bodies. `release-v038.yml` implements these gates. `reader-v038.yml` builds a prepared preview first and deploys only after an actual publication record exists. Native Wiki projection and complete HTTP/Wiki readbacks are separate gates under #76. The committed `evaluation/releases/v0.3.8/publication.json`, when present, is the actual later observation; a defined workflow alone is not a completed experiment. These are delivery checks, not new ontology semantic results.

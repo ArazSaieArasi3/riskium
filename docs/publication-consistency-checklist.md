@@ -1,24 +1,18 @@
-# Reader and publication consistency — observed 2026-11-03 UTC
+# Source-release and channel consistency checklist
 
-This is a dated pre-release decision sheet for [#70](https://github.com/ArazSaieArasi3/riskium/issues/70). A source-side edit in [draft PR #75](https://github.com/ArazSaieArasi3/riskium/pull/75) is not a claim that the public `main` landing or frozen release already changed. Repeat the live checks after merge and at the next actual candidate. Preserve historical reports and tags.
+Baseline before v0.3.8: exact main `97ac0b88a092ad8d12d31e6a7e22d70adf406093`, source v0.3.7, maintained reader 0.4.6, dictionary source `20b2983352d2a6491600fcdbd765259d3da456c2`, native Wiki `76490031ef814d64c6cec285a984c6e5fb70746a`, and author-held manuscript 7.2.3. Issue #69 independently read 400 public HTTP artifacts and 105 exact Wiki files; 225 HTML pages / 35,905 local links and four preserved snapshots passed. These are dated baseline observations, not the next release's result.
 
-| Channel | Observed state and evidence route | Next candidate decision |
+| Order | Check | Exact evidence / acceptance |
 | --- | --- | --- |
-| Repository root | Public `main` README still led with v0.3.4 and v0.3.5 on this date; draft PR #75 rewrites the landing for published v0.3.7. | Merge and fetch public root before calling it synchronized. Check all local targets and the four audience journeys. |
-| Native Wiki | Live `riskium.wiki.git` Home and sidebar head `f20f12d6ad0c32125461b20e58a10d3b631ff79d` describe published v0.3.7 and reader 0.4.5; Home links repository, Pages, WebVOWL and releases. | Reclone/re-fetch native Wiki and check both directions, not just generated source pages. |
-| Live Pages | HTTP 200 readback of `current/index.html`, `current/guide/Home.html`, `current/reference/native/index.html`, `current/widoco/index-en.html`, `current/webvowl/index.html`, `current/explore/index.html`, `versions/index.html`, `current/guide/Publication.html`; sampled HTML identifies reader 0.4.5/source v0.3.7. | Fetch again after deployment; check the reader's menu, home links and external navigation behavior in a browser. `docs/current/` in this checkout is an older 0.3.0 projection, not proof that live Pages is stale. |
-| Source release | GitHub latest-release API gave tag v0.3.7, publication `2026-10-30T12:58:55Z` and six assets. | Verify tag/selection, six asset names, independent downloads, SHA-256 and release history; never use a draft qualification receipt as a publication receipt. |
-| Manuscript | [7.2.1 author-held receipt](../evaluation/manuscript-review/v7.2.1/README.md) pins separate Word/PDF hashes and ten A4 pages. | Check exact author-approved file, six own references, page cap, counts, rights and bibliography. Do not describe the binaries as v0.3.7 assets. |
+| 1 | Predeclare component set and versions | 32 components, compatible dependencies, retained predecessor bodies and separate article roles; selection policy committed before implementation |
+| 2 | Preserve scientific and case boundaries | Model/OWL hash and unchanged original requirements/engine receipts; 30+1 archived sources, eleven WITHHELD admissions and independent-review limits remain dated |
+| 3 | Retain exact current paper | 7.2.3 receipt, ten inspected pages, 36 references and six author papers; unchanged binaries require no invented new render or source-package inclusion |
+| 4 | Rights and exclusions | CC BY 4.0 research / MIT original code, attribution and third-party notices; no private PDFs or case databases in tracked source |
+| 5 | Qualify exact main | Required workflow source/branch/event/outcome and independently downloaded current/historical-suite artifact digests; YAML alone is not execution |
+| 6 | Freeze and verify offline | Six assets, every tracked source body, component/dependency/archival closure, safe extraction and no-Git standard-library verification; external authenticity remains required |
+| 7 | Publish and independently download | Verified draft, exact source tag and Latest, six public asset bodies and all prior release inventories unchanged; freeze-time phase is not rewritten |
+| 8 | Promote current channels | Root README, reader 0.4.7, updated guide sources and Wiki navigation identify v0.3.8; dictionary source 0.4.6 remains explicit; all public site bytes and 105 expected Wiki bodies match |
+| 9 | Inspect reader journeys | Repository ↔ Wiki ↔ Pages, concept index, subdomain SVG, model/OWL/explorer routes, version index, download behavior and dated technical material |
+| 10 | Close with observations | Record source/release/Wiki identities, URLs, digests, run IDs, link audit and limits; close #76 only when selected publication/channel acceptance passes |
 
-## Candidate gates, in execution order
-
-- [x] **Source landing check at this draft:** [run the local audit](../tools/audit_reader_consistency.py) against the proposed README and verify relative links, version roles, licensing and manuscript receipt. Re-run on the exact candidate commit.
-- [ ] **Model and quality evidence:** diff source catalog/hash, verify 11 subdomains and only source-bound concept/relation counts; compare requirements/CQ, 281/295 HermiT and 341/359 SHACL with their recorded PASS/PARTIAL/NOT_RUN units. Check selected pattern and query-parity receipt hashes. Avoid an aggregate semantic score.
-- [ ] **Source corpus:** verify 30 active articles plus one corrigendum, 1,011 active source records, 12 out of scope and 11 WITHHELD decisions in [the audit](../evaluation/manuscript-review/v7.2.0/case-source-audit.md); no source record silently becomes an admitted RiskCase.
-- [ ] **Paper:** render exact candidate Word and PDF; inspect pages/tables/figures/first-use abbreviations, six author citations, bibliography, claim-to-evidence mapping, ten-page cap and SHA-256. Record any new paper version separately from the model/release.
-- [ ] **Licenses and attribution:** inspect [RIGHTS](../RIGHTS.md), [NOTICE](../NOTICE.md), [citation](../CITATION.cff), and excluded/private source rules in source and in each packaged distribution.
-- [ ] **Candidate workflows:** execute affected requirements, references, quality, documentation, versioned software and release gates on one exact commit; link run ID, artifact ID, inputs, raw result and remaining NOT_RUN/PARTIAL rows. Defined YAML alone is not evidence of execution.
-- [ ] **Public readback after deployment:** fetch `main` README, native Wiki Home/sidebar, Pages Home/guide/reference/WIDOCO/WebVOWL/versions, latest release/tag and six assets. Verify reciprocal paths from each home, active version labels and external-link expectations. Browser-test the menu; an HTTP 200 alone does not establish UX.
-- [ ] **Closure:** write a dated matrix of source commit, URL, digest, observed result, exception and owner disposition; only then declare synchronized public channels. Track larger concept-page/navigation redesign in [#69](https://github.com/ArazSaieArasi3/riskium/issues/69) and full release qualification separately.
-
-The current `main` README discrepancy is intentionally open in the live-readback gate until PR #75 lands. The live Pages and Wiki checks above are observations from this date, not promises about a future stable release.
+The builder's prepared preview is never a publication receipt. `.nojekyll` is a hash-bound unserved deployment marker, not an HTTP reader page. Current promotion may follow the frozen source with a separate metadata-only commit; it must not rewrite frozen assets or historical scientific receipts.
