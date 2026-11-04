@@ -4,7 +4,7 @@ The extracted verifier uses only the standard library. Internal agreement is
 not authenticity: obtain the archive digest/source from a trusted publication.
 Original scientific receipts retain their original sources and pending states.
 """
-import argparse,base64,copy,gzip,hashlib,io,json,os,re,subprocess,sys,tarfile,tempfile,time,zipfile
+import argparse,base64,copy,gzip,hashlib,io,json,os,re,shutil,subprocess,sys,tarfile,tempfile,time,zipfile
 from pathlib import Path,PurePosixPath
 from datetime import datetime,timezone
 from urllib.request import Request,build_opener,HTTPRedirectHandler
@@ -166,7 +166,7 @@ def write_assets(folder,source,entries,matrix,evidence,commit_object=None):
     (folder/'freeze-receipt.json').write_bytes(encode(dict(schema='riskium-v038-freeze-v1',tag=TAG,source_commit=source,commit_object_base64=base64.b64encode(commit_object).decode() if commit_object else None,stage='FROZEN_NOT_PUBLISHED',publication_executed=False,created_at_utc=datetime.now(timezone.utc).isoformat(),evidence=evidence,independent_semantic_validation=False)))
     (folder/'SHA256SUMS.txt').write_text(''.join(sha((folder/n).read_bytes())+'  '+n+'\n' for n in sorted(ASSETS-{'SHA256SUMS.txt'})))
 def verify(folder,source):
-    folder=Path(folder);require({p.name for p in folder.iterdir()}==ASSETS and all(p.is_file() and not p.is_symlink() for p in folder.iterdir()),'Exactly six regular assets required');sums={}
+    folder=Path(folder);entries=list(folder.iterdir());asset_entries=[p for p in entries if not p.is_dir() or p.is_symlink()];require({p.name for p in asset_entries}==ASSETS and all(p.is_file() and not p.is_symlink() for p in asset_entries),'Exactly six regular assets required');sums={}
     for line in (folder/'SHA256SUMS.txt').read_text().splitlines():
         require(re.fullmatch('[a-f0-9]{64}  [A-Za-z0-9.\\-]+',line),'Malformed checksum');h,n=line.split('  ');require(n not in sums,'Duplicate checksum');sums[n]=h
     require(set(sums)==ASSETS-{'SHA256SUMS.txt'},'Checksum set differs')
@@ -195,7 +195,8 @@ def freeze(folder,source):
     with tempfile.TemporaryDirectory() as tmp:
         root=Path(tmp)
         with tarfile.open(Path(folder)/'riskium-v0.3.8-source.tar.gz') as t:t.extractall(root,filter='data')
-        env=dict(os.environ,PATH='/no-git');subprocess.run([sys.executable,'-S',str(root/TAG/'tools/releases/v038/release.py'),'verify','--folder',str(Path(folder).resolve()),'--source',source],env=env,check=True)
+        for name in ASSETS:shutil.copyfile(Path(folder)/name,root/name)
+        env=dict(os.environ,PATH='/no-git');subprocess.run([sys.executable,'-S',str(root/TAG/'tools/releases/v038/release.py'),'verify','--folder',str(root),'--source',source],env=env,check=True)
     return result
 def public_readback(folder,source,output):
     release=api('releases/tags/'+TAG);require(not release['draft'] and not release['prerelease'] and api('releases/latest')['id']==release['id'],'Release not published Latest');tag=api('git/ref/tags/'+TAG)['object'];require(tag['type']=='commit' and tag['sha']==source,'Wrong release tag source')

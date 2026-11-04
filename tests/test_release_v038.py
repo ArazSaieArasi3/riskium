@@ -19,6 +19,12 @@ class Release038(unittest.TestCase):
         r.write_assets(root,'a'*40,[(r.NOTES,0o644,b'Unit fixture: not a release')],{},{});return root
     def checksums(self,p):
         (p/'SHA256SUMS.txt').write_text(''.join(r.sha((p/n).read_bytes())+'  '+n+'\n' for n in sorted(r.ASSETS-{'SHA256SUMS.txt'})))
+    def test_in_place_extraction_directory_is_not_an_extra_asset(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=self.packet(Path(d));(p/r.TAG).mkdir()
+            with self.assertRaisesRegex(ValueError,'Git commit object identity'):r.verify(p,'a'*40)
+            (p/'unexpected.txt').write_text('not a release asset')
+            with self.assertRaisesRegex(ValueError,'Exactly six'):r.verify(p,'a'*40)
     def test_selected_closure_and_original_bodies(self):
         m=r.selection();self.assertEqual(m['summary']['components'],32);self.assertEqual(m['summary']['preserved_predecessor_bodies'],904);self.assertEqual(m['scientific_versions']['model'],'0.3.1');self.assertFalse(m['article_binaries_included'])
         for p,h in r.load(r.PRIOR)['selected_files_sha256'].items():self.assertEqual(r.sha(r.read(m['historical_delivery_aliases'].get(p,p))),h)

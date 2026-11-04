@@ -4709,7 +4709,7 @@
     },
     {
       "path": "releases/selection-v0.3.8.json",
-      "sha256": "b85a3dba0063838b8e75e7125ecad7ca81440d8988a44a965db6af9c232e0e1d",
+      "sha256": "54790b2983a35fe9e2ec72e9c62c4199a4f0334ba4cdd0dd66c4c3c28033cf2f",
       "bytes": 410668
     },
     {
@@ -5139,8 +5139,8 @@
     },
     {
       "path": "tests/test_release_v038.py",
-      "sha256": "55f6355d7fd4a99ca8431fce342f1ad053a76dcc65512d3120fb52acd32734d9",
-      "bytes": 4508
+      "sha256": "408b6e2148cd0dc80b4cbd234b3f16b2652c78baf4e759e472c127eab5c908a8",
+      "bytes": 4934
     },
     {
       "path": "tests/test_released_documentation.py",
@@ -5839,8 +5839,8 @@
     },
     {
       "path": "tools/releases/v038/release.py",
-      "sha256": "06552c38f0736a767ee5cca4f54857fdc2f5e3de1617a67c6604f927ea137458",
-      "bytes": 24924
+      "sha256": "33e7f163296302df8d1016d116e508a989c7913e51035cb402c86e68d9e48d03",
+      "bytes": 25081
     },
     {
       "path": "tools/requirements-hermit.txt",
