@@ -1,0 +1,61 @@
+{
+  "schema": "riskium-v038-publication-v1",
+  "status": "INDEPENDENT_PUBLIC_DOWNLOADS_PASS",
+  "tag": "v0.3.8",
+  "source_commit": "4c31bd1dbe7f1e17c6f04543290488bc9d1ab0f1",
+  "release_id": 433531119,
+  "release_url": "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.8",
+  "published_at": "2026-11-04T05:00:01Z",
+  "checked_at_utc": "2026-11-04T05:01:48.551062+00:00",
+  "latest": true,
+  "assets": [
+    {
+      "name": "artifact-versions.json",
+      "sha256": "54790b2983a35fe9e2ec72e9c62c4199a4f0334ba4cdd0dd66c4c3c28033cf2f",
+      "bytes": 410668,
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.8/artifact-versions.json"
+    },
+    {
+      "name": "freeze-receipt.json",
+      "sha256": "ff1b4aa41c03c1d129511e648f4e6ebc8c13cac9ff6cd98fe5b86ae049616577",
+      "bytes": 755818,
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.8/freeze-receipt.json"
+    },
+    {
+      "name": "release-notes.md",
+      "sha256": "1de6cc487378de0e751f47504bacef81baf62c4da88b909d4d4f8fd1d7af833e",
+      "bytes": 2491,
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.8/release-notes.md"
+    },
+    {
+      "name": "riskium-v0.3.8-source.tar.gz",
+      "sha256": "ec1cfc39c47b11ca59ddf2355b3368e7932a072c9d23848c9e9964b9bf023aeb",
+      "bytes": 15733926,
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.8/riskium-v0.3.8-source.tar.gz"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "sha256": "7b4233333d67155c803568b6ab40042bd422755b31b16ce3fe875ecd137d6960",
+      "bytes": 440,
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.8/SHA256SUMS.txt"
+    },
+    {
+      "name": "source-manifest.json",
+      "sha256": "17a4c5b139ffe8c7c8ab8fb341e62ae4ccd9b7f1efb7c8f0681a6cdc07d79a7f",
+      "bytes": 287319,
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.8/source-manifest.json"
+    }
+  ],
+  "offline_verification": {
+    "status": "V038_SIX_ASSET_OFFLINE_PASS",
+    "source_commit": "4c31bd1dbe7f1e17c6f04543290488bc9d1ab0f1",
+    "source_files": 1585,
+    "components": 32,
+    "preserved_predecessor_bodies": 904,
+    "external_authenticity_required": true,
+    "required_ci": 12,
+    "downloaded_ci_artifacts": 3,
+    "historical_receipts_rewritten": false
+  },
+  "previous_releases_unchanged": true
+}

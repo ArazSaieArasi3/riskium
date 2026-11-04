@@ -4,8 +4,8 @@
   "source_files": [
     {
       "path": ".github/README.md",
-      "sha256": "dfdf4ffe2ccd1edcf7f7f766387ca0ce1eb21a1bc2d34eca6eabfe1cd7efe29b",
-      "bytes": 6420
+      "sha256": "f13539a7490580a3b63510528106b0f0ea37e027e9b269d31172edf811c64149",
+      "bytes": 6564
     },
     {
       "path": ".github/workflows/assessment-alignment.yml",
@@ -234,8 +234,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "dfdf4ffe2ccd1edcf7f7f766387ca0ce1eb21a1bc2d34eca6eabfe1cd7efe29b",
-      "bytes": 6420
+      "sha256": "f13539a7490580a3b63510528106b0f0ea37e027e9b269d31172edf811c64149",
+      "bytes": 6564
     },
     {
       "path": "RIGHTS.md",
@@ -3571,6 +3571,11 @@
       "path": "evaluation/releases/v0.3.8/predecessor-publications.json",
       "sha256": "98507c7a3d8685e1a43b9bc51fb15fca182485b27c9bd07cfeed2d52943fcb67",
       "bytes": 21801
+    },
+    {
+      "path": "evaluation/releases/v0.3.8/publication.json",
+      "sha256": "7bef08092b08fdfe2a93356fc36f1187fa7858200b1a80faf70c6d72945a0763",
+      "bytes": 2396
     },
     {
       "path": "evaluation/releases/v0.3.8/retained-v0.3.7/.github/README.md",
