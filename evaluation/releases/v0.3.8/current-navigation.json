@@ -1,0 +1,17 @@
+{
+  "status": "CURRENT_DELIVERY_NAVIGATION_CORRECTION",
+  "published_source": "4c31bd1dbe7f1e17c6f04543290488bc9d1ab0f1",
+  "source_release": "v0.3.8",
+  "guide_reader": "0.4.7",
+  "frozen_release_modified": false,
+  "current_main_is_not_the_frozen_source_checkout": true,
+  "reason": "GitHub selects .github/README.md; all source links now resolve from both README render locations. Current landing checks are fresh delivery maintenance, not a refreeze or a changed scientific result.",
+  "current_files_sha256": {
+    "README.md": "1074f4066109aea49953b7177af7038b0a92c8ac58799640838e352a5789e189",
+    ".github/README.md": "1074f4066109aea49953b7177af7038b0a92c8ac58799640838e352a5789e189",
+    "tools/audit_reader_consistency.py": "119c600c8d5b34f349dc232e69684e0c5d0b89c75248c80bcf9e0a95ecaf03bf",
+    ".github/workflows/release-v038.yml": "b29852e2ecb6120352bf9dfd97c1d971d0e186c6f6d6c461f4134528f182a611",
+    ".github/workflows/source-transition.yml": "37d32e7fc955a9d2cacfb50a20e997ae96e771dc1db90d7e11ecd757e28253c1",
+    "tools/releases/v038/test_current_navigation.py": "097781e27839c0b32cbcaf9d7c1fbfc9d52a3acaedf8fe8b3c20c48ac1b3dd0d"
+  }
+}

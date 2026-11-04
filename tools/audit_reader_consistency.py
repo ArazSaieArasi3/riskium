@@ -7,17 +7,30 @@ released manuscript. Run again against the exact candidate source.
 from pathlib import Path
 import re
 import sys
+from urllib.parse import urlsplit,unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 readme = (ROOT / "README.md").read_text(encoding="utf-8")
 errors = []
 
-for target in re.findall(r"\]\(([^)]+)\)", readme):
-    if target.startswith(("https://", "http://", "mailto:")) or target.startswith("#"):
-        continue
-    destination = (ROOT / target.split("#", 1)[0]).resolve()
+def link_error(target,document):
+    parsed=urlsplit(target)
+    if not parsed.path:return None
+    if parsed.scheme or parsed.netloc:
+        prefix='/ArazSaieArasi3/riskium/'
+        if parsed.netloc!='github.com' or not parsed.path.startswith(prefix):return None
+        rest=parsed.path[len(prefix):]
+        if not rest.startswith(('blob/main/','tree/main/')):return None
+        local=rest.split('/',2)[2];destination=(ROOT/unquote(local)).resolve()
+    else:destination=(ROOT/document.parent/unquote(parsed.path)).resolve()
     if not destination.is_relative_to(ROOT) or not destination.exists():
-        errors.append(f"broken or escaping relative link: {target}")
+        return f'broken or escaping link in {document}: {target}'
+    return None
+
+for document in (Path('README.md'),Path('.github/README.md')):
+    for target in re.findall(r"\]\(([^)]+)\)",(ROOT/document).read_text()):
+        problem=link_error(target,document)
+        if problem:errors.append(problem)
 
 import json
 publication = ROOT / 'evaluation/releases/v0.3.8/publication.json'
@@ -33,7 +46,7 @@ required = {
     "held paper": r"author-held article candidate:.*7\.2\.3",
     "wiki": r"https://github\.com/ArazSaieArasi3/riskium/wiki",
     "pages": r"https://arazsaiearasi3\.github\.io/riskium/current/index\.html",
-    "rights": r"\[RIGHTS\.md\]\(RIGHTS\.md\)",
+    "rights": r"\[RIGHTS\.md\]\((?:https://github\.com/ArazSaieArasi3/riskium/blob/main/)?RIGHTS\.md\)",
 }
 for name, pattern in required.items():
     if not re.search(pattern, readme):

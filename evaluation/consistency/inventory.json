@@ -4,8 +4,8 @@
   "source_files": [
     {
       "path": ".github/README.md",
-      "sha256": "f13539a7490580a3b63510528106b0f0ea37e027e9b269d31172edf811c64149",
-      "bytes": 6564
+      "sha256": "1074f4066109aea49953b7177af7038b0a92c8ac58799640838e352a5789e189",
+      "bytes": 8748
     },
     {
       "path": ".github/workflows/assessment-alignment.yml",
@@ -134,8 +134,8 @@
     },
     {
       "path": ".github/workflows/release-v038.yml",
-      "sha256": "da2e154c723cf958da44e8267d884a858f0d7fda49776191e6dae0e42c3a7f57",
-      "bytes": 2854
+      "sha256": "b29852e2ecb6120352bf9dfd97c1d971d0e186c6f6d6c461f4134528f182a611",
+      "bytes": 3095
     },
     {
       "path": ".github/workflows/released-reader-main.yml",
@@ -154,8 +154,8 @@
     },
     {
       "path": ".github/workflows/source-transition.yml",
-      "sha256": "3e575bcbde2b0f287bb1dfc49a063b9adf31394bb89b19b95a57df743a64269e",
-      "bytes": 2494
+      "sha256": "37d32e7fc955a9d2cacfb50a20e997ae96e771dc1db90d7e11ecd757e28253c1",
+      "bytes": 2588
     },
     {
       "path": ".github/workflows/stable-release.yml",
@@ -234,8 +234,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "f13539a7490580a3b63510528106b0f0ea37e027e9b269d31172edf811c64149",
-      "bytes": 6564
+      "sha256": "1074f4066109aea49953b7177af7038b0a92c8ac58799640838e352a5789e189",
+      "bytes": 8748
     },
     {
       "path": "RIGHTS.md",
@@ -3568,6 +3568,11 @@
       "bytes": 151223
     },
     {
+      "path": "evaluation/releases/v0.3.8/current-navigation.json",
+      "sha256": "976711e48e8ca932dbf3b53ce3498a037f1db4d88771c6f81ab67c6a7d483c8b",
+      "bytes": 1155
+    },
+    {
       "path": "evaluation/releases/v0.3.8/predecessor-publications.json",
       "sha256": "98507c7a3d8685e1a43b9bc51fb15fca182485b27c9bd07cfeed2d52943fcb67",
       "bytes": 21801
@@ -5244,8 +5249,8 @@
     },
     {
       "path": "tools/audit_reader_consistency.py",
-      "sha256": "5c7476823e6d901736a15fc0db95f779bd124982a53e797b77e7298218a63d37",
-      "bytes": 2327
+      "sha256": "119c600c8d5b34f349dc232e69684e0c5d0b89c75248c80bcf9e0a95ecaf03bf",
+      "bytes": 2979
     },
     {
       "path": "tools/audit_relational_design.py",
@@ -5846,6 +5851,11 @@
       "path": "tools/releases/v038/release.py",
       "sha256": "33e7f163296302df8d1016d116e508a989c7913e51035cb402c86e68d9e48d03",
       "bytes": 25081
+    },
+    {
+      "path": "tools/releases/v038/test_current_navigation.py",
+      "sha256": "097781e27839c0b32cbcaf9d7c1fbfc9d52a3acaedf8fe8b3c20c48ac1b3dd0d",
+      "bytes": 1164
     },
     {
       "path": "tools/requirements-hermit.txt",

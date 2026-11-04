@@ -31,6 +31,7 @@ jobs:
         run: |
           python tools/audit_consistency.py --check
           python tools/audit_reader_consistency.py
+          python -m unittest discover -s tools/releases/v038 -p test_current_navigation.py -v
           python tools/build_subdomain_relationships.py --check
           python tools/build_concept_dictionary.py --check
       - name: Replay the new manuscript experiments with their original oracles

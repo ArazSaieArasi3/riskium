@@ -30,10 +30,14 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r tools/requirements-shacl.txt -r tools/publication/requirements.txt
       - name: Check declared component closure and failure boundaries
+        if: steps.phase.outputs.freeze == 'true'
         run: |
           python tools/releases/v038/release.py check
           python -m unittest discover -s tests -p test_release_v038.py -v
           git diff --exit-code
+      - name: Check maintained landing without refreezing the immutable published source
+        if: steps.phase.outputs.freeze != 'true'
+        run: python tools/audit_reader_consistency.py
       - name: Authenticate exact main qualification, download receipts and freeze six assets
         if: steps.phase.outputs.freeze == 'true'
         env:
