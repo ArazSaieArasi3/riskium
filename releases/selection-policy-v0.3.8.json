@@ -1,0 +1,83 @@
+{
+  "schema": "riskium-v038-declared-scope-v1",
+  "target": "v0.3.8",
+  "issue": 76,
+  "declaration_baseline": "97ac0b88a092ad8d12d31e6a7e22d70adf406093",
+  "predecessor": "v0.3.7",
+  "predecessor_selection_sha256": "678b6937018374d3c4220c35a4611520eddadd10a7419f56673e7d7e993c4642",
+  "predecessor_source": "86accc6695e4738dd1337d5b9addd73b82c73c3d",
+  "expected_components": 32,
+  "scientific_versions": {
+    "model": "0.3.1",
+    "orsd": "0.4.3",
+    "original_drsd": "0.1.0",
+    "manuscript": "7.0.8"
+  },
+  "current_author_held_manuscript": "7.2.3",
+  "sql_version": "0.9.0",
+  "schema_version": 10,
+  "documentation_version": "0.4.7",
+  "replaced_components": [
+    "DOCUMENTATION"
+  ],
+  "added_components": [
+    "MANUSCRIPT_REVIEW"
+  ],
+  "declared_delivery_rebindings": [
+    ".github/README.md",
+    ".github/workflows/current-alignment.yml",
+    ".github/workflows/current-documentation-pages.yml",
+    ".github/workflows/current-documentation.yml",
+    ".github/workflows/documentation.yml",
+    ".github/workflows/evidence-lifecycle.yml",
+    ".github/workflows/incremental-release.yml",
+    ".github/workflows/pages.yml",
+    ".github/workflows/post-release-validation.yml",
+    ".github/workflows/publication-status.yml",
+    ".github/workflows/release-selection-v035.yml",
+    ".github/workflows/released-reader-main.yml",
+    ".github/workflows/v036-versioned-suite.yml",
+    "README.md",
+    "evaluation/consistency/inventory.json"
+  ],
+  "retained_prefix": "evaluation/releases/v0.3.8/retained-v0.3.7/",
+  "required_ci_paths": [
+    ".github/workflows/source-transition.yml",
+    ".github/workflows/documentation.yml",
+    ".github/workflows/quality.yml",
+    ".github/workflows/requirements.yml",
+    ".github/workflows/evidence-lifecycle.yml",
+    ".github/workflows/current-alignment.yml",
+    ".github/workflows/current-documentation.yml",
+    ".github/workflows/release-selection-v035.yml",
+    ".github/workflows/release-support-v035.yml",
+    ".github/workflows/v036-versioned-suite.yml",
+    ".github/workflows/v037-versioned-suite.yml",
+    ".github/workflows/post-release-validation.yml"
+  ],
+  "asset_names": [
+    "riskium-v0.3.8-source.tar.gz",
+    "source-manifest.json",
+    "artifact-versions.json",
+    "freeze-receipt.json",
+    "release-notes.md",
+    "SHA256SUMS.txt"
+  ],
+  "not_claimed": [
+    "new model or OWL semantics",
+    "new SQL schema or PostgreSQL execution",
+    "independent semantic ratings",
+    "complete native-to-SQL mapping",
+    "new pharmaceutical dataset admissions",
+    "article submission or acceptance",
+    "term-level external equivalence"
+  ],
+  "acceptance": [
+    "exact component versions, file bindings and acyclic dependencies",
+    "all predecessor selected bytes retained at explicit original or archived paths",
+    "exact-main affected CI success, with original research receipts unchanged",
+    "six-file freeze and standard-library extracted verification, including negative controls",
+    "draft asset verification before publication, then independent public download/tag/Latest readback",
+    "current repository, Pages and native Wiki readbacks with preserved frozen snapshots"
+  ]
+}
