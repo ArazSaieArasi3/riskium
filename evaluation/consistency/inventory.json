@@ -4,8 +4,8 @@
   "source_files": [
     {
       "path": ".github/README.md",
-      "sha256": "1074f4066109aea49953b7177af7038b0a92c8ac58799640838e352a5789e189",
-      "bytes": 8748
+      "sha256": "09f858fd6a95ea933f167d8d0a2f9424f6ced686cae4d9c4f459022cea27e760",
+      "bytes": 9414
     },
     {
       "path": ".github/workflows/assessment-alignment.yml",
@@ -63,6 +63,11 @@
       "bytes": 2047
     },
     {
+      "path": ".github/workflows/external-definition-reader.yml",
+      "sha256": "e1e01eb4dccc803df4e8ac893fc3f18aeb6e8fecf181dbaca734a15c605c21bc",
+      "bytes": 2517
+    },
+    {
       "path": ".github/workflows/final-release-v035.yml",
       "sha256": "bb1c14ff4b362826c39abe9445c6858059882e2fcb132c2638aec9a674cfca19",
       "bytes": 12320
@@ -104,8 +109,8 @@
     },
     {
       "path": ".github/workflows/reader-v038.yml",
-      "sha256": "7ee8ae9ae8bfeff29d03c88220c2799fb40e142e5dcc7d07bc66559f6073b456",
-      "bytes": 2389
+      "sha256": "e127a3f1f45663bbdb591a1b639df2824131c6ce839dec7bb31435be62d566e0",
+      "bytes": 2536
     },
     {
       "path": ".github/workflows/references.yml",
@@ -234,8 +239,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "1074f4066109aea49953b7177af7038b0a92c8ac58799640838e352a5789e189",
-      "bytes": 8748
+      "sha256": "09f858fd6a95ea933f167d8d0a2f9424f6ced686cae4d9c4f459022cea27e760",
+      "bytes": 9414
     },
     {
       "path": "RIGHTS.md",
@@ -374,8 +379,8 @@
     },
     {
       "path": "docs/manuscript-and-release-roadmap.md",
-      "sha256": "930f21b12d9fce32c6fdca846ff172d5e0358705277c44e0833d787b34c5208a",
-      "bytes": 2634
+      "sha256": "41693231e93764e84e4f61c63e0525cc27dcb9a9aaf634a5d28ebf018d504616",
+      "bytes": 3368
     },
     {
       "path": "docs/manuscript-review-checklist.md",
@@ -1703,6 +1708,431 @@
       "bytes": 1385
     },
     {
+      "path": "documentation/0.4.8/README.md",
+      "sha256": "41ebabe2b213960da097e0bb72c02b01f2b33fdfffbe82395812f18b574d2117",
+      "bytes": 2263
+    },
+    {
+      "path": "documentation/0.4.8/concepts/External-Definitions.md",
+      "sha256": "48f6f701ad638621b494d032389fd7672943673e5c1cd3af4a81ef72f7c21a62",
+      "bytes": 22274
+    },
+    {
+      "path": "documentation/0.4.8/concepts/README.md",
+      "sha256": "b926b37a38eba6daf3d6b2e8f8dadac763ac1f5cf3378bcda9c381dc729db54a",
+      "bytes": 5662
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C001.md",
+      "sha256": "a64cabfa58542c6d9f96f8a72661afb83a39302c0a45267e802b708362d198ce",
+      "bytes": 2521
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C002.md",
+      "sha256": "ffc3ed561e1f1e77d5f0261018706ab6dfe9220a523fd54e001d1f9d71d19a42",
+      "bytes": 3889
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C003.md",
+      "sha256": "3348f42b7edf43059f823b809dcd325cf0229f1f05891e3a797c458c82101b49",
+      "bytes": 3097
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C004.md",
+      "sha256": "eecbeb51a00c7fa49873f2461bc79704487992d940675dce18327fc7451f912d",
+      "bytes": 2736
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C005.md",
+      "sha256": "c61a1c6d37eb2128473e512feaf6675346790762e18f770f5dda4c28a9565975",
+      "bytes": 2711
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C006.md",
+      "sha256": "00995de007a4c5def78e3fb3dae3cf2293cdc4f048afa28cd5947f75cfbad958",
+      "bytes": 2976
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C007.md",
+      "sha256": "c0d90821cf5198c4866169c0d3e4a8592325f32783060c916c3b5f406cd98cae",
+      "bytes": 2738
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C008.md",
+      "sha256": "d7fbbbe49f2f3daf4fce4d80bfdd26be0169a8734fc7ab63d814884b763554f4",
+      "bytes": 2555
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C009.md",
+      "sha256": "09c0fefd71e95e5691fe98cb470239075c8e055461cce077f39f123a9ebf07e0",
+      "bytes": 2529
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C010.md",
+      "sha256": "8d447174123332660e73fc36bbeaadcf15929da31b472d58de5d8410d1451155",
+      "bytes": 2706
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C011.md",
+      "sha256": "a8cf76a685d857fe7c1f1c0357c11e3d51b7aa326dca0e406adcca1a6dfb83a0",
+      "bytes": 3646
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C012.md",
+      "sha256": "ef74f77b724493190d67819aece509ac9f07c07fdfbce6137f809abf870d4a63",
+      "bytes": 2571
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C013.md",
+      "sha256": "56d5c34a00e535e61a6ed8b3927d49121ee9a046236e4f328e2312717e666fc1",
+      "bytes": 2264
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C014.md",
+      "sha256": "27b95aa57f1fe07e55f1a2b6a43b205e982ed41f918dd2ffaae6e032e9fdc1dc",
+      "bytes": 3948
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C015.md",
+      "sha256": "bbb23f86b59e7cbc8fa381e7536f2e3f38b0c664543ac28ef6953c03ff0b81f2",
+      "bytes": 3455
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C016.md",
+      "sha256": "5f968e691f193edeca8ce1e7f154f83654243acedfe1b6b062fc7b9d55604d35",
+      "bytes": 2363
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C017.md",
+      "sha256": "25a6e5a69cbe265734b183ab61d499c7d37c7dc878cc813fd02e577b24172a95",
+      "bytes": 3065
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C018.md",
+      "sha256": "c5a8b2d5503037cfa11a0fa23a7b008e54d39bb669deb5eecdd7164c59c70895",
+      "bytes": 2424
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C019.md",
+      "sha256": "1d6c0be87ffcde13554a6cf89dc259c15309d76351a94080b72c019d6a9bd469",
+      "bytes": 3671
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C020.md",
+      "sha256": "bba9f026e9e0c3ad727ad1ae404ca8d79880305fb51cc127f83fba76481dddb1",
+      "bytes": 2996
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C021.md",
+      "sha256": "153a1306348a0d88a373e11a04fa99e7c97508890fc1aa09183d2529099d7712",
+      "bytes": 2884
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C022.md",
+      "sha256": "feea44f3f266e82b708ac924f6204d51730ddb2adc26b342ae6740a766c89373",
+      "bytes": 2650
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C023.md",
+      "sha256": "7d3634bc13db0ddfbb82fb155b73927df82fc8f0853ad230cdb4362f6dd49114",
+      "bytes": 4305
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C024.md",
+      "sha256": "c990179b56f3c4f5685174f8d1e150b2f47a2c298079ff4bc87c96d8174735ff",
+      "bytes": 2891
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C025.md",
+      "sha256": "8bf7bf0dbbd66b43576c64209e28fdbf52e392fbb51d28edca917f108d847eb2",
+      "bytes": 2765
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C026.md",
+      "sha256": "2b579f5febfd1b6f0e2b4f707fb209308d5e7def316f25483a3f32665ad412e5",
+      "bytes": 2653
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C027.md",
+      "sha256": "4ea2f539ed687edbc30538ead1f04bf82351204a9e73562b5b3ff78258cb3850",
+      "bytes": 2559
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C028.md",
+      "sha256": "c05aa6b8f0613c08f64bae58b5752dbac2e6bb988a6c0846b3bca1c52100fd7a",
+      "bytes": 2534
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C029.md",
+      "sha256": "146ba174adc29d126a30a4ef11a4a7f86b80dc2c41878184b599516f1928af22",
+      "bytes": 2504
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C030.md",
+      "sha256": "2b123e1b382c2bb69caac8fa147d7a76de78d8395aba95ce471cb71964c7fbbb",
+      "bytes": 2467
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C031.md",
+      "sha256": "0e2a6915b96238e65e28f601250bde654c73872bb189896e8064bdb092bf923f",
+      "bytes": 3171
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C032.md",
+      "sha256": "92eaab9e45e35f6c4eb003ce95a228659f06cc00cf577a1738644b7ffc3d9a67",
+      "bytes": 3884
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C033.md",
+      "sha256": "6c375dabd5b47f88221d5e53ca4c9458687bc29dc2385d1ff7146545ae69322e",
+      "bytes": 2509
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C034.md",
+      "sha256": "d3b962d7c0112c1a24204b2ad602556173e5f1ae16d4d86c9500528d1c541fed",
+      "bytes": 2916
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C035.md",
+      "sha256": "c8a62b5a2d7a6ee89cff975bc50c1eb44f34dbe73ab84715c117d34d7d74dc62",
+      "bytes": 2698
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C036.md",
+      "sha256": "97981e565267146287fafa61cd68d0d468e5d4aff1768c74cb34a907cea02f8c",
+      "bytes": 2974
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C037.md",
+      "sha256": "a11785e1a7c3933adfe890318b4ddbb93f4828225f827730e81f43d40dd11c36",
+      "bytes": 2675
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C038.md",
+      "sha256": "a924d84d7c67ffab5204880ed79cea6b14c4a36863e5117685792df1a6a7f48e",
+      "bytes": 3080
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C039.md",
+      "sha256": "b6d9f488bf423ca204ce6db72553be16b017265afeed6132be547cd61ec7c306",
+      "bytes": 2745
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C040.md",
+      "sha256": "b23ad1589176af678765a633772eb13a6fa3a8434aa365ab7f7d3a6fe21c0590",
+      "bytes": 2537
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C041.md",
+      "sha256": "0c7f2f3674bda98b82b619c6e6f1e383f2511bb5f39bed63f35cd123491e5ae3",
+      "bytes": 3103
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C042.md",
+      "sha256": "c5b1042dddef9135cb773a9eb081eeb0f284c3fec6b78311ce0979aa5269fe8b",
+      "bytes": 2526
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C043.md",
+      "sha256": "e2114adb6323ddf3d0408adb3de914c5e1d42af07e95173c241785458c47ed15",
+      "bytes": 2715
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C044.md",
+      "sha256": "5d0677ef519c4e909c39db1fa9bc24e279f527d1dd0232972f8dae6b93c1f9f6",
+      "bytes": 3127
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C045.md",
+      "sha256": "a2429e2c3a1fa927983ae4c82b67a40beb3d3634cd516eeb6d18d1a20d422333",
+      "bytes": 2832
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C046.md",
+      "sha256": "9158724d5399fdc6be6492d1015fe773835b4dbca4b880209eb9b74cf3a313ca",
+      "bytes": 2495
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C047.md",
+      "sha256": "4872694d7747dd7dc6d6f702d9a2aa79936da3a97f3659c493359b03be3a4d84",
+      "bytes": 2641
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C048.md",
+      "sha256": "d4de5e8c9dbd75dee937cee6ab8b8c2c5201cc4ffb9ec3f78da8e9241c5667fb",
+      "bytes": 2308
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C049.md",
+      "sha256": "ffd21b8c8341f8c10209ce84c4f5abd4794e9eff3f0595bf5f830007775ae0f8",
+      "bytes": 2401
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C050.md",
+      "sha256": "a7fd001ae6fec36c77f48963f151b1276177b7cc7c71d8be8a2c2e39cded5d98",
+      "bytes": 3085
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C051.md",
+      "sha256": "5decf8e5e75fade53a1fa9d15863a1ce44c68cbb93d500b06eecd2f5c9edd0cc",
+      "bytes": 2890
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C052.md",
+      "sha256": "50b8b85fef3d986e8fa41612876ac8d8d91d07a4cb545fb0222e1e49e5775ce7",
+      "bytes": 3028
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C053.md",
+      "sha256": "9a3312f6b44f55c105011c33999acb33276e0f81876b96e08429fc9fddf5c035",
+      "bytes": 2728
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C054.md",
+      "sha256": "1c81b15f75c4ea684361a7d26f3801c3c8ea6e8397410394b7077b2debfd9630",
+      "bytes": 2737
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C055.md",
+      "sha256": "a982d93bcf7946415b83a0ef3ed2262627cab90646c82e89c84cbb496dbd0e96",
+      "bytes": 2589
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C056.md",
+      "sha256": "e0fc68d163d07349877b9c86a19c909c4ae7e8f21b7d86732ddd50c1b1d71c81",
+      "bytes": 2631
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C057.md",
+      "sha256": "ca542a26be1823d61119037d422da36ccd8ab710bdbb898bf3198face9d31e4d",
+      "bytes": 2573
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C058.md",
+      "sha256": "60616d82624125826c3cb449574c998d64b5931a4b34fe49a15ca7cc090fa0df",
+      "bytes": 2632
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C059.md",
+      "sha256": "fba86e2bf2b5a0a5d2ece946d2cc115b80d0ea8533895de61ccbbc7368a30032",
+      "bytes": 2978
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C060.md",
+      "sha256": "9990e46ed189781c6021102865ca3006f7525ab8eab6cda9ed4f62746563b3db",
+      "bytes": 2511
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C061.md",
+      "sha256": "f69167f4894af07976aea9fa456be0b2aa0ead8b11d11d8540fa666db3dce5fc",
+      "bytes": 2706
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C062.md",
+      "sha256": "a9af34d7987c7d110298abde9a42fd6a74f71027480da0bb18d03fec7a275fe3",
+      "bytes": 2690
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C063.md",
+      "sha256": "beb9b277d8b5004a574668c852e2d9320a0bcd9bec758dda86ff6ceeecea43fa",
+      "bytes": 2956
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C064.md",
+      "sha256": "b088df8a1a1c8ff4f5238d4cc4353eec0fd0ba86606c4cef674126fbe579772e",
+      "bytes": 2631
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C065.md",
+      "sha256": "faf35e73ff36f3a66cd819d00437eab00fe1cc3d796fa593210d296016e08ba7",
+      "bytes": 2888
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C066.md",
+      "sha256": "fed4d549f11162f6a424e17d2ab22261d5b6ce0e7a60b35d9400c1db80437ac0",
+      "bytes": 2763
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C067.md",
+      "sha256": "0cd34f33a9670f0d6844a92658181f26a6a04252a8c546b462f067d935411122",
+      "bytes": 2305
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C068.md",
+      "sha256": "a6c8522c329f17e5b8a754a86de18a661283b304651e1bec718751e436e7a2e0",
+      "bytes": 2879
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C069.md",
+      "sha256": "b6f1015076033064bb3c2fdeceebc349130e24c35b6ad9312d06bbd42e00a2a3",
+      "bytes": 3099
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C070.md",
+      "sha256": "9a97bdccfe8b2b491e4330221ad25f28ada2f8fc4800154b73dbf610ded7ea60",
+      "bytes": 2741
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C071.md",
+      "sha256": "53bff018f59ea7a0873fe513ad52cce19b262be077aa1f74d5c4321808317091",
+      "bytes": 2619
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C072.md",
+      "sha256": "f87c1f718b176c9456c6e11cb3a38fecae787dd32240392564028b07c59fafd7",
+      "bytes": 2599
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C073.md",
+      "sha256": "125324cd5a86406f980000baa1ee04d5f36c9e0754db374a5b9665615717c7fc",
+      "bytes": 2548
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-C074.md",
+      "sha256": "23e1b0b2a27f7998399236733d96c8d7223339091154920cf1ef0874de98b1a0",
+      "bytes": 2639
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-X01.md",
+      "sha256": "fca00a99ea946794011694f9aabd527868a9ec8ced4b76d50aae8ecd2a437da6",
+      "bytes": 4934
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-X02.md",
+      "sha256": "bc38e8cd2789219cd30e900699783fed5f5a21ac268ced5298b9d4bdc53139e0",
+      "bytes": 2504
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-X03.md",
+      "sha256": "31d9ca28e9ee4be5eecc80089b65c0318c42f5c61aeecbb1d82dbb21cff12f1f",
+      "bytes": 2658
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-X04.md",
+      "sha256": "682070f0618197daa86204af54317c2071e8b439ad2f4d1a8dc08f82a09fa00e",
+      "bytes": 2863
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-X05.md",
+      "sha256": "07b6e009439d92ec4c9545d0becf79a0870ee146e5b4f0b43d6f6b8afdc6848e",
+      "bytes": 3189
+    },
+    {
+      "path": "documentation/0.4.8/concepts/RKM-X06.md",
+      "sha256": "d539f270dd56346f1ed683a014d00ead960eb10638b2a11700f645e21d5de7e8",
+      "bytes": 3358
+    },
+    {
+      "path": "documentation/0.4.8/concepts/Subdomains.md",
+      "sha256": "211b67ca876400477f9a76c49a4721688b81ac5caf54225a8190a0f7c45c9b42",
+      "bytes": 8755
+    },
+    {
+      "path": "documentation/0.4.8/concepts/manifest.json",
+      "sha256": "2aa64178e1ffc239186fa4c3aad0c2df962ef5d522168e30d58250b5305df7f1",
+      "bytes": 7896
+    },
+    {
       "path": "documentation/concepts/0.3.1/README.md",
       "sha256": "38db6e7efb4821c805a6ac0f41ece69deaf1cf25a66cbbc2c5e3ca9fc166f905",
       "bytes": 5350
@@ -2231,6 +2661,11 @@
       "path": "evaluation/documentation/current-0.4.0/component.json",
       "sha256": "b1020d29340142310cca8ad78d5e0558d30c9f24667b6845a137a8647bb7d25e",
       "bytes": 13723
+    },
+    {
+      "path": "evaluation/documentation/external-definitions-0.1.0/source-locators.json",
+      "sha256": "7122f3b7dc75420dc777821068b05eee6432c5d7f15712f447741db97913a5a7",
+      "bytes": 3743
     },
     {
       "path": "evaluation/documentation/http-readback.json",
@@ -4568,6 +5003,16 @@
       "bytes": 25731
     },
     {
+      "path": "references/concept-definitions/0.1.0/README.md",
+      "sha256": "13ff6bf745b6b32b072a47270c10432277fb9e07976208d8145aa2ff955ec8d6",
+      "bytes": 1683
+    },
+    {
+      "path": "references/concept-definitions/0.1.0/review.json",
+      "sha256": "3eeba2690041f5f815754a256d586cc338b3710c68fe8edc42f5b9865f7fff47",
+      "bytes": 87561
+    },
+    {
       "path": "references/corpus.json",
       "sha256": "eb23983d2194c19d8b115da147b14cad89607e3e63181217add4e1e7df0f16f7",
       "bytes": 28541
@@ -5008,6 +5453,11 @@
       "bytes": 11877
     },
     {
+      "path": "tests/test_external_definitions.py",
+      "sha256": "f4504ed4677d29299c66eb38cd04efa081e80752252c619d30c015c3081e5e12",
+      "bytes": 2879
+    },
+    {
       "path": "tests/test_formal_reference.py",
       "sha256": "cbb4cce87fe7e27a137b64d34149b89509f4633209e2fbb724bbd5c4a6120b2b",
       "bytes": 2772
@@ -5249,8 +5699,8 @@
     },
     {
       "path": "tools/audit_reader_consistency.py",
-      "sha256": "119c600c8d5b34f349dc232e69684e0c5d0b89c75248c80bcf9e0a95ecaf03bf",
-      "bytes": 2979
+      "sha256": "f112b5799e73e6aa5e1d5edfaabd855159481ef9e6da1ad1cb53f168c7c6c734",
+      "bytes": 3160
     },
     {
       "path": "tools/audit_relational_design.py",
@@ -5306,6 +5756,11 @@
       "path": "tools/build_evidence_lifecycle_inventory.py",
       "sha256": "360217f0f97a6fe48930ac984f4836d278d246e079711e589a06339b56d6ef25",
       "bytes": 7412
+    },
+    {
+      "path": "tools/build_external_definitions.py",
+      "sha256": "b8640292b776c8bf558bb09508f2ebf140f3af7719907364165262a7d042aa06",
+      "bytes": 10518
     },
     {
       "path": "tools/build_final_review.py",
@@ -5444,8 +5899,8 @@
     },
     {
       "path": "tools/check_source_transition.py",
-      "sha256": "649bba9e3551ad55946060c4a0a80a50e719d6588665c61b16e92709b44da966",
-      "bytes": 7483
+      "sha256": "7d32e0e6e2f36fe23b3f70e654f025e8e7641e55205233d8f6d6546a4d98bcaa",
+      "bytes": 7845
     },
     {
       "path": "tools/complete_risk_nature_readback.py",
@@ -5586,6 +6041,11 @@
       "path": "tools/publication/dictionary_documentation.py",
       "sha256": "2ad4fdc05ce215209363fe987e977a90da930380e7f280870b8f8e1d414d1f82",
       "bytes": 11086
+    },
+    {
+      "path": "tools/publication/external_definition_documentation.py",
+      "sha256": "5470f1419a315aeab45b96acfc6740ca4937b511b57669c3d1b3b8cbeb6094f9",
+      "bytes": 9574
     },
     {
       "path": "tools/publication/filter.js",

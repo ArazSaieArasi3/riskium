@@ -57,6 +57,9 @@ ADDITIVE_FILES = {
     'releases/selection-policy-v0.3.8.json', 'releases/selection-v0.3.8.json',
     'tests/test_release_v038.py', 'tools/publication/v038_documentation.py',
     '.github/workflows/release-v038.yml', '.github/workflows/reader-v038.yml',
+    'tools/build_external_definitions.py',
+    'tools/publication/external_definition_documentation.py',
+    'tests/test_external_definitions.py', '.github/workflows/external-definition-reader.yml',
 }
 ADDITIVE_PREFIXES = ('documentation/concepts/0.3.1/',
                      'evaluation/manuscript-review/v7.1.0/',
@@ -64,7 +67,9 @@ ADDITIVE_PREFIXES = ('documentation/concepts/0.3.1/',
                      'evaluation/manuscript-review/v7.2.1/',
                      'evaluation/manuscript-review/v7.2.2/', 'evaluation/manuscript-review/v7.2.3/',
                      'documentation/0.4.6/', 'evaluation/documentation/dictionary-0.4.6/',
-                     'documentation/0.4.7/', 'tools/releases/v038/', 'evaluation/releases/v0.3.8/')
+                     'documentation/0.4.7/', 'tools/releases/v038/', 'evaluation/releases/v0.3.8/',
+                     'references/concept-definitions/0.1.0/', 'documentation/0.4.8/',
+                     'evaluation/documentation/external-definitions-0.1.0/')
 
 
 def require(value, message):

@@ -1,0 +1,2067 @@
+{
+  "schema": "riskium-external-definition-review-v1",
+  "version": "0.1.0",
+  "issue": 85,
+  "model_version": "0.3.1",
+  "model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "date": "2026-11-05",
+  "scope": "Bounded documentary curation of all 80 concepts, not a systematic literature review or independent semantic acceptance.",
+  "relation_vocabulary": {
+    "RELATED": "A relevant definitional precedent, without equivalence or formal subsumption.",
+    "ANALOGY": "A pattern or restricted-domain analogy; extension and commitments differ.",
+    "CONTRAST": "A documented distinction preventing a misleading identification.",
+    "NO_DIRECT_EQUIVALENT_REVIEWED": "No direct equivalent adopted from the named inspected entries only; not a claim that none exists elsewhere.",
+    "NEEDS_LICENSED_SOURCE": "Normative adoption deferred; source identity checked, term text unassessed."
+  },
+  "sources": {
+    "prov": {
+      "title": "PROV-O: The PROV Ontology",
+      "version": "W3C Recommendation, 30 April 2013",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "accessed": "2026-11-05",
+      "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+      "inspection_scope": "Terms listed below only; no PROV conformance or import asserted.",
+      "access": "SELECTED_TEXT_INSPECTED"
+    },
+    "skos": {
+      "title": "SKOS Simple Knowledge Organization System Reference",
+      "version": "W3C Recommendation, 18 August 2009",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+      "accessed": "2026-11-05",
+      "document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+      "inspection_scope": "Concept, scheme and lexical-label distinctions; no SKOS mapping triples asserted.",
+      "access": "SELECTED_TEXT_INSPECTED"
+    },
+    "sosa": {
+      "title": "Semantic Sensor Network Ontology",
+      "version": "W3C Recommendation, 19 October 2017; SOSA/SSN",
+      "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/",
+      "accessed": "2026-11-05",
+      "document_sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+      "inspection_scope": "Selected core classes only; observed properties and their specifications remain distinct.",
+      "access": "SELECTED_TEXT_INSPECTED"
+    },
+    "dqv": {
+      "title": "Data on the Web Best Practices: Data Quality Vocabulary",
+      "version": "W3C Working Group Note, 15 December 2016",
+      "url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/",
+      "accessed": "2026-11-05",
+      "document_sha256": "271d3e820c681127131595d2c8bf8345e925149192f6cab821f101f09d372a63",
+      "inspection_scope": "Dataset-quality vocabulary used by analogy only. This Note is work in progress, not a W3C Recommendation.",
+      "access": "SELECTED_TEXT_INSPECTED"
+    },
+    "oa": {
+      "title": "Web Annotation Data Model",
+      "version": "W3C Recommendation, 23 February 2017",
+      "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/",
+      "accessed": "2026-11-05",
+      "document_sha256": "a7513e022f56c0a6f4e99ac11aec03f3451d1ff1ce14054780b3ccfb38fa7980",
+      "inspection_scope": "Selected motivations and annotation/body distinction only; no serialization conformance asserted.",
+      "access": "SELECTED_TEXT_INSPECTED"
+    },
+    "nist": {
+      "title": "Guide for Conducting Risk Assessments, NIST SP 800-30 Revision 1",
+      "version": "September 2012; DOI 10.6028/NIST.SP.800-30r1",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+      "accessed": "2026-11-05",
+      "document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+      "inspection_scope": "Security-specific terms, selected glossary entries and tables only; not a universal enterprise-risk vocabulary. Glossary entries retain their original attributions.",
+      "access": "SELECTED_TEXT_INSPECTED"
+    },
+    "relator": {
+      "title": "OntoUML specification: Relator",
+      "version": "Unversioned latest documentation, retrieved 5 November 2026; response SHA-256 retained",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html",
+      "accessed": "2026-11-05",
+      "document_sha256": "639fcd67050a2dbb0d94fe6567a112e039d8b0ea429f636f3e7122d36c564757",
+      "inspection_scope": "Definition and constraints C1-C2 only; this modeling construct is not the definition of a responsibility mandate.",
+      "access": "SELECTED_TEXT_INSPECTED"
+    },
+    "iso": {
+      "title": "ISO 31073:2022, Risk management — Vocabulary",
+      "version": "Edition 1, February 2022",
+      "url": "https://www.iso.org/standard/79637.html",
+      "accessed": "2026-11-05",
+      "document_sha256": "562ac6054dcb28c3599118fee2757f4cdfd21bb8a037a3444a99ea7fb208e883",
+      "inspection_scope": "Official identity and abstract inspected; normative term text NOT inspected. No exact term or clause number claimed; #78 owns adoption.",
+      "access": "METADATA_ONLY"
+    },
+    "mode": {
+      "title": "OntoUML specification: Mode",
+      "version": "Unversioned latest documentation, inspected 5 November 2026",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html",
+      "accessed": "2026-11-05",
+      "document_sha256": null,
+      "access": "SELECTED_TEXT_INSPECTED",
+      "inspection_scope": "Definition and constraints C1-C2 inspected through public indexed full text; direct response returned HTTP 403, so no response-body hash is claimed."
+    }
+  },
+  "terms": {
+    "entity": {
+      "source_id": "prov",
+      "name": "prov:Entity",
+      "locator": "§4.1, Entity",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Entity",
+      "paraphrase": "A thing considered through fixed aspects, including conceptual or imaginary things.",
+      "quotation": false
+    },
+    "activity": {
+      "source_id": "prov",
+      "name": "prov:Activity",
+      "locator": "§4.1, Activity",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Activity",
+      "paraphrase": "An occurrence over time acting on or with entities.",
+      "quotation": false
+    },
+    "agent": {
+      "source_id": "prov",
+      "name": "prov:Agent",
+      "locator": "§4.1, Agent",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Agent",
+      "paraphrase": "Something bearing responsibility for an activity, entity or another agent’s activity.",
+      "quotation": false
+    },
+    "person": {
+      "source_id": "prov",
+      "name": "prov:Person",
+      "locator": "§4.2, Person",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Person",
+      "paraphrase": "A person considered as a provenance agent.",
+      "quotation": false
+    },
+    "org": {
+      "source_id": "prov",
+      "name": "prov:Organization",
+      "locator": "§4.2, Organization",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Organization",
+      "paraphrase": "A social or legal institution considered as an agent.",
+      "quotation": false
+    },
+    "collection": {
+      "source_id": "prov",
+      "name": "prov:Collection",
+      "locator": "§4.2, Collection",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Collection",
+      "paraphrase": "An entity structuring constituent entities as members.",
+      "quotation": false
+    },
+    "plan": {
+      "source_id": "prov",
+      "name": "prov:Plan",
+      "locator": "§4.3, Plan",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Plan",
+      "paraphrase": "An entity representing intended steps toward agents’ goals.",
+      "quotation": false
+    },
+    "revision": {
+      "source_id": "prov",
+      "name": "prov:Revision",
+      "locator": "§4.3, Revision",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Revision",
+      "paraphrase": "A qualified derivation whose result revises an original while retaining substantial content.",
+      "quotation": false
+    },
+    "role": {
+      "source_id": "prov",
+      "name": "prov:Role",
+      "locator": "§4.3, Role",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Role",
+      "paraphrase": "A function in an activity-qualified provenance context.",
+      "quotation": false
+    },
+    "association": {
+      "source_id": "prov",
+      "name": "prov:Association",
+      "locator": "§4.3, Association",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Association",
+      "paraphrase": "An agent’s responsibility and role in an activity, optionally qualified by a plan.",
+      "quotation": false
+    },
+    "attribution": {
+      "source_id": "prov",
+      "name": "prov:Attribution",
+      "locator": "§4.3, Attribution",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Attribution",
+      "paraphrase": "Ascription of an entity to an agent.",
+      "quotation": false
+    },
+    "derivation": {
+      "source_id": "prov",
+      "name": "prov:Derivation",
+      "locator": "§4.3, Derivation",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Derivation",
+      "paraphrase": "Entity-to-entity transformation, construction or updating represented as a qualified influence.",
+      "quotation": false
+    },
+    "concept": {
+      "source_id": "skos",
+      "name": "skos:Concept",
+      "locator": "§3, especially §§3.1 and 3.5.1",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts",
+      "paraphrase": "A knowledge-organization notion; using it does not automatically identify an OWL class.",
+      "quotation": false
+    },
+    "scheme": {
+      "source_id": "skos",
+      "name": "skos:ConceptScheme",
+      "locator": "§4, especially §§4.1 and 4.6.2",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes",
+      "paraphrase": "An organization of concepts; a scheme need not be an OWL ontology.",
+      "quotation": false
+    },
+    "label": {
+      "source_id": "skos",
+      "name": "Lexical labels",
+      "locator": "§5.1",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#labels",
+      "paraphrase": "A natural-language string associated with a resource, distinct from the resource.",
+      "quotation": false
+    },
+    "observation": {
+      "source_id": "sosa",
+      "name": "sosa:Observation",
+      "locator": "§4.3.2.2",
+      "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/#SOSAObservation",
+      "paraphrase": "An act following a procedure to estimate or calculate a feature property’s value.",
+      "quotation": false
+    },
+    "result": {
+      "source_id": "sosa",
+      "name": "sosa:Result",
+      "locator": "§4.7.2.1",
+      "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/#SOSAResult",
+      "paraphrase": "A result of observation, actuation or sampling; simple values have a separate property.",
+      "quotation": false
+    },
+    "procedure": {
+      "source_id": "sosa",
+      "name": "sosa:Procedure",
+      "locator": "§4.8.2.1",
+      "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/#SOSAProcedure",
+      "paraphrase": "A reusable method describing how observations, samplings or actuations are performed.",
+      "quotation": false
+    },
+    "observable": {
+      "source_id": "sosa",
+      "name": "sosa:ObservableProperty",
+      "locator": "§4.3.2.1",
+      "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/#SOSAObservableProperty",
+      "paraphrase": "An observable quality of a feature, rather than a specification describing that quality.",
+      "quotation": false
+    },
+    "measurement": {
+      "source_id": "dqv",
+      "name": "dqv:QualityMeasurement",
+      "locator": "§4.1",
+      "url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/#dqv:QualityMeasurement",
+      "paraphrase": "Evaluation of a dataset or distribution against a quality metric.",
+      "quotation": false
+    },
+    "metric": {
+      "source_id": "dqv",
+      "name": "dqv:Metric",
+      "locator": "§4.2",
+      "url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/#dqv:Metric",
+      "paraphrase": "A standard for measuring a quality dimension; a measurement provides its observed value.",
+      "quotation": false
+    },
+    "dimension": {
+      "source_id": "dqv",
+      "name": "dqv:Dimension",
+      "locator": "§4.3",
+      "url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/#dqv:Dimension",
+      "paraphrase": "A dataset-quality assessment criterion associated with one or more metrics.",
+      "quotation": false
+    },
+    "annotation": {
+      "source_id": "oa",
+      "name": "oa:Annotation",
+      "locator": "§3.1",
+      "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/#annotations",
+      "paraphrase": "An association involving body and target resources.",
+      "quotation": false
+    },
+    "classifying": {
+      "source_id": "oa",
+      "name": "oa:classifying",
+      "locator": "§3.3.5, motivation classifying",
+      "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/#motivation-and-purpose",
+      "paraphrase": "A motivation for classifying a target.",
+      "quotation": false
+    },
+    "describing": {
+      "source_id": "oa",
+      "name": "oa:describing",
+      "locator": "§3.3.5, motivation describing",
+      "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/#motivation-and-purpose",
+      "paraphrase": "A motivation for describing a target.",
+      "quotation": false
+    },
+    "tagging": {
+      "source_id": "oa",
+      "name": "oa:tagging",
+      "locator": "§3.3.5, motivation tagging",
+      "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/#motivation-and-purpose",
+      "paraphrase": "A motivation for attaching a tag to a target.",
+      "quotation": false
+    },
+    "scenario": {
+      "source_id": "nist",
+      "name": "Threat Scenario",
+      "locator": "Appendix B, printed B-13, PDF page 63",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=63",
+      "paraphrase": "A time-partially-ordered grouping of threat events associated with threat sources.",
+      "quotation": false
+    },
+    "threat_event": {
+      "source_id": "nist",
+      "name": "Threat Event",
+      "locator": "Appendix B, printed B-13, PDF page 63",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=63",
+      "paraphrase": "An event or situation with potential adverse consequences.",
+      "quotation": false
+    },
+    "threat_source": {
+      "source_id": "nist",
+      "name": "Threat Source",
+      "locator": "Appendix B, printed B-13, PDF page 63; attributed there to CNSSI 4009",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=63",
+      "paraphrase": "Intent/method or a situation/method potentially exploiting a vulnerability.",
+      "quotation": false
+    },
+    "predisposition": {
+      "source_id": "nist",
+      "name": "Predisposing Condition",
+      "locator": "Appendix B, printed B-8, PDF page 58",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=58",
+      "paraphrase": "A condition affecting the likelihood of threat-related adverse effects.",
+      "quotation": false
+    },
+    "vulnerability": {
+      "source_id": "nist",
+      "name": "Vulnerability",
+      "locator": "Appendix B, printed B-13, PDF page 63; attributed there to CNSSI 4009",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=63",
+      "paraphrase": "A weakness susceptible to exploitation by a threat source.",
+      "quotation": false
+    },
+    "assessment": {
+      "source_id": "nist",
+      "name": "Risk Assessment",
+      "locator": "Appendix B, printed B-9, PDF page 59; attributed there to SP 800-39",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=59",
+      "paraphrase": "A process identifying, estimating and prioritizing information-system-related risks.",
+      "quotation": false
+    },
+    "assessment_report": {
+      "source_id": "nist",
+      "name": "Risk Assessment Report",
+      "locator": "Appendix B, printed B-9, PDF page 59",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=59",
+      "paraphrase": "The formal documented output of risk assessment.",
+      "quotation": false
+    },
+    "response": {
+      "source_id": "nist",
+      "name": "Risk Response",
+      "locator": "Appendix B, printed B-10, PDF page 60; attributed there to SP 800-39",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=60",
+      "paraphrase": "Accepting, avoiding, mitigating, sharing or transferring risk.",
+      "quotation": false
+    },
+    "controls": {
+      "source_id": "nist",
+      "name": "Security Controls",
+      "locator": "Appendix B, printed B-11, PDF page 61; attributed there to FIPS 199/CNSSI 4009",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=61",
+      "paraphrase": "Safeguards protecting information and systems against security risks.",
+      "quotation": false
+    },
+    "scales": {
+      "source_id": "nist",
+      "name": "Assessment scale: vulnerability severity",
+      "locator": "Appendix F, Table F-2, printed F-2, PDF page 78",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=78",
+      "paraphrase": "Example levels for vulnerability severity.",
+      "quotation": false
+    },
+    "exposure_note": {
+      "source_id": "nist",
+      "name": "Susceptibility/exposure discussion",
+      "locator": "§2.3.1, footnote 27, printed page 10, PDF page 19",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=19",
+      "paraphrase": "Discusses susceptibility/exposure in relation to predisposing conditions.",
+      "quotation": false
+    },
+    "relator": {
+      "source_id": "relator",
+      "name": "«Relator»",
+      "locator": "Definition; Constraints C1-C2",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html#definition",
+      "paraphrase": "A dependent truth-maker connecting multiple participants through material relations.",
+      "quotation": false
+    },
+    "mode": {
+      "source_id": "mode",
+      "name": "«Mode»",
+      "locator": "Definition; Constraints C1-C2",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html#definition",
+      "paraphrase": "An individual intrinsic property dependent on one bearer.",
+      "quotation": false
+    }
+  },
+  "concepts": [
+    {
+      "concept_id": "RKM-C001",
+      "disposition": "RELATED",
+      "term_ids": [
+        "plan"
+      ],
+      "rationale": "Reusable risk-pattern content is a managed specification; an intention to carry out steps is not required for every pattern.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "588b1f8f3188dcb64817823f1948dbfd67bc71536949b6597c7690809cc09982",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C002",
+      "disposition": "RELATED",
+      "term_ids": [
+        "entity"
+      ],
+      "rationale": "Riskium adds boundaries, horizon and objective references to a versioned information specification; PROV Entity supplies no such context schema.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "6d8e7e4b7f23e282a941ceddfed13a898b842c5d88e3906ff85201667be8a7d0",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C003",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "scenario"
+      ],
+      "rationale": "The security source organizes threat events; Riskium records general possible developments about continuing cases, including effects beyond security.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "9bc7333da18b1a8f31d7713ff8b3d1cb614d1fd15dc21c15c3c1d4a65d904015",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "nist"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C004",
+      "disposition": "CONTRAST",
+      "term_ids": [
+        "threat_event"
+      ],
+      "rationale": "NIST permits a potential event or situation; Riskium Occurrence requires an actual occurrence, so the source term cannot establish realization.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "ab9bdfcbeb0474266c72c782aa346f44ba1474128d378d98541d4758302c1278",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "nist"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C005",
+      "disposition": "RELATED",
+      "term_ids": [
+        "classifying"
+      ],
+      "rationale": "Risk nature is an objective-relative source claim; a classification motivation alone supplies neither favorable/unfavorable meaning nor truth.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "3a8f7039fe513bf8e91fc271281d2fa2ad733fc2d4889ea944c6b9a6cc54a033",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "oa"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C006",
+      "disposition": "RELATED",
+      "term_ids": [
+        "concept",
+        "label"
+      ],
+      "rationale": "The controlled nature value is an identified vocabulary resource; its label is not its scheme-qualified identity.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "d6b6b02f53ed55839b3fad43c6acc72c16d0a513a062dc8445d0956a5f624f15",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C007",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "threat_source"
+      ],
+      "rationale": "Riskium permits heterogeneous contextual contributors and opportunities; the security threat-source definition is narrower in subject matter, without a proved class subsumption.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "30e59ea51558fced1428aeb9f129a92a7379cb8996cd46d226cc73350c75607f",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "nist"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C008",
+      "disposition": "RELATED",
+      "term_ids": [
+        "predisposition"
+      ],
+      "rationale": "The source allows likelihood to increase or decrease; the Riskium definition selects susceptibility-increasing conditions and does not assert causation.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "02714461b3cf61f8bbf7531406e3a5ca01867f704b9a709656356a818c325319",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "nist"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C009",
+      "disposition": "CONTRAST",
+      "term_ids": [
+        "threat_event"
+      ],
+      "rationale": "Riskium Trigger is actual and initiating in context; a potential threat event supplies neither actuality nor the initiating interpretation.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "d7a178d73dd31aab9435b3d93bd51cf04080dafc9c4649d08ea85bd82ed8a9ec",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "nist"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C010",
+      "disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "term_ids": [
+        "threat_event"
+      ],
+      "rationale": "A potentially harmful event is not its consequence. No direct definition for Riskium’s cross-category outcome boundary is adopted from this inspected entry.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "c1055f0ff9c3d73e2a07746b9bd349fe6465014df3aaa66a1e8e6d611323480a",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "nist"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C011",
+      "disposition": "RELATED",
+      "term_ids": [
+        "vulnerability",
+        "mode"
+      ],
+      "rationale": "The security weakness account informs one use; the intrinsic-mode interpretation separately requires a bearer. Neither source equates all vulnerabilities with one domain class.",
+      "followup_issues": [
+        23
+      ],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "8266e546bb609856e980f253f1ea6f473224b49f7ecdc1c55a31798a9c6cea86",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "nist",
+        "mode"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C012",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "exposure_note"
+      ],
+      "rationale": "The source links exposure/susceptibility to conditions; Riskium’s timed bearer-to-source situation is a separate authored interpretation, not that note’s formal model.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "765446ed35677805eccd2111f4285f74cff72298274612d6a0e687b1452e16a1",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "nist"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C013",
+      "disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "term_ids": [
+        "entity"
+      ],
+      "rationale": "Considering fixed aspects of an entity does not define the temporal state of a risk situation; the risk-state/workflow distinction remains authored.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "9c27eae3e8a5eca56b2e4ded0986bb41ab1332414d0d7a04a900faf760c01969",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C014",
+      "disposition": "RELATED",
+      "term_ids": [
+        "entity"
+      ],
+      "rationale": "A managed documentary identity persisting across versions has additional institution and content conditions not supplied by PROV Entity.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D02",
+      "authored_definition_sha256": "9b7638be004cff8d44391ade6a643d7936c28486010128735b751b87bee15cd5",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C015",
+      "disposition": "CONTRAST",
+      "term_ids": [
+        "entity",
+        "revision"
+      ],
+      "rationale": "An issued Artifact Version is an entity; prov:Revision describes a derivation, not the resulting version. First issue also need not be a revision.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D02",
+      "authored_definition_sha256": "0f884d0dce651cc19da1ad18b4665a4f21460444f08e8b1ee33e1bf69203c063",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C016",
+      "disposition": "RELATED",
+      "term_ids": [
+        "entity"
+      ],
+      "rationale": "PROV permits conceptual entities but gives no policy for identity of abstract meanings; Riskium content equivalence remains application-governed.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D02",
+      "authored_definition_sha256": "3d1da953b8731973ee8cb63f81f3265012dbde86dbebd8e07aaa6f3314079705",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C017",
+      "disposition": "RELATED",
+      "term_ids": [
+        "concept",
+        "label"
+      ],
+      "rationale": "SKOS separates vocabulary notions from their labels and from OWL classes; Riskium additionally manages the documentary resource’s identity.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D03",
+      "authored_definition_sha256": "db2f9fbb9dca04093081f08778f0ffa9bbbf2adad4adb048466371304005afc8",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C018",
+      "disposition": "RELATED",
+      "term_ids": [
+        "scheme"
+      ],
+      "rationale": "ConceptScheme informs vocabulary organization; Riskium adds scope and governance/version policies without asserting identical extension.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D03",
+      "authored_definition_sha256": "e173e147d35984ddb4da906b76ff08b7c3c3953b28ba8ea5bd2301112f2d04d2",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C019",
+      "disposition": "RELATED",
+      "term_ids": [
+        "concept",
+        "label"
+      ],
+      "rationale": "A classification value is modeled as an identified scheme-qualified resource; it is not a lexical label or automatically an OWL universal.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D03",
+      "authored_definition_sha256": "3fe4977d8607da689cedb719032316a00c12d843fd360f12596a08ad1eb00a03",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C020",
+      "disposition": "RELATED",
+      "term_ids": [
+        "classifying",
+        "annotation"
+      ],
+      "rationale": "A classification motivation helps distinguish the assignment statement from its subject; Riskium additionally requires source and context qualification.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D03",
+      "authored_definition_sha256": "bd5d6a598ad4f80a3540f191848ca295b170cfbe26f471902c93e7a735497862",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "oa"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C021",
+      "disposition": "RELATED",
+      "term_ids": [
+        "tagging",
+        "label"
+      ],
+      "rationale": "The tagging motivation and its lexical content inform use; the Riskium tag artifact and any assignment still require explicit identities.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D03",
+      "authored_definition_sha256": "d844c298d44e3a094a003815001133aa86d9697902483aed0f7646638ffeb606",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "oa",
+        "skos"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C022",
+      "disposition": "RELATED",
+      "term_ids": [
+        "entity"
+      ],
+      "rationale": "The record is a documentary entity about one case in this profile; PROV Entity neither imposes that cardinality nor identifies the case with its entry.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D04",
+      "authored_definition_sha256": "0e31304800e9deef5ebc036bc75dfe968fa53a2944312994b78e67918b257e4d",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C023",
+      "disposition": "CONTRAST",
+      "term_ids": [
+        "entity",
+        "revision"
+      ],
+      "rationale": "An Entry Revision is a version entity with qualified effective links; prov:Revision is the provenance relationship producing a revision.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D04",
+      "authored_definition_sha256": "c3ec1b0971828e5aef5ff7f9cf1fc022a4b7a9502277e459f69f6e9684c94e7d",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C024",
+      "disposition": "RELATED",
+      "term_ids": [
+        "describing"
+      ],
+      "rationale": "Description motivation helps identify a documentary function; the Riskium item has a source and may concern a case, pattern or scenario.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D04",
+      "authored_definition_sha256": "ed1a72f3ce11829e2897d13f18fb816b2994d00f5a517db7c30c3e2d050c1323",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "oa"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C025",
+      "disposition": "RELATED",
+      "term_ids": [
+        "describing"
+      ],
+      "rationale": "Descriptive content about an outcome does not create that outcome; the source motivation does not supply consequence semantics.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D04",
+      "authored_definition_sha256": "e53479f5e2665452395b481a747038debd9a978f672b07a30640aa0bc594b285",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "oa"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C026",
+      "disposition": "RELATED",
+      "term_ids": [
+        "attribution"
+      ],
+      "rationale": "Entity-to-agent attribution can document one part of identification provenance; it is not the full recorded identification, channel or time information.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D04",
+      "authored_definition_sha256": "ec76011dbe9885fa8927100f2899fe0846807a3baeb73d8be7f381db344edc2f",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C027",
+      "disposition": "RELATED",
+      "term_ids": [
+        "concept"
+      ],
+      "rationale": "An intake channel value is a local vocabulary notion, separate from a real-world contributor to risk; SKOS supplies no specific channel taxonomy.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D04",
+      "authored_definition_sha256": "4ff876d9af18db53648db45c5d06ad27c75dae3790719e5f07c56f00e78e9879",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C028",
+      "disposition": "RELATED",
+      "term_ids": [
+        "concept"
+      ],
+      "rationale": "Description roles are local controlled vocabulary resources; their actual allowed functions are defined by Riskium’s source profile.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D04",
+      "authored_definition_sha256": "af6eb5492f0011d17c8f0ff12aa282ba70c5361b7b9d91912f5b0cc3390b7b5c",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C029",
+      "disposition": "RELATED",
+      "term_ids": [
+        "concept"
+      ],
+      "rationale": "A consequence slot preserves the source’s positional vocabulary; no universal consequence ordering follows from SKOS.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D04",
+      "authored_definition_sha256": "d7639a738bfe31fc77da9b9c8820777d7d86bce4ba6b0607c8529576bd741b7c",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C030",
+      "disposition": "RELATED",
+      "term_ids": [
+        "collection"
+      ],
+      "rationale": "Membership organization is a useful information-level analogy; prov:Collection does not turn a register into an OntoUML collective or impose register governance.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D04",
+      "authored_definition_sha256": "3072f2fbe2094696c85f4fdc5174ea606d2d353a83422fe9f49f8eceb7c3ae5d",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C031",
+      "disposition": "CONTRAST",
+      "term_ids": [
+        "assessment",
+        "activity"
+      ],
+      "rationale": "Riskium Activity may be only part of an assessment; the NIST process and security scope cannot be equated with every such activity.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D05",
+      "authored_definition_sha256": "1d769041d480d97b3c70153014490151f337fbf095c91cef302138fd51e8b5ec",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "nist",
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C032",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "assessment_report"
+      ],
+      "rationale": "A security assessment report is a relevant documentary precedent; Riskium information also binds versions, methods, basis and temporal interpretation.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D05",
+      "authored_definition_sha256": "d60b3c178be4eebfb834479130fa22afa7e2e354e23b983bf2ab71f95de7df4c",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "nist"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C033",
+      "disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "term_ids": [
+        "entity"
+      ],
+      "rationale": "A generic information entity does not define a risk-specific assumption/control basis. The basis specification remains authored, with no exact external term adopted.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D05",
+      "authored_definition_sha256": "738a7a329e6623c14f2d79d69179a4095a3428b63bf0339702c7f63b8171c77f",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C034",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "measurement"
+      ],
+      "rationale": "DQV evaluates dataset quality; Riskium records a risk-dimension result. A measurement pattern is relevant without equating the assessment domains.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D05",
+      "authored_definition_sha256": "61b9e0394d1490dcd05f0957c646f0a350f68bd18f778763751175f06c36ebfa",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "dqv"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C035",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "procedure"
+      ],
+      "rationale": "Reusable procedures distinguish a method from an execution; the SOSA domain and Riskium’s risk-assessment interpretation rules differ.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D05",
+      "authored_definition_sha256": "0eff419744009802d6a0bd99de7205985cd8ab4ddc7f9523714220f9f806172a",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "sosa"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C036",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "scales"
+      ],
+      "rationale": "NIST’s example vulnerability-severity levels illustrate a scale, without defining all permissible Riskium dimensions, units or version-compatibility policies.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D05",
+      "authored_definition_sha256": "a705563c110bd1b41e33f653c4443a681ae162ebb3fdbd24c9cf403d708c66db",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "nist"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C037",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "measurement"
+      ],
+      "rationale": "A metric-qualified output illustrates how to document a score; Riskium’s numeric risk output is not dataset quality or the risk itself.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D05",
+      "authored_definition_sha256": "b08cb249a69e08af4ec3e22e3addb67b7d9dcad0afaeb97878d056d0b4b5d8fb",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "dqv"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C038",
+      "disposition": "RELATED",
+      "term_ids": [
+        "concept",
+        "label"
+      ],
+      "rationale": "An identified scale-level resource is distinct from both its label and an assessed value occurrence; the scale version supplies interpretation.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D05",
+      "authored_definition_sha256": "f7b3438be17f79ad27670ad6247f69c97dfff22698bbdc74e66087e2b57230d9",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C039",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "dimension"
+      ],
+      "rationale": "DQV’s criterion is modeled as a SKOS concept; Riskium’s vocabulary aspect and its judged result remain distinct from dataset-quality criteria.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D05",
+      "authored_definition_sha256": "07982a61e14b975e44154a54191780ec0ac6a8eb211430ddfa2ff6136dd163ea",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "dqv"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C040",
+      "disposition": "RELATED",
+      "term_ids": [
+        "concept"
+      ],
+      "rationale": "Observed/estimated/projected status is local controlled terminology; SKOS does not determine its epistemic adequacy.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D05",
+      "authored_definition_sha256": "93380fd7882c7e8fbbc0d52b18bd3ce093a4dbdab57ed265636974903c117ab6",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C041",
+      "disposition": "CONTRAST",
+      "term_ids": [
+        "response"
+      ],
+      "rationale": "A recorded decision selecting a response differs from implementing that response; the security process term does not establish authority or success.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D06",
+      "authored_definition_sha256": "d1cd1366f12f99a04db3e865587c0ed549f239ae783735c38d10ac209ef11b0c",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "nist"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C042",
+      "disposition": "RELATED",
+      "term_ids": [
+        "concept"
+      ],
+      "rationale": "Treatment approach values are controlled resources; their selection and any realization are represented separately.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D06",
+      "authored_definition_sha256": "caf705d0e2c0318ca146c2acab17c20c1ffc20f7568de50da53b752a423cb422",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C043",
+      "disposition": "RELATED",
+      "term_ids": [
+        "plan"
+      ],
+      "rationale": "Intended actions toward a goal are relevant; Riskium adds versioned resources, responsibility, timing and conditions, without asserting full class equivalence.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D06",
+      "authored_definition_sha256": "0ceb042882790789768aa62e9b44e782b0f67834b31d2e29baafb728d8b5bbd8",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C044",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "response",
+        "activity"
+      ],
+      "rationale": "Actual treatment performance relates to security response actions but is general in domain; a plan does not prove performance or effectiveness.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D06",
+      "authored_definition_sha256": "7b8c8527f788446908fb63e7e7c3e54c6bf44aa1c8f960305e8e667f96b5c203",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "nist",
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C045",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "controls"
+      ],
+      "rationale": "Security safeguards cover one use of risk control; Riskium permits cross-category contextual measures and separates implementation from effectiveness.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D06",
+      "authored_definition_sha256": "1993a44dc03eb1a08fb4a0fd7ccd33765a7edff935cb4498660b06d4a9caf642",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "nist"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C046",
+      "disposition": "RELATED",
+      "term_ids": [
+        "concept"
+      ],
+      "rationale": "Primary/contingency are locally governed plan-role values; SKOS provides a vocabulary pattern rather than those domain meanings.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D06",
+      "authored_definition_sha256": "00f108d06e107135b1818225321282130e4b4135427ed2e1b627fe748dc21304",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C047",
+      "disposition": "RELATED",
+      "term_ids": [
+        "agent"
+      ],
+      "rationale": "Provenance responsibility provides useful agent context; Riskium’s scoped capabilities and accountabilities need a declared mapping, not label-based equivalence.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D07",
+      "authored_definition_sha256": "98eab7e4dcec1aca93faae901b4dc80fd06151497299e62a54d476af9f2fbacd",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C048",
+      "disposition": "RELATED",
+      "term_ids": [
+        "person"
+      ],
+      "rationale": "The human-agent reading is compatible context; formal identity/typing alignment with Riskium Person remains unassessed.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D07",
+      "authored_definition_sha256": "7b326be2dd0ad547f4861b95994e287c0f34ca33fc1bc7063f4f1858f724afe3",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C049",
+      "disposition": "RELATED",
+      "term_ids": [
+        "org"
+      ],
+      "rationale": "The social/legal institutional reading informs scope; Riskium responsibility and authorization commitments are additional modeling choices.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D07",
+      "authored_definition_sha256": "7f50db247be5bea2a99729e63d3b4b35909551af2d2d9132a0f065babf3abbab",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C050",
+      "disposition": "CONTRAST",
+      "term_ids": [
+        "entity",
+        "agent"
+      ],
+      "rationale": "A source identifier or description is documentary information; it does not establish an actual agent or resolve the referred identity.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D07",
+      "authored_definition_sha256": "1322aadea123d44b1a1c2d28168c1ae599789b86b480b5c38dc34e58af24c432",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C051",
+      "disposition": "CONTRAST",
+      "term_ids": [
+        "association"
+      ],
+      "rationale": "PROV Association attributes responsibility within an activity; Riskium Assignment Information records a claim whose grounding may remain unsupported.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D07",
+      "authored_definition_sha256": "0953d2eb3bb82c3959ad3270a7a5cd37547f0d09850f9151c6b2afd5707ae91b",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C052",
+      "disposition": "RELATED",
+      "term_ids": [
+        "relator"
+      ],
+      "rationale": "Relator gives the multiple-participant grounding pattern; mandate, temporal scope and responsibility semantics remain Riskium-specific and need semantic judgment.",
+      "followup_issues": [
+        23
+      ],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D07",
+      "authored_definition_sha256": "ba7953dc52c7faccf1c7cd85ea3bbb6c82996d5eb885f5ec986e9d7a91f7be6d",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "relator"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C053",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "role",
+        "association"
+      ],
+      "rationale": "An activity-qualified function is useful context; an OntoUML agent role and a grounded responsibility assignment are not identical to a PROV Role value.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D07",
+      "authored_definition_sha256": "c7a8823c39f39356795eabd7cf6c229de594c0ecafbc1b09d8a2b5feae0de09e",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C054",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "role",
+        "association"
+      ],
+      "rationale": "Approval/issue authority is Riskium-specific; a provenance role or participation does not by itself establish authorization.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D07",
+      "authored_definition_sha256": "ef746bc0466bcdfa7ca04721df87dbd383dd1ab5282b0a1a743a55d54e169c26",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C055",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "person",
+        "role"
+      ],
+      "rationale": "Being a person plus a provenance function does not establish the grounded responsible-person role for a particular mandate.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D07",
+      "authored_definition_sha256": "61f43224df609951279875db88159a78bf4c1aa7aeb09f04f1eef8dae2a649af",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C056",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "org",
+        "role"
+      ],
+      "rationale": "Being an organization plus a provenance function does not establish the grounded responsible-organization role.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D07",
+      "authored_definition_sha256": "d1963557d497ad97e4d8b03f54b47d59bdaa49f2424f3d754cf16c8c7bd20cfd",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C057",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "person",
+        "role"
+      ],
+      "rationale": "Person identity is separate from supported approval authority; PROV does not supply the Riskium authorization policy.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D07",
+      "authored_definition_sha256": "72f3421abcdca41a7a7e70288a17e310fd1c6b1e852f09ed1c7f9e12f916d007",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C058",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "org",
+        "role"
+      ],
+      "rationale": "Organization identity is separate from supported approval authority; the source offers no Riskium mandate acceptance test.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D07",
+      "authored_definition_sha256": "84eb525daff32d51f53728d728e2686241e0230b74815279496d77f7282d20b0",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C059",
+      "disposition": "RELATED",
+      "term_ids": [
+        "concept",
+        "role"
+      ],
+      "rationale": "The term names a responsibility type; an assigned vocabulary value is not the actual role or the relationship grounding it.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D07",
+      "authored_definition_sha256": "5d60cf57ae684b2ba39d85432b90ffd56bba53a2e282b477b229b85d7b454094",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos",
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C060",
+      "disposition": "RELATED",
+      "term_ids": [
+        "concept"
+      ],
+      "rationale": "Analysis-progress values belong to a declared local scheme; they do not imply anything about the real-world risk state.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D08",
+      "authored_definition_sha256": "91d804902c99c34c924afe49626845c8ca89207838484b4427f2601e31a64e3c",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C061",
+      "disposition": "RELATED",
+      "term_ids": [
+        "concept"
+      ],
+      "rationale": "Processing-status values belong to a declared workflow vocabulary; closure does not establish cessation of risk.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D08",
+      "authored_definition_sha256": "84b55a6c0f8dd5d22dc4c417a538252342f8af7b6a3c007eafcdbb4d69d21c87",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C062",
+      "disposition": "RELATED",
+      "term_ids": [
+        "annotation"
+      ],
+      "rationale": "An annotation can express information about a target; Riskium additionally records source-qualified record-state claims and available time precision.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D08",
+      "authored_definition_sha256": "a74e2de0157a049589d94c387086ce08df1be97009ebf882b9e44810fec6f825",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "oa"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C063",
+      "disposition": "CONTRAST",
+      "term_ids": [
+        "scheme",
+        "revision"
+      ],
+      "rationale": "A version of a workflow scheme defines transitions; SKOS scheme aggregation and a PROV revision derivation supply neither those transitions nor authorization rules.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D08",
+      "authored_definition_sha256": "809f08ca93abb5979f467e90ea67f79822ce36c4405db1e37983005a8d9cd6d1",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "skos",
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C064",
+      "disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "term_ids": [
+        "role"
+      ],
+      "rationale": "PROV Role is an activity-qualified function, not the timed record-state situation specified here. No direct external equivalent is adopted from that comparison.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D08",
+      "authored_definition_sha256": "32271ea2ed9626409e79ff4d2e2c619deb4aa862cd4e7d8a4a306182fadf3b55",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C065",
+      "disposition": "RELATED",
+      "term_ids": [
+        "derivation"
+      ],
+      "rationale": "Provenance links can support traceability; a derivation does not define an evidence role, entail claim truth or establish independent corroboration.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D09",
+      "authored_definition_sha256": "5be37161ae53e1f5fcb9f45fa94116f3493875a63f0e050fcbf861afa5a7ffe6",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C066",
+      "disposition": "RELATED",
+      "term_ids": [
+        "entity",
+        "role"
+      ],
+      "rationale": "An artifact may play an evidential role in context; a generic entity/function does not make every information artifact evidence for every claim.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D09",
+      "authored_definition_sha256": "c6502f7d2313be099df7c4e02c48ed72042d7aa9041d20869e6baaeaead2a77b",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C067",
+      "disposition": "RELATED",
+      "term_ids": [
+        "observation"
+      ],
+      "rationale": "The procedure/feature/value separation informs observations; Riskium’s subject, time and procedure qualification remains its own profile.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D10",
+      "authored_definition_sha256": "a31d0602b6537c4caf347717bd5a6cc3e75a78134eb79ccc4f68e124947e2d12",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "sosa"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C068",
+      "disposition": "RELATED",
+      "term_ids": [
+        "result"
+      ],
+      "rationale": "SOSA Result includes actuation and sampling outputs too; Riskium selects observation information and adds explicit interpretation context.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D10",
+      "authored_definition_sha256": "7b660221341d48f1359461ec7e15b81fcc009585650f24a3f619694437faebdc",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "sosa"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C069",
+      "disposition": "ANALOGY",
+      "term_ids": [
+        "metric",
+        "observable"
+      ],
+      "rationale": "The indicator is a versioned information specification; it is neither SOSA’s observable property nor a DQV dataset-quality metric as such.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D10",
+      "authored_definition_sha256": "ec765e03e516ea9a295473eaf70893bfac0ab473f0602459a31acc03de53e589",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "dqv",
+        "sosa"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C070",
+      "disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "term_ids": [
+        "metric"
+      ],
+      "rationale": "A measuring standard is not a comparator-qualified decision boundary. No direct threshold equivalent is adopted from the inspected DQV entry.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D10",
+      "authored_definition_sha256": "3abf29196482b00645aeb2af24d8964e25927ddfefa0eecb9266be77e8e7bbf2",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "dqv"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C071",
+      "disposition": "RELATED",
+      "term_ids": [
+        "result"
+      ],
+      "rationale": "An informative signal may arise from results, but is not automatically an observation result or proof of a risk event.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D10",
+      "authored_definition_sha256": "f244b1ed62c670baf57ccb90cbe233adc43a3005f32eb22fab5758392bce7969",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "sosa"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-C072",
+      "disposition": "NEEDS_LICENSED_SOURCE",
+      "term_ids": [],
+      "rationale": "The ISO catalogue confirms edition identity only. Exact normative risk-criteria wording and clause mapping remain unassessed until legitimate text is inspected.",
+      "followup_issues": [
+        78
+      ],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D11",
+      "authored_definition_sha256": "9fc9241359ebe2a0052d3624cac2efd0cc1fe56bf73729774758ec7bf25e626b",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "iso"
+      ],
+      "source_locator_status": "METADATA_ONLY_NO_NORMATIVE_TERM_LOCATOR"
+    },
+    {
+      "concept_id": "RKM-C073",
+      "disposition": "NEEDS_LICENSED_SOURCE",
+      "term_ids": [],
+      "rationale": "Riskium models the managed appetite statement. Exact ISO/Risk IT/COBIT term-level readings require the adopted editions and locators in #78; no normative definition is asserted here.",
+      "followup_issues": [
+        78
+      ],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D11",
+      "authored_definition_sha256": "a41e5dc9ec73612cc08f6d146d685230cdf78b36a7f1358e2df13292007a88ef",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "iso"
+      ],
+      "source_locator_status": "METADATA_ONLY_NO_NORMATIVE_TERM_LOCATOR"
+    },
+    {
+      "concept_id": "RKM-C074",
+      "disposition": "NEEDS_LICENSED_SOURCE",
+      "term_ids": [],
+      "rationale": "The recorded tolerance statement retains source-specific meanings. Metadata cannot resolve permissible-deviation versus remaining-risk readings or justify a normative crosswalk.",
+      "followup_issues": [
+        78
+      ],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D11",
+      "authored_definition_sha256": "32bab859d272e1960723ad53fdf7ae9cb1f6bbbc295f6a56a5277c5ddb505e37",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "iso"
+      ],
+      "source_locator_status": "METADATA_ONLY_NO_NORMATIVE_TERM_LOCATOR"
+    },
+    {
+      "concept_id": "RKM-X01",
+      "disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "term_ids": [
+        "entity"
+      ],
+      "rationale": "PROV Entity does not specify continuing organizational risk-case identity. This scoped source comparison neither proves novelty nor replaces the existing COVER/IRISPortal comparison or independent review.",
+      "followup_issues": [
+        23
+      ],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "1c983b5a8f5a4facfd85e1eed0dede606a08986e4d6b02b09106902e13bf5bc4",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-X02",
+      "disposition": "CONTRAST",
+      "term_ids": [
+        "entity"
+      ],
+      "rationale": "An informational objective reference and the objective referred to are distinct; PROV Entity’s broad scope cannot alone resolve their identity.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D11",
+      "authored_definition_sha256": "9f5fc6f5737c13985ea824e8f9ea10cb0cd5daeee41ff53bf27037b88bbad27f",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-X03",
+      "disposition": "RELATED",
+      "term_ids": [
+        "annotation"
+      ],
+      "rationale": "An annotation can express uncertainty context, but supplies no probability or evidence-strength semantics; Riskium preserves the authored statement and its limitations.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D05",
+      "authored_definition_sha256": "035695e5556206de3d19a53ff0cafb6ed7c5e175633de0a7fd0cffc69a4ccd8a",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "oa"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-X04",
+      "disposition": "CONTRAST",
+      "term_ids": [
+        "measurement"
+      ],
+      "rationale": "A significance/acceptability judgment against criteria is not merely an observed number or metric result; the decision semantics remain Riskium’s authored specification.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D05",
+      "authored_definition_sha256": "0f69cfccc44bc1be7f1e88e8d0334ed8c1d0e0c304187d86e1d638ca4d8d40e6",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "dqv"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-X05",
+      "disposition": "CONTRAST",
+      "term_ids": [
+        "entity",
+        "controls"
+      ],
+      "rationale": "A documentary identifier may describe a safeguard without proving that its bearer exists, is implemented or is effective.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D06",
+      "authored_definition_sha256": "fa2ddea40d1f2bb9c1fdbabb574fa14ce3c2bb6a2c7574d032070abf2626a4c8",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov",
+        "nist"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    },
+    {
+      "concept_id": "RKM-X06",
+      "disposition": "CONTRAST",
+      "term_ids": [
+        "entity",
+        "threat_source"
+      ],
+      "rationale": "A recorded contributor reference may remain hypothetical or unresolved; it cannot be identified with NIST’s threat source or establish actual causation.",
+      "followup_issues": [],
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "subdomain_id": "D01",
+      "authored_definition_sha256": "58c16f21be86487815ab0589c3ea536a105f14ad4c5e056d4c52590913ade01f",
+      "review_status": "DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison; no independent human rating recorded",
+      "reviewed_on": "2026-11-05",
+      "source_ids": [
+        "prov",
+        "nist"
+      ],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED"
+    }
+  ],
+  "summary": {
+    "concepts": 80,
+    "subdomains": 11,
+    "dispositions": {
+      "RELATED": 40,
+      "ANALOGY": 18,
+      "CONTRAST": 13,
+      "NO_DIRECT_EQUIVALENT_REVIEWED": 6,
+      "NEEDS_LICENSED_SOURCE": 3
+    },
+    "formal_equivalences": 0,
+    "independent_ratings": 0
+  }
+}

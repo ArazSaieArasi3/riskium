@@ -1,0 +1,175 @@
+{
+  "status": "ALL_EXTERNAL_TERM_LOCATORS_ACCOUNTED",
+  "date": "2026-11-05",
+  "terms": 39,
+  "locators": [
+    {
+      "term": "entity",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "activity",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "agent",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "person",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "org",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "collection",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "plan",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "revision",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "role",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "association",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "attribution",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "derivation",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "concept",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "scheme",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "label",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "observation",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "result",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "procedure",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "observable",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "measurement",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "metric",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "dimension",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "annotation",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "classifying",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "describing",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "tagging",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "scenario",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "threat_event",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "threat_source",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "predisposition",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "vulnerability",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "assessment",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "assessment_report",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "response",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "controls",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "scales",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "exposure_note",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "relator",
+      "status": "LOCATOR_CHECKED"
+    },
+    {
+      "term": "mode",
+      "status": "PRIMARY_INDEXED_TEXT_INSPECTED_DIRECT_403"
+    }
+  ],
+  "response_body_hashes": {
+    "prov": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "skos": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+    "sosa": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+    "dqv": "271d3e820c681127131595d2c8bf8345e925149192f6cab821f101f09d372a63",
+    "oa": "a7513e022f56c0a6f4e99ac11aec03f3451d1ff1ce14054780b3ccfb38fa7980",
+    "nist": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+    "relator": "639fcd67050a2dbb0d94fe6567a112e039d8b0ea429f636f3e7122d36c564757",
+    "iso": "562ac6054dcb28c3599118fee2757f4cdfd21bb8a037a3444a99ea7fb208e883",
+    "mode": null
+  },
+  "full_normative_text_inspected": false
+}
