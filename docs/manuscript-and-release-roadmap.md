@@ -1,3 +1,7 @@
+## Current maintenance checkpoint — 5 November 2026
+
+The author-held manuscript is 7.2.4 after the qualified layout-only revision in [#86](https://github.com/ArazSaieArasi3/riskium/issues/86). Its private binaries remain separate. Source v0.3.8 is published and immutable; its article-review checkpoint remains 7.2.3. Reader 0.4.8 adds [documentary comparisons for all 80 concepts](../documentation/0.4.8/concepts/External-Definitions.md) in #85, without changing the model or database. Actual publication closure belongs to the #85 completion evidence. Next: #78 normative adoption, #77 executable module decisions and #23 real independent interpretation, followed by #13/#71 case reconstruction. The dated original plan follows.
+
 # Manuscript and source-release roadmap
 
 Planning source: #76, 4 November 2026. The current author-held conference candidate is **7.2.3**: ten A4 pages, 36 references and six requested author papers, with exact file identities in `evaluation/manuscript-review/v7.2.3/receipt.json`. Its Word/PDF remain author-held; no submission or acceptance is asserted. The historical selected MANUSCRIPT component remains **7.0.8**.

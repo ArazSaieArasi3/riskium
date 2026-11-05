@@ -11,6 +11,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
+    # Preserve the published 0.4.7 checkpoint; reader 0.4.8 owns later promotion.
+    if: github.sha == 'ae181cd73153911133acc4c747a91a41a5f01b73'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     outputs:

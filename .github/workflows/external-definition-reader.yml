@@ -1,0 +1,69 @@
+name: Source-qualified external definition reader 0.4.8
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+    paths: ['references/concept-definitions/**', 'documentation/0.4.8/**', 'tools/build_external_definitions.py', 'tools/publication/external_definition_documentation.py', 'tests/test_external_definitions.py', '.github/workflows/external-definition-reader.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: riskium-reader-main
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/publication/requirements.txt
+      - name: Qualify source dispositions, exact inherited reader and both publication projections
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python tools/check_source_transition.py --check
+          python tools/build_external_definitions.py --check
+          python tools/publication/external_definition_documentation.py --output build/site --wiki-output build/wiki
+          python -m unittest discover -s tests -p test_external_definitions.py -v
+          python -m unittest discover -s tests -p test_dictionary_documentation.py -v
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: external-definition-reader-${{ github.sha }}
+          path: |
+            build/wiki/
+            build/site/dictionary-validation.json
+      - uses: actions/upload-pages-artifact@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: build/site
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Require exact main before promoting maintained reader
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: test "$(gh api repos/${{ github.repository }}/git/ref/heads/main --jq .object.sha)" = "$GITHUB_SHA"
+      - uses: actions/configure-pages@v5
+      - id: deployment
+        uses: actions/deploy-pages@v4
