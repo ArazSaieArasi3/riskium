@@ -1,0 +1,134 @@
+{
+  "status": "CURRENT_MAIN_CHECKS_PASS",
+  "source": "488db8a2336ffe963681e91144d7561e16bddded",
+  "runs": [
+    {
+      "id": 42032864768,
+      "name": "Released v0.3.7 reader documentation",
+      "status": "completed",
+      "conclusion": "skipped",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42032864768"
+    },
+    {
+      "id": 42032590393,
+      "name": "v0.3.7 six-asset source freeze",
+      "status": "completed",
+      "conclusion": "skipped",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42032590393"
+    },
+    {
+      "id": 42032581209,
+      "name": "Nature-task reader for proposed v0.3.7",
+      "status": "completed",
+      "conclusion": "skipped",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42032581209"
+    },
+    {
+      "id": 42031546539,
+      "name": "Reference corpus integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546539"
+    },
+    {
+      "id": 42031546466,
+      "name": "Documentation integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546466"
+    },
+    {
+      "id": 42031546455,
+      "name": "v0.3.5 offline release support",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546455"
+    },
+    {
+      "id": 42031546261,
+      "name": "Claim-based quality integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546261"
+    },
+    {
+      "id": 42031546352,
+      "name": "Current manuscript and reader source transition",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546352"
+    },
+    {
+      "id": 42031546325,
+      "name": "Requirement and CQ evidence",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546325"
+    },
+    {
+      "id": 42031546220,
+      "name": "Source-qualified external definition reader 0.4.8",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546220"
+    },
+    {
+      "id": 42031546389,
+      "name": "Post-release integration and scope",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546389"
+    },
+    {
+      "id": 42031546219,
+      "name": "Post-v0.3.6 source-qualified full suite",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546219"
+    },
+    {
+      "id": 42031546207,
+      "name": "Post-v0.3.7 source-qualified full suite",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546207"
+    },
+    {
+      "id": 42031546333,
+      "name": "Current documentation 0.4.0 integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546333"
+    },
+    {
+      "id": 42031546337,
+      "name": "Evidence-reference lifecycle and preserved source",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546337"
+    },
+    {
+      "id": 42031546353,
+      "name": "v0.3.5 component selection",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546353"
+    },
+    {
+      "id": 42031546369,
+      "name": "Current artifact and paper baseline alignment",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546369"
+    },
+    {
+      "id": 42031546372,
+      "name": "Current v0.3.8 article companion reader",
+      "status": "completed",
+      "conclusion": "skipped",
+      "html_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42031546372"
+    }
+  ],
+  "successful_runs": 14,
+  "skipped_retired_publisher_runs": 4
+}
