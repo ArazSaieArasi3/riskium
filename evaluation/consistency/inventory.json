@@ -4,8 +4,8 @@
   "source_files": [
     {
       "path": ".github/README.md",
-      "sha256": "09f858fd6a95ea933f167d8d0a2f9424f6ced686cae4d9c4f459022cea27e760",
-      "bytes": 9414
+      "sha256": "363772f1dcbf97152df3777de637331e3ac24c80e875c19e5c87fbb890156370",
+      "bytes": 9825
     },
     {
       "path": ".github/workflows/assessment-alignment.yml",
@@ -239,8 +239,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "09f858fd6a95ea933f167d8d0a2f9424f6ced686cae4d9c4f459022cea27e760",
-      "bytes": 9414
+      "sha256": "363772f1dcbf97152df3777de637331e3ac24c80e875c19e5c87fbb890156370",
+      "bytes": 9825
     },
     {
       "path": "RIGHTS.md",
@@ -296,6 +296,11 @@
       "path": "docs/conference-readiness.md",
       "sha256": "74bc16dc4f865f896d66bddc3d10af0201363d6fd30c893738d55111c2db653d",
       "bytes": 7968
+    },
+    {
+      "path": "docs/design/semantic-core-and-application-profiles.md",
+      "sha256": "4ba699a929002468490de6ae3f796e12b73aa038cdb0be072e958a21da6b9acc",
+      "bytes": 7164
     },
     {
       "path": "docs/documentation-policy.md",
@@ -5899,8 +5904,8 @@
     },
     {
       "path": "tools/check_source_transition.py",
-      "sha256": "7d32e0e6e2f36fe23b3f70e654f025e8e7641e55205233d8f6d6546a4d98bcaa",
-      "bytes": 7845
+      "sha256": "bd6574f1043556cfc18f6026a74f011af9e3340b60d75c86300d0cb2c915c318",
+      "bytes": 7906
     },
     {
       "path": "tools/complete_risk_nature_readback.py",
