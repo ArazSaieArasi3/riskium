@@ -10,6 +10,8 @@ Riskium is a conceptual ontology for organizing organizational risk knowledge. I
 
 **Concept source review:** [All 80 documentary dispositions](https://github.com/ArazSaieArasi3/riskium/blob/main/documentation/0.4.8/concepts/External-Definitions.md) distinguish relevant definitions, analogies, contrasts and three normative deferrals. The [reviewed dictionary](https://github.com/ArazSaieArasi3/riskium/blob/main/documentation/0.4.8/concepts/README.md) preserves authored definitions; no formal equivalence or independent rating is asserted. Reader 0.4.8 is documentation maintenance over the unchanged v0.3.8 source release.
 
+**Design policy:** [Semantic core and application profiles](https://github.com/ArazSaieArasi3/riskium/blob/main/docs/design/semantic-core-and-application-profiles.md) records the adopted analytical RiskCase interpretation and local customization rules. It is a prospective design decision; pinned model, generated readers and historical test outcomes retain their original scope pending source reconciliation.
+
 ## Choose a path
 
 | Goal | Start here | Continue with |

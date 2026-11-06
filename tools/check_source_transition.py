@@ -41,6 +41,7 @@ SCHEDULERS = {
     '.github/workflows/current-documentation-pages.yml',
 }
 ADDITIVE_FILES = {
+    'docs/design/semantic-core-and-application-profiles.md',
     '.github/workflows/subdomain-dictionary.yml',
     '.github/workflows/source-transition.yml',
     'tools/check_source_transition.py', 'tests/test_source_transition.py',
