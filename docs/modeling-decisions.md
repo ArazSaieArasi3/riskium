@@ -1,5 +1,9 @@
 # Modeling decisions
 
+## Semantic core and application profiles
+
+The [adopted design decision](design/semantic-core-and-application-profiles.md) separates identifiable analytical risk items from application-specific approval, register admission and assessment completeness. Extensions preserve core meanings and declare their local validation profile. It records the scope of the clarification and the source/generated-artifact reconciliation still required; historical model and test results retain their original bindings.
+
 ## Cases, entries and scenarios
 
 Case identity persists across descriptions, reassessments and administrative record changes. Equal text or equal scores do not automatically merge cases. A change in subject or context may require an explicit identity review.
