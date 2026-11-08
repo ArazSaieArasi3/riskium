@@ -1,0 +1,250 @@
+{
+  "schema": "riskium-issue93-export-contract-verification-1",
+  "date_tehran": "2026-11-08",
+  "status": "B04_NATIVE_OWL_CONTRACT_COMPLETE_NOT_PROMOTED",
+  "source_candidate_commit": "f3d6b28d32d27721a52470d7e0365ae42f5959de",
+  "checks": {
+    "deterministic_export_check": true,
+    "contract_tests": true,
+    "pinned_native_schema": true,
+    "sdk_roundtrip": true,
+    "hermit_consistency": true,
+    "owl2_dl_profile": true,
+    "combined_shacl": true,
+    "baseline_regressions": true,
+    "frozen_input_hashes_preserved": true
+  },
+  "summary": {
+    "contract_tests": 14,
+    "contract_tests_passed": 14,
+    "baseline_regression_tests": 23,
+    "baseline_regression_passed": 23,
+    "combined_shacl_cases": 20,
+    "combined_shacl_matches": 20,
+    "negative_data_controls": 14,
+    "sdk_elements": 596,
+    "native_schema_errors": 0,
+    "production_promoted": false
+  },
+  "export_receipt": {
+    "schema": "riskium-candidate-export-receipt-1",
+    "status": "CANDIDATE_GENERATED_NOT_PROMOTED",
+    "contract_sha256": "64c7885a42b0c5b256d195b6c485e5ce88fdaaf72404194a4424bbdb9b8a09b4",
+    "source_version": "0.3.2-structural.2",
+    "outputs_sha256": {
+      "candidate.ontouml.json": "7e431e6c4b85b60f405fb3180d34239d98e16c4b69aedbe43c1c5977e0e8005f",
+      "candidate.owl.ttl": "666819ac784454784c6e6c0f307138951b9478bd15fccbb29e058cb44f8b5d09",
+      "mapping-receipt.json": "568c7ca49c4d7109e5ed81e510574455bca220ec87cf58e9227f52a0ad5a70c6"
+    },
+    "downstream_bindings": {
+      "shacl": {
+        "path": "evaluation/manuscript-review/v7.2.3/issue93-integration/combined-managed.shacl.ttl",
+        "sha256": "a7d9f93e530a14d21a7fd0847cb62d628852df6ef160345365f42baedeabe1d1"
+      },
+      "definitions": [
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-integration/definitions/RKM-C014.md",
+          "sha256": "641bb21c8a419c472dae8e336a7281f94d34cfd3ecb773048c32790fa885cba3"
+        },
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-integration/definitions/RKM-C047.md",
+          "sha256": "0880e6018706fdd0ea9c05d564e79be5ab0e1309e5997549e04c14660e522901"
+        },
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-integration/definitions/RKM-C065.md",
+          "sha256": "66211acf5a8e03f50fa68899add9688a01e6ce8f3cbd17f856191f52e6203b0f"
+        },
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-integration/definitions/RKM-C066.md",
+          "sha256": "1d97102efcb3b72204e0b118459f4c6682d58322d24bdc002e17a00dc73ba288"
+        },
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-integration/definitions/RKM-C075.md",
+          "sha256": "d88858352daffaf01e5a0eb705191bdbe5d1b0672169fd65b1c85852ad3bc1d6"
+        },
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-integration/definitions/RKM-C076.md",
+          "sha256": "e84728acc55e1bf048a3149ab78563b0a88baef12380c67c52df4478707964a9"
+        }
+      ],
+      "dictionary_status": "Six selected candidate definitions bound; full 82-concept dictionary and structural receipt generation remain in reader reconciliation."
+    },
+    "boundary": "Bindings identify reviewed candidate inputs, not completed full dictionary/Pages/Wiki publication or database migration."
+  },
+  "native_schema_errors": [],
+  "contract_tests": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_all_source_edges_and_typed_signatures_survive (test_export_contract.CandidateContract.test_all_source_edges_and_typed_signatures_survive) ... ok\ntest_current_class_annotations_come_from_candidate (test_export_contract.CandidateContract.test_current_class_annotations_come_from_candidate) ... ok\ntest_generation_is_byte_deterministic (test_export_contract.CandidateContract.test_generation_is_byte_deterministic) ... ok\ntest_legacy_native_grouping_is_rejected (test_export_contract.CandidateContract.test_legacy_native_grouping_is_rejected) ... ok\ntest_missing_generator_binding_is_rejected (test_export_contract.CandidateContract.test_missing_generator_binding_is_rejected) ... ok\ntest_namespace_change_is_rejected (test_export_contract.CandidateContract.test_namespace_change_is_rejected) ... ok\ntest_native_is_identical_to_combined_candidate (test_export_contract.CandidateContract.test_native_is_identical_to_combined_candidate) ... ok\ntest_native_relation_mutation_is_rejected (test_export_contract.CandidateContract.test_native_relation_mutation_is_rejected) ... ok\ntest_owl_logical_axioms_match_previous_candidate (test_export_contract.CandidateContract.test_owl_logical_axioms_match_previous_candidate) ... ok\ntest_promotion_and_path_escape_are_rejected (test_export_contract.CandidateContract.test_promotion_and_path_escape_are_rejected) ... ok\ntest_stale_downstream_binding_is_rejected (test_export_contract.CandidateContract.test_stale_downstream_binding_is_rejected) ... ok\ntest_wrong_digest_is_rejected (test_export_contract.CandidateContract.test_wrong_digest_is_rejected) ... ok\ntest_wrong_inventory_is_rejected (test_export_contract.CandidateContract.test_wrong_inventory_is_rejected) ... ok\ntest_wrong_version_is_rejected (test_export_contract.CandidateContract.test_wrong_version_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 1.117s\n\nOK",
+    "elapsed_ms": 1383
+  },
+  "baseline_regressions": {
+    "test_native_exchange.py": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_abstract_stereotype_is_not_abstract_flag (test_native_exchange.NativeExchangeRegression.test_abstract_stereotype_is_not_abstract_flag) ... ok\ntest_bearer_cardinality_lost (test_native_exchange.NativeExchangeRegression.test_bearer_cardinality_lost) ... ok\ntest_constraint_note_lost (test_native_exchange.NativeExchangeRegression.test_constraint_note_lost) ... ok\ntest_current_export (test_native_exchange.NativeExchangeRegression.test_current_export) ... ok\ntest_domain_member_lost (test_native_exchange.NativeExchangeRegression.test_domain_member_lost) ... ok\ntest_external_bridge_changed (test_native_exchange.NativeExchangeRegression.test_external_bridge_changed) ... ok\ntest_generalization_reversed (test_native_exchange.NativeExchangeRegression.test_generalization_reversed) ... ok\ntest_identity_supplier_changed (test_native_exchange.NativeExchangeRegression.test_identity_supplier_changed) ... ok\ntest_relation_direction_reversed (test_native_exchange.NativeExchangeRegression.test_relation_direction_reversed) ... ok\ntest_unjustified_covering_added (test_native_exchange.NativeExchangeRegression.test_unjustified_covering_added) ... ok\ntest_untyped_boundary_promoted (test_native_exchange.NativeExchangeRegression.test_untyped_boundary_promoted) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.071s\n\nOK",
+      "elapsed_ms": 358,
+      "tests": 11
+    },
+    "test_owl_mapping.py": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_all_source_subclasses_and_relation_typing_survive (test_owl_mapping.OwlMappingRegression.test_all_source_subclasses_and_relation_typing_survive) ... ok\ntest_cardinality_direction_and_open_world_structure (test_owl_mapping.OwlMappingRegression.test_cardinality_direction_and_open_world_structure) ... ok\ntest_constraint_axioms_have_reviewed_scope (test_owl_mapping.OwlMappingRegression.test_constraint_axioms_have_reviewed_scope) ... ok\ntest_export_is_parseable_complete_and_pinned (test_owl_mapping.OwlMappingRegression.test_export_is_parseable_complete_and_pinned) ... ok\ntest_native_end_mutation_is_rejected (test_owl_mapping.OwlMappingRegression.test_native_end_mutation_is_rejected) ... ok\ntest_only_reviewed_disjointness_without_covering_or_import (test_owl_mapping.OwlMappingRegression.test_only_reviewed_disjointness_without_covering_or_import) ... ok\ntest_only_source_backed_property_inclusions (test_owl_mapping.OwlMappingRegression.test_only_source_backed_property_inclusions) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.137s\n\nOK",
+      "elapsed_ms": 501,
+      "tests": 7
+    },
+    "test_source_transition.py": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_actual_candidate_has_complete_reviewed_source_accounting (test_source_transition.SourceTransition.test_actual_candidate_has_complete_reviewed_source_accounting) ... ok\ntest_deleted_reviewed_files_are_rejected (test_source_transition.SourceTransition.test_deleted_reviewed_files_are_rejected) ... ok\ntest_new_scientific_code_cannot_inherit_old_receipts (test_source_transition.SourceTransition.test_new_scientific_code_cannot_inherit_old_receipts) ... ok\ntest_reader_replacement_is_explicit_and_unchanged_code_is_reused (test_source_transition.SourceTransition.test_reader_replacement_is_explicit_and_unchanged_code_is_reused) ... ok\ntest_research_implementation_drift_is_rejected (test_source_transition.SourceTransition.test_research_implementation_drift_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.321s\n\nOK",
+      "elapsed_ms": 478,
+      "tests": 5
+    }
+  },
+  "sdk": {
+    "engine": "ontouml-js",
+    "version": "1.0.0",
+    "node": "v24.22.1",
+    "input_sha256": "7e431e6c4b85b60f405fb3180d34239d98e16c4b69aedbe43c1c5977e0e8005f",
+    "checked_elements": 596,
+    "status": "PASS",
+    "errors": [],
+    "scope": "Direct parse/serialize and source-invariant preservation; not GUI import or independent conceptual acceptance.",
+    "runtime_adjustment": "networkInterfaces returns an empty object for generated-ID seeding; source IDs and SDK serializer rules are unchanged."
+  },
+  "hermit_consistency": {
+    "exit_code": 0,
+    "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.",
+    "stderr": "",
+    "elapsed_ms": 1364
+  },
+  "owl_profile": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "elapsed_ms": 1221
+  },
+  "shacl_cases": [
+    {
+      "case": "valid-support",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "pass": true
+    },
+    {
+      "case": "valid-challenge",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "pass": true
+    },
+    {
+      "case": "valid-context",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "pass": true
+    },
+    {
+      "case": "same-artifact-two-uses",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "pass": true
+    },
+    {
+      "case": "artifact-without-evidential-role",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "pass": true
+    },
+    {
+      "case": "reference-record-without-actual-use",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "pass": true
+    },
+    {
+      "case": "orphan-reference-role",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "case": "orphan-typed-role",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "case": "pointer-without-grounded-use",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "case": "missing-grounding",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "case": "missing-purpose",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "case": "invalid-purpose",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "case": "missing-reference",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "case": "missing-item",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "case": "same-mediated-individual",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "case": "reference-points-to-other-item",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "case": "context-mismatch",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "case": "use-context-mismatch",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "case": "aliased-participants",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "case": "alias-chain-participants",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    }
+  ],
+  "boundary": "P1 native/OWL contract route is complete. Full dictionary/readers/CI reconciliation and P2 database use mapping remain open. No production migration, real-data result, historical test rerun or overall semantic acceptance is inferred."
+}

@@ -1,0 +1,105 @@
+{
+  "schema": "riskium-candidate-export-contract-1",
+  "source_version": "0.3.2-structural.2",
+  "term_namespace": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#",
+  "ontology_iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium",
+  "version_iri": "https://github.com/ArazSaieArasi3/riskium/candidates/issue93/generalization-sets",
+  "evidence_namespace": "https://github.com/ArazSaieArasi3/riskium/candidates/issue93/evidence-use#",
+  "namespace_policy": "Keep existing term IRIs for the compatibility candidate, with a distinct candidate versionIRI. No equivalence between versions or public promotion is inferred. SHACL uses these same IRIs.",
+  "source": {
+    "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/candidate-model.json",
+    "sha256": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7"
+  },
+  "policy": {
+    "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/set-policy.json",
+    "sha256": "56f298c816942cd9d6630f035fd5681fb5cc52ad74157dd3eaea39ff5013c97a"
+  },
+  "inventory": {
+    "concepts": 82,
+    "imported_types": 1,
+    "associations": 137,
+    "generalizations": 67,
+    "constraints": 26,
+    "formal_classes": 79,
+    "formal_relations": 130,
+    "retained_sets": 8
+  },
+  "generator_inputs": [
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/build_candidate.py",
+      "sha256": "d80ab73519db8eb9887114dfd8a179fc10bc7e7301764662482c6f943470572f"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue93-evidence-use/build_candidate.py",
+      "sha256": "061979bf05127360d4311f6598517ab032e868c3c25aff6ef284d83af299b887"
+    },
+    {
+      "path": "tools/build_native.py",
+      "sha256": "9fc76f243bc5b560f00e9444467d1e99c1183042018926dc4942f2f616727d88"
+    },
+    {
+      "path": "tools/build_owl.py",
+      "sha256": "c596e1ca582c2202225f574e96cba5d1416842076a1cf5272820f0e494be6bd6"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue93-export-contract/export_candidate.py",
+      "sha256": "f49eaff6c9d23a0ca6c70c0463ddb6aa04e6e4702c56274b99a4bd831ba2439b"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue93-export-contract/candidate_owl.py",
+      "sha256": "6f711943b4fa202c67a12a7c6f7e2c029073f7662dfadff7dddb9e74696952e5"
+    }
+  ],
+  "frozen_inputs": [
+    {
+      "path": "ontology/riskium-model.json",
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59"
+    },
+    {
+      "path": "ontology/native/riskium.ontouml.json",
+      "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95"
+    },
+    {
+      "path": "ontology/derived/riskium.owl.ttl",
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58"
+    },
+    {
+      "path": "evaluation/native-review-decisions.json",
+      "sha256": "38a09df7b9914be79001f94556267d624510957eae16c2e53a8da93afe219211"
+    }
+  ],
+  "downstream_bindings": {
+    "shacl": {
+      "path": "evaluation/manuscript-review/v7.2.3/issue93-integration/combined-managed.shacl.ttl",
+      "sha256": "a7d9f93e530a14d21a7fd0847cb62d628852df6ef160345365f42baedeabe1d1"
+    },
+    "definitions": [
+      {
+        "path": "evaluation/manuscript-review/v7.2.3/issue93-integration/definitions/RKM-C014.md",
+        "sha256": "641bb21c8a419c472dae8e336a7281f94d34cfd3ecb773048c32790fa885cba3"
+      },
+      {
+        "path": "evaluation/manuscript-review/v7.2.3/issue93-integration/definitions/RKM-C047.md",
+        "sha256": "0880e6018706fdd0ea9c05d564e79be5ab0e1309e5997549e04c14660e522901"
+      },
+      {
+        "path": "evaluation/manuscript-review/v7.2.3/issue93-integration/definitions/RKM-C065.md",
+        "sha256": "66211acf5a8e03f50fa68899add9688a01e6ce8f3cbd17f856191f52e6203b0f"
+      },
+      {
+        "path": "evaluation/manuscript-review/v7.2.3/issue93-integration/definitions/RKM-C066.md",
+        "sha256": "1d97102efcb3b72204e0b118459f4c6682d58322d24bdc002e17a00dc73ba288"
+      },
+      {
+        "path": "evaluation/manuscript-review/v7.2.3/issue93-integration/definitions/RKM-C075.md",
+        "sha256": "d88858352daffaf01e5a0eb705191bdbe5d1b0672169fd65b1c85852ad3bc1d6"
+      },
+      {
+        "path": "evaluation/manuscript-review/v7.2.3/issue93-integration/definitions/RKM-C076.md",
+        "sha256": "e84728acc55e1bf048a3149ab78563b0a88baef12380c67c52df4478707964a9"
+      }
+    ],
+    "dictionary_status": "Six selected candidate definitions bound; full 82-concept dictionary and structural receipt generation remain in reader reconciliation."
+  },
+  "production_promotion": false
+}
