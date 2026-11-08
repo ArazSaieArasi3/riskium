@@ -1,0 +1,23 @@
+@prefix risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#> .
+@prefix eu: <https://github.com/ArazSaieArasi3/riskium/candidates/issue93/evidence-use#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+eu:EvidenceItemShape a sh:NodeShape ; sh:targetClass risk:RKM-C066 ;
+ sh:property [ sh:path [ sh:inversePath risk:RE-001 ] ; sh:minCount 1 ; sh:class risk:RKM-C075 ; sh:nodeKind sh:IRI ] .
+eu:EvidenceReferenceShape a sh:NodeShape ; sh:targetClass risk:RKM-C076 ;
+ sh:property [ sh:path [ sh:inversePath risk:RE-002 ] ; sh:minCount 1 ; sh:class risk:RKM-C075 ; sh:nodeKind sh:IRI ] .
+eu:EvidenceUseShape a sh:NodeShape ; sh:targetClass risk:RKM-C075 ;
+ sh:nodeKind sh:IRI ;
+ sh:property [ sh:path risk:RE-001 ; sh:minCount 1 ; sh:maxCount 1 ; sh:class risk:RKM-C066 ; sh:nodeKind sh:IRI ; sh:disjoint risk:RE-002 ] ;
+ sh:property [ sh:path risk:RE-002 ; sh:minCount 1 ; sh:maxCount 1 ; sh:class risk:RKM-C076 ; sh:nodeKind sh:IRI ] ;
+ sh:property [ sh:path risk:RE-003 ; sh:minCount 1 ; sh:maxCount 1 ; sh:class risk:RKM-C014 ; sh:nodeKind sh:IRI ] ;
+ sh:property [ sh:path eu:context ; sh:minCount 1 ; sh:maxCount 1 ; sh:class risk:RKM-C014 ; sh:nodeKind sh:IRI ] ;
+ sh:property [ sh:path eu:purpose ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:in ( "support" "challenge" "context" ) ] ;
+ sh:sparql [ sh:message "The use reference must point to its item and record its analysis context." ; sh:select """
+ PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+ PREFIX eu: <https://github.com/ArazSaieArasi3/riskium/candidates/issue93/evidence-use#>
+ SELECT $this WHERE {
+  $this risk:RE-001 ?item ; risk:RE-002 ?ref ; eu:context ?context .
+  FILTER (NOT EXISTS { ?ref risk:RX-021 ?item } || NOT EXISTS { ?ref risk:R-68 ?context })
+ }""" ] .

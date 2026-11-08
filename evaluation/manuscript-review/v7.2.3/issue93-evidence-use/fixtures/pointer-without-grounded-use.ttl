@@ -1,0 +1,7 @@
+@prefix ns1: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#> .
+
+<urn:riskium:evidence-use-test:ref> a ns1:RKM-C065 ;
+    ns1:RX-021 <urn:riskium:evidence-use-test:item> .
+
+<urn:riskium:evidence-use-test:item> a ns1:RKM-C066 .
+

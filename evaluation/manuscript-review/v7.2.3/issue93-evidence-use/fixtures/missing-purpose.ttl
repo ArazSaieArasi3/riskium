@@ -1,0 +1,22 @@
+@prefix ns1: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#> .
+@prefix ns2: <https://github.com/ArazSaieArasi3/riskium/candidates/issue93/evidence-use#> .
+
+<urn:riskium:evidence-use-test:use> a ns1:RKM-C075 ;
+    ns2:context <urn:riskium:evidence-use-test:claim> ;
+    ns1:RE-001 <urn:riskium:evidence-use-test:item> ;
+    ns1:RE-002 <urn:riskium:evidence-use-test:ref> ;
+    ns1:RE-003 <urn:riskium:evidence-use-test:grounding> .
+
+<urn:riskium:evidence-use-test:grounding> a ns1:RKM-C014 .
+
+<urn:riskium:evidence-use-test:ref> a ns1:RKM-C014,
+        ns1:RKM-C065,
+        ns1:RKM-C076 ;
+    ns1:R-68 <urn:riskium:evidence-use-test:claim> ;
+    ns1:RX-021 <urn:riskium:evidence-use-test:item> .
+
+<urn:riskium:evidence-use-test:claim> a ns1:RKM-C014 .
+
+<urn:riskium:evidence-use-test:item> a ns1:RKM-C014,
+        ns1:RKM-C066 .
+

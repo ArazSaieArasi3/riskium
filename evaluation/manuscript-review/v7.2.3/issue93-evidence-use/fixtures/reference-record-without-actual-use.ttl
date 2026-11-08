@@ -1,0 +1,4 @@
+
+<urn:riskium:evidence-use-test:ref> a <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C014>,
+        <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-C065> .
+

@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-08",
+  "native_exchange_regression": {
+    "tests": 11,
+    "passed": 11,
+    "status": "PASS"
+  },
+  "source_transition_regression": {
+    "tests": 5,
+    "passed": 5,
+    "status": "PASS"
+  },
+  "scope": "Executed in the isolated candidate checkout. Production model and historical implementations remain unchanged; no GitHub Actions execution is asserted."
+}

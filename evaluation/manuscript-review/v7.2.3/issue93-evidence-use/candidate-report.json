@@ -1,0 +1,640 @@
+{
+  "schema": "riskium-evidence-use-candidate-v1",
+  "candidate_version": "0.3.2-evidence-use.1",
+  "date": "2026-11-08",
+  "status": "PASS",
+  "baseline_commit": "07774a46b946d1a4cebb110e483cbe977c9635bd",
+  "historical_model_commit": "50f731aa5e065233c81fceeadaab8d87f5569de6",
+  "production_model_sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+  "production_unchanged": true,
+  "inputs_sha256": {
+    "build_candidate.py": "061979bf05127360d4311f6598517ab032e868c3c25aff6ef284d83af299b887",
+    "verify_candidate.py": "5c4a9436bb62877d59e9a182c3b3e1605d8edffe1cba7334c2e6a7bed6f49d24",
+    "candidate-model.json": "e908403db178d5707a6e537b63cb5ba384ef1ebc077f8a02dff7fc343eec5bb3",
+    "candidate.ontouml.json": "1b691002c4a74eb7465c69504714f67d0d84eea3989bea18dde408e3a63abc41",
+    "candidate.owl.ttl": "9fc004668d6913e000c6c77a6b383485adb3ca0cd599fe7397946ffa2aefc38e",
+    "evidence-use.shacl.ttl": "ce42346cd8ccca92cc597edc23b915be774c062ed2c2ca6c091a4b55f14b5bd2"
+  },
+  "engines": {
+    "rdflib": "7.6.0",
+    "pyshacl": "0.30.1",
+    "ROBOT": "1.9.11",
+    "HermiT": "1.4.5.456 from ROBOT 1.9.11 bundle",
+    "robot_sha256": "53cd275c8e4c0dad1fc2c1c34174876795cd7d6b6926e1444adcbb0cb3c7ab26",
+    "native_schema_sha256": "094324d8e6ac4505ef5ae983a45bb9b56a8b3b6960151c57736756a037344d38"
+  },
+  "candidate_selected_pattern_screen": {
+    "candidates": {
+      "GSRig": [
+        "GS-RKM-C014",
+        "GS-RKM-C047"
+      ],
+      "DepPhase": [],
+      "MixRig": [],
+      "RelRig": [],
+      "RepRel": [
+        "RKM-C052",
+        "RKM-C075"
+      ],
+      "ImpAbs": [
+        "R-05",
+        "R-06",
+        "R-51",
+        "R-65",
+        "R-68",
+        "R-70",
+        "RX-006",
+        "RX-007"
+      ],
+      "BinOver": [
+        "R-04",
+        "R-05",
+        "R-06",
+        "R-08",
+        "R-10",
+        "R-12",
+        "R-13",
+        "R-14",
+        "R-15",
+        "R-16",
+        "R-17",
+        "R-18",
+        "R-20",
+        "R-27",
+        "R-31",
+        "R-32",
+        "R-34",
+        "R-37",
+        "R-39",
+        "R-40",
+        "R-42",
+        "R-43",
+        "R-45",
+        "R-46",
+        "R-47",
+        "R-48",
+        "R-49",
+        "R-50",
+        "R-54",
+        "R-62",
+        "R-63",
+        "R-68",
+        "RX-008",
+        "RX-009",
+        "RX-012",
+        "RX-017",
+        "RX-018",
+        "RX-019",
+        "RX-021",
+        "RX-023",
+        "RX-025",
+        "RX-026",
+        "RX-027",
+        "RK2-005",
+        "RK2-008",
+        "RK2-009",
+        "RK2-010",
+        "RK2-011",
+        "RK2-012",
+        "RK2-013",
+        "RK2-014",
+        "RK2-015",
+        "RK2-018",
+        "RK2-019",
+        "RK2-020",
+        "RK2-022",
+        "RK2-023",
+        "RK2-024",
+        "RK2-025",
+        "RK2-026",
+        "RK3-003"
+      ],
+      "RelSpec": [
+        [
+          "R-02",
+          "RX-006"
+        ],
+        [
+          "R-10",
+          "RK2-025"
+        ],
+        [
+          "R-23",
+          "RX-006"
+        ],
+        [
+          "R-24",
+          "RX-006"
+        ],
+        [
+          "R-28",
+          "RX-006"
+        ],
+        [
+          "R-28",
+          "RX-014"
+        ],
+        [
+          "R-28",
+          "RX-015"
+        ],
+        [
+          "R-29",
+          "RX-006"
+        ],
+        [
+          "R-30",
+          "RX-006"
+        ],
+        [
+          "R-33",
+          "RX-006"
+        ],
+        [
+          "R-35",
+          "RX-001"
+        ],
+        [
+          "R-38",
+          "RX-006"
+        ],
+        [
+          "R-44",
+          "RX-006"
+        ],
+        [
+          "R-52",
+          "RX-006"
+        ],
+        [
+          "R-60",
+          "RX-006"
+        ],
+        [
+          "R-61",
+          "RX-006"
+        ],
+        [
+          "R-68",
+          "RX-021"
+        ],
+        [
+          "RX-006",
+          "RX-013"
+        ],
+        [
+          "RX-006",
+          "RX-014"
+        ],
+        [
+          "RX-006",
+          "RX-015"
+        ],
+        [
+          "RX-006",
+          "RX-016"
+        ],
+        [
+          "RX-006",
+          "RK2-016"
+        ],
+        [
+          "RX-006",
+          "RK2-017"
+        ],
+        [
+          "RX-006",
+          "RK2-021"
+        ],
+        [
+          "RX-014",
+          "RX-015"
+        ],
+        [
+          "RE-001",
+          "RE-003"
+        ],
+        [
+          "RE-002",
+          "RE-003"
+        ]
+      ]
+    },
+    "interpretation": "Two original GSRig sets remain for the next repair. EvidenceUseRelator is a repeatable-relator candidate by design: different grounded contexts or purposes can involve the same artifact/reference pair; duplicate descriptions of one use do not create new identity. No full instance-identity adjudication is claimed. Topological relation-specialization candidates are not property-equivalence results."
+  },
+  "native_schema_errors": [],
+  "native_checks": [
+    {
+      "id": "baseline-lacks-role-dependency",
+      "pass": true
+    },
+    {
+      "id": "candidate-has-role-dependency",
+      "pass": true
+    },
+    {
+      "id": "reference-role-has-role-dependency",
+      "pass": true
+    },
+    {
+      "id": "ordinary-pointer-mutant-rejected",
+      "pass": true
+    },
+    {
+      "id": "optional-dependency-mutant-rejected",
+      "pass": true
+    },
+    {
+      "id": "source-pointer-unmodified",
+      "pass": true
+    },
+    {
+      "id": "all-subtype-links-retained",
+      "pass": true
+    },
+    {
+      "id": "identity-supplier-retained",
+      "pass": true
+    },
+    {
+      "id": "relator-mediates-two-minimum-participants",
+      "pass": true
+    },
+    {
+      "id": "two-GSRig-sets-still-explicit",
+      "pass": true
+    },
+    {
+      "id": "native-source-fidelity",
+      "pass": true
+    },
+    {
+      "id": "ordinary-reference-definition-preserved",
+      "pass": true
+    }
+  ],
+  "explicit_data_cases": [
+    {
+      "id": "valid-support",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "status": "PASS",
+      "findings": [],
+      "fixture_sha256": "763695eca1f3945a1c8ea44a2bb2dc0029b52806a348533b9d4ac860cab398f2"
+    },
+    {
+      "id": "valid-challenge",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "status": "PASS",
+      "findings": [],
+      "fixture_sha256": "ae69e85a9efffb41bbd6c6748647a8668302f33c32f23e634a43697b22a3d2fa"
+    },
+    {
+      "id": "valid-context",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "status": "PASS",
+      "findings": [],
+      "fixture_sha256": "ec9c4e622a3e67a1cadcc00a1e47901353ce3c328ba731a2be0888600f7b9a03"
+    },
+    {
+      "id": "same-artifact-two-uses",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "status": "PASS",
+      "findings": [],
+      "fixture_sha256": "09379a4061b82ab938b72b95600f03bcaca803da0233dba79810f49ef8b50bdc"
+    },
+    {
+      "id": "artifact-without-evidential-role",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "status": "PASS",
+      "findings": [],
+      "fixture_sha256": "656080dc4fb74d79ef83bec1cf69ed3af7f8f1d4e212b1b6dd084d0fea731330"
+    },
+    {
+      "id": "reference-record-without-actual-use",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "status": "PASS",
+      "findings": [],
+      "fixture_sha256": "c5ed5726680f62e7e28c45f6878b58648da9983c0455cfabf0f0cf8a02e67c72"
+    },
+    {
+      "id": "orphan-reference-role",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:ref",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:ref>->[ sh:inversePath risk:RE-002 ]"
+        }
+      ],
+      "fixture_sha256": "c930d08c0eb7701f7e7978ace2b68f89e0cc7068b24df79a5386776902ed1aa8"
+    },
+    {
+      "id": "orphan-typed-role",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:item",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:item>->[ sh:inversePath risk:RE-001 ]"
+        }
+      ],
+      "fixture_sha256": "672b071c83267e19678d235abc2adac774381b844b0cb17fe1670dd9626c803b"
+    },
+    {
+      "id": "pointer-without-grounded-use",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:item",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:item>->[ sh:inversePath risk:RE-001 ]"
+        }
+      ],
+      "fixture_sha256": "de7cebaed0ddd5cdc470f791a38ce0dce5fb6d2f083bf984509f5c60d01b875d"
+    },
+    {
+      "id": "missing-grounding",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:use>->risk:RE-003"
+        }
+      ],
+      "fixture_sha256": "666951a1e10582570d2a1892645c834a646250a4d5862306288d2485e0ff0220"
+    },
+    {
+      "id": "missing-purpose",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:use>->eu:purpose"
+        }
+      ],
+      "fixture_sha256": "d84ba0a30369ce3c9c01c01447995aa5e83f2de2a3cceac09d8e9a4a38792067"
+    },
+    {
+      "id": "invalid-purpose",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#InConstraintComponent",
+          "message": "Value Literal(\"proves-true\") not in list ['Literal(\"support\")', 'Literal(\"challenge\")', 'Literal(\"context\")']"
+        }
+      ],
+      "fixture_sha256": "23f6b30ee4c4da4fd98e7ff7dc374f59e90963ff34f472787040c1974355e753"
+    },
+    {
+      "id": "missing-reference",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:ref",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:ref>->[ sh:inversePath risk:RE-002 ]"
+        },
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:use>->risk:RE-002"
+        }
+      ],
+      "fixture_sha256": "6700a6a7750b5af348670f24907b24059af5470b303796d78cf96b62bd2c5d43"
+    },
+    {
+      "id": "missing-item",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:item",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:item>->[ sh:inversePath risk:RE-001 ]"
+        },
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:use>->risk:RE-001"
+        }
+      ],
+      "fixture_sha256": "cd77fa0109e4b21c3cd98e60ec0c41f0e4bc771f7232f4f6117f97571839bfd8"
+    },
+    {
+      "id": "same-mediated-individual",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#DisjointConstraintComponent",
+          "message": "Value of <urn:riskium:evidence-use-test:use>->risk:RE-002 == <urn:riskium:evidence-use-test:ref>"
+        }
+      ],
+      "fixture_sha256": "c213880ff645e201f04df309c38fa1d33df14e0513bc8620b4189500ee6afac4"
+    },
+    {
+      "id": "reference-points-to-other-item",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "message": "The use reference must point to its item and record its analysis context."
+        }
+      ],
+      "fixture_sha256": "3fdd45167a3a2b0698a65dc19af05ff96fc216169aca7c1b06395895da169db7"
+    },
+    {
+      "id": "context-mismatch",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "message": "The use reference must point to its item and record its analysis context."
+        }
+      ],
+      "fixture_sha256": "a55b6263ddcffa557df1ee262f8945037908a0b9c48384109721d0c4f1e5bb08"
+    },
+    {
+      "id": "use-context-mismatch",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "message": "The use reference must point to its item and record its analysis context."
+        }
+      ],
+      "fixture_sha256": "5b6e631b97fcf115927a7cd87828f4ec4396368c038dd84af71fb6f14c525ce2"
+    }
+  ],
+  "shape_mutants": [
+    {
+      "id": "M1-remove-role-dependency",
+      "counterexample": "orphan-typed-role",
+      "mutant_accepts_counterexample": true,
+      "status": "DETECTED"
+    },
+    {
+      "id": "M2-remove-distinctness",
+      "counterexample": "same-mediated-individual",
+      "mutant_accepts_counterexample": true,
+      "status": "DETECTED"
+    },
+    {
+      "id": "M3-remove-grounding",
+      "counterexample": "missing-grounding",
+      "mutant_accepts_counterexample": true,
+      "status": "DETECTED"
+    },
+    {
+      "id": "M4-remove-context-coherence",
+      "counterexample": "context-mismatch",
+      "mutant_accepts_counterexample": true,
+      "status": "DETECTED"
+    }
+  ],
+  "hermit_cases": [
+    {
+      "exit_code": 0,
+      "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.",
+      "stderr": "",
+      "elapsed_ms": 1412,
+      "id": "whole-candidate-consistent",
+      "expected_consistent": true,
+      "observed_consistent": true,
+      "input_sha256": "4ebaf2509a972f77959a3e2051c93bbd47371a7d41fd1b6db66b3ba0a5d2f261",
+      "status": "PASS"
+    },
+    {
+      "exit_code": 0,
+      "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.",
+      "stderr": "",
+      "elapsed_ms": 2086,
+      "id": "grounded-use-consistent",
+      "expected_consistent": true,
+      "observed_consistent": true,
+      "input_sha256": "2c26f537b07ac43e132173754c207e09d608c6535130bd5fce6f2aced97fb018",
+      "status": "PASS"
+    },
+    {
+      "exit_code": 0,
+      "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.",
+      "stderr": "",
+      "elapsed_ms": 1751,
+      "id": "same-artifact-different-uses-consistent",
+      "expected_consistent": true,
+      "observed_consistent": true,
+      "input_sha256": "c520e566a0d647de34cd4fa914c9620e65f2bdb347504b19d987c52a07079e9f",
+      "status": "PASS"
+    },
+    {
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Exception in thread \"main\" org.semanticweb.owlapi.reasoner.InconsistentOntologyException: Inconsistent ontology\n\tat org.semanticweb.HermiT.Reasoner.throwInconsistentOntologyExceptionIfNecessary(Reasoner.java:2311)\n\tat org.semanticweb.HermiT.Reasoner.checkPreConditions(Reasoner.java:2303)\n\tat org.semanticweb.HermiT.Reasoner.isSatisfiable(Reasoner.java:784)\n\tat org.semanticweb.HermiT.cli.SatisfiabilityAction.run(SatisfiabilityAction.java:25)\n\tat org.semanticweb.HermiT.cli.CommandLine.main(CommandLine.java:404)",
+      "elapsed_ms": 1580,
+      "id": "same-participant-inconsistent",
+      "expected_consistent": false,
+      "observed_consistent": false,
+      "input_sha256": "a0f004c7ab54c478dd35d8f1e142c07d2c4d58f3ec19cc469c2be49810199fd0",
+      "status": "PASS"
+    },
+    {
+      "exit_code": 0,
+      "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.",
+      "stderr": "",
+      "elapsed_ms": 1133,
+      "id": "missing-explicit-use-open-world-consistent",
+      "expected_consistent": true,
+      "observed_consistent": true,
+      "input_sha256": "065569d8dc424f7b34a800003b7c78b0616ba0499bcd8a1353b990e3d0016131",
+      "status": "PASS"
+    },
+    {
+      "exit_code": 0,
+      "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.",
+      "stderr": "",
+      "elapsed_ms": 1812,
+      "id": "missing-grounding-open-world-consistent",
+      "expected_consistent": true,
+      "observed_consistent": true,
+      "input_sha256": "7dc61baaf4abd2344b322f7b56c197c782ff7e89386f9cbe20979abd99b41387",
+      "status": "PASS"
+    },
+    {
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Exception in thread \"main\" org.semanticweb.owlapi.reasoner.InconsistentOntologyException: Inconsistent ontology\n\tat org.semanticweb.HermiT.Reasoner.throwInconsistentOntologyExceptionIfNecessary(Reasoner.java:2311)\n\tat org.semanticweb.HermiT.Reasoner.checkPreConditions(Reasoner.java:2303)\n\tat org.semanticweb.HermiT.Reasoner.isSatisfiable(Reasoner.java:784)\n\tat org.semanticweb.HermiT.cli.SatisfiabilityAction.run(SatisfiabilityAction.java:25)\n\tat org.semanticweb.HermiT.cli.CommandLine.main(CommandLine.java:404)",
+      "elapsed_ms": 1555,
+      "id": "sameAs-participants-inconsistent",
+      "expected_consistent": false,
+      "observed_consistent": false,
+      "input_sha256": "37862e73cad78f7bec0eac1778f28827b485f9f8c86345e3ecf0f957634255a6",
+      "status": "PASS"
+    },
+    {
+      "exit_code": 0,
+      "stdout": "false",
+      "stderr": "",
+      "elapsed_ms": 1832,
+      "id": "evidential-use-does-not-establish-occurrence",
+      "expected_entailment": false,
+      "observed_output": "false",
+      "input_sha256": "0571b08406b09fa2b06975d898935b94edb4cc50b5b83f02e92cc37f6749340e",
+      "conclusion_sha256": "6a6048f9a7ff4af1a8ae131f2f76d8f73e1562821c06bbf17980894bc509b3b5",
+      "status": "PASS"
+    }
+  ],
+  "owl_profile": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "elapsed_ms": 1196
+  },
+  "summary": {
+    "native_checks": 12,
+    "native_checks_passed": 12,
+    "explicit_data_cases": 18,
+    "explicit_data_cases_matching": 18,
+    "negative_data_controls": 12,
+    "shape_mutants": 4,
+    "mutants_detected": 4,
+    "hermit_cases": 8,
+    "hermit_cases_matching": 8,
+    "owl2_dl": true
+  },
+  "boundary": "A candidate implementation and scoped tests, not independent conceptual validation, actual use of a real source artifact, production migration, full identity adjudication, whole-model pattern acceptance or a release. Other two GSRig repairs remain open. Historical engine counts and manuscript evidence are unchanged."
+}
