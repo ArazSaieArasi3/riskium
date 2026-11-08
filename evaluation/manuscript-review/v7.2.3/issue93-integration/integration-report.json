@@ -1,0 +1,394 @@
+{
+  "schema": "riskium-issue93-integration-v1",
+  "date": "2026-11-08",
+  "candidate_version": "0.3.2-structural.2",
+  "candidate_source_commit": "74aedfb386f78210b17a2c87cafeee03f4093494",
+  "status": "INTEGRATION_CHECKS_PASS_PROMOTION_BLOCKED",
+  "checks": {
+    "source_model_and_native_match_B02_receipt": true,
+    "focal_mixed_sets_absent": true,
+    "candidate_schema_valid": true,
+    "sdk_roundtrip": true,
+    "candidate_owl_consistent": true,
+    "all_combined_data_expectations_match": true,
+    "alias_guard_mutation_detected": true,
+    "old_database_integrity_retained": true,
+    "old_projection_gap_demonstrated": true,
+    "production_owl_guard_rejects_unqualified_candidate": true,
+    "production_dictionary_guard_rejects_unqualified_candidate": true,
+    "legacy_native_regroups_exactly_two_sets": true,
+    "frozen_model_exports_and_review_unchanged": true
+  },
+  "native_schema_errors": [],
+  "native_sdk": {
+    "engine": "ontouml-js",
+    "version": "1.0.0",
+    "node": "v24.22.1",
+    "input_sha256": "7e431e6c4b85b60f405fb3180d34239d98e16c4b69aedbe43c1c5977e0e8005f",
+    "checked_elements": 596,
+    "status": "PASS",
+    "errors": [],
+    "scope": "Direct parse/serialize and source-invariant preservation; not GUI import or independent conceptual acceptance.",
+    "runtime_adjustment": "networkInterfaces returns an empty object for generated-ID seeding; source IDs and SDK serializer rules are unchanged."
+  },
+  "fresh_hermit_consistency": {
+    "exit_code": 0,
+    "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.",
+    "stderr": "",
+    "elapsed_ms": 1516
+  },
+  "combined_shacl_cases": [
+    {
+      "id": "valid-support",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "id": "valid-challenge",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "id": "valid-context",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "id": "same-artifact-two-uses",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "id": "artifact-without-evidential-role",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "id": "reference-record-without-actual-use",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "id": "orphan-reference-role",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:ref",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:ref>->[ sh:inversePath risk:RE-002 ]"
+        }
+      ]
+    },
+    {
+      "id": "orphan-typed-role",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:item",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:item>->[ sh:inversePath risk:RE-001 ]"
+        }
+      ]
+    },
+    {
+      "id": "pointer-without-grounded-use",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:item",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:item>->[ sh:inversePath risk:RE-001 ]"
+        }
+      ]
+    },
+    {
+      "id": "missing-grounding",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:use>->risk:RE-003"
+        }
+      ]
+    },
+    {
+      "id": "missing-purpose",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:use>->eu:purpose"
+        }
+      ]
+    },
+    {
+      "id": "invalid-purpose",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#InConstraintComponent",
+          "message": "Value Literal(\"proves-true\") not in list ['Literal(\"challenge\")', 'Literal(\"context\")', 'Literal(\"support\")']"
+        }
+      ]
+    },
+    {
+      "id": "missing-reference",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:use>->risk:RE-002"
+        },
+        {
+          "focus": "urn:riskium:evidence-use-test:ref",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:ref>->[ sh:inversePath risk:RE-002 ]"
+        }
+      ]
+    },
+    {
+      "id": "missing-item",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:use>->risk:RE-001"
+        },
+        {
+          "focus": "urn:riskium:evidence-use-test:item",
+          "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+          "message": "Less than 1 values on <urn:riskium:evidence-use-test:item>->[ sh:inversePath risk:RE-001 ]"
+        }
+      ]
+    },
+    {
+      "id": "same-mediated-individual",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#DisjointConstraintComponent",
+          "message": "Value of <urn:riskium:evidence-use-test:use>->risk:RE-002 == <urn:riskium:evidence-use-test:ref>"
+        }
+      ]
+    },
+    {
+      "id": "reference-points-to-other-item",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "message": "The use reference must point to its item and record its analysis context."
+        }
+      ]
+    },
+    {
+      "id": "context-mismatch",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "message": "The use reference must point to its item and record its analysis context."
+        }
+      ]
+    },
+    {
+      "id": "use-context-mismatch",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "message": "The use reference must point to its item and record its analysis context."
+        }
+      ]
+    },
+    {
+      "id": "aliased-participants",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "message": "The two mediated participants must not be aliases under explicit sameAs paths."
+        }
+      ]
+    },
+    {
+      "id": "alias-chain-participants",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "status": "PASS",
+      "findings": [
+        {
+          "focus": "urn:riskium:evidence-use-test:use",
+          "component": "http://www.w3.org/ns/shacl#SPARQLConstraintComponent",
+          "message": "The two mediated participants must not be aliases under explicit sameAs paths."
+        }
+      ]
+    }
+  ],
+  "alias_mutant_accepts_counterexample": true,
+  "database_bridge": {
+    "scope": "Existing synthetic SQLite v7 qualified-evidence fixture; not pharmaceutical source records or production data.",
+    "health": {
+      "sqlite": "3.53.1",
+      "integrity": "ok",
+      "foreign_key_violations": 0
+    },
+    "records": [
+      {
+        "version": "urn:riskium:evidence:ref-a-v1",
+        "triples": 13,
+        "candidate_conforms": false,
+        "missing_use_relators": true,
+        "missing_reference_roles": true,
+        "finding_components": [
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ]
+      },
+      {
+        "version": "urn:riskium:evidence:ref-a-v2",
+        "triples": 13,
+        "candidate_conforms": false,
+        "missing_use_relators": true,
+        "missing_reference_roles": true,
+        "finding_components": [
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ]
+      },
+      {
+        "version": "urn:riskium:evidence:ref-b-v1",
+        "triples": 17,
+        "candidate_conforms": false,
+        "missing_use_relators": true,
+        "missing_reference_roles": true,
+        "finding_components": [
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ]
+      },
+      {
+        "version": "urn:riskium:evidence:ref-c-v1",
+        "triples": 13,
+        "candidate_conforms": false,
+        "missing_use_relators": true,
+        "missing_reference_roles": true,
+        "finding_components": [
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ]
+      }
+    ],
+    "migration_ready": false,
+    "reason": "Existing exports have contextual EvidenceItem typing but no explicit use relator, participating reference role, or use-grounding record. A reference must not be backfilled into an actual-use fact without justification."
+  },
+  "production_adapter_probes": [
+    {
+      "id": "production-owl-generator",
+      "observed": "Source version or reviewed digest changed",
+      "ready": false,
+      "action": "Add an explicit candidate source/profile input contract; retain frozen 0.3.1 generation and historical receipts. Do not remove version/count guards without replacement checks."
+    },
+    {
+      "id": "production-native-set-policy",
+      "regenerated_extra_sets": [
+        "GS-RKM-C014",
+        "GS-RKM-C047"
+      ],
+      "ready": false,
+      "action": "Route the explicit generalization-set policy through a candidate-aware serializer before replacing the production source."
+    },
+    {
+      "id": "production-concept-dictionary",
+      "observed": "Model/receipt version or digest mismatch",
+      "ready": false,
+      "action": "Generate a separately version-bound dictionary/structural receipt for 82 concepts; preserve archived 80-concept pages."
+    }
+  ],
+  "source_hashes": {
+    "candidate-model.json": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7",
+    "candidate.ontouml.json": "7e431e6c4b85b60f405fb3180d34239d98e16c4b69aedbe43c1c5977e0e8005f",
+    "candidate.owl.ttl": "c34b265370dd81002715721fda6e00e0bdcb261259a28fc1a8787b6ba8a0c077",
+    "combined-managed.shacl.ttl": "a7d9f93e530a14d21a7fd0847cb62d628852df6ef160345365f42baedeabe1d1",
+    "check_integration.py": "9fb73fafd2c5fa486008e8029855a57aed61f0528c19a6dfb0a0fc6d60e548e4",
+    "native_roundtrip.cjs": "913abbbf7ebf94096819628464b6526ac1b55b772926d75b64ecc2816aa9b8a0"
+  },
+  "production_hashes_preserved": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/native/riskium.ontouml.json": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
+    "ontology/derived/riskium.owl.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
+    "evaluation/native-review-decisions.json": "38a09df7b9914be79001f94556267d624510957eae16c2e53a8da93afe219211"
+  },
+  "summary": {
+    "integration_checks": 13,
+    "integration_checks_passed": 13,
+    "combined_shacl_cases": 20,
+    "combined_shacl_matches": 20,
+    "negative_data_controls": 14,
+    "sdk_elements": 596,
+    "legacy_projection_records": 4,
+    "legacy_projection_records_ready_for_candidate": 0,
+    "candidate_definition_pages": 6,
+    "production_promoted": false
+  },
+  "promotion_decision": "DO_NOT_REPLACE_PRODUCTION_SOURCE_YET",
+  "blockers": [
+    {
+      "id": "P1",
+      "work": "Candidate-aware native/OWL/SHACL/dictionary source contracts and new source/evidence bindings; keep historical version paths fixed."
+    },
+    {
+      "id": "P2",
+      "work": "Explicit EvidenceUse relational mapping and export; do not infer actual use or its grounding from the existence of an evidence reference."
+    },
+    {
+      "id": "P3",
+      "work": "Reconcile candidate definitions, diagrams and reader outputs, then exercise a candidate CI path before promotion."
+    }
+  ],
+  "boundary": "B0-3 is a completed integration audit and a concrete promotion-path decision. The guarded rejections and old-projection mismatch are expected compatibility findings, not failures of the archived baseline or proof of a completed migration. Historical manuscript evidence and real case data are unchanged."
+}

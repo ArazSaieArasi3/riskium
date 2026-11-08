@@ -1,0 +1,11 @@
+{
+  "engine": "ontouml-js",
+  "version": "1.0.0",
+  "node": "v24.22.1",
+  "input_sha256": "7e431e6c4b85b60f405fb3180d34239d98e16c4b69aedbe43c1c5977e0e8005f",
+  "checked_elements": 596,
+  "status": "PASS",
+  "errors": [],
+  "scope": "Direct parse/serialize and source-invariant preservation; not GUI import or independent conceptual acceptance.",
+  "runtime_adjustment": "networkInterfaces returns an empty object for generated-ID seeding; source IDs and SDK serializer rules are unchanged."
+}
