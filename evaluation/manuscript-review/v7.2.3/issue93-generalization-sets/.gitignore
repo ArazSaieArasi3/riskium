@@ -1,0 +1,5 @@
+__pycache__/
+candidate-model.json
+candidate.ontouml.json
+candidate.owl.ttl
+reasoner-inputs/

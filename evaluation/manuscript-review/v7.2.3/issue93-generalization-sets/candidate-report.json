@@ -1,0 +1,436 @@
+{
+  "schema": "riskium-explicit-set-policy-candidate-v1",
+  "candidate_version": "0.3.2-structural.2",
+  "date": "2026-11-08",
+  "status": "PASS",
+  "previous_candidate_commit": "b81549f2a9b139fef5feae57f3a2e2f8008b32a8",
+  "baseline_main_commit": "07774a46b946d1a4cebb110e483cbe977c9635bd",
+  "inputs_sha256": {
+    "build_candidate.py": "d80ab73519db8eb9887114dfd8a179fc10bc7e7301764662482c6f943470572f",
+    "verify_candidate.py": "dcdcb985c0bb1ff6802677996b88c7a18c947c27c7a7dd025a3155de211b9785",
+    "candidate-model.json": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7",
+    "candidate.ontouml.json": "7e431e6c4b85b60f405fb3180d34239d98e16c4b69aedbe43c1c5977e0e8005f",
+    "candidate.owl.ttl": "ab2105fe488649c1bafdbe86d7c345cc83c2dd01a310415bec922fda5f72974e",
+    "set-policy.json": "56f298c816942cd9d6630f035fd5681fb5cc52ad74157dd3eaea39ff5013c97a"
+  },
+  "dependencies_sha256": {
+    "previous_candidate_builder": "061979bf05127360d4311f6598517ab032e868c3c25aff6ef284d83af299b887",
+    "legacy_element_serializer": "9fc76f243bc5b560f00e9444467d1e99c1183042018926dc4942f2f616727d88",
+    "selected_trigger_screen": "77bf163fdc4a0c8cb5468f972f645eb0f8aeb9795948cdc34d7c9a0a8e1329b2",
+    "native_schema": "094324d8e6ac4505ef5ae983a45bb9b56a8b3b6960151c57736756a037344d38",
+    "robot": "53cd275c8e4c0dad1fc2c1c34174876795cd7d6b6926e1444adcbb0cb3c7ab26"
+  },
+  "engines": {
+    "HermiT": "1.4.5.456 bundled in ROBOT 1.9.11",
+    "ROBOT": "1.9.11",
+    "rdflib": "7.6.0",
+    "jsonschema": "4.25.1"
+  },
+  "inventory": {
+    "catalog_concepts": 82,
+    "associations": 137,
+    "subtype_links": 67,
+    "generalization_sets": 8,
+    "native_elements": 596
+  },
+  "native_schema_errors": [],
+  "native_fidelity_errors": [],
+  "source_policy_checks": [
+    {
+      "id": "native-fidelity-to-explicit-policy",
+      "status": "PASS"
+    },
+    {
+      "id": "all-67-subtype-links-retained",
+      "status": "PASS"
+    },
+    {
+      "id": "all-concepts-relations-constraints-retained",
+      "status": "PASS"
+    },
+    {
+      "id": "exactly-two-focal-sets-removed",
+      "status": "PASS"
+    },
+    {
+      "id": "selected-GSRig-no-longer-triggered",
+      "status": "PASS"
+    },
+    {
+      "id": "bearer-kinds-disjoint-incomplete",
+      "status": "PASS"
+    },
+    {
+      "id": "all-three-disjointness-decisions-preserved",
+      "status": "PASS"
+    },
+    {
+      "id": "no-unjustified-covering-sets",
+      "status": "PASS"
+    },
+    {
+      "id": "no-role-exclusivity-added",
+      "status": "PASS"
+    },
+    {
+      "id": "positive-screen-control-retains-original-triggers",
+      "status": "PASS"
+    },
+    {
+      "id": "OWL-logical-graph-preserved",
+      "status": "PASS"
+    },
+    {
+      "id": "production-model-unchanged",
+      "status": "PASS"
+    }
+  ],
+  "hermit_cases": [
+    {
+      "exit_code": 0,
+      "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.",
+      "stderr": "",
+      "elapsed_ms": 1592,
+      "input_sha256": "210f662c8e1858eb838c8c57d726af1ab00a9ff8ddd07d7dce38da3d6b21f96d",
+      "observed_consistent": true,
+      "id": "whole-candidate-consistent",
+      "expected_consistent": true,
+      "status": "PASS"
+    },
+    {
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Exception in thread \"main\" org.semanticweb.owlapi.reasoner.InconsistentOntologyException: Inconsistent ontology\n\tat org.semanticweb.HermiT.Reasoner.throwInconsistentOntologyExceptionIfNecessary(Reasoner.java:2311)\n\tat org.semanticweb.HermiT.Reasoner.checkPreConditions(Reasoner.java:2303)\n\tat org.semanticweb.HermiT.Reasoner.isSatisfiable(Reasoner.java:784)\n\tat org.semanticweb.HermiT.cli.SatisfiabilityAction.run(SatisfiabilityAction.java:25)\n\tat org.semanticweb.HermiT.cli.CommandLine.main(CommandLine.java:404)",
+      "elapsed_ms": 1528,
+      "input_sha256": "fa34fa6152dcc6bac117d477a10d0fcd4a44dc3a42a43351c440f43b261f03be",
+      "observed_consistent": false,
+      "id": "person-and-organization-exclusive",
+      "expected_consistent": false,
+      "status": "PASS"
+    },
+    {
+      "exit_code": 0,
+      "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.",
+      "stderr": "",
+      "elapsed_ms": 2035,
+      "input_sha256": "92a3486ab07cb5bbc78bcad0069053fd179517a074e93f3c899aadbeeb19c652",
+      "observed_consistent": true,
+      "id": "same-person-responsible-and-authorizing",
+      "expected_consistent": true,
+      "status": "PASS"
+    },
+    {
+      "exit_code": 0,
+      "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.",
+      "stderr": "",
+      "elapsed_ms": 2593,
+      "input_sha256": "3b07d886d566e3d6524aaa929af978041ffd60944b4f740d6590381fecf69d19",
+      "observed_consistent": true,
+      "id": "documentary-subkind-and-evidence-role-overlap",
+      "expected_consistent": true,
+      "status": "PASS"
+    },
+    {
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Exception in thread \"main\" org.semanticweb.owlapi.reasoner.InconsistentOntologyException: Inconsistent ontology\n\tat org.semanticweb.HermiT.Reasoner.throwInconsistentOntologyExceptionIfNecessary(Reasoner.java:2311)\n\tat org.semanticweb.HermiT.Reasoner.checkPreConditions(Reasoner.java:2303)\n\tat org.semanticweb.HermiT.Reasoner.isSatisfiable(Reasoner.java:784)\n\tat org.semanticweb.HermiT.cli.SatisfiabilityAction.run(SatisfiabilityAction.java:25)\n\tat org.semanticweb.HermiT.cli.CommandLine.main(CommandLine.java:404)",
+      "elapsed_ms": 2072,
+      "input_sha256": "96174499314c90ed9ce88a0ca46e2ab230a5cf3e5be5908cbeab766ed3798be1",
+      "observed_consistent": false,
+      "id": "human-and-organization-role-bearers-exclusive",
+      "expected_consistent": false,
+      "status": "PASS"
+    },
+    {
+      "exit_code": 0,
+      "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.",
+      "stderr": "",
+      "elapsed_ms": 1427,
+      "input_sha256": "bcba73f0678421b04ebfc059092c0e8db94222ff1163b97217698f5367a59ffd",
+      "observed_consistent": true,
+      "id": "agent-without-declared-bearer-subkind-allowed",
+      "expected_consistent": true,
+      "status": "PASS"
+    },
+    {
+      "exit_code": 0,
+      "stdout": "true",
+      "stderr": "",
+      "elapsed_ms": 3043,
+      "input_sha256": "56af511b5ae09cefc95211cf39ea8032eb49bafd3b9984e6221ac4be29e8208d",
+      "conclusion_sha256": "cb8e491c1c60ce96b6adbccaa3e6e880539bc16567f2651308f6137d196f2deb",
+      "observed_entailment": true,
+      "id": "all-67-source-subtype-links-entailed",
+      "expected_entailment": true,
+      "status": "PASS"
+    },
+    {
+      "exit_code": 0,
+      "stdout": "false",
+      "stderr": "",
+      "elapsed_ms": 2623,
+      "input_sha256": "56af511b5ae09cefc95211cf39ea8032eb49bafd3b9984e6221ac4be29e8208d",
+      "conclusion_sha256": "38bb3476ed750388745eab0f961376fd6e4a7b26dc23b6629951d87b531ac281",
+      "observed_entailment": false,
+      "id": "agent-not-exhausted-by-person-organization",
+      "expected_entailment": false,
+      "status": "PASS"
+    }
+  ],
+  "mutation_controls": [
+    {
+      "id": "restore-GS-RKM-C014",
+      "status": "DETECTED",
+      "unit": "native set-policy trigger"
+    },
+    {
+      "id": "restore-GS-RKM-C047",
+      "status": "DETECTED",
+      "unit": "native set-policy trigger"
+    },
+    {
+      "id": "delete-valid-subtype-link",
+      "status": "DETECTED",
+      "unit": "native source fidelity"
+    },
+    {
+      "id": "remove-bearer-exclusivity",
+      "status": "DETECTED",
+      "unit": "HermiT mutation",
+      "execution": {
+        "exit_code": 0,
+        "stdout": "http://www.w3.org/2002/07/owl#Thing is satisfiable.",
+        "stderr": "",
+        "elapsed_ms": 1786,
+        "input_sha256": "7d0adaf25e9f96479d90fbf451d5c39a099e7604c53a118bf0d7c57efcae4355",
+        "observed_consistent": true
+      }
+    },
+    {
+      "id": "add-global-role-exclusivity",
+      "status": "DETECTED",
+      "unit": "HermiT mutation",
+      "execution": {
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" org.semanticweb.owlapi.reasoner.InconsistentOntologyException: Inconsistent ontology\n\tat org.semanticweb.HermiT.Reasoner.throwInconsistentOntologyExceptionIfNecessary(Reasoner.java:2311)\n\tat org.semanticweb.HermiT.Reasoner.checkPreConditions(Reasoner.java:2303)\n\tat org.semanticweb.HermiT.Reasoner.isSatisfiable(Reasoner.java:784)\n\tat org.semanticweb.HermiT.cli.SatisfiabilityAction.run(SatisfiabilityAction.java:25)\n\tat org.semanticweb.HermiT.cli.CommandLine.main(CommandLine.java:404)",
+        "elapsed_ms": 4051,
+        "input_sha256": "68ebb35528a735edc8161ea9160734ebea4c63c62ed777beec37422241a8d525",
+        "observed_consistent": false
+      }
+    }
+  ],
+  "owl_profile": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "elapsed_ms": 3198
+  },
+  "selected_pattern_candidates": {
+    "GSRig": [],
+    "DepPhase": [],
+    "MixRig": [],
+    "RelRig": [],
+    "RepRel": [
+      "RKM-C052",
+      "RKM-C075"
+    ],
+    "ImpAbs": [
+      "R-05",
+      "R-06",
+      "R-51",
+      "R-65",
+      "R-68",
+      "R-70",
+      "RX-006",
+      "RX-007"
+    ],
+    "BinOver": [
+      "R-04",
+      "R-05",
+      "R-06",
+      "R-08",
+      "R-10",
+      "R-12",
+      "R-13",
+      "R-14",
+      "R-15",
+      "R-16",
+      "R-17",
+      "R-18",
+      "R-20",
+      "R-27",
+      "R-31",
+      "R-32",
+      "R-34",
+      "R-37",
+      "R-39",
+      "R-40",
+      "R-42",
+      "R-43",
+      "R-45",
+      "R-46",
+      "R-47",
+      "R-48",
+      "R-49",
+      "R-50",
+      "R-54",
+      "R-62",
+      "R-63",
+      "R-68",
+      "RX-008",
+      "RX-009",
+      "RX-012",
+      "RX-017",
+      "RX-018",
+      "RX-019",
+      "RX-021",
+      "RX-023",
+      "RX-025",
+      "RX-026",
+      "RX-027",
+      "RK2-005",
+      "RK2-008",
+      "RK2-009",
+      "RK2-010",
+      "RK2-011",
+      "RK2-012",
+      "RK2-013",
+      "RK2-014",
+      "RK2-015",
+      "RK2-018",
+      "RK2-019",
+      "RK2-020",
+      "RK2-022",
+      "RK2-023",
+      "RK2-024",
+      "RK2-025",
+      "RK2-026",
+      "RK3-003"
+    ],
+    "RelSpec": [
+      [
+        "R-02",
+        "RX-006"
+      ],
+      [
+        "R-10",
+        "RK2-025"
+      ],
+      [
+        "R-23",
+        "RX-006"
+      ],
+      [
+        "R-24",
+        "RX-006"
+      ],
+      [
+        "R-28",
+        "RX-006"
+      ],
+      [
+        "R-28",
+        "RX-014"
+      ],
+      [
+        "R-28",
+        "RX-015"
+      ],
+      [
+        "R-29",
+        "RX-006"
+      ],
+      [
+        "R-30",
+        "RX-006"
+      ],
+      [
+        "R-33",
+        "RX-006"
+      ],
+      [
+        "R-35",
+        "RX-001"
+      ],
+      [
+        "R-38",
+        "RX-006"
+      ],
+      [
+        "R-44",
+        "RX-006"
+      ],
+      [
+        "R-52",
+        "RX-006"
+      ],
+      [
+        "R-60",
+        "RX-006"
+      ],
+      [
+        "R-61",
+        "RX-006"
+      ],
+      [
+        "R-68",
+        "RX-021"
+      ],
+      [
+        "RX-006",
+        "RX-013"
+      ],
+      [
+        "RX-006",
+        "RX-014"
+      ],
+      [
+        "RX-006",
+        "RX-015"
+      ],
+      [
+        "RX-006",
+        "RX-016"
+      ],
+      [
+        "RX-006",
+        "RK2-016"
+      ],
+      [
+        "RX-006",
+        "RK2-017"
+      ],
+      [
+        "RX-006",
+        "RK2-021"
+      ],
+      [
+        "RX-014",
+        "RX-015"
+      ],
+      [
+        "RE-001",
+        "RE-003"
+      ],
+      [
+        "RE-002",
+        "RE-003"
+      ]
+    ]
+  },
+  "summary": {
+    "source_policy_checks": 12,
+    "source_policy_checks_passed": 12,
+    "native_schema_errors": 0,
+    "retained_sets": 8,
+    "retained_subtype_links": 67,
+    "selected_GSRig_candidates": 0,
+    "hermit_cases": 8,
+    "hermit_cases_matching": 8,
+    "mutation_controls": 5,
+    "mutation_controls_detected": 5,
+    "owl2_dl": true
+  },
+  "boundary": "Both focal grouping repairs are implemented in an isolated combined candidate. Other retained sets and catalogue triggers are not independently accepted. No production promotion, database migration, release or replacement of manuscript historical engine counts is claimed. B0-3 integration review remains open."
+}

@@ -1,0 +1,157 @@
+{
+  "strategy": "Emit only explicitly listed retained sets; common parenthood is not a set-creation rule.",
+  "retained_sets": [
+    {
+      "id": "GS-RKM-C015",
+      "parent": "RKM-C015",
+      "generalizations": [
+        "G-19",
+        "GX-051"
+      ],
+      "isDisjoint": false,
+      "isComplete": false,
+      "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+      "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+      "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent.",
+      "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+      "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+    },
+    {
+      "id": "GS-RKM-C048",
+      "parent": "RKM-C048",
+      "generalizations": [
+        "G-24",
+        "G-28"
+      ],
+      "isDisjoint": false,
+      "isComplete": false,
+      "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+      "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+      "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent.",
+      "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+      "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+    },
+    {
+      "id": "GS-RKM-C053",
+      "parent": "RKM-C053",
+      "generalizations": [
+        "G-25",
+        "G-27"
+      ],
+      "isDisjoint": true,
+      "isComplete": false,
+      "rationale": "The current person and organization role specializations inherit distinct human/social-entity identity; other bearer kinds are not ruled out.",
+      "example": "A human and an organization are separate role bearers.",
+      "counterexample": "The same individual cannot be both the human bearer and the organization bearer under these definitions.",
+      "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+      "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+    },
+    {
+      "id": "GS-RKM-C049",
+      "parent": "RKM-C049",
+      "generalizations": [
+        "G-26",
+        "G-30"
+      ],
+      "isDisjoint": false,
+      "isComplete": false,
+      "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+      "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+      "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent.",
+      "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+      "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+    },
+    {
+      "id": "GS-RKM-C054",
+      "parent": "RKM-C054",
+      "generalizations": [
+        "G-29",
+        "G-31"
+      ],
+      "isDisjoint": true,
+      "isComplete": false,
+      "rationale": "The current person and organization role specializations inherit distinct human/social-entity identity; other bearer kinds are not ruled out.",
+      "example": "A human and an organization are separate role bearers.",
+      "counterexample": "The same individual cannot be both the human bearer and the organization bearer under these definitions.",
+      "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+      "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+    },
+    {
+      "id": "GS-RKM-C019",
+      "parent": "RKM-C019",
+      "generalizations": [
+        "G2-050",
+        "G2-055",
+        "G2-056",
+        "G2-057",
+        "G2-060",
+        "G2-061",
+        "G2-062",
+        "G2-063",
+        "G2-064",
+        "G2-065"
+      ],
+      "isDisjoint": false,
+      "isComplete": false,
+      "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+      "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+      "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent.",
+      "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+      "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+    },
+    {
+      "id": "GS-RKM-C017",
+      "parent": "RKM-C017",
+      "generalizations": [
+        "G2-053",
+        "G2-058",
+        "G2-059"
+      ],
+      "isDisjoint": false,
+      "isComplete": false,
+      "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+      "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+      "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent.",
+      "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+      "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+    },
+    {
+      "id": "GS-AgentKinds",
+      "parent": "RKM-C047",
+      "generalizations": [
+        "G-20",
+        "G-21"
+      ],
+      "isDisjoint": true,
+      "isComplete": false,
+      "rationale": "Person is defined as a human individual; Organization is an organized social entity. The current model does not close Agent to these two kinds.",
+      "example": "A person and an employing organization are different agents.",
+      "counterexample": "An organization must not be merged with a human representative; an unmodeled agent kind is not excluded by a covering axiom.",
+      "criterion_status": "EXPLICITLY_RETAINED_BEARER_KIND_CRITERION",
+      "specialization_criterion": "Bearer kind: human individual or organized social entity."
+    }
+  ],
+  "excluded_sets": [
+    {
+      "id": "GS-RKM-C014",
+      "parent": "RKM-C014",
+      "decision": "NO_BLANKET_SET",
+      "criteria_distinguished": [
+        "Documentary specialization",
+        "Contextual evidential participation"
+      ],
+      "rationale": "Shared documentary identity does not supply one specialization criterion for documentary subkinds and an evidential role. Retain every subtype edge; do not invent a replacement set for all subkinds."
+    },
+    {
+      "id": "GS-RKM-C047",
+      "parent": "RKM-C047",
+      "decision": "NO_BLANKET_SET",
+      "criteria_distinguished": [
+        "Agent bearer kind",
+        "Mandate participation"
+      ],
+      "rationale": "Retain the separate, disjoint and incomplete AgentKinds set; responsible and authorizing participation must not compete with Person/Organization classification."
+    }
+  ],
+  "scope": "Two focal mixed-criterion sets. Other eight reviewed sets are retained, not newly independently validated."
+}
