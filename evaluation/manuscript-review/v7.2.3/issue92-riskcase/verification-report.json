@@ -1,0 +1,278 @@
+{
+  "schema": "riskium-riskcase-public-outcome-1",
+  "status": "B2_COMPLETE_CANDIDATE_NOT_PUBLISHED",
+  "execution_commit": "47a9fc1b966441898f967b6830d45c500955d0c0",
+  "candidate_version": "0.3.2-case.1",
+  "input_contract_sha256": "131aeb5b0d61eeecd1493a58f16a598ccdc63808327cde9650df9c2388ddf080",
+  "actual_github_actions": {
+    "run_id": 42635305088,
+    "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42635305088",
+    "conclusion": "success",
+    "summary": {
+      "planned_cases": 20,
+      "cases_executed": 20,
+      "cases_matched": 20,
+      "actual_SHACL_invocations": 13,
+      "actual_HermiT_invocations": 8,
+      "HermiT_matches": 8,
+      "native_elements": 596,
+      "reader_pages": 83,
+      "reader_files": 92,
+      "reader_local_links": 2607,
+      "historical_input_files_preserved": 133
+    },
+    "case_statuses": [
+      {
+        "id": "RKC-01",
+        "scope": "analytical identity",
+        "expected": "Analytical task accepts; no entry or occurrence is invented.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-02",
+        "scope": "local approval missing",
+        "expected": "Core case retained; operational readiness is INCOMPLETE/UNKNOWN.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-03",
+        "scope": "explicit denial",
+        "expected": "Core case retained; operational eligibility is NOT_ELIGIBLE, distinct from unknown.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-04",
+        "scope": "local positive",
+        "expected": "Both selected analytical and local operational checks accept.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-05",
+        "scope": "entry absence",
+        "expected": "Case identity persists; the declared operational task is incomplete.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-06",
+        "scope": "record identity",
+        "expected": "The selected named-identity profile rejects; raw input may remain staging.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-07",
+        "scope": "context incomplete",
+        "expected": "Task is incomplete; no case deletion/nonexistence claim. OWL may remain satisfiable using anonymous witnesses.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-08",
+        "scope": "objective incomplete",
+        "expected": "Task is incomplete; case identity is not contingent on operational approval.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-09",
+        "scope": "case-entry multiplicity",
+        "expected": "Preserve one case and two entries; R-01 does not create a second case.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-10",
+        "scope": "label equality",
+        "expected": "Do not merge by label or score. A HermiT consistency check uses explicit distinctness; it does not adjudicate real identity.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-11",
+        "scope": "case-record identity",
+        "expected": "Reject cross-family identity in the declared SQL/application contract; do not invent a new universal OWL disjointness axiom.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-12",
+        "scope": "scenario-occurrence distinction",
+        "expected": "Retain the scenario/case interpretation; assert no actual occurrence.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-13",
+        "scope": "perspective qualification",
+        "expected": "Retain the qualified assertions; no forced threat/opportunity partition or automatic case split.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-14",
+        "scope": "historical preservation",
+        "expected": "Every original byte/hash and withheld identity field remains unchanged. No real case admission is inferred.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-15",
+        "scope": "external focus",
+        "expected": "Reject an empty request rather than reporting vacuous acceptance.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-16",
+        "scope": "selector/schema injection",
+        "expected": "Reject untrusted selector/schema injection before task validation.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-17",
+        "scope": "SQL/RDF identity view",
+        "expected": "Existing v_native_facts exports its case type; selected SQL and RDF identity/entry answers agree. This is not full context/approval persistence.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-18",
+        "scope": "profile guard mutation",
+        "expected": "The bad record becomes accepted and the fixed negative oracle detects the mutation.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-19",
+        "scope": "wrong entry target",
+        "expected": "Reject the selected operational join; do not silently relink the entry or merge cases.",
+        "CI_status": "PASS"
+      },
+      {
+        "id": "RKC-20",
+        "scope": "candidate preservation",
+        "expected": "596 native elements and the B0 repair remain; logical OWL is isomorphic to the prior candidate after documentary annotations/version data are removed. New version/profile hashes are explicit.",
+        "CI_status": "PASS"
+      }
+    ]
+  },
+  "separate_exact_commit_local_replay": {
+    "status": "PASS_B2_CANDIDATE_NOT_PUBLISHED",
+    "report_sha256": "d8011d2b927da149845830f61873f72a4d73a4186593022186acca94f0d4174d",
+    "summary": {
+      "planned_cases": 20,
+      "cases_executed": 20,
+      "cases_matched": 20,
+      "actual_SHACL_invocations": 13,
+      "actual_HermiT_invocations": 8,
+      "HermiT_matches": 8,
+      "native_elements": 596,
+      "reader_pages": 83,
+      "reader_files": 92,
+      "reader_local_links": 2607,
+      "historical_input_files_preserved": 133
+    },
+    "case_statuses": [
+      {
+        "id": "RKC-01",
+        "scope": "analytical identity",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-02",
+        "scope": "local approval missing",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-03",
+        "scope": "explicit denial",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-04",
+        "scope": "local positive",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-05",
+        "scope": "entry absence",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-06",
+        "scope": "record identity",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-07",
+        "scope": "context incomplete",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-08",
+        "scope": "objective incomplete",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-09",
+        "scope": "case-entry multiplicity",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-10",
+        "scope": "label equality",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-11",
+        "scope": "case-record identity",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-12",
+        "scope": "scenario-occurrence distinction",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-13",
+        "scope": "perspective qualification",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-14",
+        "scope": "historical preservation",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-15",
+        "scope": "external focus",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-16",
+        "scope": "selector/schema injection",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-17",
+        "scope": "SQL/RDF identity view",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-18",
+        "scope": "profile guard mutation",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-19",
+        "scope": "wrong entry target",
+        "status": "PASS"
+      },
+      {
+        "id": "RKC-20",
+        "scope": "candidate preservation",
+        "status": "PASS"
+      }
+    ]
+  },
+  "supported_conclusions": [
+    "The adopted RiskCase wording is shared by the source, native description, OWL annotation and complete candidate dictionary.",
+    "An identifiable analytical item does not require a register entry or approval.",
+    "Missing explicit context/objective makes the selected task incomplete while OWL can remain satisfiable; explicitly denying their existence is inconsistent.",
+    "Local operational eligibility remains caller-selected; unknown approval, denial and a wrong entry target have distinct checked outcomes.",
+    "The prior logical OWL projection is preserved up to documentary annotations/version metadata; EvidenceItem/set repairs and 596 native elements remain."
+  ],
+  "remaining": [
+    "R1: source-qualified current scientific component selection, successor publication projections and distribution closure.",
+    "R2: package/download verification, coordinated release and actual maintained-channel readback."
+  ],
+  "boundary": "Actual synthetic candidate checks only. SQLite identity/history schema 2 is a bounded baseline slice; no PostgreSQL or full context/approval persistence. Logical consistency/isomorphism is not independent semantic adequacy. Current-source qualification, package publication and live maintained-channel readback remain R1/R2. Manuscript 7.2.21 and prior scientific receipts are unchanged."
+}

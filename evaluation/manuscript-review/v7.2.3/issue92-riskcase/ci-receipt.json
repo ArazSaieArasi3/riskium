@@ -1,0 +1,141 @@
+{
+  "schema": "riskium-riskcase-actual-ci-receipt-1",
+  "status": "SUCCESS",
+  "execution_commit": "47a9fc1b966441898f967b6830d45c500955d0c0",
+  "run_id": 42635305088,
+  "attempt": 1,
+  "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42635305088",
+  "conclusion": "success",
+  "source_version": "0.3.2-case.1",
+  "input_contract_sha256": "131aeb5b0d61eeecd1493a58f16a598ccdc63808327cde9650df9c2388ddf080",
+  "source_model_sha256": "e98a63b286441c80fc10a9644804d64fc2b611e906b2d27cf3d72f3ebd72cfa8",
+  "summary": {
+    "planned_cases": 20,
+    "cases_executed": 20,
+    "cases_matched": 20,
+    "actual_SHACL_invocations": 13,
+    "actual_HermiT_invocations": 8,
+    "HermiT_matches": 8,
+    "native_elements": 596,
+    "reader_pages": 83,
+    "reader_files": 92,
+    "reader_local_links": 2607,
+    "historical_input_files_preserved": 133
+  },
+  "jobs": [
+    {
+      "id": 129221772858,
+      "name": "qualify",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 42635305088,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run actions/setup-java@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Install candidate tools",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Replay candidate and stage publication",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Qualify the analytical RiskCase successor",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Preserve actual execution receipts and staged projections",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Post Run actions/setup-java@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 13682158895,
+      "name": "combined-candidate-47a9fc1b966441898f967b6830d45c500955d0c0",
+      "digest": "sha256:5b1a90b2d1d7c0132c7e9e4cca7c0399ac31d9b1a8cbb242b5c52a851e6079be",
+      "size_in_bytes": 598731,
+      "expired": false,
+      "expires_at": "2027-02-07T14:30:12Z"
+    }
+  ],
+  "prior_run": {
+    "id": 42634401423,
+    "head_sha": "4f6410861c6286d1616c6d7fd5c54dc7f7007327",
+    "conclusion": "failure",
+    "stage": "Before B2 acceptance tests; previous packet replay passed.",
+    "cause": "The old combined model was an ignored generated file absent from a clean checkout.",
+    "repair": "Reconstruct the prior model from its pinned pure recipe, verify its exact original B1/B0 hash, and supply it through a temporary input route to the unchanged old validator. No historical output or receipt is overwritten.",
+    "blind_retry": false
+  },
+  "boundary": "Actual candidate CI success, distinct from the separate exact-commit local execution. No live publication or production/current-source promotion."
+}
