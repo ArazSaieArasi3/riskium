@@ -1,0 +1,55 @@
+{
+  "scope": "Synthetic recorded-use decisions for candidate acceptance tests; not inferred from the legacy references or pharmaceutical data.",
+  "groundings": [
+    {
+      "version_id": "urn:riskium:candidate-use:ground-1-v1",
+      "artifact_id": "urn:riskium:candidate-use:ground-1",
+      "body": "Synthetic test record explicitly documenting use episode 1 as support in the selected analysis context.",
+      "locator": "synthetic/issue93-use/1"
+    },
+    {
+      "version_id": "urn:riskium:candidate-use:ground-2-v1",
+      "artifact_id": "urn:riskium:candidate-use:ground-2",
+      "body": "Synthetic test record explicitly documenting use episode 2 as challenge in the selected analysis context.",
+      "locator": "synthetic/issue93-use/2"
+    },
+    {
+      "version_id": "urn:riskium:candidate-use:ground-3-v1",
+      "artifact_id": "urn:riskium:candidate-use:ground-3",
+      "body": "Synthetic test record explicitly documenting use episode 3 as context in the selected analysis context.",
+      "locator": "synthetic/issue93-use/3"
+    }
+  ],
+  "uses": [
+    {
+      "id": "urn:riskium:candidate-use:use-1",
+      "reference_version": "urn:riskium:evidence:ref-a-v1",
+      "item_version": "urn:riskium:evidence:item-a-v1",
+      "context_version": "urn:riskium:knowledge:scenario-a-v1",
+      "grounding_version": "urn:riskium:candidate-use:ground-1-v1",
+      "purpose": "support",
+      "recorded_at": "2026-11-09T09:00:00Z",
+      "justification": "Explicit synthetic use decision supplied by this fixture; not inferred from the presence or proposed purpose of a citation."
+    },
+    {
+      "id": "urn:riskium:candidate-use:use-2",
+      "reference_version": "urn:riskium:evidence:ref-a-v2",
+      "item_version": "urn:riskium:evidence:item-a-v2",
+      "context_version": "urn:riskium:knowledge:scenario-a-v2",
+      "grounding_version": "urn:riskium:candidate-use:ground-2-v1",
+      "purpose": "challenge",
+      "recorded_at": "2026-11-09T09:00:00Z",
+      "justification": "Explicit synthetic use decision supplied by this fixture; not inferred from the presence or proposed purpose of a citation."
+    },
+    {
+      "id": "urn:riskium:candidate-use:use-3",
+      "reference_version": "urn:riskium:evidence:ref-b-v1",
+      "item_version": "urn:riskium:evidence:item-a-v1",
+      "context_version": "urn:riskium:knowledge:scenario-b-v1",
+      "grounding_version": "urn:riskium:candidate-use:ground-3-v1",
+      "purpose": "context",
+      "recorded_at": "2026-11-09T09:00:00Z",
+      "justification": "Explicit synthetic use decision supplied by this fixture; not inferred from the presence or proposed purpose of a citation."
+    }
+  ]
+}

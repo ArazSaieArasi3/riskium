@@ -1,0 +1,200 @@
+{
+  "schema": "riskium-explicit-use-sidecar-verification-1",
+  "date_tehran": "2026-11-09",
+  "candidate_source_commit": "2028c2d21b519940d84b640663b0d0a6cf2499b8",
+  "status": "B05_SQLITE_RDF_SLICE_COMPLETE_NOT_PROMOTED",
+  "checks": {
+    "sidecar_tests": true,
+    "all_shacl_outcomes": true,
+    "selected_sql_sparql_parity": true,
+    "dropped_use_mutation_detected": true,
+    "import_never_infers_use": true,
+    "legacy_schema_data_unchanged": true,
+    "baseline_regressions": true,
+    "sqlite_integrity": true
+  },
+  "summary": {
+    "sidecar_unit_tests": 21,
+    "sidecar_unit_tests_passed": 21,
+    "shacl_outcomes": 17,
+    "shacl_matches": 17,
+    "new_information_graphs": 4,
+    "explicit_use_graphs": 3,
+    "negative_export_controls": 6,
+    "historical_incompatibilities_reconfirmed": 4,
+    "selected_query_rows": 3,
+    "baseline_regression_tests": 21,
+    "baseline_regression_passed": 21,
+    "production_promoted": false,
+    "postgresql_tested": false
+  },
+  "health": {
+    "sqlite_version": "3.53.1",
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "reference_snapshots": 4,
+    "imported_version_pins": 41,
+    "use_count_immediately_after_import": 0,
+    "explicit_use_records": 3
+  },
+  "shacl_cases": [
+    {
+      "id": "old-projection-1",
+      "group": "legacy-compatibility",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "id": "documentary-projection-1",
+      "group": "candidate-information",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "pass": true
+    },
+    {
+      "id": "old-projection-2",
+      "group": "legacy-compatibility",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "id": "documentary-projection-2",
+      "group": "candidate-information",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "pass": true
+    },
+    {
+      "id": "old-projection-3",
+      "group": "legacy-compatibility",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "id": "documentary-projection-3",
+      "group": "candidate-information",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "pass": true
+    },
+    {
+      "id": "old-projection-4",
+      "group": "legacy-compatibility",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "id": "documentary-projection-4",
+      "group": "candidate-information",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "pass": true
+    },
+    {
+      "id": "explicit-use-1",
+      "group": "candidate-use",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "pass": true
+    },
+    {
+      "id": "explicit-use-2",
+      "group": "candidate-use",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "pass": true
+    },
+    {
+      "id": "explicit-use-3",
+      "group": "candidate-use",
+      "expected_conforms": true,
+      "observed_conforms": true,
+      "pass": true
+    },
+    {
+      "id": "missing-grounding",
+      "group": "negative-export-control",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "id": "missing-item",
+      "group": "negative-export-control",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "id": "missing-reference",
+      "group": "negative-export-control",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "id": "invalid-purpose",
+      "group": "negative-export-control",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "id": "reversed-mediation",
+      "group": "negative-export-control",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    },
+    {
+      "id": "aliased-participants",
+      "group": "negative-export-control",
+      "expected_conforms": false,
+      "observed_conforms": false,
+      "pass": true
+    }
+  ],
+  "tests": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_append_only_records_and_replace_are_rejected (test_relational_use.SidecarUse.test_append_only_records_and_replace_are_rejected) ... ok\ntest_backup_reopen_and_dump_restore_preserve_graph (test_relational_use.SidecarUse.test_backup_reopen_and_dump_restore_preserve_graph) ... ok\ntest_bad_purpose_and_impossible_date_rejected (test_relational_use.SidecarUse.test_bad_purpose_and_impossible_date_rejected) ... ok\ntest_changed_proposed_purpose_is_not_required_for_actual_use (test_relational_use.SidecarUse.test_changed_proposed_purpose_is_not_required_for_actual_use) ... ok\ntest_configuration_off_is_rejected (test_relational_use.SidecarUse.test_configuration_off_is_rejected) ... ok\ntest_declared_direct_alias_rejected (test_relational_use.SidecarUse.test_declared_direct_alias_rejected) ... ok\ntest_declared_transitive_alias_rejected (test_relational_use.SidecarUse.test_declared_transitive_alias_rejected) ... ok\ntest_documentary_import_never_creates_use_or_roles (test_relational_use.SidecarUse.test_documentary_import_never_creates_use_or_roles) ... ok\ntest_duplicate_id_and_exact_episode_tuple_rejected (test_relational_use.SidecarUse.test_duplicate_id_and_exact_episode_tuple_rejected) ... ok\ntest_information_only_reference_survives_after_other_uses (test_relational_use.SidecarUse.test_information_only_reference_survives_after_other_uses) ... ok\ntest_late_alias_cannot_invalidate_recorded_use (test_relational_use.SidecarUse.test_late_alias_cannot_invalidate_recorded_use) ... ok\ntest_missing_field_and_blank_justification_rejected (test_relational_use.SidecarUse.test_missing_field_and_blank_justification_rejected) ... ok\ntest_missing_grounding_and_unknown_reference_rejected (test_relational_use.SidecarUse.test_missing_grounding_and_unknown_reference_rejected) ... ok\ntest_nonempty_sidecar_reinitialization_rejected (test_relational_use.SidecarUse.test_nonempty_sidecar_reinitialization_rejected) ... ok\ntest_purpose_terms_match_the_pinned_shape_enumeration (test_relational_use.SidecarUse.test_purpose_terms_match_the_pinned_shape_enumeration) ... ok\ntest_source_snapshot_and_schema_drift_are_detected (test_relational_use.SidecarUse.test_source_snapshot_and_schema_drift_are_detected) ... ok\ntest_sql_layer_rejects_mismatch_without_api (test_relational_use.SidecarUse.test_sql_layer_rejects_mismatch_without_api) ... ok\ntest_sql_sparql_selected_query_parity (test_relational_use.SidecarUse.test_sql_sparql_selected_query_parity) ... ok\ntest_tampered_dump_rolls_back_before_acceptance (test_relational_use.SidecarUse.test_tampered_dump_rolls_back_before_acceptance) ... ok\ntest_three_explicit_purposes_and_exact_version_pins (test_relational_use.SidecarUse.test_three_explicit_purposes_and_exact_version_pins) ... ok\ntest_wrong_item_and_unrecorded_context_rejected (test_relational_use.SidecarUse.test_wrong_item_and_unrecorded_context_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 5.495s\n\nOK",
+    "elapsed_ms": 5692
+  },
+  "regressions": {
+    "test_qualified_evidence.py": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_an_existing_knowledge_artifact_can_play_the_contextual_item_role (test_qualified_evidence.QualifiedEvidence.test_an_existing_knowledge_artifact_can_play_the_contextual_item_role) ... ok\ntest_artifact_origin_does_not_replace_later_item_version_source (test_qualified_evidence.QualifiedEvidence.test_artifact_origin_does_not_replace_later_item_version_source) ... ok\ntest_fixed_62_controls_and_mutations_match_bound_receipt (test_qualified_evidence.QualifiedEvidence.test_fixed_62_controls_and_mutations_match_bound_receipt) ... ok\ntest_item_role_does_not_create_a_second_bearer_identity (test_qualified_evidence.QualifiedEvidence.test_item_role_does_not_create_a_second_bearer_identity) ... ok\ntest_nested_failed_issue_preserves_outer_work_without_partial_reference_identity (test_qualified_evidence.QualifiedEvidence.test_nested_failed_issue_preserves_outer_work_without_partial_reference_identity) ... ok\ntest_nontext_target_pin_is_not_silently_coerced (test_qualified_evidence.QualifiedEvidence.test_nontext_target_pin_is_not_silently_coerced) ... ok\ntest_old_reader_rejects_v7_and_new_reader_does_not_silently_bootstrap (test_qualified_evidence.QualifiedEvidence.test_old_reader_rejects_v7_and_new_reader_does_not_silently_bootstrap) ... ok\ntest_raw_sql_calendar_check_is_not_only_an_api_check (test_qualified_evidence.QualifiedEvidence.test_raw_sql_calendar_check_is_not_only_an_api_check) ... ok\ntest_reader_rejects_recursive_trigger_configuration_drift (test_qualified_evidence.QualifiedEvidence.test_reader_rejects_recursive_trigger_configuration_drift) ... ok\ntest_reference_cannot_gain_conflicting_assessment_typing (test_qualified_evidence.QualifiedEvidence.test_reference_cannot_gain_conflicting_assessment_typing) ... ok\ntest_reference_cannot_gain_conflicting_knowledge_typing (test_qualified_evidence.QualifiedEvidence.test_reference_cannot_gain_conflicting_knowledge_typing) ... ok\ntest_reference_typing_cannot_be_replaced_or_deleted (test_qualified_evidence.QualifiedEvidence.test_reference_typing_cannot_be_replaced_or_deleted) ... ok\ntest_same_update_cannot_smuggle_a_different_documentary_source (test_qualified_evidence.QualifiedEvidence.test_same_update_cannot_smuggle_a_different_documentary_source) ... ok\ntest_two_references_to_the_same_item_are_not_independent_corroboration (test_qualified_evidence.QualifiedEvidence.test_two_references_to_the_same_item_are_not_independent_corroboration) ... ok\ntest_v7_restore_preserves_prior_knowledge_payload_audits (test_qualified_evidence.QualifiedEvidence.test_v7_restore_preserves_prior_knowledge_payload_audits) ... ok\ntest_v7_restore_preserves_prior_lineage_semantic_audits (test_qualified_evidence.QualifiedEvidence.test_v7_restore_preserves_prior_lineage_semantic_audits) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 10.168s\n\nOK",
+      "elapsed_ms": 10340,
+      "tests": 16
+    },
+    "test_source_transition.py": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_actual_candidate_has_complete_reviewed_source_accounting (test_source_transition.SourceTransition.test_actual_candidate_has_complete_reviewed_source_accounting) ... ok\ntest_deleted_reviewed_files_are_rejected (test_source_transition.SourceTransition.test_deleted_reviewed_files_are_rejected) ... ok\ntest_new_scientific_code_cannot_inherit_old_receipts (test_source_transition.SourceTransition.test_new_scientific_code_cannot_inherit_old_receipts) ... ok\ntest_reader_replacement_is_explicit_and_unchanged_code_is_reused (test_source_transition.SourceTransition.test_reader_replacement_is_explicit_and_unchanged_code_is_reused) ... ok\ntest_research_implementation_drift_is_rejected (test_source_transition.SourceTransition.test_research_implementation_drift_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.176s\n\nOK",
+      "elapsed_ms": 243,
+      "tests": 5
+    }
+  },
+  "source_state_hash_before": "b6e44d2dbdef772c0b721c5d819c2c53467ca8646bbcb9102562e3cfb3e377d6",
+  "source_state_hash_after": "b6e44d2dbdef772c0b721c5d819c2c53467ca8646bbcb9102562e3cfb3e377d6",
+  "contract_sha256": "cdeb64f07477119bcc1a3c63f5878959275200b5c2b47604e5fc76c056a405a5",
+  "generated_sha256": {
+    "all-explicit-uses.trig": "6d16da7e566d0fc7495d1f7c81c7027d532bc840dbe7e141bc908b3c2c70cc2f",
+    "candidate-use.sql": "2110c35759b08a66a3c351dff8d80594600870f997f63d30e1fc02f345d0c8c9",
+    "candidate-use.sqlite": "2074352c98bccde400aa683c580d3a4a359067e102187f1df124ef6702b85047",
+    "information-1.ttl": "22582169ad8bfa347c0466d239389504a9512e06db4af0676a4d4a9c7a96639f",
+    "information-2.ttl": "61036c2194c73eb6bc34640afc373bfe24b29425178f130b6c57a4531c2d1692",
+    "information-3.ttl": "6b0443206cf528fd67f948ab20292fc775eb7f7c8700a09445cb89b0eb92e25d",
+    "information-4.ttl": "90858824c664e5f056e581779875ce866ec619c201ea5323f7317ec9fea3fe19",
+    "query-answers.json": "8451a259bf869dfea09d2a222b618dc1b82bee170756d8ddff8a1764109e4056",
+    "use-1.ttl": "1d3e9c5557013649f0204ebaffe0e32fef652e6e7b63e7a74e00f3a580b0cbad",
+    "use-2.ttl": "91dce9e87a835aca5d228d0b441f0656ea52ea9184544c3d5389887acececd0c",
+    "use-3.ttl": "fd3b48f0c54847694b770298ac371e0a2247db1f23b8cc385f64fb2dd563857c"
+  },
+  "boundary": "Synthetic version-pinned sidecar only. Old v7 exports remain historical; the new information/use routes are not an automatic backfill. Factual grounding adequacy, real-data migration, production/PostgreSQL deployment, complete query equivalence and reader/CI promotion remain unestablished."
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "riskium-evidence-use-sidecar-contract-1",
+  "candidate_source_version": "0.3.2-structural.2",
+  "export_contract_sha256": "64c7885a42b0c5b256d195b6c485e5ce88fdaaf72404194a4424bbdb9b8a09b4",
+  "source_database_contract": "Frozen SQLite v7; read and snapshot issued references only. No ALTER of the old schema.",
+  "inputs_sha256": {
+    "tools/relational_evidence.py": "3eac2b197739f5166e25d4ad292a6842af8232ed56922caa7181ebe044e2e0d2",
+    "tools/run_relational_evidence.py": "fb1c4a5bbfc0b4c9ba7b198ab1c20f993afa7b4f90d4cc2429f7fe0573780196",
+    "implementation/relational/0.6.0/fixtures.json": "9b7d6c0ef35f71c89558d65f439ba9fa7b2b9113d7f3fc0f5b3128c71767ccf8",
+    "evaluation/manuscript-review/v7.2.3/issue93-export-contract/input-contract.json": "64c7885a42b0c5b256d195b6c485e5ce88fdaaf72404194a4424bbdb9b8a09b4",
+    "evaluation/manuscript-review/v7.2.3/issue93-integration/combined-managed.shacl.ttl": "a7d9f93e530a14d21a7fd0847cb62d628852df6ef160345365f42baedeabe1d1",
+    "evaluation/manuscript-review/v7.2.3/issue93-relational-use/schema.sql": "1040942e83585bcc1108328cf8333ac5d3eb697d40a27bad87253ad65a4111f3",
+    "evaluation/manuscript-review/v7.2.3/issue93-relational-use/query.sql": "947c3a7e97c06b44a8b74c1d70b2931ee629477a6d4a62dd65e84d5eb29ea9ac",
+    "evaluation/manuscript-review/v7.2.3/issue93-relational-use/query.rq": "1e13f3df4b3bc61b5df4734370e265817194a68b5e9f5025700d5ed9379cc00c",
+    "evaluation/manuscript-review/v7.2.3/issue93-relational-use/relational_use.py": "658b0bd33943bda2281fde7d5b4fd0783bdbbc0449abb84037413315d30c8fe3",
+    "evaluation/manuscript-review/v7.2.3/issue93-relational-use/fixtures.json": "8ac7efd4bf6a7ecde55c39674064db420bfde0760eaffe4d47af2198d9243ffe",
+    "evaluation/manuscript-review/v7.2.3/issue93-relational-use/test_relational_use.py": "229e2ce7648687847748512fd42250872aa98f900cc22db53fe5f5270a0aeb0c",
+    "evaluation/manuscript-review/v7.2.3/issue93-relational-use/verify_use.py": "fa5fe19c80beb74f844788b08290e3ec2b25102fcc1a69f86ac17ef5082137b7"
+  },
+  "actual_use_admission": "A separate explicit use record is required; documentary import never asserts use, EvidenceItem or EvidenceReferenceRole. Grounding existence/structure is checked; factual adequacy still needs justified review.",
+  "identity_policy": "Unique use ID and unique exact reference/item/context/grounding-version/purpose tuple in this slice. Duplicate descriptions under different grounding identities require wider identity adjudication.",
+  "relational_profile": "Append-only candidate snapshot plus explicit grounded-use records. Corrections, temporal reconciliation and production deployment are outside this packet.",
+  "rdf_scope": "Each use is a version-qualified graph. Auxiliary version pins, grounding text/locator and decision metadata use candidate EU vocabulary, not new native relations.",
+  "postgresql_tested": false,
+  "production_promoted": false
+}

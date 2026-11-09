@@ -1,0 +1,7 @@
+PREFIX risk: <https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#>
+PREFIX eu: <https://github.com/ArazSaieArasi3/riskium/candidates/issue93/evidence-use#>
+SELECT ?use ?ref ?refVersion ?item ?itemVersion ?context ?contextVersion ?grounding ?groundingVersion ?purpose
+WHERE { ?use a risk:RKM-C075; risk:RE-001 ?item; risk:RE-002 ?ref; risk:RE-003 ?grounding;
+ eu:referenceVersion ?refVersion; eu:itemVersion ?itemVersion; eu:context ?context; eu:contextVersion ?contextVersion;
+ eu:groundingVersion ?groundingVersion; eu:purpose ?purpose . }
+ORDER BY ?use
