@@ -1,0 +1,46 @@
+{
+  "schema": "riskium-v039-R1-qualification-1",
+  "status": "PASS_R1_NOT_PUBLISHED",
+  "execution_commit": "37c6ed5a9aa672ed86834a742426e5b2c06d62b4",
+  "package_target": "v0.3.9",
+  "source_version": "0.3.2",
+  "source_sha256": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb",
+  "source_contract_sha256": "f901ab19f145db3b97f58798dcdd7aea7843f53db9c97aafd19eac96ba99259f",
+  "selection": {
+    "path": "releases/selection-v0.3.9.json",
+    "sha256": "045eeb07baa566e2de7ad8c518efec1112114f20ffdc888b382ec092713e97e1"
+  },
+  "selection_summary": {
+    "active_components": 5,
+    "historical_components": 32,
+    "selected_files": 1207,
+    "historical_delivery_aliases": 3
+  },
+  "fresh_oracle_summary": {
+    "planned_cases": 20,
+    "cases_executed": 20,
+    "cases_matched": 20,
+    "actual_SHACL_invocations": 13,
+    "actual_HermiT_invocations": 8,
+    "HermiT_matches": 8,
+    "native_elements": 596,
+    "reader_pages": 83,
+    "reader_files": 92,
+    "reader_local_links": 2607,
+    "historical_input_files_preserved": 138
+  },
+  "oracle_receipt_sha256": "339e9b6de1e7cd27968b0097e6cfa64bdfd010d39667e60c7a2e22617bd77c09",
+  "projection_manifest_sha256": "9300e784b5e1bbeb4dff3a60cb4c2e6dd516d96ca2df2f2d1583b51924e51082",
+  "projection_audit": {
+    "html_pages": 89,
+    "wiki_pages": 89,
+    "local_link_occurrences": 5054,
+    "deployed": false,
+    "commit_pinned_repository_targets_checked": 102,
+    "external_http_checked": false
+  },
+  "published": false,
+  "maintained_channels_read_back": false,
+  "runner_adapter": "Unchanged B2 twenty-oracle runner executes freshly using selected 0.3.2 source/native/OWL/contract and reader. Its raw PASS_B2_CANDIDATE_NOT_PUBLISHED label is retained as runner vocabulary, not reused historical evidence.",
+  "boundary": "R1 qualifies selected source bodies and staged routes. R2 must package, independently download/verify and publish, then read back maintained channels. Historical 0.3.1 components are not 0.3.2-qualified production implementations. Manuscript 7.2.21 is unchanged."
+}

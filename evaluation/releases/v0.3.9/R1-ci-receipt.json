@@ -1,0 +1,79 @@
+{
+  "schema": "riskium-v039-R1-public-ci-receipt-1",
+  "status": "R1_COMPLETE_NOT_PUBLISHED",
+  "executable_commit": "37c6ed5a9aa672ed86834a742426e5b2c06d62b4",
+  "source_version": "0.3.2",
+  "package_target": "v0.3.9",
+  "source_sha256": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb",
+  "source_contract_sha256": "f901ab19f145db3b97f58798dcdd7aea7843f53db9c97aafd19eac96ba99259f",
+  "selection": {
+    "path": "releases/selection-v0.3.9.json",
+    "sha256": "045eeb07baa566e2de7ad8c518efec1112114f20ffdc888b382ec092713e97e1"
+  },
+  "actual_github_actions": {
+    "run_id": 42644417169,
+    "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42644417169",
+    "attempt": 1,
+    "conclusion": "success",
+    "job_id": 129253695321,
+    "all_three_execution_steps_passed": true,
+    "artifact_id": 13687546114,
+    "artifact_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42644417169/artifacts/13687546114",
+    "download_sha256": "6ce07bfd71b25dd5bdbfeeeebf0f810ed7b374a87b1e2bbcd3d6b2dabd4d379e"
+  },
+  "fresh_selected_source_oracles": {
+    "planned_cases": 20,
+    "cases_executed": 20,
+    "cases_matched": 20,
+    "actual_SHACL_invocations": 13,
+    "actual_HermiT_invocations": 8,
+    "HermiT_matches": 8,
+    "native_elements": 596,
+    "reader_pages": 83,
+    "reader_files": 92,
+    "reader_local_links": 2607,
+    "historical_input_files_preserved": 138
+  },
+  "projection_audit": {
+    "html_pages": 89,
+    "wiki_pages": 89,
+    "local_link_occurrences": 5054,
+    "deployed": false,
+    "commit_pinned_repository_targets_checked": 102,
+    "external_http_checked": false
+  },
+  "projection_manifest_sha256": "9300e784b5e1bbeb4dff3a60cb4c2e6dd516d96ca2df2f2d1583b51924e51082",
+  "independent_local_replay": {
+    "source_commit": "37c6ed5a9aa672ed86834a742426e5b2c06d62b4",
+    "status": "PASS_R1_NOT_PUBLISHED",
+    "projection_manifest_equal_to_downloaded_CI": true,
+    "additional_projection_mutants_rejected": 5,
+    "source_transition_unit_tests_passed": 5
+  },
+  "attempt_history": [
+    {
+      "run_id": 42643627601,
+      "commit": "8bbc1c626ed6aa5547e5f51c082d892c6404d103",
+      "conclusion": "cancelled",
+      "reason": "Superseded during source/reader binding hardening."
+    },
+    {
+      "run_id": 42643938638,
+      "commit": "b8369425daa5f20ab50e6a08b36583bc885fd412",
+      "conclusion": "failure",
+      "reason": "R1 adapter import setup could not locate the unchanged case_profiles module before starting the twenty selected-source oracles. Scoped import context was repaired; no scientific guard or oracle was weakened."
+    },
+    {
+      "run_id": 42644417169,
+      "commit": "37c6ed5a9aa672ed86834a742426e5b2c06d62b4",
+      "conclusion": "success",
+      "reason": "Fresh exact-commit CI after successful local qualification; all prior replay, B2 and R1 steps passed."
+    }
+  ],
+  "main_unchanged": "07774a46b946d1a4cebb110e483cbe977c9635bd",
+  "manuscript_unchanged": "7.2.21",
+  "public_release_created": false,
+  "maintained_channels_published": false,
+  "issues_closed": [],
+  "next_execution": "R2: exact-source packaging, independent asset download verification, coordinated publication and maintained-channel readback. #92 and #93 remain open until their final criteria pass."
+}
