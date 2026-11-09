@@ -6,8 +6,12 @@ import hashlib, json, sys
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 PACKET = ROOT / 'evaluation/manuscript-review/v7.2.3'
+_import_path = sys.path[:]
 sys.path.insert(0, str(PACKET / 'issue92-riskcase'))
-import build_candidate as b2
+try:
+    import build_candidate as b2
+finally:
+    sys.path[:] = _import_path
 
 VERSION = '0.3.2'
 OUT = ROOT / 'ontology' / VERSION

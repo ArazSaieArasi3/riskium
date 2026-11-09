@@ -16,7 +16,7 @@
       "files": [
         {
           "path": "ontology/0.3.2/mapping-receipt.json",
-          "sha256": "b68ea6e65cc502de1c7f7d3622cfd660a5378e4e0791ec98466f9efc3db730dc"
+          "sha256": "3ba301cb0eaec0107e094dc0f2661f03b49d34e34fd840b40dfe92d8b6fa1c1c"
         },
         {
           "path": "ontology/0.3.2/riskium-model.json",
@@ -32,7 +32,7 @@
         },
         {
           "path": "ontology/0.3.2/source-contract.json",
-          "sha256": "f5e4a103dd0db4660a52f24db5c62bcd02517950f78265b3406f13b8334488d2"
+          "sha256": "f901ab19f145db3b97f58798dcdd7aea7843f53db9c97aafd19eac96ba99259f"
         }
       ]
     },
@@ -424,11 +424,11 @@
         },
         {
           "path": "documentation/0.4.9/reader/manifest.json",
-          "sha256": "fb4d8b7e3f84800d948a717680ceb7103b2f177ea37be0a1a7ded76f486a6e56"
+          "sha256": "916ee5cb07cbc789247c55be24dd92f1d5de92701d905c473e0833193a5deb07"
         },
         {
           "path": "documentation/0.4.9/reader/structural-binding.json",
-          "sha256": "c2d4f61df9cb7fdfb075e6b31742c1cd082d04d6399fc5a0ac15db106933e866"
+          "sha256": "910e37c47e4243c755eef8aed7975c068ca659005152d830e51eb2adc0fd6a38"
         },
         {
           "path": "tools/releases/v039/projection.py",
@@ -638,7 +638,7 @@
         },
         {
           "path": "tools/releases/v039/source.py",
-          "sha256": "3498e30bafb01af652e39303fda93196abef8bfcfd60b6ade6f42284a627a2a5"
+          "sha256": "24aecc735a67f88aa20f72f16b488223c2e0f47849347727418d4a78924c027e"
         }
       ]
     },
@@ -672,7 +672,7 @@
         },
         {
           "path": "tools/releases/v039/qualify.py",
-          "sha256": "765a48a4c9e5fe419da80574b781de4c5537a9b5813a64727ec7d27329c47b97"
+          "sha256": "19c4a6990edb60c0a1e4e4344caa261616de0269deda44a6f733204d43ff9866"
         },
         {
           "path": "tools/releases/v039/reader.py",
@@ -684,7 +684,7 @@
         },
         {
           "path": "tools/releases/v039/source.py",
-          "sha256": "3498e30bafb01af652e39303fda93196abef8bfcfd60b6ade6f42284a627a2a5"
+          "sha256": "24aecc735a67f88aa20f72f16b488223c2e0f47849347727418d4a78924c027e"
         }
       ]
     },
@@ -9585,8 +9585,8 @@
     "documentation/0.4.9/reader/Set-policy.md": "fda4f30d3eee0007318f6097302a125a9247a3479690989f618ddad74fa57898",
     "documentation/0.4.9/reader/Subdomain-matrix.svg": "29b41706ea2359bce2e13797250019d060fd25917f48b10986ed906e1296660c",
     "documentation/0.4.9/reader/Subdomains.md": "9b0c9c70da85254cfa4e7df6917aa069b2a64c6f5bec96e3a9312b97ae18279d",
-    "documentation/0.4.9/reader/manifest.json": "fb4d8b7e3f84800d948a717680ceb7103b2f177ea37be0a1a7ded76f486a6e56",
-    "documentation/0.4.9/reader/structural-binding.json": "c2d4f61df9cb7fdfb075e6b31742c1cd082d04d6399fc5a0ac15db106933e866",
+    "documentation/0.4.9/reader/manifest.json": "916ee5cb07cbc789247c55be24dd92f1d5de92701d905c473e0833193a5deb07",
+    "documentation/0.4.9/reader/structural-binding.json": "910e37c47e4243c755eef8aed7975c068ca659005152d830e51eb2adc0fd6a38",
     "documentation/concepts/0.3.1/README.md": "38db6e7efb4821c805a6ac0f41ece69deaf1cf25a66cbbc2c5e3ca9fc166f905",
     "documentation/concepts/0.3.1/RKM-C001.md": "9c7af5f94b7e0ca46e3953a3713d509c20b4999fe906b54371d9d3dda43c1596",
     "documentation/concepts/0.3.1/RKM-C002.md": "80e1656f69a62c36ac8fc9ddb821a10e0de14294ca8505378850b136597ce298",
@@ -9977,11 +9977,11 @@
     "implementation/relational/0.9.0/query-oracles.json": "78c1ff2ceeba99626ed797c98880dbe546bd3c7e10752c8ec949cb4faff109e8",
     "implementation/relational/0.9.0/schema-dictionary.md": "14897d9688714e96134507b00e0b2e3b415df8d5a99cfad373493ae9abf7854f",
     "implementation/validation/0.1.0/policy.json": "c930eff4fe10116e4cbbe171288be72fc4b764290f093f4bff2eccdfc0f2320c",
-    "ontology/0.3.2/mapping-receipt.json": "b68ea6e65cc502de1c7f7d3622cfd660a5378e4e0791ec98466f9efc3db730dc",
+    "ontology/0.3.2/mapping-receipt.json": "3ba301cb0eaec0107e094dc0f2661f03b49d34e34fd840b40dfe92d8b6fa1c1c",
     "ontology/0.3.2/riskium-model.json": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb",
     "ontology/0.3.2/riskium.ontouml.json": "555284d58ab3f20f201ed8ab534a26734c00669575206031d42cc851525a558d",
     "ontology/0.3.2/riskium.owl.ttl": "f7d89f965eba054a6475df5d78d1e00e08bc603a17105fd94bfae8af44880496",
-    "ontology/0.3.2/source-contract.json": "f5e4a103dd0db4660a52f24db5c62bcd02517950f78265b3406f13b8334488d2",
+    "ontology/0.3.2/source-contract.json": "f901ab19f145db3b97f58798dcdd7aea7843f53db9c97aafd19eac96ba99259f",
     "ontology/derived/riskium.owl.ttl": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58",
     "ontology/native/riskium.ontouml.json": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95",
     "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
@@ -10124,10 +10124,10 @@
     "tools/relational_source_scenario.py": "ca62c59d9ea31352c3b92a8a0f1e28a82a498faa49a7d2cd2137478db09a2191",
     "tools/relational_source_scenario_lineage.py": "0fddac0d97c9bbf2eb7d0947c0f989978e9f6b0e2b2ce94b160983035ecd3d36",
     "tools/releases/v039/projection.py": "551333e11cafff0cdc05dead0758254dfbb2f8fccedef181a59c939cf8c67406",
-    "tools/releases/v039/qualify.py": "765a48a4c9e5fe419da80574b781de4c5537a9b5813a64727ec7d27329c47b97",
+    "tools/releases/v039/qualify.py": "19c4a6990edb60c0a1e4e4344caa261616de0269deda44a6f733204d43ff9866",
     "tools/releases/v039/reader.py": "3bedfc085371980e1b8264e5d02e86163ccdb764895d710fc879d6425409dd3c",
     "tools/releases/v039/selection.py": "d0a3e4c654bdfd8eb1f555cdb2a856a934c1d5d1e1bfd81566e1e0e7dd66875b",
-    "tools/releases/v039/source.py": "3498e30bafb01af652e39303fda93196abef8bfcfd60b6ade6f42284a627a2a5",
+    "tools/releases/v039/source.py": "24aecc735a67f88aa20f72f16b488223c2e0f47849347727418d4a78924c027e",
     "tools/requirements-shacl.txt": "975267a8c63388f02db316190ef9ecb489010f27b9477074e5f49c3c323bf210",
     "tools/review_distribution.py": "e3520ee06efbf9f24c96bc25deadeb5dc78ddfe37ea1398fdaa0255db7871389",
     "tools/run_assessment_selection.py": "d7f5ec3f06dff958adff7e5b8a97bdcb988910eff89b77557ef5b6c4324b0b1e",

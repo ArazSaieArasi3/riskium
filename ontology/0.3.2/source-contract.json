@@ -48,7 +48,7 @@
     },
     {
       "path": "tools/releases/v039/source.py",
-      "sha256": "3498e30bafb01af652e39303fda93196abef8bfcfd60b6ade6f42284a627a2a5"
+      "sha256": "24aecc735a67f88aa20f72f16b488223c2e0f47849347727418d4a78924c027e"
     }
   ],
   "frozen_inputs": [

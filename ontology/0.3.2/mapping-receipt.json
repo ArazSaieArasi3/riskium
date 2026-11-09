@@ -7,7 +7,7 @@
     "policy": "56f298c816942cd9d6630f035fd5681fb5cc52ad74157dd3eaea39ff5013c97a",
     "native": "555284d58ab3f20f201ed8ab534a26734c00669575206031d42cc851525a558d"
   },
-  "input_contract_sha256": "f5e4a103dd0db4660a52f24db5c62bcd02517950f78265b3406f13b8334488d2",
+  "input_contract_sha256": "f901ab19f145db3b97f58798dcdd7aea7843f53db9c97aafd19eac96ba99259f",
   "version_iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.2",
   "coverage": {
     "typed_classes": 79,

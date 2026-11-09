@@ -97,7 +97,7 @@
     "Set-policy.md": "fda4f30d3eee0007318f6097302a125a9247a3479690989f618ddad74fa57898",
     "Subdomain-matrix.svg": "29b41706ea2359bce2e13797250019d060fd25917f48b10986ed906e1296660c",
     "Subdomains.md": "9b0c9c70da85254cfa4e7df6917aa069b2a64c6f5bec96e3a9312b97ae18279d",
-    "structural-binding.json": "c2d4f61df9cb7fdfb075e6b31742c1cd082d04d6399fc5a0ac15db106933e866"
+    "structural-binding.json": "910e37c47e4243c755eef8aed7975c068ca659005152d830e51eb2adc0fd6a38"
   },
   "package_target": "v0.3.9",
   "documentation_version": "0.4.9",

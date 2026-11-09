@@ -5,6 +5,8 @@ import argparse, hashlib, importlib.util, json, subprocess, tempfile
 import source, reader, selection, projection
 
 def main(args):
+    if Path(reader.__file__).resolve() != source.HERE / 'reader.py':
+        raise ValueError('Wrong reader module loaded')
     out = args.output.resolve()
     if out.exists() and any(out.iterdir()):
         raise ValueError('Qualification output must be empty')
@@ -45,6 +47,10 @@ def main(args):
     if raw['candidate_version'] != source.VERSION or raw['execution_commit'] != commit:
         raise ValueError('Oracle execution source mismatch')
     manifest = projection.build(source.ROOT, out / 'publication', commit)
+    if manifest['source_model_sha256'] != source.sha(source.OUT / 'riskium-model.json'):
+        raise ValueError('Publication projection source differs from the selected scientific source')
+    if manifest['source_commit'] != commit:
+        raise ValueError('Publication projection execution commit mismatch')
     routes = projection.audit(out / 'publication')
     # Every generated commit-pinned repository target must actually exist.
     import re
