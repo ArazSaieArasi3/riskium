@@ -1,0 +1,226 @@
+{
+  "schema": "riskium-issue93-ci-publication-receipt-1",
+  "date_tehran": "2026-11-09",
+  "status": "B07_COMPLETE_CANDIDATE_CI_AND_STAGED_PUBLICATION",
+  "execution_commit": "ddf03286ceb24104b4315ab7b91e2902d664a6b4",
+  "github_actions": {
+    "run_id": 42623785183,
+    "run_attempt": 1,
+    "event": "push",
+    "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42623785183",
+    "conclusion": "success",
+    "created_at": "2026-11-09T13:14:54Z",
+    "updated_at": "2026-11-09T13:16:35Z",
+    "runner_summary": {
+      "status": "PASS_CANDIDATE_REPLAY_AND_STAGED_PUBLICATION",
+      "execution_commit": "ddf03286ceb24104b4315ab7b91e2902d664a6b4",
+      "phases": [
+        {
+          "phase": "B01",
+          "exit_code": 0,
+          "elapsed_ms": 16724,
+          "status": "PASS",
+          "receipt_sha256": "b95805a3a03b7d990e64bd174c43801acabb92e70d0912503fa192cceff2ec71"
+        },
+        {
+          "phase": "B02",
+          "exit_code": 0,
+          "elapsed_ms": 15609,
+          "status": "PASS",
+          "receipt_sha256": "c82feb17e59b15936f95d22cc3307f9b4c4a2ef220351bf9446bf1ea6014be8a"
+        },
+        {
+          "phase": "B03",
+          "exit_code": 0,
+          "elapsed_ms": 5037,
+          "status": "PASS",
+          "receipt_sha256": "f8802173dce5d3ff182749786fa130658adc37c5ae4b9d2f454cfd4b2425e317"
+        },
+        {
+          "phase": "B04",
+          "exit_code": 0,
+          "elapsed_ms": 7073,
+          "status": "PASS",
+          "receipt_sha256": "41c023924e6c6c58689f2703e62daf654496f91c842d2fd75e7a76268e448dae"
+        },
+        {
+          "phase": "B05",
+          "exit_code": 0,
+          "elapsed_ms": 22798,
+          "status": "PASS",
+          "receipt_sha256": "99864764e0b91c54e52fe8fc5809275c8bd3c15ccd227df207c31dc42be0d1c4"
+        },
+        {
+          "phase": "B06",
+          "exit_code": 0,
+          "elapsed_ms": 2633,
+          "status": "PASS",
+          "receipt_sha256": "f1d4e765ec5537100de3367ed1c0d626556ca589c5adaade6443b1fc4b7ea0ea"
+        },
+        {
+          "phase": "B07-projection",
+          "exit_code": 0,
+          "elapsed_ms": 7007,
+          "status": "PASS"
+        },
+        {
+          "phase": "B07-tests",
+          "exit_code": 0,
+          "elapsed_ms": 350,
+          "status": "PASS"
+        },
+        {
+          "phase": "source-transition",
+          "exit_code": 0,
+          "elapsed_ms": 262,
+          "status": "PASS"
+        }
+      ]
+    },
+    "jobs": [
+      {
+        "id": 129182252343,
+        "name": "qualify",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 42623785183,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Run actions/setup-java@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Install candidate tools",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Replay candidate and stage publication",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Preserve actual execution receipts and staged projections",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Post Run actions/setup-java@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 13
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 16
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          }
+        ]
+      }
+    ],
+    "artifacts": [
+      {
+        "id": 13677766243,
+        "name": "issue93-candidate-ddf03286ceb24104b4315ab7b91e2902d664a6b4",
+        "digest": "sha256:41610ede6e0aebec37398c62ca2acce8588341b5d0ec1fb45da30f59f5ae7527",
+        "size_in_bytes": 426452,
+        "expired": false,
+        "expires_at": "2027-02-07T13:14:54Z"
+      }
+    ]
+  },
+  "local_replay": {
+    "execution_commit": "ddf03286ceb24104b4315ab7b91e2902d664a6b4",
+    "report_sha256": "7d9d214ade5623b28f4ddebde562407d457af8cdb904048799e633c525eda834",
+    "status": "PASS_CANDIDATE_REPLAY_AND_STAGED_PUBLICATION",
+    "runner_matches_execution_commit": true,
+    "protected_files_unchanged": true,
+    "original_checkout_diff_unchanged": true,
+    "profile_input_selection": {
+      "fresh_B03_sha256": "a7d9f93e530a14d21a7fd0847cb62d628852df6ef160345365f42baedeabe1d1",
+      "selected_B04_contract_sha256": "a7d9f93e530a14d21a7fd0847cb62d628852df6ef160345365f42baedeabe1d1",
+      "isomorphic": true,
+      "reason": "B03 uses fresh serialization retained beside its receipt. B04 separately selects the committed contract input; blank-node byte order is not a source change."
+    }
+  },
+  "staged_publication": {
+    "html_pages": 89,
+    "wiki_pages": 89,
+    "catalog_concepts": 82,
+    "anchor_dossiers": 1,
+    "local_link_occurrences": 5043,
+    "candidate_unit_tests": 8,
+    "candidate_unit_tests_passed": 8,
+    "manifest_sha256": "9d7a179029c1d3c977fe1bd6cc9de311f69654d9e0b298381b2ce437556a3bd0",
+    "external_http_checked": false,
+    "live_deployment": false
+  },
+  "integration_decision": {
+    "candidate_replay_ready": true,
+    "additive_review_ready": true,
+    "replace_default_source": false,
+    "production_promoted": false,
+    "issue93_closed": false,
+    "remaining_acceptance": "Update affected maintained public definitions/documentation and source-qualified release evidence; staging alone does not meet the final issue criterion.",
+    "recommended_route": "Complete the separately scoped RiskCase impact/migration decision in #92, then qualify the selected next source and publish its maintained reader channels together. This is a sequencing choice to avoid duplicate releases, not a logical dependency of the EvidenceItem repair on RiskCase.",
+    "guard": "Frozen root exporters remain version-bound. Replacing root scientific inputs requires new source qualification; do not delete historical guards.",
+    "separate_scopes": [
+      "#92 RiskCase core/profile migration",
+      "#85 external definition curation and live Wiki completion",
+      "#23 independent adequacy review",
+      "#12/#35 broader relational mapping",
+      "#36 actual deployment"
+    ]
+  },
+  "non_blocking_tooling_followup": "The runner succeeded with action-runtime deprecation warnings. Migrate action majors in a separately tested tooling change; the warnings are not represented as failed ontology checks.",
+  "boundary": "Actual CI and local executions are distinct, each bound to the same executable commit. These receipts support repeatable candidate checks and local publication staging, not independent semantic acceptance, production/PostgreSQL migration, live Pages/Wiki publication, or a manuscript revision."
+}
