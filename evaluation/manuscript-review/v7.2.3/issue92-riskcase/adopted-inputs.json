@@ -1,0 +1,21 @@
+{
+  "source_commit": "acb013cc76158841c525f80d8eff5f7120d9bfd0",
+  "inputs": [
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue92-impact/proposed-source-delta.json",
+      "sha256": "1ac65adb042f9c63c6fe330d36fee29124a1deeb815b670ab01add68f267238e"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue92-impact/acceptance-oracles.json",
+      "sha256": "8d78545ce2f861a90056c0cbe644b5eff0605f3c3cf7ac4326edb9d7d5bbb9f2"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue93-export-contract/input-contract.json",
+      "sha256": "64c7885a42b0c5b256d195b6c485e5ce88fdaaf72404194a4424bbdb9b8a09b4"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/candidate-model.json",
+      "sha256": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7"
+    }
+  ]
+}

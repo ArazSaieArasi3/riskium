@@ -1,4 +1,4 @@
-name: Issue 93 candidate qualification
+name: Combined risk candidate qualification
 on:
   push:
     branches: ['candidate/issue93-evidence-use']
@@ -11,6 +11,10 @@ on:
       - 'evaluation/manuscript-review/v7.2.3/issue93-*/**.cjs'
       - 'evaluation/manuscript-review/v7.2.3/issue93-*/**.ttl'
       - 'tools/check_source_transition.py'
+      - 'evaluation/manuscript-review/v7.2.3/issue92-riskcase/**'
+      - '!evaluation/manuscript-review/v7.2.3/issue92-riskcase/ci-receipt.json'
+      - '!evaluation/manuscript-review/v7.2.3/issue92-riskcase/verification-report.json'
+      - '!evaluation/manuscript-review/v7.2.3/issue92-riskcase/README.md'
       - '!evaluation/manuscript-review/v7.2.3/issue93-*/**report.json'
       - '!evaluation/manuscript-review/v7.2.3/issue93-ci/ci-receipt.json'
   workflow_dispatch:
@@ -54,10 +58,19 @@ jobs:
             --root "$GITHUB_WORKSPACE" --output "$RUNNER_TEMP/issue93-artifact" \
             --schema build/issue93-tools/schema.json --robot build/issue93-tools/robot.jar \
             --sdk build/issue93-tools/node_modules/ontouml-js --node "$(command -v node)"
+      - name: Qualify the analytical RiskCase successor
+        shell: bash
+        run: |
+          python evaluation/manuscript-review/v7.2.3/issue92-riskcase/verify_candidate.py \
+            --output "$RUNNER_TEMP/issue92-artifact" \
+            --schema build/issue93-tools/schema.json --robot build/issue93-tools/robot.jar \
+            --sdk build/issue93-tools/node_modules/ontouml-js --node "$(command -v node)"
       - name: Preserve actual execution receipts and staged projections
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: issue93-candidate-${{ github.sha }}
-          path: ${{ runner.temp }}/issue93-artifact/
+          name: combined-candidate-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/issue93-artifact/
+            ${{ runner.temp }}/issue92-artifact/
           if-no-files-found: warn

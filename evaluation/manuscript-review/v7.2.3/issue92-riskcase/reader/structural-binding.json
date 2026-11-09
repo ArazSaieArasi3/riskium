@@ -1,0 +1,141 @@
+{
+  "schema": "riskium-candidate-dictionary-structural-binding-1",
+  "source_version": "0.3.2-case.1",
+  "model_sha256": "e98a63b286441c80fc10a9644804d64fc2b611e906b2d27cf3d72f3ebd72cfa8",
+  "native_sha256": "60c80a743136e10d224b950d4712724911e3d7b3e95a2d3b0e1a25c8d44169ae",
+  "owl_sha256": "9d623eda70d5ce6d38f79502e82b64e02bd664573d45092442d6fab2850baf1a",
+  "export_contract_sha256": "48183805836a1e6f61fcdaeab2c8c12a8ec661dce982ebb84f6e69fa72c7a5db",
+  "population": {
+    "catalog_concepts": 82,
+    "formal_source_classes": 79,
+    "optional_catalog_boundaries": 3,
+    "imported_anchor": 1,
+    "catalog_associations": 137,
+    "formal_relations": 130,
+    "generalizations": 67,
+    "constraints": 26,
+    "retained_sets": 8,
+    "subdomains": 11,
+    "native_elements": 596,
+    "cross_subdomain_pairs": 23,
+    "cross_subdomain_associations": 56
+  },
+  "association_pairs": [
+    {
+      "source": "D01",
+      "target": "D03",
+      "relations": 1
+    },
+    {
+      "source": "D01",
+      "target": "D04",
+      "relations": 10
+    },
+    {
+      "source": "D01",
+      "target": "D05",
+      "relations": 5
+    },
+    {
+      "source": "D01",
+      "target": "D06",
+      "relations": 3
+    },
+    {
+      "source": "D01",
+      "target": "D07",
+      "relations": 2
+    },
+    {
+      "source": "D01",
+      "target": "D09",
+      "relations": 1
+    },
+    {
+      "source": "D01",
+      "target": "D10",
+      "relations": 3
+    },
+    {
+      "source": "D01",
+      "target": "D11",
+      "relations": 5
+    },
+    {
+      "source": "D02",
+      "target": "D05",
+      "relations": 4
+    },
+    {
+      "source": "D02",
+      "target": "D09",
+      "relations": 2
+    },
+    {
+      "source": "D03",
+      "target": "D04",
+      "relations": 2
+    },
+    {
+      "source": "D04",
+      "target": "D05",
+      "relations": 1
+    },
+    {
+      "source": "D04",
+      "target": "D06",
+      "relations": 3
+    },
+    {
+      "source": "D04",
+      "target": "D07",
+      "relations": 2
+    },
+    {
+      "source": "D04",
+      "target": "D08",
+      "relations": 2
+    },
+    {
+      "source": "D04",
+      "target": "D10",
+      "relations": 1
+    },
+    {
+      "source": "D05",
+      "target": "D06",
+      "relations": 3
+    },
+    {
+      "source": "D05",
+      "target": "D07",
+      "relations": 1
+    },
+    {
+      "source": "D05",
+      "target": "D09",
+      "relations": 1
+    },
+    {
+      "source": "D05",
+      "target": "D10",
+      "relations": 1
+    },
+    {
+      "source": "D06",
+      "target": "D07",
+      "relations": 1
+    },
+    {
+      "source": "D06",
+      "target": "D09",
+      "relations": 1
+    },
+    {
+      "source": "D07",
+      "target": "D09",
+      "relations": 1
+    }
+  ],
+  "scope": "Catalog associations include optional bridges; imported-anchor endpoints and inheritance are excluded from the unordered package-pair population. These are structural counts, not semantic COH/COP or adequacy scores."
+}

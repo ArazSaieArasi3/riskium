@@ -1,0 +1,81 @@
+{
+  "schema": "riskium-riskcase-candidate-contract-1",
+  "source_version": "0.3.2-case.1",
+  "source": {
+    "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/candidate-model.json",
+    "sha256": "e98a63b286441c80fc10a9644804d64fc2b611e906b2d27cf3d72f3ebd72cfa8"
+  },
+  "term_namespace": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#",
+  "ontology_iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium",
+  "evidence_namespace": "https://github.com/ArazSaieArasi3/riskium/candidates/issue93/evidence-use#",
+  "version_iri": "https://github.com/ArazSaieArasi3/riskium/candidates/issue92/riskcase",
+  "inventory": {
+    "concepts": 82,
+    "imported_types": 1,
+    "associations": 137,
+    "generalizations": 67,
+    "constraints": 26,
+    "formal_classes": 79,
+    "formal_relations": 130,
+    "retained_sets": 8
+  },
+  "policy": {
+    "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/set-policy.json",
+    "sha256": "56f298c816942cd9d6630f035fd5681fb5cc52ad74157dd3eaea39ff5013c97a"
+  },
+  "dependencies": [
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/adopted-inputs.json",
+      "sha256": "39b7d22c931e43b7f2e808660c052f3a5790b057684057159b07d67dc0baba8e"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue92-impact/proposed-source-delta.json",
+      "sha256": "1ac65adb042f9c63c6fe330d36fee29124a1deeb815b670ab01add68f267238e"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue92-impact/acceptance-oracles.json",
+      "sha256": "8d78545ce2f861a90056c0cbe644b5eff0605f3c3cf7ac4326edb9d7d5bbb9f2"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue93-export-contract/input-contract.json",
+      "sha256": "64c7885a42b0c5b256d195b6c485e5ce88fdaaf72404194a4424bbdb9b8a09b4"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/build_candidate.py",
+      "sha256": "d289aad4bb193dae6cd0381c40271a7cd2ea150fd60e06745952d522b7421784"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/case_profiles.py",
+      "sha256": "ef0164d82033425d95f755f42ee37d370196eda0a2f154099087e9156abbcee9"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/reader.py",
+      "sha256": "f9e57f5235d986e20052d5d2bea39ed8e81036d151e7a2795bab2cf8d41c6fcc"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/verify_candidate.py",
+      "sha256": "6d2d6b143ea9bff8735b684d50585b66656041578cbcfe8b06074b651e292c35"
+    }
+  ],
+  "frozen_inputs": [
+    {
+      "path": "ontology/riskium-model.json",
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59"
+    },
+    {
+      "path": "ontology/native/riskium.ontouml.json",
+      "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95"
+    },
+    {
+      "path": "ontology/derived/riskium.owl.ttl",
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58"
+    },
+    {
+      "path": "evaluation/native-review-decisions.json",
+      "sha256": "38a09df7b9914be79001f94556267d624510957eae16c2e53a8da93afe219211"
+    }
+  ],
+  "previous_export_contract_sha256": "64c7885a42b0c5b256d195b6c485e5ce88fdaaf72404194a4424bbdb9b8a09b4",
+  "production_promotion": false,
+  "boundary": "Apply only the B1-declared prose/scope delta and successor metadata. Term IRIs are compatibility identifiers; the candidate versionIRI and source hash are separate. No operational approval is a universal axiom."
+}
