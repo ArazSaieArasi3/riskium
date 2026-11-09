@@ -1,0 +1,63 @@
+name: Issue 93 candidate qualification
+on:
+  push:
+    branches: ['candidate/issue93-evidence-use']
+    paths:
+      - '.github/workflows/issue93-candidate.yml'
+      - 'evaluation/manuscript-review/v7.2.3/issue93-*/**.py'
+      - 'evaluation/manuscript-review/v7.2.3/issue93-*/**.json'
+      - 'evaluation/manuscript-review/v7.2.3/issue93-*/**.sql'
+      - 'evaluation/manuscript-review/v7.2.3/issue93-*/**.rq'
+      - 'evaluation/manuscript-review/v7.2.3/issue93-*/**.cjs'
+      - 'evaluation/manuscript-review/v7.2.3/issue93-*/**.ttl'
+      - 'tools/check_source_transition.py'
+      - '!evaluation/manuscript-review/v7.2.3/issue93-*/**report.json'
+      - '!evaluation/manuscript-review/v7.2.3/issue93-ci/ci-receipt.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: issue93-candidate-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  qualify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Install candidate tools
+        shell: bash
+        run: |
+          python -m pip install rdflib==7.6.0 pyshacl==0.30.1 'jsonschema[format]==4.25.1' Markdown==3.7 beautifulsoup4==4.13.4
+          npm install --prefix build/issue93-tools ontouml-js@1.0.0 --ignore-scripts --no-audit --no-fund
+          curl --fail --location --retry 2 --output build/issue93-tools/schema.json https://raw.githubusercontent.com/OntoUML/ontouml-schema/7a0fe7ef7d4caea8d62f2782fb3681261a75f452/dist/ontouml-schema.json
+          curl --fail --location --retry 2 --output build/issue93-tools/robot.jar https://github.com/ontodev/robot/releases/download/v1.9.11/robot.jar
+          echo '094324d8e6ac4505ef5ae983a45bb9b56a8b3b6960151c57736756a037344d38  build/issue93-tools/schema.json' | sha256sum --check
+          echo '53cd275c8e4c0dad1fc2c1c34174876795cd7d6b6926e1444adcbb0cb3c7ab26  build/issue93-tools/robot.jar' | sha256sum --check
+      - name: Replay candidate and stage publication
+        shell: bash
+        run: |
+          python evaluation/manuscript-review/v7.2.3/issue93-ci/run_ci.py \
+            --root "$GITHUB_WORKSPACE" --output "$RUNNER_TEMP/issue93-artifact" \
+            --schema build/issue93-tools/schema.json --robot build/issue93-tools/robot.jar \
+            --sdk build/issue93-tools/node_modules/ontouml-js --node "$(command -v node)"
+      - name: Preserve actual execution receipts and staged projections
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: issue93-candidate-${{ github.sha }}
+          path: ${{ runner.temp }}/issue93-artifact/
+          if-no-files-found: warn
