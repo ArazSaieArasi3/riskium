@@ -1,0 +1,56 @@
+{
+  "schema": "riskium-riskcase-impact-audit-1",
+  "status": "B1_COMPLETE_IMPACT_AND_ACCEPTANCE_CONTRACT_ONLY",
+  "source_commit": "aafc9b77ea320d726fcd0ae3d78449d03c061a26",
+  "counts": {
+    "tracked_files": 1855,
+    "utf8_text_files": 1811,
+    "direct_case_match_files": 440,
+    "admission_term_match_files": 564,
+    "inventory_files": 756,
+    "decision_groups": 18,
+    "proposed_prose_or_scope_fields": 12,
+    "planned_acceptance_cases": 20,
+    "acceptance_cases_executed": 0,
+    "case_incident_associations": 24,
+    "formal_case_incident_associations": 22
+  },
+  "decision_dispositions": {
+    "PROSE_CORRECTION": 6,
+    "PROFILE_RELOCATION": 5,
+    "NO_CHANGE": 7
+  },
+  "structural_delta_selected": false,
+  "sqlite_probe": {
+    "case_rows": 1,
+    "register_entries": 0,
+    "native_case_type_export_rows": 1,
+    "schema_unchanged": true
+  },
+  "checks": {
+    "pinned_inventory_reproduced": true,
+    "decision_and_input_hashes_match": true,
+    "all_inventory_rows_have_disposition": true,
+    "proposed_delta_preimages_match": true,
+    "structural_signature_unchanged_in_memory": true,
+    "other_constraints_unchanged": true,
+    "entry_cardinality_orientation_preserved": true,
+    "context_and_objective_minima_retained": true,
+    "all_20_oracles_predeclared_unrun": true,
+    "disposable_SQL_probe_matches_report": true
+  },
+  "packet_sha256": {
+    ".gitignore": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+    "README.md": "bab306798dcaaedac00950c601796ab340bcb474edfa344bfc2f6ca014b60d06",
+    "acceptance-oracles.json": "8d78545ce2f861a90056c0cbe644b5eff0605f3c3cf7ac4326edb9d7d5bbb9f2",
+    "audit_impact.py": "09cb216a4639eb549f84fb785f142b140b35a45aaed15e01d617a745b7f44d89",
+    "build_inventory.py": "f230a7cb1f4dd7f257dc05699f5186b80cd8ddfca32747c371dae9cb1dc70998",
+    "decisions.json": "05d249895f76415c5102f09933b3d58443d8d47456aad512e2acfb96d33c0e78",
+    "input-bindings.json": "0f9ce5bdc9cdfc48e12d3eb0d7560871641cc63262ce36fc2d483d43f09c55a6",
+    "inventory.json": "5ca727f56e6ccd472e985d51688d129c5953c400472a1e1039ff51152af69441",
+    "probe_sqlite.py": "96af74e5b07a69f6ecbf0d99f78690a0c3015dc44b7ba0b33e6a4915450cc468",
+    "proposed-source-delta.json": "1ac65adb042f9c63c6fe330d36fee29124a1deeb815b670ab01add68f267238e",
+    "sqlite-probe.json": "e33646dc30754dd2de2c502d5dc49ad2d0f7be7e203c06e1996a4ac7275b2db2"
+  },
+  "boundary": "B1 inspects inputs and validates a proposed contract. It does not apply the 12 proposed field changes, generate a successor native/OWL graph, run its 20 acceptance cases, publish current channels, close #92/#93, or revise the manuscript. No fresh HermiT/SHACL/ROBOT result is claimed."
+}

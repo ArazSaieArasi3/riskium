@@ -1,0 +1,353 @@
+{
+  "schema": "riskium-riskcase-impact-decisions-1",
+  "source_commit": "aafc9b77ea320d726fcd0ae3d78449d03c061a26",
+  "decisions": [
+    {
+      "id": "D01",
+      "artifact": "RiskCase definition and identity",
+      "disposition": "PROSE_CORRECTION",
+      "action": "Apply the approved proposed delta only to a new candidate copy; preserve RKM-X01, kind typing and identity distinctions.",
+      "rationale": "The instituted/governed wording is ambiguous; formal register acceptance is absent from the source relation requirements.",
+      "evidence": [
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/candidate-model.json",
+          "sha256": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7"
+        },
+        {
+          "path": "docs/design/semantic-core-and-application-profiles.md",
+          "sha256": "4ba699a929002468490de6ae3f796e12b73aa038cdb0be072e958a21da6b9acc"
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "artifact": "Shared kind rationales",
+      "disposition": "PROSE_CORRECTION",
+      "action": "Replace the four inherited boilerplate references to instituted case identity in the successor only.",
+      "rationale": "Do not perform a global replacement of instituted: documentary artifact identity has a separate meaning.",
+      "evidence": [
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/candidate-model.json",
+          "sha256": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7"
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "artifact": "General scope and counting narrative",
+      "disposition": "PROSE_CORRECTION",
+      "action": "Update ecosystem/enterprise scope and successor counts 82/79/137/130/8; retain historical count populations.",
+      "rationale": "The candidate inherited an obsolete 80/134 prose note; graph counts already differ from that note.",
+      "evidence": [
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/candidate-model.json",
+          "sha256": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7"
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "artifact": "C-16 record/task boundary",
+      "disposition": "PROFILE_RELOCATION",
+      "action": "Clarify documentary admission versus analytical task completeness and local operational readiness.",
+      "rationale": "A metadata or task failure must not be reported as ontological nonexistence.",
+      "evidence": [
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/candidate-model.json",
+          "sha256": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7"
+        },
+        {
+          "path": "evaluation/shacl/admission/profile-policy.json",
+          "sha256": "3d93811af38f13372d68fb330e65fddbda4db7879959fe82c51fe4635e1c3665"
+        }
+      ]
+    },
+    {
+      "id": "D05",
+      "artifact": "RiskCase incident relations",
+      "disposition": "NO_CHANGE",
+      "action": "Retain all 24 incident associations, including two optional bridges; R-01 still requires one case per entry and zero or more entries per case.",
+      "rationale": "No incoming entry, owner, committee or approval minimum is imposed on RiskCase by these source ends.",
+      "evidence": [
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/candidate-model.json",
+          "sha256": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7"
+        }
+      ]
+    },
+    {
+      "id": "D06",
+      "artifact": "OWL projection",
+      "disposition": "PROSE_CORRECTION",
+      "action": "Regenerate candidate annotations/version/digests; compare the logical graph with B0-4 after removing documentary annotations. No logical weakening is selected.",
+      "rationale": "RiskCase has context/objective minima; it has no existential register-entry obligation. OWA consistency is separate from explicit task readiness.",
+      "evidence": [
+        {
+          "path": "ontology/derived/riskium.owl.ttl",
+          "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58"
+        },
+        {
+          "path": "tools/build_owl.py",
+          "sha256": "c596e1ca582c2202225f574e96cba5d1416842076a1cf5272820f0e494be6bd6"
+        },
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-export-contract/candidate_owl.py",
+          "sha256": "6f711943b4fa202c67a12a7c6f7e2c029073f7662dfadff7dddb9e74696952e5"
+        }
+      ]
+    },
+    {
+      "id": "D07",
+      "artifact": "Native projection and explicit set policy",
+      "disposition": "PROSE_CORRECTION",
+      "action": "Regenerate the successor native description/custom metadata and its digest with the B0-4 pure candidate route.",
+      "rationale": "Preserve 596 native elements, 67 subtype links, eight sets and the EvidenceItem repair; no category or cardinality migration is selected.",
+      "evidence": [
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/build_candidate.py",
+          "sha256": "d80ab73519db8eb9887114dfd8a179fc10bc7e7301764662482c6f943470572f"
+        },
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/set-policy.json",
+          "sha256": "56f298c816942cd9d6630f035fd5681fb5cc52ad74157dd3eaea39ff5013c97a"
+        }
+      ]
+    },
+    {
+      "id": "D08",
+      "artifact": "Candidate analytical and operational checks",
+      "disposition": "PROFILE_RELOCATION",
+      "action": "Add a caller-selected analytical-case task profile and a distinct example operational-register profile. Pin external focus and expected policy; never let untrusted data choose its own lenient profile.",
+      "rationale": "Analytical identity, task readiness and operational eligibility are three different decisions. Approval missing is UNKNOWN; explicit denial is distinct.",
+      "evidence": [
+        {
+          "path": "tools/build_admission_shapes.py",
+          "sha256": "3fb5b205266a0010d1b86d363bd516697f4219d5481bf0b129d9ebd2a2950121"
+        },
+        {
+          "path": "tools/validate_integrated.py",
+          "sha256": "5594df14536eb114f996677dd05c5b1d140cc39fa7b63ae6e4f69aed8b9e1696"
+        }
+      ]
+    },
+    {
+      "id": "D09",
+      "artifact": "Frozen catalog and integrated validators",
+      "disposition": "NO_CHANGE",
+      "action": "Retain existing source-specific validators, profiles and receipts; create a separately bound case overlay instead of disabling their count/digest guards.",
+      "rationale": "CatalogInspection is metadata inspection, not full case admission, committee approval or analytical readiness.",
+      "evidence": [
+        {
+          "path": "tools/build_admission_shapes.py",
+          "sha256": "3fb5b205266a0010d1b86d363bd516697f4219d5481bf0b129d9ebd2a2950121"
+        },
+        {
+          "path": "evaluation/shacl/admission/profile-policy.json",
+          "sha256": "3d93811af38f13372d68fb330e65fddbda4db7879959fe82c51fe4635e1c3665"
+        },
+        {
+          "path": "tools/validate_integrated.py",
+          "sha256": "5594df14536eb114f996677dd05c5b1d140cc39fa7b63ae6e4f69aed8b9e1696"
+        }
+      ]
+    },
+    {
+      "id": "D10",
+      "artifact": "SQLite identity schema and native facts",
+      "disposition": "NO_CHANGE",
+      "action": "Use the existing identity/history slice unchanged; rerun case-without-entry and identity controls in B2.",
+      "rationale": "The actual B1 disposable probe stores and exports one case with zero register entries; no approval column or trigger is required.",
+      "evidence": [
+        {
+          "path": "implementation/relational/0.1.0/001_tables.sql",
+          "sha256": "c7d85e0bc96b9e7626320cf2b1aeca5f4c17962ac4792e4f5dc78f9395a90660"
+        },
+        {
+          "path": "implementation/relational/0.1.0/002_guards.sql",
+          "sha256": "c3f0d3479e538d15c90f0f5656f0c65645c4d34455481671d7dc8cfbd995b194"
+        },
+        {
+          "path": "tools/build_relational_history.py",
+          "sha256": "75f81ed8cb5e93bb93e0c3e04720a840dfbdb504b2d463fed7e8d9a2231181f6"
+        },
+        {
+          "path": "tools/relational_history.py",
+          "sha256": "098abac5e8b17c4754b0879d18b2030814d74a71d4694f50127f8deefe9d0182"
+        }
+      ]
+    },
+    {
+      "id": "D11",
+      "artifact": "Database interpretation and readiness metadata",
+      "disposition": "PROFILE_RELOCATION",
+      "action": "Keep schema identity constraints; evaluate local readiness separately from case creation. Do not claim persistence of all context/approval fields through the old identity slice.",
+      "rationale": "The bounded SQL probe is not end-to-end contextual mapping or a PostgreSQL result.",
+      "evidence": [
+        {
+          "path": "implementation/relational/0.1.0/mapping.json",
+          "sha256": "11c55fcc7bf7dc47c1f6a5acddf0fd7f5ceac8027ff62ff55816f7d500fc50f7"
+        },
+        {
+          "path": "requirements/relational-requirements.json",
+          "sha256": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00"
+        }
+      ]
+    },
+    {
+      "id": "D12",
+      "artifact": "Threat and opportunity interpretation",
+      "disposition": "NO_CHANGE",
+      "action": "Reuse RiskNatureAssertion and context/objective qualification; do not introduce disjoint ThreatCase/OpportunityCase subclasses.",
+      "rationale": "One subject may be unfavorable to one objective and favorable to another; perspective does not alone determine a new case identity.",
+      "evidence": [
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/candidate-model.json",
+          "sha256": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7"
+        },
+        {
+          "path": "implementation/relational/0.9.0/010_risk_nature.sql",
+          "sha256": "a2556bca756881885effadffa170c7acad963bb63cca48f29e6db60072b67918"
+        },
+        {
+          "path": "tools/relational_risk_nature.py",
+          "sha256": "35a2406fec25e8d21244db701a0b39e9d0f9001b050ae9e4a77bcc690ac2de4e"
+        }
+      ]
+    },
+    {
+      "id": "D13",
+      "artifact": "Requirements and competency-question scope",
+      "disposition": "PROFILE_RELOCATION",
+      "action": "Carry case continuity and no-label-merging obligations into a new candidate case contract; keep original requirement priorities/results intact.",
+      "rationale": "A new profile needs its own expectations without rewriting the historical contract.",
+      "evidence": [
+        {
+          "path": "requirements/scope-requirements.json",
+          "sha256": "7090abec35d8dca2c2034c9cefaeccbe3f4ecd547d28b78a56eb5662e401d2f8"
+        },
+        {
+          "path": "requirements/relational-requirements.json",
+          "sha256": "acddba35053f952af157cf154950668fa3db12753a01604c4cd312a6f949af00"
+        },
+        {
+          "path": "requirements/release-scope-v0.3.1.json",
+          "sha256": "759eb3eb7cbd7597de24c28139389f3e44de9275c640a2c524fac7032f960639"
+        }
+      ]
+    },
+    {
+      "id": "D14",
+      "artifact": "Candidate dossiers and generated reader",
+      "disposition": "PROSE_CORRECTION",
+      "action": "Generate a successor dictionary/structural binding from the new candidate; update affected definitions and version references together.",
+      "rationale": "Do not edit the byte-bound B0 reader in place or relabel it as the RiskCase successor.",
+      "evidence": [
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-dictionary/build_dictionary.py",
+          "sha256": "7656f267139a8d809c57cf49b46f18956975c1eda6759d1776b7af8f903aaf49"
+        },
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-dictionary/reader/RKM-X01.md",
+          "sha256": "4303cde767ba1653f717b259a50eb63605d384b74f545aa80b467cedaa5da7b7"
+        }
+      ]
+    },
+    {
+      "id": "D15",
+      "artifact": "Historical source cohorts and withheld decisions",
+      "disposition": "NO_CHANGE",
+      "action": "Preserve old CQ06/CQ07/08 cohorts, results, identities and withheld states. A future reassessment gets a new explicit source-bound decision.",
+      "rationale": "Neither removing committee implications nor changing an annotation identifies every source scenario as one case.",
+      "evidence": [
+        {
+          "path": "evaluation/sources/cq06/cohort.json",
+          "sha256": "bc31b4af2f2d2cc4cf1c95bfeafdcb918a29f33d6400693723e7d8ed7893aa29"
+        },
+        {
+          "path": "evaluation/sources/cq0708/cohort.json",
+          "sha256": "525c6f69cff592baf705ec48ee52b629d2b0f61e93adcbedf9535b5993843127"
+        },
+        {
+          "path": "tools/run_source_cq06.py",
+          "sha256": "ccaca92c918ace68e1f614d531da09e33b9c2ffaab939e1276ef810f31810fc4"
+        },
+        {
+          "path": "tools/run_source_cq0708.py",
+          "sha256": "a26822aa140d964fa004092bf18fb2ba5da5489b7af4bb8f3df692b4320c086b"
+        }
+      ]
+    },
+    {
+      "id": "D16",
+      "artifact": "Production source and historical engine routes",
+      "disposition": "NO_CHANGE",
+      "action": "Retain the existing 0.3.1 source/exporters/tests and the B0-4 contract. Qualify the new candidate using new explicit bindings; do not remove guards.",
+      "rationale": "The new version cannot honestly pass a contract whose exact accepted source version/hash differs.",
+      "evidence": [
+        {
+          "path": "ontology/riskium-model.json",
+          "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59"
+        },
+        {
+          "path": "tools/build_owl.py",
+          "sha256": "c596e1ca582c2202225f574e96cba5d1416842076a1cf5272820f0e494be6bd6"
+        },
+        {
+          "path": "tools/build_shacl.py",
+          "sha256": "b4385ad7ddaf8ffcbd4cf79abd3f6213e2a58824ae4b029f6fa01eec2c96510b"
+        },
+        {
+          "path": "evaluation/manuscript-review/v7.2.3/issue93-export-contract/input-contract.json",
+          "sha256": "64c7885a42b0c5b256d195b6c485e5ce88fdaaf72404194a4424bbdb9b8a09b4"
+        }
+      ]
+    },
+    {
+      "id": "D17",
+      "artifact": "Coordinated current publication",
+      "disposition": "PROFILE_RELOCATION",
+      "action": "After B2, qualify a separately versioned current-source selection and its model/native/OWL/reader/profile closure, then update maintained channel pointers and read back actual live bodies.",
+      "rationale": "Versioned scientific source selection preserves historical paths and avoids sweeping replacement of released artifacts.",
+      "evidence": [
+        {
+          "path": "plans/v0.3.8.md",
+          "sha256": "af91e101da73c2a8b3a1abe4f79b541b7cc2a32ffa0468353625d7639461b791"
+        },
+        {
+          "path": "releases/selection-v0.3.8.json",
+          "sha256": "54790b2983a35fe9e2ec72e9c62c4199a4f0334ba4cdd0dd66c4c3c28033cf2f"
+        },
+        {
+          "path": "docs/current/index.html",
+          "sha256": "1e5405c93de6a92d7a7bc7e381982fe166c20e015af2d827fd6fef7a05007616"
+        }
+      ]
+    },
+    {
+      "id": "D18",
+      "artifact": "Framework terminology and manuscript evidence",
+      "disposition": "NO_CHANGE",
+      "action": "Retain scoped correspondences and manuscript 7.2.21 on its explicit scientific baseline. Add no class-equivalence, superiority or new empirical ecosystem-effectiveness claim.",
+      "rationale": "A candidate repair and synthetic controls are not a new real-data study or independent acceptance.",
+      "evidence": [
+        {
+          "path": "docs/design/semantic-core-and-application-profiles.md",
+          "sha256": "4ba699a929002468490de6ae3f796e12b73aa038cdb0be072e958a21da6b9acc"
+        },
+        {
+          "path": "references/corpus.json",
+          "sha256": "eb23983d2194c19d8b115da147b14cad89607e3e63181217add4e1e7df0f16f7"
+        }
+      ]
+    }
+  ],
+  "formal_model_change_selected": false,
+  "rejected_options": [
+    "Global search/replace of instituted across all concepts",
+    "Make RiskCase a register entry or scenario",
+    "Remove context/objective cardinalities merely to admit incomplete data",
+    "Add a universal approval/owner/register prerequisite",
+    "Add unreviewed global class disjointness or threat/opportunity partition",
+    "Rewrite historical WITHHELD decisions or old engine receipts"
+  ]
+}

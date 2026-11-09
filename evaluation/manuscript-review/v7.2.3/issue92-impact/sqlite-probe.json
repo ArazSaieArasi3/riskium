@@ -1,0 +1,20 @@
+{
+  "schema": "riskium-riskcase-baseline-sql-inspection-1",
+  "fixture": "ONE_SYNTHETIC_CASE_IN_MEMORY",
+  "engine": "SQLite 3.53.1",
+  "schema_user_version": 2,
+  "case_rows": 1,
+  "register_entries": 0,
+  "case_type_export_rows": [
+    [
+      "urn:riskium:b1:case",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#RKM-X01"
+    ]
+  ],
+  "foreign_key_violations": 0,
+  "integrity": "ok",
+  "schema_unchanged": true,
+  "boundary": "Read-only inspection of maintained source plus a disposable synthetic database. The historical identity slice can store/export a case without a register entry. No case/profile migration, real data, PostgreSQL, end-to-end contextual mapping, or new HermiT/SHACL run is established."
+}
+

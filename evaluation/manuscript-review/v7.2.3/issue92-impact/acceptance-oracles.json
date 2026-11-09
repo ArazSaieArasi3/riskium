@@ -1,0 +1,231 @@
+{
+  "schema": "riskium-riskcase-planned-acceptance-1",
+  "status": "PREDECLARED_NOT_EXECUTED",
+  "cases": [
+    {
+      "id": "RKC-01",
+      "scope": "analytical identity",
+      "setup": "Named identifiable case, explicit context/objective, no approval or register entry.",
+      "expected": "Analytical task accepts; no entry or occurrence is invented.",
+      "planned_mechanisms": [
+        "SHACL",
+        "SQLite",
+        "HermiT"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-02",
+      "scope": "local approval missing",
+      "setup": "The same case is selected for an operational-register task with missing approval.",
+      "expected": "Core case retained; operational readiness is INCOMPLETE/UNKNOWN.",
+      "planned_mechanisms": [
+        "SHACL",
+        "application policy"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-03",
+      "scope": "explicit denial",
+      "setup": "Operational request supplies explicit denied approval.",
+      "expected": "Core case retained; operational eligibility is NOT_ELIGIBLE, distinct from unknown.",
+      "planned_mechanisms": [
+        "SHACL",
+        "application policy"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-04",
+      "scope": "local positive",
+      "setup": "Explicit linked entry records the selected case and supported approval is true.",
+      "expected": "Both selected analytical and local operational checks accept.",
+      "planned_mechanisms": [
+        "SHACL",
+        "application policy"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-05",
+      "scope": "entry absence",
+      "setup": "Approval is true but there is no register entry for this local task.",
+      "expected": "Case identity persists; the declared operational task is incomplete.",
+      "planned_mechanisms": [
+        "SHACL",
+        "application policy"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-06",
+      "scope": "record identity",
+      "setup": "Case identifier is blank or malformed in a selected exchange record.",
+      "expected": "The selected named-identity profile rejects; raw input may remain staging.",
+      "planned_mechanisms": [
+        "SHACL",
+        "SQLite"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-07",
+      "scope": "context incomplete",
+      "setup": "Named case lacks explicit context required by the selected analysis task.",
+      "expected": "Task is incomplete; no case deletion/nonexistence claim. OWL may remain satisfiable using anonymous witnesses.",
+      "planned_mechanisms": [
+        "SHACL",
+        "HermiT"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-08",
+      "scope": "objective incomplete",
+      "setup": "Named case lacks explicit objective required by the selected analysis task.",
+      "expected": "Task is incomplete; case identity is not contingent on operational approval.",
+      "planned_mechanisms": [
+        "SHACL",
+        "HermiT"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-09",
+      "scope": "case-entry multiplicity",
+      "setup": "Two distinct entries record one selected case.",
+      "expected": "Preserve one case and two entries; R-01 does not create a second case.",
+      "planned_mechanisms": [
+        "SQLite",
+        "RDF query"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-10",
+      "scope": "label equality",
+      "setup": "Two scoped case identities have equal labels; explicit distinctness can be supplied.",
+      "expected": "Do not merge by label or score. A HermiT consistency check uses explicit distinctness; it does not adjudicate real identity.",
+      "planned_mechanisms": [
+        "SQLite",
+        "HermiT",
+        "RDF query"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-11",
+      "scope": "case-record identity",
+      "setup": "A register-entry identifier is reused as a case identifier.",
+      "expected": "Reject cross-family identity in the declared SQL/application contract; do not invent a new universal OWL disjointness axiom.",
+      "planned_mechanisms": [
+        "SQLite",
+        "application policy"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-12",
+      "scope": "scenario-occurrence distinction",
+      "setup": "A scenario describes the selected item without an asserted occurrence.",
+      "expected": "Retain the scenario/case interpretation; assert no actual occurrence.",
+      "planned_mechanisms": [
+        "RDF query"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-13",
+      "scope": "perspective qualification",
+      "setup": "One case has unfavorable and favorable assertions under distinct objective/context references.",
+      "expected": "Retain the qualified assertions; no forced threat/opportunity partition or automatic case split.",
+      "planned_mechanisms": [
+        "RDF query",
+        "HermiT"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-14",
+      "scope": "historical preservation",
+      "setup": "Selected source cohorts contain old withheld decisions.",
+      "expected": "Every original byte/hash and withheld identity field remains unchanged. No real case admission is inferred.",
+      "planned_mechanisms": [
+        "source hashes"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-15",
+      "scope": "external focus",
+      "setup": "Caller supplies no case target.",
+      "expected": "Reject an empty request rather than reporting vacuous acceptance.",
+      "planned_mechanisms": [
+        "application policy"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-16",
+      "scope": "selector/schema injection",
+      "setup": "Input tries to choose a permissive profile or supplies a schema/identity rewrite over reserved vocabulary.",
+      "expected": "Reject untrusted selector/schema injection before task validation.",
+      "planned_mechanisms": [
+        "application policy"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-17",
+      "scope": "SQL/RDF identity view",
+      "setup": "The disposable case has no register entry.",
+      "expected": "Existing v_native_facts exports its case type; selected SQL and RDF identity/entry answers agree. This is not full context/approval persistence.",
+      "planned_mechanisms": [
+        "SQLite",
+        "SPARQL"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-18",
+      "scope": "profile guard mutation",
+      "setup": "Deliberately omit the local approval requirement for an incomplete operational record.",
+      "expected": "The bad record becomes accepted and the fixed negative oracle detects the mutation.",
+      "planned_mechanisms": [
+        "SHACL mutation control"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-19",
+      "scope": "wrong entry target",
+      "setup": "A selected entry records a different case.",
+      "expected": "Reject the selected operational join; do not silently relink the entry or merge cases.",
+      "planned_mechanisms": [
+        "SHACL",
+        "application policy"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    },
+    {
+      "id": "RKC-20",
+      "scope": "candidate preservation",
+      "setup": "Generate the successor native/OWL from the explicit source delta.",
+      "expected": "596 native elements and the B0 repair remain; logical OWL is isomorphic to the prior candidate after documentary annotations/version data are removed. New version/profile hashes are explicit.",
+      "planned_mechanisms": [
+        "source/native/schema checks",
+        "OWL graph comparison",
+        "HermiT",
+        "ROBOT"
+      ],
+      "execution_status": "NOT_RUN_B1"
+    }
+  ],
+  "limits": [
+    "HermiT checks only the stated logical satisfiability/entailment cases; it does not establish semantic adequacy.",
+    "SHACL/application checks concern explicit selected-task input, not universal existence.",
+    "SQLite tests the bounded identity/history slice; PostgreSQL and full context/approval persistence are unclaimed.",
+    "External HTTP/live channel checks follow actual publication; no staged output is counted as deployed."
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "schema": "riskium-riskcase-proposed-source-delta-1",
+  "status": "DESIGN_CONTRACT_NOT_APPLIED",
+  "base_source": {
+    "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/candidate-model.json",
+    "sha256": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7"
+  },
+  "target_source_version": "0.3.2-case.1",
+  "patches": [
+    {
+      "selector": "concept:RKM-X01",
+      "field": "definition",
+      "before": "An instituted, identifiable subject of enterprise-risk analysis and tracking. It persists across its descriptions, reassessments, responsibilities and administrative record states under a governed identity policy. It is neither its register entry nor a scenario specification nor an actual occurrence.",
+      "after": "An identifiable risk item for analysis and tracking in relation to objectives and context, which may represent a threat or opportunity from a specified perspective. Its identity persists across descriptions, assessments and administrative record states. It is distinct from a register entry, scenario specification and actual occurrence. Formal organizational register acceptance is application-specific, not a general condition for its existence.",
+      "rationale": "Adopt the approved analytical-item meaning without committee-admission implications."
+    },
+    {
+      "selector": "concept:RKM-X01",
+      "field": "identity_basis",
+      "before": "Stable case identifier in a governed namespace. Text similarity never automatically merges cases. Change of objective or context triggers a documented identity review; split/merge decisions preserve original identifiers and evidence.",
+      "after": "Scoped case identity with traceable source references and continuity criteria. A local identifier represents that identity; equal labels or scores do not establish it. Several descriptions or register entries may concern the same case. Changes in objectives or context require an explicit identity judgment when continuity is uncertain; documented split/merge decisions retain source identifiers and lineage.",
+      "rationale": "Keep stable, justified identity without requiring an institutionally approved namespace or automatic context-based splitting."
+    },
+    {
+      "selector": "concept:RKM-X01",
+      "field": "typing_rationale",
+      "before": "Proposed identity-supplying sortal; external Person/Organization and instituted case identities require their owning-domain commitments.",
+      "after": "Proposed identity-supplying kind for the adopted analytical risk item. Analytical identification does not require formal register approval; local governance requirements belong to the declared application profile.",
+      "rationale": "Keep the kind commitment; clarify the identity criterion rather than changing stereotype."
+    },
+    {
+      "selector": "concept:RKM-C014",
+      "field": "typing_rationale",
+      "before": "Proposed identity-supplying sortal; external Person/Organization and instituted case identities require their owning-domain commitments.",
+      "after": "Proposed identity-supplying documentary kind. Artifact identity persists across descriptions and versions; institution of documentary identity does not impose register approval on a RiskCase.",
+      "rationale": "Remove the shared boilerplate reference to instituted case identity without altering this kind or its identity supplier."
+    },
+    {
+      "selector": "concept:RKM-C015",
+      "field": "typing_rationale",
+      "before": "Proposed identity-supplying sortal; external Person/Organization and instituted case identities require their owning-domain commitments.",
+      "after": "Proposed identity-supplying kind for a distinct artifact version. Version identity and issuance are separate from RiskCase identity and operational admission.",
+      "rationale": "Remove the shared boilerplate reference to instituted case identity without altering this kind or its identity supplier."
+    },
+    {
+      "selector": "concept:RKM-C048",
+      "field": "typing_rationale",
+      "before": "Proposed identity-supplying sortal; external Person/Organization and instituted case identities require their owning-domain commitments.",
+      "after": "Proposed identity-supplying person kind; person identity belongs to the owning external domain and does not institute RiskCase approval requirements.",
+      "rationale": "Remove the shared boilerplate reference to instituted case identity without altering this kind or its identity supplier."
+    },
+    {
+      "selector": "concept:RKM-C049",
+      "field": "typing_rationale",
+      "before": "Proposed identity-supplying sortal; external Person/Organization and instituted case identities require their owning-domain commitments.",
+      "after": "Proposed identity-supplying organization kind; organization identity belongs to the owning external domain and does not institute RiskCase approval requirements.",
+      "rationale": "Remove the shared boilerplate reference to instituted case identity without altering this kind or its identity supplier."
+    },
+    {
+      "selector": "constraint:C-16",
+      "field": "statement",
+      "before": "Raw source content is retained in staging. Managed records require identity, subject, title and provenance. Analytical readiness additionally requires the pinned context, method, scale, basis, dimension and time required for the selected task.",
+      "after": "Raw source content is retained in staging. Managed documentary records require their own identity, aboutness, title and provenance under the declared record profile. Analytical task readiness additionally requires the context, method, scale, basis, dimension and time selected for that task. These completeness conditions do not make organizational register approval a universal condition for the existence of an identifiable analytical RiskCase.",
+      "rationale": "Distinguish documentary metadata and task completeness from the existence of the risk item."
+    },
+    {
+      "selector": "scope",
+      "field": "title",
+      "before": "Riskium An Ontology for Modeling Enterprise Risk Knowledge",
+      "after": "Riskium An Ontology for Modeling Ecosystem and Enterprise Risk Knowledge",
+      "rationale": "Reflect the adopted target context without claiming new multi-organization empirical validation."
+    },
+    {
+      "selector": "scope",
+      "field": "purpose",
+      "before": "Model the content, context, provenance and relationships of enterprise risk knowledge to support structured analysis.",
+      "after": "Model the content, context, provenance and relationships of ecosystem and enterprise risk knowledge to support structured analysis and their connected interpretation.",
+      "rationale": "Preserve general scope; pharmaceutical material remains a case application."
+    },
+    {
+      "selector": "model",
+      "field": "counting_note",
+      "before": "80 catalog concepts = 77 formal-core concepts + 3 optional phenomenon notions; one imported foundational Object anchor counted separately. 134 association/bridge inventory entries include optional boundaries; only core relations are projected into the native core view.",
+      "after": "82 catalog concepts = 79 formal-core concepts + 3 optional phenomenon notions; one imported foundational Object anchor is counted separately. The 137 association/bridge inventory entries comprise 130 formal relations and seven optional boundary relations. The explicit set policy retains eight sets. These counts describe this combined candidate only; historical inventories retain their original populations.",
+      "rationale": "The B0 candidate inherited a stale 80/134 narrative despite its correct 82/137 machine inventory; correct the successor note without rewriting the B0 receipt."
+    },
+    {
+      "selector": "model",
+      "field": "case_application_profile_policy",
+      "before": null,
+      "after": {
+        "case_identity": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+        "record_metadata": "Requirements concern the documentary envelope under an explicitly selected profile, not an institutional approval condition for the represented subject.",
+        "task_readiness": "Task-specific explicit context/objective and other inputs may be required; missing inputs produce incomplete readiness, not an assertion of nonexistence.",
+        "operational_registration": "A local example profile may require a linked register entry and supported approval. Unknown approval stays unknown.",
+        "multiplicity_scope": "Retain the reviewed conceptual endpoints and multiplicities. Data completeness is assessed under a declared explicit-data task; OWL anonymous witnesses do not supply observed data."
+      },
+      "rationale": "Add explicit scope metadata; no new universal logical axiom follows."
+    }
+  ],
+  "unchanged": [
+    "concept identifiers and stereotypes",
+    "identity suppliers",
+    "all associations and multiplicities",
+    "all direct generalizations and eight explicit sets",
+    "all other constraint statements",
+    "existing term namespace",
+    "historical sources and candidate packets"
+  ],
+  "version_metadata": "B2 must set its own version/date/publication-profile/source digest; the proposed version is not a published release."
+}

@@ -1,0 +1,85 @@
+{
+  "schema": "riskium-riskcase-impact-input-binding-1",
+  "source_commit": "aafc9b77ea320d726fcd0ae3d78449d03c061a26",
+  "branch": "candidate/issue93-evidence-use",
+  "base_candidate": {
+    "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/candidate-model.json",
+    "sha256": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7"
+  },
+  "inputs": [
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/candidate-model.json",
+      "sha256": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7"
+    },
+    {
+      "path": "docs/design/semantic-core-and-application-profiles.md",
+      "sha256": "4ba699a929002468490de6ae3f796e12b73aa038cdb0be072e958a21da6b9acc"
+    },
+    {
+      "path": "ontology/riskium-model.json",
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59"
+    },
+    {
+      "path": "ontology/native/riskium.ontouml.json",
+      "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95"
+    },
+    {
+      "path": "ontology/derived/riskium.owl.ttl",
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58"
+    },
+    {
+      "path": "evaluation/native-review-decisions.json",
+      "sha256": "38a09df7b9914be79001f94556267d624510957eae16c2e53a8da93afe219211"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue93-export-contract/input-contract.json",
+      "sha256": "64c7885a42b0c5b256d195b6c485e5ce88fdaaf72404194a4424bbdb9b8a09b4"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue93-dictionary/reader-contract.json",
+      "sha256": "2f7b2bebed55b9caa400dea71371202931b6b7db9a6036c8a3cde7636c0b6cc0"
+    },
+    {
+      "path": "tools/build_admission_shapes.py",
+      "sha256": "3fb5b205266a0010d1b86d363bd516697f4219d5481bf0b129d9ebd2a2950121"
+    },
+    {
+      "path": "tools/build_shacl.py",
+      "sha256": "b4385ad7ddaf8ffcbd4cf79abd3f6213e2a58824ae4b029f6fa01eec2c96510b"
+    },
+    {
+      "path": "tools/validate_integrated.py",
+      "sha256": "5594df14536eb114f996677dd05c5b1d140cc39fa7b63ae6e4f69aed8b9e1696"
+    },
+    {
+      "path": "evaluation/shacl/admission/profile-policy.json",
+      "sha256": "3d93811af38f13372d68fb330e65fddbda4db7879959fe82c51fe4635e1c3665"
+    },
+    {
+      "path": "implementation/relational/0.1.0/001_tables.sql",
+      "sha256": "c7d85e0bc96b9e7626320cf2b1aeca5f4c17962ac4792e4f5dc78f9395a90660"
+    },
+    {
+      "path": "implementation/relational/0.1.0/002_guards.sql",
+      "sha256": "c3f0d3479e538d15c90f0f5656f0c65645c4d34455481671d7dc8cfbd995b194"
+    },
+    {
+      "path": "tools/build_relational_history.py",
+      "sha256": "75f81ed8cb5e93bb93e0c3e04720a840dfbdb504b2d463fed7e8d9a2231181f6"
+    },
+    {
+      "path": "tools/relational_history.py",
+      "sha256": "098abac5e8b17c4754b0879d18b2030814d74a71d4694f50127f8deefe9d0182"
+    },
+    {
+      "path": "evaluation/sources/cq06/cohort.json",
+      "sha256": "bc31b4af2f2d2cc4cf1c95bfeafdcb918a29f33d6400693723e7d8ed7893aa29"
+    },
+    {
+      "path": "evaluation/sources/cq0708/cohort.json",
+      "sha256": "525c6f69cff592baf705ec48ee52b629d2b0f61e93adcbedf9535b5993843127"
+    }
+  ],
+  "preserve_previous_contracts": true,
+  "model_mutated_in_B1": false
+}
