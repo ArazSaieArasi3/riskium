@@ -1,0 +1,21 @@
+{
+  "schema": "riskium-v039-selection-policy-1",
+  "target": "v0.3.9",
+  "predecessor": "v0.3.8",
+  "predecessor_source_commit": "4c31bd1dbe7f1e17c6f04543290488bc9d1ab0f1",
+  "reviewed_successor_commit": "47a9fc1b966441898f967b6830d45c500955d0c0",
+  "reviewed_successor_ci": 42635305088,
+  "scientific_source_version": "0.3.2",
+  "documentation_version": "0.4.9",
+  "task_profile_version": "0.1.0",
+  "manuscript_version": "7.2.21",
+  "active_component_ids": ["MODEL032", "CASE_TASK_PROFILE010", "READER049", "PROVENANCE032", "QUALIFICATION039"],
+  "historical_component_count": 32,
+  "historical_binding_policy": "Retain each v0.3.8 component at its original version and original model compatibility. Preserve changed delivery-tool bodies under versioned retained aliases. Do not relabel historical SQL, cohort, evaluation or manuscript results as 0.3.2 evidence.",
+  "namespace_policy": "Keep established term IRIs; use a distinct 0.3.2 ontology versionIRI and exact source digest. No universal organizational approval requirement is introduced.",
+  "publication_policy": "R1 selects and qualifies; R2 packages, publishes and performs maintained-channel readback. No live/default promotion or issue closure in R1.",
+  "article_binaries_included": false,
+  "independent_semantic_acceptance": false,
+  "full_database_migration": false,
+  "production_performance_claim": false
+}

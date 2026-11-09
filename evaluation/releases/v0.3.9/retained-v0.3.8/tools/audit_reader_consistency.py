@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+"""Bounded source-side check of the proposed repository landing.
+
+Does not claim live Pages/Wiki synchronization, scientific validity, or a
+released manuscript. Run again against the exact candidate source.
+"""
+from pathlib import Path
+import re
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+readme = (ROOT / "README.md").read_text(encoding="utf-8")
+errors = []
+
+for target in re.findall(r"\]\(([^)]+)\)", readme):
+    if target.startswith(("https://", "http://", "mailto:")) or target.startswith("#"):
+        continue
+    destination = (ROOT / target.split("#", 1)[0]).resolve()
+    if not destination.is_relative_to(ROOT) or not destination.exists():
+        errors.append(f"broken or escaping relative link: {target}")
+
+import json
+publication = ROOT / 'evaluation/releases/v0.3.8/publication.json'
+promoted = publication.exists()
+if promoted:
+    record=json.loads(publication.read_text())
+    if record['status']!='INDEPENDENT_PUBLIC_DOWNLOADS_PASS' or record['tag']!='v0.3.8':errors.append('Invalid source publication record')
+    if (ROOT/'.github/README.md').read_text()!=readme:errors.append('Root and GitHub landing differ after promotion')
+required = {
+    "published source": r"Published source:.*v0\.3\.8" if promoted else r"Published source:.*v0\.3\.7",
+    "model version": r"conceptual model and OWL:\*\* 0\.3\.1",
+    "reader version": r"published reader:\*\* 0\.4\.7" if promoted else r"published reader:\*\* 0\.4\.6",
+    "held paper": r"author-held article candidate:.*7\.2\.3",
+    "wiki": r"https://github\.com/ArazSaieArasi3/riskium/wiki",
+    "pages": r"https://arazsaiearasi3\.github\.io/riskium/current/index\.html",
+    "rights": r"\[RIGHTS\.md\]\(RIGHTS\.md\)",
+}
+for name, pattern in required.items():
+    if not re.search(pattern, readme):
+        errors.append(f"missing or inconsistent {name}")
+
+import json
+receipt = json.loads((ROOT / "evaluation/manuscript-review/v7.2.3/receipt.json").read_text())
+if receipt['layout']['pages'] != 10 or not receipt['word_sha256'] or not receipt['pdf_sha256']:
+    errors.append("missing current manuscript audit binding")
+
+if errors:
+    print("FAIL source landing: " + "; ".join(errors), file=sys.stderr)
+    sys.exit(1)
+print("PASS source landing links, version roles, rights and author-held receipt (local source only)")

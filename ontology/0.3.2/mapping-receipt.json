@@ -1,0 +1,36 @@
+{
+  "status": "MAPPING_GENERATED_AND_STRUCTURALLY_CHECKED_NOT_REASONED",
+  "model_version": "0.3.2",
+  "namespace": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#",
+  "inputs_sha256": {
+    "source": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb",
+    "policy": "56f298c816942cd9d6630f035fd5681fb5cc52ad74157dd3eaea39ff5013c97a",
+    "native": "555284d58ab3f20f201ed8ab534a26734c00669575206031d42cc851525a558d"
+  },
+  "input_contract_sha256": "f5e4a103dd0db4660a52f24db5c62bcd02517950f78265b3406f13b8334488d2",
+  "version_iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.2",
+  "coverage": {
+    "typed_classes": 79,
+    "local_anchor_proxy": 1,
+    "generalizations": 67,
+    "typed_object_properties": 130,
+    "cardinality_restrictions": 93,
+    "reviewed_property_inclusions": 2,
+    "reviewed_property_disjointness": 2,
+    "evidence_context_object_properties": 1,
+    "evidence_purpose_data_properties": 1,
+    "conditional_anchor_unions": 1,
+    "qualified_version_target_rules": 4,
+    "reviewed_generalization_sets": 8,
+    "disjoint_sets": 3,
+    "optional_boundaries_as_classes": 0
+  },
+  "limitations": [
+    "No external owl:imports: external object anchor is a local proxy.",
+    "No covering axiom, unique-name assumption, key, global equivalence or implicit sibling disjointness.",
+    "Qualified cardinalities constrain OWL interpretations under an open world; missing values can be anonymous and excessive named values can be equal.",
+    "Temporal, version-join, provenance, calculation and application-admission rules require separately reviewed encodings.",
+    "Syntax, reasoning, satisfiability, instance validity and semantic adequacy are distinct checks."
+  ],
+  "output_sha256": "f7d89f965eba054a6475df5d78d1e00e08bc603a17105fd94bfae8af44880496"
+}

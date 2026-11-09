@@ -11,6 +11,11 @@ on:
       - 'evaluation/manuscript-review/v7.2.3/issue93-*/**.cjs'
       - 'evaluation/manuscript-review/v7.2.3/issue93-*/**.ttl'
       - 'tools/check_source_transition.py'
+      - 'tools/releases/v039/**'
+      - 'ontology/0.3.2/**'
+      - 'documentation/0.4.9/**'
+      - 'releases/selection-policy-v0.3.9.json'
+      - 'releases/selection-v0.3.9.json'
       - 'evaluation/manuscript-review/v7.2.3/issue92-riskcase/**'
       - '!evaluation/manuscript-review/v7.2.3/issue92-riskcase/ci-receipt.json'
       - '!evaluation/manuscript-review/v7.2.3/issue92-riskcase/verification-report.json'
@@ -65,6 +70,13 @@ jobs:
             --output "$RUNNER_TEMP/issue92-artifact" \
             --schema build/issue93-tools/schema.json --robot build/issue93-tools/robot.jar \
             --sdk build/issue93-tools/node_modules/ontouml-js --node "$(command -v node)"
+      - name: Qualify the selected coordinated package source
+        shell: bash
+        run: |
+          python tools/releases/v039/qualify.py \
+            --output "$RUNNER_TEMP/v039-R1-artifact" \
+            --schema build/issue93-tools/schema.json --robot build/issue93-tools/robot.jar \
+            --sdk build/issue93-tools/node_modules/ontouml-js --node "$(command -v node)"
       - name: Preserve actual execution receipts and staged projections
         if: always()
         uses: actions/upload-artifact@v4
@@ -73,4 +85,5 @@ jobs:
           path: |
             ${{ runner.temp }}/issue93-artifact/
             ${{ runner.temp }}/issue92-artifact/
+            ${{ runner.temp }}/v039-R1-artifact/
           if-no-files-found: warn

@@ -41,6 +41,8 @@ SCHEDULERS = {
     '.github/workflows/current-documentation-pages.yml',
 }
 ADDITIVE_FILES = {
+    'plans/v0.3.9.md', 'releases/selection-policy-v0.3.9.json',
+    'releases/selection-v0.3.9.json',
     '.github/workflows/issue93-candidate.yml',
     'docs/design/semantic-core-and-application-profiles.md',
     '.github/workflows/subdomain-dictionary.yml',
@@ -63,7 +65,8 @@ ADDITIVE_FILES = {
     'tools/publication/external_definition_documentation.py',
     'tests/test_external_definitions.py', '.github/workflows/external-definition-reader.yml',
 }
-ADDITIVE_PREFIXES = ('documentation/concepts/0.3.1/',
+ADDITIVE_PREFIXES = ('ontology/0.3.2/', 'documentation/0.4.9/',
+                     'tools/releases/v039/', 'evaluation/releases/v0.3.9/', 'documentation/concepts/0.3.1/',
                      'evaluation/manuscript-review/v7.1.0/',
                      'evaluation/manuscript-review/v7.2.0/',
                      'evaluation/manuscript-review/v7.2.1/',

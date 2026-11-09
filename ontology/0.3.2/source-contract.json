@@ -1,0 +1,79 @@
+{
+  "schema": "riskium-selected-scientific-source-1",
+  "source_version": "0.3.2",
+  "package_target": "v0.3.9",
+  "stage": "SELECTED_NOT_PUBLISHED",
+  "source": {
+    "path": "ontology/0.3.2/riskium-model.json",
+    "sha256": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb"
+  },
+  "term_namespace": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.1#",
+  "ontology_iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium",
+  "version_iri": "https://github.com/ArazSaieArasi3/riskium/ontologies/riskium/0.3.2",
+  "evidence_namespace": "https://github.com/ArazSaieArasi3/riskium/candidates/issue93/evidence-use#",
+  "inventory": {
+    "concepts": 82,
+    "imported_types": 1,
+    "associations": 137,
+    "generalizations": 67,
+    "constraints": 26,
+    "formal_classes": 79,
+    "formal_relations": 130,
+    "retained_sets": 8
+  },
+  "policy": {
+    "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/set-policy.json",
+    "sha256": "56f298c816942cd9d6630f035fd5681fb5cc52ad74157dd3eaea39ff5013c97a"
+  },
+  "dependencies": [
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/candidate-model.json",
+      "sha256": "e98a63b286441c80fc10a9644804d64fc2b611e906b2d27cf3d72f3ebd72cfa8"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/candidate.ontouml.json",
+      "sha256": "60c80a743136e10d224b950d4712724911e3d7b3e95a2d3b0e1a25c8d44169ae"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/candidate.owl.ttl",
+      "sha256": "9d623eda70d5ce6d38f79502e82b64e02bd664573d45092442d6fab2850baf1a"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/input-contract.json",
+      "sha256": "131aeb5b0d61eeecd1493a58f16a598ccdc63808327cde9650df9c2388ddf080"
+    },
+    {
+      "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/mapping-receipt.json",
+      "sha256": "9a2451c4e56f70f1b990796b122751cef03c2528e2ab23d06cde5f1c9c86a051"
+    },
+    {
+      "path": "tools/releases/v039/source.py",
+      "sha256": "3498e30bafb01af652e39303fda93196abef8bfcfd60b6ade6f42284a627a2a5"
+    }
+  ],
+  "frozen_inputs": [
+    {
+      "path": "ontology/riskium-model.json",
+      "sha256": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59"
+    },
+    {
+      "path": "ontology/native/riskium.ontouml.json",
+      "sha256": "c6a4965a1986d5d2895ee7775931797665e72c88946c3cc8ca0c04ad065f1f95"
+    },
+    {
+      "path": "ontology/derived/riskium.owl.ttl",
+      "sha256": "9b0ce121238693ad662885f4808d73a4dee60df96fc9960358c04cd93585ab58"
+    },
+    {
+      "path": "evaluation/native-review-decisions.json",
+      "sha256": "38a09df7b9914be79001f94556267d624510957eae16c2e53a8da93afe219211"
+    }
+  ],
+  "production_promotion": false,
+  "predecessor_source": {
+    "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/candidate-model.json",
+    "sha256": "e98a63b286441c80fc10a9644804d64fc2b611e906b2d27cf3d72f3ebd72cfa8"
+  },
+  "namespace_policy": "Existing 0.3.1# term IRIs remain compatibility identifiers. The ontology versionIRI, scientific source version and source digest identify this selected 0.3.2 representation. No term renaming or equivalence axiom is introduced.",
+  "boundary": "Only version/publication metadata differs from the B2 source. Core analytical identity is separate from explicit task readiness and local operational eligibility. Historical SQL/cohort results retain their original source bindings."
+}
