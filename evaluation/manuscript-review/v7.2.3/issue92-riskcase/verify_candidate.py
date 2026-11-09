@@ -21,7 +21,7 @@ def main(a):
  b.build(check=True);files,coverage=reader.generate(check=True)
  contract=json.loads(b.CONTRACT.read_text());model,_=b.validate_contract(contract)
  native=json.loads((b.HERE/'candidate.ontouml.json').read_text());owl=Graph().parse(b.HERE/'candidate.owl.ttl',format='turtle')
- old_native,old_owl,_=b.prior.render(json.loads(b.prior.CONTRACT.read_text()))
+ with b.prior_inputs():old_native,old_owl,_=b.prior.render(json.loads(b.prior.CONTRACT.read_text()))
  def logical(g):
   annotations=set(g.subjects(RDF.type,OWL.AnnotationProperty))|{RDFS.label,RDFS.comment,OWL.versionIRI};ontos=set(g.subjects(RDF.type,OWL.Ontology))
   x=Graph()

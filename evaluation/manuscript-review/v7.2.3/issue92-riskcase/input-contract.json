@@ -26,7 +26,7 @@
   "dependencies": [
     {
       "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/adopted-inputs.json",
-      "sha256": "39b7d22c931e43b7f2e808660c052f3a5790b057684057159b07d67dc0baba8e"
+      "sha256": "bd68ac0063b36857f67ef40d2505d5ba2566ce803e281ee8bab22dc4b93d4cc9"
     },
     {
       "path": "evaluation/manuscript-review/v7.2.3/issue92-impact/proposed-source-delta.json",
@@ -42,7 +42,7 @@
     },
     {
       "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/build_candidate.py",
-      "sha256": "d289aad4bb193dae6cd0381c40271a7cd2ea150fd60e06745952d522b7421784"
+      "sha256": "e574e577e405f8d3c297a26cd96aa8780be45c11480ace4a600b6e75e09612ca"
     },
     {
       "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/case_profiles.py",
@@ -54,7 +54,7 @@
     },
     {
       "path": "evaluation/manuscript-review/v7.2.3/issue92-riskcase/verify_candidate.py",
-      "sha256": "6d2d6b143ea9bff8735b684d50585b66656041578cbcfe8b06074b651e292c35"
+      "sha256": "21b67172d23d610d529d1ad8d67a7f813fdbd74b9e0986a5df8b7a605abbc351"
     }
   ],
   "frozen_inputs": [

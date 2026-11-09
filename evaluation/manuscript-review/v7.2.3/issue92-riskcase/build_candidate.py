@@ -1,7 +1,9 @@
 """Build the B1-declared RiskCase successor without rewriting prior packets."""
 from pathlib import Path
 from copy import deepcopy
-import hashlib,importlib.util,json,sys
+import hashlib,importlib.util,json,sys,tempfile
+from contextlib import contextmanager
+from unittest.mock import patch
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[3];IMPACT=HERE.parent/'issue92-impact'
 OLD=HERE.parent/'issue93-export-contract';sys.path.insert(0,str(OLD))
 import export_candidate as prior
@@ -23,10 +25,32 @@ def owner(m,s):
  if s.startswith('constraint:'):return next(c for c in m['constraints'] if c['id']==s.split(':')[1])
  return m['scope'] if s=='scope' else m
 
+def reconstructed_prior():
+ builder=prior.load_builder();_,m=builder.old.candidate_model();m['version']=builder.VERSION
+ m['publication_profile'].update(source_design_version=builder.VERSION,representation='Isolated combined EvidenceItem and explicit generalization-set policy candidate; not promoted to main')
+ m['generalization_set_policy']=builder.policy_for(m)
+ expected=json.loads((IMPACT/'proposed-source-delta.json').read_text())['base_source']
+ if hashlib.sha256(dump(m).encode()).hexdigest()!=expected['sha256']:raise ValueError('Reconstructed prior source hash differs from B1')
+ return m
+
+@contextmanager
+def prior_inputs():
+ # The prior model is an ignored generated file, not a tracked checkout input.
+ # Supply its byte-exact, recipe-reconstructed body to the unchanged old validator.
+ old=json.loads(prior.CONTRACT.read_text());original=prior.checked_file
+ with tempfile.TemporaryDirectory(prefix='riskium-prior-input-') as tmp:
+  source=Path(tmp)/'prior-model.json';source.write_text(dump(reconstructed_prior()))
+  def resolve_prior(entry):
+   if entry['path']==old['source']['path']:
+    if sha(source)!=entry['sha256']:raise ValueError('Prior source contract hash mismatch')
+    return source
+   return original(entry)
+  with patch.object(prior,'checked_file',resolve_prior):yield
+
 def derive():
  inputs=json.loads((HERE/'adopted-inputs.json').read_text())
  for e in inputs['inputs']:checked(e)
- delta=json.loads((IMPACT/'proposed-source-delta.json').read_text());base=json.loads(checked(delta['base_source']).read_text());m=deepcopy(base)
+ delta=json.loads((IMPACT/'proposed-source-delta.json').read_text());base=reconstructed_prior();m=deepcopy(base)
  for p in delta['patches']:
   o=owner(m,p['selector'])
   if o.get(p['field'])!=p['before']:raise ValueError('Source delta preimage mismatch')
@@ -38,7 +62,8 @@ def derive():
  return m
 
 def contract_for(m):
- old=json.loads(prior.CONTRACT.read_text());prior.validate_contract(old)
+ old=json.loads(prior.CONTRACT.read_text())
+ with prior_inputs():prior.validate_contract(old)
  dependencies=[HERE/'adopted-inputs.json',IMPACT/'proposed-source-delta.json',IMPACT/'acceptance-oracles.json',prior.CONTRACT]
  dependencies+=[HERE/n for n in ['build_candidate.py','case_profiles.py','reader.py','verify_candidate.py']]
  return {'schema':'riskium-riskcase-candidate-contract-1','source_version':VERSION,'source':{'path':str((HERE/'candidate-model.json').relative_to(ROOT)),'sha256':hashlib.sha256(dump(m).encode()).hexdigest()},

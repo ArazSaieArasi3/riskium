@@ -12,10 +12,11 @@
     {
       "path": "evaluation/manuscript-review/v7.2.3/issue93-export-contract/input-contract.json",
       "sha256": "64c7885a42b0c5b256d195b6c485e5ce88fdaaf72404194a4424bbdb9b8a09b4"
-    },
-    {
-      "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/candidate-model.json",
-      "sha256": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7"
     }
-  ]
+  ],
+  "derived_source": {
+    "path": "evaluation/manuscript-review/v7.2.3/issue93-generalization-sets/candidate-model.json",
+    "sha256": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7",
+    "binding": "Byte-exact B0 source reconstructed in memory through its pinned pure recipe; no pre-existing ignored local output is required."
+  }
 }

@@ -7,7 +7,7 @@
     "policy": "56f298c816942cd9d6630f035fd5681fb5cc52ad74157dd3eaea39ff5013c97a",
     "native": "60c80a743136e10d224b950d4712724911e3d7b3e95a2d3b0e1a25c8d44169ae"
   },
-  "input_contract_sha256": "48183805836a1e6f61fcdaeab2c8c12a8ec661dce982ebb84f6e69fa72c7a5db",
+  "input_contract_sha256": "131aeb5b0d61eeecd1493a58f16a598ccdc63808327cde9650df9c2388ddf080",
   "version_iri": "https://github.com/ArazSaieArasi3/riskium/candidates/issue92/riskcase",
   "coverage": {
     "typed_classes": 79,

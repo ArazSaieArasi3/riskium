@@ -4,7 +4,7 @@
   "model_sha256": "e98a63b286441c80fc10a9644804d64fc2b611e906b2d27cf3d72f3ebd72cfa8",
   "native_sha256": "60c80a743136e10d224b950d4712724911e3d7b3e95a2d3b0e1a25c8d44169ae",
   "owl_sha256": "9d623eda70d5ce6d38f79502e82b64e02bd664573d45092442d6fab2850baf1a",
-  "export_contract_sha256": "48183805836a1e6f61fcdaeab2c8c12a8ec661dce982ebb84f6e69fa72c7a5db",
+  "export_contract_sha256": "131aeb5b0d61eeecd1493a58f16a598ccdc63808327cde9650df9c2388ddf080",
   "population": {
     "catalog_concepts": 82,
     "formal_source_classes": 79,
