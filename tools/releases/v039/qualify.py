@@ -1,7 +1,7 @@
 """Fresh exact-source R1 qualification; neither releases nor Wiki/Pages are mutated."""
 from pathlib import Path
 from types import SimpleNamespace
-import argparse, hashlib, importlib.util, json, subprocess, tempfile
+import argparse, hashlib, importlib.util, json, subprocess, sys, tempfile
 import source, reader, selection, projection
 
 def main(args):
@@ -27,7 +27,12 @@ def main(args):
         raise ValueError('Selection manifest does not belong to execution commit')
     spec = importlib.util.spec_from_file_location('riskium_r1_oracles', source.b2.HERE / 'verify_candidate.py')
     verifier = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(verifier)
+    saved_path = sys.path[:]
+    sys.path.insert(0, str(source.b2.HERE))
+    try:
+        spec.loader.exec_module(verifier)
+    finally:
+        sys.path[:] = saved_path
     # The adapter only supplies stable-version inputs to the unchanged B2 runner.
     # The temporary sibling keeps the runner's reviewed SDK script path intact.
     with tempfile.TemporaryDirectory(prefix='r1-exact-source-', dir=source.PACKET) as tmp:

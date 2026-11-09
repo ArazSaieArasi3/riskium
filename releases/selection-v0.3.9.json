@@ -672,7 +672,7 @@
         },
         {
           "path": "tools/releases/v039/qualify.py",
-          "sha256": "19c4a6990edb60c0a1e4e4344caa261616de0269deda44a6f733204d43ff9866"
+          "sha256": "20b5eda3b87a9c9a7092e799cc4cd945779c8540e28bf49fccc24dc3fa479110"
         },
         {
           "path": "tools/releases/v039/reader.py",
@@ -10124,7 +10124,7 @@
     "tools/relational_source_scenario.py": "ca62c59d9ea31352c3b92a8a0f1e28a82a498faa49a7d2cd2137478db09a2191",
     "tools/relational_source_scenario_lineage.py": "0fddac0d97c9bbf2eb7d0947c0f989978e9f6b0e2b2ce94b160983035ecd3d36",
     "tools/releases/v039/projection.py": "551333e11cafff0cdc05dead0758254dfbb2f8fccedef181a59c939cf8c67406",
-    "tools/releases/v039/qualify.py": "19c4a6990edb60c0a1e4e4344caa261616de0269deda44a6f733204d43ff9866",
+    "tools/releases/v039/qualify.py": "20b5eda3b87a9c9a7092e799cc4cd945779c8540e28bf49fccc24dc3fa479110",
     "tools/releases/v039/reader.py": "3bedfc085371980e1b8264e5d02e86163ccdb764895d710fc879d6425409dd3c",
     "tools/releases/v039/selection.py": "d0a3e4c654bdfd8eb1f555cdb2a856a934c1d5d1e1bfd81566e1e0e7dd66875b",
     "tools/releases/v039/source.py": "24aecc735a67f88aa20f72f16b488223c2e0f47849347727418d4a78924c027e",
