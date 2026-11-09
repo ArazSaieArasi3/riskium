@@ -1,0 +1,19 @@
+{
+  "schema": "riskium-candidate-reader-binding-extension-1",
+  "source_version": "0.3.2-structural.2",
+  "source_sha256": "c1556811a468919b75521d1a93b8ef8f91c24bf2799deae274b1d211d5e4d5b7",
+  "accepted_export_contract_sha256": "64c7885a42b0c5b256d195b6c485e5ce88fdaaf72404194a4424bbdb9b8a09b4",
+  "dictionary_manifest_sha256": "3c52b4de1c7e59a1e37ce24ef3bd1664b852ac06eb47292f6a42da6a7389c459",
+  "structural_binding_sha256": "be17bb771913ae44cd498308c65e626f815284f91753992722ae0917c3652f3e",
+  "reader_root": "reader/",
+  "catalog_pages": 82,
+  "anchor_pages": 1,
+  "generator_sha256": {
+    "build_dictionary.py": "7656f267139a8d809c57cf49b46f18956975c1eda6759d1776b7af8f903aaf49",
+    "audit_dictionary.py": "d768f9ce792c0c6874a91a3a1af700342958c80544f370e4d41a4c47e770a54d",
+    "test_dictionary.py": "159dd3892de5c78581cb93d97a246306ba66f4d00f79d9c4289d3757b95d0148",
+    "verify_dictionary.py": "c852b9b9558ca431a7ee94b17528bf21dac108e174b3954e3381e5459148e154"
+  },
+  "production_promoted": false,
+  "boundary": "This separate binding extends the candidate reader chain. The prior contract and its selected six-definition bindings are unchanged. Live Pages/Wiki projection and CI/promotion acceptance remain B0-7."
+}

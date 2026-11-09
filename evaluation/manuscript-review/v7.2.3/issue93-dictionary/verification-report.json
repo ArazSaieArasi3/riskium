@@ -1,0 +1,76 @@
+{
+  "schema": "riskium-candidate-dictionary-verification-1",
+  "date_tehran": "2026-11-09",
+  "candidate_source_commit": "fee4ce7b134fe90954d66fb098545e41f9b880e1",
+  "status": "B06_COMPLETE_CANDIDATE_DICTIONARY_NOT_PROMOTED",
+  "checks": {
+    "complete_local_reader_audit": true,
+    "candidate_tests": true,
+    "source_transition_regression": true,
+    "frozen_dictionary_check": true,
+    "frozen_diagram_check": true,
+    "protected_trees_unchanged": true,
+    "byte_deterministic_outputs": true
+  },
+  "coverage": {
+    "catalog_pages": 82,
+    "anchor_pages": 1,
+    "files": 92,
+    "local_links_checked": 2606,
+    "explicit_anchors_checked": 93,
+    "associations": 137,
+    "generalizations": 67,
+    "constraints": 26,
+    "cross_subdomain_pairs": 23,
+    "cross_subdomain_associations": 56,
+    "external_http_checked": false
+  },
+  "summary": {
+    "candidate_unit_tests": 15,
+    "candidate_unit_tests_passed": 15,
+    "source_transition_tests": 5,
+    "source_transition_passed": 5,
+    "frozen_builder_checks": 2,
+    "frozen_builder_checks_passed": 2,
+    "catalog_pages": 82,
+    "anchor_pages": 1,
+    "reader_files": 92,
+    "local_links": 2606,
+    "production_promoted": false,
+    "live_http_checked": false
+  },
+  "protected_before": {
+    "files": 159,
+    "aggregate_sha256": "8e930b7db991e5ce0de8042182c8d3d0e9252fee289f48c1efd7ab4b2456405c"
+  },
+  "protected_after": {
+    "files": 159,
+    "aggregate_sha256": "8e930b7db991e5ce0de8042182c8d3d0e9252fee289f48c1efd7ab4b2456405c"
+  },
+  "candidate_tests": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_broken_link_is_rejected_even_with_updated_hash (test_dictionary.CandidateDictionary.test_broken_link_is_rejected_even_with_updated_hash) ... ok\ntest_complete_reader_and_all_local_routes (test_dictionary.CandidateDictionary.test_complete_reader_and_all_local_routes) ... ok\ntest_definition_omission_is_rejected_even_with_updated_hash (test_dictionary.CandidateDictionary.test_definition_omission_is_rejected_even_with_updated_hash) ... ok\ntest_evidence_role_dependency_and_source_typing_survive (test_dictionary.CandidateDictionary.test_evidence_role_dependency_and_source_typing_survive) ... ok\ntest_exact_partition_rejects_duplicate_allocation (test_dictionary.CandidateDictionary.test_exact_partition_rejects_duplicate_allocation) ... ok\ntest_generation_is_byte_deterministic (test_dictionary.CandidateDictionary.test_generation_is_byte_deterministic) ... ok\ntest_matrix_pair_position_mutation_is_rejected (test_dictionary.CandidateDictionary.test_matrix_pair_position_mutation_is_rejected) ... ok\ntest_missing_page_is_rejected (test_dictionary.CandidateDictionary.test_missing_page_is_rejected) ... ok\ntest_native_boundaries_remain_notes (test_dictionary.CandidateDictionary.test_native_boundaries_remain_notes) ... ok\ntest_native_extra_mixed_set_is_rejected (test_dictionary.CandidateDictionary.test_native_extra_mixed_set_is_rejected) ... ok\ntest_native_layer_drift_is_rejected (test_dictionary.CandidateDictionary.test_native_layer_drift_is_rejected) ... ok\ntest_pair_count_mutation_is_rejected_even_with_updated_hash (test_dictionary.CandidateDictionary.test_pair_count_mutation_is_rejected_even_with_updated_hash) ... ok\ntest_source_status_and_riskcase_boundary_are_explicit (test_dictionary.CandidateDictionary.test_source_status_and_riskcase_boundary_are_explicit) ... ok\ntest_stale_page_is_rejected (test_dictionary.CandidateDictionary.test_stale_page_is_rejected) ... ok\ntest_unresolved_relation_is_rejected (test_dictionary.CandidateDictionary.test_unresolved_relation_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.972s\n\nOK",
+    "elapsed_ms": 1128
+  },
+  "source_transition": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_actual_candidate_has_complete_reviewed_source_accounting (test_source_transition.SourceTransition.test_actual_candidate_has_complete_reviewed_source_accounting) ... ok\ntest_deleted_reviewed_files_are_rejected (test_source_transition.SourceTransition.test_deleted_reviewed_files_are_rejected) ... ok\ntest_new_scientific_code_cannot_inherit_old_receipts (test_source_transition.SourceTransition.test_new_scientific_code_cannot_inherit_old_receipts) ... ok\ntest_reader_replacement_is_explicit_and_unchanged_code_is_reused (test_source_transition.SourceTransition.test_reader_replacement_is_explicit_and_unchanged_code_is_reused) ... ok\ntest_research_implementation_drift_is_rejected (test_source_transition.SourceTransition.test_research_implementation_drift_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.182s\n\nOK",
+    "elapsed_ms": 267
+  },
+  "frozen_dictionary": {
+    "exit_code": 0,
+    "stdout": "PASS: 80 concept dossiers, 11 subdomains, 23 relationship pairs",
+    "stderr": "",
+    "elapsed_ms": 121
+  },
+  "frozen_diagrams": {
+    "exit_code": 0,
+    "stdout": "PASS: 11 subdomains, 23 pairs, 55 associations; package and matrix SVGs current",
+    "stderr": "",
+    "elapsed_ms": 37
+  },
+  "reader_contract_sha256": "2f7b2bebed55b9caa400dea71371202931b6b7db9a6036c8a3cde7636c0b6cc0",
+  "boundary": "Exhaustive source/route fidelity checks support this staged Markdown reader only. They do not establish independent semantic correctness, externally sourced definitions, live channel publication, new engine runs or CI/promotion readiness."
+}
