@@ -1,0 +1,22 @@
+{
+  "status": "PASS_FULL_COMPOSED_CANDIDATE_NOT_PUBLISHED",
+  "source_ref": "073f22cbe15be32294d498eb6b300cb31a6584f0",
+  "paired_bodies": 111,
+  "wiki_files": 114,
+  "retained_guides": 20,
+  "pages_files": 908,
+  "html_bodies_checked": 230,
+  "html_local_links": 16308,
+  "wiki_local_links": 2803,
+  "frozen_snapshot_files_preserved": 406,
+  "historical_wiki_files_preserved": 1,
+  "published": false,
+  "live_channel_readback": false,
+  "artifact_transport": {
+    "omitted_empty_build_marker": ".nojekyll",
+    "marker_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "restored_from_declared_empty_content": true,
+    "other_missing_files": 0,
+    "note": "The default artifact upload excludes hidden files. No documentary body was synthesized; the one empty build marker was restored under its declared digest."
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "schema": "riskium-n5a-ci-receipt/1",
+  "date": "2026-11-10",
+  "status": "PASS_N5A_CANDIDATE_AND_PACKAGE_NOT_PUBLISHED",
+  "qualified_commit": "073f22cbe15be32294d498eb6b300cb31a6584f0",
+  "run": {
+    "id": 42890784207,
+    "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42890784207",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-10T19:59:37Z",
+    "updated_at": "2026-11-10T20:01:15Z"
+  },
+  "jobs": [
+    {
+      "id": 130091069532,
+      "name": "qualify",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 42890784207,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install bounded projection dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Qualify current documentary component and staged projections",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13
+        }
+      ]
+    },
+    {
+      "id": 130091791138,
+      "name": "package",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 42890784207,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Test package guards against the actual qualified source",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Freeze six assets from committed Git objects",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Independently verify source tree and qualification bindings offline",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 13798272467,
+      "name": "curation-v0310-073f22cbe15be32294d498eb6b300cb31a6584f0",
+      "size_in_bytes": 9724009,
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/actions/artifacts/13798272467",
+      "archive_download_url": "https://api.github.com/repos/ArazSaieArasi3/riskium/actions/artifacts/13798272467/zip",
+      "expired": false,
+      "created_at": "2026-11-10T20:00:49Z",
+      "expires_at": "2026-12-10T20:00:46Z",
+      "updated_at": "2026-11-10T20:00:49Z",
+      "digest": "sha256:cc0e8bf91303c09793cefc6c8c3c946427a93b2717f9bc91d6540e88401a2e2d",
+      "workflow_run": {
+        "id": 42890784207,
+        "repository_id": 1428485425,
+        "head_repository_id": 1428485425,
+        "head_branch": "planning/v0.3.10-curation",
+        "head_sha": "073f22cbe15be32294d498eb6b300cb31a6584f0"
+      }
+    },
+    {
+      "id": 13796964581,
+      "name": "package-v0310-073f22cbe15be32294d498eb6b300cb31a6584f0",
+      "size_in_bytes": 17460799,
+      "url": "https://api.github.com/repos/ArazSaieArasi3/riskium/actions/artifacts/13796964581",
+      "archive_download_url": "https://api.github.com/repos/ArazSaieArasi3/riskium/actions/artifacts/13796964581/zip",
+      "expired": false,
+      "created_at": "2026-11-10T20:01:13Z",
+      "expires_at": "2026-12-10T20:01:11Z",
+      "updated_at": "2026-11-10T20:01:13Z",
+      "digest": "sha256:23f4f2590a326348c50515a436222ae3669c628a714d0132348e735f216b918e",
+      "workflow_run": {
+        "id": 42890784207,
+        "repository_id": 1428485425,
+        "head_repository_id": 1428485425,
+        "head_branch": "planning/v0.3.10-curation",
+        "head_sha": "073f22cbe15be32294d498eb6b300cb31a6584f0"
+      }
+    }
+  ],
+  "actual_artifact_downloads": {
+    "zip_digests_matched": true,
+    "package_verifier": "downloaded-package-verification.json",
+    "composed_candidate_verifier": "downloaded-composition-verification.json",
+    "qualification": "ci-qualification.json",
+    "six_asset_digests": "assets.json",
+    "note": "The only transport omission was the declared empty .nojekyll marker; its exact empty content was restored under its committed digest before full candidate verification."
+  },
+  "tests": {
+    "documentary": 20,
+    "composition_and_history": 9,
+    "package": 7,
+    "total": 36
+  },
+  "previous_attempt": {
+    "commit": "1b41b426bb890231c49297aae7a4229eb0b2ecd2",
+    "run_id": 42890151827,
+    "qualification": "SUCCESS",
+    "package": "FAILED_IN_TEST_RUNNER",
+    "reason": "TestCase.run was shadowed by an integer CI run attribute.",
+    "correction": "Renamed the test attribute to ci_run_id; seven package tests passed locally using the actual prerequisite artifact and then on the corrected exact-source CI run."
+  },
+  "candidate_only": true,
+  "main_changed": false,
+  "release_created": false,
+  "actual_successor_channel_readback": false,
+  "issue85": "OPEN",
+  "next": "N5b integrate/promote exact qualified source and assets, qualify live-status delivery adapter, publish and read back actual release/Pages/native Wiki."
+}

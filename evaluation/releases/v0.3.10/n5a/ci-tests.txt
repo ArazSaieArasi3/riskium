@@ -1,0 +1,40 @@
+test_82_unique_source_bound_dispositions (test_contracts.CurationContracts.test_82_unique_source_bound_dispositions) ... ok
+test_added_evidence_reference_role_preserved (test_contracts.CurationContracts.test_added_evidence_reference_role_preserved) ... ok
+test_all_four_scientific_sections_preserved (test_contracts.CurationContracts.test_all_four_scientific_sections_preserved) ... ok
+test_authored_definition_change_rejected (test_contracts.CurationContracts.test_authored_definition_change_rejected) ... ok
+test_duplicate_disposition_rejected (test_contracts.CurationContracts.test_duplicate_disposition_rejected) ... ok
+test_formal_equivalence_promotion_rejected (test_contracts.CurationContracts.test_formal_equivalence_promotion_rejected) ... ok
+test_foundations_separate_from_domain_comparison (test_contracts.CurationContracts.test_foundations_separate_from_domain_comparison) ... ok
+test_independent_rating_promotion_rejected (test_contracts.CurationContracts.test_independent_rating_promotion_rejected) ... ok
+test_normative_deferral_cannot_become_inspected_term (test_contracts.CurationContracts.test_normative_deferral_cannot_become_inspected_term) ... ok
+test_packet_access_cannot_be_flattened (test_contracts.CurationContracts.test_packet_access_cannot_be_flattened) ... ok
+test_source_guard_rejects_changed_or_deleted_historical_body (test_contracts.CurationContracts.test_source_guard_rejects_changed_or_deleted_historical_body) ... ok
+test_source_guard_scope (test_contracts.CurationContracts.test_source_guard_scope) ... ok
+test_three_deferrals_explicit_in_reader (test_contracts.CurationContracts.test_three_deferrals_explicit_in_reader) ... ok
+test_all_91_bodies_and_local_links (test_contracts.ProjectionContracts.test_all_91_bodies_and_local_links) ... ok
+test_broken_anchor_rejected_even_with_updated_file_hash (test_contracts.ProjectionContracts.test_broken_anchor_rejected_even_with_updated_file_hash) ... ok
+test_broken_link_rejected_even_with_updated_file_hash (test_contracts.ProjectionContracts.test_broken_link_rejected_even_with_updated_file_hash) ... ok
+test_extra_projection_file_rejected (test_contracts.ProjectionContracts.test_extra_projection_file_rejected) ... ok
+test_missing_projection_file_rejected (test_contracts.ProjectionContracts.test_missing_projection_file_rejected) ... ok
+test_premature_publication_claim_rejected (test_contracts.ProjectionContracts.test_premature_publication_claim_rejected) ... ok
+test_wiki_text_drift_rejected_even_with_updated_file_hash (test_contracts.ProjectionContracts.test_wiki_text_drift_rejected_even_with_updated_file_hash) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 9.447s
+
+OK
+
+test_broken_composed_route_rejected_after_rehash (test_n5a.N5aContracts.test_broken_composed_route_rejected_after_rehash) ... ok
+test_changed_wiki_semantics_rejected_after_rehash (test_n5a.N5aContracts.test_changed_wiki_semantics_rejected_after_rehash) ... ok
+test_complete_reader_guides_and_historical_native_reference (test_n5a.N5aContracts.test_complete_reader_guides_and_historical_native_reference) ... ok
+test_historical_snapshot_change_rejected_after_rehash (test_n5a.N5aContracts.test_historical_snapshot_change_rejected_after_rehash) ... ok
+test_historical_wiki_change_rejected_after_rehash (test_n5a.N5aContracts.test_historical_wiki_change_rejected_after_rehash) ... ok
+test_legacy_write_is_disabled_without_changing_its_steps (test_n5a.N5aContracts.test_legacy_write_is_disabled_without_changing_its_steps) ... ok
+test_missing_retained_guide_rejected (test_n5a.N5aContracts.test_missing_retained_guide_rejected) ... ok
+test_premature_channel_readback_claim_rejected (test_n5a.N5aContracts.test_premature_channel_readback_claim_rejected) ... ok
+test_read_only_replay_is_pinned_without_changing_oracle (test_n5a.N5aContracts.test_read_only_replay_is_pinned_without_changing_oracle) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 6.107s
+
+OK

@@ -22,9 +22,11 @@ The [successor review 0.2.0](../../../../../references/concept-definitions/0.2.0
 and [reader 0.4.10](../../../../../documentation/0.4.10/reader/README.md) now assemble
 all 82 current dispositions. [N4 qualification](../../../v0.3.10/README.md) is DONE:
 local and clean exact-checkout CI passed preservation, contract, reproduction and
-matching staged-body/link checks. N5a next requires package freeze/composition and
-workflow routing qualification; N5b requires publication and actual affected-body
-readback before #85 closes.
+matching staged-body/link checks. [N5a](../../../v0.3.10/n5a/README.md) is now DONE:
+complete site/Wiki composition, source-pinned replay routing and six verified
+assets passed exact-source CI and actual artifact-download verification. N5b next
+integrates/promotes that candidate and requires actual publication/body readback
+before #85 closes.
 
 `context.py` inventories ancestry, changed ancestor/neighbor records and explicit
 set/application policy without running an ontology reasoner. The original
