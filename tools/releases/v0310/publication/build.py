@@ -162,7 +162,7 @@ def build(candidate, output, intent, release, downloads):
     p.write_text(str(doc).replace('Prepared package v0.3.10', 'Package v0.3.10').replace('/releases/tag/v0.3.9', '/releases/tag/v0.3.10') + '\n')
     manifest = {**old, 'schema': 'riskium-published-channel-0310/1', 'published': True, 'source_publication_verified': True,
                 'release_id': release['id'], 'documentation_commit': delivery, 'pairs': pairs, 'wiki_files_sha256': wiki_hashes,
-                'files_sha256': {p.relative_to(site).as_posix(): curation.sha(p.read_bytes()) for p in sorted(site.rglob('*')) if p.is_file() and p.name != 'publication-manifest.json'}}
+                'files_sha256': {p.relative_to(site).as_posix(): curation.sha(p.read_bytes()) for p in sorted(site.rglob('*')) if p.is_file() and p.relative_to(site).as_posix() != 'publication-manifest.json'}}
     (site / 'publication-manifest.json').write_text(curation.dump(manifest))
     result = compose.audit(output, allow_published=True)
     result.update(status='PASS_PUBLISHED_SOURCE_DELIVERY_BUILD', release_id=release['id'], documentation_commit=delivery, actual_channel_readback=False)

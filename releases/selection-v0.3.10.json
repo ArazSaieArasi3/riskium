@@ -11512,7 +11512,7 @@
         },
         {
           "path": "tools/releases/v0310/publication/build.py",
-          "sha256": "30a16df06c56a6b32d66923580e61e965be5698ee0cf575aa19554416520a93b"
+          "sha256": "219622a6203623cdc7ea9c5f6e224e6878a50106f109adfae364e35de953062d"
         },
         {
           "path": "tools/releases/v0310/publication/test_publication.py",
@@ -13531,7 +13531,7 @@
     "tools/releases/v0310/package/test_package.py": "6befe46e7619a42a43e4399cf7dab738b003fd0a64cd907fffc3235d0212c0a9",
     "tools/releases/v0310/package/verify_package.py": "f17d4c2cd51c6de5b2b6646262d71cbf2f5f81936208a057beabfef32bfbe841",
     "tools/releases/v0310/projection.py": "7b22b6e623057f084d42d8664f3268d68e81b39e13f2915b0c82f42a23adbd03",
-    "tools/releases/v0310/publication/build.py": "30a16df06c56a6b32d66923580e61e965be5698ee0cf575aa19554416520a93b",
+    "tools/releases/v0310/publication/build.py": "219622a6203623cdc7ea9c5f6e224e6878a50106f109adfae364e35de953062d",
     "tools/releases/v0310/publication/test_publication.py": "6099e6029f35f60697ee3b0731801a289ae53fd7474103bc05949e28e5bfa8ac",
     "tools/releases/v0310/qualify.py": "9861649d6b22b86fc7a9f4124a9e9a1a1aad47efc9e8696b423959806b75ebcb",
     "tools/releases/v0310/qualify_n5a.py": "6daa9ca62170471646e91b76728aa3ec5f69bf3b3dca3b826fecb347418e0cc3",
