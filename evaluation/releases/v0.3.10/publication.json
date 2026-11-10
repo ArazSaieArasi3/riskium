@@ -1,0 +1,66 @@
+{
+  "schema": "riskium-actual-source-publication-0310/1",
+  "package": "v0.3.10",
+  "release_id": 440894153,
+  "url": "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.10",
+  "published_at": "2026-11-10T20:52:01Z",
+  "source_commit": "4ae0cdc72a1008e8107be320694d90324890b696",
+  "qualification_run_id": 42897440341,
+  "merge_commit": "30a3f25deda076000523652809f5add4dd0c2cba",
+  "delivery_commit": "fb751343d19007c9fa8c43376181d8d1c5c2cb4f",
+  "pr": 94,
+  "assets": [
+    {
+      "name": "artifact-versions.json",
+      "bytes": 616216,
+      "sha256": "bbe1a7c0a6a23fa6cce390441daee12840ad1b4e9c3bd101e9c8144e48a2a398",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.10/artifact-versions.json"
+    },
+    {
+      "name": "freeze-receipt.json",
+      "bytes": 175474,
+      "sha256": "e4a3124509a0a38fcdab7fa7953f42f28bb95f112abfa8f711182ff87f32a7e9",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.10/freeze-receipt.json"
+    },
+    {
+      "name": "release-notes.md",
+      "bytes": 1808,
+      "sha256": "1979c05fbe01898859ffbeec70f0b3bd25faacb1be77230b225010be5eb674a0",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.10/release-notes.md"
+    },
+    {
+      "name": "riskium-v0.3.10-source.tar.gz",
+      "bytes": 17240124,
+      "sha256": "c98d60729f5ee8ef50c06593c21f9c45fd8a52f06071570893da8c65569d32f8",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.10/riskium-v0.3.10-source.tar.gz"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 441,
+      "sha256": "ef83693a12c19220ccd3a6b530dedc8840d7a0a1eedae5277af107aa3c093b08",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.10/SHA256SUMS.txt"
+    },
+    {
+      "name": "source-manifest.json",
+      "bytes": 661114,
+      "sha256": "901d8955548ddd3f2ee6eb152987dbf8247400d3511cb5cf83e9cf49ea315d5a",
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.10/source-manifest.json"
+    }
+  ],
+  "public_asset_downloads_verified": true,
+  "standalone_verifier": "n5b/public-package-verification.json",
+  "pages_deploy_run": 42899912762,
+  "pages_deployment_success": true,
+  "full_coordinated_channel_acceptance": false,
+  "wiki_synchronization": "IN_PROGRESS",
+  "scientific_model_changed": false,
+  "new_scientific_engine_run": false,
+  "independent_semantic_review": false,
+  "pages_actual_http_readback": {
+    "receipt": "n5b/pages-readback.json",
+    "expected": 907,
+    "matched": 907,
+    "build_marker_excluded": ".nojekyll",
+    "transient_transport_retries": 3
+  }
+}

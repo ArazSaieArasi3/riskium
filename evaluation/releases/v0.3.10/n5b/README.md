@@ -1,0 +1,29 @@
+# N5b: actual source release and Pages deployment
+
+Riskium v0.3.10 is a real public release, published at 2026-11-10T20:52:01Z. [The release](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.10) and six actual unauthenticated downloads match exact qualified source `4ae0cdc72a1008e8107be320694d90324890b696` and run 42897440341. PR #94 was merged into main. The package selects model 0.3.2, review 0.2.0 and reader 0.4.10; it changes no scientific definition or historical oracle.
+
+## Completed and remaining gates
+
+| Gate | Observed result |
+|---|---|
+| Exact source qualification and integration | Eighteen workflow runs succeeded on the final source, including both source-qualified full historical suites. Five retired publisher runs were skipped/cancelled rather than called successful tests. The retained 36 documentary/composition/package controls and nine separate publication guard tests passed. |
+| Actual public release | Release ID 440894153 and tag v0.3.10 bind the exact source. Six public files were independently downloaded; sizes/hashes and the standalone Git commit/tree verifier passed. The full source tree has 2,462 files and 1,395 selected bindings. |
+| Published-source reader build | Run 42899403621 verified public inputs and produced 111 paired bodies, 114 Wiki files and a 908-file site, retaining 406 prior snapshot files and historical References. Its artifact ZIP digest was verified before use. |
+| Pages deployment | Explicit dispatch 42899912762 succeeded in both check and deploy jobs. Independent HTTP readback matched all 907 public files byte for byte, including the complete current reader and retained historical snapshots. The empty .nojekyll build marker is excluded from HTTP reads. Three initial transport errors were retried successfully and their original observations are retained. |
+| Native Wiki | RKM-C001 through RKM-C009 were published through the native editor and independently matched byte for byte. Historical References also matches. Current checkpoint: 10/114 expected files match; 104 remain. The Wiki home/navigation still select the predecessor until their own update. |
+| Complete coordinated acceptance | OPEN. Browser timeouts/reset interrupted native Wiki batching. Do not close #85 or claim all maintained channels synchronized. Resume small restartable Wiki batches, compare actual bytes, finish Pages/navigation readback and only then close #85. |
+
+## Evidence
+
+- [Actual source publication](../publication.json) and [public-download standalone verification](public-package-verification.json).
+- [Final-source workflow observations](pr-source-checks.json) and [published output audit](published-build.json).
+- [Actual complete Pages readback](pages-readback.json) and [native Wiki readback/remaining exact paths](wiki-readback.json).
+- The selected six-asset inventory is [publication-intent.json](../publication-intent.json); its preparation booleans are not rewritten as channel observations.
+
+Earlier N5a receipts remain unchanged. Their prepared 073f22c source was superseded by the final source after retiring obsolete publishers and adding the guarded delivery adapter. The scientific model, all 82 source-bound dispositions and three normative deferrals retain their meanings. #78 and #23 remain independent open scopes. The offline verifier intentionally reports its source archive's prepared state; actual publication is evidenced separately above.
+
+Maintained README, citation and roadmap pointers can advance outside the frozen source selection. All 1,395 selected hashes remain unchanged. Reproduce the frozen qualifier at its exact source; a post-publication main checkout with maintained landing edits is not the original frozen preparation checkout. Root CITATION.cff and historical components remain unmodified. The package-bound manuscript 7.2.21 is not a claim about the latest author-held manuscript; no manuscript file was edited or generated in N5b.
+
+## Next bounded execution
+
+Publish remaining native Wiki bodies from the already qualified artifact, beginning with RKM-C010, in batches of at most two or three saves per browser call. After an interrupted call, fetch actual Wiki before retrying. Create Curation-Status through the native new-page form. Finish current guides/Home/sidebar/footer last, preserve References, compare all 114 expected bodies and retain historical Pages snapshots. Full database/generative and pharmaceutical pilots are later v0.4.0/v0.5.0 scopes, not publication prerequisites.

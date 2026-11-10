@@ -1,0 +1,18 @@
+{
+  "status": "PASS_PUBLISHED_SOURCE_DELIVERY_BUILD",
+  "source_ref": "4ae0cdc72a1008e8107be320694d90324890b696",
+  "paired_bodies": 111,
+  "wiki_files": 114,
+  "retained_guides": 20,
+  "pages_files": 908,
+  "html_bodies_checked": 230,
+  "html_local_links": 16313,
+  "wiki_local_links": 2805,
+  "frozen_snapshot_files_preserved": 406,
+  "historical_wiki_files_preserved": 1,
+  "published": true,
+  "live_channel_readback": false,
+  "release_id": 440894153,
+  "documentation_commit": "fb751343d19007c9fa8c43376181d8d1c5c2cb4f",
+  "actual_channel_readback": false
+}

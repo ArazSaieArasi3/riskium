@@ -1,5 +1,10 @@
 # v0.3.10 preparation: N4 documentary qualification
 
+## Actual publication checkpoint
+
+**v0.3.10 is publicly released and Pages deployment succeeded. Native Wiki synchronization and complete channel readback remain open; #85 is not closed.** See [actual N5b evidence](n5b/README.md), [publication](publication.json) and [current roadmap](../../../plans/next-releases.md). Earlier preparation receipts below preserve their original source and status.
+
+
 **Prepared; not a published release.** The published package remains v0.3.9. This packet concerns current documentary comparisons, not a new ontology, database or manuscript version.
 
 ## Selected prepared components
