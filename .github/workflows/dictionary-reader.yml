@@ -30,6 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: 3ce6f5573e2e0a698591615a7ded75c2f9451444
           fetch-depth: 0
           persist-credentials: false
       - uses: actions/setup-python@v5
@@ -53,8 +54,8 @@ jobs:
         with:
           path: build/site
   deploy:
+    if: ${{ false }}
     needs: build
-    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:

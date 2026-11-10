@@ -1,0 +1,12 @@
+{
+  "schema": "riskium-n5a-predecessor-wiki-observation/1",
+  "date": "2026-11-10",
+  "wiki_commit": "3c0b3d2c8b61bfbe0836c990eb7d88d1bf1fca56",
+  "prior_package": "v0.3.9",
+  "maintained_bodies_matched": 112,
+  "historical_reference": "References.md",
+  "historical_reference_sha256": "673864ad039ea515c2b0c89d55e82f23e17cf5be18bcdaed60bb361714894597",
+  "native_files": 113,
+  "successor_publication": false,
+  "boundary": "Read-only predecessor observation and retention input; not a v0.3.10 channel publication/readback."
+}

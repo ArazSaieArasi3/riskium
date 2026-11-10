@@ -1,0 +1,77 @@
+name: Publish concept dictionary reader 0.4.6
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/publication/dictionary_documentation.py'
+      - 'documentation/0.4.6/**'
+      - 'documentation/concepts/0.3.1/**'
+      - 'diagrams/subdomain-relationships*.svg'
+      - '.github/workflows/dictionary-reader.yml'
+      - 'tests/test_dictionary_documentation.py'
+  pull_request:
+    paths:
+      - 'tools/publication/dictionary_documentation.py'
+      - 'documentation/0.4.6/**'
+      - '.github/workflows/dictionary-reader.yml'
+      - 'tests/test_dictionary_documentation.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: riskium-reader-main
+  cancel-in-progress: false
+jobs:
+  build:
+    # This publisher owns the qualified 0.4.6 checkpoint; 0.4.7 has its own workflow.
+    if: github.event_name == 'pull_request' || github.sha == '97ac0b88a092ad8d12d31e6a7e22d70adf406093'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/publication/requirements.txt
+      - run: |
+          python tools/check_source_transition.py --check
+          python tools/build_concept_dictionary.py --check
+          python tools/build_subdomain_relationships.py --check
+          python tools/publication/dictionary_documentation.py --output build/site --wiki-output build/wiki
+          python -m unittest discover -s tests -p test_dictionary_documentation.py -v
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dictionary-reader-${{ github.sha }}
+          path: |
+            build/wiki/
+            build/site/dictionary-validation.json
+      - uses: actions/upload-pages-artifact@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: build/site
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Require this deployment to remain the reviewed main source
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: test "$(gh api repos/${{ github.repository }}/git/ref/heads/main --jq .object.sha)" = "$GITHUB_SHA"
+      - uses: actions/configure-pages@v5
+      - id: deployment
+        uses: actions/deploy-pages@v4

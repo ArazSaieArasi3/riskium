@@ -19,6 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: 3ce6f5573e2e0a698591615a7ded75c2f9451444
           fetch-depth: 0
           persist-credentials: false
       - id: phase
@@ -51,8 +52,8 @@ jobs:
           if-no-files-found: error
           retention-days: 90
   publish:
+    if: ${{ false }}
     needs: qualify-freeze
-    if: needs.qualify-freeze.outputs.freeze == 'true'
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     permissions:

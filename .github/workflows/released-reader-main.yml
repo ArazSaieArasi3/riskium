@@ -35,7 +35,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          ref: 3ce6f5573e2e0a698591615a7ded75c2f9451444
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -57,8 +57,8 @@ jobs:
         with:
           path: build/released-site
   deploy:
+    if: ${{ false }}
     needs: build
-    if: github.event_name == 'workflow_run' || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     permissions:
@@ -96,7 +96,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          ref: 3ce6f5573e2e0a698591615a7ded75c2f9451444
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
