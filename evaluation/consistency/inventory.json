@@ -6048,6 +6048,16 @@
       "bytes": 733
     },
     {
+      "path": "evaluation/releases/v0.3.9/R2b-outcome.md",
+      "sha256": "e0760f0a252f294f78ca9f9588097047a55ca5c85c73624df5464f53ee72e4ab",
+      "bytes": 4206
+    },
+    {
+      "path": "evaluation/releases/v0.3.9/channels.json",
+      "sha256": "5586eecd68d669df5040d20bfa002c1f6a042600791f192670c41388086b1137",
+      "bytes": 165999
+    },
+    {
       "path": "evaluation/releases/v0.3.9/publication.json",
       "sha256": "3aac84fd0f89ddf773f262c42edb37bc56c5885eb4d7c05fd6ba89e47c2e937b",
       "bytes": 3265
