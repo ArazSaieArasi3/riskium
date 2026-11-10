@@ -1,0 +1,25 @@
+{
+  "schema": "riskium-documentary-component/1",
+  "artifact": "Current source-qualified concept comparisons",
+  "version": "0.2.0",
+  "compatible_model": "0.3.2",
+  "intended_package": "v0.3.10",
+  "lifecycle": "PREPARED_NOT_PUBLISHED",
+  "review_sha256": "7eb6bedcceb2c21c5de56b5778d9e64539473469fef66c27ce371a82b27d2cd8",
+  "depends_on": [
+    {
+      "artifact": "Scientific model",
+      "version": "0.3.2",
+      "sha256": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb"
+    }
+  ],
+  "historical_component": {
+    "path": "references/concept-definitions/0.1.0/review.json",
+    "sha256": "3eeba2690041f5f815754a256d586cc338b3710c68fe8edc42f5b9865f7fff47",
+    "model_version": "0.3.1",
+    "role": "PRESERVED_HISTORICAL_NOT_RELABELLED"
+  },
+  "recipe": "tools/releases/v0310/curation.py",
+  "recipe_sha256": "f145dfb226870377ca667d4f8ae49a7cd8a283c42952c5e0b819144d82f603fd",
+  "publication_readback": "PENDING_N5"
+}

@@ -18,8 +18,12 @@ seventeen N3a and all 57 N3b dispositions: **82/82 recorded, no documentary batc
 The [complete inventory](batch-06/coverage.json) binds one disposition to each current catalog concept:
 40 RELATED, 20 CONTRAST, 19 ANALOGY and three explicit normative deferrals.
 Those three are not completed normative mappings. Earlier allocation/progress snapshots remain dated history.
-The complete successor component still requires qualification, selection,
-publication and actual affected-body readback before #85 closes.
+The [successor review 0.2.0](../../../../../references/concept-definitions/0.2.0/README.md)
+and [reader 0.4.10](../../../../../documentation/0.4.10/reader/README.md) now assemble
+all 82 current dispositions. [N4 preparation](../../../v0.3.10/README.md) has passed
+local preservation, contract, reproduction and matching staged-body/link checks;
+clean-checkout CI confirmation is recorded separately. N5 still requires package
+freeze/composition, publication and actual affected-body readback before #85 closes.
 
 `context.py` inventories ancestry, changed ancestor/neighbor records and explicit
 set/application policy without running an ontology reasoner. The original
