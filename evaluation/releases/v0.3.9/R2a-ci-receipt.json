@@ -1,0 +1,108 @@
+{
+  "schema": "riskium-v039-R2a-public-ci-receipt-1",
+  "status": "R2A_COMPLETE_PREPARED_NOT_PUBLISHED",
+  "executable_source_commit": "ce0baefa3495d1bc3b42f56ad578154d5bc4f178",
+  "source_tree": "34d29be464b36e33a33ed8e966662cb40dfb4ac0",
+  "package_target": "v0.3.9",
+  "scientific_source_version": "0.3.2",
+  "scientific_source_sha256": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb",
+  "scientific_contract_sha256": "f901ab19f145db3b97f58798dcdd7aea7843f53db9c97aafd19eac96ba99259f",
+  "five_scientific_bodies_unchanged_from_R1": true,
+  "reader_version": "0.4.9",
+  "manuscript_unchanged": "7.2.21",
+  "selection": {
+    "path": "releases/selection-v0.3.9.json",
+    "sha256": "8869c616572fdd3961f232118337f896bd6c6a0c06cdef96030c2fbf45318164"
+  },
+  "selection_summary": {
+    "active_components": 6,
+    "historical_components": 32,
+    "selected_files": 1213,
+    "historical_delivery_aliases": 3
+  },
+  "actual_github_actions": {
+    "run_id": 42776380967,
+    "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42776380967",
+    "attempt": 1,
+    "conclusion": "success",
+    "qualify_job_id": 129695722522,
+    "package_job_id": 129696664781,
+    "package_job_requires_qualification_success": true,
+    "package_artifact_id": 13744371351,
+    "package_artifact_url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/42776380967/artifacts/13744371351",
+    "package_artifact_sha256": "42ac4e71393db08ef5ed231e3573510d014907e7c24041fd0baa671407774d5d",
+    "qualification_artifact_id": 13744301630,
+    "qualification_artifact_sha256": "012b823d295eb8b671f414df7f5d9651634ad59384aaa9af097345e178765986"
+  },
+  "actual_package_guard_tests": {
+    "executed": 17,
+    "passed": 17,
+    "fixture_boundary": "Synthetic adapter input for packaging guard tests only; fresh scientific-engine results are supplied separately by the prerequisite job."
+  },
+  "fresh_scientific_qualification": {
+    "planned_cases": 20,
+    "cases_executed": 20,
+    "cases_matched": 20,
+    "actual_SHACL_invocations": 13,
+    "actual_HermiT_invocations": 8,
+    "HermiT_matches": 8,
+    "native_elements": 596,
+    "reader_pages": 83,
+    "reader_files": 92,
+    "reader_local_links": 2607,
+    "historical_input_files_preserved": 138
+  },
+  "prepared_assets": [
+    {
+      "asset": "riskium-v0.3.9-source.tar.gz",
+      "bytes": 16462903,
+      "sha256": "4d91158d02a1b058b6c8f371909d9030cfe7dbb9388beda881a791663488eca9",
+      "independent_rebuild_equal": true
+    },
+    {
+      "asset": "source-manifest.json",
+      "bytes": 556218,
+      "sha256": "1cc942b56f8094a149ca3931736f4893ed4ca61a1d5214bb4273efacfca67a5f",
+      "independent_rebuild_equal": true
+    },
+    {
+      "asset": "artifact-versions.json",
+      "bytes": 420805,
+      "sha256": "5ccabcae575d3628cd0694b88f7c10b808e7035af0dedb4dc61453b302d5a596",
+      "independent_rebuild_equal": true
+    },
+    {
+      "asset": "release-notes.md",
+      "bytes": 2643,
+      "sha256": "1d0d779cc1aba367dc30b7e37b5a2de46fae31c13cb08e69de7ba5ef9a90e1eb",
+      "independent_rebuild_equal": true
+    },
+    {
+      "asset": "freeze-receipt.json",
+      "bytes": 3504,
+      "sha256": "dfbc060643c825675131f355bf1b19edfcf71587ea53b9e2b0c5df36fbb8d065",
+      "independent_rebuild_equal": true
+    },
+    {
+      "asset": "SHA256SUMS.txt",
+      "bytes": 440,
+      "sha256": "ebdae5ea47d96c336c925e72aae94437032f949f29e48b197ec151c06096f0fd",
+      "independent_rebuild_equal": true
+    }
+  ],
+  "independent_download_readback": {
+    "all_six_assets_verified": true,
+    "source_files": 2091,
+    "selected_files": 1213,
+    "git_commit_and_tree_reconstructed": true,
+    "all_six_assets_rebuilt_byte_identically": true,
+    "standalone_verifier_matches_CI_report": true,
+    "actual_CI_artifact_origin_checked": true,
+    "public_release_download": false
+  },
+  "main_unchanged": "07774a46b946d1a4cebb110e483cbe977c9635bd",
+  "public_release_created": false,
+  "maintained_channels_read_back": false,
+  "issues_closed": [],
+  "remaining_endpoint": "R2b: publish these exact six assets with the qualified source commit; independently download public release assets and reconcile/read back the maintained repository, Wiki and Pages entry points. Only then close #92/#93 if their final criteria pass."
+}
