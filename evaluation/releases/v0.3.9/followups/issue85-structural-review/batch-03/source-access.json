@@ -1,0 +1,35 @@
+{
+  "prov": {
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "accessed": "2026-11-10",
+    "previous_response_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "bytes": 464179,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "oa": {
+    "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/",
+    "accessed": "2026-11-10",
+    "previous_response_sha256": "a7513e022f56c0a6f4e99ac11aec03f3451d1ff1ce14054780b3ccfb38fa7980",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/",
+    "document_sha256": "a7513e022f56c0a6f4e99ac11aec03f3451d1ff1ce14054780b3ccfb38fa7980",
+    "bytes": 284185,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "skos": {
+    "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+    "accessed": "2026-11-10",
+    "previous_response_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+    "document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+    "bytes": 227150,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  }
+}
