@@ -1,0 +1,62 @@
+{
+  "status": "PASS_DOCUMENTARY_PACKET_NOT_FULL_CURATION_OR_PUBLICATION",
+  "execution": "LOCAL_PYTHON_NOT_CI_OR_ONTOLOGY_ENGINE",
+  "review_sha256": "8704efb3cf7760fa09ba5aead5a9bb433b63ef906adbd084a832b183743caa73",
+  "builder_sha256": "53268e3dc5be1774f9f6aa83fd645c04ab5ab323a84236654e19e111211f68ce",
+  "reviewed_records": 8,
+  "remaining_records": 74,
+  "negative_controls": [
+    {
+      "control": "missing_concept",
+      "rejected": true,
+      "reason": "eight-record coverage"
+    },
+    {
+      "control": "stale_model_digest",
+      "rejected": true,
+      "reason": "stale input: ontology/0.3.2/riskium-model.json"
+    },
+    {
+      "control": "changed_concept_binding",
+      "rejected": true,
+      "reason": "concept binding: RKM-C014"
+    },
+    {
+      "control": "unsupported_equivalence",
+      "rejected": true,
+      "reason": "unsupported alignment or rating"
+    },
+    {
+      "control": "wrong_role_foundation",
+      "rejected": true,
+      "reason": "decision contract"
+    },
+    {
+      "control": "missing_grounding_relation",
+      "rejected": true,
+      "reason": "use-relation coverage"
+    },
+    {
+      "control": "missing_source_locator",
+      "rejected": true,
+      "reason": "source locator"
+    },
+    {
+      "control": "changed_preview_definition",
+      "rejected": true,
+      "reason": "rendered body mismatch: previews/RKM-X01.md"
+    }
+  ],
+  "outputs": {
+    "README.md": "bb4e0557f1aaa9c83340de427eba1c03020e1edcbbf2d4501e14941af3248168",
+    "decisions.csv": "ef81aeef9758c04c0bd3db45fb1a98b4efbfae95ef7aba9c96b8eb0bc8a017b0",
+    "previews/RKM-C014.md": "36ac1aff74889a12218e6bf702b9584e04e11551f108a23a94aee7460e5d86a0",
+    "previews/RKM-C015.md": "6b817ed2161d0621124977d471f5f9456dff16123f8bd2fe1bbcc53d02b5b023",
+    "previews/RKM-C048.md": "f744cff6a514f3e0d9b29c8ecb15129adecae21214272d68ba9936198ab4a943",
+    "previews/RKM-C049.md": "5e5bd9c9cb6a50be6d9a2228858c3a126366ba75735468a634f60782b25fe5dd",
+    "previews/RKM-C066.md": "94b25d903c12af1df64f227f9cfca74fb6c8b914f3a758b24a2d28910a423112",
+    "previews/RKM-C075.md": "5b86b64382a2e1d8522b782b2aa12e53db31c568eb0e17a9dca22df8f5c8e288",
+    "previews/RKM-C076.md": "bfeb881bdd3422a4d92c84c66135d53fbde869ab7ea4db1c4b4890cf7adb0faa",
+    "previews/RKM-X01.md": "29068705be642139b6f9d816903b21939f3aa9d7ba548133d65e31f31c9fb638"
+  }
+}

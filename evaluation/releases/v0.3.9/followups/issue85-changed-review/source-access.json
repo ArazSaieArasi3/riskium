@@ -1,0 +1,26 @@
+{
+  "prov": {
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "final_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "bytes": 464179,
+    "access": "DIRECT_HTTP_AND_SELECTED_WEB_TEXT",
+    "accessed": "2026-11-10"
+  },
+  "role": {
+    "url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/role/index.html",
+    "final_url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/role/index.html",
+    "document_sha256": "60406b5d810cfcb6e5437724f862876f46d6230b5c6c203ad59a53b289f3616a",
+    "bytes": 20434,
+    "access": "DIRECT_HTTP_AND_SELECTED_WEB_TEXT",
+    "accessed": "2026-11-10"
+  },
+  "relator": {
+    "url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html",
+    "final_url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html",
+    "document_sha256": "639fcd67050a2dbb0d94fe6567a112e039d8b0ea429f636f3e7122d36c564757",
+    "bytes": 20252,
+    "access": "DIRECT_HTTP_AND_SELECTED_WEB_TEXT",
+    "accessed": "2026-11-10"
+  }
+}
