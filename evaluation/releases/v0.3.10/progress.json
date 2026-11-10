@@ -1,0 +1,48 @@
+{
+  "schema": "riskium-n4-progress/1",
+  "phase": "N4",
+  "status": "DONE",
+  "intended_release": "v0.3.10",
+  "published_release": "v0.3.9",
+  "scientific_model": "0.3.2",
+  "curation": "0.2.0",
+  "reader": "0.4.10",
+  "article": "7.2.21",
+  "disposition_accounting": {
+    "done": 82,
+    "total": 82,
+    "percent": 100,
+    "distribution": {
+      "RELATED": 40,
+      "CONTRAST": 20,
+      "ANALOGY": 19,
+      "NEEDS_LICENSED_SOURCE": 3
+    },
+    "note": "Includes three explicit normative deferrals; not semantic correctness or overall research completion."
+  },
+  "qualification": {
+    "contracts_passed": 20,
+    "paired_bodies": 91,
+    "wiki_files": 94,
+    "local_links": 5859,
+    "reproduced_projection_files": 189,
+    "frozen_files_preserved": 2296,
+    "ci_run_id": 42883980009,
+    "qualified_commit": "7fd1f6c491c1aa925d8a9682ebb50e5244257ce4"
+  },
+  "next_executions": [
+    {
+      "id": "N5a",
+      "scope": "Freeze and compose v0.3.10 package selection; qualify historical/current workflow routing and full-site/Wiki retained guides.",
+      "status": "OPEN"
+    },
+    {
+      "id": "N5b",
+      "scope": "Publish selected release and channels; read back actual bodies and navigation; close #85 only after the final gate.",
+      "status": "OPEN"
+    }
+  ],
+  "issue85": "OPEN",
+  "independent_review_issue": 23,
+  "normative_adoption_issue": 78
+}

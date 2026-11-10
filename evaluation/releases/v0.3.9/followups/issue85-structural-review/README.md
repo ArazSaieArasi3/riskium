@@ -20,10 +20,11 @@ The [complete inventory](batch-06/coverage.json) binds one disposition to each c
 Those three are not completed normative mappings. Earlier allocation/progress snapshots remain dated history.
 The [successor review 0.2.0](../../../../../references/concept-definitions/0.2.0/README.md)
 and [reader 0.4.10](../../../../../documentation/0.4.10/reader/README.md) now assemble
-all 82 current dispositions. [N4 preparation](../../../v0.3.10/README.md) has passed
-local preservation, contract, reproduction and matching staged-body/link checks;
-clean-checkout CI confirmation is recorded separately. N5 still requires package
-freeze/composition, publication and actual affected-body readback before #85 closes.
+all 82 current dispositions. [N4 qualification](../../../v0.3.10/README.md) is DONE:
+local and clean exact-checkout CI passed preservation, contract, reproduction and
+matching staged-body/link checks. N5a next requires package freeze/composition and
+workflow routing qualification; N5b requires publication and actual affected-body
+readback before #85 closes.
 
 `context.py` inventories ancestry, changed ancestor/neighbor records and explicit
 set/application policy without running an ontology reasoner. The original
