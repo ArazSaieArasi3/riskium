@@ -1,0 +1,566 @@
+{
+  "schema": "riskium.structural-context-curation/1",
+  "status": "BOUNDED_BATCH_COMPLETE_FULL_CURATION_PENDING",
+  "execution": "N3b-1",
+  "date": "2026-11-10",
+  "baseline_commit": "a3d0d3c97ac942e7fe7ee7b0782240d341f3b067",
+  "model_version": "0.3.2",
+  "intended_package": "v0.3.10",
+  "issue": 85,
+  "record_digest_method": "SHA-256 of compact UTF-8 JSON with sorted keys and ensure_ascii=False; file-input hashes use raw bytes.",
+  "inputs": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/0.3.2/riskium-model.json": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb",
+    "references/concept-definitions/0.1.0/review.json": "3eeba2690041f5f815754a256d586cc338b3710c68fe8edc42f5b9865f7fff47",
+    "evaluation/releases/v0.3.9/followups/issue85-impact/impact.json": "c971787dd75909f5ca18484baa13d7f462b029ce509c1f25e364c0ac4df3c9af",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/remaining-batches.json": "c6d39beb750cd870f94001f2033d66ab868d31ae5a44f0671eec4d76f3b2858c",
+    "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json": "8704efb3cf7760fa09ba5aead5a9bb433b63ef906adbd084a832b183743caa73",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json": "ddcacd405d73ee568fd11e6325fd48a13b45f32630f406a9cbd5e4350517d2c0",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/source-access.json": "60f664ba41b0c47d2956a3fe998521048dda5b53fdcd4c3b702bee3b20cf536c",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/passage-checks.json": "f310c22fe2712657b4eb9bc4a866dc12c904f7eeda867bb372dc4860a550972c",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/contexts.json": "5d84007dfdfbeeeb47912ad47be0660937708b078e8e5de19469895f01cff7b3"
+  },
+  "prior_packets": [
+    "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json"
+  ],
+  "sources": {
+    "prov": {
+      "title": "PROV-O: The PROV Ontology",
+      "version": "W3C Recommendation, 30 April 2013",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "accessed": "2026-11-10",
+      "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+      "inspection_scope": "Terms listed below only; no PROV conformance or import asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "previous_response_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "bytes": 464179,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "nist": {
+      "title": "Guide for Conducting Risk Assessments, NIST SP 800-30 Revision 1",
+      "version": "September 2012; DOI 10.6028/NIST.SP.800-30r1",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+      "accessed": "2026-11-10",
+      "document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+      "inspection_scope": "Security-specific terms, selected glossary entries and tables only; not a universal enterprise-risk vocabulary. Glossary entries retain their original attributions.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "previous_response_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+      "bytes": 826897,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "oa": {
+      "title": "Web Annotation Data Model",
+      "version": "W3C Recommendation, 23 February 2017",
+      "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/",
+      "accessed": "2026-11-10",
+      "document_sha256": "a7513e022f56c0a6f4e99ac11aec03f3451d1ff1ce14054780b3ccfb38fa7980",
+      "inspection_scope": "Selected motivations and annotation/body distinction only; no serialization conformance asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "previous_response_sha256": "a7513e022f56c0a6f4e99ac11aec03f3451d1ff1ce14054780b3ccfb38fa7980",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/",
+      "bytes": 284185,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "skos": {
+      "title": "SKOS Simple Knowledge Organization System Reference",
+      "version": "W3C Recommendation, 18 August 2009",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+      "accessed": "2026-11-10",
+      "document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+      "inspection_scope": "Concept, scheme and lexical-label distinctions; no SKOS mapping triples asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "previous_response_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+      "bytes": 227150,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    }
+  },
+  "terms": {
+    "plan": {
+      "source_id": "prov",
+      "name": "prov:Plan",
+      "locator": "§4.3, Plan",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Plan",
+      "paraphrase": "An entity representing intended steps toward agents’ goals.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "entity": {
+      "source_id": "prov",
+      "name": "prov:Entity",
+      "locator": "§4.1, Entity",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Entity",
+      "paraphrase": "A thing considered through fixed aspects, including conceptual or imaginary things.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "scenario": {
+      "source_id": "nist",
+      "name": "Threat Scenario",
+      "locator": "Appendix B, printed B-13, PDF page 63",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=63",
+      "paraphrase": "A time-partially-ordered grouping of threat events associated with threat sources.",
+      "quotation": false,
+      "target_kind": "SECURITY_GLOSSARY_ENTRY"
+    },
+    "classifying": {
+      "source_id": "oa",
+      "name": "oa:classifying",
+      "locator": "§3.3.5, motivation classifying",
+      "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/#motivation-and-purpose",
+      "paraphrase": "A motivation for classifying a target.",
+      "quotation": false,
+      "target_kind": "MOTIVATION_INSTANCE"
+    },
+    "concept": {
+      "source_id": "skos",
+      "name": "skos:Concept",
+      "locator": "§3, especially §§3.1 and 3.5.1",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts",
+      "paraphrase": "A knowledge-organization notion; using it does not automatically identify an OWL class.",
+      "quotation": false,
+      "target_kind": "VOCABULARY_CLASS"
+    },
+    "label": {
+      "source_id": "skos",
+      "name": "Lexical labels",
+      "locator": "§5.1",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#labels",
+      "paraphrase": "A natural-language string associated with a resource, distinct from the resource.",
+      "quotation": false,
+      "target_kind": "LEXICAL_LABEL_PROPERTY_FAMILY"
+    },
+    "scheme": {
+      "source_id": "skos",
+      "name": "skos:ConceptScheme",
+      "locator": "§4, especially §§4.1 and 4.6.2",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes",
+      "paraphrase": "An organization of concepts; a scheme need not be an OWL ontology.",
+      "quotation": false,
+      "target_kind": "VOCABULARY_SCHEME_CLASS"
+    },
+    "annotation": {
+      "source_id": "oa",
+      "name": "oa:Annotation",
+      "locator": "§3.1",
+      "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/#annotations",
+      "paraphrase": "An association involving body and target resources.",
+      "quotation": false,
+      "target_kind": "ANNOTATION_RESOURCE_CLASS"
+    },
+    "tagging": {
+      "source_id": "oa",
+      "name": "oa:tagging",
+      "locator": "§3.3.5, motivation tagging",
+      "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/#motivation-and-purpose",
+      "paraphrase": "A motivation for attaching a tag to a target.",
+      "quotation": false,
+      "target_kind": "MOTIVATION_INSTANCE"
+    },
+    "threat_source": {
+      "source_id": "nist",
+      "name": "Threat Source",
+      "locator": "Appendix B, printed B-13, PDF page 63; attributed there to CNSSI 4009",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=63",
+      "paraphrase": "Intent/method or a situation/method potentially exploiting a vulnerability.",
+      "quotation": false,
+      "target_kind": "SECURITY_GLOSSARY_ENTRY"
+    }
+  },
+  "concepts": [
+    {
+      "concept_id": "RKM-C001",
+      "title": "Risk Pattern Specification",
+      "subdomain_id": "D01",
+      "authored_definition": "A managed, reusable information specification of risk-relevant conditions and possible effects. Its identity is distinct from a particular risk case, a scenario execution and the uncertain effects themselves.",
+      "authored_definition_sha256": "588b1f8f3188dcb64817823f1948dbfd67bc71536949b6597c7690809cc09982",
+      "source_concept_sha256": "e01379b8678c9690ba45957851ef5b13382d0114bcdff97640e28a93706cb045",
+      "previous_review_sha256": "3343162f795942563cb4bde3b9ee961685b3c18d58c8d46d33787e456ef35ad1",
+      "context_sha256": "b5fd73e15bd09339d9e72ebd6813a6ec3372041b6ac20624410959dc09c1a751",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "plan"
+      ],
+      "rationale": "The reusable pattern remains a documentary specialization. The comparison with intended steps is useful context, not a requirement that every pattern express an intention or be an execution plan.",
+      "context_interpretation": "RX-002 links a continuing analytical case to its pattern; it does not identify the two. The inherited documentary identity and excluded blanket artifact set do not supply a Plan equivalence or register-approval condition.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected primary-passage comparison plus explicit source ancestry, changed-neighbor and set-policy review; no independent expert rating.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C002",
+      "title": "Risk Context Specification",
+      "subdomain_id": "D01",
+      "authored_definition": "A versioned information specification of analysis boundaries, circumstances, time horizon and objective references under which risk statements and results are interpreted.",
+      "authored_definition_sha256": "6d8e7e4b7f23e282a941ceddfed13a898b842c5d88e3906ff85201667be8a7d0",
+      "source_concept_sha256": "7aa413a3a89eb3d28fcee0406acada2b2fc6478a0290d87c78f27d931201018b",
+      "previous_review_sha256": "c5bae95880377726530f4e3d1363a98e185c08083aaeab6a74f0f457ed0a1069",
+      "context_sha256": "c8e5d4fb98023d5bbbd2314098d150baa9d7415d94b20e1287271bcf09007298",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "entity"
+      ],
+      "rationale": "The context specification retains boundaries, horizon and objective references. Generic entity context does not supply that schema or its version policy.",
+      "context_interpretation": "R-35/RX-001 now refer to the explicitly analytical RiskCase. Missing task inputs concern readiness under a declared profile, not nonexistence or formal admission of that case.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected primary-passage comparison plus explicit source ancestry, changed-neighbor and set-policy review; no independent expert rating.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C003",
+      "title": "Risk Scenario Specification",
+      "subdomain_id": "D01",
+      "authored_definition": "A managed information specification of a possible development of conditions, events and effects concerning one or more RiskCases. Several scenarios may concern one case; a scenario is not the case or an actual occurrence.",
+      "authored_definition_sha256": "9bc7333da18b1a8f31d7713ff8b3d1cb614d1fd15dc21c15c3c1d4a65d904015",
+      "source_concept_sha256": "e6b4f0efce61d8f94777de6261c09d5d8b087ea6e4bcba8de7886e3dcbd54550",
+      "previous_review_sha256": "4bc3708b7c534335255762d2fd7fdbdf71f3e988f654f3309d55b78a3a5aea88",
+      "context_sha256": "09feac9eda4bc1776637c4830f7f2951b31df67919d08ef79683791a29de9e2c",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "comparison_term_ids": [
+        "scenario"
+      ],
+      "rationale": "Retain a bounded analogy to the security scenario entry. Riskium describes possible developments about continuing cases, with a broader stated risk scope.",
+      "context_interpretation": "R-36 separates a scenario from its analytical case and R-25 does not turn a specification into an actual occurrence. Inherited artifact identity remains documentary, without blanket sibling exclusion.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected primary-passage comparison plus explicit source ancestry, changed-neighbor and set-policy review; no independent expert rating.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C005",
+      "title": "Risk Nature Assertion",
+      "subdomain_id": "D01",
+      "authored_definition": "A source-qualified information assertion that possible or reported effects are favorable, unfavorable or mixed relative to identified objectives and context.",
+      "authored_definition_sha256": "3a8f7039fe513bf8e91fc271281d2fa2ad733fc2d4889ea944c6b9a6cc54a033",
+      "source_concept_sha256": "f2568f54a24692bacd417bc8c126343484535059f89da41b6aaae18a6fe17de8",
+      "previous_review_sha256": "faa621433ee0fc9bdbe357d03170562c922f68b0b1b6518acc5c86d1594e60cf",
+      "context_sha256": "c5dedd2221fa91c9a1771b1fd5c9606b649f6a60ebfb693b815d590662e34ed9",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "classifying"
+      ],
+      "rationale": "Retain contextual classification as a related use. The compared classifying term is a motivation instance, not the class of RiskNatureAssertion or proof of favorable/unfavorable meaning.",
+      "context_interpretation": "R-41/R-42/R-43 keep the claim about a case, selected nature value and context separate. The analytical case reading leaves nature objective-relative; the claim does not establish truth by classification.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected primary-passage comparison plus explicit source ancestry, changed-neighbor and set-policy review; no independent expert rating.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C006",
+      "title": "Nature Term",
+      "subdomain_id": "D01",
+      "authored_definition": "A controlled value used to qualify the nature of effects relative to objectives; it does not classify risk independently of context. This is a managed vocabulary resource with scheme-qualified identity, not a bare string.",
+      "authored_definition_sha256": "d6b6b02f53ed55839b3fad43c6acc72c16d0a513a062dc8445d0956a5f624f15",
+      "source_concept_sha256": "826fa4627b959aae58e57cde5b366457dc8fb4efeca62628bc227b9f6947fdec",
+      "previous_review_sha256": "941c130f48372f0875151c44fd4fb41db6a67a3afd07666f664e7b4e0a17c564",
+      "context_sha256": "9140eb407137e3e30062238b617c582c491831a224d00d30153c029abe692750",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "concept",
+        "label"
+      ],
+      "rationale": "Retain the resource/label distinction. A NatureTerm is a controlled scheme-qualified vocabulary resource, whose wording alone does not determine its identity.",
+      "context_interpretation": "The path through ClassificationTerm and VocabularyConcept preserves InformationArtifact identity. The retained GS-RKM-C019/GS-RKM-C017 groups are non-disjoint and incomplete; their source labels remain carried, not independently validated here.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected primary-passage comparison plus explicit source ancestry, changed-neighbor and set-policy review; no independent expert rating.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C017",
+      "title": "Vocabulary Concept",
+      "subdomain_id": "D03",
+      "authored_definition": "A managed terminological information artifact that identifies a vocabulary meaning independently of its labels. It is a vocabulary resource, not automatically a domain universal or the real-world entity denoted.",
+      "authored_definition_sha256": "db2f9fbb9dca04093081f08778f0ffa9bbbf2adad4adb048466371304005afc8",
+      "source_concept_sha256": "82e5cbe41e1d0a95e20d1dd8521e7a4ce9030ef1ef35414be47382ac472a9ae5",
+      "previous_review_sha256": "957f14c33eb6e3aff1ffbafc5f5e66d7797231f848269ed8a2e1a61fab56280c",
+      "context_sha256": "d5a800939b882ab09be04ad2bcc460e0a5ed63013f1a7b3352f8ce9adabd6657",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "concept",
+        "label"
+      ],
+      "rationale": "Retain vocabulary-concept and lexical-label context. A Riskium vocabulary resource is not automatically its referent or an OWL domain universal; the source also permits dual typing, so no global disjointness is inferred.",
+      "context_interpretation": "G2-052 preserves documentary identity and the explicit GS-RKM-C017 policy does not make its listed subtypes exhaustive. Excluding the blanket artifact set leaves these subtype edges intact.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected primary-passage comparison plus explicit source ancestry, changed-neighbor and set-policy review; no independent expert rating.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C018",
+      "title": "Classification Scheme",
+      "subdomain_id": "D03",
+      "authored_definition": "A governed organization of classification concepts with an identified scope and version policy.",
+      "authored_definition_sha256": "e173e147d35984ddb4da906b76ff08b7c3c3953b28ba8ea5bd2301112f2d04d2",
+      "source_concept_sha256": "88fffea2784bd8d57e200a59c7d29f16317d5209ed82b2dadc79d27e4ac5a4b3",
+      "previous_review_sha256": "428b4fbfda184407ea52b4886a1d0161c43dfa2e093b6fbc205c388a7e6c7472",
+      "context_sha256": "35964060dd0fa01a6294d9488e831b667b072ac364f903ed52f9e375f642ae10",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "scheme"
+      ],
+      "rationale": "Retain the concept-scheme comparison without asserting identical extension. Scope, governance and version policy are additional Riskium commitments.",
+      "context_interpretation": "GX-049 preserves artifact identity. R-05 records term membership under this profile; it is not a claim that the external scheme is closed or that the listed terms exhaust every possible member.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected primary-passage comparison plus explicit source ancestry, changed-neighbor and set-policy review; no independent expert rating.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C019",
+      "title": "Classification Term",
+      "subdomain_id": "D03",
+      "authored_definition": "A managed vocabulary item expressing a controlled classification value within an identified scheme. Scheme membership and version context constrain its interpretation. This is a managed vocabulary resource with scheme-qualified identity, not a bare string.",
+      "authored_definition_sha256": "3fe4977d8607da689cedb719032316a00c12d843fd360f12596a08ad1eb00a03",
+      "source_concept_sha256": "1072b087d1637d3fd2c538fac7fedbb377ca51c90db55cb28dd96b7d01a7fe0e",
+      "previous_review_sha256": "2afcc6cddd9d309da3a0321cbcd7d8705c4d769f081699c39305ad21776a49e0",
+      "context_sha256": "112f425b40a67e47c42b5046977686cc4b7b8daf5ff55302dc165e16d48e2591",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "concept",
+        "label"
+      ],
+      "rationale": "Retain the controlled-resource/label distinction. The selected scheme and version context qualify a classification value; lexical equality is not a universal or resource identity rule.",
+      "context_interpretation": "G2-053/G2-052 preserve the inherited documentary identity. GS-RKM-C019 and GS-RKM-C017 remain explicitly non-disjoint and incomplete; no new covering, exclusivity or semantic-module claim is added.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected primary-passage comparison plus explicit source ancestry, changed-neighbor and set-policy review; no independent expert rating.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C020",
+      "title": "Classification Assertion",
+      "subdomain_id": "D03",
+      "authored_definition": "A source-qualified assignment of a classification term to a subject in a specified context.",
+      "authored_definition_sha256": "bd5d6a598ad4f80a3540f191848ca295b170cfbe26f471902c93e7a735497862",
+      "source_concept_sha256": "884cf81791d9baf6e585867d825a158b65ad26f0a6362e9b12e9429de6365ef7",
+      "previous_review_sha256": "0bb7cc37ed90c904144905084fdd91812c5025ff439bef7c84165da58224f611",
+      "context_sha256": "94dcd8882bd75d72c4a1c8d2b278c81e751a62f2d66a71a7a112e7f91b7ed791",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "classifying",
+        "annotation"
+      ],
+      "rationale": "Retain the distinction between a classification statement and its target. Annotation and classifying motivation inform this comparison without supplying Riskium source/context qualification or a formal class alignment.",
+      "context_interpretation": "R-03 can classify an analytically identified RiskCase before organizational register admission. R-04/R-29 keep the selected term and documenting entry separate from the case and assertion.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected primary-passage comparison plus explicit source ancestry, changed-neighbor and set-policy review; no independent expert rating.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C021",
+      "title": "Tag",
+      "subdomain_id": "D03",
+      "authored_definition": "A managed annotation artifact carrying a lightweight label. Identical lexical labels do not by themselves identify one tag assignment or imply a formal taxonomy.",
+      "authored_definition_sha256": "d844c298d44e3a094a003815001133aa86d9697902483aed0f7646638ffeb606",
+      "source_concept_sha256": "80eacdb7902cab93a47026e92e1ee45a4b805e82a6d322f88dc1d92836220f19",
+      "previous_review_sha256": "6f30ada9f7618d02ace1cc2764238d7a7baddc37285baca82f3b412f104b1d18",
+      "context_sha256": "86e0a595e9971ded9c7ba530f9a4d600ec645dfa5d917289a69b8db3e3756a1c",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "tagging",
+        "label"
+      ],
+      "rationale": "Retain tagging motivation and lexical-label context. The motivation instance is distinct from a Riskium tag artifact; identical words do not identify an assignment or imply a formal taxonomy.",
+      "context_interpretation": "G2-054 preserves artifact identity and R-24 links the tag to an entry revision. Excluding blanket artifact sibling grouping neither merges tags with classification terms nor makes all document types exclusive.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected primary-passage comparison plus explicit source ancestry, changed-neighbor and set-policy review; no independent expert rating.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-X06",
+      "title": "Risk Source Reference",
+      "subdomain_id": "D01",
+      "authored_definition": "A managed information artifact identifying or describing a claimed contributor to risk in a declared context. The referenced contributor may be unresolved, hypothetical or heterogeneous. The reference does not establish actual causation or an actual occurrence.",
+      "authored_definition_sha256": "58c16f21be86487815ab0589c3ea536a105f14ad4c5e056d4c52590913ade01f",
+      "source_concept_sha256": "fec632e58cee99508572d418d39435ac4196f82e6e1c23e0d4c58536712bb734",
+      "previous_review_sha256": "8e468e6aa775036667fd4c536dea5544bd07a4165ff139d0245df610ba1d1600",
+      "context_sha256": "5a4d7c1cb987611664ca74ecf90ada465fc4ad0020270c555c8c5357518133a5",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "CONTRAST",
+      "disposition": "CONTRAST",
+      "comparison_term_ids": [
+        "entity",
+        "threat_source"
+      ],
+      "rationale": "Retain the document/referent contrast. A managed contributor reference may describe an unresolved or hypothetical contributor; it is not that contributor or evidence of actual causation.",
+      "context_interpretation": "G3-001 supplies documentary identity. RK3-001 concerns an analytical RiskCase; RK3-002 is the distinct source-resolution link and RK3-003 supplies context. No universal bearer category or operational-admission requirement is introduced.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected primary-passage comparison plus explicit source ancestry, changed-neighbor and set-policy review; no independent expert rating.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    }
+  ],
+  "summary": {
+    "this_batch": 11,
+    "prior_documentary_dispositions": 25,
+    "cumulative_documentary_dispositions": 36,
+    "population": 82,
+    "remaining": 46,
+    "dispositions": {
+      "RELATED": 9,
+      "ANALOGY": 1,
+      "CONTRAST": 1
+    },
+    "disposition_labels_changed": 0,
+    "unchanged_local_edges": 11,
+    "changed_ancestor_context": 11,
+    "changed_association_neighbor_context": 6
+  },
+  "boundaries": {
+    "scientific_source_modified": false,
+    "historical_curation_modified": false,
+    "published": false,
+    "engine_runs": 0,
+    "formal_alignment_axioms_added": false,
+    "independent_validation": "NOT_PERFORMED",
+    "prior_source_policy": "The historical source has no explicit generalization_set_policy field. This absence is not reconstructed as an asserted old logical set policy.",
+    "focal_context": "Current GS-RKM-C014 is explicitly excluded; preserve its subtype edges and distinguish documentary specialization from contextual evidential participation.",
+    "retained_sets": "The carried GS-RKM-C017/GS-RKM-C019 source statuses are not upgraded to independent semantic approval.",
+    "semantic_review": "Independent semantic judgment remains #23; exact normative adoption remains #78.",
+    "deployment_scope": "Previews are planning artifacts; full component qualification and publication/readback remain later gates."
+  },
+  "batch_findings": [
+    "All eleven authored definitions and local edge records are unchanged. InformationArtifact has a revised typing rationale in every selected ancestor context. Six selected concepts have the revised RiskCase as a direct association neighbor. Current policy excludes the blanket artifact set while retaining subtype edges; the retained GS-RKM-C017/GS-RKM-C019 groups remain non-disjoint, incomplete and explicitly carried rather than independently reapproved.",
+    "Vocabulary resources, their labels, classification statements and their referents remain distinct in the adopted profile. SKOS does not automatically make a concept an OWL domain universal, but also permits dual typing; no global disjointness is imposed. Web Annotation classifying/tagging are motivation instances, not classes equivalent to Riskium assertions/tags. RiskScenarioSpecification remains distinct from its analytical case and actual occurrence. A RiskSourceReference remains distinct from a claimed contributor and does not establish causation.",
+    "The old model has no explicit generalization_set_policy field. This packet does not manufacture an old set policy from that absence. The current policy and published qualification are separate evidence routes. This is a documentary contextual review; no independent semantic approval of all retained set criteria is implied."
+  ],
+  "context_guard_note": "Shared parenthood does not create a blanket set or independently validate retained criteria. A documentary artifact is not automatically an evidential participant. Task readiness and local operational admission remain distinct from analytical RiskCase existence.",
+  "next_execution_note": "N3b-2 reviews ten D07 responsibility concepts. The remaining sequence is D04/D08 (11), D05 (11), D06/D11 (9), D09/D10 (5). progress.json records all exact remaining IDs. After all 82 dispositions, qualify the full successor curation component, then publish/read back the selected documentation package before closing #85. Main, release v0.3.9, historical curation 0.1.0, scientific source 0.3.2, reader 0.4.9 and article 7.2.21 are unchanged. #23 retains independent semantic review and #78 exact normative adoption."
+}
