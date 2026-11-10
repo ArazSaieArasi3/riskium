@@ -11,19 +11,20 @@ are not a published successor curation component or independent semantic ratings
 | [N3b-3](batch-03/README.md) | D04/D08, 11 concepts | Documentary decisions and selected registration/workflow source contracts recorded. |
 | [N3b-4](batch-04/README.md) | D05, 11 concepts | Documentary decisions and selected assessment source contracts recorded. |
 | [N3b-5](batch-05/README.md) | D06/D11, 9 concepts | Six comparisons and three explicit normative deferrals recorded with current source context. |
-| N3b-6 | D09/D10, 5 concepts | Next. |
+| [N3b-6](batch-06/README.md) | D09/D10, 5 concepts | Final five documentary decisions and complete catalog inventory recorded; component qualification is next. |
 
-The [current progress snapshot](batch-05/progress.json) combines the eight N2,
-seventeen N3a, eleven N3b-1, ten N3b-2, eleven N3b-3, eleven N3b-4 and nine N3b-5 dispositions:
-**77/82 recorded, 5 remaining**. This includes three explicit normative deferrals,
-not three completed normative mappings. Earlier allocation/progress snapshots remain dated history.
+The [current progress snapshot](batch-06/progress.json) combines the eight N2,
+seventeen N3a and all 57 N3b dispositions: **82/82 recorded, no documentary batch remaining**.
+The [complete inventory](batch-06/coverage.json) binds one disposition to each current catalog concept:
+40 RELATED, 20 CONTRAST, 19 ANALOGY and three explicit normative deferrals.
+Those three are not completed normative mappings. Earlier allocation/progress snapshots remain dated history.
 The complete successor component still requires qualification, selection,
 publication and actual affected-body readback before #85 closes.
 
 `context.py` inventories ancestry, changed ancestor/neighbor records and explicit
 set/application policy without running an ontology reasoner. The original
-`build.py` reproduces batch-01; batch-02 through batch-05 have their own drivers and
-selected responsibility/registration/assessment/treatment-policy source-contract checks, preserving prior
+`build.py` reproduces batch-01; batch-02 through batch-06 have their own drivers and
+selected responsibility/registration/assessment/treatment-policy/evidence-monitoring checks, preserving prior
 drivers and receipt bytes. Each batch
 keeps its own source access, passage fingerprints, review, negative controls and
 reproduction receipt. Independent review remains #23; exact normative adoption

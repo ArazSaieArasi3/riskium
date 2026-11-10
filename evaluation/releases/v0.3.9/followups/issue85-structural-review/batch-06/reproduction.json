@@ -1,0 +1,28 @@
+{
+  "status": "PASS_LOCAL_BYTE_IDENTICAL_REBUILD",
+  "date": "2026-11-10",
+  "execution": "N3b-6",
+  "baseline_commit": "36ff7a55becfe206b821fe969fecd5efbcd22149",
+  "method": "Two separate isolated batch-06 builder processes followed by --check; all batch files excluding this receipt plus the unchanged shared context extractor compared byte for byte.",
+  "matched_files": 18,
+  "sha256": {
+    "batch-06/README.md": "90ce1860b5a94231a14d19126ab8ebbde58929d4952ff8d1402d26cbc8f3b812",
+    "batch-06/build.py": "85edfa426880e1a16e333d384b16908a605bcf86c492aecacab356e9e80e0ab0",
+    "batch-06/contexts.json": "39051a0cb70f04b638b5916266c8c7a4c60d48ef082e38566a1a400b3189e390",
+    "batch-06/coverage.json": "dd521e76d7a78cfdfb190deac3a7b54945d4afa85229e8004bddc26824477abc",
+    "batch-06/decisions.csv": "e4689d8b51ea04800a25136a99cfd6a585a5058cf25002e198c86d81302aaa25",
+    "batch-06/evidence-monitoring-checks.json": "d84a64fa066e3c5170248d468d5707b734dcc49c2a6bd03e05e74b10632112f3",
+    "batch-06/evidence_monitoring_context.py": "442f41cb174946c92d294ce71aff6b074b5ead40c24d4f9fbb27407548e1bb3e",
+    "batch-06/passage-checks.json": "8b703e7c89b8213649214e7fd1f48c8afacd546afc557741a39ec35187824661",
+    "batch-06/previews/RKM-C065.md": "fbdf178c7266d73d6170366cadea76b3d9a782a4478894dcbe03945db3b0027e",
+    "batch-06/previews/RKM-C068.md": "75139bcba9d60197a38e2deda249f0f085a17fe8ec9a6f9d882c7d00c9b08abd",
+    "batch-06/previews/RKM-C069.md": "4e9ea508f99657e31f79e3f5225633e12eb1289bd2cb690188d2311e86bf09a7",
+    "batch-06/previews/RKM-C070.md": "c87a1f76e59df02e2346ed597f8597fc36201f82e34317dcd4caa4c71597e3b6",
+    "batch-06/previews/RKM-C071.md": "37676459f6ee5354c20ae5c81deb3ef595aefad52c22c6e4ffa8636f703e2759",
+    "batch-06/progress.json": "1a1818738ba9a86487152171e6652d8651779f7e172917f3ad24bd82f73ca752",
+    "batch-06/review.json": "cd4d9914530430d0e52ae57f83fcf9ed3703aecfe55dc3bc2723910dc3ed9adf",
+    "batch-06/source-access.json": "4f05a37c461f00f2ac39d5ba25fd317c7cbfc8fed1bbbe4c2a1c7e47078a4001",
+    "batch-06/validation.json": "985021b7f430d6bdb68578a08096f72d7ea1309b040901ca202c04d4a12622bc",
+    "context.py": "8d1e0821b478c2ddbd5c0757d601d2241a2cd6142b12e8d996a6a8d8e159b3f4"
+  }
+}

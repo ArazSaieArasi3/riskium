@@ -1,0 +1,32 @@
+{
+  "prov": {
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "accessed": "2026-11-10",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "bytes": 464179,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "sosa": {
+    "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/",
+    "document_sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+    "accessed": "2026-11-10",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/",
+    "bytes": 673275,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "dqv": {
+    "url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/",
+    "document_sha256": "271d3e820c681127131595d2c8bf8345e925149192f6cab821f101f09d372a63",
+    "accessed": "2026-11-10",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/",
+    "bytes": 183523,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  }
+}
