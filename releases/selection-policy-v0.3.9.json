@@ -9,7 +9,14 @@
   "documentation_version": "0.4.9",
   "task_profile_version": "0.1.0",
   "manuscript_version": "7.2.21",
-  "active_component_ids": ["MODEL032", "CASE_TASK_PROFILE010", "READER049", "PROVENANCE032", "QUALIFICATION039"],
+  "active_component_ids": [
+    "MODEL032",
+    "CASE_TASK_PROFILE010",
+    "READER049",
+    "PROVENANCE032",
+    "QUALIFICATION039",
+    "PACKAGE039"
+  ],
   "historical_component_count": 32,
   "historical_binding_policy": "Retain each v0.3.8 component at its original version and original model compatibility. Preserve changed delivery-tool bodies under versioned retained aliases. Do not relabel historical SQL, cohort, evaluation or manuscript results as 0.3.2 evidence.",
   "namespace_policy": "Keep established term IRIs; use a distinct 0.3.2 ontology versionIRI and exact source digest. No universal organizational approval requirement is introduced.",
@@ -17,5 +24,6 @@
   "article_binaries_included": false,
   "independent_semantic_acceptance": false,
   "full_database_migration": false,
-  "production_performance_claim": false
+  "production_performance_claim": false,
+  "package_preparation_revision": "R2a"
 }

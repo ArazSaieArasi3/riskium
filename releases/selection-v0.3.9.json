@@ -2,6 +2,7 @@
   "schema": "riskium-v039-source-selection-1",
   "target": "v0.3.9",
   "stage": "SELECTED_NOT_FROZEN_OR_PUBLISHED",
+  "selection_revision": "R2a-package-preparation",
   "source_version": "0.3.2",
   "predecessor_release": "v0.3.8",
   "manuscript_version": "7.2.21",
@@ -652,7 +653,7 @@
       "files": [
         {
           "path": ".github/workflows/issue93-candidate.yml",
-          "sha256": "b9a3a3aa0dd32ec5191a358f674ff73578e3ef69bc31c6a0e9edb8e2b6740fbb"
+          "sha256": "84eca7a593f228eccdae7925663c90b5cb3240b48b912ae889eaeb47ac3129ef"
         },
         {
           "path": "plans/v0.3.9.md",
@@ -660,7 +661,7 @@
         },
         {
           "path": "releases/selection-policy-v0.3.9.json",
-          "sha256": "1b050e22b1d83444f3f9ab74b2aea2f3283d414f1eae5ae27594ae6031d663ff"
+          "sha256": "e7903ae02f48a21b8813f553b64d85bcd7673e808b4b41f30179c562dbd92a69"
         },
         {
           "path": "tools/check_source_transition.py",
@@ -680,11 +681,45 @@
         },
         {
           "path": "tools/releases/v039/selection.py",
-          "sha256": "d0a3e4c654bdfd8eb1f555cdb2a856a934c1d5d1e1bfd81566e1e0e7dd66875b"
+          "sha256": "a2dd2304faccf3f172f9102f7dca9631685821b8b1d356ab146120e6afdac2e0"
         },
         {
           "path": "tools/releases/v039/source.py",
           "sha256": "24aecc735a67f88aa20f72f16b488223c2e0f47849347727418d4a78924c027e"
+        }
+      ]
+    },
+    {
+      "id": "PACKAGE039",
+      "artifact": "Deterministic package builder and independent offline verifier",
+      "version": "0.3.9-R2a",
+      "compatible_model": "0.3.2",
+      "status": "ACTIVE_SELECTED_NOT_PUBLISHED",
+      "scope": "Six source-bound assets, exact Git commit/tree reconstruction, component and qualification bindings, reproducibility and adversarial archive checks. Publication and maintained-channel readback remain R2b.",
+      "files": [
+        {
+          "path": "tools/releases/v039/package/README.md",
+          "sha256": "e0227c079bf8b10169c6705d4edad6a16628c579e97c30fc11c9ed32c119a4fd"
+        },
+        {
+          "path": "tools/releases/v039/package/build_package.py",
+          "sha256": "6edbe90ff06b1fdaba9550f646aceed9f57721ac5088265b5a4cd842e9abef25"
+        },
+        {
+          "path": "tools/releases/v039/package/policy.json",
+          "sha256": "2c731ca62e57706ca4cafaf36d11e0ba33ed35e611e5778faef06599e50acbf7"
+        },
+        {
+          "path": "tools/releases/v039/package/release-notes-template.md",
+          "sha256": "4c603517206a87ec3dd4c7db7bc85bbfb90381efdaedaeb20a9f20a7e29435f5"
+        },
+        {
+          "path": "tools/releases/v039/package/test_package.py",
+          "sha256": "1bd2c0018568278b90d5d07e2a01daae5c8f0336bb22135b26ee133853d34808"
+        },
+        {
+          "path": "tools/releases/v039/package/verify_package.py",
+          "sha256": "738f20eceec146405b45dbdd91711a17a2a7e602702e33ce4364ff5d1b32865f"
         }
       ]
     },
@@ -8481,6 +8516,20 @@
         "version": "0.3.2-selection.1"
       }
     ],
+    "PACKAGE039": [
+      {
+        "id": "MODEL032",
+        "version": "0.3.2"
+      },
+      {
+        "id": "READER049",
+        "version": "0.4.9"
+      },
+      {
+        "id": "QUALIFICATION039",
+        "version": "0.3.9-R1"
+      }
+    ],
     "HISTORICAL/MODEL": [],
     "HISTORICAL/DIAGRAM": [
       {
@@ -8899,6 +8948,7 @@
     "CASE_TASK_PROFILE010",
     "READER049",
     "QUALIFICATION039",
+    "PACKAGE039",
     "HISTORICAL/MODEL",
     "HISTORICAL/DIAGRAM",
     "HISTORICAL/ORSD",
@@ -8937,7 +8987,7 @@
     ".github/workflows/assessment-reader-main.yml": "ec512ee55ac589ca2e45907ca6091198e9f27b70d95e82f50bb7ddb3a7538eaa",
     ".github/workflows/assessment-selection.yml": "bd98e8e9295f447ee51995b4810f4f1c0e94b822d5d328e33eb2ee2097db14eb",
     ".github/workflows/dictionary-reader.yml": "d167cb42d5406fbcda05fa148bc0d80db521ddc78c4aad2f7637b8701a3de688",
-    ".github/workflows/issue93-candidate.yml": "b9a3a3aa0dd32ec5191a358f674ff73578e3ef69bc31c6a0e9edb8e2b6740fbb",
+    ".github/workflows/issue93-candidate.yml": "84eca7a593f228eccdae7925663c90b5cb3240b48b912ae889eaeb47ac3129ef",
     "AUTHORS.md": "c20830d719b9b1d1b13d85cac69253274a974edb79b3a2c56148fd900d038447",
     "CITATION.cff": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
     "LICENSE": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
@@ -10002,7 +10052,7 @@
     "releases/preparation-policy-v0.3.4.json": "a05d0be68dc357cda67484e389550c61692e9354390ab807a1f90262fc4cfe38",
     "releases/prepared-components-v0.3.4.json": "88ece33af34bb88f01be0235017186535043270d1bd7f0d9f99aa76b3a0ab462",
     "releases/selection-policy-v0.3.4.json": "033ea88e38f6671bebb6a3785dc41232bfb710f62c59e06c61c04dfe85abdb6a",
-    "releases/selection-policy-v0.3.9.json": "1b050e22b1d83444f3f9ab74b2aea2f3283d414f1eae5ae27594ae6031d663ff",
+    "releases/selection-policy-v0.3.9.json": "e7903ae02f48a21b8813f553b64d85bcd7673e808b4b41f30179c562dbd92a69",
     "releases/selection-v0.3.4.json": "e9914305de9228c8af9d5b09975edb79c7dcfdd0f022c0f3233f9649fb1077d4",
     "releases/stable-profile-v0.3.4.json": "da66c5327a88ff89a90783128f9a085909b70f2588e17d6ec25d8dee8d7b8a81",
     "releases/stable-request-v0.3.4.json": "203da5c89bd1d57bd3716fb8beefffc797501df80def97d49a48099ca35899fb",
@@ -10123,10 +10173,16 @@
     "tools/relational_risk_nature.py": "35a2406fec25e8d21244db701a0b39e9d0f9001b050ae9e4a77bcc690ac2de4e",
     "tools/relational_source_scenario.py": "ca62c59d9ea31352c3b92a8a0f1e28a82a498faa49a7d2cd2137478db09a2191",
     "tools/relational_source_scenario_lineage.py": "0fddac0d97c9bbf2eb7d0947c0f989978e9f6b0e2b2ce94b160983035ecd3d36",
+    "tools/releases/v039/package/README.md": "e0227c079bf8b10169c6705d4edad6a16628c579e97c30fc11c9ed32c119a4fd",
+    "tools/releases/v039/package/build_package.py": "6edbe90ff06b1fdaba9550f646aceed9f57721ac5088265b5a4cd842e9abef25",
+    "tools/releases/v039/package/policy.json": "2c731ca62e57706ca4cafaf36d11e0ba33ed35e611e5778faef06599e50acbf7",
+    "tools/releases/v039/package/release-notes-template.md": "4c603517206a87ec3dd4c7db7bc85bbfb90381efdaedaeb20a9f20a7e29435f5",
+    "tools/releases/v039/package/test_package.py": "1bd2c0018568278b90d5d07e2a01daae5c8f0336bb22135b26ee133853d34808",
+    "tools/releases/v039/package/verify_package.py": "738f20eceec146405b45dbdd91711a17a2a7e602702e33ce4364ff5d1b32865f",
     "tools/releases/v039/projection.py": "551333e11cafff0cdc05dead0758254dfbb2f8fccedef181a59c939cf8c67406",
     "tools/releases/v039/qualify.py": "20b5eda3b87a9c9a7092e799cc4cd945779c8540e28bf49fccc24dc3fa479110",
     "tools/releases/v039/reader.py": "3bedfc085371980e1b8264e5d02e86163ccdb764895d710fc879d6425409dd3c",
-    "tools/releases/v039/selection.py": "d0a3e4c654bdfd8eb1f555cdb2a856a934c1d5d1e1bfd81566e1e0e7dd66875b",
+    "tools/releases/v039/selection.py": "a2dd2304faccf3f172f9102f7dca9631685821b8b1d356ab146120e6afdac2e0",
     "tools/releases/v039/source.py": "24aecc735a67f88aa20f72f16b488223c2e0f47849347727418d4a78924c027e",
     "tools/requirements-shacl.txt": "975267a8c63388f02db316190ef9ecb489010f27b9477074e5f49c3c323bf210",
     "tools/review_distribution.py": "e3520ee06efbf9f24c96bc25deadeb5dc78ddfe37ea1398fdaa0255db7871389",
@@ -10147,9 +10203,9 @@
     "tools/check_source_transition.py": "evaluation/releases/v0.3.9/retained-v0.3.8/tools/check_source_transition.py"
   },
   "summary": {
-    "active_components": 5,
+    "active_components": 6,
     "historical_components": 32,
-    "selected_files": 1207,
+    "selected_files": 1213,
     "historical_delivery_aliases": 3
   },
   "article_binaries_included": false,

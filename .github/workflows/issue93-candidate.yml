@@ -87,3 +87,45 @@ jobs:
             ${{ runner.temp }}/issue92-artifact/
             ${{ runner.temp }}/v039-R1-artifact/
           if-no-files-found: warn
+
+  package:
+    needs: qualify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download exact-source qualification from prerequisite job
+        uses: actions/download-artifact@v4
+        with:
+          name: combined-candidate-${{ github.sha }}
+          path: ${{ runner.temp }}/qualified-input
+      - name: Test adversarial package guards
+        shell: bash
+        run: |
+          mkdir -p "$RUNNER_TEMP/v039-R2a-artifact"
+          python -m unittest discover -s tools/releases/v039/package -p test_package.py -v \
+            2>&1 | tee "$RUNNER_TEMP/v039-R2a-artifact/package-tests.txt"
+      - name: Build and independently verify six source-bound assets
+        shell: bash
+        run: |
+          python tools/releases/v039/package/build_package.py \
+            --qualification "$RUNNER_TEMP/qualified-input/v039-R1-artifact/qualification-report.json" \
+            --output "$RUNNER_TEMP/v039-R2a-artifact/assets" --mode ci \
+            > "$RUNNER_TEMP/v039-R2a-artifact/build-report.json"
+          python tools/releases/v039/package/verify_package.py \
+            --assets "$RUNNER_TEMP/v039-R2a-artifact/assets" \
+            --expected-source-commit "$GITHUB_SHA" --expected-run-id "$GITHUB_RUN_ID" \
+            --report "$RUNNER_TEMP/v039-R2a-artifact/verification-report.json"
+      - name: Preserve prepared package and actual verification receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coordinated-package-v039-${{ github.sha }}
+          path: ${{ runner.temp }}/v039-R2a-artifact/
+          if-no-files-found: warn

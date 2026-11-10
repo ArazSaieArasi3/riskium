@@ -73,10 +73,14 @@ def make(write_aliases=False):
         component('QUALIFICATION039', 'Selected-source release qualification', '0.3.9-R1',
             list(source.HERE.glob('*.py')) + [POLICY, ROOT / 'plans/v0.3.9.md', ROOT / 'tools/check_source_transition.py', ROOT / '.github/workflows/issue93-candidate.yml'],
             'Fresh exact-commit qualification and staged projections; no live publication, independent semantic acceptance or production performance claim.')]
+    active.append(component('PACKAGE039', 'Deterministic package builder and independent offline verifier', '0.3.9-R2a',
+        [p for p in sorted((source.HERE / 'package').glob('*')) if p.is_file() and p.suffix in {'.py', '.json', '.md'}],
+        'Six source-bound assets, exact Git commit/tree reconstruction, component and qualification bindings, reproducibility and adversarial archive checks. Publication and maintained-channel readback remain R2b.'))
     artifacts = active + historical
     deps = {a['id']: [] for a in artifacts}
     deps.update(CASE_TASK_PROFILE010=['MODEL032', 'PROVENANCE032'], READER049=['MODEL032'],
                 PROVENANCE032=[], QUALIFICATION039=['MODEL032', 'CASE_TASK_PROFILE010', 'READER049', 'PROVENANCE032'])
+    deps['PACKAGE039'] = ['MODEL032', 'READER049', 'QUALIFICATION039']
     for cid, entries in prior['dependencies'].items():
         deps['HISTORICAL/' + cid] = ['HISTORICAL/' + d['id'] for d in entries]
     versions = {a['id']: a['version'] for a in artifacts}
@@ -99,7 +103,7 @@ def make(write_aliases=False):
     for cid in deps:
         visit(cid, [])
     return {'schema': 'riskium-v039-source-selection-1', 'target': 'v0.3.9',
-        'stage': 'SELECTED_NOT_FROZEN_OR_PUBLISHED', 'source_version': source.VERSION,
+        'stage': 'SELECTED_NOT_FROZEN_OR_PUBLISHED', 'selection_revision': 'R2a-package-preparation', 'source_version': source.VERSION,
         'predecessor_release': 'v0.3.8', 'manuscript_version': '7.2.21',
         'artifacts': artifacts, 'dependencies': dependencies, 'dependency_order': order,
         'selected_files_sha256': dict(sorted(files.items())), 'historical_delivery_aliases': aliases,
