@@ -1,0 +1,35 @@
+{
+  "schema": "riskium-publication-intent-0310/1",
+  "source_commit": "4ae0cdc72a1008e8107be320694d90324890b696",
+  "run_id": 42897440341,
+  "qualification_artifact_id": 13800564347,
+  "qualification_artifact_sha256": "780138db4aefaf87507a2f96da0b90122acf782f4df4b6a864861b5604e9d7a1",
+  "assets": {
+    "SHA256SUMS.txt": {
+      "bytes": 441,
+      "sha256": "ef83693a12c19220ccd3a6b530dedc8840d7a0a1eedae5277af107aa3c093b08"
+    },
+    "artifact-versions.json": {
+      "bytes": 616216,
+      "sha256": "bbe1a7c0a6a23fa6cce390441daee12840ad1b4e9c3bd101e9c8144e48a2a398"
+    },
+    "freeze-receipt.json": {
+      "bytes": 175474,
+      "sha256": "e4a3124509a0a38fcdab7fa7953f42f28bb95f112abfa8f711182ff87f32a7e9"
+    },
+    "release-notes.md": {
+      "bytes": 1808,
+      "sha256": "1979c05fbe01898859ffbeec70f0b3bd25faacb1be77230b225010be5eb674a0"
+    },
+    "riskium-v0.3.10-source.tar.gz": {
+      "bytes": 17240124,
+      "sha256": "c98d60729f5ee8ef50c06593c21f9c45fd8a52f06071570893da8c65569d32f8"
+    },
+    "source-manifest.json": {
+      "bytes": 661114,
+      "sha256": "901d8955548ddd3f2ee6eb152987dbf8247400d3511cb5cf83e9cf49ea315d5a"
+    }
+  },
+  "publication": false,
+  "actual_channel_readback": false
+}
