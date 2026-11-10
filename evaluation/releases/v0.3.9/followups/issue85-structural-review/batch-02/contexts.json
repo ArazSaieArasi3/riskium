@@ -1,0 +1,966 @@
+{
+  "RKM-C047": {
+    "concept_id": "RKM-C047",
+    "old_concept_sha256": "e78c1d6b03e8fa0ac9f2535d644db405a071c4abb7be69dbb05e3e7236a47cc2",
+    "current_concept_sha256": "e78c1d6b03e8fa0ac9f2535d644db405a071c4abb7be69dbb05e3e7236a47cc2",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": true,
+    "local_edges_sha256": "6253485823589aa9e2a55e02519d69496cc23b6a24e760a1977790917f6ca969",
+    "direct_association_ids": [
+      "R-51",
+      "R-53",
+      "R-65",
+      "R-70"
+    ],
+    "ancestor_ids": [],
+    "ancestor_edges": [],
+    "ancestor_edges_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [],
+    "association_neighbor_ids": [
+      "RKM-C031",
+      "RKM-C044",
+      "RKM-C050",
+      "RKM-C065"
+    ],
+    "changed_association_neighbors": [],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [
+      {
+        "id": "GS-AgentKinds",
+        "parent": "RKM-C047",
+        "generalizations": [
+          "G-20",
+          "G-21"
+        ],
+        "isDisjoint": true,
+        "isComplete": false,
+        "rationale": "Person is defined as a human individual; Organization is an organized social entity. The current model does not close Agent to these two kinds.",
+        "example": "A person and an employing organization are different agents.",
+        "counterexample": "An organization must not be merged with a human representative; an unmodeled agent kind is not excluded by a covering axiom.",
+        "criterion_status": "EXPLICITLY_RETAINED_BEARER_KIND_CRITERION",
+        "specialization_criterion": "Bearer kind: human individual or organized social entity."
+      }
+    ],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C047",
+        "parent": "RKM-C047",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Agent bearer kind",
+          "Mandate participation"
+        ],
+        "rationale": "Retain the separate, disjoint and incomplete AgentKinds set; responsible and authorizing participation must not compete with Person/Organization classification."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  },
+  "RKM-C050": {
+    "concept_id": "RKM-C050",
+    "old_concept_sha256": "6b2cbacf92e710344aba76c85d92acb16b538239fbc2aaa2a225c2cb34f367d2",
+    "current_concept_sha256": "6b2cbacf92e710344aba76c85d92acb16b538239fbc2aaa2a225c2cb34f367d2",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": true,
+    "local_edges_sha256": "b4723c2945d1c7da2845181a75bf9d43fdc9e4386f05b9ec002f544f97fe969d",
+    "direct_association_ids": [
+      "R-08",
+      "R-10",
+      "R-53",
+      "RK2-025"
+    ],
+    "ancestor_ids": [
+      "RKM-C014"
+    ],
+    "ancestor_edges": [
+      {
+        "id": "G-05",
+        "specific": "RKM-C050",
+        "general": "RKM-C014"
+      }
+    ],
+    "ancestor_edges_sha256": "ae2179a63f85290563186bef75452cf3c02b816079c3f8ca2cf6410db878938c",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [
+      {
+        "id": "RKM-C014",
+        "changed_fields": [
+          "typing_rationale"
+        ],
+        "old_record_sha256": "0367006ebabd6231ebf3cc0ab62ba9ce658d951b713d9d0a14cbda7ff1f96303",
+        "current_record_sha256": "eb7e1738327cd4ac3b8b8e09cac9c089206737b2d9a815a0071f77f3c1ad600e"
+      }
+    ],
+    "association_neighbor_ids": [
+      "RKM-C026",
+      "RKM-C047",
+      "RKM-C051"
+    ],
+    "changed_association_neighbors": [],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C014",
+        "parent": "RKM-C014",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Documentary specialization",
+          "Contextual evidential participation"
+        ],
+        "rationale": "Shared documentary identity does not supply one specialization criterion for documentary subkinds and an evidential role. Retain every subtype edge; do not invent a replacement set for all subkinds."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  },
+  "RKM-C051": {
+    "concept_id": "RKM-C051",
+    "old_concept_sha256": "5ad46dfac9cff9b6ed56a9700236d3695be93d2e34f815a99d86f2ed364ac2a7",
+    "current_concept_sha256": "5ad46dfac9cff9b6ed56a9700236d3695be93d2e34f815a99d86f2ed364ac2a7",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": true,
+    "local_edges_sha256": "511263dc1433ca6b95944a1a7df3183b0e7cc96d783e66250f2c00487a720de4",
+    "direct_association_ids": [
+      "R-09",
+      "R-10",
+      "R-30",
+      "R-54",
+      "R-55",
+      "RK2-025"
+    ],
+    "ancestor_ids": [
+      "RKM-C014"
+    ],
+    "ancestor_edges": [
+      {
+        "id": "G-06",
+        "specific": "RKM-C051",
+        "general": "RKM-C014"
+      }
+    ],
+    "ancestor_edges_sha256": "4a60b641b02358181925a77962a67153adca37780a6179626d5010bbf2141f96",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [
+      {
+        "id": "RKM-C014",
+        "changed_fields": [
+          "typing_rationale"
+        ],
+        "old_record_sha256": "0367006ebabd6231ebf3cc0ab62ba9ce658d951b713d9d0a14cbda7ff1f96303",
+        "current_record_sha256": "eb7e1738327cd4ac3b8b8e09cac9c089206737b2d9a815a0071f77f3c1ad600e"
+      }
+    ],
+    "association_neighbor_ids": [
+      "RKM-C023",
+      "RKM-C050",
+      "RKM-C052",
+      "RKM-C059",
+      "RKM-X01"
+    ],
+    "changed_association_neighbors": [
+      {
+        "id": "RKM-X01",
+        "changed_fields": [
+          "definition",
+          "identity_basis",
+          "typing_rationale"
+        ],
+        "old_record_sha256": "ac07e39a26476df3c3149daa3854c60645392b8afcc69b2d15748ecbd64c1653",
+        "current_record_sha256": "1efba20cfb2d7549de2ffbac16ee04b4e165ba1b928edecba71ffb14db7306b5"
+      }
+    ],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C014",
+        "parent": "RKM-C014",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Documentary specialization",
+          "Contextual evidential participation"
+        ],
+        "rationale": "Shared documentary identity does not supply one specialization criterion for documentary subkinds and an evidential role. Retain every subtype edge; do not invent a replacement set for all subkinds."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  },
+  "RKM-C053": {
+    "concept_id": "RKM-C053",
+    "old_concept_sha256": "55412bf2bfa5f81bf61e103b548bff4a6bdf3a8ecf9b1f7d7c7ea12fca93040f",
+    "current_concept_sha256": "55412bf2bfa5f81bf61e103b548bff4a6bdf3a8ecf9b1f7d7c7ea12fca93040f",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": true,
+    "local_edges_sha256": "c0293209c47b3d3c3a4b883479aa62de20c5e61d26ee8bd371e20cf8792314d5",
+    "direct_association_ids": [
+      "R-56"
+    ],
+    "ancestor_ids": [
+      "RKM-C047"
+    ],
+    "ancestor_edges": [
+      {
+        "id": "G-22",
+        "specific": "RKM-C053",
+        "general": "RKM-C047"
+      }
+    ],
+    "ancestor_edges_sha256": "7a920216d57ac5ea63e2da490f1c4208b255a19afbfc533da7911630979b4086",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [],
+    "association_neighbor_ids": [
+      "RKM-C052"
+    ],
+    "changed_association_neighbors": [],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [
+      {
+        "id": "GS-RKM-C053",
+        "parent": "RKM-C053",
+        "generalizations": [
+          "G-25",
+          "G-27"
+        ],
+        "isDisjoint": true,
+        "isComplete": false,
+        "rationale": "The current person and organization role specializations inherit distinct human/social-entity identity; other bearer kinds are not ruled out.",
+        "example": "A human and an organization are separate role bearers.",
+        "counterexample": "The same individual cannot be both the human bearer and the organization bearer under these definitions.",
+        "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+        "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+      },
+      {
+        "id": "GS-AgentKinds",
+        "parent": "RKM-C047",
+        "generalizations": [
+          "G-20",
+          "G-21"
+        ],
+        "isDisjoint": true,
+        "isComplete": false,
+        "rationale": "Person is defined as a human individual; Organization is an organized social entity. The current model does not close Agent to these two kinds.",
+        "example": "A person and an employing organization are different agents.",
+        "counterexample": "An organization must not be merged with a human representative; an unmodeled agent kind is not excluded by a covering axiom.",
+        "criterion_status": "EXPLICITLY_RETAINED_BEARER_KIND_CRITERION",
+        "specialization_criterion": "Bearer kind: human individual or organized social entity."
+      }
+    ],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C047",
+        "parent": "RKM-C047",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Agent bearer kind",
+          "Mandate participation"
+        ],
+        "rationale": "Retain the separate, disjoint and incomplete AgentKinds set; responsible and authorizing participation must not compete with Person/Organization classification."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  },
+  "RKM-C054": {
+    "concept_id": "RKM-C054",
+    "old_concept_sha256": "c894b6c49de2c0da7bce2bed4c2ff249169685cfa16eee1eded4c062d3120f81",
+    "current_concept_sha256": "c894b6c49de2c0da7bce2bed4c2ff249169685cfa16eee1eded4c062d3120f81",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": true,
+    "local_edges_sha256": "73c01c2f17d22662b73a3239d75baeefd8e8c7d21ea87ac489ef35ec5be287a3",
+    "direct_association_ids": [
+      "R-57"
+    ],
+    "ancestor_ids": [
+      "RKM-C047"
+    ],
+    "ancestor_edges": [
+      {
+        "id": "G-23",
+        "specific": "RKM-C054",
+        "general": "RKM-C047"
+      }
+    ],
+    "ancestor_edges_sha256": "41bd94584a0ca4adc0dd615680acceb5399be73717f992571c122d3c4eab5a57",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [],
+    "association_neighbor_ids": [
+      "RKM-C052"
+    ],
+    "changed_association_neighbors": [],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [
+      {
+        "id": "GS-RKM-C054",
+        "parent": "RKM-C054",
+        "generalizations": [
+          "G-29",
+          "G-31"
+        ],
+        "isDisjoint": true,
+        "isComplete": false,
+        "rationale": "The current person and organization role specializations inherit distinct human/social-entity identity; other bearer kinds are not ruled out.",
+        "example": "A human and an organization are separate role bearers.",
+        "counterexample": "The same individual cannot be both the human bearer and the organization bearer under these definitions.",
+        "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+        "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+      },
+      {
+        "id": "GS-AgentKinds",
+        "parent": "RKM-C047",
+        "generalizations": [
+          "G-20",
+          "G-21"
+        ],
+        "isDisjoint": true,
+        "isComplete": false,
+        "rationale": "Person is defined as a human individual; Organization is an organized social entity. The current model does not close Agent to these two kinds.",
+        "example": "A person and an employing organization are different agents.",
+        "counterexample": "An organization must not be merged with a human representative; an unmodeled agent kind is not excluded by a covering axiom.",
+        "criterion_status": "EXPLICITLY_RETAINED_BEARER_KIND_CRITERION",
+        "specialization_criterion": "Bearer kind: human individual or organized social entity."
+      }
+    ],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C047",
+        "parent": "RKM-C047",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Agent bearer kind",
+          "Mandate participation"
+        ],
+        "rationale": "Retain the separate, disjoint and incomplete AgentKinds set; responsible and authorizing participation must not compete with Person/Organization classification."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  },
+  "RKM-C055": {
+    "concept_id": "RKM-C055",
+    "old_concept_sha256": "38c9e52a92614f9a33a519cf1115080da0345fe51c684c12f7ff0c7781af71d7",
+    "current_concept_sha256": "38c9e52a92614f9a33a519cf1115080da0345fe51c684c12f7ff0c7781af71d7",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": true,
+    "local_edges_sha256": "6b87a7b98fbc494912c4c15f6c95ff52f6805190d609560788340de4bb78380f",
+    "direct_association_ids": [],
+    "ancestor_ids": [
+      "RKM-C047",
+      "RKM-C048",
+      "RKM-C053"
+    ],
+    "ancestor_edges": [
+      {
+        "id": "G-20",
+        "specific": "RKM-C048",
+        "general": "RKM-C047"
+      },
+      {
+        "id": "G-22",
+        "specific": "RKM-C053",
+        "general": "RKM-C047"
+      },
+      {
+        "id": "G-24",
+        "specific": "RKM-C055",
+        "general": "RKM-C048"
+      },
+      {
+        "id": "G-25",
+        "specific": "RKM-C055",
+        "general": "RKM-C053"
+      }
+    ],
+    "ancestor_edges_sha256": "63fb72df9757204a7682f4c332d6b9d51a7d474f1fb2424e08701ae56b0c2dcc",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [
+      {
+        "id": "RKM-C048",
+        "changed_fields": [
+          "typing_rationale"
+        ],
+        "old_record_sha256": "dd9740a2d97dd4e7e7e2268278d083f6b275d1d20c10e031e66b9727d3e2a882",
+        "current_record_sha256": "f4140cf514e288d1d3cde4834851794a1d2815ab678212c05a1ad1ec20ee12ef"
+      }
+    ],
+    "association_neighbor_ids": [],
+    "changed_association_neighbors": [],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [
+      {
+        "id": "GS-RKM-C048",
+        "parent": "RKM-C048",
+        "generalizations": [
+          "G-24",
+          "G-28"
+        ],
+        "isDisjoint": false,
+        "isComplete": false,
+        "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+        "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+        "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent.",
+        "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+        "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+      },
+      {
+        "id": "GS-RKM-C053",
+        "parent": "RKM-C053",
+        "generalizations": [
+          "G-25",
+          "G-27"
+        ],
+        "isDisjoint": true,
+        "isComplete": false,
+        "rationale": "The current person and organization role specializations inherit distinct human/social-entity identity; other bearer kinds are not ruled out.",
+        "example": "A human and an organization are separate role bearers.",
+        "counterexample": "The same individual cannot be both the human bearer and the organization bearer under these definitions.",
+        "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+        "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+      },
+      {
+        "id": "GS-AgentKinds",
+        "parent": "RKM-C047",
+        "generalizations": [
+          "G-20",
+          "G-21"
+        ],
+        "isDisjoint": true,
+        "isComplete": false,
+        "rationale": "Person is defined as a human individual; Organization is an organized social entity. The current model does not close Agent to these two kinds.",
+        "example": "A person and an employing organization are different agents.",
+        "counterexample": "An organization must not be merged with a human representative; an unmodeled agent kind is not excluded by a covering axiom.",
+        "criterion_status": "EXPLICITLY_RETAINED_BEARER_KIND_CRITERION",
+        "specialization_criterion": "Bearer kind: human individual or organized social entity."
+      }
+    ],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C047",
+        "parent": "RKM-C047",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Agent bearer kind",
+          "Mandate participation"
+        ],
+        "rationale": "Retain the separate, disjoint and incomplete AgentKinds set; responsible and authorizing participation must not compete with Person/Organization classification."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  },
+  "RKM-C056": {
+    "concept_id": "RKM-C056",
+    "old_concept_sha256": "74d3e8303805d51dcd84ce9c9225665d650468fee1f3a6cd2dc315f389a75ca4",
+    "current_concept_sha256": "74d3e8303805d51dcd84ce9c9225665d650468fee1f3a6cd2dc315f389a75ca4",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": true,
+    "local_edges_sha256": "acd9d4dcbd4adad6a47cd96ca593c7bfc54641a87d1165eb40cc2a8cdd07f02f",
+    "direct_association_ids": [],
+    "ancestor_ids": [
+      "RKM-C047",
+      "RKM-C049",
+      "RKM-C053"
+    ],
+    "ancestor_edges": [
+      {
+        "id": "G-21",
+        "specific": "RKM-C049",
+        "general": "RKM-C047"
+      },
+      {
+        "id": "G-22",
+        "specific": "RKM-C053",
+        "general": "RKM-C047"
+      },
+      {
+        "id": "G-26",
+        "specific": "RKM-C056",
+        "general": "RKM-C049"
+      },
+      {
+        "id": "G-27",
+        "specific": "RKM-C056",
+        "general": "RKM-C053"
+      }
+    ],
+    "ancestor_edges_sha256": "a6eb11298689dc45ce0f3b48c7d31612800be7a0a13c29eb3cd8b7b625ff7538",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [
+      {
+        "id": "RKM-C049",
+        "changed_fields": [
+          "typing_rationale"
+        ],
+        "old_record_sha256": "dd5027b4a0e98c713def9b494576ba4a6170cd2dd0e6bdfeb47098d56816fc6b",
+        "current_record_sha256": "52ad25181dc7182dfce751f851379d0b83d9d4a4da5915f2ccc8f4c87e9bfeeb"
+      }
+    ],
+    "association_neighbor_ids": [],
+    "changed_association_neighbors": [],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [
+      {
+        "id": "GS-RKM-C053",
+        "parent": "RKM-C053",
+        "generalizations": [
+          "G-25",
+          "G-27"
+        ],
+        "isDisjoint": true,
+        "isComplete": false,
+        "rationale": "The current person and organization role specializations inherit distinct human/social-entity identity; other bearer kinds are not ruled out.",
+        "example": "A human and an organization are separate role bearers.",
+        "counterexample": "The same individual cannot be both the human bearer and the organization bearer under these definitions.",
+        "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+        "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+      },
+      {
+        "id": "GS-RKM-C049",
+        "parent": "RKM-C049",
+        "generalizations": [
+          "G-26",
+          "G-30"
+        ],
+        "isDisjoint": false,
+        "isComplete": false,
+        "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+        "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+        "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent.",
+        "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+        "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+      },
+      {
+        "id": "GS-AgentKinds",
+        "parent": "RKM-C047",
+        "generalizations": [
+          "G-20",
+          "G-21"
+        ],
+        "isDisjoint": true,
+        "isComplete": false,
+        "rationale": "Person is defined as a human individual; Organization is an organized social entity. The current model does not close Agent to these two kinds.",
+        "example": "A person and an employing organization are different agents.",
+        "counterexample": "An organization must not be merged with a human representative; an unmodeled agent kind is not excluded by a covering axiom.",
+        "criterion_status": "EXPLICITLY_RETAINED_BEARER_KIND_CRITERION",
+        "specialization_criterion": "Bearer kind: human individual or organized social entity."
+      }
+    ],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C047",
+        "parent": "RKM-C047",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Agent bearer kind",
+          "Mandate participation"
+        ],
+        "rationale": "Retain the separate, disjoint and incomplete AgentKinds set; responsible and authorizing participation must not compete with Person/Organization classification."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  },
+  "RKM-C057": {
+    "concept_id": "RKM-C057",
+    "old_concept_sha256": "401a74bdca1bf24a7497dd5592e55322f078d2803c74020598b4df2d1a9f6665",
+    "current_concept_sha256": "401a74bdca1bf24a7497dd5592e55322f078d2803c74020598b4df2d1a9f6665",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": true,
+    "local_edges_sha256": "f79d672b8341ae66c697e5c7433e502d2764f19ecb0e2a79b0958bc22eedd402",
+    "direct_association_ids": [],
+    "ancestor_ids": [
+      "RKM-C047",
+      "RKM-C048",
+      "RKM-C054"
+    ],
+    "ancestor_edges": [
+      {
+        "id": "G-20",
+        "specific": "RKM-C048",
+        "general": "RKM-C047"
+      },
+      {
+        "id": "G-23",
+        "specific": "RKM-C054",
+        "general": "RKM-C047"
+      },
+      {
+        "id": "G-28",
+        "specific": "RKM-C057",
+        "general": "RKM-C048"
+      },
+      {
+        "id": "G-29",
+        "specific": "RKM-C057",
+        "general": "RKM-C054"
+      }
+    ],
+    "ancestor_edges_sha256": "50e775311b05d59793fa140d0879f855fe8251bf653e0def39578e46da5798e1",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [
+      {
+        "id": "RKM-C048",
+        "changed_fields": [
+          "typing_rationale"
+        ],
+        "old_record_sha256": "dd9740a2d97dd4e7e7e2268278d083f6b275d1d20c10e031e66b9727d3e2a882",
+        "current_record_sha256": "f4140cf514e288d1d3cde4834851794a1d2815ab678212c05a1ad1ec20ee12ef"
+      }
+    ],
+    "association_neighbor_ids": [],
+    "changed_association_neighbors": [],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [
+      {
+        "id": "GS-RKM-C048",
+        "parent": "RKM-C048",
+        "generalizations": [
+          "G-24",
+          "G-28"
+        ],
+        "isDisjoint": false,
+        "isComplete": false,
+        "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+        "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+        "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent.",
+        "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+        "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+      },
+      {
+        "id": "GS-RKM-C054",
+        "parent": "RKM-C054",
+        "generalizations": [
+          "G-29",
+          "G-31"
+        ],
+        "isDisjoint": true,
+        "isComplete": false,
+        "rationale": "The current person and organization role specializations inherit distinct human/social-entity identity; other bearer kinds are not ruled out.",
+        "example": "A human and an organization are separate role bearers.",
+        "counterexample": "The same individual cannot be both the human bearer and the organization bearer under these definitions.",
+        "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+        "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+      },
+      {
+        "id": "GS-AgentKinds",
+        "parent": "RKM-C047",
+        "generalizations": [
+          "G-20",
+          "G-21"
+        ],
+        "isDisjoint": true,
+        "isComplete": false,
+        "rationale": "Person is defined as a human individual; Organization is an organized social entity. The current model does not close Agent to these two kinds.",
+        "example": "A person and an employing organization are different agents.",
+        "counterexample": "An organization must not be merged with a human representative; an unmodeled agent kind is not excluded by a covering axiom.",
+        "criterion_status": "EXPLICITLY_RETAINED_BEARER_KIND_CRITERION",
+        "specialization_criterion": "Bearer kind: human individual or organized social entity."
+      }
+    ],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C047",
+        "parent": "RKM-C047",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Agent bearer kind",
+          "Mandate participation"
+        ],
+        "rationale": "Retain the separate, disjoint and incomplete AgentKinds set; responsible and authorizing participation must not compete with Person/Organization classification."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  },
+  "RKM-C058": {
+    "concept_id": "RKM-C058",
+    "old_concept_sha256": "6cef739724a8a96f3e65eec6a202388b69ca34bbf5b5157f2d2fe19d354cb059",
+    "current_concept_sha256": "6cef739724a8a96f3e65eec6a202388b69ca34bbf5b5157f2d2fe19d354cb059",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": true,
+    "local_edges_sha256": "1c32d127ef0f59a8978e04e0b272c7cf80e19417390bc18b0a9ff27a70b16127",
+    "direct_association_ids": [],
+    "ancestor_ids": [
+      "RKM-C047",
+      "RKM-C049",
+      "RKM-C054"
+    ],
+    "ancestor_edges": [
+      {
+        "id": "G-21",
+        "specific": "RKM-C049",
+        "general": "RKM-C047"
+      },
+      {
+        "id": "G-23",
+        "specific": "RKM-C054",
+        "general": "RKM-C047"
+      },
+      {
+        "id": "G-30",
+        "specific": "RKM-C058",
+        "general": "RKM-C049"
+      },
+      {
+        "id": "G-31",
+        "specific": "RKM-C058",
+        "general": "RKM-C054"
+      }
+    ],
+    "ancestor_edges_sha256": "3cce53fcb5f1e4916230c522c2a6e6cec8b9801aef144111c64f5e525bda3f99",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [
+      {
+        "id": "RKM-C049",
+        "changed_fields": [
+          "typing_rationale"
+        ],
+        "old_record_sha256": "dd5027b4a0e98c713def9b494576ba4a6170cd2dd0e6bdfeb47098d56816fc6b",
+        "current_record_sha256": "52ad25181dc7182dfce751f851379d0b83d9d4a4da5915f2ccc8f4c87e9bfeeb"
+      }
+    ],
+    "association_neighbor_ids": [],
+    "changed_association_neighbors": [],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [
+      {
+        "id": "GS-RKM-C049",
+        "parent": "RKM-C049",
+        "generalizations": [
+          "G-26",
+          "G-30"
+        ],
+        "isDisjoint": false,
+        "isComplete": false,
+        "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+        "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+        "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent.",
+        "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+        "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+      },
+      {
+        "id": "GS-RKM-C054",
+        "parent": "RKM-C054",
+        "generalizations": [
+          "G-29",
+          "G-31"
+        ],
+        "isDisjoint": true,
+        "isComplete": false,
+        "rationale": "The current person and organization role specializations inherit distinct human/social-entity identity; other bearer kinds are not ruled out.",
+        "example": "A human and an organization are separate role bearers.",
+        "counterexample": "The same individual cannot be both the human bearer and the organization bearer under these definitions.",
+        "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+        "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+      },
+      {
+        "id": "GS-AgentKinds",
+        "parent": "RKM-C047",
+        "generalizations": [
+          "G-20",
+          "G-21"
+        ],
+        "isDisjoint": true,
+        "isComplete": false,
+        "rationale": "Person is defined as a human individual; Organization is an organized social entity. The current model does not close Agent to these two kinds.",
+        "example": "A person and an employing organization are different agents.",
+        "counterexample": "An organization must not be merged with a human representative; an unmodeled agent kind is not excluded by a covering axiom.",
+        "criterion_status": "EXPLICITLY_RETAINED_BEARER_KIND_CRITERION",
+        "specialization_criterion": "Bearer kind: human individual or organized social entity."
+      }
+    ],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C047",
+        "parent": "RKM-C047",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Agent bearer kind",
+          "Mandate participation"
+        ],
+        "rationale": "Retain the separate, disjoint and incomplete AgentKinds set; responsible and authorizing participation must not compete with Person/Organization classification."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  },
+  "RKM-C059": {
+    "concept_id": "RKM-C059",
+    "old_concept_sha256": "497807be636cc975b5903d00f10322daae99f4d7396812d214c9c398dde4060a",
+    "current_concept_sha256": "497807be636cc975b5903d00f10322daae99f4d7396812d214c9c398dde4060a",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": true,
+    "local_edges_sha256": "111e4622d39da9b036aaf7d5b55fc429007d4e3f92e9b0ed572ef30e0e625396",
+    "direct_association_ids": [
+      "R-54",
+      "R-59"
+    ],
+    "ancestor_ids": [
+      "RKM-C014",
+      "RKM-C017",
+      "RKM-C019"
+    ],
+    "ancestor_edges": [
+      {
+        "id": "G2-052",
+        "specific": "RKM-C017",
+        "general": "RKM-C014"
+      },
+      {
+        "id": "G2-053",
+        "specific": "RKM-C019",
+        "general": "RKM-C017"
+      },
+      {
+        "id": "G2-063",
+        "specific": "RKM-C059",
+        "general": "RKM-C019"
+      }
+    ],
+    "ancestor_edges_sha256": "67bf6c1e3e3745e90d89b33beb376f522235a556f78305f2a2e0830e210ea7a1",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [
+      {
+        "id": "RKM-C014",
+        "changed_fields": [
+          "typing_rationale"
+        ],
+        "old_record_sha256": "0367006ebabd6231ebf3cc0ab62ba9ce658d951b713d9d0a14cbda7ff1f96303",
+        "current_record_sha256": "eb7e1738327cd4ac3b8b8e09cac9c089206737b2d9a815a0071f77f3c1ad600e"
+      }
+    ],
+    "association_neighbor_ids": [
+      "RKM-C051",
+      "RKM-C052"
+    ],
+    "changed_association_neighbors": [],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [
+      {
+        "id": "GS-RKM-C019",
+        "parent": "RKM-C019",
+        "generalizations": [
+          "G2-050",
+          "G2-055",
+          "G2-056",
+          "G2-057",
+          "G2-060",
+          "G2-061",
+          "G2-062",
+          "G2-063",
+          "G2-064",
+          "G2-065"
+        ],
+        "isDisjoint": false,
+        "isComplete": false,
+        "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+        "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+        "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent.",
+        "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+        "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+      },
+      {
+        "id": "GS-RKM-C017",
+        "parent": "RKM-C017",
+        "generalizations": [
+          "G2-053",
+          "G2-058",
+          "G2-059"
+        ],
+        "isDisjoint": false,
+        "isComplete": false,
+        "rationale": "No blanket exclusivity or covering constraint is imposed on this sibling group.",
+        "example": "A person may be both responsible and authorizing in different assignments; an artifact may also play an evidential role.",
+        "counterexample": "Do not classify every sibling pair as disjoint or assume these listed specializations exhaust the parent.",
+        "criterion_status": "CARRIED_FORWARD_NOT_REASSESSED_IN_THIS_PACKET",
+        "specialization_criterion": "Existing reviewed set policy retained; its broader semantic review remains separate."
+      }
+    ],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C014",
+        "parent": "RKM-C014",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Documentary specialization",
+          "Contextual evidential participation"
+        ],
+        "rationale": "Shared documentary identity does not supply one specialization criterion for documentary subkinds and an evidential role. Retain every subtype edge; do not invent a replacement set for all subkinds."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  }
+}

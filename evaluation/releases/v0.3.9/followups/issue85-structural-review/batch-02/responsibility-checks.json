@@ -1,0 +1,282 @@
+{
+  "status": "SELECTED_STATIC_SOURCE_CHECKS_NOT_INSTANCE_OR_ENGINE_RESULTS",
+  "concepts": {
+    "RKM-C047": {
+      "stereotype": "category",
+      "is_abstract": true,
+      "declared_identity_supplier": null,
+      "ancestor_identity_providers": [],
+      "ancestor_sortals": [],
+      "descendant_identity_providers": [
+        "RKM-C048",
+        "RKM-C049"
+      ],
+      "inherited_mediations": [],
+      "changed_generalization_endpoints": [
+        {
+          "id": "RKM-C048",
+          "changed_fields": [
+            "typing_rationale"
+          ]
+        },
+        {
+          "id": "RKM-C049",
+          "changed_fields": [
+            "typing_rationale"
+          ]
+        }
+      ]
+    },
+    "RKM-C050": {
+      "stereotype": "subkind",
+      "is_abstract": false,
+      "declared_identity_supplier": "RKM-C014",
+      "ancestor_identity_providers": [
+        "RKM-C014"
+      ],
+      "ancestor_sortals": [
+        "RKM-C014"
+      ],
+      "descendant_identity_providers": [],
+      "inherited_mediations": [],
+      "changed_generalization_endpoints": [
+        {
+          "id": "RKM-C014",
+          "changed_fields": [
+            "typing_rationale"
+          ]
+        }
+      ]
+    },
+    "RKM-C051": {
+      "stereotype": "subkind",
+      "is_abstract": false,
+      "declared_identity_supplier": "RKM-C014",
+      "ancestor_identity_providers": [
+        "RKM-C014"
+      ],
+      "ancestor_sortals": [
+        "RKM-C014"
+      ],
+      "descendant_identity_providers": [],
+      "inherited_mediations": [],
+      "changed_generalization_endpoints": [
+        {
+          "id": "RKM-C014",
+          "changed_fields": [
+            "typing_rationale"
+          ]
+        }
+      ]
+    },
+    "RKM-C053": {
+      "stereotype": "roleMixin",
+      "is_abstract": true,
+      "declared_identity_supplier": null,
+      "ancestor_identity_providers": [],
+      "ancestor_sortals": [],
+      "descendant_identity_providers": [
+        "RKM-C048",
+        "RKM-C049"
+      ],
+      "inherited_mediations": [
+        {
+          "id": "R-56",
+          "source": "RKM-C052",
+          "target": "RKM-C053",
+          "source_end_cardinality": "1..*",
+          "target_end_cardinality": "1"
+        }
+      ],
+      "changed_generalization_endpoints": []
+    },
+    "RKM-C054": {
+      "stereotype": "roleMixin",
+      "is_abstract": true,
+      "declared_identity_supplier": null,
+      "ancestor_identity_providers": [],
+      "ancestor_sortals": [],
+      "descendant_identity_providers": [
+        "RKM-C048",
+        "RKM-C049"
+      ],
+      "inherited_mediations": [
+        {
+          "id": "R-57",
+          "source": "RKM-C052",
+          "target": "RKM-C054",
+          "source_end_cardinality": "1..*",
+          "target_end_cardinality": "1"
+        }
+      ],
+      "changed_generalization_endpoints": []
+    },
+    "RKM-C055": {
+      "stereotype": "role",
+      "is_abstract": false,
+      "declared_identity_supplier": "RKM-C048",
+      "ancestor_identity_providers": [
+        "RKM-C048"
+      ],
+      "ancestor_sortals": [
+        "RKM-C048"
+      ],
+      "descendant_identity_providers": [],
+      "inherited_mediations": [
+        {
+          "id": "R-56",
+          "source": "RKM-C052",
+          "target": "RKM-C053",
+          "source_end_cardinality": "1..*",
+          "target_end_cardinality": "1"
+        }
+      ],
+      "changed_generalization_endpoints": [
+        {
+          "id": "RKM-C048",
+          "changed_fields": [
+            "typing_rationale"
+          ]
+        }
+      ]
+    },
+    "RKM-C056": {
+      "stereotype": "role",
+      "is_abstract": false,
+      "declared_identity_supplier": "RKM-C049",
+      "ancestor_identity_providers": [
+        "RKM-C049"
+      ],
+      "ancestor_sortals": [
+        "RKM-C049"
+      ],
+      "descendant_identity_providers": [],
+      "inherited_mediations": [
+        {
+          "id": "R-56",
+          "source": "RKM-C052",
+          "target": "RKM-C053",
+          "source_end_cardinality": "1..*",
+          "target_end_cardinality": "1"
+        }
+      ],
+      "changed_generalization_endpoints": [
+        {
+          "id": "RKM-C049",
+          "changed_fields": [
+            "typing_rationale"
+          ]
+        }
+      ]
+    },
+    "RKM-C057": {
+      "stereotype": "role",
+      "is_abstract": false,
+      "declared_identity_supplier": "RKM-C048",
+      "ancestor_identity_providers": [
+        "RKM-C048"
+      ],
+      "ancestor_sortals": [
+        "RKM-C048"
+      ],
+      "descendant_identity_providers": [],
+      "inherited_mediations": [
+        {
+          "id": "R-57",
+          "source": "RKM-C052",
+          "target": "RKM-C054",
+          "source_end_cardinality": "1..*",
+          "target_end_cardinality": "1"
+        }
+      ],
+      "changed_generalization_endpoints": [
+        {
+          "id": "RKM-C048",
+          "changed_fields": [
+            "typing_rationale"
+          ]
+        }
+      ]
+    },
+    "RKM-C058": {
+      "stereotype": "role",
+      "is_abstract": false,
+      "declared_identity_supplier": "RKM-C049",
+      "ancestor_identity_providers": [
+        "RKM-C049"
+      ],
+      "ancestor_sortals": [
+        "RKM-C049"
+      ],
+      "descendant_identity_providers": [],
+      "inherited_mediations": [
+        {
+          "id": "R-57",
+          "source": "RKM-C052",
+          "target": "RKM-C054",
+          "source_end_cardinality": "1..*",
+          "target_end_cardinality": "1"
+        }
+      ],
+      "changed_generalization_endpoints": [
+        {
+          "id": "RKM-C049",
+          "changed_fields": [
+            "typing_rationale"
+          ]
+        }
+      ]
+    },
+    "RKM-C059": {
+      "stereotype": "subkind",
+      "is_abstract": false,
+      "declared_identity_supplier": "RKM-C014",
+      "ancestor_identity_providers": [
+        "RKM-C014"
+      ],
+      "ancestor_sortals": [
+        "RKM-C014",
+        "RKM-C017",
+        "RKM-C019"
+      ],
+      "descendant_identity_providers": [],
+      "inherited_mediations": [],
+      "changed_generalization_endpoints": []
+    }
+  },
+  "selected_relations": {
+    "R-53": {
+      "id": "R-53",
+      "source": "RKM-C050",
+      "target": "RKM-C047",
+      "predicate": "resolvesToAgent",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "R-55": {
+      "id": "R-55",
+      "source": "RKM-C051",
+      "target": "RKM-C052",
+      "predicate": "documentsActualMandate",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "R-56": {
+      "id": "R-56",
+      "source": "RKM-C052",
+      "target": "RKM-C053",
+      "predicate": "mediatesBearer",
+      "source_end_cardinality": "1..*",
+      "target_end_cardinality": "1"
+    },
+    "R-57": {
+      "id": "R-57",
+      "source": "RKM-C052",
+      "target": "RKM-C054",
+      "predicate": "mediatesAuthority",
+      "source_end_cardinality": "1..*",
+      "target_end_cardinality": "1"
+    }
+  },
+  "set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad"
+}

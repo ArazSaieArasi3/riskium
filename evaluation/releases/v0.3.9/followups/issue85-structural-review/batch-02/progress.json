@@ -1,0 +1,169 @@
+{
+  "status": "DOCUMENTARY_CURATION_ONLY_NOT_RELEASED",
+  "completed": 46,
+  "population": 82,
+  "remaining": 36,
+  "batches": [
+    {
+      "execution": "N3b-1",
+      "subdomain_ids": [
+        "D01",
+        "D03"
+      ],
+      "concept_ids": [
+        "RKM-C001",
+        "RKM-C002",
+        "RKM-C003",
+        "RKM-C005",
+        "RKM-C006",
+        "RKM-C017",
+        "RKM-C018",
+        "RKM-C019",
+        "RKM-C020",
+        "RKM-C021",
+        "RKM-X06"
+      ],
+      "status": "DOCUMENTARY_DECISIONS_RECORDED",
+      "remaining_concept_ids": []
+    },
+    {
+      "execution": "N3b-2",
+      "subdomain_ids": [
+        "D07"
+      ],
+      "concept_ids": [
+        "RKM-C047",
+        "RKM-C050",
+        "RKM-C051",
+        "RKM-C053",
+        "RKM-C054",
+        "RKM-C055",
+        "RKM-C056",
+        "RKM-C057",
+        "RKM-C058",
+        "RKM-C059"
+      ],
+      "status": "DOCUMENTARY_DECISIONS_RECORDED",
+      "remaining_concept_ids": []
+    },
+    {
+      "execution": "N3b-3",
+      "subdomain_ids": [
+        "D04",
+        "D08"
+      ],
+      "concept_ids": [
+        "RKM-C022",
+        "RKM-C024",
+        "RKM-C025",
+        "RKM-C026",
+        "RKM-C027",
+        "RKM-C028",
+        "RKM-C029",
+        "RKM-C030",
+        "RKM-C060",
+        "RKM-C061",
+        "RKM-C062"
+      ],
+      "status": "PENDING",
+      "remaining_concept_ids": [
+        "RKM-C022",
+        "RKM-C024",
+        "RKM-C025",
+        "RKM-C026",
+        "RKM-C027",
+        "RKM-C028",
+        "RKM-C029",
+        "RKM-C030",
+        "RKM-C060",
+        "RKM-C061",
+        "RKM-C062"
+      ]
+    },
+    {
+      "execution": "N3b-4",
+      "subdomain_ids": [
+        "D05"
+      ],
+      "concept_ids": [
+        "RKM-C032",
+        "RKM-C033",
+        "RKM-C034",
+        "RKM-C035",
+        "RKM-C036",
+        "RKM-C037",
+        "RKM-C038",
+        "RKM-C039",
+        "RKM-C040",
+        "RKM-X03",
+        "RKM-X04"
+      ],
+      "status": "PENDING",
+      "remaining_concept_ids": [
+        "RKM-C032",
+        "RKM-C033",
+        "RKM-C034",
+        "RKM-C035",
+        "RKM-C036",
+        "RKM-C037",
+        "RKM-C038",
+        "RKM-C039",
+        "RKM-C040",
+        "RKM-X03",
+        "RKM-X04"
+      ]
+    },
+    {
+      "execution": "N3b-5",
+      "subdomain_ids": [
+        "D06",
+        "D11"
+      ],
+      "concept_ids": [
+        "RKM-C041",
+        "RKM-C042",
+        "RKM-C043",
+        "RKM-C046",
+        "RKM-C072",
+        "RKM-C073",
+        "RKM-C074",
+        "RKM-X02",
+        "RKM-X05"
+      ],
+      "status": "PENDING",
+      "remaining_concept_ids": [
+        "RKM-C041",
+        "RKM-C042",
+        "RKM-C043",
+        "RKM-C046",
+        "RKM-C072",
+        "RKM-C073",
+        "RKM-C074",
+        "RKM-X02",
+        "RKM-X05"
+      ]
+    },
+    {
+      "execution": "N3b-6",
+      "subdomain_ids": [
+        "D09",
+        "D10"
+      ],
+      "concept_ids": [
+        "RKM-C065",
+        "RKM-C068",
+        "RKM-C069",
+        "RKM-C070",
+        "RKM-C071"
+      ],
+      "status": "PENDING",
+      "remaining_concept_ids": [
+        "RKM-C065",
+        "RKM-C068",
+        "RKM-C069",
+        "RKM-C070",
+        "RKM-C071"
+      ]
+    }
+  ]
+}

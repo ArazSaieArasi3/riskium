@@ -1,0 +1,152 @@
+{
+  "agent": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Agent",
+    "locator": "§4.1, Agent",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Agent",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "128103b0ba6608c88960fd812b04dab4169027e3db062c596c282b1f1107fb19",
+    "selected_text_chars": 6090,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "entity": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Entity",
+    "locator": "§4.1, Entity",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Entity",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "68568626e2aaac9a8bef941f76678915e5943b264d81db366b574d1c1c26e406",
+    "selected_text_chars": 4600,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "association": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Association",
+    "locator": "§4.3, Association",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Association",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "42887bef8d774316e9ba8eeddc38c2bc3d55601d73b11f396d26edf9cd5ff194",
+    "selected_text_chars": 9093,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "role": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Role",
+    "locator": "§4.3, Role",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Role",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "c1aff13b64fd409876b28a5997c41d4e61e6aafb449dd5d89bc0bcf3a1acdd9c",
+    "selected_text_chars": 6331,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "person": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Person",
+    "locator": "§4.2, Person",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Person",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "d67ae47912420fa1cc948573ee672c05ad46fb6ade905e68e871596615a68626",
+    "selected_text_chars": 7295,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "org": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Organization",
+    "locator": "§4.2, Organization",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Organization",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "65aaafb848f0f5173500f177381525ebd30009acd504fbf9e825e8904f93dfcf",
+    "selected_text_chars": 8000,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "concept": {
+    "source_id": "skos",
+    "source_document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+    "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts",
+    "locator": "§3, especially §§3.1 and 3.5.1",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "concepts",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "e062730be494b6868966a98dec012e676541b6572370318eeac944031529f5ab",
+    "selected_text_chars": 10644,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "ontouml_role": {
+    "source_id": "ontouml_role",
+    "source_document_sha256": "60406b5d810cfcb6e5437724f862876f46d6230b5c6c203ad59a53b289f3616a",
+    "url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/role/index.html#definition",
+    "locator": "Definition and constraints C1-C2",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "definition",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "fe41c164d43a164c946be3bee20aa25b45b75dcaea91f38cf113b9051780fca8",
+    "selected_text_chars": 2559,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "ontouml_rolemixin": {
+    "source_id": "ontouml_rolemixin",
+    "source_document_sha256": "a3e23bab51f49e7b5f143bbc74e410d109332fadcc5b9a8a1d375b7c4a1b7ae7",
+    "url": "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/rolemixin/index.html#definition",
+    "locator": "Definition and constraints C1-C2",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "definition",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "deb993d9f0ab5b6005dd403d7e7657155b7ec98414e7698c20e7afd0cb88b86e",
+    "selected_text_chars": 1544,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "ontouml_category": {
+    "source_id": "ontouml_category",
+    "source_document_sha256": "5df2accaa8005f772b608e5fb3c2495345ee1e5959832e0e4558b71fa042ae31",
+    "url": "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/category/index.html#definition",
+    "locator": "Definition and constraints C1-C2",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "definition",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "91e9c06aa52eb9ab0e984c0899b9aae601dbefcea5a300496593076cf73b719c",
+    "selected_text_chars": 1479,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  }
+}
