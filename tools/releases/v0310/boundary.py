@@ -7,7 +7,7 @@ import routing
 MUTABLE = {'plans/next-releases.md', 'evaluation/releases/v0.3.9/followups/issue85-structural-review/README.md',
            'evaluation/releases/v0.3.10/README.md', routing.CURRENT}
 NEW = ('tools/releases/v0310/', 'evaluation/releases/v0.3.10/')
-FILES = {'releases/selection-v0.3.10.json', 'releases/routing-v0.3.10.json'}
+FILES = {'releases/selection-v0.3.10.json', 'releases/routing-v0.3.10.json', '.github/workflows/publication-v0310.yml'}
 
 
 def check():

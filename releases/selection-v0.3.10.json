@@ -11374,19 +11374,23 @@
       "version": "0.3.10-N5a",
       "compatible_model": "0.3.2",
       "status": "PREPARED_NOT_PUBLISHED",
-      "scope": "Retained guides/history and current reader are composed without deployment; legacy writes are disabled and read-only replay is source-pinned.",
+      "scope": "Retained guides/history and current reader are composed without deployment; legacy writes are disabled and read-only replay is source-pinned. The publication adapter is gated by an exact later release intent and actual public assets.",
       "files": [
         {
           "path": ".github/workflows/curation-v0310.yml",
           "sha256": "32b815d08e7f4aede78587a80eb611b5675d0564971cd3c66fb39f7874b78703"
         },
         {
+          "path": ".github/workflows/publication-v0310.yml",
+          "sha256": "5172612da0f9b513679276a8edf3280b3dc6744a45e6c74136321a674bde0727"
+        },
+        {
           "path": "releases/routing-v0.3.10.json",
-          "sha256": "9a80c5e7771b4a5dc8aba29af601534c817c4de5a9c2141fb49aac65ac147424"
+          "sha256": "437434fd90bb3a0d6d4dd8b77ef2b5f3c4441a3f9096b729539576b8c3217c5b"
         },
         {
           "path": "tools/releases/v0310/compose.py",
-          "sha256": "eb3ae8cd05bad9f1b90cc12a6920ac5f20bcada483dc93b0912b48ded7a2ea4a"
+          "sha256": "89e895526a953ffaf3ef41884940da408ed1204c4252cf2908293d25bb603dd0"
         },
         {
           "path": "tools/releases/v0310/guides/Artifact-Versions.md",
@@ -11488,11 +11492,11 @@
         },
         {
           "path": "tools/releases/v0310/boundary.py",
-          "sha256": "d1c8a2f562686238d0f661eef0760f3a5be4e90c9ad6f1a0a13fa46f703bdb47"
+          "sha256": "9d6e488451c649a6ce2a8f47866bbb8c2ee50685f453699ab152136f13fe14ff"
         },
         {
           "path": "tools/releases/v0310/compose.py",
-          "sha256": "eb3ae8cd05bad9f1b90cc12a6920ac5f20bcada483dc93b0912b48ded7a2ea4a"
+          "sha256": "89e895526a953ffaf3ef41884940da408ed1204c4252cf2908293d25bb603dd0"
         },
         {
           "path": "tools/releases/v0310/curation.py",
@@ -11505,6 +11509,14 @@
         {
           "path": "tools/releases/v0310/projection.py",
           "sha256": "7b22b6e623057f084d42d8664f3268d68e81b39e13f2915b0c82f42a23adbd03"
+        },
+        {
+          "path": "tools/releases/v0310/publication/build.py",
+          "sha256": "30a16df06c56a6b32d66923580e61e965be5698ee0cf575aa19554416520a93b"
+        },
+        {
+          "path": "tools/releases/v0310/publication/test_publication.py",
+          "sha256": "6099e6029f35f60697ee3b0731801a289ae53fd7474103bc05949e28e5bfa8ac"
         },
         {
           "path": "tools/releases/v0310/qualify.py",
@@ -11528,11 +11540,11 @@
         },
         {
           "path": "tools/releases/v0310/routing.py",
-          "sha256": "db386acf395be780fc043a9369591f58a9f4f9ae08a2a977bd2df0ad010e20b5"
+          "sha256": "00881ab66edf34a95cfea1f23901cd49ff32cfe38250c3fded78f024d05611f6"
         },
         {
           "path": "tools/releases/v0310/selection.py",
-          "sha256": "62121edeaf19b7134079b2268ab5e85e99cc6c9c894f7a76ebb4c81c7f30fd4a"
+          "sha256": "ad63c2527cdc94ce1fbe00f93bf8d91bdf497171bb0e909dd8169983ce6e663a"
         },
         {
           "path": "tools/releases/v0310/test_contracts.py",
@@ -12163,6 +12175,7 @@
     ".github/workflows/assessment-selection.yml": "bd98e8e9295f447ee51995b4810f4f1c0e94b822d5d328e33eb2ee2097db14eb",
     ".github/workflows/curation-v0310.yml": "32b815d08e7f4aede78587a80eb611b5675d0564971cd3c66fb39f7874b78703",
     ".github/workflows/issue93-candidate.yml": "84eca7a593f228eccdae7925663c90b5cb3240b48b912ae889eaeb47ac3129ef",
+    ".github/workflows/publication-v0310.yml": "5172612da0f9b513679276a8edf3280b3dc6744a45e6c74136321a674bde0727",
     "AUTHORS.md": "c20830d719b9b1d1b13d85cac69253274a974edb79b3a2c56148fd900d038447",
     "CITATION.cff": "78c70526fa1aef23a1bfe4bbd6be97a81c98193b50819e9d9dcb391b223d43ae",
     "LICENSE": "05363db8be18bb10de7ebd08967a89b8cc1eee748bf209ca7e6bbbf7028ca4ba",
@@ -13363,7 +13376,7 @@
     "releases/distribution-v0.3.4.json": "a5f0a645dac4998862a99ca76564f705f72f61c03b7f40e89385c7ca4edca4ac",
     "releases/preparation-policy-v0.3.4.json": "a05d0be68dc357cda67484e389550c61692e9354390ab807a1f90262fc4cfe38",
     "releases/prepared-components-v0.3.4.json": "88ece33af34bb88f01be0235017186535043270d1bd7f0d9f99aa76b3a0ab462",
-    "releases/routing-v0.3.10.json": "9a80c5e7771b4a5dc8aba29af601534c817c4de5a9c2141fb49aac65ac147424",
+    "releases/routing-v0.3.10.json": "437434fd90bb3a0d6d4dd8b77ef2b5f3c4441a3f9096b729539576b8c3217c5b",
     "releases/selection-policy-v0.3.4.json": "033ea88e38f6671bebb6a3785dc41232bfb710f62c59e06c61c04dfe85abdb6a",
     "releases/selection-policy-v0.3.9.json": "e7903ae02f48a21b8813f553b64d85bcd7673e808b4b41f30179c562dbd92a69",
     "releases/selection-v0.3.4.json": "e9914305de9228c8af9d5b09975edb79c7dcfdd0f022c0f3233f9649fb1077d4",
@@ -13487,8 +13500,8 @@
     "tools/relational_risk_nature.py": "35a2406fec25e8d21244db701a0b39e9d0f9001b050ae9e4a77bcc690ac2de4e",
     "tools/relational_source_scenario.py": "ca62c59d9ea31352c3b92a8a0f1e28a82a498faa49a7d2cd2137478db09a2191",
     "tools/relational_source_scenario_lineage.py": "0fddac0d97c9bbf2eb7d0947c0f989978e9f6b0e2b2ce94b160983035ecd3d36",
-    "tools/releases/v0310/boundary.py": "d1c8a2f562686238d0f661eef0760f3a5be4e90c9ad6f1a0a13fa46f703bdb47",
-    "tools/releases/v0310/compose.py": "eb3ae8cd05bad9f1b90cc12a6920ac5f20bcada483dc93b0912b48ded7a2ea4a",
+    "tools/releases/v0310/boundary.py": "9d6e488451c649a6ce2a8f47866bbb8c2ee50685f453699ab152136f13fe14ff",
+    "tools/releases/v0310/compose.py": "89e895526a953ffaf3ef41884940da408ed1204c4252cf2908293d25bb603dd0",
     "tools/releases/v0310/curation.py": "f145dfb226870377ca667d4f8ae49a7cd8a283c42952c5e0b819144d82f603fd",
     "tools/releases/v0310/guard.py": "044133de62f0b43ffc2ea69736dc968e21f5a2136ea96f47bb0c6d2cfaed1841",
     "tools/releases/v0310/guides/Artifact-Versions.md": "01df768314b9ace69cb327e9221796d69bf1a1fa82b645318f0fbb082082e370",
@@ -13518,13 +13531,15 @@
     "tools/releases/v0310/package/test_package.py": "6befe46e7619a42a43e4399cf7dab738b003fd0a64cd907fffc3235d0212c0a9",
     "tools/releases/v0310/package/verify_package.py": "f17d4c2cd51c6de5b2b6646262d71cbf2f5f81936208a057beabfef32bfbe841",
     "tools/releases/v0310/projection.py": "7b22b6e623057f084d42d8664f3268d68e81b39e13f2915b0c82f42a23adbd03",
+    "tools/releases/v0310/publication/build.py": "30a16df06c56a6b32d66923580e61e965be5698ee0cf575aa19554416520a93b",
+    "tools/releases/v0310/publication/test_publication.py": "6099e6029f35f60697ee3b0731801a289ae53fd7474103bc05949e28e5bfa8ac",
     "tools/releases/v0310/qualify.py": "9861649d6b22b86fc7a9f4124a9e9a1a1aad47efc9e8696b423959806b75ebcb",
     "tools/releases/v0310/qualify_n5a.py": "6daa9ca62170471646e91b76728aa3ec5f69bf3b3dca3b826fecb347418e0cc3",
     "tools/releases/v0310/reader.py": "c9a8d91aff06ea154e3ddc332d23a7bba4f07a00b496bf48e97cebe1397e90d7",
     "tools/releases/v0310/requirements-n5a.txt": "b584915d405f33e936df02c20bf6ba7f063b5d1956c18105d02c9cd71448a027",
     "tools/releases/v0310/requirements.txt": "f0fb1973ace0fae572144a11aecfc7cc872d07ecb2bd0ac082f638c4347e3b04",
-    "tools/releases/v0310/routing.py": "db386acf395be780fc043a9369591f58a9f4f9ae08a2a977bd2df0ad010e20b5",
-    "tools/releases/v0310/selection.py": "62121edeaf19b7134079b2268ab5e85e99cc6c9c894f7a76ebb4c81c7f30fd4a",
+    "tools/releases/v0310/routing.py": "00881ab66edf34a95cfea1f23901cd49ff32cfe38250c3fded78f024d05611f6",
+    "tools/releases/v0310/selection.py": "ad63c2527cdc94ce1fbe00f93bf8d91bdf497171bb0e909dd8169983ce6e663a",
     "tools/releases/v0310/test_contracts.py": "dd2fa2b5e530667e682fd73dce08c095fe25c9187a41c6c68a573338bec4cc1e",
     "tools/releases/v0310/test_n5a.py": "1e009bfeec367b3c3a1d3441dabf5b2249074971b836351727168c03bf446dfe",
     "tools/releases/v0310/wiki-history/References.md": "673864ad039ea515c2b0c89d55e82f23e17cf5be18bcdaed60bb361714894597",
@@ -13555,7 +13570,7 @@
   "summary": {
     "active_components": 8,
     "historical_components": 38,
-    "selected_files": 1392,
+    "selected_files": 1395,
     "historical_aliases": 2
   },
   "article_binaries_included": false,

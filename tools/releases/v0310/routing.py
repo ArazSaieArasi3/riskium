@@ -11,6 +11,8 @@ BASELINE = '7b8f43847ca1d45f0735e8b73d9d9fabd8701e62'
 HISTORICAL = '3ce6f5573e2e0a698591615a7ded75c2f9451444'
 POLICY = curation.ROOT / 'releases/routing-v0.3.10.json'
 CURRENT = '.github/workflows/curation-v0310.yml'
+PUBLISHED_READERS = {'assessment-reader-main.yml', 'dictionary-reader.yml', 'released-reader-main.yml',
+                     'released-v037-reader.yml', 'external-definition-reader.yml', 'reader-v038.yml'}
 
 
 def git(*args):
@@ -28,15 +30,16 @@ def legacy_target(data):
     return 'main' in push.get('branches', []) or 'pull_request' in on or 'workflow_run' in on
 
 
-def expected(data):
+def expected(data, path=''):
     d = copy.deepcopy(data)
     roles = {}
     for name, job in d['jobs'].items():
         permissions = {**d.get('permissions', {}), **job.get('permissions', {})}
         write = name in {'deploy', 'publish', 'retire'} or any(v == 'write' for v in permissions.values())
-        if write:
+        retired_build = Path(path).name in PUBLISHED_READERS and name == 'build'
+        if write or retired_build:
             job['if'] = '${{ false }}'
-            roles[name] = 'DISABLED_LEGACY_WRITE'
+            roles[name] = 'RETIRED_PUBLISHED_READER_BUILD' if retired_build else 'DISABLED_LEGACY_WRITE'
         else:
             roles[name] = 'SOURCE_PINNED_READ_ONLY_REPLAY'
             for step in job.get('steps', []):
@@ -94,7 +97,7 @@ def build(check=False):
             rows.append({'path': name, 'role': 'PRESERVED_BRANCH_SPECIFIC_SOURCE', 'sha256': curation.sha(text.encode())})
             curation.need((curation.ROOT / name).read_text() == text, 'Branch-specific workflow changed')
             continue
-        target, roles = expected(parsed)
+        target, roles = expected(parsed, name)
         result = edit_text(text, target)
         if check:
             curation.need((curation.ROOT / name).read_text() == result, 'Stale source-pinned scheduler: ' + name)

@@ -133,11 +133,14 @@ def build(out, source_ref, baseline_site, baseline_wiki, shell_module):
     return audit(out)
 
 
-def audit(out):
+def audit(out, allow_published=False):
     out = Path(out).resolve()
     site, wiki = out / 'site', out / 'wiki'
     m = curation.load(site / 'publication-manifest.json')
-    curation.need(not m['published'] and not m['live_channel_readback'], 'Premature channel acceptance')
+    if allow_published:
+        curation.need(m['published'] is True and m.get('source_publication_verified') is True and isinstance(m.get('release_id'), int), 'Missing verified publication binding')
+    else:
+        curation.need(not m['published'] and not m['live_channel_readback'], 'Premature channel acceptance')
     actual = {p.relative_to(site).as_posix() for p in site.rglob('*') if p.is_file()}
     curation.need(actual == set(m['files_sha256']) | {'publication-manifest.json'}, 'Composed site inventory differs')
     curation.need({p.name for p in wiki.glob('*.md')} == set(m['wiki_files_sha256']), 'Composed Wiki inventory differs')
@@ -189,8 +192,8 @@ def audit(out):
         html = ' '.join(soup(site / pair['html']).main.get_text(' ', strip=True).split())
         wt = (wiki / pair['wiki']).read_text().split('<!-- BEGIN CURATION BODY -->\n', 1)[1].split('\n<!-- END CURATION BODY -->', 1)[0]
         curation.need(curation.sha(html.encode()) == pair['plain_text_sha256'] == curation.sha(projection.plain(wt).encode()), 'Composed HTML/Wiki/source text parity: ' + slug)
-    return {'status': 'PASS_FULL_COMPOSED_CANDIDATE_NOT_PUBLISHED', 'source_ref': m['source_ref'],
+    return {'status': 'PASS_FULL_COMPOSED_PUBLISHED_SOURCE' if allow_published else 'PASS_FULL_COMPOSED_CANDIDATE_NOT_PUBLISHED', 'source_ref': m['source_ref'],
             'paired_bodies': len(m['pairs']), 'wiki_files': len(m['wiki_files_sha256']), 'retained_guides': len(m['retained_guides']),
             'pages_files': len(actual), 'html_bodies_checked': len(checked), 'html_local_links': html_links, 'wiki_local_links': wiki_links,
             'frozen_snapshot_files_preserved': len(m['frozen_snapshot_sha256']), 'historical_wiki_files_preserved': len(m['historical_wiki_sha256']),
-            'published': False, 'live_channel_readback': False}
+            'published': bool(allow_published), 'live_channel_readback': False}

@@ -23,14 +23,13 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
+    if: ${{ false }}
     # This publisher owns the qualified 0.4.6 checkpoint; 0.4.7 has its own workflow.
-    if: github.event_name == 'pull_request' || github.sha == '97ac0b88a092ad8d12d31e6a7e22d70adf406093'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: 3ce6f5573e2e0a698591615a7ded75c2f9451444
           fetch-depth: 0
           persist-credentials: false
       - uses: actions/setup-python@v5

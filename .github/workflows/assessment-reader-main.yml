@@ -19,12 +19,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
-    if: >-
-      github.event_name != 'workflow_run' ||
-      (github.event.workflow_run.conclusion == 'success' &&
-       github.event.workflow_run.event == 'push' &&
-       github.event.workflow_run.head_branch == 'main' &&
-       github.event.workflow_run.head_repository.full_name == github.repository)
+    if: ${{ false }}
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
@@ -32,7 +27,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-          ref: 3ce6f5573e2e0a698591615a7ded75c2f9451444
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'

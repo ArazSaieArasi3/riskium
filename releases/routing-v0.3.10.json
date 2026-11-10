@@ -19,12 +19,12 @@
       "path": ".github/workflows/assessment-reader-main.yml",
       "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
       "jobs": {
-        "build": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "build": "RETIRED_PUBLISHED_READER_BUILD",
         "deploy": "DISABLED_LEGACY_WRITE",
         "readback": "SOURCE_PINNED_READ_ONLY_REPLAY"
       },
       "baseline_sha256": "ec512ee55ac589ca2e45907ca6091198e9f27b70d95e82f50bb7ddb3a7538eaa",
-      "routed_sha256": "943206c4f4b95627b712d5f340083f9ef9e32689a5e684545e729afa45ecce68",
+      "routed_sha256": "e4c64db67a722a83c1a84468b54770f2b3031d9126fcd3763ffedce9a5bbab32",
       "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
     },
     {
@@ -71,11 +71,11 @@
       "path": ".github/workflows/dictionary-reader.yml",
       "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
       "jobs": {
-        "build": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "build": "RETIRED_PUBLISHED_READER_BUILD",
         "deploy": "DISABLED_LEGACY_WRITE"
       },
       "baseline_sha256": "d167cb42d5406fbcda05fa148bc0d80db521ddc78c4aad2f7637b8701a3de688",
-      "routed_sha256": "726283244bd755029cc27473885f1e6fef4e285aa626e9de53a12a047206a6e2",
+      "routed_sha256": "762385ad5157e065dc7ab479faef63401688247ce49db86123261984d089e59f",
       "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
     },
     {
@@ -102,11 +102,11 @@
       "path": ".github/workflows/external-definition-reader.yml",
       "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
       "jobs": {
-        "build": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "build": "RETIRED_PUBLISHED_READER_BUILD",
         "deploy": "DISABLED_LEGACY_WRITE"
       },
       "baseline_sha256": "e1e01eb4dccc803df4e8ac893fc3f18aeb6e8fecf181dbaca734a15c605c21bc",
-      "routed_sha256": "80451c9a8cbe2ee1a2ce8fea7222556fd96b8ee3f497876effd780914b3aa055",
+      "routed_sha256": "c1e7b7339f073728a7b1084c8061fe3fac1aa8dd508096fe2780116e78a09d89",
       "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
     },
     {
@@ -206,11 +206,11 @@
       "path": ".github/workflows/reader-v038.yml",
       "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
       "jobs": {
-        "build": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "build": "RETIRED_PUBLISHED_READER_BUILD",
         "deploy": "DISABLED_LEGACY_WRITE"
       },
       "baseline_sha256": "7338f8b17b195f22ee56762886bcb8b325ba5819eadca93b0e45fa79ccbc530d",
-      "routed_sha256": "ebb4ee086dafe16ac23fbb12c577faf6ad74c0f30a61afd69cfe665be85174ee",
+      "routed_sha256": "2fb5a8792fe39c1b9d89512f86adc1db52f893176257e8e22b75c4dd3fee10e1",
       "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
     },
     {
@@ -278,24 +278,24 @@
       "path": ".github/workflows/released-reader-main.yml",
       "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
       "jobs": {
-        "build": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "build": "RETIRED_PUBLISHED_READER_BUILD",
         "deploy": "DISABLED_LEGACY_WRITE",
         "readback": "SOURCE_PINNED_READ_ONLY_REPLAY"
       },
       "baseline_sha256": "a45c9e9cf1772999fdeabcdfbd31f8b0962e1b3905b50c556a075b28dd1aaeb4",
-      "routed_sha256": "6e113460871d1f75787c174dbd89265f11c6aa139c64b82c9b43352101c21fc9",
+      "routed_sha256": "738894d1f036dc0c587039bed19a6aa50ab82c23c54975f8720a357d69f1fecc",
       "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
     },
     {
       "path": ".github/workflows/released-v037-reader.yml",
       "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
       "jobs": {
-        "build": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "build": "RETIRED_PUBLISHED_READER_BUILD",
         "deploy": "DISABLED_LEGACY_WRITE",
         "readback": "SOURCE_PINNED_READ_ONLY_REPLAY"
       },
       "baseline_sha256": "33969a5264a8fe0420efb55d6b7ce0f0b30d63f9280d3e57fe86e305b93392c3",
-      "routed_sha256": "f00aa9060e5f5d4ffc16eca76f5cafd3c514a843877b620fc25441e41d1cc50e",
+      "routed_sha256": "e3fc325bca23f141560ddf8aca5191cfae11b344e7f00e66692219c4bd7053b1",
       "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
     },
     {

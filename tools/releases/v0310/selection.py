@@ -49,7 +49,7 @@ def make(write_aliases=False):
     here = Path(__file__).parent
     data = curation.load(curation.REVIEW)
     review_inputs = [ROOT / n for n in data['inputs_sha256']]
-    python = sorted(here.glob('*.py'))
+    python = sorted(here.glob('*.py')) + sorted((here / 'publication').glob('*.py'))
     package = sorted(p for p in (here / 'package').glob('*') if p.is_file())
     active = [
         comp('MODEL032', 'Preserved scientific source', '0.3.2', previous_paths('MODEL032'), 'Scientific bytes and prior engine receipts are preserved; documentary successor qualification is separate.'),
@@ -57,7 +57,7 @@ def make(write_aliases=False):
         comp('CASE_TASK_PROFILE010', 'Preserved explicit-data task profile', '0.1.0', previous_paths('CASE_TASK_PROFILE010'), 'Analytical and local operational task boundaries remain distinct; no new database population is admitted.'),
         comp('CURATION020', 'Current documentary curation', '0.2.0', list(curation.OUT.glob('*')) + review_inputs + [here / 'curation.py'], '82 documentary dispositions, including three normative deferrals; no formal equivalence or independent semantic rating.'),
         comp('READER0410', 'Current source-qualified concept reader', '0.4.10', list(reader.OUT.glob('*')) + [here / 'reader.py', here / 'projection.py'], 'Preserved authored bodies plus current comparisons and separate foundations.'),
-        comp('DELIVERY0310', 'Composed full-site and native Wiki candidate', '0.3.10-N5a', list((here / 'guides').glob('*.md')) + list((here / 'wiki-history').glob('*.md')) + [here / 'compose.py', ROOT / 'releases/routing-v0.3.10.json'] + [ROOT / routing.CURRENT], 'Retained guides/history and current reader are composed without deployment; legacy writes are disabled and read-only replay is source-pinned.'),
+        comp('DELIVERY0310', 'Composed full-site and native Wiki candidate', '0.3.10-N5a', list((here / 'guides').glob('*.md')) + list((here / 'wiki-history').glob('*.md')) + [here / 'compose.py', ROOT / 'releases/routing-v0.3.10.json', ROOT / '.github/workflows/publication-v0310.yml'] + [ROOT / routing.CURRENT], 'Retained guides/history and current reader are composed without deployment; legacy writes are disabled and read-only replay is source-pinned. The publication adapter is gated by an exact later release intent and actual public assets.'),
         comp('QUALIFICATION0310', 'Documentary candidate qualification', '0.3.10-N5a', python + [here / 'requirements.txt', here / 'requirements-n5a.txt', ROOT / routing.CURRENT], 'Exact-source integrity, source-pinned replay, paired full-channel output, preserved snapshots and reproducibility; no new engine or expert claim.'),
         comp('PACKAGE0310', 'Deterministic package and offline verifier', '0.3.10-N5a', package, 'Six committed-source assets with separately executable offline integrity and provenance checks. Actual release publication remains N5b.')]
     artifacts = retained + active
