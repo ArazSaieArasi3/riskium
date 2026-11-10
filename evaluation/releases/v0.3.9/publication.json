@@ -1,0 +1,76 @@
+{
+  "schema": "riskium-v039-publication-1",
+  "status": "INDEPENDENT_PUBLIC_DOWNLOADS_PASS",
+  "tag": "v0.3.9",
+  "release_id": 440107328,
+  "release_url": "https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.9",
+  "published_at": "2026-11-10T08:31:31Z",
+  "source_commit": "ce0baefa3495d1bc3b42f56ad578154d5bc4f178",
+  "source_tree": "34d29be464b36e33a33ed8e966662cb40dfb4ac0",
+  "qualification_run_id": 42776380967,
+  "model_version": "0.3.2",
+  "documentation_version": "0.4.9",
+  "task_profile_version": "0.1.0",
+  "manuscript_version": "7.2.21",
+  "latest": true,
+  "assets": [
+    {
+      "name": "artifact-versions.json",
+      "sha256": "5ccabcae575d3628cd0694b88f7c10b808e7035af0dedb4dc61453b302d5a596",
+      "bytes": 420805,
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.9/artifact-versions.json"
+    },
+    {
+      "name": "freeze-receipt.json",
+      "sha256": "dfbc060643c825675131f355bf1b19edfcf71587ea53b9e2b0c5df36fbb8d065",
+      "bytes": 3504,
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.9/freeze-receipt.json"
+    },
+    {
+      "name": "release-notes.md",
+      "sha256": "1d0d779cc1aba367dc30b7e37b5a2de46fae31c13cb08e69de7ba5ef9a90e1eb",
+      "bytes": 2643,
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.9/release-notes.md"
+    },
+    {
+      "name": "riskium-v0.3.9-source.tar.gz",
+      "sha256": "4d91158d02a1b058b6c8f371909d9030cfe7dbb9388beda881a791663488eca9",
+      "bytes": 16462903,
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.9/riskium-v0.3.9-source.tar.gz"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "sha256": "ebdae5ea47d96c336c925e72aae94437032f949f29e48b197ec151c06096f0fd",
+      "bytes": 440,
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.9/SHA256SUMS.txt"
+    },
+    {
+      "name": "source-manifest.json",
+      "sha256": "1cc942b56f8094a149ca3931736f4893ed4ca61a1d5214bb4273efacfca67a5f",
+      "bytes": 556218,
+      "url": "https://github.com/ArazSaieArasi3/riskium/releases/download/v0.3.9/source-manifest.json"
+    }
+  ],
+  "previous_releases_unchanged": true,
+  "previous_release_count": 15,
+  "package_verification": {
+    "status": "PASS_PACKAGE_NOT_PUBLISHED",
+    "source_commit": "ce0baefa3495d1bc3b42f56ad578154d5bc4f178",
+    "workflow_run_id": 42776380967,
+    "source_tree": "34d29be464b36e33a33ed8e966662cb40dfb4ac0",
+    "source_files": 2091,
+    "selected_files": 1213,
+    "active_components": 6,
+    "historical_components": 32,
+    "assets_checked": 6,
+    "checksums_checked": 5,
+    "git_commit_and_full_tree_reconstructed": true,
+    "source_contract_and_reader_checked": true,
+    "qualification_bound": true,
+    "public_release_created": false,
+    "live_channel_readback": false,
+    "boundary": "Offline package and provenance-binding checks. Actual CI run/artifact origin and later public-release availability require separate authenticated/live readback."
+  },
+  "live_channel_readback": false,
+  "boundary": "This receipt verifies actual public release/assets. Maintained-channel deployment and body readback are separate observations; frozen R2a asset phase labels remain historical preparation state."
+}

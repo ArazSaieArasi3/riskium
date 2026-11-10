@@ -49,6 +49,19 @@ required = {
     "pages": r"https://arazsaiearasi3\.github\.io/riskium/current/index\.html",
     "rights": r"\[RIGHTS\.md\]\((?:https://github\.com/ArazSaieArasi3/riskium/blob/main/)?RIGHTS\.md\)",
 }
+# The successor publication has its own receipt and version roles. Older
+# checkouts retain the original branch above and its historical expectations.
+publication039 = ROOT / 'evaluation/releases/v0.3.9/publication.json'
+if publication039.exists():
+    record039=json.loads(publication039.read_text())
+    if record039['status']!='INDEPENDENT_PUBLIC_DOWNLOADS_PASS' or record039['source_commit']!='ce0baefa3495d1bc3b42f56ad578154d5bc4f178':
+        errors.append('Invalid v0.3.9 publication source binding')
+    required.update({
+        'published source': r'Published source:.*v0\.3\.9',
+        'model version': r'conceptual model and OWL:\*\* 0\.3\.2',
+        'reader version': r'published reader:\*\* 0\.4\.9',
+        'held paper': r'author-held article candidate:.*7\.2\.21',
+    })
 for name, pattern in required.items():
     if not re.search(pattern, readme):
         errors.append(f"missing or inconsistent {name}")
