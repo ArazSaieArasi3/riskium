@@ -1,0 +1,68 @@
+{
+  "nist": {
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+    "accessed": "2026-11-10",
+    "previous_response_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+    "http_status": 200,
+    "final_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+    "document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+    "bytes": 826897,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "mode": {
+    "url": "https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html",
+    "accessed": "2026-11-10",
+    "previous_response_sha256": null,
+    "http_status": 200,
+    "final_url": "https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html",
+    "document_sha256": "630972b1ea5a2efc6b7222c06e7484111d47e196060443153148f0164a2ca65a",
+    "bytes": 17424,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": null
+  },
+  "prov": {
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "accessed": "2026-11-10",
+    "previous_response_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "bytes": 464179,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "relator": {
+    "url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html",
+    "accessed": "2026-11-10",
+    "previous_response_sha256": "639fcd67050a2dbb0d94fe6567a112e039d8b0ea429f636f3e7122d36c564757",
+    "http_status": 200,
+    "final_url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html",
+    "document_sha256": "639fcd67050a2dbb0d94fe6567a112e039d8b0ea429f636f3e7122d36c564757",
+    "bytes": 20252,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "skos": {
+    "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+    "accessed": "2026-11-10",
+    "previous_response_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+    "document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+    "bytes": 227150,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "sosa": {
+    "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/",
+    "accessed": "2026-11-10",
+    "previous_response_sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/",
+    "document_sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+    "bytes": 673275,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  }
+}

@@ -23,8 +23,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
+    if: ${{ false }}
     # This publisher owns the qualified 0.4.6 checkpoint; 0.4.7 has its own workflow.
-    if: github.event_name == 'pull_request' || github.sha == '97ac0b88a092ad8d12d31e6a7e22d70adf406093'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
@@ -53,8 +53,8 @@ jobs:
         with:
           path: build/site
   deploy:
+    if: ${{ false }}
     needs: build
-    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:

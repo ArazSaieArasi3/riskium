@@ -1,0 +1,652 @@
+{
+  "schema": "riskium.structural-context-curation/1",
+  "status": "BOUNDED_BATCH_COMPLETE_FULL_CURATION_PENDING",
+  "execution": "N3b-5",
+  "date": "2026-11-10",
+  "baseline_commit": "64ebfa6c9bec92184f5671cb6d5aef6397b0a9e1",
+  "model_version": "0.3.2",
+  "intended_package": "v0.3.10",
+  "issue": 85,
+  "record_digest_method": "SHA-256 of compact UTF-8 JSON with sorted keys and ensure_ascii=False; file-input hashes use raw bytes.",
+  "inputs": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/0.3.2/riskium-model.json": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb",
+    "references/concept-definitions/0.1.0/review.json": "3eeba2690041f5f815754a256d586cc338b3710c68fe8edc42f5b9865f7fff47",
+    "evaluation/releases/v0.3.9/followups/issue85-impact/impact.json": "c971787dd75909f5ca18484baa13d7f462b029ce509c1f25e364c0ac4df3c9af",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/remaining-batches.json": "c6d39beb750cd870f94001f2033d66ab868d31ae5a44f0671eec4d76f3b2858c",
+    "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json": "8704efb3cf7760fa09ba5aead5a9bb433b63ef906adbd084a832b183743caa73",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json": "ddcacd405d73ee568fd11e6325fd48a13b45f32630f406a9cbd5e4350517d2c0",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json": "6ce6856f79fbb661bd910fd8f7a937effe464257127c3e52edfb9a0c3bec4c50",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json": "dfe981213ad6c2a44758b6e96ea80fbb9f97bddcb947af80921467e6f152ca51",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json": "03b8647b1cefbba02b761727aa6ec4e4b82f85cf9ae1695ccc35620f3c031d76",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json": "9ac6b991b0bf4acce072f7796979b241d3cb60252abb0bd2accf6800ebe163a5",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/source-access.json": "03fbecb4ba9c599fdf0df19932019e9244608936575f3cf0c15e062892370cc9",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/passage-checks.json": "3bbf02fe35f2ebc5e6f1af5fef021669ec4bf21d67ced8fcbd686e478b02f6ec",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/contexts.json": "2e35400e1ba0591ebad985c41049bfd13a256ce3cb1fe8d83492fcc476a2b45b",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/treatment-policy-checks.json": "bbd8fd3f5cc3f5862461d7f320d512eff85ae30980109bec02a7be4a9fafe1ea",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/metadata-checks.json": "29cbfb110b3a4f9d19a13fdac9f783dc4e9699f083cd514f9576fad5899ea851"
+  },
+  "prior_packets": [
+    "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json"
+  ],
+  "sources": {
+    "prov": {
+      "title": "PROV-O: The PROV Ontology",
+      "version": "W3C Recommendation, 30 April 2013",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "accessed": "2026-11-10",
+      "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+      "inspection_scope": "Terms listed below only; no PROV conformance or import asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "bytes": 464179,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "nist": {
+      "title": "Guide for Conducting Risk Assessments, NIST SP 800-30 Revision 1",
+      "version": "September 2012; DOI 10.6028/NIST.SP.800-30r1",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+      "accessed": "2026-11-10",
+      "document_sha256": null,
+      "inspection_scope": "Security-specific terms, selected glossary entries and tables only; not a universal enterprise-risk vocabulary. Glossary entries retain their original attributions.",
+      "access": "WEB_SELECTED_PAGES_INSPECTED_FULL_RESPONSE_NOT_REHASHED",
+      "direct_access": "WEB_SELECTED_PAGES_SUCCESS_DIRECT_HTTP_FAILED",
+      "error_type": "HTTPError",
+      "http_status": 403,
+      "same_response_as_prior": null,
+      "historical_document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+      "web_source_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+      "selected_pdf_pages": [
+        60,
+        61
+      ],
+      "visual_pages_checked": [
+        60,
+        61
+      ],
+      "fresh_full_body_hash_verified": false,
+      "access_note": "Direct HTTP returned 403. Current selected glossary pages were inspected through web PDF text and page images. The historical full-PDF hash is preserved separately, not freshly verified."
+    },
+    "skos": {
+      "title": "SKOS Simple Knowledge Organization System Reference",
+      "version": "W3C Recommendation, 18 August 2009",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+      "accessed": "2026-11-10",
+      "document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+      "inspection_scope": "Concept, scheme and lexical-label distinctions; no SKOS mapping triples asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+      "bytes": 227150,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "iso": {
+      "title": "ISO 31073:2022, Risk management — Vocabulary",
+      "version": "Edition 1, February 2022",
+      "url": "https://www.iso.org/standard/79637.html",
+      "accessed": "2026-11-10",
+      "document_sha256": null,
+      "inspection_scope": "Official identity and abstract inspected; normative term text NOT inspected. No exact term or clause number claimed; #78 owns adoption.",
+      "access": "METADATA_ONLY_NO_NORMATIVE_TERM_TEXT",
+      "direct_access": "OFFICIAL_CATALOGUE_METADATA_ONLY",
+      "same_response_as_prior": null,
+      "historical_document_sha256": "562ac6054dcb28c3599118fee2757f4cdfd21bb8a037a3444a99ea7fb208e883",
+      "fresh_full_body_hash_verified": false,
+      "normative_term_text_inspected": false,
+      "access_note": "Official ISO 31073:2022 catalogue identity and abstract inspected through web. No normative term entry or exact clause crosswalk inspected or adopted."
+    }
+  },
+  "terms": {
+    "response": {
+      "source_id": "nist",
+      "name": "Risk Response",
+      "locator": "Appendix B, printed B-10, PDF page 60; attributed there to SP 800-39",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=60",
+      "paraphrase": "Accepting, avoiding, mitigating, sharing or transferring risk.",
+      "quotation": false,
+      "target_kind": "SECURITY_RISK_RESPONSE_PROCESS_TERM"
+    },
+    "concept": {
+      "source_id": "skos",
+      "name": "skos:Concept",
+      "locator": "§3, especially §§3.1 and 3.5.1",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts",
+      "paraphrase": "A knowledge-organization notion; using it does not automatically identify an OWL class.",
+      "quotation": false,
+      "target_kind": "VOCABULARY_CLASS"
+    },
+    "plan": {
+      "source_id": "prov",
+      "name": "prov:Plan",
+      "locator": "§4.3, Plan",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Plan",
+      "paraphrase": "An entity representing intended steps toward agents’ goals.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "entity": {
+      "source_id": "prov",
+      "name": "prov:Entity",
+      "locator": "§4.1, Entity",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Entity",
+      "paraphrase": "A thing considered through fixed aspects, including conceptual or imaginary things.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "controls": {
+      "source_id": "nist",
+      "name": "Security Controls",
+      "locator": "Appendix B, printed B-11, PDF page 61; attributed there to FIPS 199/CNSSI 4009",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=61",
+      "paraphrase": "Safeguards protecting information and systems against security risks.",
+      "quotation": false,
+      "target_kind": "SECURITY_SAFEGUARD_TERM"
+    }
+  },
+  "concepts": [
+    {
+      "concept_id": "RKM-C041",
+      "title": "Treatment Decision Information",
+      "subdomain_id": "D06",
+      "authored_definition": "A recorded decision about treating risk, including the selected option, rationale, responsible authority and relevant basis.",
+      "authored_definition_sha256": "d1cd1366f12f99a04db3e865587c0ed549f239ae783735c38d10ac209ef11b0c",
+      "source_concept_sha256": "16f0d4ce72b92adb08f7de0c2a8c277396672760c2468882cc9cc2da1af89533",
+      "previous_review_sha256": "a5c555dc8023ec2e49e06a26f1bfffe7b5188a78d29ff05d1788e90379634bed",
+      "context_sha256": "0fc335d3b9dc77c3ffb8f5b159c44d30e3f3837187cae910d1d2a91e1e08e732",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "CONTRAST",
+      "disposition": "CONTRAST",
+      "comparison_term_ids": [
+        "response"
+      ],
+      "metadata_source_ids": [],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED",
+      "normative_term_text_inspected": false,
+      "exact_normative_mapping_adopted": false,
+      "normative_term_locator": null,
+      "constraint_ids": [
+        "C-01",
+        "C-02",
+        "C-04",
+        "C-07",
+        "C-19"
+      ],
+      "rationale": "Retain the contrast between a recorded choice and a response process. The NIST glossary entry is security-specific and attributed there to SP 800-39; it does not establish that a Riskium decision was authorized, executed or successful.",
+      "context_interpretation": "R-19 relates the decision to the continuing RiskCase; R-20 selects a strategy. R-63 and RK2-014/RK2-015 may connect plans, evaluation and remaining-risk assessment. Those documentary links do not alone establish treatment execution or effectiveness.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "treatment_policy_guards": {
+        "decision_proves_execution": false,
+        "plan_proves_effectiveness": false,
+        "unresolved_reference_proves_control": false,
+        "tolerance_meanings_silently_equated": false,
+        "metadata_proves_normative_term": false,
+        "appetite_statement_proves_universal_authorization": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison, current ancestry/neighbor/set-policy and selected treatment/policy contracts; normative deferrals explicit; not independent expert or operational evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C042",
+      "title": "Treatment Strategy Term",
+      "subdomain_id": "D06",
+      "authored_definition": "A controlled value identifying a treatment approach; its selection is represented by a treatment decision. This is a managed vocabulary resource with scheme-qualified identity, not a bare string.",
+      "authored_definition_sha256": "caf705d0e2c0318ca146c2acab17c20c1ffc20f7568de50da53b752a423cb422",
+      "source_concept_sha256": "dfd01b36ea17c9457777248832b82bcd7188aa39446b4329edf3e9d43d15af6f",
+      "previous_review_sha256": "e1844549fd5d44a69d7c44cb9c116352f4be78435deb32025e9a22913c685cce",
+      "context_sha256": "b52222d13e294d90c7f0c3d8c40fcc1698cbf6b1b8f325200138cdcbc7e9042a",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "concept"
+      ],
+      "metadata_source_ids": [],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED",
+      "normative_term_text_inspected": false,
+      "exact_normative_mapping_adopted": false,
+      "normative_term_locator": null,
+      "constraint_ids": [
+        "C-02",
+        "C-11",
+        "C-17"
+      ],
+      "rationale": "Retain SKOS vocabulary context for a scheme-qualified treatment approach. A selected strategy resource is distinct from a decision or action; no universal security-only list or formal SKOS equivalence is adopted.",
+      "context_interpretation": "R-20 selects this term in decision information. ClassificationTerm/VocabularyConcept ancestry preserves managed resource identity, while common labels and retained sibling groups do not create equivalence, exclusivity or realized response.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "treatment_policy_guards": {
+        "decision_proves_execution": false,
+        "plan_proves_effectiveness": false,
+        "unresolved_reference_proves_control": false,
+        "tolerance_meanings_silently_equated": false,
+        "metadata_proves_normative_term": false,
+        "appetite_statement_proves_universal_authorization": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison, current ancestry/neighbor/set-policy and selected treatment/policy contracts; normative deferrals explicit; not independent expert or operational evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C043",
+      "title": "Plan Specification",
+      "subdomain_id": "D06",
+      "authored_definition": "A versioned specification of intended actions, resources, responsibilities, timing and conditions for a stated purpose.",
+      "authored_definition_sha256": "0ceb042882790789768aa62e9b44e782b0f67834b31d2e29baafb728d8b5bbd8",
+      "source_concept_sha256": "14001db3a8db31726420f785618aafadf79c35368ecc1b1bbff5cda02e61be77",
+      "previous_review_sha256": "d57b38a924765e44b36cf23d3864acdc24e3717befcd0c18ee9ba40656a24e7d",
+      "context_sha256": "bf0c8fe45f5456b9e4789fcd56cda8a2b6d6a395c54eef67249b4f5a409e9ccc",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "plan"
+      ],
+      "metadata_source_ids": [],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED",
+      "normative_term_text_inspected": false,
+      "exact_normative_mapping_adopted": false,
+      "normative_term_locator": null,
+      "constraint_ids": [
+        "C-01",
+        "C-02",
+        "C-03",
+        "C-05"
+      ],
+      "rationale": "Retain PROV Plan as related intended-action content. Riskium records its own resources, responsibility, timing, purpose and versions without adopting a full PROV representation or treating the plan as its execution.",
+      "context_interpretation": "R-21 concerns one or more analytical risk cases; R-62 gives the plan role. R-64 relates an actual TreatmentActivity separately, and R-63 can connect decisions. A plan can be recorded before any execution is established; issued-content changes follow new-version lineage.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "treatment_policy_guards": {
+        "decision_proves_execution": false,
+        "plan_proves_effectiveness": false,
+        "unresolved_reference_proves_control": false,
+        "tolerance_meanings_silently_equated": false,
+        "metadata_proves_normative_term": false,
+        "appetite_statement_proves_universal_authorization": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison, current ancestry/neighbor/set-policy and selected treatment/policy contracts; normative deferrals explicit; not independent expert or operational evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C046",
+      "title": "Plan Role Term",
+      "subdomain_id": "D06",
+      "authored_definition": "A controlled value describing the role of a plan, such as primary response or contingency. This is a managed vocabulary resource with scheme-qualified identity, not a bare string.",
+      "authored_definition_sha256": "00f108d06e107135b1818225321282130e4b4135427ed2e1b627fe748dc21304",
+      "source_concept_sha256": "8575c287a84421a13182d6dd725cfc803f9c071129a14ee67c4911522b4a8651",
+      "previous_review_sha256": "dfd1ffe68ac2ae812a451fc8e7bccee69d75432a5f4308ed14e96b06a26d91df",
+      "context_sha256": "3680570c21c4894e07231aa88b8096074a429c282cd4873311ba121ba31f6e3c",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "concept"
+      ],
+      "metadata_source_ids": [],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED",
+      "normative_term_text_inspected": false,
+      "exact_normative_mapping_adopted": false,
+      "normative_term_locator": null,
+      "constraint_ids": [
+        "C-02",
+        "C-11",
+        "C-17"
+      ],
+      "rationale": "Retain vocabulary-resource context for primary-response, contingency or other plan functions. SKOS does not define those local functions, and a PlanRoleTerm is not an OntoUML agent role or performance of a response.",
+      "context_interpretation": "R-62 assigns the chosen function to a plan specification. Scheme-qualified identity is inherited through ClassificationTerm/VocabularyConcept; the retained incomplete/non-disjoint groups are carried policy, not a new semantic-partition approval.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "treatment_policy_guards": {
+        "decision_proves_execution": false,
+        "plan_proves_effectiveness": false,
+        "unresolved_reference_proves_control": false,
+        "tolerance_meanings_silently_equated": false,
+        "metadata_proves_normative_term": false,
+        "appetite_statement_proves_universal_authorization": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison, current ancestry/neighbor/set-policy and selected treatment/policy contracts; normative deferrals explicit; not independent expert or operational evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C072",
+      "title": "Risk Criteria",
+      "subdomain_id": "D11",
+      "authored_definition": "A versioned information specification of reference conditions used to judge the significance or acceptability of risk in an identified context.",
+      "authored_definition_sha256": "9fc9241359ebe2a0052d3624cac2efd0cc1fe56bf73729774758ec7bf25e626b",
+      "source_concept_sha256": "535d7a4545f2c3961b3427584035ff81878067f8faf19c01c2a0aa54ce7c3ffc",
+      "previous_review_sha256": "f19ff49e07bbd58993ef5f736c87263b762a36cf111dcf96d809cafd2ab9dc61",
+      "context_sha256": "c286f594fafd5a874c990534d2c157ece5507971adc400203d25314a4a10085b",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "NEEDS_LICENSED_SOURCE",
+      "disposition": "NEEDS_LICENSED_SOURCE",
+      "comparison_term_ids": [],
+      "metadata_source_ids": [
+        "iso"
+      ],
+      "source_locator_status": "METADATA_ONLY_NO_NORMATIVE_TERM_LOCATOR",
+      "normative_term_text_inspected": false,
+      "exact_normative_mapping_adopted": false,
+      "normative_term_locator": null,
+      "constraint_ids": [
+        "C-03",
+        "C-10",
+        "C-16",
+        "C-25"
+      ],
+      "rationale": "Retain the explicit licensed-source deferral. The ISO catalogue reconfirms edition identity and generic vocabulary purpose only; no exact risk-criteria wording, clause locator or standards crosswalk is adopted from metadata.",
+      "context_interpretation": "RX-017 qualifies the criteria specification by context. RX-018/RX-019 permit appetite/tolerance statements without making them universally mandatory or identical. The local C-25 version-target obligation remains separate from any uninspected normative definition.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "treatment_policy_guards": {
+        "decision_proves_execution": false,
+        "plan_proves_effectiveness": false,
+        "unresolved_reference_proves_control": false,
+        "tolerance_meanings_silently_equated": false,
+        "metadata_proves_normative_term": false,
+        "appetite_statement_proves_universal_authorization": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison, current ancestry/neighbor/set-policy and selected treatment/policy contracts; normative deferrals explicit; not independent expert or operational evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [
+        78
+      ],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C073",
+      "title": "Risk Appetite Statement",
+      "subdomain_id": "D11",
+      "authored_definition": "A managed, versioned statement recording the kinds and extent of risk an organization is prepared to pursue or retain, qualified by source framework, objectives, authority and context.",
+      "authored_definition_sha256": "a41e5dc9ec73612cc08f6d146d685230cdf78b36a7f1358e2df13292007a88ef",
+      "source_concept_sha256": "96aecd78471d5e67c62a9827f2d2a0206a8418a2a898b716b5fece1103cf5c63",
+      "previous_review_sha256": "dfd56140c5aeb9f41dd6081355abe393560304d0717e1da54de456c0c6b65cce",
+      "context_sha256": "ed6836f3fbd6bf7ec8772704718ee5b5c524f572654837bccea020a6aa84375c",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "NEEDS_LICENSED_SOURCE",
+      "disposition": "NEEDS_LICENSED_SOURCE",
+      "comparison_term_ids": [],
+      "metadata_source_ids": [
+        "iso"
+      ],
+      "source_locator_status": "METADATA_ONLY_NO_NORMATIVE_TERM_LOCATOR",
+      "normative_term_text_inspected": false,
+      "exact_normative_mapping_adopted": false,
+      "normative_term_locator": null,
+      "constraint_ids": [
+        "C-02",
+        "C-03",
+        "C-07",
+        "C-10",
+        "C-16"
+      ],
+      "rationale": "Retain the explicit normative deferral to #78. The managed appetite statement and its source qualification remain Riskium-authored; no catalogue abstract is promoted into an ISO/Risk IT/COBIT term definition or proof of authority.",
+      "context_interpretation": "RK2-023 requires context under this managed profile, and RX-018 can connect criteria to the statement. Its objective, authority and framework qualifications preserve provenance; a statement is not universal permission for every case or evidence that an organization acted on it.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "treatment_policy_guards": {
+        "decision_proves_execution": false,
+        "plan_proves_effectiveness": false,
+        "unresolved_reference_proves_control": false,
+        "tolerance_meanings_silently_equated": false,
+        "metadata_proves_normative_term": false,
+        "appetite_statement_proves_universal_authorization": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison, current ancestry/neighbor/set-policy and selected treatment/policy contracts; normative deferrals explicit; not independent expert or operational evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [
+        78
+      ],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C074",
+      "title": "Risk Tolerance Statement",
+      "subdomain_id": "D11",
+      "authored_definition": "A managed, versioned statement recording an organization's stated risk tolerance under an explicitly identified source vocabulary or framework and context. Permissible deviation and readiness to bear remaining risk are retained as distinct source meanings, not silently merged.",
+      "authored_definition_sha256": "32bab859d272e1960723ad53fdf7ae9cb1f6bbbc295f6a56a5277c5ddb505e37",
+      "source_concept_sha256": "2133bf2644ed5960417d2ec899c7e6ae600b9880062db0807786393e04398fcd",
+      "previous_review_sha256": "e53d297b5aa443f2fa82ba9104a51420c256ab9fb54ff7067205f6cea092b1ab",
+      "context_sha256": "991258c8606a1a32497dc9d0b35dac3c1aef89b3fe6ce87944a7d31b3d772b3d",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "NEEDS_LICENSED_SOURCE",
+      "disposition": "NEEDS_LICENSED_SOURCE",
+      "comparison_term_ids": [],
+      "metadata_source_ids": [
+        "iso"
+      ],
+      "source_locator_status": "METADATA_ONLY_NO_NORMATIVE_TERM_LOCATOR",
+      "normative_term_text_inspected": false,
+      "exact_normative_mapping_adopted": false,
+      "normative_term_locator": null,
+      "constraint_ids": [
+        "C-03",
+        "C-10",
+        "C-16",
+        "C-18"
+      ],
+      "rationale": "Retain the explicit normative deferral and source-specific tolerance meanings. Permissible-deviation and remaining-risk readings are not silently equated or attributed to an unseen ISO clause; exact edition-qualified interpretation remains #78.",
+      "context_interpretation": "RK2-024 requires context under the managed profile and RX-019 optionally connects criteria. C-10 preserves framework/version/original meaning; common tolerance labels do not justify pooling values or applying a threshold to an unrelated context.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "treatment_policy_guards": {
+        "decision_proves_execution": false,
+        "plan_proves_effectiveness": false,
+        "unresolved_reference_proves_control": false,
+        "tolerance_meanings_silently_equated": false,
+        "metadata_proves_normative_term": false,
+        "appetite_statement_proves_universal_authorization": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison, current ancestry/neighbor/set-policy and selected treatment/policy contracts; normative deferrals explicit; not independent expert or operational evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [
+        78
+      ],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-X02",
+      "title": "Objective Reference",
+      "subdomain_id": "D11",
+      "authored_definition": "A managed information item identifying an objective in its source context, without asserting that the information item is the objective.",
+      "authored_definition_sha256": "9f5fc6f5737c13985ea824e8f9ea10cb0cd5daeee41ff53bf27037b88bbad27f",
+      "source_concept_sha256": "51e7a2be926320b66e1596747abd03493968c444c3bd13a3dbd34fff4345bb2d",
+      "previous_review_sha256": "ed0c2960ce13fab5266ec608620a51252ddaf9e6ff102581c80dc399fb6f9c27",
+      "context_sha256": "98898062c789999f89cf5b6ffb4908a57a0565a3a3f26ba24ea5498334181f10",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "CONTRAST",
+      "disposition": "CONTRAST",
+      "comparison_term_ids": [
+        "entity"
+      ],
+      "metadata_source_ids": [],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED",
+      "normative_term_text_inspected": false,
+      "exact_normative_mapping_adopted": false,
+      "normative_term_locator": null,
+      "constraint_ids": [
+        "C-01",
+        "C-02",
+        "C-16",
+        "C-17"
+      ],
+      "rationale": "Retain the distinction between an informational reference and the objective it identifies. Generic PROV Entity has broad provenance scope and does not alone determine referent identity or objective achievement.",
+      "context_interpretation": "RX-003 connects analytical RiskCase to objective references; RK2-011 allows context-specific references. Revised RiskCase meaning was reviewed. The reference can identify source-context objectives without importing an entire organization ontology or asserting that the objective has been achieved.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "treatment_policy_guards": {
+        "decision_proves_execution": false,
+        "plan_proves_effectiveness": false,
+        "unresolved_reference_proves_control": false,
+        "tolerance_meanings_silently_equated": false,
+        "metadata_proves_normative_term": false,
+        "appetite_statement_proves_universal_authorization": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison, current ancestry/neighbor/set-policy and selected treatment/policy contracts; normative deferrals explicit; not independent expert or operational evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-X05",
+      "title": "Control Reference",
+      "subdomain_id": "D06",
+      "authored_definition": "A managed identifier or description of a claimed control whose real-world bearer may remain unresolved.",
+      "authored_definition_sha256": "fa2ddea40d1f2bb9c1fdbabb574fa14ce3c2bb6a2c7574d032070abf2626a4c8",
+      "source_concept_sha256": "fe5a17c63af581eb842ea43822c116958fc2d67a080dad2ba9fea53ccb38a0c3",
+      "previous_review_sha256": "86ab4d4f64170a3a3236983d9ae4c052b955040be57bcf260f576bde6908dc82",
+      "context_sha256": "367ad5faa7094dc91416a2fc77d59b9aba96f049fd5d1cd39d68e6dbaa197763",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "CONTRAST",
+      "disposition": "CONTRAST",
+      "comparison_term_ids": [
+        "entity",
+        "controls"
+      ],
+      "metadata_source_ids": [],
+      "source_locator_status": "SELECTED_PASSAGES_INSPECTED",
+      "normative_term_text_inspected": false,
+      "exact_normative_mapping_adopted": false,
+      "normative_term_locator": null,
+      "constraint_ids": [
+        "C-02",
+        "C-05",
+        "C-14",
+        "C-17"
+      ],
+      "rationale": "Retain the contrast between a managed control identifier/description and a safeguard. NIST security-controls text retains its FIPS 199/CNSSI 4009 attribution; neither it nor PROV Entity proves a resolved bearer, implementation or effectiveness.",
+      "context_interpretation": "RX-020 keeps resolution to the heterogeneous control boundary optional. RK2-016/RK2-022 retain register and assessment-baseline references. C-14 excludes a uniform formal-core RiskControl class, so unresolved references remain information rather than fabricated realized controls.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "treatment_policy_guards": {
+        "decision_proves_execution": false,
+        "plan_proves_effectiveness": false,
+        "unresolved_reference_proves_control": false,
+        "tolerance_meanings_silently_equated": false,
+        "metadata_proves_normative_term": false,
+        "appetite_statement_proves_universal_authorization": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison, current ancestry/neighbor/set-policy and selected treatment/policy contracts; normative deferrals explicit; not independent expert or operational evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    }
+  ],
+  "summary": {
+    "this_batch": 9,
+    "prior_documentary_dispositions": 68,
+    "cumulative_documentary_dispositions": 77,
+    "population": 82,
+    "remaining": 5,
+    "dispositions": {
+      "CONTRAST": 3,
+      "RELATED": 3,
+      "NEEDS_LICENSED_SOURCE": 3
+    },
+    "disposition_labels_changed": 0,
+    "deferred_normative_dispositions": 3,
+    "unchanged_local_edges": 9,
+    "changed_ancestor_context": 9,
+    "changed_association_neighbor_context": 3
+  },
+  "boundaries": {
+    "scientific_source_modified": false,
+    "historical_curation_modified": false,
+    "published": false,
+    "engine_runs": 0,
+    "formal_alignment_axioms_added": false,
+    "independent_validation": "NOT_PERFORMED",
+    "static_scope": "Selected source relations, documentary identities and source statements only; not new treatment execution, control-effectiveness, SQL or ontology-engine evaluation.",
+    "semantic_review": "Independent semantic review remains #23; exact normative adoption remains #78.",
+    "deployment_scope": "Previews remain planning artifacts; complete component qualification and publication/readback remain separate."
+  },
+  "batch_findings": [
+    "All nine definitions, concept records and direct/inherited edges are unchanged. All inherit InformationArtifact identity; three have the revised RiskCase as a direct association neighbor. The blanket artifact set remains excluded, while retained vocabulary groups are incomplete/non-disjoint without new semantic approval.",
+    "All nine disposition labels are retained: three RELATED, three CONTRAST and three NEEDS_LICENSED_SOURCE. Six primary-term comparisons and three explicit normative deferrals are current-source documentary decisions; the latter do not count as normative term inspection or exact crosswalk completion.",
+    "TreatmentDecisionInformation records a choice; PlanSpecification describes intended action; TreatmentActivity is a separately modeled event. A record, strategy or plan does not establish execution, authorization or effectiveness. Source security-response terminology is not generalized into a universal treatment workflow.",
+    "ControlReference may remain unresolved and does not create a formal-core RiskControl class. ObjectiveReference remains distinct from its objective. Those informational boundaries preserve incomplete knowledge without asserting physical controls or achieved objectives.",
+    "RiskCriteria, RiskAppetiteStatement and RiskToleranceStatement preserve context and authored meanings. The official ISO catalogue confirms edition identity only; exact normative wording and Risk IT/COBIT/ISO crosswalks remain #78. C-10 retains distinct source meanings rather than silently combining tolerance readings."
+  ],
+  "context_guard_note": "Recorded choices, plans and references remain information; actual activity, realized controls and effectiveness need their own support. Vocabulary labels do not establish resource identity, authority or cross-framework equivalence. Source-qualified appetite/tolerance statements and their contexts are preserved without importing unseen normative terms.",
+  "normative_deferral_note": "This row preserves an explicit normative-source deferral. The official catalogue was inspected for identity/edition metadata only; no exact normative term or clause is claimed. See metadata-checks.json and #78 for the separate adoption gate.",
+  "source_access_note": "PROV-O and SKOS were retrieved directly and match their historical hashes. NIST direct HTTP returned 403; current B-10/B-11 glossary text and page images were inspected via web, preserving original attributions and separate historical full-body hashes. ISO 31073:2022 catalogue title/edition/date/abstract were inspected as metadata only, not normative terms. Restricted texts and full source documents are not redistributed.",
+  "next_execution_note": "N3b-6 reviews the final five D09/D10 evidence/monitoring concepts. Then qualify the complete successor curation and publish/read back the selected v0.3.10 package before closing #85. The three exact normative mappings remain separately deferred in #78; main, public v0.3.9, source 0.3.2, reader 0.4.9 and article 7.2.21 remain unchanged."
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "riskium-n5a-progress/1",
+  "phase": "N5a",
+  "status": "DONE",
+  "intended_release": "v0.3.10",
+  "published_release": "v0.3.9",
+  "qualified_commit": "073f22cbe15be32294d498eb6b300cb31a6584f0",
+  "ci_run_id": 42890784207,
+  "prepared_components": {
+    "model": "0.3.2",
+    "review": "0.2.0",
+    "reader": "0.4.10",
+    "article": "7.2.21",
+    "active": 8,
+    "retained_predecessor": 38,
+    "selected_files": 1392
+  },
+  "disposition_accounting": {
+    "done": 82,
+    "total": 82,
+    "percent": 100,
+    "includes_three_normative_deferrals": true,
+    "not_semantic_correctness_or_research_completion": true
+  },
+  "candidate": {
+    "paired_bodies": 111,
+    "maintained_guides": 20,
+    "site_files": 908,
+    "wiki_files": 114,
+    "reproduced_files": 1022,
+    "prior_snapshot_files_preserved": 406,
+    "historical_wiki_reference_preserved": 1
+  },
+  "tests": {
+    "documentary": 20,
+    "composition_and_history": 9,
+    "package": 7,
+    "total": 36
+  },
+  "verified_assets": 6,
+  "verified_source_files": 2450,
+  "legacy_routing": {
+    "workflows": 31,
+    "write_jobs_disabled": 15,
+    "scope": "Candidate branch only; source-pinned read-only replay plus separate current-source qualification. No claim that all legacy workflows were freshly rerun."
+  },
+  "next_execution": {
+    "id": "N5b",
+    "scope": "Integrate verified source/routing, promote exact assets, qualify live-status adapter, publish and independently read back actual coordinated channels; close #85 only after its gate."
+  },
+  "issue85": "OPEN",
+  "normative_adoption_issue": 78,
+  "independent_review_issue": 23
+}

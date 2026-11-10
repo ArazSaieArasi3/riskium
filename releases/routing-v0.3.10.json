@@ -1,0 +1,368 @@
+{
+  "schema": "riskium-v0310-workflow-routing/1",
+  "baseline": "7b8f43847ca1d45f0735e8b73d9d9fabd8701e62",
+  "historical_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444",
+  "current_workflow": ".github/workflows/curation-v0310.yml",
+  "current_mode": "QUALIFY_AND_FREEZE_ONLY_NO_DEPLOYMENT",
+  "workflows": [
+    {
+      "path": ".github/workflows/assessment-alignment.yml",
+      "role": "PRESERVED_BRANCH_SPECIFIC_SOURCE",
+      "sha256": "59e7543bd7d8c602a4f8186eb702068077cf12f7a3cfcbed09e09f57be6e7ad2"
+    },
+    {
+      "path": ".github/workflows/assessment-reader-draft.yml",
+      "role": "PRESERVED_BRANCH_SPECIFIC_SOURCE",
+      "sha256": "9f96fee0e8644d2ddb59c24740b61c08ff22ec5069a5ef85ebc78a61bd85ae42"
+    },
+    {
+      "path": ".github/workflows/assessment-reader-main.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "build": "RETIRED_PUBLISHED_READER_BUILD",
+        "deploy": "DISABLED_LEGACY_WRITE",
+        "readback": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "ec512ee55ac589ca2e45907ca6091198e9f27b70d95e82f50bb7ddb3a7538eaa",
+      "routed_sha256": "e4c64db67a722a83c1a84468b54770f2b3031d9126fcd3763ffedce9a5bbab32",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/assessment-reader-projection.yml",
+      "role": "PRESERVED_BRANCH_SPECIFIC_SOURCE",
+      "sha256": "5bd85db4a83e654289f35522ce3944ca21fbf25805f78623f3ca3002298ad817"
+    },
+    {
+      "path": ".github/workflows/assessment-selection.yml",
+      "role": "PRESERVED_BRANCH_SPECIFIC_SOURCE",
+      "sha256": "bd98e8e9295f447ee51995b4810f4f1c0e94b822d5d328e33eb2ee2097db14eb"
+    },
+    {
+      "path": ".github/workflows/current-alignment.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "alignment": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "bb548d7ab402418798fe2cfb9ac5f137c7d0392fde0b2898a7dc32f3f2d18b76",
+      "routed_sha256": "c3fc7707e12891e4d58ef7f961ead3405d484d09a0b85efc0e5919c69761e230",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/current-documentation-pages.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "deploy": "DISABLED_LEGACY_WRITE"
+      },
+      "baseline_sha256": "d8f341a530a83881c56263717b7b02bd7d0caaa07adea09e167c722d9f15a229",
+      "routed_sha256": "1ef0f41deef595b92e1906976060197d91c24b94b543f8aefacb748451461245",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/current-documentation.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "documentation": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "433abe1730a6752555695270b0076713cf7d74453828e222d9263b10dcd085ef",
+      "routed_sha256": "eb90efeac73f37df77282ef8708ed43c693ff5f22b33197b65aee773b1344e92",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/dictionary-reader.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "build": "RETIRED_PUBLISHED_READER_BUILD",
+        "deploy": "DISABLED_LEGACY_WRITE"
+      },
+      "baseline_sha256": "d167cb42d5406fbcda05fa148bc0d80db521ddc78c4aad2f7637b8701a3de688",
+      "routed_sha256": "762385ad5157e065dc7ab479faef63401688247ce49db86123261984d089e59f",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/documentation.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "documentation": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "5d6a5408991ac381f35b0eb4aff86481fb8270ed45b4bb63f0de69b440099518",
+      "routed_sha256": "671bb3cecb298ab365e94df7fbb9407ca764081267b8f72701784c8725094667",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/evidence-lifecycle.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "lifecycle": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "05bb9c5a0b6ca3eea64a5945cd9dc7f53314cbb25b5ff9bb0628ab45098f6ea4",
+      "routed_sha256": "d5ac9f757e664d8aa7f9412d9a53b150e591695c1498f5d2c00b3ad26d3907b3",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/external-definition-reader.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "build": "RETIRED_PUBLISHED_READER_BUILD",
+        "deploy": "DISABLED_LEGACY_WRITE"
+      },
+      "baseline_sha256": "e1e01eb4dccc803df4e8ac893fc3f18aeb6e8fecf181dbaca734a15c605c21bc",
+      "routed_sha256": "c1e7b7339f073728a7b1084c8061fe3fac1aa8dd508096fe2780116e78a09d89",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/final-release-v035.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "intent": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "freeze": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "staged": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "publish": "DISABLED_LEGACY_WRITE",
+        "verify": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "retire": "DISABLED_LEGACY_WRITE"
+      },
+      "baseline_sha256": "bb1c14ff4b362826c39abe9445c6858059882e2fcb132c2638aec9a674cfca19",
+      "routed_sha256": "56d6dc0ff935df85637ff5a285b1bc71da4a5e481448a0b79266b65cc21e31be",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/freeze-v037.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "freeze": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "aca4ca448acb701668e8b3f61c17009974ea579c612d64faabc9841ddb981262",
+      "routed_sha256": "25818a1fff3cbbc732dc33080c082eec6c3379659902e0aa4feb26d0334e46d2",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/incremental-release.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "candidate": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "publish": "DISABLED_LEGACY_WRITE"
+      },
+      "baseline_sha256": "5ca20d564f65b830fd8f780c335fc3aeeade74d85c10154865156a6be0ae637a",
+      "routed_sha256": "15bcbbc64ae42caf17505f511786917d22e01ce1a0594fa40e9285b8616bc61e",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/issue93-candidate.yml",
+      "role": "PRESERVED_BRANCH_SPECIFIC_SOURCE",
+      "sha256": "84eca7a593f228eccdae7925663c90b5cb3240b48b912ae889eaeb47ac3129ef"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "deploy": "DISABLED_LEGACY_WRITE"
+      },
+      "baseline_sha256": "8273821e79bfc50fbca6515165a64f02f72707e54a80d9aacdedb4ebbcf9fc7e",
+      "routed_sha256": "1c3aa9fb0f47bf9de79c1e6b051e52322223f4a3aeaa4ca3bfb7df5da3bb9254",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/post-release-validation.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "integration": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "21219dea86bd6f3f87f221fe883b59815dc9bb2357ae71251b7a13b69bf4eeb4",
+      "routed_sha256": "3ecff6fa20f24d1c3f0194af9d324c96823afed90695985ff7109296bafdbe5a",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/publication-status.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "deploy": "DISABLED_LEGACY_WRITE"
+      },
+      "baseline_sha256": "72a8e5bd02a3324841bc0b78b7c4ddbf99b043edf82b8b1e71069de611c20ce2",
+      "routed_sha256": "bbe7513c053563ffea867023ea38b69b8b33cc31cc99630b5367c203733e50c7",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/published-documentation.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "build": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "deploy": "DISABLED_LEGACY_WRITE",
+        "readback": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "c850eec51720d9bfb0cc8a68ef59ae6a54a2da4ae95aef425d7db46b92988592",
+      "routed_sha256": "33c3bb08ca1ebb61dd3d00e6c2d6109a5d90a24c7ee5611772cb88130f82a3c7",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/quality.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "quality": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "712c2df4e7e190f0e65e14fe37e49453ce14bf667e1f1749fa8b6ed29fc6c0d8",
+      "routed_sha256": "a98754402421eb148c860ef6c65b399b2c20bcc3abe5053e96cff0fe925d4b3f",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/reader-v038.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "build": "RETIRED_PUBLISHED_READER_BUILD",
+        "deploy": "DISABLED_LEGACY_WRITE"
+      },
+      "baseline_sha256": "7338f8b17b195f22ee56762886bcb8b325ba5819eadca93b0e45fa79ccbc530d",
+      "routed_sha256": "2fb5a8792fe39c1b9d89512f86adc1db52f893176257e8e22b75c4dd3fee10e1",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/references.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "references": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "6468fb1ee3e86b6faff1dfad9e56275f9e68d7cae2a3c2adbfa4c436c53a3f28",
+      "routed_sha256": "17f9f2bff6b9278d224fa199da6f8b05d6299e0f6492de6e520ef6d6e6b4a235",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/release-selection-v035.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "selection": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "b0e86279f6a31c8a2b6a7f4c377d9471ae3b10a6b039ad00de5b296b255cd9e7",
+      "routed_sha256": "f420d55b2ccceced79996295fb01c7cea065d2635279d9397604248c17c2dcac",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/release-support-v035.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "support": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "0651c47df9f887e543b657335f9a6133cdca8e6ca4f05c05d7b5c5bd38e1cc15",
+      "routed_sha256": "a480e55095e12ec230b391ed54a09408ebe264f6ee9ca2117238185787811074",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/release-v036.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "freeze": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "f0e8ddec4651e65e9fac902bc382dedceade0c168e144b461ab809613cb5aee1",
+      "routed_sha256": "4ba20dc4f192ee9595ca7fa46ec0abf989d09f9926ac2c5e1ec701f51315b766",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/release-v037.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "qualify": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "c15cb6469599c9ecbe6cfd1242bace5976085d3c4223381b9cc607ad7d2e1632",
+      "routed_sha256": "3fc39221de6665669f27df9f5d23fd18cbb5124bbbca1939bff5597e4b66e606",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/release-v038.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "qualify-freeze": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "publish": "DISABLED_LEGACY_WRITE"
+      },
+      "baseline_sha256": "b29852e2ecb6120352bf9dfd97c1d971d0e186c6f6d6c461f4134528f182a611",
+      "routed_sha256": "755be289b9c396bd01eafe0080db465aadcbbe79b8aad2b75f65a3059822df12",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/released-reader-main.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "build": "RETIRED_PUBLISHED_READER_BUILD",
+        "deploy": "DISABLED_LEGACY_WRITE",
+        "readback": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "a45c9e9cf1772999fdeabcdfbd31f8b0962e1b3905b50c556a075b28dd1aaeb4",
+      "routed_sha256": "738894d1f036dc0c587039bed19a6aa50ab82c23c54975f8720a357d69f1fecc",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/released-v037-reader.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "build": "RETIRED_PUBLISHED_READER_BUILD",
+        "deploy": "DISABLED_LEGACY_WRITE",
+        "readback": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "33969a5264a8fe0420efb55d6b7ce0f0b30d63f9280d3e57fe86e305b93392c3",
+      "routed_sha256": "e3fc325bca23f141560ddf8aca5191cfae11b344e7f00e66692219c4bd7053b1",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/requirements.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "traceability": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "6327731a30f162ca083a63eabfed47f24ce022cd3273a85297177a21454bb938",
+      "routed_sha256": "3ed41b27f41d406e8e7f64714d97e9d6770dfc5180e68412230bebd34ce47c23",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/source-transition.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "current-source": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "37d32e7fc955a9d2cacfb50a20e997ae96e771dc1db90d7e11ecd757e28253c1",
+      "routed_sha256": "5d3db4a4ae5f2133d557142d45395b1884a40f9d245b00c7fd56926cb25562b2",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/stable-release.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "intent": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "freeze": "SOURCE_PINNED_READ_ONLY_REPLAY",
+        "publish": "DISABLED_LEGACY_WRITE",
+        "verify": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "5a9e95fc364f6661949d71571943dc6dbe70a160094f7884bd19ebbaeab794a9",
+      "routed_sha256": "7d5709216ec2c6b5ef83606753cda4bf3abc74960329039c4c4206d0fa3a309d",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/subdomain-dictionary.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "source-pages": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "e94a68e3da7570a46057a9b2b73fd3f3ed36ba4190e71b8e6c6ef4ac089d5fc0",
+      "routed_sha256": "54ed544f1ac8d3851099b53225bf6471fc186f8224bdb6312599ae0d683a242c",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/v036-versioned-suite.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "suite": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "fa54eaf595bb896f21abbd84a1a9749b5987b87ab098250db8aecd640fd31b5b",
+      "routed_sha256": "cfb21bc301f1c9b9f9712bec8269882d5cbb8e1bf068f7dda8f514e752cf7962",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    },
+    {
+      "path": ".github/workflows/v037-versioned-suite.yml",
+      "role": "LEGACY_REPLAY_OR_DISABLED_WRITE",
+      "jobs": {
+        "suite": "SOURCE_PINNED_READ_ONLY_REPLAY"
+      },
+      "baseline_sha256": "f3dd16c954a5d3a72e289ce1652c16909c4cdcaad748d50429c498746e75fdc5",
+      "routed_sha256": "0629c02e68fb9ec6e7878a56d696684fb6186f93d3882520a7e6deca0751c949",
+      "replay_source": "3ce6f5573e2e0a698591615a7ded75c2f9451444"
+    }
+  ],
+  "old_model_oracles_unchanged": true,
+  "legacy_writes_disabled": true,
+  "next_gate": "N5b must use the selected exact candidate, verified assets and channel readback."
+}

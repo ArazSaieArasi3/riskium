@@ -1,0 +1,83 @@
+id,title,category,changed_fields,association_changed,inheritance_changed,mixed_set_policy_context,previous_disposition,action
+RKM-C001,Risk Pattern Specification,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C002,Risk Context Specification,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C003,Risk Scenario Specification,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,ANALOGY,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C004,Risk Occurrence,REUSE_CANDIDATE,,False,False,False,CONTRAST,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C005,Risk Nature Assertion,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C006,Nature Term,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C007,Risk Source,REUSE_CANDIDATE,,False,False,False,ANALOGY,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C008,Predisposing Condition,REUSE_CANDIDATE,,False,False,False,RELATED,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C009,Trigger,REUSE_CANDIDATE,,False,False,False,CONTRAST,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C010,Consequence,REUSE_CANDIDATE,,False,False,False,NO_DIRECT_EQUIVALENT_REVIEWED,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C011,Vulnerability,REUSE_CANDIDATE,,False,False,False,RELATED,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C012,Exposure,REUSE_CANDIDATE,,False,False,False,ANALOGY,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C013,Risk State,REUSE_CANDIDATE,,False,False,False,NO_DIRECT_EQUIVALENT_REVIEWED,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C014,Information Artifact,AUTHORED_OR_TYPING_CHANGE,typing_rationale,True,False,True,RELATED,Review changed source fields and comparison scope before reuse.
+RKM-C015,Artifact Version,AUTHORED_OR_TYPING_CHANGE,typing_rationale,False,False,False,CONTRAST,Review changed source fields and comparison scope before reuse.
+RKM-C016,Information Content,REUSE_CANDIDATE,,False,False,False,RELATED,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C017,Vocabulary Concept,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C018,Classification Scheme,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C019,Classification Term,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C020,Classification Assertion,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C021,Tag,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C022,Risk Register Entry,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C023,Entry Revision,REUSE_CANDIDATE,,False,False,False,CONTRAST,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C024,Risk Description,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C025,Consequence Statement,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C026,Identification Information,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C027,Intake Channel Term,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C028,Description Role Term,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C029,Consequence Slot Term,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C030,Risk Register,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C031,Assessment Activity,REUSE_CANDIDATE,,False,False,False,CONTRAST,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C032,Assessment Information,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,ANALOGY,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C033,Assessment Basis,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,NO_DIRECT_EQUIVALENT_REVIEWED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C034,Dimension Assessment Result,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,ANALOGY,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C035,Assessment Method Specification,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,ANALOGY,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C036,Assessment Scale,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,ANALOGY,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C037,Risk Score Result,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,ANALOGY,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C038,Assessment Scale Level,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C039,Assessment Dimension,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,ANALOGY,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C040,Epistemic Status Term,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C041,Treatment Decision Information,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,CONTRAST,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C042,Treatment Strategy Term,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C043,Plan Specification,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C044,Treatment Activity,REUSE_CANDIDATE,,False,False,False,ANALOGY,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C045,Risk Control,REUSE_CANDIDATE,,False,False,False,ANALOGY,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C046,Plan Role Term,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C047,Agent,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C048,Person,AUTHORED_OR_TYPING_CHANGE,typing_rationale,False,False,True,RELATED,Review changed source fields and comparison scope before reuse.
+RKM-C049,Organization,AUTHORED_OR_TYPING_CHANGE,typing_rationale,False,False,True,RELATED,Review changed source fields and comparison scope before reuse.
+RKM-C050,Actor Reference,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,CONTRAST,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C051,Responsibility Assignment Information,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,CONTRAST,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C052,Responsibility Relator,REUSE_CANDIDATE,,False,False,False,RELATED,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C053,Responsible Agent Role,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,ANALOGY,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C054,Authorizing Agent Role,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,ANALOGY,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C055,Responsible Person,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,ANALOGY,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C056,Responsible Organization,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,ANALOGY,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C057,Authorizing Person,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,ANALOGY,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C058,Authorizing Organization,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,ANALOGY,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C059,Responsibility Role Term,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C060,Analysis State Term,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C061,Workflow State Term,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C062,Record State Assertion,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C063,Workflow Scheme Version,REUSE_CANDIDATE,,False,False,False,CONTRAST,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C064,Workflow Assignment,REUSE_CANDIDATE,,False,False,False,NO_DIRECT_EQUIVALENT_REVIEWED,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C065,Evidence Reference,STRUCTURAL_CONTEXT_RECHECK,,False,True,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C066,Evidence Item,AUTHORED_OR_TYPING_CHANGE,typing_rationale,True,False,True,RELATED,Review changed source fields and comparison scope before reuse.
+RKM-C067,Observation Activity,REUSE_CANDIDATE,,False,False,False,RELATED,Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.
+RKM-C068,Observation Result,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C069,Indicator,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,ANALOGY,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C070,Threshold,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,NO_DIRECT_EQUIVALENT_REVIEWED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C071,Signal,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C072,Risk Criteria,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,NEEDS_LICENSED_SOURCE,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C073,Risk Appetite Statement,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,NEEDS_LICENSED_SOURCE,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C074,Risk Tolerance Statement,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,NEEDS_LICENSED_SOURCE,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-X01,Risk Case,AUTHORED_OR_TYPING_CHANGE,"definition,identity_basis,typing_rationale",False,False,False,NO_DIRECT_EQUIVALENT_REVIEWED,Review changed source fields and comparison scope before reuse.
+RKM-X02,Objective Reference,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,CONTRAST,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-X03,Uncertainty Statement,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,RELATED,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-X04,Risk Evaluation Outcome,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,CONTRAST,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-X05,Control Reference,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,CONTRAST,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-X06,Risk Source Reference,STRUCTURAL_CONTEXT_RECHECK,,False,False,True,CONTRAST,Retain source evidence; recheck relation/inherited-set context before adopting current disposition.
+RKM-C075,Evidence Use Relator,NEW_CONCEPT,,False,False,False,,Establish a sourced documentary disposition.
+RKM-C076,Evidence Reference Role,NEW_CONCEPT,,False,False,False,,Establish a sourced documentary disposition.

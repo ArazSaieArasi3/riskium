@@ -1,0 +1,62 @@
+{
+  "derivation": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Derivation",
+    "locator": "§4.3, Derivation",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Derivation",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "e47bd2ba17c3fd70aa34ad0334fba65e3ff3498bce1bf6e238189c608d8fd54c",
+    "selected_text_chars": 9214,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "result": {
+    "source_id": "sosa",
+    "source_document_sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+    "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/#SOSAResult",
+    "locator": "§4.7.2.1",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "SOSAResult",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "51501e385d639ed47a310d03ecb4c45d842b2aaa839889cee6cf64fbef63fb59",
+    "selected_text_chars": 3835,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "metric": {
+    "source_id": "dqv",
+    "source_document_sha256": "271d3e820c681127131595d2c8bf8345e925149192f6cab821f101f09d372a63",
+    "url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/#dqv:Metric",
+    "locator": "§4.2",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "dqv:Metric",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "01725c67e78475dfcca233c5e506f35453f4db348142f38dc2859f2013ebc07d",
+    "selected_text_chars": 6013,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "observable": {
+    "source_id": "sosa",
+    "source_document_sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+    "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/#SOSAObservableProperty",
+    "locator": "§4.3.2.1",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "SOSAObservableProperty",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "fbd52770e639208cd6671416edb267bb838c09a5d378919982ed35959733d5a8",
+    "selected_text_chars": 2421,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  }
+}

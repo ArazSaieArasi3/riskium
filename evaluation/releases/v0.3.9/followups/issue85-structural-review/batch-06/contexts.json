@@ -1,0 +1,371 @@
+{
+  "RKM-C065": {
+    "concept_id": "RKM-C065",
+    "old_concept_sha256": "59377b3259da74d5fef331de22bf4b2440d9388529ff072beaafb6a6ef1c9d19",
+    "current_concept_sha256": "59377b3259da74d5fef331de22bf4b2440d9388529ff072beaafb6a6ef1c9d19",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": false,
+    "local_edges_sha256": "5b3a61a17642bc442b7305979ab609621df36b0dea5c51fb7328cf70cf7e4949",
+    "direct_association_ids": [
+      "R-68",
+      "R-69",
+      "R-70",
+      "R-71",
+      "R-72",
+      "RX-021"
+    ],
+    "ancestor_ids": [
+      "RKM-C014"
+    ],
+    "ancestor_edges": [
+      {
+        "id": "G-18",
+        "specific": "RKM-C065",
+        "general": "RKM-C014"
+      }
+    ],
+    "ancestor_edges_sha256": "a10857b4fc793a0b453b1a38620d7f4dffa4344d6ee0523fbd95f4ecda4a65d8",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [
+      {
+        "id": "RKM-C014",
+        "changed_fields": [
+          "typing_rationale"
+        ],
+        "old_record_sha256": "0367006ebabd6231ebf3cc0ab62ba9ce658d951b713d9d0a14cbda7ff1f96303",
+        "current_record_sha256": "eb7e1738327cd4ac3b8b8e09cac9c089206737b2d9a815a0071f77f3c1ad600e"
+      }
+    ],
+    "association_neighbor_ids": [
+      "RKM-C004",
+      "RKM-C014",
+      "RKM-C031",
+      "RKM-C044",
+      "RKM-C047",
+      "RKM-C066"
+    ],
+    "changed_association_neighbors": [
+      {
+        "id": "RKM-C014",
+        "changed_fields": [
+          "typing_rationale"
+        ],
+        "old_record_sha256": "0367006ebabd6231ebf3cc0ab62ba9ce658d951b713d9d0a14cbda7ff1f96303",
+        "current_record_sha256": "eb7e1738327cd4ac3b8b8e09cac9c089206737b2d9a815a0071f77f3c1ad600e"
+      },
+      {
+        "id": "RKM-C066",
+        "changed_fields": [
+          "typing_rationale"
+        ],
+        "old_record_sha256": "67ea4204a4f05d418f50dd72a73ce8733c0960a6a7e7e0e8fb37d0692fbb6b92",
+        "current_record_sha256": "b696da9d9a1575566fcd206f41ff129f9354588ae16cfa4280e5db660388be17"
+      }
+    ],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C014",
+        "parent": "RKM-C014",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Documentary specialization",
+          "Contextual evidential participation"
+        ],
+        "rationale": "Shared documentary identity does not supply one specialization criterion for documentary subkinds and an evidential role. Retain every subtype edge; do not invent a replacement set for all subkinds."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  },
+  "RKM-C068": {
+    "concept_id": "RKM-C068",
+    "old_concept_sha256": "54eb10c82a0ec856eeea194dd3d66daac76e96d60cf4fbb230cccbba07866a8b",
+    "current_concept_sha256": "54eb10c82a0ec856eeea194dd3d66daac76e96d60cf4fbb230cccbba07866a8b",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": true,
+    "local_edges_sha256": "3f734e1a9abf477004b2c5e8b0f027b2f74649ce820e8491a1b29e6a78845724",
+    "direct_association_ids": [
+      "RK2-017",
+      "RK2-026",
+      "RX-022",
+      "RX-023",
+      "RX-024",
+      "RX-026"
+    ],
+    "ancestor_ids": [
+      "RKM-C014"
+    ],
+    "ancestor_edges": [
+      {
+        "id": "GX-054",
+        "specific": "RKM-C068",
+        "general": "RKM-C014"
+      }
+    ],
+    "ancestor_edges_sha256": "e81d5678ec7b1dba51357262433cafdd853c18a90d602d2a07d3fe212ab86b81",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [
+      {
+        "id": "RKM-C014",
+        "changed_fields": [
+          "typing_rationale"
+        ],
+        "old_record_sha256": "0367006ebabd6231ebf3cc0ab62ba9ce658d951b713d9d0a14cbda7ff1f96303",
+        "current_record_sha256": "eb7e1738327cd4ac3b8b8e09cac9c089206737b2d9a815a0071f77f3c1ad600e"
+      }
+    ],
+    "association_neighbor_ids": [
+      "RKM-C002",
+      "RKM-C023",
+      "RKM-C067",
+      "RKM-C069",
+      "RKM-C071",
+      "RKM-X01"
+    ],
+    "changed_association_neighbors": [
+      {
+        "id": "RKM-X01",
+        "changed_fields": [
+          "definition",
+          "identity_basis",
+          "typing_rationale"
+        ],
+        "old_record_sha256": "ac07e39a26476df3c3149daa3854c60645392b8afcc69b2d15748ecbd64c1653",
+        "current_record_sha256": "1efba20cfb2d7549de2ffbac16ee04b4e165ba1b928edecba71ffb14db7306b5"
+      }
+    ],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C014",
+        "parent": "RKM-C014",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Documentary specialization",
+          "Contextual evidential participation"
+        ],
+        "rationale": "Shared documentary identity does not supply one specialization criterion for documentary subkinds and an evidential role. Retain every subtype edge; do not invent a replacement set for all subkinds."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  },
+  "RKM-C069": {
+    "concept_id": "RKM-C069",
+    "old_concept_sha256": "6ce047f255bfe8113fdbeff631ba884a165837ec9a721ef11a7376f5e2a79dec",
+    "current_concept_sha256": "6ce047f255bfe8113fdbeff631ba884a165837ec9a721ef11a7376f5e2a79dec",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": true,
+    "local_edges_sha256": "1757d7e8e924b1d9a31c7993ffb896fb2df7ae243b3828a37b2016b3e614029f",
+    "direct_association_ids": [
+      "RX-023",
+      "RX-025"
+    ],
+    "ancestor_ids": [
+      "RKM-C014"
+    ],
+    "ancestor_edges": [
+      {
+        "id": "GX-055",
+        "specific": "RKM-C069",
+        "general": "RKM-C014"
+      }
+    ],
+    "ancestor_edges_sha256": "11bc018295b36bbd07220b39cd729f0c5a7522c1427e7190e69cf554cca410ca",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [
+      {
+        "id": "RKM-C014",
+        "changed_fields": [
+          "typing_rationale"
+        ],
+        "old_record_sha256": "0367006ebabd6231ebf3cc0ab62ba9ce658d951b713d9d0a14cbda7ff1f96303",
+        "current_record_sha256": "eb7e1738327cd4ac3b8b8e09cac9c089206737b2d9a815a0071f77f3c1ad600e"
+      }
+    ],
+    "association_neighbor_ids": [
+      "RKM-C068",
+      "RKM-C070"
+    ],
+    "changed_association_neighbors": [],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C014",
+        "parent": "RKM-C014",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Documentary specialization",
+          "Contextual evidential participation"
+        ],
+        "rationale": "Shared documentary identity does not supply one specialization criterion for documentary subkinds and an evidential role. Retain every subtype edge; do not invent a replacement set for all subkinds."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  },
+  "RKM-C070": {
+    "concept_id": "RKM-C070",
+    "old_concept_sha256": "38a783956c5a2846d53438d9359ef3ef2ce10eecb301fac0654450b838561ec6",
+    "current_concept_sha256": "38a783956c5a2846d53438d9359ef3ef2ce10eecb301fac0654450b838561ec6",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": true,
+    "local_edges_sha256": "16b3a49c61678680b94bf25501c33dc74fd9d95249742f8b6677bd07e4a955a5",
+    "direct_association_ids": [
+      "RK2-020",
+      "RX-025",
+      "RX-027"
+    ],
+    "ancestor_ids": [
+      "RKM-C014"
+    ],
+    "ancestor_edges": [
+      {
+        "id": "GX-056",
+        "specific": "RKM-C070",
+        "general": "RKM-C014"
+      }
+    ],
+    "ancestor_edges_sha256": "91e0f88318c080a32d8db4f029f22828570364f1c63d105ef1c352d19e8161ab",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [
+      {
+        "id": "RKM-C014",
+        "changed_fields": [
+          "typing_rationale"
+        ],
+        "old_record_sha256": "0367006ebabd6231ebf3cc0ab62ba9ce658d951b713d9d0a14cbda7ff1f96303",
+        "current_record_sha256": "eb7e1738327cd4ac3b8b8e09cac9c089206737b2d9a815a0071f77f3c1ad600e"
+      }
+    ],
+    "association_neighbor_ids": [
+      "RKM-C036",
+      "RKM-C069",
+      "RKM-C071"
+    ],
+    "changed_association_neighbors": [],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C014",
+        "parent": "RKM-C014",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Documentary specialization",
+          "Contextual evidential participation"
+        ],
+        "rationale": "Shared documentary identity does not supply one specialization criterion for documentary subkinds and an evidential role. Retain every subtype edge; do not invent a replacement set for all subkinds."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  },
+  "RKM-C071": {
+    "concept_id": "RKM-C071",
+    "old_concept_sha256": "5fb53f5c1f411b594ceda1b06aab2bd4e4a1bd7b24ca4286f80a9cd12f613718",
+    "current_concept_sha256": "5fb53f5c1f411b594ceda1b06aab2bd4e4a1bd7b24ca4286f80a9cd12f613718",
+    "concept_record_unchanged": true,
+    "local_edges_unchanged": true,
+    "local_edges_sha256": "85729fcdd5502c3b9e48a9ce4a79f27c8c4a9fcbca6460865ee2a00c12bf8e92",
+    "direct_association_ids": [
+      "RX-026",
+      "RX-027",
+      "RX-028"
+    ],
+    "ancestor_ids": [
+      "RKM-C014"
+    ],
+    "ancestor_edges": [
+      {
+        "id": "GX-057",
+        "specific": "RKM-C071",
+        "general": "RKM-C014"
+      }
+    ],
+    "ancestor_edges_sha256": "036bda04ce8ea14285f16669f624454011d8e7b50aa488695ceeae267a4ca82a",
+    "ancestor_edges_unchanged": true,
+    "changed_ancestors": [
+      {
+        "id": "RKM-C014",
+        "changed_fields": [
+          "typing_rationale"
+        ],
+        "old_record_sha256": "0367006ebabd6231ebf3cc0ab62ba9ce658d951b713d9d0a14cbda7ff1f96303",
+        "current_record_sha256": "eb7e1738327cd4ac3b8b8e09cac9c089206737b2d9a815a0071f77f3c1ad600e"
+      }
+    ],
+    "association_neighbor_ids": [
+      "RKM-C068",
+      "RKM-C070",
+      "RKM-X01"
+    ],
+    "changed_association_neighbors": [
+      {
+        "id": "RKM-X01",
+        "changed_fields": [
+          "definition",
+          "identity_basis",
+          "typing_rationale"
+        ],
+        "old_record_sha256": "ac07e39a26476df3c3149daa3854c60645392b8afcc69b2d15748ecbd64c1653",
+        "current_record_sha256": "1efba20cfb2d7549de2ffbac16ee04b4e165ba1b928edecba71ffb14db7306b5"
+      }
+    ],
+    "old_explicit_set_policy_present": false,
+    "current_set_policy_sha256": "6072b6c53b0dd532892e26d7c1685ee40cd49d7789b83528f2604c8c4bb841ad",
+    "applicable_retained_sets": [],
+    "applicable_excluded_sets": [
+      {
+        "id": "GS-RKM-C014",
+        "parent": "RKM-C014",
+        "decision": "NO_BLANKET_SET",
+        "criteria_distinguished": [
+          "Documentary specialization",
+          "Contextual evidential participation"
+        ],
+        "rationale": "Shared documentary identity does not supply one specialization criterion for documentary subkinds and an evidential role. Retain every subtype edge; do not invent a replacement set for all subkinds."
+      }
+    ],
+    "case_application_policy_sha256": "57f0f60f9bc3cdcc0a148596e5184f35c98828ffc5310bf96a87db907ceae434",
+    "case_identity_policy": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "constraint_refs": [
+      "C-01",
+      "C-11",
+      "C-16"
+    ],
+    "method_boundary": "Source/graph inventory only; not inferred class satisfiability or independent semantic acceptance."
+  }
+}

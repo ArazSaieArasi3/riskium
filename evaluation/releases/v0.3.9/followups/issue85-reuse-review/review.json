@@ -1,0 +1,828 @@
+{
+  "schema": "riskium.partial-current-concept-curation/1",
+  "status": "N3A_COMPLETE_FULL_CURRENT_CURATION_PENDING",
+  "date": "2026-11-10",
+  "baseline_commit": "48844d45cbc3be91770619a4bc02ac12d17352e7",
+  "model_version": "0.3.2",
+  "intended_package": "v0.3.10",
+  "issue": 85,
+  "inputs": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/0.3.2/riskium-model.json": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb",
+    "references/concept-definitions/0.1.0/review.json": "3eeba2690041f5f815754a256d586cc338b3710c68fe8edc42f5b9865f7fff47",
+    "evaluation/releases/v0.3.9/followups/issue85-impact/impact.json": "c971787dd75909f5ca18484baa13d7f462b029ce509c1f25e364c0ac4df3c9af",
+    "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json": "8704efb3cf7760fa09ba5aead5a9bb433b63ef906adbd084a832b183743caa73",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/source-access.json": "1ed9a6b61846c68ae21888df8862b5240ce7d0e500abda5fba1999fc3d5bbd3c",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/passage-checks.json": "a9c15cdb22399139fa1fa68fc13dfe6ef58b01aac4e33ac33c2766aaee9a96a2",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/remaining-batches.json": "c6d39beb750cd870f94001f2033d66ab868d31ae5a44f0671eec4d76f3b2858c"
+  },
+  "sources": {
+    "nist": {
+      "title": "Guide for Conducting Risk Assessments, NIST SP 800-30 Revision 1",
+      "version": "September 2012; DOI 10.6028/NIST.SP.800-30r1",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+      "accessed": "2026-11-10",
+      "document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+      "inspection_scope": "Security-specific terms, selected glossary entries and tables only; not a universal enterprise-risk vocabulary. Glossary entries retain their original attributions.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "previous_response_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+      "bytes": 826897,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "mode": {
+      "title": "OntoUML specification: Mode",
+      "version": "Unversioned latest documentation; response digest and current access date retained",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html",
+      "accessed": "2026-11-10",
+      "document_sha256": "630972b1ea5a2efc6b7222c06e7484111d47e196060443153148f0164a2ca65a",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "inspection_scope": "Definition and constraints C1-C2 only; direct HTTP succeeds in this execution. The older null hash/HTTP-403 record is retained in historical review 0.1.0.",
+      "previous_response_sha256": null,
+      "http_status": 200,
+      "final_url": "https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html",
+      "bytes": 17424,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": null
+    },
+    "prov": {
+      "title": "PROV-O: The PROV Ontology",
+      "version": "W3C Recommendation, 30 April 2013",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "accessed": "2026-11-10",
+      "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+      "inspection_scope": "Terms listed below only; no PROV conformance or import asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "previous_response_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "bytes": 464179,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "relator": {
+      "title": "OntoUML specification: Relator",
+      "version": "Unversioned latest documentation; response digest and current access date retained",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html",
+      "accessed": "2026-11-10",
+      "document_sha256": "639fcd67050a2dbb0d94fe6567a112e039d8b0ea429f636f3e7122d36c564757",
+      "inspection_scope": "Definition and constraints C1-C2 only; this modeling construct is not the definition of a responsibility mandate.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "previous_response_sha256": "639fcd67050a2dbb0d94fe6567a112e039d8b0ea429f636f3e7122d36c564757",
+      "http_status": 200,
+      "final_url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html",
+      "bytes": 20252,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "skos": {
+      "title": "SKOS Simple Knowledge Organization System Reference",
+      "version": "W3C Recommendation, 18 August 2009",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+      "accessed": "2026-11-10",
+      "document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+      "inspection_scope": "Concept, scheme and lexical-label distinctions; no SKOS mapping triples asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "previous_response_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+      "bytes": 227150,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "sosa": {
+      "title": "Semantic Sensor Network Ontology",
+      "version": "W3C Recommendation, 19 October 2017; SOSA/SSN",
+      "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/",
+      "accessed": "2026-11-10",
+      "document_sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+      "inspection_scope": "Selected core classes only; observed properties and their specifications remain distinct.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "previous_response_sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/",
+      "bytes": 673275,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    }
+  },
+  "terms": {
+    "activity": {
+      "source_id": "prov",
+      "name": "prov:Activity",
+      "locator": "§4.1, Activity",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Activity",
+      "paraphrase": "An occurrence over time acting on or with entities.",
+      "quotation": false
+    },
+    "assessment": {
+      "source_id": "nist",
+      "name": "Risk Assessment",
+      "locator": "Appendix B, printed B-9, PDF page 59; attributed there to SP 800-39",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=59",
+      "paraphrase": "An information-system risk assessment process.",
+      "quotation": false
+    },
+    "controls": {
+      "source_id": "nist",
+      "name": "Security Controls",
+      "locator": "Appendix B, printed B-11, PDF page 61; attributed there to FIPS 199/CNSSI 4009",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=61",
+      "paraphrase": "Information-system security safeguards.",
+      "quotation": false
+    },
+    "entity": {
+      "source_id": "prov",
+      "name": "prov:Entity",
+      "locator": "§4.1, Entity",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Entity",
+      "paraphrase": "A thing considered through fixed aspects, including conceptual or imaginary things.",
+      "quotation": false
+    },
+    "exposure_note": {
+      "source_id": "nist",
+      "name": "Susceptibility/exposure discussion",
+      "locator": "§2.3.1, footnote 27, printed page 10, PDF page 19",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=19",
+      "paraphrase": "Security-context susceptibility and exposure discussion.",
+      "quotation": false
+    },
+    "mode": {
+      "source_id": "mode",
+      "name": "«Mode»",
+      "locator": "Definition; Constraints C1-C2",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html#definition",
+      "paraphrase": "An individual intrinsic property dependent on one bearer.",
+      "quotation": false
+    },
+    "observation": {
+      "source_id": "sosa",
+      "name": "sosa:Observation",
+      "locator": "§4.3.2.2",
+      "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/#SOSAObservation",
+      "paraphrase": "An act following a procedure to estimate or calculate a feature property’s value.",
+      "quotation": false
+    },
+    "predisposition": {
+      "source_id": "nist",
+      "name": "Predisposing Condition",
+      "locator": "Appendix B, printed B-8, PDF page 58",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=58",
+      "paraphrase": "A condition changing adverse-impact likelihood.",
+      "quotation": false
+    },
+    "relator": {
+      "source_id": "relator",
+      "name": "«Relator»",
+      "locator": "Definition; Constraints C1-C2",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html#definition",
+      "paraphrase": "A dependent truth-maker connecting multiple participants through material relations.",
+      "quotation": false
+    },
+    "response": {
+      "source_id": "nist",
+      "name": "Risk Response",
+      "locator": "Appendix B, printed B-10, PDF page 60; attributed there to SP 800-39",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=60",
+      "paraphrase": "Options for responding to security risk.",
+      "quotation": false
+    },
+    "revision": {
+      "source_id": "prov",
+      "name": "prov:Revision",
+      "locator": "§4.3, Revision",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Revision",
+      "paraphrase": "A qualified derivation whose result revises an original while retaining substantial content.",
+      "quotation": false
+    },
+    "role": {
+      "source_id": "prov",
+      "name": "prov:Role",
+      "locator": "§4.3, Role",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Role",
+      "paraphrase": "A function in an activity-qualified provenance context.",
+      "quotation": false
+    },
+    "scheme": {
+      "source_id": "skos",
+      "name": "skos:ConceptScheme",
+      "locator": "§4, especially §§4.1 and 4.6.2",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes",
+      "paraphrase": "An organization of concepts; a scheme need not be an OWL ontology.",
+      "quotation": false
+    },
+    "threat_event": {
+      "source_id": "nist",
+      "name": "Threat Event",
+      "locator": "Appendix B, printed B-13, PDF page 63",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=63",
+      "paraphrase": "A potentially adverse event or situation.",
+      "quotation": false
+    },
+    "threat_source": {
+      "source_id": "nist",
+      "name": "Threat Source",
+      "locator": "Appendix B, printed B-13, PDF page 63; attributed there to CNSSI 4009",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=63",
+      "paraphrase": "A possible origin of vulnerability exploitation.",
+      "quotation": false
+    },
+    "vulnerability": {
+      "source_id": "nist",
+      "name": "Vulnerability",
+      "locator": "Appendix B, printed B-13, PDF page 63; attributed there to CNSSI 4009",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=63",
+      "paraphrase": "A weakness open to threat-source exploitation.",
+      "quotation": false
+    }
+  },
+  "concepts": [
+    {
+      "concept_id": "RKM-C004",
+      "title": "Risk Occurrence",
+      "subdomain_id": "D01",
+      "authored_definition": "An actual occurrence or change relevant to a risk scenario; a scenario or report alone does not establish that it happened.",
+      "authored_definition_sha256": "ab9bdfcbeb0474266c72c782aa346f44ba1474128d378d98541d4758302c1278",
+      "source_concept_sha256": "91718518f536e3e2d2b5ac1f3ff2a35f861ec268facd79294cc8a76fbe461490",
+      "previous_review_sha256": "4e12659cac2c4a9f260fa27b4cc92eec31700194951e2f3cf78b795c71f56131",
+      "local_neighborhood_sha256": "b6f3450543d0472e2532f6a9cc593be789ba1e246906232f4f05eeda2bd66cc8",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "CONTRAST",
+      "disposition": "CONTRAST",
+      "decision_kind": "COMPATIBLE_REUSE_CONFIRMED",
+      "comparison_term_ids": [
+        "threat_event"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "threat_event"
+      ],
+      "rationale": "Retain the actuality boundary. Riskium requires an actual occurrence supported in context; a source entry permitting a potential event does not establish realization.",
+      "boundary": "A scenario alone is not evidence that its occurrence happened.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C007",
+      "title": "Risk Source",
+      "subdomain_id": "D01",
+      "authored_definition": "A contextual source role that an entity may play in giving rise to risk, alone or with other contributors. The catalog boundary spans possible bearer categories and is not assigned a single OntoUML stereotype here.",
+      "authored_definition_sha256": "30e59ea51558fced1428aeb9f129a92a7379cb8996cd46d226cc73350c75607f",
+      "source_concept_sha256": "72deb36e7c62070d47a9da7e70999c27f63959ae0870c6144292dbe1340e8579",
+      "previous_review_sha256": "cc187a53066a9fbcf9f9e9402d528915ad6848b8e634700dcd4388e577bfc9f2",
+      "local_neighborhood_sha256": "c0194e4109ec31b772ceef1b5935b9cd6fd0c660d28e20156a959c1497247b14",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "decision_kind": "COMPATIBLE_REUSE_CONFIRMED",
+      "comparison_term_ids": [
+        "threat_source"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "threat_source"
+      ],
+      "rationale": "Retain a bounded analogy. Riskium allows heterogeneous contextual contributors and opportunity perspectives; the security-specific source does not supply that whole cross-category profile.",
+      "boundary": "Do not assign one universal stereotype or a formal subsumption from a matching label.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C008",
+      "title": "Predisposing Condition",
+      "subdomain_id": "D01",
+      "authored_definition": "A risk-relevant situation that increases susceptibility to specified occurrences or effects. Reference to it requires explicit source support and does not establish a causal mechanism.",
+      "authored_definition_sha256": "02714461b3cf61f8bbf7531406e3a5ca01867f704b9a709656356a818c325319",
+      "source_concept_sha256": "73efd020be0df8f65a5f9c451df4ba6a2fe124e9aebe06f7e6da429fa92be3a2",
+      "previous_review_sha256": "9febcc831e25dbf0b7512edab15bcd6b53bec0d7e35e50507cc896467f57504d",
+      "local_neighborhood_sha256": "2007289ad0b57b10bc36204aff5cab0997403f27a5c18497f6d98cb987c0e27e",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "decision_kind": "COMPATIBLE_REUSE_CONFIRMED",
+      "comparison_term_ids": [
+        "predisposition"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "predisposition"
+      ],
+      "rationale": "Retain the comparison with an explicit direction boundary. The authored Riskium situation increases susceptibility, whereas the inspected source allows likelihood changes in either direction.",
+      "boundary": "The comparison does not establish a causal mechanism or justify silently broadening the authored definition.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C009",
+      "title": "Trigger",
+      "subdomain_id": "D01",
+      "authored_definition": "An actual occurrence interpreted as initiating a risk-relevant development in a specified context. A hypothetical trigger description is represented as scenario content, not as an actual Trigger individual.",
+      "authored_definition_sha256": "d7a178d73dd31aab9435b3d93bd51cf04080dafc9c4649d08ea85bd82ed8a9ec",
+      "source_concept_sha256": "59d7e85b33030f51a254b12afb2deb1202c84684692931ef2fe00ac3f429d40d",
+      "previous_review_sha256": "3b2df7325edc9795c3ae15bc30eb90e61bd5be702d65a429c05a22bda9e462db",
+      "local_neighborhood_sha256": "0c8a6094e1fe8f7bf80714382a03c5b26ae9b6b30812dcf2da72193caf865c00",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "CONTRAST",
+      "disposition": "CONTRAST",
+      "decision_kind": "COMPATIBLE_REUSE_CONFIRMED",
+      "comparison_term_ids": [
+        "threat_event"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "threat_event"
+      ],
+      "rationale": "Retain the actuality and initiation boundary. A Riskium Trigger is actual and initiating in its context; the compared potential-event entry alone supplies neither commitment.",
+      "boundary": "A hypothetical trigger remains scenario content.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C010",
+      "title": "Consequence",
+      "subdomain_id": "D01",
+      "authored_definition": "An outcome relevant to objectives, considered as a referent distinct from a statement about it. Outcomes can have different ontological categories; no universal event or object stereotype is asserted.",
+      "authored_definition_sha256": "c1055f0ff9c3d73e2a07746b9bd349fe6465014df3aaa66a1e8e6d611323480a",
+      "source_concept_sha256": "b21ebf556e645b6b2b3adc2f8bd40b0f775000443cdf01500a5527b36b875cd2",
+      "previous_review_sha256": "1dc86dfafa942033cd39e5a03e30122d97ae60bda0cda6e1d67f0f0a5d8ee7b3",
+      "local_neighborhood_sha256": "58416fd4a49a28a43970227be6abf9718f00dd49f1649b9768124f31a741af6e",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "disposition": "CONTRAST",
+      "decision_kind": "SCOPED_LABEL_CLARIFIED",
+      "comparison_term_ids": [
+        "threat_event"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "threat_event"
+      ],
+      "rationale": "Replace the scoped absence label with a positive comparison boundary: Riskium Consequence is an objective-relevant outcome referent, distinct from the compared potential event. No universal absence claim is made.",
+      "boundary": "An outcome must not be identified with an event description merely because both occur in a source record.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C011",
+      "title": "Vulnerability",
+      "subdomain_id": "D01",
+      "authored_definition": "An intrinsic susceptibility of a bearer to specified risk-relevant conditions or effects. The proposed mode interpretation requires a supported bearer; security-specific exploitation meanings remain source-qualified.",
+      "authored_definition_sha256": "8266e546bb609856e980f253f1ea6f473224b49f7ecdc1c55a31798a9c6cea86",
+      "source_concept_sha256": "0662fce29dd7de7a31dbefb97437235dac16905ff047a945651d613306ba4927",
+      "previous_review_sha256": "cc61697006f0f4cb051bf40cdb5dfe2210e7abbd86266435c6aed41fecdb1c62",
+      "local_neighborhood_sha256": "3350a0b1009e19beb218f548b997c15d93e9c587f44bd1b262f3cef4ed6b5c07",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "decision_kind": "COMPATIBLE_REUSE_CONFIRMED",
+      "comparison_term_ids": [
+        "vulnerability"
+      ],
+      "foundation_term_ids": [
+        "mode"
+      ],
+      "passage_ids": [
+        "vulnerability",
+        "mode"
+      ],
+      "rationale": "Retain the security comparison and identify Mode separately as a modeling foundation. The current intrinsic-susceptibility interpretation requires a supported bearer; exactly-one characterization is distinct from a documentary weakness report.",
+      "boundary": "Neither shared terminology nor the type annotation supplies actual bearer evidence or independent semantic acceptance.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [
+        23
+      ],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C012",
+      "title": "Exposure",
+      "subdomain_id": "D01",
+      "authored_definition": "A time-qualified situation relating an affected bearer to a risk source or relevant condition. An exposure score or its description is information about that situation.",
+      "authored_definition_sha256": "765446ed35677805eccd2111f4285f74cff72298274612d6a0e687b1452e16a1",
+      "source_concept_sha256": "5fa22adf0ec450b02f6d569ff877be0d86e7b0419de519213a744075b377a321",
+      "previous_review_sha256": "fd98df8fc6bda030dd88df0202c04318094a1a31892d9df00bcb3831a20e0ac3",
+      "local_neighborhood_sha256": "6ed3351be5a3579fee1bbdee7e61d7476b58d4bf34f9d8d5faf4c9fb938c8cad",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "decision_kind": "COMPATIBLE_REUSE_CONFIRMED",
+      "comparison_term_ids": [
+        "exposure_note"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "exposure_note"
+      ],
+      "rationale": "Retain the bounded exposure analogy. The authored Riskium referent is a time-qualified bearer/source situation; the inspected security discussion does not itself define that formal situation model.",
+      "boundary": "An exposure value is information about the situation, not the situation itself.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C013",
+      "title": "Risk State",
+      "subdomain_id": "D01",
+      "authored_definition": "A temporally qualified state of a risk-relevant situation, distinct from the workflow status of its record.",
+      "authored_definition_sha256": "9c27eae3e8a5eca56b2e4ded0986bb41ab1332414d0d7a04a900faf760c01969",
+      "source_concept_sha256": "57189af7d6d61d0a24c6ebfd5a594bd2d5c972175f8c9aca64a37eb641a6569d",
+      "previous_review_sha256": "202eb35808cd041a4401dde639ae50ef4b0f015f97ad832db12c367f9395cf42",
+      "local_neighborhood_sha256": "ba82a6eb776b46278dd79c483c25b0611e8f6988b4312e472084d838d2273785",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "disposition": "CONTRAST",
+      "decision_kind": "SCOPED_LABEL_CLARIFIED",
+      "comparison_term_ids": [
+        "entity"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "entity"
+      ],
+      "rationale": "Replace the scoped absence label with a contrast. Riskium explicitly individuates a temporally qualified risk situation; generic entity description does not supply its state identity or a workflow interpretation.",
+      "boundary": "A record workflow status must not be substituted for the state of the risk-relevant situation.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C016",
+      "title": "Information Content",
+      "subdomain_id": "D02",
+      "authored_definition": "The abstract informational meaning expressed by artifacts or versions. Content identity requires an explicit equivalence policy and is not inferred from equal strings or file hashes.",
+      "authored_definition_sha256": "3d1da953b8731973ee8cb63f81f3265012dbde86dbebd8e07aaa6f3314079705",
+      "source_concept_sha256": "97564827cda680d85461d5eb47a27aad14f0336aaabc8735abc7e0c4084224fc",
+      "previous_review_sha256": "0fee225e78e810b54b305dfaf904aeba138aab016a714e5870a3a88f5526aeb6",
+      "local_neighborhood_sha256": "3dcbad65e8737b2471d8fa72b3851bdee725c859eeba34f8dc9a3e5991a62767",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "decision_kind": "COMPATIBLE_REUSE_CONFIRMED",
+      "comparison_term_ids": [
+        "entity"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "entity"
+      ],
+      "rationale": "Retain conceptual-entity context without importing a content identity policy. Riskium keeps abstract meaning separate from artifacts and versions and requires its own explicit equivalence criteria.",
+      "boundary": "Equal strings or file digests alone do not establish content identity.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C023",
+      "title": "Entry Revision",
+      "subdomain_id": "D04",
+      "authored_definition": "An identifiable version of a register entry, preserving the content and qualified links effective at its issue.",
+      "authored_definition_sha256": "c3ec1b0971828e5aef5ff7f9cf1fc022a4b7a9502277e459f69f6e9684c94e7d",
+      "source_concept_sha256": "0fdc2e188242d076f496e9e64b72495d266a9bc42e853f624c483e1e31808a41",
+      "previous_review_sha256": "044d27bcaaa1f08d65ba568ed9c9283b2ef345a550581f17ce14ffa49d3600b5",
+      "local_neighborhood_sha256": "dcca1da477a0873f7fe5fd8bc9c7fb05d35e3f6461ef55ff8d59134e30a69b67",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "CONTRAST",
+      "disposition": "CONTRAST",
+      "decision_kind": "COMPATIBLE_REUSE_CONFIRMED",
+      "comparison_term_ids": [
+        "entity",
+        "revision"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "entity",
+        "revision"
+      ],
+      "rationale": "Retain the object/derivation distinction. Riskium EntryRevision is a version object with effective links; a qualified revision describes derivation rather than being that version or its creation activity.",
+      "boundary": "Do not substitute a derivation qualification for an entry-version individual.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C031",
+      "title": "Assessment Activity",
+      "subdomain_id": "D05",
+      "authored_definition": "An actual activity contributing to risk identification, analysis or evaluation. It may cover only part of a risk assessment; the complete standardized assessment process is outside the current process-modeling scope.",
+      "authored_definition_sha256": "1d769041d480d97b3c70153014490151f337fbf095c91cef302138fd51e8b5ec",
+      "source_concept_sha256": "1c5b5d3dbf0b706467b304b54a84bd957ac29a77076ea24de22a739f87030e7b",
+      "previous_review_sha256": "0356ac99c97def00c38761dd01991f20238f122ee0721edd339c1cfc8d85283b",
+      "local_neighborhood_sha256": "03914ed33b77f7fcfc238d06d6d5949598fb76431fe42f4e29fc9e3e62708c55",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "CONTRAST",
+      "disposition": "CONTRAST",
+      "decision_kind": "COMPATIBLE_REUSE_CONFIRMED",
+      "comparison_term_ids": [
+        "assessment",
+        "activity"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "assessment",
+        "activity"
+      ],
+      "rationale": "Retain the activity/process scope distinction. A Riskium AssessmentActivity may contribute only one actual part of identification, analysis or evaluation; it is not automatically the complete security assessment process.",
+      "boundary": "A planned assessment is not an actual assessment activity.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C044",
+      "title": "Treatment Activity",
+      "subdomain_id": "D06",
+      "authored_definition": "An actual performance of actions intended to modify or otherwise respond to risk, distinct from the plan describing them.",
+      "authored_definition_sha256": "7b8c8527f788446908fb63e7e7c3e54c6bf44aa1c8f960305e8e667f96b5c203",
+      "source_concept_sha256": "4d8cb6c70848be36efbbf0920f2cff5d09759ac799ef60d21841af4cde5e64b8",
+      "previous_review_sha256": "4b472087cee42ea97df2d2e03068b9a3c797e1ca6435757330594275ef076e23",
+      "local_neighborhood_sha256": "1d80cdc47aea05a2dcfcf73cfb60c6b6669ad8b572b02c47f3dd773340a4344a",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "decision_kind": "COMPATIBLE_REUSE_CONFIRMED",
+      "comparison_term_ids": [
+        "response",
+        "activity"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "response",
+        "activity"
+      ],
+      "rationale": "Retain the response analogy and separate actual treatment performance from its plan. Intended risk modification does not by itself establish observed effectiveness.",
+      "boundary": "A documented plan alone does not establish an executed treatment.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C045",
+      "title": "Risk Control",
+      "subdomain_id": "D06",
+      "authored_definition": "A contextual measure intended to maintain or modify risk. A policy, device, practice or activity may serve as its bearer. Implementation and observed effectiveness are separate claims; one cross-category stereotype is not asserted.",
+      "authored_definition_sha256": "1993a44dc03eb1a08fb4a0fd7ccd33765a7edff935cb4498660b06d4a9caf642",
+      "source_concept_sha256": "d57794e245b05aebaab8c4959a697daa29c89be3d4a4d5b43cff9aaff41bedb8",
+      "previous_review_sha256": "261d01de6278534e54ccea5377b594d8f911b210642ab25857cea679ea72df09",
+      "local_neighborhood_sha256": "50422a557c966e0110959db258412cfda2dfcb32652178ee8e54b40af87a17e9",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "decision_kind": "COMPATIBLE_REUSE_CONFIRMED",
+      "comparison_term_ids": [
+        "controls"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "controls"
+      ],
+      "rationale": "Retain the security-control analogy as one contextual use of Riskium RiskControl. The authored profile permits different bearer categories and separates implementation from effectiveness.",
+      "boundary": "A named or installed measure alone is not proof of effectiveness; no cross-category stereotype is forced.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C052",
+      "title": "Responsibility Relator",
+      "subdomain_id": "D07",
+      "authored_definition": "A temporally qualified responsibility relationship connecting its participants, responsibility scope and grounding assignment.",
+      "authored_definition_sha256": "ba7953dc52c7faccf1c7cd85ea3bbb6c82996d5eb885f5ec986e9d7a91f7be6d",
+      "source_concept_sha256": "5cde7c38fa245c75cc72bc1babf2ea368356f421fc00f0c3996a888817857773",
+      "previous_review_sha256": "42aec7e671b729ba3904427429ed8fb83c12f909e03b47809e78a81fff447c76",
+      "local_neighborhood_sha256": "8b2fda98e347d942d65bdea7cede2974f8b4fd72c99c8c9d0dd085796f7f91f6",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "decision_kind": "COMPATIBLE_REUSE_CONFIRMED",
+      "comparison_term_ids": [],
+      "foundation_term_ids": [
+        "relator"
+      ],
+      "passage_ids": [
+        "relator"
+      ],
+      "rationale": "Retain Relator as a modeling foundation rather than an external responsibility definition. Riskium adds grounding, temporal scope and responsibility semantics; its distinct-participant identity rule is additional to the C2 minimum-cardinality sum.",
+      "boundary": "An owner name alone does not establish a grounded mandate or distinct mediated participants; independent judgment remains #23.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [
+        23
+      ],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C063",
+      "title": "Workflow Scheme Version",
+      "subdomain_id": "D08",
+      "authored_definition": "An issued version of a scheme defining workflow values and permitted transitions.",
+      "authored_definition_sha256": "809f08ca93abb5979f467e90ea67f79822ce36c4405db1e37983005a8d9cd6d1",
+      "source_concept_sha256": "27bf9e67d669ae6cc77047eb997584dd257a83e4ddd7081e30a10417a6412b68",
+      "previous_review_sha256": "111edf779c388c17464bee7ea6c60dddc78be19a33dacc87abd4f40aec0373d8",
+      "local_neighborhood_sha256": "c7a1d05b62f8a90aba4d0c0794485ebb10813ff8c20cb779159ba23f7d26bb76",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "CONTRAST",
+      "disposition": "CONTRAST",
+      "decision_kind": "COMPATIBLE_REUSE_CONFIRMED",
+      "comparison_term_ids": [
+        "scheme",
+        "revision"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "scheme",
+        "revision"
+      ],
+      "rationale": "Retain the comparison boundary. Riskium WorkflowSchemeVersion is an issued transition specification; concept-scheme aggregation or a revision qualification does not define its transitions or authorization rules.",
+      "boundary": "Do not infer executable workflow rules from a concept aggregation or version lineage.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C064",
+      "title": "Workflow Assignment",
+      "subdomain_id": "D08",
+      "authored_definition": "A temporally bounded situation in which a managed record revision has an assigned workflow state under an identified scheme version; the statement documenting this situation is separate.",
+      "authored_definition_sha256": "32271ea2ed9626409e79ff4d2e2c619deb4aa862cd4e7d8a4a306182fadf3b55",
+      "source_concept_sha256": "deaf4698bb8727eafa01fd88de12cc30b2fac0adf8611a7f244f87ccd64a5023",
+      "previous_review_sha256": "b34e2cf29c43adc3a0fc44aae906b0bbb5bfa393cb3acd0885465c04f30df90f",
+      "local_neighborhood_sha256": "e96c2708722b2d62c7b78feac5e4d657f14a60d52e56b3a317f48aff3a78b6cb",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "disposition": "CONTRAST",
+      "decision_kind": "SCOPED_LABEL_CLARIFIED",
+      "comparison_term_ids": [
+        "role"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "role"
+      ],
+      "rationale": "Replace the scoped absence label with a contrast. Riskium WorkflowAssignment is a timed record-state situation under a scheme version, rather than an activity-function description.",
+      "boundary": "The statement documenting an assignment is distinct from the assignment situation.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C067",
+      "title": "Observation Activity",
+      "subdomain_id": "D10",
+      "authored_definition": "An activity that observes a stated feature of a subject using a declared procedure and temporal context.",
+      "authored_definition_sha256": "a31d0602b6537c4caf347717bd5a6cc3e75a78134eb79ccc4f68e124947e2d12",
+      "source_concept_sha256": "36725c0d7d4e70b69f7d86fcc8f136ea2a5ef5898d6eb8128ad3d4a85860046a",
+      "previous_review_sha256": "def8aaca3e3f3bc1545ca03a539d3a9a724f67de6ef37e1ebc75579b26529146",
+      "local_neighborhood_sha256": "804ff67c31c7bccbde04f9d837b78085e8e16f1b3d38041c29e16a1a5236a747",
+      "impact_category": "REUSE_CANDIDATE",
+      "source_record_unchanged": true,
+      "local_neighborhood_unchanged": true,
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "decision_kind": "COMPATIBLE_REUSE_CONFIRMED",
+      "comparison_term_ids": [
+        "observation"
+      ],
+      "foundation_term_ids": [],
+      "passage_ids": [
+        "observation"
+      ],
+      "rationale": "Retain the procedure/feature/value observation comparison. Riskium keeps its stated subject, procedure and temporal context without automatically importing every source restriction.",
+      "boundary": "An observation report is information about an activity; the comparison does not establish all-profile equivalence.",
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported reinspection of selected primary passages and unchanged authored/local structural context; not an independent expert judgment.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    }
+  ],
+  "summary": {
+    "this_packet": 17,
+    "prior_n2": 8,
+    "cumulative_documentary_dispositions": 25,
+    "population": 82,
+    "remaining": 57,
+    "dispositions": {
+      "CONTRAST": 8,
+      "ANALOGY": 4,
+      "RELATED": 5
+    },
+    "scoped_labels_clarified": 3
+  },
+  "boundaries": {
+    "scientific_source_modified": false,
+    "historical_curation_modified": false,
+    "published": false,
+    "engine_runs": 0,
+    "formal_alignment_axioms_added": false,
+    "independent_validation": "NOT_PERFORMED",
+    "normative_crosswalks": "Exact normative adoption remains #78. This packet uses selected public primary passages, not licensed ISO/PRINCE2/ISACA full text.",
+    "semantic_review": "Existing #23 is unchanged; documentary reuse is not independent semantic acceptance.",
+    "review_scope": "Unchanged concept records and direct associations/generalizations were rechecked. This is not a proof that every indirect/global semantic context is unchanged.",
+    "sosa_scope": "Only the Observation definition is used; source displays may combine SOSA with stronger SSN restrictions. No cardinality or restriction is imported into Riskium.",
+    "deployment_scope": "Seventeen previews remain planning artifacts. Full component qualification and actual repository/Wiki/Pages publication/readback are later gates."
+  }
+}

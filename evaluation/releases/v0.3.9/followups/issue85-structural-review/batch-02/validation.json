@@ -1,0 +1,97 @@
+{
+  "status": "PASS_LOCAL_DOCUMENTARY_BATCH_NOT_PUBLICATION",
+  "execution": "N3b-2",
+  "runtime": "LOCAL_PYTHON_NOT_CI_OR_ONTOLOGY_ENGINE",
+  "summary": {
+    "this_batch": 10,
+    "prior_documentary_dispositions": 36,
+    "cumulative_documentary_dispositions": 46,
+    "population": 82,
+    "remaining": 36,
+    "dispositions": {
+      "RELATED": 2,
+      "CONTRAST": 2,
+      "ANALOGY": 6
+    },
+    "disposition_labels_changed": 0,
+    "unchanged_local_edges": 10,
+    "changed_ancestor_context": 7,
+    "changed_association_neighbor_context": 1
+  },
+  "review_sha256": "dfe981213ad6c2a44758b6e96ea80fbb9f97bddcb947af80921467e6f152ca51",
+  "builder_sha256": "35ddef82cb6585ced179ebfdb348e2bf86ef3d4ade3b9c61079a0c3b3579352c",
+  "context_extractor_sha256": "8d1e0821b478c2ddbd5c0757d601d2241a2cd6142b12e8d996a6a8d8e159b3f4",
+  "role_extractor_sha256": "25911eba3cccdbf8cb8879096b84e3581cdcab71cdde65adfd17073200b62272",
+  "negative_controls": [
+    {
+      "control": "missing_record",
+      "rejected": true,
+      "reason": "declared batch coverage"
+    },
+    {
+      "control": "stale_scientific_source",
+      "rejected": true,
+      "reason": "stale source input: ontology/0.3.2/riskium-model.json"
+    },
+    {
+      "control": "inferred_sibling_exclusivity",
+      "rejected": true,
+      "reason": "unsupported policy inference"
+    },
+    {
+      "control": "unsupported_equivalence",
+      "rejected": true,
+      "reason": "unsupported semantic acceptance"
+    },
+    {
+      "control": "missing_ancestor_edge",
+      "rejected": true,
+      "reason": "structural context mismatch"
+    },
+    {
+      "control": "missing_changed_neighbor",
+      "rejected": true,
+      "reason": "structural context mismatch"
+    },
+    {
+      "control": "missing_excluded_set_policy",
+      "rejected": true,
+      "reason": "structural context mismatch"
+    },
+    {
+      "control": "wrong_person_identity_provider",
+      "rejected": true,
+      "reason": "responsibility context mismatch"
+    },
+    {
+      "control": "optional_role_mediation",
+      "rejected": true,
+      "reason": "responsibility context mismatch"
+    },
+    {
+      "control": "name_implies_authority",
+      "rejected": true,
+      "reason": "unsupported responsibility inference"
+    },
+    {
+      "control": "changed_preview_definition",
+      "rejected": true,
+      "reason": "rendered body mismatch: previews/RKM-C047.md"
+    }
+  ],
+  "outputs": {
+    "README.md": "083006fd8d6bef151e468cf978f06cd0c27a65108aed2ed21103830842e80807",
+    "decisions.csv": "ebd2ae9055418f2532cef76d16a10dd1ee61e7f0af212f6ca1a701b8e43d0a88",
+    "previews/RKM-C047.md": "73ca2fbeca7764174ab83ca9c76ff395a06085b0b40ee1715263acdfee8dee95",
+    "previews/RKM-C050.md": "ee9aa13021317d37c82d6834455a8edbf44636839a2baf6384130df35bf49f9d",
+    "previews/RKM-C051.md": "518b1a8ce6cb0abc6e33602609a5406376c3eb4fd014de2a9196820830bbf6ed",
+    "previews/RKM-C053.md": "0fa2eb9318c888f1b768797cd6a3b3d21370a48b8656c6d580e79c0118c6a364",
+    "previews/RKM-C054.md": "283ad3ca8b850585a6a00b2bf0261e73f3f05e5f5522cd62bbb3625fb8ae7410",
+    "previews/RKM-C055.md": "5da287f90605db2854da20830983d265d24e055e01f87b899e149cc1b1cb4263",
+    "previews/RKM-C056.md": "e72d4ddc1adda62e600c03daa0f133f21f637e8202012ade2a06bf4ea99a138e",
+    "previews/RKM-C057.md": "fc29c9ae32a1b9b84071c04a2e1ab487983610df6bb25c7e3f38ce04743863b9",
+    "previews/RKM-C058.md": "efccbeaa4542463996b86b60cbfca895e56a50bfc21083f7886da78e14fa68c8",
+    "previews/RKM-C059.md": "8ef386e378acece4e563425718e56c8096ea56d6dc735673f2ffbf5dbd39f8de",
+    "progress.json": "4a40ec13e9edc8b971b04afba3377f5937d0abf450ff8ba2be7a20c6bc29ef0c"
+  }
+}

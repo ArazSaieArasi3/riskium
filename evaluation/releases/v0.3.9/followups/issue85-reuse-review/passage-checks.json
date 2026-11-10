@@ -1,0 +1,234 @@
+{
+  "activity": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Activity",
+    "locator": "§4.1, Activity",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Activity",
+      "window_raw_chars": 14000
+    },
+    "selected_text_sha256": "3b37cc2125e5ebd52d02904cd57b6c4bc54719c37dd1154af56a953a076122a6",
+    "selected_text_chars": 4317,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "assessment": {
+    "source_id": "nist",
+    "source_document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=59",
+    "locator": "Appendix B, printed B-9, PDF page 59; attributed there to SP 800-39",
+    "selector": {
+      "kind": "PDF_PAGE",
+      "pdf_page_1_based": 59
+    },
+    "selected_text_sha256": "e607ec52ac779e374903f8e962b0d105e382b2302485525ef828afaf921e1c8a",
+    "selected_text_chars": 2462,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "controls": {
+    "source_id": "nist",
+    "source_document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=61",
+    "locator": "Appendix B, printed B-11, PDF page 61; attributed there to FIPS 199/CNSSI 4009",
+    "selector": {
+      "kind": "PDF_PAGE",
+      "pdf_page_1_based": 61
+    },
+    "selected_text_sha256": "fe7a631485d86cb234d3f5f6689aa2cd5dd77b95f49919cbb05a26eaf233c2a7",
+    "selected_text_chars": 2787,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "entity": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Entity",
+    "locator": "§4.1, Entity",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Entity",
+      "window_raw_chars": 14000
+    },
+    "selected_text_sha256": "f6862b4b447782076f3d8d24ec6c6e0a2b2e7ebd5013ef568f5c1137287ae971",
+    "selected_text_chars": 3365,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "exposure_note": {
+    "source_id": "nist",
+    "source_document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=19",
+    "locator": "§2.3.1, footnote 27, printed page 10, PDF page 19",
+    "selector": {
+      "kind": "PDF_PAGE",
+      "pdf_page_1_based": 19
+    },
+    "selected_text_sha256": "c86835905847074f60124d5b521f71ddc0fc0942215fd0223ca5570a8416a966",
+    "selected_text_chars": 4822,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "mode": {
+    "source_id": "mode",
+    "source_document_sha256": "630972b1ea5a2efc6b7222c06e7484111d47e196060443153148f0164a2ca65a",
+    "url": "https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html#definition",
+    "locator": "Definition; Constraints C1-C2",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "definition",
+      "window_raw_chars": 14000
+    },
+    "selected_text_sha256": "d4d912dfdc63a2e7875380b30d7b1d241d3f3b25cb70e17c512610d51025d0e0",
+    "selected_text_chars": 1617,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "observation": {
+    "source_id": "sosa",
+    "source_document_sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+    "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/#SOSAObservation",
+    "locator": "§4.3.2.2",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "SOSAObservation",
+      "window_raw_chars": 14000
+    },
+    "selected_text_sha256": "51cd8234c9cdb6c75cd62e4315f90ea9a17fe73853de0bc3e68734758943c91f",
+    "selected_text_chars": 1918,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "predisposition": {
+    "source_id": "nist",
+    "source_document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=58",
+    "locator": "Appendix B, printed B-8, PDF page 58",
+    "selector": {
+      "kind": "PDF_PAGE",
+      "pdf_page_1_based": 58
+    },
+    "selected_text_sha256": "a5aa926fca676f0725671a82d58cef49e78504f2828529d66d894a3878390bcb",
+    "selected_text_chars": 3003,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "relator": {
+    "source_id": "relator",
+    "source_document_sha256": "639fcd67050a2dbb0d94fe6567a112e039d8b0ea429f636f3e7122d36c564757",
+    "url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html#definition",
+    "locator": "Definition; Constraints C1-C2",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "definition",
+      "window_raw_chars": 14000
+    },
+    "selected_text_sha256": "69f154ca4265fc89422c1a061e78461af4dd703ea513399ac8b986701e675d58",
+    "selected_text_chars": 2404,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "response": {
+    "source_id": "nist",
+    "source_document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=60",
+    "locator": "Appendix B, printed B-10, PDF page 60; attributed there to SP 800-39",
+    "selector": {
+      "kind": "PDF_PAGE",
+      "pdf_page_1_based": 60
+    },
+    "selected_text_sha256": "a71e7621cb7ace9f0aa802338e9dda427cda7f8a63e0088a58b828ae9154fc2b",
+    "selected_text_chars": 2690,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "revision": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Revision",
+    "locator": "§4.3, Revision",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Revision",
+      "window_raw_chars": 14000
+    },
+    "selected_text_sha256": "ffe7fdb0aaef85ee5f879c8ae285c6494fce71b343e61328913cb4eacd9f6000",
+    "selected_text_chars": 6140,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "role": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Role",
+    "locator": "§4.3, Role",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Role",
+      "window_raw_chars": 14000
+    },
+    "selected_text_sha256": "bae20ee03b1ecf6e950a961afa328a05a5adf4fc15a4aa557eed1af025dfd586",
+    "selected_text_chars": 5055,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "scheme": {
+    "source_id": "skos",
+    "source_document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+    "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes",
+    "locator": "§4, especially §§4.1 and 4.6.2",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "schemes",
+      "window_raw_chars": 14000
+    },
+    "selected_text_sha256": "93ee46be2539042a53653f0488023bf5d470fc5a9ec60b8ccca054b36ce9ef1b",
+    "selected_text_chars": 8389,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "threat_event": {
+    "source_id": "nist",
+    "source_document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=63",
+    "locator": "Appendix B, printed B-13, PDF page 63",
+    "selector": {
+      "kind": "PDF_PAGE",
+      "pdf_page_1_based": 63
+    },
+    "selected_text_sha256": "60e29f42e54a87b6a7c499c4b02baac8193b97d6d21dc116b87fc4d2c3c3e34c",
+    "selected_text_chars": 2922,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "threat_source": {
+    "source_id": "nist",
+    "source_document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=63",
+    "locator": "Appendix B, printed B-13, PDF page 63; attributed there to CNSSI 4009",
+    "selector": {
+      "kind": "PDF_PAGE",
+      "pdf_page_1_based": 63
+    },
+    "selected_text_sha256": "60e29f42e54a87b6a7c499c4b02baac8193b97d6d21dc116b87fc4d2c3c3e34c",
+    "selected_text_chars": 2922,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "vulnerability": {
+    "source_id": "nist",
+    "source_document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=63",
+    "locator": "Appendix B, printed B-13, PDF page 63; attributed there to CNSSI 4009",
+    "selector": {
+      "kind": "PDF_PAGE",
+      "pdf_page_1_based": 63
+    },
+    "selected_text_sha256": "60e29f42e54a87b6a7c499c4b02baac8193b97d6d21dc116b87fc4d2c3c3e34c",
+    "selected_text_chars": 2922,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  }
+}

@@ -1,0 +1,747 @@
+{
+  "schema": "riskium.structural-context-curation/1",
+  "status": "BOUNDED_BATCH_COMPLETE_FULL_CURATION_PENDING",
+  "execution": "N3b-4",
+  "date": "2026-11-10",
+  "baseline_commit": "8a115ef9c3fb6b0501c6ed9c9fd6b258d358028e",
+  "model_version": "0.3.2",
+  "intended_package": "v0.3.10",
+  "issue": 85,
+  "record_digest_method": "SHA-256 of compact UTF-8 JSON with sorted keys and ensure_ascii=False; file-input hashes use raw bytes.",
+  "inputs": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/0.3.2/riskium-model.json": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb",
+    "references/concept-definitions/0.1.0/review.json": "3eeba2690041f5f815754a256d586cc338b3710c68fe8edc42f5b9865f7fff47",
+    "evaluation/releases/v0.3.9/followups/issue85-impact/impact.json": "c971787dd75909f5ca18484baa13d7f462b029ce509c1f25e364c0ac4df3c9af",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/remaining-batches.json": "c6d39beb750cd870f94001f2033d66ab868d31ae5a44f0671eec4d76f3b2858c",
+    "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json": "8704efb3cf7760fa09ba5aead5a9bb433b63ef906adbd084a832b183743caa73",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json": "ddcacd405d73ee568fd11e6325fd48a13b45f32630f406a9cbd5e4350517d2c0",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json": "6ce6856f79fbb661bd910fd8f7a937effe464257127c3e52edfb9a0c3bec4c50",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json": "dfe981213ad6c2a44758b6e96ea80fbb9f97bddcb947af80921467e6f152ca51",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json": "03b8647b1cefbba02b761727aa6ec4e4b82f85cf9ae1695ccc35620f3c031d76",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/source-access.json": "032040c4a334076bc236b23ded43cc4a75cb2103c661005ffc7eadd86b0be3ef",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/passage-checks.json": "3b1ad103c6613cd7a0a3019d22d7dc821f3a1fb9c8a4343768ebb593bbe4e3ce",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/contexts.json": "e262b1924f5967270ad3bf3d5c610735165dc758c20bf0c13496fb23db71632d",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/assessment-checks.json": "9b00c6ae8ec038bc038be35cc82acb43c0a20ecd2e216e2b9a6e18efabe6bb8e"
+  },
+  "prior_packets": [
+    "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json"
+  ],
+  "sources": {
+    "prov": {
+      "title": "PROV-O: The PROV Ontology",
+      "version": "W3C Recommendation, 30 April 2013",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "accessed": "2026-11-10",
+      "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+      "inspection_scope": "Terms listed below only; no PROV conformance or import asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "bytes": 464179,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "nist": {
+      "title": "Guide for Conducting Risk Assessments, NIST SP 800-30 Revision 1",
+      "version": "September 2012; DOI 10.6028/NIST.SP.800-30r1",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+      "accessed": "2026-11-10",
+      "document_sha256": null,
+      "inspection_scope": "Security-specific terms, selected glossary entries and tables only; not a universal enterprise-risk vocabulary. Glossary entries retain their original attributions.",
+      "access": "WEB_SELECTED_PAGES_INSPECTED_FULL_RESPONSE_NOT_REHASHED",
+      "direct_access": "WEB_SELECTED_PAGES_SUCCESS_DIRECT_HTTP_FAILED",
+      "error_type": "HTTPError",
+      "same_response_as_prior": null,
+      "historical_document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+      "web_source_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+      "selected_pdf_pages": [
+        59,
+        78
+      ],
+      "visual_pages_checked": [
+        59,
+        78
+      ],
+      "fresh_full_body_hash_verified": false,
+      "access_note": "The direct HTTP attempts timed out/failed. Current selected glossary and scale pages were inspected through web PDF text and page images; the historical full-body hash is preserved separately, not claimed reverified."
+    },
+    "dqv": {
+      "title": "Data on the Web Best Practices: Data Quality Vocabulary",
+      "version": "W3C Working Group Note, 15 December 2016",
+      "url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/",
+      "accessed": "2026-11-10",
+      "document_sha256": "271d3e820c681127131595d2c8bf8345e925149192f6cab821f101f09d372a63",
+      "inspection_scope": "Dataset-quality vocabulary used by analogy only. This Note is work in progress, not a W3C Recommendation.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/",
+      "bytes": 183523,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "sosa": {
+      "title": "Semantic Sensor Network Ontology",
+      "version": "W3C Recommendation, 19 October 2017; SOSA/SSN",
+      "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/",
+      "accessed": "2026-11-10",
+      "document_sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+      "inspection_scope": "Selected core classes only; observed properties and their specifications remain distinct.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/",
+      "bytes": 673275,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "skos": {
+      "title": "SKOS Simple Knowledge Organization System Reference",
+      "version": "W3C Recommendation, 18 August 2009",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+      "accessed": "2026-11-10",
+      "document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+      "inspection_scope": "Concept, scheme and lexical-label distinctions; no SKOS mapping triples asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+      "bytes": 227150,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "oa": {
+      "title": "Web Annotation Data Model",
+      "version": "W3C Recommendation, 23 February 2017",
+      "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/",
+      "accessed": "2026-11-10",
+      "document_sha256": "a7513e022f56c0a6f4e99ac11aec03f3451d1ff1ce14054780b3ccfb38fa7980",
+      "inspection_scope": "Selected motivations and annotation/body distinction only; no serialization conformance asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/",
+      "bytes": 284185,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    }
+  },
+  "terms": {
+    "assessment_report": {
+      "source_id": "nist",
+      "name": "Risk Assessment Report",
+      "locator": "Appendix B, printed B-9, PDF page 59",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=59",
+      "paraphrase": "The formal documented output of risk assessment.",
+      "quotation": false,
+      "target_kind": "SECURITY_DOCUMENTARY_REPORT"
+    },
+    "entity": {
+      "source_id": "prov",
+      "name": "prov:Entity",
+      "locator": "§4.1, Entity",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Entity",
+      "paraphrase": "A thing considered through fixed aspects, including conceptual or imaginary things.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "measurement": {
+      "source_id": "dqv",
+      "name": "dqv:QualityMeasurement",
+      "locator": "§4.1",
+      "url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/#dqv:QualityMeasurement",
+      "paraphrase": "Evaluation of a dataset or distribution against a quality metric.",
+      "quotation": false,
+      "target_kind": "DATASET_QUALITY_PATTERN_CLASS"
+    },
+    "procedure": {
+      "source_id": "sosa",
+      "name": "sosa:Procedure",
+      "locator": "§4.8.2.1",
+      "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/#SOSAProcedure",
+      "paraphrase": "A reusable method describing how observations, samplings or actuations are performed.",
+      "quotation": false,
+      "target_kind": "SOSA_PROCEDURE_CLASS"
+    },
+    "scales": {
+      "source_id": "nist",
+      "name": "Assessment scale: vulnerability severity",
+      "locator": "Appendix F, Table F-2, printed F-2, PDF page 78",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=78",
+      "paraphrase": "Example levels for vulnerability severity.",
+      "quotation": false,
+      "target_kind": "SECURITY_SCALE_EXAMPLE"
+    },
+    "concept": {
+      "source_id": "skos",
+      "name": "skos:Concept",
+      "locator": "§3, especially §§3.1 and 3.5.1",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts",
+      "paraphrase": "A knowledge-organization notion; using it does not automatically identify an OWL class.",
+      "quotation": false,
+      "target_kind": "VOCABULARY_CLASS"
+    },
+    "label": {
+      "source_id": "skos",
+      "name": "Lexical labels",
+      "locator": "§5.1",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#labels",
+      "paraphrase": "A natural-language string associated with a resource, distinct from the resource.",
+      "quotation": false,
+      "target_kind": "LEXICAL_LABEL_PROPERTY_FAMILY"
+    },
+    "dimension": {
+      "source_id": "dqv",
+      "name": "dqv:Dimension",
+      "locator": "§4.3",
+      "url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/#dqv:Dimension",
+      "paraphrase": "A dataset-quality assessment criterion associated with one or more metrics.",
+      "quotation": false,
+      "target_kind": "DATASET_QUALITY_PATTERN_CLASS"
+    },
+    "annotation": {
+      "source_id": "oa",
+      "name": "oa:Annotation",
+      "locator": "§3.1",
+      "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/#annotations",
+      "paraphrase": "An association involving body and target resources.",
+      "quotation": false,
+      "target_kind": "ANNOTATION_RESOURCE_CLASS"
+    }
+  },
+  "concepts": [
+    {
+      "concept_id": "RKM-C032",
+      "title": "Assessment Information",
+      "subdomain_id": "D05",
+      "authored_definition": "A managed information artifact documenting an assessment and its scope, basis, methods, time context, participants and results. It is distinct from performing that assessment.",
+      "authored_definition_sha256": "d60b3c178be4eebfb834479130fa22afa7e2e354e23b983bf2ab71f95de7df4c",
+      "source_concept_sha256": "60eed4828678a9c3e6281418176d2aa355a8a2010e7e7337d21376a8ef759dac",
+      "previous_review_sha256": "386bf2afa88c817d61d1cc2536535debaf1e5c6c23dd17c1f3c7b6b4b14f9b87",
+      "context_sha256": "48a9f52516fb833f6ddc8d3583c9aa14d537ef8493f2c0b1caf66acfba4ae1dc",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "comparison_term_ids": [
+        "assessment_report"
+      ],
+      "constraint_ids": [
+        "C-01",
+        "C-04",
+        "C-16",
+        "C-18",
+        "C-25"
+      ],
+      "rationale": "Retain the NIST security-report comparison as a documentary precedent. It describes an output of assessment, not the assessment activity or a universal enterprise/ecosystem report template.",
+      "context_interpretation": "R-11 targets the continuing RiskCase; R-12 records basis and R-13/R-17 allow dimensional and score outputs. RX-014 pins context version, while optional method links are completed under the selected analytical task. Revised RiskCase and ArtifactVersion neighbors were reviewed.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "assessment_guards": {
+        "missing_input_is_zero": false,
+        "equal_codes_establish_comparability": false,
+        "reported_score_proves_reproducible_computation": false,
+        "score_alone_establishes_acceptability": false,
+        "uncertainty_requires_numeric_probability": false,
+        "external_domain_restrictions_imported": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison, current ancestry/neighbor/set-policy and selected assessment source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C033",
+      "title": "Assessment Basis",
+      "subdomain_id": "D05",
+      "authored_definition": "A specification of assumptions and control conditions under which an assessment result is interpreted.",
+      "authored_definition_sha256": "738a7a329e6623c14f2d79d69179a4095a3428b63bf0339702c7f63b8171c77f",
+      "source_concept_sha256": "b55ffce904c23c7ef5d5a3e9ebfd2681747ece0ed0b84a14cd151303f17234fd",
+      "previous_review_sha256": "6a2939c9e79ac5d05314a3d3007d9fa1d7ed38e7d0f8e949e19777f4b5bc19e8",
+      "context_sha256": "caa62869adb8c3a8dbfcd44962f395051376b7a5f0c51acc8f95a02f011e7959",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "disposition": "CONTRAST",
+      "comparison_term_ids": [
+        "entity"
+      ],
+      "constraint_ids": [
+        "C-02",
+        "C-04",
+        "C-18"
+      ],
+      "rationale": "Clarify the former scoped-absence label as a contrast in definitional scope: generic prov:Entity can describe provenance, but does not define risk-specific assumptions or control conditions. No disjointness, global absence or exact external equivalent is asserted.",
+      "context_interpretation": "R-12 makes the basis explicit for the assessment information; RK2-022 may identify the control baseline assumed. The documentary specification does not establish that the controls exist or are effective, and different bases cannot be silently pooled.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "assessment_guards": {
+        "missing_input_is_zero": false,
+        "equal_codes_establish_comparability": false,
+        "reported_score_proves_reproducible_computation": false,
+        "score_alone_establishes_acceptability": false,
+        "uncertainty_requires_numeric_probability": false,
+        "external_domain_restrictions_imported": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison, current ancestry/neighbor/set-policy and selected assessment source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C034",
+      "title": "Dimension Assessment Result",
+      "subdomain_id": "D05",
+      "authored_definition": "A result for one assessment dimension, qualified by its method, scale, basis and relevant temporal context.",
+      "authored_definition_sha256": "61b9e0394d1490dcd05f0957c646f0a350f68bd18f778763751175f06c36ebfa",
+      "source_concept_sha256": "077e2519528a2c3f4784f6460bb872cce8b593e3f8905de61944053c4143a700",
+      "previous_review_sha256": "38aa4022386da606b28e199d8a18426dca53c15373a59b6be284960ae0276127",
+      "context_sha256": "8a7da497dd611cf9e016dd05b76a39b71abcb5a187ab302518e5283cf616c30d",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "comparison_term_ids": [
+        "measurement"
+      ],
+      "constraint_ids": [
+        "C-04",
+        "C-13",
+        "C-18",
+        "C-25"
+      ],
+      "rationale": "Retain DQV measurement as a pattern analogy. DQV concerns dataset quality; Riskium records a risk-dimension result with its own interpretation dependencies. DQV types and domain restrictions are not imported.",
+      "context_interpretation": "R-48 identifies one dimension; R-14/R-15 and RX-016 retain optional scale, selected level and scale-version information. C-13/C-18 require compatible interpretation for comparison. The revised ArtifactVersion neighbor does not turn the result itself into a version or a measured real-world quality.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "assessment_guards": {
+        "missing_input_is_zero": false,
+        "equal_codes_establish_comparability": false,
+        "reported_score_proves_reproducible_computation": false,
+        "score_alone_establishes_acceptability": false,
+        "uncertainty_requires_numeric_probability": false,
+        "external_domain_restrictions_imported": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison, current ancestry/neighbor/set-policy and selected assessment source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C035",
+      "title": "Assessment Method Specification",
+      "subdomain_id": "D05",
+      "authored_definition": "A versioned specification of procedures and rules used to produce and interpret assessment results.",
+      "authored_definition_sha256": "0eff419744009802d6a0bd99de7205985cd8ab4ddc7f9523714220f9f806172a",
+      "source_concept_sha256": "4aff8563e5987ce27cde9d58aacfe8406aa8d55dd55d4196332f6efc51d9af18",
+      "previous_review_sha256": "de539f0c4672bf681e0115a7fbb39a23bc21b4aad2aac9509dcc33b0d4bab4bc",
+      "context_sha256": "77d0bac1b91e8fffe84b9efd2e9558c571cd3d7da8fb88047d10a489a4203a49",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "comparison_term_ids": [
+        "procedure"
+      ],
+      "constraint_ids": [
+        "C-02",
+        "C-03",
+        "C-04",
+        "C-18",
+        "C-25"
+      ],
+      "rationale": "Retain the reusable procedure/execution distinction from SOSA. A risk assessment method specification adds risk-specific interpretation rules; no SOSA restriction or full method equivalence is adopted.",
+      "context_interpretation": "R-46/R-50 relate information and scores to a method; R-49 and RK2-018 describe permitted scales/dimensions. The specification retains documentary identity; a separately pinned ArtifactVersion identifies which issued content was used. A procedure description alone is not execution evidence.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "assessment_guards": {
+        "missing_input_is_zero": false,
+        "equal_codes_establish_comparability": false,
+        "reported_score_proves_reproducible_computation": false,
+        "score_alone_establishes_acceptability": false,
+        "uncertainty_requires_numeric_probability": false,
+        "external_domain_restrictions_imported": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison, current ancestry/neighbor/set-policy and selected assessment source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C036",
+      "title": "Assessment Scale",
+      "subdomain_id": "D05",
+      "authored_definition": "A governed scale specification defining permissible values or ordered levels for a specified assessment dimension.",
+      "authored_definition_sha256": "a705563c110bd1b41e33f653c4443a681ae162ebb3fdbd24c9cf403d708c66db",
+      "source_concept_sha256": "a920f87b9cc5089a23290eabd04b37c1b23a7022c19f95cd5d7d930a24c9efb0",
+      "previous_review_sha256": "967be1a79db1afc6c0e5f575f26ccd877a606d19117917cb53415c4ff610502c",
+      "context_sha256": "4b42634fcf76f9d5be95cd728599bbcc38f637f32f31b1b3f67643b372313d00",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "comparison_term_ids": [
+        "scales"
+      ],
+      "constraint_ids": [
+        "C-04",
+        "C-11",
+        "C-13",
+        "C-18"
+      ],
+      "rationale": "Retain NIST Table F-2 as an example of an interpreted severity scale. Its security-specific levels and numerical codes are not universal Riskium scales or probabilities and are not adopted as a mandatory scheme.",
+      "context_interpretation": "RK2-019 declares one dimension, R-16 relates level resources to their scale, and version references qualify interpretation. Equal codes or labels across scales do not license ranking or arithmetic; qualitative values remain possible.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "assessment_guards": {
+        "missing_input_is_zero": false,
+        "equal_codes_establish_comparability": false,
+        "reported_score_proves_reproducible_computation": false,
+        "score_alone_establishes_acceptability": false,
+        "uncertainty_requires_numeric_probability": false,
+        "external_domain_restrictions_imported": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison, current ancestry/neighbor/set-policy and selected assessment source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C037",
+      "title": "Risk Score Result",
+      "subdomain_id": "D05",
+      "authored_definition": "A numeric assessment output produced under a declared scoring method; it is not the risk itself or a universal definition of risk level.",
+      "authored_definition_sha256": "b08cb249a69e08af4ec3e22e3addb67b7d9dcad0afaeb97878d056d0b4b5d8fb",
+      "source_concept_sha256": "8c537d8b9044e1a52f78aed24b23797cff9747b55ea41e0604d0d13635f99209",
+      "previous_review_sha256": "e9a43d2c5f0259e8b9ca3b18493a357c985d6afed4f58b4d3adbc61daa6093aa",
+      "context_sha256": "d4ca75e2fab69194fda16cf4e718f4fce626f408ce351dcc19eac40732a01a98",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "comparison_term_ids": [
+        "measurement"
+      ],
+      "constraint_ids": [
+        "C-01",
+        "C-04",
+        "C-18",
+        "C-21"
+      ],
+      "rationale": "Retain metric-qualified output as a DQV pattern analogy without equating dataset quality with risk. A recorded numeric output is neither the RiskCase nor an acceptability decision.",
+      "context_interpretation": "R-50 requires a score method; R-18 permits zero or many component links for reported scores. C-21 separately requires declared components, a pinned method and adequate inputs for a computed score. C-18 preserves missing data as missing and does not certify a reported number as reproducible.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "assessment_guards": {
+        "missing_input_is_zero": false,
+        "equal_codes_establish_comparability": false,
+        "reported_score_proves_reproducible_computation": false,
+        "score_alone_establishes_acceptability": false,
+        "uncertainty_requires_numeric_probability": false,
+        "external_domain_restrictions_imported": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison, current ancestry/neighbor/set-policy and selected assessment source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C038",
+      "title": "Assessment Scale Level",
+      "subdomain_id": "D05",
+      "authored_definition": "A managed vocabulary resource specifying a permissible value or category on an identified assessment scale version. It denotes a level; it is not a measured value occurrence or a bare lexical label.",
+      "authored_definition_sha256": "f7b3438be17f79ad27670ad6247f69c97dfff22698bbdc74e66087e2b57230d9",
+      "source_concept_sha256": "f8fe05470430244f93becdfa2d63e0a28b382bb0db5a9315a99e2360c7be8545",
+      "previous_review_sha256": "1e3850d6f8bd37c710ed3e7d4407b26d7c988113276ae8c48d55d0f7d5cb8c79",
+      "context_sha256": "cf7c566b17c40487856bae842edba37531c9563bb7225de72f2d284b6b6fac93",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "concept",
+        "label"
+      ],
+      "constraint_ids": [
+        "C-11",
+        "C-13",
+        "C-18"
+      ],
+      "rationale": "Retain the SKOS distinction between an identified vocabulary resource and its lexical label. A level resource is not a value occurrence; this does not prohibit SKOS dual typing in general or adopt an OWL alignment.",
+      "context_interpretation": "The VocabularyConcept ancestry preserves documentary identity; R-16 assigns one scale and R-15 selects a level for a result. C-13 also requires the selected level to match the scale version and dimension; a matching label alone is insufficient.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "assessment_guards": {
+        "missing_input_is_zero": false,
+        "equal_codes_establish_comparability": false,
+        "reported_score_proves_reproducible_computation": false,
+        "score_alone_establishes_acceptability": false,
+        "uncertainty_requires_numeric_probability": false,
+        "external_domain_restrictions_imported": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison, current ancestry/neighbor/set-policy and selected assessment source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C039",
+      "title": "Assessment Dimension",
+      "subdomain_id": "D05",
+      "authored_definition": "A managed vocabulary resource specifying an assessment aspect, such as likelihood or consequence severity. The vocabulary item, the aspect denoted and its measured or judged value remain distinct.",
+      "authored_definition_sha256": "07982a61e14b975e44154a54191780ec0ac6a8eb211430ddfa2ff6136dd163ea",
+      "source_concept_sha256": "1ebf1e9cc9bdb0290a0de88b70f7454f32e6a5afcf6f9f82ba302a75c06be731",
+      "previous_review_sha256": "7cde655173880eda9c9a14e0f57ece631d24cccb3a3cb80189adf58499bbee2a",
+      "context_sha256": "0eca95999a0a4d59ee6a0ed470c6cb3c4bafa0512944beb2e51bce31895228fc",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "comparison_term_ids": [
+        "dimension"
+      ],
+      "constraint_ids": [
+        "C-04",
+        "C-11",
+        "C-13"
+      ],
+      "rationale": "Retain the DQV dimension/metric separation as a pattern analogy within its dataset-quality scope. Riskium uses a managed term for a risk-assessment aspect, distinct from the aspect denoted and the judged result.",
+      "context_interpretation": "The path through ClassificationTerm/VocabularyConcept preserves scheme-qualified identity. R-48, RK2-018 and RK2-019 connect result, method and scale to the dimension. DQV metric requirements are not automatically added to the Riskium profile.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "assessment_guards": {
+        "missing_input_is_zero": false,
+        "equal_codes_establish_comparability": false,
+        "reported_score_proves_reproducible_computation": false,
+        "score_alone_establishes_acceptability": false,
+        "uncertainty_requires_numeric_probability": false,
+        "external_domain_restrictions_imported": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison, current ancestry/neighbor/set-policy and selected assessment source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C040",
+      "title": "Epistemic Status Term",
+      "subdomain_id": "D05",
+      "authored_definition": "A controlled value indicating the evidential or epistemic character of a result, such as observed, estimated or projected. This is a managed vocabulary resource with scheme-qualified identity, not a bare string.",
+      "authored_definition_sha256": "93380fd7882c7e8fbbc0d52b18bd3ce093a4dbdab57ed265636974903c117ab6",
+      "source_concept_sha256": "0eb79924b1fbe3ffb8b8eb72327f776ce7b9f6c69ef4345d1b566071c6c5c485",
+      "previous_review_sha256": "d365dc8a0254ce77948f7c19af00fb9e95bd698ec451ee1a967bf525cc721ce8",
+      "context_sha256": "b8e91846bcc2e9e8bfd64f69a8ac46718fa47c273333d00ffc47ebaedf16c981",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "concept"
+      ],
+      "constraint_ids": [
+        "C-04",
+        "C-11",
+        "C-17",
+        "C-18"
+      ],
+      "rationale": "Retain SKOS vocabulary context for an observed, estimated or projected designation. SKOS does not establish that the designation is epistemically justified or that an estimate was observed.",
+      "context_interpretation": "R-47 can qualify assessment information with a controlled status. Missing designation remains missing; the status resource, its text and the evidence supporting that status are separate. Retained incomplete/non-disjoint term groups are not newly approved as semantic partitions.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "assessment_guards": {
+        "missing_input_is_zero": false,
+        "equal_codes_establish_comparability": false,
+        "reported_score_proves_reproducible_computation": false,
+        "score_alone_establishes_acceptability": false,
+        "uncertainty_requires_numeric_probability": false,
+        "external_domain_restrictions_imported": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison, current ancestry/neighbor/set-policy and selected assessment source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-X03",
+      "title": "Uncertainty Statement",
+      "subdomain_id": "D05",
+      "authored_definition": "A managed statement of what is uncertain about a risk case, including assumptions and evidential limitations; it does not imply a numerical probability.",
+      "authored_definition_sha256": "035695e5556206de3d19a53ff0cafb6ed7c5e175633de0a7fd0cffc69a4ccd8a",
+      "source_concept_sha256": "7ef1156787a3aca003c76aa5363b8413f242080194534ccdf2f1e1e0674fcaf1",
+      "previous_review_sha256": "ad4855390a67f9755fe828ff3dfe48a5599ae0fb746adb81519b8feca1961b09",
+      "context_sha256": "4970ca0e4ac061e95b22e7b1a23dd5f8ccec6566388c748c30f6015aa0359ca6",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "annotation"
+      ],
+      "constraint_ids": [
+        "C-02",
+        "C-04",
+        "C-16",
+        "C-18"
+      ],
+      "rationale": "Retain the annotation body/target pattern for an uncertainty statement, without importing its serialization contract or treating the statement as a probability distribution.",
+      "context_interpretation": "RX-004 concerns a continuing RiskCase; RK2-012/RK2-013 retain context and its use in assessment information. Revised RiskCase meaning was reviewed. Assumptions and evidential limitations may be qualitative; absence of a probability is not zero uncertainty.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "assessment_guards": {
+        "missing_input_is_zero": false,
+        "equal_codes_establish_comparability": false,
+        "reported_score_proves_reproducible_computation": false,
+        "score_alone_establishes_acceptability": false,
+        "uncertainty_requires_numeric_probability": false,
+        "external_domain_restrictions_imported": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison, current ancestry/neighbor/set-policy and selected assessment source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-X04",
+      "title": "Risk Evaluation Outcome",
+      "subdomain_id": "D05",
+      "authored_definition": "A recorded judgment of risk significance or acceptability based on identified assessment information and criteria versions. It is distinct from a numeric score and from the evaluation activity.",
+      "authored_definition_sha256": "0f69cfccc44bc1be7f1e88e8d0334ed8c1d0e0c304187d86e1d638ca4d8d40e6",
+      "source_concept_sha256": "3d8c20ab7d45cb86d565fe0d5746d564105ccd6ec4b2b38d05c09005195cf91f",
+      "previous_review_sha256": "751e94b7a655601e5884b85ee98531e03725ed1fa40396028c9ffa52c78dde70",
+      "context_sha256": "19a02aea5aad30b76949da44d9c767ab18fbe6bde952996fb4b1add053ca28dd",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "CONTRAST",
+      "disposition": "CONTRAST",
+      "comparison_term_ids": [
+        "measurement"
+      ],
+      "constraint_ids": [
+        "C-01",
+        "C-04",
+        "C-18",
+        "C-25"
+      ],
+      "rationale": "Retain the distinction between a criteria-based significance/acceptability judgment and a DQV metric result. This is a difference of intended role, not a global disjointness claim between external and local classes.",
+      "context_interpretation": "RX-011 identifies the case, RX-012 requires assessment information and RX-013 pins a criteria ArtifactVersion. C-25 governs the versioned target. A numeric score alone does not establish acceptability or a treatment decision; revised case and version neighbors were reviewed.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "assessment_guards": {
+        "missing_input_is_zero": false,
+        "equal_codes_establish_comparability": false,
+        "reported_score_proves_reproducible_computation": false,
+        "score_alone_establishes_acceptability": false,
+        "uncertainty_requires_numeric_probability": false,
+        "external_domain_restrictions_imported": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison, current ancestry/neighbor/set-policy and selected assessment source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    }
+  ],
+  "summary": {
+    "this_batch": 11,
+    "prior_documentary_dispositions": 57,
+    "cumulative_documentary_dispositions": 68,
+    "population": 82,
+    "remaining": 14,
+    "dispositions": {
+      "ANALOGY": 6,
+      "CONTRAST": 2,
+      "RELATED": 3
+    },
+    "disposition_labels_changed": 1,
+    "unchanged_local_edges": 11,
+    "changed_ancestor_context": 11,
+    "changed_association_neighbor_context": 4
+  },
+  "boundaries": {
+    "scientific_source_modified": false,
+    "historical_curation_modified": false,
+    "published": false,
+    "engine_runs": 0,
+    "formal_alignment_axioms_added": false,
+    "independent_validation": "NOT_PERFORMED",
+    "static_scope": "Selected source relations, identity suppliers and constraint statements; not new scoring, SQL, instance or ontology-engine executions.",
+    "semantic_review": "Independent semantic review remains #23; exact normative adoption remains #78.",
+    "deployment_scope": "Previews remain planning artifacts; complete component qualification and publication/readback remain separate."
+  },
+  "batch_findings": [
+    "All eleven authored definitions, direct edge records and inherited edges are unchanged. All inherit InformationArtifact identity; four concepts have changed association neighbors involving RiskCase and/or ArtifactVersion. Excluding the blanket artifact set preserves subtype edges without inventing exclusive or complete sibling partitions.",
+    "Ten labels are retained. AssessmentBasis changes its scoped-absence label to CONTRAST with generic PROV Entity, clarifying a difference in definitional scope rather than claiming no comparable work exists. The batch contains six ANALOGY, three RELATED and two CONTRAST decisions.",
+    "Assessment information, activity, dimensional result, method specification, scale/level, numeric score and criteria-based evaluation remain distinct. Optional received information is not declared task-ready merely because it has been recorded. Version targets follow the selected C-25 source statement; this packet does not newly execute dependency validation on real data.",
+    "C-18/C-21 preserve comparison dependencies, missingness and the reported/computed score distinction. A reported score may lack component links; a computed score has additional input/method obligations. A value alone establishes neither reproducibility nor acceptability. Full formula adequacy, all scale/unit compatibility and independent interpretation remain separate evaluation work.",
+    "The DQV comparisons are dataset-quality pattern analogies to a Working Group Note, not risk-specific standards conformance. NIST supplies security-specific documentary and scale examples. Neither DQV domain constraints nor NIST example codes are imported as universal risk rules."
+  ],
+  "context_guard_note": "Documentary identity is separate from activity, risk identity and real-world values. Comparable interpretation requires the selected method/scale/dimension/basis/context/time or a justified transformation; missing input is not zero. A recorded score does not by itself establish acceptability, and a qualitative uncertainty statement need not contain probability.",
+  "source_access_note": "Five primary HTML responses were directly retrieved and match their historical hashes. NIST direct HTTP attempts failed; the current B-9 glossary and F-2 scale were inspected through web PDF text and page images. Their selected passage fingerprints and exact locators are recorded; the historical full-PDF hash is retained separately and was not reverified. No source text is redistributed.",
+  "next_execution_note": "N3b-5 reviews nine D06/D11 treatment/policy concepts, then N3b-6 five D09/D10 evidence/monitoring concepts. After all 82 dispositions, qualify the complete successor curation and publish/read back the selected v0.3.10 package before closing #85. Main, public v0.3.9, source 0.3.2, reader 0.4.9 and article 7.2.21 remain unchanged."
+}

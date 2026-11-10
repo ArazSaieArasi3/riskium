@@ -1,0 +1,92 @@
+name: Publish coordinated Riskium v0.3.10 reader
+on:
+  push:
+    branches: [main, planning/v0.3.10-curation]
+    paths: ['tools/releases/v0310/publication/**', 'evaluation/releases/v0.3.10/publication-intent.json', '.github/workflows/publication-v0310.yml']
+  pull_request:
+    branches: [main]
+    paths: ['tools/releases/v0310/**', '.github/workflows/**', 'evaluation/releases/v0.3.10/publication-intent.json']
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: Deploy the verified public v0.3.10 reader to Pages
+        type: boolean
+        default: false
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: riskium-publication-v0310
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      available: ${{ steps.probe.outputs.available }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tools/releases/v0310/requirements-n5a.txt
+      - name: Test source/publication boundaries before public effects
+        run: python -B -m unittest discover -s tools/releases/v0310/publication -p test_publication.py -v
+      - name: Observe whether the explicitly selected release is public
+        id: probe
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,os,subprocess
+          from pathlib import Path
+          ready=False
+          p=Path('evaluation/releases/v0.3.10/publication-intent.json')
+          if p.exists():
+              r=subprocess.run(['gh','api','repos/ArazSaieArasi3/riskium/releases/tags/v0.3.10'],capture_output=True,text=True)
+              if r.returncode==0:
+                  x=json.loads(r.stdout);ready=not x['draft'] and not x['prerelease'] and bool(x['published_at'])
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('available='+str(ready).lower()+'\n')
+          print({'selected_release_public':ready})
+          PY
+      - name: Retrieve the exact qualified candidate and verify all public assets
+        if: steps.probe.outputs.available == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,os,subprocess
+          from pathlib import Path
+          p=json.loads(Path('evaluation/releases/v0.3.10/publication-intent.json').read_text())
+          subprocess.run(['gh','run','download',str(p['run_id']),'--name','curation-v0310-'+p['source_commit'],'--dir',os.environ['RUNNER_TEMP']+'/qualified'],check=True)
+          PY
+          python -B tools/releases/v0310/publication/build.py --candidate "$RUNNER_TEMP/qualified/composition" --output "$RUNNER_TEMP/published" --downloads "$RUNNER_TEMP/public-assets"
+      - uses: actions/upload-artifact@v4
+        if: steps.probe.outputs.available == 'true'
+        with:
+          name: published-reader-v0310-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/published
+            ${{ runner.temp }}/public-package-verification.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.probe.outputs.available == 'true' && github.event_name == 'workflow_dispatch' && inputs.deploy && github.ref == 'refs/heads/main'
+        with:
+          path: ${{ runner.temp }}/published/site
+  deploy:
+    needs: check
+    if: needs.check.outputs.available == 'true' && github.event_name == 'workflow_dispatch' && inputs.deploy && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - id: deployment
+        uses: actions/deploy-pages@v4

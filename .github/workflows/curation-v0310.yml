@@ -1,0 +1,79 @@
+name: Current curation v0.3.10 qualification
+
+on:
+  push:
+    branches: [main, planning/v0.3.10-curation]
+    paths:
+      - 'tools/releases/v0310/**'
+      - 'references/concept-definitions/0.2.0/**'
+      - 'documentation/0.4.10/**'
+      - '.github/workflows/curation-v0310.yml'
+      - 'releases/selection-v0.3.10.json'
+      - 'releases/routing-v0.3.10.json'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/releases/v0310/**'
+      - 'references/concept-definitions/0.2.0/**'
+      - 'documentation/0.4.10/**'
+      - '.github/workflows/**'
+      - 'releases/*v0.3.10.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: curation-v0310-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  qualify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install bounded projection dependencies
+        run: python -m pip install -r tools/releases/v0310/requirements-n5a.txt -r tools/requirements-shacl.txt
+      - name: Qualify current documentary component and staged projections
+        run: python -B tools/releases/v0310/qualify_n5a.py --mode CI --commit "$GITHUB_SHA" --output "$RUNNER_TEMP/curation-v0310"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: curation-v0310-${{ github.sha }}
+          path: ${{ runner.temp }}/curation-v0310
+          if-no-files-found: error
+          retention-days: 30
+  package:
+    needs: qualify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: curation-v0310-${{ github.sha }}
+          path: ${{ runner.temp }}/qualified
+      - name: Test package guards against the actual qualified source
+        env:
+          RISKIUM_N5A_QUALIFICATION: ${{ runner.temp }}/qualified/qualification.json
+        run: python -B -m unittest discover -s tools/releases/v0310/package -p test_package.py -v
+      - name: Freeze six assets from committed Git objects
+        run: python -B tools/releases/v0310/package/build_package.py --mode ci --qualification "$RUNNER_TEMP/qualified/qualification.json" --output "$RUNNER_TEMP/package-v0310"
+      - name: Independently verify source tree and qualification bindings offline
+        run: python -I tools/releases/v0310/package/verify_package.py --assets "$RUNNER_TEMP/package-v0310" --expected-source-commit "$GITHUB_SHA" --expected-run-id "$GITHUB_RUN_ID" --report "$RUNNER_TEMP/package-verification.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: package-v0310-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/package-v0310
+            ${{ runner.temp }}/package-verification.json
+          if-no-files-found: error
+          retention-days: 30

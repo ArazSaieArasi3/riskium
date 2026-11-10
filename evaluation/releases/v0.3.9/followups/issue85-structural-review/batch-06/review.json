@@ -1,0 +1,388 @@
+{
+  "schema": "riskium.structural-context-curation/1",
+  "status": "BOUNDED_BATCH_COMPLETE_FULL_CURATION_PENDING",
+  "execution": "N3b-6",
+  "date": "2026-11-10",
+  "baseline_commit": "36ff7a55becfe206b821fe969fecd5efbcd22149",
+  "model_version": "0.3.2",
+  "intended_package": "v0.3.10",
+  "issue": 85,
+  "record_digest_method": "SHA-256 of compact UTF-8 JSON with sorted keys and ensure_ascii=False; file-input hashes use raw bytes.",
+  "inputs": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/0.3.2/riskium-model.json": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb",
+    "references/concept-definitions/0.1.0/review.json": "3eeba2690041f5f815754a256d586cc338b3710c68fe8edc42f5b9865f7fff47",
+    "evaluation/releases/v0.3.9/followups/issue85-impact/impact.json": "c971787dd75909f5ca18484baa13d7f462b029ce509c1f25e364c0ac4df3c9af",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/remaining-batches.json": "c6d39beb750cd870f94001f2033d66ab868d31ae5a44f0671eec4d76f3b2858c",
+    "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json": "8704efb3cf7760fa09ba5aead5a9bb433b63ef906adbd084a832b183743caa73",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json": "ddcacd405d73ee568fd11e6325fd48a13b45f32630f406a9cbd5e4350517d2c0",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json": "6ce6856f79fbb661bd910fd8f7a937effe464257127c3e52edfb9a0c3bec4c50",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json": "dfe981213ad6c2a44758b6e96ea80fbb9f97bddcb947af80921467e6f152ca51",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json": "03b8647b1cefbba02b761727aa6ec4e4b82f85cf9ae1695ccc35620f3c031d76",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json": "9ac6b991b0bf4acce072f7796979b241d3cb60252abb0bd2accf6800ebe163a5",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/review.json": "607c6537cadfb6a437e400d5966633188ce81e0611f11a9ea6b91340a87e3a73",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-06/source-access.json": "4f05a37c461f00f2ac39d5ba25fd317c7cbfc8fed1bbbe4c2a1c7e47078a4001",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-06/passage-checks.json": "8b703e7c89b8213649214e7fd1f48c8afacd546afc557741a39ec35187824661",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-06/contexts.json": "39051a0cb70f04b638b5916266c8c7a4c60d48ef082e38566a1a400b3189e390",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-06/evidence-monitoring-checks.json": "d84a64fa066e3c5170248d468d5707b734dcc49c2a6bd03e05e74b10632112f3"
+  },
+  "prior_packets": [
+    "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/review.json"
+  ],
+  "sources": {
+    "prov": {
+      "title": "PROV-O: The PROV Ontology",
+      "version": "W3C Recommendation, 30 April 2013",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "accessed": "2026-11-10",
+      "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+      "inspection_scope": "Terms listed below only; no PROV conformance or import asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "bytes": 464179,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "sosa": {
+      "title": "Semantic Sensor Network Ontology",
+      "version": "W3C Recommendation, 19 October 2017; SOSA/SSN",
+      "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/",
+      "accessed": "2026-11-10",
+      "document_sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+      "inspection_scope": "Selected core classes only; observed properties and their specifications remain distinct.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/",
+      "bytes": 673275,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "dqv": {
+      "title": "Data on the Web Best Practices: Data Quality Vocabulary",
+      "version": "W3C Working Group Note, 15 December 2016",
+      "url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/",
+      "accessed": "2026-11-10",
+      "document_sha256": "271d3e820c681127131595d2c8bf8345e925149192f6cab821f101f09d372a63",
+      "inspection_scope": "Dataset-quality vocabulary used by analogy only. This Note is work in progress, not a W3C Recommendation.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/",
+      "bytes": 183523,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    }
+  },
+  "terms": {
+    "derivation": {
+      "source_id": "prov",
+      "name": "prov:Derivation",
+      "locator": "§4.3, Derivation",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Derivation",
+      "paraphrase": "Entity-to-entity transformation, construction or updating represented as a qualified influence.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "result": {
+      "source_id": "sosa",
+      "name": "sosa:Result",
+      "locator": "§4.7.2.1",
+      "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/#SOSAResult",
+      "paraphrase": "A result of observation, actuation or sampling; simple values have a separate property.",
+      "quotation": false,
+      "target_kind": "SOSA_RESULT_CLASS"
+    },
+    "metric": {
+      "source_id": "dqv",
+      "name": "dqv:Metric",
+      "locator": "§4.2",
+      "url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/#dqv:Metric",
+      "paraphrase": "A standard for measuring a quality dimension; a measurement provides its observed value.",
+      "quotation": false,
+      "target_kind": "DATASET_QUALITY_PATTERN_CLASS"
+    },
+    "observable": {
+      "source_id": "sosa",
+      "name": "sosa:ObservableProperty",
+      "locator": "§4.3.2.1",
+      "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/#SOSAObservableProperty",
+      "paraphrase": "An observable quality of a feature, rather than a specification describing that quality.",
+      "quotation": false,
+      "target_kind": "OBSERVABLE_PROPERTY_CLASS"
+    }
+  },
+  "concepts": [
+    {
+      "concept_id": "RKM-C065",
+      "title": "Evidence Reference",
+      "subdomain_id": "D09",
+      "authored_definition": "A qualified reference linking a claim or activity to an evidence item, with its intended evidential role and provenance.",
+      "authored_definition_sha256": "5be37161ae53e1f5fcb9f45fa94116f3493875a63f0e050fcbf861afa5a7ffe6",
+      "source_concept_sha256": "59377b3259da74d5fef331de22bf4b2440d9388529ff072beaafb6a6ef1c9d19",
+      "previous_review_sha256": "a7070232f00a322d918e9dc2464b7aa655d8acfb7c1587d35949178c87252be8",
+      "context_sha256": "078a6c9012df749b646cf5d23377910e1a4d552ce0f433d4facf811a271b2544",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "derivation"
+      ],
+      "constraint_ids": [
+        "C-02",
+        "C-12",
+        "C-16",
+        "C-17",
+        "C-26"
+      ],
+      "rationale": "Retain derivation as one related provenance pattern, not as a definition of evidential use. Evidence may be used without deriving a new entity or endorsing a claim; a citation does not establish independent corroboration.",
+      "context_interpretation": "The reference keeps documentary identity and ordinary RX-021 linkage. Its local-edge difference is the added GE-001 specialization from EvidenceReferenceRole, not an altered direct association. RE-001/RE-002 and C-26 separately describe grounded use and distinct participants. R-68 is read with C-12 and its no-proof rationale, preserving support/challenge/context distinctions.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "evidence_monitoring_guards": {
+        "citation_proves_claim_truth": false,
+        "reference_pointer_proves_grounded_use": false,
+        "signal_proves_occurrence": false,
+        "indicator_specification_is_reported_value": false,
+        "threshold_requires_both_anchors": false,
+        "qualitative_boundary_requires_invented_numeric_unit": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison, current ancestry/neighbor/set-policy and selected evidence/monitoring contracts; not a new engine, instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C068",
+      "title": "Observation Result",
+      "subdomain_id": "D10",
+      "authored_definition": "An information result produced by an observation activity, qualified by subject, time, method and available units.",
+      "authored_definition_sha256": "7b660221341d48f1359461ec7e15b81fcc009585650f24a3f619694437faebdc",
+      "source_concept_sha256": "54eb10c82a0ec856eeea194dd3d66daac76e96d60cf4fbb230cccbba07866a8b",
+      "previous_review_sha256": "f4797292c1d42323e2b682575842448f5da1f17c5785bafdfc702847a65305e7",
+      "context_sha256": "aa4cb25fc2edc45284ba6f503364a9bc4d9901bce8372c4be405f14f217fa76c",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "result"
+      ],
+      "constraint_ids": [
+        "C-01",
+        "C-04",
+        "C-05",
+        "C-18"
+      ],
+      "rationale": "Retain SOSA Result as related output context. SOSA also covers actuation and sampling results, while this Riskium concept selects observation information qualified by subject, method, time and available units; no class equivalence or imported restriction is asserted.",
+      "context_interpretation": "RX-022 relates an ObservationActivity to its informational result; RX-023 identifies the indicator and RX-024 the continuing RiskCase. RK2-026 can retain context and RK2-017 connects revisions. The result is neither its activity nor a risk occurrence; a numeric value alone is insufficient for cross-context comparison.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "evidence_monitoring_guards": {
+        "citation_proves_claim_truth": false,
+        "reference_pointer_proves_grounded_use": false,
+        "signal_proves_occurrence": false,
+        "indicator_specification_is_reported_value": false,
+        "threshold_requires_both_anchors": false,
+        "qualitative_boundary_requires_invented_numeric_unit": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison, current ancestry/neighbor/set-policy and selected evidence/monitoring contracts; not a new engine, instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C069",
+      "title": "Indicator",
+      "subdomain_id": "D10",
+      "authored_definition": "A versioned information specification of an observable or computed indicator, including its intended interpretation. A reported indicator value is an ObservationResult, not the specification.",
+      "authored_definition_sha256": "ec765e03e516ea9a295473eaf70893bfac0ab473f0602459a31acc03de53e589",
+      "source_concept_sha256": "6ce047f255bfe8113fdbeff631ba884a165837ec9a721ef11a7376f5e2a79dec",
+      "previous_review_sha256": "b376402e6706617e36d441c328c6f20aef85ff071d1b3f318e32a6e66cfa1bb6",
+      "context_sha256": "6a685d05fb4f2bd34259ed9be93e2df2c0451e08fa53271640828eaf752cf5b3",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "comparison_term_ids": [
+        "metric",
+        "observable"
+      ],
+      "constraint_ids": [
+        "C-03",
+        "C-04",
+        "C-11",
+        "C-18"
+      ],
+      "rationale": "Retain DQV Metric and SOSA ObservableProperty as bounded pattern comparisons. DQV concerns dataset quality; SOSA describes an observable feature quality. Riskium Indicator is an information specification, distinct from the property and its measured value.",
+      "context_interpretation": "RX-023 links reported results to their indicator specification; RX-025 can anchor a threshold. Specification versions and interpretation remain documentary. Neither external property classes nor DQV domain constraints are automatically imported into Riskium.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "evidence_monitoring_guards": {
+        "citation_proves_claim_truth": false,
+        "reference_pointer_proves_grounded_use": false,
+        "signal_proves_occurrence": false,
+        "indicator_specification_is_reported_value": false,
+        "threshold_requires_both_anchors": false,
+        "qualitative_boundary_requires_invented_numeric_unit": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison, current ancestry/neighbor/set-policy and selected evidence/monitoring contracts; not a new engine, instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C070",
+      "title": "Threshold",
+      "subdomain_id": "D10",
+      "authored_definition": "A versioned information specification of a context-qualified decision boundary for an indicator or assessment scale, with a comparator, permissible value interpretation and applicability context.",
+      "authored_definition_sha256": "3abf29196482b00645aeb2af24d8964e25927ddfefa0eecb9266be77e8e7bbf2",
+      "source_concept_sha256": "38a783956c5a2846d53438d9359ef3ef2ce10eecb301fac0654450b838561ec6",
+      "previous_review_sha256": "c07f7b69b01d4a6e5ec63cb07e9502b6981d187d62bcdd059eafbc64644f8f74",
+      "context_sha256": "bb4d410eddaa8063092a523b6f6617193d0aad6966d2d2928fafaf154720ac5b",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "disposition": "CONTRAST",
+      "comparison_term_ids": [
+        "metric"
+      ],
+      "constraint_ids": [
+        "C-03",
+        "C-04",
+        "C-08",
+        "C-13",
+        "C-18"
+      ],
+      "rationale": "Clarify the former scoped-absence label as a contrast in intended role: a DQV measuring standard does not itself specify a comparator-qualified decision boundary. No global absence, class disjointness or exact threshold equivalence is asserted.",
+      "context_interpretation": "RX-025 and RK2-020 each permit an indicator or scale anchor. C-08 requires at least one supported anchor, with compatible interpretation if both exist; it does not require both. Qualitative boundaries retain scale semantics rather than invented numerical units. RX-027 records selected signal comparison.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "evidence_monitoring_guards": {
+        "citation_proves_claim_truth": false,
+        "reference_pointer_proves_grounded_use": false,
+        "signal_proves_occurrence": false,
+        "indicator_specification_is_reported_value": false,
+        "threshold_requires_both_anchors": false,
+        "qualitative_boundary_requires_invented_numeric_unit": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison, current ancestry/neighbor/set-policy and selected evidence/monitoring contracts; not a new engine, instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C071",
+      "title": "Signal",
+      "subdomain_id": "D10",
+      "authored_definition": "An information item indicating a potentially relevant change or condition and potentially prompting review; it does not by itself establish a risk event.",
+      "authored_definition_sha256": "f244b1ed62c670baf57ccb90cbe233adc43a3005f32eb22fab5758392bce7969",
+      "source_concept_sha256": "5fb53f5c1f411b594ceda1b06aab2bd4e4a1bd7b24ca4286f80a9cd12f613718",
+      "previous_review_sha256": "cba52a47874967d427248b058d9a993b2c0786e0a51464ea032a2dba9d7a9db0",
+      "context_sha256": "90f9b3b9a228b1911b13682772b58ed97fe4a36eb8a0cf0945c537d583bbefa3",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "result"
+      ],
+      "constraint_ids": [
+        "C-01",
+        "C-02",
+        "C-08",
+        "C-16",
+        "C-18"
+      ],
+      "rationale": "Retain the relationship to observation results without equating every signal with a SOSA Result or an actual risk event. A signal is information selected as potentially relevant to review; its significance requires context.",
+      "context_interpretation": "RX-026 requires supporting observation results in the managed signal profile; RX-027 can identify thresholds and RX-028 can prompt case review. Revised RiskCase meaning was reviewed. Source incomplete material is retained without fabricating observations; neither an alert nor a crossed threshold automatically proves a risk occurrence or cause.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "evidence_monitoring_guards": {
+        "citation_proves_claim_truth": false,
+        "reference_pointer_proves_grounded_use": false,
+        "signal_proves_occurrence": false,
+        "indicator_specification_is_reported_value": false,
+        "threshold_requires_both_anchors": false,
+        "qualitative_boundary_requires_invented_numeric_unit": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported source comparison, current ancestry/neighbor/set-policy and selected evidence/monitoring contracts; not a new engine, instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    }
+  ],
+  "summary": {
+    "this_batch": 5,
+    "prior_documentary_dispositions": 77,
+    "cumulative_documentary_dispositions": 82,
+    "population": 82,
+    "remaining": 0,
+    "dispositions": {
+      "RELATED": 3,
+      "ANALOGY": 1,
+      "CONTRAST": 1
+    },
+    "disposition_labels_changed": 1,
+    "unchanged_local_edges": 4,
+    "changed_ancestor_context": 5,
+    "changed_association_neighbor_context": 3
+  },
+  "boundaries": {
+    "scientific_source_modified": false,
+    "historical_curation_modified": false,
+    "published": false,
+    "engine_runs": 0,
+    "formal_alignment_axioms_added": false,
+    "independent_validation": "NOT_PERFORMED",
+    "static_scope": "Selected source relations, reference-role specialization, documentary identity and source statements only; not new evidence-use, threshold, SQL or ontology-engine execution.",
+    "semantic_review": "Independent semantic review remains #23; exact normative adoption remains #78.",
+    "deployment_scope": "All 82 documentary dispositions are inventoried; component qualification and publication/readback remain separate."
+  },
+  "batch_findings": [
+    "All five authored definitions, concept records and inherited edges are unchanged. Four complete local-edge sets are unchanged; EvidenceReference adds GE-001 from EvidenceReferenceRole while its direct associations remain unchanged. The added role retains its authored candidate status; no new scientific or independent approval is inferred.",
+    "Three RELATED and one ANALOGY labels are retained. Threshold changes its scoped-absence label to CONTRAST with DQV Metric, clarifying the different intended roles without claiming no relevant threshold vocabulary exists.",
+    "EvidenceReference remains documentary. An actual grounded evidential-use relationship is separately represented through EvidenceUseRelator, EvidenceItem and EvidenceReferenceRole. C-26 supplies distinctness/grounding requirements; multiplicity alone does not establish distinct individuals or claim truth.",
+    "Observation activity, informational result, indicator specification, threshold and signal remain distinct. C-08 requires an indicator or scale anchor, with compatible interpretation if both exist; qualitative boundaries do not need fabricated numerical units. A signal can prompt review without proving an occurrence or cause.",
+    "Every current catalog concept now has one disjoint documentary disposition across N2/N3a/N3b-1..6. The inventory includes three NEEDS_LICENSED_SOURCE decisions (criteria/appetite/tolerance) carried in batch-05. Recording them is not normative-source inspection; #78 and independent semantic review #23 remain open. Full curation-component selection, generator qualification and actual publication/readback remain N4/N5."
+  ],
+  "context_guard_note": "Reference, role participation and evidence-use relationship remain distinct; a citation or provenance link is not proof of claim truth. Observation information and indicator specifications do not create actual risk events. Thresholds use supported indicator/scale semantics, and signals preserve context and uncertainty without inventing missing values.",
+  "source_access_note": "All three primary HTML responses were directly retrieved and match the historical hashes. Four selected term passages retain edition/locator/fingerprint bindings. DQV is a Working Group Note used only for bounded comparison; SOSA and PROV constraints are not automatically imported. Full source documents are not redistributed.",
+  "next_execution_note": "N4 now assembles and qualifies the complete successor curation component for all 82 dispositions, including explicit normative deferrals; bind the generator/reader and preserve historical components. N5 then publishes and independently reads back the selected v0.3.10 package before closing #85. Main, public v0.3.9, source 0.3.2, reader 0.4.9 and article 7.2.21 remain unchanged."
+}

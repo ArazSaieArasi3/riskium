@@ -1,0 +1,1706 @@
+{
+  "status": "IMPACT_INVENTORY_COMPLETE_CURATION_NOT_ACCEPTED",
+  "baseline_commit": "3ce6f5573e2e0a698591615a7ded75c2f9451444",
+  "inputs": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/0.3.2/riskium-model.json": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb",
+    "references/concept-definitions/0.1.0/review.json": "3eeba2690041f5f815754a256d586cc338b3710c68fe8edc42f5b9865f7fff47"
+  },
+  "summary": {
+    "STRUCTURAL_CONTEXT_RECHECK": 57,
+    "REUSE_CANDIDATE": 17,
+    "AUTHORED_OR_TYPING_CHANGE": 6,
+    "NEW_CONCEPT": 2
+  },
+  "old_population": 80,
+  "current_population": 82,
+  "definition_unchanged": 79,
+  "mutation_controls": [
+    {
+      "control": "missing_review",
+      "rejected": true
+    },
+    {
+      "control": "stale_definition",
+      "rejected": true
+    },
+    {
+      "control": "allocation_missing",
+      "rejected": true
+    }
+  ],
+  "rows": [
+    {
+      "id": "RKM-C001",
+      "title": "Risk Pattern Specification",
+      "subdomain": "D01",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "b00706676180aba91d62803976445c86283ec4defc5fa7b3b98e189aedb85693",
+      "new_concept_sha256": "b00706676180aba91d62803976445c86283ec4defc5fa7b3b98e189aedb85693",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C002",
+      "title": "Risk Context Specification",
+      "subdomain": "D01",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "5a66b1bd3bf335ae7af925fef4cc394661c9fd75adc104ac179a0e389c5945cf",
+      "new_concept_sha256": "5a66b1bd3bf335ae7af925fef4cc394661c9fd75adc104ac179a0e389c5945cf",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C003",
+      "title": "Risk Scenario Specification",
+      "subdomain": "D01",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "nist"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "80e0ba2ec429b115fd4376facbde54e460ebafe574558d9ba8676e66906d502a",
+      "new_concept_sha256": "80e0ba2ec429b115fd4376facbde54e460ebafe574558d9ba8676e66906d502a",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C004",
+      "title": "Risk Occurrence",
+      "subdomain": "D01",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "CONTRAST",
+      "source_ids": [
+        "nist"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "bfafe0c8a037543f83655774729ccb347688ce795f592d43e4117161fda756f0",
+      "new_concept_sha256": "bfafe0c8a037543f83655774729ccb347688ce795f592d43e4117161fda756f0",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C005",
+      "title": "Risk Nature Assertion",
+      "subdomain": "D01",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "oa"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "7aa17843ca593466de7d11c503545ce82d2a357677e2de4dc97244d474b3d030",
+      "new_concept_sha256": "7aa17843ca593466de7d11c503545ce82d2a357677e2de4dc97244d474b3d030",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C006",
+      "title": "Nature Term",
+      "subdomain": "D01",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "skos"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "6d06bf6400e5c7bc5cfb986fbad3e49265c8c290448d9e657efd910521ef7eb6",
+      "new_concept_sha256": "6d06bf6400e5c7bc5cfb986fbad3e49265c8c290448d9e657efd910521ef7eb6",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C007",
+      "title": "Risk Source",
+      "subdomain": "D01",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "nist"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "be60a18ada90037c32e0c4b5d6eea635cba1199846e9bb20633fd337993334f1",
+      "new_concept_sha256": "be60a18ada90037c32e0c4b5d6eea635cba1199846e9bb20633fd337993334f1",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C008",
+      "title": "Predisposing Condition",
+      "subdomain": "D01",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "nist"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "da5b53529c29586e6f32f2ab09ade3b617c3327f5dcfc213ad0e53da21933665",
+      "new_concept_sha256": "da5b53529c29586e6f32f2ab09ade3b617c3327f5dcfc213ad0e53da21933665",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C009",
+      "title": "Trigger",
+      "subdomain": "D01",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "CONTRAST",
+      "source_ids": [
+        "nist"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "666e9f486956f32bfcccd60e7e1b80cbcca23acb8bac057a4880e201dc8689a6",
+      "new_concept_sha256": "666e9f486956f32bfcccd60e7e1b80cbcca23acb8bac057a4880e201dc8689a6",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C010",
+      "title": "Consequence",
+      "subdomain": "D01",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "source_ids": [
+        "nist"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "205fa2dbbfb54f1af72ab231083658264c2a23f3d4e3f1f0198813275facfc5d",
+      "new_concept_sha256": "205fa2dbbfb54f1af72ab231083658264c2a23f3d4e3f1f0198813275facfc5d",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C011",
+      "title": "Vulnerability",
+      "subdomain": "D01",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "nist",
+        "mode"
+      ],
+      "followup_issues": [
+        23
+      ],
+      "definition_unchanged": true,
+      "old_concept_sha256": "2a3867a61c5fd5c11d952616697c4effa361fdf83e69a20921987b1f842ce4a9",
+      "new_concept_sha256": "2a3867a61c5fd5c11d952616697c4effa361fdf83e69a20921987b1f842ce4a9",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C012",
+      "title": "Exposure",
+      "subdomain": "D01",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "nist"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "3e9a2420f6d594b426b2b8062a4d338e5324eb3910724193dbd141a01411cef3",
+      "new_concept_sha256": "3e9a2420f6d594b426b2b8062a4d338e5324eb3910724193dbd141a01411cef3",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C013",
+      "title": "Risk State",
+      "subdomain": "D01",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "425846adf44531cd633cdfeabcab974ce0b7f2abdf241bbdd53e7dd363c08ac7",
+      "new_concept_sha256": "425846adf44531cd633cdfeabcab974ce0b7f2abdf241bbdd53e7dd363c08ac7",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C014",
+      "title": "Information Artifact",
+      "subdomain": "D02",
+      "category": "AUTHORED_OR_TYPING_CHANGE",
+      "changed_fields": [
+        "typing_rationale"
+      ],
+      "association_changed": true,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "bfb6e02b071fcae3f0ea43757d3062c4aee0c7746519c8f2e3093f002de71466",
+      "new_concept_sha256": "6f67ef5c5d5347c307df6e598fb36efe8c93769a3db8053d5bb958bafbc67aee",
+      "action": "Review changed source fields and comparison scope before reuse.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C015",
+      "title": "Artifact Version",
+      "subdomain": "D02",
+      "category": "AUTHORED_OR_TYPING_CHANGE",
+      "changed_fields": [
+        "typing_rationale"
+      ],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "CONTRAST",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "d27ea5b0dbd9ef27ebc2c48478313c78602d49a36c5e4f73757cff29b1d2ab66",
+      "new_concept_sha256": "948d29eee49a596e2ddc75ff5c77a34a6e526d8c98e84cc5cba05e8e0a1cfe5a",
+      "action": "Review changed source fields and comparison scope before reuse.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C016",
+      "title": "Information Content",
+      "subdomain": "D02",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "715f1b3d925cbb63c0e36322ee18f513ce2dc0c605942b552bf25d103dc1d319",
+      "new_concept_sha256": "715f1b3d925cbb63c0e36322ee18f513ce2dc0c605942b552bf25d103dc1d319",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C017",
+      "title": "Vocabulary Concept",
+      "subdomain": "D03",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "skos"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "b10292bccd82204d372fb705bac9dd7f69775c8ec55a5b30b2f73dcbe664b230",
+      "new_concept_sha256": "b10292bccd82204d372fb705bac9dd7f69775c8ec55a5b30b2f73dcbe664b230",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C018",
+      "title": "Classification Scheme",
+      "subdomain": "D03",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "skos"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "3b5e68c8cd6b53e2d8faee371af80b56f7c6187983504d045f0977b3b8e22c17",
+      "new_concept_sha256": "3b5e68c8cd6b53e2d8faee371af80b56f7c6187983504d045f0977b3b8e22c17",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C019",
+      "title": "Classification Term",
+      "subdomain": "D03",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "skos"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "69f3f8f9f0b14627f8801095ce71af69ea6dfe8bb50eb2a9a65db79e7e45accd",
+      "new_concept_sha256": "69f3f8f9f0b14627f8801095ce71af69ea6dfe8bb50eb2a9a65db79e7e45accd",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C020",
+      "title": "Classification Assertion",
+      "subdomain": "D03",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "oa"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "0c46ec88bcd9ea34a79c6ebe713e952ba3eafc6799a4f13463faa60c67a60ce5",
+      "new_concept_sha256": "0c46ec88bcd9ea34a79c6ebe713e952ba3eafc6799a4f13463faa60c67a60ce5",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C021",
+      "title": "Tag",
+      "subdomain": "D03",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "oa",
+        "skos"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "af0471232bd1019535d18896b7d8ea1a73ccf7deeab93f4ae3344a7ea93bb14c",
+      "new_concept_sha256": "af0471232bd1019535d18896b7d8ea1a73ccf7deeab93f4ae3344a7ea93bb14c",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C022",
+      "title": "Risk Register Entry",
+      "subdomain": "D04",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "5e946c9b571e1d7f9749c8a5087c7803add5c3d9fda8ecdb0b9ff19d4a841565",
+      "new_concept_sha256": "5e946c9b571e1d7f9749c8a5087c7803add5c3d9fda8ecdb0b9ff19d4a841565",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C023",
+      "title": "Entry Revision",
+      "subdomain": "D04",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "CONTRAST",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "672d08aa86e6a224b08fb6a1d5ecb7c89996ca5ad3fe1f3d763234fca51b0a80",
+      "new_concept_sha256": "672d08aa86e6a224b08fb6a1d5ecb7c89996ca5ad3fe1f3d763234fca51b0a80",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C024",
+      "title": "Risk Description",
+      "subdomain": "D04",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "oa"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "0b2f4af6e466ced2898c5bbdaa925f2b3f9e3275e90750ee8c39729bcbc9d060",
+      "new_concept_sha256": "0b2f4af6e466ced2898c5bbdaa925f2b3f9e3275e90750ee8c39729bcbc9d060",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C025",
+      "title": "Consequence Statement",
+      "subdomain": "D04",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "oa"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "320fb1bbb7f6b65d46fb020c00f38e170bf4e2a725d7b64e6c4609f97687969b",
+      "new_concept_sha256": "320fb1bbb7f6b65d46fb020c00f38e170bf4e2a725d7b64e6c4609f97687969b",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C026",
+      "title": "Identification Information",
+      "subdomain": "D04",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "7fff00110d2f2b7777b861a9430cd6547209fdb168a5fc012e4756cac9cb732f",
+      "new_concept_sha256": "7fff00110d2f2b7777b861a9430cd6547209fdb168a5fc012e4756cac9cb732f",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C027",
+      "title": "Intake Channel Term",
+      "subdomain": "D04",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "skos"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "e3f73ec6d0254e07bf883ee94130094f220509959a8e3294d99e6726360fe45c",
+      "new_concept_sha256": "e3f73ec6d0254e07bf883ee94130094f220509959a8e3294d99e6726360fe45c",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C028",
+      "title": "Description Role Term",
+      "subdomain": "D04",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "skos"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "d3ce5245286e6a08ab9663900a8a4e09191fc55f283cd4faf47625afb969b0e7",
+      "new_concept_sha256": "d3ce5245286e6a08ab9663900a8a4e09191fc55f283cd4faf47625afb969b0e7",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C029",
+      "title": "Consequence Slot Term",
+      "subdomain": "D04",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "skos"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "979f7f0ba17dbc39f7b223dcbeebc2bf06ddba4e86ea52e47e48a502fb0e3427",
+      "new_concept_sha256": "979f7f0ba17dbc39f7b223dcbeebc2bf06ddba4e86ea52e47e48a502fb0e3427",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C030",
+      "title": "Risk Register",
+      "subdomain": "D04",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "a367c764c0663903726a4fd0d90250034c53e84ec1ed8ef2926a741b7357172f",
+      "new_concept_sha256": "a367c764c0663903726a4fd0d90250034c53e84ec1ed8ef2926a741b7357172f",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C031",
+      "title": "Assessment Activity",
+      "subdomain": "D05",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "CONTRAST",
+      "source_ids": [
+        "nist",
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "dd3968ecbef1027e373c324c1938ec86f0be36f90bc62911e67831935e5360a1",
+      "new_concept_sha256": "dd3968ecbef1027e373c324c1938ec86f0be36f90bc62911e67831935e5360a1",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C032",
+      "title": "Assessment Information",
+      "subdomain": "D05",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "nist"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "8bb46304d6ab40d2bde8b8229104c0cefe04f4160ba6c12cd05ea6e470f5323d",
+      "new_concept_sha256": "8bb46304d6ab40d2bde8b8229104c0cefe04f4160ba6c12cd05ea6e470f5323d",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C033",
+      "title": "Assessment Basis",
+      "subdomain": "D05",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "7b4fa4a649190f4d31ff6b1a07378332c071adb80153843c9863a8bf51112302",
+      "new_concept_sha256": "7b4fa4a649190f4d31ff6b1a07378332c071adb80153843c9863a8bf51112302",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C034",
+      "title": "Dimension Assessment Result",
+      "subdomain": "D05",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "dqv"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "97273c0e00915464ee9450903df0900011c25d2cf3f36c0fdbe02926df18330d",
+      "new_concept_sha256": "97273c0e00915464ee9450903df0900011c25d2cf3f36c0fdbe02926df18330d",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C035",
+      "title": "Assessment Method Specification",
+      "subdomain": "D05",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "sosa"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "534b8195ebe993915bba61ca1a5b38cd8d6bbdeeb431e26427e5df0be2addb4f",
+      "new_concept_sha256": "534b8195ebe993915bba61ca1a5b38cd8d6bbdeeb431e26427e5df0be2addb4f",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C036",
+      "title": "Assessment Scale",
+      "subdomain": "D05",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "nist"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "9b4d147de7a32b4bce195c919c0f7b89ee6136ccc1e4d410e192160758afe1c7",
+      "new_concept_sha256": "9b4d147de7a32b4bce195c919c0f7b89ee6136ccc1e4d410e192160758afe1c7",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C037",
+      "title": "Risk Score Result",
+      "subdomain": "D05",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "dqv"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "de741e3ab0f6ac70cb182f7ca4f43d9b1d5ee4c3c89b3f2b083a19fca2a22446",
+      "new_concept_sha256": "de741e3ab0f6ac70cb182f7ca4f43d9b1d5ee4c3c89b3f2b083a19fca2a22446",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C038",
+      "title": "Assessment Scale Level",
+      "subdomain": "D05",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "skos"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "9686698fa28fdd3b77e29a0a2458a640f27a380c026c5d53d54328e0121c9add",
+      "new_concept_sha256": "9686698fa28fdd3b77e29a0a2458a640f27a380c026c5d53d54328e0121c9add",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C039",
+      "title": "Assessment Dimension",
+      "subdomain": "D05",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "dqv"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "8b6962eda6738a996b8543bfa81f0a1ea50fcfbeeaf818a885b05bb8cf5a8bf1",
+      "new_concept_sha256": "8b6962eda6738a996b8543bfa81f0a1ea50fcfbeeaf818a885b05bb8cf5a8bf1",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C040",
+      "title": "Epistemic Status Term",
+      "subdomain": "D05",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "skos"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "1fcc8f989f4b209a464beda7dd81e48abedb52d5fadcfaac53335aa7d84959b0",
+      "new_concept_sha256": "1fcc8f989f4b209a464beda7dd81e48abedb52d5fadcfaac53335aa7d84959b0",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C041",
+      "title": "Treatment Decision Information",
+      "subdomain": "D06",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "CONTRAST",
+      "source_ids": [
+        "nist"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "a79c52d9d4c28259d7f5ca3cecda72c631cfb7e00e6f719bfe262b2711f45dd0",
+      "new_concept_sha256": "a79c52d9d4c28259d7f5ca3cecda72c631cfb7e00e6f719bfe262b2711f45dd0",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C042",
+      "title": "Treatment Strategy Term",
+      "subdomain": "D06",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "skos"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "1f181daab6959e952176e4ff88cc796e422ad7e32ff659e3ee56822ad8967e02",
+      "new_concept_sha256": "1f181daab6959e952176e4ff88cc796e422ad7e32ff659e3ee56822ad8967e02",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C043",
+      "title": "Plan Specification",
+      "subdomain": "D06",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "c56155f1014e84970cdea8b46b136aeaa803e94cfa56c38184143599cc55f6a7",
+      "new_concept_sha256": "c56155f1014e84970cdea8b46b136aeaa803e94cfa56c38184143599cc55f6a7",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C044",
+      "title": "Treatment Activity",
+      "subdomain": "D06",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "nist",
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "6a4c9131cde5d9bf50d1603d5a20190c3a8dbceff3bbfbb95bfaf64366d8586a",
+      "new_concept_sha256": "6a4c9131cde5d9bf50d1603d5a20190c3a8dbceff3bbfbb95bfaf64366d8586a",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C045",
+      "title": "Risk Control",
+      "subdomain": "D06",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "nist"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "c0209662e848fda53ac034d99849d04f7f4c5ecdc97dede06319643d42c1550a",
+      "new_concept_sha256": "c0209662e848fda53ac034d99849d04f7f4c5ecdc97dede06319643d42c1550a",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C046",
+      "title": "Plan Role Term",
+      "subdomain": "D06",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "skos"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "37382f17ca68d5936e00654e952c4506008e792c1c0fb0a77aeda55f5361043b",
+      "new_concept_sha256": "37382f17ca68d5936e00654e952c4506008e792c1c0fb0a77aeda55f5361043b",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C047",
+      "title": "Agent",
+      "subdomain": "D07",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "9a9464579580392093d36b37667cbda55338da30037c48435130c62dc3049b41",
+      "new_concept_sha256": "9a9464579580392093d36b37667cbda55338da30037c48435130c62dc3049b41",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C048",
+      "title": "Person",
+      "subdomain": "D07",
+      "category": "AUTHORED_OR_TYPING_CHANGE",
+      "changed_fields": [
+        "typing_rationale"
+      ],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "8cfdc1abfcbe94ec06fa7e6c83b10b455b9c94337a50a301006d83c001ffbb79",
+      "new_concept_sha256": "4e81f5c84a0b1fe06c28531eb2d77957124d14b0d983007eea9e6532c51eae85",
+      "action": "Review changed source fields and comparison scope before reuse.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C049",
+      "title": "Organization",
+      "subdomain": "D07",
+      "category": "AUTHORED_OR_TYPING_CHANGE",
+      "changed_fields": [
+        "typing_rationale"
+      ],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "8c33cf5bd5bce87ab071b1bdb6727827f9a200c62437593c29c463ca10c7e399",
+      "new_concept_sha256": "e6dd5fe0b4f8e47717d9828e282a71bbe910f9363efc8b3232da37cb62d88806",
+      "action": "Review changed source fields and comparison scope before reuse.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C050",
+      "title": "Actor Reference",
+      "subdomain": "D07",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "CONTRAST",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "0cea73815c91d62974690e5a5c3ca30d81218068708f58daf4d9fae3c066e03a",
+      "new_concept_sha256": "0cea73815c91d62974690e5a5c3ca30d81218068708f58daf4d9fae3c066e03a",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C051",
+      "title": "Responsibility Assignment Information",
+      "subdomain": "D07",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "CONTRAST",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "a219d664cd89b36447ae7a7e5589b9fb97c599cd5a8702db6d9052065ec14468",
+      "new_concept_sha256": "a219d664cd89b36447ae7a7e5589b9fb97c599cd5a8702db6d9052065ec14468",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C052",
+      "title": "Responsibility Relator",
+      "subdomain": "D07",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "relator"
+      ],
+      "followup_issues": [
+        23
+      ],
+      "definition_unchanged": true,
+      "old_concept_sha256": "3a0bb1b050830599a768fb7f6694018a24c731c520e4974c26f65ebabb5f140a",
+      "new_concept_sha256": "3a0bb1b050830599a768fb7f6694018a24c731c520e4974c26f65ebabb5f140a",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C053",
+      "title": "Responsible Agent Role",
+      "subdomain": "D07",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "cd350cc7eb934f67a4e3d39b3dfcedf727c44442d276a97f5c1c184d100f8c4f",
+      "new_concept_sha256": "cd350cc7eb934f67a4e3d39b3dfcedf727c44442d276a97f5c1c184d100f8c4f",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C054",
+      "title": "Authorizing Agent Role",
+      "subdomain": "D07",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "39c961a8d8f587aad83fafffabfe8f4807edb5373a8ce861e808056ec9062128",
+      "new_concept_sha256": "39c961a8d8f587aad83fafffabfe8f4807edb5373a8ce861e808056ec9062128",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C055",
+      "title": "Responsible Person",
+      "subdomain": "D07",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "db1c05aa933c282eafa8913bc6a080c6b61f771d9b06e9882b8a2e3848877e98",
+      "new_concept_sha256": "db1c05aa933c282eafa8913bc6a080c6b61f771d9b06e9882b8a2e3848877e98",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C056",
+      "title": "Responsible Organization",
+      "subdomain": "D07",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "63c95e655f343283c864cfc9e33dfe207c451cdaeac5f97ca63247d39834af48",
+      "new_concept_sha256": "63c95e655f343283c864cfc9e33dfe207c451cdaeac5f97ca63247d39834af48",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C057",
+      "title": "Authorizing Person",
+      "subdomain": "D07",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "782252b5b55056e5fd4578ea3fb9fdc9e5b580c1bf1e4f9ca9bb317cc7fb4df2",
+      "new_concept_sha256": "782252b5b55056e5fd4578ea3fb9fdc9e5b580c1bf1e4f9ca9bb317cc7fb4df2",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C058",
+      "title": "Authorizing Organization",
+      "subdomain": "D07",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "69f02337a4568d9f19f6c2e2aa4a7c398e411bbe307149ea83410b1aa2f89c20",
+      "new_concept_sha256": "69f02337a4568d9f19f6c2e2aa4a7c398e411bbe307149ea83410b1aa2f89c20",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C059",
+      "title": "Responsibility Role Term",
+      "subdomain": "D07",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "skos",
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "8a8b8fe351141f9ae78994b2eae8d4b91052f41065e292312d3ec402ca1695dd",
+      "new_concept_sha256": "8a8b8fe351141f9ae78994b2eae8d4b91052f41065e292312d3ec402ca1695dd",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C060",
+      "title": "Analysis State Term",
+      "subdomain": "D08",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "skos"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "95fcdffed9a4b8c5f86994e548b7d94e19e36ea020c1c06bbb45aa1ac7522d6a",
+      "new_concept_sha256": "95fcdffed9a4b8c5f86994e548b7d94e19e36ea020c1c06bbb45aa1ac7522d6a",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C061",
+      "title": "Workflow State Term",
+      "subdomain": "D08",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "skos"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "1503937bd9ce70d7bae7175b5ab7caac9f55b035e0803640e53a0ac78a48f305",
+      "new_concept_sha256": "1503937bd9ce70d7bae7175b5ab7caac9f55b035e0803640e53a0ac78a48f305",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C062",
+      "title": "Record State Assertion",
+      "subdomain": "D08",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "oa"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "8968dc6c02fb78d4c5a1b2baa09e447fd3ad810561ffdda3bb1e6262fd2398e6",
+      "new_concept_sha256": "8968dc6c02fb78d4c5a1b2baa09e447fd3ad810561ffdda3bb1e6262fd2398e6",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C063",
+      "title": "Workflow Scheme Version",
+      "subdomain": "D08",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "CONTRAST",
+      "source_ids": [
+        "skos",
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "40ab2e022a297c9f97dc33e21879fc9fa01c7f7942a4eb2bd2dd5a4d79eb2b88",
+      "new_concept_sha256": "40ab2e022a297c9f97dc33e21879fc9fa01c7f7942a4eb2bd2dd5a4d79eb2b88",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C064",
+      "title": "Workflow Assignment",
+      "subdomain": "D08",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "07289735a504af41da7f6584cd1aaabff86671f8f8a8b04bb5e241d1901891a3",
+      "new_concept_sha256": "07289735a504af41da7f6584cd1aaabff86671f8f8a8b04bb5e241d1901891a3",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C065",
+      "title": "Evidence Reference",
+      "subdomain": "D09",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": true,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "76e840bec77df745546a3e830f4d85ae9d1db0eddc054c00d8b10ca1fd01855c",
+      "new_concept_sha256": "76e840bec77df745546a3e830f4d85ae9d1db0eddc054c00d8b10ca1fd01855c",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C066",
+      "title": "Evidence Item",
+      "subdomain": "D09",
+      "category": "AUTHORED_OR_TYPING_CHANGE",
+      "changed_fields": [
+        "typing_rationale"
+      ],
+      "association_changed": true,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "4c2a97de268c31ed7cafd90cf8c692a22d46f5959042dcf530256bff2a7da9a1",
+      "new_concept_sha256": "02494061d7398b3ac40f582339b8bfd45dfaba8bb6334684cc7e8ae59f6a987d",
+      "action": "Review changed source fields and comparison scope before reuse.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C067",
+      "title": "Observation Activity",
+      "subdomain": "D10",
+      "category": "REUSE_CANDIDATE",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "sosa"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "b86daef1d44484e69e6f9b7c680191cbb4283b9362de390fc9bdde9e320be144",
+      "new_concept_sha256": "b86daef1d44484e69e6f9b7c680191cbb4283b9362de390fc9bdde9e320be144",
+      "action": "Verify edition/locator and compatible comparison scope; reuse evidence without claiming equivalence.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C068",
+      "title": "Observation Result",
+      "subdomain": "D10",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "sosa"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "51de6818f2e08698585941940fef8a6fdffb9de6170ce5e83f209d38e8b39352",
+      "new_concept_sha256": "51de6818f2e08698585941940fef8a6fdffb9de6170ce5e83f209d38e8b39352",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C069",
+      "title": "Indicator",
+      "subdomain": "D10",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "ANALOGY",
+      "source_ids": [
+        "dqv",
+        "sosa"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "fb9818d8fab53606fbab506f9e1c1467f01f46f113bba003c6a80574a81b1d07",
+      "new_concept_sha256": "fb9818d8fab53606fbab506f9e1c1467f01f46f113bba003c6a80574a81b1d07",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C070",
+      "title": "Threshold",
+      "subdomain": "D10",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "source_ids": [
+        "dqv"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "79f5fdf2c3c30b03378ed2c8e757651995fa0717285c9ad04a939cefa3156d9a",
+      "new_concept_sha256": "79f5fdf2c3c30b03378ed2c8e757651995fa0717285c9ad04a939cefa3156d9a",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C071",
+      "title": "Signal",
+      "subdomain": "D10",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "sosa"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "809dfecd951e338c0f2e4503078a8c5a0e6c0cc0310e0a91a10081ac71ae755b",
+      "new_concept_sha256": "809dfecd951e338c0f2e4503078a8c5a0e6c0cc0310e0a91a10081ac71ae755b",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C072",
+      "title": "Risk Criteria",
+      "subdomain": "D11",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "NEEDS_LICENSED_SOURCE",
+      "source_ids": [
+        "iso"
+      ],
+      "followup_issues": [
+        78
+      ],
+      "definition_unchanged": true,
+      "old_concept_sha256": "15473610d5898ee747d42c63378c2ac6d9ac349031797ea5c44bf6ccd6fffaa8",
+      "new_concept_sha256": "15473610d5898ee747d42c63378c2ac6d9ac349031797ea5c44bf6ccd6fffaa8",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C073",
+      "title": "Risk Appetite Statement",
+      "subdomain": "D11",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "NEEDS_LICENSED_SOURCE",
+      "source_ids": [
+        "iso"
+      ],
+      "followup_issues": [
+        78
+      ],
+      "definition_unchanged": true,
+      "old_concept_sha256": "2c15d6a48193b3bf249b776dca8f106309c8605ebf58c2257015f6cc6379b8d1",
+      "new_concept_sha256": "2c15d6a48193b3bf249b776dca8f106309c8605ebf58c2257015f6cc6379b8d1",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C074",
+      "title": "Risk Tolerance Statement",
+      "subdomain": "D11",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "NEEDS_LICENSED_SOURCE",
+      "source_ids": [
+        "iso"
+      ],
+      "followup_issues": [
+        78
+      ],
+      "definition_unchanged": true,
+      "old_concept_sha256": "2dbf5a14e11101a705e3b63ac92b2fdedf7dfc0e462e0157e40d70230a102bf0",
+      "new_concept_sha256": "2dbf5a14e11101a705e3b63ac92b2fdedf7dfc0e462e0157e40d70230a102bf0",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-X01",
+      "title": "Risk Case",
+      "subdomain": "D01",
+      "category": "AUTHORED_OR_TYPING_CHANGE",
+      "changed_fields": [
+        "definition",
+        "identity_basis",
+        "typing_rationale"
+      ],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": "NO_DIRECT_EQUIVALENT_REVIEWED",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [
+        23
+      ],
+      "definition_unchanged": false,
+      "old_concept_sha256": "c26a67394869a0d508e79e4f201145ed0a696edc3d9dc9124b30500574b847a3",
+      "new_concept_sha256": "d70e70cbde061082c54e188247055bc4c92f29c6da5ebaeecc6f7d49895db553",
+      "action": "Review changed source fields and comparison scope before reuse.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-X02",
+      "title": "Objective Reference",
+      "subdomain": "D11",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "CONTRAST",
+      "source_ids": [
+        "prov"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "a195f1c0638f275a98943696d7430a4769239ddf33de90f2436af0f73e0647b7",
+      "new_concept_sha256": "a195f1c0638f275a98943696d7430a4769239ddf33de90f2436af0f73e0647b7",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-X03",
+      "title": "Uncertainty Statement",
+      "subdomain": "D05",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "RELATED",
+      "source_ids": [
+        "oa"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "5e7668680a8c66f65956bd618147b4fb138b857ad961cb7c00cb75b92bbd976c",
+      "new_concept_sha256": "5e7668680a8c66f65956bd618147b4fb138b857ad961cb7c00cb75b92bbd976c",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-X04",
+      "title": "Risk Evaluation Outcome",
+      "subdomain": "D05",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "CONTRAST",
+      "source_ids": [
+        "dqv"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "f1410fc59553abcfe0d434226084126613bb0707c2e6db1f203cd36602676180",
+      "new_concept_sha256": "f1410fc59553abcfe0d434226084126613bb0707c2e6db1f203cd36602676180",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-X05",
+      "title": "Control Reference",
+      "subdomain": "D06",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "CONTRAST",
+      "source_ids": [
+        "prov",
+        "nist"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "2f13cb479ac733446b56f5564b9c42a89a7fffa5108f6e14d641777b093894da",
+      "new_concept_sha256": "2f13cb479ac733446b56f5564b9c42a89a7fffa5108f6e14d641777b093894da",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-X06",
+      "title": "Risk Source Reference",
+      "subdomain": "D01",
+      "category": "STRUCTURAL_CONTEXT_RECHECK",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": true,
+      "previous_disposition": "CONTRAST",
+      "source_ids": [
+        "prov",
+        "nist"
+      ],
+      "followup_issues": [],
+      "definition_unchanged": true,
+      "old_concept_sha256": "845adab3d083369dd7b38d220c3df52fc482245d67150b9b41fb582869a51616",
+      "new_concept_sha256": "845adab3d083369dd7b38d220c3df52fc482245d67150b9b41fb582869a51616",
+      "action": "Retain source evidence; recheck relation/inherited-set context before adopting current disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C075",
+      "title": "Evidence Use Relator",
+      "subdomain": "D09",
+      "category": "NEW_CONCEPT",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": null,
+      "source_ids": [],
+      "followup_issues": [],
+      "definition_unchanged": false,
+      "old_concept_sha256": null,
+      "new_concept_sha256": "09179c70fdda4c3a265859311bbab8188a025f11797874b0f45f46fae6d95d13",
+      "action": "Establish a sourced documentary disposition.",
+      "accepted_for_current_curation": false
+    },
+    {
+      "id": "RKM-C076",
+      "title": "Evidence Reference Role",
+      "subdomain": "D09",
+      "category": "NEW_CONCEPT",
+      "changed_fields": [],
+      "association_changed": false,
+      "inheritance_changed": false,
+      "mixed_set_policy_context": false,
+      "previous_disposition": null,
+      "source_ids": [],
+      "followup_issues": [],
+      "definition_unchanged": false,
+      "old_concept_sha256": null,
+      "new_concept_sha256": "deabd426475090074de2837df800f695c6ba313f1319db1247a2adda8bf06729",
+      "action": "Establish a sourced documentary disposition.",
+      "accepted_for_current_curation": false
+    }
+  ],
+  "boundary": "Conservative documentary impact and reuse candidates only. Structural context flags do not prove defects or require discarding prior sources. No new external source/edition/locator or independent validation is asserted. External anchor is outside the 82-concept catalog population."
+}

@@ -1,0 +1,639 @@
+{
+  "schema": "riskium.structural-context-curation/1",
+  "status": "BOUNDED_BATCH_COMPLETE_FULL_CURATION_PENDING",
+  "execution": "N3b-2",
+  "date": "2026-11-10",
+  "baseline_commit": "706a9f04bf391fa6e098fff615510a28e863c3a9",
+  "model_version": "0.3.2",
+  "intended_package": "v0.3.10",
+  "issue": 85,
+  "record_digest_method": "SHA-256 of compact UTF-8 JSON with sorted keys and ensure_ascii=False; file-input hashes use raw bytes.",
+  "inputs": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/0.3.2/riskium-model.json": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb",
+    "references/concept-definitions/0.1.0/review.json": "3eeba2690041f5f815754a256d586cc338b3710c68fe8edc42f5b9865f7fff47",
+    "evaluation/releases/v0.3.9/followups/issue85-impact/impact.json": "c971787dd75909f5ca18484baa13d7f462b029ce509c1f25e364c0ac4df3c9af",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/remaining-batches.json": "c6d39beb750cd870f94001f2033d66ab868d31ae5a44f0671eec4d76f3b2858c",
+    "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json": "8704efb3cf7760fa09ba5aead5a9bb433b63ef906adbd084a832b183743caa73",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json": "ddcacd405d73ee568fd11e6325fd48a13b45f32630f406a9cbd5e4350517d2c0",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json": "6ce6856f79fbb661bd910fd8f7a937effe464257127c3e52edfb9a0c3bec4c50",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/source-access.json": "32091d728684a7f37c286cec273bbf182198214cc492bdc9662aea1278321077",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/passage-checks.json": "48629c662e425220b2ba012fd3d43ecc273bd7f34b1758a566062b179e1bb94a",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/contexts.json": "051d947cc0220bc65fe4eaf7e1fc1ae07fec17eee68506aff8e159863847d072",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/responsibility-checks.json": "d9cf2975e8f5312fc2f6b6af435023bc5bd1dce89c6ffabd0620f7fd77f90e02"
+  },
+  "prior_packets": [
+    "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json"
+  ],
+  "additional_source_ids": [
+    "ontouml_role",
+    "ontouml_rolemixin",
+    "ontouml_category"
+  ],
+  "sources": {
+    "prov": {
+      "title": "PROV-O: The PROV Ontology",
+      "version": "W3C Recommendation, 30 April 2013",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "accessed": "2026-11-10",
+      "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+      "inspection_scope": "Terms listed below only; no PROV conformance or import asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "previous_response_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "bytes": 464179,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true,
+      "purpose": "DOMAIN_COMPARISON"
+    },
+    "skos": {
+      "title": "SKOS Simple Knowledge Organization System Reference",
+      "version": "W3C Recommendation, 18 August 2009",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+      "accessed": "2026-11-10",
+      "document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+      "inspection_scope": "Concept, scheme and lexical-label distinctions; no SKOS mapping triples asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "previous_response_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+      "bytes": 227150,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true,
+      "purpose": "DOMAIN_COMPARISON"
+    },
+    "ontouml_role": {
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/role/index.html",
+      "accessed": "2026-11-10",
+      "previous_response_sha256": null,
+      "http_status": 200,
+      "final_url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/role/index.html",
+      "document_sha256": "60406b5d810cfcb6e5437724f862876f46d6230b5c6c203ad59a53b289f3616a",
+      "bytes": 20434,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": null,
+      "title": "OntoUML specification: Role",
+      "version": "Unversioned latest documentation; access date and response digest retained",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "purpose": "MODELING_FOUNDATION",
+      "inspection_scope": "Definition and selected identity/dependency/abstractness constraints only; not an external domain definition or conformance certificate."
+    },
+    "ontouml_rolemixin": {
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/rolemixin/index.html",
+      "accessed": "2026-11-10",
+      "previous_response_sha256": null,
+      "http_status": 200,
+      "final_url": "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/rolemixin/index.html",
+      "document_sha256": "a3e23bab51f49e7b5f143bbc74e410d109332fadcc5b9a8a1d375b7c4a1b7ae7",
+      "bytes": 16731,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": null,
+      "title": "OntoUML specification: RoleMixin",
+      "version": "Unversioned latest documentation; access date and response digest retained",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "purpose": "MODELING_FOUNDATION",
+      "inspection_scope": "Definition and selected identity/dependency/abstractness constraints only; not an external domain definition or conformance certificate."
+    },
+    "ontouml_category": {
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/category/index.html",
+      "accessed": "2026-11-10",
+      "previous_response_sha256": null,
+      "http_status": 200,
+      "final_url": "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/category/index.html",
+      "document_sha256": "5df2accaa8005f772b608e5fb3c2495345ee1e5959832e0e4558b71fa042ae31",
+      "bytes": 16475,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": null,
+      "title": "OntoUML specification: Category",
+      "version": "Unversioned latest documentation; access date and response digest retained",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "purpose": "MODELING_FOUNDATION",
+      "inspection_scope": "Definition and selected identity/dependency/abstractness constraints only; not an external domain definition or conformance certificate."
+    }
+  },
+  "terms": {
+    "agent": {
+      "source_id": "prov",
+      "name": "prov:Agent",
+      "locator": "§4.1, Agent",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Agent",
+      "paraphrase": "Something bearing responsibility for an activity, entity or another agent’s activity.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "entity": {
+      "source_id": "prov",
+      "name": "prov:Entity",
+      "locator": "§4.1, Entity",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Entity",
+      "paraphrase": "A thing considered through fixed aspects, including conceptual or imaginary things.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "association": {
+      "source_id": "prov",
+      "name": "prov:Association",
+      "locator": "§4.3, Association",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Association",
+      "paraphrase": "An agent’s responsibility and role in an activity, optionally qualified by a plan.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "role": {
+      "source_id": "prov",
+      "name": "prov:Role",
+      "locator": "§4.3, Role",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Role",
+      "paraphrase": "A function in an activity-qualified provenance context.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "person": {
+      "source_id": "prov",
+      "name": "prov:Person",
+      "locator": "§4.2, Person",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Person",
+      "paraphrase": "A person considered as a provenance agent.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "org": {
+      "source_id": "prov",
+      "name": "prov:Organization",
+      "locator": "§4.2, Organization",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Organization",
+      "paraphrase": "A social or legal institution considered as an agent.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "concept": {
+      "source_id": "skos",
+      "name": "skos:Concept",
+      "locator": "§3, especially §§3.1 and 3.5.1",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts",
+      "paraphrase": "A knowledge-organization notion; using it does not automatically identify an OWL class.",
+      "quotation": false,
+      "target_kind": "VOCABULARY_CLASS"
+    },
+    "ontouml_role": {
+      "source_id": "ontouml_role",
+      "name": "OntoUML specification: Role",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/role/index.html#definition",
+      "locator": "Definition and constraints C1-C2",
+      "paraphrase": "A contextual sortal inheriting one identity principle.",
+      "quotation": false,
+      "target_kind": "MODELING_FOUNDATION"
+    },
+    "ontouml_rolemixin": {
+      "source_id": "ontouml_rolemixin",
+      "name": "OntoUML specification: RoleMixin",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/rolemixin/index.html#definition",
+      "locator": "Definition and constraints C1-C2",
+      "paraphrase": "An abstract contextual non-sortal aggregating different bearer identities.",
+      "quotation": false,
+      "target_kind": "MODELING_FOUNDATION"
+    },
+    "ontouml_category": {
+      "source_id": "ontouml_category",
+      "name": "OntoUML specification: Category",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/category/index.html#definition",
+      "locator": "Definition and constraints C1-C2",
+      "paraphrase": "An abstract rigid non-sortal aggregating different bearer identities.",
+      "quotation": false,
+      "target_kind": "MODELING_FOUNDATION"
+    }
+  },
+  "concepts": [
+    {
+      "concept_id": "RKM-C047",
+      "title": "Agent",
+      "subdomain_id": "D07",
+      "authored_definition": "An entity capable of performing or being accountable for relevant actions, including persons and organizations within the declared profile.",
+      "authored_definition_sha256": "98eab7e4dcec1aca93faae901b4dc80fd06151497299e62a54d476af9f2fbacd",
+      "source_concept_sha256": "e78c1d6b03e8fa0ac9f2535d644db405a071c4abb7be69dbb05e3e7236a47cc2",
+      "previous_review_sha256": "22b8d2fe0af0a2f38255b6e03008bc51e0fff5adc459399f38ad1871af20bec1",
+      "context_sha256": "73595e286311aabe5a63beeebdee4f6be8b1073069f95bd199704c92438557ce",
+      "responsibility_context_sha256": "1dc851e0afae52a56f20d33d3ab57685d0c680be4d630a215c75b6867893dcca",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "agent"
+      ],
+      "foundation_term_ids": [
+        "ontouml_category"
+      ],
+      "rationale": "Retain the provenance-agent comparison without equating capabilities, accountability or identity policies. The Riskium Agent category aggregates bearers rather than supplying a new identity principle.",
+      "context_interpretation": "The explicit AgentKinds set distinguishes human Person from Organization and remains incomplete. Excluding GS-RKM-C047 prevents bearer-kind classification from competing with responsible/authorizing participation. Changed Person/Organization typing rationales are checked at the generalization endpoints.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "responsibility_guards": {
+        "actor_name_establishes_authorization": false,
+        "provenance_role_is_ontouml_role": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected-source comparison, ancestry/neighbor/set-policy review and bounded static identity/dependency checks; no instance-level or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C050",
+      "title": "Actor Reference",
+      "subdomain_id": "D07",
+      "authored_definition": "A source-level identifier or description referring to an actor whose identity may be unresolved.",
+      "authored_definition_sha256": "1322aadea123d44b1a1c2d28168c1ae599789b86b480b5c38dc34e58af24c432",
+      "source_concept_sha256": "6b2cbacf92e710344aba76c85d92acb16b538239fbc2aaa2a225c2cb34f367d2",
+      "previous_review_sha256": "4c0444d98f18ab0246c8bceaa8c002151f4f588135f64d5b1869ef6247d64974",
+      "context_sha256": "e0f9efa8b33e83cb3fa7417ac82b47c183b3f716115a5ff5eb55ae2a3e4f01e7",
+      "responsibility_context_sha256": "3dccbecb5b7d2d3bde43c16f5b1893e994632bfc948329b0e9db063c8f74218c",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "CONTRAST",
+      "disposition": "CONTRAST",
+      "comparison_term_ids": [
+        "entity",
+        "agent"
+      ],
+      "foundation_term_ids": [],
+      "rationale": "Retain the documentary-reference/agent contrast. An actor identifier or description may remain unresolved and is not itself an identified responsible or authorizing agent.",
+      "context_interpretation": "G-05 inherits InformationArtifact identity; R-53 permits no resolved agent (0..1). The revised documentary rationale does not turn a name, an identifier or local register approval into evidence of an actual mandate.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "responsibility_guards": {
+        "actor_name_establishes_authorization": false,
+        "provenance_role_is_ontouml_role": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected-source comparison, ancestry/neighbor/set-policy review and bounded static identity/dependency checks; no instance-level or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C051",
+      "title": "Responsibility Assignment Information",
+      "subdomain_id": "D07",
+      "authored_definition": "A recorded statement about an assignment of responsibility or authority, distinct from the relationship it asserts.",
+      "authored_definition_sha256": "0953d2eb3bb82c3959ad3270a7a5cd37547f0d09850f9151c6b2afd5707ae91b",
+      "source_concept_sha256": "5ad46dfac9cff9b6ed56a9700236d3695be93d2e34f815a99d86f2ed364ac2a7",
+      "previous_review_sha256": "03211c29188cbe6f883ac6061eebdffb8884b9744049d9a144d8759b989e4e4a",
+      "context_sha256": "56955172e2548d50fa0cab4a0abfc8ebe648edf679ff9e1d44c65099cfd985cc",
+      "responsibility_context_sha256": "3dccbecb5b7d2d3bde43c16f5b1893e994632bfc948329b0e9db063c8f74218c",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "CONTRAST",
+      "disposition": "CONTRAST",
+      "comparison_term_ids": [
+        "association"
+      ],
+      "foundation_term_ids": [],
+      "rationale": "Retain the claim/relationship contrast. A recorded responsibility assignment can describe an unsupported claim; a provenance association does not supply the full Riskium mandate-grounding contract.",
+      "context_interpretation": "R-55 links the statement to at most one actual mandate and allows none. R-09 concerns an analytical RiskCase; neither this statement nor missing approval determines that case's existence. A named owner alone does not establish responsibility, accountability and approval authority together.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "responsibility_guards": {
+        "actor_name_establishes_authorization": false,
+        "provenance_role_is_ontouml_role": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected-source comparison, ancestry/neighbor/set-policy review and bounded static identity/dependency checks; no instance-level or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C053",
+      "title": "Responsible Agent Role",
+      "subdomain_id": "D07",
+      "authored_definition": "A context-dependent role borne by an agent with an assigned responsibility.",
+      "authored_definition_sha256": "c7a8823c39f39356795eabd7cf6c229de594c0ecafbc1b09d8a2b5feae0de09e",
+      "source_concept_sha256": "55412bf2bfa5f81bf61e103b548bff4a6bdf3a8ecf9b1f7d7c7ea12fca93040f",
+      "previous_review_sha256": "1ec87a1bdac5528d6de9246972cebe26c1ef1e7df1defbca1cf21430a552809b",
+      "context_sha256": "c1945845af039f69794755175da96d4179e3bc60b0111a46bdeaebd62bd69004",
+      "responsibility_context_sha256": "91d46c35f9ddedf4843e374dc0878c91cc006de79e08e3463a7677c81013f084",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "comparison_term_ids": [
+        "role",
+        "association"
+      ],
+      "foundation_term_ids": [
+        "ontouml_rolemixin"
+      ],
+      "rationale": "Retain an analogy to provenance role/association descriptions. ResponsibleAgentRole is a contextual bearer classification, not a PROV Role function description or the statement recording an assignment.",
+      "context_interpretation": "The abstract roleMixin inherits no single sortal identity; its person and organization specializations retain their different identities. R-56 supplies a mandatory inherited mediation dependency. This source structure does not prove that a particular mandate actually exists.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "responsibility_guards": {
+        "actor_name_establishes_authorization": false,
+        "provenance_role_is_ontouml_role": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected-source comparison, ancestry/neighbor/set-policy review and bounded static identity/dependency checks; no instance-level or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C054",
+      "title": "Authorizing Agent Role",
+      "subdomain_id": "D07",
+      "authored_definition": "A context-dependent role borne by an agent authorized to approve or issue a specified decision or assignment.",
+      "authored_definition_sha256": "ef746bc0466bcdfa7ca04721df87dbd383dd1ab5282b0a1a743a55d54e169c26",
+      "source_concept_sha256": "c894b6c49de2c0da7bce2bed4c2ff249169685cfa16eee1eded4c062d3120f81",
+      "previous_review_sha256": "6481fb367f16cbd83cfb3658f2ea704c945ec8debdd24cd2c54d4cd2ca7cee26",
+      "context_sha256": "6457ead085475a9ee8a46f050f3bd9cbf600fc39814c24bfc899ed20407d3ae5",
+      "responsibility_context_sha256": "4251a1b232a8224c187b3486d1b33d6b5a79ad81fdb716ffa7b129856db3a9cf",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "comparison_term_ids": [
+        "role",
+        "association"
+      ],
+      "foundation_term_ids": [
+        "ontouml_rolemixin"
+      ],
+      "rationale": "Retain the bounded analogy. An authorizing role requires a supported authority context; a provenance function or activity participation alone does not establish approval authority.",
+      "context_interpretation": "The abstract roleMixin aggregates person and organization bearers without supplying identity. R-57 supplies the selected mandatory dependency. Responsible and authorizing participation are not globally exclusive merely because they share Agent as a parent.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "responsibility_guards": {
+        "actor_name_establishes_authorization": false,
+        "provenance_role_is_ontouml_role": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected-source comparison, ancestry/neighbor/set-policy review and bounded static identity/dependency checks; no instance-level or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C055",
+      "title": "Responsible Person",
+      "subdomain_id": "D07",
+      "authored_definition": "A person bearing a responsible-agent role in a specified assignment context.",
+      "authored_definition_sha256": "61f43224df609951279875db88159a78bf4c1aa7aeb09f04f1eef8dae2a649af",
+      "source_concept_sha256": "38c9e52a92614f9a33a519cf1115080da0345fe51c684c12f7ff0c7781af71d7",
+      "previous_review_sha256": "043fcb80e08858a8c787b756e18748a0bf614838023ae792e23c29b1e12d698b",
+      "context_sha256": "6d10589e255e97c19c492fdf5157bee18b12489e172f2fe7f12646149a0d4694",
+      "responsibility_context_sha256": "554ae29cfcf8ff58d2599380ec461c7dd89d8dc19dd3cd474a4160fa544a7785",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "comparison_term_ids": [
+        "person",
+        "role"
+      ],
+      "foundation_term_ids": [
+        "ontouml_role"
+      ],
+      "rationale": "Retain the person/function analogy while preserving the assigned responsible-person role as a contextual participation of the same human bearer.",
+      "context_interpretation": "G-24 provides the sole inherited identity supplier Person; G-25 supplies the ResponsibleAgentRole path and inherited R-56 mediation. The same human can bear different roles across contexts without being duplicated or merged with an organization.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "responsibility_guards": {
+        "actor_name_establishes_authorization": false,
+        "provenance_role_is_ontouml_role": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected-source comparison, ancestry/neighbor/set-policy review and bounded static identity/dependency checks; no instance-level or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C056",
+      "title": "Responsible Organization",
+      "subdomain_id": "D07",
+      "authored_definition": "An organization bearing a responsible-agent role in a specified assignment context.",
+      "authored_definition_sha256": "d1963557d497ad97e4d8b03f54b47d59bdaa49f2424f3d754cf16c8c7bd20cfd",
+      "source_concept_sha256": "74d3e8303805d51dcd84ce9c9225665d650468fee1f3a6cd2dc315f389a75ca4",
+      "previous_review_sha256": "b2c8262c460dc3cd41fe01efb0513dac010bb33056fbe30cd76846c2206cadeb",
+      "context_sha256": "4278442baf6d4692d87b22d5ecb355f1a0708b78701c5b2a276a3f63df7f9a8a",
+      "responsibility_context_sha256": "57efd5e4646430b4c09b948e974bd0314344743b484c5874ef2f1ab63f23fdcd",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "comparison_term_ids": [
+        "org",
+        "role"
+      ],
+      "foundation_term_ids": [
+        "ontouml_role"
+      ],
+      "rationale": "Retain the organization/function analogy without substituting a vocabulary function for a supported responsible-organization participation.",
+      "context_interpretation": "G-26 preserves the sole Organization identity and G-27 supplies the responsible-role path and inherited R-56 mediation. A corporate representative is not the organization; an organizational record alone is not evidence of a grounded mandate.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "responsibility_guards": {
+        "actor_name_establishes_authorization": false,
+        "provenance_role_is_ontouml_role": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected-source comparison, ancestry/neighbor/set-policy review and bounded static identity/dependency checks; no instance-level or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C057",
+      "title": "Authorizing Person",
+      "subdomain_id": "D07",
+      "authored_definition": "A person bearing an authorizing-agent role in a specified context.",
+      "authored_definition_sha256": "72f3421abcdca41a7a7e70288a17e310fd1c6b1e852f09ed1c7f9e12f916d007",
+      "source_concept_sha256": "401a74bdca1bf24a7497dd5592e55322f078d2803c74020598b4df2d1a9f6665",
+      "previous_review_sha256": "47643dc9beb5751a27fada51bbf81e12088ad6e7b2d0e4eac1c26dd86801111b",
+      "context_sha256": "6b165ff08db3861612be94444c6d61eddfc70b708608b6be3c5543adb1a4bf49",
+      "responsibility_context_sha256": "123ed352035530da623c33c39dcc5b8a6dcb131ff5697f3b421c1d634e716335",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "comparison_term_ids": [
+        "person",
+        "role"
+      ],
+      "foundation_term_ids": [
+        "ontouml_role"
+      ],
+      "rationale": "Retain the analogy while separating human identity from supported approval authority. A provenance role label supplies neither a mandate nor a decision-specific authorization policy.",
+      "context_interpretation": "G-28 preserves Person identity, G-29 supplies the authorizing-role path and R-57 is inherited. The non-disjoint Person sibling policy permits different contextual roles without asserting that one person fills both distinct participants of one mandate.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "responsibility_guards": {
+        "actor_name_establishes_authorization": false,
+        "provenance_role_is_ontouml_role": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected-source comparison, ancestry/neighbor/set-policy review and bounded static identity/dependency checks; no instance-level or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C058",
+      "title": "Authorizing Organization",
+      "subdomain_id": "D07",
+      "authored_definition": "An organization bearing an authorizing-agent role in a specified context.",
+      "authored_definition_sha256": "84eb525daff32d51f53728d728e2686241e0230b74815279496d77f7282d20b0",
+      "source_concept_sha256": "6cef739724a8a96f3e65eec6a202388b69ca34bbf5b5157f2d2fe19d354cb059",
+      "previous_review_sha256": "bfc4cf2b1b346b33210902b01426517af7f0d98ca9236f63d475f90788903be6",
+      "context_sha256": "e9a31aeb6a446e4f81a0c63c11ed90097d64855e99acab33bdbc32ffd5cd044e",
+      "responsibility_context_sha256": "93507160ade2640a9a7b370fc0bff35ddf5202de771b8621cfb844122e533601",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "ANALOGY",
+      "disposition": "ANALOGY",
+      "comparison_term_ids": [
+        "org",
+        "role"
+      ],
+      "foundation_term_ids": [
+        "ontouml_role"
+      ],
+      "rationale": "Retain the organization/function analogy while treating approval authority as contextual and supported rather than entailed by an organizational name or class membership.",
+      "context_interpretation": "G-30 preserves Organization identity; G-31 supplies the authorizing-role path and inherited R-57 dependency. Organizational bearer kinds remain distinct from human representatives, while responsible/authorizing participation is not made globally exclusive.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "responsibility_guards": {
+        "actor_name_establishes_authorization": false,
+        "provenance_role_is_ontouml_role": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected-source comparison, ancestry/neighbor/set-policy review and bounded static identity/dependency checks; no instance-level or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C059",
+      "title": "Responsibility Role Term",
+      "subdomain_id": "D07",
+      "authored_definition": "A controlled value identifying the kind of responsibility or authority assigned. This is a managed vocabulary resource with scheme-qualified identity, not a bare string.",
+      "authored_definition_sha256": "5d60cf57ae684b2ba39d85432b90ffd56bba53a2e282b477b229b85d7b454094",
+      "source_concept_sha256": "497807be636cc975b5903d00f10322daae99f4d7396812d214c9c398dde4060a",
+      "previous_review_sha256": "7352aaf9ee2ba483ebd9c2f0ff95db755d13e4751ce837d089dd4c75aa8cf234",
+      "context_sha256": "097ba7479f1af93e964abfa1a6cdf662b95bb62f819164918e4ba7a8c23f88de",
+      "responsibility_context_sha256": "9144d3a25828726b20fb0423fa73cf98d367cc37a534643f3bef16c170093062",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "concept",
+        "role"
+      ],
+      "foundation_term_ids": [],
+      "rationale": "Retain vocabulary-concept/function context. The controlled term denotes a responsibility or authority kind; selecting the term does not instantiate the actual role or the mandate grounding it.",
+      "context_interpretation": "The path through ClassificationTerm and VocabularyConcept preserves InformationArtifact identity. R-54 records an assignment's selected term and R-59 a mandate's term; lexical equality alone establishes neither mandate identity nor actual authorization.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "responsibility_guards": {
+        "actor_name_establishes_authorization": false,
+        "provenance_role_is_ontouml_role": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported selected-source comparison, ancestry/neighbor/set-policy review and bounded static identity/dependency checks; no instance-level or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    }
+  ],
+  "summary": {
+    "this_batch": 10,
+    "prior_documentary_dispositions": 36,
+    "cumulative_documentary_dispositions": 46,
+    "population": 82,
+    "remaining": 36,
+    "dispositions": {
+      "RELATED": 2,
+      "CONTRAST": 2,
+      "ANALOGY": 6
+    },
+    "disposition_labels_changed": 0,
+    "unchanged_local_edges": 10,
+    "changed_ancestor_context": 7,
+    "changed_association_neighbor_context": 1
+  },
+  "boundaries": {
+    "scientific_source_modified": false,
+    "historical_curation_modified": false,
+    "published": false,
+    "engine_runs": 0,
+    "formal_alignment_axioms_added": false,
+    "independent_validation": "NOT_PERFORMED",
+    "static_scope": "Only declared identity-provider, abstractness, inherited mediation and optional resolution/mandate source contracts were checked; not actual individuals, full semantic acceptance or organizational effectiveness.",
+    "semantic_review": "Independent semantic review remains #23; exact normative adoption remains #78.",
+    "deployment_scope": "Previews remain planning artifacts; full component qualification and affected-body publication/readback remain separate."
+  },
+  "batch_findings": [
+    "All ten authored definitions and local edge records are unchanged. Seven concepts have changed ancestor typing context; ResponsibilityAssignmentInformation also has the revised RiskCase as an association neighbor. Direct generalization endpoints are additionally checked so changes to Person/Organization are visible even at the Agent category.",
+    "The four concrete person/organization roles each retain exactly one declared ancestor identity provider and inherit their selected mandatory mediation. Agent and the two roleMixins remain abstract non-sortals; their currently modeled descendant bearer identities are Person and Organization. These are selected static source checks, not ontology-engine executions or evidence that a particular mandate is realized.",
+    "The disjoint, incomplete AgentKinds set distinguishes bearer kinds. This differs from global exclusion between responsible and authorizing participation, which is not imposed by the blanket mixed-criterion set. Carried role-subtype criteria retain their source statuses and are not independently reapproved here.",
+    "ActorReference may remain unresolved under R-53 (0..1), and the assignment statement may lack an actual mandate under R-55 (0..1). An owner name, a PROV function or a controlled responsibility term alone establishes none of the actual relationship, authorization and accountability commitments."
+  ],
+  "context_guard_note": "Bearer-kind exclusivity is separate from contextual participation. Shared parenthood does not create a blanket role set; different contextual roles do not create a new bearer identity. A responsibility statement or provenance function alone does not establish actual authorization, and local operational admission does not determine analytical RiskCase existence.",
+  "next_execution_note": "N3b-3 reviews eleven D04/D08 registration/workflow concepts. Then D05 (11), D06/D11 (9), D09/D10 (5). After all 82 dispositions, qualify the complete successor curation and publish/read back the selected package before closing #85. Main, release v0.3.9, scientific source 0.3.2, reader 0.4.9 and article 7.2.21 are unchanged.",
+  "source_access_note": "All five primary responses were retrieved directly. The PROV-O and SKOS response hashes match the historical review; the three selected OntoUML foundation pages have access dates and response-body digests of their own. source-access.json and passage-checks.json retain retrieval/locator fingerprints without redistributing documents. Modeling foundations are separate from external domain definitions; no new formal alignment or conformance certificate is issued."
+}

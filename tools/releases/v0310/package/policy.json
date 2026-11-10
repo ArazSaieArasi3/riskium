@@ -1,0 +1,14 @@
+{
+  "schema": "riskium-v0310-package-policy/1",
+  "tag": "v0.3.10",
+  "assets": ["riskium-v0.3.10-source.tar.gz", "source-manifest.json", "artifact-versions.json", "freeze-receipt.json", "release-notes.md", "SHA256SUMS.txt"],
+  "model": "ontology/0.3.2/riskium-model.json",
+  "source_selection": "releases/selection-v0.3.10.json",
+  "reader_manifest": "documentation/0.4.10/reader/manifest.json",
+  "curation": "references/concept-definitions/0.2.0/review.json",
+  "active_components": 8,
+  "retained_predecessor_components": 38,
+  "article_version": "7.2.21",
+  "published": false,
+  "live_channel_readback": false
+}

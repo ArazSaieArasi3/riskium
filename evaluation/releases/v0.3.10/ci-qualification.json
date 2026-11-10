@@ -1,0 +1,80 @@
+{
+  "schema": "riskium-n4-qualification/1",
+  "status": "PASS_PREPARED_COMPONENT_NOT_PUBLICATION",
+  "environment": "CI",
+  "source_ref": "7fd1f6c491c1aa925d8a9682ebb50e5244257ce4",
+  "exact_commit_ref": true,
+  "source_snapshot": {
+    "checkout_sha": "7fd1f6c491c1aa925d8a9682ebb50e5244257ce4",
+    "working_tree_dirty": false,
+    "clean_exact_checkout": true
+  },
+  "ci_run_id": "42883980009",
+  "source_guard": {
+    "status": "PASS_ADDITIVE_SOURCE_GUARD",
+    "baseline": "8e63a88717f3e9efe804004a678adb61e6500510",
+    "frozen_files_preserved": 2296,
+    "allowed_planning_updates": [
+      "evaluation/releases/v0.3.9/followups/issue85-structural-review/README.md",
+      "plans/next-releases.md"
+    ],
+    "new_files": 107
+  },
+  "review_summary": {
+    "concepts": 82,
+    "subdomains": 11,
+    "dispositions": {
+      "RELATED": 40,
+      "CONTRAST": 20,
+      "ANALOGY": 19,
+      "NEEDS_LICENSED_SOURCE": 3
+    },
+    "explicit_normative_deferrals": 3,
+    "formal_equivalences": 0,
+    "independent_ratings": 0
+  },
+  "projection": {
+    "status": "PASS_STAGED_CURATED_READER_NOT_PUBLICATION",
+    "paired_bodies": 91,
+    "html_pages": 91,
+    "wiki_pages": 94,
+    "local_links_checked": 5859,
+    "source_ref": "7fd1f6c491c1aa925d8a9682ebb50e5244257ce4",
+    "published": false,
+    "live_channel_readback": false
+  },
+  "reproduction": {
+    "independent_builds": 2,
+    "identical_files": 189,
+    "projection_manifest_sha256": "35af690d9acd43ccdab6f78d9287f585e7192d822c25f9ed9315c974b4c88f77"
+  },
+  "contracts": {
+    "exit_code": 0,
+    "passed": 20,
+    "report_sha256": "b90ffd892189ec4ec84f7eb42bd60d4b445b99b25eb464eea6ebdc55d66ab3d1"
+  },
+  "inputs_sha256": {
+    "references/concept-definitions/0.2.0/review.json": "7eb6bedcceb2c21c5de56b5778d9e64539473469fef66c27ce371a82b27d2cd8",
+    "references/concept-definitions/0.2.0/component.json": "ffb47386711826becf10b9fe035acefed014c67b3eb013429b4c9c6e7a115f06",
+    "documentation/0.4.10/reader/manifest.json": "add0ce5e1ad7bb3a91ce1dac4fd13b61407ae06eaf8da87286aaa62370c20879",
+    "tools/releases/v0310/requirements.txt": "f0fb1973ace0fae572144a11aecfc7cc872d07ecb2bd0ac082f638c4347e3b04",
+    ".github/workflows/curation-v0310.yml": "408ffdb586b6b5b938f9e7f63a490d7e9563bc55d8dba51010573a239bf29813",
+    "tools/releases/v0310/curation.py": "f145dfb226870377ca667d4f8ae49a7cd8a283c42952c5e0b819144d82f603fd",
+    "tools/releases/v0310/guard.py": "044133de62f0b43ffc2ea69736dc968e21f5a2136ea96f47bb0c6d2cfaed1841",
+    "tools/releases/v0310/projection.py": "7b22b6e623057f084d42d8664f3268d68e81b39e13f2915b0c82f42a23adbd03",
+    "tools/releases/v0310/qualify.py": "9861649d6b22b86fc7a9f4124a9e9a1a1aad47efc9e8696b423959806b75ebcb",
+    "tools/releases/v0310/reader.py": "c9a8d91aff06ea154e3ddc332d23a7bba4f07a00b496bf48e97cebe1397e90d7",
+    "tools/releases/v0310/test_contracts.py": "dd2fa2b5e530667e682fd73dce08c095fe25c9187a41c6c68a573338bec4cc1e"
+  },
+  "boundaries": {
+    "ontology_engine_run": false,
+    "independent_semantic_rating": false,
+    "formal_alignment_adopted": false,
+    "live_publication": false,
+    "live_channel_readback": false,
+    "article_changed": false,
+    "normative_followup_issue": 78,
+    "independent_review_issue": 23,
+    "next_gate": "N5"
+  }
+}

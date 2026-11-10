@@ -1,0 +1,846 @@
+{
+  "status": "DOCUMENTARY_DISPOSITION_INVENTORY_NOT_COMPONENT_QUALIFICATION",
+  "population": 82,
+  "disposition_counts": {
+    "RELATED": 40,
+    "CONTRAST": 20,
+    "ANALOGY": 19,
+    "NEEDS_LICENSED_SOURCE": 3
+  },
+  "explicit_normative_deferrals": 3,
+  "concepts": [
+    {
+      "concept_id": "RKM-C001",
+      "title": "Risk Pattern Specification",
+      "subdomain_id": "D01",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+      "review_record_sha256": "d05066f61cbcf822b9603cd304b669c09a263c119b93bdc78a677ae92264859f",
+      "source_concept_sha256": "e01379b8678c9690ba45957851ef5b13382d0114bcdff97640e28a93706cb045",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C002",
+      "title": "Risk Context Specification",
+      "subdomain_id": "D01",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+      "review_record_sha256": "1c927e111abc4240ab00aec0e12bc8da41de59ac653481c7b19b31ef07145407",
+      "source_concept_sha256": "7aa413a3a89eb3d28fcee0406acada2b2fc6478a0290d87c78f27d931201018b",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C003",
+      "title": "Risk Scenario Specification",
+      "subdomain_id": "D01",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+      "review_record_sha256": "9cf712b9eb22682cd72d7d40ba4c98e159365e0dedf225e174a517850d9205b1",
+      "source_concept_sha256": "e6b4f0efce61d8f94777de6261c09d5d8b087ea6e4bcba8de7886e3dcbd54550",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C004",
+      "title": "Risk Occurrence",
+      "subdomain_id": "D01",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "66c3147cb2caa86bce34309005dc16f37670b9116ed618903a713e9dfb258d58",
+      "source_concept_sha256": "91718518f536e3e2d2b5ac1f3ff2a35f861ec268facd79294cc8a76fbe461490",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C005",
+      "title": "Risk Nature Assertion",
+      "subdomain_id": "D01",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+      "review_record_sha256": "d340e6a8d2845f9688d92da0f552eea406c56ac201d1023c97b3bb131ce49183",
+      "source_concept_sha256": "f2568f54a24692bacd417bc8c126343484535059f89da41b6aaae18a6fe17de8",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C006",
+      "title": "Nature Term",
+      "subdomain_id": "D01",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+      "review_record_sha256": "37018087d8db734cd9808a64c1ec02b22a72e9d181c7fde13359b4fffa59b87b",
+      "source_concept_sha256": "826fa4627b959aae58e57cde5b366457dc8fb4efeca62628bc227b9f6947fdec",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C007",
+      "title": "Risk Source",
+      "subdomain_id": "D01",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "e9d9fd50662b1bb6986ddf4b807306cda8768dd9d59b75b6197400a239efca2c",
+      "source_concept_sha256": "72deb36e7c62070d47a9da7e70999c27f63959ae0870c6144292dbe1340e8579",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C008",
+      "title": "Predisposing Condition",
+      "subdomain_id": "D01",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "e8577d7d93c66671e6691ea59ef46a614be9c9eee8df93acd633732f7d5dc295",
+      "source_concept_sha256": "73efd020be0df8f65a5f9c451df4ba6a2fe124e9aebe06f7e6da429fa92be3a2",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C009",
+      "title": "Trigger",
+      "subdomain_id": "D01",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "2f197b858aabbef1ad75eed69733df6dcea9ebca9cdc7c24445528e956069a7c",
+      "source_concept_sha256": "59d7e85b33030f51a254b12afb2deb1202c84684692931ef2fe00ac3f429d40d",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C010",
+      "title": "Consequence",
+      "subdomain_id": "D01",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "da741d8cd41eaf5ac4a04ff1d12ed490f4d27cc8c4bb2571f6a46d2e412a5bfd",
+      "source_concept_sha256": "b21ebf556e645b6b2b3adc2f8bd40b0f775000443cdf01500a5527b36b875cd2",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C011",
+      "title": "Vulnerability",
+      "subdomain_id": "D01",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "7eab184d14f1fa2aa47ce443eb7a3e2eed3e7233e722fb7252a6e2f13dbbbb8a",
+      "source_concept_sha256": "0662fce29dd7de7a31dbefb97437235dac16905ff047a945651d613306ba4927",
+      "followup_issues": [
+        23
+      ]
+    },
+    {
+      "concept_id": "RKM-C012",
+      "title": "Exposure",
+      "subdomain_id": "D01",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "7278721e52543ddf3d5bdac84ea14a8a89d973484dabec62521b9d262859b645",
+      "source_concept_sha256": "5fa22adf0ec450b02f6d569ff877be0d86e7b0419de519213a744075b377a321",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C013",
+      "title": "Risk State",
+      "subdomain_id": "D01",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "78c21197adec6647737c1ed310b55b54af69bce5942c730084482583c9c63464",
+      "source_concept_sha256": "57189af7d6d61d0a24c6ebfd5a594bd2d5c972175f8c9aca64a37eb641a6569d",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C014",
+      "title": "Information Artifact",
+      "subdomain_id": "D02",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json",
+      "review_record_sha256": "e6aeb6a572312d5783aa92bde5a1b8b13e0380a2683a48c66f92542c8d750a77",
+      "source_concept_sha256": "eb7e1738327cd4ac3b8b8e09cac9c089206737b2d9a815a0071f77f3c1ad600e",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C015",
+      "title": "Artifact Version",
+      "subdomain_id": "D02",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json",
+      "review_record_sha256": "2c5ab0f9faded8279eebcea04ef94bc36667359e0dc9bcae3e0b7aff6387fcad",
+      "source_concept_sha256": "21fc10ffa87bf31b9bfeefa27d61359a8e85dde84c6bb87928f76e4a589b6383",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C016",
+      "title": "Information Content",
+      "subdomain_id": "D02",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "71fdee9c40b70f0fc5ea5c03df29e4fb74ac8133238034e30c4fc59f2711286e",
+      "source_concept_sha256": "97564827cda680d85461d5eb47a27aad14f0336aaabc8735abc7e0c4084224fc",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C017",
+      "title": "Vocabulary Concept",
+      "subdomain_id": "D03",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+      "review_record_sha256": "ca92804bd261b63bcc0ab23c4fa12e5dd6c88f81689fe67435299fbf00a50ede",
+      "source_concept_sha256": "82e5cbe41e1d0a95e20d1dd8521e7a4ce9030ef1ef35414be47382ac472a9ae5",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C018",
+      "title": "Classification Scheme",
+      "subdomain_id": "D03",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+      "review_record_sha256": "b290422f56011ebfd7566e48569113ece2acc78494e043b4ee687fec3b1f0186",
+      "source_concept_sha256": "88fffea2784bd8d57e200a59c7d29f16317d5209ed82b2dadc79d27e4ac5a4b3",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C019",
+      "title": "Classification Term",
+      "subdomain_id": "D03",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+      "review_record_sha256": "42d15dded946407472e84cc3b4587486aea5e54182c8f18b1f21d75f4179506e",
+      "source_concept_sha256": "1072b087d1637d3fd2c538fac7fedbb377ca51c90db55cb28dd96b7d01a7fe0e",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C020",
+      "title": "Classification Assertion",
+      "subdomain_id": "D03",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+      "review_record_sha256": "b3f5c29fab56d25807108ebb0ae7f07eb91749a3f4118e5ab16c57d079e159b2",
+      "source_concept_sha256": "884cf81791d9baf6e585867d825a158b65ad26f0a6362e9b12e9429de6365ef7",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C021",
+      "title": "Tag",
+      "subdomain_id": "D03",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+      "review_record_sha256": "bf1cd43438de12f394b566c31b08f86af043d7b8f75ad6c11fae60811c5649fb",
+      "source_concept_sha256": "80eacdb7902cab93a47026e92e1ee45a4b805e82a6d322f88dc1d92836220f19",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C022",
+      "title": "Risk Register Entry",
+      "subdomain_id": "D04",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json",
+      "review_record_sha256": "4e3c481c7eb61b650fd2021a0b1869d4364ad5c98275a34ab74b5291eee4cace",
+      "source_concept_sha256": "8200af4dcd2b231daa060da01aa16b7733ee5f473eb46113b692abfd30dda376",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C023",
+      "title": "Entry Revision",
+      "subdomain_id": "D04",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "9388c8f1eb670fd0b2c0c6b3e867202b9a577b8d0a9fcdb7ac7ab6de8481d5f7",
+      "source_concept_sha256": "0fdc2e188242d076f496e9e64b72495d266a9bc42e853f624c483e1e31808a41",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C024",
+      "title": "Risk Description",
+      "subdomain_id": "D04",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json",
+      "review_record_sha256": "f016f8a55e5cf586b88995d817fdf60f16d0d35a8248bc48b9151be71c471c7a",
+      "source_concept_sha256": "77dc5d72385310814dcd3fd0d79f22fec14638a18a2eccfd76c2c5f39fa07551",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C025",
+      "title": "Consequence Statement",
+      "subdomain_id": "D04",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json",
+      "review_record_sha256": "6989c3acfe5cbd6db0eb94d0f3fa0c591996c00af94508926f6211ee3e3ff480",
+      "source_concept_sha256": "b61fe143cff5b471db073e2d93b6ec50120f87f879e0e64fdec29e6931d5485a",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C026",
+      "title": "Identification Information",
+      "subdomain_id": "D04",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json",
+      "review_record_sha256": "b79b4f0469a09b9217c31540a31efa571a50a295e124dd0ee6afb1209d4b519f",
+      "source_concept_sha256": "7134718616d4f78d98bf355b53eb44d56f63bd5dcdda17f8c44d9e25610c326a",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C027",
+      "title": "Intake Channel Term",
+      "subdomain_id": "D04",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json",
+      "review_record_sha256": "4cbdc961561cc1076bfeedf760b0141fbac914d3758df7362b51b22c3e05ada3",
+      "source_concept_sha256": "13a76a2439a4bcefc15e30dfd38e0347bf4af432e57b9fcab2e82763c433ae76",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C028",
+      "title": "Description Role Term",
+      "subdomain_id": "D04",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json",
+      "review_record_sha256": "fb0186dc7ed93525edab5e56e13aa6f4865c8791284f033debbe02b0a6672758",
+      "source_concept_sha256": "48997d5d6a9f910e05854c2443017972bcbe4a055b3d33253cacd1859c5f85d6",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C029",
+      "title": "Consequence Slot Term",
+      "subdomain_id": "D04",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json",
+      "review_record_sha256": "ee4547f23b087ef03bde9b7ab42b2b2b530d51edc53e485c7525332a93199b41",
+      "source_concept_sha256": "d82a6aa59d2c3c18210ce6a18154d4108094411d9eda5f5e09b6b05d9d563df1",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C030",
+      "title": "Risk Register",
+      "subdomain_id": "D04",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json",
+      "review_record_sha256": "3218eb3d383ac9a83c798582edaecc402fadd3dbd190d38541a7737547769c73",
+      "source_concept_sha256": "04f2c34608c1c0377063532371ccbec334821f9314147255c8c9a7234d5b0a4a",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C031",
+      "title": "Assessment Activity",
+      "subdomain_id": "D05",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "17a7cf6dc8b0aac5e0b1b54179f9621123c575bf4b53db331f4ad67e0310403f",
+      "source_concept_sha256": "1c5b5d3dbf0b706467b304b54a84bd957ac29a77076ea24de22a739f87030e7b",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C032",
+      "title": "Assessment Information",
+      "subdomain_id": "D05",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json",
+      "review_record_sha256": "7440d3df8a2dd1db1ba4df45a59b2ce0db2d0395dbf5c9442ce4c92d00ba8729",
+      "source_concept_sha256": "60eed4828678a9c3e6281418176d2aa355a8a2010e7e7337d21376a8ef759dac",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C033",
+      "title": "Assessment Basis",
+      "subdomain_id": "D05",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json",
+      "review_record_sha256": "f6014cc724711082067783da17b05b3a3e9dffff313304b684233be4fe043de2",
+      "source_concept_sha256": "b55ffce904c23c7ef5d5a3e9ebfd2681747ece0ed0b84a14cd151303f17234fd",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C034",
+      "title": "Dimension Assessment Result",
+      "subdomain_id": "D05",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json",
+      "review_record_sha256": "0e50e91c749929322f517dd9d94318f9250aef2c0800fceb05b876a2aa235e80",
+      "source_concept_sha256": "077e2519528a2c3f4784f6460bb872cce8b593e3f8905de61944053c4143a700",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C035",
+      "title": "Assessment Method Specification",
+      "subdomain_id": "D05",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json",
+      "review_record_sha256": "ae5b410587db042d3b5ae3d2f6ef742990421849eb3584f83755ce612044e574",
+      "source_concept_sha256": "4aff8563e5987ce27cde9d58aacfe8406aa8d55dd55d4196332f6efc51d9af18",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C036",
+      "title": "Assessment Scale",
+      "subdomain_id": "D05",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json",
+      "review_record_sha256": "735c3f0178a5896dd9496c91a66d351d7e974ed3271eda4126f35ce7a7175d92",
+      "source_concept_sha256": "a920f87b9cc5089a23290eabd04b37c1b23a7022c19f95cd5d7d930a24c9efb0",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C037",
+      "title": "Risk Score Result",
+      "subdomain_id": "D05",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json",
+      "review_record_sha256": "29df558a9b4d9e668eb47a4ddbff52fccc76207367735e990199be3136e77d9b",
+      "source_concept_sha256": "8c537d8b9044e1a52f78aed24b23797cff9747b55ea41e0604d0d13635f99209",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C038",
+      "title": "Assessment Scale Level",
+      "subdomain_id": "D05",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json",
+      "review_record_sha256": "df56391fbf0fa60f08d1a5de4bb2dec38c2ebbb951aef5f926e5fac70eb8e2e1",
+      "source_concept_sha256": "f8fe05470430244f93becdfa2d63e0a28b382bb0db5a9315a99e2360c7be8545",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C039",
+      "title": "Assessment Dimension",
+      "subdomain_id": "D05",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json",
+      "review_record_sha256": "33ec1b03c5fc1f75df3ce225063a971d77386fe2fc0afbf1d38198ed278c8ccd",
+      "source_concept_sha256": "1ebf1e9cc9bdb0290a0de88b70f7454f32e6a5afcf6f9f82ba302a75c06be731",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C040",
+      "title": "Epistemic Status Term",
+      "subdomain_id": "D05",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json",
+      "review_record_sha256": "16f5844610f53325f036f7dca8f1047b22554e77d44717c9cc61563fa2ef0193",
+      "source_concept_sha256": "0eb79924b1fbe3ffb8b8eb72327f776ce7b9f6c69ef4345d1b566071c6c5c485",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C041",
+      "title": "Treatment Decision Information",
+      "subdomain_id": "D06",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/review.json",
+      "review_record_sha256": "53333467fa57fb73ae09cd2a7e5583fcf216343be27b3fd988fe4cbc4462f5f1",
+      "source_concept_sha256": "16f0d4ce72b92adb08f7de0c2a8c277396672760c2468882cc9cc2da1af89533",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C042",
+      "title": "Treatment Strategy Term",
+      "subdomain_id": "D06",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/review.json",
+      "review_record_sha256": "0ab8ac9d73e94154c87cde0d275840b27ac97f588e0d95933bc3e3ae203218ea",
+      "source_concept_sha256": "dfd01b36ea17c9457777248832b82bcd7188aa39446b4329edf3e9d43d15af6f",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C043",
+      "title": "Plan Specification",
+      "subdomain_id": "D06",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/review.json",
+      "review_record_sha256": "36f6d4ee0c09250035e935954def5e914c714ca87142d6d67e72fcf654b226eb",
+      "source_concept_sha256": "14001db3a8db31726420f785618aafadf79c35368ecc1b1bbff5cda02e61be77",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C044",
+      "title": "Treatment Activity",
+      "subdomain_id": "D06",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "2dfe6b38806ce87115c63508a6bb04f6cc04c0cd14a53c04d3721553a5c0cbd0",
+      "source_concept_sha256": "4d8cb6c70848be36efbbf0920f2cff5d09759ac799ef60d21841af4cde5e64b8",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C045",
+      "title": "Risk Control",
+      "subdomain_id": "D06",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "e2970ea65a52eeede38b232ccd2d8c60ac36947b21e00ee54c835de404cda446",
+      "source_concept_sha256": "d57794e245b05aebaab8c4959a697daa29c89be3d4a4d5b43cff9aaff41bedb8",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C046",
+      "title": "Plan Role Term",
+      "subdomain_id": "D06",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/review.json",
+      "review_record_sha256": "78ee2f0cf6e490bb746247481f2b6197ef350b3701cdd6c515c58161e041fe2a",
+      "source_concept_sha256": "8575c287a84421a13182d6dd725cfc803f9c071129a14ee67c4911522b4a8651",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C047",
+      "title": "Agent",
+      "subdomain_id": "D07",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json",
+      "review_record_sha256": "36c6c23c108a209f933c204f2f49fe0c16aed3d92af0a9d5d915544b89f6b979",
+      "source_concept_sha256": "e78c1d6b03e8fa0ac9f2535d644db405a071c4abb7be69dbb05e3e7236a47cc2",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C048",
+      "title": "Person",
+      "subdomain_id": "D07",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json",
+      "review_record_sha256": "e4799a7f2abd90fa23bc8b6c20f26398271b1f9d2b9697699a1f89b4e951f671",
+      "source_concept_sha256": "f4140cf514e288d1d3cde4834851794a1d2815ab678212c05a1ad1ec20ee12ef",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C049",
+      "title": "Organization",
+      "subdomain_id": "D07",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json",
+      "review_record_sha256": "1d656ee753ebbbf922f72f744d9cb2e785f6dd7194237e7b64904a0f35db6a5c",
+      "source_concept_sha256": "52ad25181dc7182dfce751f851379d0b83d9d4a4da5915f2ccc8f4c87e9bfeeb",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C050",
+      "title": "Actor Reference",
+      "subdomain_id": "D07",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json",
+      "review_record_sha256": "7965e0ec2761ac5c4ed2e30c37f2990afd497c0bc18c10170f18df65d57ab58e",
+      "source_concept_sha256": "6b2cbacf92e710344aba76c85d92acb16b538239fbc2aaa2a225c2cb34f367d2",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C051",
+      "title": "Responsibility Assignment Information",
+      "subdomain_id": "D07",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json",
+      "review_record_sha256": "6c6eee2ae9908c1a88d5d1e4364456f7f28ed3ff69ebaacc978f08a0d47d21bd",
+      "source_concept_sha256": "5ad46dfac9cff9b6ed56a9700236d3695be93d2e34f815a99d86f2ed364ac2a7",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C052",
+      "title": "Responsibility Relator",
+      "subdomain_id": "D07",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "22c40ed15f2e35a0a9cad828420758e64bfcf5522a11f57f8f4c01efab1be556",
+      "source_concept_sha256": "5cde7c38fa245c75cc72bc1babf2ea368356f421fc00f0c3996a888817857773",
+      "followup_issues": [
+        23
+      ]
+    },
+    {
+      "concept_id": "RKM-C053",
+      "title": "Responsible Agent Role",
+      "subdomain_id": "D07",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json",
+      "review_record_sha256": "4bd5a983b993645aff9d9cb45ab209ca671f71ba76640be3e9864329f07bd30f",
+      "source_concept_sha256": "55412bf2bfa5f81bf61e103b548bff4a6bdf3a8ecf9b1f7d7c7ea12fca93040f",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C054",
+      "title": "Authorizing Agent Role",
+      "subdomain_id": "D07",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json",
+      "review_record_sha256": "df880b8a52645022665f4d0ea9f73d97ea69afbefd3db200d84bf736f09642a9",
+      "source_concept_sha256": "c894b6c49de2c0da7bce2bed4c2ff249169685cfa16eee1eded4c062d3120f81",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C055",
+      "title": "Responsible Person",
+      "subdomain_id": "D07",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json",
+      "review_record_sha256": "3d466210425d957504c0adb8ad39ea8be2892e5a885927b391166bbc374ddace",
+      "source_concept_sha256": "38c9e52a92614f9a33a519cf1115080da0345fe51c684c12f7ff0c7781af71d7",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C056",
+      "title": "Responsible Organization",
+      "subdomain_id": "D07",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json",
+      "review_record_sha256": "8b90e4d1282e0e0d4fcb254e62773a5ee50817c25f65cc63caeecc09522ea756",
+      "source_concept_sha256": "74d3e8303805d51dcd84ce9c9225665d650468fee1f3a6cd2dc315f389a75ca4",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C057",
+      "title": "Authorizing Person",
+      "subdomain_id": "D07",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json",
+      "review_record_sha256": "ab5608d9149c5a5bc5fa2d3bd46490d5a3de925610db7037ccaccb8ed7860432",
+      "source_concept_sha256": "401a74bdca1bf24a7497dd5592e55322f078d2803c74020598b4df2d1a9f6665",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C058",
+      "title": "Authorizing Organization",
+      "subdomain_id": "D07",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json",
+      "review_record_sha256": "49c72b48e62d24eaad2f51eefbafa51d5cc8b35f921517087bc053b1f3b97baf",
+      "source_concept_sha256": "6cef739724a8a96f3e65eec6a202388b69ca34bbf5b5157f2d2fe19d354cb059",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C059",
+      "title": "Responsibility Role Term",
+      "subdomain_id": "D07",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json",
+      "review_record_sha256": "8d77927d1b5fad5649e908e8b12beedfaa1bd77ee8c07ab3d0a5dbd7a373d093",
+      "source_concept_sha256": "497807be636cc975b5903d00f10322daae99f4d7396812d214c9c398dde4060a",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C060",
+      "title": "Analysis State Term",
+      "subdomain_id": "D08",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json",
+      "review_record_sha256": "402203b328ccafaa6c23c1658a00b022788631cc4b5ee63ccebabbb0229a1acc",
+      "source_concept_sha256": "e396df76cee4c3cc63ad18e7fc10e75f378d9f7a2b22ed9885329e9aaba4bb61",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C061",
+      "title": "Workflow State Term",
+      "subdomain_id": "D08",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json",
+      "review_record_sha256": "d1bb0670bb64ebae9322f330537821f6c928ab25f1eba46a0af41ee118c71538",
+      "source_concept_sha256": "12031823925a66757840d82673e7c5e27f0d68270a21c05f623893ce2af21ed9",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C062",
+      "title": "Record State Assertion",
+      "subdomain_id": "D08",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/review.json",
+      "review_record_sha256": "b468af7ebcfc7d56045cd24d873976371a1a28aa23ef8e23abf9590e5fe76282",
+      "source_concept_sha256": "0f44993944555ec9e2e211884321e1c06d9b253eb4d6e630b01ecf5352d7ed00",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C063",
+      "title": "Workflow Scheme Version",
+      "subdomain_id": "D08",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "860e8f64c17403d11ea8f6b51694912a13d94d301b1b80d2a3265428475220f9",
+      "source_concept_sha256": "27bf9e67d669ae6cc77047eb997584dd257a83e4ddd7081e30a10417a6412b68",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C064",
+      "title": "Workflow Assignment",
+      "subdomain_id": "D08",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "c3e5ccb194594049fa9f09fcd767a7aa8f99eb5889713b749276f34e9f8812bf",
+      "source_concept_sha256": "deaf4698bb8727eafa01fd88de12cc30b2fac0adf8611a7f244f87ccd64a5023",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C065",
+      "title": "Evidence Reference",
+      "subdomain_id": "D09",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-06/review.json",
+      "review_record_sha256": "a2797cffdba7b88b0ad516d2f24adf4cfc10765bde4f1a3ada978c1ba932e896",
+      "source_concept_sha256": "59377b3259da74d5fef331de22bf4b2440d9388529ff072beaafb6a6ef1c9d19",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C066",
+      "title": "Evidence Item",
+      "subdomain_id": "D09",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json",
+      "review_record_sha256": "e3dc32d3063aaeac6cb5aa9400efa153a423235283bfa74d644c387f928e6e72",
+      "source_concept_sha256": "b696da9d9a1575566fcd206f41ff129f9354588ae16cfa4280e5db660388be17",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C067",
+      "title": "Observation Activity",
+      "subdomain_id": "D10",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+      "review_record_sha256": "aefc166b29697ed4afee7477a9e8088a3183c7f7ac0d9a7218ea4087a9bc65e6",
+      "source_concept_sha256": "36725c0d7d4e70b69f7d86fcc8f136ea2a5ef5898d6eb8128ad3d4a85860046a",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C068",
+      "title": "Observation Result",
+      "subdomain_id": "D10",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-06/review.json",
+      "review_record_sha256": "03728e94ada76f7deb423eadd6d0dbcfc7caaa9cdc372ec23e3876944da69f51",
+      "source_concept_sha256": "54eb10c82a0ec856eeea194dd3d66daac76e96d60cf4fbb230cccbba07866a8b",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C069",
+      "title": "Indicator",
+      "subdomain_id": "D10",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-06/review.json",
+      "review_record_sha256": "90c6d0b6a8471bdcd3f45ad6f0211ac796698562c34b25d5f44e22f3992add73",
+      "source_concept_sha256": "6ce047f255bfe8113fdbeff631ba884a165837ec9a721ef11a7376f5e2a79dec",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C070",
+      "title": "Threshold",
+      "subdomain_id": "D10",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-06/review.json",
+      "review_record_sha256": "efa74514f17eaf416d046c50f633ef257838ff9180739d8f61ad93150d10250c",
+      "source_concept_sha256": "38a783956c5a2846d53438d9359ef3ef2ce10eecb301fac0654450b838561ec6",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C071",
+      "title": "Signal",
+      "subdomain_id": "D10",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-06/review.json",
+      "review_record_sha256": "42557b8c3a595ac71be34a311963b0fb2d96479c518dbee0fd3e47d7d22fc13d",
+      "source_concept_sha256": "5fb53f5c1f411b594ceda1b06aab2bd4e4a1bd7b24ca4286f80a9cd12f613718",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C072",
+      "title": "Risk Criteria",
+      "subdomain_id": "D11",
+      "disposition": "NEEDS_LICENSED_SOURCE",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/review.json",
+      "review_record_sha256": "eb43e9c3da0732adb10d11aa9a968a6ca1fa270f171b1b051f2391ccfbca78b4",
+      "source_concept_sha256": "535d7a4545f2c3961b3427584035ff81878067f8faf19c01c2a0aa54ce7c3ffc",
+      "followup_issues": [
+        78
+      ]
+    },
+    {
+      "concept_id": "RKM-C073",
+      "title": "Risk Appetite Statement",
+      "subdomain_id": "D11",
+      "disposition": "NEEDS_LICENSED_SOURCE",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/review.json",
+      "review_record_sha256": "714a8cf136ee1245b34d4d3bfd3f9516911b60f9306e8b8f8a4f044aeda288e6",
+      "source_concept_sha256": "96aecd78471d5e67c62a9827f2d2a0206a8418a2a898b716b5fece1103cf5c63",
+      "followup_issues": [
+        78
+      ]
+    },
+    {
+      "concept_id": "RKM-C074",
+      "title": "Risk Tolerance Statement",
+      "subdomain_id": "D11",
+      "disposition": "NEEDS_LICENSED_SOURCE",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/review.json",
+      "review_record_sha256": "c411d963dcadb126eb0bb7d990bc43841c8bace5f4bf8818d5e501229a922b58",
+      "source_concept_sha256": "2133bf2644ed5960417d2ec899c7e6ae600b9880062db0807786393e04398fcd",
+      "followup_issues": [
+        78
+      ]
+    },
+    {
+      "concept_id": "RKM-C075",
+      "title": "Evidence Use Relator",
+      "subdomain_id": "D09",
+      "disposition": "ANALOGY",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json",
+      "review_record_sha256": "8fe699ebfc15041289fbb5c490e0f774f81727d9f6b87851f5d247966f5a5fc7",
+      "source_concept_sha256": "8b0054d4f2a202d97fdd004a8943ef53295b4397f63fbe756e1bf72e09edb0bc",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-C076",
+      "title": "Evidence Reference Role",
+      "subdomain_id": "D09",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json",
+      "review_record_sha256": "92f1ecc700b4164e76e6dcfe06f88ebb1f091194cd9840cf616aa5c39dcc24b2",
+      "source_concept_sha256": "21588385b2c67f06002dd2d393f0ea3c1e58a155b6b2ba4b71a9363c53933fd1",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-X01",
+      "title": "Risk Case",
+      "subdomain_id": "D01",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json",
+      "review_record_sha256": "6b027c63b752360d54d526c7986a8b0035cd215b91d324d6794bfcc31a11eccd",
+      "source_concept_sha256": "1efba20cfb2d7549de2ffbac16ee04b4e165ba1b928edecba71ffb14db7306b5",
+      "followup_issues": [
+        23,
+        78
+      ]
+    },
+    {
+      "concept_id": "RKM-X02",
+      "title": "Objective Reference",
+      "subdomain_id": "D11",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/review.json",
+      "review_record_sha256": "f70d54bddc065962b72ab4109428c922cabb8deb03768bfdb3935504af8538c2",
+      "source_concept_sha256": "51e7a2be926320b66e1596747abd03493968c444c3bd13a3dbd34fff4345bb2d",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-X03",
+      "title": "Uncertainty Statement",
+      "subdomain_id": "D05",
+      "disposition": "RELATED",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json",
+      "review_record_sha256": "4b1b26c3eaad9d246e88afe47c506fe53d4348fbfc3d537b66f0481c2c449af2",
+      "source_concept_sha256": "7ef1156787a3aca003c76aa5363b8413f242080194534ccdf2f1e1e0674fcaf1",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-X04",
+      "title": "Risk Evaluation Outcome",
+      "subdomain_id": "D05",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-04/review.json",
+      "review_record_sha256": "b6989a8f0c86f9b2bba52063e09cc8f63630dfc1f9dbd878bbaaf843d52c6a1d",
+      "source_concept_sha256": "3d8c20ab7d45cb86d565fe0d5746d564105ccd6ec4b2b38d05c09005195cf91f",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-X05",
+      "title": "Control Reference",
+      "subdomain_id": "D06",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-05/review.json",
+      "review_record_sha256": "684d785fd74843332a3cfbadabcbeceffec45438d6b025f79a4f0271996f5735",
+      "source_concept_sha256": "fe5a17c63af581eb842ea43822c116958fc2d67a080dad2ba9fea53ccb38a0c3",
+      "followup_issues": []
+    },
+    {
+      "concept_id": "RKM-X06",
+      "title": "Risk Source Reference",
+      "subdomain_id": "D01",
+      "disposition": "CONTRAST",
+      "review_path": "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+      "review_record_sha256": "7875e789da7da1c58decde61b23dd129e9dff695f3ed37992ce358e270264de0",
+      "source_concept_sha256": "fec632e58cee99508572d418d39435ac4196f82e6e1c23e0d4c58536712bb734",
+      "followup_issues": []
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "status": "SELECTED_STATIC_SOURCE_CONTRACTS_NOT_INSTANCE_OR_ENGINE_RESULTS",
+  "relations": {
+    "R-68": {
+      "id": "R-68",
+      "source": "RKM-C065",
+      "target": "RKM-C014",
+      "predicate": "supportsRecordedArtifact",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1..*"
+    },
+    "R-69": {
+      "id": "R-69",
+      "source": "RKM-C065",
+      "target": "RKM-C004",
+      "predicate": "refersToOccurrence",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    },
+    "R-70": {
+      "id": "R-70",
+      "source": "RKM-C065",
+      "target": "RKM-C047",
+      "predicate": "refersToAgent",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    },
+    "R-71": {
+      "id": "R-71",
+      "source": "RKM-C065",
+      "target": "RKM-C031",
+      "predicate": "refersToAssessmentActivity",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    },
+    "R-72": {
+      "id": "R-72",
+      "source": "RKM-C065",
+      "target": "RKM-C044",
+      "predicate": "refersToTreatmentActivity",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    },
+    "RX-021": {
+      "id": "RX-021",
+      "source": "RKM-C065",
+      "target": "RKM-C066",
+      "predicate": "pointsToEvidence",
+      "source_end_cardinality": "1..*",
+      "target_end_cardinality": "1"
+    },
+    "RX-022": {
+      "id": "RX-022",
+      "source": "RKM-C067",
+      "target": "RKM-C068",
+      "predicate": "producesObservation",
+      "source_end_cardinality": "1",
+      "target_end_cardinality": "0..*"
+    },
+    "RX-023": {
+      "id": "RX-023",
+      "source": "RKM-C068",
+      "target": "RKM-C069",
+      "predicate": "reportsIndicator",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "RX-024": {
+      "id": "RX-024",
+      "source": "RKM-C068",
+      "target": "RKM-X01",
+      "predicate": "observesCase",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "RX-025": {
+      "id": "RX-025",
+      "source": "RKM-C070",
+      "target": "RKM-C069",
+      "predicate": "thresholdForIndicator",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "RX-026": {
+      "id": "RX-026",
+      "source": "RKM-C071",
+      "target": "RKM-C068",
+      "predicate": "basedOnObservation",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1..*"
+    },
+    "RX-027": {
+      "id": "RX-027",
+      "source": "RKM-C071",
+      "target": "RKM-C070",
+      "predicate": "evaluatedAgainstThreshold",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    },
+    "RX-028": {
+      "id": "RX-028",
+      "source": "RKM-C071",
+      "target": "RKM-X01",
+      "predicate": "promptsReviewOf",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    },
+    "RK2-017": {
+      "id": "RK2-017",
+      "source": "RKM-C023",
+      "target": "RKM-C068",
+      "predicate": "recordsObservation",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    },
+    "RK2-020": {
+      "id": "RK2-020",
+      "source": "RKM-C070",
+      "target": "RKM-C036",
+      "predicate": "thresholdOnScale",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "RK2-026": {
+      "id": "RK2-026",
+      "source": "RKM-C068",
+      "target": "RKM-C002",
+      "predicate": "observationContext",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "RE-001": {
+      "id": "RE-001",
+      "source": "RKM-C075",
+      "target": "RKM-C066",
+      "predicate": "mediatesEvidenceItem",
+      "source_end_cardinality": "1..*",
+      "target_end_cardinality": "1"
+    },
+    "RE-002": {
+      "id": "RE-002",
+      "source": "RKM-C075",
+      "target": "RKM-C076",
+      "predicate": "mediatesEvidenceReference",
+      "source_end_cardinality": "1..*",
+      "target_end_cardinality": "1"
+    },
+    "RE-003": {
+      "id": "RE-003",
+      "source": "RKM-C075",
+      "target": "RKM-C014",
+      "predicate": "groundedInUseRecord",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    }
+  },
+  "constraints": {
+    "C-01": {
+      "id": "C-01",
+      "title": "Risk Case is not ISO Risk",
+      "statement": "Case identity is preserved across descriptions, scores, owners and administrative states. Equal labels do not establish case identity.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-02": {
+      "id": "C-02",
+      "title": "No realization from description",
+      "statement": "A scenario, consequence statement, signal, plan or report alone must not create actual occurrences, outcomes, controls or effectiveness assertions.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-03": {
+      "id": "C-03",
+      "title": "Issued version immutability",
+      "statement": "Issued semantic content and effective dependency versions are immutable. Correction and supersession create lineage-preserving new versions.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-04": {
+      "id": "C-04",
+      "title": "Assessment interpretation",
+      "statement": "Results retain method/scale version, dimension, basis, relevant context and time semantics. A score is not the risk, and estimated likelihood need not be numeric.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-05": {
+      "id": "C-05",
+      "title": "Temporal and administrative distinction",
+      "statement": "Recorded time, reference time and validity intervals are distinct. Workflow closure does not prove risk cessation or successful treatment.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-08": {
+      "id": "C-08",
+      "title": "Threshold anchor",
+      "statement": "At least one of thresholdForIndicator or thresholdOnScale is present. If both are present, their scale/unit interpretation is compatible. Qualitative boundaries use scale semantics rather than invented numeric units.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-11": {
+      "id": "C-11",
+      "title": "Vocabulary resource identity",
+      "statement": "Vocabulary resources retain scheme-qualified identity. Labels are representations and are not OWL classes by default.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-12": {
+      "id": "C-12",
+      "title": "Evidence does not endorse",
+      "statement": "EvidenceReference states an evidential role such as support, challenge or context. Linking a source does not automatically prove the target claim.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-13": {
+      "id": "C-13",
+      "title": "Scale and dimension compatibility",
+      "statement": "A selected level belongs to the selected scale version and dimension. Results on incompatible methods/scales are not ranked merely by equal labels or numeric codes.",
+      "status": "PROFILE_CONSTRAINT"
+    },
+    "C-16": {
+      "id": "C-16",
+      "title": "Admission profiles",
+      "statement": "Raw source content is retained in staging. Managed documentary records require their own identity, aboutness, title and provenance under the declared record profile. Analytical task readiness additionally requires the context, method, scale, basis, dimension and time selected for that task. These completeness conditions do not make organizational register approval a universal condition for the existence of an identifiable analytical RiskCase.",
+      "status": "APPROVED_PROFILE_CONTRACT"
+    },
+    "C-17": {
+      "id": "C-17",
+      "title": "Multiple assertions",
+      "statement": "Multiple classifications, descriptions, actors and evidence assertions are retained with role, context, provenance and time. Scalar export requires an explicit selection rule when several values apply.",
+      "status": "APPROVED_PROFILE_CONTRACT"
+    },
+    "C-18": {
+      "id": "C-18",
+      "title": "Comparable assessments",
+      "statement": "Direct comparison requires matching pinned method, scale, dimension, basis and temporal context; a governed explicit transformation may enable a different comparison. Missing data is not zero. Reported scores do not imply a reproducible computation.",
+      "status": "APPROVED_PROFILE_CONTRACT"
+    },
+    "C-26": {
+      "id": "C-26",
+      "title": "Grounded evidential use",
+      "status": "ISOLATED_CANDIDATE_CONSTRAINT",
+      "statement": "An EvidenceUseRelator mediates a distinct EvidenceItem and EvidenceReferenceRole, has a grounding use record, and is qualified by context and purpose (support, challenge or context). Its reference points to that item and records that context. An ungrounded citation remains information. Use as evidence does not establish claim truth. Duplicate descriptions of one grounded use preserve its identity."
+    }
+  },
+  "identity": {
+    "RKM-C065": {
+      "id": "RKM-C065",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014",
+      "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending"
+    },
+    "RKM-C068": {
+      "id": "RKM-C068",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014",
+      "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending"
+    },
+    "RKM-C069": {
+      "id": "RKM-C069",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014",
+      "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending"
+    },
+    "RKM-C070": {
+      "id": "RKM-C070",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014",
+      "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending"
+    },
+    "RKM-C071": {
+      "id": "RKM-C071",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014",
+      "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending"
+    },
+    "RKM-C066": {
+      "id": "RKM-C066",
+      "ontouml_stereotype": "role",
+      "identity_supplier": "RKM-C014",
+      "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending"
+    },
+    "RKM-C067": {
+      "id": "RKM-C067",
+      "ontouml_stereotype": "event",
+      "identity_supplier": null,
+      "verification_status": "Bounded review and finite tests; native OntoUML and independent semantic validation pending"
+    },
+    "RKM-C075": {
+      "id": "RKM-C075",
+      "ontouml_stereotype": "relator",
+      "identity_supplier": "RKM-C075",
+      "verification_status": "ISOLATED_CANDIDATE; scoped source, OWL and explicit-data tests recorded separately"
+    },
+    "RKM-C076": {
+      "id": "RKM-C076",
+      "ontouml_stereotype": "role",
+      "identity_supplier": "RKM-C014",
+      "verification_status": "ISOLATED_CANDIDATE; scoped tests recorded separately"
+    }
+  },
+  "reference_local_edge_delta": {
+    "associations": [],
+    "generalizations": [
+      {
+        "id": "GE-001",
+        "old": null,
+        "current": {
+          "id": "GE-001",
+          "specific": "RKM-C076",
+          "general": "RKM-C065",
+          "status": "ISOLATED_CANDIDATE",
+          "first_concept": "Evidence Reference Role",
+          "first_stereotype": "«role»",
+          "second_concept": "Evidence Reference",
+          "second_stereotype": "«subkind»",
+          "relation": "is a",
+          "relation_stereotype": "None — generalization",
+          "first_cardinality": "Not applicable",
+          "second_cardinality": "Not applicable",
+          "arrow_shape": "Solid line with hollow triangular head at the general concept",
+          "direction": "Specific to general"
+        }
+      }
+    ]
+  },
+  "reference_role_ancestors": [
+    "RKM-C014",
+    "RKM-C065"
+  ],
+  "observation_activity_ancestors": [],
+  "case_application_policy": {
+    "case_identity": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "record_metadata": "Requirements concern the documentary envelope under an explicitly selected profile, not an institutional approval condition for the represented subject.",
+    "task_readiness": "Task-specific explicit context/objective and other inputs may be required; missing inputs produce incomplete readiness, not an assertion of nonexistence.",
+    "operational_registration": "A local example profile may require a linked register entry and supported approval. Unknown approval stays unknown.",
+    "multiplicity_scope": "Retain the reviewed conceptual endpoints and multiplicities. Data completeness is assessed under a declared explicit-data task; OWL anonymous witnesses do not supply observed data."
+  }
+}

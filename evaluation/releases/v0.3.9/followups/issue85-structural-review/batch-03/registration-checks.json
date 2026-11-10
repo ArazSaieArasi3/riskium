@@ -1,0 +1,190 @@
+{
+  "status": "SELECTED_STATIC_SOURCE_CONTRACTS_NOT_INSTANCE_OR_ENGINE_RESULTS",
+  "relations": {
+    "R-01": {
+      "id": "R-01",
+      "source": "RKM-C022",
+      "target": "RKM-X01",
+      "predicate": "recordsAbout",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "R-23": {
+      "id": "R-23",
+      "source": "RKM-C023",
+      "target": "RKM-C062",
+      "predicate": "hasStateAssertion",
+      "source_end_cardinality": "1",
+      "target_end_cardinality": "0..*"
+    },
+    "R-31": {
+      "id": "R-31",
+      "source": "RKM-C062",
+      "target": "RKM-C060",
+      "predicate": "declaresAnalysisState",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "R-32": {
+      "id": "R-32",
+      "source": "RKM-C062",
+      "target": "RKM-C061",
+      "predicate": "declaresWorkflowState",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "R-33": {
+      "id": "R-33",
+      "source": "RKM-C023",
+      "target": "RKM-C022",
+      "predicate": "revisionOf",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "RX-008": {
+      "id": "RX-008",
+      "source": "RKM-C022",
+      "target": "RKM-C030",
+      "predicate": "memberOfRegister",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "RX-010": {
+      "id": "RX-010",
+      "source": "RKM-C025",
+      "target": "RKM-C010",
+      "predicate": "refersToActualOutcome",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "RX-029": {
+      "id": "RX-029",
+      "source": "RKM-C064",
+      "target": "RKM-C061",
+      "predicate": "assignsState",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "RX-030": {
+      "id": "RX-030",
+      "source": "RKM-C064",
+      "target": "RKM-C063",
+      "predicate": "underSchemeVersion",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "RX-031": {
+      "id": "RX-031",
+      "source": "RKM-C064",
+      "target": "RKM-C023",
+      "predicate": "assignmentForRevision",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "RX-032": {
+      "id": "RX-032",
+      "source": "RKM-C062",
+      "target": "RKM-C064",
+      "predicate": "documentsWorkflowAssignment",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    }
+  },
+  "constraints": {
+    "C-01": {
+      "id": "C-01",
+      "title": "Risk Case is not ISO Risk",
+      "statement": "Case identity is preserved across descriptions, scores, owners and administrative states. Equal labels do not establish case identity.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-02": {
+      "id": "C-02",
+      "title": "No realization from description",
+      "statement": "A scenario, consequence statement, signal, plan or report alone must not create actual occurrences, outcomes, controls or effectiveness assertions.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-03": {
+      "id": "C-03",
+      "title": "Issued version immutability",
+      "statement": "Issued semantic content and effective dependency versions are immutable. Correction and supersession create lineage-preserving new versions.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-05": {
+      "id": "C-05",
+      "title": "Temporal and administrative distinction",
+      "statement": "Recorded time, reference time and validity intervals are distinct. Workflow closure does not prove risk cessation or successful treatment.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-09": {
+      "id": "C-09",
+      "title": "Description aboutness",
+      "statement": "Every published RiskDescription has at least one case, pattern or scenario target. Multiple valid targets are permitted and require explicit interpretation.",
+      "status": "PROFILE_CONSTRAINT"
+    },
+    "C-11": {
+      "id": "C-11",
+      "title": "Vocabulary resource identity",
+      "statement": "Vocabulary resources retain scheme-qualified identity. Labels are representations and are not OWL classes by default.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-16": {
+      "id": "C-16",
+      "title": "Admission profiles",
+      "statement": "Raw source content is retained in staging. Managed documentary records require their own identity, aboutness, title and provenance under the declared record profile. Analytical task readiness additionally requires the context, method, scale, basis, dimension and time selected for that task. These completeness conditions do not make organizational register approval a universal condition for the existence of an identifiable analytical RiskCase.",
+      "status": "APPROVED_PROFILE_CONTRACT"
+    },
+    "C-17": {
+      "id": "C-17",
+      "title": "Multiple assertions",
+      "statement": "Multiple classifications, descriptions, actors and evidence assertions are retained with role, context, provenance and time. Scalar export requires an explicit selection rule when several values apply.",
+      "status": "APPROVED_PROFILE_CONTRACT"
+    },
+    "C-19": {
+      "id": "C-19",
+      "title": "Workflow semantics",
+      "statement": "State labels are scheme/version qualified. Transition rules and authority are source-backed content. Missing rule means UNKNOWN; Closed does not imply ceased risk and Treated does not imply effectiveness.",
+      "status": "APPROVED_PROFILE_CONTRACT"
+    },
+    "C-24": {
+      "id": "C-24",
+      "title": "Revision coherence",
+      "statement": "For each EntryRevision, revisionOf and inherited versionOf identify the same RiskRegisterEntry. previousRevision is irreflexive and acyclic and, when present, relates revisions of the same entry.",
+      "status": "REVIEW_DESIGN_CONSTRAINT_SELECTED_TESTS_ONLY"
+    }
+  },
+  "identity": {
+    "RKM-C022": {
+      "id": "RKM-C022",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014"
+    },
+    "RKM-C023": {
+      "id": "RKM-C023",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C015"
+    },
+    "RKM-C030": {
+      "id": "RKM-C030",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014"
+    },
+    "RKM-C062": {
+      "id": "RKM-C062",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014"
+    },
+    "RKM-C064": {
+      "id": "RKM-C064",
+      "ontouml_stereotype": "situation",
+      "identity_supplier": null
+    }
+  },
+  "workflow_assignment_ancestors": [],
+  "case_application_policy": {
+    "case_identity": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "record_metadata": "Requirements concern the documentary envelope under an explicitly selected profile, not an institutional approval condition for the represented subject.",
+    "task_readiness": "Task-specific explicit context/objective and other inputs may be required; missing inputs produce incomplete readiness, not an assertion of nonexistence.",
+    "operational_registration": "A local example profile may require a linked register entry and supported approval. Unknown approval stays unknown.",
+    "multiplicity_scope": "Retain the reviewed conceptual endpoints and multiplicities. Data completeness is assessed under a declared explicit-data task; OWL anonymous witnesses do not supply observed data."
+  }
+}

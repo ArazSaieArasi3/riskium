@@ -1,0 +1,57 @@
+{
+  "prov": {
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "accessed": "2026-11-10",
+    "previous_response_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "bytes": 464179,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "skos": {
+    "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+    "accessed": "2026-11-10",
+    "previous_response_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+    "document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+    "bytes": 227150,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "ontouml_role": {
+    "url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/role/index.html",
+    "accessed": "2026-11-10",
+    "previous_response_sha256": null,
+    "http_status": 200,
+    "final_url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/role/index.html",
+    "document_sha256": "60406b5d810cfcb6e5437724f862876f46d6230b5c6c203ad59a53b289f3616a",
+    "bytes": 20434,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": null
+  },
+  "ontouml_rolemixin": {
+    "url": "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/rolemixin/index.html",
+    "accessed": "2026-11-10",
+    "previous_response_sha256": null,
+    "http_status": 200,
+    "final_url": "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/rolemixin/index.html",
+    "document_sha256": "a3e23bab51f49e7b5f143bbc74e410d109332fadcc5b9a8a1d375b7c4a1b7ae7",
+    "bytes": 16731,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": null
+  },
+  "ontouml_category": {
+    "url": "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/category/index.html",
+    "accessed": "2026-11-10",
+    "previous_response_sha256": null,
+    "http_status": 200,
+    "final_url": "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/category/index.html",
+    "document_sha256": "5df2accaa8005f772b608e5fb3c2495345ee1e5959832e0e4558b71fa042ae31",
+    "bytes": 16475,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": null
+  }
+}

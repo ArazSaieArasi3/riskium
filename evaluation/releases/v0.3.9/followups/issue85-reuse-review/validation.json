@@ -1,0 +1,87 @@
+{
+  "status": "PASS_LOCAL_DOCUMENTARY_REUSE_NOT_FULL_CURATION",
+  "execution": "LOCAL_PYTHON_NOT_CI_OR_ONTOLOGY_ENGINE",
+  "builder_sha256": "d8490fa3e4e723cb96cb758c6f26d7675e4c651c6d744e6d7593a86f5953f993",
+  "review_sha256": "ddcacd405d73ee568fd11e6325fd48a13b45f32630f406a9cbd5e4350517d2c0",
+  "summary": {
+    "this_packet": 17,
+    "prior_n2": 8,
+    "cumulative_documentary_dispositions": 25,
+    "population": 82,
+    "remaining": 57,
+    "dispositions": {
+      "CONTRAST": 8,
+      "ANALOGY": 4,
+      "RELATED": 5
+    },
+    "scoped_labels_clarified": 3
+  },
+  "negative_controls": [
+    {
+      "control": "missing_record",
+      "rejected": true,
+      "reason": "seventeen-record coverage"
+    },
+    {
+      "control": "stale_source",
+      "rejected": true,
+      "reason": "stale input: ontology/0.3.2/riskium-model.json"
+    },
+    {
+      "control": "changed_definition",
+      "rejected": true,
+      "reason": "authored definition"
+    },
+    {
+      "control": "stale_neighborhood",
+      "rejected": true,
+      "reason": "neighborhood binding"
+    },
+    {
+      "control": "lost_glossary_attribution",
+      "rejected": true,
+      "reason": "passage binding"
+    },
+    {
+      "control": "unsupported_equivalence",
+      "rejected": true,
+      "reason": "unsupported acceptance"
+    },
+    {
+      "control": "premature_publication",
+      "rejected": true,
+      "reason": "premature claim"
+    },
+    {
+      "control": "duplicated_future_allocation",
+      "rejected": true,
+      "reason": "remaining batch coverage"
+    },
+    {
+      "control": "changed_preview",
+      "rejected": true,
+      "reason": "rendered body mismatch: previews/RKM-C004.md"
+    }
+  ],
+  "outputs": {
+    "README.md": "3707c3351efde1fe63bf727077fa7fe14c6e8cfb8dc32d31cc2d85bd1351254c",
+    "decisions.csv": "8387d5909981e7c1ec251aaf6cc768cf7e486eda7973e1e7f389e53dff9af3ef",
+    "previews/RKM-C004.md": "10340b95eede58e7076d5f797734dae2097f726717a3bb7890e51907a0ba0f4b",
+    "previews/RKM-C007.md": "5f34f234805ffd6b4e5da8b8555703517c74c15b75bb7ec6ad6692fc8067d178",
+    "previews/RKM-C008.md": "fd3ed2c01eaac3a7292548fd772c33b453d4eb3e8733e0cf5339528c52fb1768",
+    "previews/RKM-C009.md": "e2f3962887b2e346b4a87d0a39cb24c90d903998fdb6d55805a9c0961d6bffa4",
+    "previews/RKM-C010.md": "d427c9582f1d6af2b4e5c0ebb947d06ffc31fde0d37846a458a6eacaa2af5d0a",
+    "previews/RKM-C011.md": "0e5366bfe7ee75ec6a9270460fb0c151b0944252de065ecdf08feb09680de8ab",
+    "previews/RKM-C012.md": "19234f4dc3886821f3432d425714cee5d5df98c5d347fd4a0b49b7f3e2ce6917",
+    "previews/RKM-C013.md": "0acfa84b16a9f305c7825ebc42c83fccdf6ed6c2e96dd9f73fe269dd986b0921",
+    "previews/RKM-C016.md": "c156f87d2ab369056b6aa53956ef98e3c4784dccb8189867d8cd84e5546aa352",
+    "previews/RKM-C023.md": "ff0b9c4880eef5314c43eb8fb8355465101f404a23e0090efcfa15c264502d99",
+    "previews/RKM-C031.md": "896ffb02d974b080ea74b52c4bcee55c907498dd0a17d7146b2f00f171fd5ca9",
+    "previews/RKM-C044.md": "0e6412194328778ef92de5aa7c7d47246c4ba95ba76587bed84085f154f794ea",
+    "previews/RKM-C045.md": "978e6f3dbea760d61e846f0d4d04b6ecb81780c1683c900d1180dd185b82fe6c",
+    "previews/RKM-C052.md": "1bcab2a30adc693fbb8fa4188ddebfa6ae8807b6d6e59c30f62fc826836ddec9",
+    "previews/RKM-C063.md": "bb1b5899091f5ede1b9d6c5e89163c1737d4cc1e26bcf96eb331ad0fb169121b",
+    "previews/RKM-C064.md": "cff1245085049da1ba6f3624af3b2e24fd9dffe9e4bc0586c85b852a0d4bd4d6",
+    "previews/RKM-C067.md": "f5b1da55f3ffac1dd2b21055020dc52edf312209b71d0bf0b40a0d14ab4304d9"
+  }
+}

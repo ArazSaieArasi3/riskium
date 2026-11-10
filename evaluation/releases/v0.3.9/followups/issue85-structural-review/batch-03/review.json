@@ -1,0 +1,641 @@
+{
+  "schema": "riskium.structural-context-curation/1",
+  "status": "BOUNDED_BATCH_COMPLETE_FULL_CURATION_PENDING",
+  "execution": "N3b-3",
+  "date": "2026-11-10",
+  "baseline_commit": "446f412e737a9f456addb2b12c63e867a33b70d3",
+  "model_version": "0.3.2",
+  "intended_package": "v0.3.10",
+  "issue": 85,
+  "record_digest_method": "SHA-256 of compact UTF-8 JSON with sorted keys and ensure_ascii=False; file-input hashes use raw bytes.",
+  "inputs": {
+    "ontology/riskium-model.json": "4a052bb0b7321e5209417c69e96644089aa7dba1734cce4a70e5223f2ebbaf59",
+    "ontology/0.3.2/riskium-model.json": "060357495ee9c35d11e58ff9cf82bb7e64d88f1aa135a70c50966b44522226cb",
+    "references/concept-definitions/0.1.0/review.json": "3eeba2690041f5f815754a256d586cc338b3710c68fe8edc42f5b9865f7fff47",
+    "evaluation/releases/v0.3.9/followups/issue85-impact/impact.json": "c971787dd75909f5ca18484baa13d7f462b029ce509c1f25e364c0ac4df3c9af",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/remaining-batches.json": "c6d39beb750cd870f94001f2033d66ab868d31ae5a44f0671eec4d76f3b2858c",
+    "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json": "8704efb3cf7760fa09ba5aead5a9bb433b63ef906adbd084a832b183743caa73",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json": "ddcacd405d73ee568fd11e6325fd48a13b45f32630f406a9cbd5e4350517d2c0",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json": "6ce6856f79fbb661bd910fd8f7a937effe464257127c3e52edfb9a0c3bec4c50",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json": "dfe981213ad6c2a44758b6e96ea80fbb9f97bddcb947af80921467e6f152ca51",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/source-access.json": "e820e73e9c4236172f5fbd9a61d8491b89a9548be6d7d0d1ee539c62ad4e2065",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/passage-checks.json": "71cb36e4358a7703a08b4a2cbfd5394530a696fb56ff9903bbeeadcdbff94772",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/contexts.json": "04bd24f6d11b2f2f649a9fc8c503f51374abcf3c6fd04d04cf7601ab94ae5e99",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-03/registration-checks.json": "4f29637150b44a887a461b4f8811f42a9da635b2e2143947385ad7b6756a9c07"
+  },
+  "prior_packets": [
+    "evaluation/releases/v0.3.9/followups/issue85-changed-review/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-reuse-review/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-01/review.json",
+    "evaluation/releases/v0.3.9/followups/issue85-structural-review/batch-02/review.json"
+  ],
+  "sources": {
+    "prov": {
+      "title": "PROV-O: The PROV Ontology",
+      "version": "W3C Recommendation, 30 April 2013",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "accessed": "2026-11-10",
+      "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+      "inspection_scope": "Terms listed below only; no PROV conformance or import asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "previous_response_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+      "bytes": 464179,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "oa": {
+      "title": "Web Annotation Data Model",
+      "version": "W3C Recommendation, 23 February 2017",
+      "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/",
+      "accessed": "2026-11-10",
+      "document_sha256": "a7513e022f56c0a6f4e99ac11aec03f3451d1ff1ce14054780b3ccfb38fa7980",
+      "inspection_scope": "Selected motivations and annotation/body distinction only; no serialization conformance asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "previous_response_sha256": "a7513e022f56c0a6f4e99ac11aec03f3451d1ff1ce14054780b3ccfb38fa7980",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/",
+      "bytes": 284185,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    },
+    "skos": {
+      "title": "SKOS Simple Knowledge Organization System Reference",
+      "version": "W3C Recommendation, 18 August 2009",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+      "accessed": "2026-11-10",
+      "document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+      "inspection_scope": "Concept, scheme and lexical-label distinctions; no SKOS mapping triples asserted.",
+      "access": "DIRECT_HTTP_AND_SELECTED_PASSAGES_INSPECTED",
+      "previous_response_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+      "bytes": 227150,
+      "direct_access": "SUCCESS",
+      "same_response_as_prior": true
+    }
+  },
+  "terms": {
+    "entity": {
+      "source_id": "prov",
+      "name": "prov:Entity",
+      "locator": "§4.1, Entity",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Entity",
+      "paraphrase": "A thing considered through fixed aspects, including conceptual or imaginary things.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "describing": {
+      "source_id": "oa",
+      "name": "oa:describing",
+      "locator": "§3.3.5, motivation describing",
+      "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/#motivation-and-purpose",
+      "paraphrase": "A motivation for describing a target.",
+      "quotation": false,
+      "target_kind": "MOTIVATION_INSTANCE"
+    },
+    "attribution": {
+      "source_id": "prov",
+      "name": "prov:Attribution",
+      "locator": "§4.3, Attribution",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Attribution",
+      "paraphrase": "Ascription of an entity to an agent.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "concept": {
+      "source_id": "skos",
+      "name": "skos:Concept",
+      "locator": "§3, especially §§3.1 and 3.5.1",
+      "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts",
+      "paraphrase": "A knowledge-organization notion; using it does not automatically identify an OWL class.",
+      "quotation": false,
+      "target_kind": "VOCABULARY_CLASS"
+    },
+    "collection": {
+      "source_id": "prov",
+      "name": "prov:Collection",
+      "locator": "§4.2, Collection",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Collection",
+      "paraphrase": "An entity structuring constituent entities as members.",
+      "quotation": false,
+      "target_kind": "PROVENANCE_CLASS"
+    },
+    "annotation": {
+      "source_id": "oa",
+      "name": "oa:Annotation",
+      "locator": "§3.1",
+      "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/#annotations",
+      "paraphrase": "An association involving body and target resources.",
+      "quotation": false,
+      "target_kind": "ANNOTATION_RESOURCE_CLASS"
+    }
+  },
+  "concepts": [
+    {
+      "concept_id": "RKM-C022",
+      "title": "Risk Register Entry",
+      "subdomain_id": "D04",
+      "authored_definition": "A managed register record about exactly one RiskCase in this profile. Distinct entries, source systems or registers can record the same case. A software record is an implementation record, not an additional risk subject.",
+      "authored_definition_sha256": "0e31304800e9deef5ebc036bc75dfe968fa53a2944312994b78e67918b257e4d",
+      "source_concept_sha256": "8200af4dcd2b231daa060da01aa16b7733ee5f473eb46113b692abfd30dda376",
+      "previous_review_sha256": "5811fde9c994676138aba305df5daf22873403a47ca6d8238a358e6d1b4ed9c5",
+      "context_sha256": "2f0cf872897643b397ccdb5c03bfbc112acc09b3a056f9690b99e5f35f8f1fb6",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "entity"
+      ],
+      "constraint_ids": [
+        "C-01",
+        "C-16",
+        "C-24"
+      ],
+      "rationale": "Retain generic documentary-entity context without importing case identity or cardinality rules. A register entry is a record about the analytical risk item, not another risk subject.",
+      "context_interpretation": "R-01 targets one RiskCase in this profile and permits zero or many entries per case. R-33 relates distinct entry revisions to their entry; RX-008 assigns register membership. Neither an entry identifier nor organizational admission is the case's universal existence condition.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "registration_guards": {
+        "case_is_register_entry": false,
+        "workflow_closure_proves_risk_cessation": false,
+        "missing_authorization_means_allowed": false,
+        "description_establishes_realization": false,
+        "correction_overwrites_issued_version": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison and current ancestry/neighbor/set-policy plus selected registration/workflow source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C024",
+      "title": "Risk Description",
+      "subdomain_id": "D04",
+      "authored_definition": "A descriptive information item about a risk case, pattern or scenario with an explicit description role and source.",
+      "authored_definition_sha256": "ed1a72f3ce11829e2897d13f18fb816b2994d00f5a517db7c30c3e2d050c1323",
+      "source_concept_sha256": "77dc5d72385310814dcd3fd0d79f22fec14638a18a2eccfd76c2c5f39fa07551",
+      "previous_review_sha256": "59446f401968e33a171ff52d50b0d501c501d47de4c38d3e5e23f62bfde46f98",
+      "context_sha256": "75ba31f8df31781f1af10e49aaf4e15cb521e7494b41ae6e44136a1a067d4c4c",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "describing"
+      ],
+      "constraint_ids": [
+        "C-02",
+        "C-09",
+        "C-17"
+      ],
+      "rationale": "Retain describing motivation as related documentary-function context. The source term is a motivation instance, not a class equivalent to RiskDescription or its risk referent.",
+      "context_interpretation": "RK2-007/RK2-008/R-37 preserve case, pattern and scenario targets; R-39 qualifies description function. C-09 requires a published description target under its profile. Source/description context does not establish an actual occurrence or turn the description into its case.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "registration_guards": {
+        "case_is_register_entry": false,
+        "workflow_closure_proves_risk_cessation": false,
+        "missing_authorization_means_allowed": false,
+        "description_establishes_realization": false,
+        "correction_overwrites_issued_version": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison and current ancestry/neighbor/set-policy plus selected registration/workflow source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C025",
+      "title": "Consequence Statement",
+      "subdomain_id": "D04",
+      "authored_definition": "An information item expressing a possible or reported consequence; it is not the consequence itself.",
+      "authored_definition_sha256": "e53479f5e2665452395b481a747038debd9a978f672b07a30640aa0bc594b285",
+      "source_concept_sha256": "b61fe143cff5b471db073e2d93b6ec50120f87f879e0e64fdec29e6931d5485a",
+      "previous_review_sha256": "bac83ed6b94d5f8ff48916f16b7d30d9ab1653858dae529dd0b96b5f66279e8f",
+      "context_sha256": "c7ef159eae690c6dd0cdcc863c01bdd7758d183db1d5490f8393522b956440ac",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "describing"
+      ],
+      "constraint_ids": [
+        "C-02",
+        "C-17"
+      ],
+      "rationale": "Retain descriptive-function context while separating a possible/reported consequence statement from an outcome. The motivation does not supply consequence semantics or establish realization.",
+      "context_interpretation": "R-22 concerns the analytical RiskCase; R-40 retains a source slot and RX-010 permits no actual-outcome referent (0..1). A recorded possible consequence must not be promoted into an observed outcome merely to populate a field.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "registration_guards": {
+        "case_is_register_entry": false,
+        "workflow_closure_proves_risk_cessation": false,
+        "missing_authorization_means_allowed": false,
+        "description_establishes_realization": false,
+        "correction_overwrites_issued_version": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison and current ancestry/neighbor/set-policy plus selected registration/workflow source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C026",
+      "title": "Identification Information",
+      "subdomain_id": "D04",
+      "authored_definition": "Recorded information about identifying a risk, including the stated source, channel, agent and available time information.",
+      "authored_definition_sha256": "ec76011dbe9885fa8927100f2899fe0846807a3baeb73d8be7f381db344edc2f",
+      "source_concept_sha256": "7134718616d4f78d98bf355b53eb44d56f63bd5dcdda17f8c44d9e25610c326a",
+      "previous_review_sha256": "bd578d4da892a28739d7afbb7877f67777179c13bcb0b1bba7722ff7958120e4",
+      "context_sha256": "be2af356b272de1324be3fd1dcb013b1ab1c5c528207808ebd99b73055be77b8",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "attribution"
+      ],
+      "constraint_ids": [
+        "C-01",
+        "C-16",
+        "C-17"
+      ],
+      "rationale": "Retain attribution as a partial provenance comparison. Attribution of an identification document does not define the complete source/channel/participant/time record or mean that an agent created the RiskCase.",
+      "context_interpretation": "R-07 identifies the analytical risk item, R-08 records actor references and R-27 records intake channels. R-52 connects the information to revisions. Documentary attribution is kept separate from actual risk causation, operational admission and available temporal precision.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "registration_guards": {
+        "case_is_register_entry": false,
+        "workflow_closure_proves_risk_cessation": false,
+        "missing_authorization_means_allowed": false,
+        "description_establishes_realization": false,
+        "correction_overwrites_issued_version": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison and current ancestry/neighbor/set-policy plus selected registration/workflow source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C027",
+      "title": "Intake Channel Term",
+      "subdomain_id": "D04",
+      "authored_definition": "A controlled value naming how risk information entered the registration process; it is not a risk source. This is a managed vocabulary resource with scheme-qualified identity, not a bare string.",
+      "authored_definition_sha256": "4ff876d9af18db53648db45c5d06ad27c75dae3790719e5f07c56f00e78e9879",
+      "source_concept_sha256": "13a76a2439a4bcefc15e30dfd38e0347bf4af432e57b9fcab2e82763c433ae76",
+      "previous_review_sha256": "6072d324ca9a46f621a61065a31d1af22c57b4266ee3f30f064506e1a191fb39",
+      "context_sha256": "92748d0c75959ed2a049d5c02d3afc148f72b2ad61ebf52fc77a0f3192c7a7f0",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "concept"
+      ],
+      "constraint_ids": [
+        "C-11",
+        "C-17"
+      ],
+      "rationale": "Retain vocabulary-concept context for an intake-channel value. The channel describes how information arrived; it is not a real-world contributor to risk or a universal channel taxonomy.",
+      "context_interpretation": "The path through ClassificationTerm and VocabularyConcept preserves InformationArtifact identity. R-27 records a source-qualified channel; common text neither identifies the vocabulary resource nor resolves a risk source.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "registration_guards": {
+        "case_is_register_entry": false,
+        "workflow_closure_proves_risk_cessation": false,
+        "missing_authorization_means_allowed": false,
+        "description_establishes_realization": false,
+        "correction_overwrites_issued_version": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison and current ancestry/neighbor/set-policy plus selected registration/workflow source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C028",
+      "title": "Description Role Term",
+      "subdomain_id": "D04",
+      "authored_definition": "A controlled value specifying the function of a description, such as title, summary or scenario description. This is a managed vocabulary resource with scheme-qualified identity, not a bare string.",
+      "authored_definition_sha256": "af6eb5492f0011d17c8f0ff12aa282ba70c5361b7b9d91912f5b0cc3390b7b5c",
+      "source_concept_sha256": "48997d5d6a9f910e05854c2443017972bcbe4a055b3d33253cacd1859c5f85d6",
+      "previous_review_sha256": "283fbf0b7ed3ae10e4c1109b6ed1f167a400530e28b4462aa2f3f7e5bb22ff2e",
+      "context_sha256": "e3255a73ff36bf50853eac637c63b87af8c1e9a899d22bb72ff7f100ace5354c",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "concept"
+      ],
+      "constraint_ids": [
+        "C-09",
+        "C-11"
+      ],
+      "rationale": "Retain controlled vocabulary context for description function. Selecting a term such as title or summary does not itself create a description, a scenario or the described risk subject.",
+      "context_interpretation": "R-39 supplies the selected function of a RiskDescription. Scheme-qualified term identity is inherited through ClassificationTerm/VocabularyConcept; retained groups remain incomplete and non-disjoint without a new semantic approval.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "registration_guards": {
+        "case_is_register_entry": false,
+        "workflow_closure_proves_risk_cessation": false,
+        "missing_authorization_means_allowed": false,
+        "description_establishes_realization": false,
+        "correction_overwrites_issued_version": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison and current ancestry/neighbor/set-policy plus selected registration/workflow source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C029",
+      "title": "Consequence Slot Term",
+      "subdomain_id": "D04",
+      "authored_definition": "A controlled value preserving the source-defined position or role of a consequence statement. This is a managed vocabulary resource with scheme-qualified identity, not a bare string.",
+      "authored_definition_sha256": "d7639a738bfe31fc77da9b9c8820777d7d86bce4ba6b0607c8529576bd741b7c",
+      "source_concept_sha256": "d82a6aa59d2c3c18210ce6a18154d4108094411d9eda5f5e09b6b05d9d563df1",
+      "previous_review_sha256": "0ded93aa6b2e45389ad6360c14c6acb611136314aeeafe1e01cc7196898b805f",
+      "context_sha256": "2b9c34173663dad88740b905fb698c792dc8fdf71df8028f462d96fee7b16818",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "concept"
+      ],
+      "constraint_ids": [
+        "C-11",
+        "C-17"
+      ],
+      "rationale": "Retain vocabulary-concept context for the source-defined consequence position/function. A slot is not a universal outcome ordering, a severity value or an actual consequence.",
+      "context_interpretation": "R-40 preserves the original statement's source slot. The inherited documentary identity does not equate identical strings across schemes or force a scalar selection when multiple assertions apply.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "registration_guards": {
+        "case_is_register_entry": false,
+        "workflow_closure_proves_risk_cessation": false,
+        "missing_authorization_means_allowed": false,
+        "description_establishes_realization": false,
+        "correction_overwrites_issued_version": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison and current ancestry/neighbor/set-policy plus selected registration/workflow source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C030",
+      "title": "Risk Register",
+      "subdomain_id": "D04",
+      "authored_definition": "A managed informational register that organizes risk-entry records for a stated organizational scope and purpose. Its documentary identity does not make it an OntoUML collective or physical aggregate.",
+      "authored_definition_sha256": "3072f2fbe2094696c85f4fdc5174ea606d2d353a83422fe9f49f8eceb7c3ae5d",
+      "source_concept_sha256": "04f2c34608c1c0377063532371ccbec334821f9314147255c8c9a7234d5b0a4a",
+      "previous_review_sha256": "8f1ea0570a51c917bcb7c5d65fbb81d02d1fb98b1addb0fc738245441d4b06b5",
+      "context_sha256": "8b8e82e917e44b835daffe4a19f00913f758110b9ecac0dfc9afeeef19deef00",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "collection"
+      ],
+      "constraint_ids": [
+        "C-01",
+        "C-16",
+        "C-24"
+      ],
+      "rationale": "Retain collection membership as related information-level context. Riskium adds register scope, purpose and documentary governance without equating the register with an OntoUML collective or physical aggregate.",
+      "context_interpretation": "RX-008 organizes entry records, while entries and their revisions keep separate identities. Register membership does not establish one-to-one case identity or require every analytical RiskCase to be operationally admitted.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "registration_guards": {
+        "case_is_register_entry": false,
+        "workflow_closure_proves_risk_cessation": false,
+        "missing_authorization_means_allowed": false,
+        "description_establishes_realization": false,
+        "correction_overwrites_issued_version": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison and current ancestry/neighbor/set-policy plus selected registration/workflow source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C060",
+      "title": "Analysis State Term",
+      "subdomain_id": "D08",
+      "authored_definition": "A controlled value describing progress of analysis under a specified analysis-state scheme. This is a managed vocabulary resource with scheme-qualified identity, not a bare string.",
+      "authored_definition_sha256": "91d804902c99c34c924afe49626845c8ca89207838484b4427f2601e31a64e3c",
+      "source_concept_sha256": "e396df76cee4c3cc63ad18e7fc10e75f378d9f7a2b22ed9885329e9aaba4bb61",
+      "previous_review_sha256": "02807a386c3112fd0d9e94552b019c19ff9a4339c36bc6f0504f4d083ee9648c",
+      "context_sha256": "e1566f897f9c069b42fe4d83524a565fad609cd1da655f3fa9aa16fb688f93b5",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "concept"
+      ],
+      "constraint_ids": [
+        "C-05",
+        "C-11",
+        "C-19"
+      ],
+      "rationale": "Retain vocabulary-concept context for analysis progress. A value under a declared analysis scheme is not the state of a real-world risk situation or evidence of assessment quality.",
+      "context_interpretation": "R-31 optionally records analysis state in a RecordStateAssertion. Scheme/version and temporal qualification matter; incomplete or absent state information is not silently replaced by a workflow value or an invented completion result.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "registration_guards": {
+        "case_is_register_entry": false,
+        "workflow_closure_proves_risk_cessation": false,
+        "missing_authorization_means_allowed": false,
+        "description_establishes_realization": false,
+        "correction_overwrites_issued_version": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison and current ancestry/neighbor/set-policy plus selected registration/workflow source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C061",
+      "title": "Workflow State Term",
+      "subdomain_id": "D08",
+      "authored_definition": "A controlled value describing handling or processing status under a specified workflow scheme. This is a managed vocabulary resource with scheme-qualified identity, not a bare string.",
+      "authored_definition_sha256": "84b55a6c0f8dd5d22dc4c417a538252342f8af7b6a3c007eafcdbb4d69d21c87",
+      "source_concept_sha256": "12031823925a66757840d82673e7c5e27f0d68270a21c05f623893ce2af21ed9",
+      "previous_review_sha256": "fb2360c18376fe9cff3beb97d743ca48861f5d0fcdd065c073a31467462e7b6a",
+      "context_sha256": "43e38319572af8890c0437f8fcfab2195119e560f4974b6b818ee1ed1e252c28",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "concept"
+      ],
+      "constraint_ids": [
+        "C-05",
+        "C-11",
+        "C-19"
+      ],
+      "rationale": "Retain vocabulary-concept context for handling/processing status. A workflow label such as Closed does not establish risk cessation, successful treatment or actual authorization.",
+      "context_interpretation": "R-32 records an optional workflow value; RX-029 and RX-030 link a workflow assignment to its value and scheme version. C-19 preserves unknown rules/authority as unknown. The term resource is not the assignment situation.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "registration_guards": {
+        "case_is_register_entry": false,
+        "workflow_closure_proves_risk_cessation": false,
+        "missing_authorization_means_allowed": false,
+        "description_establishes_realization": false,
+        "correction_overwrites_issued_version": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison and current ancestry/neighbor/set-policy plus selected registration/workflow source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    },
+    {
+      "concept_id": "RKM-C062",
+      "title": "Record State Assertion",
+      "subdomain_id": "D08",
+      "authored_definition": "A qualified statement about a record's state, preserving the source and available temporal precision.",
+      "authored_definition_sha256": "a74e2de0157a049589d94c387086ce08df1be97009ebf882b9e44810fec6f825",
+      "source_concept_sha256": "0f44993944555ec9e2e211884321e1c06d9b253eb4d6e630b01ecf5352d7ed00",
+      "previous_review_sha256": "55331122937ccdac7af17de0ddc3bd90a906b622fc20e06843095627db857001",
+      "context_sha256": "17fe87f31dbd6731f76e8dd4c1983c6fcf3d4b88da8b6a06586edd8b5ce37524",
+      "impact_category": "STRUCTURAL_CONTEXT_RECHECK",
+      "previous_disposition": "RELATED",
+      "disposition": "RELATED",
+      "comparison_term_ids": [
+        "annotation"
+      ],
+      "constraint_ids": [
+        "C-03",
+        "C-05",
+        "C-19",
+        "C-24"
+      ],
+      "rationale": "Retain annotation as related statement/target context. Riskium additionally preserves record aboutness, source and available time precision; no Annotation serialization contract or state-situation equivalence is adopted.",
+      "context_interpretation": "R-23 attaches the statement to an EntryRevision, R-31/R-32 can retain separate analysis/workflow values, and RX-032 optionally documents a WorkflowAssignment. The statement remains documentary; the assignment remains a situation. Corrections and lineage follow C-03/C-24 without overwriting issued content.",
+      "interpretation_guards": {
+        "sibling_exclusivity_inferred_from_parenthood": false,
+        "exhaustive_coverage_inferred_from_parenthood": false,
+        "register_acceptance_required_for_riskcase_existence": false,
+        "retained_set_semantic_approval_inferred": false
+      },
+      "registration_guards": {
+        "case_is_register_entry": false,
+        "workflow_closure_proves_risk_cessation": false,
+        "missing_authorization_means_allowed": false,
+        "description_establishes_realization": false,
+        "correction_overwrites_issued_version": false
+      },
+      "formal_alignment": "UNASSESSED",
+      "independent_validation": "NOT_PERFORMED",
+      "review_status": "CURRENT_SOURCE_DOCUMENTARY_DISPOSITION_RECORDED",
+      "review_method": "Assistant-supported primary-passage comparison and current ancestry/neighbor/set-policy plus selected registration/workflow source-contract checks; not an instance or independent expert evaluation.",
+      "reviewed_on": "2026-11-10",
+      "followup_issues": [],
+      "accepted_as_documentary_decision": true
+    }
+  ],
+  "summary": {
+    "this_batch": 11,
+    "prior_documentary_dispositions": 46,
+    "cumulative_documentary_dispositions": 57,
+    "population": 82,
+    "remaining": 25,
+    "dispositions": {
+      "RELATED": 11
+    },
+    "disposition_labels_changed": 0,
+    "unchanged_local_edges": 11,
+    "changed_ancestor_context": 11,
+    "changed_association_neighbor_context": 4
+  },
+  "boundaries": {
+    "scientific_source_modified": false,
+    "historical_curation_modified": false,
+    "published": false,
+    "engine_runs": 0,
+    "formal_alignment_axioms_added": false,
+    "independent_validation": "NOT_PERFORMED",
+    "static_scope": "Selected source relations, identity suppliers and constraint statements only; no new workflow engine, data-population, SQL or ontology-engine execution.",
+    "semantic_review": "Independent semantic review remains #23; exact normative adoption remains #78.",
+    "deployment_scope": "Previews remain planning artifacts; complete component qualification and publication/readback remain separate."
+  },
+  "batch_findings": [
+    "All eleven authored definitions, direct edge records and inherited edges are unchanged. Every selected concept still inherits InformationArtifact identity; four have the revised RiskCase as a direct association neighbor. Excluding the blanket artifact set preserves subtype edges without inventing sibling exclusivity or complete coverage.",
+    "The selected source contracts keep register entries, continuing risk items, entry revisions and register membership separate. An entry concerns one case in this profile, but a case can have zero or many entries. EntryRevision retains ArtifactVersion identity; correction/lineage obligations remain source statements rather than a new overwrite or migration implementation.",
+    "Description, consequence and record-state statements remain information about referents. A possible outcome link and the statement-to-workflow-assignment link remain optional. WorkflowAssignment remains a situation under a scheme version and revision; the statement documenting it is not that situation.",
+    "Analysis/workflow values are scheme-qualified vocabulary resources, not real-world risk states. Closure does not establish cessation or effectiveness; missing rule/authority remains unknown. These commitments are documented without claiming actual workflow execution, complete task data or independent semantic approval."
+  ],
+  "context_guard_note": "Documentary identity is separate from analytical RiskCase identity and local operational admission. Shared parenthood creates no blanket exclusivity or covering axiom. Vocabulary values, qualified statements and their referents remain distinct; closure and missing authorization do not supply new risk/effectiveness/permission facts.",
+  "source_access_note": "All three primary responses were directly retrieved and match the historical response hashes. Selected anchor fingerprints, versions and locators are retained without redistributing documents. Web Annotation describing is a motivation instance, not a class equivalent to RiskDescription or ConsequenceStatement. No PROV/SKOS/Annotation conformance, imported axiom or complete semantic preservation is asserted.",
+  "next_execution_note": "N3b-4 reviews eleven D05 assessment concepts, followed by D06/D11 (9) and D09/D10 (5). After all 82 dispositions, qualify the complete successor curation and publish/read back the selected v0.3.10 package before closing #85. Main, public v0.3.9, scientific source 0.3.2, reader 0.4.9 and article 7.2.21 are unchanged."
+}

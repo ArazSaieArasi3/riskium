@@ -1,0 +1,123 @@
+{
+  "status": "PASS_LOCAL_DOCUMENTARY_BATCH_NOT_PUBLICATION",
+  "execution": "N3b-6",
+  "runtime": "LOCAL_PYTHON_NOT_CI_OR_ONTOLOGY_ENGINE",
+  "summary": {
+    "this_batch": 5,
+    "prior_documentary_dispositions": 77,
+    "cumulative_documentary_dispositions": 82,
+    "population": 82,
+    "remaining": 0,
+    "dispositions": {
+      "RELATED": 3,
+      "ANALOGY": 1,
+      "CONTRAST": 1
+    },
+    "disposition_labels_changed": 1,
+    "unchanged_local_edges": 4,
+    "changed_ancestor_context": 5,
+    "changed_association_neighbor_context": 3
+  },
+  "review_sha256": "cd4d9914530430d0e52ae57f83fcf9ed3703aecfe55dc3bc2723910dc3ed9adf",
+  "builder_sha256": "85edfa426880e1a16e333d384b16908a605bcf86c492aecacab356e9e80e0ab0",
+  "context_extractor_sha256": "8d1e0821b478c2ddbd5c0757d601d2241a2cd6142b12e8d996a6a8d8e159b3f4",
+  "evidence_monitoring_extractor_sha256": "442f41cb174946c92d294ce71aff6b074b5ead40c24d4f9fbb27407548e1bb3e",
+  "negative_controls": [
+    {
+      "control": "missing_record",
+      "rejected": true,
+      "reason": "declared batch coverage"
+    },
+    {
+      "control": "stale_scientific_source",
+      "rejected": true,
+      "reason": "stale source input: ontology/0.3.2/riskium-model.json"
+    },
+    {
+      "control": "inferred_sibling_exclusivity",
+      "rejected": true,
+      "reason": "unsupported policy inference"
+    },
+    {
+      "control": "unsupported_equivalence",
+      "rejected": true,
+      "reason": "unsupported semantic acceptance"
+    },
+    {
+      "control": "working_group_note_promoted_to_recommendation",
+      "rejected": true,
+      "reason": "source edition status"
+    },
+    {
+      "control": "observable_quality_promoted_to_information_specification",
+      "rejected": true,
+      "reason": "source term kind"
+    },
+    {
+      "control": "missing_ancestor_edge",
+      "rejected": true,
+      "reason": "structural context mismatch"
+    },
+    {
+      "control": "missing_changed_neighbor",
+      "rejected": true,
+      "reason": "structural context mismatch"
+    },
+    {
+      "control": "missing_excluded_set_policy",
+      "rejected": true,
+      "reason": "structural context mismatch"
+    },
+    {
+      "control": "missing_reference_role_specialization",
+      "rejected": true,
+      "reason": "evidence/monitoring context mismatch"
+    },
+    {
+      "control": "threshold_forced_to_have_indicator",
+      "rejected": true,
+      "reason": "evidence/monitoring context mismatch"
+    },
+    {
+      "control": "signal_linked_to_occurrence_instead_of_result",
+      "rejected": true,
+      "reason": "evidence/monitoring context mismatch"
+    },
+    {
+      "control": "unqualified_reference_substituted_for_mediated_role",
+      "rejected": true,
+      "reason": "evidence/monitoring context mismatch"
+    },
+    {
+      "control": "citation_proves_claim_truth",
+      "rejected": true,
+      "reason": "unsupported evidence/monitoring inference"
+    },
+    {
+      "control": "signal_proves_occurrence",
+      "rejected": true,
+      "reason": "unsupported evidence/monitoring inference"
+    },
+    {
+      "control": "qualitative_boundary_requires_invented_numeric_unit",
+      "rejected": true,
+      "reason": "unsupported evidence/monitoring inference"
+    },
+    {
+      "control": "changed_preview_definition",
+      "rejected": true,
+      "reason": "rendered body mismatch: previews/RKM-C065.md"
+    }
+  ],
+  "outputs": {
+    "README.md": "90ce1860b5a94231a14d19126ab8ebbde58929d4952ff8d1402d26cbc8f3b812",
+    "coverage.json": "dd521e76d7a78cfdfb190deac3a7b54945d4afa85229e8004bddc26824477abc",
+    "decisions.csv": "e4689d8b51ea04800a25136a99cfd6a585a5058cf25002e198c86d81302aaa25",
+    "previews/RKM-C065.md": "fbdf178c7266d73d6170366cadea76b3d9a782a4478894dcbe03945db3b0027e",
+    "previews/RKM-C068.md": "75139bcba9d60197a38e2deda249f0f085a17fe8ec9a6f9d882c7d00c9b08abd",
+    "previews/RKM-C069.md": "4e9ea508f99657e31f79e3f5225633e12eb1289bd2cb690188d2311e86bf09a7",
+    "previews/RKM-C070.md": "c87a1f76e59df02e2346ed597f8597fc36201f82e34317dcd4caa4c71597e3b6",
+    "previews/RKM-C071.md": "37676459f6ee5354c20ae5c81deb3ef595aefad52c22c6e4ffa8636f703e2759",
+    "progress.json": "1a1818738ba9a86487152171e6652d8651779f7e172917f3ad24bd82f73ca752"
+  }
+}

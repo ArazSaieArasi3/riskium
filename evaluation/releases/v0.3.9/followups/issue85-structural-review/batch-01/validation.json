@@ -1,0 +1,87 @@
+{
+  "status": "PASS_LOCAL_DOCUMENTARY_BATCH_NOT_PUBLICATION",
+  "execution": "N3b-1",
+  "runtime": "LOCAL_PYTHON_NOT_CI_OR_ONTOLOGY_ENGINE",
+  "summary": {
+    "this_batch": 11,
+    "prior_documentary_dispositions": 25,
+    "cumulative_documentary_dispositions": 36,
+    "population": 82,
+    "remaining": 46,
+    "dispositions": {
+      "RELATED": 9,
+      "ANALOGY": 1,
+      "CONTRAST": 1
+    },
+    "disposition_labels_changed": 0,
+    "unchanged_local_edges": 11,
+    "changed_ancestor_context": 11,
+    "changed_association_neighbor_context": 6
+  },
+  "review_sha256": "6ce6856f79fbb661bd910fd8f7a937effe464257127c3e52edfb9a0c3bec4c50",
+  "builder_sha256": "7c7cb60a16139ff0af5cd5741cab8dda38ce9fca4311d4a8eadb27ed876f4adb",
+  "context_extractor_sha256": "8d1e0821b478c2ddbd5c0757d601d2241a2cd6142b12e8d996a6a8d8e159b3f4",
+  "negative_controls": [
+    {
+      "control": "missing_record",
+      "rejected": true,
+      "reason": "declared batch coverage"
+    },
+    {
+      "control": "stale_scientific_source",
+      "rejected": true,
+      "reason": "stale source input: ontology/0.3.2/riskium-model.json"
+    },
+    {
+      "control": "inferred_sibling_exclusivity",
+      "rejected": true,
+      "reason": "unsupported policy inference"
+    },
+    {
+      "control": "unsupported_equivalence",
+      "rejected": true,
+      "reason": "unsupported semantic acceptance"
+    },
+    {
+      "control": "motivation_promoted_to_class",
+      "rejected": true,
+      "reason": "motivation/class distinction"
+    },
+    {
+      "control": "missing_ancestor_edge",
+      "rejected": true,
+      "reason": "structural context mismatch"
+    },
+    {
+      "control": "missing_changed_neighbor",
+      "rejected": true,
+      "reason": "structural context mismatch"
+    },
+    {
+      "control": "missing_excluded_set_policy",
+      "rejected": true,
+      "reason": "structural context mismatch"
+    },
+    {
+      "control": "changed_preview_definition",
+      "rejected": true,
+      "reason": "rendered body mismatch: previews/RKM-C001.md"
+    }
+  ],
+  "outputs": {
+    "README.md": "c43024cd7397fe6dc69952e0b9be1cd237e570baca094f245455a13664394dc0",
+    "decisions.csv": "c6d936e2ef184bedf48da5ba8d0398dbc421864699050fe74cb8930a82a60044",
+    "previews/RKM-C001.md": "4871067fdb908297ac1e6b0935261ae33c6f6ac56ba7bebc85e85f68a5da411e",
+    "previews/RKM-C002.md": "b0584ad59d16543dee19b0a621f13d426612a021088197e44c4cda70fb9fc7e8",
+    "previews/RKM-C003.md": "f202056dda2167c5662752a5fd9102d668d4339c65b34c4154198592443cf451",
+    "previews/RKM-C005.md": "75df0a060cda9bf2e37acac13f59807512ad32005aafee736f32cf3e5b4b0eec",
+    "previews/RKM-C006.md": "9282c0ffb4efa6f861950d4af0f6d14eb27607cfeab0a144f61aea82a5e462cb",
+    "previews/RKM-C017.md": "28af35a9cab4d29767039c0d86d85281aee7ebb0746e4130b670aad1d325808c",
+    "previews/RKM-C018.md": "8dc56e8347cb30e719c9fb13eaef92799ce780f8447ed5d4a85ccef28265b619",
+    "previews/RKM-C019.md": "e0737f003dd3a9aeba53336e3f985d418ee9da685e95c457356089d28ae77bca",
+    "previews/RKM-C020.md": "2d82de0169fa24399ca8d378f851d9682e760b39e629de9794c1af95d337dd94",
+    "previews/RKM-C021.md": "31aaab8ea91a43c03d685d20b6eef0f2c22819593ff1e5f46f540b283241b26b",
+    "previews/RKM-X06.md": "171d3409ed8a14bf137f599f6d42c1f368f6ff8b03d7eddaf53589be07fde775",
+    "progress.json": "42874f390c4eb05db4b05cd8a58ba3217f10d85f6dde7e39ada8e57482a1090f"
+  }
+}

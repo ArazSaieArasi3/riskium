@@ -1,0 +1,137 @@
+{
+  "status": "PASS_LOCAL_DOCUMENTARY_BATCH_NOT_PUBLICATION",
+  "execution": "N3b-5",
+  "runtime": "LOCAL_PYTHON_NOT_CI_OR_ONTOLOGY_ENGINE",
+  "summary": {
+    "this_batch": 9,
+    "prior_documentary_dispositions": 68,
+    "cumulative_documentary_dispositions": 77,
+    "population": 82,
+    "remaining": 5,
+    "dispositions": {
+      "CONTRAST": 3,
+      "RELATED": 3,
+      "NEEDS_LICENSED_SOURCE": 3
+    },
+    "disposition_labels_changed": 0,
+    "deferred_normative_dispositions": 3,
+    "unchanged_local_edges": 9,
+    "changed_ancestor_context": 9,
+    "changed_association_neighbor_context": 3
+  },
+  "review_sha256": "607c6537cadfb6a437e400d5966633188ce81e0611f11a9ea6b91340a87e3a73",
+  "builder_sha256": "8758836fc90e2d8d32f8a250462bb1b4d61edcf8ec8b86e0fe6c89d501dcf9bd",
+  "context_extractor_sha256": "8d1e0821b478c2ddbd5c0757d601d2241a2cd6142b12e8d996a6a8d8e159b3f4",
+  "treatment_policy_extractor_sha256": "e5e875cb0f7013450f418621e4717f14c104b7ca1b3f50401d434db2e4e353fe",
+  "negative_controls": [
+    {
+      "control": "missing_record",
+      "rejected": true,
+      "reason": "declared batch coverage"
+    },
+    {
+      "control": "stale_scientific_source",
+      "rejected": true,
+      "reason": "stale source input: ontology/0.3.2/riskium-model.json"
+    },
+    {
+      "control": "inferred_sibling_exclusivity",
+      "rejected": true,
+      "reason": "unsupported policy inference"
+    },
+    {
+      "control": "unsupported_equivalence",
+      "rejected": true,
+      "reason": "unsupported semantic acceptance"
+    },
+    {
+      "control": "catalogue_promoted_to_normative_term_access",
+      "rejected": true,
+      "reason": "metadata source boundary"
+    },
+    {
+      "control": "unretrieved_full_pdf_hash_claimed_current",
+      "rejected": true,
+      "reason": "source access binding"
+    },
+    {
+      "control": "lost_normative_followup",
+      "rejected": true,
+      "reason": "prior route preserved"
+    },
+    {
+      "control": "deferred_comparison_claimed_accepted",
+      "rejected": true,
+      "reason": "normative deferral route"
+    },
+    {
+      "control": "invented_normative_clause",
+      "rejected": true,
+      "reason": "normative deferral route"
+    },
+    {
+      "control": "missing_ancestor_edge",
+      "rejected": true,
+      "reason": "structural context mismatch"
+    },
+    {
+      "control": "missing_changed_neighbor",
+      "rejected": true,
+      "reason": "structural context mismatch"
+    },
+    {
+      "control": "missing_excluded_set_policy",
+      "rejected": true,
+      "reason": "structural context mismatch"
+    },
+    {
+      "control": "unresolved_control_reference_forced_resolved",
+      "rejected": true,
+      "reason": "treatment/policy context mismatch"
+    },
+    {
+      "control": "plan_substituted_for_actual_treatment_event",
+      "rejected": true,
+      "reason": "treatment/policy context mismatch"
+    },
+    {
+      "control": "heterogeneous_control_promoted_to_core_class",
+      "rejected": true,
+      "reason": "treatment/policy context mismatch"
+    },
+    {
+      "control": "plan_proves_effectiveness",
+      "rejected": true,
+      "reason": "unsupported treatment/policy inference"
+    },
+    {
+      "control": "tolerance_meanings_silently_equated",
+      "rejected": true,
+      "reason": "unsupported treatment/policy inference"
+    },
+    {
+      "control": "appetite_statement_proves_universal_authorization",
+      "rejected": true,
+      "reason": "unsupported treatment/policy inference"
+    },
+    {
+      "control": "changed_preview_definition",
+      "rejected": true,
+      "reason": "rendered body mismatch: previews/RKM-C041.md"
+    }
+  ],
+  "outputs": {
+    "README.md": "cc4581f8e23e9bd508986c7200dac28e42277275df8383b9e3ca1bd4fe51a59e",
+    "decisions.csv": "7b04e2b9f2e5251e3e48812804b5fcdae6ccda700f90b1509555bf83b3728b03",
+    "previews/RKM-C041.md": "ac04f34d60749aec4d85fc2148d15e256703fa78011e613a7f6aa0a84e89e401",
+    "previews/RKM-C042.md": "44ae2c46c9fd084f479ef94ab7e9d597956fd24fb1b42f75eb3d1c6c839171fc",
+    "previews/RKM-C043.md": "00e967a22cf9a6efd3affa4227749169031d3e685805d8cae52a013ac8592cfd",
+    "previews/RKM-C046.md": "7c914916164b4fce1e86d1b845bba5159c5760ab39a57753849b2ef23e2358bf",
+    "previews/RKM-C072.md": "3305181f79435996b64a9a489ce255e1f5223b9026c7cdd1663b56162ce4b3a6",
+    "previews/RKM-C073.md": "25b7cb4aa792692b5ea79c4f96400e88c7e672c5af5a069736d59c6addc7f2ef",
+    "previews/RKM-C074.md": "cd98babaa14b3b70f30ebdc4b3def0b18294d709652d65a714bc69d83adf8b51",
+    "previews/RKM-X02.md": "b2c34036e59193d025824ee63f3ea904064dc26baf94686ac3d43d496b0e7719",
+    "previews/RKM-X05.md": "fe946f32413912d109b8eeffced579a6e91a3e69aa26d0eba4665c316b7b94e9",
+    "progress.json": "4d71d1711f613b442673ccffaab50de43ec6f226876da06c95b99c29c382d499"
+  }
+}

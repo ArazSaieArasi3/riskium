@@ -26,7 +26,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-          ref: ${{ github.event.workflow_run.head_sha }}
+          ref: 3ce6f5573e2e0a698591615a7ded75c2f9451444
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -50,6 +50,7 @@ jobs:
           path: build/published-wiki
           if-no-files-found: error
   deploy:
+    if: ${{ false }}
     needs: build
     runs-on: ubuntu-24.04
     timeout-minutes: 10
@@ -73,7 +74,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-          ref: ${{ github.event.workflow_run.head_sha }}
+          ref: 3ce6f5573e2e0a698591615a7ded75c2f9451444
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'

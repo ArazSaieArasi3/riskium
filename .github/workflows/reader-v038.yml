@@ -12,6 +12,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
+    if: ${{ false }}
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
@@ -40,6 +41,7 @@ jobs:
         with:
           path: build/site
   deploy:
+    if: ${{ false }}
     needs: build
     runs-on: ubuntu-24.04
     timeout-minutes: 10

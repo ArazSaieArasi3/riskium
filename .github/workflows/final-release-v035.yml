@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.workflow_run.head_sha }}
+          ref: 3ce6f5573e2e0a698591615a7ded75c2f9451444
           fetch-depth: 0
           persist-credentials: false
       - uses: actions/setup-python@v5
@@ -45,7 +45,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.workflow_run.head_sha }}
+          ref: 3ce6f5573e2e0a698591615a7ded75c2f9451444
           fetch-depth: 0
           persist-credentials: false
       - uses: actions/setup-python@v5
@@ -146,7 +146,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.workflow_run.head_sha }}
+          ref: 3ce6f5573e2e0a698591615a7ded75c2f9451444
           fetch-depth: 0
           persist-credentials: false
       - uses: actions/setup-python@v5
@@ -163,8 +163,8 @@ jobs:
           path: ${{ runner.temp }}/v035-staged.json
           if-no-files-found: error
   publish:
+    if: ${{ false }}
     needs: [intent, freeze, staged]
-    if: needs.intent.outputs.publish == 'true' && needs.staged.result == 'success'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     permissions:
@@ -210,7 +210,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.workflow_run.head_sha }}
+          ref: 3ce6f5573e2e0a698591615a7ded75c2f9451444
           fetch-depth: 0
           persist-credentials: false
       - uses: actions/setup-python@v5
@@ -226,8 +226,8 @@ jobs:
           path: ${{ runner.temp }}/v035-publication.json
           if-no-files-found: error
   retire:
+    if: ${{ false }}
     needs: [intent, publish, verify]
-    if: needs.verify.result == 'success'
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     permissions:

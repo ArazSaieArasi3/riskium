@@ -1,0 +1,92 @@
+{
+  "entity": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Entity",
+    "locator": "§4.1, Entity",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Entity",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "68568626e2aaac9a8bef941f76678915e5943b264d81db366b574d1c1c26e406",
+    "selected_text_chars": 4600,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "describing": {
+    "source_id": "oa",
+    "source_document_sha256": "a7513e022f56c0a6f4e99ac11aec03f3451d1ff1ce14054780b3ccfb38fa7980",
+    "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/#motivation-and-purpose",
+    "locator": "§3.3.5, motivation describing",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "motivation-and-purpose",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "4260fb63802ce4a415e10d3f246ba00254771f30612229ea2ce2b4fcdb21139b",
+    "selected_text_chars": 10163,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "attribution": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Attribution",
+    "locator": "§4.3, Attribution",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Attribution",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "abea31d9358dd64171897edccd96f6b974d4fb4724a49196dfcad5d3727f6945",
+    "selected_text_chars": 8943,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "concept": {
+    "source_id": "skos",
+    "source_document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+    "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts",
+    "locator": "§3, especially §§3.1 and 3.5.1",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "concepts",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "e062730be494b6868966a98dec012e676541b6572370318eeac944031529f5ab",
+    "selected_text_chars": 10644,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "collection": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Collection",
+    "locator": "§4.2, Collection",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Collection",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "11b0591a52de0c72aaf94f9d5185e3f046ddc093f40be94193628494b97eb7ba",
+    "selected_text_chars": 8083,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "annotation": {
+    "source_id": "oa",
+    "source_document_sha256": "a7513e022f56c0a6f4e99ac11aec03f3451d1ff1ce14054780b3ccfb38fa7980",
+    "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/#annotations",
+    "locator": "§3.1",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "annotations",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "42a272546e1b0438581a3843edaafed53462d205c809ca8b6f434c593d17b37e",
+    "selected_text_chars": 8544,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  }
+}
