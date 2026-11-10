@@ -1,0 +1,32 @@
+{
+  "iso": {
+    "source_id": "iso",
+    "url": "https://www.iso.org/standard/79637.html",
+    "observed_reference": "ISO 31073:2022",
+    "observed_title": "Risk management — Vocabulary",
+    "observed_edition": 1,
+    "observed_publication_date": "2022-02",
+    "locator": "Official catalogue reference number, title, edition/date and abstract; no normative term locator.",
+    "selector": {
+      "kind": "WEB_CATALOGUE_METADATA_FIELDS",
+      "fields": [
+        "reference_number",
+        "title",
+        "edition",
+        "publication_date",
+        "abstract"
+      ]
+    },
+    "selected_metadata_sha256": "b815ab6eaa83b7cf328ba24840880aafa3a4722976252decdd7eb1b4fd6e9f3a",
+    "selected_metadata_chars": 199,
+    "normative_term_text_inspected": false,
+    "exact_crosswalk_adopted": false,
+    "historical_catalogue_response_sha256": "562ac6054dcb28c3599118fee2757f4cdfd21bb8a037a3444a99ea7fb208e883",
+    "fresh_catalogue_response_sha256": null,
+    "followup_issue": 78,
+    "gate_url": "https://github.com/ArazSaieArasi3/riskium/issues/78",
+    "gate_state_at_check": "open",
+    "accessed": "2026-11-10",
+    "scope": "Edition identity and broad vocabulary purpose only; exact criteria/appetite/tolerance/authority mappings remain deferred."
+  }
+}

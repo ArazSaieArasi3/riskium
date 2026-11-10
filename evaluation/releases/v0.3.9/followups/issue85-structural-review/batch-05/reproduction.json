@@ -1,0 +1,32 @@
+{
+  "status": "PASS_LOCAL_BYTE_IDENTICAL_REBUILD",
+  "date": "2026-11-10",
+  "execution": "N3b-5",
+  "baseline_commit": "64ebfa6c9bec92184f5671cb6d5aef6397b0a9e1",
+  "method": "Two separate isolated batch-05 builder processes followed by --check; all batch files excluding this receipt plus the unchanged shared context extractor compared byte for byte.",
+  "matched_files": 22,
+  "sha256": {
+    "batch-05/README.md": "cc4581f8e23e9bd508986c7200dac28e42277275df8383b9e3ca1bd4fe51a59e",
+    "batch-05/build.py": "8758836fc90e2d8d32f8a250462bb1b4d61edcf8ec8b86e0fe6c89d501dcf9bd",
+    "batch-05/contexts.json": "2e35400e1ba0591ebad985c41049bfd13a256ce3cb1fe8d83492fcc476a2b45b",
+    "batch-05/decisions.csv": "7b04e2b9f2e5251e3e48812804b5fcdae6ccda700f90b1509555bf83b3728b03",
+    "batch-05/metadata-checks.json": "29cbfb110b3a4f9d19a13fdac9f783dc4e9699f083cd514f9576fad5899ea851",
+    "batch-05/passage-checks.json": "3bbf02fe35f2ebc5e6f1af5fef021669ec4bf21d67ced8fcbd686e478b02f6ec",
+    "batch-05/previews/RKM-C041.md": "ac04f34d60749aec4d85fc2148d15e256703fa78011e613a7f6aa0a84e89e401",
+    "batch-05/previews/RKM-C042.md": "44ae2c46c9fd084f479ef94ab7e9d597956fd24fb1b42f75eb3d1c6c839171fc",
+    "batch-05/previews/RKM-C043.md": "00e967a22cf9a6efd3affa4227749169031d3e685805d8cae52a013ac8592cfd",
+    "batch-05/previews/RKM-C046.md": "7c914916164b4fce1e86d1b845bba5159c5760ab39a57753849b2ef23e2358bf",
+    "batch-05/previews/RKM-C072.md": "3305181f79435996b64a9a489ce255e1f5223b9026c7cdd1663b56162ce4b3a6",
+    "batch-05/previews/RKM-C073.md": "25b7cb4aa792692b5ea79c4f96400e88c7e672c5af5a069736d59c6addc7f2ef",
+    "batch-05/previews/RKM-C074.md": "cd98babaa14b3b70f30ebdc4b3def0b18294d709652d65a714bc69d83adf8b51",
+    "batch-05/previews/RKM-X02.md": "b2c34036e59193d025824ee63f3ea904064dc26baf94686ac3d43d496b0e7719",
+    "batch-05/previews/RKM-X05.md": "fe946f32413912d109b8eeffced579a6e91a3e69aa26d0eba4665c316b7b94e9",
+    "batch-05/progress.json": "4d71d1711f613b442673ccffaab50de43ec6f226876da06c95b99c29c382d499",
+    "batch-05/review.json": "607c6537cadfb6a437e400d5966633188ce81e0611f11a9ea6b91340a87e3a73",
+    "batch-05/source-access.json": "03fbecb4ba9c599fdf0df19932019e9244608936575f3cf0c15e062892370cc9",
+    "batch-05/treatment-policy-checks.json": "bbd8fd3f5cc3f5862461d7f320d512eff85ae30980109bec02a7be4a9fafe1ea",
+    "batch-05/treatment_policy_context.py": "e5e875cb0f7013450f418621e4717f14c104b7ca1b3f50401d434db2e4e353fe",
+    "batch-05/validation.json": "bb100414adf67b7dd41979aef850285d9608722de99b6a8fe18916f34989b5d3",
+    "context.py": "8d1e0821b478c2ddbd5c0757d601d2241a2cd6142b12e8d996a6a8d8e159b3f4"
+  }
+}

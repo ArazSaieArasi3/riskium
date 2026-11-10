@@ -1,0 +1,54 @@
+{
+  "prov": {
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "accessed": "2026-11-10",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "bytes": 464179,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "nist": {
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+    "direct_access": "WEB_SELECTED_PAGES_SUCCESS_DIRECT_HTTP_FAILED",
+    "error_type": "HTTPError",
+    "http_status": 403,
+    "accessed": "2026-11-10",
+    "document_sha256": null,
+    "same_response_as_prior": null,
+    "historical_document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+    "web_source_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+    "selected_pdf_pages": [
+      60,
+      61
+    ],
+    "visual_pages_checked": [
+      60,
+      61
+    ],
+    "fresh_full_body_hash_verified": false,
+    "access_note": "Direct HTTP returned 403. Current selected glossary pages were inspected through web PDF text and page images. The historical full-PDF hash is preserved separately, not freshly verified."
+  },
+  "skos": {
+    "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+    "document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+    "accessed": "2026-11-10",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+    "bytes": 227150,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "iso": {
+    "url": "https://www.iso.org/standard/79637.html",
+    "document_sha256": null,
+    "accessed": "2026-11-10",
+    "direct_access": "OFFICIAL_CATALOGUE_METADATA_ONLY",
+    "same_response_as_prior": null,
+    "historical_document_sha256": "562ac6054dcb28c3599118fee2757f4cdfd21bb8a037a3444a99ea7fb208e883",
+    "fresh_full_body_hash_verified": false,
+    "normative_term_text_inspected": false,
+    "access_note": "Official ISO 31073:2022 catalogue identity and abstract inspected through web. No normative term entry or exact clause crosswalk inspected or adopted."
+  }
+}
