@@ -1,0 +1,370 @@
+{
+  "status": "SELECTED_STATIC_SOURCE_CONTRACTS_NOT_INSTANCE_OR_ENGINE_RESULTS",
+  "relations": {
+    "R-11": {
+      "id": "R-11",
+      "source": "RKM-C032",
+      "target": "RKM-X01",
+      "predicate": "assesses",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "R-12": {
+      "id": "R-12",
+      "source": "RKM-C032",
+      "target": "RKM-C033",
+      "predicate": "hasBasis",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "R-13": {
+      "id": "R-13",
+      "source": "RKM-C032",
+      "target": "RKM-C034",
+      "predicate": "hasDimensionResult",
+      "source_end_cardinality": "1",
+      "target_end_cardinality": "0..*"
+    },
+    "R-14": {
+      "id": "R-14",
+      "source": "RKM-C034",
+      "target": "RKM-C036",
+      "predicate": "usesScale",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "R-15": {
+      "id": "R-15",
+      "source": "RKM-C034",
+      "target": "RKM-C038",
+      "predicate": "selectsLevel",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "R-16": {
+      "id": "R-16",
+      "source": "RKM-C038",
+      "target": "RKM-C036",
+      "predicate": "levelOf",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "R-17": {
+      "id": "R-17",
+      "source": "RKM-C032",
+      "target": "RKM-C037",
+      "predicate": "hasScoreResult",
+      "source_end_cardinality": "1",
+      "target_end_cardinality": "0..*"
+    },
+    "R-18": {
+      "id": "R-18",
+      "source": "RKM-C037",
+      "target": "RKM-C034",
+      "predicate": "derivedFrom",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    },
+    "R-26": {
+      "id": "R-26",
+      "source": "RKM-C031",
+      "target": "RKM-C032",
+      "predicate": "producesAssessmentInformation",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    },
+    "R-45": {
+      "id": "R-45",
+      "source": "RKM-C032",
+      "target": "RKM-C002",
+      "predicate": "assessmentContext",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "R-46": {
+      "id": "R-46",
+      "source": "RKM-C032",
+      "target": "RKM-C035",
+      "predicate": "usesMethod",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "R-47": {
+      "id": "R-47",
+      "source": "RKM-C032",
+      "target": "RKM-C040",
+      "predicate": "epistemicStatus",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "R-48": {
+      "id": "R-48",
+      "source": "RKM-C034",
+      "target": "RKM-C039",
+      "predicate": "dimension",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "R-49": {
+      "id": "R-49",
+      "source": "RKM-C035",
+      "target": "RKM-C036",
+      "predicate": "permitsScale",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    },
+    "R-50": {
+      "id": "R-50",
+      "source": "RKM-C037",
+      "target": "RKM-C035",
+      "predicate": "scoreMethod",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "RX-004": {
+      "id": "RX-004",
+      "source": "RKM-X03",
+      "target": "RKM-X01",
+      "predicate": "uncertaintyAbout",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "RX-011": {
+      "id": "RX-011",
+      "source": "RKM-X04",
+      "target": "RKM-X01",
+      "predicate": "evaluatesCase",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "RX-012": {
+      "id": "RX-012",
+      "source": "RKM-X04",
+      "target": "RKM-C032",
+      "predicate": "usesAssessment",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1..*"
+    },
+    "RX-013": {
+      "id": "RX-013",
+      "source": "RKM-X04",
+      "target": "RKM-C015",
+      "predicate": "usesCriteriaVersion",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "RX-014": {
+      "id": "RX-014",
+      "source": "RKM-C032",
+      "target": "RKM-C015",
+      "predicate": "usesContextVersion",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "RX-015": {
+      "id": "RX-015",
+      "source": "RKM-C032",
+      "target": "RKM-C015",
+      "predicate": "usesMethodVersion",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "RX-016": {
+      "id": "RX-016",
+      "source": "RKM-C034",
+      "target": "RKM-C015",
+      "predicate": "usesScaleVersion",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "RK2-012": {
+      "id": "RK2-012",
+      "source": "RKM-X03",
+      "target": "RKM-C002",
+      "predicate": "uncertaintyContext",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..1"
+    },
+    "RK2-013": {
+      "id": "RK2-013",
+      "source": "RKM-C032",
+      "target": "RKM-X03",
+      "predicate": "recordsUncertainty",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    },
+    "RK2-018": {
+      "id": "RK2-018",
+      "source": "RKM-C035",
+      "target": "RKM-C039",
+      "predicate": "specifiesDimension",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    },
+    "RK2-019": {
+      "id": "RK2-019",
+      "source": "RKM-C036",
+      "target": "RKM-C039",
+      "predicate": "scaleForDimension",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "1"
+    },
+    "RK2-022": {
+      "id": "RK2-022",
+      "source": "RKM-C033",
+      "target": "RKM-X05",
+      "predicate": "referencesControlBaseline",
+      "source_end_cardinality": "0..*",
+      "target_end_cardinality": "0..*"
+    }
+  },
+  "constraints": {
+    "C-01": {
+      "id": "C-01",
+      "title": "Risk Case is not ISO Risk",
+      "statement": "Case identity is preserved across descriptions, scores, owners and administrative states. Equal labels do not establish case identity.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-02": {
+      "id": "C-02",
+      "title": "No realization from description",
+      "statement": "A scenario, consequence statement, signal, plan or report alone must not create actual occurrences, outcomes, controls or effectiveness assertions.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-03": {
+      "id": "C-03",
+      "title": "Issued version immutability",
+      "statement": "Issued semantic content and effective dependency versions are immutable. Correction and supersession create lineage-preserving new versions.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-04": {
+      "id": "C-04",
+      "title": "Assessment interpretation",
+      "statement": "Results retain method/scale version, dimension, basis, relevant context and time semantics. A score is not the risk, and estimated likelihood need not be numeric.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-05": {
+      "id": "C-05",
+      "title": "Temporal and administrative distinction",
+      "statement": "Recorded time, reference time and validity intervals are distinct. Workflow closure does not prove risk cessation or successful treatment.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-11": {
+      "id": "C-11",
+      "title": "Vocabulary resource identity",
+      "statement": "Vocabulary resources retain scheme-qualified identity. Labels are representations and are not OWL classes by default.",
+      "status": "DESIGN_CONSTRAINT"
+    },
+    "C-13": {
+      "id": "C-13",
+      "title": "Scale and dimension compatibility",
+      "statement": "A selected level belongs to the selected scale version and dimension. Results on incompatible methods/scales are not ranked merely by equal labels or numeric codes.",
+      "status": "PROFILE_CONSTRAINT"
+    },
+    "C-16": {
+      "id": "C-16",
+      "title": "Admission profiles",
+      "statement": "Raw source content is retained in staging. Managed documentary records require their own identity, aboutness, title and provenance under the declared record profile. Analytical task readiness additionally requires the context, method, scale, basis, dimension and time selected for that task. These completeness conditions do not make organizational register approval a universal condition for the existence of an identifiable analytical RiskCase.",
+      "status": "APPROVED_PROFILE_CONTRACT"
+    },
+    "C-17": {
+      "id": "C-17",
+      "title": "Multiple assertions",
+      "statement": "Multiple classifications, descriptions, actors and evidence assertions are retained with role, context, provenance and time. Scalar export requires an explicit selection rule when several values apply.",
+      "status": "APPROVED_PROFILE_CONTRACT"
+    },
+    "C-18": {
+      "id": "C-18",
+      "title": "Comparable assessments",
+      "statement": "Direct comparison requires matching pinned method, scale, dimension, basis and temporal context; a governed explicit transformation may enable a different comparison. Missing data is not zero. Reported scores do not imply a reproducible computation.",
+      "status": "APPROVED_PROFILE_CONTRACT"
+    },
+    "C-21": {
+      "id": "C-21",
+      "title": "Reported and computed scores",
+      "statement": "A reported RiskScoreResult may have no derivedFrom links. A computed RiskScoreResult requires at least one linked DimensionAssessmentResult, a pinned method and adequate inputs. The score kind must be recorded.",
+      "status": "REVIEW_DESIGN_CONSTRAINT_SELECTED_TESTS_ONLY"
+    },
+    "C-25": {
+      "id": "C-25",
+      "title": "Version target coherence",
+      "statement": "usesContextVersion targets a version of RiskContextSpecification; usesMethodVersion a version of AssessmentMethodSpecification; usesScaleVersion a version of AssessmentScale; usesCriteriaVersion a version of RiskCriteria. Artifact-level references, when present, agree with versionOf.",
+      "status": "REVIEW_DESIGN_CONSTRAINT_SELECTED_TESTS_ONLY"
+    }
+  },
+  "identity": {
+    "RKM-C032": {
+      "id": "RKM-C032",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014"
+    },
+    "RKM-C033": {
+      "id": "RKM-C033",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014"
+    },
+    "RKM-C034": {
+      "id": "RKM-C034",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014"
+    },
+    "RKM-C035": {
+      "id": "RKM-C035",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014"
+    },
+    "RKM-C036": {
+      "id": "RKM-C036",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014"
+    },
+    "RKM-C037": {
+      "id": "RKM-C037",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014"
+    },
+    "RKM-C038": {
+      "id": "RKM-C038",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014"
+    },
+    "RKM-C039": {
+      "id": "RKM-C039",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014"
+    },
+    "RKM-C040": {
+      "id": "RKM-C040",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014"
+    },
+    "RKM-X03": {
+      "id": "RKM-X03",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014"
+    },
+    "RKM-X04": {
+      "id": "RKM-X04",
+      "ontouml_stereotype": "subkind",
+      "identity_supplier": "RKM-C014"
+    },
+    "RKM-C031": {
+      "id": "RKM-C031",
+      "ontouml_stereotype": "event",
+      "identity_supplier": null
+    },
+    "RKM-C015": {
+      "id": "RKM-C015",
+      "ontouml_stereotype": "kind",
+      "identity_supplier": "RKM-C015"
+    }
+  },
+  "assessment_activity_ancestors": [],
+  "case_application_policy": {
+    "case_identity": "Analytical identification and continuity; no universal committee or register-membership requirement.",
+    "record_metadata": "Requirements concern the documentary envelope under an explicitly selected profile, not an institutional approval condition for the represented subject.",
+    "task_readiness": "Task-specific explicit context/objective and other inputs may be required; missing inputs produce incomplete readiness, not an assertion of nonexistence.",
+    "operational_registration": "A local example profile may require a linked register entry and supported approval. Unknown approval stays unknown.",
+    "multiplicity_scope": "Retain the reviewed conceptual endpoints and multiplicities. Data completeness is assessed under a declared explicit-data task; OWL anonymous witnesses do not supply observed data."
+  }
+}

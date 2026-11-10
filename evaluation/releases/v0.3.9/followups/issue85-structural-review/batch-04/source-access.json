@@ -1,0 +1,72 @@
+{
+  "prov": {
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "accessed": "2026-11-10",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/",
+    "bytes": 464179,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "nist": {
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+    "direct_access": "WEB_SELECTED_PAGES_SUCCESS_DIRECT_HTTP_FAILED",
+    "error_type": "HTTPError",
+    "accessed": "2026-11-10",
+    "document_sha256": null,
+    "same_response_as_prior": null,
+    "historical_document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+    "web_source_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+    "selected_pdf_pages": [
+      59,
+      78
+    ],
+    "visual_pages_checked": [
+      59,
+      78
+    ],
+    "fresh_full_body_hash_verified": false,
+    "access_note": "The direct HTTP attempts timed out/failed. Current selected glossary and scale pages were inspected through web PDF text and page images; the historical full-body hash is preserved separately, not claimed reverified."
+  },
+  "dqv": {
+    "url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/",
+    "document_sha256": "271d3e820c681127131595d2c8bf8345e925149192f6cab821f101f09d372a63",
+    "accessed": "2026-11-10",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/",
+    "bytes": 183523,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "sosa": {
+    "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/",
+    "document_sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+    "accessed": "2026-11-10",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/",
+    "bytes": 673275,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "skos": {
+    "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+    "document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+    "accessed": "2026-11-10",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/",
+    "bytes": 227150,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  },
+  "oa": {
+    "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/",
+    "document_sha256": "a7513e022f56c0a6f4e99ac11aec03f3451d1ff1ce14054780b3ccfb38fa7980",
+    "accessed": "2026-11-10",
+    "http_status": 200,
+    "final_url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/",
+    "bytes": 284185,
+    "direct_access": "SUCCESS",
+    "same_response_as_prior": true
+  }
+}

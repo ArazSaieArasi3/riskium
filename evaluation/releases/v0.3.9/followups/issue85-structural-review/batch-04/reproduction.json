@@ -1,0 +1,33 @@
+{
+  "status": "PASS_LOCAL_BYTE_IDENTICAL_REBUILD",
+  "date": "2026-11-10",
+  "execution": "N3b-4",
+  "baseline_commit": "8a115ef9c3fb6b0501c6ed9c9fd6b258d358028e",
+  "method": "Two separate isolated batch-04 builder processes followed by --check; all batch files excluding this receipt plus the unchanged shared context extractor compared byte for byte.",
+  "matched_files": 23,
+  "sha256": {
+    "batch-04/README.md": "3761a8c63f6b607e7c884087fafde4cd8665e7b8136e01ddaa7b8c7333c47204",
+    "batch-04/assessment-checks.json": "9b00c6ae8ec038bc038be35cc82acb43c0a20ecd2e216e2b9a6e18efabe6bb8e",
+    "batch-04/assessment_context.py": "d74d1d7d5c18b1adffdeeb2bfef293199669e4c28bc38b930d1e960597b58eea",
+    "batch-04/build.py": "6e364642f32b1c8895fdcf303457c8e90b51dd500fbe4cf1c4d1e783b3863484",
+    "batch-04/contexts.json": "e262b1924f5967270ad3bf3d5c610735165dc758c20bf0c13496fb23db71632d",
+    "batch-04/decisions.csv": "78eaceb5eeff99d16149f74854eeeed56121e018830868be9b67bcf1534d7d81",
+    "batch-04/passage-checks.json": "3b1ad103c6613cd7a0a3019d22d7dc821f3a1fb9c8a4343768ebb593bbe4e3ce",
+    "batch-04/previews/RKM-C032.md": "4f86f0886a41fb0e80b4ec9e8774c57568c5dd08973e02c70aee36241e7dd0d7",
+    "batch-04/previews/RKM-C033.md": "91f37d15a8f070073af9ae78a744fe51cd3d872043b31f2f9ba6492b2b4f66a8",
+    "batch-04/previews/RKM-C034.md": "8d52e7450a58b5a59a55fc75aae7e64832da837536cf05648c080ee1276875bc",
+    "batch-04/previews/RKM-C035.md": "70107f817d5bf7ee9707c6278907717408406510195cb54e9add42db4c8a9309",
+    "batch-04/previews/RKM-C036.md": "feb0802c6903b2d6f2eb468858c38bb1bd8f9e30a4fbb0a40fd68f1da9644a94",
+    "batch-04/previews/RKM-C037.md": "542f6033d789183ddd778c90f129aae70e068d7be0483de1a2f3d69ea7a76077",
+    "batch-04/previews/RKM-C038.md": "2f277a76c0c46589bdadf89afaa0173f669450b08e9ab8a76ec5af466ad2d148",
+    "batch-04/previews/RKM-C039.md": "4934983110d29af70bb750c004db9de538d7f8372a9d77f42688f647bf2ea409",
+    "batch-04/previews/RKM-C040.md": "f48320da2607fd2016aac47351b94b5fd2896fb6dd55b24e997ba916e833fff2",
+    "batch-04/previews/RKM-X03.md": "ac03b1bb5eda90af8c4ddc2e35f5ccc711bc9af6a4d0b3657aafa3c81f2ddbf3",
+    "batch-04/previews/RKM-X04.md": "45c195afb11555b0c7842e96e3636331858f6a23ebcdd50c8b27e276bef0d24e",
+    "batch-04/progress.json": "979f2fafe7469ef6af1c6e83a7eb9fbbcc35e58e5bba0c9796d2a4d1f6597feb",
+    "batch-04/review.json": "9ac6b991b0bf4acce072f7796979b241d3cb60252abb0bd2accf6800ebe163a5",
+    "batch-04/source-access.json": "032040c4a334076bc236b23ded43cc4a75cb2103c661005ffc7eadd86b0be3ef",
+    "batch-04/validation.json": "7832443a1fe8f499ef535849ecacf7e03c7b0feec985cfca2655b9cf35de0e6b",
+    "context.py": "8d1e0821b478c2ddbd5c0757d601d2241a2cd6142b12e8d996a6a8d8e159b3f4"
+  }
+}

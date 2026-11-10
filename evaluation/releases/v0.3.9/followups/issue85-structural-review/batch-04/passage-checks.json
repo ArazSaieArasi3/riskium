@@ -1,0 +1,141 @@
+{
+  "assessment_report": {
+    "source_id": "nist",
+    "source_document_sha256": null,
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=59",
+    "locator": "Appendix B, printed B-9, PDF page 59",
+    "selector": {
+      "kind": "WEB_PDF_TEXT_LINES",
+      "physical_pdf_page": 59,
+      "printed_page": "B-9",
+      "visual_page_checked": true
+    },
+    "selected_text_sha256": "780e20f9573ac72a3a8b81518cc0ca2c02e7d51407225e40e27b9ca842efc3cc",
+    "selected_text_chars": 182,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false,
+    "historical_document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04"
+  },
+  "entity": {
+    "source_id": "prov",
+    "source_document_sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+    "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/#Entity",
+    "locator": "§4.1, Entity",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "Entity",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "68568626e2aaac9a8bef941f76678915e5943b264d81db366b574d1c1c26e406",
+    "selected_text_chars": 4600,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "measurement": {
+    "source_id": "dqv",
+    "source_document_sha256": "271d3e820c681127131595d2c8bf8345e925149192f6cab821f101f09d372a63",
+    "url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/#dqv:QualityMeasurement",
+    "locator": "§4.1",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "dqv:QualityMeasurement",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "de1065eb7095a21f34f9a145040ba6e4687f930c403e202e52ec78f48e3fbbc3",
+    "selected_text_chars": 5447,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "procedure": {
+    "source_id": "sosa",
+    "source_document_sha256": "f563c81c267c36d9a59a163c0a1cafcd75a0eedb5664e20a778fed8547fee31f",
+    "url": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/#SOSAProcedure",
+    "locator": "§4.8.2.1",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "SOSAProcedure",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "aa3cdb4778f63da8815c57b989e0807edacab42df52bc9415dc3492e75607af1",
+    "selected_text_chars": 3209,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "scales": {
+    "source_id": "nist",
+    "source_document_sha256": null,
+    "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf#page=78",
+    "locator": "Appendix F, Table F-2, printed F-2, PDF page 78",
+    "selector": {
+      "kind": "WEB_PDF_TEXT_LINES",
+      "physical_pdf_page": 78,
+      "printed_page": "F-2",
+      "visual_page_checked": true
+    },
+    "selected_text_sha256": "044fadd7330731ff7a451791158b68975108a94fc4ea0d6628a28f2f5ae47577",
+    "selected_text_chars": 1605,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false,
+    "historical_document_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04"
+  },
+  "concept": {
+    "source_id": "skos",
+    "source_document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+    "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts",
+    "locator": "§3, especially §§3.1 and 3.5.1",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "concepts",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "e062730be494b6868966a98dec012e676541b6572370318eeac944031529f5ab",
+    "selected_text_chars": 10644,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "label": {
+    "source_id": "skos",
+    "source_document_sha256": "3aa00cd16ee4d86d3a19b75501bb317d0b0c134e1f4029e9f3098c4dd3669e4c",
+    "url": "https://www.w3.org/TR/2009/REC-skos-reference-20090818/#labels",
+    "locator": "§5.1",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "labels",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "bc2f268747885a6342bf986a4a30bc6a2bc72311e7beb2210f9f649fd54147f7",
+    "selected_text_chars": 11603,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "dimension": {
+    "source_id": "dqv",
+    "source_document_sha256": "271d3e820c681127131595d2c8bf8345e925149192f6cab821f101f09d372a63",
+    "url": "https://www.w3.org/TR/2016/NOTE-vocab-dqv-20161215/#dqv:Dimension",
+    "locator": "§4.3",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "dqv:Dimension",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "f726dceb4f78c7a6af05f2374dfff528aedb3501ceac09ea15930bad6ec370d7",
+    "selected_text_chars": 6321,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  },
+  "annotation": {
+    "source_id": "oa",
+    "source_document_sha256": "a7513e022f56c0a6f4e99ac11aec03f3451d1ff1ce14054780b3ccfb38fa7980",
+    "url": "https://www.w3.org/TR/2017/REC-annotation-model-20170223/#annotations",
+    "locator": "§3.1",
+    "selector": {
+      "kind": "HTML_ANCHOR_WINDOW",
+      "anchor": "annotations",
+      "window_raw_chars": 18000
+    },
+    "selected_text_sha256": "42a272546e1b0438581a3843edaafed53462d205c809ca8b6f434c593d17b37e",
+    "selected_text_chars": 8544,
+    "inspection": "SELECTED_PASSAGE_INSPECTED",
+    "quotation": false
+  }
+}
