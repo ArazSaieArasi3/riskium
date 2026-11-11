@@ -2,7 +2,15 @@
 
 Riskium v0.3.10 is a real public release, published at 2026-11-10T20:52:01Z. [The release](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.10) and six actual unauthenticated downloads match exact qualified source `4ae0cdc72a1008e8107be320694d90324890b696` and run 42897440341. PR #94 was merged into main. The package selects model 0.3.2, review 0.2.0 and reader 0.4.10; it changes no scientific definition or historical oracle.
 
-## W3 current native Wiki checkpoint — 11 November 2026
+## W4 current native Wiki checkpoint — 11 November 2026
+
+**C028–C033 is complete: all six saved bodies independently match the reference bytes.** The full Wiki inventory now matches **34/114 expected files (29.8%)**: thirty-three updated concept dossiers and one preserved historical reference. **80 files remain.** All twenty-eight prior matching files remain equal; exactly six Wiki commits changed exactly the six batch paths. These percentages describe documentary file synchronization, not semantic correctness or total research completion.
+
+[W4 batch evidence](wiki-batch-c028-c033/README.md), [complete 114-file Git readback](wiki-batch-c028-c033/readback.json), and [previous-checkpoint CI receipt](wiki-batch-c028-c033/previous-checkpoint-ci.json) retain the actual observations. At the initial W3-checkpoint read, nine workflows had succeeded, two full historical suites were still running and one retired publisher was skipped. At follow-up, all fifteen observed workflows were complete: eleven succeeded and four retired publishers were skipped. The receipt preserves both snapshots rather than treating a pending observation as a completed result.
+
+Next bounded execution: **C034–C039**, followed by independent stored-content comparison and preservation checks. Release v0.3.10 already exists; complete coordinated acceptance remains open. All 114 retained reference-body hashes were rechecked. Earlier release-download and HTTP Pages receipts retain their own dates; those checks were not rerun here. #85 remains OPEN until all expected Wiki bodies and final current-pointer/navigation checks pass.
+
+## Earlier W3 native Wiki checkpoint — 11 November 2026
 
 **C022–C027 is complete: all six saved bodies independently match the reference bytes.** The Wiki now matches **28/114 expected files (24.6%)**: twenty-seven updated concept dossiers and one preserved historical reference. **86 files remain.** All twenty-two previously matching files remain equal. Exactly six Wiki commits changed exactly the six batch paths. These percentages describe documentary file synchronization, not semantic correctness or total research completion.
 
