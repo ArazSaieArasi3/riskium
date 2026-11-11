@@ -2,7 +2,15 @@
 
 Riskium v0.3.10 is a real public release, published at 2026-11-10T20:52:01Z. [The release](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.10) and six actual unauthenticated downloads match exact qualified source `4ae0cdc72a1008e8107be320694d90324890b696` and run 42897440341. PR #94 was merged into main. The package selects model 0.3.2, review 0.2.0 and reader 0.4.10; it changes no scientific definition or historical oracle.
 
-## Completed and remaining gates
+## W1 native Wiki checkpoint — 11 November 2026
+
+**The six-page C010–C015 batch is complete; whole-channel acceptance remains open.** All six saved native Wiki bodies were independently retrieved from the Wiki Git repository and matched the qualified deployed artifact byte for byte. The complete Wiki inventory now matches **16/114 expected files (14.0%)**: fifteen updated concept pages and one preserved historical reference. **98 files remain.** These percentages describe documentary file synchronization, not ontology correctness or completion of the research.
+
+Wiki commit `978635fd738eae944828673170a8e35235b25078` changes exactly those six paths relative to `397aac3a9ee850f05838fa5d340bf2c7df12a156`; all ten previously matching files remain equal. [W1 batch evidence](wiki-batch-c010-c015/README.md) and [complete 114-file readback](wiki-batch-c010-c015/readback.json) record the current result. Release assets and Pages readback retain their separately dated evidence and were not rerun by this Wiki-only execution. No manuscript, scientific definition, selected package input, release tag or public release asset was changed.
+
+Next bounded execution: **RKM-C016–RKM-C021**, with at most two or three saves per browser call, followed by independent Git readback. Finish the remaining concept/structural bodies and guides; update Home/sidebar/footer last and verify all expected bodies and navigation before closing #85.
+
+## Initial N5b publication checkpoint — 10 November 2026
 
 | Gate | Observed result |
 |---|---|
@@ -24,6 +32,6 @@ Earlier N5a receipts remain unchanged. Their prepared 073f22c source was superse
 
 Maintained README, citation and roadmap pointers can advance outside the frozen source selection. All 1,395 selected hashes remain unchanged. Reproduce the frozen qualifier at its exact source; a post-publication main checkout with maintained landing edits is not the original frozen preparation checkout. Root CITATION.cff and historical components remain unmodified. The package-bound manuscript 7.2.21 is not a claim about the latest author-held manuscript; no manuscript file was edited or generated in N5b.
 
-## Next bounded execution
+## Earlier resumption instructions — superseded by W1 above
 
 Publish remaining native Wiki bodies from the already qualified artifact, beginning with RKM-C010, in batches of at most two or three saves per browser call. After an interrupted call, fetch actual Wiki before retrying. Create Curation-Status through the native new-page form. Finish current guides/Home/sidebar/footer last, preserve References, compare all 114 expected bodies and retain historical Pages snapshots. Full database/generative and pharmaceutical pilots are later v0.4.0/v0.5.0 scopes, not publication prerequisites.

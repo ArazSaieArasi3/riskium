@@ -9,10 +9,10 @@
   },
   "native_wiki": {
     "expected": 114,
-    "matched": 10,
-    "updated_concept_pages": 9,
+    "matched": 16,
+    "updated_concept_pages": 15,
     "historical_reference_preserved": true,
-    "remaining": 104,
+    "remaining": 98,
     "remaining_paths": [
       "Artifact-Versions.md",
       "Citation.md",
@@ -33,12 +33,6 @@
       "Publication-Comparison.md",
       "Publication.md",
       "Quality.md",
-      "RKM-C010.md",
-      "RKM-C011.md",
-      "RKM-C012.md",
-      "RKM-C013.md",
-      "RKM-C014.md",
-      "RKM-C015.md",
       "RKM-C016.md",
       "RKM-C017.md",
       "RKM-C018.md",
@@ -118,11 +112,18 @@
       "Work-Plan.md",
       "_Footer.md",
       "_Sidebar.md"
-    ]
+    ],
+    "wiki_commit": "978635fd738eae944828673170a8e35235b25078",
+    "last_batch": {
+      "scope": "C010-C015",
+      "expected": 6,
+      "matched": 6,
+      "readback": "wiki-batch-c010-c015/readback.json"
+    }
   },
   "coordinated_acceptance": false,
   "issue85_state": "OPEN",
-  "next": "Publish remaining native Wiki bodies in restartable batches; verify all expected hashes and final navigation before closing #85.",
+  "next": "Publish C016-C021 in the next bounded execution; then finish remaining native Wiki bodies, verify all 114 expected hashes and final navigation before closing #85.",
   "scientific_model_version": "0.3.2",
   "documentary_review_version": "0.2.0",
   "reader_version": "0.4.10",
