@@ -9,10 +9,10 @@
   },
   "native_wiki": {
     "expected": 114,
-    "matched": 52,
-    "updated_concept_pages": 51,
+    "matched": 58,
+    "updated_concept_pages": 57,
     "historical_reference_preserved": true,
-    "remaining": 62,
+    "remaining": 56,
     "remaining_paths": [
       "Artifact-Versions.md",
       "Citation.md",
@@ -33,12 +33,6 @@
       "Publication-Comparison.md",
       "Publication.md",
       "Quality.md",
-      "RKM-C052.md",
-      "RKM-C053.md",
-      "RKM-C054.md",
-      "RKM-C055.md",
-      "RKM-C056.md",
-      "RKM-C057.md",
       "RKM-C058.md",
       "RKM-C059.md",
       "RKM-C060.md",
@@ -77,28 +71,29 @@
       "_Footer.md",
       "_Sidebar.md"
     ],
-    "wiki_commit": "cda38ed03812da0c4858aefc6f7725a3971d2fe4",
+    "wiki_commit": "c9e7b4798b37d62d2378ae2c3fc788b08c1db296",
     "last_batch": {
-      "scope": "C046-C051",
+      "scope": "C052-C057",
       "expected": 6,
       "matched": 6,
-      "readback": "wiki-batch-c046-c051/readback.json"
+      "readback": "wiki-batch-c052-c057/readback.json"
     }
   },
   "coordinated_acceptance": false,
   "issue85_state": "OPEN",
-  "next": "Publish C052-C057 in the next bounded execution; then finish remaining native Wiki bodies, verify all 114 expected hashes and final navigation before closing #85.",
+  "next": "Publish C058-C063 in the next bounded execution; then finish remaining native Wiki bodies, verify all 114 expected hashes and final navigation before closing #85.",
   "scientific_model_version": "0.3.2",
   "documentary_review_version": "0.2.0",
   "reader_version": "0.4.10",
   "article_changed": false,
   "previous_checkpoint_ci": {
-    "source_commit": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+    "source_commit": "09ddb56a09e7e446d8d132a4fe05b4f3806b08bc",
     "success": 11,
     "skipped": 4,
     "pending": 0,
     "failed": 0,
-    "complete_at_execution_start": true,
-    "receipt": "wiki-batch-c046-c051/previous-checkpoint-ci.json"
+    "complete_at_execution_start": false,
+    "initial_pending": 1,
+    "receipt": "wiki-batch-c052-c057/previous-checkpoint-ci.json"
   }
 }

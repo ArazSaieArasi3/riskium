@@ -2,7 +2,15 @@
 
 Riskium v0.3.10 is a real public release, published at 2026-11-10T20:52:01Z. [The release](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.10) and six actual unauthenticated downloads match exact qualified source `4ae0cdc72a1008e8107be320694d90324890b696` and run 42897440341. PR #94 was merged into main. The package selects model 0.3.2, review 0.2.0 and reader 0.4.10; it changes no scientific definition or historical oracle.
 
-## W7 current native Wiki checkpoint — 11 November 2026
+## W8 current native Wiki checkpoint — 11 November 2026
+
+**C052–C057 is complete: all six saved bodies independently match the reference bytes.** The Wiki now matches **58/114 expected files (50.9%)**: fifty-seven updated concept dossiers and one preserved historical reference. **56 files remain.** All fifty-two previously matching files remain equal; exactly six Wiki commits changed exactly the six declared paths. These percentages concern documentary synchronization, not ontology correctness or total research completion.
+
+[W8 batch evidence](wiki-batch-c052-c057/README.md), [complete 114-file Git readback](wiki-batch-c052-c057/readback.json), and [previous-checkpoint CI receipt](wiki-batch-c052-c057/previous-checkpoint-ci.json) retain the observations. The initial W7-checkpoint read showed ten successful runs, three skipped publishers and one running full historical suite. Follow-up showed fifteen completed observed runs: eleven successes and four skipped retired publishers, with zero pending or failed. Both snapshots are preserved. All three runs pending in the previous response succeeded, including both source-qualified full historical suites. No workflow was manually rerun.
+
+Next bounded execution: **C058–C063**, followed by independent persisted-content comparison and preservation checks. v0.3.10 already exists; complete coordinated acceptance remains open. All 114 retained reference-body hashes were rechecked; the artifact was reused, not downloaded again. Earlier package-download and HTTP Pages evidence retain their separately dated scope and were not rerun here. #85 remains OPEN until all expected bodies and final current-pointer/navigation gates pass. No manuscript or scientific definition changed.
+
+## Earlier W7 native Wiki checkpoint — 11 November 2026
 
 **C046–C051 is complete: all six saved bodies independently match the reference bytes.** The Wiki now matches **52/114 expected files (45.6%)**: fifty-one updated concept dossiers and one preserved historical reference. **62 files remain.** All forty-six previously matching files remain equal; exactly six Wiki commits changed exactly the six declared paths. These percentages concern documentary synchronization, not ontology correctness or total research completion.
 
