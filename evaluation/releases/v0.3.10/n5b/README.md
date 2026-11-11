@@ -2,7 +2,15 @@
 
 Riskium v0.3.10 is a real public release, published at 2026-11-10T20:52:01Z. [The release](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.10) and six actual unauthenticated downloads match exact qualified source `4ae0cdc72a1008e8107be320694d90324890b696` and run 42897440341. PR #94 was merged into main. The package selects model 0.3.2, review 0.2.0 and reader 0.4.10; it changes no scientific definition or historical oracle.
 
-## W2 current native Wiki checkpoint — 11 November 2026
+## W3 current native Wiki checkpoint — 11 November 2026
+
+**C022–C027 is complete: all six saved bodies independently match the reference bytes.** The Wiki now matches **28/114 expected files (24.6%)**: twenty-seven updated concept dossiers and one preserved historical reference. **86 files remain.** All twenty-two previously matching files remain equal. Exactly six Wiki commits changed exactly the six batch paths. These percentages describe documentary file synchronization, not semantic correctness or total research completion.
+
+[W3 batch evidence](wiki-batch-c022-c027/README.md), [complete 114-file Git readback](wiki-batch-c022-c027/readback.json), and [previous-checkpoint CI receipt](wiki-batch-c022-c027/previous-checkpoint-ci.json) record the observations. All fifteen observed W2-checkpoint workflows completed: eleven succeeded and four retired publishers were skipped. The three previously pending runs, including both full historical suites, succeeded. This is a count of workflow runs, not individual test cases.
+
+Next bounded execution: **C028–C033**, followed by independent readback of persisted content. v0.3.10 already exists; complete coordinated acceptance remains open. Retained reference bodies were rechecked against all 114 expected hashes, while release downloads and HTTP Pages acceptance retain their separately dated receipts. #85 remains OPEN until all expected Wiki bodies and final current-pointer/navigation checks pass.
+
+## Earlier W2 native Wiki checkpoint — 11 November 2026
 
 **C016–C021 is complete: six actual saved pages independently match the deployed reference bytes.** The full expected Wiki inventory now matches **22/114 files (19.3%)**: twenty-one updated concept dossiers and one preserved historical reference. **92 files remain.** All sixteen prior matching files remain equal; the Wiki change set is exactly these six pages. These percentages measure documentary synchronization, not semantic correctness or total research completion.
 
