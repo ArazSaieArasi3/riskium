@@ -9,10 +9,10 @@
   },
   "native_wiki": {
     "expected": 114,
-    "matched": 40,
-    "updated_concept_pages": 39,
+    "matched": 46,
+    "updated_concept_pages": 45,
     "historical_reference_preserved": true,
-    "remaining": 74,
+    "remaining": 68,
     "remaining_paths": [
       "Artifact-Versions.md",
       "Citation.md",
@@ -33,12 +33,6 @@
       "Publication-Comparison.md",
       "Publication.md",
       "Quality.md",
-      "RKM-C040.md",
-      "RKM-C041.md",
-      "RKM-C042.md",
-      "RKM-C043.md",
-      "RKM-C044.md",
-      "RKM-C045.md",
       "RKM-C046.md",
       "RKM-C047.md",
       "RKM-C048.md",
@@ -89,27 +83,28 @@
       "_Footer.md",
       "_Sidebar.md"
     ],
-    "wiki_commit": "6a9e52621891128e5ed47fc55fad82a83b681b01",
+    "wiki_commit": "b86487bc5eb51820c14e3108922c24272f267502",
     "last_batch": {
-      "scope": "C034-C039",
+      "scope": "C040-C045",
       "expected": 6,
       "matched": 6,
-      "readback": "wiki-batch-c034-c039/readback.json"
+      "readback": "wiki-batch-c040-c045/readback.json"
     }
   },
   "coordinated_acceptance": false,
   "issue85_state": "OPEN",
-  "next": "Publish C040-C045 in the next bounded execution; then finish remaining native Wiki bodies, verify all 114 expected hashes and final navigation before closing #85.",
+  "next": "Publish C046-C051 in the next bounded execution; then finish remaining native Wiki bodies, verify all 114 expected hashes and final navigation before closing #85.",
   "scientific_model_version": "0.3.2",
   "documentary_review_version": "0.2.0",
   "reader_version": "0.4.10",
   "article_changed": false,
   "previous_checkpoint_ci": {
-    "source_commit": "77c18a82c3b9f1f956521218ed2cd6e021a538a7",
+    "source_commit": "ee5addb8b9ad755b27bcca85a47599c6ce8e7d5c",
     "success": 11,
     "skipped": 4,
     "pending": 0,
     "failed": 0,
-    "receipt": "wiki-batch-c034-c039/previous-checkpoint-ci.json"
+    "complete_at_execution_start": true,
+    "receipt": "wiki-batch-c040-c045/previous-checkpoint-ci.json"
   }
 }
