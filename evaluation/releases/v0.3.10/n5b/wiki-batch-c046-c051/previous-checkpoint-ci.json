@@ -1,0 +1,185 @@
+{
+  "schema": "riskium-previous-checkpoint-ci-w7/1",
+  "source_commit": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+  "previous_checkpoint": "W6",
+  "complete_at_execution_start": true,
+  "observation_scope": "Fresh connector read during W7 of the previous W6 checkpoint commit; no workflow was manually rerun.",
+  "observed": 15,
+  "success": 11,
+  "skipped": 4,
+  "pending": 0,
+  "failed": 0,
+  "previously_pending_now_successful": [
+    {
+      "id": 43021693512,
+      "name": "Post-v0.3.7 source-qualified full suite",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021693512"
+    },
+    {
+      "id": 43021693841,
+      "name": "Post-release integration and scope",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021693841"
+    },
+    {
+      "id": 43021694004,
+      "name": "Post-v0.3.6 source-qualified full suite",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021694004"
+    }
+  ],
+  "runs": [
+    {
+      "id": 43023467671,
+      "name": "Released v0.3.7 reader documentation",
+      "status": "completed",
+      "conclusion": "skipped",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "workflow_run",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43023467671",
+      "updated_at": "2026-11-11T12:48:03Z"
+    },
+    {
+      "id": 43022685685,
+      "name": "v0.3.7 six-asset source freeze",
+      "status": "completed",
+      "conclusion": "skipped",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "workflow_run",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43022685685",
+      "updated_at": "2026-11-11T12:42:40Z"
+    },
+    {
+      "id": 43022675713,
+      "name": "Nature-task reader for proposed v0.3.7",
+      "status": "completed",
+      "conclusion": "skipped",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "workflow_run",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43022675713",
+      "updated_at": "2026-11-11T12:42:36Z"
+    },
+    {
+      "id": 43021693771,
+      "name": "v0.3.5 component selection",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "push",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021693771",
+      "updated_at": "2026-11-11T12:36:29Z"
+    },
+    {
+      "id": 43021693498,
+      "name": "Current artifact and paper baseline alignment",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "push",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021693498",
+      "updated_at": "2026-11-11T12:36:43Z"
+    },
+    {
+      "id": 43021693529,
+      "name": "v0.3.5 offline release support",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "push",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021693529",
+      "updated_at": "2026-11-11T12:36:36Z"
+    },
+    {
+      "id": 43021693595,
+      "name": "Evidence-reference lifecycle and preserved source",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "push",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021693595",
+      "updated_at": "2026-11-11T12:36:41Z"
+    },
+    {
+      "id": 43021693584,
+      "name": "Current documentation 0.4.0 integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "push",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021693584",
+      "updated_at": "2026-11-11T12:36:36Z"
+    },
+    {
+      "id": 43021693725,
+      "name": "Current manuscript and reader source transition",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "push",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021693725",
+      "updated_at": "2026-11-11T12:36:01Z"
+    },
+    {
+      "id": 43021693622,
+      "name": "Requirement and CQ evidence",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "push",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021693622",
+      "updated_at": "2026-11-11T12:35:57Z"
+    },
+    {
+      "id": 43021693589,
+      "name": "Coordinated v0.3.9 reader publication",
+      "status": "completed",
+      "conclusion": "skipped",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "push",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021693589",
+      "updated_at": "2026-11-11T12:35:51Z"
+    },
+    {
+      "id": 43021693819,
+      "name": "Claim-based quality integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "push",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021693819",
+      "updated_at": "2026-11-11T12:35:52Z"
+    },
+    {
+      "id": 43021693841,
+      "name": "Post-release integration and scope",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "push",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021693841",
+      "updated_at": "2026-11-11T12:38:48Z"
+    },
+    {
+      "id": 43021694004,
+      "name": "Post-v0.3.6 source-qualified full suite",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "push",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021694004",
+      "updated_at": "2026-11-11T12:42:31Z"
+    },
+    {
+      "id": 43021693512,
+      "name": "Post-v0.3.7 source-qualified full suite",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "be7a2e77a2fa626b8723b04c9adbdbd45d1f9ba0",
+      "event": "push",
+      "url": "https://github.com/ArazSaieArasi3/riskium/actions/runs/43021693512",
+      "updated_at": "2026-11-11T12:48:00Z"
+    }
+  ],
+  "recorded_at": "2026-11-11T16:26:24.421167+03:30"
+}
