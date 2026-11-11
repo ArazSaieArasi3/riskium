@@ -2,7 +2,15 @@
 
 Riskium v0.3.10 is a real public release, published at 2026-11-10T20:52:01Z. [The release](https://github.com/ArazSaieArasi3/riskium/releases/tag/v0.3.10) and six actual unauthenticated downloads match exact qualified source `4ae0cdc72a1008e8107be320694d90324890b696` and run 42897440341. PR #94 was merged into main. The package selects model 0.3.2, review 0.2.0 and reader 0.4.10; it changes no scientific definition or historical oracle.
 
-## W1 native Wiki checkpoint — 11 November 2026
+## W2 current native Wiki checkpoint — 11 November 2026
+
+**C016–C021 is complete: six actual saved pages independently match the deployed reference bytes.** The full expected Wiki inventory now matches **22/114 files (19.3%)**: twenty-one updated concept dossiers and one preserved historical reference. **92 files remain.** All sixteen prior matching files remain equal; the Wiki change set is exactly these six pages. These percentages measure documentary synchronization, not semantic correctness or total research completion.
+
+[W2 batch evidence](wiki-batch-c016-c021/README.md), [complete 114-file Git readback](wiki-batch-c016-c021/readback.json), and [resolved previous-checkpoint CI](wiki-batch-c016-c021/previous-checkpoint-ci.json) retain the observations. Both previously pending source-qualified historical suites succeeded. All fifteen observed W1-checkpoint workflows are complete: eleven succeeded and four retired publishers were skipped. This is a count of workflow runs, not individual test cases.
+
+Next bounded execution: **C022–C027**, followed by independent stored-content readback. Release v0.3.10 and its earlier Pages acceptance retain their dated evidence; this Wiki-only batch did not download the package again or rerun HTTP Pages acceptance. #85 remains OPEN until every expected Wiki body and final navigation/current-pointer check passes.
+
+## Earlier W1 native Wiki checkpoint — 11 November 2026
 
 **The six-page C010–C015 batch is complete; whole-channel acceptance remains open.** All six saved native Wiki bodies were independently retrieved from the Wiki Git repository and matched the qualified deployed artifact byte for byte. The complete Wiki inventory now matches **16/114 expected files (14.0%)**: fifteen updated concept pages and one preserved historical reference. **98 files remain.** These percentages describe documentary file synchronization, not ontology correctness or completion of the research.
 
