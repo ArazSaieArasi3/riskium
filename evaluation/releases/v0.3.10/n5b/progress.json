@@ -9,10 +9,10 @@
   },
   "native_wiki": {
     "expected": 114,
-    "matched": 34,
-    "updated_concept_pages": 33,
+    "matched": 40,
+    "updated_concept_pages": 39,
     "historical_reference_preserved": true,
-    "remaining": 80,
+    "remaining": 74,
     "remaining_paths": [
       "Artifact-Versions.md",
       "Citation.md",
@@ -33,12 +33,6 @@
       "Publication-Comparison.md",
       "Publication.md",
       "Quality.md",
-      "RKM-C034.md",
-      "RKM-C035.md",
-      "RKM-C036.md",
-      "RKM-C037.md",
-      "RKM-C038.md",
-      "RKM-C039.md",
       "RKM-C040.md",
       "RKM-C041.md",
       "RKM-C042.md",
@@ -95,27 +89,27 @@
       "_Footer.md",
       "_Sidebar.md"
     ],
-    "wiki_commit": "ee6612d6ad7c65f3f3a909f4982af3751f0860e9",
+    "wiki_commit": "6a9e52621891128e5ed47fc55fad82a83b681b01",
     "last_batch": {
-      "scope": "C028-C033",
+      "scope": "C034-C039",
       "expected": 6,
       "matched": 6,
-      "readback": "wiki-batch-c028-c033/readback.json"
+      "readback": "wiki-batch-c034-c039/readback.json"
     }
   },
   "coordinated_acceptance": false,
   "issue85_state": "OPEN",
-  "next": "Publish C034-C039 in the next bounded execution; then finish remaining native Wiki bodies, verify all 114 expected hashes and final navigation before closing #85.",
+  "next": "Publish C040-C045 in the next bounded execution; then finish remaining native Wiki bodies, verify all 114 expected hashes and final navigation before closing #85.",
   "scientific_model_version": "0.3.2",
   "documentary_review_version": "0.2.0",
   "reader_version": "0.4.10",
   "article_changed": false,
   "previous_checkpoint_ci": {
-    "source_commit": "eb25c727233770ea8474aef49c45cfd3c96a182c",
+    "source_commit": "77c18a82c3b9f1f956521218ed2cd6e021a538a7",
     "success": 11,
     "skipped": 4,
     "pending": 0,
     "failed": 0,
-    "receipt": "wiki-batch-c028-c033/previous-checkpoint-ci.json"
+    "receipt": "wiki-batch-c034-c039/previous-checkpoint-ci.json"
   }
 }
